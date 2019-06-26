@@ -1,10 +1,8 @@
 # Site settings
-title: Chris Pietschmann's website
+title: Chris Pietschmann
 email: chris@buildazure.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I have nearly 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://chrispietschmann.com" # the base hostname & protocol for your site
 twitter_username: crpietschmann
