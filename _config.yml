@@ -13,3 +13,5 @@ github_username:  crpietschmann
 # Build settings
 markdown: kramdown
 permalink: /post/:year/:month/:day/:title:output_ext
+plugins:
+  - jekyll-redirect-from
