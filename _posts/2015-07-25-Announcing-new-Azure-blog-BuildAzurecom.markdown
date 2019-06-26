@@ -1,5 +1,5 @@
 ---
-title: Announcing new Azure blog: BuildAzure.com
+title: Announcing new Azure blog - BuildAzure.com
 redirect_to:
   - http://pietschsoft.com/post/2017/01/01/Awarded-2017-Microsoft-MVP-Azure
 permalink: /post/2015/07/25/Announcing-new-Azure-blog-BuildAzurecom
