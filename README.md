@@ -1,4 +1,4 @@
-example
+portfolio
 =======
 
-Jekyll example Project site
+Jekyll site

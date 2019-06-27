@@ -3,6 +3,8 @@ title: Announcing new Azure blog - BuildAzure.com
 redirect_to:
   - https://buildazure.com
 permalink: /post/2015/07/25/Announcing-new-Azure-blog-BuildAzurecom
+categories: azure
+tags: buildazure azure
 ---
 
 While studying for the MCSD: Azure Solutions Architect certification I decided to blog a lot more on all things Azure. Also, instead of posting those posts here, I decided to create a completely new blog site dedicated just to "all things Azure" This new site is <https://BuildAzure.com>. I have also created the @BuildAzure twitter account associated with the new blog.

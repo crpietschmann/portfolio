@@ -5,7 +5,7 @@ permalink: /archive/
 ---
 
 <div class="container">
-    <h1>Archive</h1>
+  <h1>Archive</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
