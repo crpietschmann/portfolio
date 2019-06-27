@@ -1,3 +1,9 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
 .container {
   max-width: 960px;
 }
@@ -95,4 +101,20 @@
 
 .experience-logos img {
   width: 95%;
+}
+
+
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+      margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
 }
