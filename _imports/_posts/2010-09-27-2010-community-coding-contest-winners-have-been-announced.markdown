@@ -13,6 +13,9 @@ redirect_from:
   - /post.aspx?id=f63658eb-13d5-4568-bf10-bc73efb2930e
 ---
 <!-- more -->
-<p>The 2010 Community Coding Contest winners have been announced.</p>
-<p><a href="http://CommunityCodingContest.org">http://CommunityCodingContest.org</a></p>
-<p><img src="/images/posts2010/9/2010CommunityCodingContestWinners.png" alt="" /></p>
+
+The 2010 Community Coding Contest winners have been announced.
+
+<a href="http://CommunityCodingContest.org">http://CommunityCodingContest.org</a>
+
+<img src="/images/posts2010/9/2010CommunityCodingContestWinners.png" alt="" />

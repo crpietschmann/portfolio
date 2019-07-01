@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=a5a320a2-1439-4853-bc86-8a2388f81150
 ---
 <!-- more -->
-<P>I've searched for quality development related (specifically .NET) podcasts, and there really aren't very many. The <A href="http://polymorphicpodcast.com/">Polymorphic Podcast is an awesome .NET podcast</A> with some really great content. I really recommend checking it out.</P>
-<P>Listen: <A href="http://polymorphicpodcast.com/">Polymorphic Podcast</A></P>
+
+I've searched for quality development related (specifically .NET) podcasts, and there really aren't very many. The <A href="http://polymorphicpodcast.com/">Polymorphic Podcast is an awesome .NET podcast</A> with some really great content. I really recommend checking it out.
+
+Listen: <A href="http://polymorphicpodcast.com/">Polymorphic Podcast</A>

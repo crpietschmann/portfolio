@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=9d2e900e-0969-4d0b-b40b-0f8e673d7996
 ---
 <!-- more -->
-<p>At the next Wisconsin .NET Users Group, Dave Wanta will be presenting an introduction to Regular Expressions, also known as RegExes. The presentation will be covering the basic Regex operators, metacharacters and pattern matching. Then he'll move into advanced groupings, replace and logic branching. This presentation sounds great! I'm a little familiar with regular expressions, but I'm sure I'll learn alot from this presentation. I'll probably be bringing my laptop to this one.</p>
-<p><a href="http://www.wi-ineta.org/DesktopDefault.aspx?tabid=23">June 13, 2006 - Regular Expressions with Dave Wanta</a></p>
+
+At the next Wisconsin .NET Users Group, Dave Wanta will be presenting an introduction to Regular Expressions, also known as RegExes. The presentation will be covering the basic Regex operators, metacharacters and pattern matching. Then he'll move into advanced groupings, replace and logic branching. This presentation sounds great! I'm a little familiar with regular expressions, but I'm sure I'll learn alot from this presentation. I'll probably be bringing my laptop to this one.
+
+<a href="http://www.wi-ineta.org/DesktopDefault.aspx?tabid=23">June 13, 2006 - Regular Expressions with Dave Wanta</a>

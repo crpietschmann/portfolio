@@ -13,10 +13,14 @@ redirect_from:
   - /post.aspx?id=fd2f37b1-3f8e-428f-8310-a9aee245a162
 ---
 <!-- more -->
-<p><a href="/images/postsMSHostedOpenStreetMapImageryFromSilverlight.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="MSHostedOpenStreetMapImageryFromSilverlight" src="/images/postsMSHostedOpenStreetMapImageryFromSilverlight_thumb.png" border="0" alt="MSHostedOpenStreetMapImageryFromSilverlight" width="204" height="179" align="right" /></a> Recently a new <a href="http://www.bing.com/toolbox/blogs/maps/archive/2010/08/02/bing-maps-adds-open-street-maps-layer.aspx">Bing Maps App for OpenStreetMap (OSM)</a> was released. This new feature of the Bing Maps consumer facing website is hosting the <a href="http://openstreetmap.org">OpenStreetMap</a> imagery using the Azure CDN, rather than relying on OpenStreetMap&rsquo;s server. There has been some question as to whether developers can use the Microsoft hosted OpenStreetMap imagery within their own applications.</p>
-<p>I have not seen anything official from Microsoft on this, so I assume that doing this is against their terms of use. You assume any and all responsibility in violating their terms of use if you use the below code. Sorry for the disclaimer, but I don&rsquo;t want you to tell Microsoft I told you it was ok. Basically, do not use this in a production application, unless you get consent from Microsoft.</p>
-<p>Now the code&hellip;</p>
-<p>Displaying the Map (XAML):</p>
+
+<a href="/images/postsMSHostedOpenStreetMapImageryFromSilverlight.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="MSHostedOpenStreetMapImageryFromSilverlight" src="/images/postsMSHostedOpenStreetMapImageryFromSilverlight_thumb.png" border="0" alt="MSHostedOpenStreetMapImageryFromSilverlight" width="204" height="179" align="right" /></a> Recently a new <a href="http://www.bing.com/toolbox/blogs/maps/archive/2010/08/02/bing-maps-adds-open-street-maps-layer.aspx">Bing Maps App for OpenStreetMap (OSM)</a> was released. This new feature of the Bing Maps consumer facing website is hosting the <a href="http://openstreetmap.org">OpenStreetMap</a> imagery using the Azure CDN, rather than relying on OpenStreetMap&rsquo;s server. There has been some question as to whether developers can use the Microsoft hosted OpenStreetMap imagery within their own applications.
+
+I have not seen anything official from Microsoft on this, so I assume that doing this is against their terms of use. You assume any and all responsibility in violating their terms of use if you use the below code. Sorry for the disclaimer, but I don&rsquo;t want you to tell Microsoft I told you it was ok. Basically, do not use this in a production application, unless you get consent from Microsoft.
+
+Now the code&hellip;
+
+Displaying the Map (XAML):
 <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="Silverlight_NewBingMapsRoadImagery_2010.MainPage"</span>
     <span class="attr">xmlns</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span>
     <span class="attr">xmlns:x</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml"</span>
@@ -47,8 +51,10 @@ redirect_from:
         
     <span class="kwrd">&lt;/</span><span class="html">Grid</span><span class="kwrd">&gt;</span>
 <span class="kwrd">&lt;/</span><span class="html">UserControl</span><span class="kwrd">&gt;</span></pre>
-<p><!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } --></p>
-<p>OpenStreetMapTileSource (C#):</p>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+
+OpenStreetMapTileSource (C#):
 <pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">class</span> OpenStreetMapTileSource : Microsoft.Maps.MapControl.TileSource
 {
     <span class="kwrd">public</span> OpenStreetMapTileSource()

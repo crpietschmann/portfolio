@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=f8e56ee2-9c5f-432b-a95d-4cbc80000a1e
 ---
 <!-- more -->
-<P>&#8220;Microsoft today is committing to deliver a new version of Internet Explorer for <a title="Windows XP" href="http://www.microsoft.com/windowsxp/default.mspx" target="_blank">Windows XP</a> customers.&nbsp; This version, called IE 7, will add new levels of security to <a title="Windows XP" href="http://www.microsoft.com/windowsxp/default.mspx" target="_blank">Windows XP</a> SP2 while maintaining the level of extensibility and compatibility customers have come to expect from IE.&#8220;</P>
-<P>Source: <A href="http://channel9.msdn.com/ShowPost.aspx?PostID=41507">http://channel9.msdn.com/ShowPost.aspx?PostID=41507</A></P>
+
+&#8220;Microsoft today is committing to deliver a new version of Internet Explorer for <a title="Windows XP" href="http://www.microsoft.com/windowsxp/default.mspx" target="_blank">Windows XP</a> customers.  This version, called IE 7, will add new levels of security to <a title="Windows XP" href="http://www.microsoft.com/windowsxp/default.mspx" target="_blank">Windows XP</a> SP2 while maintaining the level of extensibility and compatibility customers have come to expect from IE.&#8220;
+
+Source: <A href="http://channel9.msdn.com/ShowPost.aspx?PostID=41507">http://channel9.msdn.com/ShowPost.aspx?PostID=41507</A>

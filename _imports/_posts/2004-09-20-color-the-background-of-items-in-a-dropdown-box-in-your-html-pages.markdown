@@ -13,8 +13,10 @@ redirect_from:
   - /post.aspx?id=0d14aac9-24f0-4208-a3b2-a902d34047f3
 ---
 <!-- more -->
-<p>Color the background of items in a Dropdown box in your HTML pages. It's very easy to do, just look at the below example.</p>
-<p><select>
+
+Color the background of items in a Dropdown box in your HTML pages. It's very easy to do, just look at the below example.
+
+<select>
 <option value="">Highlight</option>
 <option style="background-color: black; color: #ffffff;" value="#000000">Black</option>
 <option style="background-color: gray;" value="#808080">Gray</option>
@@ -37,7 +39,7 @@ redirect_from:
 <option style="background-color: brown;" value="#A52A2A">Brown</option>
 <option style="background-color: burlywood;" value="#DEB887">BurlyWood</option>
 <option style="background-color: beige;" value="#F5F5DC">Beige</option>
-</select></p>
+</select>
 <pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;select&gt;
 &lt;option value=""&gt;Highlight&lt;/option&gt;
 &lt;option value="#000000" style="background-color: Black;color: #FFFFFF;"&gt;Black&lt;/option&gt;
@@ -62,4 +64,4 @@ redirect_from:
 &lt;option value="#DEB887" style="background-color: BurlyWood;"&gt;BurlyWood&lt;/option&gt;
 &lt;option value="#F5F5DC" style="background-color: Beige;"&gt;Beige&lt;/option&gt;
 &lt;/select&gt;</pre>
-<pre class="csharpcode"><span class="kwrd">&nbsp;</span></pre>
+<pre class="csharpcode"><span class="kwrd"> </span></pre>

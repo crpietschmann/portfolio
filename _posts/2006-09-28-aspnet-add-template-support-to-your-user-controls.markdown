@@ -13,8 +13,13 @@ redirect_from:
   - /post.aspx?id=ed2f12ec-fd2c-40f5-8887-5dacd8b58d1d
 ---
 <!-- more -->
-<p>Here's a great article on how to <a href="http://msdn2.microsoft.com/en-us/library/36574bf6.aspx">add support for Templates&nbsp;to your&nbsp;ASP.NET User Controls</a>.</p>
-<p><a href="http://msdn2.microsoft.com/en-us/library/36574bf6.aspx">http://msdn2.microsoft.com/en-us/library/36574bf6.aspx</a></p>
-<p><strong></strong>&nbsp;</p>
-<p><strong>Updated 8/17/2007: </strong>I changed the link above since the old one I had posted is no longer there.</p>
-<p>&nbsp;</p>
+
+Here's a great article on how to <a href="http://msdn2.microsoft.com/en-us/library/36574bf6.aspx">add support for Templates to your ASP.NET User Controls</a>.
+
+<a href="http://msdn2.microsoft.com/en-us/library/36574bf6.aspx">http://msdn2.microsoft.com/en-us/library/36574bf6.aspx</a>
+
+**** 
+
+**Updated 8/17/2007: **I changed the link above since the old one I had posted is no longer there.
+
+ 

@@ -13,6 +13,9 @@ redirect_from:
   - /post.aspx?id=a4330182-18aa-41fe-bdaf-b496b17d3dc6
 ---
 <!-- more -->
-<p>Here's a Visual Studio 2005 Add-In that shows you the total lines of code within your solution/project. It also show the breakout of each individual file.</p>
-<p>Currently it doesn't include line counts from files within any WebSites that are included inside your solution. But overall this Addin is simple and to the point. Besides, it's open source so you can fix/modify it in any way you'd like.</p>
-<p><a href="http://www.codeproject.com/useritems/LineCounterAddin.asp">Visual Studio 2005 Line Counter&nbsp;Add-In + Source Code</a>&nbsp;</p>
+
+Here's a Visual Studio 2005 Add-In that shows you the total lines of code within your solution/project. It also show the breakout of each individual file.
+
+Currently it doesn't include line counts from files within any WebSites that are included inside your solution. But overall this Addin is simple and to the point. Besides, it's open source so you can fix/modify it in any way you'd like.
+
+<a href="http://www.codeproject.com/useritems/LineCounterAddin.asp">Visual Studio 2005 Line Counter Add-In + Source Code</a> 

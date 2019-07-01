@@ -13,10 +13,12 @@ redirect_from:
   - /post.aspx?id=772d2592-f037-4039-ae6e-38a53e7319a5
 ---
 <!-- more -->
-<p>
+
+
 <a href="http://wi-ineta.org" target="_blank" title="Wisconsin .NET Users Group">WI-INETA</a> meeting tonight, I&#39;m leavin in a little while to go. This months topic is GDI+ in Microsoft .NET<br />
 If you live in Wisconsin and are interested in learning about .NET you should check out the group.
-</p>
-<p>
+
+
+
 <a href="http://wi-ineta.org/">http://wi-ineta.org</a>
-</p>
+

@@ -13,6 +13,7 @@ redirect_from:
   - /post.aspx?id=6b4b3c76-4943-4038-8dc1-87501084a397
 ---
 <!-- more -->
-<p>Here is a small example of how to convert a System.Drawing.Color to the HTML color format (Hex value or HTML color name value) and back.</p>
+
+Here is a small example of how to convert a System.Drawing.Color to the HTML color format (Hex value or HTML color name value) and back.
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">System.Drawing.Color c = System.Drawing.ColorTranslator.FromHtml("#F5F7F8");
 String strHtmlColor = System.Drawing.ColorTranslator.ToHtml(c);</pre>

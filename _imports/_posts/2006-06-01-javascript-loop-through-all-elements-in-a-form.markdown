@@ -13,7 +13,8 @@ redirect_from:
   - /post.aspx?id=75287b5b-1d1f-47d1-a9ed-6d5c0eb4a545
 ---
 <!-- more -->
-<p>Since I've been doing alot of JavaScript programming lately, I figured I could start blogging some code snippets. Here is a JavaScript snippet that shows how to loop through all the elements in a form and retrieve their element type, name and values. I had to use this code to gather all form values so I could post them to the server using AJAX.</p>
+
+Since I've been doing alot of JavaScript programming lately, I figured I could start blogging some code snippets. Here is a JavaScript snippet that shows how to loop through all the elements in a form and retrieve their element type, name and values. I had to use this code to gather all form values so I could post them to the server using AJAX.
 <pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;html&gt;
 &lt;head&gt;
 &lt;script type="text/javascript"&gt;
@@ -44,7 +45,8 @@ redirect_from:
     &lt;div id="lblValues"&gt;&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
-<p>I revisited this code and tested it again to make sure it still works. I found that it works with the latest browser versions available today, in addition to older browsers, such as:</p>
+
+I revisited this code and tested it again to make sure it still works. I found that it works with the latest browser versions available today, in addition to older browsers, such as:
 <ul>
 <li>Internet Explorer 6, 7, 8</li>
 <li>FireFox 3 &amp; 4 Beta 4</li>

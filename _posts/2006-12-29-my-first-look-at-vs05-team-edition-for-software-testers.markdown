@@ -13,4 +13,5 @@ redirect_from:
   - /post.aspx?id=60318f70-74ce-4191-b517-39b18462c661
 ---
 <!-- more -->
-<P>I've been meaning to dig in and get to know unit testing for quite some time now. Tonight I dove in and took a look at the Visual Studio 2005 Team Edition for Software Testers. Unit testing is actually quite easy to do. The <A href="http://msdn2.microsoft.com/en-us/library/ms243146(VS.80).aspx">Getting Started with Team System Testing Tools</A>&nbsp;section in the MSDN library has some nice How-To's on getting started with unit testing using VS'05 Team Edition.</P>
+
+I've been meaning to dig in and get to know unit testing for quite some time now. Tonight I dove in and took a look at the Visual Studio 2005 Team Edition for Software Testers. Unit testing is actually quite easy to do. The <A href="http://msdn2.microsoft.com/en-us/library/ms243146(VS.80).aspx">Getting Started with Team System Testing Tools</A> section in the MSDN library has some nice How-To's on getting started with unit testing using VS'05 Team Edition.

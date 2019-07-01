@@ -13,6 +13,9 @@ redirect_from:
   - /post.aspx?id=6808cf63-ee08-4321-983a-133df4b75ebc
 ---
 <!-- more -->
-<P>DECLARE @NAME_TO_SEARCH_FOR nvarchar(50)</P>
-<P>SET @NAME_TO_SEARCH_FOR = '%photo%'</P>
-<P>SELECT&nbsp;sysobjects.name AS Table_Name, syscolumns.name AS Column_Name <BR>FROM syscolumns INNER JOIN sysobjects ON syscolumns.id = sysobjects.id<BR>WHERE syscolumns.name LIKE @NAME_TO_SEARCH_FOR AND sysobjects.Type Like 'U%'</P>
+
+DECLARE @NAME_TO_SEARCH_FOR nvarchar(50)
+
+SET @NAME_TO_SEARCH_FOR = '%photo%'
+
+SELECT sysobjects.name AS Table_Name, syscolumns.name AS Column_Name <BR>FROM syscolumns INNER JOIN sysobjects ON syscolumns.id = sysobjects.id<BR>WHERE syscolumns.name LIKE @NAME_TO_SEARCH_FOR AND sysobjects.Type Like 'U%'

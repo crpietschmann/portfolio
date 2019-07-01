@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=185e7a82-0af7-4aaf-adae-8e842c313a0e
 ---
 <!-- more -->
-<P>I don't know if this is legit for sure, but it is pretty funny. <STRONG>Microsoft Windows for only $99, that's right $99!!!!!</STRONG></P>
-<P><A href="http://www.energyradio.fm/content/ballmer.asx">http://www.energyradio.fm/content/ballmer.asx</A></P>
+
+I don't know if this is legit for sure, but it is pretty funny. <STRONG>Microsoft Windows for only $99, that's right $99!!!!!</STRONG>
+
+<A href="http://www.energyradio.fm/content/ballmer.asx">http://www.energyradio.fm/content/ballmer.asx</A>

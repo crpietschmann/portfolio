@@ -13,7 +13,12 @@ redirect_from:
   - /post.aspx?id=3b8c88bd-386c-43fa-95f7-b1ba62218b17
 ---
 <!-- more -->
-<p>This isn’t really a bug in the .NET compilers, but it sure is an interesting namespace scoping issue that could easily be encountered. If this teaches you anything, be it that you should never name a nested namespace level the same name as one of its parents in the hierarchy.</p>  <h3>In C#</h3>  <p>First here’s the Compile Time Exception that I was getting:</p>  <p><em>The type or namespace name ‘Data’ does not exist in namespace ‘MyApp.Data.MyApp’ (are you missing an assembly reference?)</em></p>  <p>At first I was like <em>“What do you mean namespace ‘Data’ doesn’t exist in ‘MyApp.Data’?”</em></p>  <p>Here’s the C# code that causes this exception:</p>  <pre class="csharpcode"><span class="kwrd">namespace</span> MyApp.Data
+
+This isn’t really a bug in the .NET compilers, but it sure is an interesting namespace scoping issue that could easily be encountered. If this teaches you anything, be it that you should never name a nested namespace level the same name as one of its parents in the hierarchy.  <h3>In C#</h3>  
+First here’s the Compile Time Exception that I was getting:  
+<em>The type or namespace name ‘Data’ does not exist in namespace ‘MyApp.Data.MyApp’ (are you missing an assembly reference?)</em>  
+At first I was like <em>“What do you mean namespace ‘Data’ doesn’t exist in ‘MyApp.Data’?”</em>  
+Here’s the C# code that causes this exception:  <pre class="csharpcode"><span class="kwrd">namespace</span> MyApp.Data
 {
     <span class="kwrd">public</span> <span class="kwrd">partial</span> <span class="kwrd">class</span> Person
     {
@@ -54,17 +59,22 @@ redirect_from:
 }
 .csharpcode .lnum { color: #606060; }</style>
 
-<p>If you are familiar with scoping of namespaces in .NET then you probably can see what the issue is. Remember, I has this issue in a large solution with multiple projects and it wasn’t as straight forward as this. This example is the most basic example that will raise this exception.</p>
 
-<p>Basically, since the ‘Billy’ class is within the ‘MyApp.Data.MyApp’ namespace, all references to the ‘MyApp’ namespace will be scoped to the nested ‘MyApp’ instead of the root.&#160; So, as a consequence, the ‘MyApp.Data.Person’ object doesn’t exist because the compiler is really looking for ‘MyApp.Data.MyApp.Data.Person’.</p>
+If you are familiar with scoping of namespaces in .NET then you probably can see what the issue is. Remember, I has this issue in a large solution with multiple projects and it wasn’t as straight forward as this. This example is the most basic example that will raise this exception.
+
+
+Basically, since the ‘Billy’ class is within the ‘MyApp.Data.MyApp’ namespace, all references to the ‘MyApp’ namespace will be scoped to the nested ‘MyApp’ instead of the root.&#160; So, as a consequence, the ‘MyApp.Data.Person’ object doesn’t exist because the compiler is really looking for ‘MyApp.Data.MyApp.Data.Person’.
 
 <h3>How about VB.NET?</h3>
 
-<p>Another thing to point out is that I also tested this in VB.NET, and the VB.NET compiler gives a similar compile-time exception message for the same ‘MyApp.Data.Person' reference within the ‘Billy’ class. Here’s VB.NET’s message:</p>
 
-<p><em>Type ‘MyApp.Data.Person’ is not defined</em></p>
+Another thing to point out is that I also tested this in VB.NET, and the VB.NET compiler gives a similar compile-time exception message for the same ‘MyApp.Data.Person' reference within the ‘Billy’ class. Here’s VB.NET’s message:
 
-<p>Here’s the VB.NET code:</p>
+
+<em>Type ‘MyApp.Data.Person’ is not defined</em>
+
+
+Here’s the VB.NET code:
 
 <pre class="csharpcode"><span class="kwrd">Namespace</span> MyApp.Data
     <span class="kwrd">Public</span> <span class="kwrd">Class</span> Person
@@ -108,6 +118,8 @@ redirect_from:
 
 <h3>Conclusion</h3>
 
-<p>You may assume, as I did at first, that the compiler should just fall back to the ‘MyApp’ root namespace if it can’t find the type within the nested namespace. This assumption was completely incorrect, and after thinking it over, the compilers response does make sense.</p>
 
-<p>I actually never ran into this before, so I thought I would share.</p>
+You may assume, as I did at first, that the compiler should just fall back to the ‘MyApp’ root namespace if it can’t find the type within the nested namespace. This assumption was completely incorrect, and after thinking it over, the compilers response does make sense.
+
+
+I actually never ran into this before, so I thought I would share.

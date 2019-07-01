@@ -13,15 +13,22 @@ redirect_from:
   - /post.aspx?id=237305ef-7b41-45f4-af3b-d7b1b116e78b
 ---
 <!-- more -->
-<p>One of the things that ASP.NET MVC 1.0 is missing is the ability to easily implement Themes. The older, more mature standard ASP.NET framework includes theme support via the App_Themes folder; however limited it can be, it&rsquo;s still more than ASP.NET MVC currently has. Well, at least until I wrote this little custom ViewEngine and ControllerBase class to help out and allow us to very easily implement Themes within our ASP.NET MVC applications.</p>
-<p>A little history: A few months back I wrote up a post on &ldquo;<a href="/post.aspx?id=ee0e253d-c746-4099-9795-81aaf14ad608">How To Setup Custom Theme Support In ASP.NET MVC Preview 4 using a Custom ViewEngine</a>&rdquo;, then a couple weeks later I posted an updated version that added <a href="/post.aspx?id=5a6945d0-933a-4971-aac1-13dcd73711d9">Custom Themes to ASP.NET MVC Preview 5</a>. So I&rsquo;ve decided to update the code from Preview 5 and make it all work with ASP.NET MVC v1.0 Final Release.</p>
-<p>Also, I took a tip from <a href="http://frugalcoder.us/">Michael Ryan</a> and modified my previous theme implementation from Preview 5 to include both Views and Content folders within the Theme folder.</p>
+
+One of the things that ASP.NET MVC 1.0 is missing is the ability to easily implement Themes. The older, more mature standard ASP.NET framework includes theme support via the App_Themes folder; however limited it can be, it&rsquo;s still more than ASP.NET MVC currently has. Well, at least until I wrote this little custom ViewEngine and ControllerBase class to help out and allow us to very easily implement Themes within our ASP.NET MVC applications.
+
+A little history: A few months back I wrote up a post on &ldquo;<a href="/post.aspx?id=ee0e253d-c746-4099-9795-81aaf14ad608">How To Setup Custom Theme Support In ASP.NET MVC Preview 4 using a Custom ViewEngine</a>&rdquo;, then a couple weeks later I posted an updated version that added <a href="/post.aspx?id=5a6945d0-933a-4971-aac1-13dcd73711d9">Custom Themes to ASP.NET MVC Preview 5</a>. So I&rsquo;ve decided to update the code from Preview 5 and make it all work with ASP.NET MVC v1.0 Final Release.
+
+Also, I took a tip from <a href="http://frugalcoder.us/">Michael Ryan</a> and modified my previous theme implementation from Preview 5 to include both Views and Content folders within the Theme folder.
 <h3>Download the Code</h3>
-<p>I know some of you may want to download the code and look at it before reading on, so here's the download link:</p>
-<p>Source Code: <a href="/file.axd?file=AspNetMvc1CustomThemeImplementation.zip" rel="enclosure">AspNetMvc1CustomThemeImplementation.zip (262.99 kb)</a></p>
+
+I know some of you may want to download the code and look at it before reading on, so here's the download link:
+
+Source Code: <a href="/file.axd?file=AspNetMvc1CustomThemeImplementation.zip" rel="enclosure">AspNetMvc1CustomThemeImplementation.zip (262.99 kb)</a>
 <h3>Create &ldquo;~/Themes&rdquo; Folder and a &ldquo;Default&rdquo; View Theme</h3>
-<p><a href="/images/postsASPNETMVC_1_CustomThemeFolderLayout.png"><img style="display: inline; border-width: 0px;" title="ASPNETMVC_1_CustomThemeFolderLayout" src="/images/postsASPNETMVC_1_CustomThemeFolderLayout_thumb.png" alt="ASPNETMVC_1_CustomThemeFolderLayout" width="275" height="508" align="right" border="0" /></a>First, we&rsquo;ll make some changes to the Views contained within the default ASP.NET MVC Template.</p>
-<p>Here&rsquo;s a brief summary of what changes are needed:</p>
+
+<a href="/images/postsASPNETMVC_1_CustomThemeFolderLayout.png"><img style="display: inline; border-width: 0px;" title="ASPNETMVC_1_CustomThemeFolderLayout" src="/images/postsASPNETMVC_1_CustomThemeFolderLayout_thumb.png" alt="ASPNETMVC_1_CustomThemeFolderLayout" width="275" height="508" align="right" border="0" /></a>First, we&rsquo;ll make some changes to the Views contained within the default ASP.NET MVC Template.
+
+Here&rsquo;s a brief summary of what changes are needed:
 <ol>
 <li>Create a sub-folder named &ldquo;Themes&rdquo; within the website root folder</li>
 <li>Create a sub-folder names &ldquo;Default&rdquo; within the &ldquo;Themes&rdquo; folder</li>
@@ -31,10 +38,13 @@ redirect_from:
 <li>Modify the Master Pages (.master) to point to the CSS file within the &ldquo;Content&rdquo; folder correctly, now that we moved the files.</li>
 <li>To create additional Themes, just copy the &ldquo;Default&rdquo; folder and name it what you want for the desired Theme, and repeat Steps 5 and 6 above.</li>
 </ol>
-<p>To the right is a screenshot displaying the layout of the Themes folder as described above.</p>
+
+To the right is a screenshot displaying the layout of the Themes folder as described above.
 <h3>Apply the Custom ViewEngine</h3>
-<p>Now that we have our Themes folder created, we can go ahead and implement our Custom ViewEngine. The Custom ViewEngine in this example was created by inheriting the WebFormViewEngine and just overriding/changing the necessary functionality.</p>
-<p>First we need to tell our application to use the new &ldquo;WebFormThemeViewEngine&rdquo; ViewEngine class. To do this we&rsquo;ll need to clear any existing ViewEngines and add a new instance of the &lsquo;WebFormThemeViewEngine&rdquo;. This needs to be done within the Application_Start method in the Global.asax. Below is what the Application_Start method will look like after we make the necessary changes:</p>
+
+Now that we have our Themes folder created, we can go ahead and implement our Custom ViewEngine. The Custom ViewEngine in this example was created by inheriting the WebFormViewEngine and just overriding/changing the necessary functionality.
+
+First we need to tell our application to use the new &ldquo;WebFormThemeViewEngine&rdquo; ViewEngine class. To do this we&rsquo;ll need to clear any existing ViewEngines and add a new instance of the &lsquo;WebFormThemeViewEngine&rdquo;. This needs to be done within the Application_Start method in the Global.asax. Below is what the Application_Start method will look like after we make the necessary changes:
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">protected void Application_Start()
 {
     RegisterRoutes(RouteTable.Routes);
@@ -43,7 +53,8 @@ redirect_from:
     System.Web.Mvc.ViewEngines.Engines.Clear();
     System.Web.Mvc.ViewEngines.Engines.Add(new WebFormThemeViewEngine());
 }</pre>
-<p>Also, for reference here&rsquo;s the complete code for the &ldquo;WebFormThemeViewEngine&rdquo; class that&rsquo;s used in this example. I wont be discussing the steps necessary when creating your own custom ViewEngines; that would be a little more involved than I would like to get within the scope of this article. A link to download the entire code for the project I created when writing this article is located at the top of the article</p>
+
+Also, for reference here&rsquo;s the complete code for the &ldquo;WebFormThemeViewEngine&rdquo; class that&rsquo;s used in this example. I wont be discussing the steps necessary when creating your own custom ViewEngines; that would be a little more involved than I would like to get within the scope of this article. A link to download the entire code for the project I created when writing this article is located at the top of the article
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">public class WebFormThemeViewEngine : WebFormViewEngine
 {
     public WebFormThemeViewEngine()
@@ -231,11 +242,15 @@ redirect_from:
         return virtualPath;
     }
 }</pre>
-<p>&nbsp;</p>
+
+ 
 <h3>Create a ThemeControllerBase Class to Initially Set the Theme to Use</h3>
-<p>One additional step that&rsquo;s necessary when using the above WebFormThemeViewEngine is to create a custom Controller Base Class, and inherit from it with all your Controllers. This ThemeControllerBase class needs to set the Theme to use within the &ldquo;HttpContext.Items[&ldquo;themeName&rdquo;]&rdquo;. If you miss or skip this step you will get an exception and will not be able to run the website.</p>
-<p>The ThemeControllerBase class used in this example includes code that allows you to specify the Theme to use by passing it in using the QueryString like this: <em>&ldquo;http://localhost/Default.aspx?theme=Red&rdquo;</em></p>
-<p>Here&rsquo;s the code for the ThemeControllerBase class:</p>
+
+One additional step that&rsquo;s necessary when using the above WebFormThemeViewEngine is to create a custom Controller Base Class, and inherit from it with all your Controllers. This ThemeControllerBase class needs to set the Theme to use within the &ldquo;HttpContext.Items[&ldquo;themeName&rdquo;]&rdquo;. If you miss or skip this step you will get an exception and will not be able to run the website.
+
+The ThemeControllerBase class used in this example includes code that allows you to specify the Theme to use by passing it in using the QueryString like this: <em>&ldquo;http://localhost/Default.aspx?theme=Red&rdquo;</em>
+
+Here&rsquo;s the code for the ThemeControllerBase class:
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">public abstract class ThemeControllerBase : Controller
 {
     protected override void Execute(System.Web.Routing.RequestContext requestContext)
@@ -257,7 +272,9 @@ redirect_from:
         base.Execute(requestContext);
     }
 }</pre>
-<p>Then you need to have all your Controller&rsquo;s inherit from the ThemeControllerBase like the following:</p>
+
+Then you need to have all your Controller&rsquo;s inherit from the ThemeControllerBase like the following:
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">public class HomeController : ThemeControllerBase { }</pre>
 <h3>Conclusion</h3>
-<p>I&rsquo;m sure some kind of Themes support is on the list for Microsoft to eventually implement into ASP.NET MVC some time down the road, but I have yet to see anything mentioned. Also, since the Official v1.0 release has already been released, I don&rsquo;t really expect anything to change until presumably after .NET 4.0 ships; this is assuming the ASP.NET MVC 1.0 bits are what make it into .NET 4.0 and not a newer version of ASP.NET MVC. So, for now if you want to implement Themes into your ASP.NET MVC Website, you&rsquo;ll just have to use the code I post here, or some other custom implementation.</p>
+
+I&rsquo;m sure some kind of Themes support is on the list for Microsoft to eventually implement into ASP.NET MVC some time down the road, but I have yet to see anything mentioned. Also, since the Official v1.0 release has already been released, I don&rsquo;t really expect anything to change until presumably after .NET 4.0 ships; this is assuming the ASP.NET MVC 1.0 bits are what make it into .NET 4.0 and not a newer version of ASP.NET MVC. So, for now if you want to implement Themes into your ASP.NET MVC Website, you&rsquo;ll just have to use the code I post here, or some other custom implementation.

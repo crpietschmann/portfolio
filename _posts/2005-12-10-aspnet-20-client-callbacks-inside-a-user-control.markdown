@@ -13,7 +13,8 @@ redirect_from:
   - /post.aspx?id=cb2fb342-bf26-4aad-9d46-29a1450ef83e
 ---
 <!-- more -->
-<p>Implementing Client Callbacks (AJAX) in ASP.NET 2.0 is actually really simple to do as long as you know a little JavaScript. Heres is a small example of using a Client Callback from within a User Control. I've tested this example with IE6 and Firefox 1.5</p>
+
+Implementing Client Callbacks (AJAX) in ASP.NET 2.0 is actually really simple to do as long as you know a little JavaScript. Heres is a small example of using a Client Callback from within a User Control. I've tested this example with IE6 and Firefox 1.5
 <div class="Indent">
 <pre><div><!--
 

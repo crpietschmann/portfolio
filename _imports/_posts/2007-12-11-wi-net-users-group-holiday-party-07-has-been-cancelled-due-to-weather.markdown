@@ -13,14 +13,16 @@ redirect_from:
   - /post.aspx?id=b896b861-3059-40b6-9042-3d079cdddadb
 ---
 <!-- more -->
-<p>The WI .NET Users Group Holiday Party '07 has been Cancelled due to weather and will be rescheduled. The new date for the party will be announced as soom as possible.</p>
-<p>Here's the announcement that went out to all registered attendees via email:</p>
+
+The WI .NET Users Group Holiday Party '07 has been Cancelled due to weather and will be rescheduled. The new date for the party will be announced as soom as possible.
+
+Here's the announcement that went out to all registered attendees via email:
 <div><span style="font-family: Arial; font-size: x-small;"><span>Everyone -</span></span></div>
 <div><span style="font-family: Arial; font-size: x-small;"></span></div>
-<div><span style="font-family: Arial; font-size: x-small;"><span><strong><em><span style="text-decoration: underline;"><span style="color: #ff0000;">The&nbsp;holiday party&nbsp;has been cancelled due to weather.</span></span></em></strong>&nbsp; </span></span></div>
+<div><span style="font-family: Arial; font-size: x-small;"><span>**<em><span style="text-decoration: underline;"><span style="color: #ff0000;">The holiday party has been cancelled due to weather.</span></span></em>**  </span></span></div>
 <div><span style="font-family: Arial; font-size: x-small;"></span></div>
 <div><span style="font-family: Arial; font-size: x-small;"><span>Even though the ice warnings are expired, there is still snow falling and Direct Supply (our host for the evening) has asked us to cancel the party because of hazards and liability issues.</span></span></div>
 <div><span style="font-family: Arial; font-size: x-small;"></span></div>
 <div><span style="font-family: Arial; font-size: x-small;"><span>As soon as we can nail something down, we will announce the rescheduled party.</span></span></div>
 <div><span style="font-family: Arial; font-size: x-small;"></span></div>
-<div><span style="font-family: Arial; font-size: x-small;"><span>I apologize for any inconvenience.&nbsp; I am sure everyone that was planning to attend is disappointed, and so am I.&nbsp; But it is better to be safe than sorry.</span></span></div>
+<div><span style="font-family: Arial; font-size: x-small;"><span>I apologize for any inconvenience.  I am sure everyone that was planning to attend is disappointed, and so am I.  But it is better to be safe than sorry.</span></span></div>

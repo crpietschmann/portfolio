@@ -13,15 +13,19 @@ redirect_from:
   - /post.aspx?id=4dfe2f0f-4d49-4b99-8bfb-f2a763376e17
 ---
 <!-- more -->
-<p>
+
+
 Here&#39;s a link to the Wisconsin .NET Users Group LinkedIn Group I just created. Anyone can join this group on LinkedIn, and it&#39;s a nice way to show your affiliation with the WI .NET Users Group within your LinkedIn profile. 
-</p>
-<p>
-<a href="http://www.linkedin.com/e/gis/77233/49CA3D077B3C"><strong><font color="#003399">http://www.linkedin.com/e/gis/77233/49CA3D077B3C</font></strong></a> 
-</p>
-<p>
-Also, heres a&nbsp;link to the Facebook group for the Wisconsin .NET Users Group:
-</p>
-<p>
+
+
+
+<a href="http://www.linkedin.com/e/gis/77233/49CA3D077B3C">**<font color="#003399">http://www.linkedin.com/e/gis/77233/49CA3D077B3C</font>**</a> 
+
+
+
+Also, heres a link to the Facebook group for the Wisconsin .NET Users Group:
+
+
+
 <a href="http://www.facebook.com/group.php?gid=2875089211">http://www.facebook.com/group.php?gid=2875089211</a>
-</p>
+

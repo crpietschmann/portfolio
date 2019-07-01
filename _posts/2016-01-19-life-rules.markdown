@@ -13,8 +13,10 @@ redirect_from:
   - /post.aspx?id=9a4a7cbc-1cfa-460e-bb6f-90f89ddd8357
 ---
 <!-- more -->
-<p>I have a few life rules, principles and tips that I've shared over the years on my blog. Until now I haven't compiled them into a single list, so I thought I would do that here. The order doesn't really matter all that much as each is fairly equal to the other; except where painfully obvious.</p>
-<p>So here's my list:</p>
+
+I have a few life rules, principles and tips that I've shared over the years on my blog. Until now I haven't compiled them into a single list, so I thought I would do that here. The order doesn't really matter all that much as each is fairly equal to the other; except where painfully obvious.
+
+So here's my list:
 <ul>
 <li><a href="/post/2013/07/27/Work-Smart-Not-Hard">Work Smart, Not Hard</a></li>
 <li><a href="/post/2016/01/19/Do-your-best-and-Own-it">Do you best, and Own it</a></li>

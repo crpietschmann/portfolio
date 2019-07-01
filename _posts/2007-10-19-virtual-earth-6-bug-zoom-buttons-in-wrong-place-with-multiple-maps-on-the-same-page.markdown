@@ -13,12 +13,15 @@ redirect_from:
   - /post.aspx?id=1b839cf3-26c6-480a-b034-20d49c7b12d4
 ---
 <!-- more -->
-<p>
-I&#39;m currently working on adding Virtual Earth v6 support to <a href="http://simplovation.com/Page/WebMapsVE.aspx">Web.Maps.VE</a>, and I have found a bug in VE6. When there are multiple maps on the same page the images for&nbsp;the&nbsp;zoom in/out buttons of the dashboard are not getting displayed on the correct map. I circled them in red in the screenshot below...
-</p>
-<p>
+
+
+I&#39;m currently working on adding Virtual Earth v6 support to <a href="http://simplovation.com/Page/WebMapsVE.aspx">Web.Maps.VE</a>, and I have found a bug in VE6. When there are multiple maps on the same page the images for the zoom in/out buttons of the dashboard are not getting displayed on the correct map. I circled them in red in the screenshot below...
+
+
+
 <img src="/images/postsVE6Bug_MultipleMapsOnPage.png" alt="" />
-</p>
-<p>
+
+
+
 This is kinda strange behavor.
-</p>
+

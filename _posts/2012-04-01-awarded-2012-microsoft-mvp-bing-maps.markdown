@@ -13,8 +13,13 @@ redirect_from:
   - /post.aspx?id=6482da0a-bd20-457a-b9d8-08a076609e79
 ---
 <!-- more -->
-<p><img style="float: right;" src="/images/postsMVP_FullColor_ForScreen.png" alt="" width="157" /></p>
-<p>Whether I won MVP or not I would still do what I do. My passion for technology and the pleasure of helping others it what drives me. This marks the 5th time I've been awarded Microsoft MVP, and am honored for this recognition.</p>
-<p>Thank you Microsoft!</p>
-<p><strong>Congratulations to all April Fools MVP's; new and renewed!</strong></p>
-<p>If you are not familiar with the Microsoft MVP Program, you can find information about it here: <a href="http://mvp.support.microsoft.com">http://mvp.support.microsoft.com</a></p>
+
+<img style="float: right;" src="/images/postsMVP_FullColor_ForScreen.png" alt="" width="157" />
+
+Whether I won MVP or not I would still do what I do. My passion for technology and the pleasure of helping others it what drives me. This marks the 5th time I've been awarded Microsoft MVP, and am honored for this recognition.
+
+Thank you Microsoft!
+
+**Congratulations to all April Fools MVP's; new and renewed!**
+
+If you are not familiar with the Microsoft MVP Program, you can find information about it here: <a href="http://mvp.support.microsoft.com">http://mvp.support.microsoft.com</a>

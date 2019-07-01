@@ -13,7 +13,10 @@ redirect_from:
   - /post.aspx?id=e06592b2-190b-4ac4-b992-c68081e89afd
 ---
 <!-- more -->
-<p>After I wrote the “<a href="/post/2010/09/29/Intro-to-IronRubyDLR-Scripting-in-C-Silverlight-4-Application.aspx">Intro to IronRuby/DLR Scripting in C# Silverlight 4 Application</a>” post, I came across an interesting series on <a href="http://www.thinkbottomup.com.au/site/blog/Embedding_DLR_Scripts_in_XAML_Part_6">embedding DLR scripts in XAML with WPF</a>. This is an interesting series, although the code doesn’t run in Silverlight, due to the fact that Silverlight is only a subset of WPF and doesn’t support the <a href="http://msdn.microsoft.com/en-us/library/system.windows.markup.markupextension.aspx">System.Windows.Markup.MarkupExtension</a> class. I test out a couple things in Silverlight, and I was able to get similar DLR scripting functionality working under Silverlight using a combination of a simple, custom <a href="http://msdn.microsoft.com/en-us/library/system.windows.data.ivalueconverter.aspx">IValueConverter</a> and a custom UserControl class.</p>  <p>If you are unfamiliar with <a href="http://timheuer.com/blog/archive/2008/07/30/format-data-in-silverlight-databinding-valueconverter.aspx">value converters</a> and the <a href="http://msdn.microsoft.com/en-us/library/system.windows.data.ivalueconverter.aspx">IValueConverter</a> interface (same for both Silverlight and WPF), you may want to look it up and learn how to create your own. Value converters are tremendously helpful when performing data binding.</p>  <h3>Embedded IronRuby within XAML</h3>  <p>To start, here’s a few examples of IronRuby code embedded within a custom IValueConverter and custom UserControl. As you’ll see, this can be very effective to embed scripting to define how to display the values bound, or to manipulate the content of the custom user control. Although, you must keep in mind that this is not limited to simple tasks such as these. You have the full power of the DLR and .NET within the DLR scripts being executed, so there really is no limit to what could be coded within.</p>  <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">=&quot;SLXamlEmbeddedScript.MainPage&quot;</span>
+
+After I wrote the “<a href="/post/2010/09/29/Intro-to-IronRubyDLR-Scripting-in-C-Silverlight-4-Application.aspx">Intro to IronRuby/DLR Scripting in C# Silverlight 4 Application</a>” post, I came across an interesting series on <a href="http://www.thinkbottomup.com.au/site/blog/Embedding_DLR_Scripts_in_XAML_Part_6">embedding DLR scripts in XAML with WPF</a>. This is an interesting series, although the code doesn’t run in Silverlight, due to the fact that Silverlight is only a subset of WPF and doesn’t support the <a href="http://msdn.microsoft.com/en-us/library/system.windows.markup.markupextension.aspx">System.Windows.Markup.MarkupExtension</a> class. I test out a couple things in Silverlight, and I was able to get similar DLR scripting functionality working under Silverlight using a combination of a simple, custom <a href="http://msdn.microsoft.com/en-us/library/system.windows.data.ivalueconverter.aspx">IValueConverter</a> and a custom UserControl class.  
+If you are unfamiliar with <a href="http://timheuer.com/blog/archive/2008/07/30/format-data-in-silverlight-databinding-valueconverter.aspx">value converters</a> and the <a href="http://msdn.microsoft.com/en-us/library/system.windows.data.ivalueconverter.aspx">IValueConverter</a> interface (same for both Silverlight and WPF), you may want to look it up and learn how to create your own. Value converters are tremendously helpful when performing data binding.  <h3>Embedded IronRuby within XAML</h3>  
+To start, here’s a few examples of IronRuby code embedded within a custom IValueConverter and custom UserControl. As you’ll see, this can be very effective to embed scripting to define how to display the values bound, or to manipulate the content of the custom user control. Although, you must keep in mind that this is not limited to simple tasks such as these. You have the full power of the DLR and .NET within the DLR scripts being executed, so there really is no limit to what could be coded within.  <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">=&quot;SLXamlEmbeddedScript.MainPage&quot;</span>
     <span class="attr">xmlns</span><span class="kwrd">=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span>
     <span class="attr">xmlns:x</span><span class="kwrd">=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span>
     <span class="attr">xmlns:d</span><span class="kwrd">=&quot;http://schemas.microsoft.com/expression/blend/2008&quot;</span>
@@ -101,13 +104,16 @@ redirect_from:
 }
 .csharpcode .lnum { color: #606060; }</style>
 
-<p>One thing to not about the above usage code, is that you must use <em>xml:space=”preserve”</em> when embeding the IronRuby/DLR scripts. This will ensure the line breaks are preserved in the resulting string. Without it the code will not run, since the IronRuby syntax depends on those line breaks.</p>
+
+One thing to not about the above usage code, is that you must use <em>xml:space=”preserve”</em> when embeding the IronRuby/DLR scripts. This will ensure the line breaks are preserved in the resulting string. Without it the code will not run, since the IronRuby syntax depends on those line breaks.
 
 <h3>DLRScriptValueConverter - IValueConverter</h3>
 
-<p>This value converter is really simple, and allows you to specify ConvertScript and ConvertBackScript to allow the value converter to convert in two way mode.</p>
 
-<p>Also, as you’ll see from the code, you could make this value converter work with both IronRuby and IronPython, as the Language property suggests. Although, for this simple example, the only supported language is IronRuby. To support IronPython it’s just a matter of instantiating the appropriate ScriptEngine class to Execute the script with.</p>
+This value converter is really simple, and allows you to specify ConvertScript and ConvertBackScript to allow the value converter to convert in two way mode.
+
+
+Also, as you’ll see from the code, you could make this value converter work with both IronRuby and IronPython, as the Language property suggests. Although, for this simple example, the only supported language is IronRuby. To support IronPython it’s just a matter of instantiating the appropriate ScriptEngine class to Execute the script with.
 
 <pre class="csharpcode"><span class="kwrd">using</span> System;
 <span class="kwrd">using</span> System.Windows.Data;
@@ -217,9 +223,11 @@ redirect_from:
 
 <h3>DLRScriptUserControl – Custom UserControl</h3>
 
-<p>Just like the value converter above, the DLRScriptUserControl control is really simple. It inherits from UserControl to allow you to set the controls Content property to the XAML you want it to display, and implements a Script property that allows you to define the IronRuby script to execute.</p>
 
-<p>When the IronRuby script is executed during the controls Loaded event, the control passes IronRuby a global variable named ‘Ctrl’ that contains a reference to the DLRScriptUserControl object itself. Like the XAML example above, this allows you to execute any code you want against the control once it is Loaded.</p>
+Just like the value converter above, the DLRScriptUserControl control is really simple. It inherits from UserControl to allow you to set the controls Content property to the XAML you want it to display, and implements a Script property that allows you to define the IronRuby script to execute.
+
+
+When the IronRuby script is executed during the controls Loaded event, the control passes IronRuby a global variable named ‘Ctrl’ that contains a reference to the DLRScriptUserControl object itself. Like the XAML example above, this allows you to execute any code you want against the control once it is Loaded.
 
 <pre class="csharpcode"><span class="kwrd">using</span> System.Windows;
 <span class="kwrd">using</span> System.Windows.Controls;
@@ -280,8 +288,11 @@ redirect_from:
 
 <h3>Conclusion</h3>
 
-<p>The above code is rather simple, and not meant for production use. It is just a basic prototype framework of how you might embed some DLR scripting within a Silverlight application. One thing I plan on looking into next (and I may or may not blog about it) is using the <a href="http://msdn.microsoft.com/en-us/library/cc190359%28VS.95%29.aspx">XamlReader</a> class to dynamically load the XAML and its embedded DLR script at runtime. The combination of both would allow you to build some very simple plugin-like functionality into your applications.</p>
 
-<p>Hope this helps someone.</p>
+The above code is rather simple, and not meant for production use. It is just a basic prototype framework of how you might embed some DLR scripting within a Silverlight application. One thing I plan on looking into next (and I may or may not blog about it) is using the <a href="http://msdn.microsoft.com/en-us/library/cc190359%28VS.95%29.aspx">XamlReader</a> class to dynamically load the XAML and its embedded DLR script at runtime. The combination of both would allow you to build some very simple plugin-like functionality into your applications.
 
-<p><strong>Continued Here: </strong><a href="/post/2010/10/17/Silverlight-Embed-IronRuby-within-XAML-Part-2.aspx"><strong>Silverlight: Embed IronRuby within XAML Part 2</strong></a></p>
+
+Hope this helps someone.
+
+
+**Continued Here: **<a href="/post/2010/10/17/Silverlight-Embed-IronRuby-within-XAML-Part-2.aspx">**Silverlight: Embed IronRuby within XAML Part 2**</a>

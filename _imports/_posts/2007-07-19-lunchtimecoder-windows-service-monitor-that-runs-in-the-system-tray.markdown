@@ -13,8 +13,13 @@ redirect_from:
   - /post.aspx?id=c416e9ba-ae7f-413f-83cf-1ecb5be1804b
 ---
 <!-- more -->
-<P>Yesterday I started writing a Windows Service Monitor, but I didn't finish it during my lunch time. And, since I had a little extra time last night and this morning (I'm off work today by the way), I spent some time finishing it. Yeah I know it's cheating but I'm the one who wrote the rules for this initiative anyway.</P>
-<P><IMG alt="LunchTimeCoder.ServiceMonitor minimized to the system tray" hspace=0 src="/download/lunchtimecoder/dotnet/windowsservicemonitor/images/screenshot002.png" align=right border=0></P>
-<P>This app is relatively simple, you pick what services to monitor on the local machine and it minimizes to the system tray. When a service you are monitoring stops, it will change the system tray icon to have a red X on it and popup a balloon tip telling you what services are stopped. You can then double-click the system tray icon to bring up the main UI of the app where you can start/stop any of the services you are monitoring.</P>
-<P>Both source code (C# only) and the compiled executable are available for download. If you have any additional suggestions for this app, let me know by posting a comment to this post.</P>
-<P><A href="/download/lunchtimecoder/dotnet/windowsservicemonitor">More information on LunchTimeCoder.ServiceMonitor here</A></P>
+
+Yesterday I started writing a Windows Service Monitor, but I didn't finish it during my lunch time. And, since I had a little extra time last night and this morning (I'm off work today by the way), I spent some time finishing it. Yeah I know it's cheating but I'm the one who wrote the rules for this initiative anyway.
+
+<IMG alt="LunchTimeCoder.ServiceMonitor minimized to the system tray" hspace=0 src="/download/lunchtimecoder/dotnet/windowsservicemonitor/images/screenshot002.png" align=right border=0>
+
+This app is relatively simple, you pick what services to monitor on the local machine and it minimizes to the system tray. When a service you are monitoring stops, it will change the system tray icon to have a red X on it and popup a balloon tip telling you what services are stopped. You can then double-click the system tray icon to bring up the main UI of the app where you can start/stop any of the services you are monitoring.
+
+Both source code (C# only) and the compiled executable are available for download. If you have any additional suggestions for this app, let me know by posting a comment to this post.
+
+<A href="/download/lunchtimecoder/dotnet/windowsservicemonitor">More information on LunchTimeCoder.ServiceMonitor here</A>

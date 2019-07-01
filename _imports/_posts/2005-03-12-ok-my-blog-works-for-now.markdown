@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=30fd81ee-edbd-4892-badc-817c367047b2
 ---
 <!-- more -->
-<P>Ok, I got it working by changing the web.config file (forcing a full restart of the <a title="ASP.NET" href="http://asp.net" target="_blank">ASP.NET</a> Application). I guess I'll juat have to do that each time it errors. :(</P>
-<P>I'm either going to make my own pblog or use the new Community Server : Blog; I'm undecided...</P>
+
+Ok, I got it working by changing the web.config file (forcing a full restart of the <a title="ASP.NET" href="http://asp.net" target="_blank">ASP.NET</a> Application). I guess I'll juat have to do that each time it errors. :(
+
+I'm either going to make my own pblog or use the new Community Server : Blog; I'm undecided...

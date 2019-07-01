@@ -13,7 +13,12 @@ redirect_from:
   - /post.aspx?id=4cc95c7e-52bc-487b-9b6f-54d0b59f0d02
 ---
 <!-- more -->
-<p>For some odd reason the Bing Maps team decided to not allow HTML tags within the Description property of the InfoBox class they baked into the Bing Maps v7 Ajax control. I don’t know why they would limit it in such a way, but thankfully I have figured out a hack to override it and allow HTML tags as desired.</p>  <p><a href="/images/postsBingMaps7HackInfoBoxDescriptionHTML.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="BingMaps7HackInfoBoxDescriptionHTML" border="0" alt="BingMaps7HackInfoBoxDescriptionHTML" src="/images/postsBingMaps7HackInfoBoxDescriptionHTML_thumb.png" width="485" height="255" /></a></p>  <p>Here’s a full sample page that adds a map with pushpin and infobox, and sets up overriding support to allow HTML tags within the infobox’s description:</p>  <p>&#160;</p>  <p>   <pre class="csharpcode">&lt;!DOCTYPE html&gt;
+
+For some odd reason the Bing Maps team decided to not allow HTML tags within the Description property of the InfoBox class they baked into the Bing Maps v7 Ajax control. I don’t know why they would limit it in such a way, but thankfully I have figured out a hack to override it and allow HTML tags as desired.  
+<a href="/images/postsBingMaps7HackInfoBoxDescriptionHTML.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="BingMaps7HackInfoBoxDescriptionHTML" border="0" alt="BingMaps7HackInfoBoxDescriptionHTML" src="/images/postsBingMaps7HackInfoBoxDescriptionHTML_thumb.png" width="485" height="255" /></a>  
+Here’s a full sample page that adds a map with pushpin and infobox, and sets up overriding support to allow HTML tags within the infobox’s description:  
+&#160;  
+   <pre class="csharpcode">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
    &lt;head&gt;
       &lt;title&gt;&lt;/title&gt;
@@ -70,7 +75,7 @@ redirect_from:
       &lt;div id=<span class="str">'myMap'</span> style=<span class="str">&quot;position:relative; width:500px; height:500px;&quot;</span>&gt;&lt;/div&gt;
    &lt;/body&gt;      
 &lt;/html&gt;</pre>
-  <em><strong>Warning:</strong> This is a hack and it relies on accessing part of the “non-public” API within the control. If the Bing Maps team decides to rename “cm1001_er_etr.descriptionNode” in a future release/update of the Bing Maps v7 control, then this code may stop working.</em><style type="text/css">
+  <em>**Warning:** This is a hack and it relies on accessing part of the “non-public” API within the control. If the Bing Maps team decides to rename “cm1001_er_etr.descriptionNode” in a future release/update of the Bing Maps v7 control, then this code may stop working.</em><style type="text/css">
 .csharpcode, .csharpcode pre
 {
 	font-size: small;
@@ -94,4 +99,4 @@ redirect_from:
 	width: 100%;
 	margin: 0em;
 }
-.csharpcode .lnum { color: #606060; }</style></p>
+.csharpcode .lnum { color: #606060; }</style>

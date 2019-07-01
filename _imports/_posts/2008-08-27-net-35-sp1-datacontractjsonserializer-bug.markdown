@@ -13,11 +13,15 @@ redirect_from:
   - /post.aspx?id=ff9ab12f-8a69-4fc7-9bd8-8c5e2ee873c4
 ---
 <!-- more -->
-<p><strong>Update 9/16/2008:</strong> After too long, I finally tried uninstalling SP1 and reinstalling it and that fixed the issue. I'm glad it's fixed now! I haven't seen any other suggestions for fixing this, and I first tried repairing the installation, but only an uninstall and reinstall fixed it. Hope this helps solves anyone elses headache with this issue.</p>
-<p>&nbsp;</p>
-<p>A few months ago (back in February actually) I blogged <a href="/post/2008/02/NET-35-JSON-Serialization-using-the-DataContractJsonSerializer.aspx">showing how to use the new DataContractJsonSerializer</a> to serialize your .NET objects to JSON. Everything was fine until .NET 3.5 SP1 was released. It appears that the .NET 3.5 SP1 update breaks the DataContractJsonSerializer. Using the exact <a href="/post/2008/02/NET-35-JSON-Serialization-using-the-DataContractJsonSerializer.aspx">same code from my previous post</a> that worked perfect on .NET 3.5 RTM, breaks with the following exceptions in .NET 3.5 SP1 RTM:</p>
+
+**Update 9/16/2008:** After too long, I finally tried uninstalling SP1 and reinstalling it and that fixed the issue. I'm glad it's fixed now! I haven't seen any other suggestions for fixing this, and I first tried repairing the installation, but only an uninstall and reinstall fixed it. Hope this helps solves anyone elses headache with this issue.
+
+ 
+
+A few months ago (back in February actually) I blogged <a href="/post/2008/02/NET-35-JSON-Serialization-using-the-DataContractJsonSerializer.aspx">showing how to use the new DataContractJsonSerializer</a> to serialize your .NET objects to JSON. Everything was fine until .NET 3.5 SP1 was released. It appears that the .NET 3.5 SP1 update breaks the DataContractJsonSerializer. Using the exact <a href="/post/2008/02/NET-35-JSON-Serialization-using-the-DataContractJsonSerializer.aspx">same code from my previous post</a> that worked perfect on .NET 3.5 RTM, breaks with the following exceptions in .NET 3.5 SP1 RTM:
 <h3>First Exception</h3>
-<p>This exception occurrs when running this code within a Console application:</p>
+
+This exception occurrs when running this code within a Console application:
 <pre class="brush: plain; first-line: 1; tab-size: 4; toolbar: false; ">System.MissingFieldException was unhandled
   Message="Field not found: 'System.Runtime.Serialization.XmlObjectSerializerContext.serializerKnownDataContracts'."
   Source="System.ServiceModel.Web"
@@ -35,7 +39,8 @@ redirect_from:
        at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
        at System.Threading.ThreadHelper.ThreadStart()
   InnerException:</pre>
-<p><strong>Code for Console app: </strong></p>
+
+**Code for Console app: **
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -108,7 +113,8 @@ namespace JsonSerializer_dotNet35SP1_IssueTest
     }
 } </pre>
 <h3>Second Exception</h3>
-<p>This exception occurrs when running this code within an ASP.NET WebPage:</p>
+
+This exception occurrs when running this code within an ASP.NET WebPage:
 <pre class="brush: plain; first-line: 1; tab-size: 4; toolbar: false; ">System.MissingMethodException was unhandled by user code
   Message="Method not found: 'Boolean System.Runtime.Serialization.DataContract.get_IsReference()'."
   Source="System.ServiceModel.Web"
@@ -128,7 +134,8 @@ namespace JsonSerializer_dotNet35SP1_IssueTest
        at System.Web.UI.Control.LoadRecursive()
        at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
   InnerException:</pre>
-<p><strong>Code for ASP.NET app:</strong></p>
+
+**Code for ASP.NET app:**
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">using System;
 using System.IO;
 using System.Runtime.Serialization;
@@ -195,6 +202,9 @@ public partial class _Default : System.Web.UI.Page
     }
 }</pre>
 <h3>WTF??</h3>
-<p>I searched for a possible solution, but the only thing I found was this link (<a href="http://forums.msdn.microsoft.com/en-US/csharpgeneral/thread/37558154-88a9-41f0-a9d6-a2cb4052a5ce/">http://forums.msdn.microsoft.com/en-US/csharpgeneral/thread/37558154-88a9-41f0-a9d6-a2cb4052a5ce/</a>) where someone mentions the First Exception above. The suggested solution was to use the KnownType Attribute on the object, but that doesn't help with my above code.</p>
-<p>Does anyone know a work around for this that doesn't involve using the older JavaScriptSerializer object?</p>
-<p>Well, for now, it looks like I'm almost the only one to experience this issue. <img title="Frown" src="/admin/tiny_mce/plugins/emotions/images/smiley-frown.gif" alt="Frown" border="0" /></p>
+
+I searched for a possible solution, but the only thing I found was this link (<a href="http://forums.msdn.microsoft.com/en-US/csharpgeneral/thread/37558154-88a9-41f0-a9d6-a2cb4052a5ce/">http://forums.msdn.microsoft.com/en-US/csharpgeneral/thread/37558154-88a9-41f0-a9d6-a2cb4052a5ce/</a>) where someone mentions the First Exception above. The suggested solution was to use the KnownType Attribute on the object, but that doesn't help with my above code.
+
+Does anyone know a work around for this that doesn't involve using the older JavaScriptSerializer object?
+
+Well, for now, it looks like I'm almost the only one to experience this issue. <img title="Frown" src="/admin/tiny_mce/plugins/emotions/images/smiley-frown.gif" alt="Frown" border="0" />

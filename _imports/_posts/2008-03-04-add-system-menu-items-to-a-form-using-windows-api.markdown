@@ -13,18 +13,33 @@ redirect_from:
   - /post.aspx?id=482989d9-32d1-4bd1-9692-c0718e4044c1
 ---
 <!-- more -->
-<p>This is something I used to have a code snippet for in VB6, but I haven't needed to do this in a while so I never wrote up an example in .NET. So, here's the simple code necessary to add some custom menu items to your applications System Menu. If you're not familiar, the System Menu is the menu that shows up if you click on the apps icon in the upper left or if you right click the app in the taskbar.</p>
-<p>Below is a screenshot of it in action along with the complete source code in C#.</p>
-<p><img src="/images/postsWin32API_AddSystemMenuItem.png" alt="" width="301" height="299" /></p>
-<p>[code:c#]</p>
-<p>using System;<br /> using System.Windows.Forms;<br /> using System.Runtime.InteropServices;</p>
-<p>namespace WinFormsSystemMenuTest<br /> {<br /> &nbsp;&nbsp;&nbsp; public partial class Form1 : Form<br /> &nbsp;&nbsp;&nbsp; {<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #region Win32 API Stuff</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Define the Win32 API methods we are going to use<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [DllImport("user32.dll")]<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; private static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [DllImport("user32.dll")]<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; private static extern bool InsertMenu(IntPtr hMenu, Int32 wPosition, Int32 wFlags, Int32 wIDNewItem, string lpNewItem);</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /// Define our Constants we will use<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public const Int32 WM_SYSCOMMAND = 0x112;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public const Int32 MF_SEPARATOR = 0x800;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public const Int32 MF_BYPOSITION = 0x400;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public const Int32 MF_STRING = 0x0;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #endregion<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // The constants we'll use to identify our custom system menu items<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public const Int32 _SettingsSysMenuID = 1000;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public const Int32 _AboutSysMenuID = 1001;</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public Form1()<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; InitializeComponent();<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; private void Form1_Load(object sender, EventArgs e)<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /// Get the Handle for the Forms System Menu<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IntPtr systemMenuHandle = GetSystemMenu(this.Handle, false);</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /// Create our new System Menu items just before the Close menu item<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; InsertMenu(systemMenuHandle, 5, MF_BYPOSITION | MF_SEPARATOR, 0, string.Empty); // &lt;-- Add a menu seperator<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; InsertMenu(systemMenuHandle, 6, MF_BYPOSITION, _SettingsSysMenuID, "Settings...");<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; InsertMenu(systemMenuHandle, 7, MF_BYPOSITION, _AboutSysMenuID, "About...");<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; protected override void WndProc(ref Message m)<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Check if a System Command has been executed<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (m.Msg == WM_SYSCOMMAND)<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Execute the appropriate code for the System Menu item that was clicked<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; switch (m.WParam.ToInt32())<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case _SettingsSysMenuID:<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MessageBox.Show("\"Settings\" was clicked");<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case _AboutSysMenuID:<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MessageBox.Show("\"About\" was clicked");<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; base.WndProc(ref m);<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br /> &nbsp;&nbsp;&nbsp; }<br /> }</p>
-<p>[/code]</p>
-<p>Here's a link on how to "<a href="/post/2008/03/Add-System-Menu-Items-to-WPF-Window-using-Win32-API.aspx">Add System Menu Items to WPF Window using Win32 API</a>"</p>
+
+This is something I used to have a code snippet for in VB6, but I haven't needed to do this in a while so I never wrote up an example in .NET. So, here's the simple code necessary to add some custom menu items to your applications System Menu. If you're not familiar, the System Menu is the menu that shows up if you click on the apps icon in the upper left or if you right click the app in the taskbar.
+
+Below is a screenshot of it in action along with the complete source code in C#.
+
+<img src="/images/postsWin32API_AddSystemMenuItem.png" alt="" width="301" height="299" />
+
+[code:c#]
+
+using System;<br /> using System.Windows.Forms;<br /> using System.Runtime.InteropServices;
+
+namespace WinFormsSystemMenuTest<br /> {<br />     public partial class Form1 : Form<br />     {<br />         #region Win32 API Stuff
+
+        // Define the Win32 API methods we are going to use<br />         [DllImport("user32.dll")]<br />         private static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+
+        [DllImport("user32.dll")]<br />         private static extern bool InsertMenu(IntPtr hMenu, Int32 wPosition, Int32 wFlags, Int32 wIDNewItem, string lpNewItem);
+
+        /// Define our Constants we will use<br />         public const Int32 WM_SYSCOMMAND = 0x112;<br />         public const Int32 MF_SEPARATOR = 0x800;<br />         public const Int32 MF_BYPOSITION = 0x400;<br />         public const Int32 MF_STRING = 0x0;<br />         <br />         #endregion<br />         <br />         // The constants we'll use to identify our custom system menu items<br />         public const Int32 _SettingsSysMenuID = 1000;<br />         public const Int32 _AboutSysMenuID = 1001;
+
+        public Form1()<br />         {<br />             InitializeComponent();<br />         }
+
+        private void Form1_Load(object sender, EventArgs e)<br />         {<br />             /// Get the Handle for the Forms System Menu<br />             IntPtr systemMenuHandle = GetSystemMenu(this.Handle, false);
+
+            /// Create our new System Menu items just before the Close menu item<br />             InsertMenu(systemMenuHandle, 5, MF_BYPOSITION | MF_SEPARATOR, 0, string.Empty); // &lt;-- Add a menu seperator<br />             InsertMenu(systemMenuHandle, 6, MF_BYPOSITION, _SettingsSysMenuID, "Settings...");<br />             InsertMenu(systemMenuHandle, 7, MF_BYPOSITION, _AboutSysMenuID, "About...");<br />         }
+
+        protected override void WndProc(ref Message m)<br />         {<br />             // Check if a System Command has been executed<br />             if (m.Msg == WM_SYSCOMMAND)<br />             {<br />                 // Execute the appropriate code for the System Menu item that was clicked<br />                 switch (m.WParam.ToInt32())<br />                 {<br />                     case _SettingsSysMenuID:<br />                         MessageBox.Show("\"Settings\" was clicked");<br />                         break;<br />                     case _AboutSysMenuID:<br />                         MessageBox.Show("\"About\" was clicked");<br />                         break;<br />                 }<br />             }<br />             <br />             base.WndProc(ref m);<br />         }<br />     }<br /> }
+
+```
+
+Here's a link on how to "<a href="/post/2008/03/Add-System-Menu-Items-to-WPF-Window-using-Win32-API.aspx">Add System Menu Items to WPF Window using Win32 API</a>"

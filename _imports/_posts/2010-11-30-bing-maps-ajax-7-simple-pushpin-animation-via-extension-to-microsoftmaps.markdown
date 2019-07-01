@@ -13,7 +13,10 @@ redirect_from:
   - /post.aspx?id=db9b20db-30e1-4f41-b114-c47bd7b8b35d
 ---
 <!-- more -->
-<p>When updating the location a pushpin using the Bing Maps Ajax Control, the pushpin instantly moves to its new location. Sometimes this may work, but other times it may be nice to animate the movement. Updating the location a vehicle in an asset tracking application is one example where it would be nice to animate the movement.</p>  <p>I wrote a simple extension to the Bing Maps Ajax v7 control that adds the “Pushpin.moveLocation” method to perform such an animation.</p>  <h3>Usage</h3>  <p>Let’s start with some sample usage of the “Pushpin.moveLocation” method.</p>  <pre class="csharpcode"><span class="rem">// Move pushpin to new location</span>
+
+When updating the location a pushpin using the Bing Maps Ajax Control, the pushpin instantly moves to its new location. Sometimes this may work, but other times it may be nice to animate the movement. Updating the location a vehicle in an asset tracking application is one example where it would be nice to animate the movement.  
+I wrote a simple extension to the Bing Maps Ajax v7 control that adds the “Pushpin.moveLocation” method to perform such an animation.  <h3>Usage</h3>  
+Let’s start with some sample usage of the “Pushpin.moveLocation” method.  <pre class="csharpcode"><span class="rem">// Move pushpin to new location</span>
 <span class="rem">// using the default animation speed</span>
 <span class="rem">// of 1000 milliseconds (1 second)</span>
 pushpin.moveLocation(
@@ -30,21 +33,24 @@ pushpin.moveLocation(
 
 <h3>Method Reference</h3>
 
-<p>Here’s some documentation for the “Pushpin.moveLocation” method:</p>
 
-<p><strong>Pushpin.moveLocation(location, speed)</strong>
+Here’s some documentation for the “Pushpin.moveLocation” method:
 
-  <br />This methods moves the pushpin to a new location using an animation of slowly moving the pushpin over the period of the specified interval.</p>
+
+**Pushpin.moveLocation(location, speed)**
+
+  <br />This methods moves the pushpin to a new location using an animation of slowly moving the pushpin over the period of the specified interval.
 
 <ol>
-  <li><strong>location </strong>– The Location to move the pushpin to.</li>
+  <li>**location **– The Location to move the pushpin to.</li>
 
-  <li><strong>speed</strong> – The time period to perform the animation, in milliseconds. If not specified, the default is 1000 milliseconds, or 1 second.</li>
+  <li>**speed** – The time period to perform the animation, in milliseconds. If not specified, the default is 1000 milliseconds, or 1 second.</li>
 </ol>
 
 <h3>Full Extension Source Code</h3>
 
-<p>Here’s the full source code for adding the “Pushpin.moveLocation” extension to Bing Maps Ajax v7.</p>
+
+Here’s the full source code for adding the “Pushpin.moveLocation” extension to Bing Maps Ajax v7.
 
 <pre class="csharpcode">(<span class="kwrd">function</span> ($m) {
     (<span class="kwrd">function</span>(proto) {
@@ -112,4 +118,5 @@ pushpin.moveLocation(
 
 <h3>Conclusion</h3>
 
-<p>This is a really simple Pushpin animation extension that does its job very nicely. However, this is just the beginning of what a more feature full extension would provide.</p>
+
+This is a really simple Pushpin animation extension that does its job very nicely. However, this is just the beginning of what a more feature full extension would provide.

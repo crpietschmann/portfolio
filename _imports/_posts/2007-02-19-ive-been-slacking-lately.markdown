@@ -13,6 +13,9 @@ redirect_from:
   - /post.aspx?id=5a64fa6d-adb0-4dd2-b572-b42ce2847494
 ---
 <!-- more -->
-<P>Basically, I haven't been working on much in my spare time lately.</P>
-<P>A week and a half ago, my wife and I got back from spending a week in Punta Cana, Dominican Republic. We went to an all inclusive resort and everything was very relaxing. Neither of us had ever flown, so this was a whole new experience for both.</P>
-<P>Well, it basically took a week to get back in the flow of things&nbsp;after being in paradise for a week. And, now that I'm back in the flow, I'll be continuing work on all my side projects.</P>
+
+Basically, I haven't been working on much in my spare time lately.
+
+A week and a half ago, my wife and I got back from spending a week in Punta Cana, Dominican Republic. We went to an all inclusive resort and everything was very relaxing. Neither of us had ever flown, so this was a whole new experience for both.
+
+Well, it basically took a week to get back in the flow of things after being in paradise for a week. And, now that I'm back in the flow, I'll be continuing work on all my side projects.

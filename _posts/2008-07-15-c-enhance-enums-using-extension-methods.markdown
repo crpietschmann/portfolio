@@ -13,8 +13,10 @@ redirect_from:
   - /post.aspx?id=4bc01ef2-0463-4739-aa4d-bfe73c7a00bb
 ---
 <!-- more -->
-<p>Extension Methods are one of the coolest features that have been added in .NET 3.5. I've heard arguments that there is no reason to use them, and the only reason Microsoft added them is to enable the ability to buid LINQ. Well, I do not entirely agree with that statement; in fact, I have found a cool way to use Extension Methods to enhance the System.Enum object since it cannot be inherited. Even though Enum can not be inherited, it can be extended using Extension Methods.</p>
-<p>Here's some example code for a simple Enum that has a DescriptionAttribute applied to each of it's values:</p>
+
+Extension Methods are one of the coolest features that have been added in .NET 3.5. I've heard arguments that there is no reason to use them, and the only reason Microsoft added them is to enable the ability to buid LINQ. Well, I do not entirely agree with that statement; in fact, I have found a cool way to use Extension Methods to enhance the System.Enum object since it cannot be inherited. Even though Enum can not be inherited, it can be extended using Extension Methods.
+
+Here's some example code for a simple Enum that has a DescriptionAttribute applied to each of it's values:
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">public enum LocalizationMarket
 {
     [Description("en-US")]
@@ -22,7 +24,8 @@ redirect_from:
     [Description("en-ES")]
     Spanish = 2
 }</pre>
-<p>And here's the code to an Extension Method that extends the LocalizationMarket Enum with the ToDescriptionString() method that returns the DescriptionAttributes value:</p>
+
+And here's the code to an Extension Method that extends the LocalizationMarket Enum with the ToDescriptionString() method that returns the DescriptionAttributes value:
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">public static class LocalizationMarketExtensions
 {
     public static string ToDescriptionString(this LocalizationMarket val)
@@ -31,7 +34,9 @@ redirect_from:
         return attributes.Length &gt; 0 ? attributes[0].Description : string.Empty;
     }
 }</pre>
-<p>The usage of this new method is really simple:</p>
+
+The usage of this new method is really simple:
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">LocalizationMarket myLocal = LocalizationMarket.English;
 MessageBox.Show( myLocal.ToDescriptionString() ); // this will show "en-US" in the MessageBox that's shown</pre>
-<p>Now one thing you must remember with using Extension Methods is you may not want to extend the System.Enum Type, but instead just extend the Enums you create only.</p>
+
+Now one thing you must remember with using Extension Methods is you may not want to extend the System.Enum Type, but instead just extend the Enums you create only.

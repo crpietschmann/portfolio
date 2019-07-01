@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=078b5298-9c02-4b20-990b-4b14a6b6c2bd
 ---
 <!-- more -->
-<P>Visual Studio &#8220;Whidbey&#8220; 2005 will ship by the end of 2005 and SQL Server &#8220;Yukon&#8220; 2005 will ship simultaneously.</P>
-<P>Source: <A href="http://www.eweek.com/article2/0,1759,1777752,00.asp?kc=EWRSS03119TX1K0000594">http://www.eweek.com/article2/0,1759,1777752,00.asp?kc=EWRSS03119TX1K0000594</A></P>
+
+Visual Studio &#8220;Whidbey&#8220; 2005 will ship by the end of 2005 and SQL Server &#8220;Yukon&#8220; 2005 will ship simultaneously.
+
+Source: <A href="http://www.eweek.com/article2/0,1759,1777752,00.asp?kc=EWRSS03119TX1K0000594">http://www.eweek.com/article2/0,1759,1777752,00.asp?kc=EWRSS03119TX1K0000594</A>

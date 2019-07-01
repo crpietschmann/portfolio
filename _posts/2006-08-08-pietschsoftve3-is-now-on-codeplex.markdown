@@ -13,12 +13,15 @@ redirect_from:
   - /post.aspx?id=1585c38e-c19e-49fc-a0e6-1cc4609395dc
 ---
 <!-- more -->
-<p>
+
+
 I am still hosting the demo site but I have moved the project into <a href="http://www.codeplex.com/pietschsoftve3">CodePlex</a>. The CodePlex site offers a Discussion board (forums) and Issue Tracker. This will allow me to better support the PietschSoft.VE3 map control and library.
-</p>
-<p>
+
+
+
 I have also placed PietchSoft.VE3 under the Microsoft Shared Source Community License (SS-CL). I hope this will clear up any licensing questions regarding the use of this control.
-</p>
-<p>
+
+
+
 <a href="http://simplovation.com/Page/WebMapsVE.aspx">PietschSoft.VE3 - ASP.NET Virtual Earth Map Control</a>
-</p>
+

@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=14484f1d-f5ed-4dfa-9075-ba3ce729769e
 ---
 <!-- more -->
-<P>Apparently I downloaded the 64-bit version of Vista at a good time. They have since removed it from the list&nbsp;in MSDN subscriber downloads. I wonder why they removed it?</P>
-<P><STRONG>Update 12/11/2006:</STRONG> I don't know exactly when they put it back up, but Vista x64 is back up on MSDN Downloads.</P>
+
+Apparently I downloaded the 64-bit version of Vista at a good time. They have since removed it from the list in MSDN subscriber downloads. I wonder why they removed it?
+
+<STRONG>Update 12/11/2006:</STRONG> I don't know exactly when they put it back up, but Vista x64 is back up on MSDN Downloads.

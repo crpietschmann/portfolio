@@ -13,7 +13,8 @@ redirect_from:
   - /post.aspx?id=99f42301-b361-4bd0-8968-dd138820d57e
 ---
 <!-- more -->
-<p>
+
+
 I just started a page at the below link that I&#39;m lising a bunch of Virtual Earth Developer Resources that I know of. The reason I&#39;m doing this is because there just aren&#39;t any really good lists of resources out there, and there are a TON of resources that you probably don&#39;t even know about. This isn&#39;t going to be an all inclusive list (that would be impossible), but I&#39;ll try to make it the best list of resources I can. Hope it helps some of you discover great content. 
-</p>
+
 <a href="/page/Virtual-Earth-Developer-Resources.aspx">/page/Virtual-Earth-Developer-Resources.aspx</a>

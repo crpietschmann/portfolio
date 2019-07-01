@@ -13,9 +13,12 @@ redirect_from:
   - /post.aspx?id=09bd09f5-2cd1-4c0b-a273-eb7c91c3acb3
 ---
 <!-- more -->
-<p>One of the tricky things that you need to work around when programming Virtual Earth is the VEMap.GetCenter() method doesn't work when&nbsp;displaying the&nbsp;Birdseye or Oblique Map Style. I'm not exactly sure what the reasoning for this is, but this is one thing that I would like to see fixed in a future version. Luckily, there is an unsupported method of doing this.</p>
-<p>The code shown below&nbsp;gets the center Lat/Long coordinate for the BirdseyeScene being shown, not the actual center of the Map. This isn't exaclty what we're looking for, but at least it gives us a better idea of the current position of the map than nothing.</p>
-<p>Here's a full example page that demonstrates getting the Map's center Lat/Long "relatively" when in Birdseye or Oblique Map Style:</p>
+
+One of the tricky things that you need to work around when programming Virtual Earth is the VEMap.GetCenter() method doesn't work when displaying the Birdseye or Oblique Map Style. I'm not exactly sure what the reasoning for this is, but this is one thing that I would like to see fixed in a future version. Luckily, there is an unsupported method of doing this.
+
+The code shown below gets the center Lat/Long coordinate for the BirdseyeScene being shown, not the actual center of the Map. This isn't exaclty what we're looking for, but at least it gives us a better idea of the current position of the map than nothing.
+
+Here's a full example page that demonstrates getting the Map's center Lat/Long "relatively" when in Birdseye or Oblique Map Style:
 <pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -73,4 +76,5 @@ redirect_from:
         &lt;div id='myMap' style="position:relative; width:400px; height:400px;"&gt;&lt;/div&gt;
     &lt;/body&gt;
 &lt;/html&gt;</pre>
-<p>&nbsp;</p>
+
+ 

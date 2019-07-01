@@ -13,12 +13,17 @@ redirect_from:
   - /post.aspx?id=3ad2707d-615b-45a6-9a69-29c5d8bc1c28
 ---
 <!-- more -->
-<p>I&rsquo;ve decided to expand a little on using OpenStreetMap imagery with the new Bing Maps Silverlight Control in response to the following <a rel="nofollow" href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx#id_a250bec2-e7f3-4324-8837-e167eff776e4">comment posted by John O&rsquo;Brien</a> on my previous &ldquo;<a href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx">Display OpenStreetMap Imagery using Bing Maps Silverlight Control v1</a>&rdquo; post:</p>
-<p><em>&ldquo;Very close Chris but you will still need to enter a Bing Maps AppID.      <br />If however you create your own map from MapCore and don't use the Bing Maps services then you don't need creditials&rdquo;</em></p>
-<p>Yes, it is true that by just displaying the OpenStreetMap imagery on the Bing Maps Silverlight Control using a custom TileSource you still need to provide the control a Bing Maps Key (App ID). However, what if you inherited from the &ldquo;MapCore&rdquo; base class (the same one that the Bing Maps &ldquo;Map&rdquo; object inherits) and built out a full OpenStreetMap Map control?</p>
+
+I&rsquo;ve decided to expand a little on using OpenStreetMap imagery with the new Bing Maps Silverlight Control in response to the following <a rel="nofollow" href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx#id_a250bec2-e7f3-4324-8837-e167eff776e4">comment posted by John O&rsquo;Brien</a> on my previous &ldquo;<a href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx">Display OpenStreetMap Imagery using Bing Maps Silverlight Control v1</a>&rdquo; post:
+
+<em>&ldquo;Very close Chris but you will still need to enter a Bing Maps AppID.      <br />If however you create your own map from MapCore and don't use the Bing Maps services then you don't need creditials&rdquo;</em>
+
+Yes, it is true that by just displaying the OpenStreetMap imagery on the Bing Maps Silverlight Control using a custom TileSource you still need to provide the control a Bing Maps Key (App ID). However, what if you inherited from the &ldquo;MapCore&rdquo; base class (the same one that the Bing Maps &ldquo;Map&rdquo; object inherits) and built out a full OpenStreetMap Map control?
 <h3>Custom &ldquo;OpenStreetMap&rdquo; Control</h3>
-<p>I built out a test &ldquo;OpenStreetMap&rdquo; object that inherits from &ldquo;MapCore&rdquo; that automatically sets the Map Mode to a &ldquo;OpenStreetMapMode&rdquo; object that loads up the OpenStreetMap imagery automatically. This was some simple code to write, basically just extending only a little bit on top of what I posted in the previous post.</p>
-<p>Here&rsquo;s the code for the &ldquo;OpenStreetMap&rdquo;, &ldquo;OpenStreetMapMode&rdquo; and &ldquo;OpenStreetMapTileSource&rdquo; objects:</p>
+
+I built out a test &ldquo;OpenStreetMap&rdquo; object that inherits from &ldquo;MapCore&rdquo; that automatically sets the Map Mode to a &ldquo;OpenStreetMapMode&rdquo; object that loads up the OpenStreetMap imagery automatically. This was some simple code to write, basically just extending only a little bit on top of what I posted in the previous post.
+
+Here&rsquo;s the code for the &ldquo;OpenStreetMap&rdquo;, &ldquo;OpenStreetMapMode&rdquo; and &ldquo;OpenStreetMapTileSource&rdquo; objects:
 <pre class="csharpcode"><span class="kwrd">using</span> System;
 <span class="kwrd">using</span> Microsoft.Maps.MapControl;
 <span class="kwrd">using</span> Microsoft.Maps.MapControl.Core;
@@ -59,9 +64,12 @@ redirect_from:
         }
     }
 }</pre>
-<p><!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } --></p>
-<p>&nbsp;</p>
-<p>And, here&rsquo;s an example of using this new &ldquo;OpenStreetMap&rdquo; control:</p>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+
+ 
+
+And, here&rsquo;s an example of using this new &ldquo;OpenStreetMap&rdquo; control:
 <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="SilverlightApplication1.MainPage"</span>
     <span class="attr">xmlns</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span> 
     <span class="attr">xmlns:x</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml"</span>
@@ -79,13 +87,19 @@ redirect_from:
         <span class="kwrd">&lt;/</span><span class="html">local:OpenStreetMap</span><span class="kwrd">&gt;</span>
     <span class="kwrd">&lt;/</span><span class="html">Grid</span><span class="kwrd">&gt;</span>
 <span class="kwrd">&lt;/</span><span class="html">UserControl</span><span class="kwrd">&gt;</span></pre>
-<p><!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } --></p>
-<p>&nbsp;</p>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+
+ 
 <h3>What About Navigation Controls?</h3>
-<p>One side effect of creating this completely custom Map Control based off MapCore is that the other controls that the &ldquo;Map&rdquo; control includes automatically do not get displayed.</p>
-<p>The &ldquo;Map&rdquo; control displays the &ldquo;MapControlNavigationBar&rdquo; control via the &ldquo;MapForeground&rdquo; object, however due to the MapForeground constructor that lets you tell it what MapBase object to attach to being marked &ldquo;internal&rdquo; is seems that it can&rsquo;t be easily reused.</p>
-<p>However, with a little help from the newest controls in developments within the <a href="http://deepearth.codeplex.com/">DeepEarth</a> project, you can fairly simply modify the Bing Maps Navigation control within the DeepEarth project to be used with the new &ldquo;OpenStreetMap&rdquo; control.</p>
-<p>Here&rsquo;s the code I worked up for a DeepEarth NavigationPanel for the &ldquo;OpenStreetMap&rdquo; control created earlier:</p>
+
+One side effect of creating this completely custom Map Control based off MapCore is that the other controls that the &ldquo;Map&rdquo; control includes automatically do not get displayed.
+
+The &ldquo;Map&rdquo; control displays the &ldquo;MapControlNavigationBar&rdquo; control via the &ldquo;MapForeground&rdquo; object, however due to the MapForeground constructor that lets you tell it what MapBase object to attach to being marked &ldquo;internal&rdquo; is seems that it can&rsquo;t be easily reused.
+
+However, with a little help from the newest controls in developments within the <a href="http://deepearth.codeplex.com/">DeepEarth</a> project, you can fairly simply modify the Bing Maps Navigation control within the DeepEarth project to be used with the new &ldquo;OpenStreetMap&rdquo; control.
+
+Here&rsquo;s the code I worked up for a DeepEarth NavigationPanel for the &ldquo;OpenStreetMap&rdquo; control created earlier:
 <pre class="csharpcode"><span class="kwrd">using</span> System;
 <span class="kwrd">using</span> System.Windows;
 <span class="kwrd">using</span> DeepEarth.Client.BingMaps.Convertors;
@@ -187,8 +201,10 @@ redirect_from:
 
     }
 }</pre>
-<p><!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } --></p>
-<p>Also, hers a small utility method that I needed to modify slightly within the DeepEarth project to get the above NavigationPanel to work:</p>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+
+Also, hers a small utility method that I needed to modify slightly within the DeepEarth project to get the above NavigationPanel to work:
 <pre class="csharpcode"><span class="kwrd">using</span> Microsoft.Maps.MapControl.Core;
 <span class="kwrd">using</span> Point = System.Windows.Point;
 
@@ -206,16 +222,24 @@ redirect_from:
         }
     }
 }</pre>
-<p>&nbsp;</p>
+
+ 
 <h3>Suggestion for the DeepEarth Preview Controls</h3>
-<p>One big suggestion I have for the DeepEarth projects new Preview Controls is to make the Bing Maps objects/libraries within the project use/accept &ldquo;MapCore&rdquo; or &ldquo;MapBase&rdquo; where ever it can instead of &ldquo;Map&rdquo;. This way as much of the DeepEarth code can be reused, without modification, when building a completely custom Map Control using the Bing Maps Silverlight SDK.</p>
-<p>A perfect example of this are the modifications I needed to make to the NavigationPanel object and Utilities.Pan method posted above. By simply changing them from referencing/using &ldquo;Map&rdquo; to &ldquo;MapCore&rdquo; instead, they can not be used with any Map Control built using the Bing Maps Silverlight SDK.</p>
+
+One big suggestion I have for the DeepEarth projects new Preview Controls is to make the Bing Maps objects/libraries within the project use/accept &ldquo;MapCore&rdquo; or &ldquo;MapBase&rdquo; where ever it can instead of &ldquo;Map&rdquo;. This way as much of the DeepEarth code can be reused, without modification, when building a completely custom Map Control using the Bing Maps Silverlight SDK.
+
+A perfect example of this are the modifications I needed to make to the NavigationPanel object and Utilities.Pan method posted above. By simply changing them from referencing/using &ldquo;Map&rdquo; to &ldquo;MapCore&rdquo; instead, they can not be used with any Map Control built using the Bing Maps Silverlight SDK.
 <h3>Conclusion</h3>
-<p>Even though the above code works, it&rsquo;s really just a prototype of what can be done using the current Preview controls within the DeepEarth project along with the new Bing Maps Silverlight Control. There is definitely some cool stuff to be done with both the Bing Maps Silverlight SDK and the DeepEarth project!</p>
-<p>Anyway, here&rsquo;s a download link to the full code of the project for the above code:</p>
+
+Even though the above code works, it&rsquo;s really just a prototype of what can be done using the current Preview controls within the DeepEarth project along with the new Bing Maps Silverlight Control. There is definitely some cool stuff to be done with both the Bing Maps Silverlight SDK and the DeepEarth project!
+
+Anyway, here&rsquo;s a download link to the full code of the project for the above code:
 <div id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:d6d36e07-63fe-464f-82cc-7b8216c68372" class="wlWriterEditableSmartContent" style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px">
-<p>&nbsp;</p>
+
+ 
 <div><a href="/file.axd?file=OpenStreetMapDeepEarthPrototype_1.zip" target="_self">OpenStreetMapDeepEarthPrototype.zip</a></div>
-<p>&nbsp;</p>
+
+ 
 </div>
-<p>&nbsp;</p>
+
+ 

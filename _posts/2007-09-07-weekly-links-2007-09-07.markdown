@@ -13,8 +13,13 @@ redirect_from:
   - /post.aspx?id=3a7bd0c6-d33e-42d7-9cd1-e763e854734e
 ---
 <!-- more -->
-<P><STRONG>C# - Generics<BR></STRONG><A href="http://www.codeguru.com/csharp/sample_chapter/article.php/c11673/">C# Generics, Part 2/4: Constraints, Members, Operators</A>&nbsp;- Patrick Smacchia</P>
-<P><A href="http://adamesterline.com/2007/03/08/c-multi-type-generic-constraints/">C# Multi-Type Generic Constraints</A> - Adam Esterline</P>
-<P><A href="http://blogs.msdn.com/danvallejo/archive/2004/10/14/242515.aspx">C# 2.0 Constraints on Generic Types</A> -&nbsp;Dan Vallejo</P>
-<P><STRONG>ASP.NET 2.0<BR></STRONG><A href="http://www.theserverside.net/tt/articles/showarticle.tss?id=CreatingProfileProvider">Creating a Custom ASP.NET Profile Provider</A>&nbsp;- Shawn Wildermuth</P>
-<P><STRONG>Misc.<BR></STRONG><A href="http://www.secretgeek.net/25steps.asp">25 steps for building a Micro-ISV</A> - Leon Bambrick</P>
+
+<STRONG>C# - Generics<BR></STRONG><A href="http://www.codeguru.com/csharp/sample_chapter/article.php/c11673/">C# Generics, Part 2/4: Constraints, Members, Operators</A> - Patrick Smacchia
+
+<A href="http://adamesterline.com/2007/03/08/c-multi-type-generic-constraints/">C# Multi-Type Generic Constraints</A> - Adam Esterline
+
+<A href="http://blogs.msdn.com/danvallejo/archive/2004/10/14/242515.aspx">C# 2.0 Constraints on Generic Types</A> - Dan Vallejo
+
+<STRONG>ASP.NET 2.0<BR></STRONG><A href="http://www.theserverside.net/tt/articles/showarticle.tss?id=CreatingProfileProvider">Creating a Custom ASP.NET Profile Provider</A> - Shawn Wildermuth
+
+<STRONG>Misc.<BR></STRONG><A href="http://www.secretgeek.net/25steps.asp">25 steps for building a Micro-ISV</A> - Leon Bambrick

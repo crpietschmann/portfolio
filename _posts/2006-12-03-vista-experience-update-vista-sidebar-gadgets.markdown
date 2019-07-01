@@ -13,9 +13,15 @@ redirect_from:
   - /post.aspx?id=b0029f4d-2160-4384-976f-704e3994dd30
 ---
 <!-- more -->
-<p>There 11 Sidebar Gadgets that come baked into Vista. Some basic ones like a photo&nbsp; Slide Show, Calendar, Clock, CPU Meter, RSS Feed Headlines, Weather and a couple more.&nbsp;But, what if I want to create one that offers different functionality?</p>
-<p><strong>How can I create a custom Sidebar Gadget?</strong></p>
-<p>It's actually rather easy to do. As long as you are comfortable with HTML, JavaScript and CSS with splash of XML.</p>
-<p>The <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/sidebar/sidebar/overviews/gdo.asp">Gadget Development Overview</a>&nbsp;article in the MSDN library explains how easy it is to create a simple Hello World gadget.</p>
-<p>There are also some other resource links listed at the <a href="http://microsoftgadgets.com/build">MicrosoftGadgets.com</a> website.</p>
-<p>The Vista Sidebar offers&nbsp;some really cool potential for some awesome gadgets to be created.</p>
+
+There 11 Sidebar Gadgets that come baked into Vista. Some basic ones like a photo  Slide Show, Calendar, Clock, CPU Meter, RSS Feed Headlines, Weather and a couple more. But, what if I want to create one that offers different functionality?
+
+**How can I create a custom Sidebar Gadget?**
+
+It's actually rather easy to do. As long as you are comfortable with HTML, JavaScript and CSS with splash of XML.
+
+The <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/sidebar/sidebar/overviews/gdo.asp">Gadget Development Overview</a> article in the MSDN library explains how easy it is to create a simple Hello World gadget.
+
+There are also some other resource links listed at the <a href="http://microsoftgadgets.com/build">MicrosoftGadgets.com</a> website.
+
+The Vista Sidebar offers some really cool potential for some awesome gadgets to be created.

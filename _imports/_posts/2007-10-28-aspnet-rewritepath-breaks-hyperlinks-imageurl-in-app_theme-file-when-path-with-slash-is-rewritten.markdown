@@ -13,8 +13,13 @@ redirect_from:
   - /post.aspx?id=904fc37a-0ba4-4068-bebf-1c3cb15f8808
 ---
 <!-- more -->
-<p>Rewriting&nbsp;a path with a slash ("/") in it will cause a HyperLink's image specified in the ImageUrl property within an App_Theme file to not be displayed. This can also lead to a "Cannot use a leading ..." error when running the website within IIS.</p>
-<p>Here's a screenshot of the issue occuring:</p>
-<p><img src="/images/postsASPNETRewritePathHyperLinkBug.png" alt="" />&nbsp;</p>
-<p>This is kind of a strange bug, since doing the same thing with an Image works just fine. It's only the HyperLink that breaks. I experienced this issue the other day, and it took me a little bit to figure out what was causing the problem. The answer is ASP.NET, kind of.</p>
-<p>Download Code: <a rel="enclosure" href="/file.axd?file=ASPNETRewritePathHyperLinkBug.zip">ASPNETRewritePathHyperLinkBug.zip (3.28 kb)</a></p>
+
+Rewriting a path with a slash ("/") in it will cause a HyperLink's image specified in the ImageUrl property within an App_Theme file to not be displayed. This can also lead to a "Cannot use a leading ..." error when running the website within IIS.
+
+Here's a screenshot of the issue occuring:
+
+<img src="/images/postsASPNETRewritePathHyperLinkBug.png" alt="" /> 
+
+This is kind of a strange bug, since doing the same thing with an Image works just fine. It's only the HyperLink that breaks. I experienced this issue the other day, and it took me a little bit to figure out what was causing the problem. The answer is ASP.NET, kind of.
+
+Download Code: <a rel="enclosure" href="/file.axd?file=ASPNETRewritePathHyperLinkBug.zip">ASPNETRewritePathHyperLinkBug.zip (3.28 kb)</a>

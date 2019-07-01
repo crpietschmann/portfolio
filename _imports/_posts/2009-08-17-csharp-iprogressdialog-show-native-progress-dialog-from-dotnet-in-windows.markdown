@@ -13,11 +13,15 @@ redirect_from:
   - /post.aspx?id=8cdbe666-e375-4311-b6ca-4794ec44ff41
 ---
 <!-- more -->
-<p><a href="/images/postsCSharp-IProgressDialog-Native-dotNet-in-Windows.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="CSharp-IProgressDialog-Native-dotNet-in-Windows" src="/images/postsCSharp-IProgressDialog-Native-dotNet-in-Windows_thumb.png" border="0" alt="CSharp-IProgressDialog-Native-dotNet-in-Windows" width="260" height="215" align="right" /></a> A <a href="/post.aspx?id=d76a12f5-9ead-4847-b21a-be221e790681" target="_blank">few months ago I posted some code that I originally wrote back in about 2004</a>&hellip; Well, I was looking through some more of my prototypes that I&rsquo;ve written and I came across the following example of how to use the <a href="http://msdn.microsoft.com/en-us/library/bb775248%28VS.85%29.aspx" target="_blank">IProgressDialog Win32 Interface</a> to harness the power of the Built-in Progress Dialog in Windows within your own .NET applications.</p>
-<p>I have test this on WIndows 7, but it should work as expected on Windows XP and Vista. The MSDN Documentation for IProgressDialog says it&rsquo;s minimum supported operating systems are Windows 2000 and Windows XP.</p>
-<p>The full source code for this example is listed below. Just copy from this post and paste it within your app to test.</p>
+
+<a href="/images/postsCSharp-IProgressDialog-Native-dotNet-in-Windows.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="CSharp-IProgressDialog-Native-dotNet-in-Windows" src="/images/postsCSharp-IProgressDialog-Native-dotNet-in-Windows_thumb.png" border="0" alt="CSharp-IProgressDialog-Native-dotNet-in-Windows" width="260" height="215" align="right" /></a> A <a href="/post.aspx?id=d76a12f5-9ead-4847-b21a-be221e790681" target="_blank">few months ago I posted some code that I originally wrote back in about 2004</a>&hellip; Well, I was looking through some more of my prototypes that I&rsquo;ve written and I came across the following example of how to use the <a href="http://msdn.microsoft.com/en-us/library/bb775248%28VS.85%29.aspx" target="_blank">IProgressDialog Win32 Interface</a> to harness the power of the Built-in Progress Dialog in Windows within your own .NET applications.
+
+I have test this on WIndows 7, but it should work as expected on Windows XP and Vista. The MSDN Documentation for IProgressDialog says it&rsquo;s minimum supported operating systems are Windows 2000 and Windows XP.
+
+The full source code for this example is listed below. Just copy from this post and paste it within your app to test.
 <h3>&ldquo;ProgressDialog&rdquo; Usage Example</h3>
-<p>Here&rsquo;s an example of how to use this example &ldquo;ProgressDialog&rdquo; class: This is an example of using it from Windows Forms, however it could be used from within WPF exactly the same way.</p>
+
+Here&rsquo;s an example of how to use this example &ldquo;ProgressDialog&rdquo; class: This is an example of using it from Windows Forms, however it could be used from within WPF exactly the same way.
 <pre class="csharpcode"><span class="kwrd">using</span> System;
 <span class="kwrd">using</span> System.Windows.Forms;
 
@@ -75,10 +79,12 @@ redirect_from:
         }
     }
 }</pre>
-<p><!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } --></p>
-<h3>&nbsp;</h3>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+<h3> </h3>
 <h3>&ldquo;ProgressDialog&rdquo; Class</h3>
-<p>And, here&rsquo;s the full code for the &ldquo;ProgressDialog&rdquo; class itself:</p>
+
+And, here&rsquo;s the full code for the &ldquo;ProgressDialog&rdquo; class itself:
 <pre class="csharpcode"><span class="kwrd">using</span> System;
 <span class="kwrd">using</span> System.Runtime.InteropServices;
 <span class="kwrd">using</span> System.Text;
@@ -438,4 +444,5 @@ redirect_from:
         <span class="preproc">#endregion</span>
     }
 }</pre>
-<p><!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } --></p>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->

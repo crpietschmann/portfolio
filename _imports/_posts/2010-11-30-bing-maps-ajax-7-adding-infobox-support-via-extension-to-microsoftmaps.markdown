@@ -13,7 +13,11 @@ redirect_from:
   - /post.aspx?id=d3b3b88e-6d1f-4f8b-86fd-c74ba908eb5e
 ---
 <!-- more -->
-<p>The new Bing Maps Ajax v7 control may be faster and smaller, but it is pretty light on features at the moment compared to its older brother; the v6.3 control. One of the features missing is support for showing InfoBox’s. Its simple to handle mouse events and display a &lt;div&gt; next to the pushpin, but I thought I’d take a little time to write a simple InfoBox extension to the new Microsoft.Maps namespace.</p>  <p>Here’s a screenshot of it in action:</p>  <p><a href="/images/postsBingMaps7_InfoBox_Screenshot.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="BingMaps7_InfoBox_Screenshot" border="0" alt="BingMaps7_InfoBox_Screenshot" src="/images/postsBingMaps7_InfoBox_Screenshot_thumb.png" width="304" height="276" /></a></p>  <h3>Usage</h3>  <p>Let’s start with some sample usage of the InfoBox extension.</p>  <pre class="csharpcode"><span class="rem">// Create Pushpin</span>
+
+The new Bing Maps Ajax v7 control may be faster and smaller, but it is pretty light on features at the moment compared to its older brother; the v6.3 control. One of the features missing is support for showing InfoBox’s. Its simple to handle mouse events and display a &lt;div&gt; next to the pushpin, but I thought I’d take a little time to write a simple InfoBox extension to the new Microsoft.Maps namespace.  
+Here’s a screenshot of it in action:  
+<a href="/images/postsBingMaps7_InfoBox_Screenshot.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="BingMaps7_InfoBox_Screenshot" border="0" alt="BingMaps7_InfoBox_Screenshot" src="/images/postsBingMaps7_InfoBox_Screenshot_thumb.png" width="304" height="276" /></a>  <h3>Usage</h3>  
+Let’s start with some sample usage of the InfoBox extension.  <pre class="csharpcode"><span class="rem">// Create Pushpin</span>
 <span class="kwrd">var</span> pushpin = <span class="kwrd">new</span> Microsoft.Maps.Pushpin(
     <span class="kwrd">new</span> Microsoft.Maps.Location(0,0)
 );
@@ -57,13 +61,16 @@ map.entities.push(pushpin);</pre>
 }
 .csharpcode .lnum { color: #606060; }</style>
 
-<p>Usage of the “Microsoft.Maps.Ext.InfoBox” object is fairly simple. After creating the InfoBox object, you assign it to the Pushpin via the “setInfoBox” method that is also an extension that has been added.</p>
+
+Usage of the “Microsoft.Maps.Ext.InfoBox” object is fairly simple. After creating the InfoBox object, you assign it to the Pushpin via the “setInfoBox” method that is also an extension that has been added.
 
 <h3>CSS</h3>
 
-<p>There is a small bit of CSS code needed to style the InfoBox appropriately.</p>
 
-<p>Here’s some sample HTML that is similar to what the InfoBox extension adds to the page for the InfoBox’s:</p>
+There is a small bit of CSS code needed to style the InfoBox appropriately.
+
+
+Here’s some sample HTML that is similar to what the InfoBox extension adds to the page for the InfoBox’s:
 
 <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;infobox&quot;</span><span class="kwrd">&gt;</span>
 <span class="kwrd">&lt;</span><span class="html">h4</span><span class="kwrd">&gt;</span>Title<span class="kwrd">&lt;/</span><span class="html">h4</span><span class="kwrd">&gt;</span>
@@ -96,9 +103,11 @@ Description
 }
 .csharpcode .lnum { color: #606060; }</style>
 
-<p>The &lt;div&gt; element is given the CSS class of “infobox”. You use this class name to add CSS to your application to style the InfoBox’s as desired.</p>
 
-<p>Here’s some sample CSS to give the InfoBox a style similar to the Bing Maps v6.x InfoBox’s:</p>
+The &lt;div&gt; element is given the CSS class of “infobox”. You use this class name to add CSS to your application to style the InfoBox’s as desired.
+
+
+Here’s some sample CSS to give the InfoBox a style similar to the Bing Maps v6.x InfoBox’s:
 
 <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">style</span><span class="kwrd">&gt;</span>
 .infobox
@@ -149,49 +158,60 @@ Description
 
 <h3>Custom Pushpin Method Reference</h3>
 
-<p>Here’s some documentation of the 2 methods I added to the Microsoft.Maps.Pushpin object:</p>
 
-<p><strong>Pushpin.setInfoBox(infobox) 
-    <br /></strong>This method is used to set a specific InfoBox to be show for the Pushpin.</p>
+Here’s some documentation of the 2 methods I added to the Microsoft.Maps.Pushpin object:
 
-<p><strong>Pushpin.removeInfoBox() 
-    <br /></strong>This method is used to remove a previously added InfoBox from the Pushpin.</p>
+
+**Pushpin.setInfoBox(infobox) 
+    <br />**This method is used to set a specific InfoBox to be show for the Pushpin.
+
+
+**Pushpin.removeInfoBox() 
+    <br />**This method is used to remove a previously added InfoBox from the Pushpin.
 
 <h3>InfoBox Method Reference</h3>
 
-<p>Here’s some documentation on the Microsoft.Maps.Ext.InfoBox object:</p>
 
-<p><strong>Microsoft.Maps.Ext.InfoBox(title, description, map)</strong> 
+Here’s some documentation on the Microsoft.Maps.Ext.InfoBox object:
 
-  <br />This is the constructor of the InfoBox object.</p>
+
+**Microsoft.Maps.Ext.InfoBox(title, description, map)** 
+
+  <br />This is the constructor of the InfoBox object.
 
 <ol>
-  <li><strong>title</strong> – The HTML to show in the InfoBox title area. </li>
+  <li>**title** – The HTML to show in the InfoBox title area. </li>
 
-  <li><strong>description</strong> – The HTML to show in the InfoBox description area. </li>
+  <li>**description** – The HTML to show in the InfoBox description area. </li>
 
-  <li><strong>map</strong> – A reference to the Map where the InfoBox’s Pushpin is located, and where it will be displayed. </li>
+  <li>**map** – A reference to the Map where the InfoBox’s Pushpin is located, and where it will be displayed. </li>
 </ol>
 
-<p><strong>InfoBox.title(title)</strong> 
 
-  <br />This method gets or sets the Title of the InfoBox. If an argument is passed in, it will set the Title and return the InfoBox object to allow for a fluent interface. If no argument is passed in, it will return the value of the InfoBox Title.</p>
+**InfoBox.title(title)** 
 
-<p><strong>InfoBox.descirption(description)</strong> 
+  <br />This method gets or sets the Title of the InfoBox. If an argument is passed in, it will set the Title and return the InfoBox object to allow for a fluent interface. If no argument is passed in, it will return the value of the InfoBox Title.
 
-  <br />This method gets or sets the Description of the InfoBox. If an argument is passed in, it will set the Description and return the InfoBox object to allow for a fluent interface. If no argument is passed in, it will return the value of the InfoBox Description.</p>
+
+**InfoBox.descirption(description)** 
+
+  <br />This method gets or sets the Description of the InfoBox. If an argument is passed in, it will set the Description and return the InfoBox object to allow for a fluent interface. If no argument is passed in, it will return the value of the InfoBox Description.
 
 <h3>Full InfoBox Extension</h3>
 
-<p>Rather than add the InfoBox object to the root of the “Microsoft.Maps” namespace, I decided to add the “Microsoft.Maps.Ext” namespace where the InfoBox object will live. This will help keep it separated from “core” Microsoft.Maps functionality. Now the only methods added to the “core” namespace are the “setInfoBox” and “removeInfoBox” methods that were necessary to add directly to the Pushpin object.</p>
 
-<p><strong>Requirements: 
-    <br /></strong>This extension requires <a title="jQuery" href="http://jquery.com">jQuery</a> to function.</p>
+Rather than add the InfoBox object to the root of the “Microsoft.Maps” namespace, I decided to add the “Microsoft.Maps.Ext” namespace where the InfoBox object will live. This will help keep it separated from “core” Microsoft.Maps functionality. Now the only methods added to the “core” namespace are the “setInfoBox” and “removeInfoBox” methods that were necessary to add directly to the Pushpin object.
 
-<p>I could have coded the necessary JavaScript code to manipulate the HTML DOM myself, but it was just easier to use jQuery. Plus, if you’re like me, you will probably be using jQuery in your application anyway so it wont add any additional download.</p>
 
-<p><strong>Source Code: 
-    <br /></strong>Now for the real meat of the post. Here is the full JavaScript code for the InfoBox extension.</p>
+**Requirements: 
+    <br />**This extension requires <a title="jQuery" href="http://jquery.com">jQuery</a> to function.
+
+
+I could have coded the necessary JavaScript code to manipulate the HTML DOM myself, but it was just easier to use jQuery. Plus, if you’re like me, you will probably be using jQuery in your application anyway so it wont add any additional download.
+
+
+**Source Code: 
+    <br />**Now for the real meat of the post. Here is the full JavaScript code for the InfoBox extension.
 
 <pre class="csharpcode">(<span class="kwrd">function</span> ($m) {
     <span class="rem">/* $m == Microsoft.Maps namespace */</span>
@@ -321,6 +341,8 @@ Description
 
 <h3>Conclusion</h3>
 
-<p>I didn’t go over the specifics of writing this plugin too much. If you want to see more examples of what’s involved, then I recommend reading the “<a href="http://social.msdn.microsoft.com/Forums/en-US/vemapcontroldev/thread/8eec78d8-e211-4245-b47c-e83289755f2c">Creating Infoboxes in Bing Maps AJAX v7</a>” post on MSDN Social.</p>
 
-<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:a1d0c9d3-fd57-4da7-bf10-24654b5ace8d" class="wlWriterEditableSmartContent"><p><div>Full Example:<a href="/file.axd?file=BingMapsAjaxv7InfoBoxExtensionExampleUsage.zip" target="_self">BingMapsAjaxv7InfoBoxExtensionExampleUsage.zip</a></div></p></div>
+I didn’t go over the specifics of writing this plugin too much. If you want to see more examples of what’s involved, then I recommend reading the “<a href="http://social.msdn.microsoft.com/Forums/en-US/vemapcontroldev/thread/8eec78d8-e211-4245-b47c-e83289755f2c">Creating Infoboxes in Bing Maps AJAX v7</a>” post on MSDN Social.
+
+<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:a1d0c9d3-fd57-4da7-bf10-24654b5ace8d" class="wlWriterEditableSmartContent">
+<div>Full Example:<a href="/file.axd?file=BingMapsAjaxv7InfoBoxExtensionExampleUsage.zip" target="_self">BingMapsAjaxv7InfoBoxExtensionExampleUsage.zip</a></div></div>

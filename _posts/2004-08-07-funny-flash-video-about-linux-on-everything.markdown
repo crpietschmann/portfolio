@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=c5ab5887-a327-4fe9-b203-b59673caa650
 ---
 <!-- more -->
-<P>This is a pretty funny flash video about linux running on everything. I&nbsp;like the Fembot.</P>
-<P><A href="http://www.booba.co.il/index.php?page=flashplayer&amp;file=flash/linux.swf">http://www.booba.co.il/index.php?page=flashplayer&amp;file=flash/linux.swf</A></P>
+
+This is a pretty funny flash video about linux running on everything. I like the Fembot.
+
+<A href="http://www.booba.co.il/index.php?page=flashplayer&amp;file=flash/linux.swf">http://www.booba.co.il/index.php?page=flashplayer&amp;file=flash/linux.swf</A>

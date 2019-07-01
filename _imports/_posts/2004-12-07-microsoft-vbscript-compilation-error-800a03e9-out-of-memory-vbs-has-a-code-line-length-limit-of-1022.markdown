@@ -14,4 +14,5 @@ redirect_from:
 ---
 <!-- more -->
 VBScript has a maximum static string limit of 1,022 characters, and this error appears any time a line of code exceeds 1,022 characters.
-<P><A href="http://support.microsoft.com/kb/q174634/">http://support.microsoft.com/kb/q174634/</A></P>
+
+<A href="http://support.microsoft.com/kb/q174634/">http://support.microsoft.com/kb/q174634/</A>

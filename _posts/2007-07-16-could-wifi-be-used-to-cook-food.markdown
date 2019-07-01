@@ -13,7 +13,11 @@ redirect_from:
   - /post.aspx?id=7b341431-400f-47b4-bae1-117566664a6b
 ---
 <!-- more -->
-<P>I know 802.11b and g both use 2.4Ghz frequency range, which is the same as a Microwave Oven. Now the question is, could you basically turn up the power on your router to the point that it would be able to cook food?</P>
-<P>I know technically (if this were possible) the components inside the router aren't made to withstand handling that much power. But, what if?</P>
-<P>Microwave = Cooked Food</P>
-<P>WiFi + Power =&nbsp;Cooked Food????</P>
+
+I know 802.11b and g both use 2.4Ghz frequency range, which is the same as a Microwave Oven. Now the question is, could you basically turn up the power on your router to the point that it would be able to cook food?
+
+I know technically (if this were possible) the components inside the router aren't made to withstand handling that much power. But, what if?
+
+Microwave = Cooked Food
+
+WiFi + Power = Cooked Food????

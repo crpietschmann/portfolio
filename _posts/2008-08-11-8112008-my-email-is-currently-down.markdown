@@ -13,9 +13,11 @@ redirect_from:
   - /post.aspx?id=5792ef80-d82c-4cfa-a6e1-c3dd14f2547c
 ---
 <!-- more -->
-<p>
+
+
 Update: Ok, my email is back and working again. 
-</p>
-<p>
+
+
+
 FYI, for anyone trying to email me, my email is currently down, so I wont see your messages until it&#39;s back up. The issue is actually GMail. I use GMail Apps for your domain to host my email (both pietschsoft.com and simplovation.com) email address&#39;s, and currently their service is down. I don&#39;t know if everyones is out, but mine is. I&#39;ll post an update when it&#39;s back, and reply to all emails as soon as I can too. This is actually the first time GMail has been down for me with all my email address&#39;s.
-</p>
+

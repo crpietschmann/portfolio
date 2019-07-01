@@ -13,12 +13,18 @@ redirect_from:
   - /post.aspx?id=7b110c3f-e26c-446e-967f-084357c59f31
 ---
 <!-- more -->
-<p>One of the standard methods of representing geometric shapes is by using the WKT (Well-Known-Text) standard. This is a human readable standard method of representing geometric shapes that can be used to easily pass spatial data between applications. I know GML or GeoRSS may be a little more applicable since they are based on XML, but WKT can work just fine in some cases.</p>
-<p>If you don&rsquo;t know what WKT is here are a couple links for reference:</p>
-<p><a title="http://geoapi.sourceforge.net/2.0/javadoc/org/opengis/referencing/doc-files/WKT.html" href="http://geoapi.sourceforge.net/2.0/javadoc/org/opengis/referencing/doc-files/WKT.html">http://geoapi.sourceforge.net/2.0/javadoc/org/opengis/referencing/doc-files/WKT.html</a></p>
-<p><a title="http://en.wikipedia.org/wiki/Well-known_text" href="http://en.wikipedia.org/wiki/Well-known_text">http://en.wikipedia.org/wiki/Well-known_text</a></p>
-<p>This is also one of the things that Virtual Earth does NOT have support built in for. So I wrote a little code that simply converts VEShape objects to a WKT string representation.</p>
-<p>The code below allows you to represent Pushpins, Polygons and Polylines as strings like the following:</p>
+
+One of the standard methods of representing geometric shapes is by using the WKT (Well-Known-Text) standard. This is a human readable standard method of representing geometric shapes that can be used to easily pass spatial data between applications. I know GML or GeoRSS may be a little more applicable since they are based on XML, but WKT can work just fine in some cases.
+
+If you don&rsquo;t know what WKT is here are a couple links for reference:
+
+<a title="http://geoapi.sourceforge.net/2.0/javadoc/org/opengis/referencing/doc-files/WKT.html" href="http://geoapi.sourceforge.net/2.0/javadoc/org/opengis/referencing/doc-files/WKT.html">http://geoapi.sourceforge.net/2.0/javadoc/org/opengis/referencing/doc-files/WKT.html</a>
+
+<a title="http://en.wikipedia.org/wiki/Well-known_text" href="http://en.wikipedia.org/wiki/Well-known_text">http://en.wikipedia.org/wiki/Well-known_text</a>
+
+This is also one of the things that Virtual Earth does NOT have support built in for. So I wrote a little code that simply converts VEShape objects to a WKT string representation.
+
+The code below allows you to represent Pushpins, Polygons and Polylines as strings like the following:
 <pre class="csharpcode">POINT(-99.71000000000001 43.74999999999998)
 
 POLYGON((-99.71000000000001 46.74999999999998,
@@ -29,7 +35,8 @@ POLYGON((-99.71000000000001 46.74999999999998,
 LINESTRING(-99.71000000000001 40.74999999999998,
  -102.71000000000001 40.74999999999998,
  -102.71000000000001 43.74999999999998)</pre>
-<p>Here are some examples of using the conversion methods:</p>
+
+Here are some examples of using the conversion methods:
 <pre class="csharpcode"><span class="rem">// Get Map Center Point</span>
  <span class="kwrd">var</span> centerPoint = map.GetCenter();
 
@@ -69,8 +76,10 @@ LINESTRING(-99.71000000000001 40.74999999999998,
  shape = VirtualEarthWKT.ShapeFromWKT(wktShape);
  <span class="rem">// Add VEShape to Map</span>
  map.AddShape(shape);</pre>
-<p><!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } --></p>
-<p>Here&rsquo;s the full code to the VirtualEarthWKT object that contains the static methods:</p>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+
+Here&rsquo;s the full code to the VirtualEarthWKT object that contains the static methods:
 <pre class="csharpcode"><span class="rem">// Create the singleton object that contains the WKT (Well-Known-Text) transformation methods.</span>
 <span class="kwrd">var</span> VirtualEarthWKT = <span class="kwrd">new</span> (<span class="kwrd">function</span>() {
     <span class="rem">// Declare some "private" methods that will only be used internally</span>

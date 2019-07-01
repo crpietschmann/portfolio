@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=be6ffbc5-583d-4e14-970a-8c3f23d6f8df
 ---
 <!-- more -->
-<P>Well at least it is according to <A href="http://defectivebydesign.org/en/blog/ten_things_for_oct3">dfectivebydesign.org</A></P>
-<P><A href="http://defectivebydesign.org/en/what_is_drm_digital_restrictions_management">What is DRM?</A></P>
+
+Well at least it is according to <A href="http://defectivebydesign.org/en/blog/ten_things_for_oct3">dfectivebydesign.org</A>
+
+<A href="http://defectivebydesign.org/en/what_is_drm_digital_restrictions_management">What is DRM?</A>

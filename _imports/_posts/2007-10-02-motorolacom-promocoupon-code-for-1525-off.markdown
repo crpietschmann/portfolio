@@ -13,5 +13,6 @@ redirect_from:
   - /post.aspx?id=971e5491-7134-4552-a6f7-5b53a70912fd
 ---
 <!-- more -->
-<P>Here's a Motorola.com Promo/Coupon Code for 15% off any purchase. This code is good through 2/3/2008.</P>
+
+Here's a Motorola.com Promo/Coupon Code for 15% off any purchase. This code is good through 2/3/2008.
 <H2>PASS_11805</H2>

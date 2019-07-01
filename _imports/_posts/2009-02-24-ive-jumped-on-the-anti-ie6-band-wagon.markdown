@@ -13,15 +13,18 @@ redirect_from:
   - /post.aspx?id=9b6e1082-e828-40dd-a470-7896a4569776
 ---
 <!-- more -->
-<p>
+
+
 <img src="/images/postspushuptheweb.png" alt="Pushup The Web" align="right" />There have been a lot of talk online for a while now about the much desired demise of Internet Explorer 6, and other out dated web browsers. I don&#39;t think I&#39;ve used IE6 since the first Beta of IE7, and I haven&#39;t used Firefox 2.0 since Firefox 3.0 was released. However, I can see that there are still a few users that visit this blog of whom are still using some of these OLD versions of these web browsers. So, I am joining the effort to &quot;Push up the web&quot; by including the script found at <a href="http://www.pushuptheweb.com">http://www.pushuptheweb.com</a> in my website to kindly remind any visitor using an out dated web browser that they may want to update.
-</p>
-<p>
+
+
+
 The first Anti-IE6 campaign website I was directed to was <a href="http://iedeathmarch.org">http://iedeathmarch.org</a> where they point out the fact that there are a ton of things younger than IE6 (which was released August 27th 2001.)
-</p>
-<p>
+
+
+
 For example, these things are ALL Younger than IE6:
-</p>
+
 <ul>
 	<li>Google Adsense</li>
 	<li>Friendster<br />
@@ -37,9 +40,11 @@ For example, these things are ALL Younger than IE6:
 	<li>Canon Digital SLR Cameras<br />
 	</li>
 </ul>
-<p>
+
+
 We&#39;ve actually seen a ton of stuff happen since IE6 was released. IE6 has been around longer than the 6+ years the U.S. has had troops in Iraq. IE6 has been around longer than the 7+ years it&#39;s been since the 9/11 attacks.
-</p>
-<p>
+
+
+
 Now, why are people still using these old browsers? Why haven&#39;t they updated to the latest, safest, most secure versions? Well, regardless the reason, it&#39;s about time. 
-</p>
+

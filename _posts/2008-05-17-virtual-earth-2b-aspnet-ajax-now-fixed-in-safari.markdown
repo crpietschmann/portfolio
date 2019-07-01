@@ -13,20 +13,25 @@ redirect_from:
   - /post.aspx?id=c75cbc89-6abf-4869-914d-6176bb6c7736
 ---
 <!-- more -->
-<p>
+
+
 A couple months ago I blogged about the fact that using <a href="/post.aspx?id=600a0bbc-5e22-4bd2-bef2-542d70e682b2">Virtual Earth and ASP.NET AJAX together on the same page caused errors in Safari</a>. There is good new to report back, the latest update to Virtual Earth has fixed this issue. In fact Virtual Earth v6.1 actually includes much better Safari support that previous versions; it actually works correctly in Safari. I found this to be especially helpful since I can now support Safari with my <a href="http://simplovation.com/page/webmapsve.aspx">Web.Maps.VE</a> product.
-</p>
-<p>
+
+
+
 What&#39;s the catch? I can&#39;t work perfectly now can it. Well, as far as I can tell Virtual Earth works great. However, the code example in my post calling attention to the error actually still has a little bug in it. The bug is the calendar that is automatically shown on hover over by the AjaxControlToolkit CalendarExtender get hidden by the Map below the textbox. This is actually caused by a layering issue related to the z-index of the elements on the page. An easy way to fix this is to just set the z-index of the VEMap&#39;s DIV element to a lower value so all other elements on the page will be rendered over the top of it.
-</p>
-<p>
+
+
+
 Here&#39;s the full example code showing example what I mean above:
-</p>
-<p>
+
+
+
 [code:html]
-</p>
-<p>
-&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot;&nbsp; CodeFile=&quot;Default.aspx.cs&quot; Inherits=&quot;_Default&quot; %&gt;<br />
+
+
+
+&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot;  CodeFile=&quot;Default.aspx.cs&quot; Inherits=&quot;_Default&quot; %&gt;<br />
 &lt;%@ Register Assembly=&quot;AjaxControlToolkit&quot; Namespace=&quot;AjaxControlToolkit&quot; TagPrefix=&quot;ajaxToolkit&quot; %&gt;<br />
 &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>&quot;&gt;<br />
 &lt;html xmlns=&quot;<a href="http://www.w3.org/1999/xhtml">http://www.w3.org/1999/xhtml</a>&quot;&gt;<br />
@@ -35,12 +40,12 @@ Here&#39;s the full example code showing example what I mean above:
 &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;<br />
 &lt;script type=&quot;text/javascript&quot; src=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1&quot;&gt;&lt;/script">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1&quot;&gt;&lt;/script</a>&gt;<br />
 &lt;script type=&quot;text/javascript&quot;&gt;<br />
-&nbsp;&nbsp;&nbsp; var map = null;<br />
-&nbsp;&nbsp;&nbsp; function GetMap()<br />
-&nbsp;&nbsp;&nbsp; {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; map = new VEMap(&#39;myMap&#39;);<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; map.LoadMap();<br />
-&nbsp;&nbsp;&nbsp; }<br />
+    var map = null;<br />
+    function GetMap()<br />
+    {<br />
+        map = new VEMap(&#39;myMap&#39;);<br />
+        map.LoadMap();<br />
+    }<br />
 &lt;/script&gt;<br />
 &lt;/head&gt;<br />
 &lt;body onload=&quot;GetMap();&quot;&gt;<br />
@@ -55,7 +60,8 @@ Here&#39;s the full example code showing example what I mean above:
 &lt;/form&gt;<br />
 &lt;/body&gt;<br />
 &lt;/html&gt;
-</p>
-<p>
-[/code]
-</p>
+
+
+
+```
+

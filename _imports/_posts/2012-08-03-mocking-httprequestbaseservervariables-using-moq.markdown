@@ -13,7 +13,9 @@ redirect_from:
   - /post.aspx?id=828d1198-8b0c-4b95-835c-f5e3abec4b8d
 ---
 <!-- more -->
-<p>Mocking is a very handy tool for unit testing code, especially when it comes to mocking the HttpContext for web application code. However, it’s not as straight forward as you might think to mock the HttpRequestBase.ServerVariables, however once you know what to do it really is pretty simple.</p>  <p>Here’s a code example (using <a href="http://code.google.com/p/moq/">moq</a>) that shows how to create a mock HttpContextBase that contains a mock HttpRequestBase with a mock ServerVariables property:</p>  <pre class="csharpcode"><span class="kwrd">public</span> HttpContextBase CreateMockHttpContext()
+
+Mocking is a very handy tool for unit testing code, especially when it comes to mocking the HttpContext for web application code. However, it’s not as straight forward as you might think to mock the HttpRequestBase.ServerVariables, however once you know what to do it really is pretty simple.  
+Here’s a code example (using <a href="http://code.google.com/p/moq/">moq</a>) that shows how to create a mock HttpContextBase that contains a mock HttpRequestBase with a mock ServerVariables property:  <pre class="csharpcode"><span class="kwrd">public</span> HttpContextBase CreateMockHttpContext()
 {
     var serverVariables = <span class="kwrd">new</span> NameValueCollection {
         { <span class="str">&quot;SomeServerIPAddress&quot;</span>, <span class="str">&quot;127.0.0.1&quot;</span> },
@@ -58,4 +60,5 @@ redirect_from:
 }
 .csharpcode .lnum { color: #606060; }</style>
 
-<p>Hopefully this points someone in the direction they are looking to be able to write more unit tests for code that contains dependencies on the HttpContext.</p>
+
+Hopefully this points someone in the direction they are looking to be able to write more unit tests for code that contains dependencies on the HttpContext.

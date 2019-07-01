@@ -13,4 +13,5 @@ redirect_from:
   - /post.aspx?id=3b59f530-d83f-48d2-8f12-c8de4203bf1c
 ---
 <!-- more -->
-<p>I just launched the new redesign of Pietschsoft.com! Not much more to say; I'm just announcing the new site.</p>
+
+I just launched the new redesign of Pietschsoft.com! Not much more to say; I'm just announcing the new site.

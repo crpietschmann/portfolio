@@ -13,12 +13,19 @@ redirect_from:
   - /post.aspx?id=297f7422-b742-4afa-8f8a-f6cea8a28ab6
 ---
 <!-- more -->
-<p><em>"Everybody in this country should learn how to program a computer because it teaches you hot to think." - Steve Jobs</em></p>
-<p><em>"Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains." - Bill Gates</em></p>
-<p><iframe src="//www.youtube.com/embed/dU1xS07N-FA" frameborder="0" width="560" height="315"></iframe></p>
-<p>&nbsp;</p>
+
+<em>"Everybody in this country should learn how to program a computer because it teaches you hot to think." - Steve Jobs</em>
+
+<em>"Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains." - Bill Gates</em>
+
+<iframe src="//www.youtube.com/embed/dU1xS07N-FA" frameborder="0" width="560" height="315"></iframe>
+
+ 
 <blockquote class="twitter-tweet">
-<p>In the future <a href="https://twitter.com/search?q=%23Programming&amp;src=hash">#Programming</a> will be like <a href="https://twitter.com/search?q=%23Reading&amp;src=hash">#Reading</a> and <a href="https://twitter.com/search?q=%23Writing&amp;src=hash">#Writing</a> are today.</p>
+
+In the future <a href="https://twitter.com/search?q=%23Programming&amp;src=hash">#Programming</a> will be like <a href="https://twitter.com/search?q=%23Reading&amp;src=hash">#Reading</a> and <a href="https://twitter.com/search?q=%23Writing&amp;src=hash">#Writing</a> are today.
 &mdash; Chris Pietschmann (@crpietschmann) <a href="https://twitter.com/crpietschmann/statuses/378625057821425665">September 13, 2013</a></blockquote>
-<p>Every student in every school should have the opportunity to learn computer science.</p>
-<p>Go to <a href="http://code.org">Code.org</a> to learn more!</p>
+
+Every student in every school should have the opportunity to learn computer science.
+
+Go to <a href="http://code.org">Code.org</a> to learn more!

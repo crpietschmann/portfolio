@@ -13,6 +13,9 @@ redirect_from:
   - /post.aspx?id=814636aa-7f7a-49ba-bdc9-6cbf2cd10f2d
 ---
 <!-- more -->
-<P>This error is a permissions problem. This is a very frustrating problem for someone who doesn't know Windows Server 2003 very well. 
-<P>Heres is a workaround:<BR>1. go to Administrative Tools> Component Services <BR>2. expand COM Services <BR>3. expand My Computer. <BR>4. expand COM+ Applications. <BR>5. Right click on your Application, select Properties <BR>6. Go to the Security tab<BR>7. In the Authorization frame, uncheck &#8220;Enforce access checks for this application&#8220;<BR></P>
-<P>This isn't the best, since it grants every account on the machine access to create the objects in this application, but it's a quick/easy work around.</P>
+
+This error is a permissions problem. This is a very frustrating problem for someone who doesn't know Windows Server 2003 very well. 
+
+Heres is a workaround:<BR>1. go to Administrative Tools> Component Services <BR>2. expand COM Services <BR>3. expand My Computer. <BR>4. expand COM+ Applications. <BR>5. Right click on your Application, select Properties <BR>6. Go to the Security tab<BR>7. In the Authorization frame, uncheck &#8220;Enforce access checks for this application&#8220;<BR>
+
+This isn't the best, since it grants every account on the machine access to create the objects in this application, but it's a quick/easy work around.

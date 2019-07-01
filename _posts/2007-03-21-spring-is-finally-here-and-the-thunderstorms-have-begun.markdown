@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=35da2b1e-56d7-4809-835c-c217bb66ce2e
 ---
 <!-- more -->
-<P>Today is the first day of Spring, and in the Milwaukee area we are lucky enough to have some rain and a thunderstorm today. I like thunderstorms so I'm glad the season is here. The only bad part is it's also the beginning of Tornado season.</P>
-<P><STRONG>Update 4/15/2007:</STRONG> And, it also snowed about an inch a couple days ago. But, it seems to be getting warmer again... But, we'll see if it stays warm. You gotta love Wisconsin weather.</P>
+
+Today is the first day of Spring, and in the Milwaukee area we are lucky enough to have some rain and a thunderstorm today. I like thunderstorms so I'm glad the season is here. The only bad part is it's also the beginning of Tornado season.
+
+<STRONG>Update 4/15/2007:</STRONG> And, it also snowed about an inch a couple days ago. But, it seems to be getting warmer again... But, we'll see if it stays warm. You gotta love Wisconsin weather.

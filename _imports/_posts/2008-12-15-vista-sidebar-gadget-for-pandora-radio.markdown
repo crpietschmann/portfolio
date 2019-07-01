@@ -13,17 +13,21 @@ redirect_from:
   - /post.aspx?id=7b6c0f56-6569-480b-94b6-fca275f92bd6
 ---
 <!-- more -->
-<p>
+
+
 I see that Pandora has released a Windows Sidebar Gadget themselves.
-</p>
-<p>
+
+
+
 You can find it here: <a href="http://www.pandora.com/on-windowsgadget">http://www.pandora.com/on-windowsgadget</a> 
-</p>
-<p>
+
+
+
 <strike>I found the <a href="http://www.bgreco.net/gadgets/pandora/">Pandora Sidebar Gadget</a>. This gadget lets Pandora live within the Vista Sidebar, thus not taking up (waisting) any valuable taskbar space. This gadget is simple and it just works. Awesome job Brad!
 </strike>
-</p>
-<p>
+
+
+
 <strike>
 You can download it here: <a href="http://www.bgreco.net/gadgets/pandora/">http://www.bgreco.net/gadgets/pandora/</a></strike> 
-</p>
+

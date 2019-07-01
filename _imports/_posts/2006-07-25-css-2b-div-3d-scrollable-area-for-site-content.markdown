@@ -13,8 +13,12 @@ redirect_from:
   - /post.aspx?id=36924250-aeb5-4f67-8114-f66fc354876c
 ---
 <!-- more -->
-<P>Using the <A href="http://www.w3schools.com/css/pr_pos_overflow.asp">CSS Overflow property</A>&nbsp;you can create a box of scrollable content in your page without using an IFrame. This means you can have the same visual and usability effect that an IFrame offers and still be search engine friendly.</P>
-<P>Here's some example HTML w/ CSS:<BR></P>
+
+Using the <A href="http://www.w3schools.com/css/pr_pos_overflow.asp">CSS Overflow property</A> you can create a box of scrollable content in your page without using an IFrame. This means you can have the same visual and usability effect that an IFrame offers and still be search engine friendly.
+
+Here's some example HTML w/ CSS:<BR>
 <DIV style="BORDER-RIGHT: blue 1px solid; BORDER-TOP: blue 1px solid; OVERFLOW: auto; BORDER-LEFT: blue 1px solid; WIDTH: 200px; BORDER-BOTTOM: blue 1px solid; HEIGHT: 50px">&lt;div style="overflow: auto; width: 200px; height: 50px; border: solid 1px blue;"&gt;<BR>It's just this simple to do.<BR>It really is!<BR>Isn't CSS great?&lt;/div&gt; </DIV>
-<P></P>
-<P><A href="http://www.w3schools.com/css/pr_pos_overflow.as"></A>&nbsp;</P>
+
+
+
+<A href="http://www.w3schools.com/css/pr_pos_overflow.as"></A> 

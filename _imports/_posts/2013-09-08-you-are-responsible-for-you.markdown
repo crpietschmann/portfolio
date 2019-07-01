@@ -13,8 +13,13 @@ redirect_from:
   - /post.aspx?id=12f5f0a9-3c35-4d38-ae7d-96d863c60324
 ---
 <!-- more -->
-<p>It is easy to point fingers and pass blame to others. Although, ultimately, at the end of the day you are the only one responsible for YOU!</p>
-<p>No matter what good or bad decisions you've made at home, at work, in life; you are the only one to blame. Take responsibility and own your actions. For once you fully take responsibility for yourself, and only then, will you achieve a greater level of freedom.</p>
-<p>Many people will attempt to control you out of fear and/or for their own agenda. They will only succeed if you let them.</p>
-<p>Stop letting others "hold" you back. Stop letting others make choices for you. Stop letting others tell you "you can't."</p>
-<p>You can achieve success in what ever you want to! The choice is yours. Go after that dream. Don't be afraid. It is up to you and only you to take action for yourself.</p>
+
+It is easy to point fingers and pass blame to others. Although, ultimately, at the end of the day you are the only one responsible for YOU!
+
+No matter what good or bad decisions you've made at home, at work, in life; you are the only one to blame. Take responsibility and own your actions. For once you fully take responsibility for yourself, and only then, will you achieve a greater level of freedom.
+
+Many people will attempt to control you out of fear and/or for their own agenda. They will only succeed if you let them.
+
+Stop letting others "hold" you back. Stop letting others make choices for you. Stop letting others tell you "you can't."
+
+You can achieve success in what ever you want to! The choice is yours. Go after that dream. Don't be afraid. It is up to you and only you to take action for yourself.

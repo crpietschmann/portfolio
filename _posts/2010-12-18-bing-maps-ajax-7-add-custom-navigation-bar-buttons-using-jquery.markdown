@@ -13,7 +13,11 @@ redirect_from:
   - /post.aspx?id=855f7483-06fe-4042-b8c4-0ebfd6b372e9
 ---
 <!-- more -->
-<p>The Bing Maps Ajax v7 control does not include support for adding custom buttons to the navigation bar (where the zoom, pan and map style buttons are). There may be times when you will want to add a custom button or two, and this post contains some simple code that will help you do so.</p>  <p>Here’s a screenshot of this in action. The ‘Click Me’ link in the navigation bar is a custom button that the below code adds.</p>  <p><a href="/images/postsBingMapsAjax7CustomNavBarButton.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="BingMapsAjax7CustomNavBarButton" border="0" alt="BingMapsAjax7CustomNavBarButton" src="/images/postsBingMapsAjax7CustomNavBarButton_thumb.png" width="359" height="105" /></a></p>  <h3>Code</h3>  <p>First, here’s the code that I came up with to add custom navigation bar buttons:</p>  <pre class="csharpcode"><span class="rem">// Simple Method to Add a Custom Button to the NavBar using jQuery</span>
+
+The Bing Maps Ajax v7 control does not include support for adding custom buttons to the navigation bar (where the zoom, pan and map style buttons are). There may be times when you will want to add a custom button or two, and this post contains some simple code that will help you do so.  
+Here’s a screenshot of this in action. The ‘Click Me’ link in the navigation bar is a custom button that the below code adds.  
+<a href="/images/postsBingMapsAjax7CustomNavBarButton.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="BingMapsAjax7CustomNavBarButton" border="0" alt="BingMapsAjax7CustomNavBarButton" src="/images/postsBingMapsAjax7CustomNavBarButton_thumb.png" width="359" height="105" /></a>  <h3>Code</h3>  
+First, here’s the code that I came up with to add custom navigation bar buttons:  <pre class="csharpcode"><span class="rem">// Simple Method to Add a Custom Button to the NavBar using jQuery</span>
 <span class="kwrd">var</span> addNavButton = <span class="kwrd">function</span> (mapElement, content, onclick) {
     $(mapElement).find(<span class="str">'.NavBar_typeButtonContainer'</span>).append(
         <span class="rem">// Add a Separator between this button and any existing buttons</span>
@@ -66,6 +70,8 @@ window.setTimeout(<span class="kwrd">function</span> () {
 
 <h3>Explanations</h3>
 
-<p>The above code does require the <a href="http://jquery.com">jQuery</a> library, which is how this code is so short and simple.</p>
 
-<p>If you call the ‘addNavButton’ function immediately after instantiating the Bing Map, then you will need to include a ‘window.setTimeout’ (as in the code above) to make sure that the Map has finished loading before you try to add the custom button. This is necessary because the Bing Maps Ajax v7 control doesn’t include any kind of ‘onload’ event to be handled.</p>
+The above code does require the <a href="http://jquery.com">jQuery</a> library, which is how this code is so short and simple.
+
+
+If you call the ‘addNavButton’ function immediately after instantiating the Bing Map, then you will need to include a ‘window.setTimeout’ (as in the code above) to make sure that the Map has finished loading before you try to add the custom button. This is necessary because the Bing Maps Ajax v7 control doesn’t include any kind of ‘onload’ event to be handled.

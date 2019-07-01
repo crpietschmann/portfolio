@@ -13,11 +13,15 @@ redirect_from:
   - /post.aspx?id=fccc2f93-f7a3-481d-bcd7-a3b9425420bd
 ---
 <!-- more -->
-<p>The <a href="http://www.asp.net/Ajax/Documentation/Live/overview/ScriptManagerOverview.aspx" target="_blank">ASP.NET AJAX ScriptManager</a> makes it really easy to include JavaScript references and register JavaScript blocks into the rendered Page output of an ASP.NET WebForms application. However nice the ScriptManager control is, it&rsquo;s still just a WebForms control for use with ASP.NET AJAX; thus it&rsquo;s use isn&rsquo;t really supported with ASP.NET MVC. Also, to make things just a little more difficult, ASP.NET MVC doesn&rsquo;t have it&rsquo;s own &ldquo;ScriptManager&rdquo; implementation. This brings me to the point of posting this&hellip;</p>
-<p>I have worked out a really simple &ldquo;ScriptManager&rdquo; component for use with ASP.NET MVC, and I think it works really nice to help simplify the effort of including JavaScript blocks and references in a page.</p>
+
+The <a href="http://www.asp.net/Ajax/Documentation/Live/overview/ScriptManagerOverview.aspx" target="_blank">ASP.NET AJAX ScriptManager</a> makes it really easy to include JavaScript references and register JavaScript blocks into the rendered Page output of an ASP.NET WebForms application. However nice the ScriptManager control is, it&rsquo;s still just a WebForms control for use with ASP.NET AJAX; thus it&rsquo;s use isn&rsquo;t really supported with ASP.NET MVC. Also, to make things just a little more difficult, ASP.NET MVC doesn&rsquo;t have it&rsquo;s own &ldquo;ScriptManager&rdquo; implementation. This brings me to the point of posting this&hellip;
+
+I have worked out a really simple &ldquo;ScriptManager&rdquo; component for use with ASP.NET MVC, and I think it works really nice to help simplify the effort of including JavaScript blocks and references in a page.
 <h3>Setting up the &ldquo;SimpleScriptManager&rdquo; for use</h3>
-<p>To use the &ldquo;SimpleScriptManager&rdquo; with ASP.NET MVC you must first Import the &ldquo;SimpleScriptManager&rdquo; namespace into your Master Page. Then you must place a single line of code in the Master Page file at the location you want to Render the Script Includes and Blocks to the Page. In order for it to work properly, the Render code needs to be place at the very end of the Master Page; preferably just before the closing Body tag.</p>
-<p>Here&rsquo;s a really short example Master Page file with the &ldquo;SimpleScriptManager&rdquo; namespace imported and the call to &ldquo;SimpleScriptManager().Render()&rdquo; located at the very end of the page just before the closing Body tag.</p>
+
+To use the &ldquo;SimpleScriptManager&rdquo; with ASP.NET MVC you must first Import the &ldquo;SimpleScriptManager&rdquo; namespace into your Master Page. Then you must place a single line of code in the Master Page file at the location you want to Render the Script Includes and Blocks to the Page. In order for it to work properly, the Render code needs to be place at the very end of the Master Page; preferably just before the closing Body tag.
+
+Here&rsquo;s a really short example Master Page file with the &ldquo;SimpleScriptManager&rdquo; namespace imported and the call to &ldquo;SimpleScriptManager().Render()&rdquo; located at the very end of the page just before the closing Body tag.
 <pre class="csharpcode"><span class="asp">&lt;%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %&gt;</span>
 
 <span class="asp">&lt;%</span>-- The SimpleScriptManager Namespace must be Imported to be able to use the Html.SimpleScriptManager Extension --<span class="asp">%&gt;</span>
@@ -37,27 +41,42 @@ redirect_from:
     <span class="asp">&lt;%</span> Html.SimpleScriptManager().Render(); <span class="asp">%&gt;</span>
 <span class="kwrd">&lt;/</span><span class="html">body</span><span class="kwrd">&gt;</span>
 <span class="kwrd">&lt;/</span><span class="html">html</span><span class="kwrd">&gt;</span></pre>
-<p><!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } --></p>
-<p>&nbsp;</p>
-<p>This may look a little strange to you since you may be used to placing all your JavaScript Blocks and Script Includes at the top of the page within the &lt;HEAD&gt; tags. However, in order for the &ldquo;SimpleScriptManager&rdquo; to work property the call to Render to the page MUST be located at the end of the Master Page file. This allows any other server controls, user controls or pages to add Script Blocks and Includes at any time during the process or building/rendering the page, and then at the end of the Master Page (when the page is just about finished being rendered) the &ldquo;SimpleScriptManager().Render()&rdquo; method is called and the scripts are all rendered out to the page at that time. If the &ldquo;"SimpleScriptManager().Render()&rdquo; method is called prior to all other components on the Page, then any Script Blocks or Includes added to the &ldquo;SimpleScriptManager&rdquo; after Render is called will not be included within the final rendering of the Page that gets sent to the client.</p>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+
+ 
+
+This may look a little strange to you since you may be used to placing all your JavaScript Blocks and Script Includes at the top of the page within the &lt;HEAD&gt; tags. However, in order for the &ldquo;SimpleScriptManager&rdquo; to work property the call to Render to the page MUST be located at the end of the Master Page file. This allows any other server controls, user controls or pages to add Script Blocks and Includes at any time during the process or building/rendering the page, and then at the end of the Master Page (when the page is just about finished being rendered) the &ldquo;SimpleScriptManager().Render()&rdquo; method is called and the scripts are all rendered out to the page at that time. If the &ldquo;"SimpleScriptManager().Render()&rdquo; method is called prior to all other components on the Page, then any Script Blocks or Includes added to the &ldquo;SimpleScriptManager&rdquo; after Render is called will not be included within the final rendering of the Page that gets sent to the client.
 <h3>Using the &ldquo;SimpleScriptManager&rdquo;</h3>
-<p>The &ldquo;SimpleScriptManager&rdquo; has only two fairly simple methods: ScriptInclude and Script.</p>
+
+The &ldquo;SimpleScriptManager&rdquo; has only two fairly simple methods: ScriptInclude and Script.
 <h4>&ldquo;SimpleScriptManager.ScriptInclude&rdquo; Method</h4>
-<p>To add a simple Script Include within the page, you just call the &ldquo;ScriptManager.ScriptInclude&rdquo; method and pass in the Location / Url of the JavaScript file to include within the page. The Script Location / Url can be either an Absolute or Virtual (&ldquo;App Relative&rdquo;) Url.</p>
+
+To add a simple Script Include within the page, you just call the &ldquo;ScriptManager.ScriptInclude&rdquo; method and pass in the Location / Url of the JavaScript file to include within the page. The Script Location / Url can be either an Absolute or Virtual (&ldquo;App Relative&rdquo;) Url.
 <pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().ScriptInclude(<span class="str">"~/Scripts/jquery-1.3.2.js"</span>); <span class="asp">%&gt;</span></pre>
 <pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().ScriptInclude(<span class="str">"http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"</span>); <span class="asp">%&gt;</span></pre>
-<p>&nbsp;</p>
-<p>You can also pass in a &ldquo;Key&rdquo; for the specific Script Include you&rsquo;re registering. This key is a unique identifier used within your application for the specified Script Include, and it allows you to ensure that only a single include/reference to that specific script will get rendered within the Page.</p>
+
+ 
+
+You can also pass in a &ldquo;Key&rdquo; for the specific Script Include you&rsquo;re registering. This key is a unique identifier used within your application for the specified Script Include, and it allows you to ensure that only a single include/reference to that specific script will get rendered within the Page.
 <pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().ScriptInclude(<span class="str">"jquery"</span>, <span class="str">"~/Scripts/jquery-1.3.2.js"</span>); <span class="asp">%&gt;</span></pre>
-<p><!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } --></p>
-<p>&nbsp;</p>
-<p>For instance the second example of &ldquo;ScriptInclude&rdquo; above specifies the Key of &ldquo;jquery&rdquo;. You would be able to include this &ldquo;ScriptInclude&rdquo; call within any User Controls and/or Pages within your application that require that the &ldquo;jquery-1.3.2.js&rdquo; script be included within the page to work, and no matter how many of those controls are rendered to the page, the script would only have a single include/reference rendered to the Page.</p>
-<p>I know this isn&rsquo;t a very good example of adding a script reference that may only be needed within a couple pages of an application, since you&rsquo;ll most likely want jQuery included within every Page of your Application. To do this you&rsquo;ll just add the &ldquo;ScriptInclude&rdquo; call to top of the Master Page file itself. However, I&rsquo;m sure you get the idea I&rsquo;m trying to reference on how to &ldquo;optionally&rdquo; include a script reference only when it&rsquo;s needed, instead of including it within every single page of your application by adding it within the Master Page file.</p>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+
+ 
+
+For instance the second example of &ldquo;ScriptInclude&rdquo; above specifies the Key of &ldquo;jquery&rdquo;. You would be able to include this &ldquo;ScriptInclude&rdquo; call within any User Controls and/or Pages within your application that require that the &ldquo;jquery-1.3.2.js&rdquo; script be included within the page to work, and no matter how many of those controls are rendered to the page, the script would only have a single include/reference rendered to the Page.
+
+I know this isn&rsquo;t a very good example of adding a script reference that may only be needed within a couple pages of an application, since you&rsquo;ll most likely want jQuery included within every Page of your Application. To do this you&rsquo;ll just add the &ldquo;ScriptInclude&rdquo; call to top of the Master Page file itself. However, I&rsquo;m sure you get the idea I&rsquo;m trying to reference on how to &ldquo;optionally&rdquo; include a script reference only when it&rsquo;s needed, instead of including it within every single page of your application by adding it within the Master Page file.
 <h4>&ldquo;SimpleScriptManager.ScriptInclude&rdquo; Method to Add Web Resource References</h4>
-<p>One of the things necessary when building Custom Server Controls (instead of just User Controls) is the fact that they reside within an Assembly and contain scripts as Embedded Web Resources. This can cause issues when adding Script Include references for these controls since you need to load the script from the Embedded Web Resource into the Page.</p>
-<p>However, this is really simple to do with an additional &ldquo;ScriptInclude&rdquo; method overload that uses generics to specify the Assembly to find the Embedded Web Resource within, plus the full resource name to include. There is also a method overload that accept a unique &ldquo;Key&rdquo; for the script just like the above &ldquo;ScriptInclude&rdquo; example.</p>
-<p>To use these overloads of the &ldquo;ScriptInclude&rdquo; method you must add a reference to the &ldquo;SimpleScriptManager&rdquo; namespace within your custom control. Also, your Custom Control/Component must inherit from the ViewUserControl class so that it gets access to the HtmlHelper object through the Html property.</p>
-<p>Here&rsquo;s a really simple example of this:</p>
+
+One of the things necessary when building Custom Server Controls (instead of just User Controls) is the fact that they reside within an Assembly and contain scripts as Embedded Web Resources. This can cause issues when adding Script Include references for these controls since you need to load the script from the Embedded Web Resource into the Page.
+
+However, this is really simple to do with an additional &ldquo;ScriptInclude&rdquo; method overload that uses generics to specify the Assembly to find the Embedded Web Resource within, plus the full resource name to include. There is also a method overload that accept a unique &ldquo;Key&rdquo; for the script just like the above &ldquo;ScriptInclude&rdquo; example.
+
+To use these overloads of the &ldquo;ScriptInclude&rdquo; method you must add a reference to the &ldquo;SimpleScriptManager&rdquo; namespace within your custom control. Also, your Custom Control/Component must inherit from the ViewUserControl class so that it gets access to the HtmlHelper object through the Html property.
+
+Here&rsquo;s a really simple example of this:
 <pre class="csharpcode"><span class="rem">// The SimpleScriptManager Namespace must be Imported to be able to use the Html.SimpleScriptManager Extension</span>
 <span class="kwrd">using</span> SimpleScriptManager;
 
@@ -82,29 +101,41 @@ redirect_from:
         }
     }
 }</pre>
-<p><!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } --></p>
-<p>&nbsp;</p>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+
+ 
 <h4>&ldquo;SimpleScriptManager.Script&rdquo; Method</h4>
-<p>To add a Script Block in to the Page you just call the &ldquo;SimpleScriptManager.Script&rdquo; method and pass it a String that contains the JavaScript code to include within the Page.</p>
+
+To add a Script Block in to the Page you just call the &ldquo;SimpleScriptManager.Script&rdquo; method and pass it a String that contains the JavaScript code to include within the Page.
 <pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().Script(<span class="str">"alert('Hello!');"</span>); <span class="asp">%&gt;</span></pre>
-<p>&nbsp;</p>
-<p>You can also pass in a &ldquo;Key&rdquo; that uniquely identifies this specific Script Block. Just as with the &ldquo;ScriptInclude&rdquo; method, this allows you to specify that you only want this particular Script Block to be included within the Page only once no matter how many times any components within the Page specify it to be added.</p>
+
+ 
+
+You can also pass in a &ldquo;Key&rdquo; that uniquely identifies this specific Script Block. Just as with the &ldquo;ScriptInclude&rdquo; method, this allows you to specify that you only want this particular Script Block to be included within the Page only once no matter how many times any components within the Page specify it to be added.
 <pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().Script(<span class="str">"ScriptKey"</span>, <span class="str">"alert('Hello!');"</span>); <span class="asp">%&gt;</span></pre>
-<p>&nbsp;</p>
+
+ 
 <h4>&ldquo;SimpleScriptManager.Script&rdquo; Method using a Lambda Expression</h4>
-<p>I also included the ability to pass the &ldquo;SimpleScriptManager.Script&rdquo; method a Lambda Expression that will output the desired JavaScript code to the Page. This is something that makes it a little easier to add some Script to the Page and still be able to keep any code formatting in place (for readability) without requiring you to build it within a big, long String within the Page or User Control.</p>
+
+I also included the ability to pass the &ldquo;SimpleScriptManager.Script&rdquo; method a Lambda Expression that will output the desired JavaScript code to the Page. This is something that makes it a little easier to add some Script to the Page and still be able to keep any code formatting in place (for readability) without requiring you to build it within a big, long String within the Page or User Control.
 <pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().Script( () =&gt; {<span class="asp">%&gt;</span>
     $(function(){
         alert('Hello!');
     });"
 <span class="asp">&lt;%</span>}); <span class="asp">%&gt;</span></pre>
-<p>&nbsp;</p>
-<p>This method also supports the ability to pass in a &ldquo;Key&rdquo; to specify you only want this script to be included within the Page a single time.</p>
+
+ 
+
+This method also supports the ability to pass in a &ldquo;Key&rdquo; to specify you only want this script to be included within the Page a single time.
 <h3>How &ldquo;SimpleScriptManager&rdquo; Works</h3>
-<p>Besides the &ldquo;SimpleScriptManager&rdquo; being included as an Extension Method to the HtmlHelper object; it also &ldquo;attaches&rdquo; itself to the HttpContext.Items Dictionary the first time &ldquo;Html.SimpleScriptManager()&rdquo; is called and then any subsequent calls just add any Script Includes or Blocks to that same SimpleScriptManager instance. Then when you call the &ldquo;Render&rdquo; method it writes out the entire Html code necessary to Render all the Script Includes and Blocks to the Page.</p>
-<p>This is actually a fairly simple design, and the code that &ldquo;attaches&rdquo; the SimpleScriptManager to the HttpContext is includes within the HtmlHelper Extension Method itself; the rest of the code is contained within the actual SimpleScriptManager object.</p>
+
+Besides the &ldquo;SimpleScriptManager&rdquo; being included as an Extension Method to the HtmlHelper object; it also &ldquo;attaches&rdquo; itself to the HttpContext.Items Dictionary the first time &ldquo;Html.SimpleScriptManager()&rdquo; is called and then any subsequent calls just add any Script Includes or Blocks to that same SimpleScriptManager instance. Then when you call the &ldquo;Render&rdquo; method it writes out the entire Html code necessary to Render all the Script Includes and Blocks to the Page.
+
+This is actually a fairly simple design, and the code that &ldquo;attaches&rdquo; the SimpleScriptManager to the HttpContext is includes within the HtmlHelper Extension Method itself; the rest of the code is contained within the actual SimpleScriptManager object.
 <h3>Full &ldquo;SimpleScriptManager&rdquo; Code</h3>
-<p>SimpleScriptManagerExtension.cs</p>
+
+SimpleScriptManagerExtension.cs
 <pre class="csharpcode"><span class="rem">// Copyright (c) 2009 Chris Pietschmann ()</span>
 <span class="rem">// All rights reserved.</span>
 <span class="rem">// Licensed under the Microsoft Public License (Ms-PL)</span>
@@ -135,9 +166,12 @@ redirect_from:
         }
     }
 }</pre>
-<p><!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } --></p>
-<p>&nbsp;</p>
-<p>SimpleScriptManager.cs</p>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+
+ 
+
+SimpleScriptManager.cs
 <pre class="csharpcode"><span class="rem">// Copyright (c) 2009 Chris Pietschmann ()</span>
 <span class="rem">// All rights reserved.</span>
 <span class="rem">// Licensed under the Microsoft Public License (Ms-PL)</span>
@@ -342,8 +376,11 @@ redirect_from:
 
     }
 }</pre>
-<h3>&nbsp;</h3>
+<h3> </h3>
 <h3>Conclusion</h3>
-<p>At first it seemed that the easiest way to get similar functionality to this was to use the ASP.NET AJAX ScriptManager control; however that control requires that it be embedded within a <em>&lt;form runat=&rdquo;server&rdquo;&gt;&lt;/form&gt;</em> tag, and that just doesn&rsquo;t really work with ASP.NET MVC. Actually the methods to get the ASP.NET AJAX ScriptManager to work with ASP.NET MVC are just plain &ldquo;Hacks&rdquo; and they made me feel like I wasn&rsquo;t being True to the new ASP.NET MVC Platform.</p>
-<p>In the end, I&rsquo;m very happy that I was able to work out an extremely simple solution to this problem that will definitely help when building out ASP.NET MVC Web Applications.</p>
-<p>If you have any feedback on this, please leave a comment.</p>
+
+At first it seemed that the easiest way to get similar functionality to this was to use the ASP.NET AJAX ScriptManager control; however that control requires that it be embedded within a <em>&lt;form runat=&rdquo;server&rdquo;&gt;&lt;/form&gt;</em> tag, and that just doesn&rsquo;t really work with ASP.NET MVC. Actually the methods to get the ASP.NET AJAX ScriptManager to work with ASP.NET MVC are just plain &ldquo;Hacks&rdquo; and they made me feel like I wasn&rsquo;t being True to the new ASP.NET MVC Platform.
+
+In the end, I&rsquo;m very happy that I was able to work out an extremely simple solution to this problem that will definitely help when building out ASP.NET MVC Web Applications.
+
+If you have any feedback on this, please leave a comment.

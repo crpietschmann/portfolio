@@ -13,7 +13,11 @@ redirect_from:
   - /post.aspx?id=4b80a649-af4b-443c-ad46-a62f708cde19
 ---
 <!-- more -->
-<P>Windows 95 was released 10 years ago today!</P>
-<P><A href="http://www.microsoft.com/windows95/">http://www.microsoft.com/windows95/</A></P>
-<P>With the release of Vista coming, Win95 turns 10. Just think about what will be in the version of Windows that comes out whenVista turns 10. Lots of improvements have come and lots more to come.</P>
-<P>We all loved you Win95 in&nbsp;your prime and have now moved on; but we wont forget all the good times we had like waiting for you to start up, swearing at the blue screens and saying &#8220;why do I have to reinstall when I install a new application?&#8221;</P>
+
+Windows 95 was released 10 years ago today!
+
+<A href="http://www.microsoft.com/windows95/">http://www.microsoft.com/windows95/</A>
+
+With the release of Vista coming, Win95 turns 10. Just think about what will be in the version of Windows that comes out whenVista turns 10. Lots of improvements have come and lots more to come.
+
+We all loved you Win95 in your prime and have now moved on; but we wont forget all the good times we had like waiting for you to start up, swearing at the blue screens and saying &#8220;why do I have to reinstall when I install a new application?&#8221;

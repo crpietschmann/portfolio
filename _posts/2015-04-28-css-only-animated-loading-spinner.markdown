@@ -13,9 +13,12 @@ redirect_from:
   - /post.aspx?id=d0028042-516a-49dc-a8eb-3c4a41901bf8
 ---
 <!-- more -->
-<p><a href="http://www.w3schools.com/css/css3_animations.asp" target="_blank">CSS Animations</a> are a feature that's been around for a few years, but not many web developers know about it. CSS Animations allow you to define animations and transitions for HTML elements without the need to write JavaScript to do it, or even create an animated GIF file.</p>
-<p><img src="/images/posts/2015/04/CSS-Spinner.gif" alt="" /></p>
-<p>Here's a simple Loading Spinner using a simple CSS Animation:</p>
+
+<a href="http://www.w3schools.com/css/css3_animations.asp" target="_blank">CSS Animations</a> are a feature that's been around for a few years, but not many web developers know about it. CSS Animations allow you to define animations and transitions for HTML elements without the need to write JavaScript to do it, or even create an animated GIF file.
+
+<img src="/images/posts/2015/04/CSS-Spinner.gif" alt="" />
+
+Here's a simple Loading Spinner using a simple CSS Animation:
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">&lt;style&gt;
     @keyframes spin {
         from { transform: rotate(0deg); }
@@ -43,5 +46,7 @@ redirect_from:
 &lt;div class="spinner"&gt;
     &lt;div class="circle"&gt;&lt;/div&gt;
 &lt;/div&gt;</pre>
-<p>Download Full Code:</p>
-<p><a href="/FILES/2015/04/CSS-Spinner.zip.axdx">CSS-Spinner.zip (547.00 bytes)</a></p>
+
+Download Full Code:
+
+<a href="/FILES/2015/04/CSS-Spinner.zip.axdx">CSS-Spinner.zip (547.00 bytes)</a>

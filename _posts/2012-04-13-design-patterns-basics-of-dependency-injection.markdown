@@ -13,7 +13,10 @@ redirect_from:
   - /post.aspx?id=3fab0ff2-25a5-47f2-a7b6-a1dfefb9e4c6
 ---
 <!-- more -->
-<p><a href="http://en.wikipedia.org/wiki/Dependency_injection" target="_blank">Dependency Injection</a> and <a href="http://en.wikipedia.org/wiki/Inversion_of_control" target="_blank">Inversion of Control</a> (IoC) have become popular buzz words in the .NET development world over the last couple years. However, It seems that not very many developers really know what they are. Like most design patterns they are rather simple in idea, but the various implementations can become complex to someone new to them. Also, it seems that these two are often considered that they must go together or even mistaken as the same thing. This prompted me to write up this short article to describe what Dependency Injection is.</p>  <h3>What is Dependency Injection?</h3>  <p>It is very common that you will instantiate an objects properties or internal members to some value other than null within the objects constructor; thus setting up the object for use when it is created. These values are considered “dependencies” since the object depends on them in order to function. The pattern at its most basic is just passing in these dependencies to the objects constructor instead of instantiating them directly within the objects constructor. By doing this you can change the objects dependencies without needing to modify, refactor or inherit the class. Also, dependency injection doesn’t rely on IoC and can be used without it.</p>  <h3>Basic Implementation</h3>  <p>Here’s a simple class that does not use dependency injection:</p>  <pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">class</span> DataAccessLayer
+
+<a href="http://en.wikipedia.org/wiki/Dependency_injection" target="_blank">Dependency Injection</a> and <a href="http://en.wikipedia.org/wiki/Inversion_of_control" target="_blank">Inversion of Control</a> (IoC) have become popular buzz words in the .NET development world over the last couple years. However, It seems that not very many developers really know what they are. Like most design patterns they are rather simple in idea, but the various implementations can become complex to someone new to them. Also, it seems that these two are often considered that they must go together or even mistaken as the same thing. This prompted me to write up this short article to describe what Dependency Injection is.  <h3>What is Dependency Injection?</h3>  
+It is very common that you will instantiate an objects properties or internal members to some value other than null within the objects constructor; thus setting up the object for use when it is created. These values are considered “dependencies” since the object depends on them in order to function. The pattern at its most basic is just passing in these dependencies to the objects constructor instead of instantiating them directly within the objects constructor. By doing this you can change the objects dependencies without needing to modify, refactor or inherit the class. Also, dependency injection doesn’t rely on IoC and can be used without it.  <h3>Basic Implementation</h3>  
+Here’s a simple class that does not use dependency injection:  <pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">class</span> DataAccessLayer
 {
     <span class="kwrd">public</span> DataAccessLayer()
     {
@@ -55,9 +58,11 @@ redirect_from:
 }
 .csharpcode .lnum { color: #606060; }</style>
 
-<p>In the above example, you would need to modify the DataAccessLayer class in order to change the IDataService implementation that it uses. This makes Unit Testing the DataAccessLayer class extremly difficult since your tests will likely need to connect to a database in order to work.</p>
 
-<p>Now, here’s the same class that uses Dependency Injection for the “Service” property:</p>
+In the above example, you would need to modify the DataAccessLayer class in order to change the IDataService implementation that it uses. This makes Unit Testing the DataAccessLayer class extremly difficult since your tests will likely need to connect to a database in order to work.
+
+
+Now, here’s the same class that uses Dependency Injection for the “Service” property:
 
 <pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">class</span> DataAccessLayer
 {
@@ -76,13 +81,16 @@ redirect_from:
     }
 }</pre>
 
-<p>All that really changed when adding Dependency Injection was to make the constructor accept and require a reference to the desired IDataService implementation for the class to use. Now, in order to change the IDataService implementation to use you no longer need to modify the DataAccessLayer class itself.</p>
 
-<p>Here’s an example of instantiating an instance of the DataAccessLayer class and passing in the desired dependency:</p>
+All that really changed when adding Dependency Injection was to make the constructor accept and require a reference to the desired IDataService implementation for the class to use. Now, in order to change the IDataService implementation to use you no longer need to modify the DataAccessLayer class itself.
+
+
+Here’s an example of instantiating an instance of the DataAccessLayer class and passing in the desired dependency:
 
 <pre class="csharpcode">var myservice = <span class="kwrd">new</span> DataAccessLayer(<span class="kwrd">new</span> DataService());</pre>
 
-<p>Lastly, you can create a parameterless constructor to give the object a “default” IDataService to use if one is not specified. This can be handy for using at runtime, while the injection is used for unit testing. Here’s the DataAccessLayer class modified to include the parameterless constructor:</p>
+
+Lastly, you can create a parameterless constructor to give the object a “default” IDataService to use if one is not specified. This can be handy for using at runtime, while the injection is used for unit testing. Here’s the DataAccessLayer class modified to include the parameterless constructor:
 
 <pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">class</span> DataAccessLayer
 {
@@ -108,9 +116,11 @@ redirect_from:
 
 <h3>How about Unit Testing?</h3>
 
-<p>When unit testing the above DataAccessLayer class you can create a simple IDataService class that contains all the test data in memory instead of requiring the database to execute the tests.</p>
 
-<p>Here’s an example of a simple IDataService implementation that would contain all it’s data in memory for unit testing purposes:</p>
+When unit testing the above DataAccessLayer class you can create a simple IDataService class that contains all the test data in memory instead of requiring the database to execute the tests.
+
+
+Here’s an example of a simple IDataService implementation that would contain all it’s data in memory for unit testing purposes:
 
 <pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">class</span> MemeryDataService : IDataService
 {
@@ -129,4 +139,5 @@ redirect_from:
 
 <h3>Conclusion</h3>
 
-<p>As you can see, Dependency Injection is really a simple design pattern to implement. It can be used without IoC (if desired) and doesn’t require any third party libraries or tools.</p>
+
+As you can see, Dependency Injection is really a simple design pattern to implement. It can be used without IoC (if desired) and doesn’t require any third party libraries or tools.

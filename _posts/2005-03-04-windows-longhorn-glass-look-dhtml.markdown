@@ -13,13 +13,16 @@ redirect_from:
   - /post.aspx?id=6d3871ca-6e50-4cc5-888d-cabd5385eb31
 ---
 <!-- more -->
-<p>
+
+
 Heres a Windows <a href="http://msdn.microsoft.com/longhorn/" target="_blank" title="Windows ">Longhorn</a> Glass Look DHTML page I found somewhere one time. Its pretty neet, and it doesn&#39;t work in Firefox.
-</p>
-<p>
+
+
+
 <a href="/stuff/windowslonghornglasslook.htm">/stuff/windowslonghornglasslook.htm</a>
-</p>
-<p>
-&nbsp;
-</p>
+
+
+
+ 
+
 <img src="/images/postso_WindowsLonhornGlassLook.JPG" alt="" />

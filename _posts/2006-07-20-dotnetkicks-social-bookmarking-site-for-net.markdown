@@ -13,6 +13,9 @@ redirect_from:
   - /post.aspx?id=2d3c60b9-faab-403b-b814-690e0bce4897
 ---
 <!-- more -->
-<P>This site is similar to Digg, except that it's just for developers. DotNetKicks.com is a community driven, social bookmarking site for .NET and other Microsoft development technologies.</P>
-<P>I encourage others to try out DotNetKicks.</P>
-<P><A href="http://dotnetkicks.com">http://dotnetkicks.com</A></P>
+
+This site is similar to Digg, except that it's just for developers. DotNetKicks.com is a community driven, social bookmarking site for .NET and other Microsoft development technologies.
+
+I encourage others to try out DotNetKicks.
+
+<A href="http://dotnetkicks.com">http://dotnetkicks.com</A>

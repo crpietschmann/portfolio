@@ -13,6 +13,9 @@ redirect_from:
   - /post.aspx?id=38300790-5ba9-4e12-bdae-e793b866df87
 ---
 <!-- more -->
-<p>Today is the last day to enter the 2010 Community Coding Contest for a chance to win an MSDN Ultimate Subscription plus a total of approximately $20,719 worth of prizes!!</p>
-<p>All you need to do is write some source code to do something, and enter it into the contest. Who know, you could be one of the winners!</p>
-<p><a href="http://communitycodingcontest.org">http://communitycodingcontest.org</a></p>
+
+Today is the last day to enter the 2010 Community Coding Contest for a chance to win an MSDN Ultimate Subscription plus a total of approximately $20,719 worth of prizes!!
+
+All you need to do is write some source code to do something, and enter it into the contest. Who know, you could be one of the winners!
+
+<a href="http://communitycodingcontest.org">http://communitycodingcontest.org</a>

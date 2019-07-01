@@ -13,4 +13,5 @@ redirect_from:
   - /post.aspx?id=5ff60137-862a-4ced-b63d-e9dd5a44bdb3
 ---
 <!-- more -->
-<p>Just in case you want to display your <a href="http://brh.numbera.com/software/sidebargadgets/">XBox Live Gamercard within the Windows Vista Sidebar</a>; here's a gadget that does just that: <a href="http://brh.numbera.com/software/sidebargadgets/">http://brh.numbera.com/software/sidebargadgets/</a></p>
+
+Just in case you want to display your <a href="http://brh.numbera.com/software/sidebargadgets/">XBox Live Gamercard within the Windows Vista Sidebar</a>; here's a gadget that does just that: <a href="http://brh.numbera.com/software/sidebargadgets/">http://brh.numbera.com/software/sidebargadgets/</a>

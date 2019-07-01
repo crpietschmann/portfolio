@@ -18,15 +18,18 @@ redirect_from:
 		<tr>
 			<td>
 			<div class="post">
-			<p>
+			
+
 			Score!! I&#39;ve been waiting for this game for years (I don&#39;t even remember how long). I&#39;ll have to buy an XBox 360 so I can play it.
-			</p>
-			<p>
+			
+			
+
 			<img src="/Blog/images/14/o_wallpaper1lg.jpg" border="0" alt="" width="258" height="153" />
-			</p>
-			<p>
+			
+			
+
 			Check it out: <a href="http://www.perfectdarkzero.com/">http://www.PerfectDarkZero.com</a>
-			</p>
+			
 			</div>
 			</td>
 		</tr>

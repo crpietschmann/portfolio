@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=6cd2fe7a-425a-462f-b8e5-ce808f7ed0a9
 ---
 <!-- more -->
-<P>Ever wanted to hear your favorite video game music played on piano?</P>
-<P><A href="http://www.videogamepianist.com./index.php?id=audio">http://www.videogamepianist.com./index.php?id=audio</A></P>
+
+Ever wanted to hear your favorite video game music played on piano?
+
+<A href="http://www.videogamepianist.com./index.php?id=audio">http://www.videogamepianist.com./index.php?id=audio</A>

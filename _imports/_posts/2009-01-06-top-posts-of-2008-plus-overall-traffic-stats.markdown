@@ -13,13 +13,15 @@ redirect_from:
   - /post.aspx?id=64180882-cca3-4839-93b8-2e19e46d9e87
 ---
 <!-- more -->
-<p>
+
+
 Now that 2008 has come to a close, and I finally have a full two years of traffic history that I can use for comparison I&#39;ve decided to post a traffic summary as well as list the top posts of 2008.
-</p>
+
 <h3>Top Posts of 2008</h3>
-<p>
+
+
 Here&#39;s a list of my most popular posts from 2008. This list only counts the posts I&#39;ve posted during 2008.
-</p>
+
 <ol>
 	<li><a href="/post.aspx?id=f0843935-2753-4621-b521-7d41a180c28f">JavaScript ForEach Equivalent</a> - 38,171 pageviews</li>
 	<li><a href="/post.aspx?id=5ad641db-7f0e-499c-a653-e388b441caf9">.NET 3.5: JSON Serialization using the DataContractJsonSerializer</a> - 8,454 pageviews</li>
@@ -44,11 +46,12 @@ Here&#39;s a list of my most popular posts from 2008. This list only counts the 
 	<li><a href="/post.aspx?id=57e3e956-a3cd-445f-8445-48bee9c14494">Virtual Earth: Polygon Search - Is Point Within Polygon?</a> - 1,816 pageviews</li>
 </ol>
 <h3>Most Trafficed Posts of 2008 </h3>
-<p>
+
+
 Here&#39;s a list of my most popular posts during 2008. This list counts all posts I&#39;ve ever posted.
-</p>
+
 <ol>
-	<li><a href="/post.aspx?id=f0843935-2753-4621-b521-7d41a180c28f">JavaScript ForEach Equivalent</a> - 38,171 pageviews&nbsp;</li>
+	<li><a href="/post.aspx?id=f0843935-2753-4621-b521-7d41a180c28f">JavaScript ForEach Equivalent</a> - 38,171 pageviews </li>
 	<li><a href="/post.aspx?id=74349c15-05f9-46b7-a16c-5cefa0d1c64f">Can you run Mac OS X within Virtual PC 2007 on Windows?</a> - 32,202 pageviews</li>
 	<li><a href="/post.aspx?id=4c03ec73-56af-46db-9ece-22f0af16d566">I now have my key for Vista Ultimate</a> - 22,098 pageviews</li>
 	<li><a href="/post.aspx?id=fc854e6c-0c56-4265-977b-cf3e4e89ebd2">ASP.NET 2.0: How to get a specific ConnectionString from the Web.Config by name</a> - 20,321 pageviews</li>
@@ -74,9 +77,10 @@ Here&#39;s a list of my most popular posts during 2008. This list counts all pos
 Interestingly enough, there are a few of the Most Trafficed posts that are from 2 or more years ago, and some of them are pretty much only a snippet of code without any descriptions.<br />
 <br />
 <h3>Top Keywords of 2008</h3>
-<p>
+
+
 Here&#39;s a list of the top 50 keywords used to search when landing on this blog in 2008. 
-</p>
+
 <ol>
 	<li>javascript foreach</li>
 	<li>vista ultimate product key</li>
@@ -129,18 +133,21 @@ Here&#39;s a list of the top 50 keywords used to search when landing on this blo
 	<li>increase tcp connections</li>
 	<li>webmessenger msn</li>
 </ol>
-<p>
+
+
 Surprisingly there are a lot of searches related to my &quot;Can you run Mac
 OS X within Virtual PC 2007 on Windows?&quot; post; it seems to be a desired
 feature but I don&#39;t think Apple wants to see it happen.
-</p>
-<p>
-&nbsp;
-</p>
+
+
+
+ 
+
 <h3>Top Referring Sites of 2008</h3>
-<p>
+
+
 Here&#39;s the top 10 referrers to my blogin 2008.
-</p>
+
 <ol>
 	<li>dotnetkicks.com</li>
 	<li>weblogs.asp.net</li>
@@ -155,15 +162,17 @@ Here&#39;s the top 10 referrers to my blogin 2008.
 	</li>
 </ol>
 <h3>Overall Traffic Stats of 2008</h3>
-<p>
+
+
 This last year has seen a total of 63.08% increase in Visitors, and 49.24% increase in Pageviews. The blog has also seen a 99.29% increase of direct traffic.
 That&#39;s a huge increase in traffic in my opinion. 
-</p>
-<p>
+
+
+
 <table border="1">
 	<tbody>
 		<tr>
-			<th>&nbsp;
+			<th> 
 			</th><th>2007</th>
 			<th>2008</th>
 			<th>Increase</th>
@@ -190,16 +199,19 @@ That&#39;s a huge increase in traffic in my opinion.
 		</tr>
 	</tbody>
 </table>
-</p>
+
 <h3><br />
 Conclusion <br />
 </h3>
-<p>
+
+
 I&#39;ve seen some awesome growth on this blog over the last year; to my surprise. The more traffic I get, the more it inspires me to write more posts and to try to write better quality posts. Also as of today, FeedBurner is reporting that I have 313 subscribers to the RSS feed. This is so awesome! I&#39;m always amazed at how many people read my blog, through RSS, Referrers and Searches (mainly Google); especially since the original reason I started blogging (and one of the main reasons I keep blogging today) was just so I had a place to easily save things for reference later, that also allows me to easily search through them via search engines and to access it from anywhere. 
-</p>
-<p>
-<strong>Blog Goal for 2009:</strong> I&#39;m going to try to focus more on the quality of my posts. If you have any pointers, please post them in the comments.
-</p>
-<p>
+
+
+
+**Blog Goal for 2009:** I&#39;m going to try to focus more on the quality of my posts. If you have any pointers, please post them in the comments.
+
+
+
 Thanks for reading!!
-</p>
+

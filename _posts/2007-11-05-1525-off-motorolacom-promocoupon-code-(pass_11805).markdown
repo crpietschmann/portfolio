@@ -13,6 +13,7 @@ redirect_from:
   - /post.aspx?id=d48ac510-b943-41ea-8101-71c43a7e4e2b
 ---
 <!-- more -->
-<SPAN id=ctl00_MainContentPlaceHolder_DataList1_ctl00_TextLabel>&nbsp;Here's a Motorola.com Promo/Coupon Code (PASS_11805)&nbsp;for 15% off any purchase. 
+<SPAN id=ctl00_MainContentPlaceHolder_DataList1_ctl00_TextLabel> Here's a Motorola.com Promo/Coupon Code (PASS_11805) for 15% off any purchase. 
 <H1>PASS_11805</H1>
-<P>This code is good through 2/3/2008.</P></SPAN>
+
+This code is good through 2/3/2008.</SPAN>

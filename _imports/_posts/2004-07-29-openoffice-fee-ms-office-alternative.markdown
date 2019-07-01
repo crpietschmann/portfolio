@@ -13,8 +13,10 @@ redirect_from:
   - /post.aspx?id=fbc4db93-df9f-4291-b719-5932100fc83e
 ---
 <!-- more -->
-<P>There is a Free Open Source alternative to MS-Office. Open Office is a professional quality application suite unlike most of the open source projects I've seen. It has all the features of MS-Office and you can even open and save all the MS Document Formats. Open Office even has a couple really neat features that MS-Office doesn't have: Writer can save to PDF and Impress can save SWF (Macromedia Flash). It is currently at Version 1.1, and 2.0 is currently in development. I haven't looked very indepth at the features of this suite, but I am very impressed with it being Free Open Source and all.</P>
-<P>
+
+There is a Free Open Source alternative to MS-Office. Open Office is a professional quality application suite unlike most of the open source projects I've seen. It has all the features of MS-Office and you can even open and save all the MS Document Formats. Open Office even has a couple really neat features that MS-Office doesn't have: Writer can save to PDF and Impress can save SWF (Macromedia Flash). It is currently at Version 1.1, and 2.0 is currently in development. I haven't looked very indepth at the features of this suite, but I am very impressed with it being Free Open Source and all.
+
+
 <TABLE border=1>
 <TBODY>
 <TR vAlign=bottom bgColor=black>
@@ -34,9 +36,12 @@ redirect_from:
 <TD><FONT size=-1>Calc</FONT></TD>
 <TD><FONT size=-1>Is a feature-packed spreadsheet which can turn boring numbers into eye-catching information. Calculate, analyse, and visually communicate your data quickly and easily. Use advanced spreadsheet functions and decision-making tools to perform sophisticated data analysis. Use built-in charting tools to generate impressive 2D and 3D charts.</FONT></TD></TR>
 <TR vAlign=top bgColor=lightgrey>
-<TD><FONT size=-1>&nbsp;</FONT></TD>
+<TD><FONT size=-1> </FONT></TD>
 <TD><FONT size=-1>Draw</FONT></TD>
 <TD><FONT size=-1>Will produce everything from simple diagrams to dynamic 3D illustrations and special effects.</FONT></TD></TR></TBODY></TABLE>
-<P></P>
-<P>Flash Introduction to Open Office: <A href="http://www.digitaldistribution.com/samples/openofficeintro11en.swf">http://www.digitaldistribution.com/samples/openofficeintro11en.swf</A></P>
-<P>For more information or to get Open Office: <A href="http://www.openoffice.org/">http://www.openoffice.org</A></P>
+
+
+
+Flash Introduction to Open Office: <A href="http://www.digitaldistribution.com/samples/openofficeintro11en.swf">http://www.digitaldistribution.com/samples/openofficeintro11en.swf</A>
+
+For more information or to get Open Office: <A href="http://www.openoffice.org/">http://www.openoffice.org</A>

@@ -13,6 +13,9 @@ redirect_from:
   - /post.aspx?id=e571611f-f0f6-4ae4-b22f-c80bd602ac04
 ---
 <!-- more -->
-<P>These are just plain funny toons here.</P>
-<P><A href="http://www.homestarrunner.com/main1.html">http://www.homestarrunner.com/main1.html</A></P>
-<P>GO STRONGBAD!!</P>
+
+These are just plain funny toons here.
+
+<A href="http://www.homestarrunner.com/main1.html">http://www.homestarrunner.com/main1.html</A>
+
+GO STRONGBAD!!

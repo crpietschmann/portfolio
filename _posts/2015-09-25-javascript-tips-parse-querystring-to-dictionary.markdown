@@ -13,10 +13,13 @@ redirect_from:
   - /post.aspx?id=a7e18d8b-5554-48db-b679-51f9c0575c3d
 ---
 <!-- more -->
-<p>The URL Query String is something that is usually just sent to the server-side code and parse there for use in specifying the data to query. A somewhat little known feature of the JavaScript DOM is that the QueryString values are accessible from client-side javaScript code too.</p>
-<p>The following code can be used to read what the full QueryString value is from the current pages URL:</p>
+
+The URL Query String is something that is usually just sent to the server-side code and parse there for use in specifying the data to query. A somewhat little known feature of the JavaScript DOM is that the QueryString values are accessible from client-side javaScript code too.
+
+The following code can be used to read what the full QueryString value is from the current pages URL:
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">var queryString = document.location.search;</pre>
-<p>Although, the QueryString value can be accessed from JavaScript, it isn't parsed and separated out into any kind of Key/Value pairs automatically. This parsing must be done manually. Below is an example parsing function and it's example usage:</p>
+
+Although, the QueryString value can be accessed from JavaScript, it isn't parsed and separated out into any kind of Key/Value pairs automatically. This parsing must be done manually. Below is an example parsing function and it's example usage:
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">// get raw QueryString value
 var queryString = document.location.search;
 var dict = parseQueryStringToDictionary(queryString);
@@ -68,4 +71,5 @@ function parseQueryStringToDictionary(queryString) {
 	// Step 4: Return Dictionary Object
 	return dictionary;
 }</pre>
-<p>&nbsp;</p>
+
+ 

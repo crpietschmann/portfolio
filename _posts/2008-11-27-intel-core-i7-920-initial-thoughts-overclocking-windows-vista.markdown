@@ -13,61 +13,113 @@ redirect_from:
   - /post.aspx?id=84cffaa2-1856-4b3d-b7fc-5c74126bd318
 ---
 <!-- more -->
-<p><img src="/images/postscorei7BlueLogo.png" alt="" align="right" />I recently upgraded my main desktop machine to a new Intel Core i7 920 CPU and all its glory. Here's a write up of my experience in choosing the Core i7 (over the Core 2 Quad) and my experiences with it so far.</p>
+
+<img src="/images/postscorei7BlueLogo.png" alt="" align="right" />I recently upgraded my main desktop machine to a new Intel Core i7 920 CPU and all its glory. Here's a write up of my experience in choosing the Core i7 (over the Core 2 Quad) and my experiences with it so far.
 <h3>Thoughts Before Upgrading - Core 2 Quad or Core i7?</h3>
-<p>My previous machine was an AMD Athlon 64 X2 4200+ (2.2Ghz) with 4GB DDR2 800Mhz Ram. The system ran great, but it was two years old and my requirements for using Virtualization (via Virtual PC) have increased so it's time for an upgrade.</p>
-<p>I was looking to build a Quad Core machine, and was originally looking at the Core 2 Quad, but then I found out that the new Core i7 was coming out Nov. 17. So, I waited, read the pre-release reviews, got more interested, waited, and finally purchased on Nov. 17. There are three versions of the Core i7 out right now, the 920 (2.66Ghz, $300), 940 (2.92Ghz, $570) and 965 (3.2Ghz, $1,050).</p>
-<p>Originally, I was looking at spending ~$300 for the Core 2 Quad Q9550 (2.83Ghz). But, after reviewing the data on the new Core i7, things looked promising that the 920 would perform better, and for the same price.</p>
+
+My previous machine was an AMD Athlon 64 X2 4200+ (2.2Ghz) with 4GB DDR2 800Mhz Ram. The system ran great, but it was two years old and my requirements for using Virtualization (via Virtual PC) have increased so it's time for an upgrade.
+
+I was looking to build a Quad Core machine, and was originally looking at the Core 2 Quad, but then I found out that the new Core i7 was coming out Nov. 17. So, I waited, read the pre-release reviews, got more interested, waited, and finally purchased on Nov. 17. There are three versions of the Core i7 out right now, the 920 (2.66Ghz, $300), 940 (2.92Ghz, $570) and 965 (3.2Ghz, $1,050).
+
+Originally, I was looking at spending ~$300 for the Core 2 Quad Q9550 (2.83Ghz). But, after reviewing the data on the new Core i7, things looked promising that the 920 would perform better, and for the same price.
 <h3>Thoughts During/After Upgrade</h3>
-<p>In this upgrade I replaced the Motherboard (<a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16813128362">Gigabyte GA-EX58-UD5</a>, $298.99), CPU (<a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16819115202">Intel Core i7 920</a>, $319.99) and Ram (<a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16820231193">G.SKILL 2 x 2GB DDR3 1600</a>, $149.99).</p>
-<p>The Core i7 supports Triple Channel DDR3 memory. What this means is you need to have 3 or 6 (multiples of 3) Ram sticks in order to run in Triple Channel. If you only have 2 Ram sticks you can run in Dual Channel mode; this is what I'm doing currently.</p>
-<p><em><strong>DDR3 Ram Advisory:</strong> It has been reported in various sources online, that the Core i7 CPU can be damaged by DDR3 Ram that operates at higher than 1.65v. You need to be aware of this when purchasing memory. If you look the G.SKILL memory I have listed above has a rating of 1.8v on NewEgg. I ordered this memory before I found out about this limit, but luckily the 2 sticks I got are actually rated at 1.5v.</em></p>
-<p>After installing the hardware, I booted up Windows Vista x64 (I didn't reinstall, still booting off the old hard drive. Windows Vista took a little bit to catch up, since it needed to install all new drivers for the major upgrade in hardware. After about 2 minutes all drivers were updated and Vista booted up ready for login.</p>
-<p>Running Vista on the new Core i7 920 (stock settings), things seem snappier than they did on the old system. The Windows Experience Index for the Processor is 5.9, up from 4.9 for the Athlon 64 X2 4200+.</p>
-<p>Here's a screenshot of my Windows Experience Index with the Core i7 920 and 4GB Ram at "stock" settings:</p>
-<p><img src="/images/postsCore_i7_920_4GB_WindowsExperienceIndexRating.png" alt="" /></p>
-<p><em>Update: After originally posting this I found out that the <a href="http://www.microsoft.com/windows/windows-vista/get/experience-index.aspx">highest Windows Experience Rating under Vista that any component can score is a 5.9</a>. Until I found this out, I was curious as to why the Core i7 920 running at 2.6Ghz scored the same as running at 3.4Ghz. I wonder how high the Core i7 CPU's would score if Vista were able to give a score higher than 5.9? I also wonder what the max Windows Experience Index Score will be in Windows 7 when if comes out.</em></p>
-<p>And for comparison, here's the Windows Experience Index for the old Athlon 64 X2 4200+ with 4GB Ram:&nbsp;</p>
-<p><img src="/images/postsAMDAthlon64X2_4400%2b_4GB_WindowsExperienceIndexRating.png" alt="" /></p>
-<p><em>Note: The reason the Graphics Score (and ultimately the Base Score) are so low is because I'm still using my old NVidia GeForce 6600 (256MB) Video Card; which I am thinking of upgrading soon to.</em></p>
-<p><em>Update 08/10/2009:</em> I have since upgraded my machine to Windows 7 RTM (final release). The overall Windows Experience Index Rating is actually higher than the Beta at 5.3 with the Core i7 920 running at "stock" 2.6Ghz settings. The video card is the same nVidia 9500 w/ 512MB VRam. The most interesting thing to note with Windows 7 RTM is that the Video Card's Gaming Graphics score is 6.4; that's quite the increase from 5.0 in the Beta, and is most likely due to a final release of a more compatible video card driver from nVidia. Also, the Core i7 920 CPU scores a higher 7.5 and the Memory (RAM) scores a higher 7.6. So actually the overall performance of the system with Windows 7 RTM scores higher than the Beta did.</p>
-<p><span style="text-decoration: line-through;"><em>Update 1/29/2009:</em> I have since installed Windows 7 Beta 1 on this Core i7 920 system, so I thought I'd share the Windows 7 Beta 1 Windows Experience Index Rating with it running at the "stock" 2.6Ghz settings. One thing to note, is I have upgraded this systems video card to an nVidia 9500 w/ 512MB VRam. Interestingly, the Core i7 920 rates a 7.4 out of a maximum 7.9. Screen shot is below.</span></p>
+
+In this upgrade I replaced the Motherboard (<a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16813128362">Gigabyte GA-EX58-UD5</a>, $298.99), CPU (<a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16819115202">Intel Core i7 920</a>, $319.99) and Ram (<a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16820231193">G.SKILL 2 x 2GB DDR3 1600</a>, $149.99).
+
+The Core i7 supports Triple Channel DDR3 memory. What this means is you need to have 3 or 6 (multiples of 3) Ram sticks in order to run in Triple Channel. If you only have 2 Ram sticks you can run in Dual Channel mode; this is what I'm doing currently.
+
+<em>**DDR3 Ram Advisory:** It has been reported in various sources online, that the Core i7 CPU can be damaged by DDR3 Ram that operates at higher than 1.65v. You need to be aware of this when purchasing memory. If you look the G.SKILL memory I have listed above has a rating of 1.8v on NewEgg. I ordered this memory before I found out about this limit, but luckily the 2 sticks I got are actually rated at 1.5v.</em>
+
+After installing the hardware, I booted up Windows Vista x64 (I didn't reinstall, still booting off the old hard drive. Windows Vista took a little bit to catch up, since it needed to install all new drivers for the major upgrade in hardware. After about 2 minutes all drivers were updated and Vista booted up ready for login.
+
+Running Vista on the new Core i7 920 (stock settings), things seem snappier than they did on the old system. The Windows Experience Index for the Processor is 5.9, up from 4.9 for the Athlon 64 X2 4200+.
+
+Here's a screenshot of my Windows Experience Index with the Core i7 920 and 4GB Ram at "stock" settings:
+
+<img src="/images/postsCore_i7_920_4GB_WindowsExperienceIndexRating.png" alt="" />
+
+<em>Update: After originally posting this I found out that the <a href="http://www.microsoft.com/windows/windows-vista/get/experience-index.aspx">highest Windows Experience Rating under Vista that any component can score is a 5.9</a>. Until I found this out, I was curious as to why the Core i7 920 running at 2.6Ghz scored the same as running at 3.4Ghz. I wonder how high the Core i7 CPU's would score if Vista were able to give a score higher than 5.9? I also wonder what the max Windows Experience Index Score will be in Windows 7 when if comes out.</em>
+
+And for comparison, here's the Windows Experience Index for the old Athlon 64 X2 4200+ with 4GB Ram: 
+
+<img src="/images/postsAMDAthlon64X2_4400%2b_4GB_WindowsExperienceIndexRating.png" alt="" />
+
+<em>Note: The reason the Graphics Score (and ultimately the Base Score) are so low is because I'm still using my old NVidia GeForce 6600 (256MB) Video Card; which I am thinking of upgrading soon to.</em>
+
+<em>Update 08/10/2009:</em> I have since upgraded my machine to Windows 7 RTM (final release). The overall Windows Experience Index Rating is actually higher than the Beta at 5.3 with the Core i7 920 running at "stock" 2.6Ghz settings. The video card is the same nVidia 9500 w/ 512MB VRam. The most interesting thing to note with Windows 7 RTM is that the Video Card's Gaming Graphics score is 6.4; that's quite the increase from 5.0 in the Beta, and is most likely due to a final release of a more compatible video card driver from nVidia. Also, the Core i7 920 CPU scores a higher 7.5 and the Memory (RAM) scores a higher 7.6. So actually the overall performance of the system with Windows 7 RTM scores higher than the Beta did.
+
+<span style="text-decoration: line-through;"><em>Update 1/29/2009:</em> I have since installed Windows 7 Beta 1 on this Core i7 920 system, so I thought I'd share the Windows 7 Beta 1 Windows Experience Index Rating with it running at the "stock" 2.6Ghz settings. One thing to note, is I have upgraded this systems video card to an nVidia 9500 w/ 512MB VRam. Interestingly, the Core i7 920 rates a 7.4 out of a maximum 7.9. Screen shot is below.</span>
 <h3>Overclocking the Core i7 920!<img src="/images/postsCore_i7_920_3.4Ghz" alt="" align="right" /></h3>
-<p>This is probably the most interesting part of this post; what you're really interested in, right?</p>
-<p>The Core i7 has a couple changed to its architecture. First, it has an integrated memory controller on the chip with it's own clock multiplier. Second, there's a new clock multiplier called QPI. QPI ends up being the frequency that the indivisual CPU Cores talk to each other with. And then there's the Base Clock and the main CPU Multiplier. You can changed each of these four settings independently, essentially giving you more control when overclocking.&nbsp;</p>
-<p>The most notable thing is the 920 has a CPU Multiplier of 20 ("fixed"). This means you can't set it higher than that. The 940 also has a locked multiplier (at 22 I think). But, the 965 has an unlocked multiplier; this is meant to be the "ultimate" overclockers chip.</p>
-<p>You can read more about the Core i7's architecture in other sources; I just wanted to give a brief, basic overview of what relates to the overclocking I've done.</p>
-<p>Since there are so many things that can be adjusted, as well as voltage; you may be a little confused as you how you might go about overclocking it. Well, it's actually rather simple. For simple overclocking, all you need to do is adjust the Base Clock and everything else will follow along. It would be nice if you could adjust the CPU Multiplier, but you can only increase that if you have the 965 cpu.</p>
-<p>The Core i7 920 at 2.66Ghz has a Base Clock of 133Mhz by default. One thing noting for comparison to my overclocking results is in my configuration the Max CPU Temperature at 100% load was 84c.</p>
-<p>I've tested mine at both 2.92Ghz (146Mhz Base Clock) and 3.0Ghz (150Mhz Base Clock) using the Stock Cooler that come with the CPU, and both run very stable and seem to keep within safe temperatures; 86c max under 100% cpu load in my initial testing. Note, I do have 2 case fans, so I would recommend you have at least one good case fan for this.</p>
-<p>I have tested the 920 at 3.2Ghz by setting the Base Clock to 160Mhz<span style="text-decoration: line-through;">, but the temps got up to 90c under initial tests of 100% cpu load, so I set it back down to be safe</span>. I added another small case fan and now it seems I'm able to get 3.2Ghz running without worrying about the temp. In initial testing, under 100% cpu load it's reached 88c max, and runs extremely stable.</p>
-<p>I also tested the 920 at 3.4Ghz by setting the Base Clock to 170Mhz. In initial testing, under 100% cpu load it's reached 89c max, and runs extremely stable.&nbsp;</p>
-<p>I also decided to check out some benchmarks, so I ran CINEBENCH 10 with both 3.0Ghz (150mhz Base Clock), 3.2Ghz (160mhz Base Clock), and 3.4Ghz (170Mhz Base Clock):</p>
-<p><strong>CINEBENCH 10, x64 version, 800x600 Image </strong></p>
-<p><em><a href="http://valid.canardpc.com/show_oc.php?id=464998">Core i7 920 @3.5Ghz (175Mhz Base Clock)</a> - Score: 20,929.0</em></p>
-<p><em><a href="http://valid.canardpc.com/show_oc.php?id=464973">Core i7 920 @3.4Ghz (170Mhz Base Clock)</a> - Score: 20,530.0</em></p>
-<p><em>Core i7 920 @3.2Ghz (160Mhz Base Clock) - Score: 18,914.0</em></p>
-<p><em>Core i7 920 @3.0Ghz (150Mhz Base Clock) - Score: 17,377.0</em></p>
-<p><em><a href="http://valid.canardpc.com/show_oc.php?id=464964">Core i7 920 @2.6Ghz (133Mhz "stock" Base Clock / My Configuration)</a> - Score: 16,256.0</em></p>
-<p><span style="text-decoration: line-through;">I haven't run CINEBENCH 10 on the "stock" settings on my machine, but <a href="http://www.bit-tech.net/hardware/2008/11/03/intel-core-i7-920-945-965-review/10">here's an article</a> that shows the 920 score 15,211.0 with "stock" settings.</span> Since, posting this I decided to run the CINEBENCH 10 test on my configuration with the Core i7 920 at "stock" settings, and the results I got are actually higher than the ones in the previously mentioned link. With my "stock" settings scoring 16,256; that only makes my configuration run 2,085 points lower than the <a href="http://www.bit-tech.net/hardware/2008/11/03/intel-core-i7-920-945-965-review/10">stock Core i7 965 mentioned in this article</a>. According to the article the 965's highest score on "stock" settings is 18,341.0. That's 2,189 points lower than my overclocked 920 at 3.4Ghz.</p>
-<p>A ~27% overclock isn't too bad on the stock cooler. Not to mention the fact that the Core i7 920 costs less than 1/3rd of the Core i7 965!&nbsp;</p>
-<p>Also, I need to do further testing to be confident with my results to be confident their safe. So just be careful when overclocking, and there's no guarantee all 920 chips will perform the same as mine. Happy Overclocking!</p>
-<p><em>Update 4/15/2008: I've had my i7 920 overclocked to 3.2Ghz since I originally posted this, and it's been running rock solid. However, I don't max out the CPU for very long periods, so heat really isn't that much of an issue. I did do some additional testing today using Prime95 to see what the temps get up to. Today when I tested the Core Temp got up to 100C pretty quickly; that's hot enough to boil water! I also updated my BIOS to the latest F6 firmware today. Well, anyway, it still runs rock solid; just thought I'd give an update.</em></p>
-<p><em><strong>Overclocking Ram Advisory:</strong> As mentioned above the Core i7 requires memory that runs at or below 1.65v, otherwise (according to reports from <a href="http://www.google.com/search?q=core+i7+1.65v">various sources</a>) it can damager the CPU. One thing to remember when overclocking the Core i7 is you may need to lower the RAM Multiplier in the Bios if you are trying to give the CPU a healthy overclock. In my case (using the G.SKILL Ram listed above) the Ram I have seems to run at 1.7v at 1600Mhz (which was stable for days); so just in case I decided to lower my Ram Multiplier so it runs lower, and wit the 3.4Ghz overclock the ran is running at 1.63v.</em></p>
+
+This is probably the most interesting part of this post; what you're really interested in, right?
+
+The Core i7 has a couple changed to its architecture. First, it has an integrated memory controller on the chip with it's own clock multiplier. Second, there's a new clock multiplier called QPI. QPI ends up being the frequency that the indivisual CPU Cores talk to each other with. And then there's the Base Clock and the main CPU Multiplier. You can changed each of these four settings independently, essentially giving you more control when overclocking. 
+
+The most notable thing is the 920 has a CPU Multiplier of 20 ("fixed"). This means you can't set it higher than that. The 940 also has a locked multiplier (at 22 I think). But, the 965 has an unlocked multiplier; this is meant to be the "ultimate" overclockers chip.
+
+You can read more about the Core i7's architecture in other sources; I just wanted to give a brief, basic overview of what relates to the overclocking I've done.
+
+Since there are so many things that can be adjusted, as well as voltage; you may be a little confused as you how you might go about overclocking it. Well, it's actually rather simple. For simple overclocking, all you need to do is adjust the Base Clock and everything else will follow along. It would be nice if you could adjust the CPU Multiplier, but you can only increase that if you have the 965 cpu.
+
+The Core i7 920 at 2.66Ghz has a Base Clock of 133Mhz by default. One thing noting for comparison to my overclocking results is in my configuration the Max CPU Temperature at 100% load was 84c.
+
+I've tested mine at both 2.92Ghz (146Mhz Base Clock) and 3.0Ghz (150Mhz Base Clock) using the Stock Cooler that come with the CPU, and both run very stable and seem to keep within safe temperatures; 86c max under 100% cpu load in my initial testing. Note, I do have 2 case fans, so I would recommend you have at least one good case fan for this.
+
+I have tested the 920 at 3.2Ghz by setting the Base Clock to 160Mhz<span style="text-decoration: line-through;">, but the temps got up to 90c under initial tests of 100% cpu load, so I set it back down to be safe</span>. I added another small case fan and now it seems I'm able to get 3.2Ghz running without worrying about the temp. In initial testing, under 100% cpu load it's reached 88c max, and runs extremely stable.
+
+I also tested the 920 at 3.4Ghz by setting the Base Clock to 170Mhz. In initial testing, under 100% cpu load it's reached 89c max, and runs extremely stable. 
+
+I also decided to check out some benchmarks, so I ran CINEBENCH 10 with both 3.0Ghz (150mhz Base Clock), 3.2Ghz (160mhz Base Clock), and 3.4Ghz (170Mhz Base Clock):
+
+**CINEBENCH 10, x64 version, 800x600 Image **
+
+<em><a href="http://valid.canardpc.com/show_oc.php?id=464998">Core i7 920 @3.5Ghz (175Mhz Base Clock)</a> - Score: 20,929.0</em>
+
+<em><a href="http://valid.canardpc.com/show_oc.php?id=464973">Core i7 920 @3.4Ghz (170Mhz Base Clock)</a> - Score: 20,530.0</em>
+
+<em>Core i7 920 @3.2Ghz (160Mhz Base Clock) - Score: 18,914.0</em>
+
+<em>Core i7 920 @3.0Ghz (150Mhz Base Clock) - Score: 17,377.0</em>
+
+<em><a href="http://valid.canardpc.com/show_oc.php?id=464964">Core i7 920 @2.6Ghz (133Mhz "stock" Base Clock / My Configuration)</a> - Score: 16,256.0</em>
+
+<span style="text-decoration: line-through;">I haven't run CINEBENCH 10 on the "stock" settings on my machine, but <a href="http://www.bit-tech.net/hardware/2008/11/03/intel-core-i7-920-945-965-review/10">here's an article</a> that shows the 920 score 15,211.0 with "stock" settings.</span> Since, posting this I decided to run the CINEBENCH 10 test on my configuration with the Core i7 920 at "stock" settings, and the results I got are actually higher than the ones in the previously mentioned link. With my "stock" settings scoring 16,256; that only makes my configuration run 2,085 points lower than the <a href="http://www.bit-tech.net/hardware/2008/11/03/intel-core-i7-920-945-965-review/10">stock Core i7 965 mentioned in this article</a>. According to the article the 965's highest score on "stock" settings is 18,341.0. That's 2,189 points lower than my overclocked 920 at 3.4Ghz.
+
+A ~27% overclock isn't too bad on the stock cooler. Not to mention the fact that the Core i7 920 costs less than 1/3rd of the Core i7 965! 
+
+Also, I need to do further testing to be confident with my results to be confident their safe. So just be careful when overclocking, and there's no guarantee all 920 chips will perform the same as mine. Happy Overclocking!
+
+<em>Update 4/15/2008: I've had my i7 920 overclocked to 3.2Ghz since I originally posted this, and it's been running rock solid. However, I don't max out the CPU for very long periods, so heat really isn't that much of an issue. I did do some additional testing today using Prime95 to see what the temps get up to. Today when I tested the Core Temp got up to 100C pretty quickly; that's hot enough to boil water! I also updated my BIOS to the latest F6 firmware today. Well, anyway, it still runs rock solid; just thought I'd give an update.</em>
+
+<em>**Overclocking Ram Advisory:** As mentioned above the Core i7 requires memory that runs at or below 1.65v, otherwise (according to reports from <a href="http://www.google.com/search?q=core+i7+1.65v">various sources</a>) it can damager the CPU. One thing to remember when overclocking the Core i7 is you may need to lower the RAM Multiplier in the Bios if you are trying to give the CPU a healthy overclock. In my case (using the G.SKILL Ram listed above) the Ram I have seems to run at 1.7v at 1600Mhz (which was stable for days); so just in case I decided to lower my Ram Multiplier so it runs lower, and wit the 3.4Ghz overclock the ran is running at 1.63v.</em>
 <h3>Does Windows Vista Fully Utilize the Core i7?</h3>
-<p>I'm not sure Windows Vista x64 can fully utilize this CPU yet. <span style="text-decoration: line-through;">When I run Prime95, the CPU goes to 100%, but the Intel Speed Step Technology never bumps up the speed. It always remains at 1.7Ghz when set to stock settings. However, when I run the Window Experienc</span><span style="text-decoration: line-through;">e Index test, the Speed Step kicks in and bumps it up to the full 2.66Ghz. </span></p>
-<p><span style="text-decoration: line-through;">Update 11/27, all of a sudden, now my CPU always runs at full speed. It doesn't downclock itself to 1.7Ghz anymore. I don't think I changed anything in the BIOS that affects this, but I need to double check. My thoughts are also that this was some kind of burn in protection built into the CPU, but I haven's seen/read anything that mentions this. </span></p>
-<p><span style="text-decoration: line-through;"> I'll need to look further into this... </span></p>
-<p>Update 2/20/2008:&nbsp; I've looked further into how Windows Vista and Windows 7 Beta handle the Steep Step functionality of the Core i7 CPU. It turns out that it does fully utilize the capabilities of the CPU, but whether Speed Step "down clocks" the CPU it dependent on the Power Plan you have set in Windows. If you set the Power Plan to High Performance, it will never "down clock" the CPU, but if you set it to either Balanced or Power Saver it will.</p>
-<p>Essentially, Speed Step just lowers the CPU Clock Multiplier to lower the speed and use less power. On the Core i7 920 it lowers the multiplier to x12 when "down clocking" from the full x20 multiplier when running at full speed. On my system, I currently (at the time of writing this) have my Core i7 920 overclocked to 3.0Ghz (using 150Mhz Base Clock), so running at full speed (with Turbo enabled) it runs at 3.1Ghz, and when Speed Step kicks in to "down clock" it drops it down to 1.8Ghz. This actually allows for my system to save a considerable amount of power; when running at full speed (as mentioned previously) the CPU Power Usage (in Watt according to HWMonitor) is at about 147W (not costantly, but mostly) when Idle and when Speed Step kicks in to "down clock" it drops to about 43W; for a total of 104W savings! That's almost 2 standard light bulbs (60W bulbs) of power usage.</p>
-<p>As I've been typing this I'm seeing Speed Step even drop the CPU Clock Multiplier down to x2.5 at brief moments for even further power savings; that means it's dropping down to 375Mhz at times to save power.</p>
-<p>Also, to get more control over when the CPU is "down clocked" or ran at full speed, you can adjust the "Processor power management" settings within the Advanced Power Options for any given Power Plan.</p>
+
+I'm not sure Windows Vista x64 can fully utilize this CPU yet. <span style="text-decoration: line-through;">When I run Prime95, the CPU goes to 100%, but the Intel Speed Step Technology never bumps up the speed. It always remains at 1.7Ghz when set to stock settings. However, when I run the Window Experienc</span><span style="text-decoration: line-through;">e Index test, the Speed Step kicks in and bumps it up to the full 2.66Ghz. </span>
+
+<span style="text-decoration: line-through;">Update 11/27, all of a sudden, now my CPU always runs at full speed. It doesn't downclock itself to 1.7Ghz anymore. I don't think I changed anything in the BIOS that affects this, but I need to double check. My thoughts are also that this was some kind of burn in protection built into the CPU, but I haven's seen/read anything that mentions this. </span>
+
+<span style="text-decoration: line-through;"> I'll need to look further into this... </span>
+
+Update 2/20/2008:  I've looked further into how Windows Vista and Windows 7 Beta handle the Steep Step functionality of the Core i7 CPU. It turns out that it does fully utilize the capabilities of the CPU, but whether Speed Step "down clocks" the CPU it dependent on the Power Plan you have set in Windows. If you set the Power Plan to High Performance, it will never "down clock" the CPU, but if you set it to either Balanced or Power Saver it will.
+
+Essentially, Speed Step just lowers the CPU Clock Multiplier to lower the speed and use less power. On the Core i7 920 it lowers the multiplier to x12 when "down clocking" from the full x20 multiplier when running at full speed. On my system, I currently (at the time of writing this) have my Core i7 920 overclocked to 3.0Ghz (using 150Mhz Base Clock), so running at full speed (with Turbo enabled) it runs at 3.1Ghz, and when Speed Step kicks in to "down clock" it drops it down to 1.8Ghz. This actually allows for my system to save a considerable amount of power; when running at full speed (as mentioned previously) the CPU Power Usage (in Watt according to HWMonitor) is at about 147W (not costantly, but mostly) when Idle and when Speed Step kicks in to "down clock" it drops to about 43W; for a total of 104W savings! That's almost 2 standard light bulbs (60W bulbs) of power usage.
+
+As I've been typing this I'm seeing Speed Step even drop the CPU Clock Multiplier down to x2.5 at brief moments for even further power savings; that means it's dropping down to 375Mhz at times to save power.
+
+Also, to get more control over when the CPU is "down clocked" or ran at full speed, you can adjust the "Processor power management" settings within the Advanced Power Options for any given Power Plan.
 <h3>Future Thoughts</h3>
-<p>Since I am using Virtualization more, I'm looking to up my Ram from 4GB to 6GB or 8GB. You need more Ram when you run multiple OS's simultaneously. Still unsure if I want to make Triple Channel a priority or not at this point.</p>
-<p><span style="text-decoration: line-through;">I'm thinking about increasing the air flow in the case (via a bigger case fan), so the ambient temperate surrounding the CPU is overall cooler. That will really help with overclocking using the stock cooler.</span> Cooling down the ambient temperature in the case seems to have a somewhat direct effect on the cpu temperature, but it's no magic replacement for a better cpu cooler. I've cooled down the max ambient temp in the case by about 3c, and the max cpu temp was lowered by about 1c. So obviously it helps, but it's no replacement for a good cooler.</p>
-<p>Also, thinking about getting a <a href="http://www.frozencpu.com/products/8444/cpu-tri-57/Thermalright_Ultra-120_eXtreme-1366_RT_CPU_Heatsink_Socket_LGA_1336_Preorder.html?tl=g40c14s757">Thermalright Ultra-120 eXtreme-1366 CPU Heatsink</a>. It's supposed to be one of the best air coolers on the market, and I'll need it if I want to push the 920 to it's limit.</p>
+
+Since I am using Virtualization more, I'm looking to up my Ram from 4GB to 6GB or 8GB. You need more Ram when you run multiple OS's simultaneously. Still unsure if I want to make Triple Channel a priority or not at this point.
+
+<span style="text-decoration: line-through;">I'm thinking about increasing the air flow in the case (via a bigger case fan), so the ambient temperate surrounding the CPU is overall cooler. That will really help with overclocking using the stock cooler.</span> Cooling down the ambient temperature in the case seems to have a somewhat direct effect on the cpu temperature, but it's no magic replacement for a better cpu cooler. I've cooled down the max ambient temp in the case by about 3c, and the max cpu temp was lowered by about 1c. So obviously it helps, but it's no replacement for a good cooler.
+
+Also, thinking about getting a <a href="http://www.frozencpu.com/products/8444/cpu-tri-57/Thermalright_Ultra-120_eXtreme-1366_RT_CPU_Heatsink_Socket_LGA_1336_Preorder.html?tl=g40c14s757">Thermalright Ultra-120 eXtreme-1366 CPU Heatsink</a>. It's supposed to be one of the best air coolers on the market, and I'll need it if I want to push the 920 to it's limit.
 <h4>Updates</h4>
-<p>2008-12-03: Added info about overclocking the Core i7 920 to 3.4Ghz on "stock" cooler, and added advisory info about overclocking Ram. Also, updated CPU-Z screenshot to show it running at 3.4Ghz.</p>
-<p>2008-12-17: Added CINEBENCH Score for Core i7 920 at 3.5Ghz with 175Mhz Base Clock. Also, added links to "validated" CPU-Z dumps for each of the "stock" and 2 highest Core i7 920 overclocks.</p>
-<p>2009-01-29: Added Windows Experience Index Rating info and screenshot for Windows 7 Beta 1.</p>
-<p>2009-08-10: Added Windows 7 RTM Experience Index Rating Info and removes the Win7 Beta Experience Index Rating screenshot.</p>
+
+2008-12-03: Added info about overclocking the Core i7 920 to 3.4Ghz on "stock" cooler, and added advisory info about overclocking Ram. Also, updated CPU-Z screenshot to show it running at 3.4Ghz.
+
+2008-12-17: Added CINEBENCH Score for Core i7 920 at 3.5Ghz with 175Mhz Base Clock. Also, added links to "validated" CPU-Z dumps for each of the "stock" and 2 highest Core i7 920 overclocks.
+
+2009-01-29: Added Windows Experience Index Rating info and screenshot for Windows 7 Beta 1.
+
+2009-08-10: Added Windows 7 RTM Experience Index Rating Info and removes the Win7 Beta Experience Index Rating screenshot.

@@ -13,7 +13,11 @@ redirect_from:
   - /post.aspx?id=c0319de8-53cf-4c02-afdc-ce4cea9c593a
 ---
 <!-- more -->
-<P>Calling all subscribers... What RSS readers do you use?</P>
-<P>I am looking for a really good web-based RSS reader to use. I haven't found one that I really like yet, and am thinking about just writing my own. But, first, I thought I would call out to see what YOU are using.</P>
-<P>Please post a comment with the name/url to the RSS reader you use or have used. Also, if you could please state which features you like or dislike.</P>
-<P>Thank you very much for your help!</P>
+
+Calling all subscribers... What RSS readers do you use?
+
+I am looking for a really good web-based RSS reader to use. I haven't found one that I really like yet, and am thinking about just writing my own. But, first, I thought I would call out to see what YOU are using.
+
+Please post a comment with the name/url to the RSS reader you use or have used. Also, if you could please state which features you like or dislike.
+
+Thank you very much for your help!

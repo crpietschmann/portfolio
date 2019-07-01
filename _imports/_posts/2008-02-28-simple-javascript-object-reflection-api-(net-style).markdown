@@ -13,61 +13,75 @@ redirect_from:
   - /post.aspx?id=591b5d4e-b2a6-4b3b-a613-0bcc74f35219
 ---
 <!-- more -->
-<p>
+
+
 I was thinking about how JavaScript JSON serializers go about serializing objects. But how does the serializer know about each of the objects properties? I figured JavaScript must have some method of object reflection (similar to .NET Reflection) and it does. 
-</p>
-<p>
+
+
+
 Here&#39;s a simple Reflection namespace that allows you to more easily reflect through an objects methods and properties: 
-</p>
-<p>
-[code:js] 
-</p>
-<p>
+
+
+
+```javascript 
+
+
+
 if (typeof PietschSoft == &quot;undefined&quot;) var PietschSoft = {};<br />
 if (typeof PietschSoft.Reflection == &quot;undefined&quot;) PietschSoft.Reflection = {}; 
-</p>
-<p>
+
+
+
 PietschSoft.Reflection.GetProperties = function(obj){<br />
-&nbsp;&nbsp;&nbsp; var props = new Array(); 
-</p>
-<p>
-&nbsp;&nbsp;&nbsp; for (var s in obj)<br />
-&nbsp;&nbsp;&nbsp; {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (typeof(obj[s]) != &quot;function&quot;) {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; props[props.length] = s;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
-&nbsp;&nbsp;&nbsp; } 
-</p>
-<p>
-&nbsp;&nbsp;&nbsp; return props;<br />
+    var props = new Array(); 
+
+
+
+    for (var s in obj)<br />
+    {<br />
+        if (typeof(obj[s]) != &quot;function&quot;) {<br />
+            props[props.length] = s;<br />
+        }<br />
+    } 
+
+
+
+    return props;<br />
 }; 
-</p>
-<p>
+
+
+
 PietschSoft.Reflection.GetMethods = function(obj){<br />
-&nbsp;&nbsp;&nbsp; var methods = new Array(); 
-</p>
-<p>
-&nbsp;&nbsp;&nbsp; for (var s in obj)<br />
-&nbsp;&nbsp;&nbsp; {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (typeof(obj[s]) == &quot;function&quot;) {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; methods[methods.length] = s;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
-&nbsp;&nbsp;&nbsp; } 
-</p>
-<p>
-&nbsp;&nbsp;&nbsp; return methods<br />
+    var methods = new Array(); 
+
+
+
+    for (var s in obj)<br />
+    {<br />
+        if (typeof(obj[s]) == &quot;function&quot;) {<br />
+            methods[methods.length] = s;<br />
+        }<br />
+    } 
+
+
+
+    return methods<br />
 }; 
-</p>
-<p>
-[/code] 
-</p>
-<p>
+
+
+
+``` 
+
+
+
 And, here&#39;s some simple code using the above simple reflection api: 
-</p>
-<p>
-[code:js] 
-</p>
-<p>
+
+
+
+```javascript 
+
+
+
 /// Define our Person Object<br />
 Person = function(){<br />
 this.FirstName = &quot;&quot;;<br />
@@ -84,16 +98,17 @@ p.LastName = &quot;Pietschmann&quot;;<br />
 var props = PietschSoft.Reflection.GetProperties(p);<br />
 for (var i in props)<br />
 {<br />
-&nbsp;&nbsp;&nbsp; alert(props[i] + &quot; : &quot; + p[props[i]]);<br />
+    alert(props[i] + &quot; : &quot; + p[props[i]]);<br />
 }<br />
 <br />
 /// Loop through the Objects Methods<br />
 var methods = PietschSoft.Reflection.GetMethods(p);<br />
 for (var i in methods)<br />
 {<br />
-&nbsp;&nbsp;&nbsp; alert(methods[i] + &quot; : &quot; + p[methods[i]]);<br />
+    alert(methods[i] + &quot; : &quot; + p[methods[i]]);<br />
 } 
-</p>
-<p>
-[/code] 
-</p>
+
+
+
+``` 
+

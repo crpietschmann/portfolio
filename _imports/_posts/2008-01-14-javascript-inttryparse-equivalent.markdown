@@ -13,8 +13,10 @@ redirect_from:
   - /post.aspx?id=51e7a0ad-809c-40eb-8b8a-50bf49848a43
 ---
 <!-- more -->
-<p>One of the most handy methods in .NET is the <em>int.TryParse</em> method. It makes it really convenient when evaluating a string value as an integer. But, JavaScript has no equivalent so you need to do your own evaluation every time.</p>
-<p>Here's a simple JavaScript method I wrote that takes the work out of evaluating a string to an integer:</p>
+
+One of the most handy methods in .NET is the <em>int.TryParse</em> method. It makes it really convenient when evaluating a string value as an integer. But, JavaScript has no equivalent so you need to do your own evaluation every time.
+
+Here's a simple JavaScript method I wrote that takes the work out of evaluating a string to an integer:
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">function TryParseInt(str,defaultValue) {
      var retValue = defaultValue;
      if(str !== null) {
@@ -26,8 +28,10 @@ redirect_from:
      }
      return retValue;
 }</pre>
-<p>The first parameter of the TryParseInt method is the string you want to evaluate, and the second parameter is the default value to return if the string cannot be evaluated to an integer.</p>
-<p>Here are some example usages:</p>
+
+The first parameter of the TryParseInt method is the string you want to evaluate, and the second parameter is the default value to return if the string cannot be evaluated to an integer.
+
+Here are some example usages:
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">//This will return 5 
 var a = TryParseInt("5", 0); 
 alert(a); 

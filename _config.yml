@@ -11,6 +11,6 @@ youtube_channel: buildazure
 
 # Build settings
 markdown: kramdown
-permalink: /post/:year/:month/:day/:title:output_ext
+permalink: /post/:year/:month/:day/:title
 plugins:
   - jekyll-redirect-from

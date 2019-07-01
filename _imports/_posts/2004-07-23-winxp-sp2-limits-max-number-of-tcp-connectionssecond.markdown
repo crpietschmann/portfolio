@@ -13,7 +13,10 @@ redirect_from:
   - /post.aspx?id=c15168f1-60fa-4ea0-9766-172d54efdee3
 ---
 <!-- more -->
-<P>Apparently, to reduce the spread of worms like Sasser, Windows XP Service Pack 2 will limit the maximum number of TCP connections your computer can have at one time. I can see what they are thinking, but I&nbsp;wont mind unless some of my applications (like my multi-threaded port scanner)&nbsp;wont work correctly with this new setting. I guess I'll hold off on increasing the max. untill an application&nbsp;generates an error&nbsp;because of it.</P>
-<P>Here is a registry edit you can do to increase the max:</P>
-<P><FONT face=Arial size=2>TcpNumConnections<BR>Key: Tcpip\Parameters<BR>Value Type: REG_DWORD - Number<BR>Valid Range: 0 - 0xfffffe<BR>Default: 0xfffffe<BR>Description: This parameter limits the maximum number of connections that TCP can have open at the same time.</FONT> </FONT></P>
-<P class=indent>TCP/IP and NBT configuration parameters for Windows XP: <A href="http://support.microsoft.com/default.aspx?kbid=314053">http://support.microsoft.com/default.aspx?kbid=314053</A></P>
+
+Apparently, to reduce the spread of worms like Sasser, Windows XP Service Pack 2 will limit the maximum number of TCP connections your computer can have at one time. I can see what they are thinking, but I wont mind unless some of my applications (like my multi-threaded port scanner) wont work correctly with this new setting. I guess I'll hold off on increasing the max. untill an application generates an error because of it.
+
+Here is a registry edit you can do to increase the max:
+
+<FONT face=Arial size=2>TcpNumConnections<BR>Key: Tcpip\Parameters<BR>Value Type: REG_DWORD - Number<BR>Valid Range: 0 - 0xfffffe<BR>Default: 0xfffffe<BR>Description: This parameter limits the maximum number of connections that TCP can have open at the same time.</FONT> </FONT>
+<P class=indent>TCP/IP and NBT configuration parameters for Windows XP: <A href="http://support.microsoft.com/default.aspx?kbid=314053">http://support.microsoft.com/default.aspx?kbid=314053</A>

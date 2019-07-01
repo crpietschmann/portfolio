@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=2de52298-44ae-41d8-9781-8ee559365924
 ---
 <!-- more -->
-<P><IMG src="/Blog/images/14/o_HomestoreLogo.gif" align=right border=0>I'm starting a new job on next Monday, the 28th. I'm pretty psyched about it. I have needs and well my current job just isn't cutting it. I don't want to go to far into detail at this moment. (Must play the whole politics thing.)</P>
-<P>Well, anyway, I'll be working at The Enterprise; it's a division of Homestore (has since been renamed to Move Inc.). They are a more well established company than where I currently work, and I feel there will be plenty of opportunity for me there. The overall work environment will be better. (Can't forget to mention an increase in pay.)</P>
+
+<IMG src="/Blog/images/14/o_HomestoreLogo.gif" align=right border=0>I'm starting a new job on next Monday, the 28th. I'm pretty psyched about it. I have needs and well my current job just isn't cutting it. I don't want to go to far into detail at this moment. (Must play the whole politics thing.)
+
+Well, anyway, I'll be working at The Enterprise; it's a division of Homestore (has since been renamed to Move Inc.). They are a more well established company than where I currently work, and I feel there will be plenty of opportunity for me there. The overall work environment will be better. (Can't forget to mention an increase in pay.)

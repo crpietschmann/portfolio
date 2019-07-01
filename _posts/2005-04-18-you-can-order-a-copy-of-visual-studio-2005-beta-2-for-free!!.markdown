@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=634b4903-a6d3-4426-b834-d1bb59b601f4
 ---
 <!-- more -->
-<P>You can order a copy of Visual Studio 2005 Beta 2 for FREE!!</P>
-<P>Just go here: <A href="http://msdn.microsoft.com/getthebetas/">http://msdn.microsoft.com/getthebetas/</A></P>
+
+You can order a copy of Visual Studio 2005 Beta 2 for FREE!!
+
+Just go here: <A href="http://msdn.microsoft.com/getthebetas/">http://msdn.microsoft.com/getthebetas/</A>

@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=61c7549c-c67d-4998-a15a-f38f0cf5bbb1
 ---
 <!-- more -->
-<P>My blog seems to be malfunctioning! Ahhh....</P>
-<P>I'll get it fixed ASAP...</P>
+
+My blog seems to be malfunctioning! Ahhh....
+
+I'll get it fixed ASAP...

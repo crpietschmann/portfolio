@@ -13,7 +13,10 @@ redirect_from:
   - /post.aspx?id=73b4583b-9f6a-400c-8fe2-cf8db20b75ee
 ---
 <!-- more -->
-<p>In the previous post I explored the possibility of <a href="/post/2010/10/02/Silverlight-Embed-IronRubyDLR-Scripting-within-XAML-using-IValueConverter-and-Custom-UserControl.aspx">embedding IronRuby / DLR Script within XAML using both an IValueConverter and Custom UserControl</a>. I spent a little more time experimenting with the DLRScriptUserControl I posted, and came up with some small modifications to it that allow UI event handlers to be wired up using a DLR language (such as IronRuby.</p>  <h3>Loading Assemblies Into the ScriptEngine.Runtime Context</h3>  <p>Something nice with how the ScriptEngine class allows you to execute a script of IronRuby (or other DLR language) is that it requires the implementer of the ScriptEngine (not the DLR script writer) to call “ScriptEngine.Runtime.LoadAssembly” in order to make a certain CLR assembly accessible within the DLR script that gets executed. This allows the scripts to be run in a sort of sandboxed environment.</p>  <p>There are two ways of doing this:</p>  <pre class="csharpcode"><span class="rem">// One: Load the assemblies of known types you want to</span>
+
+In the previous post I explored the possibility of <a href="/post/2010/10/02/Silverlight-Embed-IronRubyDLR-Scripting-within-XAML-using-IValueConverter-and-Custom-UserControl.aspx">embedding IronRuby / DLR Script within XAML using both an IValueConverter and Custom UserControl</a>. I spent a little more time experimenting with the DLRScriptUserControl I posted, and came up with some small modifications to it that allow UI event handlers to be wired up using a DLR language (such as IronRuby.  <h3>Loading Assemblies Into the ScriptEngine.Runtime Context</h3>  
+Something nice with how the ScriptEngine class allows you to execute a script of IronRuby (or other DLR language) is that it requires the implementer of the ScriptEngine (not the DLR script writer) to call “ScriptEngine.Runtime.LoadAssembly” in order to make a certain CLR assembly accessible within the DLR script that gets executed. This allows the scripts to be run in a sort of sandboxed environment.  
+There are two ways of doing this:  <pre class="csharpcode"><span class="rem">// One: Load the assemblies of known types you want to</span>
 <span class="rem">//      make available within the script.</span>
 <span class="rem">// Load System.Windows</span>
 engine.Runtime.LoadAssembly(<span class="kwrd">typeof</span>(UserControl).Assembly);
@@ -55,11 +58,13 @@ engine.Runtime.LoadAssembly(
 }
 .csharpcode .lnum { color: #606060; }</style>
 
-<p>The first method is easiest when the assembly you wish to load is already referenced by the host application. It also allows you to easily support being able to migrate your application to a newer version of the framework since it will load the version of the assembly that your application is compiled for, rather than the specific version stated in the full assembly name.</p>
+
+The first method is easiest when the assembly you wish to load is already referenced by the host application. It also allows you to easily support being able to migrate your application to a newer version of the framework since it will load the version of the assembly that your application is compiled for, rather than the specific version stated in the full assembly name.
 
 <h3>Loading Assemblies within DLRScriptUserControl</h3>
 
-<p>Here’s a modified version of DLRScriptUserControl from the previous post that includes the above snippets to load both “System.Windows” and “System.Windows.Browser” assemblies into the ScriptEngine.Runtime context.</p>
+
+Here’s a modified version of DLRScriptUserControl from the previous post that includes the above snippets to load both “System.Windows” and “System.Windows.Browser” assemblies into the ScriptEngine.Runtime context.
 
 <pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">class</span> DLRScriptUserControl : UserControl
 {
@@ -91,9 +96,11 @@ engine.Runtime.LoadAssembly(
 
 <h3>Handle UI Event within Embedded IronRuby using DLRScriptUserControl</h3>
 
-<p>Now that the “System.Windows” and “System.Windows.Browser” assemblies are loaded and accessible to the DLR script that’s executed (in this case IronRuby) we can use their namespaces within code. </p>
 
-<p>The below example demonstrates how to:</p>
+Now that the “System.Windows” and “System.Windows.Browser” assemblies are loaded and accessible to the DLR script that’s executed (in this case IronRuby) we can use their namespaces within code. 
+
+
+The below example demonstrates how to:
 
 <ol>
   <li>Get references to the controls created within the xaml code for the control </li>
@@ -103,7 +110,8 @@ engine.Runtime.LoadAssembly(
   <li>Attach an event handler to the Button control’s Click event </li>
 </ol>
 
-<p>I have also included a second example (commented out) of using IronRuby to add an event handler to the Click event in case you are interested in seeing two methods of accomplishing this.</p>
+
+I have also included a second example (commented out) of using IronRuby to add an event handler to the Click event in case you are interested in seeing two methods of accomplishing this.
 
 <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">local:DLRScriptUserControl</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;testusercontrol&quot;</span><span class="kwrd">&gt;</span>
     <span class="kwrd">&lt;</span><span class="html">local:DLRScriptUserControl.Script</span><span class="kwrd">&gt;</span>
@@ -163,15 +171,19 @@ engine.Runtime.LoadAssembly(
 }
 .csharpcode .lnum { color: #606060; }</style>
 
-<p>As you can see, by including these assemblies (or any others you want/need) you can easily turn the DLR script used for the control (as in the previous article) from providing very basic business logic, to being a full code behind for the control.</p>
+
+As you can see, by including these assemblies (or any others you want/need) you can easily turn the DLR script used for the control (as in the previous article) from providing very basic business logic, to being a full code behind for the control.
 
 <h3>Dynamically Load the Entire Control (XAML + Script) at Runtime</h3>
 
-<p>Being able to embed IronRuby (or any DLR language) within XAML is nice, but what’s the benefit if it is still compiled as a resource within the assembly. In most cases you could use C# (or VB.NET) to accomplish the same results since everything ends up compiled within the same assembly.</p>
 
-<p>To make things much more dynamic, by allowing the XAML it’s DLR script to be loaded at runtime, you can use the XamlReader to parse/load the entire thing at runtime. This would allow you to store your customized XAML + IronRuby within a database or some other file and load it at runtime. By loading this all at runtime, it would allow you to make your application scriptable and each script could be modified individually without requiring you to recompile, test and deploy the entire application if all you wanted to change was one simple little script.</p>
+Being able to embed IronRuby (or any DLR language) within XAML is nice, but what’s the benefit if it is still compiled as a resource within the assembly. In most cases you could use C# (or VB.NET) to accomplish the same results since everything ends up compiled within the same assembly.
 
-<p>To modify the previous example of DLRScriptUserControl to load it from a xaml file at runtime, we’ll follow these steps:</p>
+
+To make things much more dynamic, by allowing the XAML it’s DLR script to be loaded at runtime, you can use the XamlReader to parse/load the entire thing at runtime. This would allow you to store your customized XAML + IronRuby within a database or some other file and load it at runtime. By loading this all at runtime, it would allow you to make your application scriptable and each script could be modified individually without requiring you to recompile, test and deploy the entire application if all you wanted to change was one simple little script.
+
+
+To modify the previous example of DLRScriptUserControl to load it from a xaml file at runtime, we’ll follow these steps:
 
 <ol>
   <li>Add a ContentPresenter to the Silverlight application where the DLRScriptUserControl will be displayed. </li>
@@ -181,9 +193,11 @@ engine.Runtime.LoadAssembly(
   <li>Add code to the application (within the MainPage.Load event in this case) to download the XAML and load it into the ContentPresenter using the XamlReader class. </li>
 </ol>
 
-<p><strong></strong></p>
 
-<p><strong>Step 1: Heres the ContentPresenter to add to the application</strong></p>
+****
+
+
+**Step 1: Heres the ContentPresenter to add to the application**
 
 <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">ContentPresenter</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;parseXamlTest&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">ContentPresenter</span><span class="kwrd">&gt;</span></pre>
 <style type="text/css">
@@ -213,11 +227,14 @@ engine.Runtime.LoadAssembly(
 }
 .csharpcode .lnum { color: #606060; }</style>
 
-<p><strong></strong></p>
 
-<p><strong>Step 2: Here’s the XAML + Script to save in a file within the website</strong></p>
+****
 
-<p>In this case we are saving it as “DLRControl.xaml.” Also it is important to note that the root element within the XAML must have namespace declarations for all the namespaces used within the XAML file.</p>
+
+**Step 2: Here’s the XAML + Script to save in a file within the website**
+
+
+In this case we are saving it as “DLRControl.xaml.” Also it is important to note that the root element within the XAML must have namespace declarations for all the namespaces used within the XAML file.
 
 <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">local:DLRScriptUserControl</span>
             <span class="attr">xmlns</span><span class="kwrd">='http://schemas.microsoft.com/winfx/2006/xaml/presentation'</span>
@@ -281,11 +298,14 @@ engine.Runtime.LoadAssembly(
 }
 .csharpcode .lnum { color: #606060; }</style>
 
-<p><strong></strong></p>
 
-<p><strong>Step 3: Download and Load the XAML at Runtime</strong></p>
+****
 
-<p>You could place this code anywhere in the app, but for this example I just placed it within the MainPage.Load event handler in the application.</p>
+
+**Step 3: Download and Load the XAML at Runtime**
+
+
+You could place this code anywhere in the app, but for this example I just placed it within the MainPage.Load event handler in the application.
 
 <pre class="csharpcode"><span class="kwrd">void</span> MainPage_Loaded(<span class="kwrd">object</span> sender, System.Windows.RoutedEventArgs e)
 {
@@ -329,8 +349,11 @@ engine.Runtime.LoadAssembly(
 
 <h3>Conclusion</h3>
 
-<p>My initial goal when experimenting with the DLR was to figure out some techniques that could be used to make an application easily scriptable and allow functionality to be built as plugins that are just loaded and executed without the need to be compiled to an assembly first. While these examples provide a good start to making an application scriptable, there is still much to do yet in order to allow the script plugins to interact with each other.</p>
 
-<p><strong>Download the Code: </strong></p>
+My initial goal when experimenting with the DLR was to figure out some techniques that could be used to make an application easily scriptable and allow functionality to be built as plugins that are just loaded and executed without the need to be compiled to an assembly first. While these examples provide a good start to making an application scriptable, there is still much to do yet in order to allow the script plugins to interact with each other.
 
-<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:d2b7394e-0db3-4f4d-b3b0-182aa242efab" class="wlWriterEditableSmartContent"><p><div><a href="/file.axd?file=SLXamlEmbeddedDLRScriptPart2_2.zip" target="_self">SLXamlEmbeddedDLRScriptPart2.zip</a></div></p></div>
+
+**Download the Code: **
+
+<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:d2b7394e-0db3-4f4d-b3b0-182aa242efab" class="wlWriterEditableSmartContent">
+<div><a href="/file.axd?file=SLXamlEmbeddedDLRScriptPart2_2.zip" target="_self">SLXamlEmbeddedDLRScriptPart2.zip</a></div></div>

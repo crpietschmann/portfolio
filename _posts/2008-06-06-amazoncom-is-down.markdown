@@ -13,9 +13,11 @@ redirect_from:
   - /post.aspx?id=fb40ca26-f3c4-4f91-a8d8-b7ac76af5325
 ---
 <!-- more -->
-<p>
+
+
 Wow, <a href="http://amazon.com">Amazon.com</a> is currently down. It just shows a message of &quot;Http/1.1 Service Unavailable&quot;.
-</p>
-<p>
+
+
+
 I know this isn&#39;t really worth a full blog post. I was going to Twitter it, but Twitter is down for maintenance at the moment.
-</p>
+

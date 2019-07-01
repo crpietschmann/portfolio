@@ -13,12 +13,15 @@ redirect_from:
   - /post.aspx?id=0fc270bd-fe75-4d22-a4b9-6b877aa47338
 ---
 <!-- more -->
-<p>
-The next <a href="http://wi-ineta.org" target="_blank" title="Wisconsin .NET Users Group">WI-INETA</a> meeting is on April 12th. Jacob Cynamon will be speaking on the topic of Need for Speed: <a href="http://www.microsoft.com/net/" target="_blank" title=".NET">.NET</a> Performance Tuning. Jabob will&nbsp;show us&nbsp;tips and techniques to fine-tune the performance your WinForms applications. The key areas of focus for this session will be data processing, memory management, and startup time.
-</p>
-<p>
+
+
+The next <a href="http://wi-ineta.org" target="_blank" title="Wisconsin .NET Users Group">WI-INETA</a> meeting is on April 12th. Jacob Cynamon will be speaking on the topic of Need for Speed: <a href="http://www.microsoft.com/net/" target="_blank" title=".NET">.NET</a> Performance Tuning. Jabob will show us tips and techniques to fine-tune the performance your WinForms applications. The key areas of focus for this session will be data processing, memory management, and startup time.
+
+
+
 For more information: <a href="http://wi-ineta.org/DesktopDefault.aspx?tabid=23">http://wi-ineta.org/DesktopDefault.aspx?tabid=23</a>
-</p>
-<p>
+
+
+
 Jacob Cynamon&#39;s Blog: <a href="http://blogs.msdn.com/jacobcy/">http://blogs.msdn.com/jacobcy/</a>
-</p>
+

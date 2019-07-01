@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=5a74bb88-8c85-42c3-98a2-c333593fd84e
 ---
 <!-- more -->
-<P>What to eliminate <A href="http://en.wikipedia.org/wiki/Digital_Rights_Management">DRM</A>? And, give the rights back to the consumer? People have been complaining about it for how long; but the solution is rather simple. Don't buy it! If you don't buy <A href="http://en.wikipedia.org/wiki/Digital_Rights_Management">DRM</A> protected content, the producers of such content will be forced to release DRM-less content. As simple as that.</P>
-<P>&nbsp;</P>
+
+What to eliminate <A href="http://en.wikipedia.org/wiki/Digital_Rights_Management">DRM</A>? And, give the rights back to the consumer? People have been complaining about it for how long; but the solution is rather simple. Don't buy it! If you don't buy <A href="http://en.wikipedia.org/wiki/Digital_Rights_Management">DRM</A> protected content, the producers of such content will be forced to release DRM-less content. As simple as that.
+
+ 

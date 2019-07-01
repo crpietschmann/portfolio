@@ -13,7 +13,11 @@ redirect_from:
   - /post.aspx?id=59014567-e99d-4eb6-a550-7fcbf3117651
 ---
 <!-- more -->
-<p>One thing missing from HTML5 is the ability to render maps on a page. The Bing Maps and Google Maps JavaScript API’s are generally fairly simple to implement, but they could both be easier. I wrote up a small example API that allows you to add Maps, and plot data on those Maps, to an HTML page by using mostly HTML markup using a new <a href="http://geomap.codeplex.com">&lt;geomap/&gt;</a> tag.</p>  <p>While this project uses JavaScript to perform the map rendering once the page loads, all you need to do to implement it is write some simple markup. This project really makes it easier than before to add Maps to your HTML pages.</p>  <p><a href="http://geomap.codeplex.com">Download &lt;geomap&gt; Here</a></p>  <h3>Basic Map</h3>  <p>Once the &lt;geomap&gt; javascript (.js) files are included in the page, you can use the following markup to add a map.</p>  <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">geomap</span><span class="kwrd">&gt;&lt;/</span><span class="html">geomap</span><span class="kwrd">&gt;</span></pre>
+
+One thing missing from HTML5 is the ability to render maps on a page. The Bing Maps and Google Maps JavaScript API’s are generally fairly simple to implement, but they could both be easier. I wrote up a small example API that allows you to add Maps, and plot data on those Maps, to an HTML page by using mostly HTML markup using a new <a href="http://geomap.codeplex.com">&lt;geomap/&gt;</a> tag.  
+While this project uses JavaScript to perform the map rendering once the page loads, all you need to do to implement it is write some simple markup. This project really makes it easier than before to add Maps to your HTML pages.  
+<a href="http://geomap.codeplex.com">Download &lt;geomap&gt; Here</a>  <h3>Basic Map</h3>  
+Once the &lt;geomap&gt; javascript (.js) files are included in the page, you can use the following markup to add a map.  <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">geomap</span><span class="kwrd">&gt;&lt;/</span><span class="html">geomap</span><span class="kwrd">&gt;</span></pre>
 <style type="text/css">
 .csharpcode, .csharpcode pre
 {
@@ -42,7 +46,8 @@ redirect_from:
 
 <h3>Plot Some Data</h3>
 
-<p>Plotting data on the map is as simple as markup, just like any other HTML element.</p>
+
+Plotting data on the map is as simple as markup, just like any other HTML element.
 
 <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">geomap</span><span class="kwrd">&gt;</span>
     <span class="kwrd">&lt;</span><span class="html">pushpin</span> <span class="attr">location</span><span class="kwrd">=&quot;40 -96&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">pushpin</span><span class="kwrd">&gt;</span>
@@ -84,16 +89,21 @@ redirect_from:
 }
 .csharpcode .lnum { color: #606060; }</style>
 
-<p>Additionally, if JavaScript is disabled in the page, or you are unable to execute the JavaScript code that initializes the map, then the user will see the message <em>“Map not loaded. You may need to enable JavaScript within this browser.” </em>You can alternatively add any HTML content to this “&lt;noscript&gt;” style functionality to fall back to what ever you want when the map is unable to load.</p>
+
+Additionally, if JavaScript is disabled in the page, or you are unable to execute the JavaScript code that initializes the map, then the user will see the message <em>“Map not loaded. You may need to enable JavaScript within this browser.” </em>You can alternatively add any HTML content to this “&lt;noscript&gt;” style functionality to fall back to what ever you want when the map is unable to load.
 
 <h3>Supports both Bing Maps and Google Maps</h3>
 
-<p>What would be the use of this type of plugin / extension if it didn’t support multiple Map providers. Currently the project only includes support for Bing Maps and Google Maps, but you could write you own &lt;geomap&gt; provider script to add support for any Map provider you want.</p>
+
+What would be the use of this type of plugin / extension if it didn’t support multiple Map providers. Currently the project only includes support for Bing Maps and Google Maps, but you could write you own &lt;geomap&gt; provider script to add support for any Map provider you want.
 
 <h3>Conclusion</h3>
 
-<p>At the time of writing this, the &lt;geomap&gt; project is pretty much in a prototype stage; while you are free to use it in your own projects if you wish. Also, the project is licensed under the the LGPL license, so you can do what you wish with it as long as you abide by the license.</p>
 
-<p><a href="http://geomap.codeplex.com">Download &lt;geomap&gt; Here!</a></p>
+At the time of writing this, the &lt;geomap&gt; project is pretty much in a prototype stage; while you are free to use it in your own projects if you wish. Also, the project is licensed under the the LGPL license, so you can do what you wish with it as long as you abide by the license.
 
-<p>Happy Mapping!</p>
+
+<a href="http://geomap.codeplex.com">Download &lt;geomap&gt; Here!</a>
+
+
+Happy Mapping!

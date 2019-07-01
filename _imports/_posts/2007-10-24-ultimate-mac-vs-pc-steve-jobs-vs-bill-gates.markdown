@@ -13,6 +13,7 @@ redirect_from:
   - /post.aspx?id=f3a00521-8ff0-40c3-ba5c-f8356c66d3c1
 ---
 <!-- more -->
-<P>This is just hilarious.</P>
+
+This is just hilarious.
 <OBJECT height=355 width=425><PARAM NAME="movie" VALUE="http://www.youtube.com/v/qHO8l-Bd1O4&amp;rel=1"><PARAM NAME="wmode" VALUE="transparent">
 <embed src="http://www.youtube.com/v/qHO8l-Bd1O4&rel=1" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></embed></OBJECT>

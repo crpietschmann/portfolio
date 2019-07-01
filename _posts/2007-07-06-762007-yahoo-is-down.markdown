@@ -13,6 +13,9 @@ redirect_from:
   - /post.aspx?id=13eb8f80-0a41-447a-a64d-7349c33dba14
 ---
 <!-- more -->
-<P>It appears that <A href="http://yahoo.com">Yahoo.com</A> is down. I've never seen one of the big guys completely down before. I'm assuming someone is getting fired. Just imagine all the searches that aren't being done right now. And just think, because of IE's default settings, since it can't find Yahoo.com, it's doing a search (using the default search provider) on probably MSN for the word "Yahoo". I wonder how many of these people that Yahoo is letting down are going to end up switching to MSN or Google?</P>
-<P>Hey Yahoo, that's gotta hurt.</P>
-<P><STRONG>Update 9:23AM:</STRONG> I see that Yahoo is back up now. I wonder what the total was of how long they were down. And, I heard that CNN.com was down for a short moment there too (however it was back up before I could verify it for myself.)</P>
+
+It appears that <A href="http://yahoo.com">Yahoo.com</A> is down. I've never seen one of the big guys completely down before. I'm assuming someone is getting fired. Just imagine all the searches that aren't being done right now. And just think, because of IE's default settings, since it can't find Yahoo.com, it's doing a search (using the default search provider) on probably MSN for the word "Yahoo". I wonder how many of these people that Yahoo is letting down are going to end up switching to MSN or Google?
+
+Hey Yahoo, that's gotta hurt.
+
+<STRONG>Update 9:23AM:</STRONG> I see that Yahoo is back up now. I wonder what the total was of how long they were down. And, I heard that CNN.com was down for a short moment there too (however it was back up before I could verify it for myself.)

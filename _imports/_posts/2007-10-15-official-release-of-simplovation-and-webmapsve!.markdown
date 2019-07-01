@@ -13,23 +13,29 @@ redirect_from:
   - /post.aspx?id=67c90ddd-12f5-4716-9cc1-cb2dde3b0c24
 ---
 <!-- more -->
-<p>
-I am proud to announce that I have just officially launched&nbsp;<a href="http://simplovation.com/">Simplovation</a> and&nbsp;released our first product, <a href="http://simplovation.com/Page/WebMapsVE.aspx">Web.Maps.VE</a>!
-</p>
+
+
+I am proud to announce that I have just officially launched <a href="http://simplovation.com/">Simplovation</a> and released our first product, <a href="http://simplovation.com/Page/WebMapsVE.aspx">Web.Maps.VE</a>!
+
 <h3>What is Simplovation?</h3>
-<p>
-<a href="http://simplovation.com/">Simplovation</a> is my new startup, and is&nbsp;a Micro-ISV. Our focus is on developing first class, resuable components and developer tools that target the .NET Framework.
-</p>
+
+
+<a href="http://simplovation.com/">Simplovation</a> is my new startup, and is a Micro-ISV. Our focus is on developing first class, resuable components and developer tools that target the .NET Framework.
+
 <h3><a href="http://simplovation.com/Page/WebMapsVE.aspx"><img src="http://simplovation.com/Files/Images/SampleWebsite_ScreenShot001_Thumb.png" border="0" alt="Simplovation.Web.Maps.VE v1.0 Sample Website" width="250" height="169" align="right" /></a>What is Web.Maps.VE?</h3>
-<p>
-<a href="http://simplovation.com/Page/WebMapsVE.aspx">Web.Maps.VE</a> is&nbsp;the latest,&nbsp;much evolved version of <a href="http://codeplex.com/pietschsoftve3">my open source control</a>. This is the only ASP.NET 2.0 server control that brings <strong>Full ASP.NET AJAX Support</strong> to implementing MS Virtual Earth mapping within an&nbsp;ASP.NET 2.0 application. You can now implement Virtual Earth functionality with <strong>Only .NET Code</strong>, and absolutely <strong>No JavaScript Hassles!</strong>
-</p>
-<p>
-<strong>For more information go check out </strong><a href="http://simplovation.com"><strong>Simplovation.com</strong></a><strong>!</strong>
-</p>
-<p>
-&nbsp;
-</p>
-<p>
-&nbsp;
-</p>
+
+
+<a href="http://simplovation.com/Page/WebMapsVE.aspx">Web.Maps.VE</a> is the latest, much evolved version of <a href="http://codeplex.com/pietschsoftve3">my open source control</a>. This is the only ASP.NET 2.0 server control that brings **Full ASP.NET AJAX Support** to implementing MS Virtual Earth mapping within an ASP.NET 2.0 application. You can now implement Virtual Earth functionality with **Only .NET Code**, and absolutely **No JavaScript Hassles!**
+
+
+
+**For more information go check out **<a href="http://simplovation.com">**Simplovation.com**</a>**!**
+
+
+
+ 
+
+
+
+ 
+

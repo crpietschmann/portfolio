@@ -13,7 +13,11 @@ redirect_from:
   - /post.aspx?id=132350f3-c5ad-4eca-8c4f-2c1110f9a345
 ---
 <!-- more -->
-<p><a href="http://jhash.codeplex.com" target="_blank">jHash</a> is a small, lightweight (4kb minified / 2kb compressed) javascript library that makes it extremely easy to work with “location.hash&quot;. Version 1.0 had the ability to set / retrieve hash root values as well as “hash querystring” values. The newly released version 2.0 includes a new lightweight routing engine that facilitates an easier developer experience when building Single Page Applications.</p>  <p>The <a href="http://jhash.codeplex.com/documentation" target="_blank">jHash documentation</a> contains full descriptions of the libraries methods and their usage.</p>  <p>Get jHash Here: <a href="http://jhash.codeplex.com">http://jhash.codeplex.com</a> </p>  <h3>Easily work with “location.hash”</h3>  <p>Here are some simple examples of setting and retrieving hash “root” and “querystring” values:</p>  <pre class="csharpcode"><span class="rem">// URL:</span>
+
+<a href="http://jhash.codeplex.com" target="_blank">jHash</a> is a small, lightweight (4kb minified / 2kb compressed) javascript library that makes it extremely easy to work with “location.hash&quot;. Version 1.0 had the ability to set / retrieve hash root values as well as “hash querystring” values. The newly released version 2.0 includes a new lightweight routing engine that facilitates an easier developer experience when building Single Page Applications.  
+The <a href="http://jhash.codeplex.com/documentation" target="_blank">jHash documentation</a> contains full descriptions of the libraries methods and their usage.  
+Get jHash Here: <a href="http://jhash.codeplex.com">http://jhash.codeplex.com</a>   <h3>Easily work with “location.hash”</h3>  
+Here are some simple examples of setting and retrieving hash “root” and “querystring” values:  <pre class="csharpcode"><span class="rem">// URL:</span>
 <span class="rem">// http://localhost/page.htm#SomeValue?name=Chris&amp;location=Wisconsin</span>
 
 <span class="rem">// get &quot;root&quot; hash value</span>
@@ -61,11 +65,14 @@ jHash.val({
 
 <h3>Easy “location.hash” Routing with jHash</h3>
 
-<p>Hash routes are a technique that can be used to build Single Page Applications more easily. The Routing implementation contained within jHash works so you can declare Route Patterns in a similar fashion to ASP.NET Routes.</p>
 
-<p>The <a href="http://jhash.codeplex.com/wikipage?title=Using%20jHash%20Routes" target="_blank">Using jHash Routes article in the jHash documentation</a> contains full descriptions and examples on how to use jHash Routes.</p>
+Hash routes are a technique that can be used to build Single Page Applications more easily. The Routing implementation contained within jHash works so you can declare Route Patterns in a similar fashion to ASP.NET Routes.
 
-<p>Here’s a short code sample that shows how to add a simple hash route handler and a sample Hash value that will match the route specified:</p>
+
+The <a href="http://jhash.codeplex.com/wikipage?title=Using%20jHash%20Routes" target="_blank">Using jHash Routes article in the jHash documentation</a> contains full descriptions and examples on how to use jHash Routes.
+
+
+Here’s a short code sample that shows how to add a simple hash route handler and a sample Hash value that will match the route specified:
 
 <pre class="csharpcode"><span class="rem">// Hash that would match this Route Pattern</span>
 <span class="rem">// #Wisconsin/Milwaukee</span>

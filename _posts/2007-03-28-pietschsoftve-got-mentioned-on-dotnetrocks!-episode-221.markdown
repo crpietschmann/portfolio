@@ -13,12 +13,15 @@ redirect_from:
   - /post.aspx?id=e4ebe8e9-50d5-4da3-9ba2-4c5a02305911
 ---
 <!-- more -->
-<p>
+
+
 A couple weeks ago, I was listening to <a href="http://www.dotnetrocks.com/default.aspx?showNum=218">DotNetRocks! episode #218 with Dare Obasanjo </a>when they were taling about Windows Live Services. They happened to touch on MS Virtual Earth, so I decided to email them and let them know about my <a href="http://simplovation.com/Page/WebMapsVE.aspx">PietschSoft.VE</a> control over at CodePlex.
-</p>
-<p>
-Well, I just listened to episode <a href="http://www.dotnetrocks.com/default.aspx?showNum=221">#221</a>&nbsp;(I know I&#39;m a week behind), and they mentioned my <a href="http://simplovation.com/Page/WebMapsVE.aspx">PietschSoft.VE</a> control on the show!&nbsp;And, they even pronounced my name&nbsp;right. This is way cool!
-</p>
-<p>
+
+
+
+Well, I just listened to episode <a href="http://www.dotnetrocks.com/default.aspx?showNum=221">#221</a> (I know I&#39;m a week behind), and they mentioned my <a href="http://simplovation.com/Page/WebMapsVE.aspx">PietschSoft.VE</a> control on the show! And, they even pronounced my name right. This is way cool!
+
+
+
 <a href="http://www.dotnetrocks.com/default.aspx?showNum=221">DotNetRocks! episode #221</a>
-</p>
+

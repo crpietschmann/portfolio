@@ -13,8 +13,13 @@ redirect_from:
   - /post.aspx?id=de296a61-0d2a-469c-a6f2-a96b8ff05be0
 ---
 <!-- more -->
-<p>To follow or lead; that is the question.</p>
-<p>No matter how you look at it, people in our society are constantly following in one capacity or another.</p>
-<p>However, there are a few people that stand out / take risks / try new things. These are the leaders, the entrepreneurs, the wolves.</p>
-<p>Without&nbsp;wolves the&nbsp;sheep would never discover any innovation, and the world would stagnate.</p>
-<p>Are you a Sheep or a Wolf?</p>
+
+To follow or lead; that is the question.
+
+No matter how you look at it, people in our society are constantly following in one capacity or another.
+
+However, there are a few people that stand out / take risks / try new things. These are the leaders, the entrepreneurs, the wolves.
+
+Without wolves the sheep would never discover any innovation, and the world would stagnate.
+
+Are you a Sheep or a Wolf?

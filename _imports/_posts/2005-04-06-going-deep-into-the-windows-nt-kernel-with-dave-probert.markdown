@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=1aa90ee4-cff4-41bc-bd2c-248d9b6649aa
 ---
 <!-- more -->
-<P>Do you wanna&nbsp;learn a little of OS Kernel architecture? He doesn't just talk about the WinNT Kernel, he's does some comparisons between the WinNT Kernel and the UNIX Kernel. This is awesome stuff!</P>
-<P><A href="http://channel9.msdn.com/ShowPost.aspx?PostID=54612">http://channel9.msdn.com/ShowPost.aspx?PostID=54612</A></P>
+
+Do you wanna learn a little of OS Kernel architecture? He doesn't just talk about the WinNT Kernel, he's does some comparisons between the WinNT Kernel and the UNIX Kernel. This is awesome stuff!
+
+<A href="http://channel9.msdn.com/ShowPost.aspx?PostID=54612">http://channel9.msdn.com/ShowPost.aspx?PostID=54612</A>

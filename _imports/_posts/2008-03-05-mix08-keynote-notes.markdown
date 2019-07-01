@@ -13,9 +13,12 @@ redirect_from:
   - /post.aspx?id=9e9f5b9a-da33-4e50-b255-afbfa0a36900
 ---
 <!-- more -->
-<p>I watched the MIX'08 Keynote online this&nbsp;morning, and here are some notes I took.&nbsp;</p>
-<p><strong>Notes from Ray Ozzies talk:</strong></p>
-<p>Some investments will be realized this week:</p>
+
+I watched the MIX'08 Keynote online this morning, and here are some notes I took. 
+
+**Notes from Ray Ozzies talk:**
+
+Some investments will be realized this week:
 <ul>
 <li>
 <div>Internet Explorer 8</div>
@@ -24,14 +27,22 @@ redirect_from:
 <div>Silverlight 2</div>
 </li>
 </ul>
-<p>Advertising on the web is expected to grow from $40 billion to $80 billion over the next few years.</p>
-<p>Social networking is growing and will become an integral part of the web just as familiar as Files and Folders are on the desktop.</p>
-<p>Web will be used as a hub in using and managing all kinds of devices (Zune, SmartPhones, PCs).</p>
-<p>Power of&nbsp;choice will be given to Business/Enterprises that will utilize virtualization to allow a better level of symetry between software and services in the "cloud".</p>
-<p>We need to realize a fabric of services (loosely coupled) that range from applications in the cloud to standard desktop or server applications that can easily communicate. RSS and REST are being used in this new fabric that is forming.</p>
-<p>Seamless, Rich Applications are being expected to be cross platform. XAML, Silverlight and WPF are going to allow this.</p>
-<p>Over the next 5 years, the way we write, maintain and debug code are going to move more into the "cloud".</p>
-<p>5 major groups of product offerings:</p>
+
+Advertising on the web is expected to grow from $40 billion to $80 billion over the next few years.
+
+Social networking is growing and will become an integral part of the web just as familiar as Files and Folders are on the desktop.
+
+Web will be used as a hub in using and managing all kinds of devices (Zune, SmartPhones, PCs).
+
+Power of choice will be given to Business/Enterprises that will utilize virtualization to allow a better level of symetry between software and services in the "cloud".
+
+We need to realize a fabric of services (loosely coupled) that range from applications in the cloud to standard desktop or server applications that can easily communicate. RSS and REST are being used in this new fabric that is forming.
+
+Seamless, Rich Applications are being expected to be cross platform. XAML, Silverlight and WPF are going to allow this.
+
+Over the next 5 years, the way we write, maintain and debug code are going to move more into the "cloud".
+
+5 major groups of product offerings:
 <ul>
 <li>
 <div>Connected Devices - Connected using the cloud to allow centralized personalization and control. Unified data management using the synchronization of files and data. Web based deployment of Device applications.</div>
@@ -49,5 +60,7 @@ redirect_from:
 <div>Connected Development - Services and Tools that span seamlessly across devices. XNA, Silverlight and .NET are allowing us to realize this today.</div>
 </li>
 </ul>
-<p>Silverlight was announces last year; this year they are going to deliver on that promise.</p>
-<p>&nbsp;</p>
+
+Silverlight was announces last year; this year they are going to deliver on that promise.
+
+ 

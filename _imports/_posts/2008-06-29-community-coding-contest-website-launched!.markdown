@@ -13,9 +13,11 @@ redirect_from:
   - /post.aspx?id=3603c2f4-c03a-488f-bbe5-ff3120263f88
 ---
 <!-- more -->
-<p>
+
+
 I just launched the Official Community Coding Contest website.
-</p>
-<p>
+
+
+
 <a href="http://communitycodingcontest.org">http://communitycodingcontest.org</a> 
-</p>
+

@@ -13,20 +13,25 @@ redirect_from:
   - /post.aspx?id=9c55056b-9d3e-4ea2-aa60-3f9ddd7a5421
 ---
 <!-- more -->
-<p>
+
+
 <em>Update 12/29/2007: This is no longer a bug. It has been fixed since I originally posted this.</em> 
-</p>
-<p>
+
+
+
 This is the second bug in Virtual Earth 6 that I&#39;ve found today. It appears that the <a href="http://msdn2.microsoft.com/en-us/library/bb412546.aspx">showSwitch parameter of the LoadMap </a>method is broken and no longer works. 
-</p>
-<p>
+
+
+
 As the documentation states:<br />
 <em>&quot;A Boolean value that specifies whether to show the map mode switch on the dashboard control. Optional. Default is true (the switch is displayed).&quot;</em> 
-</p>
-<p>
+
+
+
 Below is a screenshot showing what is incorrectly happening and what should be happening: 
-</p>
-<p>
-&nbsp;
-</p>
+
+
+
+ 
+
 <img src="/images/postsVE6Bug_ShowSwitchOptionIsBroken.png" alt="" />

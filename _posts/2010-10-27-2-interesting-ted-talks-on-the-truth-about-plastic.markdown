@@ -13,8 +13,13 @@ redirect_from:
   - /post.aspx?id=7c661d03-02e2-44ba-854d-6c866a87b763
 ---
 <!-- more -->
-<p><img style="float: right;" src="../../images/posts2010/10/PlasticPollution.jpg" alt="" />Below are videos of two TED talks that I discovered over at <a href="http://ted.com">TED.com</a>. They talk about how bad plastic is for the environment, the earth, for us in the end. One disturbing thing that's mentioned is that plastic does break down into smaller pieces over time, but plastic is always plastic, is always plastic. It never truly breaks down to a point where the environment can use if for something other than pollution.</p>
-<p><a title="Dianna Cohen: Tough truths about plastic pollution" href="http://www.ted.com/talks/dianna_cohen_tough_truths_about_plastic_pollution.html">Dianna Cohen: Tough truths about plastic pollution</a></p>
-<p><a href="Capt. Charles Moore on the seas of plastic">Capt. Charles Moore on the seas of plastic</a></p>
-<p><em>These two videos are only a few minutes each, so it wont take you too much time to watch them.</em></p>
-<p><em>The image to the right is from: <a href="http://coastalcare.org/2010/08/new-garbage-patch-discovered-in-indian-ocean/">http://coastalcare.org/2010/08/new-garbage-patch-discovered-in-indian-ocean/</a></em><em><br /></em></p>
+
+<img style="float: right;" src="../../images/posts2010/10/PlasticPollution.jpg" alt="" />Below are videos of two TED talks that I discovered over at <a href="http://ted.com">TED.com</a>. They talk about how bad plastic is for the environment, the earth, for us in the end. One disturbing thing that's mentioned is that plastic does break down into smaller pieces over time, but plastic is always plastic, is always plastic. It never truly breaks down to a point where the environment can use if for something other than pollution.
+
+<a title="Dianna Cohen: Tough truths about plastic pollution" href="http://www.ted.com/talks/dianna_cohen_tough_truths_about_plastic_pollution.html">Dianna Cohen: Tough truths about plastic pollution</a>
+
+<a href="Capt. Charles Moore on the seas of plastic">Capt. Charles Moore on the seas of plastic</a>
+
+<em>These two videos are only a few minutes each, so it wont take you too much time to watch them.</em>
+
+<em>The image to the right is from: <a href="http://coastalcare.org/2010/08/new-garbage-patch-discovered-in-indian-ocean/">http://coastalcare.org/2010/08/new-garbage-patch-discovered-in-indian-ocean/</a></em><em><br /></em>

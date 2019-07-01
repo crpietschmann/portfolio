@@ -13,6 +13,9 @@ redirect_from:
   - /post.aspx?id=c1dfa5e0-014d-4ad0-8fe5-053d48a435ea
 ---
 <!-- more -->
-<P>Web Services Enhancements 2.0 Service Pack 3 Released
-<P>
-<P><A href="http://msdn.microsoft.com/webservices/building/wse/">http://msdn.microsoft.com/webservices/building/wse/</A></P>
+
+Web Services Enhancements 2.0 Service Pack 3 Released
+
+
+
+<A href="http://msdn.microsoft.com/webservices/building/wse/">http://msdn.microsoft.com/webservices/building/wse/</A>

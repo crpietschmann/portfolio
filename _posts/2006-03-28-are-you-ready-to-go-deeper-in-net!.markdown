@@ -13,13 +13,16 @@ redirect_from:
   - /post.aspx?id=a3923f02-e8b4-4663-98b0-12e8e7ae9018
 ---
 <!-- more -->
-<p>It's time for the <a href="http://www.wi-ineta.org/didn/06">Deeper in .NET 2006</a> event. This years event will be held Saturday April 22, 2006 at the Hyatt Regency Milwaukee. Registration is FREE for this full day packed full of excellent speakers, Free food and plenty of door prizes (books and software). You even have a chance to WIN a copy of MSDN Premium Subscription with Visual Studio 2005 Team Suite, worth over $10,000, if you <a href="http://www.wi-ineta.org/didn/06">register by April 18th</a>!</p>
-<p>I have attended the last two annual events, and my expectations have always been exceeded by the awesome speakers and content. If you're a .NET developer, you don't want to miss out.</p>
+
+It's time for the <a href="http://www.wi-ineta.org/didn/06">Deeper in .NET 2006</a> event. This years event will be held Saturday April 22, 2006 at the Hyatt Regency Milwaukee. Registration is FREE for this full day packed full of excellent speakers, Free food and plenty of door prizes (books and software). You even have a chance to WIN a copy of MSDN Premium Subscription with Visual Studio 2005 Team Suite, worth over $10,000, if you <a href="http://www.wi-ineta.org/didn/06">register by April 18th</a>!
+
+I have attended the last two annual events, and my expectations have always been exceeded by the awesome speakers and content. If you're a .NET developer, you don't want to miss out.
 <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
 <tbody>
 <tr valign="top">
 <td id="_ctl3_HtmlHolder" class="Normal">
-<p><a title="agenda" name="agenda"></a>Here is a tentative schedule of the day's event:</p>
+
+<a title="agenda" name="agenda"></a>Here is a tentative schedule of the day's event:
 <table class="normal" style="width: 100%; border: 1px solid black;" border="0" cellspacing="1" cellpadding="1">
 <tbody>
 <tr style="font-weight: bold; color: white; background-color: black; border: black 1px solid">
@@ -29,7 +32,7 @@ redirect_from:
 </tr>
 <tr style="color: black; background-color: #cccccc; border: black 1px solid">
 <td>7:00</td>
-<td>&nbsp;</td>
+<td> </td>
 <td>Check In, Visit Sponsors &amp; Networking</td>
 </tr>
 <tr style="color: black; background-color: #ffff99; border: black 1px solid">
@@ -84,7 +87,7 @@ redirect_from:
 </tr>
 <tr style="color: black; background-color: #cccccc; border: black 1px solid">
 <td>5:45</td>
-<td>&nbsp;</td>
+<td> </td>
 <td>Raffle Prizes - must be present to win</td>
 </tr>
 </tbody>
@@ -93,4 +96,5 @@ redirect_from:
 </tr>
 </tbody>
 </table>
-<p><a href="http://www.wi-ineta.org/didn/06">WI .NET Users Group - Deeper in .NET 2006</a></p>
+
+<a href="http://www.wi-ineta.org/didn/06">WI .NET Users Group - Deeper in .NET 2006</a>

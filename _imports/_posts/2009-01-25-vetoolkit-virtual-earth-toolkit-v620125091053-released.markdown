@@ -13,17 +13,21 @@ redirect_from:
   - /post.aspx?id=76ef247b-9a57-4577-b45e-34ebb506bdac
 ---
 <!-- more -->
-<p>
+
+
 This is the first official release of the <a href="http://codeplex.com/VEToolkit">Virtual Earth Toolkit</a>. The toolkit is by no means complete, but this is a &quot;stable&quot; collection of the Controls, Extenders and Methods that have been implemented thus far.
-</p>
-<p>
+
+
+
 Project: <a href="http://codeplex.com/VEToolkit" title="Virtual Earth Toolkit">http://codeplex.com/VEToolkit</a> 
-</p>
-<p>
+
+
+
 Download the Release: <a href="http://www.codeplex.com/VEToolkit/Release/ProjectReleases.aspx">http://www.codeplex.com/VEToolkit/Release/ProjectReleases.aspx</a>
-</p>
+
 <h3>What is the Virtual Earth Toolkit?</h3>
-<p>
+
+
 <em><span>The
 Virtual Earth Toolkit is a set of JavaScript-based Controls/Tools that
 Extend Virtual Earth with functionality that is commonly implemented,
@@ -37,13 +41,15 @@ version). This allows you to use this toolkit along-side any other
 JavaScript library (jQuery, ASP.NET AJAX, etc.); plus you can make use
 of it with any server-side framework of you choice (ASP.NET, ASP.NET
 MVC, PHP, etc.).</span></em> 
-</p>
+
 <h3>Features <br />
 </h3>
-<p>
+
+
 Below is a summary of what&#39;s included in this release:
-</p>
-<p>
+
+
+
 <span>
 <ul>
 	<li>Controls <br />
@@ -126,15 +132,18 @@ Below is a summary of what&#39;s included in this release:
 	</li>
 </ul>
 </span>
-</p>
+
 <h3>JavaScript Intellisense<br />
 </h3>
-<p>
+
+
 <span>The VEToolkit also includes full Visual Studio 2008 JavaScript Intellisense Support </span>
-</p>
-<p>
+
+
+
 <img src="http://i3.codeplex.com/Project/Download/FileDownload.aspx?ProjectName=VEToolkit&amp;DownloadId=56200" alt="VEToolkit" />
-</p>
-<p>
-&nbsp; 
-</p>
+
+
+
+  
+

@@ -13,7 +13,9 @@ redirect_from:
   - /post.aspx?id=57194bdd-11c5-4627-888c-e3331fec2a4b
 ---
 <!-- more -->
-<p>I recently started messing around with IronJS again, and I must say that this project is pure awesomeness! One of the first things I noticed is that when you call the “Execute” methods to run some JavaScript code it returns an “object.” Now, while this works just fine, I would prefer if it returned a “dynamic” object while running against .NET 4.0. There may be some reason that <a href="http://twitter.com/#!/fjholmstrom">Fredrik Holmstrom</a> (the author) decided to return an ‘object’, so I don’t mean to sound negative, but you have to admit that dynamics are really cool, especially when working with a dynamic language like JavaScript.</p>  <h3>Basics of using IronJS</h3>  <p>There are articles that cover the usage of IronJS, but here’s a very brief summary:</p>  <pre class="csharpcode"><span class="rem">// Instantiate the IronJS Engine</span>
+
+I recently started messing around with IronJS again, and I must say that this project is pure awesomeness! One of the first things I noticed is that when you call the “Execute” methods to run some JavaScript code it returns an “object.” Now, while this works just fine, I would prefer if it returned a “dynamic” object while running against .NET 4.0. There may be some reason that <a href="http://twitter.com/#!/fjholmstrom">Fredrik Holmstrom</a> (the author) decided to return an ‘object’, so I don’t mean to sound negative, but you have to admit that dynamics are really cool, especially when working with a dynamic language like JavaScript.  <h3>Basics of using IronJS</h3>  
+There are articles that cover the usage of IronJS, but here’s a very brief summary:  <pre class="csharpcode"><span class="rem">// Instantiate the IronJS Engine</span>
 var context = <span class="kwrd">new</span> IronJS.Hosting.CSharp.Context();
 
 var result = context.Execute(<span class="str">&quot;2 + 2&quot;</span>);
@@ -51,7 +53,8 @@ var result = context.Execute(<span class="str">&quot;'Ch' + 'ris'&quot;</span>);
 
 <h3>Returning JavaScript Objects</h3>
 
-<p>The previous examples were extremely simple just to give you an idea if you are unfamiliar. Now I will show a more interesting example that returns a JavaScript object instead of just a simple, single value.</p>
+
+The previous examples were extremely simple just to give you an idea if you are unfamiliar. Now I will show a more interesting example that returns a JavaScript object instead of just a simple, single value.
 
 <pre class="csharpcode">var result = context.Execute(<span class="str">@&quot;
 (function(){
@@ -62,11 +65,13 @@ var result = context.Execute(<span class="str">&quot;'Ch' + 'ris'&quot;</span>);
 })()
 &quot;</span>);</pre>
 
-<p>This returns a JavaScript object with “id” and “name” properties set respectively to 42 and “chris”.</p>
+
+This returns a JavaScript object with “id” and “name” properties set respectively to 42 and “chris”.
 
 <h3>Retrieving Object Values</h3>
 
-<p>Retrieving the JavaScript object values is pretty straight forward, although you must reach for them through the “CommonObject.Members” property.</p>
+
+Retrieving the JavaScript object values is pretty straight forward, although you must reach for them through the “CommonObject.Members” property.
 
 <pre class="csharpcode">var obj = (CommonObject)result;
 
@@ -75,9 +80,11 @@ var name = obj.Members[<span class="str">&quot;name&quot;</span>];</pre>
 
 <h3>Using Dynamics (via DynamicCommonObject class) to Retrieve Object Values</h3>
 
-<p>Wouldn’t it be nice to use Dynamics to get at the JavaScript object values? Yes, I agree that it would be.</p>
 
-<p>Here’s an example of performing the previous example by using the DynamicCommonObject wrapper class (code listed below) to do it with .NET 4.0’s Dynamic object support.</p>
+Wouldn’t it be nice to use Dynamics to get at the JavaScript object values? Yes, I agree that it would be.
+
+
+Here’s an example of performing the previous example by using the DynamicCommonObject wrapper class (code listed below) to do it with .NET 4.0’s Dynamic object support.
 
 <pre class="csharpcode">var obj = <span class="kwrd">new</span> DynamicCommonObject(result <span class="kwrd">as</span> CommonObject);
 
@@ -89,7 +96,8 @@ var name = obj.name;
 var id = obj[<span class="str">&quot;id&quot;</span>];
 var name = obj[<span class="str">&quot;name&quot;</span>];</pre>
 
-<p>What if the property doesn’t exist? Well let me show you…</p>
+
+What if the property doesn’t exist? Well let me show you…
 
 <pre class="csharpcode">var firstname = obj.firstname;
 <span class="rem">// throws RuntimeBinderException with message:</span>
@@ -98,7 +106,8 @@ var name = obj[<span class="str">&quot;name&quot;</span>];</pre>
 var firstname = obj[<span class="str">&quot;firstname&quot;</span>];
 // returns IronJS.Undefined</pre>
 
-<p>If you want to change the behavior of DynamicCommonObject when the requested property name does not exist, then you can modify it’s code; it’s listed below.</p>
+
+If you want to change the behavior of DynamicCommonObject when the requested property name does not exist, then you can modify it’s code; it’s listed below.
 
 <h3>DynamicCommonObject Wrapper Class Source Code</h3>
 
@@ -296,7 +305,8 @@ var firstname = obj[<span class="str">&quot;firstname&quot;</span>];
 
 <h3>More Information on IronJS</h3>
 
-<p>If you aren’t familiar with IronJS, I encourage you to go check out one or more of the following links:</p>
+
+If you aren’t familiar with IronJS, I encourage you to go check out one or more of the following links:
 
 <ul>
   <li><a title="http://ironjs.wordpress.com/" href="http://ironjs.wordpress.com/">http://ironjs.wordpress.com/</a> </li>

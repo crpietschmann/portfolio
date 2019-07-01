@@ -13,7 +13,11 @@ redirect_from:
   - /post.aspx?id=023a3d09-a523-473c-89c1-c761b47bbb8a
 ---
 <!-- more -->
-<P>Darn it... I'm actually quite irritated that this thing worked for like 10 months with absolutely no problems.</P>
-<P>And then last night, it started giving this error: Value cannot be null. Parameter name: value</P>
-<P>It happens when ever you try to view one of the blog entries. I'll try to get this fixed as soon as possible. :(</P>
-<P> </P>
+
+Darn it... I'm actually quite irritated that this thing worked for like 10 months with absolutely no problems.
+
+And then last night, it started giving this error: Value cannot be null. Parameter name: value
+
+It happens when ever you try to view one of the blog entries. I'll try to get this fixed as soon as possible. :(
+
+ 

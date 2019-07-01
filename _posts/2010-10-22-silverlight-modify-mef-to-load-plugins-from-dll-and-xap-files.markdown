@@ -13,7 +13,17 @@ redirect_from:
   - /post.aspx?id=0a7d9d3f-9f03-4c26-8536-620a899d1903
 ---
 <!-- more -->
-<p>I’m using MEF in a new project, and the limitation that I’ve found in using MEF with Silverlight is that it only supports downloading and loading plugins/assemblies from XAP files. What I would really like to do is support plugins that are compiled into either individual DLL’s or more complex plugins within a XAP.</p>  <p>Update: I have also posted this to the <a href="http://mef.codeplex.com/workitem/12328">Issue Tracker on the MEF CodePlex site</a>.</p>  <h3>Why individual DLL’s?</h3>  <p>The really answer to this is flexibility. I don’t think they creators of MEF made a mistake supporting XAP file, but I think they made a mistake by not supporting DLL’s in addition.</p>  <p>XAP files are great. They allow you to package your entire plugin, along with its dependencies, into a single file that gets loaded by the app at runtime. You never have to worry about the plugin breaking due to a missing assembly reference since they are all right there.</p>  <p>However, where XAPs fail is when you have many XAPs that have dependencies on the same assemblies that are already referenced in the host application. These assemblies are added to the XAP (basically only the 3rd party assemblies, not core Silverlight assemblies) and downloaded with each XAP separately.</p>  <p>Lets say you have an application where you are using a 3rd party library, say the Bing Maps Silverlight Control, and you have 10 plugins all compiled into their own XAP that have references to the 3rd party library. This mean that the file size of each XAP is increased with the 3rd party library. When each XAP is downloaded, so is the 3rd party library. In this case it’s needlessly downloaded 10 times!</p>  <p>In this scenario, the XAP files are adding bloat by including the 3rd party library. You could remove the reference, to leave the library out, but then your XAP file wouldn’t compile.</p>  <p>This is the very reason why supporting DLL’s, in addition to XAP’s, is important. If you know that multiple plugins to your application will be utilizing the same 3rd party library, then you could add its reference to the host application. Then with the host already having it loaded, you could load the plugins compiled as DLL’s, and only be downloading the 3rd party library once; when the application loads. This will reduce bandwidth costs, and speed up the time it takes to load the plugins.</p>  <h3>Modify the DeploymentCatalog to also support DLL’s</h3>  <p>Luckily the way that MEF is designed, the change to support DLL’s in addition to XAP’s is only a matter of adding a few lines of code to the private HandleOpenReadCompleted method of the DeploymentCatalog.</p>  <p>Here’s the DeploymentCatalog.HandleOpenReadCompleted method with its modifications:</p>  <pre class="csharpcode"><span class="kwrd">private</span> <span class="kwrd">void</span> HandleOpenReadCompleted(<span class="kwrd">object</span> sender, OpenReadCompletedEventArgs e)
+
+I’m using MEF in a new project, and the limitation that I’ve found in using MEF with Silverlight is that it only supports downloading and loading plugins/assemblies from XAP files. What I would really like to do is support plugins that are compiled into either individual DLL’s or more complex plugins within a XAP.  
+Update: I have also posted this to the <a href="http://mef.codeplex.com/workitem/12328">Issue Tracker on the MEF CodePlex site</a>.  <h3>Why individual DLL’s?</h3>  
+The really answer to this is flexibility. I don’t think they creators of MEF made a mistake supporting XAP file, but I think they made a mistake by not supporting DLL’s in addition.  
+XAP files are great. They allow you to package your entire plugin, along with its dependencies, into a single file that gets loaded by the app at runtime. You never have to worry about the plugin breaking due to a missing assembly reference since they are all right there.  
+However, where XAPs fail is when you have many XAPs that have dependencies on the same assemblies that are already referenced in the host application. These assemblies are added to the XAP (basically only the 3rd party assemblies, not core Silverlight assemblies) and downloaded with each XAP separately.  
+Lets say you have an application where you are using a 3rd party library, say the Bing Maps Silverlight Control, and you have 10 plugins all compiled into their own XAP that have references to the 3rd party library. This mean that the file size of each XAP is increased with the 3rd party library. When each XAP is downloaded, so is the 3rd party library. In this case it’s needlessly downloaded 10 times!  
+In this scenario, the XAP files are adding bloat by including the 3rd party library. You could remove the reference, to leave the library out, but then your XAP file wouldn’t compile.  
+This is the very reason why supporting DLL’s, in addition to XAP’s, is important. If you know that multiple plugins to your application will be utilizing the same 3rd party library, then you could add its reference to the host application. Then with the host already having it loaded, you could load the plugins compiled as DLL’s, and only be downloading the 3rd party library once; when the application loads. This will reduce bandwidth costs, and speed up the time it takes to load the plugins.  <h3>Modify the DeploymentCatalog to also support DLL’s</h3>  
+Luckily the way that MEF is designed, the change to support DLL’s in addition to XAP’s is only a matter of adding a few lines of code to the private HandleOpenReadCompleted method of the DeploymentCatalog.  
+Here’s the DeploymentCatalog.HandleOpenReadCompleted method with its modifications:  <pre class="csharpcode"><span class="kwrd">private</span> <span class="kwrd">void</span> HandleOpenReadCompleted(<span class="kwrd">object</span> sender, OpenReadCompletedEventArgs e)
 {
     Exception error = e.Error;
     <span class="kwrd">bool</span> cancelled = e.Cancelled;
@@ -75,14 +85,19 @@ redirect_from:
 }
 .csharpcode .lnum { color: #606060; }</style>
 
-<p>&#160;</p>
+
+&#160;
 
 <h3>SuperDeploymentCatalog – Add DLL Support to Silverlight 4</h3>
 
-<p>The above modification is fine if you were to recompile MEF yourself, but it would be much easier to utilize this with MEF as it is in Silverlight 4. Below is the full code to the SuperDeploymentCatalog class that can be used in place of the standard DeploymentCatalog with Silverlight 4.</p>
 
-<p>A note about the code: Instead of just inheriting from DeploymentCatalog and overriding the necessary methods, I needed to implement this by copying the DeploymentCatalog code, along with a couple dependencies marked internal, and make the modification mentioned above. A little more code to include in your application, but definitely worth it.</p>
+The above modification is fine if you were to recompile MEF yourself, but it would be much easier to utilize this with MEF as it is in Silverlight 4. Below is the full code to the SuperDeploymentCatalog class that can be used in place of the standard DeploymentCatalog with Silverlight 4.
 
-<p>You can download the source file here:</p>
 
-<p><a href="/file.axd?file=SuperDeploymentCatalog_1.cs">SuperDeploymentCatalog.cs</a></p>
+A note about the code: Instead of just inheriting from DeploymentCatalog and overriding the necessary methods, I needed to implement this by copying the DeploymentCatalog code, along with a couple dependencies marked internal, and make the modification mentioned above. A little more code to include in your application, but definitely worth it.
+
+
+You can download the source file here:
+
+
+<a href="/file.axd?file=SuperDeploymentCatalog_1.cs">SuperDeploymentCatalog.cs</a>

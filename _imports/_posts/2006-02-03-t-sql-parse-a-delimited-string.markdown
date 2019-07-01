@@ -13,8 +13,10 @@ redirect_from:
   - /post.aspx?id=4eaf5aa0-047d-49cd-a1ba-bca96f99e68d
 ---
 <!-- more -->
-<p>Parsing a delimeted string in T-SQL is fairly simple to do, but it does take a nice little chunk of code. I most commonly use this chunk of code when I need to pass an array from an application into a SQL Stored Procedure. The best way to implement this code into an application would be to create a SQL Function that you pass in a delimted string and it returns a table of values. This way you don't have to duplicate the code everytime you want to use it.</p>
-<p>The following example parses the delimeted string and places each value into a variable of type Table. Once the values are placed into the table you can do anything you need to save/process these values.</p>
+
+Parsing a delimeted string in T-SQL is fairly simple to do, but it does take a nice little chunk of code. I most commonly use this chunk of code when I need to pass an array from an application into a SQL Stored Procedure. The best way to implement this code into an application would be to create a SQL Function that you pass in a delimted string and it returns a table of values. This way you don't have to duplicate the code everytime you want to use it.
+
+The following example parses the delimeted string and places each value into a variable of type Table. Once the values are placed into the table you can do anything you need to save/process these values.
 <pre class="csharpcode">--<span class="kwrd">declare</span> the list <span class="kwrd">of</span> Cities
 <span class="kwrd">DECLARE</span> @CityList <span class="kwrd">varchar</span>(8000)
 <span class="kwrd">SET</span> @CityList = <span class="str">'Milwaukee|Chicago|New York|Seattle|San Francisco'</span>
@@ -48,4 +50,5 @@ redirect_from:
 
 --Show <span class="kwrd">all</span> Cities <span class="kwrd">in</span> the @tblCity <span class="kwrd">table</span>
 <span class="kwrd">SELECT</span> * <span class="kwrd">FROM</span> @tblCity</pre>
-<p><!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } --></p>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->

@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=ba000303-7054-450c-b469-5dbe920b0469
 ---
 <!-- more -->
-<P>The Express Editions of Visual Studio 2005&nbsp;and SQL Server 2005&nbsp;are now available for Free download. According to the site the Express Editions will be available for download for a period of 1 year. And the best part about the license agreement is there are no licensing restrictions that prohibit you from developing software with the Express Editions for commercial use.</P>
-<P>Download Site: <A href="http://msdn.microsoft.com/vstudio/express/">http://msdn.microsoft.com/vstudio/express/</A></P>
+
+The Express Editions of Visual Studio 2005 and SQL Server 2005 are now available for Free download. According to the site the Express Editions will be available for download for a period of 1 year. And the best part about the license agreement is there are no licensing restrictions that prohibit you from developing software with the Express Editions for commercial use.
+
+Download Site: <A href="http://msdn.microsoft.com/vstudio/express/">http://msdn.microsoft.com/vstudio/express/</A>

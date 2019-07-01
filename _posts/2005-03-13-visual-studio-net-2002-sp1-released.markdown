@@ -13,11 +13,15 @@ redirect_from:
   - /post.aspx?id=2722ac92-0734-4069-80cf-04299d60ad32
 ---
 <!-- more -->
-<P>On March 8th, The Visual Studio <a title=".NET" href="http://www.microsoft.com/net/" target="_blank">.NET</a> 2002 Service Pack 1 was released.</P>
-<P>
+
+On March 8th, The Visual Studio <a title=".NET" href="http://www.microsoft.com/net/" target="_blank">.NET</a> 2002 Service Pack 1 was released.
+
+
 <H3>List of fixes in the Service Pack:</H3>
-<P></P>
-<P><a title="Microsoft" href="http://Microsoft.com" target="_blank">Microsoft</a> Visual Studio <a title=".NET" href="http://www.microsoft.com/net/" target="_blank">.NET</a> </P>
+
+
+
+<a title="Microsoft" href="http://Microsoft.com" target="_blank">Microsoft</a> Visual Studio <a title=".NET" href="http://www.microsoft.com/net/" target="_blank">.NET</a> 
 <UL>
 <LI>
 <DIV class=indent><A class=KBlink href="http://support.microsoft.com/kb/306905">306905</A> Visual IDE does not open when started or application cannot start error message </DIV></LI>
@@ -177,9 +181,11 @@ redirect_from:
 <DIV class=indent><A class=KBlink href="http://support.microsoft.com/kb/830647">830647</A> FIX: The UP ARROW key does not work correctly when you use an ActiveX control together with grouped radio buttons in an MFC form view </DIV></LI>
 <LI>
 <DIV class=indent><A class=KBlink href="http://support.microsoft.com/kb/834740">834740</A> FIX: You may receive an access violation error message when you use ios-derived types </DIV></LI></UL>
-<P class=indent>&nbsp;</P>
-<P>More Information about the service pack:</P>
+<P class=indent> 
+
+More Information about the service pack:
 <UL>
 <LI><A href="http://support.microsoft.com/?id=895309">http://support.microsoft.com/?id=895309</A></LI>
 <LI><A href="http://support.microsoft.com/default.aspx?scid=kb;en-us;837234">http://support.microsoft.com/default.aspx?scid=kb;en-us;837234</A></LI></UL>
-<P>Download VS.NET 2002 SP1 here: <A href="http://www.microsoft.com/downloads/details.aspx?familyid=c41d8159-b42f-4d06-a797-e510494976ee&amp;amp;displaylang=en">http://www.microsoft.com/downloads/details.aspx?familyid=c41d8159-b42f-4d06-a797-e510494976ee&amp;amp;displaylang=en</A></P>
+
+Download VS.NET 2002 SP1 here: <A href="http://www.microsoft.com/downloads/details.aspx?familyid=c41d8159-b42f-4d06-a797-e510494976ee&amp;amp;displaylang=en">http://www.microsoft.com/downloads/details.aspx?familyid=c41d8159-b42f-4d06-a797-e510494976ee&amp;amp;displaylang=en</A>

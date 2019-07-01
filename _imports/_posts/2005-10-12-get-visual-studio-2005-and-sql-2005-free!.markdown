@@ -13,6 +13,9 @@ redirect_from:
   - /post.aspx?id=47d78ee4-ff6e-4b66-af09-10e6f2ad60dc
 ---
 <!-- more -->
-<P><IMG src="http://msdnevents.com/images/launch/free_head.gif" align=right border=0>If you attend <A title=Microsoft href="http://Microsoft.com" target=_blank>Microsoft</A>'s Best of Visual Studio 2005 Launch&nbsp;or Microsoft's&nbsp;Best of SQL Server 2005 Launch&nbsp;and you'll&nbsp;receive a free copy of Visual Studio 2005 Standard Edition and SQL Server 2005 Standard Edition. </P>
-<P>VS '05 Launch - <A target='_new' href="http://msdnevents.com/launch">http://msdnevents.com/launch</A><BR>SQL Server '05 Launch - <A target='_new' href="http://technetevents.com/launch">http://technetevents.com/launch</A></P>
-<P>&nbsp;</P>
+
+<IMG src="http://msdnevents.com/images/launch/free_head.gif" align=right border=0>If you attend <A title=Microsoft href="http://Microsoft.com" target=_blank>Microsoft</A>'s Best of Visual Studio 2005 Launch or Microsoft's Best of SQL Server 2005 Launch and you'll receive a free copy of Visual Studio 2005 Standard Edition and SQL Server 2005 Standard Edition. 
+
+VS '05 Launch - <A target='_new' href="http://msdnevents.com/launch">http://msdnevents.com/launch</A><BR>SQL Server '05 Launch - <A target='_new' href="http://technetevents.com/launch">http://technetevents.com/launch</A>
+
+ 

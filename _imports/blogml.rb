@@ -131,6 +131,22 @@ module Jekyll
             content.gsub!(/\[\/Posticon\]+/i, "'/>")  # /i doesn't seem to be working
             content.gsub!(/\[\/posticon\]+/i, "'/>")  # /i doesn't seem to be working
           
+            # Fix [code] embed tags
+            content.gsub!(/\[code:js\]/, "```javascript")
+            content.gsub!(/\[code:bash\]/, "```bash")
+            content.gsub!(/\[code:csharp\]/, "```csharp")
+            content.gsub!(/\[code\]/, "```")
+            content.gsub!(/\[\/code\]/, "```")
+
+            content.gsub!(/<p>/, "\n")
+            content.gsub!(/<\/p>/, "")
+            content.gsub!(/<P>/, "\n")
+            content.gsub!(/<\/P>/, "")
+
+            content.gsub!(/&nbsp;/, " ")
+            content.gsub!(/<strong>/, "**");
+            content.gsub!(/<\/strong>/, "**");
+
             ## is this published?
             published = item.attributes["approved"]
             puts "published: #{published}"

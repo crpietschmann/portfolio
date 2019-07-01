@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=3f6e5b62-cee1-437c-a1b5-3bae661bf772
 ---
 <!-- more -->
-<p>The <a href="http://sessions.visitmix.com/">MIX'08 Session Recordings</a> are now available online. So far, its just the recordings from yesterday, but all the recordings for the entire event should be up by Monday. This is really awesome, you can almost attend the event for free online. Go check it out.</p>
-<p><a href="http://sessions.visitmix.com/">http://sessions.visitmix.com/</a></p>
+
+The <a href="http://sessions.visitmix.com/">MIX'08 Session Recordings</a> are now available online. So far, its just the recordings from yesterday, but all the recordings for the entire event should be up by Monday. This is really awesome, you can almost attend the event for free online. Go check it out.
+
+<a href="http://sessions.visitmix.com/">http://sessions.visitmix.com/</a>

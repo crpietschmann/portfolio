@@ -13,10 +13,14 @@ redirect_from:
   - /post.aspx?id=5a6945d0-933a-4971-aac1-13dcd73711d9
 ---
 <!-- more -->
-<p><img src="/images/postsASPNETMVC_Preview4_CustomThemeFolderLayout.png" alt="" align="right" /></p>
-<p><strong>Update 2009/03/26:</strong> There is an updated version of this code (with improvements) that targets the ASP.NET MVC 1.0 RTW located here: <a href="/post/2009/03/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx">/post/2009/03/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx</a>&nbsp;</p>
-<p>About two weeks ago I posted on how to <a href="/post.aspx?id=ee0e253d-c746-4099-9795-81aaf14ad608">Implement Custom Theme support in ASP.NET MVC</a>. There were some breaking changes made when the Preview 5 release was released yesterday.</p>
-<p>Here's a short list to a couple of the changes I had to make to my code from the previous post to get it working in ASP.NET MVC Preview 5:</p>
+
+<img src="/images/postsASPNETMVC_Preview4_CustomThemeFolderLayout.png" alt="" align="right" />
+
+**Update 2009/03/26:** There is an updated version of this code (with improvements) that targets the ASP.NET MVC 1.0 RTW located here: <a href="/post/2009/03/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx">/post/2009/03/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx</a> 
+
+About two weeks ago I posted on how to <a href="/post.aspx?id=ee0e253d-c746-4099-9795-81aaf14ad608">Implement Custom Theme support in ASP.NET MVC</a>. There were some breaking changes made when the Preview 5 release was released yesterday.
+
+Here's a short list to a couple of the changes I had to make to my code from the previous post to get it working in ASP.NET MVC Preview 5:
 <ul>
 <li>Delete WebFormThemeViewLocator - The contents of this object is now contained within the ViewEngine itself</li>
 <li>Delete WebFormThemeControllerFactory- This isn't needed anymore.</li>
@@ -24,9 +28,12 @@ redirect_from:
 <li>Modify Global.asax - Remove code that adds the old ControllerFactory, and replace it with code that adds our newly improved WebFormThemeViewEngine</li>
 <li>Modify ControllerBase - Firstly, rename this to ThemeControllerBase since there is not a ControllerBase in System.Web.Mvc. Then, modify the code for the Execute method since it now takes in a RequestContext object as a parameter instead of a ControllerContext object.</li>
 </ul>
-<p>Just for reference here's the code for the WebFormThemeViewEngine.</p>
-<p><strong>Download Code:</strong> <a href="/file.axd?file=ASPNETMVC_Preview5_CustomThemeImplementation.zip" rel="enclosure">ASPNETMVC_Preview5_CustomThemeImplementation.zip (226.05 kb)</a></p>
-<p>Below is the entire code for the WebFormThemeViewEngine, just for reference. If you are interested in looking at how I implemented this, just download and check out the entire code sample at the link above.</p>
+
+Just for reference here's the code for the WebFormThemeViewEngine.
+
+**Download Code:** <a href="/file.axd?file=ASPNETMVC_Preview5_CustomThemeImplementation.zip" rel="enclosure">ASPNETMVC_Preview5_CustomThemeImplementation.zip (226.05 kb)</a>
+
+Below is the entire code for the WebFormThemeViewEngine, just for reference. If you are interested in looking at how I implemented this, just download and check out the entire code sample at the link above.
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">using System;
 using System.Globalization;
 using System.Linq;

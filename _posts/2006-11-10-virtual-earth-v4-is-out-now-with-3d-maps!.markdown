@@ -13,12 +13,15 @@ redirect_from:
   - /post.aspx?id=a5b28173-e9a7-4e6a-ab4b-5e55bbfaccc8
 ---
 <!-- more -->
-<p>
+
+
 I know this post is a bit delayed, but a couple days ago Microsoft released Virtual Earth v4. Basically this new version is v3 with some stuff added. The major addition is the 3D maps. Now this feature is cool.
-</p>
-<p>
+
+
+
 I still have to check compatibility of my PietschSoft.VE3 control with the VE4 JavaScript library. I also think I may be spawning off a new PietschSoft.VE control for this new version.
-</p>
-<p>
-Check it out: <a href="http://dev.live.com/virtualearth/sdk/">Virtual Earth v4&nbsp;Interactive SDK</a>
-</p>
+
+
+
+Check it out: <a href="http://dev.live.com/virtualearth/sdk/">Virtual Earth v4 Interactive SDK</a>
+

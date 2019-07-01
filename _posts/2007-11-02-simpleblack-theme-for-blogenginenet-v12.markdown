@@ -13,7 +13,11 @@ redirect_from:
   - /post.aspx?id=f5251bf7-5f7e-4940-896d-7dead38582bd
 ---
 <!-- more -->
-<P>I've been looking at the code of <A href="http://dotnetblogengine.net">BlogEngine.NET</A> and playing around with it a bit lately, so I decided to create a theme to see how easy it is. And, it is actually really simple to do.</P>
-<P>I actually used the Cogitation theme as the basis and just morphed it into the below theme I call SimpleBlack. If you would like to use it, go ahead.</P>
-<P><A href="/Download/Blog/1418/SimpleBlack_Full.png"><IMG alt="SimpleBlack Them for BlogEngine.NET" hspace=0 src="/Download/Blog/1418/SimpleBlack_Thumb.png" align=baseline border=0></A></P>
-<P>Download: <A href="/Download/Blog/1418/SimpleBlack.zip">BlogEngine.NET v1.2&nbsp;SimpleBlack Theme</A></P>
+
+I've been looking at the code of <A href="http://dotnetblogengine.net">BlogEngine.NET</A> and playing around with it a bit lately, so I decided to create a theme to see how easy it is. And, it is actually really simple to do.
+
+I actually used the Cogitation theme as the basis and just morphed it into the below theme I call SimpleBlack. If you would like to use it, go ahead.
+
+<A href="/Download/Blog/1418/SimpleBlack_Full.png"><IMG alt="SimpleBlack Them for BlogEngine.NET" hspace=0 src="/Download/Blog/1418/SimpleBlack_Thumb.png" align=baseline border=0></A>
+
+Download: <A href="/Download/Blog/1418/SimpleBlack.zip">BlogEngine.NET v1.2 SimpleBlack Theme</A>

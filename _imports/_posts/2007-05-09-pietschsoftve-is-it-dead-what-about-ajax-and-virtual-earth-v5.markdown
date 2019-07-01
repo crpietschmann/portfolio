@@ -13,27 +13,35 @@ redirect_from:
   - /post.aspx?id=b84110ff-c366-4a80-9430-cd162eecd0e4
 ---
 <!-- more -->
-<p>
-<strong>Is PietschSoft.VE Dead?</strong>
-</p>
-<p>
+
+
+**Is PietschSoft.VE Dead?**
+
+
+
 I&#39;ve had a couple people ask me lately if the <a href="http://simplovation.com/Page/WebMapsVE.aspx">PietschSoft.VE</a> project is dead since there hasn&#39;t been a release in about 2 months. The answer is: No, it isn&#39;t dead, I just haven&#39;t had alot of time the last few weeks to work on it.
-</p>
-<p>
-<strong>Ajax</strong>
-</p>
-<p>
-I am actually still working on adding full Ajax support, using UpdatePanels as the enablers. It&nbsp;is turning out to be pretty cool.
-</p>
-<p>
-<strong>Virtual Earth v5</strong>
-</p>
-<p>
+
+
+
+**Ajax**
+
+
+
+I am actually still working on adding full Ajax support, using UpdatePanels as the enablers. It is turning out to be pretty cool.
+
+
+
+**Virtual Earth v5**
+
+
+
 Also, since Microsoft recently released <a href="http://dev.live.com/virtualearth">Virtual Earth v5</a>, I have my work cut out rewriting the pushpin, polygon and polyline code to use the new Shape layers.
-</p>
-<p>
+
+
+
 So, don&#39;t worry, the project is very much still alive.
-</p>
-<p>
-<strong>Update 11/7/2007:</strong> There is a new version of PietschSoft.VE, and it has been renamed to <a href="http://simplovation.com/Page/WebMapsVE.aspx">Web.Maps.VE</a>! Web.Maps.VE has a <a href="http://simplovation.com/Page/WebMapsVE.aspx">much richer Ajax feature set</a> than PietschSoft.VE. It is located here: <a href="http://simplovation.com/Page/WebMapsVE.aspx">http://simplovation.com/Page/WebMapsVE.aspx</a>
-</p>
+
+
+
+**Update 11/7/2007:** There is a new version of PietschSoft.VE, and it has been renamed to <a href="http://simplovation.com/Page/WebMapsVE.aspx">Web.Maps.VE</a>! Web.Maps.VE has a <a href="http://simplovation.com/Page/WebMapsVE.aspx">much richer Ajax feature set</a> than PietschSoft.VE. It is located here: <a href="http://simplovation.com/Page/WebMapsVE.aspx">http://simplovation.com/Page/WebMapsVE.aspx</a>
+

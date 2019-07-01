@@ -13,6 +13,9 @@ redirect_from:
   - /post.aspx?id=4c03ec73-56af-46db-9ece-22f0af16d566
 ---
 <!-- more -->
-<P>I just recieved my Vista Ultimate product key from MSDN after&nbsp;many failed attempts earlier today. I don't know if it'll work for everyone now, but at least I wont be one of the many hammering the system. Also, my download of both the x86 and x64 ISO's&nbsp;have finished.</P>
-<P>I have to say my over all experience of getting Vista (ISO image and product key) from MSDN was pretty good, especially since their server are being hammered so much by everyone with an MSDN Subscription wanting to download it at the same time.</P>
-<P>And now all I have to do is burn the disc and install.</P>
+
+I just recieved my Vista Ultimate product key from MSDN after many failed attempts earlier today. I don't know if it'll work for everyone now, but at least I wont be one of the many hammering the system. Also, my download of both the x86 and x64 ISO's have finished.
+
+I have to say my over all experience of getting Vista (ISO image and product key) from MSDN was pretty good, especially since their server are being hammered so much by everyone with an MSDN Subscription wanting to download it at the same time.
+
+And now all I have to do is burn the disc and install.

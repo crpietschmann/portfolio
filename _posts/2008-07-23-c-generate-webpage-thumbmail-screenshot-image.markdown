@@ -13,9 +13,12 @@ redirect_from:
   - /post.aspx?id=2a628f30-fe83-4e44-a34b-f31be76d1b4f
 ---
 <!-- more -->
-<p>There are a few services out there that serve up screenshots of any webpage for you to display on your website. One popular one is <a href="http://kwiboo.com/">Kwiboo</a>; this is the one that <a href="http://dotnetkicks.com">DotNetKicks </a>uses. For some time now I've wondered what the easiest way to do this in .NET was, and today I stumbled upon the undocumented WebBrowser.DrawToBitmap method that makes this extremely easy to do.</p>
-<p>By the way, I stumbled upon the WebBrowser.DrawToBitmap while taking a look at the source code for the <a href="http://smallsharptools.com/Projects/WebPreview/">WebPreview tool over at SmallSharpTools.com</a>.</p>
-<p>Here's a sample method that returns a Bitmap representation of a webpage:</p>
+
+There are a few services out there that serve up screenshots of any webpage for you to display on your website. One popular one is <a href="http://kwiboo.com/">Kwiboo</a>; this is the one that <a href="http://dotnetkicks.com">DotNetKicks </a>uses. For some time now I've wondered what the easiest way to do this in .NET was, and today I stumbled upon the undocumented WebBrowser.DrawToBitmap method that makes this extremely easy to do.
+
+By the way, I stumbled upon the WebBrowser.DrawToBitmap while taking a look at the source code for the <a href="http://smallsharptools.com/Projects/WebPreview/">WebPreview tool over at SmallSharpTools.com</a>.
+
+Here's a sample method that returns a Bitmap representation of a webpage:
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">public Bitmap GenerateScreenshot(string url)
 {
     // This method gets a screenshot of the webpage
@@ -56,7 +59,8 @@ public Bitmap GenerateScreenshot(string url, int width, int height)
 
     return bitmap;
 }</pre>
-<p>Here are some example usages of the above method:</p>
+
+Here are some example usages of the above method:
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Generate thumbnail of a webpage at 1024x768 resolution
 Bitmap thumbnail = GenerateScreenshot("", 1024, 768);
 

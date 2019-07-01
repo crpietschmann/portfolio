@@ -13,7 +13,11 @@ redirect_from:
   - /post.aspx?id=af308335-a035-49cf-a4f7-d233ab80ea0b
 ---
 <!-- more -->
-<P>Yes, that's right. You can add your own custom functionality to&nbsp;the My namespace. Microsoft has even created a My.Blogs library that adds functionality for read and writing to blogs. And, there is an MSDN TV episode that explains how to use My.Blogs.</P>
-<P>Simplify Common Tasks by Customizing the My Namespace<BR><A href="http://msdn.microsoft.com/msdnmag/issues/05/07/My/">http://msdn.microsoft.com/msdnmag/issues/05/07/My/</A></P>
-<P>My.Blogs Code Sample for Visual Basic<BR><A href="http://msdn.microsoft.com/VBasic/Downloads/Code/MyBlogs/">http://msdn.microsoft.com/VBasic/Downloads/Code/MyBlogs/</A></P>
-<P>MSDN TV: Adding Blogging to Your Apps with My.Blogs and Visual Basic 2005<BR><A href="http://msdn.microsoft.com/msdntv/episode.aspx?xml=episodes/en/20060126VBasicCM/manifest.xml">http://msdn.microsoft.com/msdntv/episode.aspx?xml=episodes/en/20060126VBasicCM/manifest.xml</A></P>
+
+Yes, that's right. You can add your own custom functionality to the My namespace. Microsoft has even created a My.Blogs library that adds functionality for read and writing to blogs. And, there is an MSDN TV episode that explains how to use My.Blogs.
+
+Simplify Common Tasks by Customizing the My Namespace<BR><A href="http://msdn.microsoft.com/msdnmag/issues/05/07/My/">http://msdn.microsoft.com/msdnmag/issues/05/07/My/</A>
+
+My.Blogs Code Sample for Visual Basic<BR><A href="http://msdn.microsoft.com/VBasic/Downloads/Code/MyBlogs/">http://msdn.microsoft.com/VBasic/Downloads/Code/MyBlogs/</A>
+
+MSDN TV: Adding Blogging to Your Apps with My.Blogs and Visual Basic 2005<BR><A href="http://msdn.microsoft.com/msdntv/episode.aspx?xml=episodes/en/20060126VBasicCM/manifest.xml">http://msdn.microsoft.com/msdntv/episode.aspx?xml=episodes/en/20060126VBasicCM/manifest.xml</A>

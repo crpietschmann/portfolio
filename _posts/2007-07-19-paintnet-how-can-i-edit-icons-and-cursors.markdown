@@ -13,5 +13,7 @@ redirect_from:
   - /post.aspx?id=9811cd49-9ce5-4caa-8942-6012a9ca5200
 ---
 <!-- more -->
-<P>Well, "out of the box" Paint.NET doesn't support editing Icon (.ico) and Cursor (.cur) files,&nbsp;however there is an excellent&nbsp;plugin over at <A href="http://www.evanolds.com/pdnicocur.html">evanolds.com </A>that add extends Paint.NET to have this functionality. </P>
-<P><A href="http://www.evanolds.com/pdnicocur.html">Icon/Cursor Paint.NET Plug-in</A></P>
+
+Well, "out of the box" Paint.NET doesn't support editing Icon (.ico) and Cursor (.cur) files, however there is an excellent plugin over at <A href="http://www.evanolds.com/pdnicocur.html">evanolds.com </A>that add extends Paint.NET to have this functionality. 
+
+<A href="http://www.evanolds.com/pdnicocur.html">Icon/Cursor Paint.NET Plug-in</A>

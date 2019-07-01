@@ -13,8 +13,10 @@ redirect_from:
   - /post.aspx?id=57e3e956-a3cd-445f-8445-48bee9c14494
 ---
 <!-- more -->
-<p>Today, I found an article on MSDN that covers how to perform a polygon search to determine if a given Lat/Long point is within a given Polygon.</p>
-<p>I copied the logic for searching within the Polygon and made it more reusable than what is posted in the MSDN article, so I thought I'd post it here.</p>
+
+Today, I found an article on MSDN that covers how to perform a polygon search to determine if a given Lat/Long point is within a given Polygon.
+
+I copied the logic for searching within the Polygon and made it more reusable than what is posted in the MSDN article, so I thought I'd post it here.
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">if (GeoHelper == undefined)
     var GeoHelper = {};
 
@@ -40,9 +42,12 @@ GeoHelper.IsInPolygon=function(points,latlong)
     }
     return inPoly; 
 };</pre>
-<p>The usage of the IsInPolygon method is fairly simple, the first parameter is an array of VELatLong point objects that make up the Polygon, and the second is the VELatLong point object you want to test to see if it is located within the Polygon. Then the method simply returns True if it's within the Polygon, and False if it's not.</p>
-<p>Also, this code would be very easily converted to C# or VB.NET if you need to perform the search within your server-side code.</p>
-<p>Here's a full code sample demonstrating this. This sample allows you to click on the map, and when you click it checks to see if the point you clicked is within the polygon, and it displays an alert box telling you if it is or not.</p>
+
+The usage of the IsInPolygon method is fairly simple, the first parameter is an array of VELatLong point objects that make up the Polygon, and the second is the VELatLong point object you want to test to see if it is located within the Polygon. Then the method simply returns True if it's within the Polygon, and False if it's not.
+
+Also, this code would be very easily converted to C# or VB.NET if you need to perform the search within your server-side code.
+
+Here's a full code sample demonstrating this. This sample allows you to click on the map, and when you click it checks to see if the point you clicked is within the polygon, and it displays an alert box telling you if it is or not.
 <pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -118,4 +123,5 @@ GeoHelper.IsInPolygon=function(points,latlong)
   &lt;div id='myMap' style="position: relative; width: 600px; height: 400px;"&gt;&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
-<p>You can find the original MSDN article here: <br /><a href="http://msdn.microsoft.com/en-us/library/cc451895.aspx">http://msdn.microsoft.com/en-us/library/cc451895.aspx</a></p>
+
+You can find the original MSDN article here: <br /><a href="http://msdn.microsoft.com/en-us/library/cc451895.aspx">http://msdn.microsoft.com/en-us/library/cc451895.aspx</a>

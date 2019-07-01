@@ -13,7 +13,11 @@ redirect_from:
   - /post.aspx?id=e92bbcbb-05a4-4562-85cd-b2030b42f017
 ---
 <!-- more -->
-<P>An new year and a new look for <a title="PietschSoft.com" href="http://PietschSoft.com" target="_blank">PietschSoft.com</a> is coming!</P>
-<P>I am currently working on a new website for <a title="PietschSoft.com" href="http://PietschSoft.com" target="_blank">PietschSoft</a>.com. My blog isn't going anywhere. Since it is the main content of my site I am making it the center of my site. I am working on making existing URL's for my blog still work with the new site. But, I'm not sure if I'll maintain compatibility for the URL of the RSS feeds.</P>
-<P>For any of you who are consuming the RSS feeds;&nbsp;they may break when I launch the new site. If&nbsp;any of them&nbsp;do; please visit <A HREF=""></A> for the new RSS feed URL.</P>
-<P>&nbsp;</P>
+
+An new year and a new look for <a title="PietschSoft.com" href="http://PietschSoft.com" target="_blank">PietschSoft.com</a> is coming!
+
+I am currently working on a new website for <a title="PietschSoft.com" href="http://PietschSoft.com" target="_blank">PietschSoft</a>.com. My blog isn't going anywhere. Since it is the main content of my site I am making it the center of my site. I am working on making existing URL's for my blog still work with the new site. But, I'm not sure if I'll maintain compatibility for the URL of the RSS feeds.
+
+For any of you who are consuming the RSS feeds; they may break when I launch the new site. If any of them do; please visit <A HREF=""></A> for the new RSS feed URL.
+
+ 

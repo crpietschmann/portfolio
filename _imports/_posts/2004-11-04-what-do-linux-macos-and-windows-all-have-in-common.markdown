@@ -13,7 +13,11 @@ redirect_from:
   - /post.aspx?id=fc7ff346-7fcd-48b4-b827-64ec36a3b112
 ---
 <!-- more -->
-<P>When you think about it, the three major Operating System's (Linux, MacOS and Windows) come down to one person/entity&nbsp;that controls them. No matter which Operating System you use, you are relying on a single person/entity to update/maintain your platform.</P>
-<P>Linus Torvalds contols the <a title="Linux" href="http://www.linux.org/" target="_blank">Linux</a> kernel.<BR>Microsoft Corp. controls Windows.<BR>Apple Computer, Inc.&nbsp;controls MacOS.</P>
-<P>If the person/entity who governs the core of your OS falls off the face of the Earth, at least with <a title="Linux" href="http://www.linux.org/" target="_blank">Linux</a> we all have the source code for the kernel and can take over where Linus left off. But then again how often does a giant fall of the face of the Earth???</P>
-<P>My main point is that we all rely heavily on the person/entity that controls which ever OS we use everyday.</P>
+
+When you think about it, the three major Operating System's (Linux, MacOS and Windows) come down to one person/entity that controls them. No matter which Operating System you use, you are relying on a single person/entity to update/maintain your platform.
+
+Linus Torvalds contols the <a title="Linux" href="http://www.linux.org/" target="_blank">Linux</a> kernel.<BR>Microsoft Corp. controls Windows.<BR>Apple Computer, Inc. controls MacOS.
+
+If the person/entity who governs the core of your OS falls off the face of the Earth, at least with <a title="Linux" href="http://www.linux.org/" target="_blank">Linux</a> we all have the source code for the kernel and can take over where Linus left off. But then again how often does a giant fall of the face of the Earth???
+
+My main point is that we all rely heavily on the person/entity that controls which ever OS we use everyday.

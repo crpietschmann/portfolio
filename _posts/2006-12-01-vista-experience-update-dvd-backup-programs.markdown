@@ -13,12 +13,16 @@ redirect_from:
   - /post.aspx?id=c54119ae-488b-4dd7-84d7-8304ec849ebd
 ---
 <!-- more -->
-<p>Vista doesn't have any DVD backup programs builtin, but I'm just testing a couple of the popular DVD backup programs and they work perfectly.</p>
-<p>The programs I've tested:</p>
+
+Vista doesn't have any DVD backup programs builtin, but I'm just testing a couple of the popular DVD backup programs and they work perfectly.
+
+The programs I've tested:
 <ul>
 <li><a href="http://www.mrbass.org/dvdshrink/">DVD Shrink 3.2</a> </li>
 <li><a href="http://www.dvddecrypter.org.uk/">DVD Decrypter 3.5.4.0</a> </li>
-<li><a href="http://dvdfab.net/free.htm">DVDFab Decrypter&nbsp;- Free Edition</a></li>
+<li><a href="http://dvdfab.net/free.htm">DVDFab Decrypter - Free Edition</a></li>
 </ul>
-<p>I'm actually seeing that the performance of DVD Shrink is a little higher on Vista 64-bit versus the same machine running WinXP 32-bit.</p>
-<p><strong>Updated 9/24/2007:</strong> I added links above to pages where you can download the above mentioned software.</p>
+
+I'm actually seeing that the performance of DVD Shrink is a little higher on Vista 64-bit versus the same machine running WinXP 32-bit.
+
+**Updated 9/24/2007:** I added links above to pages where you can download the above mentioned software.

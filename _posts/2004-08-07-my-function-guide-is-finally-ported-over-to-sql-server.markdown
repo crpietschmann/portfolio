@@ -13,8 +13,12 @@ redirect_from:
   - /post.aspx?id=ba45dbe3-0685-4768-924a-b7917230574a
 ---
 <!-- more -->
-<P>I finally got my Function Guide ported over from the mySQL database it used on my old hosting provider to the SQL Server 2000 database on my new/current hosting provider.</P>
-<P>
+
+I finally got my Function Guide ported over from the mySQL database it used on my old hosting provider to the SQL Server 2000 database on my new/current hosting provider.
+
+
 <CENTER><A href="/functionguide"><IMG src="/FunctionGuide/images/HeaderLogo.GIF" border=0></A></CENTER>
-<P>In the Function Guide you will find information on Windows API, and other function calls. At this time I am focusing on the Win32 API's, but in the future I also plan to incorporate other type of function calls.</P>
-<P>Function Guide: <A href="/FunctionGuide">http://PietschSoft.com/FunctionGuide</A></B></P>
+
+In the Function Guide you will find information on Windows API, and other function calls. At this time I am focusing on the Win32 API's, but in the future I also plan to incorporate other type of function calls.
+
+Function Guide: <A href="/FunctionGuide">http://PietschSoft.com/FunctionGuide</A></B>
