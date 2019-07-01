@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 1a54eec1-c728-462f-ac3f-6e889b11d4f4
+blogengineid: 1a54eec1-c728-462f-ac3f-6e889b11d4f4
 title: "Ubuntu 6.10 is the easiest version of Linux thus far!"
 date: 2007-01-13 10:32:00 -0600
 comments: true

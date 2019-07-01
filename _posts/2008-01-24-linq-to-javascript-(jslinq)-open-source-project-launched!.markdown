@@ -1,6 +1,6 @@
 ---
 layout: post
-id: c7f8e44c-0ee9-41f9-b164-79b1aca705ef
+blogengineid: c7f8e44c-0ee9-41f9-b164-79b1aca705ef
 title: "LINQ to JavaScript (JSLINQ) Open Source Project Launched!"
 date: 2008-01-24 15:00:00 -0600
 comments: true

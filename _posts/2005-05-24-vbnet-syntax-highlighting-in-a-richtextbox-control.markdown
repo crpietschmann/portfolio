@@ -1,6 +1,6 @@
 ---
 layout: post
-id: e1906bcf-983b-4bac-ad1e-cc787ceb4fdd
+blogengineid: e1906bcf-983b-4bac-ad1e-cc787ceb4fdd
 title: "VB.NET: Syntax Highlighting in a RichTextBox control"
 date: 2005-05-24 21:18:00 -0500
 comments: true

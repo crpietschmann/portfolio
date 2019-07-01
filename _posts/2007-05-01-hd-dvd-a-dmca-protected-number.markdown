@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 39e6e58d-3417-433e-8aa6-b02008146897
+blogengineid: 39e6e58d-3417-433e-8aa6-b02008146897
 title: "HD-DVD: A DMCA Protected Number??"
 date: 2007-05-01 23:16:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: a3923f02-e8b4-4663-98b0-12e8e7ae9018
+blogengineid: a3923f02-e8b4-4663-98b0-12e8e7ae9018
 title: "Are you ready to go Deeper in .NET!?"
 date: 2006-03-28 23:35:00 -0600
 comments: true

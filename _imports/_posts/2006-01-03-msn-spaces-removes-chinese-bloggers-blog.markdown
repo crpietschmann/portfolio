@@ -1,6 +1,6 @@
 ---
 layout: post
-id: c272d53d-ea29-4b63-98c1-af3c0d1cf7f3
+blogengineid: c272d53d-ea29-4b63-98c1-af3c0d1cf7f3
 title: "MSN Spaces Removes Chinese Bloggers Blog"
 date: 2006-01-03 19:31:00 -0600
 comments: true

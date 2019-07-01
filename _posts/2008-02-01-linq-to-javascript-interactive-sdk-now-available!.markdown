@@ -1,6 +1,6 @@
 ---
 layout: post
-id: d6987782-aa32-4f26-b77a-cb3c2ffb6f53
+blogengineid: d6987782-aa32-4f26-b77a-cb3c2ffb6f53
 title: "LINQ to JavaScript Interactive SDK Now Available!"
 date: 2008-02-01 21:50:00 -0600
 comments: true

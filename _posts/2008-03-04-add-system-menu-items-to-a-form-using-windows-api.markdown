@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 482989d9-32d1-4bd1-9692-c0718e4044c1
+blogengineid: 482989d9-32d1-4bd1-9692-c0718e4044c1
 title: "Add System Menu Items to a Form using Windows API"
 date: 2008-03-04 19:34:00 -0600
 comments: true

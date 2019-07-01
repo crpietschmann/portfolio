@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 80c877bb-7e2f-4e33-b63e-6fe199e6daa1
+blogengineid: 80c877bb-7e2f-4e33-b63e-6fe199e6daa1
 title: "Windows XP SP2 RTM expected in 2 weeks"
 date: 2004-07-11 01:51:00 -0500
 comments: true

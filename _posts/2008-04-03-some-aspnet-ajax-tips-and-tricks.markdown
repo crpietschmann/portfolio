@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 0b0d94ba-c184-48ce-b29a-38da320dbc7e
+blogengineid: 0b0d94ba-c184-48ce-b29a-38da320dbc7e
 title: "Some ASP.NET AJAX Tips and Tricks"
 date: 2008-04-03 21:56:00 -0500
 comments: true

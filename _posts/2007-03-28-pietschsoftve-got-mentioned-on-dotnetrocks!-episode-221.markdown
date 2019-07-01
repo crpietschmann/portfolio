@@ -1,6 +1,6 @@
 ---
 layout: post
-id: e4ebe8e9-50d5-4da3-9ba2-4c5a02305911
+blogengineid: e4ebe8e9-50d5-4da3-9ba2-4c5a02305911
 title: "PietschSoft.VE got mentioned on DotNetRocks! episode #221"
 date: 2007-03-28 11:36:00 -0500
 comments: true

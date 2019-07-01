@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 1ce510c9-0c22-428e-bd5b-9c1e9fee7d32
+blogengineid: 1ce510c9-0c22-428e-bd5b-9c1e9fee7d32
 title: "ASP.NET Atlas is full of JavaScript goodness"
 date: 2006-06-21 09:00:00 -0500
 comments: true

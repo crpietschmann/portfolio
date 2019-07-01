@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 67770600-dea8-4796-9212-84376bca62db
+blogengineid: 67770600-dea8-4796-9212-84376bca62db
 title: "Less Than 36 Hours Left to Enter the Community Coding Contest!"
 date: 2008-09-30 12:50:00 -0500
 comments: true

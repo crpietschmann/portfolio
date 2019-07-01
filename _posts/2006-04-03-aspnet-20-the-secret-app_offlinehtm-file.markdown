@@ -1,6 +1,6 @@
 ---
 layout: post
-id: a0c5affd-96a2-4370-a3ac-3a704f2de439
+blogengineid: a0c5affd-96a2-4370-a3ac-3a704f2de439
 title: "ASP.NET: The secret App_Offline.htm file"
 date: 2006-04-03 21:50:00 -0500
 comments: true

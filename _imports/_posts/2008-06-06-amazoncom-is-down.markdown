@@ -1,6 +1,6 @@
 ---
 layout: post
-id: fb40ca26-f3c4-4f91-a8d8-b7ac76af5325
+blogengineid: fb40ca26-f3c4-4f91-a8d8-b7ac76af5325
 title: "Amazon.com is down"
 date: 2008-06-06 13:23:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6bab78ff-5648-472f-b7ef-1c8ab758a26e
+blogengineid: 6bab78ff-5648-472f-b7ef-1c8ab758a26e
 title: "Virtual Earth: Center Map to Shape during OnClick Event"
 date: 2008-04-24 22:02:00 -0500
 comments: true

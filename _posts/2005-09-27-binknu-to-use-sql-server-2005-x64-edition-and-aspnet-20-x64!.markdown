@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 98aeaa3e-cafa-408c-95e2-c63b260c1c17
+blogengineid: 98aeaa3e-cafa-408c-95e2-c63b260c1c17
 title: "Bink.nu to use SQL Server 2005 x64 Edition and ASP.NET 2.0 x64!"
 date: 2005-09-27 09:39:00 -0500
 comments: true

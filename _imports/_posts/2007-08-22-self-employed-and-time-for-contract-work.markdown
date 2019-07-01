@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 02fef48a-5d94-4e4b-8bb4-6c2180a55c25
+blogengineid: 02fef48a-5d94-4e4b-8bb4-6c2180a55c25
 title: "Self Employed and time for contract work"
 date: 2007-08-22 21:54:00 -0500
 comments: true

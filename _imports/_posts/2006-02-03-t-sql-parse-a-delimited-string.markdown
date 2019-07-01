@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 4eaf5aa0-047d-49cd-a1ba-bca96f99e68d
+blogengineid: 4eaf5aa0-047d-49cd-a1ba-bca96f99e68d
 title: "T-SQL: Parse a delimited string"
 date: 2006-02-03 10:53:00 -0600
 comments: true

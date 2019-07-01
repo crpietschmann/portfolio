@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 5a74bb88-8c85-42c3-98a2-c333593fd84e
+blogengineid: 5a74bb88-8c85-42c3-98a2-c333593fd84e
 title: "Want to eliminate DRM? Just Boycott all DRM protected content."
 date: 2007-05-03 12:07:00 -0500
 comments: true

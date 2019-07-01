@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 1f2938fd-eee7-4ec7-8d97-e80d307804bd
+blogengineid: 1f2938fd-eee7-4ec7-8d97-e80d307804bd
 title: "Step By Step: Bing Maps Silverlight and an Out Of Browser (OOB) Application"
 date: 2011-01-26 08:40:19 -0600
 comments: true

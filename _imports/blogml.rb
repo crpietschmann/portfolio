@@ -184,7 +184,7 @@ module Jekyll
               f.puts <<-HEADER
 ---
 layout: post
-id: #{item.attributes["id"]}
+blogengineid: #{item.attributes["id"]}
 title: "#{title}"
 date: #{timestamp.strftime("%Y-%m-%d %H:%M:%S %z")}
 comments: true

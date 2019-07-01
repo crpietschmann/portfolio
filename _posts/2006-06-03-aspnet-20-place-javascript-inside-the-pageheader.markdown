@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 9f89f1c0-eda9-4001-abf8-4a3f9b0b1dc6
+blogengineid: 9f89f1c0-eda9-4001-abf8-4a3f9b0b1dc6
 title: "ASP.NET 2.0: Place JavaScript inside the Page.Header"
 date: 2006-06-03 00:38:00 -0500
 comments: true

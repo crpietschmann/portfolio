@@ -1,6 +1,6 @@
 ---
 layout: post
-id: a019f887-4842-431b-9fa6-bf5faa713f58
+blogengineid: a019f887-4842-431b-9fa6-bf5faa713f58
 title: "AnyMail 2.0 Released"
 date: 2005-02-05 14:03:00 -0600
 comments: true

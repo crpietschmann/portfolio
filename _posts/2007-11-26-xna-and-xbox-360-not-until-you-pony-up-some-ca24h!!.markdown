@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6cd2cb86-ed93-4cee-be35-b17ba39c80c3
+blogengineid: 6cd2cb86-ed93-4cee-be35-b17ba39c80c3
 title: "XNA and XBox 360: Not until you pony up some ca$h!!"
 date: 2007-11-26 17:45:00 -0600
 comments: true

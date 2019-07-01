@@ -1,6 +1,6 @@
 ---
 layout: post
-id: bb4e12e0-645d-4e3a-8479-333e77b9bfd6
+blogengineid: bb4e12e0-645d-4e3a-8479-333e77b9bfd6
 title: "VirtualPathProvider: Store .ASPX and .HTM files for your application in xml file or database"
 date: 2006-08-18 22:28:00 -0500
 comments: true

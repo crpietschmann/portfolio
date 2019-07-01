@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 67d22a3f-a26e-4f2e-834b-6232ed4853c3
+blogengineid: 67d22a3f-a26e-4f2e-834b-6232ed4853c3
 title: "I just finished migrating to BlogEngine.NET..."
 date: 2008-02-12 21:28:00 -0600
 comments: true

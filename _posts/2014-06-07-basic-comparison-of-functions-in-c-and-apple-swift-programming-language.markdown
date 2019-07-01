@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 24c0d0bb-d83d-4c36-a75d-1cfe1405f9e6
+blogengineid: 24c0d0bb-d83d-4c36-a75d-1cfe1405f9e6
 title: "Basic Comparison of Functions in C# and Apple Swift Programming Language"
 date: 2014-06-07 13:01:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6e41a5f3-1dab-413e-a7d6-a5fd7e767116
+blogengineid: 6e41a5f3-1dab-413e-a7d6-a5fd7e767116
 title: "How I passed the 70-532 Developing Microsoft Azure Solutions certification exam"
 date: 2015-06-06 08:33:00 -0500
 comments: true

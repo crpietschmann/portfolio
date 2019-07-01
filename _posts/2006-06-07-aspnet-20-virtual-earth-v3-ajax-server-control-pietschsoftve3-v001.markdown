@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 1d6d498a-257f-4f08-aaf1-8cfa7c568d60
+blogengineid: 1d6d498a-257f-4f08-aaf1-8cfa7c568d60
 title: "ASP.NET 2.0: Virtual Earth v3 Ajax Server Control - PietschSoft.VE3 v0.01"
 date: 2006-06-07 22:38:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 2722ac92-0734-4069-80cf-04299d60ad32
+blogengineid: 2722ac92-0734-4069-80cf-04299d60ad32
 title: "Visual Studio .NET 2002 SP1 Released"
 date: 2005-03-13 12:34:00 -0600
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: fbc4db93-df9f-4291-b719-5932100fc83e
+blogengineid: fbc4db93-df9f-4291-b719-5932100fc83e
 title: "OpenOffice - Fee MS-Office alternative"
 date: 2004-07-29 13:09:00 -0500
 comments: true

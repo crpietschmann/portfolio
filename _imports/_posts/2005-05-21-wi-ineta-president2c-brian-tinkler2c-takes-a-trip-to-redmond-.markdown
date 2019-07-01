@@ -1,6 +1,6 @@
 ---
 layout: post
-id: a1add478-ce5a-49c6-91a7-4f4c754095ef
+blogengineid: a1add478-ce5a-49c6-91a7-4f4c754095ef
 title: "WI-INETA President, Brian Tinkler, takes a trip to Redmond"
 date: 2005-05-21 10:20:00 -0500
 comments: true

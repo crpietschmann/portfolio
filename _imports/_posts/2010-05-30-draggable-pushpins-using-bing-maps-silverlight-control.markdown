@@ -1,6 +1,6 @@
 ---
 layout: post
-id: e1ff8913-504e-4df4-a852-069647a6259b
+blogengineid: e1ff8913-504e-4df4-a852-069647a6259b
 title: "Draggable Pushpins using Bing Maps Silverlight Control"
 date: 2010-05-30 08:39:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: e0db37b7-9700-497b-854f-4c48141c171c
+blogengineid: e0db37b7-9700-497b-854f-4c48141c171c
 title: "Awarded 2017 Microsoft MVP - Azure"
 date: 2017-01-01 11:39:00 -0600
 comments: true

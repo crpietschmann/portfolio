@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 3bd04a2e-7df6-48d5-a359-1cbc3764889e
+blogengineid: 3bd04a2e-7df6-48d5-a359-1cbc3764889e
 title: "Calculate Distance Between Geocodes in C# and JavaScript"
 date: 2008-02-01 23:58:00 -0600
 comments: true

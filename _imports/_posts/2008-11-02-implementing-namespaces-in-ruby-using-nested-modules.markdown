@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 69d3daaa-0e06-47ea-ad96-c66c11825025
+blogengineid: 69d3daaa-0e06-47ea-ad96-c66c11825025
 title: "Implementing Namespaces in Ruby using Nested Modules"
 date: 2008-11-02 18:48:00 -0600
 comments: true

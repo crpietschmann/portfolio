@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 4b80a649-af4b-443c-ad46-a62f708cde19
+blogengineid: 4b80a649-af4b-443c-ad46-a62f708cde19
 title: "Happy 10th birthday Windows 95!"
 date: 2005-08-24 13:29:00 -0500
 comments: true

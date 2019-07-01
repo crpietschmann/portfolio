@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 349f567f-1615-4913-a702-ad70902933cb
+blogengineid: 349f567f-1615-4913-a702-ad70902933cb
 title: "JavaScript: Mixing OOP and Event Driven Programming"
 date: 2008-11-04 22:53:00 -0600
 comments: true

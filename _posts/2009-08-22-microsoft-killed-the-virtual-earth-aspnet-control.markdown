@@ -1,6 +1,6 @@
 ---
 layout: post
-id: ed7aa020-e1b3-4783-8f3f-d1af9d3a0b54
+blogengineid: ed7aa020-e1b3-4783-8f3f-d1af9d3a0b54
 title: "Microsoft Killed the Virtual Earth ASP.NET Control"
 date: 2009-08-22 10:52:00 -0500
 comments: true

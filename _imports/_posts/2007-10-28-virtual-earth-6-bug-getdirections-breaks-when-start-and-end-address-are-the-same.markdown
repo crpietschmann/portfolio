@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 27a89208-b468-4efb-a1c7-ed9c96bc9632
+blogengineid: 27a89208-b468-4efb-a1c7-ed9c96bc9632
 title: "Virtual Earth 6 Bug: GetDirections breaks when Start and End Address are the same"
 date: 2007-10-28 00:28:00 -0500
 comments: true

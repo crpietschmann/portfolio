@@ -1,6 +1,6 @@
 ---
 layout: post
-id: dac2e0d9-157c-4781-895a-ce45ef4bbc08
+blogengineid: dac2e0d9-157c-4781-895a-ce45ef4bbc08
 title: "Virtual PC 2007 released with improved performance!"
 date: 2007-02-19 21:30:00 -0600
 comments: true

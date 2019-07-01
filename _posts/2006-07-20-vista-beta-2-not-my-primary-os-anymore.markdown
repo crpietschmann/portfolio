@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 7fbc2334-1e6e-4943-b781-b326eb9629e8
+blogengineid: 7fbc2334-1e6e-4943-b781-b326eb9629e8
 title: "Vista Beta 2: Not my Primary OS anymore"
 date: 2006-07-20 23:16:00 -0500
 comments: true

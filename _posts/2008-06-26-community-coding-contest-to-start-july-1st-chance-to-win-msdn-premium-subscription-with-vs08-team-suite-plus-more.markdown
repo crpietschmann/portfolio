@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 901aa50c-3f65-4a0c-93d9-22f499e19c57
+blogengineid: 901aa50c-3f65-4a0c-93d9-22f499e19c57
 title: "Community Coding Contest to start July 1st - Chance to Win MSDN Premium Subscription with VS'08 Team Suite, plus more"
 date: 2008-06-26 16:04:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: f0037190-b496-41fd-947e-cfdef493a3dd
+blogengineid: f0037190-b496-41fd-947e-cfdef493a3dd
 title: "LunchTimeCoder Day 1: AutoSlideShow - JavaScript Automatic SlideShow Class"
 date: 2007-07-03 15:00:00 -0500
 comments: true

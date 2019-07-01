@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 0597582d-eb65-47af-b3c0-86f2b227ccdc
+blogengineid: 0597582d-eb65-47af-b3c0-86f2b227ccdc
 title: "Bing Maps v7 Ajax Hacks: Pushpin Tooltips via Html Title Attribute"
 date: 2011-07-10 15:02:24 -0500
 comments: true

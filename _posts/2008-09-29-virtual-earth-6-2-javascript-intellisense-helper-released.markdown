@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 96a3a347-aa0f-46e1-bc94-261e5279256c
+blogengineid: 96a3a347-aa0f-46e1-bc94-261e5279256c
 title: "Virtual Earth 6.2 (Bing Maps) JavaScript Intellisense Helper Released"
 date: 2008-09-29 20:30:00 -0500
 comments: true

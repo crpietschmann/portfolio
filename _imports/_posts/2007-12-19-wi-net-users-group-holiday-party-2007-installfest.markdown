@@ -1,6 +1,6 @@
 ---
 layout: post
-id: b4670a24-7fae-45e1-bed2-644ccb86ea69
+blogengineid: b4670a24-7fae-45e1-bed2-644ccb86ea69
 title: "WI .NET Users Group - Holiday Party 2007 InstallFest"
 date: 2007-12-19 17:55:00 -0600
 comments: true

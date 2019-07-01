@@ -1,6 +1,6 @@
 ---
 layout: post
-id: b90b0091-94a5-4dd2-b668-051034ac2fc9
+blogengineid: b90b0091-94a5-4dd2-b668-051034ac2fc9
 title: "May 10th WI-INETA Meeting on Design Patterns in .NET"
 date: 2005-04-22 00:15:00 -0500
 comments: true

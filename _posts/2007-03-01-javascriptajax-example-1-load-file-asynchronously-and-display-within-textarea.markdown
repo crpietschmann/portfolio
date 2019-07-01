@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 107964f8-dfb4-4254-9a7f-d8a7afdf5d38
+blogengineid: 107964f8-dfb4-4254-9a7f-d8a7afdf5d38
 title: "JavaScript/AJAX Example 1 - Load File Asynchronously and Display within TextArea"
 date: 2007-03-01 16:52:00 -0600
 comments: true

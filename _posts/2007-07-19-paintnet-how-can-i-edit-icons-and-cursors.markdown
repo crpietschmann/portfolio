@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 9811cd49-9ce5-4caa-8942-6012a9ca5200
+blogengineid: 9811cd49-9ce5-4caa-8942-6012a9ca5200
 title: "Paint.NET: How can I edit Icons and Cursors?"
 date: 2007-07-19 10:48:00 -0500
 comments: true

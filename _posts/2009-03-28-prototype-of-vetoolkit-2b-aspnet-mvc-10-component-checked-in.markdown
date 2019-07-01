@@ -1,6 +1,6 @@
 ---
 layout: post
-id: b74f5ac6-44de-4e42-b485-78d44e5be15c
+blogengineid: b74f5ac6-44de-4e42-b485-78d44e5be15c
 title: "Prototype of VEToolkit + ASP.NET MVC 1.0 Component Checked In"
 date: 2009-03-28 16:17:06 -0500
 comments: true

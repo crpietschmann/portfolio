@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 9ba7cd52-6b25-48ca-b87c-bee4088eb6b5
+blogengineid: 9ba7cd52-6b25-48ca-b87c-bee4088eb6b5
 title: "Windows Vista: Latest Screenshots Revealed"
 date: 2005-09-14 21:36:00 -0500
 comments: true

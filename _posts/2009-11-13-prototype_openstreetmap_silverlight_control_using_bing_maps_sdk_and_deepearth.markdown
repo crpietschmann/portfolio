@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 3ad2707d-615b-45a6-9a69-29c5d8bc1c28
+blogengineid: 3ad2707d-615b-45a6-9a69-29c5d8bc1c28
 title: "Prototype of OpenStreetMap Silverlight Control using DeepEarth and Bing Maps SDK"
 date: 2009-11-13 07:40:00 -0600
 comments: true

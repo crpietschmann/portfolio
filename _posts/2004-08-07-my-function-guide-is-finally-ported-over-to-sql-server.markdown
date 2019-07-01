@@ -1,6 +1,6 @@
 ---
 layout: post
-id: ba45dbe3-0685-4768-924a-b7917230574a
+blogengineid: ba45dbe3-0685-4768-924a-b7917230574a
 title: "My Function Guide is finally ported over to SQL Server"
 date: 2004-08-07 16:15:00 -0500
 comments: true

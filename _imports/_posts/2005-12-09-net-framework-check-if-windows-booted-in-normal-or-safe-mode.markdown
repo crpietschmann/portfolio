@@ -1,6 +1,6 @@
 ---
 layout: post
-id: d0c69391-8049-4654-b7c6-e6c01f6b2b1a
+blogengineid: d0c69391-8049-4654-b7c6-e6c01f6b2b1a
 title: ".NET Framework - Check if Windows booted in Normal or Safe Mode"
 date: 2005-12-09 14:13:00 -0600
 comments: true

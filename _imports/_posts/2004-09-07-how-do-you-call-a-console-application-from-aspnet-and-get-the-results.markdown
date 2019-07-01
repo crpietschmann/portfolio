@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 5251fbd7-bf4b-4621-89ae-19ccbb9680e1
+blogengineid: 5251fbd7-bf4b-4621-89ae-19ccbb9680e1
 title: "How do you call a Console application from ASP.NET and get the results??"
 date: 2004-09-07 17:32:00 -0500
 comments: true

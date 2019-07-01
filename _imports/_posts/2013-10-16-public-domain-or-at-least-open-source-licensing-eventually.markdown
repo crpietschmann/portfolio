@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 20155713-d63f-4cda-b69e-d6f75f55f3a5
+blogengineid: 20155713-d63f-4cda-b69e-d6f75f55f3a5
 title: "Public Domain or at least Open Source Licensing Eventually"
 date: 2013-10-16 05:35:00 -0500
 comments: true

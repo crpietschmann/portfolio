@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 904fc37a-0ba4-4068-bebf-1c3cb15f8808
+blogengineid: 904fc37a-0ba4-4068-bebf-1c3cb15f8808
 title: "ASP.NET 2.0: RewritePath breaks HyperLink's ImageUrl in App_Theme file when path with slash is rewritten"
 date: 2007-10-28 01:08:00 -0500
 comments: true

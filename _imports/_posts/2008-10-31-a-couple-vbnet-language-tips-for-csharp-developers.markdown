@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 3e3e5d35-10e4-4362-b8e3-fd97dbff3796
+blogengineid: 3e3e5d35-10e4-4362-b8e3-fd97dbff3796
 title: "A Couple VB.NET Language Tips for C# Developers"
 date: 2008-10-31 00:27:00 -0500
 comments: true

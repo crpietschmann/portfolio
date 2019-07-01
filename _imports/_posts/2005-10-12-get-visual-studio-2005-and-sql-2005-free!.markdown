@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 47d78ee4-ff6e-4b66-af09-10e6f2ad60dc
+blogengineid: 47d78ee4-ff6e-4b66-af09-10e6f2ad60dc
 title: "Get Visual Studio 2005 and SQL 2005 Free!"
 date: 2005-10-12 22:15:00 -0500
 comments: true

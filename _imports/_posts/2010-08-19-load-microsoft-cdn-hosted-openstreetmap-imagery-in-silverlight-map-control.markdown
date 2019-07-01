@@ -1,6 +1,6 @@
 ---
 layout: post
-id: fd2f37b1-3f8e-428f-8310-a9aee245a162
+blogengineid: fd2f37b1-3f8e-428f-8310-a9aee245a162
 title: "Loading Microsoft CDN Hosted OpenStreetMap Imagery in Silverlight Bing Maps Control"
 date: 2010-08-19 15:42:00 -0500
 comments: true

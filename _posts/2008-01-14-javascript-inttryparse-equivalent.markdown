@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 51e7a0ad-809c-40eb-8b8a-50bf49848a43
+blogengineid: 51e7a0ad-809c-40eb-8b8a-50bf49848a43
 title: "JavaScript int.TryParse Equivalent"
 date: 2008-01-14 21:47:00 -0600
 comments: true

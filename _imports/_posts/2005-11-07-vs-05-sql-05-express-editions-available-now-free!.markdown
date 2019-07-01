@@ -1,6 +1,6 @@
 ---
 layout: post
-id: ba000303-7054-450c-b469-5dbe920b0469
+blogengineid: ba000303-7054-450c-b469-5dbe920b0469
 title: "VS '05 & SQL '05 Express Editions Available Now FREE!"
 date: 2005-11-07 14:09:00 -0600
 comments: true

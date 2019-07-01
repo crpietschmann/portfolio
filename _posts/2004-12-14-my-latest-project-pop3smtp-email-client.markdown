@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 2b41cf82-52f3-4ba8-8f45-376780a90606
+blogengineid: 2b41cf82-52f3-4ba8-8f45-376780a90606
 title: "My Latest Project: POP3/SMTP EMail Client"
 date: 2004-12-14 15:45:00 -0600
 comments: true

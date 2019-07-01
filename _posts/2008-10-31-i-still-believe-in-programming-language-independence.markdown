@@ -1,6 +1,6 @@
 ---
 layout: post
-id: de7bf974-cbc0-4ae0-accd-a44176ac7016
+blogengineid: de7bf974-cbc0-4ae0-accd-a44176ac7016
 title: "I Still Believe in Programming Language Independence"
 date: 2008-10-31 00:14:00 -0500
 comments: true

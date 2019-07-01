@@ -1,6 +1,6 @@
 ---
 layout: post
-id: be6ffbc5-583d-4e14-970a-8c3f23d6f8df
+blogengineid: be6ffbc5-583d-4e14-970a-8c3f23d6f8df
 title: "Oct. 3rd is the Day Against DRM..."
 date: 2006-10-03 11:07:00 -0500
 comments: true

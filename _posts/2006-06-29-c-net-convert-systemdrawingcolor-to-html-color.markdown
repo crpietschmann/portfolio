@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6b4b3c76-4943-4038-8dc1-87501084a397
+blogengineid: 6b4b3c76-4943-4038-8dc1-87501084a397
 title: "C# .NET: Convert System.Drawing.Color to HTML color"
 date: 2006-06-29 14:48:00 -0500
 comments: true

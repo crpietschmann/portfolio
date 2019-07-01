@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 0fb5416e-6d0e-4909-bfa6-25af29af72ca
+blogengineid: 0fb5416e-6d0e-4909-bfa6-25af29af72ca
 title: "WI-INETA: Scott Hanselman to present at WI .NET Users Group's Deeper in .NET 2006!"
 date: 2006-04-04 00:25:00 -0500
 comments: true

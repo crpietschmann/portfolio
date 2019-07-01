@@ -1,6 +1,6 @@
 ---
 layout: post
-id: b5512d6a-7964-474c-94b3-8a49f7d3e5b3
+blogengineid: b5512d6a-7964-474c-94b3-8a49f7d3e5b3
 title: "Feb. 23rd 2010: Blogs been dark lately, but I've been busy, busy... Neuroscience what?"
 date: 2010-02-23 08:22:00 -0600
 comments: true

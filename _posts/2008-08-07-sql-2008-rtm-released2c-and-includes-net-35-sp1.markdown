@@ -1,6 +1,6 @@
 ---
 layout: post
-id: f70a394d-93b4-4fed-bbb0-f3e39326ec55
+blogengineid: f70a394d-93b4-4fed-bbb0-f3e39326ec55
 title: "SQL 2008 RTM Released, and includes .NET 3.5 SP1"
 date: 2008-08-07 16:07:00 -0500
 comments: true

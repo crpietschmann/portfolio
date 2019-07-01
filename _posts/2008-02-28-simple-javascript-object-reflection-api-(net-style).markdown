@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 591b5d4e-b2a6-4b3b-a613-0bcc74f35219
+blogengineid: 591b5d4e-b2a6-4b3b-a613-0bcc74f35219
 title: "Simple JavaScript Object Reflection API (.NET Style)"
 date: 2008-02-28 19:17:00 -0600
 comments: true

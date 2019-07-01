@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 31200e6d-4b61-48b8-a9cb-91e3dd8e97f3
+blogengineid: 31200e6d-4b61-48b8-a9cb-91e3dd8e97f3
 title: ".NET Framework: Communicate through NAT Router via UPnP (Universal Plug and Play)"
 date: 2009-02-05 19:27:00 -0600
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 36e89f5e-4e11-4a73-81c6-3dde5c757fba
+blogengineid: 36e89f5e-4e11-4a73-81c6-3dde5c757fba
 title: "Place a StackOverflow badge on your website"
 date: 2008-10-10 07:09:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 1fd3db6d-5ef4-4915-87e5-a7c9b9e18c5d
+blogengineid: 1fd3db6d-5ef4-4915-87e5-a7c9b9e18c5d
 title: "Virtual Earth: Convert Road Map Style to Shaded Like maps.live.com does"
 date: 2007-12-26 22:47:00 -0600
 comments: true

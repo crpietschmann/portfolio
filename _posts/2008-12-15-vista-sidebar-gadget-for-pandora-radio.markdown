@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 7b6c0f56-6569-480b-94b6-fca275f92bd6
+blogengineid: 7b6c0f56-6569-480b-94b6-fca275f92bd6
 title: "Vista Sidebar Gadget for Pandora Radio"
 date: 2008-12-15 22:06:00 -0600
 comments: true

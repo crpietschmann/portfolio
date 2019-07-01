@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 096a349c-9fa9-4502-b05b-ad3fecb92d96
+blogengineid: 096a349c-9fa9-4502-b05b-ad3fecb92d96
 title: "MIX'09: Virtual Earth Silverlight CTP Session Online for Viewing"
 date: 2009-03-21 16:46:00 -0500
 comments: true

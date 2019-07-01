@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 677ff719-dff2-467f-8bd6-a4a0707f275d
+blogengineid: 677ff719-dff2-467f-8bd6-a4a0707f275d
 title: "Why not make ASP.NET Web Matrix shared source?"
 date: 2007-03-27 00:44:00 -0500
 comments: true

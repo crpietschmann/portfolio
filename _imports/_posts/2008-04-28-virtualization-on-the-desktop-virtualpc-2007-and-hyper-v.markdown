@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 9d1b3def-c6dd-4f32-90e1-32693342fceb
+blogengineid: 9d1b3def-c6dd-4f32-90e1-32693342fceb
 title: "Virtualization on the Desktop: VirtualPC 2007 and Hyper-V"
 date: 2008-04-28 17:11:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: e28415e5-6692-4b4a-b830-ad7440b5438c
+blogengineid: e28415e5-6692-4b4a-b830-ad7440b5438c
 title: "Plot ZipCode Boundaries on a Map: Part 1 - Making sense of U.S. Census ZCTA ARC/INFO Ungenerate (ASCII) files"
 date: 2008-06-20 16:01:00 -0500
 comments: true

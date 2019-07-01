@@ -1,6 +1,6 @@
 ---
 layout: post
-id: dd29204f-fbcb-4c8c-a348-bf091b48847d
+blogengineid: dd29204f-fbcb-4c8c-a348-bf091b48847d
 title: "Getting Started with Virtual Earth and ASP.NET AJAX"
 date: 2008-01-24 03:40:00 -0600
 comments: true

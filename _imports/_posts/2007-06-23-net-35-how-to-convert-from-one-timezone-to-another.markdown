@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 5c01800e-2dc5-4223-832e-8b992db3116c
+blogengineid: 5c01800e-2dc5-4223-832e-8b992db3116c
 title: ".NET 3.5: How to Convert from one TimeZone to another"
 date: 2007-06-23 11:46:00 -0500
 comments: true

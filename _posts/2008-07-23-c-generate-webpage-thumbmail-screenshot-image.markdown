@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 2a628f30-fe83-4e44-a34b-f31be76d1b4f
+blogengineid: 2a628f30-fe83-4e44-a34b-f31be76d1b4f
 title: "C#: Generate WebPage Thumbmail Screenshot Image"
 date: 2008-07-23 21:43:00 -0500
 comments: true

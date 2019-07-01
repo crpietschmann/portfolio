@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 0e2b73c0-7693-40f3-8762-c025aad3a0e3
+blogengineid: 0e2b73c0-7693-40f3-8762-c025aad3a0e3
 title: "New Web Service that exposes MSDN content for your consuming needs!"
 date: 2006-07-21 22:29:00 -0500
 comments: true

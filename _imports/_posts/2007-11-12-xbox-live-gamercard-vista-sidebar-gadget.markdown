@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 5ff60137-862a-4ced-b63d-e9dd5a44bdb3
+blogengineid: 5ff60137-862a-4ced-b63d-e9dd5a44bdb3
 title: "XBox Live Gamercard Vista Sidebar Gadget"
 date: 2007-11-12 12:39:00 -0600
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 22671886-2906-4a2b-b184-5a4371785b1a
+blogengineid: 22671886-2906-4a2b-b184-5a4371785b1a
 title: "HTML5 Day 6: New Range Input Type <input type=range />"
 date: 2010-11-22 07:43:00 -0600
 comments: true

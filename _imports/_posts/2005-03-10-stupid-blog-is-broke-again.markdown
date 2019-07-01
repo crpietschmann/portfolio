@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 023a3d09-a523-473c-89c1-c761b47bbb8a
+blogengineid: 023a3d09-a523-473c-89c1-c761b47bbb8a
 title: "Stupid Blog is broke again..."
 date: 2005-03-10 16:59:00 -0600
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: d3d901c7-8942-4d8a-847c-67da084cb9db
+blogengineid: d3d901c7-8942-4d8a-847c-67da084cb9db
 title: "LunchTimeCoder Day 2: Moleskine and not much code"
 date: 2007-07-05 15:02:00 -0500
 comments: true

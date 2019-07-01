@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 59014567-e99d-4eb6-a550-7fcbf3117651
+blogengineid: 59014567-e99d-4eb6-a550-7fcbf3117651
 title: "Geomap Project - HTML Extensions for Rendering Map Displays"
 date: 2011-01-13 06:54:06 -0600
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 3ed827a8-9ebc-4588-8dc2-bf2f77dedac9
+blogengineid: 3ed827a8-9ebc-4588-8dc2-bf2f77dedac9
 title: "Raspberry Pi 3 released, faster CPU, integrated Wifi"
 date: 2016-02-29 07:30:00 -0600
 comments: true

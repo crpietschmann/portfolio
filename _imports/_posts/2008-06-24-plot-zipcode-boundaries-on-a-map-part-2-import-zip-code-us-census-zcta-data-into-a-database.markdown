@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 7ec1dc8e-e27f-4d79-a22f-bd4259dd1381
+blogengineid: 7ec1dc8e-e27f-4d79-a22f-bd4259dd1381
 title: "Plot ZipCode Boundaries on a Map: Part 2 - Import Zip Code (U.S. Census ZCTA) Data Into A Database"
 date: 2008-06-24 16:00:00 -0500
 comments: true

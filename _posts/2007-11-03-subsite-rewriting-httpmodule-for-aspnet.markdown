@@ -1,6 +1,6 @@
 ---
 layout: post
-id: b68ec42e-5a4f-4d08-8c83-1a7346dd36c6
+blogengineid: b68ec42e-5a4f-4d08-8c83-1a7346dd36c6
 title: "Subsite Rewriting HttpModule for ASP.NET"
 date: 2007-11-03 17:24:00 -0500
 comments: true

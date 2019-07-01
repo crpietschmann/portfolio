@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 8d43d52a-981b-4086-9afc-26d0913edf26
+blogengineid: 8d43d52a-981b-4086-9afc-26d0913edf26
 title: "Silverlight Isolated Storage File/Directory Location"
 date: 2008-09-29 16:33:00 -0500
 comments: true

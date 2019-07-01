@@ -1,6 +1,6 @@
 ---
 layout: post
-id: e9930373-891d-47a5-ad5e-f0168a79ff54
+blogengineid: e9930373-891d-47a5-ad5e-f0168a79ff54
 title: "An Open Source Virtual World like Second Life"
 date: 2006-12-13 14:20:00 -0600
 comments: true

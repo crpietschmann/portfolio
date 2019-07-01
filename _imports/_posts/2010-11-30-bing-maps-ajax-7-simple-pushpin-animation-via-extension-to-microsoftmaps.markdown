@@ -1,6 +1,6 @@
 ---
 layout: post
-id: db9b20db-30e1-4f41-b114-c47bd7b8b35d
+blogengineid: db9b20db-30e1-4f41-b114-c47bd7b8b35d
 title: "Bing Maps Ajax 7: Simple Pushpin Animation via Extension to Microsoft.Maps"
 date: 2010-11-30 23:10:29 -0600
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 4274d678-40d0-406b-bde7-27d7b8c21ec5
+blogengineid: 4274d678-40d0-406b-bde7-27d7b8c21ec5
 title: "Windows Live Writer now Open Source! as Open Live Writer"
 date: 2015-12-14 14:02:00 -0600
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: ad070bf0-ed36-4dcf-995a-d8f4217869a3
+blogengineid: ad070bf0-ed36-4dcf-995a-d8f4217869a3
 title: "Bing Maps for Enterprise (formerly Virtual Earth) Licensing FAQ"
 date: 2009-06-02 18:52:00 -0500
 comments: true

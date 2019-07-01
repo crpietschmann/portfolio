@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 4b3ea35d-4d26-4281-9335-6154990657d1
+blogengineid: 4b3ea35d-4d26-4281-9335-6154990657d1
 title: "Windows 8 App: Simple Weight Log–My first Windows Store App"
 date: 2013-03-13 18:13:44 -0500
 comments: true

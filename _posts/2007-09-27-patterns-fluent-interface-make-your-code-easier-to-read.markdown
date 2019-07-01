@@ -1,6 +1,6 @@
 ---
 layout: post
-id: d2f6d84b-8265-4c32-a427-ba570e322cef
+blogengineid: d2f6d84b-8265-4c32-a427-ba570e322cef
 title: "Patterns: Fluent Interface - make your code easier to read"
 date: 2007-09-27 12:32:00 -0500
 comments: true

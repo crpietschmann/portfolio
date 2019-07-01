@@ -1,6 +1,6 @@
 ---
 layout: post
-id: e3f9d281-beeb-4aa5-98ef-4c7891f3767e
+blogengineid: e3f9d281-beeb-4aa5-98ef-4c7891f3767e
 title: "The Future of Location: You Haven't Seen Nothing Yet!"
 date: 2010-09-23 11:59:00 -0500
 comments: true

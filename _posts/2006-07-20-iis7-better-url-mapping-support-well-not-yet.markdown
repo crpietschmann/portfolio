@@ -1,6 +1,6 @@
 ---
 layout: post
-id: a351803c-cfc5-4259-9701-d38ca7e89699
+blogengineid: a351803c-cfc5-4259-9701-d38ca7e89699
 title: "IIS7: Better Url Mapping support, well not yet..."
 date: 2006-07-20 22:40:00 -0500
 comments: true

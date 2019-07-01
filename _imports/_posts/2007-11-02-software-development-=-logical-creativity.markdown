@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 647687a0-8628-4287-a380-91108332faca
+blogengineid: 647687a0-8628-4287-a380-91108332faca
 title: "Software Development = Logical Creativity"
 date: 2007-11-02 12:16:00 -0500
 comments: true

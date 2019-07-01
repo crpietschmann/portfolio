@@ -1,6 +1,6 @@
 ---
 layout: post
-id: fb118562-11e5-4287-8fd4-214b2ab5b0ca
+blogengineid: fb118562-11e5-4287-8fd4-214b2ab5b0ca
 title: "JavaScript: Null Coalesce using the || Operator"
 date: 2008-10-14 09:00:00 -0500
 comments: true

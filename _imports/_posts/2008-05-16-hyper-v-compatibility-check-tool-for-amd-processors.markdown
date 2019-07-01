@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 34bdeb30-4c2c-4b41-81fa-e2e3981d3461
+blogengineid: 34bdeb30-4c2c-4b41-81fa-e2e3981d3461
 title: "Hyper-V Compatibility Check Tool for AMD Processors"
 date: 2008-05-16 10:44:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: a4a74629-4c48-4a09-b01e-7bf6dc51f4d5
+blogengineid: a4a74629-4c48-4a09-b01e-7bf6dc51f4d5
 title: "Creating an IDE? Use the Visual Studio 2008 shell as your base."
 date: 2007-07-15 08:29:00 -0500
 comments: true

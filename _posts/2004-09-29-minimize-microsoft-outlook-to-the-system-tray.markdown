@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 097d3ea5-f899-4b91-a251-9f371c1bdd4e
+blogengineid: 097d3ea5-f899-4b91-a251-9f371c1bdd4e
 title: "Minimize Microsoft Outlook to the System Tray"
 date: 2004-09-29 11:16:00 -0500
 comments: true

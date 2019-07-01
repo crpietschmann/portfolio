@@ -1,6 +1,6 @@
 ---
 layout: post
-id: b2c236d6-8ab5-4a25-8909-fa8773a93b2b
+blogengineid: b2c236d6-8ab5-4a25-8909-fa8773a93b2b
 title: "EMail (POP3, SMTP and MIME) looks complex but is in fact really simple"
 date: 2004-12-31 02:07:00 -0600
 comments: true

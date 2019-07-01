@@ -1,6 +1,6 @@
 ---
 layout: post
-id: a1caf97a-cced-40c6-97f7-d639c2840c00
+blogengineid: a1caf97a-cced-40c6-97f7-d639c2840c00
 title: ".NET: Why aren't Private Abstract methods allowed?"
 date: 2008-02-26 22:08:00 -0600
 comments: true

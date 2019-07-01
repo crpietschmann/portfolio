@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 56064712-c77e-4942-b311-29372b231c79
+blogengineid: 56064712-c77e-4942-b311-29372b231c79
 title: "My Virtual Earth Interview on The Thirsty Developer podcast"
 date: 2008-05-28 20:13:00 -0500
 comments: true

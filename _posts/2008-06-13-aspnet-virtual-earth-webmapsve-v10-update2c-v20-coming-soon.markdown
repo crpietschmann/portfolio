@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 843fed49-94ef-4647-91a2-167530edde0a
+blogengineid: 843fed49-94ef-4647-91a2-167530edde0a
 title: "Bing Maps ASP.NET: Web.Maps.VE v1.0 Update, v2.0 Coming Soon"
 date: 2008-06-13 17:49:00 -0500
 comments: true

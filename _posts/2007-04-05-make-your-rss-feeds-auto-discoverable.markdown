@@ -1,6 +1,6 @@
 ---
 layout: post
-id: ed99da1a-d955-48d0-bfec-20c31cbe6771
+blogengineid: ed99da1a-d955-48d0-bfec-20c31cbe6771
 title: "Make your RSS feeds Auto-Discoverable"
 date: 2007-04-05 01:07:00 -0500
 comments: true

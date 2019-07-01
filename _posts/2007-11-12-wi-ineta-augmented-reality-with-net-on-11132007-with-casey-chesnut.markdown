@@ -1,6 +1,6 @@
 ---
 layout: post
-id: feee04b8-a183-4698-9a64-710f5bdf011c
+blogengineid: feee04b8-a183-4698-9a64-710f5bdf011c
 title: "WI-INETA: Augmented Reality with .NET on 11/13/2007 with Casey Chesnut"
 date: 2007-11-12 17:34:00 -0600
 comments: true

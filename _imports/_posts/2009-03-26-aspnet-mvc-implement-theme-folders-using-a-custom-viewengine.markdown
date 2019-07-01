@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 237305ef-7b41-45f4-af3b-d7b1b116e78b
+blogengineid: 237305ef-7b41-45f4-af3b-d7b1b116e78b
 title: "ASP.NET MVC: Implement Theme Folders using a Custom ViewEngine"
 date: 2009-03-26 18:09:00 -0500
 comments: true

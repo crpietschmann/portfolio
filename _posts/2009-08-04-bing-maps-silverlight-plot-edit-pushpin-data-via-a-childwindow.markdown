@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 85a6ee8c-71b5-4c7e-8aec-2adeb2b97919
+blogengineid: 85a6ee8c-71b5-4c7e-8aec-2adeb2b97919
 title: "Bing Maps Silverlight CTP: Plot/Edit Pushpin data via a ChildWindow"
 date: 2009-08-04 16:57:00 -0500
 comments: true

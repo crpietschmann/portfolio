@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 3f6e5b62-cee1-437c-a1b5-3bae661bf772
+blogengineid: 3f6e5b62-cee1-437c-a1b5-3bae661bf772
 title: "MIX'08 Session Recordings Now Available Online"
 date: 2008-03-06 10:42:00 -0600
 comments: true

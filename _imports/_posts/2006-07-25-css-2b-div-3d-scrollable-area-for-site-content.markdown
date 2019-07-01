@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 36924250-aeb5-4f67-8114-f66fc354876c
+blogengineid: 36924250-aeb5-4f67-8114-f66fc354876c
 title: "CSS + DIV = Scrollable area for site content"
 date: 2006-07-25 21:59:00 -0500
 comments: true

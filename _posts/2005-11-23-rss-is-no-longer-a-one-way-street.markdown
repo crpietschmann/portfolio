@@ -1,6 +1,6 @@
 ---
 layout: post
-id: ecd20c62-c000-44c6-a261-32365de93b05
+blogengineid: ecd20c62-c000-44c6-a261-32365de93b05
 title: "RSS is no longer a one-way street"
 date: 2005-11-23 15:10:00 -0600
 comments: true

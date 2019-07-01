@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 1bd9e847-d33f-4fc6-9735-7691bffdb382
+blogengineid: 1bd9e847-d33f-4fc6-9735-7691bffdb382
 title: "Suspect in AltaVista hacking case works at Microsoft"
 date: 2004-07-11 01:55:00 -0500
 comments: true

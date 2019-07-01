@@ -1,6 +1,6 @@
 ---
 layout: post
-id: cd5c1b30-309f-4f99-8937-8e20890ca5e5
+blogengineid: cd5c1b30-309f-4f99-8937-8e20890ca5e5
 title: "Announcing new Azure blog: BuildAzure.com"
 date: 2015-07-25 15:38:00 -0500
 comments: true

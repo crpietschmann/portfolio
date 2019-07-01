@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 5bda6be1-84fb-4699-8902-3845a9e8d8cc
+blogengineid: 5bda6be1-84fb-4699-8902-3845a9e8d8cc
 title: "Apple iPhone has been confirmed, but functionaly similar to Windows Mobile Phone"
 date: 2007-01-09 14:36:00 -0600
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: b3812d3c-cb64-4947-b6df-4ebb8e3a2e43
+blogengineid: b3812d3c-cb64-4947-b6df-4ebb8e3a2e43
 title: "Display OpenStreetMap Imagery using Bing Maps Silverlight Control v1"
 date: 2009-11-12 09:02:00 -0600
 comments: true

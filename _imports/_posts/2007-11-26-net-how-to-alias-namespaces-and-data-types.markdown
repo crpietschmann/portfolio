@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 0d9e4dc4-5353-4b82-9977-50d1aa34c01c
+blogengineid: 0d9e4dc4-5353-4b82-9977-50d1aa34c01c
 title: ".NET: How to Alias Namespaces and Data Types"
 date: 2007-11-26 12:08:00 -0600
 comments: true

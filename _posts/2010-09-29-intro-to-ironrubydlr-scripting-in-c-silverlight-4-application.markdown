@@ -1,6 +1,6 @@
 ---
 layout: post
-id: a5b169ee-bfde-4edc-b1b5-847d43a65d37
+blogengineid: a5b169ee-bfde-4edc-b1b5-847d43a65d37
 title: "Intro to IronRuby/DLR Scripting in C# Silverlight 4 Application"
 date: 2010-09-29 12:44:33 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 88dc4026-00b8-43eb-9fd0-fa0fd9d97c56
+blogengineid: 88dc4026-00b8-43eb-9fd0-fa0fd9d97c56
 title: "Virtual Earth v2 Being Depricated March 31st"
 date: 2008-02-06 16:54:00 -0600
 comments: true

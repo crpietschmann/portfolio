@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 9cfe92c8-0f36-489b-8993-557350c48256
+blogengineid: 9cfe92c8-0f36-489b-8993-557350c48256
 title: "Entity Framework Tips and Tricks: Use GetObjectByKey When Querying a Single Entity"
 date: 2011-09-07 14:30:46 -0500
 comments: true

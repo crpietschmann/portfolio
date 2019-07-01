@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 8f7a6806-5632-454b-a510-d2c47b19bc58
+blogengineid: 8f7a6806-5632-454b-a510-d2c47b19bc58
 title: "VB.NET: Make a Form semi-transparent when moving and resizing it"
 date: 2005-02-17 00:10:00 -0600
 comments: true

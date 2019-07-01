@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 4cc95c7e-52bc-487b-9b6f-54d0b59f0d02
+blogengineid: 4cc95c7e-52bc-487b-9b6f-54d0b59f0d02
 title: "Bing Maps v7 Ajax Hacks: InfoBox Description containing Html tags"
 date: 2011-07-10 15:29:17 -0500
 comments: true

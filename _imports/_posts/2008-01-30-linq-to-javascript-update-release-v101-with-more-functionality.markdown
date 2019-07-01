@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 021c726f-8a7f-4d39-8f02-d70d64da66f7
+blogengineid: 021c726f-8a7f-4d39-8f02-d70d64da66f7
 title: "LINQ to JavaScript: Update Release v1.01 With More Functionality"
 date: 2008-01-30 17:44:00 -0600
 comments: true

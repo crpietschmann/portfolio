@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6c15c4b3-498b-461e-9df4-551a1cb563cf
+blogengineid: 6c15c4b3-498b-461e-9df4-551a1cb563cf
 title: "Proposed DotNetKicks Redesign!"
 date: 2007-09-28 20:51:00 -0500
 comments: true

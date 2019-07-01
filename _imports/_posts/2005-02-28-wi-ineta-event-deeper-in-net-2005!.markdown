@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 374206f8-263c-4852-bae0-84239c97749e
+blogengineid: 374206f8-263c-4852-bae0-84239c97749e
 title: "WI-INETA Event: Deeper in .NET 2005!"
 date: 2005-02-28 23:28:00 -0600
 comments: true

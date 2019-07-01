@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 855f7483-06fe-4042-b8c4-0ebfd6b372e9
+blogengineid: 855f7483-06fe-4042-b8c4-0ebfd6b372e9
 title: "Bing Maps Ajax 7: Add Custom Navigation Bar Buttons using jQuery"
 date: 2010-12-18 09:42:19 -0600
 comments: true

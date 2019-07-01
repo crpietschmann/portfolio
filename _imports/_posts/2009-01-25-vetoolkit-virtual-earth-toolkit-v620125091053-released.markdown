@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 76ef247b-9a57-4577-b45e-34ebb506bdac
+blogengineid: 76ef247b-9a57-4577-b45e-34ebb506bdac
 title: "VEToolkit - Virtual Earth Toolkit v6.2.012509.1053 Released!"
 date: 2009-01-25 11:56:00 -0600
 comments: true

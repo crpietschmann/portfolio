@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 2b0b150d-b75c-4d4d-8926-82662e02237e
+blogengineid: 2b0b150d-b75c-4d4d-8926-82662e02237e
 title: "Virtual Earth: SSL Support"
 date: 2007-12-21 21:48:00 -0600
 comments: true

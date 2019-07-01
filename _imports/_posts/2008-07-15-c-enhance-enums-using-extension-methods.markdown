@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 4bc01ef2-0463-4739-aa4d-bfe73c7a00bb
+blogengineid: 4bc01ef2-0463-4739-aa4d-bfe73c7a00bb
 title: "C#: Enhance Enums using Extension Methods"
 date: 2008-07-15 16:38:00 -0500
 comments: true

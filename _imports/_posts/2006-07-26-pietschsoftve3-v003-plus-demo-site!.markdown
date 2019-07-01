@@ -1,6 +1,6 @@
 ---
 layout: post
-id: e64d9f27-e469-4fa2-834e-bc422dc87eda
+blogengineid: e64d9f27-e469-4fa2-834e-bc422dc87eda
 title: "PietschSoft.VE3 v0.03 plus Demo site!"
 date: 2006-07-26 01:04:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 91e01787-c954-43e8-8c8c-5efc71e9c731
+blogengineid: 91e01787-c954-43e8-8c8c-5efc71e9c731
 title: "HVD: Holographic Versatile Disc"
 date: 2004-08-24 13:46:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 8a6c0335-37ea-427f-a599-4249230e9c44
+blogengineid: 8a6c0335-37ea-427f-a599-4249230e9c44
 title: "Single Instance WPF Application in .NET 3.x"
 date: 2009-01-02 20:12:00 -0600
 comments: true

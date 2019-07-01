@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 0ad29a34-14dc-4046-9e43-abb1889fbae9
+blogengineid: 0ad29a34-14dc-4046-9e43-abb1889fbae9
 title: "Cryptographic Extensions for Microsoft AJAX Extensions Framework"
 date: 2007-11-15 11:17:00 -0600
 comments: true

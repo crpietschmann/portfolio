@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 7e15d3de-50c5-45c4-befe-40e797f99e49
+blogengineid: 7e15d3de-50c5-45c4-befe-40e797f99e49
 title: "MSN WebMessenger"
 date: 2004-08-05 16:50:00 -0500
 comments: true

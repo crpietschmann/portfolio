@@ -1,6 +1,6 @@
 ---
 layout: post
-id: a19c8078-1a42-4654-aeca-19386bf402bb
+blogengineid: a19c8078-1a42-4654-aeca-19386bf402bb
 title: "Use New Bing Maps Road Imagery In Silverlight Map Control (Unofficially and Unsupported)"
 date: 2010-08-19 15:55:00 -0500
 comments: true

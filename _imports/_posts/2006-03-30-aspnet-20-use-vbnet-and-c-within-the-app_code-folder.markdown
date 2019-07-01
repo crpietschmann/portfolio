@@ -1,6 +1,6 @@
 ---
 layout: post
-id: f31bec4c-4716-48fb-826b-ca5926e83c42
+blogengineid: f31bec4c-4716-48fb-826b-ca5926e83c42
 title: "ASP.NET: Use VB.NET and C# within the App_Code folder"
 date: 2006-03-30 21:39:00 -0600
 comments: true

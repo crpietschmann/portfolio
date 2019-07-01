@@ -1,6 +1,6 @@
 ---
 layout: post
-id: fccc2f93-f7a3-481d-bcd7-a3b9425420bd
+blogengineid: fccc2f93-f7a3-481d-bcd7-a3b9425420bd
 title: "A Simple ScriptManager for ASP.NET MVC"
 date: 2009-08-13 16:23:00 -0500
 comments: true

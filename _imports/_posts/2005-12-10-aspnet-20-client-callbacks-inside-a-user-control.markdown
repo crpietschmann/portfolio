@@ -1,6 +1,6 @@
 ---
 layout: post
-id: cb2fb342-bf26-4aad-9d46-29a1450ef83e
+blogengineid: cb2fb342-bf26-4aad-9d46-29a1450ef83e
 title: "ASP.NET Client Callbacks inside a User Control"
 date: 2005-12-10 14:10:00 -0600
 comments: true

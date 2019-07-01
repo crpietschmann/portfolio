@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 25ddd3a9-577f-4280-9167-4346354ab782
+blogengineid: 25ddd3a9-577f-4280-9167-4346354ab782
 title: "Web Based Alternative to SQL Enterprise Manager"
 date: 2004-08-07 16:35:00 -0500
 comments: true

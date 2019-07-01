@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 168e1117-8b57-400a-9a89-b40e685e652e
+blogengineid: 168e1117-8b57-400a-9a89-b40e685e652e
 title: "My First Experience with ReSharper v3.1, not so good"
 date: 2008-05-19 19:28:00 -0500
 comments: true

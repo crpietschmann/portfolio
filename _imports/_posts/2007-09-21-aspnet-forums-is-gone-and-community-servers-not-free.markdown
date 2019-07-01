@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 12cc4b1d-fb02-4851-9c5f-f258003ecca6
+blogengineid: 12cc4b1d-fb02-4851-9c5f-f258003ecca6
 title: "ASP.NET Forums is gone and Community Server's not free"
 date: 2007-09-21 11:50:00 -0500
 comments: true

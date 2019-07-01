@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 82ad46e3-73c5-468f-be62-6247970f31e1
+blogengineid: 82ad46e3-73c5-468f-be62-6247970f31e1
 title: "Getting Started with Bing Maps Silverlight Control v1.0"
 date: 2009-11-12 05:45:00 -0600
 comments: true

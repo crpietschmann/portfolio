@@ -1,6 +1,6 @@
 ---
 layout: post
-id: a4330182-18aa-41fe-bdaf-b496b17d3dc6
+blogengineid: a4330182-18aa-41fe-bdaf-b496b17d3dc6
 title: "Visual Studio 2005 Add-In: Get the total number of line of code in your solution"
 date: 2006-10-11 15:07:00 -0500
 comments: true

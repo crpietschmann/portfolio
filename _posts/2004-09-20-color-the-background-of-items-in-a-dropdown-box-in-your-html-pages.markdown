@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 0d14aac9-24f0-4208-a3b2-a902d34047f3
+blogengineid: 0d14aac9-24f0-4208-a3b2-a902d34047f3
 title: "Color the background of items in a Dropdown box in your HTML pages."
 date: 2004-09-20 22:02:00 -0500
 comments: true

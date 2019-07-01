@@ -1,6 +1,6 @@
 ---
 layout: post
-id: fc68a6bd-a65b-4b4d-af17-c51873ffc899
+blogengineid: fc68a6bd-a65b-4b4d-af17-c51873ffc899
 title: "Web.Maps.VE - Virtual Earth Without JavaScript, plus .NET 3.5 Support just added!"
 date: 2007-12-28 17:36:00 -0600
 comments: true

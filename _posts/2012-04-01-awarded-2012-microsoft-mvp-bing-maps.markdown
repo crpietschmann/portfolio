@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6482da0a-bd20-457a-b9d8-08a076609e79
+blogengineid: 6482da0a-bd20-457a-b9d8-08a076609e79
 title: "Awarded 2012 Microsoft MVP - Bing Maps"
 date: 2012-04-01 15:33:00 -0500
 comments: true

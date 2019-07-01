@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 80df9f20-cb92-4257-8be0-da5678581715
+blogengineid: 80df9f20-cb92-4257-8be0-da5678581715
 title: "Resolve IP Address And Host Name From MAC Address using C# and Windows ARP Utility"
 date: 2009-11-08 08:04:00 -0600
 comments: true

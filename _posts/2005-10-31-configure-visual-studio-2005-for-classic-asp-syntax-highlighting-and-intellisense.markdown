@@ -1,6 +1,6 @@
 ---
 layout: post
-id: b4619c83-9e85-4aa9-9c27-b224eb23efef
+blogengineid: b4619c83-9e85-4aa9-9c27-b224eb23efef
 title: "Configure Visual Studio 2005 for "Classic" ASP syntax highlighting and intellisense"
 date: 2005-10-31 17:58:00 -0600
 comments: true

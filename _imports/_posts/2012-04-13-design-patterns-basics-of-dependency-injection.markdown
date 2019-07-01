@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 3fab0ff2-25a5-47f2-a7b6-a1dfefb9e4c6
+blogengineid: 3fab0ff2-25a5-47f2-a7b6-a1dfefb9e4c6
 title: "Design Patterns: Basics of Dependency Injection"
 date: 2012-04-13 14:42:29 -0500
 comments: true

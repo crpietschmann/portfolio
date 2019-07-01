@@ -1,6 +1,6 @@
 ---
 layout: post
-id: c0149992-ebb3-4502-9312-7054fbeeee09
+blogengineid: c0149992-ebb3-4502-9312-7054fbeeee09
 title: "Deeper in .NET 2011 in Review with Pictures"
 date: 2011-03-21 21:04:04 -0500
 comments: true

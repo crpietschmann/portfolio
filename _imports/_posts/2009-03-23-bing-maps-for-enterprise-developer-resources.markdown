@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 31ade64f-92b6-4507-b3c9-a8b7ff4b18e2
+blogengineid: 31ade64f-92b6-4507-b3c9-a8b7ff4b18e2
 title: "Bing Maps for Enterprise Developer Resources"
 date: 2009-03-23 15:50:36 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: f1194fa7-c70b-4f63-aa03-62fec6ec6581
+blogengineid: f1194fa7-c70b-4f63-aa03-62fec6ec6581
 title: "Silverlight Bing Maps: Draw Circle Around a Latitude/Longitude Location"
 date: 2010-06-28 23:43:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 345b4752-e49b-4612-83c3-6cdc13a1f024
+blogengineid: 345b4752-e49b-4612-83c3-6cdc13a1f024
 title: "Virtual Earth Staging Environment Launched"
 date: 2008-06-19 20:02:00 -0500
 comments: true

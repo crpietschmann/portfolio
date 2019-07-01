@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 120aa90a-e869-4b8e-b5ff-4e883a93bba7
+blogengineid: 120aa90a-e869-4b8e-b5ff-4e883a93bba7
 title: "Things I learned about Software WHILE NOT in College"
 date: 2007-06-30 14:44:00 -0500
 comments: true

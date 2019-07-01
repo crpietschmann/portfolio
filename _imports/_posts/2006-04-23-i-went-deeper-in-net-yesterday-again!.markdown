@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 8b258820-aa2f-4d66-bf92-12d7e86cba34
+blogengineid: 8b258820-aa2f-4d66-bf92-12d7e86cba34
 title: "I went Deeper in .NET yesterday again!"
 date: 2006-04-23 23:58:00 -0500
 comments: true

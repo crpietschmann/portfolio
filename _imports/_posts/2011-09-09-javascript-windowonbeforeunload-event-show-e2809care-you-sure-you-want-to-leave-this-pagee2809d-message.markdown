@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 04d2d0bc-180b-4682-a281-a94363e2a1cd
+blogengineid: 04d2d0bc-180b-4682-a281-a94363e2a1cd
 title: "JavaScript: window.onbeforeunload Event - Show “Are you sure you want to leave this page?” Message"
 date: 2011-09-09 17:03:49 -0500
 comments: true

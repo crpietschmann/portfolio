@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6b2b935a-f941-4357-8e30-2d5f61644935
+blogengineid: 6b2b935a-f941-4357-8e30-2d5f61644935
 title: "Virtual Earth Silverlight Control CTP Teaser and Some Initial Thoughts"
 date: 2009-03-19 18:12:21 -0500
 comments: true

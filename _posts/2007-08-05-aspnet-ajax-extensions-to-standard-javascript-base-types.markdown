@@ -1,6 +1,6 @@
 ---
 layout: post
-id: b67ee48a-600b-45bb-980c-93b1fae64838
+blogengineid: b67ee48a-600b-45bb-980c-93b1fae64838
 title: "ASP.NET AJAX: Extensions to standard JavaScript base types"
 date: 2007-08-05 00:30:00 -0500
 comments: true

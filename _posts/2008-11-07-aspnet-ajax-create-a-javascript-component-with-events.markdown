@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 56ebc041-58e4-48cb-a301-65c3df2601a7
+blogengineid: 56ebc041-58e4-48cb-a301-65c3df2601a7
 title: "ASP.NET AJAX: Create a JavaScript Component with Events"
 date: 2008-11-07 21:07:00 -0600
 comments: true

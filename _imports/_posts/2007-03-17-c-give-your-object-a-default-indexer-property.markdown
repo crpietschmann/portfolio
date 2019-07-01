@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 19fce326-b2f2-45a7-b1b0-da2f45fdcb07
+blogengineid: 19fce326-b2f2-45a7-b1b0-da2f45fdcb07
 title: "C#: Give your object a Default Indexer Property"
 date: 2007-03-17 14:40:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: ea0010eb-d51d-406a-82b1-3d1c6031a34c
+blogengineid: ea0010eb-d51d-406a-82b1-3d1c6031a34c
 title: "Bing Maps: Modify the Opacity of an Existing Custom Tile Layer"
 date: 2009-03-13 19:27:00 -0500
 comments: true

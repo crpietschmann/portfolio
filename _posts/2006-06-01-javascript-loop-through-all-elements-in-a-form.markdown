@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 75287b5b-1d1f-47d1-a9ed-6d5c0eb4a545
+blogengineid: 75287b5b-1d1f-47d1-a9ed-6d5c0eb4a545
 title: "JavaScript: Loop through all elements in a form"
 date: 2006-06-01 09:02:00 -0500
 comments: true

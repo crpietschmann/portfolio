@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 00285c24-3c96-4982-96bb-e544780e915f
+blogengineid: 00285c24-3c96-4982-96bb-e544780e915f
 title: "US Cellular is dicontinuing the Motorola v323i, but you can still buy it from Motorola!"
 date: 2007-10-02 16:04:00 -0500
 comments: true

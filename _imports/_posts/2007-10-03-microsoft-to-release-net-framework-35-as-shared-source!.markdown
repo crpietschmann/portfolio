@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 4f76fbfe-c99f-41b7-ae07-14de84c06d77
+blogengineid: 4f76fbfe-c99f-41b7-ae07-14de84c06d77
 title: "Microsoft to release .NET Framework 3.5 as Shared Source!"
 date: 2007-10-03 17:35:00 -0500
 comments: true

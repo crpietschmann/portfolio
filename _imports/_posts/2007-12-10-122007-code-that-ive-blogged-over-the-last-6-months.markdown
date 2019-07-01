@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 77b66b63-6046-4b3e-a4fa-053dfe5fbea7
+blogengineid: 77b66b63-6046-4b3e-a4fa-053dfe5fbea7
 title: "12/2007: Code that I've Blogged over the last 6 months"
 date: 2007-12-10 11:48:00 -0600
 comments: true

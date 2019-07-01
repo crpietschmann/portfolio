@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 57194bdd-11c5-4627-888c-e3331fec2a4b
+blogengineid: 57194bdd-11c5-4627-888c-e3331fec2a4b
 title: "Mixing some Dynamic-ness with IronJS in .NET 4"
 date: 2011-08-24 10:01:01 -0500
 comments: true

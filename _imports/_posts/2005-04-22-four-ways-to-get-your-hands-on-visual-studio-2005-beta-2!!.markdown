@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 45d5e352-d33a-4468-91aa-33af3336a4ec
+blogengineid: 45d5e352-d33a-4468-91aa-33af3336a4ec
 title: "Four ways to get your hands on Visual Studio 2005 Beta 2!!"
 date: 2005-04-22 00:31:00 -0500
 comments: true

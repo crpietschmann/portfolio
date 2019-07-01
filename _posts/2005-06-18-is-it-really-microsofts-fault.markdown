@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 7834d5f6-077c-453f-bfea-b8e5d7d84cc7
+blogengineid: 7834d5f6-077c-453f-bfea-b8e5d7d84cc7
 title: "Is it really Microsoft's fault?"
 date: 2005-06-18 12:37:00 -0500
 comments: true

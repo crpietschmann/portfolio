@@ -1,6 +1,6 @@
 ---
 layout: post
-id: ed2f12ec-fd2c-40f5-8887-5dacd8b58d1d
+blogengineid: ed2f12ec-fd2c-40f5-8887-5dacd8b58d1d
 title: "ASP.NET: Add Template Support to your User Controls"
 date: 2006-09-28 11:12:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 82a3b9b6-8165-4b91-adce-4c613c95c068
+blogengineid: 82a3b9b6-8165-4b91-adce-4c613c95c068
 title: "HTML5 Day 1: New tags work in older browsers? Awesome!"
 date: 2010-11-14 14:51:00 -0600
 comments: true

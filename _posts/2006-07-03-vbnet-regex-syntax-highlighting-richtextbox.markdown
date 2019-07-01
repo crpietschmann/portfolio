@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 95da94ec-5c72-4907-8af8-cf6a12c704e1
+blogengineid: 95da94ec-5c72-4907-8af8-cf6a12c704e1
 title: "VB.NET: RegEx Syntax Highlighting RichTextBox"
 date: 2006-07-03 17:08:00 -0500
 comments: true

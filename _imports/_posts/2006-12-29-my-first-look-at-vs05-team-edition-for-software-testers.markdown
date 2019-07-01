@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 60318f70-74ce-4191-b517-39b18462c661
+blogengineid: 60318f70-74ce-4191-b517-39b18462c661
 title: "My first look at VS'05 Team Edition for Software Testers"
 date: 2006-12-29 22:34:00 -0600
 comments: true

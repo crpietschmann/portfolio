@@ -1,6 +1,6 @@
 ---
 layout: post
-id: c416e9ba-ae7f-413f-83cf-1ecb5be1804b
+blogengineid: c416e9ba-ae7f-413f-83cf-1ecb5be1804b
 title: "LunchTimeCoder: Windows Service Monitor that runs in the System Tray"
 date: 2007-07-19 12:21:00 -0500
 comments: true

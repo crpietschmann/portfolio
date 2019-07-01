@@ -1,6 +1,6 @@
 ---
 layout: post
-id: a3d5a0c4-72a7-4be4-80cc-74066a0e3ec8
+blogengineid: a3d5a0c4-72a7-4be4-80cc-74066a0e3ec8
 title: "SlapDev.com abandoned for now"
 date: 2005-06-12 13:21:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: a3f36d52-ab47-4082-93d1-4d6cb5999c13
+blogengineid: a3f36d52-ab47-4082-93d1-4d6cb5999c13
 title: "Silverlight: Client-Side Database via LINQ and Isolated Storage"
 date: 2008-10-10 18:08:00 -0500
 comments: true

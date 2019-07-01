@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 4b595a62-7f09-41cc-9ca3-da351bb27a8a
+blogengineid: 4b595a62-7f09-41cc-9ca3-da351bb27a8a
 title: "Easily Convert Between HTML and RGB Colors using JavaScript"
 date: 2009-10-24 14:08:00 -0500
 comments: true

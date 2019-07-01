@@ -1,6 +1,6 @@
 ---
 layout: post
-id: ba924765-2328-4995-a254-6a88d4e4ac11
+blogengineid: ba924765-2328-4995-a254-6a88d4e4ac11
 title: "ASP.NET 3.5: Create AJAX Extender Controls using the ExtenderControl base class"
 date: 2008-05-30 23:22:00 -0500
 comments: true

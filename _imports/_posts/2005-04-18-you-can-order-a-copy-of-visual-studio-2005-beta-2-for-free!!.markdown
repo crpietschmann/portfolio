@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 634b4903-a6d3-4426-b834-d1bb59b601f4
+blogengineid: 634b4903-a6d3-4426-b834-d1bb59b601f4
 title: "You can order a copy of Visual Studio 2005 Beta 2 for FREE!!"
 date: 2005-04-18 14:14:00 -0500
 comments: true

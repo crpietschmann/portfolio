@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 0488799a-2a75-4cb6-b9e3-3ae2cd3e8a99
+blogengineid: 0488799a-2a75-4cb6-b9e3-3ae2cd3e8a99
 title: "Write code, Win FREE MSDN Subscription!"
 date: 2008-08-04 11:17:00 -0500
 comments: true

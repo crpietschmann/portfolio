@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 20736f64-9876-4d0f-b60e-3fe20252d4c4
+blogengineid: 20736f64-9876-4d0f-b60e-3fe20252d4c4
 title: "CTP: Getting Started with Bing Maps Silverlight CTP Map Control SDK"
 date: 2009-03-20 18:27:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 2326526f-7253-4770-8a9e-55287c29b30e
+blogengineid: 2326526f-7253-4770-8a9e-55287c29b30e
 title: "JavaScript: How to get value from nested form in iframe?"
 date: 2004-08-12 23:12:00 -0500
 comments: true

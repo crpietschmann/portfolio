@@ -1,6 +1,6 @@
 ---
 layout: post
-id: cd6706a5-7852-4f22-b0ff-39e774080767
+blogengineid: cd6706a5-7852-4f22-b0ff-39e774080767
 title: "New “Earthquakes in Last 7 Days” Bing Map App"
 date: 2011-03-14 11:40:35 -0500
 comments: true

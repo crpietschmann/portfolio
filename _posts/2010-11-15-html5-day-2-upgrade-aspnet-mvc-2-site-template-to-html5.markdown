@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 9a32a5cb-01b0-42da-90b6-21747146d03d
+blogengineid: 9a32a5cb-01b0-42da-90b6-21747146d03d
 title: "HTML5 Day 2: Upgrade ASP.NET MVC 2 Site Template to HTML5"
 date: 2010-11-15 03:02:00 -0600
 comments: true

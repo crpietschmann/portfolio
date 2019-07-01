@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 10e7b7af-f0d0-44c6-ad55-770c67e357d9
+blogengineid: 10e7b7af-f0d0-44c6-ad55-770c67e357d9
 title: "Add System Menu Items to WPF Window using Win32 API"
 date: 2008-03-27 16:41:00 -0500
 comments: true

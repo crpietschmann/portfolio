@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 153234aa-4896-47f3-8bb3-83663c56b7ee
+blogengineid: 153234aa-4896-47f3-8bb3-83663c56b7ee
 title: "ASP.NET: Extend BoundField Control - Add MultiLine support"
 date: 2006-09-20 00:18:00 -0500
 comments: true

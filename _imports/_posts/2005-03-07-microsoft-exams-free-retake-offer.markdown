@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6cb52468-2b93-4231-8e6b-0017ce2445e8
+blogengineid: 6cb52468-2b93-4231-8e6b-0017ce2445e8
 title: "Microsoft Exams: FREE Retake Offer"
 date: 2005-03-07 00:07:00 -0600
 comments: true

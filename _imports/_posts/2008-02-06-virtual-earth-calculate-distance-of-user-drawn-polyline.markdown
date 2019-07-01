@@ -1,6 +1,6 @@
 ---
 layout: post
-id: d414be9d-1bdf-4345-8001-cce09c485584
+blogengineid: d414be9d-1bdf-4345-8001-cce09c485584
 title: "Virtual Earth: Calculate Distance of User-Drawn Polyline"
 date: 2008-02-06 01:28:00 -0600
 comments: true

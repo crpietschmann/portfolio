@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 9b8ff95a-0554-4ccd-9800-5c0247c1cfcd
+blogengineid: 9b8ff95a-0554-4ccd-9800-5c0247c1cfcd
 title: "I passed the 70-305 exam on Friday!!"
 date: 2005-03-26 14:36:00 -0600
 comments: true

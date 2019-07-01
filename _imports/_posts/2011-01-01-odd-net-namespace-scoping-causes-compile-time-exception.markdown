@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 3b8c88bd-386c-43fa-95f7-b1ba62218b17
+blogengineid: 3b8c88bd-386c-43fa-95f7-b1ba62218b17
 title: "Odd .NET Namespace Scoping Causes Compile-Time Exception"
 date: 2011-01-01 23:46:01 -0600
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 9e458354-15dd-466f-aae9-7eefaaa1948d
+blogengineid: 9e458354-15dd-466f-aae9-7eefaaa1948d
 title: "Silverlight: Load JavaScript from Embedded Resource and Execute Within Page"
 date: 2008-05-19 20:32:00 -0500
 comments: true

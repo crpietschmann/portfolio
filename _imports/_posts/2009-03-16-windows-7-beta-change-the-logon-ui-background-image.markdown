@@ -1,6 +1,6 @@
 ---
 layout: post
-id: bc314f2b-930f-48b4-9d8b-3bc84cc69f45
+blogengineid: bc314f2b-930f-48b4-9d8b-3bc84cc69f45
 title: "Windows 7 Beta: Change the Logon UI Background Image"
 date: 2009-03-16 19:03:00 -0500
 comments: true

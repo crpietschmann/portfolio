@@ -1,6 +1,6 @@
 ---
 layout: post
-id: ce7c6ab2-0d0c-47f3-b241-5902566e7db5
+blogengineid: ce7c6ab2-0d0c-47f3-b241-5902566e7db5
 title: "DotNetKicks auto bookmarklet"
 date: 2007-03-29 13:34:00 -0500
 comments: true

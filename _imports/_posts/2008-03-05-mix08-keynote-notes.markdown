@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 9e9f5b9a-da33-4e50-b255-afbfa0a36900
+blogengineid: 9e9f5b9a-da33-4e50-b255-afbfa0a36900
 title: "MIX'08 - KeyNote Notes of Ray Ozzies talk"
 date: 2008-03-05 11:32:00 -0600
 comments: true

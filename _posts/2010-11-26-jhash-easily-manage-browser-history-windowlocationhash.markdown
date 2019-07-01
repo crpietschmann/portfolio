@@ -1,6 +1,6 @@
 ---
 layout: post
-id: af2d7ca7-0a4a-4d50-ad41-fbc320ec714c
+blogengineid: af2d7ca7-0a4a-4d50-ad41-fbc320ec714c
 title: "jHash: Easily Manage Browser History / window.location.hash"
 date: 2010-11-26 10:11:56 -0600
 comments: true

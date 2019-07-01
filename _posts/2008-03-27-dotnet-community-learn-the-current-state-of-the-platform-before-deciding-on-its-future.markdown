@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 1090cb6d-dc09-40fd-9e68-afd7899f8d88
+blogengineid: 1090cb6d-dc09-40fd-9e68-afd7899f8d88
 title: ".NET Community: Learn The Current State Of The Platform Before Deciding On Its Future"
 date: 2008-03-27 10:51:00 -0500
 comments: true

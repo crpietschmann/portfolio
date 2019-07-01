@@ -1,6 +1,6 @@
 ---
 layout: post
-id: dc3bbf5e-2708-4f70-b67a-cba6fb779a8b
+blogengineid: dc3bbf5e-2708-4f70-b67a-cba6fb779a8b
 title: "Managed JScript on the DLR from Microsoft is DEAD!! WHY?!??"
 date: 2009-06-12 15:03:28 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 74349c15-05f9-46b7-a16c-5cefa0d1c64f
+blogengineid: 74349c15-05f9-46b7-a16c-5cefa0d1c64f
 title: "Can you run Mac OS X within Virtual PC 2007 on Windows?"
 date: 2007-04-24 14:17:00 -0500
 comments: true

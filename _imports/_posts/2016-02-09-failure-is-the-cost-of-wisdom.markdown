@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6562353c-1045-499f-a850-3f45bb038f01
+blogengineid: 6562353c-1045-499f-a850-3f45bb038f01
 title: "Failure is the cost of Wisdom"
 date: 2016-02-09 17:39:00 -0600
 comments: true

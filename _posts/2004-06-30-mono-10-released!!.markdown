@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 1ca99c7a-dbc8-4cb9-86c9-f11e40b9071f
+blogengineid: 1ca99c7a-dbc8-4cb9-86c9-f11e40b9071f
 title: "Mono 1.0 Released!!"
 date: 2004-06-30 20:26:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: cc4b2c1c-bb3e-44f4-a37b-4762ad47de06
+blogengineid: cc4b2c1c-bb3e-44f4-a37b-4762ad47de06
 title: "Rory Blyth and Scott Hanselman homemade TechEd promotion..."
 date: 2005-03-12 13:50:00 -0600
 comments: true

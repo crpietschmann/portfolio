@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 564e8134-3f14-49ec-8bed-a5ee26b56f92
+blogengineid: 564e8134-3f14-49ec-8bed-a5ee26b56f92
 title: "Holy crap I have a blog!"
 date: 2004-06-30 19:54:00 -0500
 comments: true

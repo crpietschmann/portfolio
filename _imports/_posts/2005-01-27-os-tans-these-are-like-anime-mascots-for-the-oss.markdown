@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 4067af4f-af8d-4807-bdc2-e9fefa2ec823
+blogengineid: 4067af4f-af8d-4807-bdc2-e9fefa2ec823
 title: "OS-tans - these are like Anime mascots for the OS's"
 date: 2005-01-27 09:56:00 -0600
 comments: true

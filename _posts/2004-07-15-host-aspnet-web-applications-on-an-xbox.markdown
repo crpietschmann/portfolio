@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 316772e6-af83-49bf-9d0d-547b2311982c
+blogengineid: 316772e6-af83-49bf-9d0d-547b2311982c
 title: "Host ASP.NET Web Applications on an XBox"
 date: 2004-07-15 23:16:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 80f10444-7e23-45b5-bf7b-f6781fc31925
+blogengineid: 80f10444-7e23-45b5-bf7b-f6781fc31925
 title: "Virtual Earth: Getting Started - Adding a basic Map to a page"
 date: 2007-12-21 16:24:00 -0600
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 83abed2f-2815-4ad1-85cf-869109a4d02c
+blogengineid: 83abed2f-2815-4ad1-85cf-869109a4d02c
 title: "A deep talk about ASP.NET Web Controls"
 date: 2005-10-07 10:31:00 -0500
 comments: true

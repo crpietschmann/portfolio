@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 21c6af9f-f2b6-47a0-9749-c3731c41d475
+blogengineid: 21c6af9f-f2b6-47a0-9749-c3731c41d475
 title: "ASP.NET 2.0: URL Mapping with RegEx Support"
 date: 2005-11-12 13:36:00 -0600
 comments: true

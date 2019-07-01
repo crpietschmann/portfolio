@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 2df57fa8-d935-4e11-880d-f1516c67a763
+blogengineid: 2df57fa8-d935-4e11-880d-f1516c67a763
 title: "Dec. '07: Are the latest Vista updates full of error? Or is it just me?"
 date: 2007-12-18 13:40:00 -0600
 comments: true

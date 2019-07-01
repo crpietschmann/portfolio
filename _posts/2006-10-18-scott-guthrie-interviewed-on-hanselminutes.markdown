@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 9ec8eee4-8d42-4cb7-a1ea-ef309844374e
+blogengineid: 9ec8eee4-8d42-4cb7-a1ea-ef309844374e
 title: "Scott Guthrie interviewed on Hanselminutes"
 date: 2006-10-18 12:02:00 -0500
 comments: true

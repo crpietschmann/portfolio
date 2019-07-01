@@ -1,6 +1,6 @@
 ---
 layout: post
-id: c75cbc89-6abf-4869-914d-6176bb6c7736
+blogengineid: c75cbc89-6abf-4869-914d-6176bb6c7736
 title: "Virtual Earth + ASP.NET AJAX Now Fixed in Safari"
 date: 2008-05-17 13:13:00 -0500
 comments: true

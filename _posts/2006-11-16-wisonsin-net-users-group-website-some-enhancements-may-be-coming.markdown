@@ -1,6 +1,6 @@
 ---
 layout: post
-id: e9458204-14e8-40d5-9772-54312e41634a
+blogengineid: e9458204-14e8-40d5-9772-54312e41634a
 title: "Wisonsin .NET Users Group website - Some enhancements may be coming..."
 date: 2006-11-16 15:07:00 -0600
 comments: true

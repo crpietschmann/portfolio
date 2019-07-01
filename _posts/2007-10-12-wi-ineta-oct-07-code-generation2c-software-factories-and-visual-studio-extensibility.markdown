@@ -1,6 +1,6 @@
 ---
 layout: post
-id: f08465e4-74ca-45cc-8691-f869ad4aee42
+blogengineid: f08465e4-74ca-45cc-8691-f869ad4aee42
 title: "WI-INETA: Oct. '07 - Code Generation, Software Factories and Visual Studio Extensibility"
 date: 2007-10-12 12:02:00 -0500
 comments: true

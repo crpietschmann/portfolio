@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 729c9a91-9c34-4ddc-bfb0-4be2f8843c4d
+blogengineid: 729c9a91-9c34-4ddc-bfb0-4be2f8843c4d
 title: "XAML is like HTML for Windows Applications!"
 date: 2004-07-01 20:14:00 -0500
 comments: true

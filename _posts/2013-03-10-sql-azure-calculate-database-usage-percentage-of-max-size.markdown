@@ -1,6 +1,6 @@
 ---
 layout: post
-id: d03762d3-5282-49b1-b774-c8f6bb3e8605
+blogengineid: d03762d3-5282-49b1-b774-c8f6bb3e8605
 title: "SQL Azure: Calculate Database Usage Percentage of Max Size"
 date: 2013-03-10 14:24:51 -0500
 comments: true

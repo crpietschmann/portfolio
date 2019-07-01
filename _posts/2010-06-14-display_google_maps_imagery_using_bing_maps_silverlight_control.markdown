@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 0ac24a38-25bc-43d8-9ba8-421dbbebfaa1
+blogengineid: 0ac24a38-25bc-43d8-9ba8-421dbbebfaa1
 title: "Display Google Maps Imagery using Bing Maps Silverlight Control"
 date: 2010-06-14 23:15:00 -0500
 comments: true

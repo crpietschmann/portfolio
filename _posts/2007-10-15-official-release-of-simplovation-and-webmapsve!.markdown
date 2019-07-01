@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 67c90ddd-12f5-4716-9cc1-cb2dde3b0c24
+blogengineid: 67c90ddd-12f5-4716-9cc1-cb2dde3b0c24
 title: "Official Release of Simplovation and Web.Maps.VE!"
 date: 2007-10-15 15:28:00 -0500
 comments: true

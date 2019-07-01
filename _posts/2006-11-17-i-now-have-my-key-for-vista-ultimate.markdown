@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 4c03ec73-56af-46db-9ece-22f0af16d566
+blogengineid: 4c03ec73-56af-46db-9ece-22f0af16d566
 title: "I now have my key for Vista Ultimate"
 date: 2006-11-17 14:12:00 -0600
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 0e22e160-a77c-4d05-8375-c17e4b41ba02
+blogengineid: 0e22e160-a77c-4d05-8375-c17e4b41ba02
 title: "How Nerdy are you? :: My Nerd Score: 55 - Lightly Nerdy"
 date: 2005-01-07 19:45:00 -0600
 comments: true

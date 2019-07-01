@@ -1,6 +1,6 @@
 ---
 layout: post
-id: ab555281-0d40-4194-9132-bf7b4dbf8a26
+blogengineid: ab555281-0d40-4194-9132-bf7b4dbf8a26
 title: "Fill DataSet with multiple Tables and update them with DataAdapter"
 date: 2004-08-22 23:48:00 -0500
 comments: true

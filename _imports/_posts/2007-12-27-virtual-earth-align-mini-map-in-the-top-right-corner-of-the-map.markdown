@@ -1,6 +1,6 @@
 ---
 layout: post
-id: edce98b3-6f8d-46d8-a5d4-84599de9635b
+blogengineid: edce98b3-6f8d-46d8-a5d4-84599de9635b
 title: "Virtual Earth 6: Align Mini Map in the Top Right corner of the Map"
 date: 2007-12-27 18:35:00 -0600
 comments: true

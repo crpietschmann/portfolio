@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 9cbfac69-480d-4fa9-b9a9-74611f1e23c1
+blogengineid: 9cbfac69-480d-4fa9-b9a9-74611f1e23c1
 title: "Wisconsin .NET Users Group (WI-INETA) Website is lacking..."
 date: 2006-08-18 14:25:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 7290da55-6015-41cc-a8a4-9d4d87b9aa66
+blogengineid: 7290da55-6015-41cc-a8a4-9d4d87b9aa66
 title: "Setting Up Ubuntu with virtualization on Vista x64"
 date: 2007-01-12 22:49:00 -0600
 comments: true

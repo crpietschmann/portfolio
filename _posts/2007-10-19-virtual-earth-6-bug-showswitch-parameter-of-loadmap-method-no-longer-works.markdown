@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 9c55056b-9d3e-4ea2-aa60-3f9ddd7a5421
+blogengineid: 9c55056b-9d3e-4ea2-aa60-3f9ddd7a5421
 title: "Virtual Earth 6 Bug: ShowSwitch parameter of LoadMap method no longer works"
 date: 2007-10-19 19:14:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 38300790-5ba9-4e12-bdae-e793b866df87
+blogengineid: 38300790-5ba9-4e12-bdae-e793b866df87
 title: "Today (8/31) is last day to enter 2010 Community Coding Contest for chance to win an MSDN Ultimate Subscription!"
 date: 2010-08-31 13:22:00 -0500
 comments: true

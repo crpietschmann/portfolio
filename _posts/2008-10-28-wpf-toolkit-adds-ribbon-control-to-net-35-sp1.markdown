@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 195a44a8-f7ab-4fb0-8038-e88e67b3c10c
+blogengineid: 195a44a8-f7ab-4fb0-8038-e88e67b3c10c
 title: "WPF Toolkit adds Ribbon Control to .NET 3.5 SP1"
 date: 2008-10-28 17:49:00 -0500
 comments: true

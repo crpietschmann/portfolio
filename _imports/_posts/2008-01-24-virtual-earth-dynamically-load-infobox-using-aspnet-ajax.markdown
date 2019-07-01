@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6271e9a0-4100-4919-af08-bd31ededb45b
+blogengineid: 6271e9a0-4100-4919-af08-bd31ededb45b
 title: "Virtual Earth: Dynamically Load InfoBox Using ASP.NET AJAX"
 date: 2008-01-24 12:13:00 -0600
 comments: true

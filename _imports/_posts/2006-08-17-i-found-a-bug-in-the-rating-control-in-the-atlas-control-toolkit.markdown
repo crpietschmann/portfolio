@@ -1,6 +1,6 @@
 ---
 layout: post
-id: fc04a906-1489-44c2-924e-424bdabba07c
+blogengineid: fc04a906-1489-44c2-924e-424bdabba07c
 title: "I Found a bug in the Rating control in the Atlas Control Toolkit"
 date: 2006-08-17 14:21:00 -0500
 comments: true

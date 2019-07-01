@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 8e2d3e0c-fa6a-4d8c-95d2-f69e9e59a6cd
+blogengineid: 8e2d3e0c-fa6a-4d8c-95d2-f69e9e59a6cd
 title: "Attend WI .NET Users Group Holiday Party and get Visual Studio 2008 Free!"
 date: 2007-11-19 21:44:00 -0600
 comments: true

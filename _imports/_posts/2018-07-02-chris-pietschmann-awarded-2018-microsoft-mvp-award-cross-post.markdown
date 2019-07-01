@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 79e0bd5d-6a97-44fe-9f80-b7b5280be819
+blogengineid: 79e0bd5d-6a97-44fe-9f80-b7b5280be819
 title: "(Cross Post) Chris Pietschmann Awarded 2018 Microsoft MVP Award"
 date: 2018-07-02 10:44:00 -0500
 comments: true

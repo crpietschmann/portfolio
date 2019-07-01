@@ -1,6 +1,6 @@
 ---
 layout: post
-id: e7a0a6e2-3fea-4c87-89cb-f998513a52a0
+blogengineid: e7a0a6e2-3fea-4c87-89cb-f998513a52a0
 title: "$700B Bail-Out Bill Passes, Maybe It's Not So Bad Afterall..."
 date: 2008-10-03 20:02:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 1ac7d25a-d67d-47a2-9bb8-7455e312ec12
+blogengineid: 1ac7d25a-d67d-47a2-9bb8-7455e312ec12
 title: "The .NET Show: Introduction to Visual Studio 2005 (Whidbey)"
 date: 2004-08-09 00:13:00 -0500
 comments: true

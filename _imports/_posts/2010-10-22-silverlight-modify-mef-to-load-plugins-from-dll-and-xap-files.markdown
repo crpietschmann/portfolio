@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 0a7d9d3f-9f03-4c26-8536-620a899d1903
+blogengineid: 0a7d9d3f-9f03-4c26-8536-620a899d1903
 title: "Silverlight: Modify MEF to load plugins from DLL and XAP files"
 date: 2010-10-22 12:44:42 -0500
 comments: true

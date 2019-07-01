@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 0c65924b-8ae3-4375-b115-c216ac01f489
+blogengineid: 0c65924b-8ae3-4375-b115-c216ac01f489
 title: "Adding a DotNetKicks Image/Badge via jQuery"
 date: 2009-07-20 18:08:00 -0500
 comments: true

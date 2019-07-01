@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 991001f5-399b-42ff-829c-2b80cb49a8b8
+blogengineid: 991001f5-399b-42ff-829c-2b80cb49a8b8
 title: "dotNetExt - .NET Extension Method Library - v0.1 Beta Released"
 date: 2008-07-16 18:50:00 -0500
 comments: true

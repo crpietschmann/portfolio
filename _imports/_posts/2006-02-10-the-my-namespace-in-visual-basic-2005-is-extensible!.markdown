@@ -1,6 +1,6 @@
 ---
 layout: post
-id: af308335-a035-49cf-a4f7-d233ab80ea0b
+blogengineid: af308335-a035-49cf-a4f7-d233ab80ea0b
 title: "The My namespace in Visual Basic 2005 is extensible!"
 date: 2006-02-10 11:10:00 -0600
 comments: true

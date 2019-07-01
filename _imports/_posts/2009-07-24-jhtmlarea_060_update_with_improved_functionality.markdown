@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 9901a400-8fdb-4811-a030-6827de25695a
+blogengineid: 9901a400-8fdb-4811-a030-6827de25695a
 title: "jHtmlArea 0.6.0 Update with Improved Functionality"
 date: 2009-07-24 16:44:00 -0500
 comments: true

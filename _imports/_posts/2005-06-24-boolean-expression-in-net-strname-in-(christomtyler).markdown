@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 03b33b79-bf56-43e1-81d2-a657434fa764
+blogengineid: 03b33b79-bf56-43e1-81d2-a657434fa764
 title: "Boolean Expression in .NET: strName IN ("CHRIS","TOM","TYLER")"
 date: 2005-06-24 12:00:00 -0500
 comments: true

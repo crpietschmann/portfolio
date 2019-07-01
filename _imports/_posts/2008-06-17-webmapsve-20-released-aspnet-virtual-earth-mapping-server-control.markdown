@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 696ea81b-7d5d-43f9-9538-1694ba8eb3a0
+blogengineid: 696ea81b-7d5d-43f9-9538-1694ba8eb3a0
 title: "Web.Maps.VE 2.0 Released - ASP.NET Virtual Earth Mapping Server Control"
 date: 2008-06-17 21:29:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6efaae94-793d-4059-8fbf-f9fe6ee30c6f
+blogengineid: 6efaae94-793d-4059-8fbf-f9fe6ee30c6f
 title: "CQRS: Command Query Responsibility Segregation Design Pattern"
 date: 2014-06-15 07:49:00 -0500
 comments: true

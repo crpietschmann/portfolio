@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 9bc67c8f-507d-4831-a685-e6d6c62d9c41
+blogengineid: 9bc67c8f-507d-4831-a685-e6d6c62d9c41
 title: "Latest Visual Studio 2005 Release Info"
 date: 2005-03-12 20:50:00 -0600
 comments: true

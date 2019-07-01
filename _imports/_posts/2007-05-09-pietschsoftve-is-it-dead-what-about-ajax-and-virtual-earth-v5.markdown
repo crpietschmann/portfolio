@@ -1,6 +1,6 @@
 ---
 layout: post
-id: b84110ff-c366-4a80-9430-cd162eecd0e4
+blogengineid: b84110ff-c366-4a80-9430-cd162eecd0e4
 title: "PietschSoft.VE: Is it Dead? What about Ajax and Virtual Earth v5?"
 date: 2007-05-09 09:12:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: f5251bf7-5f7e-4940-896d-7dead38582bd
+blogengineid: f5251bf7-5f7e-4940-896d-7dead38582bd
 title: "SimpleBlack Theme for BlogEngine.NET v1.2"
 date: 2007-11-02 21:15:00 -0500
 comments: true

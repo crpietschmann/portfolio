@@ -1,6 +1,6 @@
 ---
 layout: post
-id: ce8b5456-ef99-4311-8099-16976ebcc5e2
+blogengineid: ce8b5456-ef99-4311-8099-16976ebcc5e2
 title: "Bing Maps Silverlight CTP: Using Tile Layers to Overlay Custom Map Imagery"
 date: 2009-03-20 18:47:00 -0500
 comments: true

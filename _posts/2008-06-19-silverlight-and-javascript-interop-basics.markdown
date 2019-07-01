@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 8d7249a9-22fa-4075-af7b-d0de77c02cbf
+blogengineid: 8d7249a9-22fa-4075-af7b-d0de77c02cbf
 title: "Silverlight and JavaScript Interop Basics"
 date: 2008-06-19 23:18:00 -0500
 comments: true

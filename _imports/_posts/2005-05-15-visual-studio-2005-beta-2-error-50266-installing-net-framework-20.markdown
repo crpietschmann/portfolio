@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 03f86b97-ffe5-4137-932c-61b0ea73d386
+blogengineid: 03f86b97-ffe5-4137-932c-61b0ea73d386
 title: "Visual Studio 2005 Beta 2: Error 50266 installing .NET Framework 2.0"
 date: 2005-05-15 11:42:00 -0500
 comments: true

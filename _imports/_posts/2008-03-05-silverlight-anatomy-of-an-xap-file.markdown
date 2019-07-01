@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 96ea5cad-e161-4bbb-b90a-12522b711312
+blogengineid: 96ea5cad-e161-4bbb-b90a-12522b711312
 title: "Silverlight: Anatomy of an .XAP file"
 date: 2008-03-05 13:24:00 -0600
 comments: true

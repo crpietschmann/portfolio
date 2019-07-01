@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 57b5c70e-d7c4-41e1-b336-5f8d70241f59
+blogengineid: 57b5c70e-d7c4-41e1-b336-5f8d70241f59
 title: "View SQL Server Transaction Logs"
 date: 2004-10-06 16:35:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: de36b5e8-c030-40ec-8e24-3e458da8340b
+blogengineid: de36b5e8-c030-40ec-8e24-3e458da8340b
 title: "Google Charts API: an ASP.NET 2.0 Server Control"
 date: 2007-12-07 17:53:00 -0600
 comments: true

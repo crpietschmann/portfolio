@@ -1,6 +1,6 @@
 ---
 layout: post
-id: c3b8bc8b-0d2e-45e0-b2bc-8c7835bab18d
+blogengineid: c3b8bc8b-0d2e-45e0-b2bc-8c7835bab18d
 title: "I am now a Virtual Earth MVP!"
 date: 2008-04-01 11:12:00 -0500
 comments: true

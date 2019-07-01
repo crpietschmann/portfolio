@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 842f170f-c1c6-4021-9a9c-c8e10ab864ad
+blogengineid: 842f170f-c1c6-4021-9a9c-c8e10ab864ad
 title: "WI-INETA May 9th: Object Relational Mapping Frameworks: Simplify & Improve Your Data Access Layer"
 date: 2006-05-07 14:33:00 -0500
 comments: true

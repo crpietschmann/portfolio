@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 927cf266-f035-4661-9a54-c28fc34f5ec9
+blogengineid: 927cf266-f035-4661-9a54-c28fc34f5ec9
 title: "ASP.NET 2.0: Rewriting URL Paths just got a whole lot easier"
 date: 2005-06-29 14:43:00 -0500
 comments: true

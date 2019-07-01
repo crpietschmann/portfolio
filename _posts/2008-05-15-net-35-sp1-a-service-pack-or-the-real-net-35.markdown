@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 7b976614-8d22-4d53-86c1-3b7bd19dd2e9
+blogengineid: 7b976614-8d22-4d53-86c1-3b7bd19dd2e9
 title: ".NET 3.5 SP1: A Service Pack or The Real .NET 3.5"
 date: 2008-05-15 22:44:24 -0500
 comments: true

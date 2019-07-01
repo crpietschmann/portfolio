@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6d3871ca-6e50-4cc5-888d-cabd5385eb31
+blogengineid: 6d3871ca-6e50-4cc5-888d-cabd5385eb31
 title: "Windows Longhorn Glass Look DHTML"
 date: 2005-03-04 21:38:00 -0600
 comments: true

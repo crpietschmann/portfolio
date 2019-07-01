@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 004257a6-6fc4-4635-b5e1-a79b87b8cea6
+blogengineid: 004257a6-6fc4-4635-b5e1-a79b87b8cea6
 title: "HTML5 Day 4: Add Drop Down Menu to ASP.NET MVC HTML5 Template using CSS and jQuery"
 date: 2010-11-17 11:32:00 -0600
 comments: true

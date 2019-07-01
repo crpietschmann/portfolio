@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6a0a75d6-afe3-427b-896f-812dc590dc4d
+blogengineid: 6a0a75d6-afe3-427b-896f-812dc590dc4d
 title: "Bing Maps Ajax 7: Add a Simple Mini Map"
 date: 2010-12-19 13:15:02 -0600
 comments: true

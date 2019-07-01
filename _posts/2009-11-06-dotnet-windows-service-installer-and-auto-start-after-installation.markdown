@@ -1,6 +1,6 @@
 ---
 layout: post
-id: c86d128f-970b-4b3a-bfeb-4d51ab34f051
+blogengineid: c86d128f-970b-4b3a-bfeb-4d51ab34f051
 title: ".NET Windows Service Installer and Auto Start After Installation"
 date: 2009-11-06 10:10:00 -0600
 comments: true

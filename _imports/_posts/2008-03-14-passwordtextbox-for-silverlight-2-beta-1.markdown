@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6dcdf7a5-de21-4639-8002-8955ea7e7674
+blogengineid: 6dcdf7a5-de21-4639-8002-8955ea7e7674
 title: "PasswordTextBox for Silverlight 2 Beta 2"
 date: 2008-03-14 20:25:00 -0500
 comments: true

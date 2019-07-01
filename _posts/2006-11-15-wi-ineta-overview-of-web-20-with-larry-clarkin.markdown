@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 991a3036-915a-4441-93be-1b5a64273997
+blogengineid: 991a3036-915a-4441-93be-1b5a64273997
 title: "WI-INETA: Overview of Web 2.0 with Larry Clarkin"
 date: 2006-11-15 01:37:00 -0600
 comments: true

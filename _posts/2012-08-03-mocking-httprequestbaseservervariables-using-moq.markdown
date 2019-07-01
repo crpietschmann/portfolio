@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 828d1198-8b0c-4b95-835c-f5e3abec4b8d
+blogengineid: 828d1198-8b0c-4b95-835c-f5e3abec4b8d
 title: "Mocking HttpRequestBase.ServerVariables using Moq"
 date: 2012-08-03 21:12:58 -0500
 comments: true

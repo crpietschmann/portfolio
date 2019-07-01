@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 772d2592-f037-4039-ae6e-38a53e7319a5
+blogengineid: 772d2592-f037-4039-ae6e-38a53e7319a5
 title: "Wisconsin .NET User Group meeting tonight"
 date: 2004-08-10 20:37:00 -0500
 comments: true

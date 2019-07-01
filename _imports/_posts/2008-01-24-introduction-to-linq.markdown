@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 3016b3d2-25b0-4a49-8b21-40d0c78fa88a
+blogengineid: 3016b3d2-25b0-4a49-8b21-40d0c78fa88a
 title: "Introduction to LINQ"
 date: 2008-01-24 02:00:00 -0600
 comments: true

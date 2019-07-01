@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 4fbc9488-3308-498b-bac5-386e09cc7730
+blogengineid: 4fbc9488-3308-498b-bac5-386e09cc7730
 title: "Windows 7 Beta Has Good and Bad Points - A Short Review"
 date: 2009-01-12 22:52:00 -0600
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 7b341431-400f-47b4-bae1-117566664a6b
+blogengineid: 7b341431-400f-47b4-bae1-117566664a6b
 title: "Could WiFi be used to cook food?"
 date: 2007-07-16 14:04:00 -0500
 comments: true

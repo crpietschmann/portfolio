@@ -1,6 +1,6 @@
 ---
 layout: post
-id: f1a82526-7375-4034-b5db-a45f42fd44cd
+blogengineid: f1a82526-7375-4034-b5db-a45f42fd44cd
 title: "Search Keyword Highlighter BlogEngine.NET v1.3 Extension"
 date: 2008-02-13 18:36:00 -0600
 comments: true

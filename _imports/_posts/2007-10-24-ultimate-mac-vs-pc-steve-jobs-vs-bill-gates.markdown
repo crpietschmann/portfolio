@@ -1,6 +1,6 @@
 ---
 layout: post
-id: f3a00521-8ff0-40c3-ba5c-f8356c66d3c1
+blogengineid: f3a00521-8ff0-40c3-ba5c-f8356c66d3c1
 title: "Ultimate Mac vs. PC - Steve Jobs vs. Bill Gates"
 date: 2007-10-24 21:11:00 -0500
 comments: true

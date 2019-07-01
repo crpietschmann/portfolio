@@ -1,6 +1,6 @@
 ---
 layout: post
-id: e4ba6b86-79cc-4d7d-81d0-f53e35dff7ca
+blogengineid: e4ba6b86-79cc-4d7d-81d0-f53e35dff7ca
 title: "SQL Azure: REBUILD All Indexes in Database – Alternative to DBCC DBREINDEX"
 date: 2011-11-10 17:43:00 -0600
 comments: true

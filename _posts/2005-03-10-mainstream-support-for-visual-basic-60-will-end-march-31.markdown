@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 1aae67ba-25cd-4649-929d-5c8da17e3750
+blogengineid: 1aae67ba-25cd-4649-929d-5c8da17e3750
 title: "Mainstream support for Visual Basic 6.0 will end March 31"
 date: 2005-03-10 01:11:00 -0600
 comments: true

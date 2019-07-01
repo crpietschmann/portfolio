@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 59c49b54-7263-4e42-805d-2d05691a3a1f
+blogengineid: 59c49b54-7263-4e42-805d-2d05691a3a1f
 title: "SQL Compact And The "Unable to load DLL 'sqlceme35.dll'" Runtime Exception"
 date: 2009-01-07 19:40:00 -0600
 comments: true

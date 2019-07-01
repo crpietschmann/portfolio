@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 52c4845b-11a5-4522-8ff1-22a7dccc52c9
+blogengineid: 52c4845b-11a5-4522-8ff1-22a7dccc52c9
 title: "Creating Namespaces in JavaScript is actually rather simple..."
 date: 2007-07-10 19:31:00 -0500
 comments: true

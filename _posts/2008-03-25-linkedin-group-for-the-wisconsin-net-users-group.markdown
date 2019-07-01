@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 4dfe2f0f-4d49-4b99-8bfb-f2a763376e17
+blogengineid: 4dfe2f0f-4d49-4b99-8bfb-f2a763376e17
 title: "LinkedIn Group for the Wisconsin .NET Users Group"
 date: 2008-03-25 16:36:00 -0500
 comments: true

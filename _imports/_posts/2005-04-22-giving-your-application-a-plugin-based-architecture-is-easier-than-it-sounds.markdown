@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 33b47776-df53-41e3-8510-cab9983f0cfe
+blogengineid: 33b47776-df53-41e3-8510-cab9983f0cfe
 title: "Giving your application a Plugin based architecture is easier than it sounds..."
 date: 2005-04-22 00:02:00 -0500
 comments: true

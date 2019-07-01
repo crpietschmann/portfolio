@@ -1,6 +1,6 @@
 ---
 layout: post
-id: b0029f4d-2160-4384-976f-704e3994dd30
+blogengineid: b0029f4d-2160-4384-976f-704e3994dd30
 title: "Vista Experience Update: Vista Sidebar Gadgets"
 date: 2006-12-03 15:56:00 -0600
 comments: true

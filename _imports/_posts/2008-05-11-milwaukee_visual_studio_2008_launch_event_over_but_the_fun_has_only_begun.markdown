@@ -1,6 +1,6 @@
 ---
 layout: post
-id: addaa29a-10c8-48b4-8c3d-7b42c0580a19
+blogengineid: addaa29a-10c8-48b4-8c3d-7b42c0580a19
 title: "The Milwaukee Visual Studio 2008 Launch Event is over; but the fun has only begun"
 date: 2008-05-11 08:50:00 -0500
 comments: true

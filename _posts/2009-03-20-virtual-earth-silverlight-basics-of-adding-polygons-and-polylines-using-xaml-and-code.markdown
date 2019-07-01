@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6a098f41-2df4-4362-a577-606863de838c
+blogengineid: 6a098f41-2df4-4362-a577-606863de838c
 title: "CTP: Bing Maps Silverlight CTP: Basics of Adding Polygons and Polylines using XAML and Code"
 date: 2009-03-20 18:40:00 -0500
 comments: true

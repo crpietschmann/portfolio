@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 8b41b854-b9b7-4646-8bf6-8628d89dddaf
+blogengineid: 8b41b854-b9b7-4646-8bf6-8628d89dddaf
 title: "Windows XP Service Pack 2 Available"
 date: 2004-08-10 20:31:00 -0500
 comments: true

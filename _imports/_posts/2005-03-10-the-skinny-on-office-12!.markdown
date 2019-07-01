@@ -1,6 +1,6 @@
 ---
 layout: post
-id: df35aca1-9df6-4ba1-80de-2db37d8e526e
+blogengineid: df35aca1-9df6-4ba1-80de-2db37d8e526e
 title: "The skinny on Office 12!"
 date: 2005-03-10 00:55:00 -0600
 comments: true

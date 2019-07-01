@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 8cdbe666-e375-4311-b6ca-4794ec44ff41
+blogengineid: 8cdbe666-e375-4311-b6ca-4794ec44ff41
 title: "C#: Using IProgressDialog to show a “native” Progress Dialog from .NET in Windows"
 date: 2009-08-17 20:03:00 -0500
 comments: true

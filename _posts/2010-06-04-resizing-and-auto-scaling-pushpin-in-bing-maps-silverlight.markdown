@@ -1,6 +1,6 @@
 ---
 layout: post
-id: f5cc395e-a712-4884-ab24-3e556e6da666
+blogengineid: f5cc395e-a712-4884-ab24-3e556e6da666
 title: "Resizing and Auto-Scaling Pushpin in Bing Maps Silverlight"
 date: 2010-06-04 00:26:00 -0500
 comments: true

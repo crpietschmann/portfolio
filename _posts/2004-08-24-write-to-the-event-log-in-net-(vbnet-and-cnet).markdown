@@ -1,6 +1,6 @@
 ---
 layout: post
-id: e33bc9c0-b7d1-42f6-bbf7-15b97d1cce38
+blogengineid: e33bc9c0-b7d1-42f6-bbf7-15b97d1cce38
 title: "Write to the Event Log in .NET (VB.NET and C#.NET)"
 date: 2004-08-24 18:03:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 7850f65e-8f57-4877-8ddf-f79e0d7a76b4
+blogengineid: 7850f65e-8f57-4877-8ddf-f79e0d7a76b4
 title: "Safari 3 for Windows: Enable JavaScript Debugging"
 date: 2007-12-21 23:31:00 -0600
 comments: true

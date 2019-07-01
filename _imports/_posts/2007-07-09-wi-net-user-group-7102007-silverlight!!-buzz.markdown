@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 91ddec0d-a5bd-4a69-ab85-954a76684fc7
+blogengineid: 91ddec0d-a5bd-4a69-ab85-954a76684fc7
 title: "WI .NET User Group - 7/10/2007 - Silverlight!! buzz...."
 date: 2007-07-09 10:54:00 -0500
 comments: true

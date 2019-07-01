@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 73b4583b-9f6a-400c-8fe2-cf8db20b75ee
+blogengineid: 73b4583b-9f6a-400c-8fe2-cf8db20b75ee
 title: "Silverlight: Embed IronRuby within XAML Part 2"
 date: 2010-10-17 10:44:27 -0500
 comments: true

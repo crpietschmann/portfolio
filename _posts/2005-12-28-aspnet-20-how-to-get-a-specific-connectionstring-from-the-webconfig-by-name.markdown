@@ -1,6 +1,6 @@
 ---
 layout: post
-id: fc854e6c-0c56-4265-977b-cf3e4e89ebd2
+blogengineid: fc854e6c-0c56-4265-977b-cf3e4e89ebd2
 title: "ASP.NET: How to get a specific ConnectionString from the Web.Config by name"
 date: 2005-12-28 23:18:00 -0600
 comments: true

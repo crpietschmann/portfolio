@@ -1,6 +1,6 @@
 ---
 layout: post
-id: b896b861-3059-40b6-9042-3d079cdddadb
+blogengineid: b896b861-3059-40b6-9042-3d079cdddadb
 title: "WI .NET Users Group Holiday Party '07 has been Cancelled due to Weather..."
 date: 2007-12-11 18:04:00 -0600
 comments: true

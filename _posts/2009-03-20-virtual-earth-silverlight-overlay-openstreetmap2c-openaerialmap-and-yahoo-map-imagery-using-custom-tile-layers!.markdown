@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 88a585cd-f90a-40e1-963d-ca1932ce2535
+blogengineid: 88a585cd-f90a-40e1-963d-ca1932ce2535
 title: "Bing Maps Silverlight CTP: Overlay OpenStreetMap, OpenAerialMap and Yahoo Map Imagery using Custom Tile Layers!"
 date: 2009-03-20 18:51:00 -0500
 comments: true

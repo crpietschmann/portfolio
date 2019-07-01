@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 1e2824a0-3bef-4707-8f18-a624ad784432
+blogengineid: 1e2824a0-3bef-4707-8f18-a624ad784432
 title: "Bing Maps: Draw a Circle Radius Around a Lat/Long Point"
 date: 2008-02-09 02:58:00 -0600
 comments: true

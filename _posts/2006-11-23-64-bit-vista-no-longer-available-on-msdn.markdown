@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 14484f1d-f5ed-4dfa-9075-ba3ce729769e
+blogengineid: 14484f1d-f5ed-4dfa-9075-ba3ce729769e
 title: "64-bit Vista no longer available on MSDN?"
 date: 2006-11-23 00:09:00 -0600
 comments: true

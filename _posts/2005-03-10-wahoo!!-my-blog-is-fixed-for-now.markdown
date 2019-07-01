@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 63b64e72-f156-4a60-bb9d-b221accfb1ee
+blogengineid: 63b64e72-f156-4a60-bb9d-b221accfb1ee
 title: "Wahoo!! My blog is fixed for now..."
 date: 2005-03-10 00:54:00 -0600
 comments: true

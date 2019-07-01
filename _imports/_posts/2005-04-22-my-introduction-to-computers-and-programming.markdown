@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6b742247-2b42-4829-917b-9d7f63d4dbc3
+blogengineid: 6b742247-2b42-4829-917b-9d7f63d4dbc3
 title: "My introduction to computers and programming..."
 date: 2005-04-22 01:31:00 -0500
 comments: true

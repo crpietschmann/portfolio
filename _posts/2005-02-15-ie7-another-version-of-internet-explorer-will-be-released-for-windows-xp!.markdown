@@ -1,6 +1,6 @@
 ---
 layout: post
-id: f8e56ee2-9c5f-432b-a95d-4cbc80000a1e
+blogengineid: f8e56ee2-9c5f-432b-a95d-4cbc80000a1e
 title: "IE7: Another version of Internet Explorer will be released for Windows XP!"
 date: 2005-02-15 23:42:00 -0600
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 74ed3208-1e9a-48aa-8dfa-af424e5e9164
+blogengineid: 74ed3208-1e9a-48aa-8dfa-af424e5e9164
 title: "JavaScript Basics: Url / Page Navigation via document.location"
 date: 2015-09-16 19:15:00 -0500
 comments: true

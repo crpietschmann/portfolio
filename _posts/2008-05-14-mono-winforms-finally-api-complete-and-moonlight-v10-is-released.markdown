@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 1bb9b157-def5-4521-896b-45fdeadf6f95
+blogengineid: 1bb9b157-def5-4521-896b-45fdeadf6f95
 title: "Mono: WinForms finally API complete and Moonlight v1.0 is released"
 date: 2008-05-14 16:36:00 -0500
 comments: true

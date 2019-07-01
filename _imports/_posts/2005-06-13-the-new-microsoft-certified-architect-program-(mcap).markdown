@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 603293b3-321c-4fb9-be4e-70d2156e2fdb
+blogengineid: 603293b3-321c-4fb9-be4e-70d2156e2fdb
 title: "The NEW Microsoft Certified Architect Program (MCAP)"
 date: 2005-06-13 00:02:00 -0500
 comments: true

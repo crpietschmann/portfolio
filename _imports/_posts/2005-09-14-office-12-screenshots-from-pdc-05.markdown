@@ -1,6 +1,6 @@
 ---
 layout: post
-id: fa210048-7c99-4819-aa64-81a5f1b236df
+blogengineid: fa210048-7c99-4819-aa64-81a5f1b236df
 title: "Office 12 Screenshots from PDC '05"
 date: 2005-09-14 21:26:00 -0500
 comments: true

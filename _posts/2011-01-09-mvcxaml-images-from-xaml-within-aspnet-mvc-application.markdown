@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 2ae98273-f10c-46f1-9db1-c07dd646c16b
+blogengineid: 2ae98273-f10c-46f1-9db1-c07dd646c16b
 title: "MvcXaml - Images from XAML within ASP.NET MVC Application"
 date: 2011-01-09 09:41:28 -0600
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: ff9ab12f-8a69-4fc7-9bd8-8c5e2ee873c4
+blogengineid: ff9ab12f-8a69-4fc7-9bd8-8c5e2ee873c4
 title: ".NET 3.5 SP1: DataContractJsonSerializer Bug"
 date: 2008-08-27 16:47:00 -0500
 comments: true

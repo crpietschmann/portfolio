@@ -1,6 +1,6 @@
 ---
 layout: post
-id: fd819a8b-25ac-42df-b9fe-7bd3eb724c1a
+blogengineid: fd819a8b-25ac-42df-b9fe-7bd3eb724c1a
 title: "Windows vNext (Windows 7?) Feature Ideas"
 date: 2008-09-05 10:42:00 -0500
 comments: true

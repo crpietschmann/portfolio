@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 006d7ee4-ac7d-4fc4-a748-3ba8d846deeb
+blogengineid: 006d7ee4-ac7d-4fc4-a748-3ba8d846deeb
 title: "Using LINQ to SQL with SQL Server Compact Edition"
 date: 2009-01-30 20:31:00 -0600
 comments: true

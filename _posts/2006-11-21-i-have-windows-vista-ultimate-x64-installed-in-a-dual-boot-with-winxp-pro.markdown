@@ -1,6 +1,6 @@
 ---
 layout: post
-id: beab6120-b505-4976-b08d-d0e973cf189f
+blogengineid: beab6120-b505-4976-b08d-d0e973cf189f
 title: "I have Windows Vista Ultimate x64 installed in a dual boot with WinXP Pro"
 date: 2006-11-21 19:28:00 -0600
 comments: true

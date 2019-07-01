@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 0786d14c-6d4a-41da-96a3-a94daea0158c
+blogengineid: 0786d14c-6d4a-41da-96a3-a94daea0158c
 title: "You Can Watch PDC'08 Sessions Online!"
 date: 2008-10-29 18:17:00 -0500
 comments: true

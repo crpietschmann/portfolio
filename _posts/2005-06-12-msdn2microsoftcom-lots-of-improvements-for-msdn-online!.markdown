@@ -1,6 +1,6 @@
 ---
 layout: post
-id: c9557fb0-4425-4a83-8397-cf37ddd5c55c
+blogengineid: c9557fb0-4425-4a83-8397-cf37ddd5c55c
 title: "msdn2.microsoft.com - Lots of improvements for MSDN Online!"
 date: 2005-06-12 23:44:00 -0500
 comments: true

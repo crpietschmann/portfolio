@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 4d751d89-ea35-4ad2-b916-4b3561d56c0b
+blogengineid: 4d751d89-ea35-4ad2-b916-4b3561d56c0b
 title: "JavaScript: Add Search Engine Keyword Highlight Support to your site with ease"
 date: 2007-09-24 14:01:00 -0500
 comments: true

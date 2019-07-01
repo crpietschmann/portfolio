@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 36c82636-abf3-4b73-a6c3-657b790509b9
+blogengineid: 36c82636-abf3-4b73-a6c3-657b790509b9
 title: "Hitachi's New Perpendicular Recording Technology involves some bits that dance to the music"
 date: 2005-04-08 23:09:00 -0500
 comments: true

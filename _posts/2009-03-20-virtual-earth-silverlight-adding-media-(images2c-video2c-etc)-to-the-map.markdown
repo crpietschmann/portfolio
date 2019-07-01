@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 2c25c9bc-e290-41e4-9a03-daa75a912c63
+blogengineid: 2c25c9bc-e290-41e4-9a03-daa75a912c63
 title: "Bing Maps Silverlight CTP: Adding Media (Images, Video, etc.) to the Map"
 date: 2009-03-20 18:43:00 -0500
 comments: true

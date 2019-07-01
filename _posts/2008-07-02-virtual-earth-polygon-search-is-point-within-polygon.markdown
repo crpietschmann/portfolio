@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 57e3e956-a3cd-445f-8445-48bee9c14494
+blogengineid: 57e3e956-a3cd-445f-8445-48bee9c14494
 title: "Bing Maps: Polygon Search - Is Point Within Polygon?"
 date: 2008-07-02 23:42:00 -0500
 comments: true

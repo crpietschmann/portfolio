@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 577fc138-9a5b-4061-99cc-50bfc7f12522
+blogengineid: 577fc138-9a5b-4061-99cc-50bfc7f12522
 title: "IronJSMVC: Script ASP.NET MVC in JavaScript using IronJS"
 date: 2012-01-21 18:54:03 -0600
 comments: true

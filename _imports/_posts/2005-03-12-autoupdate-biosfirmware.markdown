@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6e3d6bbf-ed43-46ab-b563-d01dfad622a3
+blogengineid: 6e3d6bbf-ed43-46ab-b563-d01dfad622a3
 title: "AutoUpdate BIOS/Firmware?"
 date: 2005-03-12 19:46:00 -0600
 comments: true

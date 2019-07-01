@@ -1,6 +1,6 @@
 ---
 layout: post
-id: ce4bffe2-e3f0-4246-a12c-689e01d885d8
+blogengineid: ce4bffe2-e3f0-4246-a12c-689e01d885d8
 title: "MS Virtual Earth v5.0 Released"
 date: 2007-05-02 00:08:00 -0500
 comments: true

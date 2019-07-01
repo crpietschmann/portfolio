@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 132350f3-c5ad-4eca-8c4f-2c1110f9a345
+blogengineid: 132350f3-c5ad-4eca-8c4f-2c1110f9a345
 title: "jHash v2.0 Released: Now with Routing Support!"
 date: 2012-05-01 17:34:30 -0500
 comments: true

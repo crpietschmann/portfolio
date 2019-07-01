@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 3a97ee01-5b36-4f43-abdb-1a9b685c6440
+blogengineid: 3a97ee01-5b36-4f43-abdb-1a9b685c6440
 title: "MvcMaps Preview 1 – A Unified Bing/Google Maps API for ASP.NET MVC"
 date: 2009-11-02 22:01:00 -0600
 comments: true

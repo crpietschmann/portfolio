@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 927c0023-562d-4a51-9a96-f6cb6c587529
+blogengineid: 927c0023-562d-4a51-9a96-f6cb6c587529
 title: "T-SQL: Join Tables by a Field that contains a delimited string"
 date: 2005-12-09 18:16:00 -0600
 comments: true

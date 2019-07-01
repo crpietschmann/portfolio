@@ -1,6 +1,6 @@
 ---
 layout: post
-id: c34da319-5160-4b22-918b-bfea938271ef
+blogengineid: c34da319-5160-4b22-918b-bfea938271ef
 title: "jHtmlArea – Adding Custom Toolbar Buttons"
 date: 2009-08-18 17:21:00 -0500
 comments: true

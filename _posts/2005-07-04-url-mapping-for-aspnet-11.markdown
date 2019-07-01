@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 1948704a-e7ab-420c-aec7-1c9f85de5665
+blogengineid: 1948704a-e7ab-420c-aec7-1c9f85de5665
 title: "URL Mapping for ASP.NET 1.1"
 date: 2005-07-04 19:51:00 -0500
 comments: true

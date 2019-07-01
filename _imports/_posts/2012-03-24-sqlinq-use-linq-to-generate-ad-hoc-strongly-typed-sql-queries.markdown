@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 3917ad4f-9b27-44b7-9437-c6661cd41949
+blogengineid: 3917ad4f-9b27-44b7-9437-c6661cd41949
 title: "SQLinq: Use LINQ to generate Ad-Hoc, strongly typed SQL queries"
 date: 2012-03-24 10:33:33 -0500
 comments: true

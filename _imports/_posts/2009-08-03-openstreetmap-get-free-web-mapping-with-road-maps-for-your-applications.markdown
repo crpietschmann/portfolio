@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 0b30a5c1-d379-42d8-ba81-4552045f48e1
+blogengineid: 0b30a5c1-d379-42d8-ba81-4552045f48e1
 title: "OpenStreetMap: Get FREE Web Mapping with Road Maps for your Applications"
 date: 2009-08-03 21:29:00 -0500
 comments: true

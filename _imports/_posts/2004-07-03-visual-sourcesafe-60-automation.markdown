@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 06c53954-6643-455c-9e7e-5e51e7e428d4
+blogengineid: 06c53954-6643-455c-9e7e-5e51e7e428d4
 title: "Visual SourceSafe 6.0 Automation"
 date: 2004-07-03 17:43:00 -0500
 comments: true

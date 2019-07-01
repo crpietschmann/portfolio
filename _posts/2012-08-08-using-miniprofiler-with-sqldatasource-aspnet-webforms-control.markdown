@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 03d5d230-54bc-4c55-af70-22d84ac83bdf
+blogengineid: 03d5d230-54bc-4c55-af70-22d84ac83bdf
 title: "Using MiniProfiler with SqlDataSource ASP.NET WebForms Control"
 date: 2012-08-08 20:27:21 -0500
 comments: true

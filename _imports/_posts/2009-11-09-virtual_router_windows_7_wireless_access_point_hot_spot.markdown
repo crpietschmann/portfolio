@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 49387950-9b3d-4ac1-8a5a-2d78ce373225
+blogengineid: 49387950-9b3d-4ac1-8a5a-2d78ce373225
 title: "Virtual Router Project – Turn any Windows 7 PC into a Wireless Access Point / Hot Spot"
 date: 2009-11-09 16:33:00 -0600
 comments: true

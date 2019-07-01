@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 2f8c9152-fd96-4e9b-b5b7-a5520b0a581e
+blogengineid: 2f8c9152-fd96-4e9b-b5b7-a5520b0a581e
 title: "Not All Software Developers Need To Be Graphic Designers"
 date: 2007-11-06 18:40:00 -0600
 comments: true

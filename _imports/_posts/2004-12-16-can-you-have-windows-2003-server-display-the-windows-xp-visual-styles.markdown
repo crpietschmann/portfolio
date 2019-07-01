@@ -1,6 +1,6 @@
 ---
 layout: post
-id: f270af9d-5126-414a-9d81-cc077b82ad90
+blogengineid: f270af9d-5126-414a-9d81-cc077b82ad90
 title: "Can you have Windows 2003 Server display the Windows XP Visual Styles?"
 date: 2004-12-16 11:15:00 -0600
 comments: true

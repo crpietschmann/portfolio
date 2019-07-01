@@ -1,6 +1,6 @@
 ---
 layout: post
-id: fb4b7d21-d763-4984-a810-3cf6004c64d1
+blogengineid: fb4b7d21-d763-4984-a810-3cf6004c64d1
 title: "MSDN .NET Show on IIS 7.0 with Scott Guthrie and Bill Staples"
 date: 2006-05-22 21:01:00 -0500
 comments: true

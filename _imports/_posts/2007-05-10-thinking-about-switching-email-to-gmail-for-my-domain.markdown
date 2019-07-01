@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 7ea2d4e6-3dcc-425f-9269-c7c4b1817a7a
+blogengineid: 7ea2d4e6-3dcc-425f-9269-c7c4b1817a7a
 title: "Thinking about switching email to GMail for My Domain?"
 date: 2007-05-10 14:30:00 -0500
 comments: true

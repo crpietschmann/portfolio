@@ -1,6 +1,6 @@
 ---
 layout: post
-id: dc6880a7-86a7-4fd5-9487-0c987b9a8d68
+blogengineid: dc6880a7-86a7-4fd5-9487-0c987b9a8d68
 title: "Create your very own Supercomputer with MPICH"
 date: 2004-08-12 18:14:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 7b110c3f-e26c-446e-967f-084357c59f31
+blogengineid: 7b110c3f-e26c-446e-967f-084357c59f31
 title: "Bing Maps Shapes (VEShape) to WKT (Well-Known-Text) and Back using JavaScript"
 date: 2009-04-04 12:38:00 -0500
 comments: true

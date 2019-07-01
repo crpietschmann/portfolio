@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6e6cedba-11e1-4a39-86a5-c7c41e822f11
+blogengineid: 6e6cedba-11e1-4a39-86a5-c7c41e822f11
 title: "I recieved my MSDN subscription today!!"
 date: 2006-05-09 19:17:00 -0500
 comments: true

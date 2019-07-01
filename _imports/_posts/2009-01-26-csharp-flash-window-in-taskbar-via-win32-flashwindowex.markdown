@@ -1,6 +1,6 @@
 ---
 layout: post
-id: bbbd744b-f793-45ce-9036-a6518b5f7db8
+blogengineid: bbbd744b-f793-45ce-9036-a6518b5f7db8
 title: "C#: Flash Window in Taskbar via Win32 FlashWindowEx"
 date: 2009-01-26 23:19:00 -0600
 comments: true

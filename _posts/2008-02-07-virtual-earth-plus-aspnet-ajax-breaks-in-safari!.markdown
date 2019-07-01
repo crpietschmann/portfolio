@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 600a0bbc-5e22-4bd2-bef2-542d70e682b2
+blogengineid: 600a0bbc-5e22-4bd2-bef2-542d70e682b2
 title: "Virtual Earth Plus ASP.NET AJAX Breaks In Safari!"
 date: 2008-02-07 00:51:00 -0600
 comments: true

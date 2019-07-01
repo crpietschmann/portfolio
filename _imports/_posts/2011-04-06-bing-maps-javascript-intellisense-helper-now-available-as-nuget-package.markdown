@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 2f0ecc1e-282d-4f95-a9f6-f7f2699e88a8
+blogengineid: 2f0ecc1e-282d-4f95-a9f6-f7f2699e88a8
 title: "Bing Maps JavaScript Intellisense Helper Now Available as Nuget Package"
 date: 2011-04-06 22:39:44 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: e06592b2-190b-4ac4-b992-c68081e89afd
+blogengineid: e06592b2-190b-4ac4-b992-c68081e89afd
 title: "Silverlight: Embed IronRuby/DLR Scripting within XAML using IValueConverter and Custom UserControl"
 date: 2010-10-02 14:40:00 -0500
 comments: true

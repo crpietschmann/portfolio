@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 1ec0b421-3431-4d53-af18-809c4fbd853a
+blogengineid: 1ec0b421-3431-4d53-af18-809c4fbd853a
 title: "Windows Vista Beta 2: installed on my primary machine"
 date: 2006-07-02 12:31:00 -0500
 comments: true

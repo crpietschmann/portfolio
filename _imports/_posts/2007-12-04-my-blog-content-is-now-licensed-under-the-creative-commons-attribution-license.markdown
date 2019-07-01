@@ -1,6 +1,6 @@
 ---
 layout: post
-id: d76fcb3e-9aa9-4931-ba8c-fcb7760d4f03
+blogengineid: d76fcb3e-9aa9-4931-ba8c-fcb7760d4f03
 title: "My Blog content is now licensed under the Creative Commons Attribution License..."
 date: 2007-12-04 12:09:00 -0600
 comments: true

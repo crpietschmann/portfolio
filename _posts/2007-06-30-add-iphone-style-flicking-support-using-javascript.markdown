@@ -1,6 +1,6 @@
 ---
 layout: post
-id: fcfce3b4-6ea5-4ba3-8b32-a682cfe5195b
+blogengineid: fcfce3b4-6ea5-4ba3-8b32-a682cfe5195b
 title: "Add iPhone style flicking support using JavaScript"
 date: 2007-06-30 14:12:00 -0500
 comments: true

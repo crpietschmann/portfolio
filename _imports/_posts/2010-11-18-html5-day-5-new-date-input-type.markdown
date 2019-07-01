@@ -1,6 +1,6 @@
 ---
 layout: post
-id: ae065d67-d849-419d-9091-2df37e1afee5
+blogengineid: ae065d67-d849-419d-9091-2df37e1afee5
 title: "HTML5 Day 5: New Date Input Type <input type=date />"
 date: 2010-11-18 13:35:00 -0600
 comments: true

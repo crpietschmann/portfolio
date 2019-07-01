@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 11c439a9-7027-457d-8b79-8a7daf1b80d8
+blogengineid: 11c439a9-7027-457d-8b79-8a7daf1b80d8
 title: "Learn ASP.NET Provider Model By Example via BlogEngine.NET"
 date: 2007-05-16 22:08:00 -0500
 comments: true

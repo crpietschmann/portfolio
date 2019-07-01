@@ -1,6 +1,6 @@
 ---
 layout: post
-id: e7f7d727-8416-49e7-b5df-63ce59205969
+blogengineid: e7f7d727-8416-49e7-b5df-63ce59205969
 title: "‘SQL Query’ Micro Design Pattern"
 date: 2013-03-24 07:52:26 -0500
 comments: true

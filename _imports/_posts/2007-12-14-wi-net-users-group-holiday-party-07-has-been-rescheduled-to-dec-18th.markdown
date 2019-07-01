@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 724f7ae0-590d-4a53-bb83-26e8bfb1c360
+blogengineid: 724f7ae0-590d-4a53-bb83-26e8bfb1c360
 title: "WI .NET Users Group Holiday Party '07 has been rescheduled to Dec. 18th"
 date: 2007-12-14 19:30:00 -0600
 comments: true

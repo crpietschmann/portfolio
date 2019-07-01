@@ -1,6 +1,6 @@
 ---
 layout: post
-id: a5a320a2-1439-4853-bc86-8a2388f81150
+blogengineid: a5a320a2-1439-4853-bc86-8a2388f81150
 title: "Polymorphic Podcast: Awesome .NET Podcast!"
 date: 2006-09-14 11:38:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: a74bb15d-fc92-4f33-9d43-c112b33857d9
+blogengineid: a74bb15d-fc92-4f33-9d43-c112b33857d9
 title: "HTML5 Day 3: Detecting HTML5 Support via JavaScript"
 date: 2010-11-16 09:19:00 -0600
 comments: true

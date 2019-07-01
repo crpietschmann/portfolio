@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6a5fae60-9887-4805-a320-ecb55ef15cf4
+blogengineid: 6a5fae60-9887-4805-a320-ecb55ef15cf4
 title: "I have alot of .NET books..."
 date: 2005-06-18 18:29:00 -0500
 comments: true

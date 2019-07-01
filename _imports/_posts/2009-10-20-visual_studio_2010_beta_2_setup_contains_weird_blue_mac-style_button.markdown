@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 9dd08a92-e8c0-45c9-97a7-44d2e652c5dd
+blogengineid: 9dd08a92-e8c0-45c9-97a7-44d2e652c5dd
 title: "Visual Studio 2010 Beta 2 Setup Contains a Weird Blue Mac-Style Button!"
 date: 2009-10-20 06:39:00 -0500
 comments: true

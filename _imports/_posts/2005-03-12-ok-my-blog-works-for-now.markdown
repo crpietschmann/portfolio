@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 30fd81ee-edbd-4892-badc-817c367047b2
+blogengineid: 30fd81ee-edbd-4892-badc-817c367047b2
 title: "Ok my blog works for now..."
 date: 2005-03-12 19:23:00 -0600
 comments: true

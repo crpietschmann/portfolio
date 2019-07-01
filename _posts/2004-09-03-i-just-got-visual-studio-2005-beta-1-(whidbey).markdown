@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 5ead420a-4138-48bd-bffe-60d1ac9ee50b
+blogengineid: 5ead420a-4138-48bd-bffe-60d1ac9ee50b
 title: "I just got Visual Studio 2005 Beta 1 (Whidbey)"
 date: 2004-09-03 13:32:00 -0500
 comments: true

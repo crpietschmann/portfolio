@@ -1,6 +1,6 @@
 ---
 layout: post
-id: e78fc882-c172-46bd-ac8c-3a8d5ea56b14
+blogengineid: e78fc882-c172-46bd-ac8c-3a8d5ea56b14
 title: "ASP.NET: Create AJAX Server Controls using the ScriptControl base class"
 date: 2008-05-15 00:52:00 -0500
 comments: true

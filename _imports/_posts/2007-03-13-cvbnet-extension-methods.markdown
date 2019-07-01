@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 58f0ea08-ecce-4a63-9b4b-258d9fa9e030
+blogengineid: 58f0ea08-ecce-4a63-9b4b-258d9fa9e030
 title: "C#/VB.NET: Extension Methods"
 date: 2007-03-13 20:42:00 -0500
 comments: true

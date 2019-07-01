@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 5f310781-87de-4031-ab28-fea126e7eb92
+blogengineid: 5f310781-87de-4031-ab28-fea126e7eb92
 title: "I met Scott Hanselman the night before Deeper in .NET 2006"
 date: 2006-04-23 18:47:00 -0500
 comments: true

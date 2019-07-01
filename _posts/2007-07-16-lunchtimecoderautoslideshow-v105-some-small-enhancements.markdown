@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 19c4fbfa-6ec6-47b8-be44-e31ed01e01ec
+blogengineid: 19c4fbfa-6ec6-47b8-be44-e31ed01e01ec
 title: "LunchTimeCoder.AutoSlideShow v1.05 - some small enhancements"
 date: 2007-07-16 15:12:00 -0500
 comments: true

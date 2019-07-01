@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 8fd4381d-25b8-4adb-bb57-77ebc58a69a9
+blogengineid: 8fd4381d-25b8-4adb-bb57-77ebc58a69a9
 title: "Bing Community Site Not SEO Optimized"
 date: 2010-08-04 09:54:00 -0500
 comments: true

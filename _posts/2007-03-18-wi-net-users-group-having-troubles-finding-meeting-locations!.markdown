@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 697756fb-6077-408e-afa2-3c8337cf508c
+blogengineid: 697756fb-6077-408e-afa2-3c8337cf508c
 title: "WI .NET Users Group - Having troubles finding meeting locations!"
 date: 2007-03-18 00:07:00 -0500
 comments: true

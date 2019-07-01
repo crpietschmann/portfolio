@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 406617f5-ca53-4c55-9942-6bc2da0272d1
+blogengineid: 406617f5-ca53-4c55-9942-6bc2da0272d1
 title: "New Touchless SDK brings Multi-Touch using a WebCam"
 date: 2008-10-08 13:25:00 -0500
 comments: true

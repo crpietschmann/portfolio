@@ -1,6 +1,6 @@
 ---
 layout: post
-id: e0e544cb-daea-48a4-978b-dea26c6f14c2
+blogengineid: e0e544cb-daea-48a4-978b-dea26c6f14c2
 title: "Virtual Earth Resources"
 date: 2008-04-25 14:52:00 -0500
 comments: true

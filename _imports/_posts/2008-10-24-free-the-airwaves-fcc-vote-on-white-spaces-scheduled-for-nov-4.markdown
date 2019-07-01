@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 55a51f25-5bf2-4349-8bf3-9997b51dc881
+blogengineid: 55a51f25-5bf2-4349-8bf3-9997b51dc881
 title: "Free the Airwaves! FCC vote on "white spaces" scheduled for Nov. 4!"
 date: 2008-10-24 14:12:00 -0500
 comments: true

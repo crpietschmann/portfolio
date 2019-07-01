@@ -1,6 +1,6 @@
 ---
 layout: post
-id: a7e18d8b-5554-48db-b679-51f9c0575c3d
+blogengineid: a7e18d8b-5554-48db-b679-51f9c0575c3d
 title: "JavaScript Tips: Parse QueryString to Dictionary"
 date: 2015-09-25 06:04:00 -0500
 comments: true

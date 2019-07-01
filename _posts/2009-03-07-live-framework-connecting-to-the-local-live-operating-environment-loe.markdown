@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 047fae73-c0f0-457c-a0ec-9d7454f6810e
+blogengineid: 047fae73-c0f0-457c-a0ec-9d7454f6810e
 title: "Live Framework: Connecting to the Local Live Operating Environment (LOE) for Offline Applications"
 date: 2009-03-07 20:28:00 -0600
 comments: true

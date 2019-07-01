@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 09bd09f5-2cd1-4c0b-a273-eb7c91c3acb3
+blogengineid: 09bd09f5-2cd1-4c0b-a273-eb7c91c3acb3
 title: "Virtual Earth: Get Center Lat/Long When In Birdseye or Oblique Map Style"
 date: 2008-06-05 19:11:00 -0500
 comments: true

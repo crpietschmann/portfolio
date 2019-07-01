@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 72b0abe6-58c6-458c-ae1d-70c9628463bb
+blogengineid: 72b0abe6-58c6-458c-ae1d-70c9628463bb
 title: "Microsoft BizSpark: My new startup is enrolled, but was denied twice before this blog post"
 date: 2010-08-14 08:23:00 -0500
 comments: true

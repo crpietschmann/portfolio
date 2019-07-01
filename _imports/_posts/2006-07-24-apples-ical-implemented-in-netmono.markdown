@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 649df41e-22c4-493c-98f6-866761c63846
+blogengineid: 649df41e-22c4-493c-98f6-866761c63846
 title: "Apple's iCal implemented in .NET/Mono"
 date: 2006-07-24 14:36:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 74cd5433-76cf-4f17-bee6-1d46f7225070
+blogengineid: 74cd5433-76cf-4f17-bee6-1d46f7225070
 title: "Unit Testing with SqlException in .NET: Only with help from Reflection"
 date: 2012-03-02 07:32:58 -0600
 comments: true

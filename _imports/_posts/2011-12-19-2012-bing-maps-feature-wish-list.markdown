@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 683215b1-c45a-467a-a458-b2a81ab48816
+blogengineid: 683215b1-c45a-467a-a458-b2a81ab48816
 title: "2012 Bing Maps Feature Wish List"
 date: 2011-12-19 14:42:13 -0600
 comments: true

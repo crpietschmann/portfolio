@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 4423f3d7-a4b0-4781-b403-4167ed20b60b
+blogengineid: 4423f3d7-a4b0-4781-b403-4167ed20b60b
 title: "Windows Vista is currently available on MSDN"
 date: 2006-11-17 08:01:00 -0600
 comments: true

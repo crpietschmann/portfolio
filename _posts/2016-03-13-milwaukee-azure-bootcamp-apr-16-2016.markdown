@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 3b40bd61-5063-4768-8046-f004b8a37267
+blogengineid: 3b40bd61-5063-4768-8046-f004b8a37267
 title: "Milwaukee Azure Bootcamp - Apr 16, 2016"
 date: 2016-03-13 12:18:00 -0500
 comments: true

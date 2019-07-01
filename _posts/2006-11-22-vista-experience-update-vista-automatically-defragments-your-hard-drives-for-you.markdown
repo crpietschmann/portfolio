@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 6b2e5336-c4cf-40a6-9dbd-276536836b31
+blogengineid: 6b2e5336-c4cf-40a6-9dbd-276536836b31
 title: "Vista Experience Update: Vista automatically defragments your hard drives for you"
 date: 2006-11-22 19:44:00 -0600
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: f823d977-be23-4989-a881-cdabdafc2910
+blogengineid: f823d977-be23-4989-a881-cdabdafc2910
 title: "Opening Client-Side Files using Silverlight"
 date: 2008-03-05 23:09:00 -0600
 comments: true

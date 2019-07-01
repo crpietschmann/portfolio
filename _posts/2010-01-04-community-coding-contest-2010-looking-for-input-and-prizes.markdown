@@ -1,6 +1,6 @@
 ---
 layout: post
-id: ee3a6383-39ea-4ad1-a86a-164dcb7b7bcc
+blogengineid: ee3a6383-39ea-4ad1-a86a-164dcb7b7bcc
 title: "Community Coding Contest 2010 - Looking for Input and Prizes"
 date: 2010-01-04 10:49:00 -0600
 comments: true

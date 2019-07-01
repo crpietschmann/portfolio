@@ -1,6 +1,6 @@
 ---
 layout: post
-id: bebe8a4a-70a1-4c5e-a499-d5757c4082c0
+blogengineid: bebe8a4a-70a1-4c5e-a499-d5757c4082c0
 title: "Is Visual Studio 2005 divine?"
 date: 2005-06-18 21:36:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 2c00d505-e1d3-483a-a157-090f0cf654e2
+blogengineid: 2c00d505-e1d3-483a-a157-090f0cf654e2
 title: "CanvasMap Prototype = HTML5 Canvas + Mapping"
 date: 2012-01-05 08:46:17 -0600
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 814636aa-7f7a-49ba-bdc9-6cbf2cd10f2d
+blogengineid: 814636aa-7f7a-49ba-bdc9-6cbf2cd10f2d
 title: "Error ASP 0178 on Windows 2003 Server (IIS6) by Server.CreateObject on DCOM registered Component"
 date: 2004-09-27 11:29:00 -0500
 comments: true

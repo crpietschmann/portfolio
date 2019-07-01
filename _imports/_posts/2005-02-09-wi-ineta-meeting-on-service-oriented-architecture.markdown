@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 82c5218b-c807-489a-86e5-d6f7b6741b03
+blogengineid: 82c5218b-c807-489a-86e5-d6f7b6741b03
 title: "WI-INETA Meeting on Service Oriented Architecture"
 date: 2005-02-09 11:43:00 -0600
 comments: true

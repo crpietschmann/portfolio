@@ -1,6 +1,6 @@
 ---
 layout: post
-id: adddb895-e44a-4354-b21a-eecbb5c294bf
+blogengineid: adddb895-e44a-4354-b21a-eecbb5c294bf
 title: "JavaScript Basics: String Contains Function"
 date: 2015-09-18 06:30:00 -0500
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 2d3c60b9-faab-403b-b814-690e0bce4897
+blogengineid: 2d3c60b9-faab-403b-b814-690e0bce4897
 title: "DotNetKicks: Social bookmarking site for .NET"
 date: 2006-07-20 23:26:00 -0500
 comments: true

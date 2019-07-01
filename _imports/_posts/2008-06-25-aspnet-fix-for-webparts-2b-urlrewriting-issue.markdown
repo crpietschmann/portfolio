@@ -1,6 +1,6 @@
 ---
 layout: post
-id: 0ab8de98-7bbc-4140-8172-2fddbbe990df
+blogengineid: 0ab8de98-7bbc-4140-8172-2fddbbe990df
 title: "ASP.NET: Fix for WebParts + UrlRewriting/UrlMapping Issue"
 date: 2008-06-25 23:16:00 -0500
 comments: true

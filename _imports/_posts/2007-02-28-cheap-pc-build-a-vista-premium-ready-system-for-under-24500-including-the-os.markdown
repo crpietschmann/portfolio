@@ -1,6 +1,6 @@
 ---
 layout: post
-id: a0e03135-de80-4cdb-8b9e-f53c846f5189
+blogengineid: a0e03135-de80-4cdb-8b9e-f53c846f5189
 title: "Cheap PC - Build a Vista Premium Ready system for under $500 including the OS"
 date: 2007-02-28 15:45:00 -0600
 comments: true
