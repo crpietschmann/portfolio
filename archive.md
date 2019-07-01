@@ -2,6 +2,8 @@
 layout: page
 title: Archive
 permalink: /archive/
+redirect_from:
+  - /post.aspx
 ---
 
 <div class="container">
