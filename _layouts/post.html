@@ -21,8 +21,17 @@ layout: default
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+  <div class="row">
+    <div class="col-3">
+        <script type="text/javascript"><!--
+          document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
+          // --></script>
+    </div>
+    <div class="col-9">
+        <article class="post-content">
+          {{ content }}
+        </article>
+    </div>
+  </div>
 
 </div>
