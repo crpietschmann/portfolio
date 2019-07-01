@@ -104,7 +104,7 @@ module Jekyll
             ## i'd like to insert a diclaimer that I have imported these posts.
             # note that you'll have to create the file source/_includes/imported_disclaimer.html
             # to render.  i just put a {% blockquote %} with some verbage in it.
-            content = "{% include imported_disclaimer.html %}\r\n" + content
+            # content = "{% include imported_disclaimer.html %}\r\n" + content
   
             ## i'd like to cut off old content from showing in the blog roll. since
             # it requires <!-- more --> to be inserted, we'll just do it at the

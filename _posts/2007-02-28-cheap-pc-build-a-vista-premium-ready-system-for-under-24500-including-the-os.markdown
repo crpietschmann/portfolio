@@ -9,7 +9,6 @@
   alias: ["/post/2007/02/28/Cheap-PC-Build-a-Vista-Premium-Ready-system-for-under-24500-including-the-OS", "/post/2007/02/28/cheap-pc-build-a-vista-premium-ready-system-for-under-24500-including-the-os"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 People keep talking about how Vista (w/ Aero enabled) will only run on high-end systems, and that everyone will have to buy a new computer in order to run Vista. Well, I have a laptop thats 3 years old (2.4Ghz Celeron, 512MB Ram) and it runs Vista ok without Aero glass enabled (because it doesn&#39;t have a capable video card). Based on that, pretty much any system that is 2 years old should run Vista (w/ Aero enabled) just fine as long as it has 1GB Ram and a video card that support DirectX 9.
 </p>

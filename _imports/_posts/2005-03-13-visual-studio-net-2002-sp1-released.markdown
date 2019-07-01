@@ -9,7 +9,6 @@
   alias: ["/post/2005/03/13/Visual-Studio-NET-2002-SP1-Released", "/post/2005/03/13/visual-studio-net-2002-sp1-released"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>On March 8th, The Visual Studio <a title=".NET" href="http://www.microsoft.com/net/" target="_blank">.NET</a> 2002 Service Pack 1 was released.</P>
 <P>
 <H3>List of fixes in the Service Pack:</H3>

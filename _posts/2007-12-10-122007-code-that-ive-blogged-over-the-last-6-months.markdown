@@ -9,7 +9,6 @@
   alias: ["/post/2007/12/10/122007-Code-that-Ive-Blogged-over-the-last-6-months", "/post/2007/12/10/122007-code-that-ive-blogged-over-the-last-6-months"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>Here's a list of links to all the different code that I've blogged over the last 6 months.</P>
 <H3>.NET Framework</H3>
 <P><A href="/Blog/Post.aspx?PostID=1426">.NET: How to Alias Namespaces and Data Types</A></P>

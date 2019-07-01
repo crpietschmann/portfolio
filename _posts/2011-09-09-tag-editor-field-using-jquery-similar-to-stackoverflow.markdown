@@ -9,7 +9,6 @@
   alias: ["/post/2011/09/09/Tag-Editor-Field-using-jQuery-similar-to-StackOverflow", "/post/2011/09/09/tag-editor-field-using-jquery-similar-to-stackoverflow"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>The tag editor featured on the <a href="http://stackoverflow.com">StackOverflow</a> website (and all the StackExchange websites) is a real slick tag editor that makes it much nicer to enter tags than just a plain textbox. I searched a little and couldn&rsquo;t find anything that works just like theirs, so I decided to build one.</p>
 <p><a href="http://pietschsoft.com/image.axd?picture=jquery.selectit-0.1.png"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="jquery.selectit-0.1" src="http://pietschsoft.com/image.axd?picture=jquery.selectit-0.1_thumb.png" alt="jquery.selectit-0.1" width="435" height="213" border="0" /></a></p>
 <div id="scid:fb3a1972-4489-4e52-abe7-25a00bb07fdf:2cd303ff-9fa7-4cb2-9b87-b1a4b5159285" class="wlWriterEditableSmartContent" style="margin: 0px; display: inline; float: none; padding: 0px;">

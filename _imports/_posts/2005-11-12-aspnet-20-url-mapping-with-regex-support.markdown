@@ -9,7 +9,6 @@
   alias: ["/post/2005/11/12/ASPNET-20-URL-Mapping-with-RegEx-Support", "/post/2005/11/12/aspnet-20-url-mapping-with-regex-support"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 <span style="font-size: 8.5pt; font-family: Verdana">The one big limitation of the URL Mapping functionality built in to <a href="http://asp.net/" target="_blank" title="ASP.NET"><font color="#336699">ASP.NET</font></a> 2.0 is that it doesn&#39;t support regular expressions. I ported my v1.1 URL Mapping implementation over to v2.0 and added support for regular expressions. It really wasn&#39;t too difficult; I only had to modify two lines of code to port it over to ASP.NET 2.0. Then I had to modify 4 lines of code to add RegEx support. My implementation works just like the ASP.NET 2.0 URL Mapping functionality with the addition of RegEx.</span>
 </p>

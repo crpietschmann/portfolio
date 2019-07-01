@@ -9,7 +9,6 @@
   alias: ["/post/2007/07/03/Announcing-the-LunchTimerCodercom-Initiative", "/post/2007/07/03/announcing-the-lunchtimercodercom-initiative"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 How do you spend your lunch time at work? Since I need to take a break away from work, I usually just surf, read up on the latest news (<a href="http://digg.com">Digg</a>, <a href="http://dotnetkicks.com">DotNetKicks</a>), and check my personal email. So, I&#39;ve come up with a way to make my lunch time more productive. And I&#39;m calling it... <strong><a href="/download/lunchtimecoder">Lunch Time Coder</a>.</strong>
 </p>

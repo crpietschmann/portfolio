@@ -9,7 +9,6 @@
   alias: ["/post/2008/09/30/JavaScript-Prototypal-Inheritence-Explained-in-Simple-Terms", "/post/2008/09/30/javascript-prototypal-inheritence-explained-in-simple-terms"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Recently, I started working on a new open source project (you&#39;ll have to wait until the first release to find out what it is), and the goal of it is to play nicely with any JavaScript Library you want to use. That means it needs to work nicely with jQuery, prototype, ASP.NET AJAX and the such. This means that I need to grow all my own code for <a href="/post.aspx?id=52c4845b-11a5-4522-8ff1-22a7dccc52c9">registering namespaces</a> and using inheritence.
 </p>

@@ -9,7 +9,6 @@
   alias: ["/post/2008/07/16/dotNetExt-NET-Extension-Method-Library-v01-Beta-Released", "/post/2008/07/16/dotnetext-net-extension-method-library-v01-beta-released"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>This is the first release of a small, new project I created. This is just the first release of the project, and I'll keep adding more functionality to it if there is enough interest by me or others in the project. So, please post any comments you have in the <a href="http://www.codeplex.com/dotNetExt/Thread/List.aspx">project discussion area</a>.</p>
 <h3><strong>dotNetExt - .NET Extension Method Library</strong></h3>
 <p><span>dotNetExt is a small Extension Method Library for .NET 3.5 that extends the BCL Types with helper methods that make simple tasks simpler. So far there are extensions for the Object, Array and String BCL Types. The library is flexible so you can Import All Extension Methods or just the Extension Methods for the BCL Type you want.</span></p>

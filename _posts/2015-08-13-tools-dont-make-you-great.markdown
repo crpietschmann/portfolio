@@ -9,7 +9,6 @@
   alias: ["/post/2015/08/13/Tools-Dont-Make-You-Great", "/post/2015/08/13/tools-dont-make-you-great"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Every career and industry has it's own set of tools that are commonly used. Software Development is no different. These tools offer varying degrees of functionality that help people do their jobs. To a certain extent these tools do help people do better work, more work, faster work, etc. However, there is a limit to this affect.</p>
 <p>As a software developer targeting web and Microsoft platforms, I use Visual Studio every day. There are many features that have been added to this tool over the years that make it easier to perform certain repetitive tasks. This is a great tool and I'm extremely glad I use it. Visual Studio pretty much sets a base line for Microsoft developers, as the primary tools used.</p>
 <p>In addition to Visual Studio, most developers use various plugins to Visual Studio that offer various additional features to those built in to Visual Studio. While some of these plugins offer really great feature sets, they really are just a small factor in how good or great a developer is.</p>

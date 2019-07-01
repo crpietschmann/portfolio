@@ -9,7 +9,6 @@
   alias: ["/post/2012/04/01/Awarded-2012-Microsoft-MVP-Bing-Maps", "/post/2012/04/01/awarded-2012-microsoft-mvp-bing-maps"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><img style="float: right;" src="http://pietschsoft.com/image.axd?picture=MVP_FullColor_ForScreen.png" alt="" width="157" /></p>
 <p>Whether I won MVP or not I would still do what I do. My passion for technology and the pleasure of helping others it what drives me. This marks the 5th time I've been awarded Microsoft MVP, and am honored for this recognition.</p>
 <p>Thank you Microsoft!</p>

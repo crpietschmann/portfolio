@@ -9,7 +9,6 @@
   alias: ["/post/2008/06/17/WebMapsVE-20-Released-ASPNET-Virtual-Earth-Mapping-Server-Control", "/post/2008/06/17/webmapsve-20-released-aspnet-virtual-earth-mapping-server-control"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 <img style="width: 280px; height: 214px" src="/image.axd?picture=WebMapsVE20_SampleWebsite_001.png" alt="" hspace="4" width="280" height="214" align="right" />Today, I released <a href="http://simplovation.com/page/webmapsve.aspx">Web.Maps.VE v2.0</a>!! I had originally planned to release it on June 30th, but was able to reach that goal about 2 weeks early, so here we are. Web.Maps.VE v2.0 builds on top of the previous v1.0 release, and adds many new features. 
 </p>

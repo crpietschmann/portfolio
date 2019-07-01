@@ -9,7 +9,6 @@
   alias: ["/post/2010/11/14/HTML5-Day-1-New-tags-work-in-older-browsers-Awesome", "/post/2010/11/14/html5-day-1-new-tags-work-in-older-browsers-awesome"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>I recently decided to really dig into HTML5 to see what it&rsquo;s all about. After all, the web (err... <a title="Ted Stevens: Series of Tubes" href="http://www.youtube.com/watch?v=f99PcP0aFNE">tubes</a>) is full of talk about how the new HTML5 Canvas element will bring an end to both Silverlight and Flash. In reality HTML5 is much more than just the Canvas element. In fact, HTML5 brings with it a large list of enhancements, including 28 new elements and form controls that do client-side data validation for you!</p>
 <h3>Specification Doc or Book?</h3>
 <p>Instead of reading the enormous HTML5 Specifications, I decided to purchase a book that would sum things up much more nicely. Below is the book:</p>

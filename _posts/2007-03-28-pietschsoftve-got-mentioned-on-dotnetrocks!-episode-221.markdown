@@ -9,7 +9,6 @@
   alias: ["/post/2007/03/28/PietschSoftVE-got-mentioned-on-DotNetRocks!-episode-221", "/post/2007/03/28/pietschsoftve-got-mentioned-on-dotnetrocks!-episode-221"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 A couple weeks ago, I was listening to <a href="http://www.dotnetrocks.com/default.aspx?showNum=218">DotNetRocks! episode #218 with Dare Obasanjo </a>when they were taling about Windows Live Services. They happened to touch on MS Virtual Earth, so I decided to email them and let them know about my <a href="http://simplovation.com/Page/WebMapsVE.aspx">PietschSoft.VE</a> control over at CodePlex.
 </p>

@@ -9,7 +9,6 @@
   alias: ["/post/2006/07/03/VBNET-RegEx-Syntax-Highlighting-RichTextBox", "/post/2006/07/03/vbnet-regex-syntax-highlighting-richtextbox"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><img class="photosmall" src="/download/blog/1311/regexsyntaxhighlighter.png" border="0" alt="RegEx Syntax Highlighter" hspace="0" align="left" />Here&nbsp;is a version of my code for syntax highlighting in a RichTextBox that incorporates regular expressions.</p>
 <p>&nbsp;</p>
 <p><a href="/download/blog/1311/SyntaxRTB.vb.txt">Download RegEx Syntax Highlighting RichTextBox Source Code</a></p>

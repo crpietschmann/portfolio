@@ -9,5 +9,4 @@
   alias: ["/post/2004/09/22/Happy-Birthday-to-Me-yesterday!!", "/post/2004/09/22/happy-birthday-to-me-yesterday!!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 Happy Birthday to Me yesterday!!

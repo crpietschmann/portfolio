@@ -9,7 +9,6 @@
   alias: ["/post/2009/08/22/Microsoft-Killed-the-Virtual-Earth-ASPNET-Control", "/post/2009/08/22/microsoft-killed-the-virtual-earth-aspnet-control"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Yesterday, Chris Pendleton officially announced that the <a href="http://www.bing.com/community/blogs/maps/archive/2009/08/21/the-future-of-the-virtual-earth-asp-net-control.aspx" target="_blank">Microsoft Virtual Earth ASP.NET Control is now Dead</a>. Frankly, I&rsquo;ve considered it &ldquo;dead&rdquo; for a long time now since it didn&rsquo;t get updated much, didn&rsquo;t have a completely full feature support, has a few bugs AND you couldn&rsquo;t use it within your applications because it was just a Preview (CTP) anyway.</p>
 <p>There are however a few good things to point out in the light of <a href="http://www.bing.com/community/blogs/maps/archive/2009/08/21/the-future-of-the-virtual-earth-asp-net-control.aspx" target="_blank">Microsoft killing its Virtual Earth ASP.NET Control</a>:</p>
 <ul>

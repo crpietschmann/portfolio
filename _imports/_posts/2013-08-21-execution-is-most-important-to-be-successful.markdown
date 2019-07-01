@@ -9,7 +9,6 @@
   alias: ["/post/2013/08/21/Execution-is-Most-Important-to-be-Successful", "/post/2013/08/21/execution-is-most-important-to-be-successful"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>A quote you likely hear a lot is "It doesn't matter what you know; It's WHO you know." Well, when you compare the "what" and "who" it is generally true that the "who" is more important. After all, if you don't know who to sell to then it doesn't matter what you build or do. However, something that is implicit in that quote is that you know how to execute.</p>
 <p>Execution is probably the most important thing to succeed in both life and business. No matter how much you know, if you can't execute an idea to completion you will never succeed.</p>
 <p>If you know the material but can't execute to complete that mid-term paper, you will fail.</p>

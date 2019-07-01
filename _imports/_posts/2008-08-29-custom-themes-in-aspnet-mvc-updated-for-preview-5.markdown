@@ -9,7 +9,6 @@
   alias: ["/post/2008/08/29/Custom-Themes-in-ASPNET-MVC-Updated-for-Preview-5", "/post/2008/08/29/custom-themes-in-aspnet-mvc-updated-for-preview-5"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><img src="/image.axd?picture=ASPNETMVC_Preview4_CustomThemeFolderLayout.png" alt="" align="right" /></p>
 <p><strong>Update 2009/03/26:</strong> There is an updated version of this code (with improvements) that targets the ASP.NET MVC 1.0 RTW located here: <a href="/post/2009/03/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx">http://pietschsoft.com/post/2009/03/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx</a>&nbsp;</p>
 <p>About two weeks ago I posted on how to <a href="/post.aspx?id=ee0e253d-c746-4099-9795-81aaf14ad608">Implement Custom Theme support in ASP.NET MVC</a>. There were some breaking changes made when the Preview 5 release was released yesterday.</p>

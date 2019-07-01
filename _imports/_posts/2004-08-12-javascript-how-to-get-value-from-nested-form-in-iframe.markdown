@@ -9,7 +9,6 @@
   alias: ["/post/2004/08/12/JavaScript-How-to-get-value-from-nested-form-in-iframe", "/post/2004/08/12/javascript-how-to-get-value-from-nested-form-in-iframe"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>Here is an example of how to get a value from a nested form in an iframe. It works in IE6, but not Netscape 7.1.</P>
 <P><STRONG>PageOne.htm<BR></STRONG>&lt;html&gt;<BR>&lt;head&gt;<BR>&lt;script language='JavaScript'&gt;</P>
 <P>&nbsp;function Search() {<BR>&nbsp;&nbsp;alert(document.frames("PageTwo").document.forms("Members").elements("Search").value);<BR>&nbsp;}</P>

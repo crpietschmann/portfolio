@@ -9,7 +9,6 @@
   alias: ["/post/2011/08/24/Mixing-some-Dynamic-ness-with-IronJS-in-NET-4", "/post/2011/08/24/mixing-some-dynamic-ness-with-ironjs-in-net-4"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>I recently started messing around with IronJS again, and I must say that this project is pure awesomeness! One of the first things I noticed is that when you call the “Execute” methods to run some JavaScript code it returns an “object.” Now, while this works just fine, I would prefer if it returned a “dynamic” object while running against .NET 4.0. There may be some reason that <a href="http://twitter.com/#!/fjholmstrom">Fredrik Holmstrom</a> (the author) decided to return an ‘object’, so I don’t mean to sound negative, but you have to admit that dynamics are really cool, especially when working with a dynamic language like JavaScript.</p>  <h3>Basics of using IronJS</h3>  <p>There are articles that cover the usage of IronJS, but here’s a very brief summary:</p>  <pre class="csharpcode"><span class="rem">// Instantiate the IronJS Engine</span>
 var context = <span class="kwrd">new</span> IronJS.Hosting.CSharp.Context();
 

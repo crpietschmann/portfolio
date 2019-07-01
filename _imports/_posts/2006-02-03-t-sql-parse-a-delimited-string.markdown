@@ -9,7 +9,6 @@
   alias: ["/post/2006/02/03/T-SQL-Parse-a-delimited-string", "/post/2006/02/03/t-sql-parse-a-delimited-string"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Parsing a delimeted string in T-SQL is fairly simple to do, but it does take a nice little chunk of code. I most commonly use this chunk of code when I need to pass an array from an application into a SQL Stored Procedure. The best way to implement this code into an application would be to create a SQL Function that you pass in a delimted string and it returns a table of values. This way you don't have to duplicate the code everytime you want to use it.</p>
 <p>The following example parses the delimeted string and places each value into a variable of type Table. Once the values are placed into the table you can do anything you need to save/process these values.</p>
 <pre class="csharpcode">--<span class="kwrd">declare</span> the list <span class="kwrd">of</span> Cities

@@ -9,7 +9,6 @@
   alias: ["/post/2004/07/11/Cool-Utility-to-get-CPUFan-Temperatures-of-you-DELL-LaptopNotebook", "/post/2004/07/11/cool-utility-to-get-cpufan-temperatures-of-you-dell-laptopnotebook"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Dell Inspiron 8x00 fan control utility by Christian Diefer
 </p>

@@ -9,7 +9,6 @@
   alias: ["/post/2008/03/27/dotNET-Community-Learn-The-Current-State-Of-The-Platform-Before-Deciding-On-Its-Future", "/post/2008/03/27/dotnet-community-learn-the-current-state-of-the-platform-before-deciding-on-its-future"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 There has been some discussion lately in the blogosphere and on DotNetKicks around the subject of &quot;What is wrong with the ASP.NET Community?&quot;. There has been alot of discussions goin on, and it has really gotten me thinking. 
 </p>

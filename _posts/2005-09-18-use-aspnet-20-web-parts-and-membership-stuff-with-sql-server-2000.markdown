@@ -9,7 +9,6 @@
   alias: ["/post/2005/09/18/Use-ASPNET-20-Web-Parts-and-Membership-stuff-with-SQL-Server-2000", "/post/2005/09/18/use-aspnet-20-web-parts-and-membership-stuff-with-sql-server-2000"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>By default <a title="ASP.NET" href="http://asp.net" target="_blank">ASP.NET</a> 2.0 Web Parts&nbsp;uses SQL Express. To use&nbsp;this stuff&nbsp;with SQL Server 2000 you must configure the aspnetdb database on your SQL Server 2000 database server. Fortunately for us, <a title="Microsoft" href="http://Microsoft.com" target="_blank">Microsoft</a> has created a utility to automate the process.</p>
 <p>Follow these steps to setup the aspnetdb database:</p>
 <p>1) run the utility - C:\WINDOWS\Microsoft.NET\Framework\v2.0.50215\aspnet_regsql.exe <span style="font-size: x-small;"><em>(this was written with ASP.NET 2.0 Beta 2 (v2.0.50215)&nbsp;as a reference, so with the final release of <a title=".NET" href="http://www.microsoft.com/net/" target="_blank">.NET</a> 2.0 the version number will be different.)</em></span></p>

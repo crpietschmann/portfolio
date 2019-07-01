@@ -9,7 +9,6 @@
   alias: ["/post/2007/09/21/ASPNET-Forums-is-gone-and-Community-Servers-not-free", "/post/2007/09/21/aspnet-forums-is-gone-and-community-servers-not-free"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>What happened to the download links for ASP.NET Forums on the <A href="http://www.asp.net/">www.asp.net</A> website? As soon as Community Server 1.0 came out the links disapearred. I didn't really think of it at the time, but now that I want to set up a Forum I would like the old ASP.NET Forums.</P>
 <P><STRONG>Why not Community Server?</STRONG></P>
 <P>Well, the reason I don't want to use <A href="http://communityserver.org/">Community Server&nbsp;</A>is because the&nbsp;licenses keep getting more restrictive with the release of each new version. I just looked at the CommunityServer.org website and it doesn't even look like there is&nbsp;a free version anymore. The cheapest version is the <A href="http://get.communityserver.org/">Personal Edition and it costs $99</A>!</P>

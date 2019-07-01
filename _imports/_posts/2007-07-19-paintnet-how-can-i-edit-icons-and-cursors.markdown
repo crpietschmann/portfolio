@@ -9,6 +9,5 @@
   alias: ["/post/2007/07/19/PaintNET-How-can-I-edit-Icons-and-Cursors", "/post/2007/07/19/paintnet-how-can-i-edit-icons-and-cursors"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>Well, "out of the box" Paint.NET doesn't support editing Icon (.ico) and Cursor (.cur) files,&nbsp;however there is an excellent&nbsp;plugin over at <A href="http://www.evanolds.com/pdnicocur.html">evanolds.com </A>that add extends Paint.NET to have this functionality. </P>
 <P><A href="http://www.evanolds.com/pdnicocur.html">Icon/Cursor Paint.NET Plug-in</A></P>

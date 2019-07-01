@@ -9,7 +9,6 @@
   alias: ["/post/2007/11/03/Subsite-Rewriting-HttpModule-for-ASPNET", "/post/2007/11/03/subsite-rewriting-httpmodule-for-aspnet"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Here's some simple code for easily adding Subsite functionality to an ASP.NET website using UrlRewriting/UrlMapping.</p>
 <p>Urls are rewritten in the following fashion:</p>
 <p>~/jdoe/default.aspx&nbsp; =&gt; ~/default.aspx?site=jdoe<br /> ~/jdoe/subfolder/default.aspx =&gt; ~/subfolder/default.aspx?site=jdoe</p>

@@ -9,7 +9,6 @@
   alias: ["/post/2016/02/14/Find-Your-Passion", "/post/2016/02/14/find-your-passion"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Much of success in life hinges on finding something you're passionate about. Sure, certain interests that turn into passions can be difficult to build a career around, but there's certainly ways to do it. No matter what your passion, you need to find it!</p>
 <p>Once you find your passion, you need to figure out how you can exploit that to build a career. What ever your passion may be, you will be able to find something related to it that you can build a career around.</p>
 <p>Building a successful career around a passion will be hard. it will take time. It will require you to never give up! It also may require you to make certain sacrifices, as nothing worthwhile pursuing comes without risk.</p>

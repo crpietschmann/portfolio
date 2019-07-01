@@ -9,7 +9,6 @@
   alias: ["/post/2015/04/10/Apple-Watch-NOT-Insanely-Great-Not-Yet", "/post/2015/04/10/apple-watch-not-insanely-great-not-yet"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><img style="float: right;" src="/image.axd?picture=%2f2015%2f04%2fAppleWatchv1.PNG" alt="" /></p>
 <p>Today is the day that Apple has opened preorders for the Apple Watch. There's a lot of conversation about&nbsp;this new product, but we must all remember that it's the very first version of this brand new product. It's not just the first version, but the first version of a brand new product category for the company. This all adds up to a v1 product that has a lot stacked up against it for being all that great.</p>
 <p>Version 1 products are best when they are released as an MVP (Minimum Viable Product). Basically, figure out what the minimum features/functionality the product needs and release. This not only helps pay for future development and recuperate R&amp;D investment, but also keeps you from releasing a bloated product with features no one wants.</p>

@@ -9,7 +9,6 @@
   alias: ["/post/2007/06/22/EmailWebsite-Outage-06222007", "/post/2007/06/22/emailwebsite-outage-06222007"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P><STRONG>Good News:</STRONG> The website, Pietschsoft.com, seems to be back up.</P>
 <P><STRONG>Bad News:</STRONG> Email still seems to be down.</P>
 <P><STRONG>Here's the deal: </STRONG>My hosting provider, <A href="http://discountasp.net">http://discountasp.net</A>, got hit with a DDOS attack and consiquently my email and website were virtually completely down yesterday and today. Yesterday it was spotty, and today totally down. The outage was so bad it brought down their entire data center, including the <A href="http://discountasp.net">http://discountasp.net</A> website.</P>

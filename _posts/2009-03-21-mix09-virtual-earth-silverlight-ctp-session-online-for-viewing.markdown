@@ -9,7 +9,6 @@
   alias: ["/post/2009/03/21/MIX09-Virtual-Earth-Silverlight-CTP-Session-Online-For-Viewing", "/post/2009/03/21/mix09-virtual-earth-silverlight-ctp-session-online-for-viewing"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>The "<a href="http://sessions.visitmix.com/MIX09/T34F">Introducing the Microsoft Virtual Earth Silverlight Map Control CTP</a>" session from MIX'09 by Chris Pendlton is now available for your viewing pleasure online.</p>
 <p><a href="http://sessions.visitmix.com/MIX09/T34F">http://sessions.visitmix.com/MIX09/T34F</a></p>
 <p>Also, here it is below:</p>

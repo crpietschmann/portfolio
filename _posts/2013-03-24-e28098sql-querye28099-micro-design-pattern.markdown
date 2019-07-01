@@ -9,7 +9,6 @@
   alias: ["/post/2013/03/24/e28098SQL-Querye28099-Micro-Design-Pattern", "/post/2013/03/24/e28098sql-querye28099-micro-design-pattern"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>There are a few programming practices, that I like to call Micro Design Patterns, that I use over and over again on various software projects I work on. One pattern that I call SQL Query, and use quite frequently when I need to write ad-hoc SQL queries for use within a Data Access Layer. This pattern lends itself to easier testability and a cleaner separation of concerns.</p>  <h3>What is the ‘SQL Query’ Micro Pattern?</h3>  <p>Basically, the SQL Query micro pattern involves using a Factory Method to return an object that contains all the necessary data for performing a SQL query (the full SQL code and a collection of all the parameters and their values.)</p>  <p>Here’s an extremely simple example of the Factory Method (this one is implemented as Static for simplicity) and a necessary SQLQuery object:</p>  <pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">class</span> SQLGenerator
 {
     <span class="kwrd">public</span> <span class="kwrd">static</span> SQLQuery GetPersonQuery(<span class="kwrd">int</span> id)

@@ -9,7 +9,6 @@
   alias: ["/post/2008/02/28/JavaScript-ForEach-Equivalent", "/post/2008/02/28/javascript-foreach-equivalent"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>One thing with the For Loop in JavaScript is it doesn't seem to be very well documented that you can use it to do an equivalent of a ForEach loop.</p>
 <p>Here's a short example of doing the ForEach loop equivalent in JavaScript:</p>
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">var names = ["Chris", "Kate", "Steve"];

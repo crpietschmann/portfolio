@@ -9,7 +9,6 @@
   alias: ["/post/2006/12/03/Vista-Experience-Update-Windows-Vista-x64-runs-32-bit-Internet-Explorer-by-Default", "/post/2006/12/03/vista-experience-update-windows-vista-x64-runs-32-bit-internet-explorer-by-default"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>The Internet Explorer shortcut in the Quick Launch toolbar and in the Start menu of Vista x64 will run the 32-bit version of Internet Explorer by default. Why run the 32-bit version if IE on the 64-bit version of Vista?</p>
 <p>There are actually two shortcuts for Internet Explorer in the "All Programs" menu. Why two and what's the difference?</p>
 <p>Here's the title of each and the exe's they run:</p>

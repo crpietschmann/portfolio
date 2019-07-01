@@ -9,7 +9,6 @@
   alias: ["/post/2007/09/27/Top-posts-of-all-time-as-of-2007927", "/post/2007/09/27/top-posts-of-all-time-as-of-2007927"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>Here's a list of my top blog posts of all time. I really would rather the MSN WebMessenger and Homestarrunner ones weren't in the list, but sometimes you just strike a chord of what regular people (non-programmers)&nbsp;search for.</P>
 <P><STRONG>Top 10 posts of all time by total number of page views:</STRONG></P>
 <P>69,629 - <A href="/Blog/Post.aspx?PostID=762">MSN WebMessenger</A><BR>65,769 - <A href="/Blog/Post.aspx?PostID=1252">ASP.NET 2.0: URL Mapping with RegEx Support</A><BR>26,319 - <A href="/Blog/Post.aspx?PostID=173">Homestarruner.com - pretty cool toons</A><BR>23,197 - <A href="/Blog/Post.aspx?PostID=1336">I now have my key for Vista Ultimate</A><BR>18,614 - <A href="/Blog/Post.aspx?PostID=159">WinXP SP2 limites max. number of TCP connections/second</A><BR>15,136 - <A href="/Blog/Post.aspx?PostID=717">URL Mapping for ASP.NET 1.1</A><BR>12,939 - <A href="/Blog/Post.aspx?PostID=1303">JavaScript Loop through all elements in a form</A><BR>12,895 - <A href="/Blog/Post.aspx?PostID=1304">ASP.NET 2.0: Place JavaScript inside the Page.Header</A><BR>12,839 - <A href="/Blog/Post.aspx?PostID=1309">C# .NET: Convert System.Drawing.Color to HTML color</A><BR><BR><STRONG>Top 10 posts of all time by total number of Comments:</STRONG></P>

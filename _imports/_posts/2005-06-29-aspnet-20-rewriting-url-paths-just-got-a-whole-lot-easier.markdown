@@ -9,7 +9,6 @@
   alias: ["/post/2005/06/29/ASPNET-20-Rewriting-URL-Paths-just-got-a-whole-lot-easier", "/post/2005/06/29/aspnet-20-rewriting-url-paths-just-got-a-whole-lot-easier"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Rewriting URL paths in <a href="http://asp.net" target="_blank" title="ASP.NET">ASP.NET</a> 2.0 is referred to as URL Mapping. Instead of putting some code in your Application_BeginRequest method, you can now just put a few lines in your Web.Config file and like magic you can rewrite those URL paths with ease.
 </p>

@@ -9,7 +9,6 @@
   alias: ["/post/2008/02/06/Virtual-Earth-Calculate-Distance-of-User-Drawn-Polyline", "/post/2008/02/06/virtual-earth-calculate-distance-of-user-drawn-polyline"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 A couple days ago I posted some code to &quot;<a href="/Blog/Post.aspx?PostID=1452">Calculate Distance Between Geocodes in C# and JavaScript</a>&quot;, so today I decided to post a small sample program that shows a more &quot;real world&quot; example of puting that code to use.
 </p>

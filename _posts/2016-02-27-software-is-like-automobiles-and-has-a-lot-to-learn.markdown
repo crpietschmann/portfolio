@@ -9,7 +9,6 @@
   alias: ["/post/2016/02/27/Software-is-like-Automobiles-and-has-a-lot-to-learn", "/post/2016/02/27/software-is-like-automobiles-and-has-a-lot-to-learn"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Recently I watched the documentary "A Faster Horse" which is a story about the Ford Mustang and the creation of the new 2015 redesign for the 50th anniversary of the Mustang. There was a quote from Henry Ford mentioned that Simplicity, Reliability, and Affordability as keys to the success of building and selling an automobile. Watching this documentary really got me thinking about how similar the automobile industry is to the software industry. There must be some things the software industry can learn from the automobile industry; after all it is about 50 years older. You can not see the correlation immediately, so I'll explain what I mean.</p>
 <h3>Simplicity</h3>
 <p>Just as everyone should be able to just get in and drive, users of software should be able to get automatic productivity. This is something that the software industry has failed horribly at time and time again. So many legacy systems, many of which are very prevalent in the industry today, get simplicity wrong. But, what is Simplicity?</p>

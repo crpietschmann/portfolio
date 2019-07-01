@@ -9,7 +9,6 @@
   alias: ["/post/2008/01/08/DotNetKicks-is-2-years-old-today!-Way-to-go!", "/post/2008/01/08/dotnetkicks-is-2-years-old-today!-way-to-go!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>The <A href="http://dotnetkicks.com">DotNetKicks</A> site is 2 years old today. Way to go! <A href="http://www.dotnetkicks.com/users/gavinjoyce">Gavin Joyce</A> started it, and now two years ago and alot of community contribution the site definately the place to find any resource you need on anything MS .NET related.</P>
 <H3>What is DotNetKicks.com?</H3>
 <P><A href="http://dotnetkicks.com">DotNetKicks.com</A> is a community based news site edited by our members. It specialises in .NET development techniques, technologies and tools including ASP.NET, C#, VB.NET, C++, Visual Studio, SubSonic, Open Source, SQL Server, Silverlight &amp; Mono. </P>

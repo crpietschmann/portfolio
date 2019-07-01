@@ -9,7 +9,6 @@
   alias: ["/page/Free-Geographic-Geo-Spatial-Data-Sources-Link-List", "/page/free-geographic-geo-spatial-data-sources-link-list"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>This page lists a bunch of different geographic / geo-spatial data sources that provide FREE data to be consumed. I haven't really found any resource link list like this, so I thought I'd start one.</p>
 <h3>Maps / Charts</h3>
 <p><a href="http://www.nauticalcharts.noaa.gov/">http://www.nauticalcharts.noaa.gov/</a> - NOAA's Office of Coast Survey --- USA<br /><a href="http://www.nauticalcharts.noaa.gov/mcd/Raster/download_agreement.htm">http://www.nauticalcharts.noaa.gov/mcd/Raster/download_agreement.htm</a></p>

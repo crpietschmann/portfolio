@@ -9,7 +9,6 @@
   alias: ["/post/2009/03/26/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine", "/post/2009/03/26/aspnet-mvc-implement-theme-folders-using-a-custom-viewengine"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>One of the things that ASP.NET MVC 1.0 is missing is the ability to easily implement Themes. The older, more mature standard ASP.NET framework includes theme support via the App_Themes folder; however limited it can be, it&rsquo;s still more than ASP.NET MVC currently has. Well, at least until I wrote this little custom ViewEngine and ControllerBase class to help out and allow us to very easily implement Themes within our ASP.NET MVC applications.</p>
 <p>A little history: A few months back I wrote up a post on &ldquo;<a href="/post.aspx?id=ee0e253d-c746-4099-9795-81aaf14ad608">How To Setup Custom Theme Support In ASP.NET MVC Preview 4 using a Custom ViewEngine</a>&rdquo;, then a couple weeks later I posted an updated version that added <a href="/post.aspx?id=5a6945d0-933a-4971-aac1-13dcd73711d9">Custom Themes to ASP.NET MVC Preview 5</a>. So I&rsquo;ve decided to update the code from Preview 5 and make it all work with ASP.NET MVC v1.0 Final Release.</p>
 <p>Also, I took a tip from <a href="http://frugalcoder.us/">Michael Ryan</a> and modified my previous theme implementation from Preview 5 to include both Views and Content folders within the Theme folder.</p>

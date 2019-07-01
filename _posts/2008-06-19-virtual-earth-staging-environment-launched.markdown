@@ -9,7 +9,6 @@
   alias: ["/post/2008/06/19/Virtual-Earth-Staging-Environment-Launched", "/post/2008/06/19/virtual-earth-staging-environment-launched"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>The <a href="http://blogs.msdn.com/virtualearth/archive/2008/06/19/virtual-earth-staging-environment.aspx">Virtual Earth team has officially launched their Virtual Earth Staging Environment</a>. The staging environment allows you to access all the features of Virtual Earth (during development and testing) without incurring transaction costs against your production account.</p>
 <p><strong>How do I access the Virtual Earth Staging Environment?</strong></p>
 <p>Simple, just use the following url when you include the VE JavaScript Control in your page. Notice, the only change in the url is the "staging." in the beginning, otherwise the url is exactly the same.</p>

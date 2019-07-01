@@ -9,7 +9,6 @@
   alias: ["/post/2008/10/16/VEToolkit-Virtual-Earth-Toolkit-Open-Source-Project", "/post/2008/10/16/vetoolkit-virtual-earth-toolkit-open-source-project"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 A couple weeks ago I started the new <a href="http://codeplex.com/vetoolkit">VEToolkit</a> (Virtual Earth Toolkit) Open Source project. This project spawns out of the need for more helpers to make Virtual Earth Map development much simpler, and follows inspiration from the Ajax Control Toolkit. This is a JavaScript library, so it&#39;s all client-side code; just like the Virtual Earth AJAX API itself. The project is also meant to play nicely with any client-side, JavaScript library you want to use within your application (such as jQuery, Prototype, etc.)
 </p>

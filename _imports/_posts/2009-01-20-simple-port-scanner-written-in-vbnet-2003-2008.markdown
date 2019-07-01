@@ -9,7 +9,6 @@
   alias: ["/post/2009/01/20/Simple-Port-Scanner-Written-in-VBNET-2003-2008", "/post/2009/01/20/simple-port-scanner-written-in-vbnet-2003-2008"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 I was looking over some of the old prototypes&nbsp;I&#39;ve written&nbsp;in the past, and I can across a Simple Port Scanner&nbsp;that I originally wrote in VB.NET 2003. I originally wrote this back in&nbsp;2004 (I think), and even posted a compiled version on my website that I have since removed/deleted. So, since it&#39;s just&nbsp;sitting on my hard drive collecting virtual dust, I thought I&#39;d post it here in case anyone else can find it usefull. 
 </p>

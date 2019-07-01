@@ -9,7 +9,6 @@
   alias: ["/post/2007/03/27/Why-not-make-ASPNET-Web-Matrix-shared-source", "/post/2007/03/27/why-not-make-aspnet-web-matrix-shared-source"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P><A href="http://www.asp.net/webmatrix/">ASP.NET Web Matrix</A> was the Free ASP.NET editor back in the .NET 1.x days. The tool is actually <A href="http://www.asp.net/webmatrix/download.aspx?tabindex=4">still available for download</A>. The other day, I was thinking...</P>
 <P><STRONG>Why doesn't Microsoft make ASP.NET Web Matrix available as Shared Source?</STRONG></P>
 <P>Web Matrix was a really cool tool, and it's obviously been rendered obsolete by Visual Studio Express. However, there are still alot of really cool things done in the code, and I think it would be beneficial to the community if the source code were made available.</P>

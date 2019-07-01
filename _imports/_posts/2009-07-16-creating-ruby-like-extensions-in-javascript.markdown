@@ -9,7 +9,6 @@
   alias: ["/post/2009/07/16/Creating-Ruby-like-Extensions-in-JavaScript", "/post/2009/07/16/creating-ruby-like-extensions-in-javascript"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>I've been spending a little time here and there learning Ruby. I haven't dug much into Rails yet, but have mostly been just focusing on the Ruby language and what it has to offer. Ruby has some nice "helper" methods attached to it's base data types that make iterations and other simple operations even simpler. I've ported a couple of these methods over to JavaScript so I could play around with using some of these "Ruby-isms" with my favorite web-based, dynamic programming language.</p>
 <p>Below are some example usages of each of the methods I ported over to JavaScript. Below are methods that extend the JavaScript "Array", "Number" and "String" data types. The Array "pop" and "join" methods are already Native to JavaScript and don't need any additional coding to be able to utilize them.</p>
 <p>My favorite of these methods has to be the Array.times and String.times methods that allow you to more easily iterate over an array or repeat a string a certain number of times.</p>

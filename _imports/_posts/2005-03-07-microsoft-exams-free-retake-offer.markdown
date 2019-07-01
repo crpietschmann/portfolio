@@ -9,7 +9,6 @@
   alias: ["/post/2005/03/07/Microsoft-Exams-FREE-Retake-Offer", "/post/2005/03/07/microsoft-exams-free-retake-offer"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P class=MsoNormal><SPAN style="FONT-SIZE: 8pt; FONT-FAMILY: Verdana">
 <P class=MsoNormal><SPAN style="FONT-SIZE: 8pt; FONT-FAMILY: Verdana"></SPAN></P>
 <P></SPAN>Between February 28 and May 31, 2005, you can use a special code&nbsp;when you&nbsp;register for your exams and if you fail you'll be able to retake it for FREE. This offer is available worldwide.</P>

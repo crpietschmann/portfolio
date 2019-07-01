@@ -9,7 +9,6 @@
   alias: ["/post/2009/08/26/Simplovation-WebMapsVE-v30-Now-With-FREE-Edition!", "/post/2009/08/26/simplovation-webmapsve-v30-now-with-free-edition!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><a href="http://simplovation.com"><img style="float: right;margin: 3px;" src="http://simplovation.com/Files/Images/FocusAreaScreenshot.png" border="0" alt="Simplovation Web.Maps.VE v3.0!" /></a>Today, I just posted the latest Web.Maps.VE v3.0 release. The coolest thing about this new version is that is has a FREE Edition for non-commercial use!</p>
 <p><a href="http://simplovation.com/download/">Download Web.Maps.VE v3.0 FREE Edition!</a></p>
 <p>There are a few new things in this latest release, but the most significant are the following performance updates:</p>

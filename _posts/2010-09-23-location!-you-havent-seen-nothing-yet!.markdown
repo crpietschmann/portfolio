@@ -9,7 +9,6 @@
   alias: ["/post/2010/09/23/Location!-You-Havent-Seen-Nothing-Yet!", "/post/2010/09/23/location!-you-havent-seen-nothing-yet!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>The popularity of location aware devices and software has been on the rise for the last five years, since Google Maps and Microsoft Virtual Earth (now Bing Maps) were initially released. Surprisingly, however, the utilization and adoption of geo-location and mapping haven't been as rapid as I had speculated back in 2005. Today there are all kinds of location based applications and services popping up.</p>
 <h3>Paper Maps and Expensive Software<br /></h3>
 <p>Prior to 2005 the existence of maps were mostly on paper. You kept them in your cars glove box and pinned them to you office wall. I remember having a paper map of the world tacked to my bedroom wall as a kid. Mapping software did exist (ex: vehicle and asset tracking, military use, etc.), but it was prohibitively expensive for most businesses. Sure, there were less expensive mapping applications, like Microsoft MapPoint, but...<em> (I know I could discuss this in plenty of detail, but let's just get on to the point of this post.)<br /></em></p>

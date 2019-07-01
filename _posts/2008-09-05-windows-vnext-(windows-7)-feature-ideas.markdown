@@ -9,7 +9,6 @@
   alias: ["/post/2008/09/05/Windows-vNext-(Windows-7)-Feature-Ideas", "/post/2008/09/05/windows-vnext-(windows-7)-feature-ideas"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Here are some of my thoughts on the Windows operating system and how thing could be improved in the "next" version after Vista. Also, the ideas aren't in any particular order of importance, they are just in the order I typed them in.</p>
 <h3>1) Make the Desktop version of Windows more Modular, like Windows Server 2008</h3>
 <p>Windows Server 2008 is more modular, you can install Server Core that doesn't even have a graphical interface, or you can install Windows Server 2008 with just the features you want/need. Why not make a Desktop version of the OS like that? Let the advanced users, during installation or from the Programs/Features Dialog, decide which features they want to install. Currently, Windows Vista Ultimate could be considered a little bloated, and the extra features installed that I don't use are just taking up space, and some run in memory affecting my system performance. For instance, If I don't want or use Windows Media Center, then don't install it, it's not required for Windows to run.</p>

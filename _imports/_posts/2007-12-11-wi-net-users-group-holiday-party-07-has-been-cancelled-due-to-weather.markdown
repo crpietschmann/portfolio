@@ -9,7 +9,6 @@
   alias: ["/post/2007/12/11/WI-NET-Users-Group-Holiday-Party-07-has-been-Cancelled-due-to-Weather", "/post/2007/12/11/wi-net-users-group-holiday-party-07-has-been-cancelled-due-to-weather"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>The WI .NET Users Group Holiday Party '07 has been Cancelled due to weather and will be rescheduled. The new date for the party will be announced as soom as possible.</p>
 <p>Here's the announcement that went out to all registered attendees via email:</p>
 <div><span style="font-family: Arial; font-size: x-small;"><span>Everyone -</span></span></div>

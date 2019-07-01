@@ -9,7 +9,6 @@
   alias: ["/post/2015/07/21/Why-I-got-the-MCSD-Azure-Solutions-Architect-Certification", "/post/2015/07/21/why-i-got-the-mcsd-azure-solutions-architect-certification"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><img style="float: right;" src="/image.axd?picture=%2f2015%2f07%2fMCSD_Azure_Blk.png" alt="" /></p>
 <p>Over the last few months I spent a ton of time studying for and passing the 3 exams required to earn the Microsoft Certified Solutions Developer (MCSD) Azure Solutions Architect certification. Microsoft has really built out an incredible, cloud platform that is Azure! And, this is fitting since it's the future of Microsoft's Enterprise business. This is the root of the reason why I decided to pursue and obtain the MCSD: Azure Solutions Architect certification.</p>
 <h3>Azure Solutions Architect is a unique MCSD certification</h3>

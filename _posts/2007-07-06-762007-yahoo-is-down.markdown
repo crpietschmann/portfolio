@@ -9,7 +9,6 @@
   alias: ["/post/2007/07/06/762007-Yahoo-is-down", "/post/2007/07/06/762007-yahoo-is-down"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>It appears that <A href="http://yahoo.com">Yahoo.com</A> is down. I've never seen one of the big guys completely down before. I'm assuming someone is getting fired. Just imagine all the searches that aren't being done right now. And just think, because of IE's default settings, since it can't find Yahoo.com, it's doing a search (using the default search provider) on probably MSN for the word "Yahoo". I wonder how many of these people that Yahoo is letting down are going to end up switching to MSN or Google?</P>
 <P>Hey Yahoo, that's gotta hurt.</P>
 <P><STRONG>Update 9:23AM:</STRONG> I see that Yahoo is back up now. I wonder what the total was of how long they were down. And, I heard that CNN.com was down for a short moment there too (however it was back up before I could verify it for myself.)</P>

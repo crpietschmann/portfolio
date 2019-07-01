@@ -9,7 +9,6 @@
   alias: ["/post/2014/06/07/Basic-Comparison-of-Functions-in-C-and-Apple-Swift-Programming-Language", "/post/2014/06/07/basic-comparison-of-functions-in-c-and-apple-swift-programming-language"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Previously I wrote a <a href="http://pietschsoft.com/post/2014/06/07/Basic-Comparison-of-C-and-Apple-Swift-Programming-Language-Syntax">basic comparison of the C# and Apple Swift programming language syntax</a>. In this article we'll dive a little deeper into a comparison in to how defining and calling Functions work in both. Functions are first class citizens in both C# and Apple Swift, so lets see how they compare against each other!</p>
 <h3>Define Basic Parameterless Function</h3>
 <p>At the most basic level there really aren't many differences between the 2 languages as you can see below. Even the way you return a value from a Function uses the "return" keyword in both languages.</p>

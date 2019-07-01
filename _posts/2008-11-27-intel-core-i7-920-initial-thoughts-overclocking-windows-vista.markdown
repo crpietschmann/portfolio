@@ -9,7 +9,6 @@
   alias: ["/post/2008/11/27/Intel-Core-i7-920-Initial-Thoughts-Overclocking-Windows-Vista", "/post/2008/11/27/intel-core-i7-920-initial-thoughts-overclocking-windows-vista"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><img src="/image.axd?picture=corei7BlueLogo.png" alt="" align="right" />I recently upgraded my main desktop machine to a new Intel Core i7 920 CPU and all its glory. Here's a write up of my experience in choosing the Core i7 (over the Core 2 Quad) and my experiences with it so far.</p>
 <h3>Thoughts Before Upgrading - Core 2 Quad or Core i7?</h3>
 <p>My previous machine was an AMD Athlon 64 X2 4200+ (2.2Ghz) with 4GB DDR2 800Mhz Ram. The system ran great, but it was two years old and my requirements for using Virtualization (via Virtual PC) have increased so it's time for an upgrade.</p>

@@ -9,7 +9,6 @@
   alias: ["/post/2007/11/26/XNA-and-XBox-360-Not-until-you-pony-up-some-ca24h!!", "/post/2007/11/26/xna-and-xbox-360-not-until-you-pony-up-some-ca24h!!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>I recently got an XBox 360; and until I got one I didn't fully realize what all its features are. This is a really sweet system! So, naturally I downloaded the XNA Game&nbsp;Studio Express to check out what's all possible with building homebrew games for the 360.</P>
 <P>After registering my gamertag with the XNA Creators Club and&nbsp;installing XNA Game Studio Express on my PC, I took the following steps:</P>
 <OL>

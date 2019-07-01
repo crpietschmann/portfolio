@@ -9,7 +9,6 @@
   alias: ["/post/2006/06/01/JavaScript-Loop-through-all-elements-in-a-form", "/post/2006/06/01/javascript-loop-through-all-elements-in-a-form"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Since I've been doing alot of JavaScript programming lately, I figured I could start blogging some code snippets. Here is a JavaScript snippet that shows how to loop through all the elements in a form and retrieve their element type, name and values. I had to use this code to gather all form values so I could post them to the server using AJAX.</p>
 <pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;html&gt;
 &lt;head&gt;

@@ -9,7 +9,6 @@
   alias: ["/post/2004/08/05/MSN-WebMessenger", "/post/2004/08/05/msn-webmessenger"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>There is now a web version of MSN Messenger.&nbsp;Pretty neet, I think. I like the idea of a web application working and acting just like a windows application. The current Web Messenger isn't as feature full as the Windows application, but I would imagine they are working on it, since it is still in Beta.</P>
 <P>Check it out at <A href="http://WebMessenger.MSN.com">http://WebMessenger.MSN.com</A>&nbsp;</P>
 <P>System Requirements: 

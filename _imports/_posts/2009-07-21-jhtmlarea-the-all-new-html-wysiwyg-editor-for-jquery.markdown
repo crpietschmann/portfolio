@@ -9,7 +9,6 @@
   alias: ["/post/2009/07/21/jHtmlArea-The-all-NEW-HTML-WYSIWYG-Editor-for-jQuery", "/post/2009/07/21/jhtmlarea-the-all-new-html-wysiwyg-editor-for-jquery"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><img src="/image.axd?picture=2009%2f7%2fScreenshot.png" alt="" width="298" height="402" align="right" /></p>
 <p>The last couple days I spent time working on a new simple, lightweight, extensible HTML WYSIWYG editor that's built on top of jQuery. I know there are a ton of existing editors, but <a href="http://stackoverflow.com/questions/1141073/whats-the-best-wysiwyg-editor-for-use-with-jquery">I couldn't seem to find any with a truely simple, lightweight design that allowed for really easy extensibility</a>, and that's built on top of jQuery to take advantage of the cross-platform capabilities that jQuery has to offer. I feel that I've come up with a really nice HTML editor component that has some pretty usefull extensibility points. Allow me to introduce you to <a href="http://jhtmlarea.codeplex.com">jHTMLArea</a>.</p>
 <p>You can download jHtmlArea and some examples of using it over at the official project page on CodePlex: <a href="http://jhtmlarea.codeplex.com">http://jhtmlarea.codeplex.com</a></p>

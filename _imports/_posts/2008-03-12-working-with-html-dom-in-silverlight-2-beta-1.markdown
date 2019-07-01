@@ -9,7 +9,6 @@
   alias: ["/post/2008/03/12/Working-with-HTML-DOM-in-Silverlight-2-Beta-1", "/post/2008/03/12/working-with-html-dom-in-silverlight-2-beta-1"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Working with the HTML DOM in Silverlight 2 Beta 1 is rather simple and easy to do. However, to my surprise it&#39;s a similar experience to working the the HTML DOM from within JavaScript; you have to know the name of the properties to get/set and you don&#39;t have the luxury of compile time checking or intellisense. 
 </p>

@@ -9,7 +9,6 @@
   alias: ["/post/2013/08/25/Psychology-of-Software-and-its-Users", "/post/2013/08/25/psychology-of-software-and-its-users"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>The fact that Psychology plays an instrumental role in the development, design and everyday use of software is not something that is very apparent to most people. It is something that is hidden within the details, but is also blatantly obvious when to really think about how software is developed, designed and used.</p>
 <p>Think about this for a moment: <strong>Software is designed by people for people to use.</strong></p>
 <p>Sure, the execution of software code and the process flow within it are a carefully laid out path of logic that the developer thought would be the most efficient way to perform a task. Or, at least the easiest to make work and/or maintain. However, this is only a tiny part of what software really is.</p>

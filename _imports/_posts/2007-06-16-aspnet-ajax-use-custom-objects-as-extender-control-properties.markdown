@@ -9,7 +9,6 @@
   alias: ["/post/2007/06/16/ASPNET-AJAX-Use-custom-objects-as-Extender-Control-Properties", "/post/2007/06/16/aspnet-ajax-use-custom-objects-as-extender-control-properties"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p style="margin: 0in 0in 10pt" class="MsoNormal">
 <font face="Calibri">I&rsquo;ve been working with the ASP.NET AJAX Extensions a lot lately, and have been learning a few trick on how to get stuff done. One of the things I&rsquo;ve learned is how to create a Generic TypeConverter for ASP.NET Ajax to use when serializing my server-side objects to JSON when passing them down to the client-side.</font> 
 </p>

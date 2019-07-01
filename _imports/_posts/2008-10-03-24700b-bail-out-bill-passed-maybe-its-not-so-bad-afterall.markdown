@@ -9,7 +9,6 @@
   alias: ["/post/2008/10/03/24700B-Bail-Out-Bill-Passed-Maybe-Its-Not-So-Bad-Afterall", "/post/2008/10/03/24700b-bail-out-bill-passed-maybe-its-not-so-bad-afterall"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>I generally don't post on political topics, but this is a big one...</p>
 <p>Today, as I'm sure it isn't news to you anymore, the House of Representatives passed the Economic Stabilization Act of 2008 (H.R.1424), which includes <a href="http://www.latimes.com/news/nationworld/nation/la-fi-bailout4-2008oct04,0,5359201.story">$700 Billion to bailout the troubled financial institutions, plus aproximately $110 Billion in tax cuts</a>.</p>
 <p>Go read the bill or it's summary here: <a href="http://financialservices.house.gov/">http://financialservices.house.gov/</a></p>

@@ -9,7 +9,6 @@
   alias: ["/post/2008/06/06/Amazoncom-is-down", "/post/2008/06/06/amazoncom-is-down"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Wow, <a href="http://amazon.com">Amazon.com</a> is currently down. It just shows a message of &quot;Http/1.1 Service Unavailable&quot;.
 </p>

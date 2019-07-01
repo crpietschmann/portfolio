@@ -9,7 +9,6 @@
   alias: ["/post/2008/05/19/Silverlight-Load-JavaScript-from-Embedded-Resource-and-Execute-Within-Page", "/post/2008/05/19/silverlight-load-javascript-from-embedded-resource-and-execute-within-page"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 I&#39;ve been playing around with Silverlight 2 Beta 1 alot lately, and one of the areas I&#39;ve been focusing on is interoperability with JavaScript and the DOM. Here&#39;s a technique I&#39;ve found that allows you to inject JavaScript into the page from within your Silverlight application. This example also starts with the idea that the JavaScript you are going to inject is stored as an Embedded Resource within your Silverlight Application. 
 </p>

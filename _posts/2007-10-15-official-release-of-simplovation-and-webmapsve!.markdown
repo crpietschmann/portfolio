@@ -9,7 +9,6 @@
   alias: ["/post/2007/10/15/Official-Release-of-Simplovation-and-WebMapsVE!", "/post/2007/10/15/official-release-of-simplovation-and-webmapsve!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 I am proud to announce that I have just officially launched&nbsp;<a href="http://simplovation.com/">Simplovation</a> and&nbsp;released our first product, <a href="http://simplovation.com/Page/WebMapsVE.aspx">Web.Maps.VE</a>!
 </p>

@@ -9,7 +9,6 @@
   alias: ["/post/2006/06/25/ASPNET-20-v002-of-my-Virtual-Earth-v3-Ajax-Server-Control", "/post/2006/06/25/aspnet-20-v002-of-my-virtual-earth-v3-ajax-server-control"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 <strong>Update (11/7/2007):</strong> This control is now located here: <a href="http://codeplex.com/pietschsoftve3">http://codeplex.com/pietschsoftve3</a>
 </p>

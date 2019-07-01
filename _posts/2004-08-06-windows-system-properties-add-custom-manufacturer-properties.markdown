@@ -9,7 +9,6 @@
   alias: ["/post/2004/08/06/Windows-System-Properties-Add-Custom-Manufacturer-Properties", "/post/2004/08/06/windows-system-properties-add-custom-manufacturer-properties"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Here is a pretty neat edit you can do to add your own manufacturer information and logo to the System Properties dialog.
 </p>

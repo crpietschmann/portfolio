@@ -9,7 +9,6 @@
   alias: ["/post/2008/02/14/The-Purina-Diet-7bJoke7d", "/post/2008/02/14/the-purina-diet-7bjoke7d"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 I don&#39;t know who originally wrote this, but I received it in an email the other day. I thought it funny enough to share. 
 </p>

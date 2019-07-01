@@ -9,7 +9,6 @@
   alias: ["/post/2008/10/24/Free-the-Airwaves-FCC-vote-on-white-spaces-scheduled-for-Nov-4", "/post/2008/10/24/free-the-airwaves-fcc-vote-on-white-spaces-scheduled-for-nov-4"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <div style="float: right">
 <a href="http://www.freetheairwaves.com/"><img src="http://www.freetheairwaves.com/images/blog_badges/badge2_rev.jpg" border="0" alt="FreeTheAirwaves.com" /></a>
 </div>

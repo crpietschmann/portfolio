@@ -9,7 +9,6 @@
   alias: ["/post/2007/09/28/Proposed-DotNetKicks-Redesign!", "/post/2007/09/28/proposed-dotnetkicks-redesign!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>The current skin of DotNetKicks just isn't quite there. It doesn't look as cool as it could. And I'm sure it's just because the time hasn't been spent to make it look good. So, I thought I'd put together a mockup design that is based off the current design, but with some improvements. I like it, but the test is if any of you like it too. Let me know what you think.</P>
 <P><STRONG>Current DotNetKicks:</STRONG></P>
 <P><IMG alt="Original DotNetKicks Skin" hspace=0 src="/Download/Blog/1405/Original_Thumb.png" align=baseline border=0></P>

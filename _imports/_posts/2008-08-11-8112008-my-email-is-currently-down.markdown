@@ -9,7 +9,6 @@
   alias: ["/post/2008/08/11/8112008-My-email-is-currently-down", "/post/2008/08/11/8112008-my-email-is-currently-down"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Update: Ok, my email is back and working again. 
 </p>

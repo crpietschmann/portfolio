@@ -9,7 +9,6 @@
   alias: ["/post/2013/09/13/Programming-is-the-Reading-and-Writing-of-the-Future", "/post/2013/09/13/programming-is-the-reading-and-writing-of-the-future"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><em>"Everybody in this country should learn how to program a computer because it teaches you hot to think." - Steve Jobs</em></p>
 <p><em>"Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains." - Bill Gates</em></p>
 <p><iframe src="//www.youtube.com/embed/dU1xS07N-FA" frameborder="0" width="560" height="315"></iframe></p>

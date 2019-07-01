@@ -9,7 +9,6 @@
   alias: ["/post/2007/01/12/Setting-Up-Ubuntu-with-virtualization-on-Vista-x64", "/post/2007/01/12/setting-up-ubuntu-with-virtualization-on-vista-x64"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>I've decided to make the leap into Ubuntu; well sorta. I'm going to run it in a Virtual Machine for now. I'll set it up in a multi boot on my main pc once I'm more familiar with Linux and related stuff, but then again I may keep it running in a virtual machine if virtualization works out&nbsp;well enough.</P>
 <P>Below are the steps I took to get things setup.</P>
 <P><STRONG>Step 1: Install Virtual Server 2005 R2<BR></STRONG>Since I have Vista x64 installed on my pc; I am forced to use Virtual Server 2005 R2 instead of Virtual PC 2004 because VPC'04 wont install on it. Before installing Virtual Server 2005 you need to install/enable IIS on Vista first. Oh yeah, and don't forget to install all the IIS6 Compatibility stuff. This post helped me with this; <A href="http://blogs.msdn.com/virtual_pc_guy/archive/2006/06/05/618547.aspx">Installing Virtual Server on Windows Vista Beta 2</A></P>

@@ -9,7 +9,6 @@
   alias: ["/post/2013/07/27/Work-Smart-Not-Hard", "/post/2013/07/27/work-smart-not-hard"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><!--[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>

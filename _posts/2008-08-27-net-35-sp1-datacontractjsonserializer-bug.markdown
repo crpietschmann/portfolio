@@ -9,7 +9,6 @@
   alias: ["/post/2008/08/27/NET-35-SP1-DataContractJsonSerializer-Bug", "/post/2008/08/27/net-35-sp1-datacontractjsonserializer-bug"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><strong>Update 9/16/2008:</strong> After too long, I finally tried uninstalling SP1 and reinstalling it and that fixed the issue. I'm glad it's fixed now! I haven't seen any other suggestions for fixing this, and I first tried repairing the installation, but only an uninstall and reinstall fixed it. Hope this helps solves anyone elses headache with this issue.</p>
 <p>&nbsp;</p>
 <p>A few months ago (back in February actually) I blogged <a href="/post/2008/02/NET-35-JSON-Serialization-using-the-DataContractJsonSerializer.aspx">showing how to use the new DataContractJsonSerializer</a> to serialize your .NET objects to JSON. Everything was fine until .NET 3.5 SP1 was released. It appears that the .NET 3.5 SP1 update breaks the DataContractJsonSerializer. Using the exact <a href="/post/2008/02/NET-35-JSON-Serialization-using-the-DataContractJsonSerializer.aspx">same code from my previous post</a> that worked perfect on .NET 3.5 RTM, breaks with the following exceptions in .NET 3.5 SP1 RTM:</p>

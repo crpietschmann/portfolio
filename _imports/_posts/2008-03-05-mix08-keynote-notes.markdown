@@ -9,7 +9,6 @@
   alias: ["/post/2008/03/05/MIX08-KeyNote-Notes", "/post/2008/03/05/mix08-keynote-notes"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>I watched the MIX'08 Keynote online this&nbsp;morning, and here are some notes I took.&nbsp;</p>
 <p><strong>Notes from Ray Ozzies talk:</strong></p>
 <p>Some investments will be realized this week:</p>

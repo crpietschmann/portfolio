@@ -9,7 +9,6 @@
   alias: ["/post/2005/08/24/Happy-10th-birthday-Windows-95!", "/post/2005/08/24/happy-10th-birthday-windows-95!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>Windows 95 was released 10 years ago today!</P>
 <P><A href="http://www.microsoft.com/windows95/">http://www.microsoft.com/windows95/</A></P>
 <P>With the release of Vista coming, Win95 turns 10. Just think about what will be in the version of Windows that comes out whenVista turns 10. Lots of improvements have come and lots more to come.</P>

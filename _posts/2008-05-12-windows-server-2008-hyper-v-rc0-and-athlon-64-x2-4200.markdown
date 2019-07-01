@@ -9,7 +9,6 @@
   alias: ["/post/2008/05/12/Windows-Server-2008-Hyper-V-RC0-and-Athlon-64-X2-4200", "/post/2008/05/12/windows-server-2008-hyper-v-rc0-and-athlon-64-x2-4200"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 I used virtualization through VirtualPC 2007 on this computer, an Athlon 64 X2 4200+ with a Gigabyte GA-M55SLI-S4 motherboard, and it worked perfectly. The Athlon 64 X2 even support Hardware-Assisted Virtualization, so things actually run pretty smooth. 
 </p>

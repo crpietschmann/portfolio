@@ -9,7 +9,6 @@
   alias: ["/post/2005/03/06/I-went-Deeper-in-NET2c-yesterday", "/post/2005/03/06/i-went-deeper-in-net2c-yesterday"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 The speakers were great, and I learned alot as usual. These were the same speakers that speak at events such as: TechEd and PDC.
 </p>

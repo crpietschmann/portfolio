@@ -9,7 +9,6 @@
   alias: ["/post/2008/07/02/Virtual-Earth-Polygon-Search-Is-Point-Within-Polygon", "/post/2008/07/02/virtual-earth-polygon-search-is-point-within-polygon"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Today, I found an article on MSDN that covers how to perform a polygon search to determine if a given Lat/Long point is within a given Polygon.</p>
 <p>I copied the logic for searching within the Polygon and made it more reusable than what is posted in the MSDN article, so I thought I'd post it here.</p>
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">if (GeoHelper == undefined)

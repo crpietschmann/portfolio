@@ -9,7 +9,6 @@
   alias: ["/post/2008/10/20/Is-this-necessary-Chris-Pietschmann-MVP-MCSD-MCAD-MCP", "/post/2008/10/20/is-this-necessary-chris-pietschmann-mvp-mcsd-mcad-mcp"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Recently when looking at the analytics logs for referring urls to my website, I noticed one from Hanselmen.com. It&#39;s actually a click-through from a comment I posted on his blog way back on April 21, 2006. His blog post that I commented on is titled &quot;<a href="http://www.hanselman.com/blog/ScottHanselman11SuccessfulLargeProjects3OpenSourceApplications1CollossalFailure.aspx">Scott Hanselman, 11 Successful Large Projects, 3 Open Source Applications, 1 Collossal Failure</a>&quot;.
 </p>

@@ -9,7 +9,6 @@
   alias: ["/post/2004/10/28/CHRIS-CHRISTMAS-RODRIGUEZ", "/post/2004/10/28/chris-christmas-rodriguez"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>These videos are hilarious!!</P>
 <P><FONT face="Comic Sans MS">CHRIS CHRISTMAS RODRIGUEZ</FONT></P>
 <P><A href="http://www.vormedal.com/film/chrischristmas/">http://www.vormedal.com/film/chrischristmas/</A></P>

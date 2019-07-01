@@ -9,7 +9,6 @@
   alias: ["/post/2008/11/04/JavaScript-Mixing-OOP-and-Event-Driven-Programming", "/post/2008/11/04/javascript-mixing-oop-and-event-driven-programming"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 To expand on my previous article on<a href="/post.aspx?id=5c7d6bc1-2926-467d-a47a-5d826dbc467f"> how to create Objects in JavaScript using Prototypal Inheritence</a>, this article will show you how to implement <a href="http://en.wikipedia.org/wiki/Event-driven_programming">Event Driven Programming</a> with those objects. Implementing Event Driven Programming in JavaScript sounds difficult, but it&#39;s actually rather simpel to implement.
 </p>

@@ -9,7 +9,6 @@
   alias: ["/post/2006/05/15/A-couple-cool-WinXP-TaskBar-enhancement-tools", "/post/2006/05/15/a-couple-cool-winxp-taskbar-enhancement-tools"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>I've come across two cool WinXP TaskBar enhancement tools.</p>
 <p><a href="http://www.visualtasktips.com/">Visual Task Tips</a>&nbsp;- This tool provides a thumbnail screenshot of each app when you mouse over the it in the taskbar. You may have seen this feature in some of the screenshots of the Windows Vista Beta, but this tool brings that functionality to Windows XP. I noticed the thumbnail is a somewhat live preview; just open up a video in Media Player and watch a somewhat choppy version of what's playing be shown in the thumbnail.</p>
 <p><a href="http://www.freewebs.com/nerdcave/taskbarshufflev10.htm">Taskbar Shuffle</a>&nbsp;- This tool allows you to reorder the apps in your taskbar by dragging and dropping them. This isn't a major feature, but&nbsp;nice when you want to do it.</p>

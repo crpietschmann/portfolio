@@ -9,7 +9,6 @@
   alias: ["/post/2008/06/24/Plot-ZipCode-Boundaries-on-a-Map-Part-2-Import-Zip-Code-US-Census-ZCTA-Data-Into-A-Database", "/post/2008/06/24/plot-zipcode-boundaries-on-a-map-part-2-import-zip-code-us-census-zcta-data-into-a-database"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Now that we've <a href="/post/2008/06/Plot-ZipCode-Boundaries-on-a-Map-Part1-Making-sense-of-US-Census-ZCTA-ARCINFO-Ungenerate-ASCII-files.aspx">Made Sense of the U.S. Census ZCTA ARC/INFO Ungenerate (ASCII) files in Part 1</a> of this series, we are ready to import the U.S Census ZCTA Zip Code data into a database. In Part 2, we'll create database tables and import the Zip Code Boundary data into those tables in a MS SQL 2005 database.</p>
 <h3>Create SQL 2005/2008 Database Tables</h3>
 <p>First lets create a couple database tables to hold all the Zip Code boundary data. One table will hold the ZipCodes, the other will hold all the Boundary Points for each Zip Code.</p>

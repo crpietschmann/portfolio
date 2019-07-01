@@ -9,7 +9,6 @@
   alias: ["/post/2009/01/07/SQL-Compact-And-The-Unable-to-load-DLL-sqlceme35dll-Runtime-Exception", "/post/2009/01/07/sql-compact-and-the-unable-to-load-dll-sqlceme35dll-runtime-exception"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>I <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=DC614AEE-7E1C-4881-9C32-3A6CE53384D9&amp;displaylang=en">installed SQL Server Compact 3.5 x86</a> and started testing it out when I got a nice "Unable to load DLL 'sqlceme35.dll" runtime exception. This seems like odd behaviour for a clean install. In a fairly quick search I found an article on the <a href="http://blogs.msdn.com/sqlservercompact">SQL Server Compact Team Blog</a> that covers a couple possible causes/solutions for this exception.</p>
 <p><a href="http://blogs.msdn.com/sqlservercompact/archive/2007/10/26/can-t-find-p-invoke-dll-sqlcemenn-dll.aspx">http://blogs.msdn.com/sqlservercompact/archive/2007/10/26/can-t-find-p-invoke-dll-sqlcemenn-dll.aspx</a></p>
 <h3>My Solution - Target x86 Only<br /></h3>

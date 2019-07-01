@@ -9,7 +9,6 @@
   alias: ["/post/2009/01/30/Using-LINQ-to-SQL-with-SQL-Server-Compact-Edition", "/post/2009/01/30/using-linq-to-sql-with-sql-server-compact-edition"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>I'm currently building a desktop application that needs to store a bunch of data on the users computer, so I've decided to use <a href="http://www.microsoft.com/Sqlserver/2008/en/us/compact.aspx">SQL Server Compact 3.5</a> for this. There's only one problem, Visual Studio 2008 doesn't support using LINQ to SQL with SQL Server Compact. However, the .NET Framework does and there's a work around to get it working in VS'08 that I'll describe below.</p>
 <p>In case you aren't aware of what <a href="http://www.microsoft.com/Sqlserver/2008/en/us/compact.aspx">SQL Server Compact 3.5</a> is, here's the short description that Microsoft gives on their website: "Microsoft SQL Server Compact is a free SQL Server embedded database ideal for building standalone and occasionally connected applications for mobile devices, desktops, and Web clients." You can download it and view more information here: <a href="http://www.microsoft.com/Sqlserver/2008/en/us/compact.aspx">http://www.microsoft.com/Sqlserver/2008/en/us/compact.aspx</a></p>
 <h3>Steps to create a LINQ to SQL application using SQL Server Compact</h3>

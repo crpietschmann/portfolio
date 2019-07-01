@@ -9,7 +9,6 @@
   alias: ["/post/2010/10/17/Silverlight-Embed-IronRuby-within-XAML-Part-2", "/post/2010/10/17/silverlight-embed-ironruby-within-xaml-part-2"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>In the previous post I explored the possibility of <a href="http://pietschsoft.com/post/2010/10/02/Silverlight-Embed-IronRubyDLR-Scripting-within-XAML-using-IValueConverter-and-Custom-UserControl.aspx">embedding IronRuby / DLR Script within XAML using both an IValueConverter and Custom UserControl</a>. I spent a little more time experimenting with the DLRScriptUserControl I posted, and came up with some small modifications to it that allow UI event handlers to be wired up using a DLR language (such as IronRuby.</p>  <h3>Loading Assemblies Into the ScriptEngine.Runtime Context</h3>  <p>Something nice with how the ScriptEngine class allows you to execute a script of IronRuby (or other DLR language) is that it requires the implementer of the ScriptEngine (not the DLR script writer) to call “ScriptEngine.Runtime.LoadAssembly” in order to make a certain CLR assembly accessible within the DLR script that gets executed. This allows the scripts to be run in a sort of sandboxed environment.</p>  <p>There are two ways of doing this:</p>  <pre class="csharpcode"><span class="rem">// One: Load the assemblies of known types you want to</span>
 <span class="rem">//      make available within the script.</span>
 <span class="rem">// Load System.Windows</span>

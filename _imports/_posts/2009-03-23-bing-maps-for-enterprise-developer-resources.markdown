@@ -9,7 +9,6 @@
   alias: ["/page/Bing-Maps-for-Enterprise-Developer-Resources", "/page/bing-maps-for-enterprise-developer-resources"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>One thing that the Bing Maps Development Community is lacking (at least in an official sense from Microsoft) is a nice list of all (or at least most) of the Bing Maps Development Resources out there. A couple lists have been posted on the Bing Maps MSDN Forums, but there isn't any real list anywhere. So, I've decided to start the below list to get a better archive started that links to the majority of the Bing Maps Development Resources that I am aware of. Also, remember that this list is by no means an all inclusive list of all the resources out there. If you know of any resources worth noting, please send the link to me so I can include it below. Thanks.</p>
 <p>NOTE: I am currently in the process of migrating the content of this page, plus much more, over to the <a title="Bing Maps Showcase" href="http://bingmaps.codeplex.com/">Bing Maps Showcase</a> on CodePlex.</p>
 <p>Enjoy,<br />Chris Pietschmann</p>

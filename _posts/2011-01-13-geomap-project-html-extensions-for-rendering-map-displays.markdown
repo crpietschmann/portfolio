@@ -9,7 +9,6 @@
   alias: ["/post/2011/01/13/Geomap-Project-HTML-Extensions-for-Rendering-Map-Displays", "/post/2011/01/13/geomap-project-html-extensions-for-rendering-map-displays"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>One thing missing from HTML5 is the ability to render maps on a page. The Bing Maps and Google Maps JavaScript API’s are generally fairly simple to implement, but they could both be easier. I wrote up a small example API that allows you to add Maps, and plot data on those Maps, to an HTML page by using mostly HTML markup using a new <a href="http://geomap.codeplex.com">&lt;geomap/&gt;</a> tag.</p>  <p>While this project uses JavaScript to perform the map rendering once the page loads, all you need to do to implement it is write some simple markup. This project really makes it easier than before to add Maps to your HTML pages.</p>  <p><a href="http://geomap.codeplex.com">Download &lt;geomap&gt; Here</a></p>  <h3>Basic Map</h3>  <p>Once the &lt;geomap&gt; javascript (.js) files are included in the page, you can use the following markup to add a map.</p>  <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">geomap</span><span class="kwrd">&gt;&lt;/</span><span class="html">geomap</span><span class="kwrd">&gt;</span></pre>
 <style type="text/css">
 .csharpcode, .csharpcode pre

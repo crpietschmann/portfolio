@@ -9,7 +9,6 @@
   alias: ["/post/2004/07/01/Bye-Bye-Mr-CIO-Guy-Song", "/post/2004/07/01/bye-bye-mr-cio-guy-song"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>Now, this is just hilarious. &#8220;Bye, Bye Mr. CIO-Guy, Gonna outsource every resource &#8216;til the business runs dry.&#8221;</P>
 <P><A href="http://channel9.msdn.com/ShowPost.aspx?PostID=11950">http://channel9.msdn.com/ShowPost.aspx?PostID=11950</A></P>
 <P>You can find the full lyrics to this here: <A href="http://blogs.msdn.com/devhawk/articles/171123.aspx">http://blogs.msdn.com/devhawk/articles/171123.aspx</A></P>

@@ -9,7 +9,6 @@
   alias: ["/post/2009/01/16/Windows-7-Beta-Media-Player-12-Bigger-Focus-On-Playing-Media-Content", "/post/2009/01/16/windows-7-beta-media-player-12-bigger-focus-on-playing-media-content"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 A couple days ago I posted some of my thoughts on the <a href="/post/2009/01/Windows-7-Beta-Has-Good-and-Bad-Points-A-Short-Review.aspx">Good and Bad Parts of the Windows 7 Beta</a>, but it was a somewhat incomplete list. So, I&#39;ve decided to expand upon that list in an additional post. Why? Well, because there are some rather nice improvements worth mentioning that I didn&#39;t mention in the previous post.
 </p>

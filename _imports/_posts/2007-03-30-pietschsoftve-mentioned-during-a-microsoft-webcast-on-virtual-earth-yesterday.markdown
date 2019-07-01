@@ -9,7 +9,6 @@
   alias: ["/post/2007/03/30/PietschSoftVE-mentioned-during-a-Microsoft-Webcast-on-Virtual-Earth-yesterday", "/post/2007/03/30/pietschsoftve-mentioned-during-a-microsoft-webcast-on-virtual-earth-yesterday"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Yesterday Marc Schweigert (Microsoft Developer Evangelist) did a webcast presentation titled &quot;<a href="http://blogs.msdn.com/publicsector/archive/2007/03/30/webcast-follow-up-adding-mapping-capabilities-to-your-applications-with-virtual-earth-asp-net-ajax-march.aspx">Adding Mapping Capabilities to your Applications with Virtual Earth and ASP.NET AJAX</a>&quot;. Near the end of the presentation, he mentioned the <a href="http://codeplex.com/PietschSoftVE3">PietschSoft.VE </a>project and gave the link to it on <a href="http://codeplex.com/PietschSoftVE3">CodePlex</a> and the <a href="/product/ve">Live Demo </a>site. This mention is located in slide 32 of the Powerpoint deck from the presentation.
 </p>

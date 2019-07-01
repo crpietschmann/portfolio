@@ -9,7 +9,6 @@
   alias: ["/post/2009/01/26/CSharp-Flash-Window-in-Taskbar-via-Win32-FlashWindowEx", "/post/2009/01/26/csharp-flash-window-in-taskbar-via-win32-flashwindowex"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>The Windows API (Win32) has the FlashWindowEx method within the User32 library; this method allows you (the developer) to Flash a Window, signifying to the user that some major event occurred within the application that requires their attention. The most common use of this is to flash the window until the user returns focus to the application. However, you can also flash the window a specified number of times, or just keep flashing it until you decide when to stop.</p>
 <p>The use of the FlashWindowEx method however isn't built into the .NET Framework anywhere. In order to access it you need to use the Platform Invoke (PInvoke) features of .NET to "drop" down to the Windows API (Win32) and call it directly. Also, as with many other functionalities in&nbsp;the Windows API&nbsp;(that aren't directly exposed by .NET) the FlashWindowEx method can be a little tricky to use if you aren't familiar with working with the Windows API from within .NET.</p>
 <p>Now rather than go too deep into the specifics of PInvoke or the Win32 FlashWindowEx method, below is a simple static class in C# that allows you to easily utilize this method. There is actually quite a bit of information needed to explain how to use PInvoke to utilize the Windows API (Win32), so maybe I'll cover that in a future article.</p>

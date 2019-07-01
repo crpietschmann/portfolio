@@ -9,7 +9,6 @@
   alias: ["/post/2008/12/03/Busby-SEO-Test", "/post/2008/12/03/busby-seo-test"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <h1>Busby SEO Test is Polluting the Internet with Link Spam!!! <br />
 </h1>
 <p>

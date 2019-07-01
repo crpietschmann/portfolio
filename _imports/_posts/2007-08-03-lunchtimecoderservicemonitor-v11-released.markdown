@@ -9,7 +9,6 @@
   alias: ["/post/2007/08/03/LunchTimeCoderServiceMonitor-v11-Released", "/post/2007/08/03/lunchtimecoderservicemonitor-v11-released"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>I just posted up the latest release (v1.1) of my windows service monitor app.</P>
 <P><A href="/download/lunchtimecoder/dotNet/WindowsServiceMonitor/">Download LunchTimeCoder.ServiceMonitor&nbsp;v1.1</A></P>
 <P>This is a small utility that monitors windows services running on the local machine or any maching on the local network. And notifies you via an icon in the system tray and a balloon popup telling you which services aren't running. You can also Start and Stop services from this utility.</P>

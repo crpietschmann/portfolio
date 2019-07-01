@@ -9,7 +9,6 @@
   alias: ["/post/2008/04/24/Virtual-Earth-Center-Map-to-Shape-during-OnClick-Event", "/post/2008/04/24/virtual-earth-center-map-to-shape-during-onclick-event"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Here&#39;s a short, simple example of wiring up Virtual Earth to zoom/pan the map to showing the best fit to center on a specific Shape object that is clicked on by the user. 
 </p>

@@ -9,7 +9,6 @@
   alias: ["/post/2009/01/02/Single-Instance-WPF-Application-in-NET-3", "/post/2009/01/02/single-instance-wpf-application-in-net-3"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>If you do a search on implementing a Single Instance application in WPF you'll get quite a few results. From what I've seen there are really only 2 solutions. One is really simplistic and the other offers more functionality; both of which are fairly simple to implement.</p>
 <h3>Method 1: Checking Existing Processes By Name</h3>
 <p>This is the simplest to implement. All you do is check if there is more than 1 running process with the same name as the current process.</p>

@@ -9,7 +9,6 @@
   alias: ["/post/2008/12/15/Vista-Sidebar-Gadget-for-Pandora-Radio", "/post/2008/12/15/vista-sidebar-gadget-for-pandora-radio"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 I see that Pandora has released a Windows Sidebar Gadget themselves.
 </p>

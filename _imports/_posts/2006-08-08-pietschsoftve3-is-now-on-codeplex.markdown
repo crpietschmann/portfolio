@@ -9,7 +9,6 @@
   alias: ["/post/2006/08/08/PietschSoftVE3-is-now-on-CodePlex", "/post/2006/08/08/pietschsoftve3-is-now-on-codeplex"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 I am still hosting the demo site but I have moved the project into <a href="http://www.codeplex.com/pietschsoftve3">CodePlex</a>. The CodePlex site offers a Discussion board (forums) and Issue Tracker. This will allow me to better support the PietschSoft.VE3 map control and library.
 </p>

@@ -9,7 +9,6 @@
   alias: ["/post/2015/01/31/Social-Media-has-ruined-my-blog-or-am-I-just-lazy", "/post/2015/01/31/social-media-has-ruined-my-blog-or-am-i-just-lazy"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>As I've been using Twitter more the last couple years, I've also been blogging less. Every time I go to write up a new blog entry I realize how long it's been since the previous post. I know I'm not alone in this, and other people might blame Twitter, Facebook and/or some other social media service.</p>
 <p>It's so incredibly easy to share a link or just a sentence of information on Twitter. Facebook makes it easy to share more than just a short blurb, so many people use Facebook instead and then post a link to it on Twitter too.</p>
 <p>Compared to social media, blogs are hard. You want to write up more than just a short thought. Plus conversations on blogs are more difficult than the back and forth discussions that social media makes simple; as they are built just for this purpose.</p>

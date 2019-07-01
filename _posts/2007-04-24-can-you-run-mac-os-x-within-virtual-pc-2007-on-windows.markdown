@@ -9,7 +9,6 @@
   alias: ["/post/2007/04/24/Can-you-run-Mac-OS-X-within-Virtual-PC-2007-on-Windows", "/post/2007/04/24/can-you-run-mac-os-x-within-virtual-pc-2007-on-windows"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>Does anyone know if Mac OS X can be run within Virtual PC 2007 under Windows?</P>
 <P>I've searched and can't find any evidence of this being possible. I am thinking about possibly doing this because I would like to do some software testing on Mac OS X, and I would rather spend less for just the OS than buy a Mac Mini.</P>
 <P>Mac OS X - $129.00<BR>Mac Mini - $599.00</P>

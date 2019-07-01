@@ -9,7 +9,6 @@
   alias: ["/post/2007/06/30/Add-iPhone-style-flicking-support-using-JavaScript", "/post/2007/06/30/add-iphone-style-flicking-support-using-javascript"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>I've been testing some of my code lately in Firefox 3.0 and along with all the iPhone hype, I thought I'd write up some simple JavaScript code that allows me to enable iPhone style flicking support within my own apps.</P>
 <P><A href="/download/javascript/iphoneflickui/">Go check it out</A>, it's actually pretty neat! And, it's entirely HTML and JavaScript code.</P>
 <P>It currently only works in Safari 3.0, Internet Explorer 7 and the Apple iPhone. Well, hopefully the iPhone, I don't have one to test it on.</P>

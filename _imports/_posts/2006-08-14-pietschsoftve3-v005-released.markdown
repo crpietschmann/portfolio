@@ -9,7 +9,6 @@
   alias: ["/post/2006/08/14/PietschSoftVE3-v005-Released", "/post/2006/08/14/pietschsoftve3-v005-released"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Tonight I released v0.05 of the PietschSoft.VE3 Virtual Earth mapping control for ASP.NET.
 </p>

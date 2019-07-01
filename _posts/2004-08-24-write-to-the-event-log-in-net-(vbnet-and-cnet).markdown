@@ -9,7 +9,6 @@
   alias: ["/post/2004/08/24/Write-to-the-Event-Log-in-NET-(VBNET-and-CNET)", "/post/2004/08/24/write-to-the-event-log-in-net-(vbnet-and-cnet)"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 It is as simple as this to write to the Windows Event Log in .NET
 </p>

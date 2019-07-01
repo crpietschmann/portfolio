@@ -9,7 +9,6 @@
   alias: ["/post/2014/11/21/5-Common-CSharp-tasks-in-Apple-Swift-Programming-Language", "/post/2014/11/21/5-common-csharp-tasks-in-apple-swift-programming-language"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>There are many simple tasks performed by C# developers over and over. These are common things necessary in all kinds of applications. This post will give an overview of a few of the most common tasks performed by C# developers with examples on how to perform those tasks using the Swift programming language from Apple.</p>
 <h3>Type Casting</h3>
 <p>There are many reasons you might need to convert a primitive type to another. One of these is to convert an integer to a string for string concatenation or some other reason.</p>

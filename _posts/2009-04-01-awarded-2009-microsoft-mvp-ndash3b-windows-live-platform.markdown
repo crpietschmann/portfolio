@@ -9,7 +9,6 @@
   alias: ["/post/2009/04/01/Awarded-2009-Microsoft-MVP-ndash3b-Windows-Live-Platform", "/post/2009/04/01/awarded-2009-microsoft-mvp-ndash3b-windows-live-platform"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><em><strong>Congratulations 2009 Microsoft MVP!</strong></em></p>
 <p><em>Dear Chris Pietschmann,</em></p>
 <p><em>Congratulations! We are pleased to present you with the 2009 Microsoft&reg; MVP Award! This award is given to exceptional technical community leaders who actively share their high quality, real world expertise with others.</em></p>

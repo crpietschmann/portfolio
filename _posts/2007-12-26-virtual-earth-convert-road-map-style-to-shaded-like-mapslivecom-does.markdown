@@ -9,7 +9,6 @@
   alias: ["/post/2007/12/26/Virtual-Earth-Convert-Road-Map-Style-to-Shaded-Like-mapslivecom-does", "/post/2007/12/26/virtual-earth-convert-road-map-style-to-shaded-like-mapslivecom-does"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <h3>What is the Shaded map Style?</h3>
 <p>
 If you&#39;ve used <a href="http://maps.live.com/">maps.live.com</a> and Virtual Earth, then you&#39;ve probably noticed that the Road map style in the Virtual Earth API isn&#39;t the same as it is on <a href="http://maps.live.com/">maps.live.com</a>. This is because the&nbsp;Road map style on <a href="http://maps.live.com/">maps.live.com</a> is actually not using the VEMapStyle.Road map style, but instead is using VEMapStyle.Shaded. The <a href="http://msdn2.microsoft.com/en-us/library/bb412515.aspx">VEMapStyle.Shaded</a> map style is the standard Road style with Shaded Contours drawn on the map, and is new to Virtual Earth v6.0. In this article, I will show you how to hook in to Virtual Earth and make it show the Shaded map style when ever the user selects the Road style on the map dashboard.

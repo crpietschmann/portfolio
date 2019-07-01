@@ -9,7 +9,6 @@
   alias: ["/post/2008/10/29/Watch-PDC08-Session-Online", "/post/2008/10/29/watch-pdc08-session-online"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 If you couldn&#39;t attend PDC&#39;08 (like me) then you&#39;ll probably be interested in learning that you can go watch all the PDC&#39;08 Sessions online for Free! This is awesome! 
 </p>

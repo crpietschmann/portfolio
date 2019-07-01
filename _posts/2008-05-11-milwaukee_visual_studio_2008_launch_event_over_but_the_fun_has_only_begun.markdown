@@ -9,7 +9,6 @@
   alias: ["/post/2008/05/11/Milwaukee_Visual_Studio_2008_Launch_Event_over_but_the_fun_has_only_begun", "/post/2008/05/11/milwaukee_visual_studio_2008_launch_event_over_but_the_fun_has_only_begun"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Two days ago, May 9th, I attended the <a href="http://heroeshappenhere.com">{Heroes Happen Here}</a> launch event for VS&#39;08, SQL Server &#39;08 and Windows Server &#39;08 in Milwaukee. There was alot of really great content shown off, and we all got to take away some free software, plus the event was free to attend. 
 </p>

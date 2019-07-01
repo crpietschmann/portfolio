@@ -9,7 +9,6 @@
   alias: ["/post/2008/03/27/Add-System-Menu-Items-to-WPF-Window-using-Win32-API", "/post/2008/03/27/add-system-menu-items-to-wpf-window-using-win32-api"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>A couple weeks ago, I blog how to "<a href="/post/2008/03/Add-System-Menu-Items-to-a-Form-using-Windows-API.aspx">Add System Menu Items to a Form using Windows API</a>". Being that WPF has it's differences from Windows Forms, I began to wonder how simple or difficult this would be to do within a WPF application. As it turns out, there are a couple of extra things you need to do, but the code is pretty much the same.</p>
 <p>This is something I used to have a code snippet for in VB6, but I haven't needed to do this in a while so I never wrote up an example in .NET. So, here's the simple code necessary to add some custom menu items to your applications System Menu within a WPF application. If you're not familiar, the System Menu is the menu that shows up if you click on the apps icon in the upper left or if you right click the app in the taskbar.</p>
 <p>Below is a screenshot of it in action along with the complete source code in C#.</p>

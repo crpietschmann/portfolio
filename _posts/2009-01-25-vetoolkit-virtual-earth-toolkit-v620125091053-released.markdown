@@ -9,7 +9,6 @@
   alias: ["/post/2009/01/25/VEToolkit-Virtual-Earth-Toolkit-v620125091053-Released", "/post/2009/01/25/vetoolkit-virtual-earth-toolkit-v620125091053-released"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 This is the first official release of the <a href="http://codeplex.com/VEToolkit">Virtual Earth Toolkit</a>. The toolkit is by no means complete, but this is a &quot;stable&quot; collection of the Controls, Extenders and Methods that have been implemented thus far.
 </p>

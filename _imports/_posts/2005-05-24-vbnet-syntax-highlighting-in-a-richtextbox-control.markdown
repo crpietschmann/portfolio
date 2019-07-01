@@ -9,7 +9,6 @@
   alias: ["/post/2005/05/24/VBNET-Syntax-Highlighting-in-a-RichTextBox-control", "/post/2005/05/24/vbnet-syntax-highlighting-in-a-richtextbox-control"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>This last weekend I expirimented a little bit&nbsp;with extending the functionality of the RichTextBox control. Below you'll find an example of a small class that enherits from the RichTextBox control and&nbsp;allows you to implement syntax highlighting (with the use of a couple Win32 API call to smooth over the process of course.) The code pretty much speaks for itself.</p>
 <p>&nbsp;</p>
 <p><span>Public</span><span> </span><span>Class</span><span> SyntaxRTB</span></p>

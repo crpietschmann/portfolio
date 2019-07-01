@@ -9,7 +9,6 @@
   alias: ["/post/2008/01/24/Introduction-to-LINQ", "/post/2008/01/24/introduction-to-linq"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <h3>What is LINQ?</h3>
 <p>LINQ (Language INtegrated Query) is more than just a new method of embedding SQL queries within code. It allows to to perform Strongly Typed&nbsp;queries on any kind of data, just as long as the collection of data implements the IEnumerable interface.</p>
 <p>The most important part is "Language Integrated". This allows you to more easily write queries in C# 3.0 and VB 9.0 such as:</p>

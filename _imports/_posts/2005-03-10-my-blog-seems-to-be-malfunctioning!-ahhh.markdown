@@ -9,6 +9,5 @@
   alias: ["/post/2005/03/10/My-blog-seems-to-be-malfunctioning!-Ahhh", "/post/2005/03/10/my-blog-seems-to-be-malfunctioning!-ahhh"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>My blog seems to be malfunctioning! Ahhh....</P>
 <P>I'll get it fixed ASAP...</P>

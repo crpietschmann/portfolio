@@ -9,7 +9,6 @@
   alias: ["/post/2006/06/03/ASPNET-20-Place-JavaScript-inside-the-PageHeader", "/post/2006/06/03/aspnet-20-place-javascript-inside-the-pageheader"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>The Page.ClientScript object allows you to place JavaScript inside the Page, but it's limited in the fact that you cannot use it to place JavaScript inside the Head tags of the Page. But fortunately there is a way to do this.</p>
 <p>Add a .js file include inside the page header:</p>
 <p>[code:c#]<br /> HtmlGenericControl Include = new HtmlGenericControl("script");<br /> Include.Attributes.Add("type", "text/javascript");<br /> Include.Attributes.Add("src", "http://dev.virtualearth.net/mapcontrol/v3/mapcontrol.js");<br /> this.Page.Header.Controls.Add(Include);<br /> [/code]</p>

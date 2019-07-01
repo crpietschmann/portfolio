@@ -9,7 +9,6 @@
   alias: ["/post/2007/05/16/Site-Referral-Keywords-Top-10-Strange-and-Surprising", "/post/2007/05/16/site-referral-keywords-top-10-strange-and-surprising"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>I've had Google Analytics set up on my site since the middle of January so I can get an idea on what content gets the most traffic. The goal has been satisfied; I know which pages get the most hits. Now, if there were a way to integrate it within my RSS feed... but that is another topic to discuss elsewhere.</P>
 <P>I was looking at some of my referral keywords from search engines, and I thought I'd share some of them. I was actually a little surprise that some of my posts ranked as high as they did with some of these keywords.</P>
 <P><STRONG>TOP 10 Keywords:</STRONG><BR>web messenger<BR>vista ultimate key<BR>vista ultimate product key<BR>msn web messenger<BR>webmessenger<BR>msn webmessenger<BR>webmessenger.msn.com<BR>vista ultimate cd key<BR>system.drawing.color<BR>asp.net 2.0 javascript</P>

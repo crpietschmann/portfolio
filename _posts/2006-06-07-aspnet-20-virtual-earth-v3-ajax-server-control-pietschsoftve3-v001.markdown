@@ -9,7 +9,6 @@
   alias: ["/post/2006/06/07/ASPNET-20-Virtual-Earth-v3-Ajax-Server-Control-PietschSoftVE3-v001", "/post/2006/06/07/aspnet-20-virtual-earth-v3-ajax-server-control-pietschsoftve3-v001"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Here is v0.01 of my ASP.NET Virtual Earth v3 custom control. The zip file download contains the DLL code and a sample test website.
 </p>

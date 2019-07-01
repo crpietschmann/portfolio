@@ -9,7 +9,6 @@
   alias: ["/post/2007/11/26/NET-How-to-Alias-Namespaces-and-Data-Types", "/post/2007/11/26/net-how-to-alias-namespaces-and-data-types"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>One of the little known features of .NET is that you can&nbsp;give complete namespaces and data types alias's that you can reference them with in code.</p>
 <h3>Aliasing Data Types</h3>
 <p>For this example we'll give a different name to the integer data type:</p>

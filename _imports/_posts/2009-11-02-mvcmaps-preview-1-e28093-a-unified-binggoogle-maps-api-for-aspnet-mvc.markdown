@@ -9,7 +9,6 @@
   alias: ["/post/2009/11/02/MvcMaps-Preview-1-e28093-A-Unified-BingGoogle-Maps-API-for-ASPNET-MVC", "/post/2009/11/02/mvcmaps-preview-1-e28093-a-unified-binggoogle-maps-api-for-aspnet-mvc"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>I spent some time lately working on bringing some of the concepts of Web.Maps.VE to ASP.NET MVC. The concepts I&rsquo;m referring to are Simplicity and Ease of Development in making the implementation of mapping within ASP.NET MVC applications as simple as possible along with the Flexibility and Customizability of the Base Mapping API itself. Then I thought, Since I&rsquo;m building an abstraction layer to simplify Bing Maps development, why not implement it in a flexible manor as to be able to support other Mapping API&rsquo;s as well?</p>
 <p>The result of such an effort in a nice Unified API that allows virtually the same code to be written when implementing either Bing Maps or Google Maps. In fact, all you need to do to change your application over to using one mapping provider instead of the other is to just change a single line of code.</p>
 <p>Sound too good to be true?</p>

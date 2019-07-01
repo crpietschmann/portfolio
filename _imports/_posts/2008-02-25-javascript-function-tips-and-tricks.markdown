@@ -9,7 +9,6 @@
   alias: ["/post/2008/02/25/JavaScript-Function-Tips-and-Tricks", "/post/2008/02/25/javascript-function-tips-and-tricks"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>First, What is a JavaScript Function? As defined by W3Schools.com a JavaScript Function is:</p>
 <p><em>"A function is a reusable code-block that will be executed by an event, or when the function is called."</em> - <a href="http://www.w3schools.com/js/js_functions.asp">http://www.w3schools.com/js/js_functions.asp</a></p>
 <p>You're probably thinking, "Well, Yeah. I knew that." But, how much do you really know about JavaScript Functions?</p>

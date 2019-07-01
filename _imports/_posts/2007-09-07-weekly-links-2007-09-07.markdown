@@ -9,7 +9,6 @@
   alias: ["/post/2007/09/07/Weekly-Links-2007-09-07", "/post/2007/09/07/weekly-links-2007-09-07"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P><STRONG>C# - Generics<BR></STRONG><A href="http://www.codeguru.com/csharp/sample_chapter/article.php/c11673/">C# Generics, Part 2/4: Constraints, Members, Operators</A>&nbsp;- Patrick Smacchia</P>
 <P><A href="http://adamesterline.com/2007/03/08/c-multi-type-generic-constraints/">C# Multi-Type Generic Constraints</A> - Adam Esterline</P>
 <P><A href="http://blogs.msdn.com/danvallejo/archive/2004/10/14/242515.aspx">C# 2.0 Constraints on Generic Types</A> -&nbsp;Dan Vallejo</P>

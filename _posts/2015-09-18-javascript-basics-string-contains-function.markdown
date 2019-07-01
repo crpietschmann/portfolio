@@ -9,7 +9,6 @@
   alias: ["/post/2015/09/18/JavaScript-Basics-String-Contains-Function", "/post/2015/09/18/javascript-basics-string-contains-function"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>In many of the server-side programming languages like C#, the String object has a "Contains" method that returns a boolean indicating if the string contains another specified string. JavaScript however does not have a ".contains" method. Fortunately, the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf" target="_blank">".indexOf" method in JavaScript</a> can easily be used to mimic or build your own ".contains" method.</p>
 <h3>Simple JavaScript String Contains Method</h3>
 <p>Here's a simple implementation of a ".contains" function that is case sensitive:</p>

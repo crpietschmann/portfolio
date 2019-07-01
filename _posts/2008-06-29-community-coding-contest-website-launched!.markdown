@@ -9,7 +9,6 @@
   alias: ["/post/2008/06/29/Community-Coding-Contest-Website-Launched!", "/post/2008/06/29/community-coding-contest-website-launched!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 I just launched the Official Community Coding Contest website.
 </p>

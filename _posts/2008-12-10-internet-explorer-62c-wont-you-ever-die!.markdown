@@ -9,7 +9,6 @@
   alias: ["/post/2008/12/10/Internet-Explorer-62c-wont-you-ever-die!", "/post/2008/12/10/internet-explorer-62c-wont-you-ever-die!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 <a href="http://iedeathmarch.org"><img src="/image.axd?picture=iedeathmarch2009badge.png" border="0" alt="IE DEATH MARCH 2009" align="right" /></a>I&#39;ve come across the <a href="http://iedeathmarch.org">http://iedeathmarch.org</a> website a couple times recently, and I definately agree.
 </p>

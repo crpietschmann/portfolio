@@ -9,7 +9,6 @@
   alias: ["/post/2007/09/24/JavaScript-Add-Search-Engine-Keyword-Highlight-Support-to-your-site-with-ease", "/post/2007/09/24/javascript-add-search-engine-keyword-highlight-support-to-your-site-with-ease"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>When looking at the source code for the <a href="http://dotnetblogengine.net">BlogEngine.NET</a> project, I noticed that they are implementing some <a href="http://fucoder.com/code/se-hilite/">javascript to highlight search engine keywords</a>. What happens is when a user searches (using Google, Yahoo, MSN, etc.) and then clicks through to your site, this javascript then highlights any words on the page that match the keywords they are search for. This isn't critical functionality to add to a site, but it sure helps in making your site much more user friendly by allowing them to more easily find what they are searching for.</p>
 <p>The script they implemented in BlogEngine.NET is called <a href="http://fucoder.com/code/se-hilite/">se-hilite</a>. The current version has support for all the major search engines and browsers, and this script is pretty mature having been around since June 2004.&nbsp;It is also fairly easy to implement, all you have to do is add a CSS class named <em>hilite</em> to your CSS file, and then add a javascript&nbsp;include&nbsp;to the <em>se-hilite.js</em> file to your page.</p>
 <p>My blog is implemented with ASP.NET 2.0, so to include the se-hilite.js file in my entire site I just added the following line to the load event of my master page:</p>

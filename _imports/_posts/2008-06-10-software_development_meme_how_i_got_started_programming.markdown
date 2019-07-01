@@ -9,7 +9,6 @@
   alias: ["/post/2008/06/10/Software_Development_Meme_How_I_got_started_programming", "/post/2008/06/10/software_development_meme_how_i_got_started_programming"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Ok, I'm it. I've been tagged by <a href="http://larryclarkin.com">Larry Clarkin</a> with the latest questionnaire floating around the blogs. This one is focused on how everyone got started into programming.</p>
 <h3>How old were you when you started programming?</h3>
 <p>Even though I first started playing computer games on the family&nbsp;Apple IIe when I was 3 years old; I didn't actually get started into programming until I was 14.</p>

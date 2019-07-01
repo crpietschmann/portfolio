@@ -9,7 +9,6 @@
   alias: ["/post/2005/03/04/Windows-Longhorn-Glass-Look-DHTML", "/post/2005/03/04/windows-longhorn-glass-look-dhtml"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Heres a Windows <a href="http://msdn.microsoft.com/longhorn/" target="_blank" title="Windows ">Longhorn</a> Glass Look DHTML page I found somewhere one time. Its pretty neet, and it doesn&#39;t work in Firefox.
 </p>

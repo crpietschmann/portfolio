@@ -9,7 +9,6 @@
   alias: ["/post/2008/01/24/Virtual-Earth-Dynamically-Load-InfoBox-Using-ASPNET-AJAX", "/post/2008/01/24/virtual-earth-dynamically-load-infobox-using-aspnet-ajax"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Loading alot of pushpins on the map can slow down your page in two ways: 1) Page load times can be slowed down, and 2) loading pushpins via ajax can be slow. To improve the performance (as in download and database query times)&nbsp;of loading pushpins on the map, you can load the Pushpin Shapes Title and Description on the fly. This allows you to only load the Pushpins Title and Description as it's needed, thus reducing the amount of data you need to send down to the client when initially loading your pushpins.</p>
 <h3>Dynamically Load InfoBox Title and Description using ASP.NET AJAX</h3>
 <p><strong>Step 1:</strong> When adding Pushpins to the map, use the following format when setting thier Titles: "LOAD:{0}". Replace the "{0}" with a unique ID representing that Pushpin.</p>

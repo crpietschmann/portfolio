@@ -9,7 +9,6 @@
   alias: ["/post/2009/04/04/Virtual-Earth-Shapes-(VEShape)-to-WKT-(Well-Known-Text)-and-Back-using-JavaScript", "/post/2009/04/04/virtual-earth-shapes-(veshape)-to-wkt-(well-known-text)-and-back-using-javascript"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>One of the standard methods of representing geometric shapes is by using the WKT (Well-Known-Text) standard. This is a human readable standard method of representing geometric shapes that can be used to easily pass spatial data between applications. I know GML or GeoRSS may be a little more applicable since they are based on XML, but WKT can work just fine in some cases.</p>
 <p>If you don&rsquo;t know what WKT is here are a couple links for reference:</p>
 <p><a title="http://geoapi.sourceforge.net/2.0/javadoc/org/opengis/referencing/doc-files/WKT.html" href="http://geoapi.sourceforge.net/2.0/javadoc/org/opengis/referencing/doc-files/WKT.html">http://geoapi.sourceforge.net/2.0/javadoc/org/opengis/referencing/doc-files/WKT.html</a></p>

@@ -9,7 +9,6 @@
   alias: ["/post/2013/10/16/Public-Domain-or-at-least-Open-Source-Licensing-Eventually", "/post/2013/10/16/public-domain-or-at-least-open-source-licensing-eventually"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Most copyrighted products are proprietary and closed source; such as books, software programs and all other types of copyrightable materials. The reason for this, and a very good one IMO, is to allow the author(s) to make a living on what they've created. While some are open source from the start, most are proprietary; which makes sense. After all, you wont be able to create future products if you can't afford to pay the bills.</p>
 <h3>When to Set it Free</h3>
 <p>However, there comes a time in the natural life cycle of a product where it is appropriate to set it free. A good time for this is when you can no longer make enough money off it to make the necessary support and maintenance of the product feasible. Another good time is when the demand for the product has decreased past the "point of no return." Every product reaches this "set it free" stage at some point.</p>

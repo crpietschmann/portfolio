@@ -9,7 +9,6 @@
   alias: ["/post/2007/05/02/MS-Virtual-Earth-v50-Released", "/post/2007/05/02/ms-virtual-earth-v50-released"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 A couple days ago, Microsoft released <a href="http://dev.live.com/blogs/virtual_earth/archive/2007/04/28/105.aspx">Virtual Earth v5.0</a>. So, what&#39;s new?
 </p>

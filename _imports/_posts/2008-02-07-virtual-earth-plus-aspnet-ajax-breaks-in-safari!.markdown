@@ -9,7 +9,6 @@
   alias: ["/post/2008/02/07/Virtual-Earth-Plus-ASPNET-AJAX-Breaks-In-Safari!", "/post/2008/02/07/virtual-earth-plus-aspnet-ajax-breaks-in-safari!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><strong>Update 5/17/2008:</strong> This issue has since been&nbsp;fixed with the release of the Virtual Earth v6.1 release. There is still a small issue related to the CalendarExtender and Virtual Earth that only occurs in Safari. You can read more about it <a href="/post.aspx?id=c75cbc89-6abf-4869-914d-6176bb6c7736">here</a>.</p>
 <p>&nbsp;</p>
 <p>I do alot of development with ASP.NET AJAX and Virtual Earth, and each of them work fine by themselves in Safari 3 on Windows. However, if you use them both on the same page, it will cause ASP.NET AJAX to break and stop working in Safari.</p>

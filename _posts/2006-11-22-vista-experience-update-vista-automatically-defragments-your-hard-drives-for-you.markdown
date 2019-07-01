@@ -9,7 +9,6 @@
   alias: ["/post/2006/11/22/Vista-Experience-Update-Vista-automatically-defragments-your-hard-drives-for-you", "/post/2006/11/22/vista-experience-update-vista-automatically-defragments-your-hard-drives-for-you"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>I guess this is one of the changes they made to always keep Windows running smoothly.</p>
 <p>When Windows Vista is installed it automatically sets up a schedule to defragment your hard drives once a week. You no longer need to remember to defrag your hard drives once in awhile in order to keep your system running efficiently.</p>
 <p>Now, this is a feature that I was a little surprised they didn't add in XP, but I'm glad it's here in Vista. One thing I always thought was a little interesting is if you check the&nbsp;"Disk Defragmenter" just after a fresh Windows XP install, it will always say you should defragment the drive.</p>

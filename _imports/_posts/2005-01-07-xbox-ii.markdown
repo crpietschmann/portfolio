@@ -9,7 +9,6 @@
   alias: ["/post/2005/01/07/XBox-II", "/post/2005/01/07/xbox-ii"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>1) Hard Drive... Yes!&nbsp; There was some speculation that MS was going to take the HD out to make it more difficult to Mod.</P>
 <P>2) Flash based HD... Yes!!!&nbsp; It was told to me that the HD was going to be flash based... small size fast access... BAM!</P>
 <P>3) No Stupid Dongle DVD playback... Yes!!!&nbsp; The reason that the first Xbox didn't have built in DVD playback is a simple one, Sony owns the Intellectual Property rights for DVD playback.&nbsp; Nuf said...</P>

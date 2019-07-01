@@ -9,7 +9,6 @@
   alias: ["/post/2007/11/06/Not-All-Software-Developers-Need-To-Be-Graphic-Designers", "/post/2007/11/06/not-all-software-developers-need-to-be-graphic-designers"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>Today, I came across a post by <A href="http://vitalygorn.com/">Vitaly Gorn</A>&nbsp;titled "<A href="http://vitalygorn.com/blog/post/2007/11/Is-it-time-for-software-developers-to-master-in-graphic-design.aspx">Is it time for software developers to master in graphic design?</A>" And, in this article, they explain why software developers need to acquire more graphic design skills today.</P>
 <H3>What's the problem?</H3>
 <P>Most application User Interfaces aren't the most user friendly. I do agree that this is a common problem. And, there is no doubt that the one of the next steps in the evolution of the&nbsp;software industry is betting Graphic Design and User Interface Design.</P>

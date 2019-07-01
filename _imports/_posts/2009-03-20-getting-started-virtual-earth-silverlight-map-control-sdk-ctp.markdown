@@ -9,7 +9,6 @@
   alias: ["/post/2009/03/20/Getting-Started-Virtual-Earth-Silverlight-Map-Control-SDK-CTP", "/post/2009/03/20/getting-started-virtual-earth-silverlight-map-control-sdk-ctp"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><strong>UPDATE: I have written a newer version of this article to specifically target the latest Bing Maps Silverlight Control Version 1.0 Release.</strong></p>
 <p><strong>You can find the new article here: <a href="http://pietschsoft.com/post.aspx?id=82ad46e3-73c5-468f-be62-6247970f31e1">Getting Started with Bing Maps Silverlight Control v1.0</a></strong></p>
 <hr />

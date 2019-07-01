@@ -9,7 +9,6 @@
   alias: ["/post/2013/08/21/Automation-is-Essential", "/post/2013/08/21/automation-is-essential"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>There are many tasks that are performed repetitively. Some of those tasks often get outsourced. However, in the end someone is responsible for performing those tasks.</p>
 <p>Automation is the process of setting up some kind of process to perform repetitive tasks with minimal effort from the person responsible.</p>
 <p>Any time there is a task that is necessary to perform repetitively you must (in today's ever shrinking and increasingly competitive world) consider if that task is worth automating in whole or in part.</p>

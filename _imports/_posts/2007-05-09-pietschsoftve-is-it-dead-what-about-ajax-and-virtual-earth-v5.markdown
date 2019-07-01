@@ -9,7 +9,6 @@
   alias: ["/post/2007/05/09/PietschSoftVE-Is-it-Dead-What-about-Ajax-and-Virtual-Earth-v5", "/post/2007/05/09/pietschsoftve-is-it-dead-what-about-ajax-and-virtual-earth-v5"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 <strong>Is PietschSoft.VE Dead?</strong>
 </p>

@@ -9,7 +9,6 @@
   alias: ["/post/2008/04/25/Virtual-Earth-Resources", "/post/2008/04/25/virtual-earth-resources"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Here&#39;s&nbsp;links to&nbsp;some excellent resources&nbsp;for MS&nbsp;Virtual Earth development: 
 </p>

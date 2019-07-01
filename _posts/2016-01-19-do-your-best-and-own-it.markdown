@@ -9,7 +9,6 @@
   alias: ["/post/2016/01/19/Do-your-best-and-Own-it", "/post/2016/01/19/do-your-best-and-own-it"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>A couple years ago I posted some thoughts on "<a href="http://pietschsoft.com/post/2013/09/08/You-are-responsible-for-YOU">You are responsible for YOU</a>" pointing out that you much take control for your own actions. I've been thinking about this a bit recently and thought I would expand on that thought and add a bit. You can't merely be responsible for yourself and your actions, but you much also "Own it."</p>
 <h3>Own It</h3>
 <p>To "Own It" means to not just take the responsibility for yourself and to start action, but to also take responsibility for the consequences of your actions. Whether the consequences are good or bad, you must take responsibility and just Own It.</p>

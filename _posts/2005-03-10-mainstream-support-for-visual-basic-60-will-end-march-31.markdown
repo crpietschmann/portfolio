@@ -9,7 +9,6 @@
   alias: ["/post/2005/03/10/Mainstream-support-for-Visual-Basic-60-will-end-March-31", "/post/2005/03/10/mainstream-support-for-visual-basic-60-will-end-march-31"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P><IMG src="/Blog/images/14/r_img_VB_lifecycle_large2.gif" align=left></P>
 <P>&nbsp;</P>
 <P>Mainstream support for Visual Basic 6.0 will end March 31, 2005. Its kind of like <A title=Microsoft href="http://microsoft.com/" target=_blank>Microsoft</A> forcing us to all start using <A title=.NET href="http://www.microsoft.com/net/" target=_blank>.NET</A>. Fankly I'd rather I didn't have to use VB6 anymore anyway.</P>

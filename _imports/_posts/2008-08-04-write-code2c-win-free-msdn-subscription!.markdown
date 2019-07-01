@@ -9,7 +9,6 @@
   alias: ["/post/2008/08/04/Write-code2c-Win-FREE-MSDN-Subscription!", "/post/2008/08/04/write-code2c-win-free-msdn-subscription!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Have you got a cool piece of code you wrote, but don&#39;t know what to do with?<br />
 Have you got a cool idea, but need the motivation to work on it?<br />

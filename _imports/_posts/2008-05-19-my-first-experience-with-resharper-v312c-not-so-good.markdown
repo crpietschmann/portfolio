@@ -9,7 +9,6 @@
   alias: ["/post/2008/05/19/My-First-Experience-with-ReSharper-v312c-not-so-good", "/post/2008/05/19/my-first-experience-with-resharper-v312c-not-so-good"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 A while back I won a free license for <a href="http://www.jetbrains.com/resharper/index.html">JetBrains ReSharper v3.1</a> at one of the monthly <a href="http://wi-ineta.org">WI .NET Users Group</a> meetings. Today, I finally got around to installing it to check it out.
 </p>

@@ -9,7 +9,6 @@
   alias: ["/post/2004/08/24/HVD-Holographic-Versatile-Disc", "/post/2004/08/24/hvd-holographic-versatile-disc"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 A Japanese company has achieved the world&#39;s first reliable recording and playback of digital movies on a transparent holographic recording disc.
 <p>
 Optware plans to offer reader/writer players and 200Gbyte holographic versatile discs (HVD) in 2006 for enterprise users.

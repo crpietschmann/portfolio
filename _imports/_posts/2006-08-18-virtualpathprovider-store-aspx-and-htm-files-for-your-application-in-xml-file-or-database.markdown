@@ -9,7 +9,6 @@
   alias: ["/post/2006/08/18/VirtualPathProvider-Store-ASPX-and-HTM-files-for-your-application-in-xml-file-or-database", "/post/2006/08/18/virtualpathprovider-store-aspx-and-htm-files-for-your-application-in-xml-file-or-database"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>With the <a href="http://msdn2.microsoft.com/en-us/library/system.web.hosting.virtualpathprovider.aspx">VirtualPathProvider</a> you can server pages from your website without the files actually existing on the disk. And this doesn't use url rewriting. The VirtualPathProvider actually allows you create your own virtual file system within your application. You can store the pages of you site within an xml file, a database or any other method you would like. In my opinion this is one of the coolest new features in ASP.NET 2.0.</p>
 <p>The virtual file system you create can store virtually any file that you would normally have on disk. These include:</p>
 <ul>

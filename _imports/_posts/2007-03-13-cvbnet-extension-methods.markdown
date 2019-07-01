@@ -9,7 +9,6 @@
   alias: ["/post/2007/03/13/CVBNET-Extension-Methods", "/post/2007/03/13/cvbnet-extension-methods"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Over a year ago I posted a question about doing a <a href="/Blog/Post.aspx?PostID=601">SQL-like IN operation in .NET</a>. Here&#39;s the examples I posted of how it could work:
 </p>

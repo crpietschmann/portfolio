@@ -9,7 +9,6 @@
   alias: ["/post/2010/11/18/HTML5-Day-5-New-Date-Input-Type", "/post/2010/11/18/html5-day-5-new-date-input-type"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><a href="http://www.w3.org/TR/html-markup/input.date.html">Date</a> is one of the new, and much needed, input types added in HTML5. This has been added as a replacement of using a text box for the input of dates. Below is a screenshot of the custom UI that the Opera web browser automatically implements for this new input type.</p>
 <h3>Display in Modern Browsers</h3>
 <p><a href="http://pietschsoft.com/image.axd?picture=HTML5_INPUT_DATE_OPERA.png"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="HTML5_INPUT_DATE_OPERA" src="http://pietschsoft.com/image.axd?picture=HTML5_INPUT_DATE_OPERA_thumb.png" alt="HTML5_INPUT_DATE_OPERA" width="308" height="326" border="0" /></a></p>

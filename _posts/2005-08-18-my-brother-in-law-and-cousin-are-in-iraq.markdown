@@ -9,7 +9,6 @@
   alias: ["/post/2005/08/18/My-brother-in-law-and-cousin-are-in-Iraq", "/post/2005/08/18/my-brother-in-law-and-cousin-are-in-iraq"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>I believe it was last October and November when Jeremy and Jake were sent over to Iraq. They had to leave there families to go for training a few months prior to leaving the States to go over there.</P>
 <P>At first it was quite strange when they left. When someone dies, you know they are never coming back. It's different in war; it's more of a question mark as to whether they are going to be coming home or not. In war people die, you just hope that your friends and family are the ones who make it home alive and hopefully un-injured. I have to say the longer they've been over there the more my confidence has grown that they will be coming home and they will be able to see their kids grow up.</P>
 <P>Last month they were both back here for two weeks.&nbsp;We all got together&nbsp;a few times while they were&nbsp;back, and&nbsp;had a great time. Jake was able to be back for my wedding, but Jeremy had to be on a plane at 10AM the day of the wedding to go back to Iraq.</P>

@@ -9,7 +9,6 @@
   alias: ["/post/2007/03/06/PietschSoftVE-v200-Alpha-ASPNET-AJAX-Virtual-Earth-Mapping-Control", "/post/2007/03/06/pietschsoftve-v200-alpha-aspnet-ajax-virtual-earth-mapping-control"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Finally, v2.0.0 Alpha is out!
 </p>

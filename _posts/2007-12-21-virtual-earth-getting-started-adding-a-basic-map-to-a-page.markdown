@@ -9,7 +9,6 @@
   alias: ["/post/2007/12/21/Virtual-Earth-Getting-Started-Adding-a-basic-Map-to-a-page", "/post/2007/12/21/virtual-earth-getting-started-adding-a-basic-map-to-a-page"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <h3>What is Microsoft Virtual Earth?</h3>
 <p>
 Virtual Earth allows any developer to implement mapping technology within their web sites and/or applications. The mapping techology behind Virtual Earth is the exact same technology that powers <a href="http://maps.live.com/">Microsoft&#39;s Live Maps website</a>.

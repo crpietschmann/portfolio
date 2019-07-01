@@ -9,7 +9,6 @@
   alias: ["/post/2008/03/04/Add-System-Menu-Items-to-a-Form-using-Windows-API", "/post/2008/03/04/add-system-menu-items-to-a-form-using-windows-api"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>This is something I used to have a code snippet for in VB6, but I haven't needed to do this in a while so I never wrote up an example in .NET. So, here's the simple code necessary to add some custom menu items to your applications System Menu. If you're not familiar, the System Menu is the menu that shows up if you click on the apps icon in the upper left or if you right click the app in the taskbar.</p>
 <p>Below is a screenshot of it in action along with the complete source code in C#.</p>
 <p><img src="/image.axd?picture=Win32API_AddSystemMenuItem.png" alt="" width="301" height="299" /></p>

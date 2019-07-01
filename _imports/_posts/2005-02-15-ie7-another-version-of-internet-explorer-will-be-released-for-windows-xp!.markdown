@@ -9,6 +9,5 @@
   alias: ["/post/2005/02/15/IE7-Another-version-of-Internet-Explorer-will-be-released-for-Windows-XP!", "/post/2005/02/15/ie7-another-version-of-internet-explorer-will-be-released-for-windows-xp!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>&#8220;Microsoft today is committing to deliver a new version of Internet Explorer for <a title="Windows XP" href="http://www.microsoft.com/windowsxp/default.mspx" target="_blank">Windows XP</a> customers.&nbsp; This version, called IE 7, will add new levels of security to <a title="Windows XP" href="http://www.microsoft.com/windowsxp/default.mspx" target="_blank">Windows XP</a> SP2 while maintaining the level of extensibility and compatibility customers have come to expect from IE.&#8220;</P>
 <P>Source: <A href="http://channel9.msdn.com/ShowPost.aspx?PostID=41507">http://channel9.msdn.com/ShowPost.aspx?PostID=41507</A></P>

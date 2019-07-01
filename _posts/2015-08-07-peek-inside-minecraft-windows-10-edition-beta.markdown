@@ -9,7 +9,6 @@
   alias: ["/post/2015/08/07/Peek-Inside-Minecraft-Windows-10-Edition-Beta", "/post/2015/08/07/peek-inside-minecraft-windows-10-edition-beta"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><img style="float: right;" src="/image.axd?picture=%2f2015%2f08%2fWin10MinecraftBeta001_300x168.png" alt="" />Microsoft recently released the Minecraft: Windows 10 Edition Beta. It's a free app for existing Mojang customers who have already purchased the desktop/Java version of Minecraft. This is one of the first UWP apps for Windows 10 from Microsoft and given Minecraft's long history with Java, I thought I'd peek inside and see how much implementation details I could gleam. This post chronicles what I've been able to find out.</p>
 <p><strong>Platform Details</strong></p>
 <p>The current Beta release of Minecraft: Windows 10 Edition only supports 64-bit (x64) and 32-bit (x86) CPU's. This is visible since x64 is the only listed platform in the Windows Store listing for the app.</p>

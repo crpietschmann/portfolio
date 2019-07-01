@@ -9,7 +9,6 @@
   alias: ["/post/2008/04/28/Virtualization-on-the-Desktop-VirtualPC-2007-and-Hyper-V", "/post/2008/04/28/virtualization-on-the-desktop-virtualpc-2007-and-hyper-v"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 About a year ago I started to use VirtualPC 2007 on my Vista x64 box to allow me to run other instances of OS&#39;s within isolation without requiring me to purchase anymore hardware for my desk. It&#39;s actually rather simple to do and makes it extremely easy to roll back any of your systems to a previous state in case they get screwed up by installing beta software or for any other reason. 
 </p>

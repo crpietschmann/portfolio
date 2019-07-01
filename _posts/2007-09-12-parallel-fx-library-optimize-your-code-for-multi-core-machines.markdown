@@ -9,7 +9,6 @@
   alias: ["/post/2007/09/12/Parallel-FX-Library-Optimize-your-code-for-Multi-Core-machines", "/post/2007/09/12/parallel-fx-library-optimize-your-code-for-multi-core-machines"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>I was reading the <a href="http://msdn.microsoft.com/msdnmag/issues/07/10/">October 2007 edition of MSDN Magazine </a>and came across an article titled "<a href="http://msdn.microsoft.com/msdnmag/issues/07/10/Futures/default.aspx">Parallel Performance: Optimize Managed Code For Multi-Core Machines</a>." At first I thought that this was just another article explaining how to use the ThreadPool in .NET to improve the performance of you app, but they are actually talking about the new Parallel FX Library that is about to reach its first CTP.</p>
 <p><strong>What is this Parallel FX Library?</strong></p>
 <p>Simple... It's a .NET library that is designed to make is much easier to optimize .NET applications to utilize multiple processor cores automatically if they are available. If you run on a single core system, it'll just run on one core. But, if you run on an 8 core system, it'll utilize all 8 cores to get things done.</p>

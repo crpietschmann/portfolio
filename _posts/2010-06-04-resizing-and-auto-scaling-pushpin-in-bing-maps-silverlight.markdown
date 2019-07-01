@@ -9,7 +9,6 @@
   alias: ["/post/2010/06/04/Resizing-and-Auto-Scaling-Pushpin-in-Bing-Maps-Silverlight", "/post/2010/06/04/resizing-and-auto-scaling-pushpin-in-bing-maps-silverlight"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Plotting pushpins on the Bing Maps Silverlight control is really simple when using the Pushpin control that comes with the control. But, what if you want to change the size of the Pushpin? It doesn't work to just change the Pushpin.Height and Pushpin.Width properties. This is actually because those properties pertain to the controls Content property. So, how exactly do you go about changing the size of the Pushpin if the Height and Width properties don't work?</p>
 <h3>Use ScaleTransform to Resize Pushpins<br /></h3>
 <p><img style="float: right;" src="/image.axd?picture=2010%2f6%2fSLBingMapsPushpinResizeScaleTransform.png" alt="" /></p>

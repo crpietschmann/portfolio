@@ -9,7 +9,6 @@
   alias: ["/post/2009/03/20/Virtual-Earth-Silverlight-Overlay-OpenStreetMap2c-OpenAerialMap-and-Yahoo-Map-Imagery-using-Custom-Tile-Layers!", "/post/2009/03/20/virtual-earth-silverlight-overlay-openstreetmap2c-openaerialmap-and-yahoo-map-imagery-using-custom-tile-layers!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><strong>UPDATE: I have written a newer version of this article to specifically target the latest Bing Maps Silverlight Control Version 1.0 Release.</strong></p>
 <p><strong>You can find the new article here: <a href="http://pietschsoft.com/post.aspx?id=b3812d3c-cb64-4947-b6df-4ebb8e3a2e43">Display OpenStreetMap Imagery using Bing Maps Silverlight Control v1</a><br /></strong></p>
 <hr />

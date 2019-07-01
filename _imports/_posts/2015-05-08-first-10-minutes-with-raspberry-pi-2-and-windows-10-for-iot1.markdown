@@ -9,7 +9,6 @@
   alias: ["/post/2015/05/08/First-10-Minutes-with-Raspberry-Pi-2-and-Windows-10-for-IoT1", "/post/2015/05/08/first-10-minutes-with-raspberry-pi-2-and-windows-10-for-iot1"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><img style="float: right;" src="/image.axd?picture=%2f2015%2f05%2fRaspberryPi2withMicroSDCard.png" alt="" /></p>
 <p>My very first Raspberry Pi arrived yesterday. I'm super excited to get playing, and frankly I probably should have gotten one of the older versions sooner. Now that I've got Pi, I can start hacking! Since this is a <a href="http://amzn.to/2bUfR3e" target="_blank">Raspberry Pi 2</a> (same goes for the <a href="http://amzn.to/2bUfR3e" target="_blank">Raspberry Pi 3</a>!), it can run the new Windows 10 for IoT making it easy to build apps for it with C# and Visual Studio. Well, I haven't gotten to actually building any apps yet, but was able to get Windows 10 for IoT setup.</p>
 <h3>Install Windows 10 for IoT</h3>

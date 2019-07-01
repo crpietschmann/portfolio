@@ -9,7 +9,6 @@
   alias: ["/post/2010/11/16/HTML5-Day-3-Detecting-HTML5-Support-via-JavaScript", "/post/2010/11/16/html5-day-3-detecting-html5-support-via-javascript"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>On <a title="HTML5 Day 1: New tags work in older browsers? Awesome!" href="http://pietschsoft.com/post/2010/11/14/HTML5-Day-1-New-tags-work-in-older-browsers-Awesome.aspx">Day 1</a>, I covered exactly what HTML5 is and what&rsquo;s necessary to convince older web browsers to render/style the new tags properly. Once you told the browser how to style the element, it still wont show special UI for the user. The good news is that you can &ldquo;patch&rdquo; the browser using JavaScript to enable such functionality. In this post we&rsquo;ll discuss how to detect if a certain feature is supported by the browser or not.</p>
 <h3>Why is the UserAgent unreliable for detection?</h3>
 <pre class="brush: plain; first-line: 1; tab-size: 4; toolbar: false; ">Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64;

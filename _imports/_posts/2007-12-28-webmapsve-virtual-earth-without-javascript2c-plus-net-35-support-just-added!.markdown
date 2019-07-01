@@ -9,7 +9,6 @@
   alias: ["/post/2007/12/28/WebMapsVE-Virtual-Earth-Without-JavaScript2c-plus-NET-35-Support-just-added!", "/post/2007/12/28/webmapsve-virtual-earth-without-javascript2c-plus-net-35-support-just-added!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Yesterday, I released the fourth update release (v1.00.04) of my <a href="http://simplovation.com/Page/WebMapsVE.aspx">Web.Maps.VE</a> component. The main feature addition in this update is the addition of .NET 3.5 support. 
 </p>

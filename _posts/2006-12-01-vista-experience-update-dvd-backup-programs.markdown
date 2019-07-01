@@ -9,7 +9,6 @@
   alias: ["/post/2006/12/01/Vista-Experience-Update-DVD-Backup-Programs", "/post/2006/12/01/vista-experience-update-dvd-backup-programs"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Vista doesn't have any DVD backup programs builtin, but I'm just testing a couple of the popular DVD backup programs and they work perfectly.</p>
 <p>The programs I've tested:</p>
 <ul>

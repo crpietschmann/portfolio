@@ -9,7 +9,6 @@
   alias: ["/post/2016/01/09/Beachbody-On-Demand-Netflix-of-Exercise", "/post/2016/01/09/beachbody-on-demand-netflix-of-exercise"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><a href="https://www.teambeachbody.com/tbbsignup/-/tbbsignup/club?referringRepId=322348" target="_blank"><img style="float: right;" src="/image.axd?picture=%2f2016%2f01%2fstream-free-beachbody-workouts.png" alt="" /></a></p>
 <p>Personally, I've been a Beachbody customer since 2010 when I originally began my own personal fitness and health journey. I first started with P90X and then purchased the newer P90X3 from Beachbody and Tony Horton. For a long time the only way to do Beachbody workouts were to put in a DVD (in your TV, Computer or portable DVD player); while this works just fine there are a few things that can go wrong. What if the DVDs get scratched? or Lost? Fortunately, Beachbody has innovated recently with the all new <a href="https://www.teambeachbody.com/tbbsignup/-/tbbsignup/club?referringRepId=322348" target="_blank">Beachbody On Demand streaming service</a>. This service is like Netflix or Amazon Video from Beachbody workout programs.</p>
 <h3>Workouts</h3>

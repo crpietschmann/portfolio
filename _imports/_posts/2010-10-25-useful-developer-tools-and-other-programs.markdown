@@ -9,7 +9,6 @@
   alias: ["/page/Useful-Developer-Tools-and-Other-Programs", "/page/useful-developer-tools-and-other-programs"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>This page contains a list of some of the applications I use for various tasks. This list is mainly comprised of developer tools and other free applications.</p>
 <p><span style="color: #ff0000;">This is an old list, and this page hasn't been updated in a few years. Beware. Just keeping it here so any links to it don't break / 404. Thanks!</span></p>
 <h2>Developer Tools</h2>

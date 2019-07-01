@@ -9,7 +9,6 @@
   alias: ["/post/2008/09/30/Less-Than-36-Hours-Left-to-Enter-to-the-Community-Coding-Contest", "/post/2008/09/30/less-than-36-hours-left-to-enter-to-the-community-coding-contest"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 There is only 1 day left to submit your entries for the <a href="http://communitycodingcontest.org/">Community
 Coding Contest</a>!! There are currently only 5 entries submitted, so your

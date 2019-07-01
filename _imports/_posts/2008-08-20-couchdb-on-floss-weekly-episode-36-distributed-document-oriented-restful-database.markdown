@@ -9,7 +9,6 @@
   alias: ["/post/2008/08/20/CouchDB-on-FLOSS-Weekly-Episode-36-distributed-document-oriented-RESTful-database", "/post/2008/08/20/couchdb-on-floss-weekly-episode-36-distributed-document-oriented-restful-database"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 I just listened to the latest episode of <a href="http://twit.tv/FLOSS">FLOSS Weekly</a>; <a href="http://twit.tv/floss36">episode 36 on CouchDB</a>. This episode is an interview with <a href="http://jan.prima.de/">Jan Lehnardt</a> about <a href="http://incubator.apache.org/couchdb/">CouchBD</a>.
 </p>

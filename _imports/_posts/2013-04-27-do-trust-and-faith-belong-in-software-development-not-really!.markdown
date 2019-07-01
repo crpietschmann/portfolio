@@ -9,7 +9,6 @@
   alias: ["/post/2013/04/27/Do-Trust-and-Faith-belong-in-Software-Development-Not-Really!", "/post/2013/04/27/do-trust-and-faith-belong-in-software-development-not-really!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>The words "Trust" and "Faith" don't normally come up in discussion surrounding software development. However, whether we like to say it or not, we really do put a lot of both trust and faith in software. In fact, software developers often put a lot trust and faith in there development tool. While this can be justified in certain cases; it is most often a mistake.
 </p><h3>The Good
 </h3><p>When following Test Driven Development (TDD) you basically don't trust anything by writing unit tests to verify everything at every level. It is often thought that Unit Tests are only testing the source code you write, but really it's simultaneously integration testing the development tools and frameworks your code uses as well.

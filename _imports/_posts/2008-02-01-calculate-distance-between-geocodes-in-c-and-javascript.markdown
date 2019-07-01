@@ -9,7 +9,6 @@
   alias: ["/post/2008/02/01/Calculate-Distance-Between-Geocodes-in-C-and-JavaScript", "/post/2008/02/01/calculate-distance-between-geocodes-in-c-and-javascript"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>There are times when I need code to calculate the distance between two geocodes (Lat/Long points). I don't need it very often and until now I didn't have a code snippet that I could jus copy and paste. I was searching and found <a href="http://blog.wekeroad.com/2007/08/30/linq-and-geocoding/">Rob Conery's LINQ and Geocoding</a> post. It's an interesting post and he includes a sample of how to use Lambda expressions in C# 3.0 to calculate the distance between two geocodes in Miles.</p>
 <p>I decided to copy his code snippet and make sure it works in .NET 2.0 and also convert it to JavaScript. So below are both my C# 2.0 and JavaScript&nbsp;snippets for calculating the distance between two geocodes.</p>
 <h3>C# 2.0</h3>

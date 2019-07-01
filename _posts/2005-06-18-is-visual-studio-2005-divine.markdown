@@ -9,7 +9,6 @@
   alias: ["/post/2005/06/18/Is-Visual-Studio-2005-divine", "/post/2005/06/18/is-visual-studio-2005-divine"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <table border="0" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>

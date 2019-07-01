@@ -9,7 +9,6 @@
   alias: ["/post/2008/03/14/PasswordTextBox-for-Silverlight-2-Beta-1", "/post/2008/03/14/passwordtextbox-for-silverlight-2-beta-1"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 The standard TextBox control that is built into Silverlight 2 Beta&nbsp;2&nbsp;is a bit lacking and is missing alot of features that we have become accustomed to in a TextBox. One of those features is being able to mask the characters being displayed when its used to accept passwords. Here&#39;s a small PasswordTextBox control I built that does just that; it masks the characters from being displayed so you can accept passwords like you&#39;re used to. 
 </p>

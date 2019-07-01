@@ -9,7 +9,6 @@
   alias: ["/post/2008/05/03/Virtual-Earth-Restrict-Map-to-Specified-Viewable-Area", "/post/2008/05/03/virtual-earth-restrict-map-to-specified-viewable-area"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 This example demonstrates the ability to restrict the viewable area (and impose map boundaries)&nbsp;of a Virtual Earth map to be within a specified distance from the maps original center point (at time of initial load), and restrict to a maximum zoom level. 
 </p>

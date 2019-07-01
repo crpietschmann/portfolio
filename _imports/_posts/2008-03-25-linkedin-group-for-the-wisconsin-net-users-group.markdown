@@ -9,7 +9,6 @@
   alias: ["/post/2008/03/25/LinkedIn-Group-for-the-Wisconsin-NET-Users-Group", "/post/2008/03/25/linkedin-group-for-the-wisconsin-net-users-group"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Here&#39;s a link to the Wisconsin .NET Users Group LinkedIn Group I just created. Anyone can join this group on LinkedIn, and it&#39;s a nice way to show your affiliation with the WI .NET Users Group within your LinkedIn profile. 
 </p>

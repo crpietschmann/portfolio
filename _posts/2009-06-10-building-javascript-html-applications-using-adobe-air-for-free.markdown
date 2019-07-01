@@ -9,7 +9,6 @@
   alias: ["/post/2009/06/10/Building-JavaScript-HTML-Applications-using-Adobe-AIR-for-FREE", "/post/2009/06/10/building-javascript-html-applications-using-adobe-air-for-free"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>As a web developer I use JavaScript, HTML and CSS a lot. I do however build desktop applications too, but can&rsquo;t use those same tools/languages to build them. So, for quite some time now I&rsquo;ve wanted to be able to build Desktop Applications using the same JavaScript, HTML and CSS that I use to build Web Applications. Now with the help of Adobe AIR it can finally be done with ease, and even have multi-platform support.</p>
 <p>In this post I&rsquo;m going to discuss the basics of creating a JavaScript/HTML based Desktop Application using Adobe AIR, and point you to some of the online resources that have helped me to get started.</p>
 <p>Also, just in case you didn&rsquo;t know, you can create/build JavaScript / HTML based Adobe AIR applications for FREE. The runtime and sdk are both free.</p>

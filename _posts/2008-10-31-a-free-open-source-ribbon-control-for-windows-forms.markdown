@@ -9,7 +9,6 @@
   alias: ["/post/2008/10/31/A-Free-Open-Source-Ribbon-Control-for-Windows-Forms", "/post/2008/10/31/a-free-open-source-ribbon-control-for-windows-forms"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 I just stumbled upon a really nice looking Ribbon control built for Windows Forms, and it&#39;s Free, Open Source! This control isn&#39;t perfect, but it does work nice and looks great.
 </p>

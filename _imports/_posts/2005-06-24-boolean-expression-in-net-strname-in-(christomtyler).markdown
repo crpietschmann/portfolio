@@ -9,7 +9,6 @@
   alias: ["/post/2005/06/24/Boolean-Expression-in-NET-strName-IN-(CHRISTOMTYLER)", "/post/2005/06/24/boolean-expression-in-net-strname-in-(christomtyler)"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P><BR>I think it would be really helpful if we could do boolean expressions with IN sort of like we can in SQL.</P>
 <P>For Example:<BR>&nbsp;&nbsp; 'just like SQL<BR>&nbsp;&nbsp; If strName IN ("CHRIS","TOM","TYLER") Then<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'do something<BR>&nbsp;&nbsp; End If</P>
 <P>&nbsp;&nbsp; 'using an array for this would be best<BR>&nbsp;&nbsp; Dim arrNames() AS String = New Array{"CHRIS", "TOM", "TYLER"}<BR>&nbsp;&nbsp; If strName IN arrNames Then<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'do something<BR>&nbsp;&nbsp; End If</P>

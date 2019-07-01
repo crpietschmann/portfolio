@@ -9,7 +9,6 @@
   alias: ["/post/2016/04/09/Announcing-New-BuildHoloLenscom-Blog", "/post/2016/04/09/announcing-new-buildhololenscom-blog"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>&nbsp;<img src="/image.axd?picture=%2f2016%2f04%2fBuildHoloLensBanner.jpg" alt="" /></p>
 <p>With the recent release of the Microsoft HoloLens, I've decided to dig deep into HoloLens development. In an effort to continue in a similar fashion to what I'm already doing with <a href="http://buildazure.com" target="_blank">BuildAzure.com</a>, I've decided to create a dedicated site for all my Microsoft HoloLens content.</p>
 <p>The latest addition to my learning, blogging, and sharing endeavors is the all new <a href="http://BuildHoloLens.com" target="_blank">Build HoloLens</a> blog located at <a href="http://BuildHoloLens.com" target="_blank">http://BuildHoloLens.com</a>. I have also created the new <a href="http://twitter.com/buildhololens" target="_blank">@BuildHoloLens</a> Twitter account associated with the new blog as well.</p>

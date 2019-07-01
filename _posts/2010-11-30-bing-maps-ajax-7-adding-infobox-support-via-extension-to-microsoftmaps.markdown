@@ -9,7 +9,6 @@
   alias: ["/post/2010/11/30/Bing-Maps-Ajax-7-Adding-InfoBox-Support-via-Extension-to-MicrosoftMaps", "/post/2010/11/30/bing-maps-ajax-7-adding-infobox-support-via-extension-to-microsoftmaps"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>The new Bing Maps Ajax v7 control may be faster and smaller, but it is pretty light on features at the moment compared to its older brother; the v6.3 control. One of the features missing is support for showing InfoBox’s. Its simple to handle mouse events and display a &lt;div&gt; next to the pushpin, but I thought I’d take a little time to write a simple InfoBox extension to the new Microsoft.Maps namespace.</p>  <p>Here’s a screenshot of it in action:</p>  <p><a href="http://pietschsoft.com/image.axd?picture=BingMaps7_InfoBox_Screenshot.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="BingMaps7_InfoBox_Screenshot" border="0" alt="BingMaps7_InfoBox_Screenshot" src="http://pietschsoft.com/image.axd?picture=BingMaps7_InfoBox_Screenshot_thumb.png" width="304" height="276" /></a></p>  <h3>Usage</h3>  <p>Let’s start with some sample usage of the InfoBox extension.</p>  <pre class="csharpcode"><span class="rem">// Create Pushpin</span>
 <span class="kwrd">var</span> pushpin = <span class="kwrd">new</span> Microsoft.Maps.Pushpin(
     <span class="kwrd">new</span> Microsoft.Maps.Location(0,0)

@@ -9,7 +9,6 @@
   alias: ["/post/2006/05/26/What-Ive-been-up-to-lately-JavaScript2c-AJAX2c-Virtual-Earth-and-WebParts", "/post/2006/05/26/what-ive-been-up-to-lately-javascript2c-ajax2c-virtual-earth-and-webparts"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 The last couple months at work, I&#39;ve been working a lot on a new real estate mapping product&nbsp;that was&nbsp;launched last week called eNavigator (<a href="http://thinkrealtygroup.com/">Try out eNavigator&nbsp;here</a>). It utilizes AJAX and the Microsoft Virtual Earth v1 Commercial control and&nbsp;supports IE and Firefox. The coolest feature is the Interactive Map search that allows you to click and drag the map around to find that home of your dreams.
 </p>

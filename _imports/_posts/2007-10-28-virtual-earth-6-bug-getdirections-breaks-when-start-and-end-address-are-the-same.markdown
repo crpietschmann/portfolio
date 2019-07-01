@@ -9,7 +9,6 @@
   alias: ["/post/2007/10/28/Virtual-Earth-6-Bug-GetDirections-breaks-when-Start-and-End-Address-are-the-same", "/post/2007/10/28/virtual-earth-6-bug-getdirections-breaks-when-start-and-end-address-are-the-same"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 When using the new GetDirections method to get multi-point driving directions everything works fine if the Start and End address are different. But it shows unexpected results on the map when plotting a multi-point route that has&nbsp;an End address the same as its Start.
 </p>

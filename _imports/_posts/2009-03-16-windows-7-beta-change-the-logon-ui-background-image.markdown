@@ -9,7 +9,6 @@
   alias: ["/post/2009/03/16/Windows-7-Beta-Change-the-Logon-UI-Background-Image", "/post/2009/03/16/windows-7-beta-change-the-logon-ui-background-image"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Apparently, <a href="http://www.withinwindows.com/2009/03/15/windows-7-to-officially-support-logon-ui-background-customization/">Windows 7 will "officially" support Logon UI Background Customization</a>. The previous link describes what needs to be in place (a registry key and image file) for you to be able to have Windows 7 use any image you want as the Logon UI Background. What the previous link doesn't specify is if this works with the Windows 7 Beta (build 7000). Actually, I just test and confirmed that it does work perfectly in the Windows 7 Beta. Good news for us of whom can't (or don't want to) run a newer (possibly more buggy), "leaked" build of Windows 7.</p>
 <p><img style="padding-left: 5px" src="/image.axd?picture=Windows7Beta_CustomLogonUIBackground.png" alt="" /></p>
 <p>I'll describe the 2 basic steps needed to do this with the Windows 7 Beta, but to get more detail I recommend reading the article linked above.</p>

@@ -9,7 +9,6 @@
   alias: ["/post/2005/02/17/VBNET-Make-a-Form-semi-transparent-when-moving-and-resizing-it", "/post/2005/02/17/vbnet-make-a-form-semi-transparent-when-moving-and-resizing-it"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p style="margin: 0in 0in 0pt" class="MsoNormal">
 Here&#39;s a little VB.NET code snippet that I wrote to make a Form semi-transparent when moving and resizing it. I think this is a neat little effect to add to an application.
 </p>

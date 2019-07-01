@@ -9,7 +9,6 @@
   alias: ["/post/2008/01/21/QBasic-was-my-First-Programming-Language", "/post/2008/01/21/qbasic-was-my-first-programming-language"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>Recently, I got to thinking about my beginning of programming, and the Basic language. So, I thought I'd explain my early history with Basic a little bit.</P>
 <H3>Basic was Easy</H3>
 <P>My first programming language was QBasic. The reason I started learning QBasic was for the following reasons:</P>

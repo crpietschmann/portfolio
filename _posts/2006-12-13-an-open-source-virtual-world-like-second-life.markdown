@@ -9,7 +9,6 @@
   alias: ["/post/2006/12/13/An-Open-Source-Virtual-World-like-Second-Life", "/post/2006/12/13/an-open-source-virtual-world-like-second-life"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>In Mark Shuttleworth's post "#6: Sensory Immersion" he mentions that the open source community needs to take the idea of Second Life and innovate.</P>
 <P>An Open Source "Second Life" like virtual world would be very cool. Granted that anyone could take the code and make their own virtual world out of it. But, then what's the point? We would end up with 1,000 virtual worlds.</P>
 <P>We would need to create some standardized protocols for this type of virtual system to run on; much the same as how the Web and HTTP run. Then the protocols could unite all the different servers into one huge virtual world. There could essentially be a distributed virtual world and anyone could take the standards and write their own server or client that plugs into it. It would basically work how the Internet/Web itself works except it would be another system on top of that.</P>

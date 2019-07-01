@@ -9,7 +9,6 @@
   alias: ["/post/2016/02/29/Raspberry-Pi-3-released-faster-CPU-integrated-Wifi1", "/post/2016/02/29/raspberry-pi-3-released-faster-cpu-integrated-wifi1"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><img style="float: right;" src="/image.axd?picture=%2f2016%2f02%2fRaspberryPi3MobelB.png" alt="" />It's only been a year since the Raspberry Pi 2 Model B was released, and to mark the 4th birthday of the Raspberry Pi a new Pi is being released today. The <a href="http://amzn.to/2cxvgT0" target="_blank">NEW Raspberry Pi 3 Model B</a>! This new Pi offers a faster CPU at 1.2Ghz, along with integrated 802.11n Wireless LAN and Bluetooth 4.1 with Bluetooth LE.</p>
 <p>Over the last few months I'd been wondering if a new Pi might come this year. After all, hardware keeps advancing so there's not much reason to stand still on RPi2 for long. I also didn't want to be spoiled by rumors, so I kept those thoughts to myself, with the possible comments on Twitter.</p>
 <p>This morning I woke up, checked my feeds and found that the Raspberry Pi 3 is being released on this Leap Day of 2016.</p>

@@ -9,7 +9,6 @@
   alias: ["/post/2013/08/23/Urgency-is-not-Panic-unless-you-let-it-be", "/post/2013/08/23/urgency-is-not-panic-unless-you-let-it-be"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>When you are caught up in the urgency of getting something done it is easy to be blinded by the FUD (Fear, Uncertainty and Doubt) that is causing you to rush and possibly make mistakes. After all, the deadline is fast approaching!</p>
 <p>Almost every time urgency is accompanied with rushing. Although, it doesn&rsquo;t have to be. The next time you get into an urgent situation, make sure you "<a href="http://pietschsoft.com/post/2013/08/02/Stop-Relax-Now-GO">Stop, Relax. Now, GO!</a>" Reflecting on the current situation allows you to remain in control while still getting things done as quickly as possible.</p>
 <p>Urgency doesn&rsquo;t have to be accompanied by panic! That next important task can get done quickly without risking the potential trap of disastrous mistakes.</p>

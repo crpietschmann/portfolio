@@ -9,7 +9,6 @@
   alias: ["/post/2006/11/01/MS-Virtual-Earth-New-version-on-the-way!", "/post/2006/11/01/ms-virtual-earth-new-version-on-the-way!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 Microsoft announced yesterday that they will be releasing a new version of the Virtual Earth Map Control next week on Nov. 7. They are stating that existing sites using versions 2 and 3 will not be impacted and will continue to work. They also mention an upcoming marketing campaign surrounding this next release.
 </p>

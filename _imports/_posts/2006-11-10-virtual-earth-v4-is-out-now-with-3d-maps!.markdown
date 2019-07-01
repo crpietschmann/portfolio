@@ -9,7 +9,6 @@
   alias: ["/post/2006/11/10/Virtual-Earth-v4-is-out-now-with-3D-maps!", "/post/2006/11/10/virtual-earth-v4-is-out-now-with-3d-maps!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 I know this post is a bit delayed, but a couple days ago Microsoft released Virtual Earth v4. Basically this new version is v3 with some stuff added. The major addition is the 3D maps. Now this feature is cool.
 </p>

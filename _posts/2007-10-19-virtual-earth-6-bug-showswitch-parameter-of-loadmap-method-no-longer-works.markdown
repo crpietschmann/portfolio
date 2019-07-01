@@ -9,7 +9,6 @@
   alias: ["/post/2007/10/19/Virtual-Earth-6-Bug-ShowSwitch-parameter-of-LoadMap-method-no-longer-works", "/post/2007/10/19/virtual-earth-6-bug-showswitch-parameter-of-loadmap-method-no-longer-works"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 <em>Update 12/29/2007: This is no longer a bug. It has been fixed since I originally posted this.</em> 
 </p>

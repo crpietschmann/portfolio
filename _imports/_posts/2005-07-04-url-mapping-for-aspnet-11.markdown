@@ -9,7 +9,6 @@
   alias: ["/post/2005/07/04/URL-Mapping-for-ASPNET-11", "/post/2005/07/04/url-mapping-for-aspnet-11"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>With the help of an http module, a custom config handler and a few lines of code we can add the same ASP.NET 2.0 style URL Mapping to our ASP.NET 1.1 apps.</p>
 <p>1) First lets start by creating a new Class Library project named 'URLMapping_HTTPModule'</p>
 <p>2) Then create three files as listed below:</p>

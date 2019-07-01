@@ -9,7 +9,6 @@
   alias: ["/post/2005/06/18/Perfect-Dark-Zero-to-be-released-on-XBox-360!", "/post/2005/06/18/perfect-dark-zero-to-be-released-on-xbox-360!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <table border="0" cellspacing="0" cellpadding="0">
 	<tbody>
 		<tr>

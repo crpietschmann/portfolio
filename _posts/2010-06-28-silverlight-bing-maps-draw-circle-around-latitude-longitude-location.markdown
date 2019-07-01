@@ -9,7 +9,6 @@
   alias: ["/post/2010/06/28/Silverlight-Bing-Maps-Draw-Circle-Around-Latitude-Longitude-Location", "/post/2010/06/28/silverlight-bing-maps-draw-circle-around-latitude-longitude-location"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><a href="http://pietschsoft.com/image.axd?picture=SLBingMaps_DrawCircles.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="SLBingMaps_DrawCircles" src="http://pietschsoft.com/image.axd?picture=SLBingMaps_DrawCircles_thumb.png" border="0" alt="SLBingMaps_DrawCircles" width="244" height="196" align="right" /></a> Over 2 years ago I posted an example of how to <a href="http://pietschsoft.com/post/2008/02/09/Virtual-Earth-Draw-a-Circle-Radius-Around-a-LatLong-Point.aspx">draw circles on the Bing Maps JavaScript control</a>. I thought it was about time to update that post to demonstrate how to do this using the Bing Maps Silverlight control. This is basically a C# port of the original JavaScript code.</p>
 <p>Sometimes this can be really useful, but it isn&rsquo;t built into the Sivleright Bing Maps Control. So you need to implement it yourself in order to do it. However, instead of writing from scratch, feel free to copy the code from this post.</p>
 <p>Download Full Source: <a href="http://pietschsoft.com/file.axd?file=SLBingMaps_DrawCircle.zip" target="_self">SLBingMaps_DrawCircle.zip</a></p>

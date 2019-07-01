@@ -9,7 +9,6 @@
   alias: ["/post/2013/10/12/There-is-no-product-unless-you-first-ship-it", "/post/2013/10/12/there-is-no-product-unless-you-first-ship-it"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Just as there is no business without something to sell; you do not have a product until you ship it.</p>
 <p>What to ship? How to ship? When to ship? Where to ship?</p>
 <p>There are many questions that need to be answered before shipping a product. However, one thing always remains true:<br /><strong>A product only succeeds if you ship it.</strong></p>

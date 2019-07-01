@@ -9,7 +9,6 @@
   alias: ["/post/2007/03/13/My-Top-10-Tech-Netcasts-(podcasts)", "/post/2007/03/13/my-top-10-tech-netcasts-(podcasts)"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <P>There are alot of podcasts being produced out there. I've had trouble over the last couple years in finding good quality podcasts to listen to.</P>
 <P>Here's a collection of the podcasts I listen to regularly:</P>
 <P><A href="http://www.twit.tv/ww">Windows Weekly</A> - A weekly look at all things Microsoft including Windows Vista, Office 2007, and Xbox from the foremost Windows expert in the world, Paul Thurrott of the <A href="http://winsupersite.com/">Super Site for Windows</A></P>

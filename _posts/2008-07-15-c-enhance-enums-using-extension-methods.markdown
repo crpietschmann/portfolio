@@ -9,7 +9,6 @@
   alias: ["/post/2008/07/15/C-Enhance-Enums-using-Extension-Methods", "/post/2008/07/15/c-enhance-enums-using-extension-methods"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>Extension Methods are one of the coolest features that have been added in .NET 3.5. I've heard arguments that there is no reason to use them, and the only reason Microsoft added them is to enable the ability to buid LINQ. Well, I do not entirely agree with that statement; in fact, I have found a cool way to use Extension Methods to enhance the System.Enum object since it cannot be inherited. Even though Enum can not be inherited, it can be extended using Extension Methods.</p>
 <p>Here's some example code for a simple Enum that has a DescriptionAttribute applied to each of it's values:</p>
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">public enum LocalizationMarket

@@ -9,7 +9,6 @@
   alias: ["/post/2015/06/06/How-I-passed-the-70-532-Developing-Microsoft-Azure-Solutions-certification-exam", "/post/2015/06/06/how-i-passed-the-70-532-developing-microsoft-azure-solutions-certification-exam"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p><img style="float: right;" src="/image.axd?picture=%2f2015%2f06%2fSpec_Dev_AzureSol_BW.png" alt="" /></p>
 <p>I've been taking on&nbsp;<a href="http://blogs.perficient.com/microsoft/2015/04/become-a-microsoft-certified-specialist-with-html5-js-css3/" target="_blank">some Microsoft certifications recently</a>, and my latest success is passing the <a href="https://www.microsoft.com/learning/en-us/exam-70-532.aspx">70-532 Developing Microsoft Azure Solutions exam</a>; earning me the Microsoft Specialist: Developing Microsoft Azure Solutions Certification. As with all Microsoft certification exams, this exam covers a huge amount of information and content. As a result of this, a variety of materials and sources need to be studied in order to get the level understanding and memorization necessary to pass the exam.</p>
 <p>Now that I've passed the exam, I thought I'd share what I used so you too can become a certified Azure developer!</p>

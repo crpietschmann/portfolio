@@ -9,7 +9,6 @@
   alias: ["/post/2006/08/18/Wisconsin-NET-Users-Group-(WI-INETA)-Website-is-lacking", "/post/2006/08/18/wisconsin-net-users-group-(wi-ineta)-website-is-lacking"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 I&#39;ve been thinking about it awhile now and have the following comments/suggestions to make regarding the <a href="http://wi-ineta.org/">Wisconsin .NET Users Group (WI-INETA)</a> website.
 </p>

@@ -9,7 +9,6 @@
   alias: ["/post/2008/04/01/I-am-now-a-Virtual-Earth-MVP!", "/post/2008/04/01/i-am-now-a-virtual-earth-mvp!"]
   ---
 <!-- more -->
-{% include imported_disclaimer.html %}
 <p>
 This is an exciting April fools day for me. I recieved the following email from Microsoft: 
 </p>
