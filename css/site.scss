@@ -13,7 +13,7 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      rgb(48, 94, 192);
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -22,6 +22,9 @@ $grey-color-dark:  darken($grey-color, 25%);
 $on-palm:          600px;
 $on-laptop:        800px;
 
+.brand-background {
+  background: radial-gradient(rgba(0,0,0,0),rgba(0,0,0,0.3)), url(/images/background-buildazure-logo-blue.png), rgb(48, 94, 192);
+}
 
 .container {
   max-width: 960px;
@@ -136,4 +139,15 @@ $on-laptop:        800px;
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
+}
+
+
+
+
+.post table th {
+  .brand-background;
+  color: #fff;
+} 
+.post table td {
+  border: solid 0.1em; rgba(0,0,0,0.5);
 }
