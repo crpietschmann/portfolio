@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 53efcaad-7d70-48ab-a32a-9821a058af5b
 title: "Alpha Geeks Are Still Joe Schmoe! And the Community Leads Itself."
 date: 2008-04-21 19:53:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/04/21/Alpha_Geeks_Are_Still_Joe_Schmoe_Community_Leads_Itself
   - /post/2008/04/21/alpha_geeks_are_still_joe_schmoe_community_leads_itself
+  - /post.aspx?id=53efcaad-7d70-48ab-a32a-9821a058af5b
 ---
 <!-- more -->
 <p>

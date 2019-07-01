@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 9b322f99-5f61-45ac-902f-656e26f1253e
 title: "jHtmlArea - The all NEW HTML WYSIWYG Editor for jQuery"
 date: 2009-07-21 19:11:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["JavaScript"]
 redirect_from: 
   - /post/2009/07/21/jHtmlArea-The-all-NEW-HTML-WYSIWYG-Editor-for-jQuery
   - /post/2009/07/21/jhtmlarea-the-all-new-html-wysiwyg-editor-for-jquery
+  - /post.aspx?id=9b322f99-5f61-45ac-902f-656e26f1253e
 ---
 <!-- more -->
 <p><img src="/images/posts2009/7/Screenshot.png" alt="" width="298" height="402" align="right" /></p>

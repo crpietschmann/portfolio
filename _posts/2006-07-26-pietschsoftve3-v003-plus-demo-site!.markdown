@@ -1,5 +1,6 @@
 ---
 layout: post
+id: e64d9f27-e469-4fa2-834e-bc422dc87eda
 title: "PietschSoft.VE3 v0.03 plus Demo site!"
 date: 2006-07-26 01:04:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2006/07/26/PietschSoftVE3-v003-plus-Demo-site!
   - /post/2006/07/26/pietschsoftve3-v003-plus-demo-site!
+  - /post.aspx?id=e64d9f27-e469-4fa2-834e-bc422dc87eda
 ---
 <!-- more -->
 <p>

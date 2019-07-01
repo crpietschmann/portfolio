@@ -1,5 +1,6 @@
 ---
 layout: post
+id: d76fcb3e-9aa9-4931-ba8c-fcb7760d4f03
 title: "My Blog content is now licensed under the Creative Commons Attribution License..."
 date: 2007-12-04 12:09:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/12/04/My-Blog-content-is-now-licensed-under-the-Creative-Commons-Attribution-License
   - /post/2007/12/04/my-blog-content-is-now-licensed-under-the-creative-commons-attribution-license
+  - /post.aspx?id=d76fcb3e-9aa9-4931-ba8c-fcb7760d4f03
 ---
 <!-- more -->
 <p>My Blog content is now licensed under the Creative Commons Attribution License by default. If I do license specific content under a different license, then I'll post the license with the content. So, pretty much unless explicitly stated otherwise all content on this blog is now under the Creative Commons Attribution License. For more info about what this license is; click the link below.</p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: d5372547-3dd9-4726-81cd-234b664a860a
 title: "Imposter Syndrome is Fake"
 date: 2016-07-23 09:09:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/07/23/Imposter-Syndrome-is-Fake
   - /post/2016/07/23/imposter-syndrome-is-fake
+  - /post.aspx?id=d5372547-3dd9-4726-81cd-234b664a860a
 ---
 <!-- more -->
 <p>Ok, maybe the title of this post is a little extreme. However, let me explain what I mean. Really, Imposter Syndrome is fake. It's just something you do to yourself. Think about it.</p>

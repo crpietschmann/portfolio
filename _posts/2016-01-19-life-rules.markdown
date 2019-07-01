@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 9a4a7cbc-1cfa-460e-bb6f-90f89ddd8357
 title: "Life Rules"
 date: 2016-01-19 17:55:29 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: []
 redirect_from: 
   - /page/Life-Rules
   - /page/life-rules
+  - /post.aspx?id=9a4a7cbc-1cfa-460e-bb6f-90f89ddd8357
 ---
 <!-- more -->
 <p>I have a few life rules, principles and tips that I've shared over the years on my blog. Until now I haven't compiled them into a single list, so I thought I would do that here. The order doesn't really matter all that much as each is fairly equal to the other; except where painfully obvious.</p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: d76a12f5-9ead-4847-b21a-be221e790681
 title: "Simple Port Scanner Written in VB.NET 2003/2008"
 date: 2009-01-20 18:00:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General", "vb.net"]
 redirect_from: 
   - /post/2009/01/20/Simple-Port-Scanner-Written-in-VBNET-2003-2008
   - /post/2009/01/20/simple-port-scanner-written-in-vbnet-2003-2008
+  - /post.aspx?id=d76a12f5-9ead-4847-b21a-be221e790681
 ---
 <!-- more -->
 <p>

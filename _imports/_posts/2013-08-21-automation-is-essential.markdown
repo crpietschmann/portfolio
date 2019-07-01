@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 473145aa-91dc-432e-912b-63e6643970e9
 title: "Automation is Essential"
 date: 2013-08-21 08:58:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/08/21/Automation-is-Essential
   - /post/2013/08/21/automation-is-essential
+  - /post.aspx?id=473145aa-91dc-432e-912b-63e6643970e9
 ---
 <!-- more -->
 <p>There are many tasks that are performed repetitively. Some of those tasks often get outsourced. However, in the end someone is responsible for performing those tasks.</p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 9ec8eee4-8d42-4cb7-a1ea-ef309844374e
 title: "Scott Guthrie interviewed on Hanselminutes"
 date: 2006-10-18 12:02:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["asp.net"]
 redirect_from: 
   - /post/2006/10/18/Scott-Guthrie-interviewed-on-Hanselminutes
   - /post/2006/10/18/scott-guthrie-interviewed-on-hanselminutes
+  - /post.aspx?id=9ec8eee4-8d42-4cb7-a1ea-ef309844374e
 ---
 <!-- more -->
 <p>Scott Hanselmen interviews <a href="http://weblogs.asp.net/scottgu/">Scott Guthrie (ScottGu)</a>&nbsp;covering Ajax, ASP.NET 2.0, extender controls, CSS adapters and more.</p>

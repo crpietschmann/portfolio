@@ -1,5 +1,6 @@
 ---
 layout: post
+id: cb2fb342-bf26-4aad-9d46-29a1450ef83e
 title: "ASP.NET Client Callbacks inside a User Control"
 date: 2005-12-10 14:10:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["asp.net"]
 redirect_from: 
   - /post/2005/12/10/ASPNET-20-Client-Callbacks-inside-a-User-Control
   - /post/2005/12/10/aspnet-20-client-callbacks-inside-a-user-control
+  - /post.aspx?id=cb2fb342-bf26-4aad-9d46-29a1450ef83e
 ---
 <!-- more -->
 <p>Implementing Client Callbacks (AJAX) in ASP.NET 2.0 is actually really simple to do as long as you know a little JavaScript. Heres is a small example of using a Client Callback from within a User Control. I've tested this example with IE6 and Firefox 1.5</p>

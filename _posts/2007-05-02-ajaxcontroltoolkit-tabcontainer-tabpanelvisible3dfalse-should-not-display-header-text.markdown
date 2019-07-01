@@ -1,5 +1,6 @@
 ---
 layout: post
+id: e46cfcd4-020b-48fc-beae-f7f12a586dae
 title: "AjaxControlToolkit TabContainer: TabPanel.Visible="False" should not display header text"
 date: 2007-05-02 13:52:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["asp.net"]
 redirect_from: 
   - /post/2007/05/02/AjaxControlToolkit-TabContainer-TabPanelVisible3dFalse-should-not-display-header-text
   - /post/2007/05/02/ajaxcontroltoolkit-tabcontainer-tabpanelvisible3dfalse-should-not-display-header-text
+  - /post.aspx?id=e46cfcd4-020b-48fc-beae-f7f12a586dae
 ---
 <!-- more -->
 <p><span id="ctl00_ctl00_ctl00_Content_ProjectBaseMain_ProjectMain_DescriptionLabel">If you set the visible property of TabPanels within your TabContainer&nbsp;to false, it still shows the Header Text&nbsp;in the&nbsp;page when rendered. What should happen is any TabPanels with Visible set to False should be hidden. A <a href="http://www.codeplex.com/AtlasControlToolkit/WorkItem/View.aspx?WorkItemId=8474">fix for this has been posted to the AJAX Control Toolkits Issue Tracker</a>, but we have to wait for the next release to get the fix in place.</span></p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: c2cd019c-6d75-4226-adab-c196fedd18bf
 title: "Deeper in .NET 2008 is less than 15 hours away!"
 date: 2008-04-04 17:17:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2008/04/04/Deeper-in-NET-2008-is-less-than-15-hours-away!
   - /post/2008/04/04/deeper-in-net-2008-is-less-than-15-hours-away!
+  - /post.aspx?id=c2cd019c-6d75-4226-adab-c196fedd18bf
 ---
 <!-- more -->
 <p>

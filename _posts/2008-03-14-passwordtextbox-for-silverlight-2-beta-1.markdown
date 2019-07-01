@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 6dcdf7a5-de21-4639-8002-8955ea7e7674
 title: "PasswordTextBox for Silverlight 2 Beta 2"
 date: 2008-03-14 20:25:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Silverlight"]
 redirect_from: 
   - /post/2008/03/14/PasswordTextBox-for-Silverlight-2-Beta-1
   - /post/2008/03/14/passwordtextbox-for-silverlight-2-beta-1
+  - /post.aspx?id=6dcdf7a5-de21-4639-8002-8955ea7e7674
 ---
 <!-- more -->
 <p>

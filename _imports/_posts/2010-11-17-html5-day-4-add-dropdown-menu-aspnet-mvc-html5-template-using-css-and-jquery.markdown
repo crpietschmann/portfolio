@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 004257a6-6fc4-4635-b5e1-a79b87b8cea6
 title: "HTML5 Day 4: Add Drop Down Menu to ASP.NET MVC HTML5 Template using CSS and jQuery"
 date: 2010-11-17 11:32:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["ASP.NET MVC", "HTML", "JavaScript"]
 redirect_from: 
   - /post/2010/11/17/HTML5-Day-4-Add-DropDown-Menu-ASPNET-MVC-HTML5-Template-using-CSS-and-jQuery
   - /post/2010/11/17/html5-day-4-add-dropdown-menu-aspnet-mvc-html5-template-using-css-and-jquery
+  - /post.aspx?id=004257a6-6fc4-4635-b5e1-a79b87b8cea6
 ---
 <!-- more -->
 <p>Today I was playing around with using jQuery to create a drop down menu. I thought I&rsquo;d share an example of adding a drop down menu to the <a title="HTML5 Day 2: Upgrade ASP.NET MVC 2 Site Template to HTML5" href="/post/2010/11/15/HTML5-Day-2-Upgrade-ASPNET-MVC-2-Site-Template-to-HTML5.aspx">new ASP.NET MVC HTML5 Template that I created on Day 2</a>.</p>

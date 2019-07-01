@@ -1,5 +1,6 @@
 ---
 layout: post
+id: de296a61-0d2a-469c-a6f2-a96b8ff05be0
 title: "The Follow Or Lead Delimma of Sheep and Wolves"
 date: 2013-07-26 07:40:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/07/26/The-Follow-Or-Lead-Delimma-of-Sheep-and-Wolves
   - /post/2013/07/26/the-follow-or-lead-delimma-of-sheep-and-wolves
+  - /post.aspx?id=de296a61-0d2a-469c-a6f2-a96b8ff05be0
 ---
 <!-- more -->
 <p>To follow or lead; that is the question.</p>

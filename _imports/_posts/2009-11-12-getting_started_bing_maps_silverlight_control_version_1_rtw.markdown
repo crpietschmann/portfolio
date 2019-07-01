@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 82ad46e3-73c5-468f-be62-6247970f31e1
 title: "Getting Started with Bing Maps Silverlight Control v1.0"
 date: 2009-11-12 05:45:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps", "C#", "Silverlight"]
 redirect_from: 
   - /post/2009/11/12/Getting_Started_Bing_Maps_Silverlight_Control_Version_1_RTW
   - /post/2009/11/12/getting_started_bing_maps_silverlight_control_version_1_rtw
+  - /post.aspx?id=82ad46e3-73c5-468f-be62-6247970f31e1
 ---
 <!-- more -->
 <p><a rel="nofollow" href="/images/postsBingMapsRTW_BasicMap_8.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="BingMapsRTW_BasicMap" src="/images/postsBingMapsRTW_BasicMap_thumb_6.png" border="0" alt="BingMapsRTW_BasicMap" width="244" height="179" align="right" /></a>It&rsquo;s been 8 months since the CTP release of the Bing Maps Silverlight Control at MIX&rsquo;08, and finally this week Microsoft released the Final v1.0 release of the control to the web.&nbsp; Now, we can all finally start using the Bing Maps Silverlight Control in Production!</p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 12cc4b1d-fb02-4851-9c5f-f258003ecca6
 title: "ASP.NET Forums is gone and Community Server's not free"
 date: 2007-09-21 11:50:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/09/21/ASPNET-Forums-is-gone-and-Community-Servers-not-free
   - /post/2007/09/21/aspnet-forums-is-gone-and-community-servers-not-free
+  - /post.aspx?id=12cc4b1d-fb02-4851-9c5f-f258003ecca6
 ---
 <!-- more -->
 <P>What happened to the download links for ASP.NET Forums on the <A href="http://www.asp.net/">www.asp.net</A> website? As soon as Community Server 1.0 came out the links disapearred. I didn't really think of it at the time, but now that I want to set up a Forum I would like the old ASP.NET Forums.</P>

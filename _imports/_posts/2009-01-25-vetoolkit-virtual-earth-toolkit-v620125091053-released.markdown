@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 76ef247b-9a57-4577-b45e-34ebb506bdac
 title: "VEToolkit - Virtual Earth Toolkit v6.2.012509.1053 Released!"
 date: 2009-01-25 11:56:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2009/01/25/VEToolkit-Virtual-Earth-Toolkit-v620125091053-Released
   - /post/2009/01/25/vetoolkit-virtual-earth-toolkit-v620125091053-released
+  - /post.aspx?id=76ef247b-9a57-4577-b45e-34ebb506bdac
 ---
 <!-- more -->
 <p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 855f7483-06fe-4042-b8c4-0ebfd6b372e9
 title: "Bing Maps Ajax 7: Add Custom Navigation Bar Buttons using jQuery"
 date: 2010-12-18 09:42:19 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2010/12/18/Bing-Maps-Ajax-7-Add-Custom-Navigation-Bar-Buttons-using-jQuery
   - /post/2010/12/18/bing-maps-ajax-7-add-custom-navigation-bar-buttons-using-jquery
+  - /post.aspx?id=855f7483-06fe-4042-b8c4-0ebfd6b372e9
 ---
 <!-- more -->
 <p>The Bing Maps Ajax v7 control does not include support for adding custom buttons to the navigation bar (where the zoom, pan and map style buttons are). There may be times when you will want to add a custom button or two, and this post contains some simple code that will help you do so.</p>  <p>Here’s a screenshot of this in action. The ‘Click Me’ link in the navigation bar is a custom button that the below code adds.</p>  <p><a href="/images/postsBingMapsAjax7CustomNavBarButton.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="BingMapsAjax7CustomNavBarButton" border="0" alt="BingMapsAjax7CustomNavBarButton" src="/images/postsBingMapsAjax7CustomNavBarButton_thumb.png" width="359" height="105" /></a></p>  <h3>Code</h3>  <p>First, here’s the code that I came up with to add custom navigation bar buttons:</p>  <pre class="csharpcode"><span class="rem">// Simple Method to Add a Custom Button to the NavBar using jQuery</span>

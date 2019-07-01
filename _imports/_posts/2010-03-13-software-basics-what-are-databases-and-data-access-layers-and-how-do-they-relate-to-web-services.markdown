@@ -1,5 +1,6 @@
 ---
 layout: post
+id: c2786425-6a63-4bb0-b0ad-5fcc64b2c557
 title: "Software Basics: What are Databases and Data Access Layers, and How do they relate to Web Services?"
 date: 2010-03-13 19:23:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2010/03/13/Software-Basics-What-are-Databases-and-Data-Access-Layers-and-How-do-they-relate-to-Web-Services
   - /post/2010/03/13/software-basics-what-are-databases-and-data-access-layers-and-how-do-they-relate-to-web-services
+  - /post.aspx?id=c2786425-6a63-4bb0-b0ad-5fcc64b2c557
 ---
 <!-- more -->
 <p>In my own personal discussions with other developers and computer users I've seen a fair amount of confusion as to what a <em>database</em> is. Since the purpose of almost all applications is to Create/Read/Update/Delete data, they need to connect to a database, since data persistence storage need to be provided for the application to function as intended. If you want to stick to the simplest definition below, then a file cabinet is technically a database, but now that we're in the information age we don't really think of file cabinets as such since we can't search them very easily without physically looking at every folder or file it contains. Also, the my point in writing this article is to point out what databases are as they relate to software, so I'll keep things below within the digital sense.</p>

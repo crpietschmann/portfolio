@@ -1,5 +1,6 @@
 ---
 layout: post
+id: fdfb2e52-5591-41d0-8fc7-4854e363b5d0
 title: "Scrape Geocodes from Google Maps w/ C#"
 date: 2006-06-13 09:00:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["C#"]
 redirect_from: 
   - /post/2006/06/13/Scrape-Geocodes-from-Google-Maps-w-C
   - /post/2006/06/13/scrape-geocodes-from-google-maps-w-c
+  - /post.aspx?id=fdfb2e52-5591-41d0-8fc7-4854e363b5d0
 ---
 <!-- more -->
 <p>I need to geocode some addresses once in a while and I notice if you view the source of the Google Maps page, the geocodes are right there. So instead of looking at the source of the page manually, I just created a little app that scrapes them from the page for me and places them into textboxes.</p>

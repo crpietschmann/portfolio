@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 95da94ec-5c72-4907-8af8-cf6a12c704e1
 title: "VB.NET: RegEx Syntax Highlighting RichTextBox"
 date: 2006-07-03 17:08:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["vb.net"]
 redirect_from: 
   - /post/2006/07/03/VBNET-RegEx-Syntax-Highlighting-RichTextBox
   - /post/2006/07/03/vbnet-regex-syntax-highlighting-richtextbox
+  - /post.aspx?id=95da94ec-5c72-4907-8af8-cf6a12c704e1
 ---
 <!-- more -->
 <p><img class="photosmall" src="/download/blog/1311/regexsyntaxhighlighter.png" border="0" alt="RegEx Syntax Highlighter" hspace="0" align="left" />Here&nbsp;is a version of my code for syntax highlighting in a RichTextBox that incorporates regular expressions.</p>

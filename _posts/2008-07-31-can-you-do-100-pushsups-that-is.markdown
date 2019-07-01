@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 516b5da4-c2e2-4f4f-bf0a-19ca09680926
 title: "Can you do 100? Pushups that is."
 date: 2008-07-31 19:02:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/07/31/Can-you-do-100-Pushsups-that-is
   - /post/2008/07/31/can-you-do-100-pushsups-that-is
+  - /post.aspx?id=516b5da4-c2e2-4f4f-bf0a-19ca09680926
 ---
 <!-- more -->
 <p>Today, I was introduced to <a href="http://hundredpushups.com/">hundredpushups.com</a>, via a <a href="http://twitter.com/shanselman/statuses/873898459">Tweet by Scott Hanselman</a>. In short, the One Hundred Pushups training program is a simple program that requires about 30 minutes a week of exercise doing pushups, with the goal of working up to being able to do 100 consecutive pushups at the end of the 6 weeks program. This is such a simple program, it's free, and there isn't much easier than doing pushups.</p>

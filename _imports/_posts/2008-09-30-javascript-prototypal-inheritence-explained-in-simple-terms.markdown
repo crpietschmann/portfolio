@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 5c7d6bc1-2926-467d-a47a-5d826dbc467f
 title: "JavaScript Prototypal Inheritence Explained in Simple Terms"
 date: 2008-09-30 16:45:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/09/30/JavaScript-Prototypal-Inheritence-Explained-in-Simple-Terms
   - /post/2008/09/30/javascript-prototypal-inheritence-explained-in-simple-terms
+  - /post.aspx?id=5c7d6bc1-2926-467d-a47a-5d826dbc467f
 ---
 <!-- more -->
 <p>

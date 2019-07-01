@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 9a32a5cb-01b0-42da-90b6-21747146d03d
 title: "HTML5 Day 2: Upgrade ASP.NET MVC 2 Site Template to HTML5"
 date: 2010-11-15 03:02:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["ASP.NET MVC", "HTML"]
 redirect_from: 
   - /post/2010/11/15/HTML5-Day-2-Upgrade-ASPNET-MVC-2-Site-Template-to-HTML5
   - /post/2010/11/15/html5-day-2-upgrade-aspnet-mvc-2-site-template-to-html5
+  - /post.aspx?id=9a32a5cb-01b0-42da-90b6-21747146d03d
 ---
 <!-- more -->
 <p>Since HTML5 can be used in older browsers with some helper scripts, <a title="HTML5 Day 1: New tags work in older browser? Awesome!" href="/post/2010/11/14/HTML5-Day-1-New-tags-work-in-older-browsers-Awesome.aspx">as covered in Day 1</a>, I thought I&rsquo;d use what I&rsquo;ve learned to convert the default ASP.NET MVC 2 site template to HTML5.</p>

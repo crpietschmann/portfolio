@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 128f2f72-41c5-40bd-9b3d-d5f8d310eecd
 title: "VB.NET 2005's "My" namespace for Mono"
 date: 2004-09-11 03:47:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2004/09/11/VBNET-2005s-My-namespace-for-Mono
   - /post/2004/09/11/vbnet-2005s-my-namespace-for-mono
+  - /post.aspx?id=128f2f72-41c5-40bd-9b3d-d5f8d310eecd
 ---
 <!-- more -->
 <p>

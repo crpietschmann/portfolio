@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 3a0ea8f3-52d2-4c6c-9c11-c4920e83daf0
 title: "Why wait for Windows 7? Dell XT has Multi-Touch already"
 date: 2008-07-30 21:07:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/07/30/Why-wait-for-Windows-7-Dell-XT-has-Multi-Touch-already
   - /post/2008/07/30/why-wait-for-windows-7-dell-xt-has-multi-touch-already
+  - /post.aspx?id=3a0ea8f3-52d2-4c6c-9c11-c4920e83daf0
 ---
 <!-- more -->
 <p>

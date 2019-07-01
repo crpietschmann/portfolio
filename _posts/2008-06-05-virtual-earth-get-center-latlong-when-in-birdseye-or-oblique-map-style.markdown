@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 09bd09f5-2cd1-4c0b-a273-eb7c91c3acb3
 title: "Virtual Earth: Get Center Lat/Long When In Birdseye or Oblique Map Style"
 date: 2008-06-05 19:11:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/06/05/Virtual-Earth-Get-Center-LatLong-When-In-Birdseye-or-Oblique-Map-Style
   - /post/2008/06/05/virtual-earth-get-center-latlong-when-in-birdseye-or-oblique-map-style
+  - /post.aspx?id=09bd09f5-2cd1-4c0b-a273-eb7c91c3acb3
 ---
 <!-- more -->
 <p>One of the tricky things that you need to work around when programming Virtual Earth is the VEMap.GetCenter() method doesn't work when&nbsp;displaying the&nbsp;Birdseye or Oblique Map Style. I'm not exactly sure what the reasoning for this is, but this is one thing that I would like to see fixed in a future version. Luckily, there is an unsupported method of doing this.</p>

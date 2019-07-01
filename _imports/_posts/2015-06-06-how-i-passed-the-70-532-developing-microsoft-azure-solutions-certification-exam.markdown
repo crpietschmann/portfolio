@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 6e41a5f3-1dab-413e-a7d6-a5fd7e767116
 title: "How I passed the 70-532 Developing Microsoft Azure Solutions certification exam"
 date: 2015-06-06 08:33:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Azure"]
 redirect_from: 
   - /post/2015/06/06/How-I-passed-the-70-532-Developing-Microsoft-Azure-Solutions-certification-exam
   - /post/2015/06/06/how-i-passed-the-70-532-developing-microsoft-azure-solutions-certification-exam
+  - /post.aspx?id=6e41a5f3-1dab-413e-a7d6-a5fd7e767116
 ---
 <!-- more -->
 <p><img style="float: right;" src="/images/posts/2015/06/Spec_Dev_AzureSol_BW.png" alt="" /></p>

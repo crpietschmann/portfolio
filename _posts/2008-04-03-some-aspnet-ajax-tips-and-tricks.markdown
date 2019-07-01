@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 0b0d94ba-c184-48ce-b29a-38da320dbc7e
 title: "Some ASP.NET AJAX Tips and Tricks"
 date: 2008-04-03 21:56:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["asp.net"]
 redirect_from: 
   - /post/2008/04/03/Some-ASPNET-AJAX-Tips-and-Tricks
   - /post/2008/04/03/some-aspnet-ajax-tips-and-tricks
+  - /post.aspx?id=0b0d94ba-c184-48ce-b29a-38da320dbc7e
 ---
 <!-- more -->
 <p>

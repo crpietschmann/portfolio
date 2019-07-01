@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 8b258820-aa2f-4d66-bf92-12d7e86cba34
 title: "I went Deeper in .NET yesterday again!"
 date: 2006-04-23 23:58:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["WI-INETA"]
 redirect_from: 
   - /post/2006/04/23/I-went-Deeper-in-NET-yesterday-again!
   - /post/2006/04/23/i-went-deeper-in-net-yesterday-again!
+  - /post.aspx?id=8b258820-aa2f-4d66-bf92-12d7e86cba34
 ---
 <!-- more -->
 <p class="MsoNormal" style="margin: 0in 0in 0pt">I attended <a href="http://wi-ineta.org/didn">Deeper in .NET</a> yesterday, along with a few hundred others. It was an excellent day filled with .NET goodness. I&rsquo;m not sure what the actual attendance count was, but I guess it was higher than last year&rsquo;s event.</p>

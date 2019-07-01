@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 95c74d4e-3dc3-47a2-a01c-a9fcf42ab3f6
 title: "Work Smart, Not Hard"
 date: 2013-07-27 06:20:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/07/27/Work-Smart-Not-Hard
   - /post/2013/07/27/work-smart-not-hard
+  - /post.aspx?id=95c74d4e-3dc3-47a2-a01c-a9fcf42ab3f6
 ---
 <!-- more -->
 <p><!--[if gte mso 9]><xml>

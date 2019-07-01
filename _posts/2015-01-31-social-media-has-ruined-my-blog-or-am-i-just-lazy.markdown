@@ -1,5 +1,6 @@
 ---
 layout: post
+id: d2b25c79-7b79-4ffc-a82e-2c1ed1e096ba
 title: "Social Media has ruined my blog, or am I just lazy?"
 date: 2015-01-31 08:26:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2015/01/31/Social-Media-has-ruined-my-blog-or-am-I-just-lazy
   - /post/2015/01/31/social-media-has-ruined-my-blog-or-am-i-just-lazy
+  - /post.aspx?id=d2b25c79-7b79-4ffc-a82e-2c1ed1e096ba
 ---
 <!-- more -->
 <p>As I've been using Twitter more the last couple years, I've also been blogging less. Every time I go to write up a new blog entry I realize how long it's been since the previous post. I know I'm not alone in this, and other people might blame Twitter, Facebook and/or some other social media service.</p>

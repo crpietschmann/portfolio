@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 7ec1dc8e-e27f-4d79-a22f-bd4259dd1381
 title: "Plot ZipCode Boundaries on a Map: Part 2 - Import Zip Code (U.S. Census ZCTA) Data Into A Database"
 date: 2008-06-24 16:00:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/06/24/Plot-ZipCode-Boundaries-on-a-Map-Part-2-Import-Zip-Code-US-Census-ZCTA-Data-Into-A-Database
   - /post/2008/06/24/plot-zipcode-boundaries-on-a-map-part-2-import-zip-code-us-census-zcta-data-into-a-database
+  - /post.aspx?id=7ec1dc8e-e27f-4d79-a22f-bd4259dd1381
 ---
 <!-- more -->
 <p>Now that we've <a href="/post/2008/06/Plot-ZipCode-Boundaries-on-a-Map-Part1-Making-sense-of-US-Census-ZCTA-ARCINFO-Ungenerate-ASCII-files.aspx">Made Sense of the U.S. Census ZCTA ARC/INFO Ungenerate (ASCII) files in Part 1</a> of this series, we are ready to import the U.S Census ZCTA Zip Code data into a database. In Part 2, we'll create database tables and import the Zip Code Boundary data into those tables in a MS SQL 2005 database.</p>

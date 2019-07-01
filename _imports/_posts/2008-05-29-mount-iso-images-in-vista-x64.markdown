@@ -1,5 +1,6 @@
 ---
 layout: post
+id: b62b14ef-179a-4c1b-ba5e-dc58d3c80584
 title: "Mount ISO Images in Vista x64"
 date: 2008-05-29 10:06:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/05/29/Mount-ISO-Images-in-Vista-x64
   - /post/2008/05/29/mount-iso-images-in-vista-x64
+  - /post.aspx?id=b62b14ef-179a-4c1b-ba5e-dc58d3c80584
 ---
 <!-- more -->
 <p>In Windows XP I used the <a href="http://download.microsoft.com/download/7/b/6/7b6abd84-7841-4978-96f5-bd58df02efa2/winxpvirtualcdcontrolpanel_21.exe">Virtual CD-ROM Control Panel Utility</a> from Microsoft to mount ISO images to virtual drive letters, but surely Microsoft has built this functionality into Windows Vista, right? Wrong. It would be nice, but they haven't built this into the OS yet. I hope they do in the next release. Well, this utility doesn't work under Windows Vista. I thought I was out of luck, but a quick search revealed a new option to try.</p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: e7a0a6e2-3fea-4c87-89cb-f998513a52a0
 title: "$700B Bail-Out Bill Passes, Maybe It's Not So Bad Afterall..."
 date: 2008-10-03 20:02:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/10/03/24700B-Bail-Out-Bill-Passed-Maybe-Its-Not-So-Bad-Afterall
   - /post/2008/10/03/24700b-bail-out-bill-passed-maybe-its-not-so-bad-afterall
+  - /post.aspx?id=e7a0a6e2-3fea-4c87-89cb-f998513a52a0
 ---
 <!-- more -->
 <p>I generally don't post on political topics, but this is a big one...</p>

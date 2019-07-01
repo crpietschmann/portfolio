@@ -1,5 +1,6 @@
 ---
 layout: post
+id: ba45dbe3-0685-4768-924a-b7917230574a
 title: "My Function Guide is finally ported over to SQL Server"
 date: 2004-08-07 16:15:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2004/08/07/My-Function-Guide-is-finally-ported-over-to-SQL-Server
   - /post/2004/08/07/my-function-guide-is-finally-ported-over-to-sql-server
+  - /post.aspx?id=ba45dbe3-0685-4768-924a-b7917230574a
 ---
 <!-- more -->
 <P>I finally got my Function Guide ported over from the mySQL database it used on my old hosting provider to the SQL Server 2000 database on my new/current hosting provider.</P>

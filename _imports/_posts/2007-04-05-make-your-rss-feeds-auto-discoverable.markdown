@@ -1,5 +1,6 @@
 ---
 layout: post
+id: ed99da1a-d955-48d0-bfec-20c31cbe6771
 title: "Make your RSS feeds Auto-Discoverable"
 date: 2007-04-05 01:07:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/04/05/Make-your-RSS-feeds-Auto-Discoverable
   - /post/2007/04/05/make-your-rss-feeds-auto-discoverable
+  - /post.aspx?id=ed99da1a-d955-48d0-bfec-20c31cbe6771
 ---
 <!-- more -->
 <P>RSS Autodiscovery is a technique that makes it possible for browsers and other software to automatically find a site's RSS feed. This feature is actually support by both Firefox 2.0 and Internet Explorer 7.</P>

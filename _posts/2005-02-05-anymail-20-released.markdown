@@ -1,5 +1,6 @@
 ---
 layout: post
+id: a019f887-4842-431b-9fa6-bf5faa713f58
 title: "AnyMail 2.0 Released"
 date: 2005-02-05 14:03:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/02/05/AnyMail-20-Released
   - /post/2005/02/05/anymail-20-released
+  - /post.aspx?id=a019f887-4842-431b-9fa6-bf5faa713f58
 ---
 <!-- more -->
 <P><IMG src="/products/images/anymail2.jpg" width=200 align=right border=0>AnyMail 2.0 was released today. AnyMail is an application that allows you to send &#8220;anonymous&#8221; email messages.</P>

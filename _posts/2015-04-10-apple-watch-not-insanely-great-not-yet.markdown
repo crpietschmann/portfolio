@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 563609b6-920b-4e4b-9ada-ef74369152ad
 title: "Apple Watch NOT Insanely Great, Not Yet"
 date: 2015-04-10 12:08:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Inspiration"]
 redirect_from: 
   - /post/2015/04/10/Apple-Watch-NOT-Insanely-Great-Not-Yet
   - /post/2015/04/10/apple-watch-not-insanely-great-not-yet
+  - /post.aspx?id=563609b6-920b-4e4b-9ada-ef74369152ad
 ---
 <!-- more -->
 <p><img style="float: right;" src="/images/posts/2015/04/AppleWatchv1.PNG" alt="" /></p>

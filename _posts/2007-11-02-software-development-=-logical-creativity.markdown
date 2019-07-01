@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 647687a0-8628-4287-a380-91108332faca
 title: "Software Development = Logical Creativity"
 date: 2007-11-02 12:16:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/11/02/Software-Development-=-Logical-Creativity
   - /post/2007/11/02/software-development-=-logical-creativity
+  - /post.aspx?id=647687a0-8628-4287-a380-91108332faca
 ---
 <!-- more -->
 <H3>Programming = Logical</H3>

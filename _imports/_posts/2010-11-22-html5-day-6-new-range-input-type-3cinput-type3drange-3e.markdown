@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 22671886-2906-4a2b-b184-5a4371785b1a
 title: "HTML5 Day 6: New Range Input Type <input type=range />"
 date: 2010-11-22 07:43:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["HTML", "JavaScript"]
 redirect_from: 
   - /post/2010/11/22/HTML5-Day-6-New-Range-Input-Type-3cinput-type3drange-3e
   - /post/2010/11/22/html5-day-6-new-range-input-type-3cinput-type3drange-3e
+  - /post.aspx?id=22671886-2906-4a2b-b184-5a4371785b1a
 ---
 <!-- more -->
 <p>Some times a Range slider is the appropriate UI tool to allow a user to select a number within a given range. HTML5 adds such an element with it&rsquo;s <a href="http://www.w3.org/TR/html-markup/input.range.html">new &ldquo;range&rdquo; input type</a>.</p>

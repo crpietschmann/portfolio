@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 56ebc041-58e4-48cb-a301-65c3df2601a7
 title: "ASP.NET AJAX: Create a JavaScript Component with Events"
 date: 2008-11-07 21:07:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["asp.net", "JavaScript"]
 redirect_from: 
   - /post/2008/11/07/ASPNET-AJAX-Create-a-JavaScript-Component-with-Events
   - /post/2008/11/07/aspnet-ajax-create-a-javascript-component-with-events
+  - /post.aspx?id=56ebc041-58e4-48cb-a301-65c3df2601a7
 ---
 <!-- more -->
 <p>

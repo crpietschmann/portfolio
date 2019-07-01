@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 3917ad4f-9b27-44b7-9437-c6661cd41949
 title: "SQLinq: Use LINQ to generate Ad-Hoc, strongly typed SQL queries"
 date: 2012-03-24 10:33:33 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["C#", "SQL"]
 redirect_from: 
   - /post/2012/03/24/SQLinq-Use-LINQ-to-generate-Ad-Hoc-strongly-typed-SQL-queries
   - /post/2012/03/24/sqlinq-use-linq-to-generate-ad-hoc-strongly-typed-sql-queries
+  - /post.aspx?id=3917ad4f-9b27-44b7-9437-c6661cd41949
 ---
 <!-- more -->
 <p>SQLinq is a new library that allows ad-hoc SQL code to be generated at runtime in a strongly typed manner that allows for compile time validation of your SQL code.</p>  <h3>Why SQLinq?</h3>  <p>SQLinq is built with the core idea of simplicity and ease of use. SQLinq wont get in your way like other Data Access Layers will.</p>  <p>SQLinq is not so much a Data Access Layer (DAL) as it is a code generation tool. Although, it’s not a code generator like others you may be used to. If you look at Entity Framework, you’ll see a ton of C# or VB.NET code that gets generated from a complex data model defined in XML. Yes, Entity Framework gives you compile time validation of your queries, but it also can be a bit bloated (depending on your needs) and can be difficult to setup.</p>  <p>Personally, I have moved away from using Entity Framework for the most part due to the fact that it has performance issues with complex SQL queries that involve a lot of table joins and many where parameters to limit the results returned. The SQL code that Entity Framework generates generally has good performance, but Entity Framework’s performance issues can be seen when it loops through the data to instantiate the resulting object model. Because of these issues, I have mostly moved to manually writing SQL code and using straight ADO.NET for data access within the applications I build; that is at least until I created SQLinq.</p>  <p>With SQLinq there are no complex object models. You simply create Class or Interface that matches the scheme of your database table or view, and you can start querying it in a strongly typed manner.</p>  <pre class="csharpcode">IEnumerable&lt;Person&gt; data = con.Query(

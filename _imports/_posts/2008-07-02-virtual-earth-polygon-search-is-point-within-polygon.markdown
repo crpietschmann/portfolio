@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 57e3e956-a3cd-445f-8445-48bee9c14494
 title: "Bing Maps: Polygon Search - Is Point Within Polygon?"
 date: 2008-07-02 23:42:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/07/02/Virtual-Earth-Polygon-Search-Is-Point-Within-Polygon
   - /post/2008/07/02/virtual-earth-polygon-search-is-point-within-polygon
+  - /post.aspx?id=57e3e956-a3cd-445f-8445-48bee9c14494
 ---
 <!-- more -->
 <p>Today, I found an article on MSDN that covers how to perform a polygon search to determine if a given Lat/Long point is within a given Polygon.</p>

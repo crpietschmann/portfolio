@@ -1,5 +1,6 @@
 ---
 layout: post
+id: d0c69391-8049-4654-b7c6-e6c01f6b2b1a
 title: ".NET Framework - Check if Windows booted in Normal or Safe Mode"
 date: 2005-12-09 14:13:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["C#", "vb.net"]
 redirect_from: 
   - /post/2005/12/09/NET-Framework-Check-if-Windows-booted-in-Normal-or-Safe-Mode
   - /post/2005/12/09/net-framework-check-if-windows-booted-in-normal-or-safe-mode
+  - /post.aspx?id=d0c69391-8049-4654-b7c6-e6c01f6b2b1a
 ---
 <!-- more -->
 <p>Heres a really small code sample on how to check which mode Windows was booted up in (Normal or Safe Mode). This works in <a title=".NET" href="http://www.microsoft.com/net/" target="_blank">.NET</a> 1.x and 2.0.</p>

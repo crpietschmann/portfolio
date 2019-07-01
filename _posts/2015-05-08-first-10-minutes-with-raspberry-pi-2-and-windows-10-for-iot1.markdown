@@ -1,5 +1,6 @@
 ---
 layout: post
+id: a8b8af34-4bf2-47ec-ab22-19d83e7f03af
 title: "First 10 Minutes with Raspberry Pi and Windows 10 for IoT"
 date: 2015-05-08 07:53:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Internet of Things", "Raspberry Pi"]
 redirect_from: 
   - /post/2015/05/08/First-10-Minutes-with-Raspberry-Pi-2-and-Windows-10-for-IoT1
   - /post/2015/05/08/first-10-minutes-with-raspberry-pi-2-and-windows-10-for-iot1
+  - /post.aspx?id=a8b8af34-4bf2-47ec-ab22-19d83e7f03af
 ---
 <!-- more -->
 <p><img style="float: right;" src="/images/posts/2015/05/RaspberryPi2withMicroSDCard.png" alt="" /></p>

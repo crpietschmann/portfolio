@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 0c65924b-8ae3-4375-b115-c216ac01f489
 title: "Adding a DotNetKicks Image/Badge via jQuery"
 date: 2009-07-20 18:08:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["JavaScript"]
 redirect_from: 
   - /post/2009/07/20/Adding-a-DotNetKicks-ImageBadge-via-jQuery
   - /post/2009/07/20/adding-a-dotnetkicks-imagebadge-via-jquery
+  - /post.aspx?id=0c65924b-8ae3-4375-b115-c216ac01f489
 ---
 <!-- more -->
 <p>A while ago Jon Galloway posted a short article titled "<a href="http://weblogs.asp.net/jgalloway/archive/2007/03/08/adding-a-dotnetkicks-image-via-javascript.aspx">Adding a DotNetKicks image via JavaScript</a>" which contains the small amount of JavaScript code necessary to add a <a href="http://www.dotnetkicks.com/docs/kickitbadge">DotNetKicks.com Image / Badge</a> to your web pages. The DotNetKicks Badge is essentially a link that allows users to go to <a href="http://dotnetkicks.com">DotNetKicks.com</a> to vote for you web page, and the badge also displays the total number of "kicks" that your page has received. Since <a href="http://jquery.com">jQuery</a> has become insanely popular since Jon originally posted his JavaScript code, I thought I would post a jQuery version of his code.</p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2a628f30-fe83-4e44-a34b-f31be76d1b4f
 title: "C#: Generate WebPage Thumbmail Screenshot Image"
 date: 2008-07-23 21:43:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["asp.net", "C#"]
 redirect_from: 
   - /post/2008/07/23/C-Generate-WebPage-Thumbmail-Screenshot-Image
   - /post/2008/07/23/c-generate-webpage-thumbmail-screenshot-image
+  - /post.aspx?id=2a628f30-fe83-4e44-a34b-f31be76d1b4f
 ---
 <!-- more -->
 <p>There are a few services out there that serve up screenshots of any webpage for you to display on your website. One popular one is <a href="http://kwiboo.com/">Kwiboo</a>; this is the one that <a href="http://dotnetkicks.com">DotNetKicks </a>uses. For some time now I've wondered what the easiest way to do this in .NET was, and today I stumbled upon the undocumented WebBrowser.DrawToBitmap method that makes this extremely easy to do.</p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 84cffaa2-1856-4b3d-b7fc-5c74126bd318
 title: "Intel Core i7 920 - Initial Thoughts, Overclocking and Windows Vista"
 date: 2008-11-27 09:33:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/11/27/Intel-Core-i7-920-Initial-Thoughts-Overclocking-Windows-Vista
   - /post/2008/11/27/intel-core-i7-920-initial-thoughts-overclocking-windows-vista
+  - /post.aspx?id=84cffaa2-1856-4b3d-b7fc-5c74126bd318
 ---
 <!-- more -->
 <p><img src="/images/postscorei7BlueLogo.png" alt="" align="right" />I recently upgraded my main desktop machine to a new Intel Core i7 920 CPU and all its glory. Here's a write up of my experience in choosing the Core i7 (over the Core 2 Quad) and my experiences with it so far.</p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 3016b3d2-25b0-4a49-8b21-40d0c78fa88a
 title: "Introduction to LINQ"
 date: 2008-01-24 02:00:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["vb.net"]
 redirect_from: 
   - /post/2008/01/24/Introduction-to-LINQ
   - /post/2008/01/24/introduction-to-linq
+  - /post.aspx?id=3016b3d2-25b0-4a49-8b21-40d0c78fa88a
 ---
 <!-- more -->
 <h3>What is LINQ?</h3>

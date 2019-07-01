@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2ae98273-f10c-46f1-9db1-c07dd646c16b
 title: "MvcXaml - Images from XAML within ASP.NET MVC Application"
 date: 2011-01-09 09:41:28 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["ASP.NET MVC"]
 redirect_from: 
   - /post/2011/01/09/MvcXaml-Images-from-XAML-within-ASPNET-MVC-Application
   - /post/2011/01/09/mvcxaml-images-from-xaml-within-aspnet-mvc-application
+  - /post.aspx?id=2ae98273-f10c-46f1-9db1-c07dd646c16b
 ---
 <!-- more -->
 <p>It can be cumbersome using GDI+ to dynamically generate images based on data. I recently had to perform some dynamic image generation within an ASP.NET MVC application, and had the idea of using XAML to define what the image will look like. In a relatively short amount of time, including searching the web and looking at <a href="http://amazedsaint.blogspot.com/2010/07/xaml-meets-aspnet-mvc-create-databound.html">Anoop Madhusudanan’s example</a>, I successfully put together a proper ASP.NET MVC ViewEngine to perform this task.</p>  <p><a href="http://mvcxaml.codeplex.com">Download MvcXaml with Samples!</a></p>  <p><a href="/images/postsMvcXamlScreenshot.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="MvcXamlScreenshot" border="0" alt="MvcXamlScreenshot" src="/images/postsMvcXamlScreenshot_thumb.png" width="304" height="304" /></a></p>  <h3>Basics of Usage</h3>  <p>After you register the MvcXaml.XamlImageViewEngine within the Global.asax of your application, you just add the XAML markup file to the Views folder in the same fashion as any other View and write your Controller’s Action methods as normal.</p>  <p>Here’s an example Controller method using MvcXaml:</p>  <pre class="csharpcode"><span class="kwrd">public</span> ActionResult Person(<span class="kwrd">int</span>? id)

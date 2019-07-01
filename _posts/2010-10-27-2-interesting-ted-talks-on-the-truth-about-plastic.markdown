@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 7c661d03-02e2-44ba-854d-6c866a87b763
 title: "2 Interesting TED Talks on The Truth About Plastic"
 date: 2010-10-27 06:02:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2010/10/27/2-Interesting-TED-Talks-on-The-Truth-About-Plastic
   - /post/2010/10/27/2-interesting-ted-talks-on-the-truth-about-plastic
+  - /post.aspx?id=7c661d03-02e2-44ba-854d-6c866a87b763
 ---
 <!-- more -->
 <p><img style="float: right;" src="../../images/posts2010/10/PlasticPollution.jpg" alt="" />Below are videos of two TED talks that I discovered over at <a href="http://ted.com">TED.com</a>. They talk about how bad plastic is for the environment, the earth, for us in the end. One disturbing thing that's mentioned is that plastic does break down into smaller pieces over time, but plastic is always plastic, is always plastic. It never truly breaks down to a point where the environment can use if for something other than pollution.</p>

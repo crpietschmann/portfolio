@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 7847c5f4-64eb-4ca3-9c15-9992806d9aa2
 title: "JavaScript Function Tips and Tricks"
 date: 2008-02-25 17:45:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/02/25/JavaScript-Function-Tips-and-Tricks
   - /post/2008/02/25/javascript-function-tips-and-tricks
+  - /post.aspx?id=7847c5f4-64eb-4ca3-9c15-9992806d9aa2
 ---
 <!-- more -->
 <p>First, What is a JavaScript Function? As defined by W3Schools.com a JavaScript Function is:</p>

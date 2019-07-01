@@ -1,5 +1,6 @@
 ---
 layout: post
+id: fd819a8b-25ac-42df-b9fe-7bd3eb724c1a
 title: "Windows vNext (Windows 7?) Feature Ideas"
 date: 2008-09-05 10:42:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/09/05/Windows-vNext-(Windows-7)-Feature-Ideas
   - /post/2008/09/05/windows-vnext-(windows-7)-feature-ideas
+  - /post.aspx?id=fd819a8b-25ac-42df-b9fe-7bd3eb724c1a
 ---
 <!-- more -->
 <p>Here are some of my thoughts on the Windows operating system and how thing could be improved in the "next" version after Vista. Also, the ideas aren't in any particular order of importance, they are just in the order I typed them in.</p>

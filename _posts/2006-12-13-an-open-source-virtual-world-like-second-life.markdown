@@ -1,5 +1,6 @@
 ---
 layout: post
+id: e9930373-891d-47a5-ad5e-f0168a79ff54
 title: "An Open Source Virtual World like Second Life"
 date: 2006-12-13 14:20:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2006/12/13/An-Open-Source-Virtual-World-like-Second-Life
   - /post/2006/12/13/an-open-source-virtual-world-like-second-life
+  - /post.aspx?id=e9930373-891d-47a5-ad5e-f0168a79ff54
 ---
 <!-- more -->
 <P>In Mark Shuttleworth's post "#6: Sensory Immersion" he mentions that the open source community needs to take the idea of Second Life and innovate.</P>

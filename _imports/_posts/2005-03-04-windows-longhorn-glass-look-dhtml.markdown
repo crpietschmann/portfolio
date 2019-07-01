@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 6d3871ca-6e50-4cc5-888d-cabd5385eb31
 title: "Windows Longhorn Glass Look DHTML"
 date: 2005-03-04 21:38:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/03/04/Windows-Longhorn-Glass-Look-DHTML
   - /post/2005/03/04/windows-longhorn-glass-look-dhtml
+  - /post.aspx?id=6d3871ca-6e50-4cc5-888d-cabd5385eb31
 ---
 <!-- more -->
 <p>

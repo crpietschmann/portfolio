@@ -1,5 +1,6 @@
 ---
 layout: post
+id: bce05118-3642-4cf8-a4c7-fdafab615dee
 title: "Boycott BP, Save the Planet!"
 date: 2010-05-18 07:37:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2010/05/18/Boycott_BP_Save_the_Planet
   - /post/2010/05/18/boycott_bp_save_the_planet
+  - /post.aspx?id=bce05118-3642-4cf8-a4c7-fdafab615dee
 ---
 <!-- more -->
 <p><a href="http://www.guardian.co.uk/environment/2010/may/10/deepwater-horizon-oil-junk-shot"><img style="float: right; border: 0;" src="/images/posts2010/5/bird-at-deepwater-horizon-006.jpg" alt="" width="150" /></a></p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 800e46fd-be20-437a-a066-1c352e2a34e7
 title: ""Bye Bye Mr. CIO Guy" Song..."
 date: 2004-07-01 19:54:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2004/07/01/Bye-Bye-Mr-CIO-Guy-Song
   - /post/2004/07/01/bye-bye-mr-cio-guy-song
+  - /post.aspx?id=800e46fd-be20-437a-a066-1c352e2a34e7
 ---
 <!-- more -->
 <P>Now, this is just hilarious. &#8220;Bye, Bye Mr. CIO-Guy, Gonna outsource every resource &#8216;til the business runs dry.&#8221;</P>

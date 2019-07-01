@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 3e3e5d35-10e4-4362-b8e3-fd97dbff3796
 title: "A Couple VB.NET Language Tips for C# Developers"
 date: 2008-10-31 00:27:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["C#", "vb.net"]
 redirect_from: 
   - /post/2008/10/31/A-Couple-VBNET-Language-Tips-for-CSharp-Developers
   - /post/2008/10/31/a-couple-vbnet-language-tips-for-csharp-developers
+  - /post.aspx?id=3e3e5d35-10e4-4362-b8e3-fd97dbff3796
 ---
 <!-- more -->
 <p>Originally, I started out as a Visual Basic developer, and have since moved mostly to C#. However, when doing consulting work, I do need to cross back and forth quite often. Here are a couple VB.NET tips that you probably aren't aware of if you're mostly a C# developer. Some VB.NET developers may not even know about then either.</p>

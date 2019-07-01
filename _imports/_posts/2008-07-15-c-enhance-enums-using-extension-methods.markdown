@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 4bc01ef2-0463-4739-aa4d-bfe73c7a00bb
 title: "C#: Enhance Enums using Extension Methods"
 date: 2008-07-15 16:38:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["C#"]
 redirect_from: 
   - /post/2008/07/15/C-Enhance-Enums-using-Extension-Methods
   - /post/2008/07/15/c-enhance-enums-using-extension-methods
+  - /post.aspx?id=4bc01ef2-0463-4739-aa4d-bfe73c7a00bb
 ---
 <!-- more -->
 <p>Extension Methods are one of the coolest features that have been added in .NET 3.5. I've heard arguments that there is no reason to use them, and the only reason Microsoft added them is to enable the ability to buid LINQ. Well, I do not entirely agree with that statement; in fact, I have found a cool way to use Extension Methods to enhance the System.Enum object since it cannot be inherited. Even though Enum can not be inherited, it can be extended using Extension Methods.</p>

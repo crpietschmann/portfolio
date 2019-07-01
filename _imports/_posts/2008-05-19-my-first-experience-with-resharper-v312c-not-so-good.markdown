@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 168e1117-8b57-400a-9a89-b40e685e652e
 title: "My First Experience with ReSharper v3.1, not so good"
 date: 2008-05-19 19:28:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/05/19/My-First-Experience-with-ReSharper-v312c-not-so-good
   - /post/2008/05/19/my-first-experience-with-resharper-v312c-not-so-good
+  - /post.aspx?id=168e1117-8b57-400a-9a89-b40e685e652e
 ---
 <!-- more -->
 <p>

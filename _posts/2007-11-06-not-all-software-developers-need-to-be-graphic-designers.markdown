@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2f8c9152-fd96-4e9b-b5b7-a5520b0a581e
 title: "Not All Software Developers Need To Be Graphic Designers"
 date: 2007-11-06 18:40:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/11/06/Not-All-Software-Developers-Need-To-Be-Graphic-Designers
   - /post/2007/11/06/not-all-software-developers-need-to-be-graphic-designers
+  - /post.aspx?id=2f8c9152-fd96-4e9b-b5b7-a5520b0a581e
 ---
 <!-- more -->
 <P>Today, I came across a post by <A href="http://vitalygorn.com/">Vitaly Gorn</A>&nbsp;titled "<A href="http://vitalygorn.com/blog/post/2007/11/Is-it-time-for-software-developers-to-master-in-graphic-design.aspx">Is it time for software developers to master in graphic design?</A>" And, in this article, they explain why software developers need to acquire more graphic design skills today.</P>

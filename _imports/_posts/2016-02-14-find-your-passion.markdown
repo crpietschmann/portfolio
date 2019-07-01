@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 4a72d82f-6645-4730-b82d-8006b70bddb6
 title: "Find Your Passion"
 date: 2016-02-14 11:56:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/02/14/Find-Your-Passion
   - /post/2016/02/14/find-your-passion
+  - /post.aspx?id=4a72d82f-6645-4730-b82d-8006b70bddb6
 ---
 <!-- more -->
 <p>Much of success in life hinges on finding something you're passionate about. Sure, certain interests that turn into passions can be difficult to build a career around, but there's certainly ways to do it. No matter what your passion, you need to find it!</p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: c9557fb0-4425-4a83-8397-cf37ddd5c55c
 title: "msdn2.microsoft.com - Lots of improvements for MSDN Online!"
 date: 2005-06-12 23:44:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/06/12/msdn2microsoftcom-Lots-of-improvements-for-MSDN-Online!
   - /post/2005/06/12/msdn2microsoftcom-lots-of-improvements-for-msdn-online!
+  - /post.aspx?id=c9557fb0-4425-4a83-8397-cf37ddd5c55c
 ---
 <!-- more -->
 <P>For those who don't know, <A href="http://msdn2.microsoft.com">http://msdn2.microsoft.com</A> has all the Visual Studio &#8220;Whidbey&#8221; 2005 documentation. It's not fully complete because they are still building up the library, but it is still quite extensive.</P>

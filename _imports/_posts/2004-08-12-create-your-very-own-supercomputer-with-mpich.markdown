@@ -1,5 +1,6 @@
 ---
 layout: post
+id: dc6880a7-86a7-4fd5-9487-0c987b9a8d68
 title: "Create your very own Supercomputer with MPICH"
 date: 2004-08-12 18:14:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2004/08/12/Create-your-very-own-Supercomputer-with-MPICH
   - /post/2004/08/12/create-your-very-own-supercomputer-with-mpich
+  - /post.aspx?id=dc6880a7-86a7-4fd5-9487-0c987b9a8d68
 ---
 <!-- more -->
 <P class=story1>Early supercomputers used parallel processing and distributed computing and to link processors together in a single machine. Using freely available tools, it is possible to do the same today using inexpensive PCs - a cluster. Glen Gardner liked the idea, so he built himself a massively parallel Mini-ITX cluster using 12 x 800Mhz nodes.</P>

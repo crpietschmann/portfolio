@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 697756fb-6077-408e-afa2-3c8337cf508c
 title: "WI .NET Users Group - Having troubles finding meeting locations!"
 date: 2007-03-18 00:07:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2007/03/18/WI-NET-Users-Group-Having-troubles-finding-meeting-locations!
   - /post/2007/03/18/wi-net-users-group-having-troubles-finding-meeting-locations!
+  - /post.aspx?id=697756fb-6077-408e-afa2-3c8337cf508c
 ---
 <!-- more -->
 <p>

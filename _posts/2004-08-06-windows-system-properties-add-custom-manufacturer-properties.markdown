@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 7c154455-3caa-4855-9d04-8bb38b1b1593
 title: "Windows System Properties - Add Custom Manufacturer Properties"
 date: 2004-08-06 20:29:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2004/08/06/Windows-System-Properties-Add-Custom-Manufacturer-Properties
   - /post/2004/08/06/windows-system-properties-add-custom-manufacturer-properties
+  - /post.aspx?id=7c154455-3caa-4855-9d04-8bb38b1b1593
 ---
 <!-- more -->
 <p>

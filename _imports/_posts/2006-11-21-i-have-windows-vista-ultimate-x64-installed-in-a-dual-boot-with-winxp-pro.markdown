@@ -1,5 +1,6 @@
 ---
 layout: post
+id: beab6120-b505-4976-b08d-d0e973cf189f
 title: "I have Windows Vista Ultimate x64 installed in a dual boot with WinXP Pro"
 date: 2006-11-21 19:28:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2006/11/21/I-have-Windows-Vista-Ultimate-x64-installed-in-a-dual-boot-with-WinXP-Pro
   - /post/2006/11/21/i-have-windows-vista-ultimate-x64-installed-in-a-dual-boot-with-winxp-pro
+  - /post.aspx?id=beab6120-b505-4976-b08d-d0e973cf189f
 ---
 <!-- more -->
 <p>The installation went really smooth. I just booted up the box with the Vista intallation DVD in the drive, and installed Vista on a newly created partition (not the partition WinXP is on). And, it setup dual boot automatically. It couldn't have been easier. Oh, yeah, and&nbsp;it only took 15-20 minutes for the install; that really beats the approximate 1 hour WinXP takes.</p>

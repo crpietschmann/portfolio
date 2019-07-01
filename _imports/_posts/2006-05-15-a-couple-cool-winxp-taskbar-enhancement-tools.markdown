@@ -1,5 +1,6 @@
 ---
 layout: post
+id: f6b3a7ec-852b-445f-92f5-482d542e58bc
 title: "A couple cool WinXP TaskBar enhancement tools"
 date: 2006-05-15 21:16:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2006/05/15/A-couple-cool-WinXP-TaskBar-enhancement-tools
   - /post/2006/05/15/a-couple-cool-winxp-taskbar-enhancement-tools
+  - /post.aspx?id=f6b3a7ec-852b-445f-92f5-482d542e58bc
 ---
 <!-- more -->
 <p>I've come across two cool WinXP TaskBar enhancement tools.</p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: ae6cc53b-9e51-4355-a682-a6466af963cf
 title: "Show a MessageBox in Silverlight 2 Beta 1"
 date: 2008-03-08 18:13:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Silverlight"]
 redirect_from: 
   - /post/2008/03/08/Show-a-MessageBox-in-Silverlight-2-Beta-1
   - /post/2008/03/08/show-a-messagebox-in-silverlight-2-beta-1
+  - /post.aspx?id=ae6cc53b-9e51-4355-a682-a6466af963cf
 ---
 <!-- more -->
 <p>

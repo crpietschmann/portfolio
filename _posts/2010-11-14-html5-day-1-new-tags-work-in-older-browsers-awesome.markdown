@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 82a3b9b6-8165-4b91-adce-4c613c95c068
 title: "HTML5 Day 1: New tags work in older browsers? Awesome!"
 date: 2010-11-14 14:51:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["HTML"]
 redirect_from: 
   - /post/2010/11/14/HTML5-Day-1-New-tags-work-in-older-browsers-Awesome
   - /post/2010/11/14/html5-day-1-new-tags-work-in-older-browsers-awesome
+  - /post.aspx?id=82a3b9b6-8165-4b91-adce-4c613c95c068
 ---
 <!-- more -->
 <p>I recently decided to really dig into HTML5 to see what it&rsquo;s all about. After all, the web (err... <a title="Ted Stevens: Series of Tubes" href="http://www.youtube.com/watch?v=f99PcP0aFNE">tubes</a>) is full of talk about how the new HTML5 Canvas element will bring an end to both Silverlight and Flash. In reality HTML5 is much more than just the Canvas element. In fact, HTML5 brings with it a large list of enhancements, including 28 new elements and form controls that do client-side data validation for you!</p>

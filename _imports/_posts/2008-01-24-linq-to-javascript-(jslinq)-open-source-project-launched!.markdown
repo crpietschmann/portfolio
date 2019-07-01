@@ -1,5 +1,6 @@
 ---
 layout: post
+id: c7f8e44c-0ee9-41f9-b164-79b1aca705ef
 title: "LINQ to JavaScript (JSLINQ) Open Source Project Launched!"
 date: 2008-01-24 15:00:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/01/24/LINQ-to-JavaScript-(JSLINQ)-Open-Source-Project-Launched!
   - /post/2008/01/24/linq-to-javascript-(jslinq)-open-source-project-launched!
+  - /post.aspx?id=c7f8e44c-0ee9-41f9-b164-79b1aca705ef
 ---
 <!-- more -->
 <p>I know LINQ is still rather fresh to everyone yet, and you may not have really used it much, but I just started a new Open Source project called "<a href="http://www.codeplex.com/JSLINQ">LINQ to JavaScript</a>". Or, <a href="http://www.codeplex.com/JSLINQ">JSLINQ</a> for short. This project brings the ease of querying data collections down to the JavaScript world.</p>

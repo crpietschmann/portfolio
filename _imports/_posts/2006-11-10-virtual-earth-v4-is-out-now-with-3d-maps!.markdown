@@ -1,5 +1,6 @@
 ---
 layout: post
+id: a5b28173-e9a7-4e6a-ab4b-5e55bbfaccc8
 title: "Virtual Earth v4 is out now with 3D maps!"
 date: 2006-11-10 12:54:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2006/11/10/Virtual-Earth-v4-is-out-now-with-3D-maps!
   - /post/2006/11/10/virtual-earth-v4-is-out-now-with-3d-maps!
+  - /post.aspx?id=a5b28173-e9a7-4e6a-ab4b-5e55bbfaccc8
 ---
 <!-- more -->
 <p>

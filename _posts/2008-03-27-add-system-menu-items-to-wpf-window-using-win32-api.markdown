@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 10e7b7af-f0d0-44c6-ad55-770c67e357d9
 title: "Add System Menu Items to WPF Window using Win32 API"
 date: 2008-03-27 16:41:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Win32API"]
 redirect_from: 
   - /post/2008/03/27/Add-System-Menu-Items-to-WPF-Window-using-Win32-API
   - /post/2008/03/27/add-system-menu-items-to-wpf-window-using-win32-api
+  - /post.aspx?id=10e7b7af-f0d0-44c6-ad55-770c67e357d9
 ---
 <!-- more -->
 <p>A couple weeks ago, I blog how to "<a href="/post/2008/03/Add-System-Menu-Items-to-a-Form-using-Windows-API.aspx">Add System Menu Items to a Form using Windows API</a>". Being that WPF has it's differences from Windows Forms, I began to wonder how simple or difficult this would be to do within a WPF application. As it turns out, there are a couple of extra things you need to do, but the code is pretty much the same.</p>

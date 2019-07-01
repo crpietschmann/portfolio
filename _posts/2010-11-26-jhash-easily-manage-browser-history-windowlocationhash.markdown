@@ -1,5 +1,6 @@
 ---
 layout: post
+id: af2d7ca7-0a4a-4d50-ad41-fbc320ec714c
 title: "jHash: Easily Manage Browser History / window.location.hash"
 date: 2010-11-26 10:11:56 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["JavaScript", "JavaScript"]
 redirect_from: 
   - /post/2010/11/26/jHash-Easily-Manage-Browser-History-windowlocationhash
   - /post/2010/11/26/jhash-easily-manage-browser-history-windowlocationhash
+  - /post.aspx?id=af2d7ca7-0a4a-4d50-ad41-fbc320ec714c
 ---
 <!-- more -->
 <p>When building Ajax-based web applications it can be difficult to get the web browsers back and forward buttons to work appropriately for each client-side state change. I recently published the new <a href="http://jhash.codeplex.com">jHash</a> library that can help alleviate this issue.</p>  <p>Put simply: <a href="http://jhash.codeplex.com">jHash</a> allows you to easily be notified when the “window.location.hash” changes. It also allows you to easily store/retrieve values from the hash in a similar fashion to server-side query string values.</p>  <p>Download: <a href="http://jhash.codeplex.com">http://jhash.codeplex.com</a></p>  <h3>JavaScript Framework Support (jQuery, Prototype, etc.)</h3>  <p>The library lives entirely within the “jHash” namespace so it can be used along with any JavaScript framework (jQuery, Prototype, etc.) you choose.</p>  <h3>Receive Hash Change Notifications</h3>  <p>The library primarily uses the “window.onhashchange” event to allow for hash change notifications to be raises. However, since the “onhashchange” event is only supported by newer web browsers (mainly Internet Explorer 8 and Firefox 3.6), the library also implements a fall back mechanism using “window.setInterval” to monitor the “window.location.hash” for changes in older web browsers that do not support this event.</p>  <p>To set a function to be called/notified when the hash changes, you just pass it to jHash using “jHash.change” You can also remove a function from being notified by calling “jHash.unbind” Below are examples of both of these:</p>  <pre class="csharpcode"><span class="rem">// Add &quot;onhashchange&quot; handler</span>

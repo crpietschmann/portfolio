@@ -1,5 +1,6 @@
 ---
 layout: post
+id: b8e4f101-c2a9-40e0-8a63-22b96a519283
 title: "Top posts of all time as of 2007/9/27"
 date: 2007-09-27 13:43:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/09/27/Top-posts-of-all-time-as-of-2007927
   - /post/2007/09/27/top-posts-of-all-time-as-of-2007927
+  - /post.aspx?id=b8e4f101-c2a9-40e0-8a63-22b96a519283
 ---
 <!-- more -->
 <P>Here's a list of my top blog posts of all time. I really would rather the MSN WebMessenger and Homestarrunner ones weren't in the list, but sometimes you just strike a chord of what regular people (non-programmers)&nbsp;search for.</P>

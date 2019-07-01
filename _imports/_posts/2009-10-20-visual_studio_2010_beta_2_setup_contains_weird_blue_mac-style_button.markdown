@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 9dd08a92-e8c0-45c9-97a7-44d2e652c5dd
 title: "Visual Studio 2010 Beta 2 Setup Contains a Weird Blue Mac-Style Button!"
 date: 2009-10-20 06:39:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2009/10/20/Visual_Studio_2010_Beta_2_Setup_Contains_Weird_Blue_Mac-Style_Button
   - /post/2009/10/20/visual_studio_2010_beta_2_setup_contains_weird_blue_mac-style_button
+  - /post.aspx?id=9dd08a92-e8c0-45c9-97a7-44d2e652c5dd
 ---
 <!-- more -->
 <p>I just finished installing Visual Studio 2010 Beta 2 within a Windows 7 Virtual Machine running within Windows VIrtual PC and the Final/Finish screen of the installation wizard contains a weird, blue, Mac-style Button. Ok, I know it&rsquo;s not exactly how the button are in the UI of Max OSX, but it&rsquo;s much closer to that than it is to Windows 7 buttons.</p>

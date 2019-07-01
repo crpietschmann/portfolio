@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 482989d9-32d1-4bd1-9692-c0718e4044c1
 title: "Add System Menu Items to a Form using Windows API"
 date: 2008-03-04 19:34:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Win32API"]
 redirect_from: 
   - /post/2008/03/04/Add-System-Menu-Items-to-a-Form-using-Windows-API
   - /post/2008/03/04/add-system-menu-items-to-a-form-using-windows-api
+  - /post.aspx?id=482989d9-32d1-4bd1-9692-c0718e4044c1
 ---
 <!-- more -->
 <p>This is something I used to have a code snippet for in VB6, but I haven't needed to do this in a while so I never wrote up an example in .NET. So, here's the simple code necessary to add some custom menu items to your applications System Menu. If you're not familiar, the System Menu is the menu that shows up if you click on the apps icon in the upper left or if you right click the app in the taskbar.</p>

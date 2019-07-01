@@ -1,5 +1,6 @@
 ---
 layout: post
+id: c4f6aa92-1aea-4632-8397-d0b0baabc900
 title: "Silverlight with WCF RIA Services Throws "Project File ... Not Found" Error When Compiling in Visual Studio 2010 RC"
 date: 2010-03-24 15:24:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Silverlight"]
 redirect_from: 
   - /post/2010/03/24/Silverlight-with-WCF-RIA-Services-Throws-Project-File-Not-Found-Error-When-Compiling-in-Visual-Studio-2010-RC
   - /post/2010/03/24/silverlight-with-wcf-ria-services-throws-project-file-not-found-error-when-compiling-in-visual-studio-2010-rc
+  - /post.aspx?id=c4f6aa92-1aea-4632-8397-d0b0baabc900
 ---
 <!-- more -->
 <p>While working with the Silverlight Business Application template in Visual Studio 2010 RC I discovered a peculiar issue that if the project specified as the "WCF RIA Services Link" for the Silverlight Project can not be found a compile time error of "Project File ... Not Found" will be generated. This is a very cryptic error message since it's the same message that gets thrown if you delete a Project File (.csproj or .vbproj) from the hard drive but it's still references within the Solution File. This took me a little while to figure out, and I only discovered it when I looked through the Project File of my Silverlight Application. This particular issue may also apply to the VS'10 RTM once it's release, only time will tell if they fix it before then.</p>

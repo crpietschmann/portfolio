@@ -1,5 +1,6 @@
 ---
 layout: post
+id: a19c8078-1a42-4654-aeca-19386bf402bb
 title: "Use New Bing Maps Road Imagery In Silverlight Map Control (Unofficially and Unsupported)"
 date: 2010-08-19 15:55:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps", "C#", "Silverlight"]
 redirect_from: 
   - /post/2010/08/19/Use-New-Bing-Maps-Road-Imagery-In-Silverlight-Map-Control-Unofficially-Unsupported
   - /post/2010/08/19/use-new-bing-maps-road-imagery-in-silverlight-map-control-unofficially-unsupported
+  - /post.aspx?id=a19c8078-1a42-4654-aeca-19386bf402bb
 ---
 <!-- more -->
 <p><a href="/images/postsNewBingMapsRoadImageryFromSilverlight.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="NewBingMapsRoadImageryFromSilverlight" src="/images/postsNewBingMapsRoadImageryFromSilverlight_thumb.png" border="0" alt="NewBingMapsRoadImageryFromSilverlight" width="204" height="179" align="right" /></a> Recently the <a href="http://www.bing.com/community/blogs/maps/archive/2010/08/03/bing-s-bringing-sexy-maps.aspx">consumer facing Bing Maps site changed the map imagery</a> that is displayed for the Road map mode. This map imagery has not been officially made available for Bing Maps for Enterprise developers to use within their applications. The imagery is only officially available to the Bing Maps consumer website. Unofficially, you can still access the imagery if you know the URL format to get it. Below is an example of using the URL format for the new imagery to display it within the Bing Maps Silverlight Control.</p>

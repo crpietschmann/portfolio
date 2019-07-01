@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 232a24c0-7ceb-4f5f-b662-a273b3b34311
 title: "Internet Explorer 6, wont you ever die?!"
 date: 2008-12-10 16:15:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/12/10/Internet-Explorer-62c-wont-you-ever-die!
   - /post/2008/12/10/internet-explorer-62c-wont-you-ever-die!
+  - /post.aspx?id=232a24c0-7ceb-4f5f-b662-a273b3b34311
 ---
 <!-- more -->
 <p>

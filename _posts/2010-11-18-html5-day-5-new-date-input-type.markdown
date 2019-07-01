@@ -1,5 +1,6 @@
 ---
 layout: post
+id: ae065d67-d849-419d-9091-2df37e1afee5
 title: "HTML5 Day 5: New Date Input Type <input type=date />"
 date: 2010-11-18 13:35:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["HTML", "JavaScript"]
 redirect_from: 
   - /post/2010/11/18/HTML5-Day-5-New-Date-Input-Type
   - /post/2010/11/18/html5-day-5-new-date-input-type
+  - /post.aspx?id=ae065d67-d849-419d-9091-2df37e1afee5
 ---
 <!-- more -->
 <p><a href="http://www.w3.org/TR/html-markup/input.date.html">Date</a> is one of the new, and much needed, input types added in HTML5. This has been added as a replacement of using a text box for the input of dates. Below is a screenshot of the custom UI that the Opera web browser automatically implements for this new input type.</p>

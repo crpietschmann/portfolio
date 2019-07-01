@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2722ac92-0734-4069-80cf-04299d60ad32
 title: "Visual Studio .NET 2002 SP1 Released"
 date: 2005-03-13 12:34:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/03/13/Visual-Studio-NET-2002-SP1-Released
   - /post/2005/03/13/visual-studio-net-2002-sp1-released
+  - /post.aspx?id=2722ac92-0734-4069-80cf-04299d60ad32
 ---
 <!-- more -->
 <P>On March 8th, The Visual Studio <a title=".NET" href="http://www.microsoft.com/net/" target="_blank">.NET</a> 2002 Service Pack 1 was released.</P>

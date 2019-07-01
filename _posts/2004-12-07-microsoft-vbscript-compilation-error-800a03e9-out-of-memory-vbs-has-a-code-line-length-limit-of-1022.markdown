@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 4ac54f45-bf7d-48cc-baf0-5ee47c102f5a
 title: "Microsoft VBScript compilation error '800a03e9' Out of Memory :: VBS has a code line length limit of 1022"
 date: 2004-12-07 15:57:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2004/12/07/Microsoft-VBScript-compilation-error-800a03e9-Out-of-Memory-VBS-has-a-code-line-length-limit-of-1022
   - /post/2004/12/07/microsoft-vbscript-compilation-error-800a03e9-out-of-memory-vbs-has-a-code-line-length-limit-of-1022
+  - /post.aspx?id=4ac54f45-bf7d-48cc-baf0-5ee47c102f5a
 ---
 <!-- more -->
 VBScript has a maximum static string limit of 1,022 characters, and this error appears any time a line of code exceeds 1,022 characters.

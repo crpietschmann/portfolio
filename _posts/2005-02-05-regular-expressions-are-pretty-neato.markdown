@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 7c21881b-9213-4e98-91a1-e12ed8a711ef
 title: "Regular Expressions are pretty neato..."
 date: 2005-02-05 01:32:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/02/05/Regular-Expressions-are-pretty-neato
   - /post/2005/02/05/regular-expressions-are-pretty-neato
+  - /post.aspx?id=7c21881b-9213-4e98-91a1-e12ed8a711ef
 ---
 <!-- more -->
 <P>I never worked with regular expressions before. I heard how great they can be, but never really knew. Regular expressions are really cool.</P>

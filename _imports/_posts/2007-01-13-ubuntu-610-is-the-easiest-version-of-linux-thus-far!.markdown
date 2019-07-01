@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1a54eec1-c728-462f-ac3f-6e889b11d4f4
 title: "Ubuntu 6.10 is the easiest version of Linux thus far!"
 date: 2007-01-13 10:32:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/01/13/Ubuntu-610-is-the-easiest-version-of-Linux-thus-far!
   - /post/2007/01/13/ubuntu-610-is-the-easiest-version-of-linux-thus-far!
+  - /post.aspx?id=1a54eec1-c728-462f-ac3f-6e889b11d4f4
 ---
 <!-- more -->
 <P>I've installed many distributions of linux (different versions of Red Hat and&nbsp;Mandrake)&nbsp;over the past seven years to play around with and the install process was always a little cumbersome. The user doing the install was always required to have some technical knowledge to get things installed and configured. I have to say though that Mandrake 10 was the easiest, that was until now.</P>

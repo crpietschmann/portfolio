@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 3ed827a8-9ebc-4588-8dc2-bf2f77dedac9
 title: "Raspberry Pi 3 released, faster CPU, integrated Wifi"
 date: 2016-02-29 07:30:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: []
 redirect_from: 
   - /post/2016/02/29/Raspberry-Pi-3-released-faster-CPU-integrated-Wifi1
   - /post/2016/02/29/raspberry-pi-3-released-faster-cpu-integrated-wifi1
+  - /post.aspx?id=3ed827a8-9ebc-4588-8dc2-bf2f77dedac9
 ---
 <!-- more -->
 <p><img style="float: right;" src="/images/posts/2016/02/RaspberryPi3MobelB.png" alt="" />It's only been a year since the Raspberry Pi 2 Model B was released, and to mark the 4th birthday of the Raspberry Pi a new Pi is being released today. The <a href="http://amzn.to/2cxvgT0" target="_blank">NEW Raspberry Pi 3 Model B</a>! This new Pi offers a faster CPU at 1.2Ghz, along with integrated 802.11n Wireless LAN and Bluetooth 4.1 with Bluetooth LE.</p>

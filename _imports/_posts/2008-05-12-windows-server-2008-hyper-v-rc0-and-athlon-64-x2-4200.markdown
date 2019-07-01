@@ -1,5 +1,6 @@
 ---
 layout: post
+id: aa54ec2f-c8db-4472-ba47-ea06fef3eba0
 title: "Windows Server 2008 Hyper-V RC0 and Athlon 64 X2 4200+"
 date: 2008-05-12 12:33:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/05/12/Windows-Server-2008-Hyper-V-RC0-and-Athlon-64-X2-4200
   - /post/2008/05/12/windows-server-2008-hyper-v-rc0-and-athlon-64-x2-4200
+  - /post.aspx?id=aa54ec2f-c8db-4472-ba47-ea06fef3eba0
 ---
 <!-- more -->
 <p>

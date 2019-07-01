@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 0488799a-2a75-4cb6-b9e3-3ae2cd3e8a99
 title: "Write code, Win FREE MSDN Subscription!"
 date: 2008-08-04 11:17:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/08/04/Write-code2c-Win-FREE-MSDN-Subscription!
   - /post/2008/08/04/write-code2c-win-free-msdn-subscription!
+  - /post.aspx?id=0488799a-2a75-4cb6-b9e3-3ae2cd3e8a99
 ---
 <!-- more -->
 <p>

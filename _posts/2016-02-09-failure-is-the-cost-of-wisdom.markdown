@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 6562353c-1045-499f-a850-3f45bb038f01
 title: "Failure is the cost of Wisdom"
 date: 2016-02-09 17:39:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/02/09/Failure-is-the-cost-of-Wisdom
   - /post/2016/02/09/failure-is-the-cost-of-wisdom
+  - /post.aspx?id=6562353c-1045-499f-a850-3f45bb038f01
 ---
 <!-- more -->
 <p>Everyone fails at something before they succeed. There is so much more to learn from failure than success. I've posted before about <a href="/post/2013/09/08/Failure-Is-Greater-Success-Than-Success">Failure being greater success than success</a> pointing out how valuable failure is for learning, growing and future success. A huge benefit of failing here and there over time is Wisdom. Wisdom comes from experience, and more experience can be gained from failure than success.</p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: c8ca950f-a789-41da-a19e-ca5dd85836d7
 title: "Awarded 2010 Microsoft MVP - Windows Live Platform"
 date: 2010-04-01 11:53:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps", "General"]
 redirect_from: 
   - /post/2010/04/01/Awarded-2010-Microsoft-MVP-Windows-Live-Platform
   - /post/2010/04/01/awarded-2010-microsoft-mvp-windows-live-platform
+  - /post.aspx?id=c8ca950f-a789-41da-a19e-ca5dd85836d7
 ---
 <!-- more -->
 <p><img style="float: right;" src="/images/postsMVP_Logo_Horizontal.png" alt="Microsoft Most Valuable Professional Award" /><em>"Congratulations! We are pleased to present you with the 2010 Microsoft&reg;  MVP Award!"</em></p>

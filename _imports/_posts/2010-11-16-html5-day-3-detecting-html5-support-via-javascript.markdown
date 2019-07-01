@@ -1,5 +1,6 @@
 ---
 layout: post
+id: a74bb15d-fc92-4f33-9d43-c112b33857d9
 title: "HTML5 Day 3: Detecting HTML5 Support via JavaScript"
 date: 2010-11-16 09:19:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["HTML", "JavaScript"]
 redirect_from: 
   - /post/2010/11/16/HTML5-Day-3-Detecting-HTML5-Support-via-JavaScript
   - /post/2010/11/16/html5-day-3-detecting-html5-support-via-javascript
+  - /post.aspx?id=a74bb15d-fc92-4f33-9d43-c112b33857d9
 ---
 <!-- more -->
 <p>On <a title="HTML5 Day 1: New tags work in older browsers? Awesome!" href="/post/2010/11/14/HTML5-Day-1-New-tags-work-in-older-browsers-Awesome.aspx">Day 1</a>, I covered exactly what HTML5 is and what&rsquo;s necessary to convince older web browsers to render/style the new tags properly. Once you told the browser how to style the element, it still wont show special UI for the user. The good news is that you can &ldquo;patch&rdquo; the browser using JavaScript to enable such functionality. In this post we&rsquo;ll discuss how to detect if a certain feature is supported by the browser or not.</p>

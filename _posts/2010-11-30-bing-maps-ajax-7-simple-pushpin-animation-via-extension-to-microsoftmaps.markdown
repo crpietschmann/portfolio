@@ -1,5 +1,6 @@
 ---
 layout: post
+id: db9b20db-30e1-4f41-b114-c47bd7b8b35d
 title: "Bing Maps Ajax 7: Simple Pushpin Animation via Extension to Microsoft.Maps"
 date: 2010-11-30 23:10:29 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2010/11/30/Bing-Maps-Ajax-7-Simple-Pushpin-Animation-via-Extension-to-MicrosoftMaps
   - /post/2010/11/30/bing-maps-ajax-7-simple-pushpin-animation-via-extension-to-microsoftmaps
+  - /post.aspx?id=db9b20db-30e1-4f41-b114-c47bd7b8b35d
 ---
 <!-- more -->
 <p>When updating the location a pushpin using the Bing Maps Ajax Control, the pushpin instantly moves to its new location. Sometimes this may work, but other times it may be nice to animate the movement. Updating the location a vehicle in an asset tracking application is one example where it would be nice to animate the movement.</p>  <p>I wrote a simple extension to the Bing Maps Ajax v7 control that adds the “Pushpin.moveLocation” method to perform such an animation.</p>  <h3>Usage</h3>  <p>Let’s start with some sample usage of the “Pushpin.moveLocation” method.</p>  <pre class="csharpcode"><span class="rem">// Move pushpin to new location</span>

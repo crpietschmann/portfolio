@@ -1,5 +1,6 @@
 ---
 layout: post
+id: a355a85d-e17e-425f-9600-cb7ceec16a6f
 title: "Vista Experience Update: Windows Vista x64 runs 32-bit Internet Explorer by Default"
 date: 2006-12-03 11:59:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2006/12/03/Vista-Experience-Update-Windows-Vista-x64-runs-32-bit-Internet-Explorer-by-Default
   - /post/2006/12/03/vista-experience-update-windows-vista-x64-runs-32-bit-internet-explorer-by-default
+  - /post.aspx?id=a355a85d-e17e-425f-9600-cb7ceec16a6f
 ---
 <!-- more -->
 <p>The Internet Explorer shortcut in the Quick Launch toolbar and in the Start menu of Vista x64 will run the 32-bit version of Internet Explorer by default. Why run the 32-bit version if IE on the 64-bit version of Vista?</p>

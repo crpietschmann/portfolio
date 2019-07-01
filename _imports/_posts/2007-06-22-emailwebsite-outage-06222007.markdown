@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 8211d9ff-52fe-4fc2-8851-e1a6714f28d2
 title: "Email/Website Outage - 06/22/2007"
 date: 2007-06-22 15:20:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/06/22/EmailWebsite-Outage-06222007
   - /post/2007/06/22/emailwebsite-outage-06222007
+  - /post.aspx?id=8211d9ff-52fe-4fc2-8851-e1a6714f28d2
 ---
 <!-- more -->
 <P><STRONG>Good News:</STRONG> The website, Pietschsoft.com, seems to be back up.</P>

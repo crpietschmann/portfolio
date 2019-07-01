@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 9d1b3def-c6dd-4f32-90e1-32693342fceb
 title: "Virtualization on the Desktop: VirtualPC 2007 and Hyper-V"
 date: 2008-04-28 17:11:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/04/28/Virtualization-on-the-Desktop-VirtualPC-2007-and-Hyper-V
   - /post/2008/04/28/virtualization-on-the-desktop-virtualpc-2007-and-hyper-v
+  - /post.aspx?id=9d1b3def-c6dd-4f32-90e1-32693342fceb
 ---
 <!-- more -->
 <p>

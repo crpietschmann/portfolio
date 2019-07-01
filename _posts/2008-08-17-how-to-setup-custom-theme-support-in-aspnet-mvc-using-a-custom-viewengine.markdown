@@ -1,5 +1,6 @@
 ---
 layout: post
+id: ee0e253d-c746-4099-9795-81aaf14ad608
 title: "How To Setup Custom Theme Support In ASP.NET MVC Preview 4 using a Custom ViewEngine"
 date: 2008-08-17 00:09:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["asp.net", "ASP.NET MVC"]
 redirect_from: 
   - /post/2008/08/17/How-To-Setup-Custom-Theme-Support-In-ASPNET-MVC-using-a-Custom-ViewEngine
   - /post/2008/08/17/how-to-setup-custom-theme-support-in-aspnet-mvc-using-a-custom-viewengine
+  - /post.aspx?id=ee0e253d-c746-4099-9795-81aaf14ad608
 ---
 <!-- more -->
 <p><strong>Update 2009/03/26:</strong> There is an updated version of this code (with improvements) that targets the ASP.NET MVC 1.0 RTW located here: <a href="/post/2009/03/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx">/post/2009/03/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx</a>&nbsp;</p>

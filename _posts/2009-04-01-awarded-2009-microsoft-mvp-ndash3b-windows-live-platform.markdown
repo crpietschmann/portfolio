@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 3314eabf-8818-450e-ad7d-27986a02f641
 title: "Awarded 2009 Microsoft MVP - Windows Live Platform"
 date: 2009-04-01 16:17:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2009/04/01/Awarded-2009-Microsoft-MVP-ndash3b-Windows-Live-Platform
   - /post/2009/04/01/awarded-2009-microsoft-mvp-ndash3b-windows-live-platform
+  - /post.aspx?id=3314eabf-8818-450e-ad7d-27986a02f641
 ---
 <!-- more -->
 <p><em><strong>Congratulations 2009 Microsoft MVP!</strong></em></p>

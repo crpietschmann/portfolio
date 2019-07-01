@@ -1,5 +1,6 @@
 ---
 layout: post
+id: fa0b9444-496d-421c-8de3-1b6754eff064
 title: "Cool Utility to get CPU/Fan Temperatures of you DELL Laptop/Notebook"
 date: 2004-07-11 16:58:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2004/07/11/Cool-Utility-to-get-CPUFan-Temperatures-of-you-DELL-LaptopNotebook
   - /post/2004/07/11/cool-utility-to-get-cpufan-temperatures-of-you-dell-laptopnotebook
+  - /post.aspx?id=fa0b9444-496d-421c-8de3-1b6754eff064
 ---
 <!-- more -->
 <p>

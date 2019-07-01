@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 69d3daaa-0e06-47ea-ad96-c66c11825025
 title: "Implementing Namespaces in Ruby using Nested Modules"
 date: 2008-11-02 18:48:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Ruby"]
 redirect_from: 
   - /post/2008/11/02/Implementing-Namespaces-in-Ruby-using-Nested-Modules
   - /post/2008/11/02/implementing-namespaces-in-ruby-using-nested-modules
+  - /post.aspx?id=69d3daaa-0e06-47ea-ad96-c66c11825025
 ---
 <!-- more -->
 <p>

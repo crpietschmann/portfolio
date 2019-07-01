@@ -1,5 +1,6 @@
 ---
 layout: post
+id: b4619c83-9e85-4aa9-9c27-b224eb23efef
 title: "Configure Visual Studio 2005 for "Classic" ASP syntax highlighting and intellisense"
 date: 2005-10-31 17:58:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/10/31/Configure-Visual-Studio-2005-for-Classic-ASP-syntax-highlighting-and-intellisense
   - /post/2005/10/31/configure-visual-studio-2005-for-classic-asp-syntax-highlighting-and-intellisense
+  - /post.aspx?id=b4619c83-9e85-4aa9-9c27-b224eb23efef
 ---
 <!-- more -->
 <P>You can use the Visual Studio 2005 IDE to edit your Classic ASP files and still utilize syntax highlighting and intellisense. All you have to do is associate the &#8220;.asp&#8220; file extension with the Web Form Editor. When doing this you are telling the IDE to treat &#8220;.asp&#8220; files the same as &#8220;.aspx&#8220; files, in turn sort of &#8220;tricking&#8220; the IDE in to giving you the syntax highlighting and intellisense that you want.</P>

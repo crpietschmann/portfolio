@@ -1,5 +1,6 @@
 ---
 layout: post
+id: d414be9d-1bdf-4345-8001-cce09c485584
 title: "Virtual Earth: Calculate Distance of User-Drawn Polyline"
 date: 2008-02-06 01:28:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/02/06/Virtual-Earth-Calculate-Distance-of-User-Drawn-Polyline
   - /post/2008/02/06/virtual-earth-calculate-distance-of-user-drawn-polyline
+  - /post.aspx?id=d414be9d-1bdf-4345-8001-cce09c485584
 ---
 <!-- more -->
 <p>

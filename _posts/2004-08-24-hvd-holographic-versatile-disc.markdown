@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 91e01787-c954-43e8-8c8c-5efc71e9c731
 title: "HVD: Holographic Versatile Disc"
 date: 2004-08-24 13:46:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2004/08/24/HVD-Holographic-Versatile-Disc
   - /post/2004/08/24/hvd-holographic-versatile-disc
+  - /post.aspx?id=91e01787-c954-43e8-8c8c-5efc71e9c731
 ---
 <!-- more -->
 A Japanese company has achieved the world&#39;s first reliable recording and playback of digital movies on a transparent holographic recording disc.

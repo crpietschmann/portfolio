@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 20155713-d63f-4cda-b69e-d6f75f55f3a5
 title: "Public Domain or at least Open Source Licensing Eventually"
 date: 2013-10-16 05:35:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/10/16/Public-Domain-or-at-least-Open-Source-Licensing-Eventually
   - /post/2013/10/16/public-domain-or-at-least-open-source-licensing-eventually
+  - /post.aspx?id=20155713-d63f-4cda-b69e-d6f75f55f3a5
 ---
 <!-- more -->
 <p>Most copyrighted products are proprietary and closed source; such as books, software programs and all other types of copyrightable materials. The reason for this, and a very good one IMO, is to allow the author(s) to make a living on what they've created. While some are open source from the start, most are proprietary; which makes sense. After all, you wont be able to create future products if you can't afford to pay the bills.</p>

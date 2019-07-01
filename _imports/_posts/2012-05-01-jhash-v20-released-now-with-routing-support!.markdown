@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 132350f3-c5ad-4eca-8c4f-2c1110f9a345
 title: "jHash v2.0 Released: Now with Routing Support!"
 date: 2012-05-01 17:34:30 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["JavaScript", "HTML"]
 redirect_from: 
   - /post/2012/05/01/jHash-v20-Released-Now-with-Routing-Support!
   - /post/2012/05/01/jhash-v20-released-now-with-routing-support!
+  - /post.aspx?id=132350f3-c5ad-4eca-8c4f-2c1110f9a345
 ---
 <!-- more -->
 <p><a href="http://jhash.codeplex.com" target="_blank">jHash</a> is a small, lightweight (4kb minified / 2kb compressed) javascript library that makes it extremely easy to work with “location.hash&quot;. Version 1.0 had the ability to set / retrieve hash root values as well as “hash querystring” values. The newly released version 2.0 includes a new lightweight routing engine that facilitates an easier developer experience when building Single Page Applications.</p>  <p>The <a href="http://jhash.codeplex.com/documentation" target="_blank">jHash documentation</a> contains full descriptions of the libraries methods and their usage.</p>  <p>Get jHash Here: <a href="http://jhash.codeplex.com">http://jhash.codeplex.com</a> </p>  <h3>Easily work with “location.hash”</h3>  <p>Here are some simple examples of setting and retrieving hash “root” and “querystring” values:</p>  <pre class="csharpcode"><span class="rem">// URL:</span>

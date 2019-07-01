@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 67c90ddd-12f5-4716-9cc1-cb2dde3b0c24
 title: "Official Release of Simplovation and Web.Maps.VE!"
 date: 2007-10-15 15:28:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General", "Bing Maps"]
 redirect_from: 
   - /post/2007/10/15/Official-Release-of-Simplovation-and-WebMapsVE!
   - /post/2007/10/15/official-release-of-simplovation-and-webmapsve!
+  - /post.aspx?id=67c90ddd-12f5-4716-9cc1-cb2dde3b0c24
 ---
 <!-- more -->
 <p>

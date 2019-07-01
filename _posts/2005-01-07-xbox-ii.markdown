@@ -1,5 +1,6 @@
 ---
 layout: post
+id: c37d45af-2018-440f-86e1-4acad7586d27
 title: "XBox II..."
 date: 2005-01-07 19:52:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/01/07/XBox-II
   - /post/2005/01/07/xbox-ii
+  - /post.aspx?id=c37d45af-2018-440f-86e1-4acad7586d27
 ---
 <!-- more -->
 <P>1) Hard Drive... Yes!&nbsp; There was some speculation that MS was going to take the HD out to make it more difficult to Mod.</P>

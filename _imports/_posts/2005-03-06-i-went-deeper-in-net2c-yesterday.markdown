@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 873bfa0c-a5cf-4aa5-a55b-9ccc64cc4247
 title: "I went Deeper in .NET, yesterday"
 date: 2005-03-06 12:06:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2005/03/06/I-went-Deeper-in-NET2c-yesterday
   - /post/2005/03/06/i-went-deeper-in-net2c-yesterday
+  - /post.aspx?id=873bfa0c-a5cf-4aa5-a55b-9ccc64cc4247
 ---
 <!-- more -->
 <p>

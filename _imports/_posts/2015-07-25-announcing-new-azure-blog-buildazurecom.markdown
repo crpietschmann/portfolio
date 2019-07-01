@@ -1,5 +1,6 @@
 ---
 layout: post
+id: cd5c1b30-309f-4f99-8937-8e20890ca5e5
 title: "Announcing new Azure blog: BuildAzure.com"
 date: 2015-07-25 15:38:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Azure"]
 redirect_from: 
   - /post/2015/07/25/Announcing-new-Azure-blog-BuildAzurecom
   - /post/2015/07/25/announcing-new-azure-blog-buildazurecom
+  - /post.aspx?id=cd5c1b30-309f-4f99-8937-8e20890ca5e5
 ---
 <!-- more -->
 <p><img src="/images/posts/2015/07/buildazure_header_city.png" alt="" />While <a href="http://buildazure.com/2015/07/16/mcsd-azure-solutions-architect-certification/" target="_blank">studying for the MCSD: Azure Solutions Architect certification</a> I decided to blog a lot more on all things Azure. Also, instead of posting those posts here, I decided to create a completely new blog site dedicated just to "all things Azure" This new site is <a href="http://buildazure.com" target="_blank">BuildAzure.com</a>. I have also created the <a href="http://twitter.com/buildazure" target="_blank">@BuildAzure</a> twitter account associated with the new blog.</p>

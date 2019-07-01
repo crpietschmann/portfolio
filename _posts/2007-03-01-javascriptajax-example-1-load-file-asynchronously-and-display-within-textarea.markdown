@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 107964f8-dfb4-4254-9a7f-d8a7afdf5d38
 title: "JavaScript/AJAX Example 1 - Load File Asynchronously and Display within TextArea"
 date: 2007-03-01 16:52:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/03/01/JavaScriptAJAX-Example-1-Load-File-Asynchronously-and-Display-within-TextArea
   - /post/2007/03/01/javascriptajax-example-1-load-file-asynchronously-and-display-within-textarea
+  - /post.aspx?id=107964f8-dfb4-4254-9a7f-d8a7afdf5d38
 ---
 <!-- more -->
 <P>Here's a basic JavaScript/AJAX example that demonstrates the process of asynchronously requesting the contents of a file and displaying it within a textarea.</P>

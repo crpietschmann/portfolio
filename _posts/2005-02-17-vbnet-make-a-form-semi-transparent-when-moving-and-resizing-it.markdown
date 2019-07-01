@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 8f7a6806-5632-454b-a510-d2c47b19bc58
 title: "VB.NET: Make a Form semi-transparent when moving and resizing it"
 date: 2005-02-17 00:10:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General", "vb.net"]
 redirect_from: 
   - /post/2005/02/17/VBNET-Make-a-Form-semi-transparent-when-moving-and-resizing-it
   - /post/2005/02/17/vbnet-make-a-form-semi-transparent-when-moving-and-resizing-it
+  - /post.aspx?id=8f7a6806-5632-454b-a510-d2c47b19bc58
 ---
 <!-- more -->
 <p style="margin: 0in 0in 0pt" class="MsoNormal">

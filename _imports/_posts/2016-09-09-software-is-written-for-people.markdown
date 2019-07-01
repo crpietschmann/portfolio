@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 7eb6c26c-8e7e-4638-94d3-a18216044057
 title: "Software is Written FOR PEOPLE"
 date: 2016-09-09 17:54:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/09/09/Software-is-Written-FOR-PEOPLE
   - /post/2016/09/09/software-is-written-for-people
+  - /post.aspx?id=7eb6c26c-8e7e-4638-94d3-a18216044057
 ---
 <!-- more -->
 <p>To most software developers it can seem extremely obvious that software is written for computers. After all it runs on the computer and tells the computer how / what to do. But this isn't the entirety of the purpose of software. Through and through, software is really written / built for PEOPLE.</p>

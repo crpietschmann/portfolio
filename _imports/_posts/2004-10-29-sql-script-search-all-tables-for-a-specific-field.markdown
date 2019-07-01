@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 6808cf63-ee08-4321-983a-133df4b75ebc
 title: "SQL Script: Search all tables for a specific field"
 date: 2004-10-29 12:36:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2004/10/29/SQL-Script-Search-all-tables-for-a-specific-field
   - /post/2004/10/29/sql-script-search-all-tables-for-a-specific-field
+  - /post.aspx?id=6808cf63-ee08-4321-983a-133df4b75ebc
 ---
 <!-- more -->
 <P>DECLARE @NAME_TO_SEARCH_FOR nvarchar(50)</P>

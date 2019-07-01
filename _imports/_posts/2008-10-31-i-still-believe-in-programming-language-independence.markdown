@@ -1,5 +1,6 @@
 ---
 layout: post
+id: de7bf974-cbc0-4ae0-accd-a44176ac7016
 title: "I Still Believe in Programming Language Independence"
 date: 2008-10-31 00:14:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/10/31/I-Still-Believe-in-Programming-Language-Independence
   - /post/2008/10/31/i-still-believe-in-programming-language-independence
+  - /post.aspx?id=de7bf974-cbc0-4ae0-accd-a44176ac7016
 ---
 <!-- more -->
 <p>

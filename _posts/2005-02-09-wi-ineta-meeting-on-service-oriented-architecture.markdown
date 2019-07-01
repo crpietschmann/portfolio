@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 82c5218b-c807-489a-86e5-d6f7b6741b03
 title: "WI-INETA Meeting on Service Oriented Architecture"
 date: 2005-02-09 11:43:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2005/02/09/WI-INETA-Meeting-on-Service-Oriented-Architecture
   - /post/2005/02/09/wi-ineta-meeting-on-service-oriented-architecture
+  - /post.aspx?id=82c5218b-c807-489a-86e5-d6f7b6741b03
 ---
 <!-- more -->
 <p>

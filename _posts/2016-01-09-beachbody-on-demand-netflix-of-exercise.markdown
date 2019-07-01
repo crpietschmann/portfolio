@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 79ea9487-3e6b-4a2e-b444-28708eaa778b
 title: "Beachbody On Demand - Netflix of Exercise"
 date: 2016-01-09 12:08:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2016/01/09/Beachbody-On-Demand-Netflix-of-Exercise
   - /post/2016/01/09/beachbody-on-demand-netflix-of-exercise
+  - /post.aspx?id=79ea9487-3e6b-4a2e-b444-28708eaa778b
 ---
 <!-- more -->
 <p><a href="https://www.teambeachbody.com/tbbsignup/-/tbbsignup/club?referringRepId=322348" target="_blank"><img style="float: right;" src="/images/posts/2016/01/stream-free-beachbody-workouts.png" alt="" /></a></p>

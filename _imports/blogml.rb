@@ -162,6 +162,7 @@ module Jekyll
             if item.attributes["post-url"] != item.attributes["post-url"].downcase
               redirect_from += ("\n  - " + item.attributes["post-url"].downcase)
             end
+            redirect_from += "\n  - /post.aspx?id=" + item.attributes["id"]
 
             # since BlogML doesn't support tags, and I haphazardly used categories as tags,
             # we are going to read categories and use them as tags.
@@ -183,6 +184,7 @@ module Jekyll
               f.puts <<-HEADER
 ---
 layout: post
+id: #{item.attributes["id"]}
 title: "#{title}"
 date: #{timestamp.strftime("%Y-%m-%d %H:%M:%S %z")}
 comments: true

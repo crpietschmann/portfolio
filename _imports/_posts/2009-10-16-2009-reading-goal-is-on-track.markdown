@@ -1,5 +1,6 @@
 ---
 layout: post
+id: f49f6aed-6b75-444d-9c28-e0ac07073d11
 title: "2009 Reading Goal Is On Track"
 date: 2009-10-16 09:08:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2009/10/16/2009-Reading-Goal-Is-On-Track
   - /post/2009/10/16/2009-reading-goal-is-on-track
+  - /post.aspx?id=f49f6aed-6b75-444d-9c28-e0ac07073d11
 ---
 <!-- more -->
 <p>I really haven't been reading enough books of the the last few years. Sure I read a ton of blogs and such online, but what about books? Books are nice, cohesive collections of information; at least most of the time. There are a lot of things I'd like to learn more about, both related to computers and not. So, sometime in January (this wasn't a new years resolution, just a coincidence), I decided to try to read at minimum 12 books throughout the year. Basically, at least 1 book each month, and after seemingly falling behind a few times, to my surprise, it seems that I am on track.</p>

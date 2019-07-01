@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 5f310781-87de-4031-ab28-fea126e7eb92
 title: "I met Scott Hanselman the night before Deeper in .NET 2006"
 date: 2006-04-23 18:47:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["WI-INETA"]
 redirect_from: 
   - /post/2006/04/23/I-met-Scott-Hanselman-the-night-before-Deeper-in-NET-2006
   - /post/2006/04/23/i-met-scott-hanselman-the-night-before-deeper-in-net-2006
+  - /post.aspx?id=5f310781-87de-4031-ab28-fea126e7eb92
 ---
 <!-- more -->
 <p>Friday night, two days ago, the <a href="http://wi-ineta.org">Wisconsin .NET Users Group </a>held a dinner to thank some of the most active and influential people in the community. I was lucky enough to get invited because I&rsquo;m one of the more active Bloggers in the users group. The dinner offered the chance to enjoy live local music, learn more about the WI .NET Users Group and meet/talk with the speakers that would be presenting at Deeper in .NET 2006. How could I pass on this great opportunity?</p>

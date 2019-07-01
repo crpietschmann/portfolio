@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 11c439a9-7027-457d-8b79-8a7daf1b80d8
 title: "Learn ASP.NET Provider Model By Example via BlogEngine.NET"
 date: 2007-05-16 22:08:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["asp.net"]
 redirect_from: 
   - /post/2007/05/16/Learn-ASPNET-Provider-Model-By-Example-via-BlogEngineNET
   - /post/2007/05/16/learn-aspnet-provider-model-by-example-via-blogenginenet
+  - /post.aspx?id=11c439a9-7027-457d-8b79-8a7daf1b80d8
 ---
 <!-- more -->
 <p>I was looking through the code of the new <a href="http://codeplex.com/blogengine">BlogEngine.NET </a>project last week, and noticed that it implements the ASP.NET Provider Model. Cool an example I can study! I've been trying to spend some time lately to learn more about design patterns, so this was an interesting find for me.</p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 36e89f5e-4e11-4a73-81c6-3dde5c757fba
 title: "Place a StackOverflow badge on your website"
 date: 2008-10-10 07:09:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["asp.net"]
 redirect_from: 
   - /post/2008/10/10/Place-a-StackOverflow-badge-on-your-website
   - /post/2008/10/10/place-a-stackoverflow-badge-on-your-website
+  - /post.aspx?id=36e89f5e-4e11-4a73-81c6-3dde5c757fba
 ---
 <!-- more -->
 <p><strong>Update:</strong> StackOverflow.com has since added the ability to include <a href="http://stackoverflow.com/users/flair">StackOverflow "Flair"</a> on your own website; basically a "badge" that contains your StackOverflow.com Name, Avatar, Score and Medal counts within a nice little box. I'm not sure when they added it, but now it's officially supported.</p>

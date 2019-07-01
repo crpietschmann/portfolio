@@ -1,5 +1,6 @@
 ---
 layout: post
+id: dd29204f-fbcb-4c8c-a348-bf091b48847d
 title: "Getting Started with Virtual Earth and ASP.NET AJAX"
 date: 2008-01-24 03:40:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/01/24/Getting-Started-with-Virtual-Earth-and-ASPNET-AJAX
   - /post/2008/01/24/getting-started-with-virtual-earth-and-aspnet-ajax
+  - /post.aspx?id=dd29204f-fbcb-4c8c-a348-bf091b48847d
 ---
 <!-- more -->
 <p>

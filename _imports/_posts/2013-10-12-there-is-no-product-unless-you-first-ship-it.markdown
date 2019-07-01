@@ -1,5 +1,6 @@
 ---
 layout: post
+id: ced7e137-7e8b-44e3-8fee-458475eddaef
 title: "There is no product unless you first ship it!"
 date: 2013-10-12 08:24:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/10/12/There-is-no-product-unless-you-first-ship-it
   - /post/2013/10/12/there-is-no-product-unless-you-first-ship-it
+  - /post.aspx?id=ced7e137-7e8b-44e3-8fee-458475eddaef
 ---
 <!-- more -->
 <p>Just as there is no business without something to sell; you do not have a product until you ship it.</p>

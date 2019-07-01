@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 45d5e352-d33a-4468-91aa-33af3336a4ec
 title: "Four ways to get your hands on Visual Studio 2005 Beta 2!!"
 date: 2005-04-22 00:31:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/04/22/Four-ways-to-get-your-hands-on-Visual-Studio-2005-Beta-2!!
   - /post/2005/04/22/four-ways-to-get-your-hands-on-visual-studio-2005-beta-2!!
+  - /post.aspx?id=45d5e352-d33a-4468-91aa-33af3336a4ec
 ---
 <!-- more -->
 <OL>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 98a2c9d9-f852-4fa9-878d-d55fbdb0a646
 title: "I got married on July 30th!!"
 date: 2005-08-01 11:54:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/08/01/I-got-married-on-July-30th!!
   - /post/2005/08/01/i-got-married-on-july-30th!!
+  - /post.aspx?id=98a2c9d9-f852-4fa9-878d-d55fbdb0a646
 ---
 <!-- more -->
 <P>I know I never mentioned it in past blog entries. The date was picked and it was being planned over the last year. I got married on July 30th. The ceremony was about 30 minutes long, and it took 3 and a half hours to take pictures. Yeah, the the ceremony took one seventh of the time it took to take pictures. I know that's how it usually goes, but it sucks standing all day in what has to be the most uncomfortable, rented pair of shoes. </P>

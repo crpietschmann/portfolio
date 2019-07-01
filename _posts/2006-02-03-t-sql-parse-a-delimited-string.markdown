@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 4eaf5aa0-047d-49cd-a1ba-bca96f99e68d
 title: "T-SQL: Parse a delimited string"
 date: 2006-02-03 10:53:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2006/02/03/T-SQL-Parse-a-delimited-string
   - /post/2006/02/03/t-sql-parse-a-delimited-string
+  - /post.aspx?id=4eaf5aa0-047d-49cd-a1ba-bca96f99e68d
 ---
 <!-- more -->
 <p>Parsing a delimeted string in T-SQL is fairly simple to do, but it does take a nice little chunk of code. I most commonly use this chunk of code when I need to pass an array from an application into a SQL Stored Procedure. The best way to implement this code into an application would be to create a SQL Function that you pass in a delimted string and it returns a table of values. This way you don't have to duplicate the code everytime you want to use it.</p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: cfa97a5b-e672-425e-b3d1-92fec592fa72
 title: "Parallel FX Library: Optimize your code for Multi-Core machines"
 date: 2007-09-12 11:43:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["C#", "vb.net"]
 redirect_from: 
   - /post/2007/09/12/Parallel-FX-Library-Optimize-your-code-for-Multi-Core-machines
   - /post/2007/09/12/parallel-fx-library-optimize-your-code-for-multi-core-machines
+  - /post.aspx?id=cfa97a5b-e672-425e-b3d1-92fec592fa72
 ---
 <!-- more -->
 <p>I was reading the <a href="http://msdn.microsoft.com/msdnmag/issues/07/10/">October 2007 edition of MSDN Magazine </a>and came across an article titled "<a href="http://msdn.microsoft.com/msdnmag/issues/07/10/Futures/default.aspx">Parallel Performance: Optimize Managed Code For Multi-Core Machines</a>." At first I thought that this was just another article explaining how to use the ThreadPool in .NET to improve the performance of you app, but they are actually talking about the new Parallel FX Library that is about to reach its first CTP.</p>

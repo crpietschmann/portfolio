@@ -1,5 +1,6 @@
 ---
 layout: post
+id: e3f9d281-beeb-4aa5-98ef-4c7891f3767e
 title: "The Future of Location: You Haven't Seen Nothing Yet!"
 date: 2010-09-23 11:59:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2010/09/23/Location!-You-Havent-Seen-Nothing-Yet!
   - /post/2010/09/23/location!-you-havent-seen-nothing-yet!
+  - /post.aspx?id=e3f9d281-beeb-4aa5-98ef-4c7891f3767e
 ---
 <!-- more -->
 <p>The popularity of location aware devices and software has been on the rise for the last five years, since Google Maps and Microsoft Virtual Earth (now Bing Maps) were initially released. Surprisingly, however, the utilization and adoption of geo-location and mapping haven't been as rapid as I had speculated back in 2005. Today there are all kinds of location based applications and services popping up.</p>

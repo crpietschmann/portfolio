@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 6d401941-cf57-4a9e-8388-64cf175434e9
 title: "TDD: Testable is most important"
 date: 2016-02-04 18:55:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Software Craftsmanship", "TDD"]
 redirect_from: 
   - /post/2016/02/04/TDD-Testable-is-most-important
   - /post/2016/02/04/tdd-testable-is-most-important
+  - /post.aspx?id=6d401941-cf57-4a9e-8388-64cf175434e9
 ---
 <!-- more -->
 <p>Test Driven Development (TDD) is great and it really helps you build better, higher quality systems. Unit Tests FTW! However, when TDD meets the real world, there is a clash and many times developers just don't write unit tests. This is bad, but it can be better if the right steps are taken. Writing code that is testable is the key; whether you write the unit tests now or later. Testability FTW!</p>

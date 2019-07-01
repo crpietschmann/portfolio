@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 51561c1e-85bf-41ab-ae4c-642eface487e
 title: "Perfect Dark Zero to be released on XBox 360!"
 date: 2005-06-18 17:37:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/06/18/Perfect-Dark-Zero-to-be-released-on-XBox-360!
   - /post/2005/06/18/perfect-dark-zero-to-be-released-on-xbox-360!
+  - /post.aspx?id=51561c1e-85bf-41ab-ae4c-642eface487e
 ---
 <!-- more -->
 <table border="0" cellspacing="0" cellpadding="0">

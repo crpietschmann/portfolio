@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 5a64fa6d-adb0-4dd2-b572-b42ce2847494
 title: "I've been slacking lately..."
 date: 2007-02-19 21:14:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/02/19/Ive-been-slacking-lately
   - /post/2007/02/19/ive-been-slacking-lately
+  - /post.aspx?id=5a64fa6d-adb0-4dd2-b572-b42ce2847494
 ---
 <!-- more -->
 <P>Basically, I haven't been working on much in my spare time lately.</P>

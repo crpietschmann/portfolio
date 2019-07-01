@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 023a3d09-a523-473c-89c1-c761b47bbb8a
 title: "Stupid Blog is broke again..."
 date: 2005-03-10 16:59:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/03/10/Stupid-Blog-is-broke-again
   - /post/2005/03/10/stupid-blog-is-broke-again
+  - /post.aspx?id=023a3d09-a523-473c-89c1-c761b47bbb8a
 ---
 <!-- more -->
 <P>Darn it... I'm actually quite irritated that this thing worked for like 10 months with absolutely no problems.</P>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 603293b3-321c-4fb9-be4e-70d2156e2fdb
 title: "The NEW Microsoft Certified Architect Program (MCAP)"
 date: 2005-06-13 00:02:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/06/13/The-NEW-Microsoft-Certified-Architect-Program-(MCAP)
   - /post/2005/06/13/the-new-microsoft-certified-architect-program-(mcap)
+  - /post.aspx?id=603293b3-321c-4fb9-be4e-70d2156e2fdb
 ---
 <!-- more -->
 <P><A title=Microsoft href="http://Microsoft.com" target=_blank>Microsoft</A> has announced the new Microsoft Certified Architect Program (MCAP). The goal of the MCAP is to identify the top industry experts in IT Architecture. This is a very high level certification.</P>

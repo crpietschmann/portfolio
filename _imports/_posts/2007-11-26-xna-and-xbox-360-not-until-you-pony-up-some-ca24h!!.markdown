@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 6cd2cb86-ed93-4cee-be35-b17ba39c80c3
 title: "XNA and XBox 360: Not until you pony up some ca$h!!"
 date: 2007-11-26 17:45:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/11/26/XNA-and-XBox-360-Not-until-you-pony-up-some-ca24h!!
   - /post/2007/11/26/xna-and-xbox-360-not-until-you-pony-up-some-ca24h!!
+  - /post.aspx?id=6cd2cb86-ed93-4cee-be35-b17ba39c80c3
 ---
 <!-- more -->
 <P>I recently got an XBox 360; and until I got one I didn't fully realize what all its features are. This is a really sweet system! So, naturally I downloaded the XNA Game&nbsp;Studio Express to check out what's all possible with building homebrew games for the 360.</P>

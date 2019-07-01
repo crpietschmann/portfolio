@@ -1,5 +1,6 @@
 ---
 layout: post
+id: ab555281-0d40-4194-9132-bf7b4dbf8a26
 title: "Fill DataSet with multiple Tables and update them with DataAdapter"
 date: 2004-08-22 23:48:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2004/08/22/Fill-DataSet-with-multiple-Tables-and-update-them-with-DataAdapter
   - /post/2004/08/22/fill-dataset-with-multiple-tables-and-update-them-with-dataadapter
+  - /post.aspx?id=ab555281-0d40-4194-9132-bf7b4dbf8a26
 ---
 <!-- more -->
 <p>One way to fill a DataSet with multiple tables is to send the database multiple requests. Another way to do this is to use multiple SELECT statements in a single request.</p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 9bb63183-2c05-450a-9984-73a7d4e15c3a
 title: "Busby SEO Test"
 date: 2008-12-03 10:01:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/12/03/Busby-SEO-Test
   - /post/2008/12/03/busby-seo-test
+  - /post.aspx?id=9bb63183-2c05-450a-9984-73a7d4e15c3a
 ---
 <!-- more -->
 <h1>Busby SEO Test is Polluting the Internet with Link Spam!!! <br />

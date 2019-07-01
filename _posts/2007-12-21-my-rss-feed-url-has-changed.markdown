@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 9c491a71-c464-4ac3-9ea0-b6c50a02d8c9
 title: "My RSS Feed URL has changed."
 date: 2007-12-21 16:42:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/12/21/My-RSS-Feed-URL-has-changed
   - /post/2007/12/21/my-rss-feed-url-has-changed
+  - /post.aspx?id=9c491a71-c464-4ac3-9ea0-b6c50a02d8c9
 ---
 <!-- more -->
 <P>My RSS feed url has changed to the following:</P>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: a162a967-a5bb-4841-942b-07edf6d2090e
 title: "What I've been up to lately: JavaScript, AJAX, Virtual Earth and WebParts"
 date: 2006-05-26 03:42:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General", "Bing Maps"]
 redirect_from: 
   - /post/2006/05/26/What-Ive-been-up-to-lately-JavaScript2c-AJAX2c-Virtual-Earth-and-WebParts
   - /post/2006/05/26/what-ive-been-up-to-lately-javascript2c-ajax2c-virtual-earth-and-webparts
+  - /post.aspx?id=a162a967-a5bb-4841-942b-07edf6d2090e
 ---
 <!-- more -->
 <p>

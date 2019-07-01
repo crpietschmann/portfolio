@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 5a6945d0-933a-4971-aac1-13dcd73711d9
 title: "Custom Themes in ASP.NET MVC Updated for Preview 5"
 date: 2008-08-29 18:49:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["ASP.NET MVC"]
 redirect_from: 
   - /post/2008/08/29/Custom-Themes-in-ASPNET-MVC-Updated-for-Preview-5
   - /post/2008/08/29/custom-themes-in-aspnet-mvc-updated-for-preview-5
+  - /post.aspx?id=5a6945d0-933a-4971-aac1-13dcd73711d9
 ---
 <!-- more -->
 <p><img src="/images/postsASPNETMVC_Preview4_CustomThemeFolderLayout.png" alt="" align="right" /></p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: fb118562-11e5-4287-8fd4-214b2ab5b0ca
 title: "JavaScript: Null Coalesce using the || Operator"
 date: 2008-10-14 09:00:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/10/14/JavaScript-Gem-Null-Coalescing-using-the-OR-Operator
   - /post/2008/10/14/javascript-gem-null-coalescing-using-the-or-operator
+  - /post.aspx?id=fb118562-11e5-4287-8fd4-214b2ab5b0ca
 ---
 <!-- more -->
 <p>

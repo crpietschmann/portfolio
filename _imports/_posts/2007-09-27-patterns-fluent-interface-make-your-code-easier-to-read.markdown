@@ -1,5 +1,6 @@
 ---
 layout: post
+id: d2f6d84b-8265-4c32-a427-ba570e322cef
 title: "Patterns: Fluent Interface - make your code easier to read"
 date: 2007-09-27 12:32:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/09/27/Patterns-Fluent-Interface-make-your-code-easier-to-read
   - /post/2007/09/27/patterns-fluent-interface-make-your-code-easier-to-read
+  - /post.aspx?id=d2f6d84b-8265-4c32-a427-ba570e322cef
 ---
 <!-- more -->
 <P>I never heard of the <A href="http://en.wikipedia.org/wiki/Fluent_interface">Fluent Interface pattern </A>until I saw <A href="http://randypatterson.com/2007/09/26/HowToDesignAFluentInterface.aspx">Randy Patterson's blog post titled "<EM>How to design a Fluent Interface</EM>"</A>. When I first saw the title of the post I thought he was talking about design a user interface, but upon further inspection I found out that using the <A href="http://martinfowler.com/bliki/FluentInterface.html">Fluent Interface pattern</A> in your code will make it easier to read.</P>

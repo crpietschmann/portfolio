@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 02fef48a-5d94-4e4b-8bb4-6c2180a55c25
 title: "Self Employed and time for contract work"
 date: 2007-08-22 21:54:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/08/22/Self-Employed-and-time-for-contract-work
   - /post/2007/08/22/self-employed-and-time-for-contract-work
+  - /post.aspx?id=02fef48a-5d94-4e4b-8bb4-6c2180a55c25
 ---
 <!-- more -->
 <P>I have decided to go out on my own and work full time getting my own business off the ground. It's going to be an exciting ride and I know I have what it takes to make it work. I'll be working on a few project ideas that I have (<EM>If you want to find out more info about what I'm working on, you'll just have to watch this blog for more&nbsp;info as it's posted.</EM>)</P>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 9fa4b249-2cb4-49a1-9857-b6036f1570a0
 title: "MS Virtual Earth: New version on the way!"
 date: 2006-11-01 09:42:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2006/11/01/MS-Virtual-Earth-New-version-on-the-way!
   - /post/2006/11/01/ms-virtual-earth-new-version-on-the-way!
+  - /post.aspx?id=9fa4b249-2cb4-49a1-9857-b6036f1570a0
 ---
 <!-- more -->
 <p>

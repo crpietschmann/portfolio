@@ -1,5 +1,6 @@
 ---
 layout: post
+id: c86d128f-970b-4b3a-bfeb-4d51ab34f051
 title: ".NET Windows Service Installer and Auto Start After Installation"
 date: 2009-11-06 10:10:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["C#"]
 redirect_from: 
   - /post/2009/11/06/dotNet-Windows-Service-Installer-And-Auto-Start-After-Installation
   - /post/2009/11/06/dotnet-windows-service-installer-and-auto-start-after-installation
+  - /post.aspx?id=c86d128f-970b-4b3a-bfeb-4d51ab34f051
 ---
 <!-- more -->
 <p>It&rsquo;s not very often that I need to build a Windows Service for a specific task, and it&rsquo;s even more rare that I need to create an Installer (.msi) to install/uninstall the service. Well, the project I&rsquo;m currently working on (<a href="http://virtualrouter.codeplex.com">http://virtualrouter.codeplex.com</a>) requires me to 1) Install a Windows Service using a Setup Project, and 2) Start the Windows Service immediately after installation.</p>

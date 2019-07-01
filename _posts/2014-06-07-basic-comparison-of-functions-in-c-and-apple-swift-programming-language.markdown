@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 24c0d0bb-d83d-4c36-a75d-1cfe1405f9e6
 title: "Basic Comparison of Functions in C# and Apple Swift Programming Language"
 date: 2014-06-07 13:01:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["C#", "Swift"]
 redirect_from: 
   - /post/2014/06/07/Basic-Comparison-of-Functions-in-C-and-Apple-Swift-Programming-Language
   - /post/2014/06/07/basic-comparison-of-functions-in-c-and-apple-swift-programming-language
+  - /post.aspx?id=24c0d0bb-d83d-4c36-a75d-1cfe1405f9e6
 ---
 <!-- more -->
 <p>Previously I wrote a <a href="/post/2014/06/07/Basic-Comparison-of-C-and-Apple-Swift-Programming-Language-Syntax">basic comparison of the C# and Apple Swift programming language syntax</a>. In this article we'll dive a little deeper into a comparison in to how defining and calling Functions work in both. Functions are first class citizens in both C# and Apple Swift, so lets see how they compare against each other!</p>

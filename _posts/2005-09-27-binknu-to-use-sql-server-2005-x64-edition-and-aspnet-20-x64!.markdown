@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 98aeaa3e-cafa-408c-95e2-c63b260c1c17
 title: "Bink.nu to use SQL Server 2005 x64 Edition and ASP.NET 2.0 x64!"
 date: 2005-09-27 09:39:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/09/27/Binknu-to-use-SQL-Server-2005-x64-Edition-and-ASPNET-20-x64!
   - /post/2005/09/27/binknu-to-use-sql-server-2005-x64-edition-and-aspnet-20-x64!
+  - /post.aspx?id=98aeaa3e-cafa-408c-95e2-c63b260c1c17
 ---
 <!-- more -->
 <P>I just got an email alert today, My favorite <a title="Microsoft" href="http://Microsoft.com" target="_blank">Microsoft</a> related news site, <A href="http://bink.nu">http://bink.nu</A>, will be launching a redesign of their site along with a new server to host it. This is one of the first large sites that I've heard of switching to <a title="ASP.NET" href="http://asp.net" target="_blank">ASP.NET</a> 2.0 and SQL Server 2005. I can't wait to see the new site.</P>

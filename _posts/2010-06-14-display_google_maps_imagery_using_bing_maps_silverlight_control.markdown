@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 0ac24a38-25bc-43d8-9ba8-421dbbebfaa1
 title: "Display Google Maps Imagery using Bing Maps Silverlight Control"
 date: 2010-06-14 23:15:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
   - /post/2010/06/14/Display_Google_Maps_Imagery_using_Bing_Maps_Silverlight_Control
   - /post/2010/06/14/display_google_maps_imagery_using_bing_maps_silverlight_control
+  - /post.aspx?id=0ac24a38-25bc-43d8-9ba8-421dbbebfaa1
 ---
 <!-- more -->
 <p>I&rsquo;ve gotten a couple emails asking how to show Google Maps imagery using the Bing Maps Silverlight Control. I previously post how to display <a href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx">OpenStreetMaps</a> and <a href="/post/2009/03/20/Virtual-Earth-Silverlight-Overlay-OpenStreetMap2c-OpenAerialMap-and-Yahoo-Map-Imagery-using-Custom-Tile-Layers!.aspx">Yahoo maps</a> imagery using the control, but is it possible to show Google Maps imagery too?? Yes, absolutely; well technically, but the Google Maps Terms of Use does prohibit it. Actually, the Google Maps Terms of Use prohibits the direct access of the map tile images, and does not specifically prohibit using them with the Bing Maps Silverlight Control.</p>

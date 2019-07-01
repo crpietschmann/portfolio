@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1090cb6d-dc09-40fd-9e68-afd7899f8d88
 title: ".NET Community: Learn The Current State Of The Platform Before Deciding On Its Future"
 date: 2008-03-27 10:51:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/03/27/dotNET-Community-Learn-The-Current-State-Of-The-Platform-Before-Deciding-On-Its-Future
   - /post/2008/03/27/dotnet-community-learn-the-current-state-of-the-platform-before-deciding-on-its-future
+  - /post.aspx?id=1090cb6d-dc09-40fd-9e68-afd7899f8d88
 ---
 <!-- more -->
 <p>

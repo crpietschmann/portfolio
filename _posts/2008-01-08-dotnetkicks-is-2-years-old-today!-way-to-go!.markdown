@@ -1,5 +1,6 @@
 ---
 layout: post
+id: b497247d-ea24-448a-bdfe-8e734f422945
 title: "DotNetKicks is 2 years old, today! Way to go!"
 date: 2008-01-08 21:43:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/01/08/DotNetKicks-is-2-years-old-today!-Way-to-go!
   - /post/2008/01/08/dotnetkicks-is-2-years-old-today!-way-to-go!
+  - /post.aspx?id=b497247d-ea24-448a-bdfe-8e734f422945
 ---
 <!-- more -->
 <P>The <A href="http://dotnetkicks.com">DotNetKicks</A> site is 2 years old today. Way to go! <A href="http://www.dotnetkicks.com/users/gavinjoyce">Gavin Joyce</A> started it, and now two years ago and alot of community contribution the site definately the place to find any resource you need on anything MS .NET related.</P>

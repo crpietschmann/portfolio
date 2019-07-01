@@ -1,5 +1,6 @@
 ---
 layout: post
+id: f0037190-b496-41fd-947e-cfdef493a3dd
 title: "LunchTimeCoder Day 1: AutoSlideShow - JavaScript Automatic SlideShow Class"
 date: 2007-07-03 15:00:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/07/03/LunchTimeCoder-Day-1-AutoSlideShow-JavaScript-Automatic-SlideShow-Class
   - /post/2007/07/03/lunchtimecoder-day-1-autoslideshow-javascript-automatic-slideshow-class
+  - /post.aspx?id=f0037190-b496-41fd-947e-cfdef493a3dd
 ---
 <!-- more -->
 <P><STRONG>Day 1</STRONG></P>

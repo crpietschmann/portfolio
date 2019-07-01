@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 20cce4b8-5584-4d49-a55d-617390cccdc6
 title: "5 Common C# tasks in Apple Swift Programming Language"
 date: 2014-11-21 18:19:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["C#", "Swift"]
 redirect_from: 
   - /post/2014/11/21/5-Common-CSharp-tasks-in-Apple-Swift-Programming-Language
   - /post/2014/11/21/5-common-csharp-tasks-in-apple-swift-programming-language
+  - /post.aspx?id=20cce4b8-5584-4d49-a55d-617390cccdc6
 ---
 <!-- more -->
 <p>There are many simple tasks performed by C# developers over and over. These are common things necessary in all kinds of applications. This post will give an overview of a few of the most common tasks performed by C# developers with examples on how to perform those tasks using the Swift programming language from Apple.</p>

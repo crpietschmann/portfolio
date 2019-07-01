@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 2f90514d-4bf8-4dcf-a39a-14ed4b55f1c7
 title: "PietschSoft.VE v2.0.0 Alpha - ASP.NET AJAX Virtual Earth Mapping Control"
 date: 2007-03-06 23:18:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/03/06/PietschSoftVE-v200-Alpha-ASPNET-AJAX-Virtual-Earth-Mapping-Control
   - /post/2007/03/06/pietschsoftve-v200-alpha-aspnet-ajax-virtual-earth-mapping-control
+  - /post.aspx?id=2f90514d-4bf8-4dcf-a39a-14ed4b55f1c7
 ---
 <!-- more -->
 <p>

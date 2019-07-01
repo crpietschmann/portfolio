@@ -1,5 +1,6 @@
 ---
 layout: post
+id: d140421b-7509-4788-a4f9-bab0a94cd16d
 title: "My Brother In Law Is Home After Second Tour In Iraq"
 date: 2010-01-12 15:03:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2010/01/12/My-Brother-In-Law-Is-Home-After-Second-Tour-In-Iraq
   - /post/2010/01/12/my-brother-in-law-is-home-after-second-tour-in-iraq
+  - /post.aspx?id=d140421b-7509-4788-a4f9-bab0a94cd16d
 ---
 <!-- more -->
 <p>My Brother In Law, Jeremy, is back now after his second tour in Iraq. This time he was gone only 12 months, instead of 18 months the first time. He has a wife (my sister) and 3 boys (3yrs, 6yrs and 9yrs) of whom were eagerly awaiting his return. The people at WXOW Channel 19 in La Crosse, WI interviewed them when he returned to Wisconsin.</p>

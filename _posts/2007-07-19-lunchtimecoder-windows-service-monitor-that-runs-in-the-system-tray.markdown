@@ -1,5 +1,6 @@
 ---
 layout: post
+id: c416e9ba-ae7f-413f-83cf-1ecb5be1804b
 title: "LunchTimeCoder: Windows Service Monitor that runs in the System Tray"
 date: 2007-07-19 12:21:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/07/19/LunchTimeCoder-Windows-Service-Monitor-that-runs-in-the-System-Tray
   - /post/2007/07/19/lunchtimecoder-windows-service-monitor-that-runs-in-the-system-tray
+  - /post.aspx?id=c416e9ba-ae7f-413f-83cf-1ecb5be1804b
 ---
 <!-- more -->
 <P>Yesterday I started writing a Windows Service Monitor, but I didn't finish it during my lunch time. And, since I had a little extra time last night and this morning (I'm off work today by the way), I spent some time finishing it. Yeah I know it's cheating but I'm the one who wrote the rules for this initiative anyway.</P>

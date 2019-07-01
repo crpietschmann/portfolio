@@ -1,5 +1,6 @@
 ---
 layout: post
+id: fc68a6bd-a65b-4b4d-af17-c51873ffc899
 title: "Web.Maps.VE - Virtual Earth Without JavaScript, plus .NET 3.5 Support just added!"
 date: 2007-12-28 17:36:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General", "Bing Maps", "asp.net"]
 redirect_from: 
   - /post/2007/12/28/WebMapsVE-Virtual-Earth-Without-JavaScript2c-plus-NET-35-Support-just-added!
   - /post/2007/12/28/webmapsve-virtual-earth-without-javascript2c-plus-net-35-support-just-added!
+  - /post.aspx?id=fc68a6bd-a65b-4b4d-af17-c51873ffc899
 ---
 <!-- more -->
 <p>

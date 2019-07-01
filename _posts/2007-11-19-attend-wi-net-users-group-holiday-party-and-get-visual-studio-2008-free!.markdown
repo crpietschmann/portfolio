@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 8e2d3e0c-fa6a-4d8c-95d2-f69e9e59a6cd
 title: "Attend WI .NET Users Group Holiday Party and get Visual Studio 2008 Free!"
 date: 2007-11-19 21:44:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["WI-INETA"]
 redirect_from: 
   - /post/2007/11/19/Attend-WI-NET-Users-Group-Holiday-Party-and-get-Visual-Studio-2008-Free!
   - /post/2007/11/19/attend-wi-net-users-group-holiday-party-and-get-visual-studio-2008-free!
+  - /post.aspx?id=8e2d3e0c-fa6a-4d8c-95d2-f69e9e59a6cd
 ---
 <!-- more -->
 <p><strong>Update Dec. 11, 2007: </strong>The <a href="/Blog/Post.aspx?PostID=1431">WI .NET Users Group&nbsp;Holiday Party has been cancelled due to weather</a>, and will be rescheduled.</p>

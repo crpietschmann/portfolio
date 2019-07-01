@@ -1,5 +1,6 @@
 ---
 layout: post
+id: b4670a24-7fae-45e1-bed2-644ccb86ea69
 title: "WI .NET Users Group - Holiday Party 2007 InstallFest"
 date: 2007-12-19 17:55:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["WI-INETA"]
 redirect_from: 
   - /post/2007/12/19/WI-NET-Users-Group-Holiday-Party-2007-InstallFest
   - /post/2007/12/19/wi-net-users-group-holiday-party-2007-installfest
+  - /post.aspx?id=b4670a24-7fae-45e1-bed2-644ccb86ea69
 ---
 <!-- more -->
 <p>It was a great night, with a really great turn out. I'm not sure the exact number of attendees, but I think it must have been over 150! A few volunteers got up and gave some great demo presentations of new features in VS'08 and .NET 3.5. There was even a 360 setup&nbsp;with Halo 3 for people&nbsp;to&nbsp;play.&nbsp;Don't forget about all the great prizes that were given away: a couple Zunes, an XBox 360 Premium, an XBox 360 Elite, and alot of other games and software.</p>

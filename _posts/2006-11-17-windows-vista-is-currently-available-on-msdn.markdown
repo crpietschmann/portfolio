@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 4423f3d7-a4b0-4781-b403-4167ed20b60b
 title: "Windows Vista is currently available on MSDN"
 date: 2006-11-17 08:01:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2006/11/17/Windows-Vista-is-currently-available-on-MSDN
   - /post/2006/11/17/windows-vista-is-currently-available-on-msdn
+  - /post.aspx?id=4423f3d7-a4b0-4781-b403-4167ed20b60b
 ---
 <!-- more -->
 <P>And, thanks to the MSDN Subscription I won at the Deeper in .NET event, I am lucky enough to get Windows Vista for Free. Yippee!!</P>

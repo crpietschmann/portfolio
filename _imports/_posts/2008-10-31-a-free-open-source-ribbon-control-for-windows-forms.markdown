@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 70faed1b-6df7-42d6-b197-a35910caba89
 title: "A Free Open Source Ribbon Control for Windows Forms!"
 date: 2008-10-31 15:42:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/10/31/A-Free-Open-Source-Ribbon-Control-for-Windows-Forms
   - /post/2008/10/31/a-free-open-source-ribbon-control-for-windows-forms
+  - /post.aspx?id=70faed1b-6df7-42d6-b197-a35910caba89
 ---
 <!-- more -->
 <p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1fd3db6d-5ef4-4915-87e5-a7c9b9e18c5d
 title: "Virtual Earth: Convert Road Map Style to Shaded Like maps.live.com does"
 date: 2007-12-26 22:47:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/12/26/Virtual-Earth-Convert-Road-Map-Style-to-Shaded-Like-mapslivecom-does
   - /post/2007/12/26/virtual-earth-convert-road-map-style-to-shaded-like-mapslivecom-does
+  - /post.aspx?id=1fd3db6d-5ef4-4915-87e5-a7c9b9e18c5d
 ---
 <!-- more -->
 <h3>What is the Shaded map Style?</h3>

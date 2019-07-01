@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 59c49b54-7263-4e42-805d-2d05691a3a1f
 title: "SQL Compact And The "Unable to load DLL 'sqlceme35.dll'" Runtime Exception"
 date: 2009-01-07 19:40:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2009/01/07/SQL-Compact-And-The-Unable-to-load-DLL-sqlceme35dll-Runtime-Exception
   - /post/2009/01/07/sql-compact-and-the-unable-to-load-dll-sqlceme35dll-runtime-exception
+  - /post.aspx?id=59c49b54-7263-4e42-805d-2d05691a3a1f
 ---
 <!-- more -->
 <p>I <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=DC614AEE-7E1C-4881-9C32-3A6CE53384D9&amp;displaylang=en">installed SQL Server Compact 3.5 x86</a> and started testing it out when I got a nice "Unable to load DLL 'sqlceme35.dll" runtime exception. This seems like odd behaviour for a clean install. In a fairly quick search I found an article on the <a href="http://blogs.msdn.com/sqlservercompact">SQL Server Compact Team Blog</a> that covers a couple possible causes/solutions for this exception.</p>

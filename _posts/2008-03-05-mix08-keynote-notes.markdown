@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 9e9f5b9a-da33-4e50-b255-afbfa0a36900
 title: "MIX'08 - KeyNote Notes of Ray Ozzies talk"
 date: 2008-03-05 11:32:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Silverlight"]
 redirect_from: 
   - /post/2008/03/05/MIX08-KeyNote-Notes
   - /post/2008/03/05/mix08-keynote-notes
+  - /post.aspx?id=9e9f5b9a-da33-4e50-b255-afbfa0a36900
 ---
 <!-- more -->
 <p>I watched the MIX'08 Keynote online this&nbsp;morning, and here are some notes I took.&nbsp;</p>

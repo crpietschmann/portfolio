@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 67770600-dea8-4796-9212-84376bca62db
 title: "Less Than 36 Hours Left to Enter the Community Coding Contest!"
 date: 2008-09-30 12:50:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/09/30/Less-Than-36-Hours-Left-to-Enter-to-the-Community-Coding-Contest
   - /post/2008/09/30/less-than-36-hours-left-to-enter-to-the-community-coding-contest
+  - /post.aspx?id=67770600-dea8-4796-9212-84376bca62db
 ---
 <!-- more -->
 <p>

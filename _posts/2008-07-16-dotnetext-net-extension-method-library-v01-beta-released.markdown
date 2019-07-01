@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 991001f5-399b-42ff-829c-2b80cb49a8b8
 title: "dotNetExt - .NET Extension Method Library - v0.1 Beta Released"
 date: 2008-07-16 18:50:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/07/16/dotNetExt-NET-Extension-Method-Library-v01-Beta-Released
   - /post/2008/07/16/dotnetext-net-extension-method-library-v01-beta-released
+  - /post.aspx?id=991001f5-399b-42ff-829c-2b80cb49a8b8
 ---
 <!-- more -->
 <p>This is the first release of a small, new project I created. This is just the first release of the project, and I'll keep adding more functionality to it if there is enough interest by me or others in the project. So, please post any comments you have in the <a href="http://www.codeplex.com/dotNetExt/Thread/List.aspx">project discussion area</a>.</p>

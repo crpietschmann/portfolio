@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1585c38e-c19e-49fc-a0e6-1cc4609395dc
 title: "PietschSoft.VE3 is now on CodePlex"
 date: 2006-08-08 08:56:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2006/08/08/PietschSoftVE3-is-now-on-CodePlex
   - /post/2006/08/08/pietschsoftve3-is-now-on-codeplex
+  - /post.aspx?id=1585c38e-c19e-49fc-a0e6-1cc4609395dc
 ---
 <!-- more -->
 <p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: adddb895-e44a-4354-b21a-eecbb5c294bf
 title: "JavaScript Basics: String Contains Function"
 date: 2015-09-18 06:30:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["JavaScript"]
 redirect_from: 
   - /post/2015/09/18/JavaScript-Basics-String-Contains-Function
   - /post/2015/09/18/javascript-basics-string-contains-function
+  - /post.aspx?id=adddb895-e44a-4354-b21a-eecbb5c294bf
 ---
 <!-- more -->
 <p>In many of the server-side programming languages like C#, the String object has a "Contains" method that returns a boolean indicating if the string contains another specified string. JavaScript however does not have a ".contains" method. Fortunately, the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf" target="_blank">".indexOf" method in JavaScript</a> can easily be used to mimic or build your own ".contains" method.</p>

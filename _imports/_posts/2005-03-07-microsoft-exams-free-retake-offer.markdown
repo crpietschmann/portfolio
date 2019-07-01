@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 6cb52468-2b93-4231-8e6b-0017ce2445e8
 title: "Microsoft Exams: FREE Retake Offer"
 date: 2005-03-07 00:07:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/03/07/Microsoft-Exams-FREE-Retake-Offer
   - /post/2005/03/07/microsoft-exams-free-retake-offer
+  - /post.aspx?id=6cb52468-2b93-4231-8e6b-0017ce2445e8
 ---
 <!-- more -->
 <P class=MsoNormal><SPAN style="FONT-SIZE: 8pt; FONT-FAMILY: Verdana">

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 349f567f-1615-4913-a702-ad70902933cb
 title: "JavaScript: Mixing OOP and Event Driven Programming"
 date: 2008-11-04 22:53:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/11/04/JavaScript-Mixing-OOP-and-Event-Driven-Programming
   - /post/2008/11/04/javascript-mixing-oop-and-event-driven-programming
+  - /post.aspx?id=349f567f-1615-4913-a702-ad70902933cb
 ---
 <!-- more -->
 <p>

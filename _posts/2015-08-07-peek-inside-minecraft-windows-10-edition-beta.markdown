@@ -1,5 +1,6 @@
 ---
 layout: post
+id: d9031fc9-fa01-4f33-b729-3f4d5a0d955d
 title: "Peek Inside Minecraft Windows 10 Edition Beta"
 date: 2015-08-07 17:15:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Windows Store App"]
 redirect_from: 
   - /post/2015/08/07/Peek-Inside-Minecraft-Windows-10-Edition-Beta
   - /post/2015/08/07/peek-inside-minecraft-windows-10-edition-beta
+  - /post.aspx?id=d9031fc9-fa01-4f33-b729-3f4d5a0d955d
 ---
 <!-- more -->
 <p><img style="float: right;" src="/images/posts/2015/08/Win10MinecraftBeta001_300x168.png" alt="" />Microsoft recently released the Minecraft: Windows 10 Edition Beta. It's a free app for existing Mojang customers who have already purchased the desktop/Java version of Minecraft. This is one of the first UWP apps for Windows 10 from Microsoft and given Minecraft's long history with Java, I thought I'd peek inside and see how much implementation details I could gleam. This post chronicles what I've been able to find out.</p>

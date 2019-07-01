@@ -1,5 +1,6 @@
 ---
 layout: post
+id: b0029f4d-2160-4384-976f-704e3994dd30
 title: "Vista Experience Update: Vista Sidebar Gadgets"
 date: 2006-12-03 15:56:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2006/12/03/Vista-Experience-Update-Vista-Sidebar-Gadgets
   - /post/2006/12/03/vista-experience-update-vista-sidebar-gadgets
+  - /post.aspx?id=b0029f4d-2160-4384-976f-704e3994dd30
 ---
 <!-- more -->
 <p>There 11 Sidebar Gadgets that come baked into Vista. Some basic ones like a photo&nbsp; Slide Show, Calendar, Clock, CPU Meter, RSS Feed Headlines, Weather and a couple more.&nbsp;But, what if I want to create one that offers different functionality?</p>

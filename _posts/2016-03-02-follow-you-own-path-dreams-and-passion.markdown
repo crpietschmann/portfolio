@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1edc1ab6-770d-43b0-b369-bc2e705c77a1
 title: "Follow You Own Path, Dreams and Passion"
 date: 2016-03-02 18:03:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/03/02/Follow-You-Own-Path-Dreams-and-Passion
   - /post/2016/03/02/follow-you-own-path-dreams-and-passion
+  - /post.aspx?id=1edc1ab6-770d-43b0-b369-bc2e705c77a1
 ---
 <!-- more -->
 <p>Many of us hear the negative insecurities and fears of others being projected towards us through the "you can't", or "that won't work" statements of negativity. These statements are rooted in these peoples own fears and insecurities. They are afraid of failure themselves, so they try to discourage you too. Don't listen to this advice from others. In fact, distance yourself from these people and find people who encourage you.</p>

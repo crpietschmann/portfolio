@@ -1,5 +1,6 @@
 ---
 layout: post
+id: dac2e0d9-157c-4781-895a-ce45ef4bbc08
 title: "Virtual PC 2007 released with improved performance!"
 date: 2007-02-19 21:30:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/02/19/Virtual-PC-2007-released-with-improved-performance!
   - /post/2007/02/19/virtual-pc-2007-released-with-improved-performance!
+  - /post.aspx?id=dac2e0d9-157c-4781-895a-ce45ef4bbc08
 ---
 <!-- more -->
 <P>Microsoft released Virtual PC 2007 today. I've been waiting for this since Virtual PC 2004 wont install on the 64-bit version of Vista.</P>

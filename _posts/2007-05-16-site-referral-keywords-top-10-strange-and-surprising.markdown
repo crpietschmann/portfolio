@@ -1,5 +1,6 @@
 ---
 layout: post
+id: e753977d-7a4e-43df-9983-44e57a9d84b2
 title: "Site Referral Keywords: Top 10, Strange and Surprising"
 date: 2007-05-16 14:45:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/05/16/Site-Referral-Keywords-Top-10-Strange-and-Surprising
   - /post/2007/05/16/site-referral-keywords-top-10-strange-and-surprising
+  - /post.aspx?id=e753977d-7a4e-43df-9983-44e57a9d84b2
 ---
 <!-- more -->
 <P>I've had Google Analytics set up on my site since the middle of January so I can get an idea on what content gets the most traffic. The goal has been satisfied; I know which pages get the most hits. Now, if there were a way to integrate it within my RSS feed... but that is another topic to discuss elsewhere.</P>

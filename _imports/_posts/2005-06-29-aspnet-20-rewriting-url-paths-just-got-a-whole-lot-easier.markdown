@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 927cf266-f035-4661-9a54-c28fc34f5ec9
 title: "ASP.NET 2.0: Rewriting URL Paths just got a whole lot easier"
 date: 2005-06-29 14:43:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/06/29/ASPNET-20-Rewriting-URL-Paths-just-got-a-whole-lot-easier
   - /post/2005/06/29/aspnet-20-rewriting-url-paths-just-got-a-whole-lot-easier
+  - /post.aspx?id=927cf266-f035-4661-9a54-c28fc34f5ec9
 ---
 <!-- more -->
 <p>

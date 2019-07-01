@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 80f10444-7e23-45b5-bf7b-f6781fc31925
 title: "Virtual Earth: Getting Started - Adding a basic Map to a page"
 date: 2007-12-21 16:24:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/12/21/Virtual-Earth-Getting-Started-Adding-a-basic-Map-to-a-page
   - /post/2007/12/21/virtual-earth-getting-started-adding-a-basic-map-to-a-page
+  - /post.aspx?id=80f10444-7e23-45b5-bf7b-f6781fc31925
 ---
 <!-- more -->
 <h3>What is Microsoft Virtual Earth?</h3>

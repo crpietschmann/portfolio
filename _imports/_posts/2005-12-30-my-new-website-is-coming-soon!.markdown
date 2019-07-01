@@ -1,5 +1,6 @@
 ---
 layout: post
+id: e92bbcbb-05a4-4562-85cd-b2030b42f017
 title: "My new website is coming soon!"
 date: 2005-12-30 22:12:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/12/30/My-new-website-is-coming-soon!
   - /post/2005/12/30/my-new-website-is-coming-soon!
+  - /post.aspx?id=e92bbcbb-05a4-4562-85cd-b2030b42f017
 ---
 <!-- more -->
 <P>An new year and a new look for <a title="PietschSoft.com" href="http://PietschSoft.com" target="_blank">PietschSoft.com</a> is coming!</P>

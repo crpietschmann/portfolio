@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 39fc8450-7136-4c6b-bec1-6dd8f9e6868a
 title: "Is this necessary?- Chris Pietschmann, MVP, MCSD, MCAD, MCP"
 date: 2008-10-20 21:06:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/10/20/Is-this-necessary-Chris-Pietschmann-MVP-MCSD-MCAD-MCP
   - /post/2008/10/20/is-this-necessary-chris-pietschmann-mvp-mcsd-mcad-mcp
+  - /post.aspx?id=39fc8450-7136-4c6b-bec1-6dd8f9e6868a
 ---
 <!-- more -->
 <p>

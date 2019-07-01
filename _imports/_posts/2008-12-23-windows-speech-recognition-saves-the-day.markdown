@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1531c0fe-7962-4128-87b2-41510915b39b
 title: "Windows speech recognition saves the day!"
 date: 2008-12-23 17:16:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/12/23/Windows-speech-recognition-saves-the-day
   - /post/2008/12/23/windows-speech-recognition-saves-the-day
+  - /post.aspx?id=1531c0fe-7962-4128-87b2-41510915b39b
 ---
 <!-- more -->
 <p>

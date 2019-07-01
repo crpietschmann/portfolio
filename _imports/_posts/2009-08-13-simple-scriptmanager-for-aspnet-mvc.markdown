@@ -1,5 +1,6 @@
 ---
 layout: post
+id: fccc2f93-f7a3-481d-bcd7-a3b9425420bd
 title: "A Simple ScriptManager for ASP.NET MVC"
 date: 2009-08-13 16:23:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["ASP.NET MVC"]
 redirect_from: 
   - /post/2009/08/13/Simple-ScriptManager-for-ASPNET-MVC
   - /post/2009/08/13/simple-scriptmanager-for-aspnet-mvc
+  - /post.aspx?id=fccc2f93-f7a3-481d-bcd7-a3b9425420bd
 ---
 <!-- more -->
 <p>The <a href="http://www.asp.net/Ajax/Documentation/Live/overview/ScriptManagerOverview.aspx" target="_blank">ASP.NET AJAX ScriptManager</a> makes it really easy to include JavaScript references and register JavaScript blocks into the rendered Page output of an ASP.NET WebForms application. However nice the ScriptManager control is, it&rsquo;s still just a WebForms control for use with ASP.NET AJAX; thus it&rsquo;s use isn&rsquo;t really supported with ASP.NET MVC. Also, to make things just a little more difficult, ASP.NET MVC doesn&rsquo;t have it&rsquo;s own &ldquo;ScriptManager&rdquo; implementation. This brings me to the point of posting this&hellip;</p>

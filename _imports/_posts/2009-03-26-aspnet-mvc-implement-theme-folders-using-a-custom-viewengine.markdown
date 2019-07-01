@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 237305ef-7b41-45f4-af3b-d7b1b116e78b
 title: "ASP.NET MVC: Implement Theme Folders using a Custom ViewEngine"
 date: 2009-03-26 18:09:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["ASP.NET MVC"]
 redirect_from: 
   - /post/2009/03/26/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine
   - /post/2009/03/26/aspnet-mvc-implement-theme-folders-using-a-custom-viewengine
+  - /post.aspx?id=237305ef-7b41-45f4-af3b-d7b1b116e78b
 ---
 <!-- more -->
 <p>One of the things that ASP.NET MVC 1.0 is missing is the ability to easily implement Themes. The older, more mature standard ASP.NET framework includes theme support via the App_Themes folder; however limited it can be, it&rsquo;s still more than ASP.NET MVC currently has. Well, at least until I wrote this little custom ViewEngine and ControllerBase class to help out and allow us to very easily implement Themes within our ASP.NET MVC applications.</p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 4191866f-bf18-4c00-b667-03051474ab52
 title: "Is Planning and Testing really that important in Software Development???"
 date: 2004-09-17 15:04:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2004/09/17/Is-Planning-and-Testing-really-that-important-in-Software-Development
   - /post/2004/09/17/is-planning-and-testing-really-that-important-in-software-development
+  - /post.aspx?id=4191866f-bf18-4c00-b667-03051474ab52
 ---
 <!-- more -->
 <P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Arial color=navy size=2><SPAN style="FONT-SIZE: 10pt; COLOR: navy; FONT-FAMILY: Arial">When you wrote essays in school, didn&#8217;t you plan out what you were going to write about before you started writing? The same needs to be done with software development.</SPAN></FONT></P>

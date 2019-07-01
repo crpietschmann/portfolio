@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 29eaeda8-6724-4be9-b2c4-ec4e6415c049
 title: "About Me"
 date: 2008-06-16 16:22:51 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: []
 redirect_from: 
   - /page/About-Chris-Pietschmann
   - /page/about-chris-pietschmann
+  - /post.aspx?id=29eaeda8-6724-4be9-b2c4-ec4e6415c049
 ---
 <!-- more -->
 <p>My name is Chris Pietschmann. I do so many things, it's difficult to describe myself in just a single sentence. So here's a few:</p>

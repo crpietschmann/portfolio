@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 168dded3-b787-440e-8273-f971229a3395
 title: "VEToolkit: Virtual Earth Toolkit Open Source Project"
 date: 2008-10-16 21:10:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/10/16/VEToolkit-Virtual-Earth-Toolkit-Open-Source-Project
   - /post/2008/10/16/vetoolkit-virtual-earth-toolkit-open-source-project
+  - /post.aspx?id=168dded3-b787-440e-8273-f971229a3395
 ---
 <!-- more -->
 <p>

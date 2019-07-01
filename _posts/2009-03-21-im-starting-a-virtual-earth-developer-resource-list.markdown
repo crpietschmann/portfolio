@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 99f42301-b361-4bd0-8968-dd138820d57e
 title: "I'm starting a Virtual Earth Developer Resource list"
 date: 2009-03-21 16:36:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2009/03/21/Im-starting-a-Virtual-Earth-Developer-Resource-list
   - /post/2009/03/21/im-starting-a-virtual-earth-developer-resource-list
+  - /post.aspx?id=99f42301-b361-4bd0-8968-dd138820d57e
 ---
 <!-- more -->
 <p>

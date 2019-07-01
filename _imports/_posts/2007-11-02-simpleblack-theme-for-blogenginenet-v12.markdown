@@ -1,5 +1,6 @@
 ---
 layout: post
+id: f5251bf7-5f7e-4940-896d-7dead38582bd
 title: "SimpleBlack Theme for BlogEngine.NET v1.2"
 date: 2007-11-02 21:15:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/11/02/SimpleBlack-Theme-for-BlogEngineNET-v12
   - /post/2007/11/02/simpleblack-theme-for-blogenginenet-v12
+  - /post.aspx?id=f5251bf7-5f7e-4940-896d-7dead38582bd
 ---
 <!-- more -->
 <P>I've been looking at the code of <A href="http://dotnetblogengine.net">BlogEngine.NET</A> and playing around with it a bit lately, so I decided to create a theme to see how easy it is. And, it is actually really simple to do.</P>

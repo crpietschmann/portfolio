@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 7d9f3de5-b8e0-44d8-874e-363701a3d51e
 title: "PHP is easy to learn."
 date: 2005-09-21 11:41:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/09/21/PHP-is-easy-to-learn
   - /post/2005/09/21/php-is-easy-to-learn
+  - /post.aspx?id=7d9f3de5-b8e0-44d8-874e-363701a3d51e
 ---
 <!-- more -->
 <P>Now that's something I never imagined I would say.</P>

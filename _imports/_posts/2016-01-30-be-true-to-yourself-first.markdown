@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 32d1927e-66f7-4d68-8556-15a6e944a894
 title: "Be True to Yourself, First"
 date: 2016-01-30 11:14:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/01/30/Be-True-to-Yourself-First
   - /post/2016/01/30/be-true-to-yourself-first
+  - /post.aspx?id=32d1927e-66f7-4d68-8556-15a6e944a894
 ---
 <!-- more -->
 <p>There are many times in life that we get nudged in this direction or that so that we make other people happy by doing or saying what's necessary to get to that goal. We all need people to work for, be friends with, get along with that do require a little extra effort at times to keep them happy. This is a necessity of life, however, if you aren't true to yourself then you will eventually lose interested and fade off.</p>

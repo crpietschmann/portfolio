@@ -1,5 +1,6 @@
 ---
 layout: post
+id: fc854e6c-0c56-4265-977b-cf3e4e89ebd2
 title: "ASP.NET: How to get a specific ConnectionString from the Web.Config by name"
 date: 2005-12-28 23:18:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["asp.net"]
 redirect_from: 
   - /post/2005/12/28/ASPNET-20-How-to-get-a-specific-ConnectionString-from-the-WebConfig-by-name
   - /post/2005/12/28/aspnet-20-how-to-get-a-specific-connectionstring-from-the-webconfig-by-name
+  - /post.aspx?id=fc854e6c-0c56-4265-977b-cf3e4e89ebd2
 ---
 <!-- more -->
 <p>You have your ConnectionString for your <a title="ASP.NET" href="http://asp.net" target="_blank">ASP.NET</a> web app stored in the Web.Config file. Now how exactly how do you get that ConnectionString out of there from within your code?</p>  <p>Sample Web.Config section with a ConnectionString:</p>  <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">connectionStrings</span><span class="kwrd">&gt;</span>

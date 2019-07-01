@@ -1,5 +1,6 @@
 ---
 layout: post
+id: a1add478-ce5a-49c6-91a7-4f4c754095ef
 title: "WI-INETA President, Brian Tinkler, takes a trip to Redmond"
 date: 2005-05-21 10:20:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2005/05/21/WI-INETA-President2c-Brian-Tinkler2c-takes-a-trip-to-Redmond-
   - /post/2005/05/21/wi-ineta-president2c-brian-tinkler2c-takes-a-trip-to-redmond-
+  - /post.aspx?id=a1add478-ce5a-49c6-91a7-4f4c754095ef
 ---
 <!-- more -->
 <p>

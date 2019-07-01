@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 21c6af9f-f2b6-47a0-9749-c3731c41d475
 title: "ASP.NET 2.0: URL Mapping with RegEx Support"
 date: 2005-11-12 13:36:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2005/11/12/ASPNET-20-URL-Mapping-with-RegEx-Support
   - /post/2005/11/12/aspnet-20-url-mapping-with-regex-support
+  - /post.aspx?id=21c6af9f-f2b6-47a0-9749-c3731c41d475
 ---
 <!-- more -->
 <p>

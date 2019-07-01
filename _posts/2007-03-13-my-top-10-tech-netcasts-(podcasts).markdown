@@ -1,5 +1,6 @@
 ---
 layout: post
+id: b512d1ca-74a6-44c3-be34-66ee950ea277
 title: "My Top 10 Tech Netcasts (podcasts)"
 date: 2007-03-13 14:18:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/03/13/My-Top-10-Tech-Netcasts-(podcasts)
   - /post/2007/03/13/my-top-10-tech-netcasts-(podcasts)
+  - /post.aspx?id=b512d1ca-74a6-44c3-be34-66ee950ea277
 ---
 <!-- more -->
 <P>There are alot of podcasts being produced out there. I've had trouble over the last couple years in finding good quality podcasts to listen to.</P>

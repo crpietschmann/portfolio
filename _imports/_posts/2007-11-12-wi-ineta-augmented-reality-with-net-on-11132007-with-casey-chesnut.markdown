@@ -1,5 +1,6 @@
 ---
 layout: post
+id: feee04b8-a183-4698-9a64-710f5bdf011c
 title: "WI-INETA: Augmented Reality with .NET on 11/13/2007 with Casey Chesnut"
 date: 2007-11-12 17:34:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["WI-INETA"]
 redirect_from: 
   - /post/2007/11/12/WI-INETA-Augmented-Reality-with-NET-on-11132007-with-Casey-Chesnut
   - /post/2007/11/12/wi-ineta-augmented-reality-with-net-on-11132007-with-casey-chesnut
+  - /post.aspx?id=feee04b8-a183-4698-9a64-710f5bdf011c
 ---
 <!-- more -->
 <p>This months <a href="http://wi-ineta.org/DesktopDefault.aspx?tabid=58">Wisconsin .NET Users Group meeting</a> (and the last one of the year) is tommorow (Nov. 13th) night.&nbsp;This month <a href="http://www.mperfect.net/brains-n-brawn/">Casey Chesnut</a> will be presenting on&nbsp;"Augmented Reality with .NET".</p>

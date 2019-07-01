@@ -1,5 +1,6 @@
 ---
 layout: post
+id: f810ecbf-03ff-4f92-98ba-fd2ca975f097
 title: "JavaScript Basics: How to create a Dictionary with Key/Value pairs"
 date: 2015-09-05 09:15:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["JavaScript"]
 redirect_from: 
   - /post/2015/09/05/JavaScript-Basics-How-to-create-a-Dictionary-with-KeyValue-pairs
   - /post/2015/09/05/javascript-basics-how-to-create-a-dictionary-with-keyvalue-pairs
+  - /post.aspx?id=f810ecbf-03ff-4f92-98ba-fd2ca975f097
 ---
 <!-- more -->
 <p>In statically typed programming languages a Dictionary (Key/Value pair collection) object can be very useful at times. While JavaScript doesn't natively include a type called "Dictionary", it does contain a very flexible type called "Object". The JavaScript "Object" type is very versatile since JavaScript is a dynamically typed language. This flexibility allows for the "Object" type to be used in ways that might seem strange when compared to statically typed languages such as C#.</p>

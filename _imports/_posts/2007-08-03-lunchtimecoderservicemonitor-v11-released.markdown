@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1c2b8431-1490-4594-97e0-cb70b61c3e25
 title: "LunchTimeCoder.ServiceMonitor v1.1 Released"
 date: 2007-08-03 01:16:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/08/03/LunchTimeCoderServiceMonitor-v11-Released
   - /post/2007/08/03/lunchtimecoderservicemonitor-v11-released
+  - /post.aspx?id=1c2b8431-1490-4594-97e0-cb70b61c3e25
 ---
 <!-- more -->
 <P>I just posted up the latest release (v1.1) of my windows service monitor app.</P>

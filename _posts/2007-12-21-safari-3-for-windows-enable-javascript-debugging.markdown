@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 7850f65e-8f57-4877-8ddf-f79e0d7a76b4
 title: "Safari 3 for Windows: Enable JavaScript Debugging"
 date: 2007-12-21 23:31:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["JavaScript"]
 redirect_from: 
   - /post/2007/12/21/Safari-3-for-Windows-Enable-JavaScript-Debugging
   - /post/2007/12/21/safari-3-for-windows-enable-javascript-debugging
+  - /post.aspx?id=7850f65e-8f57-4877-8ddf-f79e0d7a76b4
 ---
 <!-- more -->
 <p>As you probably know, Safari 3 doesn't allow you to turn on the debug menu within any settings dialogs. It also doesn't come with a JavaScript Debugger either. This makes it almost impossible to do any JavaScript development for Safari. Luckily you can turn on the debug menu, and there is a debugger you can download.</p>

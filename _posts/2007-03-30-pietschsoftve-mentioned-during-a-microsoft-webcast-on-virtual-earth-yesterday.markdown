@@ -1,5 +1,6 @@
 ---
 layout: post
+id: b7380495-13fc-45a5-8592-7e6c32644569
 title: "PietschSoft.VE mentioned during a Microsoft Webcast on Virtual Earth yesterday"
 date: 2007-03-30 13:08:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/03/30/PietschSoftVE-mentioned-during-a-Microsoft-Webcast-on-Virtual-Earth-yesterday
   - /post/2007/03/30/pietschsoftve-mentioned-during-a-microsoft-webcast-on-virtual-earth-yesterday
+  - /post.aspx?id=b7380495-13fc-45a5-8592-7e6c32644569
 ---
 <!-- more -->
 <p>

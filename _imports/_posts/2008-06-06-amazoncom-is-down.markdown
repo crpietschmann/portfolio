@@ -1,5 +1,6 @@
 ---
 layout: post
+id: fb40ca26-f3c4-4f91-a8d8-b7ac76af5325
 title: "Amazon.com is down"
 date: 2008-06-06 13:23:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/06/06/Amazoncom-is-down
   - /post/2008/06/06/amazoncom-is-down
+  - /post.aspx?id=fb40ca26-f3c4-4f91-a8d8-b7ac76af5325
 ---
 <!-- more -->
 <p>

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1d6d498a-257f-4f08-aaf1-8cfa7c568d60
 title: "ASP.NET 2.0: Virtual Earth v3 Ajax Server Control - PietschSoft.VE3 v0.01"
 date: 2006-06-07 22:38:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2006/06/07/ASPNET-20-Virtual-Earth-v3-Ajax-Server-Control-PietschSoftVE3-v001
   - /post/2006/06/07/aspnet-20-virtual-earth-v3-ajax-server-control-pietschsoftve3-v001
+  - /post.aspx?id=1d6d498a-257f-4f08-aaf1-8cfa7c568d60
 ---
 <!-- more -->
 <p>

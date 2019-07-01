@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 6b2e5336-c4cf-40a6-9dbd-276536836b31
 title: "Vista Experience Update: Vista automatically defragments your hard drives for you"
 date: 2006-11-22 19:44:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2006/11/22/Vista-Experience-Update-Vista-automatically-defragments-your-hard-drives-for-you
   - /post/2006/11/22/vista-experience-update-vista-automatically-defragments-your-hard-drives-for-you
+  - /post.aspx?id=6b2e5336-c4cf-40a6-9dbd-276536836b31
 ---
 <!-- more -->
 <p>I guess this is one of the changes they made to always keep Windows running smoothly.</p>

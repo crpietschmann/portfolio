@@ -1,5 +1,6 @@
 ---
 layout: post
+id: da95ec97-5806-4b5f-b5da-d8fa648d4ddc
 title: "Free Geographic / Geo-Spatial Data Sources Link List"
 date: 2010-05-27 14:53:44 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: []
 redirect_from: 
   - /page/Free-Geographic-Geo-Spatial-Data-Sources-Link-List
   - /page/free-geographic-geo-spatial-data-sources-link-list
+  - /post.aspx?id=da95ec97-5806-4b5f-b5da-d8fa648d4ddc
 ---
 <!-- more -->
 <p>This page lists a bunch of different geographic / geo-spatial data sources that provide FREE data to be consumed. I haven't really found any resource link list like this, so I thought I'd start one.</p>

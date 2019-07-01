@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 8630ce81-819e-47f6-9a48-02068d28234b
 title: "Software Development Meme - How I got started programming"
 date: 2008-06-10 17:29:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2008/06/10/Software_Development_Meme_How_I_got_started_programming
   - /post/2008/06/10/software_development_meme_how_i_got_started_programming
+  - /post.aspx?id=8630ce81-819e-47f6-9a48-02068d28234b
 ---
 <!-- more -->
 <p>Ok, I'm it. I've been tagged by <a href="http://larryclarkin.com">Larry Clarkin</a> with the latest questionnaire floating around the blogs. This one is focused on how everyone got started into programming.</p>

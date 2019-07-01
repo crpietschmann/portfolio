@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 120aa90a-e869-4b8e-b5ff-4e883a93bba7
 title: "Things I learned about Software WHILE NOT in College"
 date: 2007-06-30 14:44:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/06/30/Things-I-learned-about-Software-WHILE-NOT-in-College
   - /post/2007/06/30/things-i-learned-about-software-while-not-in-college
+  - /post.aspx?id=120aa90a-e869-4b8e-b5ff-4e883a93bba7
 ---
 <!-- more -->
 <P>This is a reply to Scott Hanselman's post "<A href="http://www.hanselman.com/blog/ThreeThingsILearnedAboutSoftwareWHILENOTInCollege.aspx">Three Things I Learned About Software WHILE NOT in College</A>", except I'm not listing three things I learned IN College because it didn't happen (yet anyway).</P>

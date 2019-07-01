@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 86fe4f0c-5e2c-4f13-8946-9540ef86328c
 title: "Announcing New BuildHoloLens.com Blog!"
 date: 2016-04-09 21:32:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2016/04/09/Announcing-New-BuildHoloLenscom-Blog
   - /post/2016/04/09/announcing-new-buildhololenscom-blog
+  - /post.aspx?id=86fe4f0c-5e2c-4f13-8946-9540ef86328c
 ---
 <!-- more -->
 <p>&nbsp;<img src="/images/posts/2016/04/BuildHoloLensBanner.jpg" alt="" /></p>

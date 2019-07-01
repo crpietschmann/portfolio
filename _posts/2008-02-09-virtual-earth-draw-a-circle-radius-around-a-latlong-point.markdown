@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 1e2824a0-3bef-4707-8f18-a624ad784432
 title: "Bing Maps: Draw a Circle Radius Around a Lat/Long Point"
 date: 2008-02-09 02:58:00 -0600
 comments: true
@@ -9,6 +10,7 @@ tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/02/09/Virtual-Earth-Draw-a-Circle-Radius-Around-a-LatLong-Point
   - /post/2008/02/09/virtual-earth-draw-a-circle-radius-around-a-latlong-point
+  - /post.aspx?id=1e2824a0-3bef-4707-8f18-a624ad784432
 ---
 <!-- more -->
 <p>I get requests on how to draw radius' around points on the map. And, up until now, I never needed to do it myself, so I didn't have a code snippet to do it. I did a search and quickly found an example over at <a href="http://viavirtualearth.com/Wiki/Draw+a+circle.ashx">viavirtualearth</a> on how to do it in an older version of Virtual Earth. Other than being coded for an older version of Virtual Earth (and incompatible with VE6); it's coded to only handle drawing a radius in Kilometers.</p>

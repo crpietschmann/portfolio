@@ -1,5 +1,6 @@
 ---
 layout: post
+id: b2beb7a3-6297-4bd9-8496-ade8db7b02c8
 title: "Vista Experience Update: Disk Defragmenter Revisited"
 date: 2007-04-24 22:29:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2007/04/24/Vista-Experience-Update-Disk-Defragmenter-Revisited
   - /post/2007/04/24/vista-experience-update-disk-defragmenter-revisited
+  - /post.aspx?id=b2beb7a3-6297-4bd9-8496-ade8db7b02c8
 ---
 <!-- more -->
 <p>About 5 months ago, way back when Vista RTM'd, I posted about how <a href="/Blog/Post.aspx?PostID=1338">Vista now automatically defragments your hard drives</a>. This is a really neat feature, especially since I would never remember to defrag until my system started to get noticably slow. So, I thought I would revisit this to just see how well is it working.</p>

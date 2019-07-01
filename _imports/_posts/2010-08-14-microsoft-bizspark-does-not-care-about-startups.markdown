@@ -1,5 +1,6 @@
 ---
 layout: post
+id: 72b0abe6-58c6-458c-ae1d-70c9628463bb
 title: "Microsoft BizSpark: My new startup is enrolled, but was denied twice before this blog post"
 date: 2010-08-14 08:23:00 -0500
 comments: true
@@ -9,6 +10,7 @@ tags: ["General"]
 redirect_from: 
   - /post/2010/08/14/Microsoft-BizSpark-Does-Not-Care-About-Startups
   - /post/2010/08/14/microsoft-bizspark-does-not-care-about-startups
+  - /post.aspx?id=72b0abe6-58c6-458c-ae1d-70c9628463bb
 ---
 <!-- more -->
 <p><strong>Update Wednesday, Dec. 1, 2010: </strong>I have had a few people contact me about getting denied enrollment in the BizSpark program. Most of these people are trying to enroll a CONSULTING company; which is NOT what BizSpark is for. BizSpark is for companies that are &ldquo;<em>Actively engaged in development of a software-based product or online service that will form a core piece of its current or intended business.</em>&rdquo; That means, if you want to enroll in BizSpark, that you must be developing a product to sell/offer and not selling consulting services.</p>
