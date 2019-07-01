@@ -144,6 +144,7 @@ $brand-background: radial-gradient(rgba(0,0,0,0),rgba(0,0,0,0.3)), url(/images/b
 .post table th {
   background: $brand-background;
   color: #fff;
+  border: solid 0.1em rgba(0,0,0,0.5);
 } 
 .post table td {
   border: solid 0.1em rgba(0,0,0,0.5);
