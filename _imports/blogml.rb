@@ -140,15 +140,15 @@ module Jekyll
 
             content.gsub!(/&lt;/, "<")
             content.gsub!(/&gt;/, ">")
-            
+
             content.gsub!(/<p>/, "\n")
             content.gsub!(/<\/p>/, "")
             content.gsub!(/<P>/, "\n")
             content.gsub!(/<\/P>/, "")
-            content.gsub!(/<\/br>/, "\n")
-            content.gsub!(/<\/BR>/, "\n")
-            content.gsub!(/<\/br >/, "\n")
-            content.gsub!(/<\/BR >/, "\n")
+            content.gsub!(/<\/br\/>/, "\n")
+            content.gsub!(/<\/BR\/>/, "\n")
+            content.gsub!(/<\/br \/>/, "\n")
+            content.gsub!(/<\/BR \/>/, "\n")
 
             content.gsub!(/&nbsp;/, " ")
             content.gsub!(/<strong>/, "**");
