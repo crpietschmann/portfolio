@@ -138,6 +138,9 @@ module Jekyll
             content.gsub!(/\[code\]/, "```")
             content.gsub!(/\[\/code\]/, "```")
 
+            content.gsub!(/&lt;/, "<")
+            content.gsub!(/&gt;/, ">")
+            
             content.gsub!(/<p>/, "\n")
             content.gsub!(/<\/p>/, "")
             content.gsub!(/<P>/, "\n")
@@ -146,9 +149,6 @@ module Jekyll
             content.gsub!(/<\/BR>/, "\n")
             content.gsub!(/<\/br >/, "\n")
             content.gsub!(/<\/BR >/, "\n")
-
-            content.gsub!(/&lt;/, "<")
-            content.gsub!(/&gt;/, ">")
 
             content.gsub!(/&nbsp;/, " ")
             content.gsub!(/<strong>/, "**");

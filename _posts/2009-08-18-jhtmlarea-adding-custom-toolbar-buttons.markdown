@@ -75,7 +75,8 @@ Here are some of the methods that you can call with a note as to what they do. Y
     action: function(btn) {
 
         // Paste some specific HTML / Text value into the Editor
-        this.pasteHTML("<p></p>");
+        this.pasteHTML("
+");
 
         // Get the currently selected HTML / Text within the Editor
         var s = this.getSelectedHTML();
