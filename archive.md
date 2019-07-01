@@ -5,6 +5,9 @@ permalink: /archive/
 ---
 
 <div class="container">
+  
+  <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="728x90"></div>
+  
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
