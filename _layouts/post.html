@@ -48,7 +48,7 @@ layout: default
           {% for post in site.related_posts limit:10 %}
             <li class="mb-3">
               <h6 class="mb-0"><a href="{{ post.url }}">{{ post.title }}</a></h6>
-              <span class="text-muted">{{ post.date | date_to_string }}</span>
+              <span class="small text-muted">{{ post.date | date_to_string }}</span>
             </li>
           {% endfor %}
         </ul>
