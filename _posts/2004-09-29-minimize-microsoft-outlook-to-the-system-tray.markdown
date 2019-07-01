@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2004/09/29/Minimize-Microsoft-Outlook-to-the-System-Tray", "/post/2004/09/29/minimize-microsoft-outlook-to-the-system-tray"]
+redirect_from: 
+  - /post/2004/09/29/Minimize-Microsoft-Outlook-to-the-System-Tray
+ -  /post/2004/09/29/minimize-microsoft-outlook-to-the-system-tray
 ---
 <!-- more -->
 <P>I don't know why they took this option out of the settings within Outlook, but the registry setting for this is still there.</P>

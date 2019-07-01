@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2004/08/06/Windows-System-Properties-Add-Custom-Manufacturer-Properties", "/post/2004/08/06/windows-system-properties-add-custom-manufacturer-properties"]
+redirect_from: 
+  - /post/2004/08/06/Windows-System-Properties-Add-Custom-Manufacturer-Properties
+ -  /post/2004/08/06/windows-system-properties-add-custom-manufacturer-properties
 ---
 <!-- more -->
 <p>

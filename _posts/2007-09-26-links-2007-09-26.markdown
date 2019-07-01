@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/09/26/Links-2007-09-26", "/post/2007/09/26/links-2007-09-26"]
+redirect_from: 
+  - /post/2007/09/26/Links-2007-09-26
+ -  /post/2007/09/26/links-2007-09-26
 ---
 <!-- more -->
 <P>Here's a ton of links to articles and stuff that I've come across. Included are some links that I marked as favorite within IE and just&nbsp;haven't seemed to go back to, 'till today. It's probably link overload, but hopefully you find some of it usefull.</P>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["WI-INETA"]
-alias: ["/post/2007/10/12/WI-INETA-Oct-07-Code-Generation2c-Software-Factories-and-Visual-Studio-Extensibility", "/post/2007/10/12/wi-ineta-oct-07-code-generation2c-software-factories-and-visual-studio-extensibility"]
+redirect_from: 
+  - /post/2007/10/12/WI-INETA-Oct-07-Code-Generation2c-Software-Factories-and-Visual-Studio-Extensibility
+ -  /post/2007/10/12/wi-ineta-oct-07-code-generation2c-software-factories-and-visual-studio-extensibility
 ---
 <!-- more -->
 <p>The <a href="http://wi-ineta.org/DesktopDefault.aspx?tabid=58">October 2007 meeting of the Wisconsin .NET Users Group</a> is falling on the third Tuesday this month. There has been some scheduling issues; mainly in regards to finding a meeting location. If you would like to host a meeting, please <a href="http://wi-ineta.org/DesktopDefault.aspx?tabid=60">contact the group</a>.</p>

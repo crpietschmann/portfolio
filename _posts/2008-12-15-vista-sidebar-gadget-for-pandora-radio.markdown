@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/12/15/Vista-Sidebar-Gadget-for-Pandora-Radio", "/post/2008/12/15/vista-sidebar-gadget-for-pandora-radio"]
+redirect_from: 
+  - /post/2008/12/15/Vista-Sidebar-Gadget-for-Pandora-Radio
+ -  /post/2008/12/15/vista-sidebar-gadget-for-pandora-radio
 ---
 <!-- more -->
 <p>

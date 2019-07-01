@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
-alias: ["/post/2006/04/03/ASPNET-20-Maintain-Scroll-Position-On-Postback", "/post/2006/04/03/aspnet-20-maintain-scroll-position-on-postback"]
+redirect_from: 
+  - /post/2006/04/03/ASPNET-20-Maintain-Scroll-Position-On-Postback
+ -  /post/2006/04/03/aspnet-20-maintain-scroll-position-on-postback
 ---
 <!-- more -->
 <p>The MaintainScrollPositionOnPostback page directive attribute allows pages to automatically maintain the current scroll position across postbacks. This feature is usefull for large pages where scrolling is necessary to view input controls down further on the page. This works in ASP.NET 2.0 and later.</p>

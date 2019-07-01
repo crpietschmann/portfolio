@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2005/04/22/My-introduction-to-computers-and-programming", "/post/2005/04/22/my-introduction-to-computers-and-programming"]
+redirect_from: 
+  - /post/2005/04/22/My-introduction-to-computers-and-programming
+ -  /post/2005/04/22/my-introduction-to-computers-and-programming
 ---
 <!-- more -->
 <p>My introduction to computers started when I was about 3 years old with an Apple IIe.&nbsp;We had a few games over the years: Ghost Busters, Alf, Spy Hunter, and a few others. If you ever think you can't trust a 3 year old with puting a DVD into the player, just think about a 3 year old being able to switch 5.25 inch floppy disks in an Apple IIe. We actually got the Apple IIe in like '84 or '85, it was used when we got it.</p>

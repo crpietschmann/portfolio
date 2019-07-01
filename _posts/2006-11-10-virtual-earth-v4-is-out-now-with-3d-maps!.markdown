@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
-alias: ["/post/2006/11/10/Virtual-Earth-v4-is-out-now-with-3D-maps!", "/post/2006/11/10/virtual-earth-v4-is-out-now-with-3d-maps!"]
+redirect_from: 
+  - /post/2006/11/10/Virtual-Earth-v4-is-out-now-with-3D-maps!
+ -  /post/2006/11/10/virtual-earth-v4-is-out-now-with-3d-maps!
 ---
 <!-- more -->
 <p>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/07/06/762007-Yahoo-is-down", "/post/2007/07/06/762007-yahoo-is-down"]
+redirect_from: 
+  - /post/2007/07/06/762007-Yahoo-is-down
+ -  /post/2007/07/06/762007-yahoo-is-down
 ---
 <!-- more -->
 <P>It appears that <A href="http://yahoo.com">Yahoo.com</A> is down. I've never seen one of the big guys completely down before. I'm assuming someone is getting fired. Just imagine all the searches that aren't being done right now. And just think, because of IE's default settings, since it can't find Yahoo.com, it's doing a search (using the default search provider) on probably MSN for the word "Yahoo". I wonder how many of these people that Yahoo is letting down are going to end up switching to MSN or Google?</P>

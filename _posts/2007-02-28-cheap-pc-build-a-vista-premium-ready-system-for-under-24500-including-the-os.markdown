@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/02/28/Cheap-PC-Build-a-Vista-Premium-Ready-system-for-under-24500-including-the-OS", "/post/2007/02/28/cheap-pc-build-a-vista-premium-ready-system-for-under-24500-including-the-os"]
+redirect_from: 
+  - /post/2007/02/28/Cheap-PC-Build-a-Vista-Premium-Ready-system-for-under-24500-including-the-OS
+ -  /post/2007/02/28/cheap-pc-build-a-vista-premium-ready-system-for-under-24500-including-the-os
 ---
 <!-- more -->
 <p>

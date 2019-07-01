@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2009/01/02/Single-Instance-WPF-Application-in-NET-3", "/post/2009/01/02/single-instance-wpf-application-in-net-3"]
+redirect_from: 
+  - /post/2009/01/02/Single-Instance-WPF-Application-in-NET-3
+ -  /post/2009/01/02/single-instance-wpf-application-in-net-3
 ---
 <!-- more -->
 <p>If you do a search on implementing a Single Instance application in WPF you'll get quite a few results. From what I've seen there are really only 2 solutions. One is really simplistic and the other offers more functionality; both of which are fairly simple to implement.</p>

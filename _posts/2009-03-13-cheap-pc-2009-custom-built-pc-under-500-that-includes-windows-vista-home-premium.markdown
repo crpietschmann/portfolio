@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2009/03/13/Cheap-PC-2009-Custom-Built-PC-under-500-that-includes-Windows-Vista-Home-Premium", "/post/2009/03/13/cheap-pc-2009-custom-built-pc-under-500-that-includes-windows-vista-home-premium"]
+redirect_from: 
+  - /post/2009/03/13/Cheap-PC-2009-Custom-Built-PC-under-500-that-includes-Windows-Vista-Home-Premium
+ -  /post/2009/03/13/cheap-pc-2009-custom-built-pc-under-500-that-includes-windows-vista-home-premium
 ---
 <!-- more -->
 <p>

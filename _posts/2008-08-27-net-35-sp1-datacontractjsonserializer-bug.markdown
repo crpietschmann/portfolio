@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
-alias: ["/post/2008/08/27/NET-35-SP1-DataContractJsonSerializer-Bug", "/post/2008/08/27/net-35-sp1-datacontractjsonserializer-bug"]
+redirect_from: 
+  - /post/2008/08/27/NET-35-SP1-DataContractJsonSerializer-Bug
+ -  /post/2008/08/27/net-35-sp1-datacontractjsonserializer-bug
 ---
 <!-- more -->
 <p><strong>Update 9/16/2008:</strong> After too long, I finally tried uninstalling SP1 and reinstalling it and that fixed the issue. I'm glad it's fixed now! I haven't seen any other suggestions for fixing this, and I first tried repairing the installation, but only an uninstall and reinstall fixed it. Hope this helps solves anyone elses headache with this issue.</p>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/08/04/Write-code2c-Win-FREE-MSDN-Subscription!", "/post/2008/08/04/write-code2c-win-free-msdn-subscription!"]
+redirect_from: 
+  - /post/2008/08/04/Write-code2c-Win-FREE-MSDN-Subscription!
+ -  /post/2008/08/04/write-code2c-win-free-msdn-subscription!
 ---
 <!-- more -->
 <p>

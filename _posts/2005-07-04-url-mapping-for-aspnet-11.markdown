@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
-alias: ["/post/2005/07/04/URL-Mapping-for-ASPNET-11", "/post/2005/07/04/url-mapping-for-aspnet-11"]
+redirect_from: 
+  - /post/2005/07/04/URL-Mapping-for-ASPNET-11
+ -  /post/2005/07/04/url-mapping-for-aspnet-11
 ---
 <!-- more -->
 <p>With the help of an http module, a custom config handler and a few lines of code we can add the same ASP.NET 2.0 style URL Mapping to our ASP.NET 1.1 apps.</p>

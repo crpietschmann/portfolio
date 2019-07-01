@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/02/19/Ive-been-slacking-lately", "/post/2007/02/19/ive-been-slacking-lately"]
+redirect_from: 
+  - /post/2007/02/19/Ive-been-slacking-lately
+ -  /post/2007/02/19/ive-been-slacking-lately
 ---
 <!-- more -->
 <P>Basically, I haven't been working on much in my spare time lately.</P>

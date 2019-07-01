@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/07/16/Could-WiFi-be-used-to-cook-food", "/post/2007/07/16/could-wifi-be-used-to-cook-food"]
+redirect_from: 
+  - /post/2007/07/16/Could-WiFi-be-used-to-cook-food
+ -  /post/2007/07/16/could-wifi-be-used-to-cook-food
 ---
 <!-- more -->
 <P>I know 802.11b and g both use 2.4Ghz frequency range, which is the same as a Microwave Oven. Now the question is, could you basically turn up the power on your router to the point that it would be able to cook food?</P>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["asp.net", "JavaScript"]
-alias: ["/post/2008/11/07/ASPNET-AJAX-Create-a-JavaScript-Component-with-Events", "/post/2008/11/07/aspnet-ajax-create-a-javascript-component-with-events"]
+redirect_from: 
+  - /post/2008/11/07/ASPNET-AJAX-Create-a-JavaScript-Component-with-Events
+ -  /post/2008/11/07/aspnet-ajax-create-a-javascript-component-with-events
 ---
 <!-- more -->
 <p>

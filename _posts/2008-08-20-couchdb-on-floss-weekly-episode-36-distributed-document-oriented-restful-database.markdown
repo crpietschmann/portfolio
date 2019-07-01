@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/08/20/CouchDB-on-FLOSS-Weekly-Episode-36-distributed-document-oriented-RESTful-database", "/post/2008/08/20/couchdb-on-floss-weekly-episode-36-distributed-document-oriented-restful-database"]
+redirect_from: 
+  - /post/2008/08/20/CouchDB-on-FLOSS-Weekly-Episode-36-distributed-document-oriented-RESTful-database
+ -  /post/2008/08/20/couchdb-on-floss-weekly-episode-36-distributed-document-oriented-restful-database
 ---
 <!-- more -->
 <p>

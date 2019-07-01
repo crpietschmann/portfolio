@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2004/10/28/CHRIS-CHRISTMAS-RODRIGUEZ", "/post/2004/10/28/chris-christmas-rodriguez"]
+redirect_from: 
+  - /post/2004/10/28/CHRIS-CHRISTMAS-RODRIGUEZ
+ -  /post/2004/10/28/chris-christmas-rodriguez
 ---
 <!-- more -->
 <P>These videos are hilarious!!</P>

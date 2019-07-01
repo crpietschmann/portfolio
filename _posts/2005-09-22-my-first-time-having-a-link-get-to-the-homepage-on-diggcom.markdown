@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2005/09/22/My-first-time-having-a-link-get-to-the-homepage-on-Diggcom", "/post/2005/09/22/my-first-time-having-a-link-get-to-the-homepage-on-diggcom"]
+redirect_from: 
+  - /post/2005/09/22/My-first-time-having-a-link-get-to-the-homepage-on-Diggcom
+ -  /post/2005/09/22/my-first-time-having-a-link-get-to-the-homepage-on-diggcom
 ---
 <!-- more -->
 <P>My first link post on <A href="http://digg.com/">Digg.com</A> to make it to the homepage and its at number 2! I know this isn't the greatest thing in the world but it's neat.</P>

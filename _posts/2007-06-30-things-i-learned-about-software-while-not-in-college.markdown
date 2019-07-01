@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/06/30/Things-I-learned-about-Software-WHILE-NOT-in-College", "/post/2007/06/30/things-i-learned-about-software-while-not-in-college"]
+redirect_from: 
+  - /post/2007/06/30/Things-I-learned-about-Software-WHILE-NOT-in-College
+ -  /post/2007/06/30/things-i-learned-about-software-while-not-in-college
 ---
 <!-- more -->
 <P>This is a reply to Scott Hanselman's post "<A href="http://www.hanselman.com/blog/ThreeThingsILearnedAboutSoftwareWHILENOTInCollege.aspx">Three Things I Learned About Software WHILE NOT in College</A>", except I'm not listing three things I learned IN College because it didn't happen (yet anyway).</P>

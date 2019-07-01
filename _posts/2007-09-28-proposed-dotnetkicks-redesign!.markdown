@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/09/28/Proposed-DotNetKicks-Redesign!", "/post/2007/09/28/proposed-dotnetkicks-redesign!"]
+redirect_from: 
+  - /post/2007/09/28/Proposed-DotNetKicks-Redesign!
+ -  /post/2007/09/28/proposed-dotnetkicks-redesign!
 ---
 <!-- more -->
 <P>The current skin of DotNetKicks just isn't quite there. It doesn't look as cool as it could. And I'm sure it's just because the time hasn't been spent to make it look good. So, I thought I'd put together a mockup design that is based off the current design, but with some improvements. I like it, but the test is if any of you like it too. Let me know what you think.</P>

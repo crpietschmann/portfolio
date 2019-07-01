@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
-alias: ["/post/2007/09/24/JavaScript-Add-Search-Engine-Keyword-Highlight-Support-to-your-site-with-ease", "/post/2007/09/24/javascript-add-search-engine-keyword-highlight-support-to-your-site-with-ease"]
+redirect_from: 
+  - /post/2007/09/24/JavaScript-Add-Search-Engine-Keyword-Highlight-Support-to-your-site-with-ease
+ -  /post/2007/09/24/javascript-add-search-engine-keyword-highlight-support-to-your-site-with-ease
 ---
 <!-- more -->
 <p>When looking at the source code for the <a href="http://dotnetblogengine.net">BlogEngine.NET</a> project, I noticed that they are implementing some <a href="http://fucoder.com/code/se-hilite/">javascript to highlight search engine keywords</a>. What happens is when a user searches (using Google, Yahoo, MSN, etc.) and then clicks through to your site, this javascript then highlights any words on the page that match the keywords they are search for. This isn't critical functionality to add to a site, but it sure helps in making your site much more user friendly by allowing them to more easily find what they are searching for.</p>

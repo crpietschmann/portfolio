@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2005/06/18/Is-Visual-Studio-2005-divine", "/post/2005/06/18/is-visual-studio-2005-divine"]
+redirect_from: 
+  - /post/2005/06/18/Is-Visual-Studio-2005-divine
+ -  /post/2005/06/18/is-visual-studio-2005-divine
 ---
 <!-- more -->
 <table border="0" cellspacing="0" cellpadding="0">

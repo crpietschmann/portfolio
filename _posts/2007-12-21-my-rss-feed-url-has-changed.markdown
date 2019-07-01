@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/12/21/My-RSS-Feed-URL-has-changed", "/post/2007/12/21/my-rss-feed-url-has-changed"]
+redirect_from: 
+  - /post/2007/12/21/My-RSS-Feed-URL-has-changed
+ -  /post/2007/12/21/my-rss-feed-url-has-changed
 ---
 <!-- more -->
 <P>My RSS feed url has changed to the following:</P>

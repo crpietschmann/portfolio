@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["WI-INETA"]
-alias: ["/post/2005/02/28/WI-INETA-Event-Deeper-in-NET-2005!", "/post/2005/02/28/wi-ineta-event-deeper-in-net-2005!"]
+redirect_from: 
+  - /post/2005/02/28/WI-INETA-Event-Deeper-in-NET-2005!
+ -  /post/2005/02/28/wi-ineta-event-deeper-in-net-2005!
 ---
 <!-- more -->
 <p>Its just 5 days until the awesome Deeper in <a title=".NET" href="http://www.microsoft.com/net/" target="_blank">.NET</a> 2005 event! I know this years event wont be anything less than last years. Go to the <a href="http://www.wi-ineta.org">http://www.wi-ineta.org</a> site for more information on this event.</p>

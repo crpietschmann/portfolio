@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2006/11/17/I-now-have-my-key-for-Vista-Ultimate", "/post/2006/11/17/i-now-have-my-key-for-vista-ultimate"]
+redirect_from: 
+  - /post/2006/11/17/I-now-have-my-key-for-Vista-Ultimate
+ -  /post/2006/11/17/i-now-have-my-key-for-vista-ultimate
 ---
 <!-- more -->
 <P>I just recieved my Vista Ultimate product key from MSDN after&nbsp;many failed attempts earlier today. I don't know if it'll work for everyone now, but at least I wont be one of the many hammering the system. Also, my download of both the x86 and x64 ISO's&nbsp;have finished.</P>

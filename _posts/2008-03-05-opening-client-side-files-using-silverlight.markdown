@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Silverlight"]
-alias: ["/post/2008/03/05/Opening-Client-Side-Files-using-Silverlight", "/post/2008/03/05/opening-client-side-files-using-silverlight"]
+redirect_from: 
+  - /post/2008/03/05/Opening-Client-Side-Files-using-Silverlight
+ -  /post/2008/03/05/opening-client-side-files-using-silverlight
 ---
 <!-- more -->
 <p>Silverlight does not have direct access to the local file system for security reasons. However, you can still prompt the user to select a specific file to open using the OpenFileDialog similarly to how you do in .NET. Here's some basic code that demonstrates opening&nbsp;a user specified file using Silverlight 2 Beta 1.</p>

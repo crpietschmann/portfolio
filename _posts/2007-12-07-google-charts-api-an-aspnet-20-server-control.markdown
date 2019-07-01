@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
-alias: ["/post/2007/12/07/Google-Charts-API-an-ASPNET-20-Server-Control", "/post/2007/12/07/google-charts-api-an-aspnet-20-server-control"]
+redirect_from: 
+  - /post/2007/12/07/Google-Charts-API-an-ASPNET-20-Server-Control
+ -  /post/2007/12/07/google-charts-api-an-aspnet-20-server-control
 ---
 <!-- more -->
 <p><img style="width: 210px; height: 331px;" src="http://pietschsoft.net/download/blog/1429/SimpleASPNETGoogleChartAPIControl.png" border="0" alt="" width="210" height="331" align="right" />Today, I just saw that <a href="http://code.google.com/apis/chart">Google released their Chart API</a>. Basically, the Google Chart API allows you to dynamically generate charts for use in your web applications. All you do is pass your data in the querystring and an image is returned. This isn't really a service to get too excited about, but it is pretty simple to use. And, it's Free.</p>

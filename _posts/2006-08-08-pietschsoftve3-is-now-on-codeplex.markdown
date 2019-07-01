@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
-alias: ["/post/2006/08/08/PietschSoftVE3-is-now-on-CodePlex", "/post/2006/08/08/pietschsoftve3-is-now-on-codeplex"]
+redirect_from: 
+  - /post/2006/08/08/PietschSoftVE3-is-now-on-CodePlex
+ -  /post/2006/08/08/pietschsoftve3-is-now-on-codeplex
 ---
 <!-- more -->
 <p>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/06/10/Software_Development_Meme_How_I_got_started_programming", "/post/2008/06/10/software_development_meme_how_i_got_started_programming"]
+redirect_from: 
+  - /post/2008/06/10/Software_Development_Meme_How_I_got_started_programming
+ -  /post/2008/06/10/software_development_meme_how_i_got_started_programming
 ---
 <!-- more -->
 <p>Ok, I'm it. I've been tagged by <a href="http://larryclarkin.com">Larry Clarkin</a> with the latest questionnaire floating around the blogs. This one is focused on how everyone got started into programming.</p>

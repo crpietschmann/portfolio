@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/02/28/Simple-JavaScript-Object-Reflection-API-(NET-Style)", "/post/2008/02/28/simple-javascript-object-reflection-api-(net-style)"]
+redirect_from: 
+  - /post/2008/02/28/Simple-JavaScript-Object-Reflection-API-(NET-Style)
+ -  /post/2008/02/28/simple-javascript-object-reflection-api-(net-style)
 ---
 <!-- more -->
 <p>

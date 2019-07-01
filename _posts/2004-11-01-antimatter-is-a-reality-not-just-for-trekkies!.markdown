@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2004/11/01/AntiMatter-is-a-reality-not-just-for-Trekkies!", "/post/2004/11/01/antimatter-is-a-reality-not-just-for-trekkies!"]
+redirect_from: 
+  - /post/2004/11/01/AntiMatter-is-a-reality-not-just-for-Trekkies!
+ -  /post/2004/11/01/antimatter-is-a-reality-not-just-for-trekkies!
 ---
 <!-- more -->
 <P>Antimatter a reality?? Hell, yeah. It can be used for super powerfull weapons, space travel, and more. Antimatter technology doesn't have the radioactive bi-products like nucleur technology does.</P>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/06/29/Community-Coding-Contest-Website-Launched!", "/post/2008/06/29/community-coding-contest-website-launched!"]
+redirect_from: 
+  - /post/2008/06/29/Community-Coding-Contest-Website-Launched!
+ -  /post/2008/06/29/community-coding-contest-website-launched!
 ---
 <!-- more -->
 <p>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2005/03/10/Stupid-Blog-is-broke-again", "/post/2005/03/10/stupid-blog-is-broke-again"]
+redirect_from: 
+  - /post/2005/03/10/Stupid-Blog-is-broke-again
+ -  /post/2005/03/10/stupid-blog-is-broke-again
 ---
 <!-- more -->
 <P>Darn it... I'm actually quite irritated that this thing worked for like 10 months with absolutely no problems.</P>

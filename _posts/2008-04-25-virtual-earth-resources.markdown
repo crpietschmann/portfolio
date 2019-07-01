@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
-alias: ["/post/2008/04/25/Virtual-Earth-Resources", "/post/2008/04/25/virtual-earth-resources"]
+redirect_from: 
+  - /post/2008/04/25/Virtual-Earth-Resources
+ -  /post/2008/04/25/virtual-earth-resources
 ---
 <!-- more -->
 <p>

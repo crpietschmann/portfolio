@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2004/07/11/Cool-Utility-to-get-CPUFan-Temperatures-of-you-DELL-LaptopNotebook", "/post/2004/07/11/cool-utility-to-get-cpufan-temperatures-of-you-dell-laptopnotebook"]
+redirect_from: 
+  - /post/2004/07/11/Cool-Utility-to-get-CPUFan-Temperatures-of-you-DELL-LaptopNotebook
+ -  /post/2004/07/11/cool-utility-to-get-cpufan-temperatures-of-you-dell-laptopnotebook
 ---
 <!-- more -->
 <p>

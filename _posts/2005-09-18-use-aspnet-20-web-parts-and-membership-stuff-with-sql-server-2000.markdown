@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
-alias: ["/post/2005/09/18/Use-ASPNET-20-Web-Parts-and-Membership-stuff-with-SQL-Server-2000", "/post/2005/09/18/use-aspnet-20-web-parts-and-membership-stuff-with-sql-server-2000"]
+redirect_from: 
+  - /post/2005/09/18/Use-ASPNET-20-Web-Parts-and-Membership-stuff-with-SQL-Server-2000
+ -  /post/2005/09/18/use-aspnet-20-web-parts-and-membership-stuff-with-sql-server-2000
 ---
 <!-- more -->
 <p>By default <a title="ASP.NET" href="http://asp.net" target="_blank">ASP.NET</a> 2.0 Web Parts&nbsp;uses SQL Express. To use&nbsp;this stuff&nbsp;with SQL Server 2000 you must configure the aspnetdb database on your SQL Server 2000 database server. Fortunately for us, <a title="Microsoft" href="http://Microsoft.com" target="_blank">Microsoft</a> has created a utility to automate the process.</p>

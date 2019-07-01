@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/10/24/Ultimate-Mac-vs-PC-Steve-Jobs-vs-Bill-Gates", "/post/2007/10/24/ultimate-mac-vs-pc-steve-jobs-vs-bill-gates"]
+redirect_from: 
+  - /post/2007/10/24/Ultimate-Mac-vs-PC-Steve-Jobs-vs-Bill-Gates
+ -  /post/2007/10/24/ultimate-mac-vs-pc-steve-jobs-vs-bill-gates
 ---
 <!-- more -->
 <P>This is just hilarious.</P>

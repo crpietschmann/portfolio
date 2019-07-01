@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2004/11/04/What-do-Linux-MacOS-and-Windows-all-have-in-Common", "/post/2004/11/04/what-do-linux-macos-and-windows-all-have-in-common"]
+redirect_from: 
+  - /post/2004/11/04/What-do-Linux-MacOS-and-Windows-all-have-in-Common
+ -  /post/2004/11/04/what-do-linux-macos-and-windows-all-have-in-common
 ---
 <!-- more -->
 <P>When you think about it, the three major Operating System's (Linux, MacOS and Windows) come down to one person/entity&nbsp;that controls them. No matter which Operating System you use, you are relying on a single person/entity to update/maintain your platform.</P>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2006/01/03/MSN-Spaces-Removes-Chinese-Bloggers-Blog", "/post/2006/01/03/msn-spaces-removes-chinese-bloggers-blog"]
+redirect_from: 
+  - /post/2006/01/03/MSN-Spaces-Removes-Chinese-Bloggers-Blog
+ -  /post/2006/01/03/msn-spaces-removes-chinese-bloggers-blog
 ---
 <!-- more -->
 <P>If this guy really doesn't want to be sensored then he needs to go pay a hosting provider to host his own website. Then he can blog about what ever he wants. I host my blog on my own website because I know I can trust myself to not victimize myself&nbsp;with political concerns.</P>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/12/11/Develop-Software-for-the-Microsoft-Windows-Platform-for-FREE", "/post/2008/12/11/develop-software-for-the-microsoft-windows-platform-for-free"]
+redirect_from: 
+  - /post/2008/12/11/Develop-Software-for-the-Microsoft-Windows-Platform-for-FREE
+ -  /post/2008/12/11/develop-software-for-the-microsoft-windows-platform-for-free
 ---
 <!-- more -->
 <p>I've been lucky enough to get 2 free MSDN subscriptions over the last few years, so I've never needed to purchase Visual Studio, Office or SQL Server. The first MSDN subscription I won in a blogging contest back in 2006, and the second I got when I won the Microsoft MVP award earlier this year (2008). Before you start to think that I'm braging; just let me point out that I am very greatful for this. Below is a list/guide that I would follow if I wasn't so fortunate, and I'm not talking about softare piracy (that really is stealing!).</p>

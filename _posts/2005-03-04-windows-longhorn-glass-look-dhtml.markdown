@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2005/03/04/Windows-Longhorn-Glass-Look-DHTML", "/post/2005/03/04/windows-longhorn-glass-look-dhtml"]
+redirect_from: 
+  - /post/2005/03/04/Windows-Longhorn-Glass-Look-DHTML
+ -  /post/2005/03/04/windows-longhorn-glass-look-dhtml
 ---
 <!-- more -->
 <p>

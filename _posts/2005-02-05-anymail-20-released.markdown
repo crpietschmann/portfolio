@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2005/02/05/AnyMail-20-Released", "/post/2005/02/05/anymail-20-released"]
+redirect_from: 
+  - /post/2005/02/05/AnyMail-20-Released
+ -  /post/2005/02/05/anymail-20-released
 ---
 <!-- more -->
 <P><IMG src="/products/images/anymail2.jpg" width=200 align=right border=0>AnyMail 2.0 was released today. AnyMail is an application that allows you to send &#8220;anonymous&#8221; email messages.</P>

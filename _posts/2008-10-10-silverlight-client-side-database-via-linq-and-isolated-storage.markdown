@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Silverlight"]
-alias: ["/post/2008/10/10/Silverlight-Client-Side-Database-via-LINQ-and-Isolated-Storage", "/post/2008/10/10/silverlight-client-side-database-via-linq-and-isolated-storage"]
+redirect_from: 
+  - /post/2008/10/10/Silverlight-Client-Side-Database-via-LINQ-and-Isolated-Storage
+ -  /post/2008/10/10/silverlight-client-side-database-via-linq-and-isolated-storage
 ---
 <!-- more -->
 <p>

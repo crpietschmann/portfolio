@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General", "WI-INETA"]
-alias: ["/post/2006/11/16/Wisonsin-NET-Users-Group-website-Some-enhancements-may-be-coming", "/post/2006/11/16/wisonsin-net-users-group-website-some-enhancements-may-be-coming"]
+redirect_from: 
+  - /post/2006/11/16/Wisonsin-NET-Users-Group-website-Some-enhancements-may-be-coming
+ -  /post/2006/11/16/wisonsin-net-users-group-website-some-enhancements-may-be-coming
 ---
 <!-- more -->
 <p>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2009/01/06/Top-Posts-of-2008-Plus-Overall-Traffic-Stats", "/post/2009/01/06/top-posts-of-2008-plus-overall-traffic-stats"]
+redirect_from: 
+  - /post/2009/01/06/Top-Posts-of-2008-Plus-Overall-Traffic-Stats
+ -  /post/2009/01/06/top-posts-of-2008-plus-overall-traffic-stats
 ---
 <!-- more -->
 <p>

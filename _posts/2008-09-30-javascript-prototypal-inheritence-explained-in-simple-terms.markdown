@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
-alias: ["/post/2008/09/30/JavaScript-Prototypal-Inheritence-Explained-in-Simple-Terms", "/post/2008/09/30/javascript-prototypal-inheritence-explained-in-simple-terms"]
+redirect_from: 
+  - /post/2008/09/30/JavaScript-Prototypal-Inheritence-Explained-in-Simple-Terms
+ -  /post/2008/09/30/javascript-prototypal-inheritence-explained-in-simple-terms
 ---
 <!-- more -->
 <p>

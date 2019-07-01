@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/10/02/Community-Coding-Contest-Voting-Has-Begun!-Go-Cast-Your-Vote!", "/post/2008/10/02/community-coding-contest-voting-has-begun!-go-cast-your-vote!"]
+redirect_from: 
+  - /post/2008/10/02/Community-Coding-Contest-Voting-Has-Begun!-Go-Cast-Your-Vote!
+ -  /post/2008/10/02/community-coding-contest-voting-has-begun!-go-cast-your-vote!
 ---
 <!-- more -->
 <div class="text">

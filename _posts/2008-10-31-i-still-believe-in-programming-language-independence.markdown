@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/10/31/I-Still-Believe-in-Programming-Language-Independence", "/post/2008/10/31/i-still-believe-in-programming-language-independence"]
+redirect_from: 
+  - /post/2008/10/31/I-Still-Believe-in-Programming-Language-Independence
+ -  /post/2008/10/31/i-still-believe-in-programming-language-independence
 ---
 <!-- more -->
 <p>

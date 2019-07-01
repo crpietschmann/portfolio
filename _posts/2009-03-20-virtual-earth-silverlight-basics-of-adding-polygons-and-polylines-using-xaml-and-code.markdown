@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
-alias: ["/post/2009/03/20/Virtual-Earth-Silverlight-Basics-of-Adding-Polygons-and-Polylines-using-XAML-and-Code", "/post/2009/03/20/virtual-earth-silverlight-basics-of-adding-polygons-and-polylines-using-xaml-and-code"]
+redirect_from: 
+  - /post/2009/03/20/Virtual-Earth-Silverlight-Basics-of-Adding-Polygons-and-Polylines-using-XAML-and-Code
+ -  /post/2009/03/20/virtual-earth-silverlight-basics-of-adding-polygons-and-polylines-using-xaml-and-code
 ---
 <!-- more -->
 <p>This was written for the Bing Maps Silverlight CTP Release.</p>

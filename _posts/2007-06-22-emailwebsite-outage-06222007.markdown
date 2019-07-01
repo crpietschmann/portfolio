@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/06/22/EmailWebsite-Outage-06222007", "/post/2007/06/22/emailwebsite-outage-06222007"]
+redirect_from: 
+  - /post/2007/06/22/EmailWebsite-Outage-06222007
+ -  /post/2007/06/22/emailwebsite-outage-06222007
 ---
 <!-- more -->
 <P><STRONG>Good News:</STRONG> The website, Pietschsoft.com, seems to be back up.</P>

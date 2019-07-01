@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/09/27/Top-posts-of-all-time-as-of-2007927", "/post/2007/09/27/top-posts-of-all-time-as-of-2007927"]
+redirect_from: 
+  - /post/2007/09/27/Top-posts-of-all-time-as-of-2007927
+ -  /post/2007/09/27/top-posts-of-all-time-as-of-2007927
 ---
 <!-- more -->
 <P>Here's a list of my top blog posts of all time. I really would rather the MSN WebMessenger and Homestarrunner ones weren't in the list, but sometimes you just strike a chord of what regular people (non-programmers)&nbsp;search for.</P>

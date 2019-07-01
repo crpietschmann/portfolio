@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/08/22/Self-Employed-and-time-for-contract-work", "/post/2007/08/22/self-employed-and-time-for-contract-work"]
+redirect_from: 
+  - /post/2007/08/22/Self-Employed-and-time-for-contract-work
+ -  /post/2007/08/22/self-employed-and-time-for-contract-work
 ---
 <!-- more -->
 <P>I have decided to go out on my own and work full time getting my own business off the ground. It's going to be an exciting ride and I know I have what it takes to make it work. I'll be working on a few project ideas that I have (<EM>If you want to find out more info about what I'm working on, you'll just have to watch this blog for more&nbsp;info as it's posted.</EM>)</P>

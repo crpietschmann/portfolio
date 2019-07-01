@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2005/06/12/SlapDevcom-abandoned-for-now", "/post/2005/06/12/slapdevcom-abandoned-for-now"]
+redirect_from: 
+  - /post/2005/06/12/SlapDevcom-abandoned-for-now
+ -  /post/2005/06/12/slapdevcom-abandoned-for-now
 ---
 <!-- more -->
 <P>I had some dissapointments with the hosting service I was using for <a title="SlapDev.com" href="http://SlapDev.com" target="_blank">SlapDev.com</a> and with the Community Server app that I was using for it. I'm not sure if my problems were all to do with the hosting service, all to do with Community Server, or somewhere in between.</P>

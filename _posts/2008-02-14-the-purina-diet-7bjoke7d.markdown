@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/02/14/The-Purina-Diet-7bJoke7d", "/post/2008/02/14/the-purina-diet-7bjoke7d"]
+redirect_from: 
+  - /post/2008/02/14/The-Purina-Diet-7bJoke7d
+ -  /post/2008/02/14/the-purina-diet-7bjoke7d
 ---
 <!-- more -->
 <p>

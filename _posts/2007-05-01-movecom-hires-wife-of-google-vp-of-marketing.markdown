@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/05/01/Movecom-hires-wife-of-Google-VP-of-Marketing", "/post/2007/05/01/movecom-hires-wife-of-google-vp-of-marketing"]
+redirect_from: 
+  - /post/2007/05/01/Movecom-hires-wife-of-Google-VP-of-Marketing
+ -  /post/2007/05/01/movecom-hires-wife-of-google-vp-of-marketing
 ---
 <!-- more -->
 <P>Move Inc. has just hired <A href="http://investor.move.com/phoenix.zhtml?c=111114&amp;p=irol-newsArticle&amp;ID=993908&amp;highlight=">Lorna Borenstein&nbsp;to be the new&nbsp;President of Move Inc</A>.</P>

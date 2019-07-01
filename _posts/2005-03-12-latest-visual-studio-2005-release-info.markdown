@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2005/03/12/Latest-Visual-Studio-2005-Release-Info", "/post/2005/03/12/latest-visual-studio-2005-release-info"]
+redirect_from: 
+  - /post/2005/03/12/Latest-Visual-Studio-2005-Release-Info
+ -  /post/2005/03/12/latest-visual-studio-2005-release-info
 ---
 <!-- more -->
 <P>Visual Studio 2005 Beta 2 is due out <STRIKE>March 31st</STRIKE> April&nbsp;with a &#8220;Go Live&#8221; license. The &#8220;Go Live&#8221; license means that <A title=Microsoft href="http://Microsoft.com" target=_blank>Microsoft</A> is saying that applications developed with Beta 2 will be able to go live with the final release of Visual Studio 2005 with only minor or no modifications to the source code.</P>

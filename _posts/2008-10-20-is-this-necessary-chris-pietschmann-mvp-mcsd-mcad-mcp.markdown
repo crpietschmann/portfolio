@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/10/20/Is-this-necessary-Chris-Pietschmann-MVP-MCSD-MCAD-MCP", "/post/2008/10/20/is-this-necessary-chris-pietschmann-mvp-mcsd-mcad-mcp"]
+redirect_from: 
+  - /post/2008/10/20/Is-this-necessary-Chris-Pietschmann-MVP-MCSD-MCAD-MCP
+ -  /post/2008/10/20/is-this-necessary-chris-pietschmann-mvp-mcsd-mcad-mcp
 ---
 <!-- more -->
 <p>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Silverlight"]
-alias: ["/post/2008/09/29/Silverlight-Isolated-Storage-File-Directory-Location", "/post/2008/09/29/silverlight-isolated-storage-file-directory-location"]
+redirect_from: 
+  - /post/2008/09/29/Silverlight-Isolated-Storage-File-Directory-Location
+ -  /post/2008/09/29/silverlight-isolated-storage-file-directory-location
 ---
 <!-- more -->
 <p>

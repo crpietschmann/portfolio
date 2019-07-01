@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2004/08/07/Web-Based-Alternative-to-SQL-Enterprise-Manager", "/post/2004/08/07/web-based-alternative-to-sql-enterprise-manager"]
+redirect_from: 
+  - /post/2004/08/07/Web-Based-Alternative-to-SQL-Enterprise-Manager
+ -  /post/2004/08/07/web-based-alternative-to-sql-enterprise-manager
 ---
 <!-- more -->
 <P>I introduce you to Web Data Administrator from Microsoft. It is an <a title="ASP.NET" href="http://asp.net" target="_blank">ASP.NET</a> application like SQL Enterprise Manager. It's pretty neet, you can put it up on a web server and access any SQL Server from Anywhere.</P>
