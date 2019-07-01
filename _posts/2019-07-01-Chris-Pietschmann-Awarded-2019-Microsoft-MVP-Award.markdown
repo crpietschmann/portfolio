@@ -16,4 +16,4 @@ My offline contributions include both user group and conference presenting. I wa
 
 If you'd like to read more about what the Microsoft MVP program is, and how someone gets awarded Microsoft MVP, then I recommend you check out my articl "[How to become a Microsoft MVP](https://buildazure.com/2018/02/20/how-to-become-a-microsoft-mvp/)".
 
-Thanks for the kuddos! And, I look forward to blogging, presenting, and sharing more throughout the next year!
+Thanks for the kudos! And, I look forward to blogging, presenting, and sharing more throughout the next year!
