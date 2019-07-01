@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Internet of Things", "Raspberry Pi"]
-alias: ["/post/2015/12/16/Exciting-Time-for-Makers-Were-in-a-Maker-Renaissance", "/post/2015/12/16/exciting-time-for-makers-were-in-a-maker-renaissance"]
+redirect_from: 
+  - /post/2015/12/16/Exciting-Time-for-Makers-Were-in-a-Maker-Renaissance
+ -  /post/2015/12/16/exciting-time-for-makers-were-in-a-maker-renaissance
 ---
 <!-- more -->
 <p>This is something I've thought about from time to time the last few years. It's also something that just keeps getting more and more exciting; amazing if you will! The "<a title="Maker culture" href="https://en.wikipedia.org/wiki/Maker_culture" target="_blank">Maker culture</a>" has been around for some time, but we're currently in a renaissance of sorts. It's really never been easier for DIY'ers / Makers to to take off-the-shelf components and make some amazing projects that just weren't affordable to do just 10 or 20 years ago.</p>

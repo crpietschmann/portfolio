@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "General"]
-alias: ["/post/2010/04/01/Awarded-2010-Microsoft-MVP-Windows-Live-Platform", "/post/2010/04/01/awarded-2010-microsoft-mvp-windows-live-platform"]
+redirect_from: 
+  - /post/2010/04/01/Awarded-2010-Microsoft-MVP-Windows-Live-Platform
+ -  /post/2010/04/01/awarded-2010-microsoft-mvp-windows-live-platform
 ---
 <!-- more -->
 <p><img style="float: right;" src="/images/postsMVP_Logo_Horizontal.png" alt="Microsoft Most Valuable Professional Award" /><em>"Congratulations! We are pleased to present you with the 2010 Microsoft&reg;  MVP Award!"</em></p>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Azure", "SQL"]
-alias: ["/post/2013/03/10/SQL-Azure-Calculate-Database-Usage-Percentage-of-Max-Size", "/post/2013/03/10/sql-azure-calculate-database-usage-percentage-of-max-size"]
+redirect_from: 
+  - /post/2013/03/10/SQL-Azure-Calculate-Database-Usage-Percentage-of-Max-Size
+ -  /post/2013/03/10/sql-azure-calculate-database-usage-percentage-of-max-size
 ---
 <!-- more -->
 <p>Some times it can be useful to programmatically monitor your SQL Azure database usage statistics. Luckily, there is some short SQL code that can be run on the database to check how much disk space is currently used and what the currently allotted max database size is. The following script does just that.</p>  <pre class="csharpcode"><span class="kwrd">DECLARE</span> @dbName nvarchar(255) = <span class="str">'{database_name}'</span>;

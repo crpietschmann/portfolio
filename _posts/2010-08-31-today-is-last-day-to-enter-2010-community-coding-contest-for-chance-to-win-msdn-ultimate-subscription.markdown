@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2010/08/31/Today-is-last-day-to-enter-2010-Community-Coding-Contest-for-Chance-to-win-MSDN-Ultimate-Subscription", "/post/2010/08/31/today-is-last-day-to-enter-2010-community-coding-contest-for-chance-to-win-msdn-ultimate-subscription"]
+redirect_from: 
+  - /post/2010/08/31/Today-is-last-day-to-enter-2010-Community-Coding-Contest-for-Chance-to-win-MSDN-Ultimate-Subscription
+ -  /post/2010/08/31/today-is-last-day-to-enter-2010-community-coding-contest-for-chance-to-win-msdn-ultimate-subscription
 ---
 <!-- more -->
 <p>Today is the last day to enter the 2010 Community Coding Contest for a chance to win an MSDN Ultimate Subscription plus a total of approximately $20,719 worth of prizes!!</p>

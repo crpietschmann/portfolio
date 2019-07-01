@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2016/04/09/Announcing-New-BuildHoloLenscom-Blog", "/post/2016/04/09/announcing-new-buildhololenscom-blog"]
+redirect_from: 
+  - /post/2016/04/09/Announcing-New-BuildHoloLenscom-Blog
+ -  /post/2016/04/09/announcing-new-buildhololenscom-blog
 ---
 <!-- more -->
 <p>&nbsp;<img src="/images/posts/2016/04/BuildHoloLensBanner.jpg" alt="" /></p>

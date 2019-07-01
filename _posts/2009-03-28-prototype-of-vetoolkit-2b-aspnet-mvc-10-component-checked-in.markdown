@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "JavaScript", "ASP.NET MVC"]
-alias: ["/post/2009/03/28/Prototype-of-VEToolkit-2b-ASPNET-MVC-10-Component-Checked-In", "/post/2009/03/28/prototype-of-vetoolkit-2b-aspnet-mvc-10-component-checked-in"]
+redirect_from: 
+  - /post/2009/03/28/Prototype-of-VEToolkit-2b-ASPNET-MVC-10-Component-Checked-In
+ -  /post/2009/03/28/prototype-of-vetoolkit-2b-aspnet-mvc-10-component-checked-in
 ---
 <!-- more -->
 <p>I just checked in an initial prototype of a reusable Virtual Earth component for ASP.NET MVC. The “VEToolkit.Web.MVC.Map” component is written as an Extension to the ASP.NET MVC AjaxHelper class, and allows for a simpler experience when implementing Virtual Earth mapping within ASP.NET MVC applications. This is an early prototype of what the component will be; it’s not a final release; but you are free to use it.</p>  <p><a href="http://vetoolkit.codeplex.com/SourceControl/ListDownloadableCommits.aspx" target="_blank">Download the latest Change Set of VEToolkit</a></p>  <p>The code is subject to change at any time, since this is currently in a prototype stage, but below is a basic overview of what’s there so far.</p>  <h3>Include a Basic Map on the Page</h3>  <p>Include the “VEToolkit.Web.MVC” namespace within the page by adding the following Include directive to the top of the Page:</p>  <pre class="csharpcode"><span class="asp">&lt;%@ Import Namespace=&quot;VEToolkit.Web.MVC&quot; %&gt;</span></pre>

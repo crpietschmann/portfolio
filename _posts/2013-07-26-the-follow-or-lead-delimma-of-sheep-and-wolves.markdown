@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
-alias: ["/post/2013/07/26/The-Follow-Or-Lead-Delimma-of-Sheep-and-Wolves", "/post/2013/07/26/the-follow-or-lead-delimma-of-sheep-and-wolves"]
+redirect_from: 
+  - /post/2013/07/26/The-Follow-Or-Lead-Delimma-of-Sheep-and-Wolves
+ -  /post/2013/07/26/the-follow-or-lead-delimma-of-sheep-and-wolves
 ---
 <!-- more -->
 <p>To follow or lead; that is the question.</p>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2009/04/01/Awarded-2009-Microsoft-MVP-ndash3b-Windows-Live-Platform", "/post/2009/04/01/awarded-2009-microsoft-mvp-ndash3b-windows-live-platform"]
+redirect_from: 
+  - /post/2009/04/01/Awarded-2009-Microsoft-MVP-ndash3b-Windows-Live-Platform
+ -  /post/2009/04/01/awarded-2009-microsoft-mvp-ndash3b-windows-live-platform
 ---
 <!-- more -->
 <p><em><strong>Congratulations 2009 Microsoft MVP!</strong></em></p>

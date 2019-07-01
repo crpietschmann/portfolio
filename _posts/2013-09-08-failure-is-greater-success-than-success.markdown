@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
-alias: ["/post/2013/09/08/Failure-Is-Greater-Success-Than-Success", "/post/2013/09/08/failure-is-greater-success-than-success"]
+redirect_from: 
+  - /post/2013/09/08/Failure-Is-Greater-Success-Than-Success
+ -  /post/2013/09/08/failure-is-greater-success-than-success
 ---
 <!-- more -->
 <p>Our society has a tendency to constantly focus on failure. Success is often short lived and generally only achieves "15 minutes of fame."</p>

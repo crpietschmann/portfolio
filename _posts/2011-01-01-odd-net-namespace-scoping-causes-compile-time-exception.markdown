@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["C#", "vb.net"]
-alias: ["/post/2011/01/01/Odd-NET-Namespace-Scoping-Causes-Compile-Time-Exception", "/post/2011/01/01/odd-net-namespace-scoping-causes-compile-time-exception"]
+redirect_from: 
+  - /post/2011/01/01/Odd-NET-Namespace-Scoping-Causes-Compile-Time-Exception
+ -  /post/2011/01/01/odd-net-namespace-scoping-causes-compile-time-exception
 ---
 <!-- more -->
 <p>This isn’t really a bug in the .NET compilers, but it sure is an interesting namespace scoping issue that could easily be encountered. If this teaches you anything, be it that you should never name a nested namespace level the same name as one of its parents in the hierarchy.</p>  <h3>In C#</h3>  <p>First here’s the Compile Time Exception that I was getting:</p>  <p><em>The type or namespace name ‘Data’ does not exist in namespace ‘MyApp.Data.MyApp’ (are you missing an assembly reference?)</em></p>  <p>At first I was like <em>“What do you mean namespace ‘Data’ doesn’t exist in ‘MyApp.Data’?”</em></p>  <p>Here’s the C# code that causes this exception:</p>  <pre class="csharpcode"><span class="kwrd">namespace</span> MyApp.Data

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General", "Inspiration"]
-alias: ["/post/2016/04/30/Advice-on-Starting-a-Business", "/post/2016/04/30/advice-on-starting-a-business"]
+redirect_from: 
+  - /post/2016/04/30/Advice-on-Starting-a-Business
+ -  /post/2016/04/30/advice-on-starting-a-business
 ---
 <!-- more -->
 <p>I have quite a bit of experience in both failing and succeeding in my career, from working as an employee to being an entrepreneur. If you follow my blog you may not know this as I haven't really blogged about it. In quick summary: Back in 2007 I quite my day job and went all in on a side project I was working on to build a product to sell with <a href="http://simplovation.com" target="_blank">Simplovation LLC</a>. The product didn't sell quite like I had planned, so I had to get consulting work. I was a freelance consultant for quite a few years overall. In 2009 the ball got rolling on another startup for me that was kicked off in 2010, Carto LLC. In 2012, business wasn't as I had hoped so I started doing contract work full time again. In 2014 I went the employee route to get more stability after 7.5 years of being independent. This was an extremely tough 7.5 years, very straining on my wife and kids, and very financially stressful.</p>

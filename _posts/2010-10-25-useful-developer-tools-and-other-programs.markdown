@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: []
-alias: ["/page/Useful-Developer-Tools-and-Other-Programs", "/page/useful-developer-tools-and-other-programs"]
+redirect_from: 
+  - /page/Useful-Developer-Tools-and-Other-Programs
+ -  /page/useful-developer-tools-and-other-programs
 ---
 <!-- more -->
 <p>This page contains a list of some of the applications I use for various tasks. This list is mainly comprised of developer tools and other free applications.</p>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
-alias: ["/post/2015/09/24/JavaScript-Basics-Is-Element-Hidden-or-Visible", "/post/2015/09/24/javascript-basics-is-element-hidden-or-visible"]
+redirect_from: 
+  - /post/2015/09/24/JavaScript-Basics-Is-Element-Hidden-or-Visible
+ -  /post/2015/09/24/javascript-basics-is-element-hidden-or-visible
 ---
 <!-- more -->
 <p>A very common code snippet that's used a lot in various applications is the ability to detect if a specific element in the page is hidden or visible. jQuery provides some very useful functionality that allows for this to be easily determined; as well as making it easy to toggle the visibility of HTML elements on the page.</p>

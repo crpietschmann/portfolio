@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
-alias: ["/post/2013/08/23/Urgency-is-not-Panic-unless-you-let-it-be", "/post/2013/08/23/urgency-is-not-panic-unless-you-let-it-be"]
+redirect_from: 
+  - /post/2013/08/23/Urgency-is-not-Panic-unless-you-let-it-be
+ -  /post/2013/08/23/urgency-is-not-panic-unless-you-let-it-be
 ---
 <!-- more -->
 <p>When you are caught up in the urgency of getting something done it is easy to be blinded by the FUD (Fear, Uncertainty and Doubt) that is causing you to rush and possibly make mistakes. After all, the deadline is fast approaching!</p>

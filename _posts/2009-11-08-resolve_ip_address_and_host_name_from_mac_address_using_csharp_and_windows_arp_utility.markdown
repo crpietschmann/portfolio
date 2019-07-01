@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["C#"]
-alias: ["/post/2009/11/08/Resolve_IP_Address_And_Host_Name_From_MAC_Address_using_CSharp_and_Windows_ARP_Utility", "/post/2009/11/08/resolve_ip_address_and_host_name_from_mac_address_using_csharp_and_windows_arp_utility"]
+redirect_from: 
+  - /post/2009/11/08/Resolve_IP_Address_And_Host_Name_From_MAC_Address_using_CSharp_and_Windows_ARP_Utility
+ -  /post/2009/11/08/resolve_ip_address_and_host_name_from_mac_address_using_csharp_and_windows_arp_utility
 ---
 <!-- more -->
 <p>While working on the <a href="http://virtualrouter.codeplex.com" target="_blank">Virtual Router project</a>, I&rsquo;ve come across a need to be able to retrieve the IP Address and Host Name of a given machine on the local network when only the machines MAC Address is known. This took a bit of research to figure out, and eventually I stumbled across the &ldquo;arp.exe&rdquo; utility within Windows.</p>

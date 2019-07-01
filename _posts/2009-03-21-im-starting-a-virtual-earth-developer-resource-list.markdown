@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
-alias: ["/post/2009/03/21/Im-starting-a-Virtual-Earth-Developer-Resource-list", "/post/2009/03/21/im-starting-a-virtual-earth-developer-resource-list"]
+redirect_from: 
+  - /post/2009/03/21/Im-starting-a-Virtual-Earth-Developer-Resource-list
+ -  /post/2009/03/21/im-starting-a-virtual-earth-developer-resource-list
 ---
 <!-- more -->
 <p>
