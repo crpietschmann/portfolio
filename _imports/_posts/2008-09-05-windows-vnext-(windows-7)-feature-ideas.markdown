@@ -54,7 +54,7 @@ The functionality in MS Paint hasn't changed since Windows 95! There's a Free ap
 
  
 
-<em>UPDATED: 9-15-2008 - I added another feature idea to the list....</em>
+*UPDATED: 9-15-2008 - I added another feature idea to the list....*
 
  
 <h3>**11) Be able to ReOrder Windows in the Taskbar by drag-and-drop**</h3>

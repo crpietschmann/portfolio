@@ -14,11 +14,11 @@ redirect_from:
 ---
 <!-- more -->
 
-It's been two years since I started learning <A title=.NET href="http://www.microsoft.com/net/" target=_blank>.NET</A> and recieved my MCAD, and I now have a total of <STRONG>18</STRONG> books on <A title=.NET href="http://www.microsoft.com/net/" target=_blank>.NET</A> related development topics. I never counted them until today; I just kept buying/winning one every 4 to 6 weeks. Most of them are from Microsoft Press.
+It's been two years since I started learning <A title=.NET href="http://www.microsoft.com/net/" target=_blank>.NET</A> and recieved my MCAD, and I now have a total of **18** books on <A title=.NET href="http://www.microsoft.com/net/" target=_blank>.NET</A> related development topics. I never counted them until today; I just kept buying/winning one every 4 to 6 weeks. Most of them are from Microsoft Press.
 
 Here's the last 4 I've gotten (in the last couple weeks by the way):
 <OL>
-<LI><A title=.NET href="http://www.microsoft.com/net/" target=_blank>.NET</A> Remoting (ISBN: 0-7356-1778-3) - <EM>I won this one at the last WI-INETA meeting</EM>
+<LI><A title=.NET href="http://www.microsoft.com/net/" target=_blank>.NET</A> Remoting (ISBN: 0-7356-1778-3) - *I won this one at the last WI-INETA meeting*
 <LI>Introducing Visual Basic 2005 For Developers (ISBN: 0-7356-2058-X) 
 <LI>Introducing <A title=ASP.NET href="http://asp.net" target=_blank>ASP.NET</A> 2.0 (ISBN: 0-7356-2024-5) 
 <LI>Introducing SQL Server 2005 For Developers (ISBN: 0-7356-1962-X)</LI></OL>

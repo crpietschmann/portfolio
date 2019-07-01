@@ -23,11 +23,11 @@ Even though there are 5 possible causes/solutions listed, only one of them was t
 
 Quoted from the above post:
 
-<em>If your machine is a 64-bit box, you might have been got trapped into default target platform 'Any CPU' trap, please set the target platform as 'x86'.  Need more details, please visit ErikEJ's <a href="http://erikej.blogspot.com/2008/01/x64-and-sql-compact.html" target="_blank">blog post</a>. </em>
+*If your machine is a 64-bit box, you might have been got trapped into default target platform 'Any CPU' trap, please set the target platform as 'x86'.  Need more details, please visit ErikEJ's <a href="http://erikej.blogspot.com/2008/01/x64-and-sql-compact.html" target="_blank">blog post</a>. *
 
 To fix it all you need to do is open up the Build Configuration Manager within Visual Studio and change the Active Solution Platform for your application from "Any CPU" to "x86". Then rebuild and it'll work just fine.
 
-The reason for this issue according to ErikEJ's post is <em>"SQL Compact is only supported in 32 bit WoW (Windows on Windows) mode on the x64 platform."</em> From my understanding of how things work, when you compile for "Any CPU" your application will be run under the 64-bit .NET Framework on x64 Windows, and since SQL Compact is only 32-bit then Windows is unable to fire it up within the same process. This is because a single process in Windows can be either 32-bit or 64-bit and cannot run both 32-bit and 64-bit code within the same process. This is why it runs without throwing the exception once you change your app to target "x86" (32-bit).
+The reason for this issue according to ErikEJ's post is *"SQL Compact is only supported in 32 bit WoW (Windows on Windows) mode on the x64 platform."* From my understanding of how things work, when you compile for "Any CPU" your application will be run under the 64-bit .NET Framework on x64 Windows, and since SQL Compact is only 32-bit then Windows is unable to fire it up within the same process. This is because a single process in Windows can be either 32-bit or 64-bit and cannot run both 32-bit and 64-bit code within the same process. This is why it runs without throwing the exception once you change your app to target "x86" (32-bit).
 <h3>What about 64-bit (x64) support?</h3>
 
 Since the above SQL Server Compact Team Blog post was written, they have released a <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=DC614AEE-7E1C-4881-9C32-3A6CE53384D9&amp;displaylang=en">x64 version of SQL Server Compact 3.5</a>. So x64 IS supported.

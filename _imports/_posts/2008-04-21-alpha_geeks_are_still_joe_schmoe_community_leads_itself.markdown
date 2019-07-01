@@ -46,11 +46,11 @@ You must realize that the Alpha Geeks are still Joe Schmoe (just like you or I)!
 <h3>Who&#39;s Really Leading The Community?</h3>
 
 
-Now that we&#39;ve realized that Alpha Geeks aren&#39;t really Alpha at all... <em>Who&#39;s really leading the community?</em> 
+Now that we&#39;ve realized that Alpha Geeks aren&#39;t really Alpha at all... *Who&#39;s really leading the community?* 
 
 
 
-The answer to this is simple..<em> **The Community is!**</em> 
+The answer to this is simple..* **The Community is!*** 
 
 
 

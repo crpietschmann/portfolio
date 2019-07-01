@@ -25,7 +25,7 @@ This page lists a bunch of different geographic / geo-spatial data sources that 
 <a href="http://www.census.gov/geo/www/cob/bdy_files.html">http://www.census.gov/geo/www/cob/bdy_files.html</a> - State, County, ZipCode, School District, etc. in USA
 <h3>Points of Interest</h3>
 
-<a href="http://geonames.usgs.gov/domestic/download_data.htm">http://geonames.usgs.gov/domestic/download_data.htm</a> - Domestic Name - State and Topical Gazetteer Download Files &lt;-- Points of Interest all over USA
+<a href="http://geonames.usgs.gov/domestic/download_data.htm">http://geonames.usgs.gov/domestic/download_data.htm</a> - Domestic Name - State and Topical Gazetteer Download Files <-- Points of Interest all over USA
 
 <a href="http://www2.ed.gov/parents/schools/find/edpicks.jhtml">http://www2.ed.gov/parents/schools/find/edpicks.jhtml</a> - ED.GOV - Find Schools
 

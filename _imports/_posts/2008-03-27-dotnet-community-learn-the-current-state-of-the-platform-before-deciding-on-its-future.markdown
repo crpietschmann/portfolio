@@ -48,7 +48,7 @@ Dan identifies that there is a problem, and Jeff hits the problem on the head:
 
 
 
-<em>The .NET development community is under educated.</em> 
+*The .NET development community is under educated.* 
 
 
 

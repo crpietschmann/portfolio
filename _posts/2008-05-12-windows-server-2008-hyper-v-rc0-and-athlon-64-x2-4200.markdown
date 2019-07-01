@@ -27,19 +27,19 @@ The error dialog box has a &quot;See details&quot; linke, upon clicking this lin
 
 
 
-<em>The virtual machine could not be started because the hypervisor is not running. The following actions may help you resolve the problem:</em> 
+*The virtual machine could not be started because the hypervisor is not running. The following actions may help you resolve the problem:* 
 
 
 
-<em>1) Verify that the processor of the physical computer has a supported version of hardware-assisted virtualization.</em> 
+*1) Verify that the processor of the physical computer has a supported version of hardware-assisted virtualization.* 
 
 
 
-<em>2) Verify that hardware-assisted virtualization and hardware-assisted data execution protection are enabled in the BIOS of the physical computer. (If you edit the BIOS to enable either setting, you must turn off the power to the physical computer and then turn it back on. Resetting the physical computer is not sufficient.)</em> 
+*2) Verify that hardware-assisted virtualization and hardware-assisted data execution protection are enabled in the BIOS of the physical computer. (If you edit the BIOS to enable either setting, you must turn off the power to the physical computer and then turn it back on. Resetting the physical computer is not sufficient.)* 
 
 
 
-<em>3) If you have made changes to the Boot Configuration Data store, review these changes to ensure that the hypervisor is configured to launch automatically.</em> 
+*3) If you have made changes to the Boot Configuration Data store, review these changes to ensure that the hypervisor is configured to launch automatically.* 
 
 
 

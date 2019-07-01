@@ -15,7 +15,7 @@ redirect_from:
 <!-- more -->
 
 
-I recently purchased <a href="http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742?&amp;camp=212361&amp;linkCode=wey&amp;tag=pietschsoft-20&amp;creative=380729">&quot;JavaScript: The Good Parts&quot; by Douglas Crockford</a>, and I found this little gem on page 21, although he listed in in the section <em>Objects - Retrieval</em>.
+I recently purchased <a href="http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742?&amp;camp=212361&amp;linkCode=wey&amp;tag=pietschsoft-20&amp;creative=380729">&quot;JavaScript: The Good Parts&quot; by Douglas Crockford</a>, and I found this little gem on page 21, although he listed in in the section *Objects - Retrieval*.
 
 
 
@@ -37,7 +37,7 @@ var status = flight.status || &quot;unknown&quot;;
 
 
 
-Since JavaScript returns a boolean value of <em>true</em> when your looking at a variable that is not set to<em> null</em> or <em>undefined</em>, you can use the || (or) operator to do null coalescing. Basically, as long as the first value is not <em>null</em> or <em>undefined</em> it&#39;s returned, otherwise the second value is returned. This really simplifies the process of getting object property values when you need to use a default value if it&#39;s not set yet, and keeps you from needing to use an if statement.
+Since JavaScript returns a boolean value of *true* when your looking at a variable that is not set to* null* or *undefined*, you can use the || (or) operator to do null coalescing. Basically, as long as the first value is not *null* or *undefined* it&#39;s returned, otherwise the second value is returned. This really simplifies the process of getting object property values when you need to use a default value if it&#39;s not set yet, and keeps you from needing to use an if statement.
 
 
 
@@ -58,7 +58,7 @@ var status = (flight.status != null ? flight.status : &quot;unknown&quot;);
 
 
 
-This new trick makes the code much easier to read, and checks for <em>undefined </em>also so I no longer need to worry about the value being equal to <em>undefined</em> in some rare circumstance.
+This new trick makes the code much easier to read, and checks for *undefined *also so I no longer need to worry about the value being equal to *undefined* in some rare circumstance.
 
 
 

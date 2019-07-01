@@ -78,7 +78,7 @@ string json = Encoding.Default.GetString(ms.ToArray());</pre>
 
 Our resulting JSON looks like this:
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">/// Result of Person class marked as Serializable
-{"&lt;FirstName&gt;k__BackingField":"Chris","&lt;LastName&gt;k__BackingField":"Pietschmann"}
+{"<FirstName>k__BackingField":"Chris","<LastName>k__BackingField":"Pietschmann"}
 
 /// Result of Person class marked as DataContract with
 /// each Property marked as DataMember
@@ -114,7 +114,7 @@ using System.Runtime.Serialization.Json;
 
 public class JSONHelper
 {
-    public static string Serialize&lt;T&gt;(T obj)
+    public static string Serialize<T>(T obj)
     {
         System.Runtime.Serialization.Json.DataContractJsonSerializer serializer = new System.Runtime.Serialization.Json.DataContractJsonSerializer(obj.GetType());
         MemoryStream ms = new MemoryStream();
@@ -124,9 +124,9 @@ public class JSONHelper
         return retVal;
     }
 
-    public static T Deserialize&lt;T&gt;(string json)
+    public static T Deserialize<T>(string json)
     {
-        T obj = Activator.CreateInstance&lt;T&gt;();
+        T obj = Activator.CreateInstance<T>();
         MemoryStream ms = new MemoryStream(Encoding.Unicode.GetBytes(json));
         System.Runtime.Serialization.Json.DataContractJsonSerializer serializer = new System.Runtime.Serialization.Json.DataContractJsonSerializer(obj.GetType());
         obj = (T)serializer.ReadObject(ms);
@@ -161,10 +161,10 @@ public class Person
 Person myPerson = new Person("Chris", "Pietschmann");
 
 // Serialize
-string json = JSONHelper.Serialize&lt;Person&gt;(myPerson);
+string json = JSONHelper.Serialize<Person>(myPerson);
 
 // Deserialize
-myPerson = JSONHelper.Deserialize&lt;Person&gt;(json);</pre>
+myPerson = JSONHelper.Deserialize<Person>(json);</pre>
 
 **What Assembly References does my application need for this?**
 

@@ -18,7 +18,7 @@ Here's some simple code for easily adding Subsite functionality to an ASP.NET we
 
 Urls are rewritten in the following fashion:
 
-~/jdoe/default.aspx  =&gt; ~/default.aspx?site=jdoe<br /> ~/jdoe/subfolder/default.aspx =&gt; ~/subfolder/default.aspx?site=jdoe
+~/jdoe/default.aspx  => ~/default.aspx?site=jdoe<br /> ~/jdoe/subfolder/default.aspx => ~/subfolder/default.aspx?site=jdoe
 
 And this is all done by the 65 line HttpModule below:
 
@@ -26,7 +26,7 @@ And this is all done by the 65 line HttpModule below:
 
 using System;<br /> using System.Web;
 
-/// &lt;summary&gt;<br /> /// Summary description for SubsiteRewriteModule<br /> /// &lt;/summary&gt;<br /> public class SubsiteRewriteModule : IHttpModule<br /> {<br />     #region IHttpModule Members
+/// <summary><br /> /// Summary description for SubsiteRewriteModule<br /> /// </summary><br /> public class SubsiteRewriteModule : IHttpModule<br /> {<br />     #region IHttpModule Members
 
     void IHttpModule.Dispose() { }
 

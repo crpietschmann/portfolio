@@ -27,9 +27,9 @@ There is currently a bug in the Virtual Earth v3 API. When you create a map on t
 
 
 
-<em>Line: 2<br />
+*Line: 2<br />
 Char: 159480<br />
-Error: &#39;footer&#39; is undefined</em>
+Error: &#39;footer&#39; is undefined*
 
 
 

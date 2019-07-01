@@ -14,6 +14,6 @@ redirect_from:
 ---
 <!-- more -->
 
-I don't know if this is legit for sure, but it is pretty funny. <STRONG>Microsoft Windows for only $99, that's right $99!!!!!</STRONG>
+I don't know if this is legit for sure, but it is pretty funny. **Microsoft Windows for only $99, that's right $99!!!!!**
 
 <A href="http://www.energyradio.fm/content/ballmer.asx">http://www.energyradio.fm/content/ballmer.asx</A>

@@ -22,4 +22,4 @@ redirect_from:
 
  
 
-<em>P.S. I first posted this saying "2016". Oh boy, it's so easy to type/write the old yer at the beginning of a new year. Happy new year!!</em>
+*P.S. I first posted this saying "2016". Oh boy, it's so easy to type/write the old yer at the beginning of a new year. Happy new year!!*

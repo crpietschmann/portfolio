@@ -35,7 +35,7 @@ This page contains a list of some of the applications I use for various tasks. T
 
 **Visual Studio Plugins**
 
-<a title="Productivity Power Tools for Visual Studio 2010" href="http://visualstudiogallery.msdn.microsoft.com/en-us/d0d33361-18e2-46c0-8ff2-4adea1e34fef">Productivity Power Tools for Visual Studio 2010</a> - <em>(This is a must have tool for all devs, and alot of these features should be baked into VS'2010)</em> - A set of extensions to Visual Studio Professional (and above) which improves developer productivity. In this third major release of the Power Tools we have made significant improvements to the Solution Navigator and the Tab Well to address our top customer requests.
+<a title="Productivity Power Tools for Visual Studio 2010" href="http://visualstudiogallery.msdn.microsoft.com/en-us/d0d33361-18e2-46c0-8ff2-4adea1e34fef">Productivity Power Tools for Visual Studio 2010</a> - *(This is a must have tool for all devs, and alot of these features should be baked into VS'2010)* - A set of extensions to Visual Studio Professional (and above) which improves developer productivity. In this third major release of the Power Tools we have made significant improvements to the Solution Navigator and the Tab Well to address our top customer requests.
 
 <a href="http://visualstudiogallery.msdn.microsoft.com/fc504cc6-5808-4da8-ae86-8d3f9ed81606">Reference Assistant for Visual Studio 2010</a> - Helps remove unused assembly references from C#, VB.NET or VC++/CLI projects.
 
@@ -55,6 +55,6 @@ This page contains a list of some of the applications I use for various tasks. T
 <a href="http://handbrake.fr/">Handbrake</a> - an open source, multiplatform, mutlithreaded video transcoder.
 <h2>Web Browsers</h2>
 
-<a href="http://getfirefox.com">Firefox</a> - The <em>Firefox</em> Web Browser is the faster, more secure, and fully customizable way to surf the web.
+<a href="http://getfirefox.com">Firefox</a> - The *Firefox* Web Browser is the faster, more secure, and fully customizable way to surf the web.
 
 <a href="http://www.google.com/chrome/">Chrome</a> - Web browser from Google, based on WebKit.

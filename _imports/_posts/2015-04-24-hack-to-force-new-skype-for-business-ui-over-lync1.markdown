@@ -30,7 +30,7 @@ Follow these simple steps to enable the new Skype UI:
 <li>When prompted to restart, click "Restart Later"</li>
 </ol>
 
-<em>Note: Modify the Windows Registry at your own risk. If you modify the wrong setting it could have bad, unintended consequences. It is always a good idea to backup the registry before modifying it.</em>
+*Note: Modify the Windows Registry at your own risk. If you modify the wrong setting it could have bad, unintended consequences. It is always a good idea to backup the registry before modifying it.*
 <h3>Registry Key to Change</h3>
 
 To force the Skype for Business UI you need to update the following registry key to be a value that equivalent to "True."

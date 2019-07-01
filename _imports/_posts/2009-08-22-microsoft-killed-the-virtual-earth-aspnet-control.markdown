@@ -27,4 +27,4 @@ If you were previously a fan of Microsoft&rsquo;s control, then I recommend you 
 
 Go check it out: <a href="http://simplovation.com">http://simplovation.com</a>
 
-<em>Update 8/23/2009: John has created the </em><a href="http://codeplex.com" target="_blank"><em>CodePlex</em></a><em> project to contain the source code for Microsoft&rsquo;s control. </em><a title="http://bingmapsasp.codeplex.com/" href="http://bingmapsasp.codeplex.com/"><em>http://bingmapsasp.codeplex.com/</em></a>
+*Update 8/23/2009: John has created the *<a href="http://codeplex.com" target="_blank">*CodePlex*</a>* project to contain the source code for Microsoft&rsquo;s control. *<a title="http://bingmapsasp.codeplex.com/" href="http://bingmapsasp.codeplex.com/">*http://bingmapsasp.codeplex.com/*</a>

@@ -40,28 +40,28 @@ Color the background of items in a Dropdown box in your HTML pages. It's very ea
 <option style="background-color: burlywood;" value="#DEB887">BurlyWood</option>
 <option style="background-color: beige;" value="#F5F5DC">Beige</option>
 </select>
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;select&gt;
-&lt;option value=""&gt;Highlight&lt;/option&gt;
-&lt;option value="#000000" style="background-color: Black;color: #FFFFFF;"&gt;Black&lt;/option&gt;
-&lt;option value="#808080" style="background-color: Gray;"&gt;Gray&lt;/option&gt;
-&lt;option value="#A9A9A9" style="background-color: DarkGray;"&gt;DarkGray&lt;/option&gt;
-&lt;option value="#D3D3D3" style="background-color: LightGrey;"&gt;LightGray&lt;/option&gt;
-&lt;option value="#FFFFFF" style="background-color: White;"&gt;White&lt;/option&gt;
-&lt;option value="#7FFFD4" style="background-color: Aquamarine;"&gt;Aquamarine&lt;/option&gt;
-&lt;option value="#0000FF" style="background-color: Blue;"&gt;Blue&lt;/option&gt;
-&lt;option value="#000080" style="background-color: Navy;color: #FFFFFF;"&gt;Navy&lt;/option&gt;
-&lt;option value="#800080" style="background-color: Purple;color: #FFFFFF;"&gt;Purple&lt;/option&gt;
-&lt;option value="#FF1493" style="background-color: DeepPink;"&gt;DeepPink&lt;/option&gt;
-&lt;option value="#EE82EE" style="background-color: Violet;"&gt;Violet&lt;/option&gt;
-&lt;option value="#FFC0CB" style="background-color: Pink;"&gt;Pink&lt;/option&gt;
-&lt;option value="#006400" style="background-color: DarkGreen;color: #FFFFFF;"&gt;DarkGreen&lt;/option&gt;
-&lt;option value="#008000" style="background-color: Green;color: #FFFFFF;"&gt;Green&lt;/option&gt;
-&lt;option value="#9ACD32" style="background-color: YellowGreen;"&gt;YellowGreen&lt;/option&gt;
-&lt;option value="#FFFF00" style="background-color: Yellow;"&gt;Yellow&lt;/option&gt;
-&lt;option value="#FFA500" style="background-color: Orange;"&gt;Orange&lt;/option&gt;
-&lt;option value="#FF0000" style="background-color: Red;"&gt;Red&lt;/option&gt;
-&lt;option value="#A52A2A" style="background-color: Brown;"&gt;Brown&lt;/option&gt;
-&lt;option value="#DEB887" style="background-color: BurlyWood;"&gt;BurlyWood&lt;/option&gt;
-&lt;option value="#F5F5DC" style="background-color: Beige;"&gt;Beige&lt;/option&gt;
-&lt;/select&gt;</pre>
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><select>
+<option value="">Highlight</option>
+<option value="#000000" style="background-color: Black;color: #FFFFFF;">Black</option>
+<option value="#808080" style="background-color: Gray;">Gray</option>
+<option value="#A9A9A9" style="background-color: DarkGray;">DarkGray</option>
+<option value="#D3D3D3" style="background-color: LightGrey;">LightGray</option>
+<option value="#FFFFFF" style="background-color: White;">White</option>
+<option value="#7FFFD4" style="background-color: Aquamarine;">Aquamarine</option>
+<option value="#0000FF" style="background-color: Blue;">Blue</option>
+<option value="#000080" style="background-color: Navy;color: #FFFFFF;">Navy</option>
+<option value="#800080" style="background-color: Purple;color: #FFFFFF;">Purple</option>
+<option value="#FF1493" style="background-color: DeepPink;">DeepPink</option>
+<option value="#EE82EE" style="background-color: Violet;">Violet</option>
+<option value="#FFC0CB" style="background-color: Pink;">Pink</option>
+<option value="#006400" style="background-color: DarkGreen;color: #FFFFFF;">DarkGreen</option>
+<option value="#008000" style="background-color: Green;color: #FFFFFF;">Green</option>
+<option value="#9ACD32" style="background-color: YellowGreen;">YellowGreen</option>
+<option value="#FFFF00" style="background-color: Yellow;">Yellow</option>
+<option value="#FFA500" style="background-color: Orange;">Orange</option>
+<option value="#FF0000" style="background-color: Red;">Red</option>
+<option value="#A52A2A" style="background-color: Brown;">Brown</option>
+<option value="#DEB887" style="background-color: BurlyWood;">BurlyWood</option>
+<option value="#F5F5DC" style="background-color: Beige;">Beige</option>
+</select></pre>
 <pre class="csharpcode"><span class="kwrd"> </span></pre>

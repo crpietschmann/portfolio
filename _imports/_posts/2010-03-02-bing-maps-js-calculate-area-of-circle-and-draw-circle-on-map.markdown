@@ -18,7 +18,7 @@ Something that can be usefull at times in being able to calculate the total Area
 
 Remember, back in Trig class, it's fairly simple to calculate the area of a circle. You just Multiply Pi by the Radius Squared.
 
-<em>Area = Pi * (radius * radius)</em>
+*Area = Pi * (radius * radius)*
 
 Anyway, I know this isn't a very advanced math problem. If fact it's much simpler than calculating out the point that make up the circle in the first place. However, I thought I'd post it since it may be usefull to someone that maybe doesn't quite remember this little trick from Trig class.
 

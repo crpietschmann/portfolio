@@ -104,7 +104,7 @@ Here&rsquo;s the full code to the VirtualEarthWKT object that contains the stati
     };
     <span class="rem">// Declare the "public" methods that will be exposed</span>
     <span class="kwrd">var</span> that = {
-        <span class="rem">///&lt;summary&gt;Converts a VEShape object to WKT (Well-Known-Text) string representation.&lt;/summary&gt;</span>
+        <span class="rem">///<summary>Converts a VEShape object to WKT (Well-Known-Text) string representation.</summary></span>
         ShapeToWKT: <span class="kwrd">function</span>(shape) {
             <span class="kwrd">if</span> (shape == <span class="kwrd">null</span>) {
                 <span class="kwrd">throw</span> <span class="str">"VirtualEarthWKT.ShapeToWKT: 'shape' parameter can not be null."</span>;
@@ -130,8 +130,8 @@ Here&rsquo;s the full code to the VirtualEarthWKT object that contains the stati
 
             <span class="rem">// Get the List of VELatLong objects represented as WKT compatible list of points</span>
             <span class="kwrd">var</span> shapePoints = shape.GetPoints();
-            <span class="kwrd">for</span> (<span class="kwrd">var</span> i = 0; i &lt; shapePoints.length; i++) {
-                <span class="kwrd">if</span> (wktGeomPoints.length &gt; 0) {
+            <span class="kwrd">for</span> (<span class="kwrd">var</span> i = 0; i < shapePoints.length; i++) {
+                <span class="kwrd">if</span> (wktGeomPoints.length > 0) {
                     wktGeomPoints += <span class="str">", "</span>;
                 }
                 wktGeomPoints += shapePoints[i].Longitude + <span class="str">" "</span> + shapePoints[i].Latitude;
@@ -140,9 +140,9 @@ Here&rsquo;s the full code to the VirtualEarthWKT object that contains the stati
             <span class="rem">// return WKT representation of the VEShape</span>
             <span class="kwrd">return</span> wktTemplate.replace(<span class="str">"{points}"</span>, wktGeomPoints);
         },
-        <span class="rem">///&lt;summary&gt;</span>
+        <span class="rem">///<summary></span>
         <span class="rem">///Converts WKT (Well-Known-Text) string representation of a point/polygon/linestring to a VEShape object.</span>
-        <span class="rem">///&lt;/summary&gt;</span>
+        <span class="rem">///</summary></span>
         ShapeFromWKT: <span class="kwrd">function</span>(strWKT) {
             <span class="kwrd">if</span> (strWKT == <span class="kwrd">null</span>) {
                 <span class="kwrd">throw</span> <span class="str">"VirtualEarthWKT.ShapeFromWKT: 'strWKT' parameter can not be null."</span>;
@@ -177,7 +177,7 @@ Here&rsquo;s the full code to the VirtualEarthWKT object that contains the stati
 
             <span class="rem">// Convert the WKT Points to VELatLong locations</span>
             <span class="kwrd">var</span> shapePoints = <span class="kwrd">new</span> Array();
-            <span class="kwrd">for</span> (<span class="kwrd">var</span> i = 0; i &lt; wktPoints.length; i++) {
+            <span class="kwrd">for</span> (<span class="kwrd">var</span> i = 0; i < wktPoints.length; i++) {
                 <span class="rem">// Split the "Longitude Latitude" apart</span>
                 <span class="kwrd">var</span> loc = priv.trimSpaces(wktPoints[i]).split(<span class="str">" "</span>);
                 <span class="rem">// Create VELatLong location</span>

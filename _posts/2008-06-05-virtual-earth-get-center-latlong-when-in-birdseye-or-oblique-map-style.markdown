@@ -19,13 +19,13 @@ One of the tricky things that you need to work around when programming Virtual E
 The code shown below gets the center Lat/Long coordinate for the BirdseyeScene being shown, not the actual center of the Map. This isn't exaclty what we're looking for, but at least it gives us a better idea of the current position of the map than nothing.
 
 Here's a full example page that demonstrates getting the Map's center Lat/Long "relatively" when in Birdseye or Oblique Map Style:
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;&lt;/title&gt;
-        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
-        &lt;script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript"&gt;
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1"></script>
+        <script type="text/javascript">
             var map = null;
                        
             function GetMap()
@@ -69,12 +69,12 @@ Here's a full example page that demonstrates getting the Map's center Lat/Long "
                 var center = GetCenterLatLong();
                 alert("Latitude: " + center.Latitude + "\nLongitude: " + center.Longitude);
             }
-        &lt;/script&gt;
-    &lt;/head&gt;
-    &lt;body onload="GetMap();"&gt;
-        &lt;input type="button" value="Get Center Lat/Lng" onclick="DisplayCenter();"/&gt;
-        &lt;div id='myMap' style="position:relative; width:400px; height:400px;"&gt;&lt;/div&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</pre>
+        </script>
+    </head>
+    <body onload="GetMap();">
+        <input type="button" value="Get Center Lat/Lng" onclick="DisplayCenter();"/>
+        <div id='myMap' style="position:relative; width:400px; height:400px;"></div>
+    </body>
+</html></pre>
 
  

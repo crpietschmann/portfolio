@@ -62,10 +62,10 @@ namespace JsonSerializer_dotNet35SP1_IssueTest
             Person myPerson = new Person("Chris", "Pietschmann", 26);
 
             // Serialize
-            string json = JSONHelper.Serialize&lt;Person&gt;(myPerson);
+            string json = JSONHelper.Serialize<Person>(myPerson);
 
             // Deserialize
-            myPerson = JSONHelper.Deserialize&lt;Person&gt;(json);
+            myPerson = JSONHelper.Deserialize<Person>(json);
         }
     }
 
@@ -92,7 +92,7 @@ namespace JsonSerializer_dotNet35SP1_IssueTest
 
     public class JSONHelper
     {
-        public static string Serialize&lt;T&gt;(T obj)
+        public static string Serialize<T>(T obj)
         {
             System.Runtime.Serialization.Json.DataContractJsonSerializer serializer = new System.Runtime.Serialization.Json.DataContractJsonSerializer(obj.GetType());
             MemoryStream ms = new MemoryStream();
@@ -101,9 +101,9 @@ namespace JsonSerializer_dotNet35SP1_IssueTest
             return retVal;
         }
 
-        public static T Deserialize&lt;T&gt;(string json)
+        public static T Deserialize<T>(string json)
         {
-            T obj = Activator.CreateInstance&lt;T&gt;();
+            T obj = Activator.CreateInstance<T>();
             MemoryStream ms = new MemoryStream(Encoding.Unicode.GetBytes(json));
             System.Runtime.Serialization.Json.DataContractJsonSerializer serializer = new System.Runtime.Serialization.Json.DataContractJsonSerializer(obj.GetType());
             obj = (T)serializer.ReadObject(ms);
@@ -152,10 +152,10 @@ public partial class _Default : System.Web.UI.Page
         Person myPerson = new Person("Chris", "Pietschmann", 26);
 
         // Serialize
-        string json = JSONHelper.Serialize&lt;Person&gt;(myPerson);
+        string json = JSONHelper.Serialize<Person>(myPerson);
 
         // Deserialize
-        myPerson = JSONHelper.Deserialize&lt;Person&gt;(json);
+        myPerson = JSONHelper.Deserialize<Person>(json);
     }
 
     [DataContract]
@@ -181,7 +181,7 @@ public partial class _Default : System.Web.UI.Page
 
     public class JSONHelper
     {
-        public static string Serialize&lt;T&gt;(T obj)
+        public static string Serialize<T>(T obj)
         {
             System.Runtime.Serialization.Json.DataContractJsonSerializer serializer = new System.Runtime.Serialization.Json.DataContractJsonSerializer(obj.GetType());
             MemoryStream ms = new MemoryStream();
@@ -190,9 +190,9 @@ public partial class _Default : System.Web.UI.Page
             return retVal;
         }
 
-        public static T Deserialize&lt;T&gt;(string json)
+        public static T Deserialize<T>(string json)
         {
-            T obj = Activator.CreateInstance&lt;T&gt;();
+            T obj = Activator.CreateInstance<T>();
             MemoryStream ms = new MemoryStream(Encoding.Unicode.GetBytes(json));
             System.Runtime.Serialization.Json.DataContractJsonSerializer serializer = new System.Runtime.Serialization.Json.DataContractJsonSerializer(obj.GetType());
             obj = (T)serializer.ReadObject(ms);

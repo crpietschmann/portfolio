@@ -19,7 +19,7 @@ The WI .NET Users Group Holiday Party '07 has been Cancelled due to weather and 
 Here's the announcement that went out to all registered attendees via email:
 <div><span style="font-family: Arial; font-size: x-small;"><span>Everyone -</span></span></div>
 <div><span style="font-family: Arial; font-size: x-small;"></span></div>
-<div><span style="font-family: Arial; font-size: x-small;"><span>**<em><span style="text-decoration: underline;"><span style="color: #ff0000;">The holiday party has been cancelled due to weather.</span></span></em>**  </span></span></div>
+<div><span style="font-family: Arial; font-size: x-small;"><span>***<span style="text-decoration: underline;"><span style="color: #ff0000;">The holiday party has been cancelled due to weather.</span></span>***  </span></span></div>
 <div><span style="font-family: Arial; font-size: x-small;"></span></div>
 <div><span style="font-family: Arial; font-size: x-small;"><span>Even though the ice warnings are expired, there is still snow falling and Direct Supply (our host for the evening) has asked us to cancel the party because of hazards and liability issues.</span></span></div>
 <div><span style="font-family: Arial; font-size: x-small;"></span></div>

@@ -125,7 +125,7 @@ Also, for reference here&rsquo;s the complete code for the &ldquo;WebFormThemeVi
         {
             return new ViewEngineResult(this.CreateView(controllerContext, viewPath, masterPath), this);
         }
-        return new ViewEngineResult(strArray.Union&lt;string&gt;(strArray2));
+        return new ViewEngineResult(strArray.Union<string>(strArray2));
     }
 
     public override ViewEngineResult FindPartialView(ControllerContext controllerContext, string partialViewName, bool useCache)
@@ -214,7 +214,7 @@ Also, for reference here&rsquo;s the complete code for the &ldquo;WebFormThemeVi
     {
         string virtualPath = string.Empty;
         searchedLocations = new string[locations.Length];
-        for (int i = 0; i &lt; locations.Length; i++)
+        for (int i = 0; i < locations.Length; i++)
         {
             string str2 = string.Format(CultureInfo.InvariantCulture, locations[i], new object[] { name, controllerName, themeName });
 
@@ -248,7 +248,7 @@ Also, for reference here&rsquo;s the complete code for the &ldquo;WebFormThemeVi
 
 One additional step that&rsquo;s necessary when using the above WebFormThemeViewEngine is to create a custom Controller Base Class, and inherit from it with all your Controllers. This ThemeControllerBase class needs to set the Theme to use within the &ldquo;HttpContext.Items[&ldquo;themeName&rdquo;]&rdquo;. If you miss or skip this step you will get an exception and will not be able to run the website.
 
-The ThemeControllerBase class used in this example includes code that allows you to specify the Theme to use by passing it in using the QueryString like this: <em>&ldquo;http://localhost/Default.aspx?theme=Red&rdquo;</em>
+The ThemeControllerBase class used in this example includes code that allows you to specify the Theme to use by passing it in using the QueryString like this: *&ldquo;http://localhost/Default.aspx?theme=Red&rdquo;*
 
 Here&rsquo;s the code for the ThemeControllerBase class:
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">public abstract class ThemeControllerBase : Controller

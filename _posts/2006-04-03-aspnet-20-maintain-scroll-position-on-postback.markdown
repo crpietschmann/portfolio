@@ -16,6 +16,6 @@ redirect_from:
 
 The MaintainScrollPositionOnPostback page directive attribute allows pages to automatically maintain the current scroll position across postbacks. This feature is usefull for large pages where scrolling is necessary to view input controls down further on the page. This works in ASP.NET 2.0 and later.
 
-[code:html]<br /> &lt;%@ Page MaintainScrollPositionOnPostback="true" %&gt;<br /> ```
+[code:html]<br /> <%@ Page MaintainScrollPositionOnPostback="true" %><br /> ```
 
 A simple but very usefull feature.

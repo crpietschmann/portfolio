@@ -19,7 +19,7 @@ I recently decided to really dig into HTML5 to see what it&rsquo;s all about. Af
 
 Instead of reading the enormous HTML5 Specifications, I decided to purchase a book that would sum things up much more nicely. Below is the book:
 
-<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; float: left; padding-top: 0px; border-width: 0px;" title="IntoHtml5SharpLawson" src="/images/postsIntoHtml5SharpLawson.jpg" alt="IntoHtml5SharpLawson" width="48" height="61" align="left" border="0" /><em><a href="http://amzn.to/2acBCG7" target="_blank">Introducing HTML5</a> <br />by Bruce Lawson and Remy Sharp</em>
+<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; float: left; padding-top: 0px; border-width: 0px;" title="IntoHtml5SharpLawson" src="/images/postsIntoHtml5SharpLawson.jpg" alt="IntoHtml5SharpLawson" width="48" height="61" align="left" border="0" />*<a href="http://amzn.to/2acBCG7" target="_blank">Introducing HTML5</a> <br />by Bruce Lawson and Remy Sharp*
 
 This book is relatively short at 223 pages and sums everything up very nicely. I&rsquo;m not finished with the book yet, as I&rsquo;m playing around with things more rather than reading cover to cover.
 
@@ -28,15 +28,15 @@ I know there are other resources available online (for free), but nothing beats 
 
 There are a number of <a title="HTML Design Principles" href="http://www.w3.org/TR/html-design-principles/" target="_blank">guiding principles that are being used to design HTML5</a>. In my opinion, the two most important principles are:
 
-**Degrade Gracefully <br />**<em>&rdquo;On the World Wide Web, authors are often reluctant to use new language features that cause problems in older user agents, or that do not provide some sort of graceful fallback. HTML 5 document conformance requirements should be designed so that Web content can degrade gracefully in older or less capable user agents, even when making use of new elements, attributes, APIs and content models.&ldquo;</em>
+**Degrade Gracefully <br />***&rdquo;On the World Wide Web, authors are often reluctant to use new language features that cause problems in older user agents, or that do not provide some sort of graceful fallback. HTML 5 document conformance requirements should be designed so that Web content can degrade gracefully in older or less capable user agents, even when making use of new elements, attributes, APIs and content models.&ldquo;*
 
 The specifies that when designing HTML5 it must be done in a way that allows older browsers to gracefully handle rendering HTML5 code to the best of their ability, even though they may not know what certain tags are.
 
-For example, this is what allows you to use the new &ldquo;email&rdquo; or &ldquo;date&rdquo; Input elements, and they end up being rendered as a standard &lt;input type=&rsquo;text&rsquo;/&gt; element in older browsers.
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">basically &lt;input type="email"/&gt; render as &lt;input type="text"/&gt; and
-&lt;article&gt;&lt;/article&gt; and &lt;section&gt;&lt;/section&gt; render as &lt;span&gt;&lt;/span&gt;</pre>
+For example, this is what allows you to use the new &ldquo;email&rdquo; or &ldquo;date&rdquo; Input elements, and they end up being rendered as a standard <input type=&rsquo;text&rsquo;/> element in older browsers.
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">basically <input type="email"/> render as <input type="text"/> and
+<article></article> and <section></section> render as <span></span></pre>
 
-**Do not Reinvent the Wheel <br />**<em>&ldquo;If there is already a widely used and implemented technology covering particular use cases, consider specifying that technology in preference to inventing something new for the same purpose.&rdquo;</em>
+**Do not Reinvent the Wheel <br />***&ldquo;If there is already a widely used and implemented technology covering particular use cases, consider specifying that technology in preference to inventing something new for the same purpose.&rdquo;*
 
 This means that certain existing functionality that web browsers already support, but weren&rsquo;t part of HTML previously, will now be part of HTML5.
 
@@ -51,19 +51,19 @@ Using the following two tips you can enable the rendering of most of the new HTM
 
 **HTML5 Enabling Script <br />**The <a href="http://code.google.com/p/html5shim/" target="_blank">html5shiv script by Remy Sharp</a> enables all the new HTML5 elements within Internet Explorer versions older than Internet Explorer 9.
 
-To use this script, just place the following markup within the pages &lt;head&gt; tag:
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;!--[if lt IE 9]&gt;
-&lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
-&lt;![endif]--&gt;</pre>
+To use this script, just place the following markup within the pages <head> tag:
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--></pre>
 
 This is a conditional comment that tells Internet Explorer version older than version 9 to include the html5shiv script. Firefox and other browsers will correctly ignore this script include since they don&rsquo;t require it in order to render the HTML5 elements.
 
 Here&rsquo;s an article by John Resig that explains how this script works: <a title="http://ejohn.org/blog/html5-shiv/" href="http://ejohn.org/blog/html5-shiv/">http://ejohn.org/blog/html5-shiv/</a>
 
 **HTML5 Reset Stylesheet <br />**Even though the older web browsers don&rsquo;t natively know how to style the new HTML5 elements, you can include a simple stylesheet in your pages that will tell it how.
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;link href="http://html5resetcss.googlecode.com/files/html5reset-1.6.1.css"
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><link href="http://html5resetcss.googlecode.com/files/html5reset-1.6.1.css"
     rel="Stylesheet"
-    type="text/css" /&gt;</pre>
+    type="text/css" /></pre>
 
 Just add the above stylesheet link to your pages before you include your own CSS stylesheets and it will explicitly tell the web browser how to render each of the HTML5 elements.
 
@@ -86,6 +86,6 @@ I plan on continuing this series for a little while, and will post links to subs
 <li><a href="/post/2010/11/15/HTML5-Day-2-Upgrade-ASPNET-MVC-2-Site-Template-to-HTML5.aspx">Day 2: Upgrade ASP.NET MVC 2 Site Template to HTML5</a></li>
 <li><a href="/post/2010/11/16/HTML5-Day-3-Detecting-HTML5-Support-via-JavaScript.aspx">Day 3: Detecting HTML5 Support via JavaScript</a></li>
 <li><a href="/post/2010/11/17/HTML5-Day-4-Add-DropDown-Menu-ASPNET-MVC-HTML5-Template-using-CSS-and-jQuery.aspx">Day 4: Add Drop Down Menu to ASP.NET MVC HTML5 Template using CSS and jQuery</a></li>
-<li><a href="/post/2010/11/18/HTML5-Day-5-New-Date-Input-Type.aspx">Day 5: New Date Input Type &lt;input type=date /&gt;</a></li>
-<li><a href="/post/2010/11/22/HTML5-Day-6-New-Range-Input-Type-3cinput-type3drange-3e.aspx">Day 6: New Range Input Type &lt;input type=range /&gt;</a></li>
+<li><a href="/post/2010/11/18/HTML5-Day-5-New-Date-Input-Type.aspx">Day 5: New Date Input Type <input type=date /></a></li>
+<li><a href="/post/2010/11/22/HTML5-Day-6-New-Range-Input-Type-3cinput-type3drange-3e.aspx">Day 6: New Range Input Type <input type=range /></a></li>
 </ul>

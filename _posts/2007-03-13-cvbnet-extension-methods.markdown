@@ -19,10 +19,10 @@ Over a year ago I posted a question about doing a <a href="/Blog/Post.aspx?PostI
 
 
 
-<em>Dim arrNames() AS String = New Array{&quot;CHRIS&quot;, &quot;TOM&quot;, &quot;TYLER&quot;}<br />
+*Dim arrNames() AS String = New Array{&quot;CHRIS&quot;, &quot;TOM&quot;, &quot;TYLER&quot;}<br />
 If strName IN arrNames Then<br />
    &#39;do something<br />
-End If</em>
+End If*
 
 
 
@@ -46,7 +46,7 @@ The code for the IN method goes like this:
 
 
 
-<em>namespace SqlInMethodExtension<br />
+*namespace SqlInMethodExtension<br />
 {<br />
     public static class SqlInMethodExtension<br />
     {<br />
@@ -59,7 +59,7 @@ The code for the IN method goes like this:
             return false;<br />
         }<br />
     }<br />
-}</em>
+}*
 
 
 
@@ -67,7 +67,7 @@ Now using the method is as simple as this:
 
 
 
-<em>using SqlInMethodExtension;<br />
+*using SqlInMethodExtension;<br />
 public class Test<br />
 {<br />
     void Test(string myValue)<br />
@@ -78,7 +78,7 @@ public class Test<br />
             // Do something here<br />
         }<br />
     }<br />
-}</em>
+}*
 
 
 

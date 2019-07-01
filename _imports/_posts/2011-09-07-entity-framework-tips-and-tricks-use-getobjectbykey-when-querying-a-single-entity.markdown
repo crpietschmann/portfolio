@@ -50,8 +50,8 @@ This query will find all the “Person” entities that have a specific “ID”
 
 Now, take the following code:
 
-<pre class="csharpcode">var keyValues = <span class="kwrd">new</span> KeyValuePair&lt;<span class="kwrd">string</span>, <span class="kwrd">object</span>&gt;[] {
-    <span class="kwrd">new</span> KeyValuePair&lt;<span class="kwrd">string</span>, <span class="kwrd">object</span>&gt;(<span class="str">&quot;ID&quot;</span>, id)
+<pre class="csharpcode">var keyValues = <span class="kwrd">new</span> KeyValuePair<<span class="kwrd">string</span>, <span class="kwrd">object</span>>[] {
+    <span class="kwrd">new</span> KeyValuePair<<span class="kwrd">string</span>, <span class="kwrd">object</span>>(<span class="str">&quot;ID&quot;</span>, id)
 };
 var key = <span class="kwrd">new</span> EntityKey(<span class="str">&quot;DataEntities.Persons&quot;</span>, keyValues);
 
@@ -69,14 +69,14 @@ The “<a href="http://msdn.microsoft.com/en-us/library/system.data.objects.obje
 
 Here’s a generic method and it’s sample usage that I’ve created to make using TryGetObjectKey a little simpler:
 
-<pre class="csharpcode"><span class="kwrd">static</span> T GetEntityByID&lt;T&gt;(<span class="kwrd">string</span> entitySetName, Guid id)
+<pre class="csharpcode"><span class="kwrd">static</span> T GetEntityByID<T>(<span class="kwrd">string</span> entitySetName, Guid id)
     <span class="kwrd">where</span> T: <span class="kwrd">class</span>
 {
     <span class="kwrd">object</span> val = <span class="kwrd">null</span>;
 
     <span class="rem">// Create the EntityKey</span>
-    var keyValues = <span class="kwrd">new</span> KeyValuePair&lt;<span class="kwrd">string</span>, <span class="kwrd">object</span>&gt;[] {
-        <span class="kwrd">new</span> KeyValuePair&lt;<span class="kwrd">string</span>, <span class="kwrd">object</span>&gt;(<span class="str">&quot;ID&quot;</span>, id)
+    var keyValues = <span class="kwrd">new</span> KeyValuePair<<span class="kwrd">string</span>, <span class="kwrd">object</span>>[] {
+        <span class="kwrd">new</span> KeyValuePair<<span class="kwrd">string</span>, <span class="kwrd">object</span>>(<span class="str">&quot;ID&quot;</span>, id)
     };
     var key = <span class="kwrd">new</span> EntityKey(
         <span class="kwrd">string</span>.Format(<span class="str">&quot;DataEntities.{0}&quot;</span>, entitySetName),
@@ -92,7 +92,7 @@ Here’s a generic method and it’s sample usage that I’ve created to make us
 }
 
 <span class="rem">// Example usage of the method</span>
-var person = GetEntityByID&lt;Person&gt;(<span class="str">&quot;Persons&quot;</span>, id);</pre>
+var person = GetEntityByID<Person>(<span class="str">&quot;Persons&quot;</span>, id);</pre>
 
 
-You could even go a step further and wrap the above “GetEntityByID&lt;Person&gt;()” call into a method like “GetPersonByID(Guid id)” to make it easier to use.
+You could even go a step further and wrap the above “GetEntityByID<Person>()” call into a method like “GetPersonByID(Guid id)” to make it easier to use.

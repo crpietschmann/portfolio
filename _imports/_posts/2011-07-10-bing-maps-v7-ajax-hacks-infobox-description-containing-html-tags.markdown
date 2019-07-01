@@ -18,13 +18,13 @@ For some odd reason the Bing Maps team decided to not allow HTML tags within the
 <a href="/images/postsBingMaps7HackInfoBoxDescriptionHTML.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="BingMaps7HackInfoBoxDescriptionHTML" border="0" alt="BingMaps7HackInfoBoxDescriptionHTML" src="/images/postsBingMaps7HackInfoBoxDescriptionHTML_thumb.png" width="485" height="255" /></a>  
 Here’s a full sample page that adds a map with pushpin and infobox, and sets up overriding support to allow HTML tags within the infobox’s description:  
 &#160;  
-   <pre class="csharpcode">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-   &lt;head&gt;
-      &lt;title&gt;&lt;/title&gt;
-      &lt;meta http-equiv=<span class="str">&quot;Content-Type&quot;</span> content=<span class="str">&quot;text/html; charset=utf-8&quot;</span>&gt;
-      &lt;script type=<span class="str">&quot;text/javascript&quot;</span> src=<span class="str">&quot;http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&quot;</span>&gt;&lt;/script&gt;
-      &lt;script type=<span class="str">&quot;text/javascript&quot;</span>&gt;
+   <pre class="csharpcode"><!DOCTYPE html>
+<html>
+   <head>
+      <title></title>
+      <meta http-equiv=<span class="str">&quot;Content-Type&quot;</span> content=<span class="str">&quot;text/html; charset=utf-8&quot;</span>>
+      <script type=<span class="str">&quot;text/javascript&quot;</span> src=<span class="str">&quot;http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&quot;</span>></script>
+      <script type=<span class="str">&quot;text/javascript&quot;</span>>
          var map = <span class="kwrd">null</span>;
 
          function GetMap()
@@ -41,9 +41,9 @@ Here’s a full sample page that adds a map with pushpin and infobox, and sets u
             <span class="rem">// Create the info box for the pushpin</span>
             var infobox = <span class="kwrd">new</span> Microsoft.Maps.Infobox(<span class="kwrd">new</span> Microsoft.Maps.Location(0, 0), {
                 title: <span class="str">'My Pushpin'</span>,
-                description: <span class="str">'A &lt;i&gt;short&lt;/i&gt; description that contains '</span> +
-                    <span class="str">'a couple &lt;span style=&quot;color: red; font-weight: bold;&quot;&gt;HTML&lt;/span&gt; '</span> +
-                    <span class="str">'tags, including a &lt;a href=&quot;#&quot;&gt;hyperlink&lt;/a&gt;.'</span>,
+                description: <span class="str">'A <i>short</i> description that contains '</span> +
+                    <span class="str">'a couple <span style=&quot;color: red; font-weight: bold;&quot;>HTML</span> '</span> +
+                    <span class="str">'tags, including a <a href=&quot;#&quot;>hyperlink</a>.'</span>,
                 visible: <span class="kwrd">true</span>
             });
 
@@ -69,13 +69,13 @@ Here’s a full sample page that adds a map with pushpin and infobox, and sets u
             <span class="rem">// override the Description to allow HTML</span>
             infobox.cm1001_er_etr.descriptionNode.innerHTML = infobox.getDescription();
          }
-      &lt;/script&gt;
-   &lt;/head&gt;
-   &lt;body onload=<span class="str">&quot;GetMap();&quot;</span>&gt;
-      &lt;div id=<span class="str">'myMap'</span> style=<span class="str">&quot;position:relative; width:500px; height:500px;&quot;</span>&gt;&lt;/div&gt;
-   &lt;/body&gt;      
-&lt;/html&gt;</pre>
-  <em>**Warning:** This is a hack and it relies on accessing part of the “non-public” API within the control. If the Bing Maps team decides to rename “cm1001_er_etr.descriptionNode” in a future release/update of the Bing Maps v7 control, then this code may stop working.</em><style type="text/css">
+      </script>
+   </head>
+   <body onload=<span class="str">&quot;GetMap();&quot;</span>>
+      <div id=<span class="str">'myMap'</span> style=<span class="str">&quot;position:relative; width:500px; height:500px;&quot;</span>></div>
+   </body>      
+</html></pre>
+  ***Warning:** This is a hack and it relies on accessing part of the “non-public” API within the control. If the Bing Maps team decides to rename “cm1001_er_etr.descriptionNode” in a future release/update of the Bing Maps v7 control, then this code may stop working.*<style type="text/css">
 .csharpcode, .csharpcode pre
 {
 	font-size: small;

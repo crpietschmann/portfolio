@@ -48,65 +48,65 @@ Here's the code for the static class in C#:
     [StructLayout(LayoutKind.Sequential)]
     private struct FLASHWINFO
     {
-        /// &lt;summary&gt;
+        /// <summary>
         /// The size of the structure in bytes.
-        /// &lt;/summary&gt;
+        /// </summary>
         public uint cbSize;
-        /// &lt;summary&gt;
+        /// <summary>
         /// A Handle to the Window to be Flashed. The window can be either opened or minimized.
-        /// &lt;/summary&gt;
+        /// </summary>
         public IntPtr hwnd;
-        /// &lt;summary&gt;
+        /// <summary>
         /// The Flash Status.
-        /// &lt;/summary&gt;
+        /// </summary>
         public uint dwFlags;
-        /// &lt;summary&gt;
+        /// <summary>
         /// The number of times to Flash the window.
-        /// &lt;/summary&gt;
+        /// </summary>
         public uint uCount;
-        /// &lt;summary&gt;
+        /// <summary>
         /// The rate at which the Window is to be flashed, in milliseconds. If Zero, the function uses the default cursor blink rate.
-        /// &lt;/summary&gt;
+        /// </summary>
         public uint dwTimeout;
     }
 
-    /// &lt;summary&gt;
+    /// <summary>
     /// Stop flashing. The system restores the window to its original stae.
-    /// &lt;/summary&gt;
+    /// </summary>
     public const uint FLASHW_STOP = 0;
    
-    /// &lt;summary&gt;
+    /// <summary>
     /// Flash the window caption.
-    /// &lt;/summary&gt;
+    /// </summary>
     public const uint FLASHW_CAPTION = 1;
    
-    /// &lt;summary&gt;
+    /// <summary>
     /// Flash the taskbar button.
-    /// &lt;/summary&gt;
+    /// </summary>
     public const uint FLASHW_TRAY = 2;
    
-    /// &lt;summary&gt;
+    /// <summary>
     /// Flash both the window caption and taskbar button.
     /// This is equivalent to setting the FLASHW_CAPTION | FLASHW_TRAY flags.
-    /// &lt;/summary&gt;
+    /// </summary>
     public const uint FLASHW_ALL = 3;
 
-    /// &lt;summary&gt;
+    /// <summary>
     /// Flash continuously, until the FLASHW_STOP flag is set.
-    /// &lt;/summary&gt;
+    /// </summary>
     public const uint FLASHW_TIMER = 4;
 
-    /// &lt;summary&gt;
+    /// <summary>
     /// Flash continuously until the window comes to the foreground.
-    /// &lt;/summary&gt;
+    /// </summary>
     public const uint FLASHW_TIMERNOFG = 12;
 
 
-    /// &lt;summary&gt;
+    /// <summary>
     /// Flash the spacified Window (Form) until it recieves focus.
-    /// &lt;/summary&gt;
-    /// &lt;param name="form"&gt;The Form (Window) to Flash.&lt;/param&gt;
-    /// &lt;returns&gt;&lt;/returns&gt;
+    /// </summary>
+    /// <param name="form">The Form (Window) to Flash.</param>
+    /// <returns></returns>
     public static bool Flash(System.Windows.Forms.Form form)
     {
         // Make sure we're running under Windows 2000 or later
@@ -129,12 +129,12 @@ Here's the code for the static class in C#:
         return fi;
     }
 
-    /// &lt;summary&gt;
+    /// <summary>
     /// Flash the specified Window (form) for the specified number of times
-    /// &lt;/summary&gt;
-    /// &lt;param name="form"&gt;The Form (Window) to Flash.&lt;/param&gt;
-    /// &lt;param name="count"&gt;The number of times to Flash.&lt;/param&gt;
-    /// &lt;returns&gt;&lt;/returns&gt;
+    /// </summary>
+    /// <param name="form">The Form (Window) to Flash.</param>
+    /// <param name="count">The number of times to Flash.</param>
+    /// <returns></returns>
     public static bool Flash(System.Windows.Forms.Form form, uint count)
     {
         if (Win2000OrLater)
@@ -145,11 +145,11 @@ Here's the code for the static class in C#:
         return false;
     }
 
-    /// &lt;summary&gt;
+    /// <summary>
     /// Start Flashing the specified Window (form)
-    /// &lt;/summary&gt;
-    /// &lt;param name="form"&gt;The Form (Window) to Flash.&lt;/param&gt;
-    /// &lt;returns&gt;&lt;/returns&gt;
+    /// </summary>
+    /// <param name="form">The Form (Window) to Flash.</param>
+    /// <returns></returns>
     public static bool Start(System.Windows.Forms.Form form)
     {
         if (Win2000OrLater)
@@ -160,11 +160,11 @@ Here's the code for the static class in C#:
         return false;
     }
 
-    /// &lt;summary&gt;
+    /// <summary>
     /// Stop Flashing the specified Window (form)
-    /// &lt;/summary&gt;
-    /// &lt;param name="form"&gt;&lt;/param&gt;
-    /// &lt;returns&gt;&lt;/returns&gt;
+    /// </summary>
+    /// <param name="form"></param>
+    /// <returns></returns>
     public static bool Stop(System.Windows.Forms.Form form)
     {
         if (Win2000OrLater)
@@ -175,11 +175,11 @@ Here's the code for the static class in C#:
         return false;
     }
 
-    /// &lt;summary&gt;
+    /// <summary>
     /// A boolean value indicating whether the application is running on Windows 2000 or later.
-    /// &lt;/summary&gt;
+    /// </summary>
     private static bool Win2000OrLater
     {
-        get { return System.Environment.OSVersion.Version.Major &gt;= 5; }
+        get { return System.Environment.OSVersion.Version.Major >= 5; }
     }
 }</pre>

@@ -56,39 +56,39 @@ As you can see, it’s identical to any other Controller Action. Nothing really 
 
 Here’s an example Person.xaml View for this Action:
 
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">UserControl</span> <span class="attr">xmlns</span><span class="kwrd">=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">UserControl</span> <span class="attr">xmlns</span><span class="kwrd">=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span>
         <span class="attr">xmlns:x</span><span class="kwrd">=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span>
         <span class="attr">xmlns:d</span><span class="kwrd">=&quot;http://schemas.microsoft.com/expression/blend/2008&quot;</span>
         <span class="attr">xmlns:mc</span><span class="kwrd">=&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;</span>
         <span class="attr">Margin</span><span class="kwrd">=&quot;1&quot;</span> <span class="attr">Padding</span><span class="kwrd">=&quot;2&quot;</span> <span class="attr">Width</span><span class="kwrd">=&quot;300&quot;</span> <span class="attr">Height</span><span class="kwrd">=&quot;75&quot;</span>
-        <span class="attr">mc:Ignorable</span><span class="kwrd">=&quot;d&quot;</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">Grid</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">Border</span> <span class="attr">BorderBrush</span><span class="kwrd">=&quot;Gray&quot;</span> <span class="attr">BorderThickness</span><span class="kwrd">=&quot;2&quot;</span>
-                <span class="attr">CornerRadius</span><span class="kwrd">=&quot;5&quot;</span> <span class="attr">Padding</span><span class="kwrd">=&quot;4&quot;</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;</span><span class="html">Border.Background</span><span class="kwrd">&gt;</span>
-                <span class="kwrd">&lt;</span><span class="html">LinearGradientBrush</span> <span class="attr">StartPoint</span><span class="kwrd">=&quot;0.5,0&quot;</span> <span class="attr">EndPoint</span><span class="kwrd">=&quot;0.5,1&quot;</span><span class="kwrd">&gt;</span>
-                    <span class="kwrd">&lt;</span><span class="html">LinearGradientBrush.GradientStops</span><span class="kwrd">&gt;</span>
-                        <span class="kwrd">&lt;</span><span class="html">GradientStopCollection</span><span class="kwrd">&gt;</span>
-                            <span class="kwrd">&lt;</span><span class="html">GradientStop</span> <span class="attr">Color</span><span class="kwrd">=&quot;White&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">GradientStop</span><span class="kwrd">&gt;</span>
-                            <span class="kwrd">&lt;</span><span class="html">GradientStop</span> <span class="attr">Color</span><span class="kwrd">=&quot;LightGray&quot;</span> <span class="attr">Offset</span><span class="kwrd">=&quot;1&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">GradientStop</span><span class="kwrd">&gt;</span>
-                        <span class="kwrd">&lt;/</span><span class="html">GradientStopCollection</span><span class="kwrd">&gt;</span>
-                    <span class="kwrd">&lt;/</span><span class="html">LinearGradientBrush.GradientStops</span><span class="kwrd">&gt;</span>
-                <span class="kwrd">&lt;/</span><span class="html">LinearGradientBrush</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;/</span><span class="html">Border.Background</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;</span><span class="html">StackPanel</span><span class="kwrd">&gt;</span>
-                <span class="kwrd">&lt;</span><span class="html">StackPanel</span> <span class="attr">Orientation</span><span class="kwrd">=&quot;Horizontal&quot;</span><span class="kwrd">&gt;</span>
-                    <span class="kwrd">&lt;</span><span class="html">TextBlock</span> <span class="attr">FontWeight</span><span class="kwrd">=&quot;Bold&quot;</span> <span class="attr">FontSize</span><span class="kwrd">=&quot;15&quot;</span> <span class="attr">Text</span><span class="kwrd">=&quot;{Binding LastName}&quot;</span><span class="kwrd">/&gt;</span>
-                    <span class="kwrd">&lt;</span><span class="html">TextBlock</span> <span class="attr">FontWeight</span><span class="kwrd">=&quot;Bold&quot;</span> <span class="attr">FontSize</span><span class="kwrd">=&quot;15&quot;</span><span class="kwrd">&gt;</span>, <span class="kwrd">&lt;/</span><span class="html">TextBlock</span><span class="kwrd">&gt;</span>
-                    <span class="kwrd">&lt;</span><span class="html">TextBlock</span> <span class="attr">FontWeight</span><span class="kwrd">=&quot;Bold&quot;</span> <span class="attr">FontSize</span><span class="kwrd">=&quot;15&quot;</span> <span class="attr">Text</span><span class="kwrd">=&quot;{Binding FirstName}&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">TextBlock</span><span class="kwrd">&gt;</span>
-                <span class="kwrd">&lt;/</span><span class="html">StackPanel</span><span class="kwrd">&gt;</span>
-                <span class="kwrd">&lt;</span><span class="html">StackPanel</span> <span class="attr">Orientation</span><span class="kwrd">=&quot;Horizontal&quot;</span><span class="kwrd">&gt;</span>
-                    <span class="kwrd">&lt;</span><span class="html">TextBlock</span><span class="kwrd">&gt;</span>ID:<span class="kwrd">&lt;/</span><span class="html">TextBlock</span><span class="kwrd">&gt;</span>
-                    <span class="kwrd">&lt;</span><span class="html">TextBlock</span> <span class="attr">Text</span><span class="kwrd">=&quot;{Binding ID}&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">TextBlock</span><span class="kwrd">&gt;</span>
-                <span class="kwrd">&lt;/</span><span class="html">StackPanel</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;/</span><span class="html">StackPanel</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;/</span><span class="html">Border</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;/</span><span class="html">Grid</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">UserControl</span><span class="kwrd">&gt;</span></pre>
+        <span class="attr">mc:Ignorable</span><span class="kwrd">=&quot;d&quot;</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">Grid</span><span class="kwrd">></span>
+        <span class="kwrd"><</span><span class="html">Border</span> <span class="attr">BorderBrush</span><span class="kwrd">=&quot;Gray&quot;</span> <span class="attr">BorderThickness</span><span class="kwrd">=&quot;2&quot;</span>
+                <span class="attr">CornerRadius</span><span class="kwrd">=&quot;5&quot;</span> <span class="attr">Padding</span><span class="kwrd">=&quot;4&quot;</span><span class="kwrd">></span>
+            <span class="kwrd"><</span><span class="html">Border.Background</span><span class="kwrd">></span>
+                <span class="kwrd"><</span><span class="html">LinearGradientBrush</span> <span class="attr">StartPoint</span><span class="kwrd">=&quot;0.5,0&quot;</span> <span class="attr">EndPoint</span><span class="kwrd">=&quot;0.5,1&quot;</span><span class="kwrd">></span>
+                    <span class="kwrd"><</span><span class="html">LinearGradientBrush.GradientStops</span><span class="kwrd">></span>
+                        <span class="kwrd"><</span><span class="html">GradientStopCollection</span><span class="kwrd">></span>
+                            <span class="kwrd"><</span><span class="html">GradientStop</span> <span class="attr">Color</span><span class="kwrd">=&quot;White&quot;</span><span class="kwrd">></</span><span class="html">GradientStop</span><span class="kwrd">></span>
+                            <span class="kwrd"><</span><span class="html">GradientStop</span> <span class="attr">Color</span><span class="kwrd">=&quot;LightGray&quot;</span> <span class="attr">Offset</span><span class="kwrd">=&quot;1&quot;</span><span class="kwrd">></</span><span class="html">GradientStop</span><span class="kwrd">></span>
+                        <span class="kwrd"></</span><span class="html">GradientStopCollection</span><span class="kwrd">></span>
+                    <span class="kwrd"></</span><span class="html">LinearGradientBrush.GradientStops</span><span class="kwrd">></span>
+                <span class="kwrd"></</span><span class="html">LinearGradientBrush</span><span class="kwrd">></span>
+            <span class="kwrd"></</span><span class="html">Border.Background</span><span class="kwrd">></span>
+            <span class="kwrd"><</span><span class="html">StackPanel</span><span class="kwrd">></span>
+                <span class="kwrd"><</span><span class="html">StackPanel</span> <span class="attr">Orientation</span><span class="kwrd">=&quot;Horizontal&quot;</span><span class="kwrd">></span>
+                    <span class="kwrd"><</span><span class="html">TextBlock</span> <span class="attr">FontWeight</span><span class="kwrd">=&quot;Bold&quot;</span> <span class="attr">FontSize</span><span class="kwrd">=&quot;15&quot;</span> <span class="attr">Text</span><span class="kwrd">=&quot;{Binding LastName}&quot;</span><span class="kwrd">/></span>
+                    <span class="kwrd"><</span><span class="html">TextBlock</span> <span class="attr">FontWeight</span><span class="kwrd">=&quot;Bold&quot;</span> <span class="attr">FontSize</span><span class="kwrd">=&quot;15&quot;</span><span class="kwrd">></span>, <span class="kwrd"></</span><span class="html">TextBlock</span><span class="kwrd">></span>
+                    <span class="kwrd"><</span><span class="html">TextBlock</span> <span class="attr">FontWeight</span><span class="kwrd">=&quot;Bold&quot;</span> <span class="attr">FontSize</span><span class="kwrd">=&quot;15&quot;</span> <span class="attr">Text</span><span class="kwrd">=&quot;{Binding FirstName}&quot;</span><span class="kwrd">></</span><span class="html">TextBlock</span><span class="kwrd">></span>
+                <span class="kwrd"></</span><span class="html">StackPanel</span><span class="kwrd">></span>
+                <span class="kwrd"><</span><span class="html">StackPanel</span> <span class="attr">Orientation</span><span class="kwrd">=&quot;Horizontal&quot;</span><span class="kwrd">></span>
+                    <span class="kwrd"><</span><span class="html">TextBlock</span><span class="kwrd">></span>ID:<span class="kwrd"></</span><span class="html">TextBlock</span><span class="kwrd">></span>
+                    <span class="kwrd"><</span><span class="html">TextBlock</span> <span class="attr">Text</span><span class="kwrd">=&quot;{Binding ID}&quot;</span><span class="kwrd">></</span><span class="html">TextBlock</span><span class="kwrd">></span>
+                <span class="kwrd"></</span><span class="html">StackPanel</span><span class="kwrd">></span>
+            <span class="kwrd"></</span><span class="html">StackPanel</span><span class="kwrd">></span>
+        <span class="kwrd"></</span><span class="html">Border</span><span class="kwrd">></span>
+    <span class="kwrd"></</span><span class="html">Grid</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">UserControl</span><span class="kwrd">></span></pre>
 <style type="text/css">
 .csharpcode, .csharpcode pre
 {

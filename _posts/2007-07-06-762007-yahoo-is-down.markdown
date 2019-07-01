@@ -18,4 +18,4 @@ It appears that <A href="http://yahoo.com">Yahoo.com</A> is down. I've never see
 
 Hey Yahoo, that's gotta hurt.
 
-<STRONG>Update 9:23AM:</STRONG> I see that Yahoo is back up now. I wonder what the total was of how long they were down. And, I heard that CNN.com was down for a short moment there too (however it was back up before I could verify it for myself.)
+**Update 9:23AM:** I see that Yahoo is back up now. I wonder what the total was of how long they were down. And, I heard that CNN.com was down for a short moment there too (however it was back up before I could verify it for myself.)

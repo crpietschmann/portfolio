@@ -27,11 +27,11 @@ The table scheme is as follows:
 
 Here's a couple things to not about the ZipCodeBoundary talble:
 <ol>
-<li>The <em>IslandID</em> field numbers each "island" or "zone" for that spefic zipcode's boundary. An island is an area within the zipcode that is omitted from the zipcode, or an island of land that is to be included within the zipcode that doens't physically thouch the main part of the boundary. The main boundary is going to have an IslandID value of 0 (zero).</li>
-<li>The <em>SortOrder </em>field numbers each boundary row in the order they appeared in the ARC/INFO Ungenerate (ASCII) file.</li>
+<li>The *IslandID* field numbers each "island" or "zone" for that spefic zipcode's boundary. An island is an area within the zipcode that is omitted from the zipcode, or an island of land that is to be included within the zipcode that doens't physically thouch the main part of the boundary. The main boundary is going to have an IslandID value of 0 (zero).</li>
+<li>The *SortOrder *field numbers each boundary row in the order they appeared in the ARC/INFO Ungenerate (ASCII) file.</li>
 </ol>
 
-Here's the SQL code for creating these tables. For this article, I created these tables in a database named <em>ZipCodeBoundaries</em>.
+Here's the SQL code for creating these tables. For this article, I created these tables in a database named *ZipCodeBoundaries*.
 <pre class="brush: sql; first-line: 1; tab-size: 4; toolbar: false; ">USE [ZipCodeBoundaries]
 GO
 /****** Object:  Table [dbo].[ZipCode]    Script Date: 06/24/2008 15:40:28 ******/

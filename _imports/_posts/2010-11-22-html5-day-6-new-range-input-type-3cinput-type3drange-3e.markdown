@@ -19,14 +19,14 @@ Some times a Range slider is the appropriate UI tool to allow a user to select a
 <a href="/images/postsHTML5_Day6_InputRange_Screenshot.png"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="HTML5_Day6_InputRange_Screenshot" src="/images/postsHTML5_Day6_InputRange_Screenshot_thumb.png" alt="HTML5_Day6_InputRange_Screenshot" width="464" height="251" border="0" /></a>
 <h3>Display in Modern Browsers</h3>
 
-In the above screenshot shows an example of the &lt;input type=range/&gt; element as it is rendered in the Opera web browser.
+In the above screenshot shows an example of the <input type=range/> element as it is rendered in the Opera web browser.
 
 Here&rsquo;s the code for the range input shown:
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;input type=range
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><input type=range
     min=0
     max=100
     value=25
-    step=5 /&gt;</pre>
+    step=5 /></pre>
 
 This code defines a range input that allows the user to select value from 0 to 100 with increments of 5.
 
@@ -42,50 +42,50 @@ One thing to remember about these attributes is they are really just suggestions
 
 Just as with the <a href="/post/2010/11/18/HTML5-Day-5-New-Date-Input-Type.aspx">New Date Input type</a>, the Range Input will be rendered as a standard textbox in older browsers. This will allow users to still use the field to enter a number, but they will need to type in it&rsquo;s value. This may not be your desired input. To get a nice range slider to show in older browsers you can employ a little help from jQuery and jQuery UI.
 
-The right side of the screenshot at the top of this post shows an example of the jQuery UI Slider being used to augment the &lt;input type=range /&gt; UI in older browsers (Firefox in this case) that do not natively support it.
+The right side of the screenshot at the top of this post shows an example of the jQuery UI Slider being used to augment the <input type=range /> UI in older browsers (Firefox in this case) that do not natively support it.
 
-Here&rsquo;s some fairly simple jQuery code that will loop through all &lt;input type=range /&gt; elements in the page and essentially convert them to jQuery UI Sliders.
+Here&rsquo;s some fairly simple jQuery code that will loop through all <input type=range /> elements in the page and essentially convert them to jQuery UI Sliders.
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">$(function(){
-    // Check if browser supports &lt;input type=range/&gt;
+    // Check if browser supports <input type=range/>
     var i = document.createElement("input");
     i.setAttribute("type", "range");
     var rangeNotSupported = (i.type === "text");
     delete i;
 
-    // If browser doesn't support &lt;input type=range/&gt;
+    // If browser doesn't support <input type=range/>
     // then use jQuery UI to display them
     if(rangeNotSupported) {
-        // loop through all &lt;input type=range/&gt;
+        // loop through all <input type=range/>
         // on the page
         $("input[type=range]").each(function(){
             var range = $(this);
             
-            // Create &lt;div/&gt; to hold jQuery UI Slider
-            var sliderDiv = $("&lt;div/&gt;");
+            // Create <div/> to hold jQuery UI Slider
+            var sliderDiv = $("<div/>");
             sliderDiv.width(range.width());
             
             // Insert jQuery UI Slider where the
-            // &lt;input type=range/&gt; is located
+            // <input type=range/> is located
             range.after(
                 sliderDiv.slider({
                     // Set values that are set declaratively
-                    // in the &lt;input type=range/&gt; element
+                    // in the <input type=range/> element
                     min: parseFloat(range.attr("min")),
                     max: parseFloat(range.attr("max")),
                     value: parseFloat(range.val()),
                     step: parseFloat(range.attr("step")),
-                    // Update the &lt;input type=range/&gt; when
+                    // Update the <input type=range/> when
                     // value of slider changes
                     slide: function(evt, ui) {
                         range.val(ui.value);
                     },
                     change: function(evt, ui) {
-                        // set &lt;input type=range/&gt; value
+                        // set <input type=range/> value
                         range.val(ui.value);
                     }
                 })
             ).
-            // Hide &lt;input type=range/&gt; from display
+            // Hide <input type=range/> from display
             hide();
         });
     }

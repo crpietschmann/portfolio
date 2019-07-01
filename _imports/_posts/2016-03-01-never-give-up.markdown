@@ -18,11 +18,11 @@ There is a statement that is very prevalent in our culture that "you only have 1
 
 I've blogged about failure on a couple occasions already, but it's importance can not be overstated. The true importance of failure on the path to success is not something that can be summed up in a single statement as simple as "You only got 1 shot." The truth is you have as many shots are you give yourself.
 
-As Henry Ford once said, "<em>Whether you think you can or you can't, you're right.</em>"
+As Henry Ford once said, "*Whether you think you can or you can't, you're right.*"
 
 The only person holding you back from success is ultimately yourself. Every single time you fail is another opportunity to learn and to grow. It is extremely important that you reflect on failure and learn from it so you can take that failure and turn it into future success.
 
-As Apple and Steve Jobs once said, "<em>It's the people crazy enough to think they can change the world who do.</em>"
+As Apple and Steve Jobs once said, "*It's the people crazy enough to think they can change the world who do.*"
 
 It's guaranteed that any successful person you look up to (Steve Jobs, Bill Gates, Elon Musk, Mark Zuckerberg, and on, and on) has experienced failure at some point in their careers. They never gave up. They never let that turn them away from their passions; from their dreams. They learned from that failure and used it for their advantage at some point in the future.
 

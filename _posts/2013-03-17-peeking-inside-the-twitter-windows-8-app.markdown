@@ -16,9 +16,9 @@ redirect_from:
 
 I decide to peek inside the Twitter Windows 8 App package to see what language they are using and to see if I can find any open source projects being used within. Well, I found some interesting stuff…  <h3>How to view inside the package</h3>  
    <br />You can view any Windows 8 app package that is installed on your computer as it resides within the following folder:  
-<em>C:\Program Files\WindowsApps</em>  
+*C:\Program Files\WindowsApps*  
 Each package has it’s own folder within that folder. Here’s the full path to the package folder where the Twitter apps files reside:  
-<em>C:\Program Files\WindowsApps\9E2F88E3.Twitter_1.0.0.1_x64__wgeqdkkx372wm</em>  
+*C:\Program Files\WindowsApps\9E2F88E3.Twitter_1.0.0.1_x64__wgeqdkkx372wm*  
 The “x64” in the folder indicates that I have the Intel dependent 64-bit version of the app. If you have a Windows RT tablet, then you’ll have a different package that could either just be compiled for ARM or it could be different source code too.  
 FYI: You wont have persmissions to view the contents of the WindowsApp folder by default. You can grant yourself access by opening up this folders Advanced Security Settings dialog and setting your local user or Administrators group as the “Owner” of the folder. This will allow you to peek within without messing up any other permissions related to the folder. However, please do this at your own risk as I cannot take responsibility if you mess anything up.  <h3>Twitter App Package Contents</h3>  
 Here’s a screenshot of the root view of the Twitter apps package folder:  

@@ -22,4 +22,4 @@ My Brother In Law, Jeremy, is back now after his second tour in Iraq. This time 
 
 <a rel="nofollow" href="http://www.wxow.com/Global/story.asp?S=11805417"><img src="/images/posts2010/1/FamilyWaitsForSoldiersReturnWXOW10LaCrosse.png" border="0" alt="" /></a>
 
-<em>The above picture is from the video, and is most likely owned / copyright WXOW Channel 19. FYI, This picture is not under the Creative Commons Attribution License that covers all other content on this blog.</em>
+*The above picture is from the video, and is most likely owned / copyright WXOW Channel 19. FYI, This picture is not under the Creative Commons Attribution License that covers all other content on this blog.*

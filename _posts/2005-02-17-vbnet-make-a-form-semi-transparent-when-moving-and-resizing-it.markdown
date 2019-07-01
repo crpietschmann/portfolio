@@ -112,7 +112,7 @@ Here&#39;s a little VB.NET code snippet that I wrote to make a Form semi-transpa
 				<font size="2">
 				
 
-				<font size="2" color="#0000ff">If</font><font size="2"> </font><font size="2" color="#0000ff">Me</font><font size="2">.Opacity &lt;&gt; _OpacityMove </font><font size="2" color="#0000ff">Then</font>
+				<font size="2" color="#0000ff">If</font><font size="2"> </font><font size="2" color="#0000ff">Me</font><font size="2">.Opacity <> _OpacityMove </font><font size="2" color="#0000ff">Then</font>
 				
 				</font><font size="2">
 				<blockquote dir="ltr" style="margin-right: 0px">
@@ -139,7 +139,7 @@ Here&#39;s a little VB.NET code snippet that I wrote to make a Form semi-transpa
 				<font size="2">
 				
 
-				<font size="2" color="#0000ff">If</font><font size="2"> </font><font size="2" color="#0000ff">Me</font><font size="2">.Opacity &lt;&gt; _OpacityResize </font><font size="2" color="#0000ff">Then</font>
+				<font size="2" color="#0000ff">If</font><font size="2"> </font><font size="2" color="#0000ff">Me</font><font size="2">.Opacity <> _OpacityResize </font><font size="2" color="#0000ff">Then</font>
 				
 				</font><font size="2">
 				<blockquote dir="ltr" style="margin-right: 0px">
@@ -166,7 +166,7 @@ Here&#39;s a little VB.NET code snippet that I wrote to make a Form semi-transpa
 		
 		</font><font size="2">
 		<blockquote dir="ltr" style="margin-right: 0px">
-			<font size="2" color="#0000ff">If</font><font size="2"> </font><font size="2" color="#0000ff">Me</font><font size="2">.Opacity &lt;&gt; _OpacityOriginal </font><font size="2" color="#0000ff">Then</font><font size="2"> </font><font size="2" color="#0000ff">Me</font><font size="2">.Opacity = _OpacityOriginal</font><font size="2">
+			<font size="2" color="#0000ff">If</font><font size="2"> </font><font size="2" color="#0000ff">Me</font><font size="2">.Opacity <> _OpacityOriginal </font><font size="2" color="#0000ff">Then</font><font size="2"> </font><font size="2" color="#0000ff">Me</font><font size="2">.Opacity = _OpacityOriginal</font><font size="2">
 			
 
 			<font size="2" color="#0000ff">End</font><font size="2"> </font><font size="2" color="#0000ff">If</font>

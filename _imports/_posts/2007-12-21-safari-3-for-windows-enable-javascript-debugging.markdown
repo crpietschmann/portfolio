@@ -19,13 +19,13 @@ As you probably know, Safari 3 doesn't allow you to turn on the debug menu withi
 
 **Step 1:** Open up the Preferences.plist file in notepad.
 
-In Windows XP:<br /><em>C:\Documents and Settings\USERNAME\Application Data\Apple Computer\Safari\Preferences.plist</em>
+In Windows XP:<br />*C:\Documents and Settings\USERNAME\Application Data\Apple Computer\Safari\Preferences.plist*
 
-In Windows Vista:<br /><em>C:\Users\USERNAME\AppData\Roaming\Apple Computer\Safari\Preferences.plist</em>
+In Windows Vista:<br />*C:\Users\USERNAME\AppData\Roaming\Apple Computer\Safari\Preferences.plist*
 
-**Step 2:** Add the following to the end of the file, just before "<em>&lt;/dict&gt;&lt;/plist&gt;</em>":
+**Step 2:** Add the following to the end of the file, just before "*</dict></plist>*":
 
-<em>&lt;key&gt;IncludeDebugMenu&lt;/key&gt;&lt;true/&gt;</em>
+*<key>IncludeDebugMenu</key><true/>*
 
 **Step 3:** Now open up Safari and you have the Debug menu
 <h3>Where can I find a Debugger for Safari?</h3>
@@ -35,15 +35,15 @@ You can download the Drosera debugger here: <a href="http://nightly.webkit.org">
 
 **Step 1:** Make sure you download the Webkit Nightly Build located at <a href="http://nightly.webkit.org">http://nightly.webkit.org</a> and extract its contents somewhere on your harddrive.
 
-**Step 2:** If you're running Win Vista then  you'll have to add the following to the WebKitPreferences.plist file, just before "<em>&lt;/dict&gt;&lt;/plist&gt;</em>":
+**Step 2:** If you're running Win Vista then  you'll have to add the following to the WebKitPreferences.plist file, just before "*</dict></plist>*":
 
-<em>&lt;key&gt;WebKitUserStyleSheetLocationPreferenceKey&lt;/key&gt;&lt;true/&gt;</em>
+*<key>WebKitUserStyleSheetLocationPreferenceKey</key><true/>*
 
 You can find the WebKitPreferences.plist file within the same folder that the Preferences.plist file is in; it's path is shown above. Also, if you're running Vista and you don't add this snippet to the WebKitPreferences.plist file, then Safari will crash and you wont be able to debug until you add it.
 
-**Step 3:** Execute the <em>run-nightly-webkit.cmd</em> file. This will launch Safari.
+**Step 3:** Execute the *run-nightly-webkit.cmd* file. This will launch Safari.
 
-**Step 4:** Execute the <em>run-drosera.cmd</em> file. This will launch Drosera.
+**Step 4:** Execute the *run-drosera.cmd* file. This will launch Drosera.
 
 **Step 5:** Execute the FindSafari.exe file. This will link up Drosera to your running instance of Safari.
 

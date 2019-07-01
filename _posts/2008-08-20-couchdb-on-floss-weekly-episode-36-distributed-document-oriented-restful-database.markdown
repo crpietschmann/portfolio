@@ -23,19 +23,19 @@ Here&#39;s a description of what CouchDB is from their website:
 
 
 
-<em>Apache CouchDB is a distributed, fault-tolerant and schema-free
+*Apache CouchDB is a distributed, fault-tolerant and schema-free
 document-oriented database accessible via a RESTful HTTP/JSON API. Among other
 features, it provides robust, incremental replication with bi-directional
 conflict detection and resolution, and is queryable and indexable using a
 table-oriented view engine with JavaScript acting as the default view
-definition language.</em>
+definition language.*
 
 
 
-<em>CouchDB is written in <a href="http://erlang.org/">Erlang</a>, but can be easily accessed from any
+*CouchDB is written in <a href="http://erlang.org/">Erlang</a>, but can be easily accessed from any
 environment that provides means to make HTTP requests. There are a multitude of
 third-party client libraries that make this even easier for a variety of
-programming languages and environments.</em>
+programming languages and environments.*
 
 
 

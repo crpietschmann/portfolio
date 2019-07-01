@@ -15,12 +15,12 @@ redirect_from:
 <!-- more -->
 
 You have your ConnectionString for your <a title="ASP.NET" href="http://asp.net" target="_blank">ASP.NET</a> web app stored in the Web.Config file. Now how exactly how do you get that ConnectionString out of there from within your code?  
-Sample Web.Config section with a ConnectionString:  <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">connectionStrings</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">remove</span> <span class="attr">name</span><span class="kwrd">=&quot;LocalSqlServer&quot;</span> <span class="kwrd">/&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">add</span> <span class="attr">name</span><span class="kwrd">=&quot;LocalSqlServer&quot;</span>
+Sample Web.Config section with a ConnectionString:  <pre class="csharpcode"><span class="kwrd"><</span><span class="html">connectionStrings</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">remove</span> <span class="attr">name</span><span class="kwrd">=&quot;LocalSqlServer&quot;</span> <span class="kwrd">/></span>
+    <span class="kwrd"><</span><span class="html">add</span> <span class="attr">name</span><span class="kwrd">=&quot;LocalSqlServer&quot;</span>
         <span class="attr">connectionString</span><span class="kwrd">=&quot;Data Source=myDBServer;database=myDB;Integrated Security=True;&quot;</span>
-        <span class="attr">providerName</span><span class="kwrd">=&quot;System.Data.SqlClient&quot;</span><span class="kwrd">/&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">connectionStrings</span><span class="kwrd">&gt;</span></pre>
+        <span class="attr">providerName</span><span class="kwrd">=&quot;System.Data.SqlClient&quot;</span><span class="kwrd">/></span>
+<span class="kwrd"></</span><span class="html">connectionStrings</span><span class="kwrd">></span></pre>
 <style type="text/css">
 .csharpcode, .csharpcode pre
 {

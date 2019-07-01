@@ -20,7 +20,7 @@ In many of the server-side programming languages like C#, the String object has 
 Here's a simple implementation of a ".contains" function that is case sensitive:
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">function contains(value, searchFor)
 {
-	return (value || '').indexOf(searchFor) &gt; -1;
+	return (value || '').indexOf(searchFor) > -1;
 }</pre>
 
 Sample Usage:
@@ -41,5 +41,5 @@ To make it ignore case you just need to modify the function to convert the passe
 	if (v2) {
 		v2 = v2.toLowerCase();
 	}
-	return v.indexOf(v2) &gt; -1;
+	return v.indexOf(v2) > -1;
 }</pre>

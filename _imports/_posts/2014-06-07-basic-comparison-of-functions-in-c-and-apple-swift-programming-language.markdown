@@ -37,7 +37,7 @@ string sayHello() {
 }
 
 // Swift
-func sayHello() -&gt; String {
+func sayHello() -> String {
     return "Hello!"
 }
 
@@ -60,7 +60,7 @@ string sayHello(string name) {
 }
 
 // Swift
-func sayHello(name: String) -&gt; String {
+func sayHello(name: String) -> String {
     // do something
 }
 
@@ -72,7 +72,7 @@ string sayHello(string name, int age) {
 }
 
 // Swift
-func sayHello(name: String, age: Int) -&gt; String {
+func sayHello(name: String, age: Int) -> String {
     // do something
 }</pre>
 
@@ -96,7 +96,7 @@ Person getPerson() {
 
 
 // Swift
-func getPerson() -&gt; (firstName: String, lastName: String) {
+func getPerson() -> (firstName: String, lastName: String) {
     return ("Steve", "Jobs")
 }
 
@@ -187,7 +187,7 @@ int add(params int[] numbers) {
 }
 
 // Swift
-func add(numbers: Int...) -&gt; Int {
+func add(numbers: Int...) -> Int {
     var total = 0
     for i in numbers {
         total += i
@@ -256,7 +256,7 @@ func doSomething(name: String) {
 }
 
 // with return value
-func add(a: Int, b: Int) -&gt; Int {
+func add(a: Int, b: Int) -> Int {
     return a + b
 }
 
@@ -264,11 +264,11 @@ func add(a: Int, b: Int) -&gt; Int {
 // Using Function Type
 // C#
 // no return value
-Action&lt;string&gt; process = doSomething;
+Action<string> process = doSomething;
 process("Alan");
 
 // with return value
-Func&lt;int, int, int&gt; doMath = add;
+Func<int, int, int> doMath = add;
 var total = add(19, 23);
 
 // Swift
@@ -277,21 +277,21 @@ var process: (String) = doSomething
 process("Alan")
 
 // with return value
-var doMath: (Int, Int) -&gt; Int = add
+var doMath: (Int, Int) -> Int = add
 var total = doMath(19, 23)</pre>
 
-Declaring function types in Swift is a little more like the standard Function definition; as apposed to the C# style of utilizing the Func&lt;&gt; and Action&lt;&gt; generic types.
+Declaring function types in Swift is a little more like the standard Function definition; as apposed to the C# style of utilizing the Func<> and Action<> generic types.
 <h3>Passing a Function as a Parameter</h3>
 
 Since a Function is just another Type in both languages it can then be passed in to another Function as a parameter.
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Declare Functions
 // C#
-int doMath(int a, int b, Func&lt;int, int, int&gt; operation) {
+int doMath(int a, int b, Func<int, int, int> operation) {
     return operation(a, b);
 }
 
 // Swift
-func doMath(a: Int, b: Int, operation: (Int, Int) -&gt; Int) {
+func doMath(a: Int, b: Int, operation: (Int, Int) -> Int) {
     return operation(a, b)
 }
 
@@ -308,10 +308,10 @@ This is probably the most obvious feature of C# that allows for LINQ and all it'
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Functions as Parameters
 // using "Lambda Expressions"
 // C#
-var total = doMath(2, 21, (a, b) =&gt; a * b);
+var total = doMath(2, 21, (a, b) => a * b);
 
 // Swift
-func multiply (a: Int, a: Int) -&gt; Int {
+func multiply (a: Int, a: Int) -> Int {
     return a * b
 }
 var toal = doMath(21, 2, multiply)</pre>
@@ -321,8 +321,8 @@ Functions can be nested within other Functions, as eluded to in the previous exa
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Nested Functions
 // C#
 int doSomething(int a, int b) {
-    var add = new Func&lt;int, int, int&gt;(
-        (first, second) =&gt; {
+    var add = new Func<int, int, int>(
+        (first, second) => {
             return first + second;
         }
     );
@@ -330,8 +330,8 @@ int doSomething(int a, int b) {
 }
 
 // Swift
-func doSomething(a: Int, b: Int) -&gt; Int {
-    func add(first: Int, second: Int) -&gt; Int {
+func doSomething(a: Int, b: Int) -> Int {
+    func add(first: Int, second: Int) -> Int {
         return first + second
     }
     return add(a, b)
@@ -347,8 +347,8 @@ void positiveAction(int i) {
 void negativeAction(int i) {
     // do something
 }
-Action&lt;int&gt; chooseAction(int i) {
-    if (i &gt; 0) {
+Action<int> chooseAction(int i) {
+    if (i > 0) {
         return positiveAction;
     }
     return negativeAction;
@@ -361,8 +361,8 @@ func positiveAction(i: Int) {
 func negativeAction(i: Int) {
     // do something
 }
-func chooseAction(i: Int) -&gt; (Int) {
-    if (i &gt; 0) {
+func chooseAction(i: Int) -> (Int) {
+    if (i > 0) {
         return positiveAction
     }
     return negativeAction

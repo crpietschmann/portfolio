@@ -28,7 +28,7 @@ Download the Release: <a href="http://www.codeplex.com/VEToolkit/Release/Project
 <h3>What is the Virtual Earth Toolkit?</h3>
 
 
-<em><span>The
+*<span>The
 Virtual Earth Toolkit is a set of JavaScript-based Controls/Tools that
 Extend Virtual Earth with functionality that is commonly implemented,
 but hasn&#39;t been implemented within the Virtual Earth JavaScript Map
@@ -40,7 +40,7 @@ JavaScript library to use other than Virtual Earth 6.2 (current
 version). This allows you to use this toolkit along-side any other
 JavaScript library (jQuery, ASP.NET AJAX, etc.); plus you can make use
 of it with any server-side framework of you choice (ASP.NET, ASP.NET
-MVC, PHP, etc.).</span></em> 
+MVC, PHP, etc.).</span>* 
 
 <h3>Features <br />
 </h3>

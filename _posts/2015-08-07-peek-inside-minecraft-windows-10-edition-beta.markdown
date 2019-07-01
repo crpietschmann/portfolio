@@ -31,7 +31,7 @@ Here's the full platform list:
 
 Below is the folder location where the app package is stored, along with a screen shot of the root folders contents.
 
-<em>C:\Program Files\WindowsApps\Microsoft.MinecraftUWP_0.12.1.0_x64__8wekyb3d8bbwe</em>
+*C:\Program Files\WindowsApps\Microsoft.MinecraftUWP_0.12.1.0_x64__8wekyb3d8bbwe*
 
 <img src="/images/posts/2015/08/Win10MinecraftBetaPackageFolder.png" alt="" />
 
@@ -41,13 +41,13 @@ Below is the folder location where the app package is stored, along with a scree
 
 Upon further inspection of the image resources contained within the app package, it appears that this is the "Minecraft: Pocket Edition". Looking at the ".png" file in the root package folder, the images show "Pocket Edition" instead of "Windows 10 Edition Beta". This indicates that they possibly started with the Pocket Edition code base and ported it over to Windows 10.
 
-The "<em>Minecraft.Win10.DX11.exe</em>" contains virtually the entire application, as there's only a single additional DLL within the package. This makes it difficult to tell what additional libraries, open source or otherwise, are used within the app. Also, being C++ there may possibly be some shared code between this and the XBox version, but again there isn't really any certain way to tell.
+The "*Minecraft.Win10.DX11.exe*" contains virtually the entire application, as there's only a single additional DLL within the package. This makes it difficult to tell what additional libraries, open source or otherwise, are used within the app. Also, being C++ there may possibly be some shared code between this and the XBox version, but again there isn't really any certain way to tell.
 
 The "data" sub-folder within the package contains all the game asset (images, audio, etc) files.
 
 <img style="display: block; margin-left: auto; margin-right: auto;" src="/images/posts/2015/08/Win10MinecraftImageAssets.png" alt="" />
 
-It can be concluded that the Minecraft Beta for Windows 10 uses DirectX 11, rather than the newer DirectX 12. This can be determined by the fact that the .EXE filename contains "DX11" as well as the existence of the "<em>data/shaders/dx11</em>" sub-folder within the package.
+It can be concluded that the Minecraft Beta for Windows 10 uses DirectX 11, rather than the newer DirectX 12. This can be determined by the fact that the .EXE filename contains "DX11" as well as the existence of the "*data/shaders/dx11*" sub-folder within the package.
 
 This is interesting since DirectX 12 does ship with Windows 10, and there shouldn't be any technical reason Microsoft wouldn't have used it with Minecraft. The leads me to believe that the reason it uses DirectX 11 is because they are leveraging an existing "Pocket Edition" code base that was built for DirectX 11. There are many reason this would be the case, but one theory is that Minecraft was originally to be released for Windows 8 and some where along the development cycle it was decided to hold off the release until Windows 10. This could possibly be one of the many tactics being employed in an attempt to lure users to upgrade to Windows 10 sooner than later.
 
@@ -68,4 +68,4 @@ You can not connect to a standard Minecraft server you or some one else is hosti
 
 While it's really nice that Microsoft has brought Minecraft to the Windows Store; it is basically the Pocket Edition so no Mods are supported. We are unable to tell at this time whether Microsoft will bring ARM (yup I went there) support for the app in the future. Lastly, if you love your Mods and Server, as anyone serious about Minecraft does, then you'll likely want to stay away from this version as it's just as limited as the other "Pocket Editions"
 
-<sub><em>P.S. Sorry if I mispoke about Minecraft, people reading this post likely know more about it than I do. Feel free to leave a comment or contact me and I'll update the post. Thanks!!</em></sub>
+<sub>*P.S. Sorry if I mispoke about Minecraft, people reading this post likely know more about it than I do. Feel free to leave a comment or contact me and I'll update the post. Thanks!!*</sub>

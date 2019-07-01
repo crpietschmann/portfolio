@@ -16,7 +16,7 @@ redirect_from:
 
 After I wrote the “<a href="/post/2010/09/29/Intro-to-IronRubyDLR-Scripting-in-C-Silverlight-4-Application.aspx">Intro to IronRuby/DLR Scripting in C# Silverlight 4 Application</a>” post, I came across an interesting series on <a href="http://www.thinkbottomup.com.au/site/blog/Embedding_DLR_Scripts_in_XAML_Part_6">embedding DLR scripts in XAML with WPF</a>. This is an interesting series, although the code doesn’t run in Silverlight, due to the fact that Silverlight is only a subset of WPF and doesn’t support the <a href="http://msdn.microsoft.com/en-us/library/system.windows.markup.markupextension.aspx">System.Windows.Markup.MarkupExtension</a> class. I test out a couple things in Silverlight, and I was able to get similar DLR scripting functionality working under Silverlight using a combination of a simple, custom <a href="http://msdn.microsoft.com/en-us/library/system.windows.data.ivalueconverter.aspx">IValueConverter</a> and a custom UserControl class.  
 If you are unfamiliar with <a href="http://timheuer.com/blog/archive/2008/07/30/format-data-in-silverlight-databinding-valueconverter.aspx">value converters</a> and the <a href="http://msdn.microsoft.com/en-us/library/system.windows.data.ivalueconverter.aspx">IValueConverter</a> interface (same for both Silverlight and WPF), you may want to look it up and learn how to create your own. Value converters are tremendously helpful when performing data binding.  <h3>Embedded IronRuby within XAML</h3>  
-To start, here’s a few examples of IronRuby code embedded within a custom IValueConverter and custom UserControl. As you’ll see, this can be very effective to embed scripting to define how to display the values bound, or to manipulate the content of the custom user control. Although, you must keep in mind that this is not limited to simple tasks such as these. You have the full power of the DLR and .NET within the DLR scripts being executed, so there really is no limit to what could be coded within.  <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">=&quot;SLXamlEmbeddedScript.MainPage&quot;</span>
+To start, here’s a few examples of IronRuby code embedded within a custom IValueConverter and custom UserControl. As you’ll see, this can be very effective to embed scripting to define how to display the values bound, or to manipulate the content of the custom user control. Although, you must keep in mind that this is not limited to simple tasks such as these. You have the full power of the DLR and .NET within the DLR scripts being executed, so there really is no limit to what could be coded within.  <pre class="csharpcode"><span class="kwrd"><</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">=&quot;SLXamlEmbeddedScript.MainPage&quot;</span>
     <span class="attr">xmlns</span><span class="kwrd">=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span>
     <span class="attr">xmlns:x</span><span class="kwrd">=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span>
     <span class="attr">xmlns:d</span><span class="kwrd">=&quot;http://schemas.microsoft.com/expression/blend/2008&quot;</span>
@@ -27,12 +27,12 @@ To start, here’s a few examples of IronRuby code embedded within a custom IVal
              
     <span class="attr">mc:Ignorable</span><span class="kwrd">=&quot;d&quot;</span>
     <span class="attr">d:DesignHeight</span><span class="kwrd">=&quot;300&quot;</span> <span class="attr">d:DesignWidth</span><span class="kwrd">=&quot;400&quot;</span>
-    <span class="attr">x:Name</span><span class="kwrd">=&quot;root&quot;</span> <span class="attr">DataContext</span><span class="kwrd">=&quot;test&quot;</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">UserControl.Resources</span><span class="kwrd">&gt;</span>
-        <span class="rem">&lt;!-- This converter uses a Ruby object's 'add' method</span>
+    <span class="attr">x:Name</span><span class="kwrd">=&quot;root&quot;</span> <span class="attr">DataContext</span><span class="kwrd">=&quot;test&quot;</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">UserControl.Resources</span><span class="kwrd">></span>
+        <span class="rem"><!-- This converter uses a Ruby object's 'add' method</span>
 <span class="rem">        to add 5 plus 5 and return the results</span>
-<span class="rem">        --&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">local:DLRScriptValueConverter</span> <span class="attr">x:Key</span><span class="kwrd">=&quot;FivePlusFiveConverter&quot;</span> <span class="attr">xml:space</span><span class="kwrd">=&quot;preserve&quot;</span><span class="kwrd">&gt;</span>
+<span class="rem">        --></span>
+        <span class="kwrd"><</span><span class="html">local:DLRScriptValueConverter</span> <span class="attr">x:Key</span><span class="kwrd">=&quot;FivePlusFiveConverter&quot;</span> <span class="attr">xml:space</span><span class="kwrd">=&quot;preserve&quot;</span><span class="kwrd">></span>
             class AddFive
                 def add
                     5 + 5
@@ -40,42 +40,42 @@ To start, here’s a few examples of IronRuby code embedded within a custom IVal
             end
             a = AddFive.new
             a.add
-        <span class="kwrd">&lt;/</span><span class="html">local:DLRScriptValueConverter</span><span class="kwrd">&gt;</span>
+        <span class="kwrd"></</span><span class="html">local:DLRScriptValueConverter</span><span class="kwrd">></span>
 
-        <span class="rem">&lt;!-- This converter uses the value being bound via data binding,</span>
+        <span class="rem"><!-- This converter uses the value being bound via data binding,</span>
 <span class="rem">        passed through to IronRuby as 'ConverterValue', and generates a custom</span>
 <span class="rem">        value to return. In this case it concatenates the FirstName and LastName</span>
-<span class="rem">        properties --&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">local:DLRScriptValueConverter</span> <span class="attr">x:Key</span><span class="kwrd">=&quot;GetFullNameConverter&quot;</span> <span class="attr">xml:space</span><span class="kwrd">=&quot;preserve&quot;</span><span class="kwrd">&gt;</span>
+<span class="rem">        properties --></span>
+        <span class="kwrd"><</span><span class="html">local:DLRScriptValueConverter</span> <span class="attr">x:Key</span><span class="kwrd">=&quot;GetFullNameConverter&quot;</span> <span class="attr">xml:space</span><span class="kwrd">=&quot;preserve&quot;</span><span class="kwrd">></span>
             ConverterValue.FirstName + &quot; &quot; + ConverterValue.LastName
-        <span class="kwrd">&lt;/</span><span class="html">local:DLRScriptValueConverter</span><span class="kwrd">&gt;</span>
+        <span class="kwrd"></</span><span class="html">local:DLRScriptValueConverter</span><span class="kwrd">></span>
 
-    <span class="kwrd">&lt;/</span><span class="html">UserControl.Resources</span><span class="kwrd">&gt;</span>
+    <span class="kwrd"></</span><span class="html">UserControl.Resources</span><span class="kwrd">></span>
 
-    <span class="kwrd">&lt;</span><span class="html">StackPanel</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;LayoutRoot&quot;</span> <span class="attr">Background</span><span class="kwrd">=&quot;White&quot;</span><span class="kwrd">&gt;</span>
+    <span class="kwrd"><</span><span class="html">StackPanel</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;LayoutRoot&quot;</span> <span class="attr">Background</span><span class="kwrd">=&quot;White&quot;</span><span class="kwrd">></span>
         
-        <span class="rem">&lt;!-- Bind using the FivePlusFiveConverter defined above --&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">TextBlock</span> <span class="attr">Text</span><span class="kwrd">=&quot;{Binding Converter={StaticResource FivePlusFiveConverter}}&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">TextBlock</span><span class="kwrd">&gt;</span>
+        <span class="rem"><!-- Bind using the FivePlusFiveConverter defined above --></span>
+        <span class="kwrd"><</span><span class="html">TextBlock</span> <span class="attr">Text</span><span class="kwrd">=&quot;{Binding Converter={StaticResource FivePlusFiveConverter}}&quot;</span><span class="kwrd">></</span><span class="html">TextBlock</span><span class="kwrd">></span>
         
-        <span class="rem">&lt;!-- Bind using the GetFullNameConverter defined above --&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">TextBlock</span> <span class="attr">Text</span><span class="kwrd">=&quot;{Binding ElementName=root, Converter={StaticResource GetFullNameConverter}}&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">TextBlock</span><span class="kwrd">&gt;</span>
+        <span class="rem"><!-- Bind using the GetFullNameConverter defined above --></span>
+        <span class="kwrd"><</span><span class="html">TextBlock</span> <span class="attr">Text</span><span class="kwrd">=&quot;{Binding ElementName=root, Converter={StaticResource GetFullNameConverter}}&quot;</span><span class="kwrd">></</span><span class="html">TextBlock</span><span class="kwrd">></span>
         
-        <span class="rem">&lt;!-- Use DLRScriptUserControl (custom UserControl) to embed</span>
+        <span class="rem"><!-- Use DLRScriptUserControl (custom UserControl) to embed</span>
 <span class="rem">        IronRuby code within XAML and execute it on the Content of</span>
-<span class="rem">        the control. --&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">local:DLRScriptUserControl</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;testusercontrol&quot;</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;</span><span class="html">local:DLRScriptUserControl.Script</span><span class="kwrd">&gt;</span>
-                <span class="kwrd">&lt;</span><span class="html">system:String</span> <span class="attr">xml:space</span><span class="kwrd">=&quot;preserve&quot;</span><span class="kwrd">&gt;</span>
+<span class="rem">        the control. --></span>
+        <span class="kwrd"><</span><span class="html">local:DLRScriptUserControl</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;testusercontrol&quot;</span><span class="kwrd">></span>
+            <span class="kwrd"><</span><span class="html">local:DLRScriptUserControl.Script</span><span class="kwrd">></span>
+                <span class="kwrd"><</span><span class="html">system:String</span> <span class="attr">xml:space</span><span class="kwrd">=&quot;preserve&quot;</span><span class="kwrd">></span>
                     Ctrl.FindName('txtName').Text = 'Hello from IronRuby'
-                <span class="kwrd">&lt;/</span><span class="html">system:String</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;/</span><span class="html">local:DLRScriptUserControl.Script</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;</span><span class="html">local:DLRScriptUserControl.Content</span><span class="kwrd">&gt;</span>
-                <span class="kwrd">&lt;</span><span class="html">TextBlock</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;txtName&quot;</span><span class="kwrd">&gt;</span>Default<span class="kwrd">&lt;/</span><span class="html">TextBlock</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;/</span><span class="html">local:DLRScriptUserControl.Content</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;/</span><span class="html">local:DLRScriptUserControl</span><span class="kwrd">&gt;</span>
+                <span class="kwrd"></</span><span class="html">system:String</span><span class="kwrd">></span>
+            <span class="kwrd"></</span><span class="html">local:DLRScriptUserControl.Script</span><span class="kwrd">></span>
+            <span class="kwrd"><</span><span class="html">local:DLRScriptUserControl.Content</span><span class="kwrd">></span>
+                <span class="kwrd"><</span><span class="html">TextBlock</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;txtName&quot;</span><span class="kwrd">></span>Default<span class="kwrd"></</span><span class="html">TextBlock</span><span class="kwrd">></span>
+            <span class="kwrd"></</span><span class="html">local:DLRScriptUserControl.Content</span><span class="kwrd">></span>
+        <span class="kwrd"></</span><span class="html">local:DLRScriptUserControl</span><span class="kwrd">></span>
         
-    <span class="kwrd">&lt;/</span><span class="html">StackPanel</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">UserControl</span><span class="kwrd">&gt;</span></pre>
+    <span class="kwrd"></</span><span class="html">StackPanel</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">UserControl</span><span class="kwrd">></span></pre>
 <style type="text/css">
 
 
@@ -105,7 +105,7 @@ To start, here’s a few examples of IronRuby code embedded within a custom IVal
 .csharpcode .lnum { color: #606060; }</style>
 
 
-One thing to not about the above usage code, is that you must use <em>xml:space=”preserve”</em> when embeding the IronRuby/DLR scripts. This will ensure the line breaks are preserved in the resulting string. Without it the code will not run, since the IronRuby syntax depends on those line breaks.
+One thing to not about the above usage code, is that you must use *xml:space=”preserve”* when embeding the IronRuby/DLR scripts. This will ensure the line breaks are preserved in the resulting string. Without it the code will not run, since the IronRuby syntax depends on those line breaks.
 
 <h3>DLRScriptValueConverter - IValueConverter</h3>
 

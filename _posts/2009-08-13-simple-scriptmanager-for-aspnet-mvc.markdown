@@ -22,44 +22,44 @@ I have worked out a really simple &ldquo;ScriptManager&rdquo; component for use 
 To use the &ldquo;SimpleScriptManager&rdquo; with ASP.NET MVC you must first Import the &ldquo;SimpleScriptManager&rdquo; namespace into your Master Page. Then you must place a single line of code in the Master Page file at the location you want to Render the Script Includes and Blocks to the Page. In order for it to work properly, the Render code needs to be place at the very end of the Master Page; preferably just before the closing Body tag.
 
 Here&rsquo;s a really short example Master Page file with the &ldquo;SimpleScriptManager&rdquo; namespace imported and the call to &ldquo;SimpleScriptManager().Render()&rdquo; located at the very end of the page just before the closing Body tag.
-<pre class="csharpcode"><span class="asp">&lt;%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %&gt;</span>
+<pre class="csharpcode"><span class="asp"><%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %></span>
 
-<span class="asp">&lt;%</span>-- The SimpleScriptManager Namespace must be Imported to be able to use the Html.SimpleScriptManager Extension --<span class="asp">%&gt;</span>
-<span class="asp">&lt;%@ Import Namespace="SimpleScriptManager" %&gt;</span>
+<span class="asp"><%</span>-- The SimpleScriptManager Namespace must be Imported to be able to use the Html.SimpleScriptManager Extension --<span class="asp">%></span>
+<span class="asp"><%@ Import Namespace="SimpleScriptManager" %></span>
 
-<span class="kwrd">&lt;!</span><span class="html">DOCTYPE</span> <span class="attr">html</span> <span class="attr">PUBLIC</span> <span class="kwrd">"-//W3C//DTD XHTML 1.0 Strict//EN"</span> <span class="kwrd">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">html</span> <span class="attr">xmlns</span><span class="kwrd">="http://www.w3.org/1999/xhtml"</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">head</span> <span class="attr">runat</span><span class="kwrd">="server"</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">title</span><span class="kwrd">&gt;&lt;</span><span class="html">asp:ContentPlaceHolder</span> <span class="attr">ID</span><span class="kwrd">="TitleContent"</span> <span class="attr">runat</span><span class="kwrd">="server"</span> <span class="kwrd">/&gt;&lt;/</span><span class="html">title</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">link</span> <span class="attr">href</span><span class="kwrd">="../../Content/Site.css"</span> <span class="attr">rel</span><span class="kwrd">="stylesheet"</span> <span class="attr">type</span><span class="kwrd">="text/css"</span> <span class="kwrd">/&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">head</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">body</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">asp:ContentPlaceHolder</span> <span class="attr">ID</span><span class="kwrd">="MainContent"</span> <span class="attr">runat</span><span class="kwrd">="server"</span> <span class="kwrd">/&gt;</span>
+<span class="kwrd"><!</span><span class="html">DOCTYPE</span> <span class="attr">html</span> <span class="attr">PUBLIC</span> <span class="kwrd">"-//W3C//DTD XHTML 1.0 Strict//EN"</span> <span class="kwrd">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"</span><span class="kwrd">></span>
+<span class="kwrd"><</span><span class="html">html</span> <span class="attr">xmlns</span><span class="kwrd">="http://www.w3.org/1999/xhtml"</span><span class="kwrd">></span>
+<span class="kwrd"><</span><span class="html">head</span> <span class="attr">runat</span><span class="kwrd">="server"</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">title</span><span class="kwrd">><</span><span class="html">asp:ContentPlaceHolder</span> <span class="attr">ID</span><span class="kwrd">="TitleContent"</span> <span class="attr">runat</span><span class="kwrd">="server"</span> <span class="kwrd">/></</span><span class="html">title</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">link</span> <span class="attr">href</span><span class="kwrd">="../../Content/Site.css"</span> <span class="attr">rel</span><span class="kwrd">="stylesheet"</span> <span class="attr">type</span><span class="kwrd">="text/css"</span> <span class="kwrd">/></span>
+<span class="kwrd"></</span><span class="html">head</span><span class="kwrd">></span>
+<span class="kwrd"><</span><span class="html">body</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">asp:ContentPlaceHolder</span> <span class="attr">ID</span><span class="kwrd">="MainContent"</span> <span class="attr">runat</span><span class="kwrd">="server"</span> <span class="kwrd">/></span>
     
-    <span class="asp">&lt;%</span>-- Render all the Scripts to the Page --<span class="asp">%&gt;</span>
-    <span class="asp">&lt;%</span>-- Must be located at the very end of the Master Page to work properly --<span class="asp">%&gt;</span>
-    <span class="asp">&lt;%</span> Html.SimpleScriptManager().Render(); <span class="asp">%&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">body</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">html</span><span class="kwrd">&gt;</span></pre>
+    <span class="asp"><%</span>-- Render all the Scripts to the Page --<span class="asp">%></span>
+    <span class="asp"><%</span>-- Must be located at the very end of the Master Page to work properly --<span class="asp">%></span>
+    <span class="asp"><%</span> Html.SimpleScriptManager().Render(); <span class="asp">%></span>
+<span class="kwrd"></</span><span class="html">body</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">html</span><span class="kwrd">></span></pre>
 
 <!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
 
  
 
-This may look a little strange to you since you may be used to placing all your JavaScript Blocks and Script Includes at the top of the page within the &lt;HEAD&gt; tags. However, in order for the &ldquo;SimpleScriptManager&rdquo; to work property the call to Render to the page MUST be located at the end of the Master Page file. This allows any other server controls, user controls or pages to add Script Blocks and Includes at any time during the process or building/rendering the page, and then at the end of the Master Page (when the page is just about finished being rendered) the &ldquo;SimpleScriptManager().Render()&rdquo; method is called and the scripts are all rendered out to the page at that time. If the &ldquo;"SimpleScriptManager().Render()&rdquo; method is called prior to all other components on the Page, then any Script Blocks or Includes added to the &ldquo;SimpleScriptManager&rdquo; after Render is called will not be included within the final rendering of the Page that gets sent to the client.
+This may look a little strange to you since you may be used to placing all your JavaScript Blocks and Script Includes at the top of the page within the <HEAD> tags. However, in order for the &ldquo;SimpleScriptManager&rdquo; to work property the call to Render to the page MUST be located at the end of the Master Page file. This allows any other server controls, user controls or pages to add Script Blocks and Includes at any time during the process or building/rendering the page, and then at the end of the Master Page (when the page is just about finished being rendered) the &ldquo;SimpleScriptManager().Render()&rdquo; method is called and the scripts are all rendered out to the page at that time. If the &ldquo;"SimpleScriptManager().Render()&rdquo; method is called prior to all other components on the Page, then any Script Blocks or Includes added to the &ldquo;SimpleScriptManager&rdquo; after Render is called will not be included within the final rendering of the Page that gets sent to the client.
 <h3>Using the &ldquo;SimpleScriptManager&rdquo;</h3>
 
 The &ldquo;SimpleScriptManager&rdquo; has only two fairly simple methods: ScriptInclude and Script.
 <h4>&ldquo;SimpleScriptManager.ScriptInclude&rdquo; Method</h4>
 
 To add a simple Script Include within the page, you just call the &ldquo;ScriptManager.ScriptInclude&rdquo; method and pass in the Location / Url of the JavaScript file to include within the page. The Script Location / Url can be either an Absolute or Virtual (&ldquo;App Relative&rdquo;) Url.
-<pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().ScriptInclude(<span class="str">"~/Scripts/jquery-1.3.2.js"</span>); <span class="asp">%&gt;</span></pre>
-<pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().ScriptInclude(<span class="str">"http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"</span>); <span class="asp">%&gt;</span></pre>
+<pre class="csharpcode"><span class="asp"><%</span> Html.SimpleScriptManager().ScriptInclude(<span class="str">"~/Scripts/jquery-1.3.2.js"</span>); <span class="asp">%></span></pre>
+<pre class="csharpcode"><span class="asp"><%</span> Html.SimpleScriptManager().ScriptInclude(<span class="str">"http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"</span>); <span class="asp">%></span></pre>
 
  
 
 You can also pass in a &ldquo;Key&rdquo; for the specific Script Include you&rsquo;re registering. This key is a unique identifier used within your application for the specified Script Include, and it allows you to ensure that only a single include/reference to that specific script will get rendered within the Page.
-<pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().ScriptInclude(<span class="str">"jquery"</span>, <span class="str">"~/Scripts/jquery-1.3.2.js"</span>); <span class="asp">%&gt;</span></pre>
+<pre class="csharpcode"><span class="asp"><%</span> Html.SimpleScriptManager().ScriptInclude(<span class="str">"jquery"</span>, <span class="str">"~/Scripts/jquery-1.3.2.js"</span>); <span class="asp">%></span></pre>
 
 <!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
 
@@ -95,7 +95,7 @@ Here&rsquo;s a really simple example of this:
 
             <span class="rem">// By specifying a Key when adding the ScriptInclude below, we are ensuring that the script only gets included</span>
             <span class="rem">// within the Page once, no matter how many instances of this control are renderd to the Page.</span>
-            <span class="kwrd">this</span>.Html.SimpleScriptManager().ScriptInclude&lt;TestScriptOneControl&gt;(</pre>
+            <span class="kwrd">this</span>.Html.SimpleScriptManager().ScriptInclude<TestScriptOneControl>(</pre>
 <pre class="csharpcode">                 <span class="str">"TestScriptOneKey"</span>, </pre>
 <pre class="csharpcode">                 <span class="str">"EmbeddedScriptResourceTest.TestScriptOne.js"</span>);
         }
@@ -108,22 +108,22 @@ Here&rsquo;s a really simple example of this:
 <h4>&ldquo;SimpleScriptManager.Script&rdquo; Method</h4>
 
 To add a Script Block in to the Page you just call the &ldquo;SimpleScriptManager.Script&rdquo; method and pass it a String that contains the JavaScript code to include within the Page.
-<pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().Script(<span class="str">"alert('Hello!');"</span>); <span class="asp">%&gt;</span></pre>
+<pre class="csharpcode"><span class="asp"><%</span> Html.SimpleScriptManager().Script(<span class="str">"alert('Hello!');"</span>); <span class="asp">%></span></pre>
 
  
 
 You can also pass in a &ldquo;Key&rdquo; that uniquely identifies this specific Script Block. Just as with the &ldquo;ScriptInclude&rdquo; method, this allows you to specify that you only want this particular Script Block to be included within the Page only once no matter how many times any components within the Page specify it to be added.
-<pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().Script(<span class="str">"ScriptKey"</span>, <span class="str">"alert('Hello!');"</span>); <span class="asp">%&gt;</span></pre>
+<pre class="csharpcode"><span class="asp"><%</span> Html.SimpleScriptManager().Script(<span class="str">"ScriptKey"</span>, <span class="str">"alert('Hello!');"</span>); <span class="asp">%></span></pre>
 
  
 <h4>&ldquo;SimpleScriptManager.Script&rdquo; Method using a Lambda Expression</h4>
 
 I also included the ability to pass the &ldquo;SimpleScriptManager.Script&rdquo; method a Lambda Expression that will output the desired JavaScript code to the Page. This is something that makes it a little easier to add some Script to the Page and still be able to keep any code formatting in place (for readability) without requiring you to build it within a big, long String within the Page or User Control.
-<pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().Script( () =&gt; {<span class="asp">%&gt;</span>
+<pre class="csharpcode"><span class="asp"><%</span> Html.SimpleScriptManager().Script( () => {<span class="asp">%></span>
     $(function(){
         alert('Hello!');
     });"
-<span class="asp">&lt;%</span>}); <span class="asp">%&gt;</span></pre>
+<span class="asp"><%</span>}); <span class="asp">%></span></pre>
 
  
 
@@ -189,37 +189,37 @@ SimpleScriptManager.cs
     {
         <span class="kwrd">private</span> HtmlHelper htmlHelper;
 
-        <span class="kwrd">private</span> Dictionary&lt;<span class="kwrd">string</span>, <span class="kwrd">string</span>&gt; scriptIncludes = <span class="kwrd">new</span> Dictionary&lt;<span class="kwrd">string</span>, <span class="kwrd">string</span>&gt;();
+        <span class="kwrd">private</span> Dictionary<<span class="kwrd">string</span>, <span class="kwrd">string</span>> scriptIncludes = <span class="kwrd">new</span> Dictionary<<span class="kwrd">string</span>, <span class="kwrd">string</span>>();
 
-        <span class="kwrd">private</span> Dictionary&lt;<span class="kwrd">string</span>, <span class="kwrd">string</span>&gt; scripts = <span class="kwrd">new</span> Dictionary&lt;<span class="kwrd">string</span>, <span class="kwrd">string</span>&gt;();
-        <span class="kwrd">private</span> Dictionary&lt;<span class="kwrd">string</span>, Action&gt; scriptsActions = <span class="kwrd">new</span> Dictionary&lt;<span class="kwrd">string</span>, Action&gt;();
+        <span class="kwrd">private</span> Dictionary<<span class="kwrd">string</span>, <span class="kwrd">string</span>> scripts = <span class="kwrd">new</span> Dictionary<<span class="kwrd">string</span>, <span class="kwrd">string</span>>();
+        <span class="kwrd">private</span> Dictionary<<span class="kwrd">string</span>, Action> scriptsActions = <span class="kwrd">new</span> Dictionary<<span class="kwrd">string</span>, Action>();
 
-        <span class="rem">/// &lt;summary&gt;</span>
+        <span class="rem">/// <summary></span>
         <span class="rem">/// SimpleScriptManager Constructor</span>
-        <span class="rem">/// &lt;/summary&gt;</span>
-        <span class="rem">/// &lt;param name="helper"&gt;The HtmlHelper that this SimpleScriptManager will use to render to.&lt;/param&gt;</span>
+        <span class="rem">/// </summary></span>
+        <span class="rem">/// <param name="helper">The HtmlHelper that this SimpleScriptManager will use to render to.</param></span>
         <span class="kwrd">public</span> SimpleScriptManager(HtmlHelper helper)
         {
             <span class="rem">// Store reference to the HtmlHelper object this SimpleScriptManager is tied to.</span>
             <span class="kwrd">this</span>.htmlHelper = helper;
         }
 
-        <span class="rem">/// &lt;summary&gt;</span>
+        <span class="rem">/// <summary></span>
         <span class="rem">/// Adds a script file reference to the page.</span>
-        <span class="rem">/// &lt;/summary&gt;</span>
-        <span class="rem">/// &lt;param name="scriptPath"&gt;The URL of the script file.&lt;/param&gt;</span>
-        <span class="rem">/// &lt;returns&gt;Returns the SimpleScriptManager&lt;/returns&gt;</span>
+        <span class="rem">/// </summary></span>
+        <span class="rem">/// <param name="scriptPath">The URL of the script file.</param></span>
+        <span class="rem">/// <returns>Returns the SimpleScriptManager</returns></span>
         <span class="kwrd">public</span> SimpleScriptManager ScriptInclude(<span class="kwrd">string</span> scriptPath)
         {
             <span class="kwrd">return</span> <span class="kwrd">this</span>.ScriptInclude(Guid.NewGuid().ToString(), scriptPath);
         }
 
-        <span class="rem">/// &lt;summary&gt;</span>
+        <span class="rem">/// <summary></span>
         <span class="rem">/// Adds a script file reference to the page.</span>
-        <span class="rem">/// &lt;/summary&gt;</span>
-        <span class="rem">/// &lt;param name="key"&gt;A unique identifier for the script file.&lt;/param&gt;</span>
-        <span class="rem">/// &lt;param name="scriptPath"&gt;The URL of the script file.&lt;/param&gt;</span>
-        <span class="rem">/// &lt;returns&gt;Returns the SimpleScriptManager&lt;/returns&gt;</span>
+        <span class="rem">/// </summary></span>
+        <span class="rem">/// <param name="key">A unique identifier for the script file.</param></span>
+        <span class="rem">/// <param name="scriptPath">The URL of the script file.</param></span>
+        <span class="rem">/// <returns>Returns the SimpleScriptManager</returns></span>
         <span class="kwrd">public</span> SimpleScriptManager ScriptInclude(<span class="kwrd">string</span> key, <span class="kwrd">string</span> scriptPath)
         {
             <span class="kwrd">if</span> (!<span class="kwrd">this</span>.scriptIncludes.ContainsKey(key))
@@ -235,45 +235,45 @@ SimpleScriptManager.cs
             <span class="kwrd">return</span> <span class="kwrd">this</span>;
         }
 
-        <span class="rem">/// &lt;summary&gt;</span>
+        <span class="rem">/// <summary></span>
         <span class="rem">/// Adds a script file reference to the page for an Embedded Web Resource.</span>
-        <span class="rem">/// &lt;/summary&gt;</span>
-        <span class="rem">/// &lt;typeparam name="T"&gt;The Type whos Assembly contains the Web Resource.&lt;/typeparam&gt;</span>
-        <span class="rem">/// &lt;param name="key"&gt;A unique identifier for the script file.&lt;/param&gt;</span>
-        <span class="rem">/// &lt;param name="resourceName"&gt;The name of the Web Resource.&lt;/param&gt;</span>
-        <span class="rem">/// &lt;returns&gt;Returns the SimpleScriptManager&lt;/returns&gt;</span>
-        <span class="kwrd">public</span> SimpleScriptManager ScriptInclude&lt;T&gt;(<span class="kwrd">string</span> key, <span class="kwrd">string</span> resourceName)
+        <span class="rem">/// </summary></span>
+        <span class="rem">/// <typeparam name="T">The Type whos Assembly contains the Web Resource.</typeparam></span>
+        <span class="rem">/// <param name="key">A unique identifier for the script file.</param></span>
+        <span class="rem">/// <param name="resourceName">The name of the Web Resource.</param></span>
+        <span class="rem">/// <returns>Returns the SimpleScriptManager</returns></span>
+        <span class="kwrd">public</span> SimpleScriptManager ScriptInclude<T>(<span class="kwrd">string</span> key, <span class="kwrd">string</span> resourceName)
         {
-            <span class="kwrd">return</span> <span class="kwrd">this</span>.ScriptInclude(key, getWebResourceUrl&lt;T&gt;(resourceName));
+            <span class="kwrd">return</span> <span class="kwrd">this</span>.ScriptInclude(key, getWebResourceUrl<T>(resourceName));
         }
 
-        <span class="rem">/// &lt;summary&gt;</span>
+        <span class="rem">/// <summary></span>
         <span class="rem">/// Adds a script file reference to the page for an Embedded Web Resource.</span>
-        <span class="rem">/// &lt;/summary&gt;</span>
-        <span class="rem">/// &lt;typeparam name="T"&gt;The Type whos Assembly contains the Web Resource.&lt;/typeparam&gt;</span>
-        <span class="rem">/// &lt;param name="resourceName"&gt;The name of the Web Resource.&lt;/param&gt;</span>
-        <span class="rem">/// &lt;returns&gt;Returns the SimpleScriptManager&lt;/returns&gt;</span>
-        <span class="kwrd">public</span> SimpleScriptManager ScriptInclude&lt;T&gt;(<span class="kwrd">string</span> resourceName)
+        <span class="rem">/// </summary></span>
+        <span class="rem">/// <typeparam name="T">The Type whos Assembly contains the Web Resource.</typeparam></span>
+        <span class="rem">/// <param name="resourceName">The name of the Web Resource.</param></span>
+        <span class="rem">/// <returns>Returns the SimpleScriptManager</returns></span>
+        <span class="kwrd">public</span> SimpleScriptManager ScriptInclude<T>(<span class="kwrd">string</span> resourceName)
         {
-            <span class="kwrd">return</span> <span class="kwrd">this</span>.ScriptInclude(getWebResourceUrl&lt;T&gt;(resourceName));
+            <span class="kwrd">return</span> <span class="kwrd">this</span>.ScriptInclude(getWebResourceUrl<T>(resourceName));
         }
 
-        <span class="rem">/// &lt;summary&gt;</span>
+        <span class="rem">/// <summary></span>
         <span class="rem">/// Adds a script block to the page.</span>
-        <span class="rem">/// &lt;/summary&gt;</span>
-        <span class="rem">/// &lt;param name="javascript"&gt;The JavaScript code to include in the Page.&lt;/param&gt;</span>
-        <span class="rem">/// &lt;returns&gt;Returns the SimpleScriptManager&lt;/returns&gt;</span>
+        <span class="rem">/// </summary></span>
+        <span class="rem">/// <param name="javascript">The JavaScript code to include in the Page.</param></span>
+        <span class="rem">/// <returns>Returns the SimpleScriptManager</returns></span>
         <span class="kwrd">public</span> SimpleScriptManager Script(<span class="kwrd">string</span> javascript)
         {
             <span class="kwrd">return</span> <span class="kwrd">this</span>.Script(Guid.NewGuid().ToString(), javascript);
         }
 
-        <span class="rem">/// &lt;summary&gt;</span>
+        <span class="rem">/// <summary></span>
         <span class="rem">/// Adds a script block to the page.</span>
-        <span class="rem">/// &lt;/summary&gt;</span>
-        <span class="rem">/// &lt;param name="key"&gt;A unique identifier for the script.&lt;/param&gt;</span>
-        <span class="rem">/// &lt;param name="javascript"&gt;The JavaScript code to include in the Page.&lt;/param&gt;</span>
-        <span class="rem">/// &lt;returns&gt;Returns the SimpleScriptManager&lt;/returns&gt;</span>
+        <span class="rem">/// </summary></span>
+        <span class="rem">/// <param name="key">A unique identifier for the script.</param></span>
+        <span class="rem">/// <param name="javascript">The JavaScript code to include in the Page.</param></span>
+        <span class="rem">/// <returns>Returns the SimpleScriptManager</returns></span>
         <span class="kwrd">public</span> SimpleScriptManager Script(<span class="kwrd">string</span> key, <span class="kwrd">string</span> javascript)
         {
             <span class="kwrd">if</span> (!<span class="kwrd">this</span>.scripts.ContainsKey(key) &amp;&amp; !<span class="kwrd">this</span>.scriptsActions.ContainsKey(key))
@@ -283,22 +283,22 @@ SimpleScriptManager.cs
             <span class="kwrd">return</span> <span class="kwrd">this</span>;
         }
 
-        <span class="rem">/// &lt;summary&gt;</span>
+        <span class="rem">/// <summary></span>
         <span class="rem">/// Adds a script block to the page.</span>
-        <span class="rem">/// &lt;/summary&gt;</span>
-        <span class="rem">/// &lt;param name="javascript"&gt;The JavaScript code to include in the Page.&lt;/param&gt;</span>
-        <span class="rem">/// &lt;returns&gt;Returns the SimpleScriptManager&lt;/returns&gt;</span>
+        <span class="rem">/// </summary></span>
+        <span class="rem">/// <param name="javascript">The JavaScript code to include in the Page.</param></span>
+        <span class="rem">/// <returns>Returns the SimpleScriptManager</returns></span>
         <span class="kwrd">public</span> SimpleScriptManager Script(Action javascript)
         {
             <span class="kwrd">return</span> <span class="kwrd">this</span>.Script(Guid.NewGuid().ToString(), javascript);
         }
         
-        <span class="rem">/// &lt;summary&gt;</span>
+        <span class="rem">/// <summary></span>
         <span class="rem">/// Adds a script block to the page.</span>
-        <span class="rem">/// &lt;/summary&gt;</span>
-        <span class="rem">/// &lt;param name="key"&gt;A unique identifier for the script.&lt;/param&gt;</span>
-        <span class="rem">/// &lt;param name="javascript"&gt;The JavaScript code to include in the Page.&lt;/param&gt;</span>
-        <span class="rem">/// &lt;returns&gt;Returns the SimpleScriptManager&lt;/returns&gt;</span>
+        <span class="rem">/// </summary></span>
+        <span class="rem">/// <param name="key">A unique identifier for the script.</param></span>
+        <span class="rem">/// <param name="javascript">The JavaScript code to include in the Page.</param></span>
+        <span class="rem">/// <returns>Returns the SimpleScriptManager</returns></span>
         <span class="kwrd">public</span> SimpleScriptManager Script(<span class="kwrd">string</span> key, Action javascript)
         {
             <span class="kwrd">if</span> (!<span class="kwrd">this</span>.scripts.ContainsKey(key) &amp;&amp; !<span class="kwrd">this</span>.scriptsActions.ContainsKey(key))
@@ -308,9 +308,9 @@ SimpleScriptManager.cs
             <span class="kwrd">return</span> <span class="kwrd">this</span>;
         }
 
-        <span class="rem">/// &lt;summary&gt;</span>
+        <span class="rem">/// <summary></span>
         <span class="rem">/// Renders the SimpleScriptManager to the Page</span>
-        <span class="rem">/// &lt;/summary&gt;</span>
+        <span class="rem">/// </summary></span>
         <span class="kwrd">public</span> <span class="kwrd">void</span> Render()
         {
             var writer = <span class="kwrd">this</span>.htmlHelper.ViewContext.HttpContext.Response.Output;
@@ -318,15 +318,15 @@ SimpleScriptManager.cs
             <span class="rem">// Render All Script Includes to the Page</span>
             <span class="kwrd">foreach</span> (var scriptInclude <span class="kwrd">in</span> <span class="kwrd">this</span>.scriptIncludes)
             {
-                writer.WriteLine(String.Format(<span class="str">"&lt;script type='text/javascript' src='{0}'&gt;&lt;/script&gt;"</span>, scriptInclude.Value));
+                writer.WriteLine(String.Format(<span class="str">"<script type='text/javascript' src='{0}'></script>"</span>, scriptInclude.Value));
             }
             
             <span class="rem">// Render All other scripts to the Page</span>
-            <span class="kwrd">if</span> (<span class="kwrd">this</span>.scripts.Count &gt; 0 || <span class="kwrd">this</span>.scriptsActions.Count &gt; 0)
+            <span class="kwrd">if</span> (<span class="kwrd">this</span>.scripts.Count > 0 || <span class="kwrd">this</span>.scriptsActions.Count > 0)
             {
-                writer.WriteLine(<span class="str">"&lt;script type='text/javascript'&gt;"</span>);
+                writer.WriteLine(<span class="str">"<script type='text/javascript'>"</span>);
 
-                <span class="kwrd">if</span> (<span class="kwrd">this</span>.scripts.Count &gt; 0)
+                <span class="kwrd">if</span> (<span class="kwrd">this</span>.scripts.Count > 0)
                 {
                     <span class="kwrd">foreach</span> (var script <span class="kwrd">in</span> <span class="kwrd">this</span>.scripts)
                     {
@@ -334,7 +334,7 @@ SimpleScriptManager.cs
                     }
                 }
 
-                <span class="kwrd">if</span> (<span class="kwrd">this</span>.scriptsActions.Count &gt; 0)
+                <span class="kwrd">if</span> (<span class="kwrd">this</span>.scriptsActions.Count > 0)
                 {
                     <span class="kwrd">foreach</span> (var script <span class="kwrd">in</span> <span class="kwrd">this</span>.scriptsActions)
                     {
@@ -342,7 +342,7 @@ SimpleScriptManager.cs
                     }
                 }
 
-                writer.WriteLine(<span class="str">"&lt;/script&gt;"</span>);
+                writer.WriteLine(<span class="str">"</script>"</span>);
             }
         }
 
@@ -350,7 +350,7 @@ SimpleScriptManager.cs
         <span class="kwrd">private</span> <span class="kwrd">static</span> MethodInfo _getWebResourceUrlMethod;
         <span class="kwrd">private</span> <span class="kwrd">static</span> <span class="kwrd">object</span> _getWebResourceUrlLock = <span class="kwrd">new</span> <span class="kwrd">object</span>();
 
-        <span class="kwrd">private</span> <span class="kwrd">static</span> <span class="kwrd">string</span> getWebResourceUrl&lt;T&gt;(<span class="kwrd">string</span> resourceName)
+        <span class="kwrd">private</span> <span class="kwrd">static</span> <span class="kwrd">string</span> getWebResourceUrl<T>(<span class="kwrd">string</span> resourceName)
         {
             <span class="kwrd">if</span> (<span class="kwrd">string</span>.IsNullOrEmpty(resourceName))
             {
@@ -379,7 +379,7 @@ SimpleScriptManager.cs
 <h3> </h3>
 <h3>Conclusion</h3>
 
-At first it seemed that the easiest way to get similar functionality to this was to use the ASP.NET AJAX ScriptManager control; however that control requires that it be embedded within a <em>&lt;form runat=&rdquo;server&rdquo;&gt;&lt;/form&gt;</em> tag, and that just doesn&rsquo;t really work with ASP.NET MVC. Actually the methods to get the ASP.NET AJAX ScriptManager to work with ASP.NET MVC are just plain &ldquo;Hacks&rdquo; and they made me feel like I wasn&rsquo;t being True to the new ASP.NET MVC Platform.
+At first it seemed that the easiest way to get similar functionality to this was to use the ASP.NET AJAX ScriptManager control; however that control requires that it be embedded within a *<form runat=&rdquo;server&rdquo;></form>* tag, and that just doesn&rsquo;t really work with ASP.NET MVC. Actually the methods to get the ASP.NET AJAX ScriptManager to work with ASP.NET MVC are just plain &ldquo;Hacks&rdquo; and they made me feel like I wasn&rsquo;t being True to the new ASP.NET MVC Platform.
 
 In the end, I&rsquo;m very happy that I was able to work out an extremely simple solution to this problem that will definitely help when building out ASP.NET MVC Web Applications.
 

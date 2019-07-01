@@ -22,51 +22,51 @@ First, add the helper scripts, mentioned in Day 1, to the Site.Master and conver
 Don&rsquo;t worry about copy/paste, a download link for the full source code is at the bottom of the post.
 
 Here&rsquo;s the resulting Site.Master pages contents:
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %&gt;
-&lt;!DOCTYPE html&gt;
-&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
-&lt;head runat="server"&gt;
-    &lt;!-- Include HTML5 fix for older browsers --&gt;
-    &lt;!--[if lt IE 9]&gt;
-    &lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
-    &lt;![endif]--&gt;
-    &lt;!-- CSS to help older browsers render HTML5 - http://html5doctor.com/html-5-reset-stylesheet/ --&gt;
-    &lt;link href="http://html5resetcss.googlecode.com/files/html5reset-1.6.1.css" rel="Stylesheet" type="text/css" /&gt;
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!-- Include HTML5 fix for older browsers -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- CSS to help older browsers render HTML5 - http://html5doctor.com/html-5-reset-stylesheet/ -->
+    <link href="http://html5resetcss.googlecode.com/files/html5reset-1.6.1.css" rel="Stylesheet" type="text/css" />
 
-    &lt;title&gt;&lt;asp:ContentPlaceHolder ID="TitleContent" runat="server" /&gt;&lt;/title&gt;
-    &lt;link href="../../Content/Site.css" rel="stylesheet" type="text/css" /&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div id="logindisplay"&gt;
-        &lt;% Html.RenderPartial("LogOnUserControl"); %&gt;
-    &lt;/div&gt;
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="logindisplay">
+        <% Html.RenderPartial("LogOnUserControl"); %>
+    </div>
 
-    &lt;header&gt;
-        &lt;h1&gt;My MVC HTML5 Application&lt;/h1&gt;
-    &lt;/header&gt;
+    <header>
+        <h1>My MVC HTML5 Application</h1>
+    </header>
 
-    &lt;nav&gt;
-        &lt;ul&gt;              
-            &lt;li&gt;&lt;%: Html.ActionLink("Home", "Index", "Home")%&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;%: Html.ActionLink("About", "About", "Home")%&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/nav&gt;
+    <nav>
+        <ul>              
+            <li><%: Html.ActionLink("Home", "Index", "Home")%></li>
+            <li><%: Html.ActionLink("About", "About", "Home")%></li>
+        </ul>
+    </nav>
 
-    &lt;section&gt;
-        &lt;asp:ContentPlaceHolder ID="MainContent" runat="server" /&gt;
-    &lt;/section&gt;
+    <section>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </section>
 
-    &lt;footer&gt;
+    <footer>
         Copyright &amp;copy; [Your Name Here]
-    &lt;/footer&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+    </footer>
+</body>
+</html></pre>
 
 Now the master page contains main &ldquo;header&rdquo;, &ldquo;section&rdquo;, &ldquo;nav&rdquo; and &ldquo;footer&rdquo; tags for the page.
 
-The ContentPlaceHolder for rendering the Views is placed within a &ldquo;&lt;section&gt;&rdquo; tag. The reason for this is that now you only need to add a header and page content for the individual views. This compartmentalizes the page appropriately as per the design of the new elements being used.
+The ContentPlaceHolder for rendering the Views is placed within a &ldquo;<section>&rdquo; tag. The reason for this is that now you only need to add a header and page content for the individual views. This compartmentalizes the page appropriately as per the design of the new elements being used.
 
-Also, you&rsquo;ll notice that I eliminated the &lt;div class=&rdquo;page&rdquo;&gt; as the CSS for it can be added to the &lt;body&gt; tag and the page will still render appropriately.
+Also, you&rsquo;ll notice that I eliminated the <div class=&rdquo;page&rdquo;> as the CSS for it can be added to the <body> tag and the page will still render appropriately.
 
 Now the hard part, styling the page using CSS. Well, actually this wasn&rsquo;t too hard, since I mostly just changed the hard coded element id&rsquo;s over to reference the new locations. For example: &ldquo;#header&rdquo; became &ldquo;body header&rdquo;
 
@@ -201,7 +201,7 @@ Here&rsquo;s a <a href="http://www.deanhume.com/Home/BlogPost/asp-net-mvc-html5-
 
 I started building my own extension methods for ASP.NET MVC to add support for the new HTML5 tags in an effort to familiarize myself with them. It usually doesn&rsquo;t make too much sense to duplicate effort, so I may submit some patches to the MVC HTML5 Toolkit in the future. That is of course if my &ldquo;HTML5 + ASP.NET MVC&rdquo; endeavors bring me to the point where I need/want more that the project has to offer.
 
-However, I&rsquo;ll probably spend more play time looking at (and working with/on) jQuery plugins that will help add the functional aspects of HTML5 tags to older browsers. <em>(It feels somewhat odd calling the current generation of browsers &ldquo;older browsers,&rdquo; but after all they don&rsquo;t fully support HTML5.)</em>
+However, I&rsquo;ll probably spend more play time looking at (and working with/on) jQuery plugins that will help add the functional aspects of HTML5 tags to older browsers. *(It feels somewhat odd calling the current generation of browsers &ldquo;older browsers,&rdquo; but after all they don&rsquo;t fully support HTML5.)*
 <div id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:ff548906-7d70-4179-8b99-397af3ebb620" class="wlWriterEditableSmartContent" style="margin: 0px; display: inline; float: none; padding: 0px;">
 <div>Source Code:<a href="/file.axd?file=MvcHTML5.zip" target="_self">MvcHTML5.zip</a></div>
 </div>

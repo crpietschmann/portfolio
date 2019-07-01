@@ -51,7 +51,7 @@ According to Microsoft, Windows Server 2008 Hyper-V is:
 
 
 
-<em>&quot;Windows Server 2008 Hyper-V, the next-generation hypervisor-based server virtualization technology, allows you to make the best use of your server hardware investments by consolidating multiple server roles as seperate virtual machines (VMs) running on a single physical machine. With Hyper-V, you can also efficiently run multiple different operating systems -- Windows, Linux and others -- in parallel, on a single server, and fully leverage the power of x64 computing.&quot;</em> 
+*&quot;Windows Server 2008 Hyper-V, the next-generation hypervisor-based server virtualization technology, allows you to make the best use of your server hardware investments by consolidating multiple server roles as seperate virtual machines (VMs) running on a single physical machine. With Hyper-V, you can also efficiently run multiple different operating systems -- Windows, Linux and others -- in parallel, on a single server, and fully leverage the power of x64 computing.&quot;* 
 
 
 

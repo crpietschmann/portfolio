@@ -22,12 +22,12 @@ I was wonder this, so I decided to check the defrag stats available from within 
 
 And, I found this post: <a href="http://www.thegline.com/windows/2007/03/whatever-happened-to-the-defra.html">Whatever Happened to ... The Defragmentation App?</a>
 
-Apparently, the only way to view the fragmentation stats is to use the<em> </em>defrag tool from the command line. Well, I guess the stats really weren't usefull to the average use, so this works; but couldn't they've just left an "Analysis Report" button in the GUI of the tool?
+Apparently, the only way to view the fragmentation stats is to use the* *defrag tool from the command line. Well, I guess the stats really weren't usefull to the average use, so this works; but couldn't they've just left an "Analysis Report" button in the GUI of the tool?
 
 **Steps to view the Fragmentation Analysis Report for the C drive**
 <ol>
-<li>Run the Command Prompt.<br /><em>Note: Don't forget to right-click the shortcut and click "Run as administrator"</em></li>
-<li>Type the following in the command line: <em>defrag c: -a</em></li>
+<li>Run the Command Prompt.<br />*Note: Don't forget to right-click the shortcut and click "Run as administrator"*</li>
+<li>Type the following in the command line: *defrag c: -a*</li>
 <li>Press Enter and in a few moments it's display the Percent file fragmentation</li>
 </ol>
 

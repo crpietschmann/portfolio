@@ -29,13 +29,13 @@ The following example parses the delimeted string and places each value into a v
 <span class="kwrd">DECLARE</span> @tblCity <span class="kwrd">TABLE</span>(City <span class="kwrd">varchar</span>(50))
 <span class="kwrd">DECLARE</span> @City <span class="kwrd">varchar</span>(50)
 <span class="kwrd">DECLARE</span> @StartPos <span class="kwrd">int</span>, @Length <span class="kwrd">int</span>
-<span class="kwrd">WHILE</span> LEN(@CityList) &gt; 0
+<span class="kwrd">WHILE</span> LEN(@CityList) > 0
   <span class="kwrd">BEGIN</span>
     <span class="kwrd">SET</span> @StartPos = CHARINDEX(@Delimeter, @CityList)
-    <span class="kwrd">IF</span> @StartPos &lt; 0 <span class="kwrd">SET</span> @StartPos = 0
+    <span class="kwrd">IF</span> @StartPos < 0 <span class="kwrd">SET</span> @StartPos = 0
     <span class="kwrd">SET</span> @Length = LEN(@CityList) - @StartPos - 1
-    <span class="kwrd">IF</span> @Length &lt; 0 <span class="kwrd">SET</span> @Length = 0
-    <span class="kwrd">IF</span> @StartPos &gt; 0
+    <span class="kwrd">IF</span> @Length < 0 <span class="kwrd">SET</span> @Length = 0
+    <span class="kwrd">IF</span> @StartPos > 0
       <span class="kwrd">BEGIN</span>
         <span class="kwrd">SET</span> @City = <span class="kwrd">SUBSTRING</span>(@CityList, 1, @StartPos - 1)
         <span class="kwrd">SET</span> @CityList = <span class="kwrd">SUBSTRING</span>(@CityList, @StartPos + 1, LEN(@CityList) - @StartPos)

@@ -26,7 +26,7 @@ Maybe this is a sign?  ;)
 
  
 
-<em>FYI, This was meant to be a joke when originally posted.</em>
+*FYI, This was meant to be a joke when originally posted.*
 </td>
 </tr>
 </tbody>

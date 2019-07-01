@@ -27,5 +27,5 @@ If you would like to get your hands on my implementation of the &ldquo;My&rdquo;
 
 
 
-<em>UPDATE: I have since abandoned this project idea since the &quot;My&quot; namespace is WAY to large for one person to write the entire thing in their spare time. Plus, I think the Mono guys have probably started to tackle this anyway.</em>
+*UPDATE: I have since abandoned this project idea since the &quot;My&quot; namespace is WAY to large for one person to write the entire thing in their spare time. Plus, I think the Mono guys have probably started to tackle this anyway.*
 

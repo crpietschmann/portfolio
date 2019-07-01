@@ -19,15 +19,15 @@ Microsoft is offering Free technical support for Windows Vista SP1.
 
 
 
-<em>Free, unlimited installation and compatibility support is now available for all worldwide customers using Windows Vista SP1. Telephone support is available worldwide. Some countries also offer Chat and Email support.</em>
+*Free, unlimited installation and compatibility support is now available for all worldwide customers using Windows Vista SP1. Telephone support is available worldwide. Some countries also offer Chat and Email support.*
 
 
 
-<em>This is effective from now until March 18, 2009.</em>
+*This is effective from now until March 18, 2009.*
 
 
 
-<em>Find out more information and access the service here: <a href="http://support.microsoft.com/common/international.aspx?rdpath=1&amp;prid=11274&amp;gprid=500921">http://support.microsoft.com/common/international.aspx?rdpath=1&amp;prid=11274&amp;gprid=500921</a></em>
+*Find out more information and access the service here: <a href="http://support.microsoft.com/common/international.aspx?rdpath=1&amp;prid=11274&amp;gprid=500921">http://support.microsoft.com/common/international.aspx?rdpath=1&amp;prid=11274&amp;gprid=500921</a>*
 
 
 

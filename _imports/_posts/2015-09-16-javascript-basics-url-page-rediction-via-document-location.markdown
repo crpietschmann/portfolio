@@ -14,13 +14,13 @@ redirect_from:
 ---
 <!-- more -->
 
-Most often from an HTML page when you need to navigate the user to a different page it will be done via an anchor tag ("&lt;a/&gt;"). This works fine if the user explicitly initiates the navigation by clicking the link. However, there are many times when building a web application the page navigation needs to be performed from JavaScript / Ajax code. This can be done using "document.location" in the HTML DOM, but it supports a couple more features than most developers are aware of.
+Most often from an HTML page when you need to navigate the user to a different page it will be done via an anchor tag ("<a/>"). This works fine if the user explicitly initiates the navigation by clicking the link. However, there are many times when building a web application the page navigation needs to be performed from JavaScript / Ajax code. This can be done using "document.location" in the HTML DOM, but it supports a couple more features than most developers are aware of.
 <h3>Simple Page Navigation from JavaScript</h3>
 
 The simplest way to perform page navigation using JavaScript is to simple set "document.location" to a new value. This will cause the browser to navigate away from the current page to the URL specified.
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">document.location = '';</pre>
 
-The behavior of this method of navigation is identical to a user clicking on an anchor (&lt;a/&gt;) tag within the page. This navigates to the new URL an leave both in the history, so the browsers back button works to go back to the previous page after navigating to the new URL.
+The behavior of this method of navigation is identical to a user clicking on an anchor (<a/>) tag within the page. This navigates to the new URL an leave both in the history, so the browsers back button works to go back to the previous page after navigating to the new URL.
 <h3>Page Navigation Without Back Button Support</h3>
 
 A feature of "document.location" that isn't the most widely known is the ability to basically replace (or swap out) the current page with a new URL.

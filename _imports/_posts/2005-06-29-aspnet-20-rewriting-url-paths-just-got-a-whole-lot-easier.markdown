@@ -28,34 +28,34 @@ Example Web.Config File:
 
 
 [code:html]<br />
-&lt;?xml version=&quot;1.0&quot; ?&gt;<br />
-&lt;configuration xmlns=&quot;<a href="http://schemas.microsoft.com/.NetConfiguration/v2.0">http://schemas.microsoft.com/.NetConfiguration/v2.0</a>&quot;&gt;<br />
-  &lt;system.web&gt;
+<?xml version=&quot;1.0&quot; ?><br />
+<configuration xmlns=&quot;<a href="http://schemas.microsoft.com/.NetConfiguration/v2.0">http://schemas.microsoft.com/.NetConfiguration/v2.0</a>&quot;><br />
+  <system.web>
 
 
 
-    &lt;urlMappings enabled=&quot;true&quot;&gt;<br />
-      &lt;add<br />
+    <urlMappings enabled=&quot;true&quot;><br />
+      <add<br />
           url=&quot;~/Category.aspx&quot;<br />
-          mappedUrl=&quot;~/Default.aspx?category=default&quot; /&gt;<br />
-      &lt;add<br />
+          mappedUrl=&quot;~/Default.aspx?category=default&quot; /><br />
+      <add<br />
           url=&quot;~/Autos.aspx&quot;<br />
-          mappedUrl=&quot;~/Default.aspx?category=autos&quot; /&gt;<br />
-      &lt;add<br />
+          mappedUrl=&quot;~/Default.aspx?category=autos&quot; /><br />
+      <add<br />
           url=&quot;~/Games.aspx&quot;<br />
-          mappedUrl=&quot;~/Default.aspx?category=games&quot; /&gt;<br />
-      &lt;add<br />
+          mappedUrl=&quot;~/Default.aspx?category=games&quot; /><br />
+      <add<br />
           url=&quot;~/Health.aspx&quot;<br />
-          mappedUrl=&quot;~/Default.aspx?category=health&quot; /&gt;<br />
-      &lt;add<br />
+          mappedUrl=&quot;~/Default.aspx?category=health&quot; /><br />
+      <add<br />
           url=&quot;~/News.aspx&quot;<br />
-          mappedUrl=&quot;~/Default.aspx?category=news&quot; /&gt;<br />
-    &lt;/urlMappings&gt;
+          mappedUrl=&quot;~/Default.aspx?category=news&quot; /><br />
+    </urlMappings>
 
 
 
-  &lt;/system.web&gt;<br />
-&lt;/configuration&gt;<br />
+  </system.web><br />
+</configuration><br />
 ```
 
 

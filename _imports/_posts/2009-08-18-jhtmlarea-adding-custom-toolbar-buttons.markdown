@@ -25,11 +25,11 @@ As the <a href="http://jhtmlarea.codeplex.com/" target="_blank">jHtmlArea</a> sa
 
 Here&rsquo;s an example object literal that can be used to create the custom toolbar button:
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">{
-    css: "custombutton", // The CSS class used to Style the &lt;A&gt; tag of the Toolbar Button
-    test: "Custom Button Tooltip", // The text to use as the &lt;A&gt; tags "Alt" attribute, or tooltip
+    css: "custombutton", // The CSS class used to Style the <A> tag of the Toolbar Button
+    test: "Custom Button Tooltip", // The text to use as the <A> tags "Alt" attribute, or tooltip
     action: function(btn) { // The function to execute when the Toolbar Button is Clicked
         // 'this' = jHtmlArea Object
-        // 'btn' = jQuery object that represents the &lt;A&gt; "anchor" tag for the Toolbar Button
+        // 'btn' = jQuery object that represents the <A> "anchor" tag for the Toolbar Button
 
         // Take some action or Do Something Here
     }
@@ -48,7 +48,7 @@ As you can see it&rsquo;s really pretty straight forward to define a custom tool
             text: "Today's Date",
             action: function(btn) {
                 // 'this' = jHtmlArea object
-                // 'btn' = jQuery object that represents the &lt;A&gt; "anchor" tag for the Toolbar Button
+                // 'btn' = jQuery object that represents the <A> "anchor" tag for the Toolbar Button
 
                 // Take some action or Do Something Here
             }
@@ -75,7 +75,7 @@ Here are some of the methods that you can call with a note as to what they do. Y
     action: function(btn) {
 
         // Paste some specific HTML / Text value into the Editor
-        this.pasteHTML("&lt;p&gt;&lt;/p&gt;");
+        this.pasteHTML("<p></p>");
 
         // Get the currently selected HTML / Text within the Editor
         var s = this.getSelectedHTML();
@@ -95,7 +95,7 @@ Here are some of the methods that you can call with a note as to what they do. Y
         // Indent the current selection
         this.indent();
 
-        // Insert horizontal rule or &lt;hr&gt; tag
+        // Insert horizontal rule or <hr> tag
         this.insertHorizontalRule();
 
         // Insert an Image by URL
@@ -109,9 +109,9 @@ Here are some of the methods that you can call with a note as to what they do. Y
     }
 }</pre>
 
-One thing to note about using &ldquo;pasteHTML&rdquo; to insert your own custom HTML string into the editor, is because of the way the browsers handle comment tag (&ldquo;&lt;!-- --&gt;&rdquo;) they wont pasted/inserted and no exceptions will be raised. The reason I mention this is because I got a question from someone about inserting &ldquo;&lt;!&mdash;more&mdash;&gt;&rdquo; into the Editor.
+One thing to note about using &ldquo;pasteHTML&rdquo; to insert your own custom HTML string into the editor, is because of the way the browsers handle comment tag (&ldquo;<!-- -->&rdquo;) they wont pasted/inserted and no exceptions will be raised. The reason I mention this is because I got a question from someone about inserting &ldquo;<!&mdash;more&mdash;>&rdquo; into the Editor.
 
-Also the &ldquo;btn&rdquo; argument that&rsquo;s passed to the &ldquo;action&rdquo; method is a reference to the jQuery object for the &lt;A&gt; &ldquo;anchor&rdquo; tag that is contained within the Custom Toolbar Button. This allows you to modify it&rsquo;s CSS styles or absolute position an element near it, similarly to how the &ldquo;jHtmlArea.ColorPickerMenu&rdquo; extension does.
+Also the &ldquo;btn&rdquo; argument that&rsquo;s passed to the &ldquo;action&rdquo; method is a reference to the jQuery object for the <A> &ldquo;anchor&rdquo; tag that is contained within the Custom Toolbar Button. This allows you to modify it&rsquo;s CSS styles or absolute position an element near it, similarly to how the &ldquo;jHtmlArea.ColorPickerMenu&rdquo; extension does.
 <h3>Append the Custom Toolbar Button to the &ldquo;Default&rdquo; Toolbar Button Set</h3>
 
 You can append any Custom Toolbar Buttons you want to the &ldquo;Default&rdquo; Toolbar Button Set if you wish for those Custom Toolbar Buttons to be shown on ALL jHtmlArea editors on the Page. To do this you can just append a new Toolbar Button Group to the &ldquo;jHtmlArea.defaultOptions.toolbar&rdquo; array. However, make sure you do this before initializing an instance of jHtmlArea, otherwise the button will not be displayed.
@@ -124,7 +124,7 @@ Here&rsquo;s an example that demonstrates appending a Custom Toolbar Button that
         text: "Today's Date",
         action: function(btn) {
             // 'this' = jHtmlArea object
-            // 'btn' = jQuery object that represents the &lt;A&gt; "anchor" tag for the Toolbar Button
+            // 'btn' = jQuery object that represents the <A> "anchor" tag for the Toolbar Button
 
             var m_names = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
 

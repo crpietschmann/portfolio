@@ -79,10 +79,10 @@ var identifiers = [
 
 When working with key/value pairs, Dictionaries are the best construct to use. 
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// C#
-var emptyDictionary = new Dictionary&lt;int, string&gt;();
+var emptyDictionary = new Dictionary<int, string>();
 
 // Dictionary initializer
-var d = new Dictionary&lt;int, string&gt; {
+var d = new Dictionary<int, string> {
     { 1, "One" },
     { 2, "Two" }
 }
@@ -98,7 +98,7 @@ foreach(var item in d) {
 
 // Swift
 
-var emptyDictionary = Dictionary&lt;Int, String&gt;()
+var emptyDictionary = Dictionary<Int, String>()
 
 var emptyDictionary = [Int:String]()
 

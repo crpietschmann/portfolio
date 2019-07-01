@@ -30,7 +30,7 @@ Just Own It!
 
 Theres another aspect to the whole "Own it" idea, and that is to "Do Your Best." I've borrowed this a bit from what I've learned from Tony Horton.
 
-Tony Horton says: "<em>Do your best, and forget the rest.</em>"
+Tony Horton says: "*Do your best, and forget the rest.*"
 
 There's a lot to learn from such a simple phrase. The lessons learned from my own personal health and fitness journey with the help from Tony Horton, Beachbody and P90X / P90X3 have really taught me what it means to do my best. When you've done your best, you know there isn't anything more you could have done. Additionally, the next time you take a go at it, you just do your best again, but this time leveraging the improvements you've made from the last time to do better; even if it's just a little bit better.
 

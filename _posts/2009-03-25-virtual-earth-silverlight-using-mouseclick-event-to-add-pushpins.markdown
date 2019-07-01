@@ -30,12 +30,12 @@ Here’s an example Map.MouseClick event handler method:  <pre class="csharpcode
 
 You can attach the above event handler from within code:
 
-<pre class="csharpcode">myMap.MouseClick += <span class="kwrd">new</span> EventHandler&lt;MapMouseEventArgs&gt;(myMap_MouseClick);</pre>
+<pre class="csharpcode">myMap.MouseClick += <span class="kwrd">new</span> EventHandler<MapMouseEventArgs>(myMap_MouseClick);</pre>
 
 
 Or, from within XAML:
 
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">m:Map</span> <span class="attr">Name</span><span class="kwrd">=&quot;myMap&quot;</span> <span class="attr">MouseClick</span><span class="kwrd">=&quot;myMap_MouseClick&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">m:Map</span><span class="kwrd">&gt;</span></pre>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">m:Map</span> <span class="attr">Name</span><span class="kwrd">=&quot;myMap&quot;</span> <span class="attr">MouseClick</span><span class="kwrd">=&quot;myMap_MouseClick&quot;</span><span class="kwrd">></</span><span class="html">m:Map</span><span class="kwrd">></span></pre>
 
 <h3>&#160;</h3>
 

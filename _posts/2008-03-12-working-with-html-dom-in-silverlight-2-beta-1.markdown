@@ -30,7 +30,7 @@ Here an example of creating a new DIV element and setting some of it&#39;s prope
 HtmlElement myDiv = HtmlPage.Document.CreateElement(&quot;div&quot;);<br />
 <br />
 // Set the innerHTML property<br />
-myDiv.SetProperty(&quot;innerHTML&quot;, &quot;&lt;strong&gt;Some HTML Content&lt;/strong&gt;&quot;);<br />
+myDiv.SetProperty(&quot;innerHTML&quot;, &quot;**Some HTML Content**&quot;);<br />
 <br />
 // Set some style properties<br />
 myDiv.SetStyleAttribute(&quot;border&quot;, &quot;solid 1px black&quot;);<br />
@@ -74,7 +74,7 @@ Here&#39;s an example of using a class that implements the Bridge Pattern to do 
 
 
 HtmlElementHelper myDiv = new HtmlElementHelper(HtmlPage.Document.CreateElement(&quot;div&quot;));<br />
-myDiv.innerHTML = &quot;&lt;strong&gt;Some HTML Content&lt;/strong&gt;&quot;;<br />
+myDiv.innerHTML = &quot;**Some HTML Content**&quot;;<br />
 myDiv.Style.Position = &quot;absolute&quot;;<br />
 myDiv.Style.Border = &quot;solid 1px black&quot;;<br />
 myDiv.Style.Top = &quot;10px&quot;;<br />

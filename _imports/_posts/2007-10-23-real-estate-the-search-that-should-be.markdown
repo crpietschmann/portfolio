@@ -79,4 +79,4 @@ Todays internet user wants to bring all the content they're interested into a si
 
 There are so many things with mapping and real estate that can be done, but just aren't. I'm not sure why, but we have the data, all we have to do is put it to use. If someone could manage to put all the above pieces together, it would be the next killer real estate site.
 
-<STRONG>Updated 2007-10-30: </STRONG>Added section about RSS
+**Updated 2007-10-30: **Added section about RSS

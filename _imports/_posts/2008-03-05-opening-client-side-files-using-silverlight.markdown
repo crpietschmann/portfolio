@@ -20,7 +20,7 @@ This basic example opens up a user specified file, and displays its contents wit
 
 **Page.xaml file**
 
-&lt;UserControl x:Class="SilverlightFileSystemInfo.Page"<br />     xmlns="http://schemas.microsoft.com/client/2007" <br />     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" <br />     Width="480"&gt;<br />     &lt;Grid x:Name="LayoutRoot" Background="White"&gt;<br />         &lt;Grid HorizontalAlignment="Left"&gt;<br />             &lt;TextBox x:Name="txtFile" Width="400" Height="250" AcceptsReturn="True" /&gt;    <br />         &lt;/Grid&gt;<br />         &lt;Grid HorizontalAlignment="Right" VerticalAlignment="Top"&gt;<br />             &lt;Button x:Name="btnSelectFile" Content="Add File" Width="75" Height="30" Click="btnSelectFile_Click"&gt;&lt;/Button&gt;<br />         &lt;/Grid&gt;<br />     &lt;/Grid&gt;<br /> &lt;/UserControl&gt;
+<UserControl x:Class="SilverlightFileSystemInfo.Page"<br />     xmlns="http://schemas.microsoft.com/client/2007" <br />     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" <br />     Width="480"><br />     <Grid x:Name="LayoutRoot" Background="White"><br />         <Grid HorizontalAlignment="Left"><br />             <TextBox x:Name="txtFile" Width="400" Height="250" AcceptsReturn="True" />    <br />         </Grid><br />         <Grid HorizontalAlignment="Right" VerticalAlignment="Top"><br />             <Button x:Name="btnSelectFile" Content="Add File" Width="75" Height="30" Click="btnSelectFile_Click"></Button><br />         </Grid><br />     </Grid><br /> </UserControl>
 
 **Page.xaml.cs file** 
 

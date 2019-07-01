@@ -16,7 +16,7 @@ redirect_from:
 
 Time is the scarcest resource we have. More scarce than land, More scarce than water. More scarce than money. This is one of the reasons that life is so precious.
 
-<em>"A penny saved is a penny earned." - Benjamin Franklin</em>
+*"A penny saved is a penny earned." - Benjamin Franklin*
 
 This famous quote from Benjamin Franklin can also be applied to Time. We only have so much time. We need to choose wisely how we spend it.
 

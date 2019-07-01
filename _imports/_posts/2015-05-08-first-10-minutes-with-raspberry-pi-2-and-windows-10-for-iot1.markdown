@@ -26,8 +26,8 @@ For quick reference, the steps taken:
 <li>Go to <a href="https://connect.microsoft.com/windowsembeddedIoT/Downloads/">Windows Embedded Connect</a> site and download the Windows 10 for IoT Insider Preview for Raspberry Pi 2</li>
 <li>Plug your Micro SD card into a Windows 10 PC (I used my Surface Pro, but for others a Micro SD card adapter may be required)</li>
 <li>Open the command line on the Windows 10 PC with Administrator privileges</li>
-<li>Run "<em>wmic diskdrive list brief</em>" to get the physical disk number of your Micro SD card</li>
-<li>Run <em>"dism.exe /Apply-Image /ImageFile:flash.ffu /ApplyDrive:\\.\PhysicalDrive**#** /SkipPlatformCheck"</em> The '#' will be the number for disk number for the Micro SD card.</li>
+<li>Run "*wmic diskdrive list brief*" to get the physical disk number of your Micro SD card</li>
+<li>Run *"dism.exe /Apply-Image /ImageFile:flash.ffu /ApplyDrive:\\.\PhysicalDrive**#** /SkipPlatformCheck"* The '#' will be the number for disk number for the Micro SD card.</li>
 <li>Put the Micro SD card into the Raspberry Pi 2</li>
 <li>Connect Raspberry Pi 2 to HDMI and power on</li>
 </ol>
@@ -71,4 +71,4 @@ Then after a couple minutes, it displayed the default screen displaying the mach
 
 This is pretty much as far as I got on day 1. I didn't have much time, but I just could wait to get things booted up. Now that I know it works I can start hacking soon, hopefully I'll have time this weekend!
 
-<em>P.S. With the initial research and writing this blog post, I definitely ended up spending more than 10 minutes. But only about 10 minutes of it was spent on Windows 10 for IoT and Raspberry PI.</em>
+*P.S. With the initial research and writing this blog post, I definitely ended up spending more than 10 minutes. But only about 10 minutes of it was spent on Windows 10 for IoT and Raspberry PI.*

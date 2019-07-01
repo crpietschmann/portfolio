@@ -20,9 +20,9 @@ I'm a husband, father of 2 wonderful children, Principal Cloud Solutions Archite
 
 A mantra I live by is: "<a href="/post/2013/07/27/Work-Smart-Not-Hard">Work Smart, Not Hard</a>"
 
-The <em>pietschsoft.com</em> domain name has been my internet presence hub since 2003, and I've been blogging here since <a href="/post/2004/06/30/Holy-crap-I-have-a-blog!.aspx">2004</a>.
+The *pietschsoft.com* domain name has been my internet presence hub since 2003, and I've been blogging here since <a href="/post/2004/06/30/Holy-crap-I-have-a-blog!.aspx">2004</a>.
 
-<em>Disclaimer: All opinions are my own &amp; do not reflect that of my employer or other organizations I am affiliated with.</em>
+*Disclaimer: All opinions are my own &amp; do not reflect that of my employer or other organizations I am affiliated with.*
 <h3>Background</h3>
 
 I'm a technology enthusiast. I have been <a href="/post/2005/04/22/My-introduction-to-computers-and-programming.aspx">using computers since 1984</a> (at age 3) and have been <a href="/post/2008/06/10/Software_Development_Meme_How_I_got_started_programming.aspx">programming them since 1996</a> (age 14.) My <a href="/post/2008/01/21/QBasic-was-my-First-Programming-Language.aspx">first programming language</a> was QBasic. I've always had an interest in giving back to the online development community and as a result I have been awarded the <a href="/post/2008/04/01/I-am-now-a-Virtual-Earth-MVP!.aspx">Microsoft MVP award</a> from 2008 through <a href="/post/2012/04/01/Awarded-2012-Microsoft-MVP-Bing-Maps.aspx">2012</a>, and in <a href="/post/2017/01/01/Awarded-2017-Microsoft-MVP-Azure">2017</a>. In past years I have been an active member of the local <a href="http://www.meetup.com/Wisconsin-Net-Users-Group/" target="_blank">Wisconsin .NET Users Group</a>. I am also a Founder of the <a href="http://MkeAzure.com">Milwaukee Azure</a> (MkeAzure) meetup group.

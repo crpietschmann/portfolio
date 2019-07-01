@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-**Update Wednesday, Dec. 1, 2010: **I have had a few people contact me about getting denied enrollment in the BizSpark program. Most of these people are trying to enroll a CONSULTING company; which is NOT what BizSpark is for. BizSpark is for companies that are &ldquo;<em>Actively engaged in development of a software-based product or online service that will form a core piece of its current or intended business.</em>&rdquo; That means, if you want to enroll in BizSpark, that you must be developing a product to sell/offer and not selling consulting services.
+**Update Wednesday, Dec. 1, 2010: **I have had a few people contact me about getting denied enrollment in the BizSpark program. Most of these people are trying to enroll a CONSULTING company; which is NOT what BizSpark is for. BizSpark is for companies that are &ldquo;*Actively engaged in development of a software-based product or online service that will form a core piece of its current or intended business.*&rdquo; That means, if you want to enroll in BizSpark, that you must be developing a product to sell/offer and not selling consulting services.
 
 **Update Monday, Aug. 16, 2010: **My startup, Carto LLC, is now enrolled in the BizSpark program!
 
@@ -30,7 +30,7 @@ Basically BizSpark was started as an on-going effort by Microsoft to get more st
 
 According to Microsoft, BizSpark is...
 
-<em>"Launched in November 2008, the BizSpark program is designed to help accelerate the success of entrepreneurs and early-stage startups globally. The program provides fast and easy access to current, full-featured software development tools and platforms, and a connection to over 2,000 BizSpark Network Partners &ndash; including university incubators, hosters, government agencies, investors, consultants and financial institutions &ndash; all with a common goal of supporting entrepreneurship. BizSpark startups can also have the opportunity to achieve global visibility to an audience of potential investors, clients, and partners by profiling their company and posting offers and events in the BizSpark online networking hub, BizSpark Connect. Join a community of over 30,000 startups enrolled in BizSpark by signing up today."</em>
+*"Launched in November 2008, the BizSpark program is designed to help accelerate the success of entrepreneurs and early-stage startups globally. The program provides fast and easy access to current, full-featured software development tools and platforms, and a connection to over 2,000 BizSpark Network Partners &ndash; including university incubators, hosters, government agencies, investors, consultants and financial institutions &ndash; all with a common goal of supporting entrepreneurship. BizSpark startups can also have the opportunity to achieve global visibility to an audience of potential investors, clients, and partners by profiling their company and posting offers and events in the BizSpark online networking hub, BizSpark Connect. Join a community of over 30,000 startups enrolled in BizSpark by signing up today."*
 
 Enrollment in BizSpark is free, as long as the startup meets the following requirements:
 <ol>

@@ -24,7 +24,7 @@ Basically, this technique constist of:
 <ol>
 	<li>Saving Objects in Isolated Storage as XML</li>
 	<li>Keeping a copy of the data in memory to reduce disk access.</li>
-	<li>Data is returned as a generic List&lt;&gt; object so you can use LINQ.</li>
+	<li>Data is returned as a generic List<> object so you can use LINQ.</li>
 </ol>
 Also, if you use this in conjunction with web services, it allows you to cache data on the client and persist it across user session to give you a nice performance increase in certain situations.<br />
 
@@ -88,10 +88,10 @@ namespace SimpleSilverlightDatabaseWithLINQ.Data.ClientDB<br />
     {<br />
         private const string _filename = &quot;PersonTable.xml&quot;;<br />
 <br />
-        private static List&lt;Person&gt; _cache = null;<br />
+        private static List<Person> _cache = null;<br />
         private static object _cache_lock = new object();<br />
 <br />
-        public static List&lt;Person&gt; Load()<br />
+        public static List<Person> Load()<br />
         {<br />
             // Check if data has already been loaded from<br />
             // isolated storage, if not, then load it to memory.<br />
@@ -106,7 +106,7 @@ namespace SimpleSilverlightDatabaseWithLINQ.Data.ClientDB<br />
                         {<br />
                             // no data has been previously saved, so set the<br />
                             // in memory list to an empty list.<br />
-                            PersonTable._cache = new List&lt;Person&gt;();<br />
+                            PersonTable._cache = new List<Person>();<br />
 <br />
                         }<br />
                         else<br />
@@ -138,7 +138,7 @@ namespace SimpleSilverlightDatabaseWithLINQ.Data.ClientDB<br />
             return PersonTable._cache;<br />
         }<br />
 <br />
-        public static void Save(List&lt;Person&gt; col)<br />
+        public static void Save(List<Person> col)<br />
         {<br />
             lock (PersonTable._cache_lock)<br />
             {<br />
@@ -172,7 +172,7 @@ namespace SimpleSilverlightDatabaseWithLINQ.Data.ClientDB<br />
             // Remove a specific Person by ID<br />
             var people = PersonTable.Load();<br />
             people.Remove(<br />
-                people.First(m =&gt; m.ID.ToString() == id.ToString())<br />
+                people.First(m => m.ID.ToString() == id.ToString())<br />
                 );<br />
             PersonTable.Save(people);<br />
         }<br />

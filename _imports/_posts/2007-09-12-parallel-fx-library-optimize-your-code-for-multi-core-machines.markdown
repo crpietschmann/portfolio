@@ -26,11 +26,11 @@ There are a few different things explained in the article that you can do, but t
 
 Take a normal For loop in C#:
 
-<em>for (int i = 0; i &lt; 100; i++) {<br />   a[i] = a[i] * a[i];<br />}</em>
+*for (int i = 0; i < 100; i++) {<br />   a[i] = a[i] * a[i];<br />}*
 
 Now the optimized version using Parallel FX:
 
-<em>Parallel.For(0, 100, delagate(int i) {<br />   a[i] = a[i] * a[i];<br />});</em>
+*Parallel.For(0, 100, delagate(int i) {<br />   a[i] = a[i] * a[i];<br />});*
 
 Now isn't that simple to do? The Parallel.For does all the optimizations for you to spawn off multiple threads (one per cpu core) to do parallelize the work and get it done as fast as possible. Remember, when running on a single core system, the Parallel.For wont give you any performance boost, but when you run on a 2 or more core system the benefit just scales with the number of cores.
 
@@ -40,7 +40,7 @@ Yes, you must keep in mind what tasks can be run in parallel or you could render
 
 Look at the following nested Parallel.For:
 
-<em>Parallel.For(0, 100, deleagate(int a) {<br />   Parallel.For(0, 100, delegate(int b) {<br />      result[a, b] = 0;<br />      for (int c = 0; c &lt; 100; c++) {<br />         result[a,b] += a1[a,c] * a2[b,c];<br />      }<br />   });<br />});</em>
+*Parallel.For(0, 100, deleagate(int a) {<br />   Parallel.For(0, 100, delegate(int b) {<br />      result[a, b] = 0;<br />      for (int c = 0; c < 100; c++) {<br />         result[a,b] += a1[a,c] * a2[b,c];<br />      }<br />   });<br />});*
 
 Even though the above code will still run, you are making the nested Parallel.For meaningless since it cannot be correctly multi-threaded since the machine probably doesn't have enough cores to run every iteration of this matrix in parallel. Another reason that the nested iterations wont multi-thread properly is because they are very dependant on the outer Parallel.For to run. There is also the hit on memory (however very small) that you incur by uing Delegates
 

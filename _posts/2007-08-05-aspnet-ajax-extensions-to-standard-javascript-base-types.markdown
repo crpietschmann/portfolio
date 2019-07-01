@@ -20,21 +20,21 @@ Working with JavaScript can be a challenge at times, and there are a number of h
 
 There are a number of extensions made to the Array base type, including "add", "remove" and "clear" functions that allow you to interact with your JavaScript Arrays much more like they are actually collections. This is my favorite Extension that they've added since Arrays are used so frequently with JavaScript.
 
-**Example Usage:** <br /> <em>var myArray = new Array();</em>
+**Example Usage:** <br /> *var myArray = new Array();*
 
-<em>// Add some elements to the Array<br /> Array.add(myArray, "String One");<br /> Array.add(myArray, "2");</em>
+*// Add some elements to the Array<br /> Array.add(myArray, "String One");<br /> Array.add(myArray, "2");*
 
-<em>// Remove an element from the Arrray<br /> Array.remove(myArray, "2");</em>
+*// Remove an element from the Arrray<br /> Array.remove(myArray, "2");*
 
-<em>// Clear all elements from the Array<br /> Array.clear(myArray);</em>
+*// Clear all elements from the Array<br /> Array.clear(myArray);*
 
 Another neat extension to the Array base type, is the "forEach" function. This function allows you to loop through the Array and execute some code on each of its elements. What makes this extension really nice it the fact that you don't need to use an iterator to loop through; it does that tedious stuff for you.
 
-**Example Usage:<br /> **<em>var m = ['1','20','40'];</em>
+**Example Usage:<br /> ***var m = ['1','20','40'];*
 
-<em>function appendPercentSign(element, index, array)<br /> {<br />     array[index] += '%';<br /> }</em>
+*function appendPercentSign(element, index, array)<br /> {<br />     array[index] += '%';<br /> }*
 
-<em>Array.forEach(m, appendPercentSign, this);</em>
+*Array.forEach(m, appendPercentSign, this);*
 
 <br /> **<span style="font-size: medium;">Boolean</span>**
 
@@ -42,7 +42,7 @@ A simple but effective one that's nice is the "parse" function that is added to 
 
 **Example Usage:**
 
-<em>var one = new Boolean.parse("true");</em>
+*var one = new Boolean.parse("true");*
 
  
 
@@ -50,21 +50,21 @@ A simple but effective one that's nice is the "parse" function that is added to 
 
 I don't really see any problems with the extensions that have been added. However I do have a small convenience issue with the way you use the Array extensions. These extensions are static methods that are called and you need to pass the Array instance to them. Why not a more object oriented approach?
 
-**Current ASP.NET AJAX use of Static methods:<br /> **<em>var myArray = new Array();</em>
+**Current ASP.NET AJAX use of Static methods:<br /> ***var myArray = new Array();*
 
-<em>Array.add(myArray, "one");<br /> Array.remove(myArray, "two");</em>
+*Array.add(myArray, "one");<br /> Array.remove(myArray, "two");*
 
-<em>function appendPercentSign(element, index, array)<br /> {<br />     array[index] += '%';<br /> }<br /> Array.forEach(m, appendPercentSign, this);</em>
+*function appendPercentSign(element, index, array)<br /> {<br />     array[index] += '%';<br /> }<br /> Array.forEach(m, appendPercentSign, this);*
 
-<em>Array.clear(myArray)</em>
+*Array.clear(myArray)*
 
-<br /> **Propose more object oriented way:**<br /> <em>var myArray = new Array();</em>
+<br /> **Propose more object oriented way:**<br /> *var myArray = new Array();*
 
-<em>myArray.add("one");<br /> myArray.remove("two");</em>
+*myArray.add("one");<br /> myArray.remove("two");*
 
-<em>function appendPercentSign(element, index, array)<br /> {<br />     array[index] += '%';<br /> }<br /> myArray.forEach(appendPercentSign, this);</em>
+*function appendPercentSign(element, index, array)<br /> {<br />     array[index] += '%';<br /> }<br /> myArray.forEach(appendPercentSign, this);*
 
-<em>myArray.clear();</em>
+*myArray.clear();*
 
 <br /> Now don't you agree that the more object oriented approach is just easier to read? I'm not sure why they implemented these extensions the way they did, but they've got their reasons (they always do).
 
@@ -76,7 +76,7 @@ Yes, you can, but remember the ASP.NET AJAX Extensions are necessary to add your
 
 **Example to make the Array extensions more object oriented:**
 
-<br /> <em>Array.prototype.add = function(item)<br /> {<br />  Array.add(this, item);<br /> };<br /> Array.prototype.remove = function(item)<br /> {<br />  Array.remove(this, item);<br /> };<br /> Array.prototype.clear = function()<br /> {<br />  Array.clear(this);<br /> };<br /> Array.prototype.forEach(method, context)<br /> {<br />  Array.forEach(this, method, context);<br /> };</em>
+<br /> *Array.prototype.add = function(item)<br /> {<br />  Array.add(this, item);<br /> };<br /> Array.prototype.remove = function(item)<br /> {<br />  Array.remove(this, item);<br /> };<br /> Array.prototype.clear = function()<br /> {<br />  Array.clear(this);<br /> };<br /> Array.prototype.forEach(method, context)<br /> {<br />  Array.forEach(this, method, context);<br /> };*
 
 In fact JavaScript is so flexible, you can use prototyping to extend any JavaScript object type whether it's a base type or one you or a framework you are using created.
 

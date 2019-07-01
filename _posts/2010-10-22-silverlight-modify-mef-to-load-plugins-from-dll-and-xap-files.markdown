@@ -39,13 +39,13 @@ Here’s the DeploymentCatalog.HandleOpenReadCompleted method with its modificat
             <span class="kwrd">if</span> (<span class="kwrd">this</span>._uri.OriginalString.ToLower().EndsWith(<span class="str">&quot;.xap&quot;</span>))
             {
                 <span class="rem">// Load Assemblies from XAP</span>
-                IEnumerable&lt;Assembly&gt; assemblies = Package.LoadPackagedAssemblies(e.Result);
+                IEnumerable<Assembly> assemblies = Package.LoadPackagedAssemblies(e.Result);
                 <span class="kwrd">this</span>.DiscoverParts(assemblies);
             }
             <span class="kwrd">else</span> <span class="rem">// if (this._uri.OriginalString.ToLower().EndsWith(&quot;.dll&quot;))</span>
             {
                 <span class="rem">// Load DLL Assembly</span>
-                var assemblies = <span class="kwrd">new</span> List&lt;Assembly&gt;();
+                var assemblies = <span class="kwrd">new</span> List<Assembly>();
                 assemblies.Add((<span class="kwrd">new</span> AssemblyPart()).Load(e.Result));
                 <span class="kwrd">this</span>.DiscoverParts(assemblies);
             }

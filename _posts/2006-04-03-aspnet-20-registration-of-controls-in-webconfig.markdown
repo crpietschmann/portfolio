@@ -17,14 +17,14 @@ redirect_from:
 In ASP.NET 1.x controls had to be registered in each page they were used. New since ASP.NET 2.0, controls can be registered in the web.config file. Visual Studio 2005 supports full intellisense when editing .aspx pages. This feature allows commonly used controls to be more easily used through out your application.
 
 **Web.Config**
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;system.web&gt;
-    &lt;pages&gt;
-        &lt;controls&gt;
-            &lt;add tagPrefix="mycontrol" src="~/Controls/Header.ascx" tagName="header"/&gt;
-            &lt;add tagPrefix="mycontrol" src="~/Controls/Footer.ascx" tagName="footer"/&gt;
-        &lt;/controls&gt;
-    &lt;/pages&gt;
-&lt;/system.web&gt;</pre>
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><system.web>
+    <pages>
+        <controls>
+            <add tagPrefix="mycontrol" src="~/Controls/Header.ascx" tagName="header"/>
+            <add tagPrefix="mycontrol" src="~/Controls/Footer.ascx" tagName="footer"/>
+        </controls>
+    </pages>
+</system.web></pre>
 
 **Use the control in an .aspx page**
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "> &lt;mycontrol:header id="Header" runat="server" /&gt;</pre>
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "> <mycontrol:header id="Header" runat="server" /></pre>

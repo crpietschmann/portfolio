@@ -26,10 +26,10 @@ Here’s a simple class that does not use dependency injection:  <pre class="csh
 
     <span class="kwrd">private</span> IDataService Service { get; set; }
 
-    <span class="kwrd">public</span> IQueryable&lt;Person&gt; GetOldPeople()
+    <span class="kwrd">public</span> IQueryable<Person> GetOldPeople()
     {
         <span class="rem">// A method that depends on the &quot;Service&quot; property</span>
-        <span class="kwrd">return</span> <span class="kwrd">this</span>.Service.People.Where(d =&gt; d.Age &gt; 65);
+        <span class="kwrd">return</span> <span class="kwrd">this</span>.Service.People.Where(d => d.Age > 65);
     }
 }</pre>
 <style type="text/css">
@@ -74,10 +74,10 @@ Now, here’s the same class that uses Dependency Injection for the “Service�
 
     <span class="kwrd">private</span> IDataService Service { get; set; }
 
-    <span class="kwrd">public</span> IQueryable&lt;Person&gt; GetOldPeople()
+    <span class="kwrd">public</span> IQueryable<Person> GetOldPeople()
     {
         <span class="rem">// a method that depends on the &quot;Service&quot; property</span>
-        <span class="kwrd">return</span> <span class="kwrd">this</span>.Service.People.Where(d =&gt; d.Age &gt; 65);
+        <span class="kwrd">return</span> <span class="kwrd">this</span>.Service.People.Where(d => d.Age > 65);
     }
 }</pre>
 
@@ -107,10 +107,10 @@ Lastly, you can create a parameterless constructor to give the object a “defau
         <span class="kwrd">this</span>.Service = service;
     }
 
-    <span class="kwrd">private</span> IDataService&lt;Person&gt; GetOldPeople()
+    <span class="kwrd">private</span> IDataService<Person> GetOldPeople()
     {
         <span class="rem">// a method that depends on the &quot;Service&quot; property</span>
-        <span class="kwrd">return</span> <span class="kwrd">this</span>.Service.People.Where(d =&gt; d.Age &gt; 65);
+        <span class="kwrd">return</span> <span class="kwrd">this</span>.Service.People.Where(d => d.Age > 65);
     }
 }</pre>
 
@@ -124,10 +124,10 @@ Here’s an example of a simple IDataService implementation that would contain a
 
 <pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">class</span> MemeryDataService : IDataService
 {
-    <span class="kwrd">public</span> IQueryable&lt;Person&gt; People
+    <span class="kwrd">public</span> IQueryable<Person> People
     {
         <span class="kwrd">return</span> (
-                 <span class="kwrd">new</span> List&lt;Person&gt;()
+                 <span class="kwrd">new</span> List<Person>()
                  {
                      <span class="kwrd">new</span> Person { ID = 1, Age = 23, FirstName = <span class="str">&quot;Bob&quot;</span>, LastName = <span class="str">&quot;Antonio&quot;</span> },
                      <span class="kwrd">new</span> Person { ID = 2, Age = 30, FirstName = <span class="str">&quot;Sue&quot;</span>, LastName = <span class="str">&quot;Antonio&quot;</span> },

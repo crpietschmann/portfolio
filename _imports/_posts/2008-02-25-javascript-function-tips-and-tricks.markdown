@@ -16,7 +16,7 @@ redirect_from:
 
 First, What is a JavaScript Function? As defined by W3Schools.com a JavaScript Function is:
 
-<em>"A function is a reusable code-block that will be executed by an event, or when the function is called."</em> - <a href="http://www.w3schools.com/js/js_functions.asp">http://www.w3schools.com/js/js_functions.asp</a>
+*"A function is a reusable code-block that will be executed by an event, or when the function is called."* - <a href="http://www.w3schools.com/js/js_functions.asp">http://www.w3schools.com/js/js_functions.asp</a>
 
 You're probably thinking, "Well, Yeah. I knew that." But, how much do you really know about JavaScript Functions?
 
@@ -74,7 +74,7 @@ Here's an implementation of the above AddNumbers function that will add any numb
 
 ```javascript
 
-function AddNumbers()<br /> {<br />     var r = 0;<br />     for(var i = 0; i &lt; arguments.length; i++)<br />     {<br />         r += arguments[i];<br />     }<br />     return r;<br /> }
+function AddNumbers()<br /> {<br />     var r = 0;<br />     for(var i = 0; i < arguments.length; i++)<br />     {<br />         r += arguments[i];<br />     }<br />     return r;<br /> }
 
 ```
 

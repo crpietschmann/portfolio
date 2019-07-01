@@ -30,7 +30,7 @@ Stepping back and thinking about some of my ideas and predictions from a few yea
 
 **2015**: Raspberry Pi 2 is released with support for Windows 10 support (intriguing to me as a Microsoft developer in my day job!) It's been awhile since I looked into building a computer in my car. Wow, there's a ton of relatively cheap hardware available! It can now be done for a couple hundred dollars or less; instead of $1,000 or more.
 
-<em>P.S. I know I skipped over a tone of detail with the above timeline, but you get the point.</em>
+*P.S. I know I skipped over a tone of detail with the above timeline, but you get the point.*
 
 It's truly an exciting time, and we're really just in the beginning of it all!
 

@@ -16,10 +16,10 @@ redirect_from:
 
 Here is an example of how to get a value from a nested form in an iframe. It works in IE6, but not Netscape 7.1.
 
-<STRONG>PageOne.htm<BR></STRONG>&lt;html&gt;<BR>&lt;head&gt;<BR>&lt;script language='JavaScript'&gt;
+**PageOne.htm<BR>**<html><BR><head><BR><script language='JavaScript'>
 
  function Search() {<BR>  alert(document.frames("PageTwo").document.forms("Members").elements("Search").value);<BR> }
 
-&lt;/script&gt;<BR>&lt;/head&gt;<BR>&lt;body&gt;<BR>&lt;input type='button' value='Search' onclick='Search();'&gt;<BR>&lt;iframe name='PageTwo' src="PageTwo.htm" width='100%' height='100'&gt;<BR>&lt;/body&gt;<BR>&lt;/html&gt;
+</script><BR></head><BR><body><BR><input type='button' value='Search' onclick='Search();'><BR><iframe name='PageTwo' src="PageTwo.htm" width='100%' height='100'><BR></body><BR></html>
 
-<STRONG>PageTwo.htm<BR></STRONG>&lt;html&gt;<BR>&lt;body&gt;<BR>&lt;form name='Members'&gt;<BR>    &lt;input type='text' name='Search' value='Chris'&gt;<BR>&lt;/form&gt;<BR>&lt;/body&gt;<BR>&lt;/html&gt;
+**PageTwo.htm<BR>**<html><BR><body><BR><form name='Members'><BR>    <input type='text' name='Search' value='Chris'><BR></form><BR></body><BR></html>

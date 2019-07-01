@@ -18,7 +18,7 @@ While working on the <a href="http://virtualrouter.codeplex.com" target="_blank"
 
 &ldquo;arp.exe&rdquo; uses the <a href="http://en.wikipedia.org/wiki/Address_Resolution_Protocol" target="_blank">Address Resolution Protocol</a> to provide functionality to add, delete or display the IP address for MAC (Media Access Control) address translation.
 
-To see the IP / MAC Address translations, just open up the Command Prompt in Windows, and type &ldquo;<em>arp &ndash;a</em>&rdquo; and press enter.
+To see the IP / MAC Address translations, just open up the Command Prompt in Windows, and type &ldquo;*arp &ndash;a*&rdquo; and press enter.
 
 Now, you may be asking, how do we use this utility from within a .NET application? Well, it&rsquo;s rather simple. All you need to do is use the <a href="http://msdn.microsoft.com/en-us/library/system.diagnostics.process.aspx" target="_blank">System.Diagnostics.Process</a> class to execute the &ldquo;arp &ndash;a&rdquo; call and retrieve the results. Then just parse through the results and get out the IP Address for the desired MAC Address.
 
@@ -42,9 +42,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Net;
 
-/// &lt;summary&gt;
+/// <summary>
 /// This class allows you to retrieve the IP Address and Host Name for a specific machine on the local network when you only know it's MAC Address.
-/// &lt;/summary&gt;
+/// </summary>
 public class IPInfo
 {
     public IPInfo(string macAddress, string ipAddress)
@@ -80,11 +80,11 @@ public class IPInfo
 
     #region "Static Methods"
 
-    /// &lt;summary&gt;
+    /// <summary>
     /// Retrieves the IPInfo for the machine on the local network with the specified MAC Address.
-    /// &lt;/summary&gt;
-    /// &lt;param name="macAddress"&gt;The MAC Address of the IPInfo to retrieve.&lt;/param&gt;
-    /// &lt;returns&gt;&lt;/returns&gt;
+    /// </summary>
+    /// <param name="macAddress">The MAC Address of the IPInfo to retrieve.</param>
+    /// <returns></returns>
     public static IPInfo GetIPInfo(string macAddress)
     {
         var ipinfo = (from ip in IPInfo.GetIPInfo()
@@ -94,15 +94,15 @@ public class IPInfo
         return ipinfo;
     }
 
-    /// &lt;summary&gt;
+    /// <summary>
     /// Retrieves the IPInfo for All machines on the local network.
-    /// &lt;/summary&gt;
-    /// &lt;returns&gt;&lt;/returns&gt;
-    public static List&lt;IPInfo&gt; GetIPInfo()
+    /// </summary>
+    /// <returns></returns>
+    public static List<IPInfo> GetIPInfo()
     {
         try
         {
-            var list = new List&lt;IPInfo&gt;();
+            var list = new List<IPInfo>();
 
             foreach (var arp in GetARPResult().Split(new char[] { '\n', '\r' }))
             {
@@ -128,10 +128,10 @@ public class IPInfo
         }
     }
 
-    /// &lt;summary&gt;
+    /// <summary>
     /// This runs the "arp" utility in Windows to retrieve all the MAC / IP Address entries.
-    /// &lt;/summary&gt;
-    /// &lt;returns&gt;&lt;/returns&gt;
+    /// </summary>
+    /// <returns></returns>
     private static string GetARPResult()
     {
         Process p = null;

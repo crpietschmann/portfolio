@@ -18,7 +18,7 @@ RSS Autodiscovery is a technique that makes it possible for browsers and other s
 
 To make your RSS feeds auto-discoverable just include an HTML/XHTML Link tag inside the Head tag of your website. You can even include multiple Link tags, which allows you to make all your RSS feeds auto-discoverable at the same time.
 
-For Example:<BR><EM>&lt;link rel="alternative" type="application/rss+xml" title="Chris Pietschmann's RSS Feed" href="/blog/rss.aspx" /&gt;</EM>
+For Example:<BR>*<link rel="alternative" type="application/rss+xml" title="Chris Pietschmann's RSS Feed" href="/blog/rss.aspx" />*
 
 The most notible effect within IE7 that this will have, is it will cause the orange RSS icon in the top right of the browser to light up. This will notify the user that your website has a feed that they can subscribe to. It makes it easier for "normal" people to subscribe to blogs.
 

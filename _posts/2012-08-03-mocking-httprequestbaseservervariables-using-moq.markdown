@@ -22,15 +22,15 @@ Here’s a code example (using <a href="http://code.google.com/p/moq/">moq</a>) 
         { <span class="str">&quot;AnotherAppVariable&quot;</span>, <span class="str">&quot;Unit Test Value&quot;</span> }
     };
  
-    var httpRequest = <span class="kwrd">new</span> Moq.Mock&lt;HttpRequestBase&gt;();
-    httpRequest.Setup(x =&gt; x.ServerVariables.Get(It.IsAny&lt;<span class="kwrd">string</span>&gt;()))
-        .Returns&lt;<span class="kwrd">string</span>&gt;(x =&gt;
+    var httpRequest = <span class="kwrd">new</span> Moq.Mock<HttpRequestBase>();
+    httpRequest.Setup(x => x.ServerVariables.Get(It.IsAny<<span class="kwrd">string</span>>()))
+        .Returns<<span class="kwrd">string</span>>(x =>
         {
             <span class="kwrd">return</span> serverVariables[x];
         });
  
-    var httpContext = (<span class="kwrd">new</span> Moq.Mock&lt;HttpContextBase&gt;());
-    httpContext.Setup(x =&gt; x.Request).Returns(httpRequest.Object);
+    var httpContext = (<span class="kwrd">new</span> Moq.Mock<HttpContextBase>());
+    httpContext.Setup(x => x.Request).Returns(httpRequest.Object);
  
     <span class="kwrd">return</span> httpContext.Object;
 }</pre>

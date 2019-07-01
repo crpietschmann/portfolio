@@ -23,4 +23,4 @@ Modifications Made:
 <li>Converted to using the DOM to add the Image tag that is used rather than the div.innerHTML property; just because that's the correct way to do it</li>
 </ul>
 
-There we have it, one more day and another lunch time <em>(partially)</em> spent writing code.
+There we have it, one more day and another lunch time *(partially)* spent writing code.

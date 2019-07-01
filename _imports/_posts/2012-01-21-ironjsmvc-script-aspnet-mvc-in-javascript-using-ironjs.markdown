@@ -15,7 +15,7 @@ redirect_from:
 <!-- more -->
 
 Personally, I enjoy writing much of my applications using a statically typed language such as C#. However, I would really prefer to be able to write UI logic and script certain parts of my applications using a dynamic language if I could. I was thinking about this and the following question came to mind:  
-<em>What would it be like to write an ASP.NET MVC application entirely using JavaScript?</em>  
+*What would it be like to write an ASP.NET MVC application entirely using JavaScript?*  
 So I thought I’d work up a prototype using <a href="https://github.com/fholm/IronJS/">IronJS</a> (a javascript implementation for the .NET DLR.)  
 Download IronJSMVC prototype source code here:    <br /><a title="https://github.com/crpietschmann/IronJSMVC/downloads" href="https://github.com/crpietschmann/IronJSMVC/downloads">https://github.com/crpietschmann/IronJSMVC/downloads</a>  
 Here’s a screenshot of the prototype code running, also showing a sample Controller and View written entirely in JavaScript:  

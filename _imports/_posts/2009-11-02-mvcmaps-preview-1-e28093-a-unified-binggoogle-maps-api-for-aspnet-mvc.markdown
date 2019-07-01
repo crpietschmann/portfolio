@@ -31,9 +31,9 @@ This initial release is just a &ldquo;Preview&rdquo; release and isn&rsquo;t rea
 The above source code download link contains the full source code for the component, plus a very basic &ldquo;Interactive SDK&rdquo; style website demonstrating some basic examples of using it.
 
 The following snippet is the most basic example of how to add both a Bing Map and a Google Map within a View:
-<pre class="csharpcode"><span class="asp">&lt;%@ Import Namespace="MvcMaps" %&gt;</span>
+<pre class="csharpcode"><span class="asp"><%@ Import Namespace="MvcMaps" %></span>
 
-<span class="kwrd">&lt;</span><span class="html">style</span> <span class="attr">type</span><span class="kwrd">="text/javascript"</span><span class="kwrd">&gt;</span>
+<span class="kwrd"><</span><span class="html">style</span> <span class="attr">type</span><span class="kwrd">="text/javascript"</span><span class="kwrd">></span>
 .BingMap
 {
     width: 600px;
@@ -46,19 +46,19 @@ The following snippet is the most basic example of how to add both a Bing Map an
     height: 400px;
     border: solid 1px black;
 }
-<span class="kwrd">&lt;/</span><span class="html">style</span><span class="kwrd">&gt;</span>
+<span class="kwrd"></</span><span class="html">style</span><span class="kwrd">></span>
 
-<span class="kwrd">&lt;</span><span class="html">h3</span><span class="kwrd">&gt;</span>Bing Map<span class="kwrd">&lt;/</span><span class="html">h3</span><span class="kwrd">&gt;</span>
-<span class="asp">&lt;%</span> Ajax.BingMap()     <span class="rem">// Create a Bing Map</span>
+<span class="kwrd"><</span><span class="html">h3</span><span class="kwrd">></span>Bing Map<span class="kwrd"></</span><span class="html">h3</span><span class="kwrd">></span>
+<span class="asp"><%</span> Ajax.BingMap()     <span class="rem">// Create a Bing Map</span>
     .CssClass(<span class="str">"BingMap"</span>) <span class="rem">// Define the CSS Style to use. These specify the Maps Size</span>
     .Render();           <span class="rem">// Render all the HTML / JavaScript necessary to create the Map to Server.Response</span>
-    <span class="asp">%&gt;</span>
+    <span class="asp">%></span>
 
-<span class="kwrd">&lt;</span><span class="html">h3</span><span class="kwrd">&gt;</span>Google Map<span class="kwrd">&lt;/</span><span class="html">h3</span><span class="kwrd">&gt;</span>
-<span class="asp">&lt;%</span> Ajax.GoogleMap()      <span class="rem">// Create a Google Map</span>
+<span class="kwrd"><</span><span class="html">h3</span><span class="kwrd">></span>Google Map<span class="kwrd"></</span><span class="html">h3</span><span class="kwrd">></span>
+<span class="asp"><%</span> Ajax.GoogleMap()      <span class="rem">// Create a Google Map</span>
     .CssClass(<span class="str">"GoogleMap"</span>)  <span class="rem">// Define the CSS Style to use. These specify the Maps Size</span>
     .Render();              <span class="rem">// Render all the HTML / JavaScript necessary to create the Map to Server.Response</span>
-    <span class="asp">%&gt;</span></pre>
+    <span class="asp">%></span></pre>
 
 <!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
 
@@ -70,7 +70,7 @@ Notice that the code is idential, except for the &ldquo;BingMap&rdquo; and &ldqu
 Adding some Pushpins, Polylines and Polygons is extremely simple, and its the same code for both Bing Maps and Google Maps!
 
 Here&rsquo;s a basic example of adding one of each:
-<pre class="csharpcode"><span class="asp">&lt;%</span> Ajax.BingMap().CssClass(<span class="str">"BingMap"</span>)
+<pre class="csharpcode"><span class="asp"><%</span> Ajax.BingMap().CssClass(<span class="str">"BingMap"</span>)
     <span class="rem">// Add Pushpin Shape</span>
     .AddPushpin(
         <span class="kwrd">new</span> Pushpin(39.9097362345372, -97.470703125,
@@ -79,7 +79,7 @@ Here&rsquo;s a basic example of adding one of each:
     
     <span class="rem">// Add Polyline Shape</span>
     .AddPolyline(
-        <span class="kwrd">new</span> Polyline(<span class="kwrd">new</span> List&lt;LatLng&gt;() {
+        <span class="kwrd">new</span> Polyline(<span class="kwrd">new</span> List<LatLng>() {
             <span class="kwrd">new</span> LatLng(48.166085, -121.11328),
             <span class="kwrd">new</span> LatLng(34.270835, -118.34472),
             <span class="kwrd">new</span> LatLng(43.041543, -87.901954),
@@ -92,7 +92,7 @@ Here&rsquo;s a basic example of adding one of each:
     
     <span class="rem">// Add Polygon Shape</span>
     .AddPolygon(
-        <span class="kwrd">new</span> Polygon(<span class="kwrd">new</span> List&lt;LatLng&gt;() {
+        <span class="kwrd">new</span> Polygon(<span class="kwrd">new</span> List<LatLng>() {
             <span class="kwrd">new</span> LatLng(34.270835, -118.34472),
             <span class="kwrd">new</span> LatLng(43.041543, -87.901954),
             <span class="kwrd">new</span> LatLng(38.889546, -77.035338)
@@ -106,7 +106,7 @@ Here&rsquo;s a basic example of adding one of each:
     
     <span class="rem">// Render Map (HTML and JavaScript) to the Page</span>
     .Render()
-<span class="asp">%&gt;</span></pre>
+<span class="asp">%></span></pre>
 
  
 <h3>Dynamic / Interactive Style Map</h3>
@@ -116,11 +116,11 @@ One of the **coolest** features I&rsquo;ve built into the component so far is th
 You probably wouldn&rsquo;t believe me if I explained in words how simple it is to add a dynamic style map, so instead I&rsquo;ll just show you the most basic code to get it working.
 
 Here&rsquo;s the code to add the Map to the Page. In this example you just tell the Map what Controller and Action to call to get the Map data to be displayed.
-<pre class="csharpcode"><span class="asp">&lt;%</span> Ajax.BingMap()
+<pre class="csharpcode"><span class="asp"><%</span> Ajax.BingMap()
     .CssClass(<span class="str">"BingMap"</span>)
     .DynamicMap( <span class="kwrd">new</span> { controller = <span class="str">"DynamicMap"</span>, action = <span class="str">"SchoolDistricts"</span> })
     .Render();
-<span class="asp">%&gt;</span></pre>
+<span class="asp">%></span></pre>
 
  
 
@@ -134,10 +134,10 @@ The following example demonstrates searching an XML file for School Districts wi
         <span class="rem">// Query and Get all School Districts within the passed in "Map View".</span>
         var doc = XDocument.Load(Server.MapPath(<span class="str">"~/App_Data/WISchoolDistricts.xml"</span>));
         var schooldistricts = (from d <span class="kwrd">in</span> doc.Element(<span class="str">"schooldistricts"</span>).Elements(<span class="str">"schooldistrict"</span>)
-                        <span class="kwrd">where</span> <span class="kwrd">double</span>.Parse(d.Attribute(<span class="str">"latitude"</span>).Value) &gt;= minLat
-                        &amp;&amp; <span class="kwrd">double</span>.Parse(d.Attribute(<span class="str">"latitude"</span>).Value) &lt;= maxLat
-                        &amp;&amp; <span class="kwrd">double</span>.Parse(d.Attribute(<span class="str">"longitude"</span>).Value) &gt;= minLng
-                        &amp;&amp; <span class="kwrd">double</span>.Parse(d.Attribute(<span class="str">"longitude"</span>).Value) &lt;= maxLng
+                        <span class="kwrd">where</span> <span class="kwrd">double</span>.Parse(d.Attribute(<span class="str">"latitude"</span>).Value) >= minLat
+                        &amp;&amp; <span class="kwrd">double</span>.Parse(d.Attribute(<span class="str">"latitude"</span>).Value) <= maxLat
+                        &amp;&amp; <span class="kwrd">double</span>.Parse(d.Attribute(<span class="str">"longitude"</span>).Value) >= minLng
+                        &amp;&amp; <span class="kwrd">double</span>.Parse(d.Attribute(<span class="str">"longitude"</span>).Value) <= maxLng
                         select d
                     );
 
@@ -169,8 +169,8 @@ The following example demonstrates searching an XML file for School Districts wi
 The Dynamic Map example above is nice and simple, but if you need to customize the client-side map behavior somehow, don&rsquo;t worry, there are &ldquo;override&rdquo; hooks built in to the component that allow you to override the complete behavior of the map in how it displays the data, or just execute some custom code on the returned data after it&rsquo;s already been plotted.
 
 You can use the DynamicMap  DataLoad option to specify a JavaScript function to get called every time map data is automatically loaded. The following example displayed the total number of Pushpins currently plotted in a SPAN tag above the Map. The &ldquo;data&rdquo; parameter on the function is the data object that is returned from the MapDataResult passed down from the controller action method.
-<pre class="csharpcode">Pushpin Count: <span class="kwrd">&lt;</span><span class="html">span</span> <span class="attr">id</span><span class="kwrd">='lblPushpinCount'</span><span class="kwrd">&gt;&lt;/</span><span class="html">span</span><span class="kwrd">&gt;&lt;</span><span class="html">br</span> <span class="kwrd">/&gt;</span>
-<span class="asp">&lt;%</span> Ajax.BingMap()
+<pre class="csharpcode">Pushpin Count: <span class="kwrd"><</span><span class="html">span</span> <span class="attr">id</span><span class="kwrd">='lblPushpinCount'</span><span class="kwrd">></</span><span class="html">span</span><span class="kwrd">><</span><span class="html">br</span> <span class="kwrd">/></span>
+<span class="asp"><%</span> Ajax.BingMap()
     .CssClass(<span class="str">"BingMap"</span>)
     .DynamicMap(
         <span class="kwrd">new</span> { controller = <span class="str">"DynamicMap"</span>, action = <span class="str">"SchoolDistricts"</span> },
@@ -178,13 +178,13 @@ You can use the DynamicMap  DataLoad option to specify a JavaScript function to 
             DataLoaded = <span class="str">"function(data) { $('#lblPushpinCount').html(data.pushpins.length); }"</span>
         })
     .Render();
-<span class="asp">%&gt;</span></pre>
+<span class="asp">%></span></pre>
 
  
 
 Also, you can use the DynamicMap DisplayData option to completely override the maps default behavior of plotting the data. Just in case you need to completely customize it, and the default behavior just doesn&rsquo;t cut it. The following example plots the Pushpins returned and displays the total number of pushpins in a SPAN tag above the Map:
-<pre class="csharpcode">Pushpin Count: <span class="kwrd">&lt;</span><span class="html">span</span> <span class="attr">id</span><span class="kwrd">='lblPushpinCount'</span><span class="kwrd">&gt;&lt;/</span><span class="html">span</span><span class="kwrd">&gt;</span>
-<span class="asp">&lt;%</span> Ajax.BingMap()
+<pre class="csharpcode">Pushpin Count: <span class="kwrd"><</span><span class="html">span</span> <span class="attr">id</span><span class="kwrd">='lblPushpinCount'</span><span class="kwrd">></</span><span class="html">span</span><span class="kwrd">></span>
+<span class="asp"><%</span> Ajax.BingMap()
     .CssClass(<span class="str">"BingMap"</span>)
     .DynamicMap(
         <span class="kwrd">new</span> { controller = <span class="str">"DynamicMap"</span>, action = <span class="str">"SchoolDistricts"</span> },
@@ -192,9 +192,9 @@ Also, you can use the DynamicMap DisplayData option to completely override the m
             DisplayData = <span class="str">"DynamicMap_DisplayData_Handler"</span>
         })
     .Render();
-<span class="asp">%&gt;</span>
+<span class="asp">%></span>
 
-<span class="kwrd">&lt;</span><span class="html">script</span> <span class="attr">type</span><span class="kwrd">="text/javascritp"</span><span class="kwrd">&gt;</span>
+<span class="kwrd"><</span><span class="html">script</span> <span class="attr">type</span><span class="kwrd">="text/javascritp"</span><span class="kwrd">></span>
 <span class="kwrd">function</span> DynamicMap_DisplayData_Handler(data) {
     <span class="rem">// Method gets called with "this" equaling the Mvc.Maps JavaScript Map Object</span>
     
@@ -207,26 +207,26 @@ Also, you can use the DynamicMap DisplayData option to completely override the m
     <span class="rem">// Display Pushpin Count</span>
     $(<span class="str">'#lblPushpinCount'</span>).html(data.pushpins.length);
 }
-<span class="kwrd">&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span></pre>
+<span class="kwrd"></</span><span class="html">script</span><span class="kwrd">></span></pre>
 
  
 <h3>Map Load Event</h3>
 
 In case you need to execute some code on the Page as soon as the Map has finished loading, you can specify any JavaScript code you need to be executed.
-<pre class="csharpcode"><span class="asp">&lt;%</span>-- Pass <span class="kwrd">in</span> JavaScript <span class="kwrd">as</span> String --<span class="asp">%&gt;</span>
-<span class="asp">&lt;%</span> Ajax.GoogleMap()
+<pre class="csharpcode"><span class="asp"><%</span>-- Pass <span class="kwrd">in</span> JavaScript <span class="kwrd">as</span> String --<span class="asp">%></span>
+<span class="asp"><%</span> Ajax.GoogleMap()
         .Load(<span class="str">"alert('Map Loaded!');"</span>)
         .Render();
-        <span class="asp">%&gt;</span>
+        <span class="asp">%></span>
         
-<span class="asp">&lt;%</span>-- Use Lambda Expression to define JavaScript code --<span class="asp">%&gt;</span>
-<span class="asp">&lt;%</span> Ajax.GoogleMap()
-        .Load( () =&gt; {<span class="asp">%&gt;</span>
+<span class="asp"><%</span>-- Use Lambda Expression to define JavaScript code --<span class="asp">%></span>
+<span class="asp"><%</span> Ajax.GoogleMap()
+        .Load( () => {<span class="asp">%></span>
             alert('Map Loaded!');
-            // var map = this.mapObject  //<span class="kwrd">&lt;</span><span class="html">--</span> get ref to underlying map providers object
-        <span class="asp">&lt;%</span>})
+            // var map = this.mapObject  //<span class="kwrd"><</span><span class="html">--</span> get ref to underlying map providers object
+        <span class="asp"><%</span>})
         .Render();
-        <span class="asp">%&gt;</span></pre>
+        <span class="asp">%></span></pre>
 
 <!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
 

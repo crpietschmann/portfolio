@@ -31,35 +31,35 @@ Here&#39;s the full example code showing example what I mean above:
 
 
 
-&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot;  CodeFile=&quot;Default.aspx.cs&quot; Inherits=&quot;_Default&quot; %&gt;<br />
-&lt;%@ Register Assembly=&quot;AjaxControlToolkit&quot; Namespace=&quot;AjaxControlToolkit&quot; TagPrefix=&quot;ajaxToolkit&quot; %&gt;<br />
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>&quot;&gt;<br />
-&lt;html xmlns=&quot;<a href="http://www.w3.org/1999/xhtml">http://www.w3.org/1999/xhtml</a>&quot;&gt;<br />
-&lt;head id=&quot;Head1&quot; runat=&quot;server&quot;&gt;<br />
-&lt;title&gt;Untitled Page&lt;/title&gt;<br />
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;<br />
-&lt;script type=&quot;text/javascript&quot; src=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1&quot;&gt;&lt;/script">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1&quot;&gt;&lt;/script</a>&gt;<br />
-&lt;script type=&quot;text/javascript&quot;&gt;<br />
+<%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot;  CodeFile=&quot;Default.aspx.cs&quot; Inherits=&quot;_Default&quot; %><br />
+<%@ Register Assembly=&quot;AjaxControlToolkit&quot; Namespace=&quot;AjaxControlToolkit&quot; TagPrefix=&quot;ajaxToolkit&quot; %><br />
+<!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>&quot;><br />
+<html xmlns=&quot;<a href="http://www.w3.org/1999/xhtml">http://www.w3.org/1999/xhtml</a>&quot;><br />
+<head id=&quot;Head1&quot; runat=&quot;server&quot;><br />
+<title>Untitled Page</title><br />
+<meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;><br />
+<script type=&quot;text/javascript&quot; src=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1&quot;></script">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1&quot;></script</a>><br />
+<script type=&quot;text/javascript&quot;><br />
     var map = null;<br />
     function GetMap()<br />
     {<br />
         map = new VEMap(&#39;myMap&#39;);<br />
         map.LoadMap();<br />
     }<br />
-&lt;/script&gt;<br />
-&lt;/head&gt;<br />
-&lt;body onload=&quot;GetMap();&quot;&gt;<br />
-&lt;form id=&quot;form1&quot; runat=&quot;server&quot;&gt;<br />
-&lt;asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;&gt;&lt;/asp:ScriptManager&gt;<br />
-&lt;div&gt;<br />
-&lt;asp:TextBox runat=&quot;server&quot; id=&quot;txtDate&quot;&gt;&lt;/asp:TextBox&gt;<br />
-&lt;ajaxToolkit:CalendarExtender runat=&quot;server&quot; ID=&quot;CalendarExtender1&quot; TargetControlID=&quot;txtDate&quot;&gt;&lt;/ajaxToolkit:CalendarExtender&gt;<br />
-&lt;br /&gt;&lt;br /&gt;<br />
-&lt;div id=&#39;myMap&#39; style=&quot;position:relative; width:400px; height:400px; z-index: -100;&quot;&gt;&lt;/div&gt;<br />
-&lt;/div&gt;<br />
-&lt;/form&gt;<br />
-&lt;/body&gt;<br />
-&lt;/html&gt;
+</script><br />
+</head><br />
+<body onload=&quot;GetMap();&quot;><br />
+<form id=&quot;form1&quot; runat=&quot;server&quot;><br />
+<asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;></asp:ScriptManager><br />
+<div><br />
+<asp:TextBox runat=&quot;server&quot; id=&quot;txtDate&quot;></asp:TextBox><br />
+<ajaxToolkit:CalendarExtender runat=&quot;server&quot; ID=&quot;CalendarExtender1&quot; TargetControlID=&quot;txtDate&quot;></ajaxToolkit:CalendarExtender><br />
+<br /><br /><br />
+<div id=&#39;myMap&#39; style=&quot;position:relative; width:400px; height:400px; z-index: -100;&quot;></div><br />
+</div><br />
+</form><br />
+</body><br />
+</html>
 
 
 

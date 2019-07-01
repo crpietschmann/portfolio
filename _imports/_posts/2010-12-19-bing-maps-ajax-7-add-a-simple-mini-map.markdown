@@ -15,24 +15,24 @@ redirect_from:
 <!-- more -->
 
 The Bing Maps Ajax v7 control doesn’t include support for adding a Mini Map. So, I decided to quickly work up a simple example of adding one. Below is the source code for it and a zip download of the code at the bottom of the post.  
-<a href="/images/postsBingMapsAjax7QuickMiniMap.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="BingMapsAjax7QuickMiniMap" border="0" alt="BingMapsAjax7QuickMiniMap" src="/images/postsBingMapsAjax7QuickMiniMap_thumb.png" width="539" height="307" /></a>  <h3>Source Code</h3>  <pre class="csharpcode"><span class="kwrd">&lt;!</span><span class="html">DOCTYPE</span> <span class="attr">html</span> <span class="attr">PUBLIC</span> <span class="kwrd">&quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</span> <span class="kwrd">&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">html</span> <span class="attr">xmlns</span><span class="kwrd">=&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">head</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">meta</span> <span class="attr">http-equiv</span><span class="kwrd">=&quot;Content-Type&quot;</span> <span class="attr">content</span><span class="kwrd">=&quot;text/html; charset=utf-8&quot;</span> <span class="kwrd">/&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">script</span> <span class="attr">src</span><span class="kwrd">=&quot;http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&quot;</span> <span class="attr">type</span><span class="kwrd">=&quot;text/javascript&quot;</span> <span class="attr">charset</span><span class="kwrd">=&quot;UTF-8&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span>
-    &lt;script src=<span class="str">&quot;http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.4.min.js&quot;</span>&gt;&lt;/script&gt;
-    &lt;style&gt;
+<a href="/images/postsBingMapsAjax7QuickMiniMap.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="BingMapsAjax7QuickMiniMap" border="0" alt="BingMapsAjax7QuickMiniMap" src="/images/postsBingMapsAjax7QuickMiniMap_thumb.png" width="539" height="307" /></a>  <h3>Source Code</h3>  <pre class="csharpcode"><span class="kwrd"><!</span><span class="html">DOCTYPE</span> <span class="attr">html</span> <span class="attr">PUBLIC</span> <span class="kwrd">&quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</span> <span class="kwrd">&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;</span><span class="kwrd">></span>
+<span class="kwrd"><</span><span class="html">html</span> <span class="attr">xmlns</span><span class="kwrd">=&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="kwrd">></span>
+<span class="kwrd"><</span><span class="html">head</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">meta</span> <span class="attr">http-equiv</span><span class="kwrd">=&quot;Content-Type&quot;</span> <span class="attr">content</span><span class="kwrd">=&quot;text/html; charset=utf-8&quot;</span> <span class="kwrd">/></span>
+    <span class="kwrd"><</span><span class="html">script</span> <span class="attr">src</span><span class="kwrd">=&quot;http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&quot;</span> <span class="attr">type</span><span class="kwrd">=&quot;text/javascript&quot;</span> <span class="attr">charset</span><span class="kwrd">=&quot;UTF-8&quot;</span><span class="kwrd">></</span><span class="html">script</span><span class="kwrd">></span>
+    <script src=<span class="str">&quot;http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.4.min.js&quot;</span>></script>
+    <style>
         .MiniMap
         {
             border: solid 1px #777;
             width: 150px;
             height: 150px;
         }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div id=<span class="str">&quot;myMap&quot;</span> style=<span class="str">&quot;position: relative; width: 530px; height: 300px;&quot;</span>&gt;&lt;/div&gt;
-&lt;script type=<span class="str">&quot;text/javascript&quot;</span>&gt;
+    </style>
+</head>
+<body>
+<div id=<span class="str">&quot;myMap&quot;</span> style=<span class="str">&quot;position: relative; width: 530px; height: 300px;&quot;</span>></div>
+<script type=<span class="str">&quot;text/javascript&quot;</span>>
     <span class="kwrd">var</span> bingMapsKey = <span class="str">&quot;Your Bing Maps Key&quot;</span>;
 
     <span class="rem">// Load the Main Map</span>
@@ -48,7 +48,7 @@ The Bing Maps Ajax v7 control doesn’t include support for adding a Mini Map. S
     
     <span class="kwrd">var</span> mapElem = $(map.getRootElement());
     <span class="rem">// Create DIV and add to Main Map</span>
-    <span class="kwrd">var</span> miniMapDiv = $(<span class="str">'&lt;div&gt;'</span>).
+    <span class="kwrd">var</span> miniMapDiv = $(<span class="str">'<div>'</span>).
         addClass(<span class="str">'MiniMap'</span>).
         appendTo(mapElem);
     <span class="rem">// Position to the Top Right corner</span>
@@ -73,9 +73,9 @@ The Bing Maps Ajax v7 control doesn’t include support for adding a Mini Map. S
     Microsoft.Maps.Events.addHandler(map, <span class="str">&quot;viewchange&quot;</span>, syncMiniMap);
     <span class="rem">// Sync Mini Map</span>
     syncMiniMap();
-<span class="kwrd">&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">body</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">html</span><span class="kwrd">&gt;</span></pre>
+<span class="kwrd"></</span><span class="html">script</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">body</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">html</span><span class="kwrd">></span></pre>
 
 
 <style type="text/css">

@@ -16,7 +16,7 @@ redirect_from:
 
 Move Inc. has just hired <A href="http://investor.move.com/phoenix.zhtml?c=111114&amp;p=irol-newsArticle&amp;ID=993908&amp;highlight=">Lorna Borenstein to be the new President of Move Inc</A>.
 
-<STRONG>How does this relate to Google?</STRONG>
+**How does this relate to Google?**
 
 Lorna Borenstein is <A href="http://www.theglobeandmail.com/servlet/story/RTGAM.20070329.wwisewords0329/BNStory/specialSmallBusiness/home">married </A>to <A href="http://www.google.com/corporate/execs.html#lawee">David Lawee (Vice President, Marketing at Google).</A>
 
@@ -26,4 +26,4 @@ Move Inc. has been making changes over the last year and are continuing to make 
 
 I base this on the fact that I know I can't keep my work completely secret from my spouse, and I'm sure they are no different.
 
-<FONT size=1><STRONG>Disclaimer:</STRONG> The opinions and viewpoints expressed in this blog are not necessarily those of its sponsors, or of my employer, its partners, or employees. This blog is written by me and therefore I am solely responsible for its content.</FONT>
+<FONT size=1>**Disclaimer:** The opinions and viewpoints expressed in this blog are not necessarily those of its sponsors, or of my employer, its partners, or employees. This blog is written by me and therefore I am solely responsible for its content.</FONT>

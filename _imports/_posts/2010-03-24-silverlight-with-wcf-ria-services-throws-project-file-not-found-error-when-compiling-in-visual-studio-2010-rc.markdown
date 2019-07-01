@@ -22,7 +22,7 @@ While working with the Silverlight Business Application template in Visual Studi
 
 What I did to cause this issue to come up was I created a New Project using the Silverlight 4 Business Application Template. Then I moved the each Projects folder to a different sub-folder to better organize the code since I needed to add multiple more projects/assemblies to each application (ASP.NET and Silverlight) to build out the application I'm working in a more module fashion. The reason I usually tend to do this is to keep the "Standard .NET" and "Silverlight-only" assemblies separate since you can not include a non-Silverlight Assembly within a Silverlight Project. (If only .NET and Silverlight made it easier to share whole assemblies...)
 
-After moving the projects to different sub-folders, and fixing the linked file references that I broke in the process, I tried building the project to make sure everything was "ok" and the compiler threw a <em>"The project file ... was not found." </em>error.
+After moving the projects to different sub-folders, and fixing the linked file references that I broke in the process, I tried building the project to make sure everything was "ok" and the compiler threw a *"The project file ... was not found." *error.
 
 To fix this is really simple, but then again only if you know what to look for.
 <h3>How To Fix It<br /></h3>
@@ -36,6 +36,6 @@ Below is a screenshot of VS'10RC showing the Error Message and the Properties UI
 
 I certainly consider this to be a bug, since the error message that is shown if you have the "WCF RIA Services link" set to a non-existent project doesn't really point you in the direction of fixing the issue; at least directly. Yes, if you look at the "Project" specified for the Error it does specify the Silverlight Project, but doesn't exactly spell out where to look to fix the issue.
 
-Instead of the cryptic message, I propose that it state something like <em>"WCF RIA Services link Error; the "App.Website" project was not found."</em>
+Instead of the cryptic message, I propose that it state something like *"WCF RIA Services link Error; the "App.Website" project was not found."*
 
 I hope this article helps others solve this potentially very perplexing issue.

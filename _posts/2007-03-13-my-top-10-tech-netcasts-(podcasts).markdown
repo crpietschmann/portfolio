@@ -42,4 +42,4 @@ There are also a couple podcasts I listen to on occasion:
 
 These podcasts generally provide me with just as much listening as I have time for. However, I am always looking for more good quality podcasts to add to my list. If you know of any others, please post them in the comments.
 
-<STRONG>UPDATE 3/15:  </STRONG>I also listen to <A href="http://twit.tv">TWIT (This Week In Tech)</A> regularly. I don't know how I missed adding it to the list. I guess, the title of the post should now be "My Top 11 Tech Netcasts".
+**UPDATE 3/15:  **I also listen to <A href="http://twit.tv">TWIT (This Week In Tech)</A> regularly. I don't know how I missed adding it to the list. I guess, the title of the post should now be "My Top 11 Tech Netcasts".

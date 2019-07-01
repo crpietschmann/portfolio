@@ -18,7 +18,7 @@ I ordered Visual Studio 2005 Beta 2 about 2 weeks ago, and I received it in the 
 
 I uninstalled VS2005 Beta 1 and .NET Framework 2.0 Beta 1. Then I realized I forgot to uninstall Microsoft Visual J# .NET Redistributable Package 2.0 Beta, so I then uninstalled that. Then I started the Install of SQL Server 2005 CTP and go the following error:
 
-<EM>Errors occurred during the installation:<BR>Beta components detected.<BR>Error 50266 installing .NET Framework 2.0</EM>
+*Errors occurred during the installation:<BR>Beta components detected.<BR>Error 50266 installing .NET Framework 2.0*
 
 I then went and found that there were still 2.0 files on the drive and registry entries for them. So I made a copy of the files and registry entries (for backup) and then deleted the originals trying to manually uninstall the remaining .NET 2.0 Beta 1 components. To make a long story short, this didn't work so I had to restore the copies of these files.
 
@@ -28,6 +28,6 @@ Apparently there is an exact order to uninstall the Beta 1 components in order t
 
 Opps! I began wondering if I would need to reinstall Windows in order to get those bits off my machine so I could install Beta 2. Well, further down the page I saw this:
 
-<EM>Notes:<BR>1. If you see an erro removing J# .NET Redistributable Package 2.0 from Add/Remove Programs, please run &#8220;msiexec /x {9046F10C-F5E7-4871-BED9-8288F19C70DF}&#8221; from a command line window.<BR>1. If you see an error removing .NET Framework 2.0 from Add/Remove Programs, please run &#8220;msiexec /x {71F8EFBF-09AF-418D-91F1-52707CDFA274}&#8221; from a command line window.</EM>
+*Notes:<BR>1. If you see an erro removing J# .NET Redistributable Package 2.0 from Add/Remove Programs, please run &#8220;msiexec /x {9046F10C-F5E7-4871-BED9-8288F19C70DF}&#8221; from a command line window.<BR>1. If you see an error removing .NET Framework 2.0 from Add/Remove Programs, please run &#8220;msiexec /x {71F8EFBF-09AF-418D-91F1-52707CDFA274}&#8221; from a command line window.*
 
 Wahoo! Exactly what I needed. I ran the part at the command lin to uninstall J# .NET Redistributable Package 2.0 and it worked like a charm. I am now successfully installing SQL Server 2005 CTP and Visual Studio 2005 Beta 2 while I type this post.

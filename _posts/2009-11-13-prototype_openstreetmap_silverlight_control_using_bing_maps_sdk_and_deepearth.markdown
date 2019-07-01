@@ -16,7 +16,7 @@ redirect_from:
 
 I&rsquo;ve decided to expand a little on using OpenStreetMap imagery with the new Bing Maps Silverlight Control in response to the following <a rel="nofollow" href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx#id_a250bec2-e7f3-4324-8837-e167eff776e4">comment posted by John O&rsquo;Brien</a> on my previous &ldquo;<a href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx">Display OpenStreetMap Imagery using Bing Maps Silverlight Control v1</a>&rdquo; post:
 
-<em>&ldquo;Very close Chris but you will still need to enter a Bing Maps AppID.      <br />If however you create your own map from MapCore and don't use the Bing Maps services then you don't need creditials&rdquo;</em>
+*&ldquo;Very close Chris but you will still need to enter a Bing Maps AppID.      <br />If however you create your own map from MapCore and don't use the Bing Maps services then you don't need creditials&rdquo;*
 
 Yes, it is true that by just displaying the OpenStreetMap imagery on the Bing Maps Silverlight Control using a custom TileSource you still need to provide the control a Bing Maps Key (App ID). However, what if you inherited from the &ldquo;MapCore&rdquo; base class (the same one that the Bing Maps &ldquo;Map&rdquo; object inherits) and built out a full OpenStreetMap Map control?
 <h3>Custom &ldquo;OpenStreetMap&rdquo; Control</h3>
@@ -70,23 +70,23 @@ Here&rsquo;s the code for the &ldquo;OpenStreetMap&rdquo;, &ldquo;OpenStreetMapM
  
 
 And, here&rsquo;s an example of using this new &ldquo;OpenStreetMap&rdquo; control:
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="SilverlightApplication1.MainPage"</span>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="SilverlightApplication1.MainPage"</span>
     <span class="attr">xmlns</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span> 
     <span class="attr">xmlns:x</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml"</span>
     <span class="attr">xmlns:d</span><span class="kwrd">="http://schemas.microsoft.com/expression/blend/2008"</span> <span class="attr">xmlns:mc</span><span class="kwrd">="http://schemas.openxmlformats.org/markup-compatibility/2006"</span> 
     <span class="attr">xmlns:map</span><span class="kwrd">="clr-namespace:Microsoft.Maps.MapControl;assembly=Microsoft.Maps.MapControl"</span>
     <span class="attr">xmlns:local</span><span class="kwrd">="clr-namespace:SilverlightApplication1"</span>
-    <span class="attr">mc:Ignorable</span><span class="kwrd">="d"</span> <span class="attr">d:DesignWidth</span><span class="kwrd">="640"</span> <span class="attr">d:DesignHeight</span><span class="kwrd">="480"</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">Grid</span> <span class="attr">x:Name</span><span class="kwrd">="LayoutRoot"</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">local:OpenStreetMap</span> <span class="attr">Name</span><span class="kwrd">="map"</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;</span><span class="html">local:OpenStreetMap.Children</span><span class="kwrd">&gt;</span>
-                <span class="kwrd">&lt;</span><span class="html">map:MapLayer</span><span class="kwrd">&gt;</span>
-                    <span class="kwrd">&lt;</span><span class="html">Image</span> <span class="attr">Source</span><span class="kwrd">="BluePin.png"</span> <span class="attr">Opacity</span><span class="kwrd">="0.8"</span> <span class="attr">Stretch</span><span class="kwrd">="None"</span> <span class="attr">map:MapLayer</span>.<span class="attr">Position</span><span class="kwrd">="42.16, -95"</span><span class="kwrd">&gt;&lt;/</span><span class="html">Image</span><span class="kwrd">&gt;</span>
-                <span class="kwrd">&lt;/</span><span class="html">map:MapLayer</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;/</span><span class="html">local:OpenStreetMap.Children</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;/</span><span class="html">local:OpenStreetMap</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;/</span><span class="html">Grid</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">UserControl</span><span class="kwrd">&gt;</span></pre>
+    <span class="attr">mc:Ignorable</span><span class="kwrd">="d"</span> <span class="attr">d:DesignWidth</span><span class="kwrd">="640"</span> <span class="attr">d:DesignHeight</span><span class="kwrd">="480"</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">Grid</span> <span class="attr">x:Name</span><span class="kwrd">="LayoutRoot"</span><span class="kwrd">></span>
+        <span class="kwrd"><</span><span class="html">local:OpenStreetMap</span> <span class="attr">Name</span><span class="kwrd">="map"</span><span class="kwrd">></span>
+            <span class="kwrd"><</span><span class="html">local:OpenStreetMap.Children</span><span class="kwrd">></span>
+                <span class="kwrd"><</span><span class="html">map:MapLayer</span><span class="kwrd">></span>
+                    <span class="kwrd"><</span><span class="html">Image</span> <span class="attr">Source</span><span class="kwrd">="BluePin.png"</span> <span class="attr">Opacity</span><span class="kwrd">="0.8"</span> <span class="attr">Stretch</span><span class="kwrd">="None"</span> <span class="attr">map:MapLayer</span>.<span class="attr">Position</span><span class="kwrd">="42.16, -95"</span><span class="kwrd">></</span><span class="html">Image</span><span class="kwrd">></span>
+                <span class="kwrd"></</span><span class="html">map:MapLayer</span><span class="kwrd">></span>
+            <span class="kwrd"></</span><span class="html">local:OpenStreetMap.Children</span><span class="kwrd">></span>
+        <span class="kwrd"></</span><span class="html">local:OpenStreetMap</span><span class="kwrd">></span>
+    <span class="kwrd"></</span><span class="html">Grid</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">UserControl</span><span class="kwrd">></span></pre>
 
 <!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
 
@@ -112,7 +112,7 @@ Here&rsquo;s the code I worked up for a DeepEarth NavigationPanel for the &ldquo
 
 <span class="kwrd">namespace</span> NewDeepEarth.NavigationPanel
 {
-    <span class="kwrd">public</span> <span class="kwrd">class</span> NavigationPanel : DeepEarth.Client.Controls.NavigationPanel.NavigationPanel, IMapControl&lt;MapCore&gt;
+    <span class="kwrd">public</span> <span class="kwrd">class</span> NavigationPanel : DeepEarth.Client.Controls.NavigationPanel.NavigationPanel, IMapControl<MapCore>
     {
         <span class="kwrd">private</span> <span class="kwrd">string</span> mapName;
 
@@ -159,7 +159,7 @@ Here&rsquo;s the code I worked up for a DeepEarth NavigationPanel for the &ldquo
             }
         }
 
-        <span class="preproc">#region</span> IMapControl&lt;MapCore&gt; Members
+        <span class="preproc">#region</span> IMapControl<MapCore> Members
 
         <span class="kwrd">public</span> <span class="kwrd">string</span> MapName
         {
@@ -196,7 +196,7 @@ Here&rsquo;s the code I worked up for a DeepEarth NavigationPanel for the &ldquo
 
         <span class="kwrd">private</span> <span class="kwrd">void</span> setMapInstance(<span class="kwrd">string</span> mapname)
         {
-            MapInstance = Utilities.FindVisualChildByName&lt;MapCore&gt;(Application.Current.RootVisual, mapname);
+            MapInstance = Utilities.FindVisualChildByName<MapCore>(Application.Current.RootVisual, mapname);
         }
 
     }

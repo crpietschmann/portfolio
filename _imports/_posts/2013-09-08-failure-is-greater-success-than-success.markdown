@@ -16,7 +16,7 @@ redirect_from:
 
 Our society has a tendency to constantly focus on failure. Success is often short lived and generally only achieves "15 minutes of fame."
 
-<em>"I've missed more than 9000 shots in my career. I've lost almost 300 games. 26 times, I've been trusted to take the game winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed." - Michael Jordan</em>
+*"I've missed more than 9000 shots in my career. I've lost almost 300 games. 26 times, I've been trusted to take the game winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed." - Michael Jordan*
 
 Failures can easily overshadow successes. It is important to never let those failures convince you to quit, for failure teaches you far more than success ever will.
 

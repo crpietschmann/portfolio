@@ -20,4 +20,4 @@ Try it:<BR><A href="javascript:var d='';if (window.getSelection){d=window.getSel
 
 To add this bookmarklet to your favorites, just drag it to the favorites or right-click and select "Add to Favorites".
 
-<STRONG>What is a bookmarklet?<BR></STRONG>A bookmarklet is a small JavaScript program that can be stored as a URL within a bookmark in most popular web browsers, or within hyperlinks on a web page.<BR><A href="http://en.wikipedia.org/wiki/Favelet"><STRONG>http://en.wikipedia.org/wiki/Favelet</STRONG></A>
+**What is a bookmarklet?<BR>**A bookmarklet is a small JavaScript program that can be stored as a URL within a bookmark in most popular web browsers, or within hyperlinks on a web page.<BR><A href="http://en.wikipedia.org/wiki/Favelet">**http://en.wikipedia.org/wiki/Favelet**</A>

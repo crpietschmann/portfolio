@@ -61,7 +61,7 @@ map.AttachEvent(<font size="2" color="#a31515">&quot;onchangemapstyle&quot;</fon
 </font>
 
 
-<em>Note: The variable named &quot;map&quot; is the global variable that holds a reference to our instance of the Virtual Earth Map. If you are using a different variable name, then you&#39;ll need to change it to your name through-out the rest of the article.</em>
+*Note: The variable named &quot;map&quot; is the global variable that holds a reference to our instance of the Virtual Earth Map. If you are using a different variable name, then you&#39;ll need to change it to your name through-out the rest of the article.*
 
 
 
@@ -87,17 +87,17 @@ For easier reference, and so you don&#39;t have to type everything in yourself; 
 
 
 
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>&quot;&gt;<br />
-&lt;html&gt;<br />
-&lt;head&gt;<br />
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;<br />
-&lt;script type=&quot;text/javascript&quot; src=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6</a>&quot; mce_src=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;&gt;&lt;/script">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;&gt;&lt;/script</a>&gt;<br />
-&lt;/head&gt;
+<!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>&quot;><br />
+<html><br />
+<head><br />
+<meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;><br />
+<script type=&quot;text/javascript&quot; src=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6</a>&quot; mce_src=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;></script">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;></script</a>><br />
+</head>
 
 
 
-&lt;body onload=&quot;PageLoad()&quot;&gt;<br />
-&lt;script type=&quot;text/javascript&quot;&gt;<br />
+<body onload=&quot;PageLoad()&quot;><br />
+<script type=&quot;text/javascript&quot;><br />
 var map = null; /// This is a global reference to the VEMap object
 
 
@@ -121,14 +121,14 @@ function StyleChangeHandler(e)<br />
         map.SetMapStyle(VEMapStyle.Shaded);<br />
     }<br />
 }<br />
-&lt;/script&gt;
+</script>
 
 
 
-&lt;div id=&quot;myMap&quot; style=&quot;position:relative; width:400px; height:400px;&quot;&gt;&lt;/div&gt;
+<div id=&quot;myMap&quot; style=&quot;position:relative; width:400px; height:400px;&quot;></div>
 
 
 
-&lt;/body&gt;<br />
-&lt;/html&gt;
+</body><br />
+</html>
 

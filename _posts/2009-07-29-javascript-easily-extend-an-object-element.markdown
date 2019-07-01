@@ -42,7 +42,7 @@ Now the "jQuery.extend" method has some logic to make sure the resulting object 
 
 ```javascript
 
-// Create Global "extend" method<br />var extend = function(obj, extObj) {<br />    if (arguments.length &gt; 2) {<br />        for (var a = 1; a &lt; arguments.length; a++) {<br />            extend(obj, arguments[a]);<br />        }<br />    } else {<br />        for (var i in extObj) {<br />            obj[i] = extObj[i];<br />        }<br />    }<br />    return obj;<br />};
+// Create Global "extend" method<br />var extend = function(obj, extObj) {<br />    if (arguments.length > 2) {<br />        for (var a = 1; a < arguments.length; a++) {<br />            extend(obj, arguments[a]);<br />        }<br />    } else {<br />        for (var i in extObj) {<br />            obj[i] = extObj[i];<br />        }<br />    }<br />    return obj;<br />};
 
 ```
 
@@ -58,7 +58,7 @@ This can also be used to more easily add new HTML Elements to a page:
 
 ```javascript<br />var js = extend(document.createElement("script"), { type: "text/javascript", src: "test.js" });<br />document.body.appendChild(js);
 
-//As you can see the above is simpler than the traditional method of creating a new &lt;script&gt; Element<br />var js = document.createElement("script");<br />js.type = "text/javascript";<br />js.src = "test.js";<br />document.body.appendChild(js);
+//As you can see the above is simpler than the traditional method of creating a new <script> Element<br />var js = document.createElement("script");<br />js.type = "text/javascript";<br />js.src = "test.js";<br />document.body.appendChild(js);
 
 ```
 <h3>Conclusion</h3>

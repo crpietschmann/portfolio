@@ -216,15 +216,15 @@ var newArr = arr.removeAtIndex(0)</pre>
 Both languages support similar methods of declaring dictionaries.
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Declaring Dictionaries
 // C#
-var dict = new Dictionary&lt;string, string&gt;();
-var dict2 = new Dictionary&lt;string, string&gt;
+var dict = new Dictionary<string, string>();
+var dict2 = new Dictionary<string, string>
 {
     { "TYO", "Tokyo" },
     { "DUB", "Dublin" }
 };
 
 // Swift
-var dict = Dictionary&lt;String, String&gt;()
+var dict = Dictionary<String, String>()
 var dict2 = ["TYO": "Tokyo", "DUB": "Dublin"]</pre>
 <h3>Working with Dictionaries</h3>
 
@@ -271,7 +271,7 @@ The above examples for Arrays and Dictionaries already showed examples of using 
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Iterate from 1 through 5
 // C#
 // using increment
-for(var i = 1; i &lt;= 5; i++) {
+for(var i = 1; i <= 5; i++) {
     // do something with i
 }
 
@@ -281,7 +281,7 @@ for i in 1...5 {
     // do something with i
 }
 // using increment
-for var i = 0; i &lt;= 5; ++i {
+for var i = 0; i <= 5; ++i {
     // do something with i
 }</pre>
 
@@ -291,18 +291,18 @@ The range example of Swift is rather interesting in the method of shorthand it u
 Both languages support If...Then conditional statements. Swift is a little different that it doesn't require parenthesis around the match conditions.
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// If Then Else Conditional Statement
 // C#
-if (i &gt; 6) {
+if (i > 6) {
     // do something
-} else if (i &gt; 3 &amp;&amp; i &lt;= 6) {
+} else if (i > 3 &amp;&amp; i <= 6) {
     // do something
 } else {
     // do something
 }
 
 // Swift
-if i &gt; 6 {
+if i > 6 {
     // do something
-} else if i &gt; 3 &amp;&amp; i &lt;= 6 {
+} else if i > 3 &amp;&amp; i <= 6 {
     // do something
 } else {
     // do something
@@ -374,7 +374,7 @@ string sayHello(string name) {
 }
 
 // Swift
-func sayHello(name: String) -&gt; String {
+func sayHello(name: String) -> String {
     // do something
 }</pre>
 
@@ -383,7 +383,7 @@ The post <a href="/post/2014/06/07/Basic-Comparison-of-Functions-in-C-and-Apple-
 
 This concludes my basic comparison of C# and Apple Swift programming languages. The two languages are rather similar in many respects; at least in what I've compared thus far. More language feature comparisons will have to wait for future posts.
 
-One of the bigger differences that's worth pointing out explicitly is the difference in how each language handles Array's. Arrays in Swift are extremely similar to the List&lt;&gt; class in C#; which is what most developers use today in C# instead of arrays anyway (unless performance requires it.)
+One of the bigger differences that's worth pointing out explicitly is the difference in how each language handles Array's. Arrays in Swift are extremely similar to the List<> class in C#; which is what most developers use today in C# instead of arrays anyway (unless performance requires it.)
 
 You can find more information about the Swift programming language on Apple's site at the following links:
 

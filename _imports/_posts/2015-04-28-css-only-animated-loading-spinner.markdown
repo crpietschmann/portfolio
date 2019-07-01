@@ -19,7 +19,7 @@ redirect_from:
 <img src="/images/posts/2015/04/CSS-Spinner.gif" alt="" />
 
 Here's a simple Loading Spinner using a simple CSS Animation:
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">&lt;style&gt;
+<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; "><style>
     @keyframes spin {
         from { transform: rotate(0deg); }
         to { transform: rotate(360deg); }
@@ -42,10 +42,10 @@ Here's a simple Loading Spinner using a simple CSS Animation:
         border-bottom: none;
         border-right: none;
     }
-&lt;/style&gt;
-&lt;div class="spinner"&gt;
-    &lt;div class="circle"&gt;&lt;/div&gt;
-&lt;/div&gt;</pre>
+</style>
+<div class="spinner">
+    <div class="circle"></div>
+</div></pre>
 
 Download Full Code:
 

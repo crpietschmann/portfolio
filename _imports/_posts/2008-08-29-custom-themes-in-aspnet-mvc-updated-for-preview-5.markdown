@@ -88,7 +88,7 @@ public class WebFormThemeViewEngine : System.Web.Mvc.WebFormViewEngine
         {
             return new ViewEngineResult(this.CreateView(controllerContext, viewPath, masterPath));
         }
-        return new ViewEngineResult(searchedViewLocations.Union&lt;string&gt;(searchedMasterLocations));
+        return new ViewEngineResult(searchedViewLocations.Union<string>(searchedMasterLocations));
     }
 
     public override ViewEngineResult FindPartialView(ControllerContext controllerContext, string partialViewName)
@@ -130,7 +130,7 @@ public class WebFormThemeViewEngine : System.Web.Mvc.WebFormViewEngine
 
         searchedLocations = new string[locations.Length];
 
-        for (int i = 0; i &lt; locations.Length; i++)
+        for (int i = 0; i < locations.Length; i++)
         {
             path = string.Format(CultureInfo.InvariantCulture, locations[i], new object[] { viewName, controllerName, themeName });
             if (this.VirtualPathProvider.FileExists(path))

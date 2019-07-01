@@ -20,7 +20,7 @@ redirect_from:
 
 One option to do theming in ASP.NET MVC is to use the standard ASP.NET Theme functionality (App_Themes folder glory and all), but it just doesn't seem complete. Also, by doing that you don't get to generate completely custom HTML specific to each Theme. After all, the beauty of ASP.NET MVC is being able to completely control the HTML output of the application. So, I played around with things a bit and figured out how to create a custom ViewEngine that will allow you to create a seperate sub-folder within the Views folder for each Theme. This way you can have a completely different version of each View for each Theme, and maintain complete control over the HTML output on a per Theme basis.
 
-<em>I used the ASP.NET MVC Preview 4 release to write this article.</em>
+*I used the ASP.NET MVC Preview 4 release to write this article.*
 
 <img src="/images/postsASPNETMVC_Preview4_CustomThemeFolderLayout.png" alt="" align="right" />
 <h3>Create Themed Views</h3>

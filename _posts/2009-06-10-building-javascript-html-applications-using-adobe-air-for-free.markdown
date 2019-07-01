@@ -41,8 +41,8 @@ I had a couple small setup issues with getting the Adobe AIR SDK setup on my Win
 
 The Adobe AIR SDK download is just a Zip Archive containing the files necessary for the SDK; it contains no setup EXE. To get it setup, you&rsquo;ll need to follow the below steps:
 <ul>
-<li>Extract the SDK to some folder of your choosing. For Example: <em>C:\AdobeAIRSDK</em> </li>
-<li>Add the <em>&ldquo;C:\AdobeAIRSDK\bin&rdquo; </em>folder to the System Path so you can execute it easily from within the Command Line. </li>
+<li>Extract the SDK to some folder of your choosing. For Example: *C:\AdobeAIRSDK* </li>
+<li>Add the *&ldquo;C:\AdobeAIRSDK\bin&rdquo; *folder to the System Path so you can execute it easily from within the Command Line. </li>
 </ul>
 
 Also, to use the Adobe Developer Tool (adt) you&rsquo;ll need Java installed, and you&rsquo;ll need to make sure that the path to where Java is installed is also included within the System Path as described above.
@@ -51,7 +51,7 @@ To edit the &ldquo;System Path&rdquo; in Windows just follow these steps:
 <ul>
 <li>Open the System Properties dialog box and click the Advanced tab. You can find this in the System settings within the Control Panel. </li>
 <li>Click the Environment Variables button. </li>
-<li>Select the PATH entry and then click the Edit button. Add the desired path to the end of the current variable value, separating it from previous values with a semicolon. For Example <em>&ldquo;;C:\AdobeAIRSDK\bin&rdquo;</em> </li>
+<li>Select the PATH entry and then click the Edit button. Add the desired path to the end of the current variable value, separating it from previous values with a semicolon. For Example *&ldquo;;C:\AdobeAIRSDK\bin&rdquo;* </li>
 <li>Click OK to Save. </li>
 </ul>
 <h3>Tips to Make Building and Testing Easier</h3>
@@ -63,11 +63,11 @@ One thing that you'&rsquo;ll want to do to make it a little easier to Build (usi
 
 build.bat example:
 
-<em>adt &ndash;package &ndash;storetype pkcs12 &ndash;keystore certificate MyApp.air application.xml .</em>
+*adt &ndash;package &ndash;storetype pkcs12 &ndash;keystore certificate MyApp.air application.xml .*
 
 test.bat example:
 
-<em>adl application.xml</em>
+*adl application.xml*
 
 This way you can just simply double-click on the specific .BAT file within Windows Explorer to either Build or Test your application.
 
@@ -80,18 +80,18 @@ The easiest way to do this is to place all you Application files within a Sub-Fo
 
 build.bat example:
 
-<em>cd App_Files <br />adt &ndash;package &ndash;storetype pkcs12 &ndash;keystore ../certificate ../MyApp.air application.xml .</em>
+*cd App_Files <br />adt &ndash;package &ndash;storetype pkcs12 &ndash;keystore ../certificate ../MyApp.air application.xml .*
 
 test.bat example
 
-<em>cd App_Files <br />adl application.xml</em>
+*cd App_Files <br />adl application.xml*
 
 Also, one thing to note about the above modified &ldquo;build.bat&rdquo; file is that it will place the Built &ldquo;.air&rdquo; file/application within the Main folder where the .BAT files and Certificate are located.
 <h3>Creating a Self-Signed Certificate</h3>
 
-One thing that you&rsquo;ll notice above is that I&rsquo;m using a Certificate file names &ldquo;<em>certificate</em>&rdquo;. This is a self-signed certificate that I generated using the &ldquo;adt&rdquo; tool. To generate a self-signed certificate, you can execute &ldquo;adt&rdquo; using the following command-line parameters:
+One thing that you&rsquo;ll notice above is that I&rsquo;m using a Certificate file names &ldquo;*certificate*&rdquo;. This is a self-signed certificate that I generated using the &ldquo;adt&rdquo; tool. To generate a self-signed certificate, you can execute &ldquo;adt&rdquo; using the following command-line parameters:
 
-<em>adt &ndash;certificate &ndash;cn SelfSigned 1024-RSA certificate.pfx samplePassword</em>
+*adt &ndash;certificate &ndash;cn SelfSigned 1024-RSA certificate.pfx samplePassword*
 <h3>Conclusion</h3>
 
 The above is pretty much the extent of my knowledge of building Adobe AIR applications using JavaScript / HTML at the time of this writing. I decided to take a few minutes to figure out the basics, so I thought I&rsquo;d share some of the tidbits I found out.

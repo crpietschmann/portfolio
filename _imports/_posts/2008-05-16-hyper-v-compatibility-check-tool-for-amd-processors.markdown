@@ -20,7 +20,7 @@ I guess this would have saved me from the trouble of installing Win 2008 with Hy
 
 I ran this tool on my system (AMD Athlon 64 X2 4200+ processor with a Gigabyte GA-M55SLI-S4 motherboard) to see what it says, and here's the results it displayed:
 
-<em>**Test Results from Microsoft Hyper-V compatibility check for systems with AMD processors<br />**<span style="color: red">This system is not compatible with Hyper-V.</span><br />This utility detected that a necessary BIOS patch is not installed.<br />Please contact your system vendor to determine whether a BIOS upgrade is available.<br />If so, upgrade your BIOS and re-run the utility.<br />If not, consider upgrading to a new AMD64 system to get the latest in virtualization capabilities, performace, and power efficiency.<br />AMD's most current processors do not require a BIOS patch to run Hyper-V.</em>
+***Test Results from Microsoft Hyper-V compatibility check for systems with AMD processors<br />**<span style="color: red">This system is not compatible with Hyper-V.</span><br />This utility detected that a necessary BIOS patch is not installed.<br />Please contact your system vendor to determine whether a BIOS upgrade is available.<br />If so, upgrade your BIOS and re-run the utility.<br />If not, consider upgrading to a new AMD64 system to get the latest in virtualization capabilities, performace, and power efficiency.<br />AMD's most current processors do not require a BIOS patch to run Hyper-V.*
 
 So, basically my processor supports hardware assisted virtualization (which I knew), but my motherboard doesn't. Now I just need to check Gigabyte to see if they have a BIOS update available for this motherboard that will enable support for hardware assisted virtualization.
 

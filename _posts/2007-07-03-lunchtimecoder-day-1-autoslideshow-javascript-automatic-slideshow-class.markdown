@@ -14,12 +14,12 @@ redirect_from:
 ---
 <!-- more -->
 
-<STRONG>Day 1</STRONG>
+**Day 1**
 
 Todays code is a JavaScript automatic slideshow component. This is a very simple class that you just tell what div to render within and what images to show, and it does the rest.
 
 <A href="/download/lunchtimecoder/javascript/autoslideshow/">Check out the AutoSlideShow component here</A>
 
-<STRONG>Ideas?</STRONG>
+**Ideas?**
 
 If you have any ideas on how this component can be improved, please post a comment below.

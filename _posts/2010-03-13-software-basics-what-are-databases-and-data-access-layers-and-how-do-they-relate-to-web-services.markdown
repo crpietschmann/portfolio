@@ -14,20 +14,20 @@ redirect_from:
 ---
 <!-- more -->
 
-In my own personal discussions with other developers and computer users I've seen a fair amount of confusion as to what a <em>database</em> is. Since the purpose of almost all applications is to Create/Read/Update/Delete data, they need to connect to a database, since data persistence storage need to be provided for the application to function as intended. If you want to stick to the simplest definition below, then a file cabinet is technically a database, but now that we're in the information age we don't really think of file cabinets as such since we can't search them very easily without physically looking at every folder or file it contains. Also, the my point in writing this article is to point out what databases are as they relate to software, so I'll keep things below within the digital sense.
+In my own personal discussions with other developers and computer users I've seen a fair amount of confusion as to what a *database* is. Since the purpose of almost all applications is to Create/Read/Update/Delete data, they need to connect to a database, since data persistence storage need to be provided for the application to function as intended. If you want to stick to the simplest definition below, then a file cabinet is technically a database, but now that we're in the information age we don't really think of file cabinets as such since we can't search them very easily without physically looking at every folder or file it contains. Also, the my point in writing this article is to point out what databases are as they relate to software, so I'll keep things below within the digital sense.
 
 Below I will describe what Databases, Software Database Server and Data Access Layers are. Also, I will define how a Web Service is really both a Data Access Layer or a Database.
 <h3>What is a Database?</h3>
 
 I would refer to the definition that Wikipedia gives as the simplest, most basic definition:
 
-<em>"A database is a collection of data..."</em> from <a rel="nofollow" href="http://en.wikipedia.org/wiki/Database">Wikipedia</a>
+*"A database is a collection of data..."* from <a rel="nofollow" href="http://en.wikipedia.org/wiki/Database">Wikipedia</a>
 
 And, to be a little more specific you can also look at the definition from Wiktionary:
 
-<em>"1. A collection of (usually) organized information in a regular structure, usually but not necessarily in a machine-readable format accessible by a computer.</em>
+*"1. A collection of (usually) organized information in a regular structure, usually but not necessarily in a machine-readable format accessible by a computer.*
 
-<em>2.A software program for storing, retrieving and manipulating a database"</em> from <a rel="nofollow" href="http://en.wiktionary.org/wiki/database">Wiktionary</a>
+*2.A software program for storing, retrieving and manipulating a database"* from <a rel="nofollow" href="http://en.wiktionary.org/wiki/database">Wiktionary</a>
 <h3>Most Commonly Used Databases</h3>
 
 All software databases boil down to file stored on a hard drive or some other persistent storage, but for all practical purposes of developing software there are really 2 basic types of databases:
@@ -50,7 +50,7 @@ Yes! The above difinition of a Software Database Server described a Software App
 
 When talking about Software and Databases, you can't leave out Data Access Layers. Below is the definition of <a rel="nofollow" href="http://en.wikipedia.org/wiki/Data_access_layer">Data Access Layer</a> from Wikipedia:
 
-<em>"... a layer of a computer program which provides simplified access to data stored in persistent storage of some kind ..."</em>
+*"... a layer of a computer program which provides simplified access to data stored in persistent storage of some kind ..."*
 
 in the simplest form, a Data Access Layer is just the code or part of a software application that connects directly to a Database. If your application stores data within a Flat File in XML format, then the code that Reads/Updates/Saves the XML file is the Data Access Layer. Also, if your application uses a Software Database Server such as Microsoft SQL Server to store data, then the code that communicates with the MS SQL Server is the Data Access Layer. Simply put, the Data Access Layer is the code that bridges the gap between the Application and the Database.
 <h3>Is a Web Service a Database or a Data Access Layer?</h3>
@@ -59,7 +59,7 @@ Well, actually a Web Service is BOTH a Database and a Data Access Layer. To expl
 
 Below is Wikipedias definition of a <a rel="nofollow" href="http://en.wikipedia.org/wiki/Web_service">Web Service</a>:
 
-<em>"Web services are typically application programming (API) or web APIs that can be access over a network, such as the Internet, and executed on a remote system hosting the requested services."</em>
+*"Web services are typically application programming (API) or web APIs that can be access over a network, such as the Internet, and executed on a remote system hosting the requested services."*
 
 Basically a Web Service is a Software Application that provides some kind of remotely accessible service that is consumed by another Software Application. If a Web Service provides the service of storing/retrieving data (as most do), then you loop back around to the exact same definition given above of a Software Database Server. Additionally, for a Web Service to be a database it can store/retrieve the data in either "flat" files directly, or use another separate Software Database Server that it accesses to do the storage/retrieval within persistent storage for it.
 

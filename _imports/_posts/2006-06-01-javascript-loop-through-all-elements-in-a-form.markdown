@@ -15,36 +15,36 @@ redirect_from:
 <!-- more -->
 
 Since I've been doing alot of JavaScript programming lately, I figured I could start blogging some code snippets. Here is a JavaScript snippet that shows how to loop through all the elements in a form and retrieve their element type, name and values. I had to use this code to gather all form values so I could post them to the server using AJAX.
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;html&gt;
-&lt;head&gt;
-&lt;script type="text/javascript"&gt;
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><html>
+<head>
+<script type="text/javascript">
     function DisplayFormValues()
     {
         var str = '';
         var elem = document.getElementById('frmMain').elements;
-        for(var i = 0; i &lt; elem.length; i++)
+        for(var i = 0; i < elem.length; i++)
         {
-            str += "&lt;b&gt;Type:&lt;/b&gt;" + elem[i].type + "&amp;nbsp&amp;nbsp";
-            str += "&lt;b&gt;Name:&lt;/b&gt;" + elem[i].name + "&amp;nbsp;&amp;nbsp;";
-            str += "&lt;b&gt;Value:&lt;/b&gt;&lt;i&gt;" + elem[i].value + "&lt;/i&gt;&amp;nbsp;&amp;nbsp;";
-            str += "&lt;BR&gt;";
+            str += "<b>Type:</b>" + elem[i].type + "&amp;nbsp&amp;nbsp";
+            str += "<b>Name:</b>" + elem[i].name + "&amp;nbsp;&amp;nbsp;";
+            str += "<b>Value:</b><i>" + elem[i].value + "</i>&amp;nbsp;&amp;nbsp;";
+            str += "<BR>";
         } 
         document.getElementById('lblValues').innerHTML = str;
     }
-&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;form id="frmMain" name="frmMain"&gt;
-        &lt;input type="hidden" name="ElemHidden" value="some hidden text" /&gt;
-        &lt;input type="text" name="ElemText" value="some text" /&gt;&lt;br /&gt;
-        &lt;textarea name="ElemTextArea"&gt;Some text area text&lt;/textarea&gt;&lt;br /&gt;
-        &lt;br /&gt;
-        &lt;input type="button" value="Test" onclick="DisplayFormValues();" /&gt; 
-    &lt;/form&gt;
-    &lt;hr /&gt;
-    &lt;div id="lblValues"&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+</script>
+</head>
+<body>
+    <form id="frmMain" name="frmMain">
+        <input type="hidden" name="ElemHidden" value="some hidden text" />
+        <input type="text" name="ElemText" value="some text" /><br />
+        <textarea name="ElemTextArea">Some text area text</textarea><br />
+        <br />
+        <input type="button" value="Test" onclick="DisplayFormValues();" /> 
+    </form>
+    <hr />
+    <div id="lblValues"></div>
+</body>
+</html></pre>
 
 I revisited this code and tested it again to make sure it still works. I found that it works with the latest browser versions available today, in addition to older browsers, such as:
 <ul>

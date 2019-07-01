@@ -109,7 +109,7 @@ Words.Rows.Add(MyRow)
 </span><span style="color: #0000ff; font-size: x-small;">Public</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">Sub</span><span style="font-size: x-small;"> ColorRtb()</span><span style="font-size: x-small;">
 
 <span style="color: #0000ff; font-size: x-small;">Dim</span><span style="font-size: x-small;"> FirstVisibleChar </span><span style="color: #0000ff; font-size: x-small;">As</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">Integer</span>
-</span><span style="color: #0000ff; font-size: x-small;">Dim</span><span style="font-size: x-small;"> i </span><span style="color: #0000ff; font-size: x-small;">As</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">Integer</span><span style="font-size: x-small;"> = 0</span><span style="color: #0000ff; font-size: x-small;">While</span><span style="font-size: x-small;"> i &lt; </span><span style="color: #0000ff; font-size: x-small;">Me</span><span style="font-size: x-small;">.Lines.Length</span><span style="font-size: x-small;">
+</span><span style="color: #0000ff; font-size: x-small;">Dim</span><span style="font-size: x-small;"> i </span><span style="color: #0000ff; font-size: x-small;">As</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">Integer</span><span style="font-size: x-small;"> = 0</span><span style="color: #0000ff; font-size: x-small;">While</span><span style="font-size: x-small;"> i < </span><span style="color: #0000ff; font-size: x-small;">Me</span><span style="font-size: x-small;">.Lines.Length</span><span style="font-size: x-small;">
 
 FirstVisibleChar = GetCharFromLineIndex(i)
 
@@ -139,7 +139,7 @@ i += 1
 </span><span style="font-size: x-small;">
 
 <span style="color: #0000ff; font-size: x-small;">Else</span>
-</span><span style="color: #0000ff; font-size: x-small;">While</span><span style="font-size: x-small;"> FirstLine &lt; LastLine</span><span style="font-size: x-small;">
+</span><span style="color: #0000ff; font-size: x-small;">While</span><span style="font-size: x-small;"> FirstLine < LastLine</span><span style="font-size: x-small;">
 
 FirstVisibleChar = GetCharFromLineIndex(FirstLine)
 
@@ -223,7 +223,7 @@ LockWindowUpdate(0)
 <span style="color: #0000ff; font-size: x-small;">Public</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">Function</span><span style="font-size: x-small;"> LastVisibleLine() </span><span style="color: #0000ff; font-size: x-small;">As</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">Integer</span>
 </span><span style="color: #0000ff; font-size: x-small;">Dim</span><span style="font-size: x-small;"> LastLine </span><span style="color: #0000ff; font-size: x-small;">As</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">Integer</span><span style="font-size: x-small;"> = FirstVisibleLine() + (</span><span style="color: #0000ff; font-size: x-small;">Me</span><span style="font-size: x-small;">.Height / </span><span style="color: #0000ff; font-size: x-small;">Me</span><span style="font-size: x-small;">.Font.Height)</span><span style="font-size: x-small;">
 
-<span style="color: #0000ff; font-size: x-small;">If</span><span style="font-size: x-small;"> LastLine &gt; </span><span style="color: #0000ff; font-size: x-small;">Me</span><span style="font-size: x-small;">.Lines.Length </span><span style="color: #0000ff; font-size: x-small;">Or</span><span style="font-size: x-small;"> LastLine = 0 </span><span style="color: #0000ff; font-size: x-small;">Then</span>
+<span style="color: #0000ff; font-size: x-small;">If</span><span style="font-size: x-small;"> LastLine > </span><span style="color: #0000ff; font-size: x-small;">Me</span><span style="font-size: x-small;">.Lines.Length </span><span style="color: #0000ff; font-size: x-small;">Or</span><span style="font-size: x-small;"> LastLine = 0 </span><span style="color: #0000ff; font-size: x-small;">Then</span>
 </span><span style="font-size: x-small;">LastLine = </span><span style="color: #0000ff; font-size: x-small;">Me</span><span style="font-size: x-small;">.Lines.Length</span><span style="font-size: x-small;">
 
 <span style="color: #0000ff; font-size: x-small;">End</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">If</span>

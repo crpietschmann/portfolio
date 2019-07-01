@@ -19,7 +19,7 @@ I have even seen this discussed a bit in regards to the Bing Maps Silverlight Co
 Here's the code for the &quot;DraggablePushpin&quot;:  <pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">class</span> DraggablePushpin : Microsoft.Maps.MapControl.Pushpin
 {
     <span class="kwrd">private</span> <span class="kwrd">bool</span> isDragging = <span class="kwrd">false</span>;
-    EventHandler&lt;MapMouseDragEventArgs&gt; ParentMapMousePanHandler;
+    EventHandler<MapMouseDragEventArgs> ParentMapMousePanHandler;
     MouseButtonEventHandler ParentMapMouseLeftButtonUpHandler;
     MouseEventHandler ParentMapMouseMoveHandler;
 
@@ -37,7 +37,7 @@ Here's the code for the &quot;DraggablePushpin&quot;:  <pre class="csharpcode"><
             {
                 <span class="kwrd">if</span> (<span class="kwrd">this</span>.ParentMapMousePanHandler == <span class="kwrd">null</span>)
                 {
-                    <span class="kwrd">this</span>.ParentMapMousePanHandler = <span class="kwrd">new</span> EventHandler&lt;MapMouseDragEventArgs&gt;(ParentMap_MousePan);
+                    <span class="kwrd">this</span>.ParentMapMousePanHandler = <span class="kwrd">new</span> EventHandler<MapMouseDragEventArgs>(ParentMap_MousePan);
                     parentMap.MousePan += <span class="kwrd">this</span>.ParentMapMousePanHandler;
                 }
                 <span class="kwrd">if</span> (<span class="kwrd">this</span>.ParentMapMouseLeftButtonUpHandler == <span class="kwrd">null</span>)

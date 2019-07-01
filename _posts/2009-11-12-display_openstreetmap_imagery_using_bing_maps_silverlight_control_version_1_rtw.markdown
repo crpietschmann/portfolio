@@ -22,20 +22,20 @@ In the &ldquo;Adding Tile Overlays to the Map&rdquo; article it shows using a &l
 Since we will be displaying the OpenStreetMap imagery instead of the Bing Maps Imagery, we want to prevent the Map control from loading/displaying the Bing Maps Imagery completely.
 
 To do this, all you need to do is set the Maps Mode to an instance of the &ldquo;MercatorMode&rdquo; object:
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="BingMapsSilverlightApplication1.MainPage"</span>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="BingMapsSilverlightApplication1.MainPage"</span>
     <span class="attr">xmlns</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span> 
     <span class="attr">xmlns:x</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml"</span>
     <span class="attr">xmlns:m</span><span class="kwrd">="clr-namespace:Microsoft.Maps.MapControl;assembly=Microsoft.Maps.MapControl"</span>
-    <span class="attr">xmlns:mCore</span><span class="kwrd">="clr-namespace:Microsoft.Maps.MapControl.Core;assembly=Microsoft.Maps.MapControl"</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">Grid</span> <span class="attr">x:Name</span><span class="kwrd">="LayoutRoot"</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">m:Map</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;</span><span class="html">m:Map.Mode</span><span class="kwrd">&gt;</span>
-                <span class="rem">&lt;!-- Do Not Display Bing Maps Imagery --&gt;</span>
-                <span class="kwrd">&lt;</span><span class="html">mCore:MercatorMode</span><span class="kwrd">&gt;&lt;/</span><span class="html">mCore:MercatorMode</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;/</span><span class="html">m:Map.Mode</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;/</span><span class="html">m:Map</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;/</span><span class="html">Grid</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">UserControl</span><span class="kwrd">&gt;</span></pre>
+    <span class="attr">xmlns:mCore</span><span class="kwrd">="clr-namespace:Microsoft.Maps.MapControl.Core;assembly=Microsoft.Maps.MapControl"</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">Grid</span> <span class="attr">x:Name</span><span class="kwrd">="LayoutRoot"</span><span class="kwrd">></span>
+        <span class="kwrd"><</span><span class="html">m:Map</span><span class="kwrd">></span>
+            <span class="kwrd"><</span><span class="html">m:Map.Mode</span><span class="kwrd">></span>
+                <span class="rem"><!-- Do Not Display Bing Maps Imagery --></span>
+                <span class="kwrd"><</span><span class="html">mCore:MercatorMode</span><span class="kwrd">></</span><span class="html">mCore:MercatorMode</span><span class="kwrd">></span>
+            <span class="kwrd"></</span><span class="html">m:Map.Mode</span><span class="kwrd">></span>
+        <span class="kwrd"></</span><span class="html">m:Map</span><span class="kwrd">></span>
+    <span class="kwrd"></</span><span class="html">Grid</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">UserControl</span><span class="kwrd">></span></pre>
 
 <!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
 
@@ -65,29 +65,29 @@ Here&rsquo;s the simple OpenStreetMapTileSource class:
 Now to put the OpenStreetMapTIleSource in place and actually display the OpenStreetMap Imagery. To do this, we will add a new MapTileLayer to the Maps Children collection, and add an instance of our OpenStreetMapTileSource object to the MapTileLayer objects TileSources collection.
 
 Here&rsquo;s the code to do this:
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="BingMapsSilverlightApplication1.MainPage"</span>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="BingMapsSilverlightApplication1.MainPage"</span>
     <span class="attr">xmlns</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span> 
     <span class="attr">xmlns:x</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml"</span>
     <span class="attr">xmlns:m</span><span class="kwrd">="clr-namespace:Microsoft.Maps.MapControl;assembly=Microsoft.Maps.MapControl"</span>
     <span class="attr">xmlns:mCore</span><span class="kwrd">="clr-namespace:Microsoft.Maps.MapControl.Core;assembly=Microsoft.Maps.MapControl"</span>
-    <span class="attr">xmlns:local</span><span class="kwrd">="clr-namespace:BingMapsSilverlightApplication1"</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">Grid</span> <span class="attr">x:Name</span><span class="kwrd">="LayoutRoot"</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">m:Map</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;</span><span class="html">m:Map.Mode</span><span class="kwrd">&gt;</span>
-                <span class="rem">&lt;!-- Do Not Display Bing Maps Imagery --&gt;</span>
-                <span class="kwrd">&lt;</span><span class="html">mCore:MercatorMode</span><span class="kwrd">&gt;&lt;/</span><span class="html">mCore:MercatorMode</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;/</span><span class="html">m:Map.Mode</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;</span><span class="html">m:Map.Children</span><span class="kwrd">&gt;</span>
-                <span class="kwrd">&lt;</span><span class="html">m:MapTileLayer</span><span class="kwrd">&gt;</span>
-                    <span class="kwrd">&lt;</span><span class="html">m:MapTileLayer.TileSources</span><span class="kwrd">&gt;</span>
-                        <span class="rem">&lt;!-- Display OpenStreetMap Imagery --&gt;</span>
-                        <span class="kwrd">&lt;</span><span class="html">local:OpenStreetMapTileSource</span><span class="kwrd">&gt;&lt;/</span><span class="html">local:OpenStreetMapTileSource</span><span class="kwrd">&gt;</span>
-                    <span class="kwrd">&lt;/</span><span class="html">m:MapTileLayer.TileSources</span><span class="kwrd">&gt;</span>
-                <span class="kwrd">&lt;/</span><span class="html">m:MapTileLayer</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;/</span><span class="html">m:Map.Children</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;/</span><span class="html">m:Map</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;/</span><span class="html">Grid</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">UserControl</span><span class="kwrd">&gt;</span></pre>
+    <span class="attr">xmlns:local</span><span class="kwrd">="clr-namespace:BingMapsSilverlightApplication1"</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">Grid</span> <span class="attr">x:Name</span><span class="kwrd">="LayoutRoot"</span><span class="kwrd">></span>
+        <span class="kwrd"><</span><span class="html">m:Map</span><span class="kwrd">></span>
+            <span class="kwrd"><</span><span class="html">m:Map.Mode</span><span class="kwrd">></span>
+                <span class="rem"><!-- Do Not Display Bing Maps Imagery --></span>
+                <span class="kwrd"><</span><span class="html">mCore:MercatorMode</span><span class="kwrd">></</span><span class="html">mCore:MercatorMode</span><span class="kwrd">></span>
+            <span class="kwrd"></</span><span class="html">m:Map.Mode</span><span class="kwrd">></span>
+            <span class="kwrd"><</span><span class="html">m:Map.Children</span><span class="kwrd">></span>
+                <span class="kwrd"><</span><span class="html">m:MapTileLayer</span><span class="kwrd">></span>
+                    <span class="kwrd"><</span><span class="html">m:MapTileLayer.TileSources</span><span class="kwrd">></span>
+                        <span class="rem"><!-- Display OpenStreetMap Imagery --></span>
+                        <span class="kwrd"><</span><span class="html">local:OpenStreetMapTileSource</span><span class="kwrd">></</span><span class="html">local:OpenStreetMapTileSource</span><span class="kwrd">></span>
+                    <span class="kwrd"></</span><span class="html">m:MapTileLayer.TileSources</span><span class="kwrd">></span>
+                <span class="kwrd"></</span><span class="html">m:MapTileLayer</span><span class="kwrd">></span>
+            <span class="kwrd"></</span><span class="html">m:Map.Children</span><span class="kwrd">></span>
+        <span class="kwrd"></</span><span class="html">m:Map</span><span class="kwrd">></span>
+    <span class="kwrd"></</span><span class="html">Grid</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">UserControl</span><span class="kwrd">></span></pre>
 
  
 <h3>Conclusion</h3>

@@ -17,7 +17,7 @@ redirect_from:
 I just checked in an initial prototype of a reusable Virtual Earth component for ASP.NET MVC. The “VEToolkit.Web.MVC.Map” component is written as an Extension to the ASP.NET MVC AjaxHelper class, and allows for a simpler experience when implementing Virtual Earth mapping within ASP.NET MVC applications. This is an early prototype of what the component will be; it’s not a final release; but you are free to use it.  
 <a href="http://vetoolkit.codeplex.com/SourceControl/ListDownloadableCommits.aspx" target="_blank">Download the latest Change Set of VEToolkit</a>  
 The code is subject to change at any time, since this is currently in a prototype stage, but below is a basic overview of what’s there so far.  <h3>Include a Basic Map on the Page</h3>  
-Include the “VEToolkit.Web.MVC” namespace within the page by adding the following Include directive to the top of the Page:  <pre class="csharpcode"><span class="asp">&lt;%@ Import Namespace=&quot;VEToolkit.Web.MVC&quot; %&gt;</span></pre>
+Include the “VEToolkit.Web.MVC” namespace within the page by adding the following Include directive to the top of the Page:  <pre class="csharpcode"><span class="asp"><%@ Import Namespace=&quot;VEToolkit.Web.MVC&quot; %></span></pre>
 <style type="text/css">
 .csharpcode, .csharpcode pre
 {
@@ -47,7 +47,7 @@ Include the “VEToolkit.Web.MVC” namespace within the page by adding the foll
 
 Add the following two JavaScript Includes (the Virtual Earth JavaScript API and jQuery) to the Page Header:
 
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">script</span> <span class="attr">type</span><span class="kwrd">=&quot;text/javascript&quot;</span> <span class="attr">src</span><span class="kwrd">=&quot;http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.2&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span></pre>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">script</span> <span class="attr">type</span><span class="kwrd">=&quot;text/javascript&quot;</span> <span class="attr">src</span><span class="kwrd">=&quot;http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.2&quot;</span><span class="kwrd">></</span><span class="html">script</span><span class="kwrd">></span></pre>
 <style type="text/css">
 .csharpcode, .csharpcode pre
 {
@@ -74,12 +74,12 @@ Add the following two JavaScript Includes (the Virtual Earth JavaScript API and 
 }
 .csharpcode .lnum { color: #606060; }</style>
 
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">script</span> <span class="attr">type</span><span class="kwrd">=&quot;text/javascript&quot;</span> <span class="attr">src</span><span class="kwrd">=&quot;/Scripts/jquery-1.3.2.js&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span></pre>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">script</span> <span class="attr">type</span><span class="kwrd">=&quot;text/javascript&quot;</span> <span class="attr">src</span><span class="kwrd">=&quot;/Scripts/jquery-1.3.2.js&quot;</span><span class="kwrd">></</span><span class="html">script</span><span class="kwrd">></span></pre>
 
 
 Add the following to the Page to add a basic Virtual Earth map:
 
-<pre class="csharpcode"><span class="asp">&lt;%</span>=Ajax.Map() <span class="asp">%&gt;</span></pre>
+<pre class="csharpcode"><span class="asp"><%</span>=Ajax.Map() <span class="asp">%></span></pre>
 
 
 And that’s it; you’ll have “default” sized Virtual Earth map on the page.
@@ -92,13 +92,13 @@ By default the component autogenerates an ID to use when naming the global VEMap
 
 Here’s an example of how to specify your own ID (or variable name) to be used for the global VEMap object that’s created:
 
-<pre class="csharpcode"><span class="asp">&lt;%</span>=Ajax.Map(<span class="str">&quot;myMap&quot;</span>) <span class="asp">%&gt;</span></pre>
+<pre class="csharpcode"><span class="asp"><%</span>=Ajax.Map(<span class="str">&quot;myMap&quot;</span>) <span class="asp">%></span></pre>
 
 
 Now to get a hold of the global reference to the VEMap object, you can just access it by name, like so:
 
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">input</span> <span class="attr">type</span><span class="kwrd">=&quot;button&quot;</span> <span class="attr">value</span><span class="kwrd">=&quot;Zoom In&quot;</span> <span class="attr">onclick</span><span class="kwrd">=&quot;myMap.ZoomIn();&quot;</span> <span class="kwrd">/&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">input</span> <span class="attr">type</span><span class="kwrd">=&quot;button&quot;</span> <span class="attr">value</span><span class="kwrd">=&quot;Zoom Out&quot;</span> <span class="attr">onclick</span><span class="kwrd">=&quot;myMap.ZoomOut();&quot;</span> <span class="kwrd">/&gt;</span></pre>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">input</span> <span class="attr">type</span><span class="kwrd">=&quot;button&quot;</span> <span class="attr">value</span><span class="kwrd">=&quot;Zoom In&quot;</span> <span class="attr">onclick</span><span class="kwrd">=&quot;myMap.ZoomIn();&quot;</span> <span class="kwrd">/></span>
+<span class="kwrd"><</span><span class="html">input</span> <span class="attr">type</span><span class="kwrd">=&quot;button&quot;</span> <span class="attr">value</span><span class="kwrd">=&quot;Zoom Out&quot;</span> <span class="attr">onclick</span><span class="kwrd">=&quot;myMap.ZoomOut();&quot;</span> <span class="kwrd">/></span></pre>
 
 <h3>&#160;</h3>
 
@@ -107,10 +107,10 @@ Now to get a hold of the global reference to the VEMap object, you can just acce
 
 Here’s a modified example of the above that sets the Center Location, Zoom Level and Map Style:
 
-<pre class="csharpcode"><span class="asp">&lt;%</span>=Ajax.Map(<span class="str">&quot;myMap&quot;</span>)
+<pre class="csharpcode"><span class="asp"><%</span>=Ajax.Map(<span class="str">&quot;myMap&quot;</span>)
     .SetCenter(<span class="kwrd">new</span> Location(44, -78))
     .SetZoom(6)
-    .SetMapStyle(MapStyle.Road)<span class="asp">%&gt;</span></pre>
+    .SetMapStyle(MapStyle.Road)<span class="asp">%></span></pre>
 
 <h3>&#160;</h3>
 
@@ -122,13 +122,13 @@ Also you can specify a JavaScript Function to be called once the Map has finishe
 
 Here’s an example:
 
-<pre class="csharpcode"><span class="asp">&lt;%</span>=Ajax.Map(<span class="str">&quot;myMap&quot;</span>)
-    .SetOnMapLoaded(<span class="str">&quot;MapLoaded&quot;</span>)<span class="asp">%&gt;</span></pre>
+<pre class="csharpcode"><span class="asp"><%</span>=Ajax.Map(<span class="str">&quot;myMap&quot;</span>)
+    .SetOnMapLoaded(<span class="str">&quot;MapLoaded&quot;</span>)<span class="asp">%></span></pre>
 
 
 And, here’s a simple JavaScript Function named “MapLoaded” to match that adds a Pushpin to the Map at it’s Center Point:
 
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">script</span> <span class="attr">type</span><span class="kwrd">=&quot;text/javascript&quot;</span><span class="kwrd">&gt;</span>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">script</span> <span class="attr">type</span><span class="kwrd">=&quot;text/javascript&quot;</span><span class="kwrd">></span>
     <span class="kwrd">function</span> MapLoaded(sender) {
         <span class="rem">// &quot;sender&quot; = The Map that was Loaded</span>
         <span class="kwrd">var</span> map = sender;
@@ -139,7 +139,7 @@ And, here’s a simple JavaScript Function named “MapLoaded” to match that a
         s.SetDescription(<span class="str">&quot;This was the original center point when the Map loaded.&quot;</span>);
         map.AddShape(s);
     }
-<span class="kwrd">&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span></pre>
+<span class="kwrd"></</span><span class="html">script</span><span class="kwrd">></span></pre>
 
 <h3>&#160;</h3>
 

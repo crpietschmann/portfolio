@@ -15,7 +15,7 @@ redirect_from:
 <!-- more -->
 
 
-<em>Update 12/29/2007: This is no longer a bug. It has been fixed since I originally posted this.</em> 
+*Update 12/29/2007: This is no longer a bug. It has been fixed since I originally posted this.* 
 
 
 
@@ -24,7 +24,7 @@ This is the second bug in Virtual Earth 6 that I&#39;ve found today. It appears 
 
 
 As the documentation states:<br />
-<em>&quot;A Boolean value that specifies whether to show the map mode switch on the dashboard control. Optional. Default is true (the switch is displayed).&quot;</em> 
+*&quot;A Boolean value that specifies whether to show the map mode switch on the dashboard control. Optional. Default is true (the switch is displayed).&quot;* 
 
 
 

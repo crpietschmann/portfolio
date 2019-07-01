@@ -19,18 +19,18 @@ As a note, since .NET 3.5 is the &quot;latest and greatest&quot; version of the 
 First, what exactly is ScriptControl? Well, the base class I'm referring to is the System.Web.UI.ScriptControl base class located within the System.Web.Extensions.dll assembly.   
 The ScriptControl is basically the first building block you want to use to start building out a WebControl (server control) that will have some kind of rich AJAX functionality in the browser. You may have heard of ASP.NET AJAX Control Extenders, especially if you're familiar with the AJAX Control Toolkit, so why would we use ScriptControl instead of creating an ExtenderControl in order to give a control some rich AJAX functionality within the browser? Well, you want to create an ExtenderControl to extend or enhance an existing control with some rich AJAX functionality, and you want to inherit from the ScriptControl class when you are creating a full control that will have some rich AJAX functionality.   
 According to <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.scriptcontrol.aspx">MSDN the ScriptControl class</a> is:   
-<em>ScriptControl inherits from the WebControl class and implements the <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.iscriptcontrol.aspx">IScriptControl</a> interface. The WebControl class is a base class for ASP.NET Web server controls. The ScriptControl is an abstract class, which you cannot instantiate directly. Instead, you derive a class based on this abstract class.</em>   
-<em>The ScriptControl base class tests the page for a <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.scriptmanager.aspx">ScriptManager</a> control during the PreRender stage of the derived control. The ScriptControl base class also makes sure that the derived control calls methods of the <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.scriptmanager.aspx">ScriptManager</a> control to register script during the Render event. This includes registering <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.scriptdescriptor.aspx">ScriptDescriptor</a> objects for the ScriptControl when the Render method is called. The Render method makes sure that <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.scriptdescriptor.aspx">ScriptDescriptor</a> objects are not rendered unless the ScriptControl itself is rendered. This enables a ScriptControl to work inside a closed WebPart control.</em>   
-<em>You can add as many descriptors and types as necessary to any class that you derive from ScriptControl.</em>  <h3>Basics of Creating Server Controls that Inherit from ScriptControl</h3>  
+*ScriptControl inherits from the WebControl class and implements the <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.iscriptcontrol.aspx">IScriptControl</a> interface. The WebControl class is a base class for ASP.NET Web server controls. The ScriptControl is an abstract class, which you cannot instantiate directly. Instead, you derive a class based on this abstract class.*   
+*The ScriptControl base class tests the page for a <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.scriptmanager.aspx">ScriptManager</a> control during the PreRender stage of the derived control. The ScriptControl base class also makes sure that the derived control calls methods of the <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.scriptmanager.aspx">ScriptManager</a> control to register script during the Render event. This includes registering <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.scriptdescriptor.aspx">ScriptDescriptor</a> objects for the ScriptControl when the Render method is called. The Render method makes sure that <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.scriptdescriptor.aspx">ScriptDescriptor</a> objects are not rendered unless the ScriptControl itself is rendered. This enables a ScriptControl to work inside a closed WebPart control.*   
+*You can add as many descriptors and types as necessary to any class that you derive from ScriptControl.*  <h3>Basics of Creating Server Controls that Inherit from ScriptControl</h3>  
 When first creating your custom server control you inherit from ScriptControl instead of WebControl like usual. The first thing you'll see is ScriptControl requires you to implement two methods: GetScriptDescriptors and GetScriptReferences. The GetScriptDescriptors method is used to get an enumeration of ScriptDescriptor objects that basically define any of the controls client-side AJAX properties. The GetScriptReferences method is used to get an enumeration of ECMAScript (JavaScript) files that will be loaded on the client-side once the page loads; this is used to basically define any client-side scripts the control will require to run on the client.   
 Here's a basic stub of a control that inherits from ScriptControl:  <pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">class</span> CustomScriptControl : ScriptControl
 {
-    <span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable&lt;ScriptDescriptor&gt; GetScriptDescriptors()
+    <span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable<ScriptDescriptor> GetScriptDescriptors()
     {
         <span class="kwrd">throw</span> <span class="kwrd">new</span> NotImplementedException();
     } 
 
-    <span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable&lt;ScriptReference&gt; GetScriptReferences()
+    <span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable<ScriptReference> GetScriptReferences()
     {
         <span class="kwrd">throw</span> <span class="kwrd">new</span> NotImplementedException();
     }
@@ -70,9 +70,9 @@ In the GetScriptReferences method, return an enumeration of the <a href="http://
 
 Here's a basic example of setting up a ScriptReference that includes a script resource that is embedded within the assembly the CustomScriptControl is contained in:
 
-<pre class="csharpcode"><span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable&lt;ScriptReference&gt; GetScriptReferences()
+<pre class="csharpcode"><span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable<ScriptReference> GetScriptReferences()
 {
-    List&lt;ScriptReference&gt; references = <span class="kwrd">new</span> List&lt;ScriptReference&gt;();
+    List<ScriptReference> references = <span class="kwrd">new</span> List<ScriptReference>();
     references.Add(<span class="kwrd">new</span> ScriptReference(<span class="str">&quot;CustomScriptControl.CustomScriptControl.js&quot;</span>, <span class="str">&quot;CustomScriptControl&quot;</span>));
     <span class="kwrd">return</span> references;
 }</pre>
@@ -92,7 +92,7 @@ The only ScriptDescriptor you need to return in the enumeration is a ScriptContr
 
 Here's a basic example of returning a ScriptControlDescriptor without any properties being defined:
 
-<pre class="csharpcode"><span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable&lt;ScriptDescriptor&gt; GetScriptDescriptors()
+<pre class="csharpcode"><span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable<ScriptDescriptor> GetScriptDescriptors()
 {
     ScriptControlDescriptor descriptor = <span class="kwrd">new</span> ScriptControlDescriptor(<span class="kwrd">this</span>.GetType().FullName, <span class="kwrd">this</span>.ClientID);
     <span class="kwrd">return</span> <span class="kwrd">new</span> ScriptDescriptor[] { descriptor };
@@ -200,7 +200,7 @@ In this article, I'm going to keep things extremely simple, and we're going to d
 
 Just modify the GetScriptDescriptors method above to look like the following:
 
-<pre class="csharpcode"><span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable&lt;ScriptDescriptor&gt; GetScriptDescriptors()
+<pre class="csharpcode"><span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable<ScriptDescriptor> GetScriptDescriptors()
 {
     ScriptControlDescriptor descriptor = <span class="kwrd">new</span> ScriptControlDescriptor(<span class="kwrd">this</span>.GetType().FullName, <span class="kwrd">this</span>.ClientID); 
 
@@ -287,7 +287,7 @@ Here's the complete code for the ScriptControlBase, ScriptReferenceAttribute and
 
 <span class="kwrd">public</span> <span class="kwrd">class</span> ScriptControlBase : ScriptControl
 {
-    <span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable&lt;ScriptDescriptor&gt; GetScriptDescriptors()
+    <span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable<ScriptDescriptor> GetScriptDescriptors()
     {
         ScriptControlDescriptor descriptor = <span class="kwrd">new</span> ScriptControlDescriptor(<span class="kwrd">this</span>.GetType().FullName, <span class="kwrd">this</span>.ClientID); 
 
@@ -310,9 +310,9 @@ Here's the complete code for the ScriptControlBase, ScriptReferenceAttribute and
         <span class="kwrd">return</span> <span class="kwrd">new</span> ScriptDescriptor[] { descriptor };
     } 
 
-    <span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable&lt;ScriptReference&gt; GetScriptReferences()
+    <span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable<ScriptReference> GetScriptReferences()
     {
-        List&lt;ScriptReference&gt; references = <span class="kwrd">new</span> List&lt;ScriptReference&gt;(); 
+        List<ScriptReference> references = <span class="kwrd">new</span> List<ScriptReference>(); 
 
         <span class="rem">// Add all the ScriptControls Client-Side JavaScript References</span>
         <span class="kwrd">object</span>[] scriptReferences = Attribute.GetCustomAttributes(<span class="kwrd">this</span>.GetType(), <span class="kwrd">typeof</span>(ScriptReferenceAttribute), <span class="kwrd">false</span>);

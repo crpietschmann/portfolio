@@ -23,13 +23,13 @@ Today, I was introduced to <a href="http://hundredpushups.com/">hundredpushups.c
 
 Here's a quote from the website:
 
-<em>If you're serious about increasing your strength, follow this six week training program and you'll soon be on your way to completing 100 consecutive push ups!</em>
+*If you're serious about increasing your strength, follow this six week training program and you'll soon be on your way to completing 100 consecutive push ups!*
 
-<em>Think there's no way <em>**you**</em> could do this? I think you can! All you need is a good plan, plenty of discipline and about 30 minutes a week to achive this goal!</em>
+*Think there's no way ***you*** could do this? I think you can! All you need is a good plan, plenty of discipline and about 30 minutes a week to achive this goal!*
 
-<em>No doubt some of you can already do 50 consecutive push ups, but let's face it, you're in a big minority. Most of you reading this won't even be able to manage 20 pushups. Actually, I'm sure many of you can't even do 10.</em>
+*No doubt some of you can already do 50 consecutive push ups, but let's face it, you're in a big minority. Most of you reading this won't even be able to manage 20 pushups. Actually, I'm sure many of you can't even do 10.*
 
-<em>However, it really doesn't matter which group you fall into. If you follow the progressive push ups training program, I'm positive you'll soon be able to do 100 push ups!</em>
+*However, it really doesn't matter which group you fall into. If you follow the progressive push ups training program, I'm positive you'll soon be able to do 100 push ups!*
 
  
 <h3>My Initial Test <br /></h3>

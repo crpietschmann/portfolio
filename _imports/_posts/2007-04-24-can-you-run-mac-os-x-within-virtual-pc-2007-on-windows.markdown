@@ -22,7 +22,7 @@ Mac OS X - $129.00<BR>Mac Mini - $599.00
 
 If anyone has any clues please let me know.
 
-<STRONG>Update 5/22/2007:<BR></STRONG>The day I originally posted this, I also contacted Ben Armstrong, through his blog (<A href="http://blogs.msdn.com/virtual_pc_guy/default.aspx">Virtual PC Guy</A>), and asked hime if this is possible with Virtual PC 2007. Here's the reply I got from him:
+**Update 5/22/2007:<BR>**The day I originally posted this, I also contacted Ben Armstrong, through his blog (<A href="http://blogs.msdn.com/virtual_pc_guy/default.aspx">Virtual PC Guy</A>), and asked hime if this is possible with Virtual PC 2007. Here's the reply I got from him:
 <P class=MsoPlainText style="MARGIN: 0in 0in 0pt"><FONT face=Consolas>This is not possible for three reasons:</FONT>
 <P class=MsoPlainText style="MARGIN: 0in 0in 0pt"><FONT face=Consolas><SPAN style="mso-spacerun: yes">        </SPAN>1) Apple does not allow this in their OS licensing</FONT>
 <P class=MsoPlainText style="MARGIN: 0in 0in 0pt"><FONT face=Consolas><SPAN style="mso-spacerun: yes">        </SPAN>2) Mac OS X specifically checks to ensure that it is installing on Apple hardware</FONT>

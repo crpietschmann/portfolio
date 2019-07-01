@@ -23,8 +23,8 @@ And I quote from the site:
 
 
 
-<em>&quot;Internet Explorer 6 will be SEVEN years old on August 27th [2008]. It came out a few weeks before the Twin Towers fell. It came out before the Nintendo GameCube. It came out before the first iPod.<br />
-It&#39;s time to put a deadline on dropping IE6, and I say that time is now, and the deadline should be soon... say like, March 2009. That&#39;s roughly a little more than 6 months.&quot; </em>
+*&quot;Internet Explorer 6 will be SEVEN years old on August 27th [2008]. It came out a few weeks before the Twin Towers fell. It came out before the Nintendo GameCube. It came out before the first iPod.<br />
+It&#39;s time to put a deadline on dropping IE6, and I say that time is now, and the deadline should be soon... say like, March 2009. That&#39;s roughly a little more than 6 months.&quot; *
 
 
 

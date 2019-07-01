@@ -27,11 +27,11 @@ Null Coalescing is really simple in C#:
 
 But what about VB.NET?
 
-&lt;code:VB&gt;
+<code:VB>
 
 Dim i = If(someValue, 0)
 
-&lt;/code&gt;
+</code>
 
 Granted the VB.NET Null Coalesce is a method call, but at least there's still an equivalent available in the language. Also, I believe this is something that was introduced in VB.NET 9.0.
 <h3>Ternary Conditional Operator</h3>
@@ -46,14 +46,14 @@ This is the ability have a complete If..Else..Then statement on a single line an
 
 How about in VB.NET?
 
-&lt;code:VB&gt;
+<code:VB>
 
 Dim i = If(someValue = Nothing, 0, someValue)<br /> <br /> '' The above can be simplified, since if the first parameter is equal to "Nothing"<br /> '' then the "true" (second) parameter is return, otherwise the<br /> '' "false" (third) parameter is returned.<br /> Dim i = If(someValue, 0, someValue)<br /> <br /> '' Also to further simplify, you can just pass in the "false" (second) parameter<br /> '' and if its equal to "Nothing" then the "false" (second) parameter is returns,<br /> '' otherwise the value itself is returned.<br /> Dim i = If(someValue, 0) 
 
-&lt;/code&gt;
+</code>
 <h3>Lock Statement</h3>
 
-You may be familiar with the <em>lock </em>statement in C#, especially if you're used to worrying about concurrency.
+You may be familiar with the *lock *statement in C#, especially if you're used to worrying about concurrency.
 
 [code:c#]
 
@@ -63,11 +63,11 @@ lock (expression)<br /> {<br /> <br />     ...Some Code...<br /> <br /> }
 
 At first it appears to not exist in VB.NET, but they just named it SyncLock instead:
 
-&lt;code:VB&gt;
+<code:VB>
 
 SyncLock (expression)<br /> <br />     ...Some Code...<br /> <br /> End SyncLock
 
-&lt;/code&gt;
+</code>
 
  
 

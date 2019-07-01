@@ -27,33 +27,33 @@ Here&rsquo;s another screenshot of the menu in Chrome:
 <a href="/images/postsASPNETMVCHTML5DropDownMenu_Chrome.jpg"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="ASPNETMVCHTML5DropDownMenu_Chrome" src="/images/postsASPNETMVCHTML5DropDownMenu_Chrome_thumb.jpg" alt="ASPNETMVCHTML5DropDownMenu_Chrome" width="244" height="156" border="0" /></a>
 <h3>Add Sub-Menu Items</h3>
 
-First, modify the &lt;nav&gt; item in the Site.Master file to include sub-menu items as &lt;ul&gt; child elements added to the &ldquo;nav ul&rdquo; element. Below is an example:
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;nav&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;%: Html.ActionLink("Home", "Index", "Home")%&gt;&lt;/li&gt;
-        &lt;li&gt;
-            &lt;a href="#"&gt;Customers&lt;/a&gt;
-            &lt;ul&gt;
-                &lt;li&gt;&lt;a href="#"&gt;Create New&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;Latest&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;View All&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;a href="#"&gt;Orders&lt;/a&gt;
-            &lt;ul&gt;
-                &lt;li&gt;&lt;a href="#"&gt;Create New&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;Latest: Last 30 Days&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;Search: Date Range&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;Search: Customer&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;View All&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;&lt;%: Html.ActionLink("About", "About", "Home")%&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;</pre>
+First, modify the <nav> item in the Site.Master file to include sub-menu items as <ul> child elements added to the &ldquo;nav ul&rdquo; element. Below is an example:
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><nav>
+    <ul>
+        <li><%: Html.ActionLink("Home", "Index", "Home")%></li>
+        <li>
+            <a href="#">Customers</a>
+            <ul>
+                <li><a href="#">Create New</a></li>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">View All</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Orders</a>
+            <ul>
+                <li><a href="#">Create New</a></li>
+                <li><a href="#">Latest: Last 30 Days</a></li>
+                <li><a href="#">Search: Date Range</a></li>
+                <li><a href="#">Search: Customer</a></li>
+                <li><a href="#">View All</a></li>
+            </ul>
+        </li>
+        <li><%: Html.ActionLink("About", "About", "Home")%></li>
+    </ul>
+</nav></pre>
 
-Of course don&rsquo;t forget to replace the &ldquo;&lt;a href&rdquo; tags with &ldquo;Html.ActionLink&rdquo; calls to wire up the Views in your application. For this article, we&rsquo;ll just leave the code like this.
+Of course don&rsquo;t forget to replace the &ldquo;<a href&rdquo; tags with &ldquo;Html.ActionLink&rdquo; calls to wire up the Views in your application. For this article, we&rsquo;ll just leave the code like this.
 <h3>Add CSS Styles to the Sub-Menus</h3>
 
 We do not need to modify the styles in the &ldquo;Site.css&rdquo; file for this. We just need to add some CSS to style the sub-menus appropriately.
@@ -89,7 +89,7 @@ This CSS colors the background of the sub-menu area the same color blue as the p
 Now we just need a little jQuery code to wire up our sub-menus to display when the use hovers the mouse over their parents. The jQuery code I&rsquo;m using for this was inspired by Dan Wellman&rsquo;s &ldquo;<a href="http://net.tutsplus.com/tutorials/html-css-techniques/how-to-create-a-drop-down-nav-menu-with-html5-css3-and-jquery/">How to Create a Drop-down Nav Menu with HTML5, CSS3 and jQuery</a>&rdquo; post.
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">$(function () {
     $("body nav li").each(function () {
-        if ($(this).find("ul").length &gt; 0) {
+        if ($(this).find("ul").length > 0) {
 
             //show subnav on hover  
             $(this).mouseenter(function () {

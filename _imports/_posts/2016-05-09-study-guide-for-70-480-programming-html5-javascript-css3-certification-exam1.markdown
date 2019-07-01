@@ -54,7 +54,7 @@ These are both excellent books to use for studying. If you are looking for a mor
 
 One of the most important parts of studying for a certification exam is to take a practice test of some sort that mimics the real exam experience. This will allow you to both get familiar with the overall questions style, as well as get a view of how ready for the real exam you are. Taking a practice exam will give you a really good idea of the areas you need to study further before taking the real exam. Keep taking the practice exam questions, reviewing wrong answers, studying related material, and repeat the process until you feel confident you are ready while also scoring 100% on the practice test questions.
 
-<em>Note: Remember to try your best not to memorize the answers, but rather learn the patterns to look for in determining and remembering the correct answers.</em>
+*Note: Remember to try your best not to memorize the answers, but rather learn the patterns to look for in determining and remembering the correct answers.*
 <h3>Play Time</h3>
 
 When learning something new or just brushing up your expertise, there's no better method to learn than to just play around. Come up with a sample application or two and just build it out. Also, make sure you build it out utilizing as much material and topics on the exam as possible. This play time will really help drive in the material as you will make mistakes and learn from them. This simulates on the job experience and can really augment as well as add to your real world experience however much you have.

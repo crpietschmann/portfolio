@@ -27,10 +27,10 @@ Virtual Earth allows any developer to implement mapping technology within their 
 <font size="2" color="#0000ff">
 
 
-&lt;!<font size="2" color="#a31515">DOCTYPE</font><font size="2"> </font><font size="2" color="#ff0000">html</font><font size="2"> </font><font size="2" color="#ff0000">PUBLIC</font><font size="2"> </font><font size="2" color="#0000ff">&quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</font><font size="2"> </font><font size="2" color="#0000ff">&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;<br />
-&lt;</font><font size="2" color="#a31515">html</font><font size="2" color="#0000ff">&gt;<br />
-&lt;</font><font size="2" color="#a31515">head</font><font size="2" color="#0000ff">&gt;<br />
-&lt;</font><font size="2" color="#a31515">meta</font><font size="2"> </font><font size="2" color="#ff0000">http-equiv</font><font size="2" color="#0000ff">=&quot;Content-Type&quot;</font><font size="2"> </font><font size="2" color="#ff0000">content</font><font size="2" color="#0000ff">=&quot;text/html; charset=utf-8&quot;&gt;</font>
+<!<font size="2" color="#a31515">DOCTYPE</font><font size="2"> </font><font size="2" color="#ff0000">html</font><font size="2"> </font><font size="2" color="#ff0000">PUBLIC</font><font size="2"> </font><font size="2" color="#0000ff">&quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</font><font size="2"> </font><font size="2" color="#0000ff">&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;><br />
+<</font><font size="2" color="#a31515">html</font><font size="2" color="#0000ff">><br />
+<</font><font size="2" color="#a31515">head</font><font size="2" color="#0000ff">><br />
+<</font><font size="2" color="#a31515">meta</font><font size="2"> </font><font size="2" color="#ff0000">http-equiv</font><font size="2" color="#0000ff">=&quot;Content-Type&quot;</font><font size="2"> </font><font size="2" color="#ff0000">content</font><font size="2" color="#0000ff">=&quot;text/html; charset=utf-8&quot;></font>
 
 </font>
 
@@ -44,7 +44,7 @@ In order for certain map elements to be drawn correctly, you must use UTF-8 enco
 <font size="2" color="#0000ff">
 
 
-&lt;<font size="2" color="#a31515">script</font><font size="2"> </font><font size="2" color="#ff0000">type</font><font size="2" color="#0000ff">=&quot;text/javascript&quot;</font><font size="2"> </font><font size="2" color="#ff0000">src</font><font size="2" color="#0000ff">=&quot;http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;&gt;&lt;/</font><font size="2" color="#a31515">script</font><font size="2" color="#0000ff">&gt;</font>
+<<font size="2" color="#a31515">script</font><font size="2"> </font><font size="2" color="#ff0000">type</font><font size="2" color="#0000ff">=&quot;text/javascript&quot;</font><font size="2"> </font><font size="2" color="#ff0000">src</font><font size="2" color="#0000ff">=&quot;http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;></</font><font size="2" color="#a31515">script</font><font size="2" color="#0000ff">></font>
 
 </font>
 
@@ -62,7 +62,7 @@ This is essentially a placeholder where we will tell Virtual Earth to render the
 <font size="2" color="#0000ff">
 
 
-&lt;<font size="2" color="#a31515">div</font><font size="2"> </font><font size="2" color="#ff0000">id</font><font size="2" color="#0000ff">=&quot;myMap&quot;</font><font size="2"> </font><font size="2" color="#ff0000">style</font><font size="2" color="#0000ff">=&quot;</font><font size="2" color="#ff0000">position</font><font size="2">:</font><font size="2" color="#0000ff">relative</font><font size="2">; </font><font size="2" color="#ff0000">width</font><font size="2">:</font><font size="2" color="#0000ff">400px</font><font size="2">; </font><font size="2" color="#ff0000">height</font><font size="2">:</font><font size="2" color="#0000ff">400px</font><font size="2">;</font><font size="2" color="#0000ff">&quot;&gt;&lt;/</font><font size="2" color="#a31515">div</font><font size="2" color="#0000ff">&gt;</font>
+<<font size="2" color="#a31515">div</font><font size="2"> </font><font size="2" color="#ff0000">id</font><font size="2" color="#0000ff">=&quot;myMap&quot;</font><font size="2"> </font><font size="2" color="#ff0000">style</font><font size="2" color="#0000ff">=&quot;</font><font size="2" color="#ff0000">position</font><font size="2">:</font><font size="2" color="#0000ff">relative</font><font size="2">; </font><font size="2" color="#ff0000">width</font><font size="2">:</font><font size="2" color="#0000ff">400px</font><font size="2">; </font><font size="2" color="#ff0000">height</font><font size="2">:</font><font size="2" color="#0000ff">400px</font><font size="2">;</font><font size="2" color="#0000ff">&quot;></</font><font size="2" color="#a31515">div</font><font size="2" color="#0000ff">></font>
 
 </font>
 
@@ -84,11 +84,11 @@ To do this we just add the following JavaScript to the page after the maps DIV i
 <font size="2" color="#0000ff">
 
 
-&lt;<font size="2" color="#a31515">script</font><font size="2"> </font><font size="2" color="#ff0000">type</font><font size="2" color="#0000ff">=&quot;text/javascript&quot;&gt;<br />
+<<font size="2" color="#a31515">script</font><font size="2"> </font><font size="2" color="#ff0000">type</font><font size="2" color="#0000ff">=&quot;text/javascript&quot;><br />
 var</font><font size="2"> map = </font><font size="2" color="#0000ff">null</font><font size="2">;<br />
 map = </font><font size="2" color="#0000ff">new</font><font size="2"> VEMap(</font><font size="2" color="#a31515">&#39;myMap&#39;</font><font size="2">);<br />
 map.LoadMap();<br />
-</font><font size="2" color="#0000ff">&lt;/</font><font size="2" color="#a31515">script</font><font size="2" color="#0000ff">&gt;</font>
+</font><font size="2" color="#0000ff"></</font><font size="2" color="#a31515">script</font><font size="2" color="#0000ff">></font>
 
 </font>
 
@@ -103,15 +103,15 @@ map.LoadMap();<br />
 <font size="2" color="#0000ff">
 
 
-&lt;<font size="2" color="#a31515">body</font><font size="2"> </font><font size="2" color="#ff0000">onload</font><font size="2" color="#0000ff">=&quot;PageLoad()&quot;&gt;<br />
-&lt;</font><font size="2" color="#a31515">script</font><font size="2"> </font><font size="2" color="#ff0000">type</font><font size="2" color="#0000ff">=&quot;text/javascript&quot;&gt;<br />
+<<font size="2" color="#a31515">body</font><font size="2"> </font><font size="2" color="#ff0000">onload</font><font size="2" color="#0000ff">=&quot;PageLoad()&quot;><br />
+<</font><font size="2" color="#a31515">script</font><font size="2"> </font><font size="2" color="#ff0000">type</font><font size="2" color="#0000ff">=&quot;text/javascript&quot;><br />
 function</font><font size="2"> PageLoad()<br />
 {<br />
 </font><font size="2" color="#0000ff">var</font><font size="2"> map = </font><font size="2" color="#0000ff">null</font><font size="2">;<br />
 map = </font><font size="2" color="#0000ff">new</font><font size="2"> VEMap(</font><font size="2" color="#a31515">&#39;myMap&#39;</font><font size="2">);<br />
 map.LoadMap();<br />
 }<br />
-</font><font size="2" color="#0000ff">&lt;/</font><font size="2" color="#a31515">script</font><font size="2" color="#0000ff">&gt;</font>
+</font><font size="2" color="#0000ff"></</font><font size="2" color="#a31515">script</font><font size="2" color="#0000ff">></font>
 
 </font>
 
@@ -136,33 +136,33 @@ You can just save the following code in an .htm file and run it in your browser 
 
 
 
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>&quot;&gt;<br />
-&lt;html&gt;<br />
-&lt;head&gt;<br />
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;<br />
-&lt;script type=&quot;text/javascript&quot; src=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6</a>&quot; mce_src=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;&gt;&lt;/script">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;&gt;&lt;/script</a>&gt;<br />
-&lt;/head&gt;
+<!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>&quot;><br />
+<html><br />
+<head><br />
+<meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;><br />
+<script type=&quot;text/javascript&quot; src=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6</a>&quot; mce_src=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;></script">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;></script</a>><br />
+</head>
 
 
 
-&lt;body onload=&quot;PageLoad()&quot;&gt;<br />
-&lt;script type=&quot;text/javascript&quot;&gt;<br />
+<body onload=&quot;PageLoad()&quot;><br />
+<script type=&quot;text/javascript&quot;><br />
 function PageLoad()<br />
 {<br />
     var map = null;<br />
     map = new VEMap(&#39;myMap&#39;);<br />
     map.LoadMap(new VELatLong(47.6, -122.33), 10, VEMapStyle.Road);<br />
 }<br />
-&lt;/script&gt;
+</script>
 
 
 
-&lt;div id=&quot;myMap&quot; style=&quot;position:relative; width:400px; height:400px;&quot;&gt;&lt;/div&gt;
+<div id=&quot;myMap&quot; style=&quot;position:relative; width:400px; height:400px;&quot;></div>
 
 
 
-&lt;/body&gt;<br />
-&lt;/html&gt;
+</body><br />
+</html>
 
 <h3>Why did I write this?</h3>
 

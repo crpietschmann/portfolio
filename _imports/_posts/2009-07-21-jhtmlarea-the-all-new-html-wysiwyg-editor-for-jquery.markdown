@@ -25,15 +25,15 @@ To the right there's a screenshot of two instances of jHtmlArea in action. The f
 
 Follow these 3 steps and you'll have jHtmlArea implemented within your application in no time.
 
-**1. **Add a &lt;TextArea&gt; to your HTML page
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;textarea&gt;&lt;/textarea&gt;</pre>
+**1. **Add a <TextArea> to your HTML page
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><textarea></textarea></pre>
 
 **2. **Add the "jHtmlArea.js", "jHtmlArea.css" and "jHtmlArea.png" files to your website
 
 **3.** Add the following JavaScript code to your page to turn all TextArea elements into jHtmlArea's:
 
 Include the jHtmlArea javascript file:
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;script type="text/javascript" src="jHtmlArea-0.6.0.min.js"&gt;&lt;/script&gt;</pre>
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><script type="text/javascript" src="jHtmlArea-0.6.0.min.js"></script></pre>
 
 Turn all TextArea&rsquo;s into jHtmlArea&rsquo;s:
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">$(function(){
@@ -60,7 +60,7 @@ Here's an example using the above "custom" toolbar buttons list, with a custom "
     toolbar: ["bold", "italic", "underline", "|", "h1", "h2", "h3", "h4", "h5", "h6", "|", "link", "unlink", "|",
         // This is how to add a completely custom Toolbar Button
         {
-            // The CSS Class to assign the Button &lt;a&gt; tag
+            // The CSS Class to assign the Button <a> tag
             css: "custom_disk_button",
 
             // The Text to display in the buttons alt text / tooltip
@@ -69,7 +69,7 @@ Here's an example using the above "custom" toolbar buttons list, with a custom "
             // The function to execute when the button is clicked
             action: function(btn) {
                 // 'this' = jHtmlArea object
-                // 'btn' = jQuery object that represents the &lt;A&gt; "anchor" tag for the Toolbar Button
+                // 'btn' = jQuery object that represents the <A> "anchor" tag for the Toolbar Button
 
                 alert('SAVE!\n\n' + this.toHtmlString());
 

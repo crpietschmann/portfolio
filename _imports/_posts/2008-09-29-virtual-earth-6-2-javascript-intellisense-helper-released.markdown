@@ -22,8 +22,8 @@ And, Thanks for the props Mark!
 
 In case you aren't familiar with what the "Virtual Earth JavaScript Intellisense Helper" is:
 
-<em>"The purpose of this project is to fully enable JavaScript Intellisense for the Virtual Earth Map Control inside of Visual Studio 2008.</em>
+*"The purpose of this project is to fully enable JavaScript Intellisense for the Virtual Earth Map Control inside of Visual Studio 2008.*
 
-<em>Creating Microsoft Virtual Earth mashups and applications just got a whole lot easier. This JavaScript library enables Intellisense for the Microsoft Virtual Earth 6.2 (current release) AJAX control in Visual Studio 2008"</em><em> </em>
+*Creating Microsoft Virtual Earth mashups and applications just got a whole lot easier. This JavaScript library enables Intellisense for the Microsoft Virtual Earth 6.2 (current release) AJAX control in Visual Studio 2008"** *
 
 <img src="http://www.codeplex.com/Project/Download/FileDownload.aspx?ProjectName=VEJS&amp;DownloadId=29908" alt="" /><br /> <img src="http://www.codeplex.com/Project/Download/FileDownload.aspx?ProjectName=VEJS&amp;DownloadId=29907" alt="" />

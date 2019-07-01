@@ -33,7 +33,7 @@ About a month ago, I wrote an article titled &quot;<a href="/Blog/Post.aspx?Post
 
 
 [code:html]<br />
-&lt;asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;&gt;&lt;/asp:ScriptManager&gt;<br />
+<asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;></asp:ScriptManager><br />
 ```<font size="2" color="#0000ff"></font>
 
 
@@ -43,11 +43,11 @@ About a month ago, I wrote an article titled &quot;<a href="/Blog/Post.aspx?Post
 
 
 [code:html]<br />
-&lt;asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;&gt;<br />
-    &lt;Scripts&gt;<br />
-        &lt;asp:ScriptReference Path=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6</a>&quot; /&gt;<br />
-    &lt;/Scripts&gt;<br />
-&lt;/asp:ScriptManager&gt;<br />
+<asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;><br />
+    <Scripts><br />
+        <asp:ScriptReference Path=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6</a>&quot; /><br />
+    </Scripts><br />
+</asp:ScriptManager><br />
 ```
 
 
@@ -57,7 +57,7 @@ About a month ago, I wrote an article titled &quot;<a href="/Blog/Post.aspx?Post
 
 
 [code:html]<br />
-&lt;div id=&quot;myMap&quot; style=&quot;position:relative; width:600px; height:400px;&quot;&gt;&lt;/div&gt;<br />
+<div id=&quot;myMap&quot; style=&quot;position:relative; width:600px; height:400px;&quot;></div><br />
 ```
 
 
@@ -67,7 +67,7 @@ About a month ago, I wrote an article titled &quot;<a href="/Blog/Post.aspx?Post
 
 
 [code:html]<br />
-&lt;script type=&quot;text/javascript&quot;&gt;<br />
+<script type=&quot;text/javascript&quot;><br />
     var map = null;
 
 
@@ -77,7 +77,7 @@ About a month ago, I wrote an article titled &quot;<a href="/Blog/Post.aspx?Post
         map = new VEMap(&quot;myMap&quot;);<br />
         map.LoadMap(new VELatLong(47.6, -122.33), 10, VEMapStyle.Road);<br />
     }<br />
-&lt;/script&gt;<br />
+</script><br />
 ```
 
 
@@ -102,31 +102,31 @@ Sys.Application.add_load(LoadMap);
 
 
 [code:html]<br />
-&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot;  CodeFile=&quot;Default.aspx.cs&quot; Inherits=&quot;_Default&quot; %&gt; 
+<%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot;  CodeFile=&quot;Default.aspx.cs&quot; Inherits=&quot;_Default&quot; %> 
 
 
 
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>&quot;&gt; 
+<!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>&quot;> 
 
 
 
-&lt;html xmlns=&quot;<a href="http://www.w3.org/1999/xhtml">http://www.w3.org/1999/xhtml</a>&quot;&gt;<br />
-&lt;head runat=&quot;server&quot;&gt;<br />
-    &lt;title&gt;Untitled Page&lt;/title&gt;<br />
-&lt;/head&gt;<br />
-&lt;body&gt;<br />
-    &lt;form id=&quot;form1&quot; runat=&quot;server&quot;&gt;<br />
-    &lt;div&gt;<br />
+<html xmlns=&quot;<a href="http://www.w3.org/1999/xhtml">http://www.w3.org/1999/xhtml</a>&quot;><br />
+<head runat=&quot;server&quot;><br />
+    <title>Untitled Page</title><br />
+</head><br />
+<body><br />
+    <form id=&quot;form1&quot; runat=&quot;server&quot;><br />
+    <div><br />
     <br />
-    &lt;asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;&gt;<br />
-        &lt;Scripts&gt;<br />
-            &lt;asp:ScriptReference Path=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6</a>&quot; /&gt;<br />
-        &lt;/Scripts&gt;<br />
-    &lt;/asp:ScriptManager&gt;<br />
+    <asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;><br />
+        <Scripts><br />
+            <asp:ScriptReference Path=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6</a>&quot; /><br />
+        </Scripts><br />
+    </asp:ScriptManager><br />
     <br />
-    &lt;div id=&quot;myMap&quot; style=&quot;position:relative; width:600px; height:400px;&quot;&gt;&lt;/div&gt;<br />
+    <div id=&quot;myMap&quot; style=&quot;position:relative; width:600px; height:400px;&quot;></div><br />
     <br />
-    &lt;script type=&quot;text/javascript&quot;&gt;<br />
+    <script type=&quot;text/javascript&quot;><br />
         var map = null;<br />
         <br />
         function LoadMap()<br />
@@ -138,12 +138,12 @@ Sys.Application.add_load(LoadMap);
         // Attach our LoadMap method to get executed<br />
         // when the Application has finished loading.<br />
         Sys.Application.add_load(LoadMap);<br />
-    &lt;/script&gt;<br />
+    </script><br />
     <br />
-    &lt;/div&gt;<br />
-    &lt;/form&gt;<br />
-&lt;/body&gt;<br />
-&lt;/html&gt;<br />
+    </div><br />
+    </form><br />
+</body><br />
+</html><br />
 ``` 
 
 <h3>Conclusion</h3>

@@ -46,7 +46,7 @@ Namespace.Manager = {<br />
   if(!window[namespace[0]]) window[namespace[0]] = {};<br />
   <br />
   var strFullNamespace = namespace[0];<br />
-  for(var i = 1; i &lt; namespace.length; i++)<br />
+  for(var i = 1; i < namespace.length; i++)<br />
   {<br />
    strFullNamespace += &quot;.&quot; + namespace[i];<br />
    eval(&quot;if(!window.&quot; + strFullNamespace + &quot;)window.&quot; + strFullNamespace + &quot;={};&quot;);<br />

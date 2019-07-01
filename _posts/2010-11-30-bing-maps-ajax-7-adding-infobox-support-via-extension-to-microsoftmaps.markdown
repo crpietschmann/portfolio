@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-The new Bing Maps Ajax v7 control may be faster and smaller, but it is pretty light on features at the moment compared to its older brother; the v6.3 control. One of the features missing is support for showing InfoBox’s. Its simple to handle mouse events and display a &lt;div&gt; next to the pushpin, but I thought I’d take a little time to write a simple InfoBox extension to the new Microsoft.Maps namespace.  
+The new Bing Maps Ajax v7 control may be faster and smaller, but it is pretty light on features at the moment compared to its older brother; the v6.3 control. One of the features missing is support for showing InfoBox’s. Its simple to handle mouse events and display a <div> next to the pushpin, but I thought I’d take a little time to write a simple InfoBox extension to the new Microsoft.Maps namespace.  
 Here’s a screenshot of it in action:  
 <a href="/images/postsBingMaps7_InfoBox_Screenshot.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="BingMaps7_InfoBox_Screenshot" border="0" alt="BingMaps7_InfoBox_Screenshot" src="/images/postsBingMaps7_InfoBox_Screenshot_thumb.png" width="304" height="276" /></a>  <h3>Usage</h3>  
 Let’s start with some sample usage of the InfoBox extension.  <pre class="csharpcode"><span class="rem">// Create Pushpin</span>
@@ -24,9 +24,9 @@ Let’s start with some sample usage of the InfoBox extension.  <pre class="csha
 
 <span class="rem">// Create InfoBox</span>
 <span class="kwrd">var</span> infobox = Microsoft.Maps.Ext.InfoBox(
-    <span class="str">&quot;Title&quot;</span>, <span class="rem">/* &lt;-- InfoBox Title to display */</span>
-    <span class="str">&quot;Description&quot;</span>, <span class="rem">/* &lt;-- InfoBox Description to display */</span>
-    map <span class="rem">/* &lt;-- A refernce to the Map where the InfoBox will be displayed */</span>
+    <span class="str">&quot;Title&quot;</span>, <span class="rem">/* <-- InfoBox Title to display */</span>
+    <span class="str">&quot;Description&quot;</span>, <span class="rem">/* <-- InfoBox Description to display */</span>
+    map <span class="rem">/* <-- A refernce to the Map where the InfoBox will be displayed */</span>
 );
 
 <span class="rem">// Add InfoBox to Pushpin</span>
@@ -72,10 +72,10 @@ There is a small bit of CSS code needed to style the InfoBox appropriately.
 
 Here’s some sample HTML that is similar to what the InfoBox extension adds to the page for the InfoBox’s:
 
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;infobox&quot;</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">h4</span><span class="kwrd">&gt;</span>Title<span class="kwrd">&lt;/</span><span class="html">h4</span><span class="kwrd">&gt;</span>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;infobox&quot;</span><span class="kwrd">></span>
+<span class="kwrd"><</span><span class="html">h4</span><span class="kwrd">></span>Title<span class="kwrd"></</span><span class="html">h4</span><span class="kwrd">></span>
 Description
-<span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span></pre>
+<span class="kwrd"></</span><span class="html">div</span><span class="kwrd">></span></pre>
 <style type="text/css">
 
 .csharpcode, .csharpcode pre
@@ -104,12 +104,12 @@ Description
 .csharpcode .lnum { color: #606060; }</style>
 
 
-The &lt;div&gt; element is given the CSS class of “infobox”. You use this class name to add CSS to your application to style the InfoBox’s as desired.
+The <div> element is given the CSS class of “infobox”. You use this class name to add CSS to your application to style the InfoBox’s as desired.
 
 
 Here’s some sample CSS to give the InfoBox a style similar to the Bing Maps v6.x InfoBox’s:
 
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">style</span><span class="kwrd">&gt;</span>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">style</span><span class="kwrd">></span>
 .infobox
 {
     position: absolute;
@@ -128,7 +128,7 @@ Here’s some sample CSS to give the InfoBox a style similar to the Bing Maps v6
     margin: 0;
     font-weight: bold;
 }
-<span class="kwrd">&lt;/</span><span class="html">style</span><span class="kwrd">&gt;</span></pre>
+<span class="kwrd"></</span><span class="html">style</span><span class="kwrd">></span></pre>
 <style type="text/css">
 
 .csharpcode, .csharpcode pre
@@ -251,11 +251,11 @@ I could have coded the necessary JavaScript code to manipulate the HTML DOM myse
                     e.target.getLocation(), Microsoft.Maps.PixelReference.page
                 );
             <span class="kwrd">if</span> (<span class="kwrd">this</span>._element === <span class="kwrd">null</span>) {
-                <span class="rem">/* Create &lt;div&gt; to show as InfoBox */</span>
-                <span class="kwrd">this</span>._element = $(<span class="str">'&lt;div&gt;'</span>).
+                <span class="rem">/* Create <div> to show as InfoBox */</span>
+                <span class="kwrd">this</span>._element = $(<span class="str">'<div>'</span>).
                     addClass(<span class="str">'infobox'</span>).
                     appendTo($(document.body)).
-                    html(<span class="str">'&lt;h4&gt;'</span> + <span class="kwrd">this</span>.title() + <span class="str">'&lt;/h4&gt;'</span> + <span class="kwrd">this</span>.description());
+                    html(<span class="str">'<h4>'</span> + <span class="kwrd">this</span>.title() + <span class="str">'</h4>'</span> + <span class="kwrd">this</span>.description());
             }
             <span class="rem">/* Show InfoBox and set position*/</span>
             <span class="kwrd">this</span>._element.show().css({

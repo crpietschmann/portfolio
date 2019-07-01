@@ -18,10 +18,10 @@ redirect_from:
 All my community contributions are volunteer, and I would still continue to do what I do regardless of getting the Microsoft MVP award. Although, I must say it really is an honor to be awarded and recognized by Microsoft for what I do.  
 Thank you Microsoft!  
 Here are some excerpts from the email notification I received about being awarded this year:  
-<em>“Congratulations! We are pleased to present you with the 2011 Microsoft MVP Award! This award is given to exceptional technical community leaders who actively share their high quality, real world expertise with others. We appreciate your outstanding contributions in Windows Live Platform technical communities during the past year.</em>  
-<em>The Microsoft MVP Award provides us the unique opportunity to celebrate and honor your significant contributions and say “Thank you for your technical leadership.”</em>  
-<em>[…]</em>  
-<em>At Microsoft, we believe that technical communities enhance people’s lives and the industry’s success because independent experts, like you, help others extract greater value from products and technologies through the free and objective exchange of knowledge. As a Microsoft MVP, you are part of a highly select group of experts that represent technology’s best and brightest who share a deep commitment to community and a willingness to help others.</em>  
-<em>On behalf of everyone at Microsoft, thank you for your contributions to technical communities.”</em>  
+*“Congratulations! We are pleased to present you with the 2011 Microsoft MVP Award! This award is given to exceptional technical community leaders who actively share their high quality, real world expertise with others. We appreciate your outstanding contributions in Windows Live Platform technical communities during the past year.*  
+*The Microsoft MVP Award provides us the unique opportunity to celebrate and honor your significant contributions and say “Thank you for your technical leadership.”*  
+*[…]*  
+*At Microsoft, we believe that technical communities enhance people’s lives and the industry’s success because independent experts, like you, help others extract greater value from products and technologies through the free and objective exchange of knowledge. As a Microsoft MVP, you are part of a highly select group of experts that represent technology’s best and brightest who share a deep commitment to community and a willingness to help others.*  
+*On behalf of everyone at Microsoft, thank you for your contributions to technical communities.”*  
 Congratulations to all the April Fools MVP’s  
 If you are not familiar with what the Microsoft MVP Program is, you can find more information about it here: <a title="http://mvp.support.microsoft.com/" href="http://mvp.support.microsoft.com/">http://mvp.support.microsoft.com/</a>

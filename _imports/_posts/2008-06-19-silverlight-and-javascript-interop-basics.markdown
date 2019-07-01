@@ -208,21 +208,21 @@ When writing your JavaScript code, you need to get a reference to the Silverligh
 
 Here's a small example of doing this with a JavaScript method that calls the Silverlight method wired up to be fired on click of a button. In this example I'm using ASP.NET and the ASP.NET Silveright control.
 
-<pre class="csharpcode"><span class="asp">&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; %&gt;</span>
-<span class="asp">&lt;%@ Register Assembly=&quot;System.Web.Silverlight&quot; Namespace=&quot;System.Web.UI.SilverlightControls&quot; TagPrefix=&quot;asp&quot; %&gt;</span>
+<pre class="csharpcode"><span class="asp"><%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; %></span>
+<span class="asp"><%@ Register Assembly=&quot;System.Web.Silverlight&quot; Namespace=&quot;System.Web.UI.SilverlightControls&quot; TagPrefix=&quot;asp&quot; %></span>
 
-<span class="kwrd">&lt;!</span><span class="html">DOCTYPE</span> <span class="attr">html</span> <span class="attr">PUBLIC</span> <span class="kwrd">&quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</span> <span class="kwrd">&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">html</span> <span class="attr">xmlns</span><span class="kwrd">=&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="attr">style</span><span class="kwrd">=&quot;height:100%;&quot;</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">head</span> <span class="attr">runat</span><span class="kwrd">=&quot;server&quot;</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">title</span><span class="kwrd">&gt;</span>Test Page For SilverlightJavaScriptInteropArticleCode<span class="kwrd">&lt;/</span><span class="html">title</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">script</span> <span class="attr">type</span><span class="kwrd">=&quot;text/javascript&quot;</span><span class="kwrd">&gt;</span>
+<span class="kwrd"><!</span><span class="html">DOCTYPE</span> <span class="attr">html</span> <span class="attr">PUBLIC</span> <span class="kwrd">&quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</span> <span class="kwrd">&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;</span><span class="kwrd">></span>
+<span class="kwrd"><</span><span class="html">html</span> <span class="attr">xmlns</span><span class="kwrd">=&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="attr">style</span><span class="kwrd">=&quot;height:100%;&quot;</span><span class="kwrd">></span>
+<span class="kwrd"><</span><span class="html">head</span> <span class="attr">runat</span><span class="kwrd">=&quot;server&quot;</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">title</span><span class="kwrd">></span>Test Page For SilverlightJavaScriptInteropArticleCode<span class="kwrd"></</span><span class="html">title</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">script</span> <span class="attr">type</span><span class="kwrd">=&quot;text/javascript&quot;</span><span class="kwrd">></span>
         <span class="kwrd">function</span> callGetDoubleValue()
         {
             <span class="rem">// Get a reference to the Silverlight Plugin</span>
             <span class="rem">// Since we're using the ASP.NET Silverlight control</span>
             <span class="rem">// we can use $find with the controls ClientID to get</span>
             <span class="rem">// a reference to it</span>
-            <span class="kwrd">var</span> pluginObject = $find(<span class="str">&quot;&lt;%=Xaml1.ClientID%&gt;&quot;</span>);
+            <span class="kwrd">var</span> pluginObject = $find(<span class="str">&quot;<%=Xaml1.ClientID%>&quot;</span>);
             <span class="rem">// Get a reference to the actual Silverlight</span>
             <span class="rem">// plugin element within the page</span>
             <span class="kwrd">var</span> plugin = pluginObject.get_element();
@@ -235,21 +235,21 @@ Here's a small example of doing this with a JavaScript method that calls the Sil
             <span class="rem">// Display the value to the user in an alert box</span>
             alert(dbl);
         }
-    <span class="kwrd">&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">head</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">body</span> <span class="attr">style</span><span class="kwrd">=&quot;height:100%;margin:0;&quot;</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">form</span> <span class="attr">id</span><span class="kwrd">=&quot;form1&quot;</span> <span class="attr">runat</span><span class="kwrd">=&quot;server&quot;</span> <span class="attr">style</span><span class="kwrd">=&quot;height:100%;&quot;</span><span class="kwrd">&gt;</span>
+    <span class="kwrd"></</span><span class="html">script</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">head</span><span class="kwrd">></span>
+<span class="kwrd"><</span><span class="html">body</span> <span class="attr">style</span><span class="kwrd">=&quot;height:100%;margin:0;&quot;</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">form</span> <span class="attr">id</span><span class="kwrd">=&quot;form1&quot;</span> <span class="attr">runat</span><span class="kwrd">=&quot;server&quot;</span> <span class="attr">style</span><span class="kwrd">=&quot;height:100%;&quot;</span><span class="kwrd">></span>
 
-        <span class="rem">&lt;!-- The button that calls the js method above --&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">input</span> <span class="attr">type</span><span class="kwrd">=&quot;button&quot;</span> <span class="attr">value</span><span class="kwrd">=&quot;test&quot;</span> <span class="attr">onclick</span><span class="kwrd">=&quot;callGetDoubleValue();&quot;</span> <span class="kwrd">/&gt;</span>
+        <span class="rem"><!-- The button that calls the js method above --></span>
+        <span class="kwrd"><</span><span class="html">input</span> <span class="attr">type</span><span class="kwrd">=&quot;button&quot;</span> <span class="attr">value</span><span class="kwrd">=&quot;test&quot;</span> <span class="attr">onclick</span><span class="kwrd">=&quot;callGetDoubleValue();&quot;</span> <span class="kwrd">/></span>
 
-        <span class="kwrd">&lt;</span><span class="html">asp:ScriptManager</span> <span class="attr">ID</span><span class="kwrd">=&quot;ScriptManager1&quot;</span> <span class="attr">runat</span><span class="kwrd">=&quot;server&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">asp:ScriptManager</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">div</span>  <span class="attr">style</span><span class="kwrd">=&quot;height:100%;&quot;</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;</span><span class="html">asp:Silverlight</span> <span class="attr">ID</span><span class="kwrd">=&quot;Xaml1&quot;</span> <span class="attr">runat</span><span class="kwrd">=&quot;server&quot;</span> <span class="attr">Source</span><span class="kwrd">=&quot;~/ClientBin/SilverlightJavaScriptInteropArticleCode.xap&quot;</span> <span class="attr">MinimumVersion</span><span class="kwrd">=&quot;2.0.30523&quot;</span> <span class="attr">Width</span><span class="kwrd">=&quot;100%&quot;</span> <span class="attr">Height</span><span class="kwrd">=&quot;100%&quot;</span> <span class="kwrd">/&gt;</span>
-        <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;/</span><span class="html">form</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">body</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">html</span><span class="kwrd">&gt;</span></pre>
+        <span class="kwrd"><</span><span class="html">asp:ScriptManager</span> <span class="attr">ID</span><span class="kwrd">=&quot;ScriptManager1&quot;</span> <span class="attr">runat</span><span class="kwrd">=&quot;server&quot;</span><span class="kwrd">></</span><span class="html">asp:ScriptManager</span><span class="kwrd">></span>
+        <span class="kwrd"><</span><span class="html">div</span>  <span class="attr">style</span><span class="kwrd">=&quot;height:100%;&quot;</span><span class="kwrd">></span>
+            <span class="kwrd"><</span><span class="html">asp:Silverlight</span> <span class="attr">ID</span><span class="kwrd">=&quot;Xaml1&quot;</span> <span class="attr">runat</span><span class="kwrd">=&quot;server&quot;</span> <span class="attr">Source</span><span class="kwrd">=&quot;~/ClientBin/SilverlightJavaScriptInteropArticleCode.xap&quot;</span> <span class="attr">MinimumVersion</span><span class="kwrd">=&quot;2.0.30523&quot;</span> <span class="attr">Width</span><span class="kwrd">=&quot;100%&quot;</span> <span class="attr">Height</span><span class="kwrd">=&quot;100%&quot;</span> <span class="kwrd">/></span>
+        <span class="kwrd"></</span><span class="html">div</span><span class="kwrd">></span>
+    <span class="kwrd"></</span><span class="html">form</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">body</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">html</span><span class="kwrd">></span></pre>
 <style type="text/css">
 .csharpcode, .csharpcode pre
 {

@@ -17,13 +17,13 @@ redirect_from:
 The Bing Maps v7 Ajax control is still a bit lacking in functionality, and good for us it’s written in JavaScript so it’s easy to extent and hack. The following hack is an “unsupported” method of adding Tooltips to Pushpins by making use of the HTML Title attribute.  
 <a href="/images/postsBingMaps7HackPushpinTooltip.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="BingMaps7HackPushpinTooltip" border="0" alt="BingMaps7HackPushpinTooltip" src="/images/postsBingMaps7HackPushpinTooltip_thumb.png" width="361" height="131" /></a>  
 The Google Maps API already has a “setTitle” method on Markers to add a Tooltip to the pins plotted. Now, thanks to this hack, the same can be done using the Bing Maps v7 Ajax control.  
-Here’s a full sample page that adds a map with pushpin and sets up the pushpin to have a Tooltip:  <pre class="csharpcode"><span class="kwrd">&lt;!</span><span class="html">DOCTYPE</span> <span class="attr">html</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">html</span><span class="kwrd">&gt;</span>
-   <span class="kwrd">&lt;</span><span class="html">head</span><span class="kwrd">&gt;</span>
-      <span class="kwrd">&lt;</span><span class="html">title</span><span class="kwrd">&gt;&lt;/</span><span class="html">title</span><span class="kwrd">&gt;</span>
-      <span class="kwrd">&lt;</span><span class="html">meta</span> <span class="attr">http-equiv</span><span class="kwrd">=&quot;Content-Type&quot;</span> <span class="attr">content</span><span class="kwrd">=&quot;text/html; charset=utf-8&quot;</span><span class="kwrd">&gt;</span>
-      <span class="kwrd">&lt;</span><span class="html">script</span> <span class="attr">src</span><span class="kwrd">=&quot;http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span>
-      &lt;script type=<span class="str">&quot;text/javascript&quot;</span>&gt;
+Here’s a full sample page that adds a map with pushpin and sets up the pushpin to have a Tooltip:  <pre class="csharpcode"><span class="kwrd"><!</span><span class="html">DOCTYPE</span> <span class="attr">html</span><span class="kwrd">></span>
+<span class="kwrd"><</span><span class="html">html</span><span class="kwrd">></span>
+   <span class="kwrd"><</span><span class="html">head</span><span class="kwrd">></span>
+      <span class="kwrd"><</span><span class="html">title</span><span class="kwrd">></</span><span class="html">title</span><span class="kwrd">></span>
+      <span class="kwrd"><</span><span class="html">meta</span> <span class="attr">http-equiv</span><span class="kwrd">=&quot;Content-Type&quot;</span> <span class="attr">content</span><span class="kwrd">=&quot;text/html; charset=utf-8&quot;</span><span class="kwrd">></span>
+      <span class="kwrd"><</span><span class="html">script</span> <span class="attr">src</span><span class="kwrd">=&quot;http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&quot;</span><span class="kwrd">></</span><span class="html">script</span><span class="kwrd">></span>
+      <script type=<span class="str">&quot;text/javascript&quot;</span>>
          <span class="kwrd">var</span> map = <span class="kwrd">null</span>;
 
          <span class="kwrd">function</span> initMap()
@@ -50,12 +50,12 @@ Here’s a full sample page that adds a map with pushpin and sets up the pushpin
             <span class="rem">// Title Attribute.</span>
             pin.cm1001_er_etr.dom.setAttribute(<span class="str">'title'</span>, <span class="str">'Pushpin Title'</span>);
          }
-      <span class="kwrd">&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span>
-   <span class="kwrd">&lt;/</span><span class="html">head</span><span class="kwrd">&gt;</span>
-   <span class="kwrd">&lt;</span><span class="html">body</span> <span class="attr">onload</span><span class="kwrd">=&quot;initMap();&quot;</span><span class="kwrd">&gt;</span>
-      <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">id</span><span class="kwrd">='myMap'</span> <span class="attr">style</span><span class="kwrd">=&quot;position:relative; width:500px; height:500px;&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
-   <span class="kwrd">&lt;/</span><span class="html">body</span><span class="kwrd">&gt;</span>      
-<span class="kwrd">&lt;/</span><span class="html">html</span><span class="kwrd">&gt;</span></pre>
+      <span class="kwrd"></</span><span class="html">script</span><span class="kwrd">></span>
+   <span class="kwrd"></</span><span class="html">head</span><span class="kwrd">></span>
+   <span class="kwrd"><</span><span class="html">body</span> <span class="attr">onload</span><span class="kwrd">=&quot;initMap();&quot;</span><span class="kwrd">></span>
+      <span class="kwrd"><</span><span class="html">div</span> <span class="attr">id</span><span class="kwrd">='myMap'</span> <span class="attr">style</span><span class="kwrd">=&quot;position:relative; width:500px; height:500px;&quot;</span><span class="kwrd">></</span><span class="html">div</span><span class="kwrd">></span>
+   <span class="kwrd"></</span><span class="html">body</span><span class="kwrd">></span>      
+<span class="kwrd"></</span><span class="html">html</span><span class="kwrd">></span></pre>
 <style type="text/css">
 
 
@@ -85,4 +85,4 @@ Here’s a full sample page that adds a map with pushpin and sets up the pushpin
 .csharpcode .lnum { color: #606060; }</style>
 
 
-<em>**Warning:** Like I said, this is a hack and it relies on accessing part of a “non-public” API within the control. If the Bing Maps team decides to rename “cm1001_er_etr.dom” in a future update/release of Bing Maps v7 then this code will stop working.</em>
+***Warning:** Like I said, this is a hack and it relies on accessing part of a “non-public” API within the control. If the Bing Maps team decides to rename “cm1001_er_etr.dom” in a future update/release of Bing Maps v7 then this code will stop working.*

@@ -20,6 +20,6 @@ redirect_from:
 
 <a href="Capt. Charles Moore on the seas of plastic">Capt. Charles Moore on the seas of plastic</a>
 
-<em>These two videos are only a few minutes each, so it wont take you too much time to watch them.</em>
+*These two videos are only a few minutes each, so it wont take you too much time to watch them.*
 
-<em>The image to the right is from: <a href="http://coastalcare.org/2010/08/new-garbage-patch-discovered-in-indian-ocean/">http://coastalcare.org/2010/08/new-garbage-patch-discovered-in-indian-ocean/</a></em><em><br /></em>
+*The image to the right is from: <a href="http://coastalcare.org/2010/08/new-garbage-patch-discovered-in-indian-ocean/">http://coastalcare.org/2010/08/new-garbage-patch-discovered-in-indian-ocean/</a>**<br />*

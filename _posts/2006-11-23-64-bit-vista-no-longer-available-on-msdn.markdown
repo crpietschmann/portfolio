@@ -16,4 +16,4 @@ redirect_from:
 
 Apparently I downloaded the 64-bit version of Vista at a good time. They have since removed it from the list in MSDN subscriber downloads. I wonder why they removed it?
 
-<STRONG>Update 12/11/2006:</STRONG> I don't know exactly when they put it back up, but Vista x64 is back up on MSDN Downloads.
+**Update 12/11/2006:** I don't know exactly when they put it back up, but Vista x64 is back up on MSDN Downloads.

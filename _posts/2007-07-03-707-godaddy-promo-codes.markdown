@@ -16,6 +16,6 @@ redirect_from:
 
 I don't usually have any GoDaddy promo code on hand, so I usually search for some. Usually I don't find any that work. Except this time <A href="http://www.fatwallet.com/t/18/725207">I search and found one that works</A>, so I think I'll share it.
 
-<STRONG>OYH3 - $2 Off / $6.95 any .COM</STRONG>
+**OYH3 - $2 Off / $6.95 any .COM**
 
 I just used the above code on registering a new domain and renewing an existing one, and it was applied to both.

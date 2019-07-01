@@ -21,11 +21,11 @@ First, here’s the code that I came up with to add custom navigation bar button
 <span class="kwrd">var</span> addNavButton = <span class="kwrd">function</span> (mapElement, content, onclick) {
     $(mapElement).find(<span class="str">'.NavBar_typeButtonContainer'</span>).append(
         <span class="rem">// Add a Separator between this button and any existing buttons</span>
-        $(<span class="str">'&lt;span&gt;'</span>).addClass(<span class="str">'NavBar_separator'</span>)
+        $(<span class="str">'<span>'</span>).addClass(<span class="str">'NavBar_separator'</span>)
     ).append(
         <span class="rem">// Add the Custom Button itself</span>
-        $(<span class="str">'&lt;a&gt;'</span>).attr(<span class="str">'href'</span>, <span class="str">'#'</span>).addClass(<span class="str">'NavBar_button'</span>).
-            append($(<span class="str">'&lt;span&gt;'</span>).html(content).click(onclick))
+        $(<span class="str">'<a>'</span>).attr(<span class="str">'href'</span>, <span class="str">'#'</span>).addClass(<span class="str">'NavBar_button'</span>).
+            append($(<span class="str">'<span>'</span>).html(content).click(onclick))
     );
 };
 <span class="rem">// Use setTimeout to load Custom NavBar button if you are adding</span>
@@ -35,9 +35,9 @@ First, here’s the code that I came up with to add custom navigation bar button
 window.setTimeout(<span class="kwrd">function</span> () {
     <span class="rem">// Add Custom Button to NavBar</span>
     addNavButton(
-        document.getElementById(<span class="str">'myMap'</span>), <span class="rem">// &lt;- Maps DIV</span>
-        <span class="str">'Click Me'</span>, <span class="rem">// &lt;- Content of Button - You can put HTML in here if you want</span>
-        <span class="kwrd">function</span> () { <span class="rem">// &lt;- Method to call during buttons Click event</span>
+        document.getElementById(<span class="str">'myMap'</span>), <span class="rem">// <- Maps DIV</span>
+        <span class="str">'Click Me'</span>, <span class="rem">// <- Content of Button - You can put HTML in here if you want</span>
+        <span class="kwrd">function</span> () { <span class="rem">// <- Method to call during buttons Click event</span>
             alert(<span class="str">'You Clicked Me!'</span>);
         }
     );

@@ -42,7 +42,7 @@ string script = reader.ReadToEnd();
 
 
 
-Note: Replace the <em>[namespace]</em> text above with the full namespace of your Silverlight application project. Also, replace the <em>[javascriptFileName]</em> text above with the filename of your JavaScript file. An example value for this with the namespace and JavaScript filename is <em>&quot;MyApplication.TestScript.js&quot;</em>. 
+Note: Replace the *[namespace]* text above with the full namespace of your Silverlight application project. Also, replace the *[javascriptFileName]* text above with the filename of your JavaScript file. An example value for this with the namespace and JavaScript filename is *&quot;MyApplication.TestScript.js&quot;*. 
 
 
 

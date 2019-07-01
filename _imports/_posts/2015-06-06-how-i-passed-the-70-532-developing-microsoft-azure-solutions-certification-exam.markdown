@@ -20,7 +20,7 @@ I've been taking on <a href="http://blogs.perficient.com/microsoft/2015/04/becom
 
 Now that I've passed the exam, I thought I'd share what I used so you too can become a certified Azure developer!
 
-<em>UPDATE: November 2016, the <a href="https://buildazure.com/2016/11/06/azure-developer-exam-70-532-gets-arm-refresh/" target="_blank">70-532 Developing Microsoft Azure Solutions exam is getting a big update</a> to include Azure Resource Manager (ARM) coverage as well as Azure Functions, DocumentDB, Logic Apps, and many more newer Azure features and services. This is a major refresh, so you'll want to go <a href="https://buildazure.com/2016/11/06/azure-developer-exam-70-532-gets-arm-refresh/" target="_blank">check out the latest list of exam objectives</a> to make sure you're studying the right stuff.</em>
+*UPDATE: November 2016, the <a href="https://buildazure.com/2016/11/06/azure-developer-exam-70-532-gets-arm-refresh/" target="_blank">70-532 Developing Microsoft Azure Solutions exam is getting a big update</a> to include Azure Resource Manager (ARM) coverage as well as Azure Functions, DocumentDB, Logic Apps, and many more newer Azure features and services. This is a major refresh, so you'll want to go <a href="https://buildazure.com/2016/11/06/azure-developer-exam-70-532-gets-arm-refresh/" target="_blank">check out the latest list of exam objectives</a> to make sure you're studying the right stuff.*
 <h3>Exam Target Audience</h3>
 
 The 70-532 Developing Microsoft Azure Solutions exam is targeted towards a **Developer** audience. If you're an experienced .NET developer, then you'll likely have an easier time preparing for this exam. As a result, the exam will assume you are proficient with development tools, techniques and have experience developing scalable and resilient solutions.
@@ -35,7 +35,7 @@ Here's a high level break down of the exam objectives:
 <li>Manage application and network services (15-20%)</li>
 </ul>
 
-<em>Note: The percentage next to each is the approximate break out of how much of the exam focuses on each objective area. As you can see it's pretty evenly distributed across the 5 areas.</em>
+*Note: The percentage next to each is the approximate break out of how much of the exam focuses on each objective area. As you can see it's pretty evenly distributed across the 5 areas.*
 
 The full exam objectives are listed on the <a href="https://www.microsoft.com/learning/en-us/exam-70-532.aspx" target="_blank">official page for the 70-532 Developing Microsoft Azure Solutions exam</a>.
 <h3>Free Video Courses / Training</h3>
@@ -55,7 +55,7 @@ Another video training option that's not Free, but there is a Free Trial availab
 
 There are a number of books on Microsoft Azure. The one geared towards studying for the exam is the "<a href="http://amzn.to/29KktWL" target="_blank">Exam Ref 70-532 Developing Microsoft Azure Solutions</a>" from Microsoft Press. This book is an excellent study resource to accompany all the other materials, as it's condensed to cover the exam objectives list.
 
-<em>Note: Do NOT rely to heavily on any single study resources, even books.</em>
+*Note: Do NOT rely to heavily on any single study resources, even books.*
 
 Here a list of some <a href="http://www.microsoftvirtualacademy.com/ebooks#azure" target="_blank">Free eBooks</a> available for download:
 <ul>

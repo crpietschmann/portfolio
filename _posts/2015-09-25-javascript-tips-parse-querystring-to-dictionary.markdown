@@ -52,7 +52,7 @@ function parseQueryStringToDictionary(queryString) {
 	// Step 1: separate out each key/value pair
 	var parts = queryString.split('&amp;');
 	
-	for(var i = 0; i &lt; parts.length; i++) {
+	for(var i = 0; i < parts.length; i++) {
 		var p = parts[i];
 		// Step 2: Split Key/Value pair
 		var keyValuePair = p.split('=');

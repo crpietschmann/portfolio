@@ -34,7 +34,7 @@ redirect_from:
 <span style="font-size: 8.5pt; font-family: Verdana"><span>2.<span style="font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal">       </span></span></span><span style="font-size: 8.5pt; font-family: Verdana">Put the most frequently used Url Mappings first in the list so that they the ones that are parsed first.</span>
 
 <p style="margin: 0in 0in 0pt 0.5in; text-indent: -0.25in" class="MsoNormal">
-<span style="font-size: 8.5pt; font-family: Verdana"><span>3.<span style="font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal">       </span></span></span><span style="font-size: 8.5pt; font-family: Verdana">The first Url Mapping in placed in my code (</span><span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">add</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">url</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">~/(.*)default\.aspx</span>&quot;<span style="color: blue"> </span><span style="color: red">mappedUrl</span><span style="color: blue">=</span>&quot;<span style="color: blue">~/$1default.aspx</span>&quot;<span style="color: blue"> /&gt;</span></span><span style="font-size: 8.5pt; font-family: Verdana">) is a little trick that allows all requests for the Default.aspx page in the root or any sub-folder of the application to be completed with out having to parse through the entire list of Url Mappings.</span>
+<span style="font-size: 8.5pt; font-family: Verdana"><span>3.<span style="font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal">       </span></span></span><span style="font-size: 8.5pt; font-family: Verdana">The first Url Mapping in placed in my code (</span><span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">add</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">url</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">~/(.*)default\.aspx</span>&quot;<span style="color: blue"> </span><span style="color: red">mappedUrl</span><span style="color: blue">=</span>&quot;<span style="color: blue">~/$1default.aspx</span>&quot;<span style="color: blue"> /></span></span><span style="font-size: 8.5pt; font-family: Verdana">) is a little trick that allows all requests for the Default.aspx page in the root or any sub-folder of the application to be completed with out having to parse through the entire list of Url Mappings.</span>
 
 
 
@@ -322,7 +322,7 @@ redirect_from:
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> requestedPage.IndexOf(<span style="color: maroon">&quot;?&quot;</span>) &gt; -1 <span style="color: blue">Then</span></span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> requestedPage.IndexOf(<span style="color: maroon">&quot;?&quot;</span>) > -1 <span style="color: blue">Then</span></span>
 
 
 
@@ -342,7 +342,7 @@ redirect_from:
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> requestedPage.Length &gt;= appVirtualPath.Length <span style="color: blue">Then</span></span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> requestedPage.Length >= appVirtualPath.Length <span style="color: blue">Then</span></span>
 
 
 
@@ -402,11 +402,11 @@ redirect_from:
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> pathNew.Length &gt; 0 <span style="color: blue">Then</span></span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> pathNew.Length > 0 <span style="color: blue">Then</span></span>
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> pathNew.IndexOf(<span style="color: maroon">&quot;?&quot;</span>) &gt; -1 <span style="color: blue">Then</span></span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> pathNew.IndexOf(<span style="color: maroon">&quot;?&quot;</span>) > -1 <span style="color: blue">Then</span></span>
 
 
 
@@ -414,7 +414,7 @@ redirect_from:
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> pathOld.IndexOf(<span style="color: maroon">&quot;?&quot;</span>) &gt; -1 <span style="color: blue">Then</span></span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> pathOld.IndexOf(<span style="color: maroon">&quot;?&quot;</span>) > -1 <span style="color: blue">Then</span></span>
 
 
 
@@ -434,7 +434,7 @@ redirect_from:
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> pathOld.IndexOf(<span style="color: maroon">&quot;?&quot;</span>) &gt; -1 <span style="color: blue">Then</span></span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> pathOld.IndexOf(<span style="color: maroon">&quot;?&quot;</span>) > -1 <span style="color: blue">Then</span></span>
 
 
 
@@ -482,81 +482,81 @@ redirect_from:
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">configuration</span><span style="font-size: 10pt; color: blue; font-family: Verdana">&gt;</span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">configuration</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span>
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;!--</span><span style="font-size: 10pt; color: green; font-family: Verdana"> Declare the custom &#39;RegExUrlMapping&#39; section and handler </span><span style="font-size: 10pt; color: blue; font-family: Verdana">--&gt;</span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana"><!--</span><span style="font-size: 10pt; color: green; font-family: Verdana"> Declare the custom &#39;RegExUrlMapping&#39; section and handler </span><span style="font-size: 10pt; color: blue; font-family: Verdana">--></span>
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">configSections</span><span style="font-size: 10pt; color: blue; font-family: Verdana">&gt;</span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">configSections</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span>
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">sectionGroup</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">name</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">system.web</span>&quot;<span style="color: blue">&gt;</span></span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">sectionGroup</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">name</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">system.web</span>&quot;<span style="color: blue">></span></span>
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">section</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">name</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">RegExUrlMapping</span>&quot;<span style="color: blue"> </span><span style="color: red">type</span><span style="color: blue">=</span>&quot;<span style="color: blue">RegExUrlMapping_HTTPModule.RegExUrlMappingConfigHandler</span>&quot;<span style="color: blue">/&gt;</span></span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">section</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">name</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">RegExUrlMapping</span>&quot;<span style="color: blue"> </span><span style="color: red">type</span><span style="color: blue">=</span>&quot;<span style="color: blue">RegExUrlMapping_HTTPModule.RegExUrlMappingConfigHandler</span>&quot;<span style="color: blue">/></span></span>
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;/</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">sectionGroup</span><span style="font-size: 10pt; color: blue; font-family: Verdana">&gt;</span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana"></</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">sectionGroup</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span>
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;/</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">configSections</span><span style="font-size: 10pt; color: blue; font-family: Verdana">&gt;</span>
-
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">system.web</span><span style="font-size: 10pt; color: blue; font-family: Verdana">&gt; </span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;!--</span><span style="font-size: 10pt; color: green; font-family: Verdana"> Tell ASP.NET to use the RegEx URL Mapping HTTP Module </span><span style="font-size: 10pt; color: blue; font-family: Verdana">--&gt;</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">httpModules</span><span style="font-size: 10pt; color: blue; font-family: Verdana">&gt;</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">add</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">type</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">RegExUrlMapping_HTTPModule.RegExUrlMappingModule</span>&quot;<span style="color: blue"> </span><span style="color: red">name</span><span style="color: blue">=</span>&quot;<span style="color: blue">RegExUrlMappingModule</span>&quot;<span style="color: blue">/&gt;</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;/</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">httpModules</span><span style="font-size: 10pt; color: blue; font-family: Verdana">&gt;</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;!--</span><span style="font-size: 10pt; color: green; font-family: Verdana"> The RegEx URL Mapping parser goes through these in sequential order. </span><span style="font-size: 10pt; color: blue; font-family: Verdana">--&gt;</span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana"></</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">configSections</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span>
 
 <p style="margin: 0in 0in 0pt" class="MsoNormal">
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">RegExUrlMapping</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">enabled</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">true</span>&quot;<span style="color: blue">&gt; </span></span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">system.web</span><span style="font-size: 10pt; color: blue; font-family: Verdana">> </span>
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">add</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">url</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">~/(.*)default\.aspx</span>&quot;<span style="color: blue"> </span><span style="color: red">mappedUrl</span><span style="color: blue">=</span>&quot;<span style="color: blue">~/$1default.aspx</span>&quot;<span style="color: blue"> /&gt;</span></span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana"><!--</span><span style="font-size: 10pt; color: green; font-family: Verdana"> Tell ASP.NET to use the RegEx URL Mapping HTTP Module </span><span style="font-size: 10pt; color: blue; font-family: Verdana">--></span>
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">add</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">url</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">~/Chris.aspx</span>&quot;<span style="color: blue"> </span><span style="color: red">mappedUrl</span><span style="color: blue">=</span>&quot;<span style="color: blue">~/Default.aspx?p=chris</span>&quot;<span style="color: blue">/&gt;</span></span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">httpModules</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span>
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">add</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">url</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">~/show(.*)\.aspx</span>&quot;<span style="color: blue"> </span><span style="color: red">mappedUrl</span><span style="color: blue">=</span>&quot;<span style="color: blue">~/Default.aspx?p=$1</span><span style="color: red">&amp;amp;</span><span style="color: blue">section=3</span>&quot;<span style="color: blue">/&gt;</span></span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">add</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">type</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">RegExUrlMapping_HTTPModule.RegExUrlMappingModule</span>&quot;<span style="color: blue"> </span><span style="color: red">name</span><span style="color: blue">=</span>&quot;<span style="color: blue">RegExUrlMappingModule</span>&quot;<span style="color: blue">/></span></span>
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;/</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">RegExUrlMapping</span><span style="font-size: 10pt; color: blue; font-family: Verdana">&gt;</span><span style="font-size: 8.5pt; font-family: Verdana"></span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana"></</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">httpModules</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span>
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;/</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">system.web</span><span style="font-size: 10pt; color: blue; font-family: Verdana">&gt;</span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana"><!--</span><span style="font-size: 10pt; color: green; font-family: Verdana"> The RegEx URL Mapping parser goes through these in sequential order. </span><span style="font-size: 10pt; color: blue; font-family: Verdana">--></span>
+
+<p style="margin: 0in 0in 0pt" class="MsoNormal">
+<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">RegExUrlMapping</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">enabled</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">true</span>&quot;<span style="color: blue">> </span></span>
 
 
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">&lt;/</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">configuration</span><span style="font-size: 10pt; color: blue; font-family: Verdana">&gt;</span><span style="font-size: 8.5pt; font-family: Verdana"></span>
+<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">add</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">url</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">~/(.*)default\.aspx</span>&quot;<span style="color: blue"> </span><span style="color: red">mappedUrl</span><span style="color: blue">=</span>&quot;<span style="color: blue">~/$1default.aspx</span>&quot;<span style="color: blue"> /></span></span>
+
+
+
+<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">add</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">url</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">~/Chris.aspx</span>&quot;<span style="color: blue"> </span><span style="color: red">mappedUrl</span><span style="color: blue">=</span>&quot;<span style="color: blue">~/Default.aspx?p=chris</span>&quot;<span style="color: blue">/></span></span>
+
+
+
+<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">add</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">url</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">~/show(.*)\.aspx</span>&quot;<span style="color: blue"> </span><span style="color: red">mappedUrl</span><span style="color: blue">=</span>&quot;<span style="color: blue">~/Default.aspx?p=$1</span><span style="color: red">&amp;amp;</span><span style="color: blue">section=3</span>&quot;<span style="color: blue">/></span></span>
+
+
+
+<span style="font-size: 10pt; color: blue; font-family: Verdana"></</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">RegExUrlMapping</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span><span style="font-size: 8.5pt; font-family: Verdana"></span>
+
+
+
+<span style="font-size: 10pt; color: blue; font-family: Verdana"></</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">system.web</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span>
+
+
+
+<span style="font-size: 10pt; color: blue; font-family: Verdana"></</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">configuration</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span><span style="font-size: 8.5pt; font-family: Verdana"></span>
 
 
 
@@ -582,13 +582,13 @@ redirect_from:
 In the RegExUrlMappingModule class change the following line of the Rewrite method:
 
 <p style="margin: 0in 0in 0pt" class="MsoNormal">
-<em>   HttpContext.Current.RewritePath(pathNew)</em>
+*   HttpContext.Current.RewritePath(pathNew)*
 
 <p style="margin: 0in 0in 0pt" class="MsoNormal">
 To be the following instead:
 
 <p style="margin: 0in 0in 0pt" class="MsoNormal">
-   <em>HttpContext.Current.RewritePath(pathNew, false)</em>
+   *HttpContext.Current.RewritePath(pathNew, false)*
 
 <p style="margin: 0in 0in 0pt" class="MsoNormal">
 I already made this change to the code above so anyone copying it from now on will get this fix.

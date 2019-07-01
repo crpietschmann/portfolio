@@ -23,7 +23,7 @@ Here&#39;s the file location under Windows Vista where Silverlight stores the fi
 
 
 
-<em>C:\Users\{username}\AppData\LocalLow\Microsoft\Silverlight\is</em>
+*C:\Users\{username}\AppData\LocalLow\Microsoft\Silverlight\is*
 
 
 

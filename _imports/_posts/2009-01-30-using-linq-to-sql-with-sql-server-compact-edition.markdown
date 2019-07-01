@@ -43,9 +43,9 @@ Also, in this example I'm just going to create a "Person" table with ID, FirstNa
 
 To do this you need to use the <a href="http://msdn.microsoft.com/en-us/library/bb386987.aspx">SqlMetal.exe tool</a>. Just type the following into the Visual Studio 2008 Command Prompt:
 
-<em>SqlMetal.exe MyDatabase.sdf /dbml:MyDatabase.dbml</em>
+*SqlMetal.exe MyDatabase.sdf /dbml:MyDatabase.dbml*
 
-By default, the SqlMetal.exe is located at <em>drive</em>:\Progream Files\Microsoft SDKs\Windows\v<em>n.nn</em>\bin.
+By default, the SqlMetal.exe is located at *drive*:\Progream Files\Microsoft SDKs\Windows\v*n.nn*\bin.
 
 **Step 5: Add the Existing .dbml file to your project**
 

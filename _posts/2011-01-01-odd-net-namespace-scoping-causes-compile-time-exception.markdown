@@ -16,8 +16,8 @@ redirect_from:
 
 This isn’t really a bug in the .NET compilers, but it sure is an interesting namespace scoping issue that could easily be encountered. If this teaches you anything, be it that you should never name a nested namespace level the same name as one of its parents in the hierarchy.  <h3>In C#</h3>  
 First here’s the Compile Time Exception that I was getting:  
-<em>The type or namespace name ‘Data’ does not exist in namespace ‘MyApp.Data.MyApp’ (are you missing an assembly reference?)</em>  
-At first I was like <em>“What do you mean namespace ‘Data’ doesn’t exist in ‘MyApp.Data’?”</em>  
+*The type or namespace name ‘Data’ does not exist in namespace ‘MyApp.Data.MyApp’ (are you missing an assembly reference?)*  
+At first I was like *“What do you mean namespace ‘Data’ doesn’t exist in ‘MyApp.Data’?”*  
 Here’s the C# code that causes this exception:  <pre class="csharpcode"><span class="kwrd">namespace</span> MyApp.Data
 {
     <span class="kwrd">public</span> <span class="kwrd">partial</span> <span class="kwrd">class</span> Person
@@ -71,7 +71,7 @@ Basically, since the ‘Billy’ class is within the ‘MyApp.Data.MyApp’ name
 Another thing to point out is that I also tested this in VB.NET, and the VB.NET compiler gives a similar compile-time exception message for the same ‘MyApp.Data.Person' reference within the ‘Billy’ class. Here’s VB.NET’s message:
 
 
-<em>Type ‘MyApp.Data.Person’ is not defined</em>
+*Type ‘MyApp.Data.Person’ is not defined*
 
 
 Here’s the VB.NET code:

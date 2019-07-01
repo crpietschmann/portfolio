@@ -15,14 +15,14 @@ redirect_from:
 <!-- more -->
 
 I recently encountered this rather strange bug that only shows up in Internet Explorer 9 (haven’t tried 10, but likely there too,) but works just fine in IE8, Firefox, Safari and Chrome. Generally the HTML/CSS markup for an individual page within a normal web application can get pretty complex, so this bug took me a while to figure out what it was.  
-Apperently, if you have a &lt;SELECT&gt; box contianed within a &lt;TABLE&gt; (which is done fairly often with data entry interfaces,) and you have CSS that styles the table row to highlight on the mouse “HOVER” event in a way that effects the positioning of the &lt;SELECT&gt;, then it will be IMPOSSIBLE for the user to select a dropdown value using the mouse.  
+Apperently, if you have a <SELECT> box contianed within a <TABLE> (which is done fairly often with data entry interfaces,) and you have CSS that styles the table row to highlight on the mouse “HOVER” event in a way that effects the positioning of the <SELECT>, then it will be IMPOSSIBLE for the user to select a dropdown value using the mouse.  
 It seems that when the mouse moves out of the bounds of the table row, then the style of it changes back to the “non-Hover” state; thus changing the rendered position of the drop down box. The drop down is automatically hidden when the position of the drop down box changes causing it to be IMPOSSIBLE for the user to select a value using the mouse.  
 Another note on duplicating this: It seems that you need to include the HTML5 style doctype in the page, otherwise it will work correctly; even in IE9.  
-Don’t worry if this description is somewhat confusing, I have included a full code sample below that exhibits this bug at its most basic level.  <pre class="csharpcode"><span class="kwrd">&lt;!</span><span class="html">doctype</span> <span class="attr">html</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">html</span> <span class="attr">lang</span><span class="kwrd">=&quot;en&quot;</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">head</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">meta</span> <span class="attr">charset</span><span class="kwrd">=&quot;utf-8&quot;</span> <span class="kwrd">/&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">style</span><span class="kwrd">&gt;</span>
+Don’t worry if this description is somewhat confusing, I have included a full code sample below that exhibits this bug at its most basic level.  <pre class="csharpcode"><span class="kwrd"><!</span><span class="html">doctype</span> <span class="attr">html</span><span class="kwrd">></span>
+<span class="kwrd"><</span><span class="html">html</span> <span class="attr">lang</span><span class="kwrd">=&quot;en&quot;</span><span class="kwrd">></span>
+<span class="kwrd"><</span><span class="html">head</span><span class="kwrd">></span>
+<span class="kwrd"><</span><span class="html">meta</span> <span class="attr">charset</span><span class="kwrd">=&quot;utf-8&quot;</span> <span class="kwrd">/></span>
+<span class="kwrd"><</span><span class="html">style</span><span class="kwrd">></span>
 table tr:hover 
 {
     font-weight:bold;
@@ -31,23 +31,23 @@ table tr:hover
     font-size:larger;
     */
 }
-<span class="kwrd">&lt;/</span><span class="html">style</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">head</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;</span><span class="html">body</span><span class="kwrd">&gt;</span>
-  <span class="kwrd">&lt;</span><span class="html">table</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">tr</span><span class="kwrd">&gt;</span>
-      <span class="kwrd">&lt;</span><span class="html">td</span><span class="kwrd">&gt;</span>Select Value:<span class="kwrd">&lt;/</span><span class="html">td</span><span class="kwrd">&gt;</span>
-      <span class="kwrd">&lt;</span><span class="html">td</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">select</span><span class="kwrd">&gt;</span>
-          <span class="kwrd">&lt;</span><span class="html">option</span><span class="kwrd">&gt;&lt;/</span><span class="html">option</span><span class="kwrd">&gt;</span>
-          <span class="kwrd">&lt;</span><span class="html">option</span><span class="kwrd">&gt;</span>One<span class="kwrd">&lt;/</span><span class="html">option</span><span class="kwrd">&gt;</span>
-          <span class="kwrd">&lt;</span><span class="html">option</span><span class="kwrd">&gt;</span>Two<span class="kwrd">&lt;/</span><span class="html">option</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;/</span><span class="html">select</span><span class="kwrd">&gt;</span>
-      <span class="kwrd">&lt;/</span><span class="html">td</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;/</span><span class="html">tr</span><span class="kwrd">&gt;</span>
-  <span class="kwrd">&lt;/</span><span class="html">table</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">body</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">html</span><span class="kwrd">&gt;</span></pre>
+<span class="kwrd"></</span><span class="html">style</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">head</span><span class="kwrd">></span>
+<span class="kwrd"><</span><span class="html">body</span><span class="kwrd">></span>
+  <span class="kwrd"><</span><span class="html">table</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">tr</span><span class="kwrd">></span>
+      <span class="kwrd"><</span><span class="html">td</span><span class="kwrd">></span>Select Value:<span class="kwrd"></</span><span class="html">td</span><span class="kwrd">></span>
+      <span class="kwrd"><</span><span class="html">td</span><span class="kwrd">></span>
+        <span class="kwrd"><</span><span class="html">select</span><span class="kwrd">></span>
+          <span class="kwrd"><</span><span class="html">option</span><span class="kwrd">></</span><span class="html">option</span><span class="kwrd">></span>
+          <span class="kwrd"><</span><span class="html">option</span><span class="kwrd">></span>One<span class="kwrd"></</span><span class="html">option</span><span class="kwrd">></span>
+          <span class="kwrd"><</span><span class="html">option</span><span class="kwrd">></span>Two<span class="kwrd"></</span><span class="html">option</span><span class="kwrd">></span>
+        <span class="kwrd"></</span><span class="html">select</span><span class="kwrd">></span>
+      <span class="kwrd"></</span><span class="html">td</span><span class="kwrd">></span>
+    <span class="kwrd"></</span><span class="html">tr</span><span class="kwrd">></span>
+  <span class="kwrd"></</span><span class="html">table</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">body</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">html</span><span class="kwrd">></span></pre>
 <style type="text/css">
 .csharpcode, .csharpcode pre
 {

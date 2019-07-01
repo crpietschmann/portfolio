@@ -29,11 +29,11 @@ GeoHelper.IsInPolygon=function(points,latlong)
     var inPoly=false;
     var lat = latlong.Latitude;
     var lon = latlong.Longitude;
-    for (i=0; i&lt;points.length; i++) 
+    for (i=0; i<points.length; i++) 
     {
-        if (points[i].Longitude&lt;lon &amp;&amp; points[j].Longitude&gt;=lon ||  points[j].Longitude&lt;lon &amp;&amp; points[i].Longitude&gt;=lon) 
+        if (points[i].Longitude<lon &amp;&amp; points[j].Longitude>=lon ||  points[j].Longitude<lon &amp;&amp; points[i].Longitude>=lon) 
         {
-            if (points[i].Latitude+(lon-points[i].Longitude)/(points[j].Longitude-points[i].Longitude)*(points[j].Latitude-points[i].Latitude)&lt;lat) 
+            if (points[i].Latitude+(lon-points[i].Longitude)/(points[j].Longitude-points[i].Longitude)*(points[j].Latitude-points[i].Latitude)<lat) 
             {
                 inPoly=!inPoly; 
             }
@@ -48,13 +48,13 @@ The usage of the IsInPolygon method is fairly simple, the first parameter is an 
 Also, this code would be very easily converted to C# or VB.NET if you need to perform the search within your server-side code.
 
 Here's a full code sample demonstrating this. This sample allows you to click on the map, and when you click it checks to see if the point you clicked is within the polygon, and it displays an alert box telling you if it is or not.
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;&lt;/title&gt;
-&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
-&lt;script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1"&gt;&lt;/script&gt;
-&lt;script type="text/javascript"&gt;
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1"></script>
+<script type="text/javascript">
     var map = null;
     var polygon = null;
 
@@ -103,11 +103,11 @@ Here's a full code sample demonstrating this. This sample allows you to click on
         var lat = latlong.Latitude;
         var lon = latlong.Longitude;
 
-        for (i=0; i&lt;points.length; i++) 
+        for (i=0; i<points.length; i++) 
         {
-            if (points[i].Longitude&lt;lon &amp;&amp; points[j].Longitude&gt;=lon ||  points[j].Longitude&lt;lon &amp;&amp; points[i].Longitude&gt;=lon) 
+            if (points[i].Longitude<lon &amp;&amp; points[j].Longitude>=lon ||  points[j].Longitude<lon &amp;&amp; points[i].Longitude>=lon) 
             {
-                if (points[i].Latitude+(lon-points[i].Longitude)/(points[j].Longitude-points[i].Longitude)*(points[j].Latitude-points[i].Latitude)&lt;lat) 
+                if (points[i].Latitude+(lon-points[i].Longitude)/(points[j].Longitude-points[i].Longitude)*(points[j].Latitude-points[i].Latitude)<lat) 
                 {
                     inPoly=!inPoly; 
                 }
@@ -117,11 +117,11 @@ Here's a full code sample demonstrating this. This sample allows you to click on
 
         return inPoly; 
     };
-&lt;/script&gt;
-&lt;/head&gt;
-&lt;body onload="GetMap();"&gt;
-  &lt;div id='myMap' style="position: relative; width: 600px; height: 400px;"&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+</script>
+</head>
+<body onload="GetMap();">
+  <div id='myMap' style="position: relative; width: 600px; height: 400px;"></div>
+</body>
+</html></pre>
 
 You can find the original MSDN article here: <br /><a href="http://msdn.microsoft.com/en-us/library/cc451895.aspx">http://msdn.microsoft.com/en-us/library/cc451895.aspx</a>

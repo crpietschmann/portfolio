@@ -71,7 +71,7 @@ To retrieve values from the “location.hash” you use the “jHash.root” and
 Here’s a sample URL with Hash:
 
 
-<em>http://localhost/page.aspx#SomeAnchor?page=4&amp;name=Chris</em>
+*http://localhost/page.aspx#SomeAnchor?page=4&amp;name=Chris*
 
 
 jHash allows you to have both a “root” element and “query” values stored in the hash. In the above example, then “root” is “SomeAnchor” and the query values are “page=4&amp;name=Chris”

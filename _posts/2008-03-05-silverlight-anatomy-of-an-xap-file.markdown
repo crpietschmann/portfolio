@@ -20,18 +20,18 @@ A .xap file is basically a compiled Silverlight application. The file is actuall
 **What files are contained within the .xap file?**   
 The .xap file contains an application manifest (AppManifest.xaml) file and all the necessary DLL's that are required by the application. The first DLL contained is the compiled version of you application and has the same name of your application. In my test I created an application names &quot;SilverlightApplication1&quot;, so the DLL is named &quot;SilverlightApplication1.dll&quot;. The rest of the DLL's are the dependancies the application requires.   
 **What is the AppManifest.xaml file?**   
-First lets look at an example AppManifest.xaml file:  <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">Deployment</span>
+First lets look at an example AppManifest.xaml file:  <pre class="csharpcode"><span class="kwrd"><</span><span class="html">Deployment</span>
     <span class="attr">xmlns</span><span class="kwrd">=&quot;http://schemas.microsoft.com/client/2007/deployment&quot;</span>
     <span class="attr">xmlns:x</span><span class="kwrd">=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span>
     <span class="attr">EntryPointAssembly</span><span class="kwrd">=&quot;SilverlightApplication1&quot;</span>
     <span class="attr">EntryPointType</span><span class="kwrd">=&quot;SilverlightApplication1.App&quot;</span>
-    <span class="attr">RuntimeVersion</span><span class="kwrd">=&quot;2.0.30226.2&quot;</span><span class="kwrd">&gt;</span>
-  <span class="kwrd">&lt;</span><span class="html">Deployment.Parts</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">AssemblyPart</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;SilverlightApplication1&quot;</span> <span class="attr">Source</span><span class="kwrd">=&quot;SilverlightApplication1.dll&quot;</span> <span class="kwrd">/&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">AssemblyPart</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;System.Windows.Controls&quot;</span> <span class="attr">Source</span><span class="kwrd">=&quot;System.Windows.Controls.dll&quot;</span> <span class="kwrd">/&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">AssemblyPart</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;System.Windows.Controls.Extended&quot;</span> <span class="attr">Source</span><span class="kwrd">=&quot;System.Windows.Controls.Extended.dll&quot;</span> <span class="kwrd">/&gt;</span>
-  <span class="kwrd">&lt;/</span><span class="html">Deployment.Parts</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">Deployment</span><span class="kwrd">&gt;</span></pre>
+    <span class="attr">RuntimeVersion</span><span class="kwrd">=&quot;2.0.30226.2&quot;</span><span class="kwrd">></span>
+  <span class="kwrd"><</span><span class="html">Deployment.Parts</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">AssemblyPart</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;SilverlightApplication1&quot;</span> <span class="attr">Source</span><span class="kwrd">=&quot;SilverlightApplication1.dll&quot;</span> <span class="kwrd">/></span>
+    <span class="kwrd"><</span><span class="html">AssemblyPart</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;System.Windows.Controls&quot;</span> <span class="attr">Source</span><span class="kwrd">=&quot;System.Windows.Controls.dll&quot;</span> <span class="kwrd">/></span>
+    <span class="kwrd"><</span><span class="html">AssemblyPart</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;System.Windows.Controls.Extended&quot;</span> <span class="attr">Source</span><span class="kwrd">=&quot;System.Windows.Controls.Extended.dll&quot;</span> <span class="kwrd">/></span>
+  <span class="kwrd"></</span><span class="html">Deployment.Parts</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">Deployment</span><span class="kwrd">></span></pre>
 <style type="text/css">
 .csharpcode, .csharpcode pre
 {

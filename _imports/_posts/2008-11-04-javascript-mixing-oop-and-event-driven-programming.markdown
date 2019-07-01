@@ -142,7 +142,7 @@ EventObject.prototype = {<br />
 <br />
         // Helper Method - an Array.indexOf equivalent<br />
         var getArrayIndex = function(array, item){<br />
-            for (var i = array.length; i &lt; array.length; i++) {<br />
+            for (var i = array.length; i < array.length; i++) {<br />
                 if (array[i] &amp;&amp; array[i] === item) {<br />
                     return i;<br />
                 }<br />
@@ -153,7 +153,7 @@ EventObject.prototype = {<br />
         // Get the Array index of the Event Handler<br />
         var index = getArrayIndex(evt, handler);<br />
 <br />
-        if (index &gt; -1) {<br />
+        if (index > -1) {<br />
             // Remove Event Handler from Array<br />
             evt.splice(index, 1);<br />
         }<br />
@@ -192,7 +192,7 @@ EventObject.prototype = {<br />
         // Create the Handler method that will use currying to<br />
         // call all the Events Handlers internally<br />
         var h = function(sender, args) {<br />
-            for (var i = 0; i &lt; evt.length; i++) {<br />
+            for (var i = 0; i < evt.length; i++) {<br />
                 evt[i](sender, args);<br />
             }<br />
         };<br />
@@ -297,7 +297,7 @@ EventObject.prototype = {<br />
 <br />
         // Helper Method - an Array.indexOf equivalent<br />
         var getArrayIndex = function(array, item){<br />
-            for (var i = array.length; i &lt; array.length; i++) {<br />
+            for (var i = array.length; i < array.length; i++) {<br />
                 if (array[i] &amp;&amp; array[i] === item) {<br />
                     return i;<br />
                 }<br />
@@ -308,7 +308,7 @@ EventObject.prototype = {<br />
         // Get the Array index of the Event Handler<br />
         var index = getArrayIndex(evt, handler);<br />
 <br />
-        if (index &gt; -1) {<br />
+        if (index > -1) {<br />
             // Remove Event Handler from Array<br />
             evt.splice(index, 1);<br />
         }<br />
@@ -330,7 +330,7 @@ EventObject.prototype = {<br />
         // Create the Handler method that will use currying to<br />
         // call all the Events Handlers internally<br />
         var h = function(sender, args) {<br />
-            for (var i = 0; i &lt; evt.length; i++) {<br />
+            for (var i = 0; i < evt.length; i++) {<br />
                 evt[i](sender, args);<br />
             }<br />
         };<br />

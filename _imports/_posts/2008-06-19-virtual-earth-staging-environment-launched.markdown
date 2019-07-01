@@ -19,7 +19,7 @@ The <a href="http://blogs.msdn.com/virtualearth/archive/2008/06/19/virtual-earth
 **How do I access the Virtual Earth Staging Environment?**
 
 Simple, just use the following url when you include the VE JavaScript Control in your page. Notice, the only change in the url is the "staging." in the beginning, otherwise the url is exactly the same.
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;script type="text/javascript" src="http://staging.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1"&gt;&lt;/script&gt;</pre>
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><script type="text/javascript" src="http://staging.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1"></script></pre>
 
 One thing to note about using the VE Staging environment is it doesn't work under SSL. If you need to test under SSL, and don't want to have the little "Yes/No" dialog show on each page load, then you'll need to test using the production url for now. I'm sure they'll fix this at some point, but we'll see.
 

@@ -23,13 +23,13 @@ The tag editor featured on the <a href="http://stackoverflow.com">StackOverflow<
 </div>
 
 Here&rsquo;s some example usage of the tag editor:
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;div id='SelectBox' style='width: 350px'&gt;&lt;/div&gt;
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><div id='SelectBox' style='width: 350px'></div>
 
-&lt;input id='btnClear' type='button' value='Clear' /&gt;
-&lt;input id='btnGetTags' type='button' value='Get Tags' /&gt;
-&lt;input id='btnAdd' type='button' value='Add Tag' /&gt;
+<input id='btnClear' type='button' value='Clear' />
+<input id='btnGetTags' type='button' value='Get Tags' />
+<input id='btnAdd' type='button' value='Add Tag' />
 
-&lt;script&gt;
+<script>
 $(function () {
     // initialize tag editor and add a couple
     // pre-selected tags
@@ -63,7 +63,7 @@ $(function () {
         }
     });
 });
-&lt;/script&gt;</pre>
+</script></pre>
 
 Use at your own risk. This code is quick and dirty, and may contain bugs. This is the reason I didn&rsquo;t throw it up on Github or CodePlex.
 

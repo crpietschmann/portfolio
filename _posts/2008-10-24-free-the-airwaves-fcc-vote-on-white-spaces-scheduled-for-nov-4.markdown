@@ -39,48 +39,48 @@ I&#39;ve already signed the <a href="http://www.FreeTheAirwaves.com">Free The Ai
 
 
 
-<em>This Election Day, there&#39;s more than one important vote going on. And there&#39;s something we need you to do to get ready!</em>
+*This Election Day, there&#39;s more than one important vote going on. And there&#39;s something we need you to do to get ready!*
 
 
 
-<em>While you&#39;re casting your ballot at the polling place on November 4, the Federal Communications Commission will be voting the same day on rules governing &quot;white spaces&quot; -- the unused airwaves between broadcast TV channels.</em>
+*While you&#39;re casting your ballot at the polling place on November 4, the Federal Communications Commission will be voting the same day on rules governing &quot;white spaces&quot; -- the unused airwaves between broadcast TV channels.*
 
 
 
-<em>Last week, after months of testing, the FCC announced that white spaces devices could operate without interfering with TV broadcasts or wireless microphone signals.</em>
+*Last week, after months of testing, the FCC announced that white spaces devices could operate without interfering with TV broadcasts or wireless microphone signals.*
 
 
 
-<em>The science speaks for itself, but that&#39;s not going to stop the broadcasting lobby from trying to derail the technology before the rules are event written. Since last Friday, the National Association of Broadcasters has been trying to stop the vote from taking place. We can&#39;t let that happen.</em>
+*The science speaks for itself, but that&#39;s not going to stop the broadcasting lobby from trying to derail the technology before the rules are event written. Since last Friday, the National Association of Broadcasters has been trying to stop the vote from taking place. We can&#39;t let that happen.*
 
 
 
-<em>Thanks in part to your efforts, we&#39;re less than two weeks away from a vote that could transform the way we connect to the Internet.</em>
+*Thanks in part to your efforts, we&#39;re less than two weeks away from a vote that could transform the way we connect to the Internet.*
 
 
 
-<em>We can&#39;t let up now.</em>
+*We can&#39;t let up now.*
 
 
 
-<em>You&#39;ve already signed out petition at <a href="http://www.FreeTheAirwaves.com">www.FreeTheAirwaves.com</a>. Now we&#39;re in the final stretch and we need your help again.</em>
+*You&#39;ve already signed out petition at <a href="http://www.FreeTheAirwaves.com">www.FreeTheAirwaves.com</a>. Now we&#39;re in the final stretch and we need your help again.*
 
 
 
-<em>Call your Member of Congress and let him or her know it&#39;s time to open &quot;white spaces&quot; for everyone:  <a href="https://secure.freepress.net/site/Advocacy?alertId=285&amp;pg=makeACall&amp;autologin=true&amp;JServSessionIdr001=rppctdj0p4.app43b">https://secure.freepress.net/site/Advocacy?alertId=285&amp;pg=makeACall&amp;autologin=true&amp;JServSessionIdr001=rppctdj0p4.app43b</a></em>
+*Call your Member of Congress and let him or her know it&#39;s time to open &quot;white spaces&quot; for everyone:  <a href="https://secure.freepress.net/site/Advocacy?alertId=285&amp;pg=makeACall&amp;autologin=true&amp;JServSessionIdr001=rppctdj0p4.app43b">https://secure.freepress.net/site/Advocacy?alertId=285&amp;pg=makeACall&amp;autologin=true&amp;JServSessionIdr001=rppctdj0p4.app43b</a>*
 
 
 
-<em>Just as Wi-Fi sparked a revolution in the way we connect to the web, freeing the &quot;white space&quot; airwaves could help unleash a new wave of technological innovation, create jobs, and boost our economy.<br />
+*Just as Wi-Fi sparked a revolution in the way we connect to the web, freeing the &quot;white space&quot; airwaves could help unleash a new wave of technological innovation, create jobs, and boost our economy.<br />
 <br />
 But it can happen only if the FCC moves forward. Encourage your friends to sign the petition and call your Member of Congress today.<br />
 <br />
 Thanks,<br />
-<a href="http://www.FreeTheAirwaves.com">FreeTheAirwaves.com</a></em>
+<a href="http://www.FreeTheAirwaves.com">FreeTheAirwaves.com</a>*
 
 
 
-<em>Email sent by Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, sponsor of Free the Airwaves. </em>
+*Email sent by Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, sponsor of Free the Airwaves. *
 
 
 

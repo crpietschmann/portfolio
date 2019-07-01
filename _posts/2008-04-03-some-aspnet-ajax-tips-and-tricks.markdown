@@ -36,7 +36,7 @@ To do this just do the following:
 
 
 
-&lt;asp:UpdatePanel runat=&quot;server&quot; ID=&quot;UpdatePanel_List&quot; UpdateMode=&quot;Conditional&quot;&gt; 
+<asp:UpdatePanel runat=&quot;server&quot; ID=&quot;UpdatePanel_List&quot; UpdateMode=&quot;Conditional&quot;> 
 
 
 
@@ -68,29 +68,29 @@ Default.aspx
 
 
 
-&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;Default.aspx.cs&quot; Inherits=&quot;UpdatePanel_01_Default&quot; %&gt;<br />
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;<br />
-&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;<br />
-&lt;head runat=&quot;server&quot;&gt;<br />
-    &lt;title&gt;Untitled Page&lt;/title&gt;<br />
-&lt;/head&gt;<br />
-&lt;body&gt;<br />
-    &lt;form id=&quot;form1&quot; runat=&quot;server&quot;&gt;<br />
-    &lt;div&gt;<br />
+<%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;Default.aspx.cs&quot; Inherits=&quot;UpdatePanel_01_Default&quot; %><br />
+<!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;><br />
+<html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;><br />
+<head runat=&quot;server&quot;><br />
+    <title>Untitled Page</title><br />
+</head><br />
+<body><br />
+    <form id=&quot;form1&quot; runat=&quot;server&quot;><br />
+    <div><br />
     <br />
-        &lt;asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;&gt;&lt;/asp:ScriptManager&gt;<br />
-        &lt;asp:Button runat=&quot;server&quot; ID=&quot;btnShowTime&quot; Text=&quot;Show Time&quot; OnClick=&quot;btnShowTime_Click&quot; /&gt;<br />
-        &lt;br /&gt;<br />
-        &lt;asp:UpdatePanel runat=&quot;server&quot; ID=&quot;UpdatePanel1&quot;&gt;<br />
-            &lt;ContentTemplate&gt;<br />
-                &lt;asp:Label runat=&quot;server&quot; ID=&quot;lblTime&quot;&gt;&lt;/asp:Label&gt;<br />
-            &lt;/ContentTemplate&gt;<br />
-        &lt;/asp:UpdatePanel&gt;<br />
+        <asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;></asp:ScriptManager><br />
+        <asp:Button runat=&quot;server&quot; ID=&quot;btnShowTime&quot; Text=&quot;Show Time&quot; OnClick=&quot;btnShowTime_Click&quot; /><br />
+        <br /><br />
+        <asp:UpdatePanel runat=&quot;server&quot; ID=&quot;UpdatePanel1&quot;><br />
+            <ContentTemplate><br />
+                <asp:Label runat=&quot;server&quot; ID=&quot;lblTime&quot;></asp:Label><br />
+            </ContentTemplate><br />
+        </asp:UpdatePanel><br />
    <br />
-    &lt;/div&gt;<br />
-    &lt;/form&gt;<br />
-&lt;/body&gt;<br />
-&lt;/html&gt; 
+    </div><br />
+    </form><br />
+</body><br />
+</html> 
 
 
 
@@ -175,11 +175,11 @@ Then to access the WebService from within JavaScript you need to first tell the 
 
 
 
-&lt;asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;&gt;<br />
-    &lt;Services&gt;<br />
-        &lt;asp:ServiceReference Path=&quot;~/WebMethods/WSTime.asmx&quot; /&gt;<br />
-    &lt;/Services&gt;<br />
-&lt;/asp:ScriptManager&gt; 
+<asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;><br />
+    <Services><br />
+        <asp:ServiceReference Path=&quot;~/WebMethods/WSTime.asmx&quot; /><br />
+    </Services><br />
+</asp:ScriptManager> 
 
 
 
@@ -260,7 +260,7 @@ To enable the PageMethods you must first set the ScriptManagers EnablePageMethod
 
 
 
-&lt;asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot; EnablePageMethods=&quot;true&quot;&gt;&lt;/asp:ScriptManager&gt; 
+<asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot; EnablePageMethods=&quot;true&quot;></asp:ScriptManager> 
 
 
 

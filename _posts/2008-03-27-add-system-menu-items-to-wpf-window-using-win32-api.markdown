@@ -26,7 +26,7 @@ Below is a screenshot of it in action along with the complete source code in C#.
 
 using System;<br />using System.Windows;<br />using System.Runtime.InteropServices;<br />using System.Windows.Interop;
 
-namespace WpfApplication3<br />{<br />    /// &lt;summary&gt;<br />    /// Interaction logic for Window1.xaml<br />    /// &lt;/summary&gt;<br />    public partial class Window1 : Window<br />    {<br />        #region Win32 API Stuff
+namespace WpfApplication3<br />{<br />    /// <summary><br />    /// Interaction logic for Window1.xaml<br />    /// </summary><br />    public partial class Window1 : Window<br />    {<br />        #region Win32 API Stuff
 
         // Define the Win32 API methods we are going to use<br />        [DllImport("user32.dll")]<br />        private static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
 
@@ -38,7 +38,7 @@ namespace WpfApplication3<br />{<br />    /// &lt;summary&gt;<br />    /// Inter
 
         // The constants we'll use to identify our custom system menu items<br />        public const Int32 _SettingsSysMenuID = 1000;<br />        public const Int32 _AboutSysMenuID = 1001;
 
-        /// &lt;summary&gt;<br />        /// This is the Win32 Interop Handle for this Window<br />        /// &lt;/summary&gt;<br />        public IntPtr Handle<br />        {<br />            get<br />            {<br />                return new WindowInteropHelper(this).Handle;<br />            }<br />        }
+        /// <summary><br />        /// This is the Win32 Interop Handle for this Window<br />        /// </summary><br />        public IntPtr Handle<br />        {<br />            get<br />            {<br />                return new WindowInteropHelper(this).Handle;<br />            }<br />        }
 
         public Window1()<br />        {<br />            InitializeComponent();
 
@@ -46,7 +46,7 @@ namespace WpfApplication3<br />{<br />    /// &lt;summary&gt;<br />    /// Inter
 
         private void Window1_Loaded(object sender, RoutedEventArgs e)<br />        {<br />            /// Get the Handle for the Forms System Menu<br />            IntPtr systemMenuHandle = GetSystemMenu(this.Handle, false);
 
-            /// Create our new System Menu items just before the Close menu item<br />            InsertMenu(systemMenuHandle, 5, MF_BYPOSITION | MF_SEPARATOR, 0, string.Empty); // &lt;-- Add a menu seperator<br />            InsertMenu(systemMenuHandle, 6, MF_BYPOSITION, _SettingsSysMenuID, "Settings...");<br />            InsertMenu(systemMenuHandle, 7, MF_BYPOSITION, _AboutSysMenuID, "About...");
+            /// Create our new System Menu items just before the Close menu item<br />            InsertMenu(systemMenuHandle, 5, MF_BYPOSITION | MF_SEPARATOR, 0, string.Empty); // <-- Add a menu seperator<br />            InsertMenu(systemMenuHandle, 6, MF_BYPOSITION, _SettingsSysMenuID, "Settings...");<br />            InsertMenu(systemMenuHandle, 7, MF_BYPOSITION, _AboutSysMenuID, "About...");
 
             // Attach our WndProc handler to this Window<br />            HwndSource source = HwndSource.FromHwnd(this.Handle);<br />            source.AddHook(new HwndSourceHook(WndProc));<br />        }
 

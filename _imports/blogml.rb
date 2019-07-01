@@ -142,10 +142,21 @@ module Jekyll
             content.gsub!(/<\/p>/, "")
             content.gsub!(/<P>/, "\n")
             content.gsub!(/<\/P>/, "")
+            content.gsub!(/<\/br>/, "\n")
+            content.gsub!(/<\/BR>/, "\n")
+
+            content.gsub!(/&lt;/, "<")
+            content.gsub!(/&gt;/, ">")
 
             content.gsub!(/&nbsp;/, " ")
             content.gsub!(/<strong>/, "**");
             content.gsub!(/<\/strong>/, "**");
+            content.gsub!(/<STRONG>/, "**");
+            content.gsub!(/<\/STRONG>/, "**");
+            content.gsub!(/<em>/, "*");
+            content.gsub!(/<\/em>/, "*");
+            content.gsub!(/<EM>/, "*");
+            content.gsub!(/<\/EM>/, "*");
 
             ## is this published?
             published = item.attributes["approved"]

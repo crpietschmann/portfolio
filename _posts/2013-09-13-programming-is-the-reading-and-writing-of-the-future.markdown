@@ -14,9 +14,9 @@ redirect_from:
 ---
 <!-- more -->
 
-<em>"Everybody in this country should learn how to program a computer because it teaches you hot to think." - Steve Jobs</em>
+*"Everybody in this country should learn how to program a computer because it teaches you hot to think." - Steve Jobs*
 
-<em>"Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains." - Bill Gates</em>
+*"Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains." - Bill Gates*
 
 <iframe src="//www.youtube.com/embed/dU1xS07N-FA" frameborder="0" width="560" height="315"></iframe>
 

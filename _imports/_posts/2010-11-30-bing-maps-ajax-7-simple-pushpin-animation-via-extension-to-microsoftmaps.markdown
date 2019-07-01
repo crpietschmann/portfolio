@@ -65,7 +65,7 @@ Here’s the full source code for adding the “Pushpin.moveLocation” extensio
                 }
                 <span class="kwrd">var</span> interval = window.setInterval(<span class="kwrd">function</span>() {
                     <span class="kwrd">var</span> timeElapsed = (<span class="kwrd">new</span> Date()) - startTime;
-                    <span class="kwrd">if</span> (timeElapsed &gt;= speed){
+                    <span class="kwrd">if</span> (timeElapsed >= speed){
                         <span class="rem">// Full animation time (speed) has elapsed</span>
                         <span class="rem">// Just set final location and end animation</span>
                         that.setLocation(endLoc);

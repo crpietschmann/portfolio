@@ -27,9 +27,9 @@ So the only reliable method is to use a little JavaScript code to do the detecti
 <h3>Individual Attribute Detection</h3>
 
 Lets take the following as an example:
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;input type="text" placeholder="enter value" /&gt;</pre>
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><input type="text" placeholder="enter value" /></pre>
 
-One of the new features in HTML5 is the <a title="Dive into HTML5 - Placeholder Text" href="http://diveintohtml5.org/forms.html#placeholder">&ldquo;placeholder&rdquo; attribute on the &lt;input&gt; tag</a>. This attribute allows you to show some specified text (as a watermark) in the input box until the user enters a value.
+One of the new features in HTML5 is the <a title="Dive into HTML5 - Placeholder Text" href="http://diveintohtml5.org/forms.html#placeholder">&ldquo;placeholder&rdquo; attribute on the <input> tag</a>. This attribute allows you to show some specified text (as a watermark) in the input box until the user enters a value.
 
 Let&rsquo;s imagine we want to add our own &ldquo;placeholder&rdquo; functionality in older web browsers that do not natively support this feature using a JavaScript &ldquo;patch&rdquo;. Before we &ldquo;patch&rdquo; the browser, we must first detect whether this feature is already supported. To do this, we can use the following JavaScript code:
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">function IsAttributeSupported(tagName, attrName) {
@@ -57,8 +57,8 @@ You can use the above code with any attributes you want to detect on any element
 <h3>Input Type Detection</h3>
 
 There are a number of new input types added in HTML5. The good news is that older browsers will render any unknown types as type=&rdquo;text&rdquo;. A couple of the new types are:
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; ">&lt;input type="date" /&gt;
-&lt;input type="email" /&gt;</pre>
+<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><input type="date" />
+<input type="email" /></pre>
 
 Let&rsquo;s imagine we want to add you own UI to allow the user to select the date from a date picker control and the email from a list of contacts in older browsers that do not support these features natively. First we must detect if the browser supports these input types. To do this, we can use the following JavaScript code:
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">funciton IsInputTypeSupported(typeName) {

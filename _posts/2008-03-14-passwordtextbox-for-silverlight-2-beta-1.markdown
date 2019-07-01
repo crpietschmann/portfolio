@@ -65,7 +65,7 @@ namespace SilverlightPasswordTextBox<br />
 
         public void PasswordTextBox_TextChanged(object sender, TextChangedEventArgs e)<br />
         {<br />
-            if (base.Text.Length &gt;= _Text.Length)<br />
+            if (base.Text.Length >= _Text.Length)<br />
                 _Text += base.Text.Substring(_Text.Length);<br />
             DisplayMaskedCharacters();<br />
         } 
@@ -83,12 +83,12 @@ namespace SilverlightPasswordTextBox<br />
             if (e.Key == System.Windows.Input.Key.Back<br />
                 || e.Key == System.Windows.Input.Key.Delete)<br />
             {<br />
-                if (cursorPosition &lt; _Text.Length)<br />
-                    _Text = _Text.Remove(cursorPosition, (selectionLength &gt; 0 ? selectionLength : 1));<br />
+                if (cursorPosition < _Text.Length)<br />
+                    _Text = _Text.Remove(cursorPosition, (selectionLength > 0 ? selectionLength : 1));<br />
             }<br />
             <br />
             base.Text = _Text;<br />
-            this.Select((cursorPosition &gt; _Text.Length ? _Text.Length : cursorPosition), 0);<br />
+            this.Select((cursorPosition > _Text.Length ? _Text.Length : cursorPosition), 0);<br />
             DisplayMaskedCharacters();<br />
         } 
 
@@ -111,7 +111,7 @@ namespace SilverlightPasswordTextBox<br />
 
 
 
-            this.Select((cursorPosition &gt; _Text.Length ? _Text.Length : cursorPosition), 0);<br />
+            this.Select((cursorPosition > _Text.Length ? _Text.Length : cursorPosition), 0);<br />
         } 
 
 
@@ -125,9 +125,9 @@ namespace SilverlightPasswordTextBox<br />
 
 
         private string _Text = string.Empty;<br />
-        /// &lt;summary&gt;<br />
+        /// <summary><br />
         /// The text associated with the control.<br />
-        /// &lt;/summary&gt;<br />
+        /// </summary><br />
         public new string Text<br />
         {<br />
             get { return _Text; }<br />
@@ -141,9 +141,9 @@ namespace SilverlightPasswordTextBox<br />
 
 
         private char _PasswordChar = &#39;*&#39;;<br />
-        /// &lt;summary&gt;<br />
+        /// <summary><br />
         /// Indicates the character to display for password input.<br />
-        /// &lt;/summary&gt;<br />
+        /// </summary><br />
         public char PasswordChar<br />
         {<br />
             get { return _PasswordChar; }<br />
@@ -180,7 +180,7 @@ Public Class PasswordTextBox<br />
 
 
     Public Sub PasswordTextBox_TextChanged(ByVal sender As Object, ByVal e As TextChangedEventArgs) Handles Me.TextChanged<br />
-        If MyBase.Text.Length &gt;= _Text.Length Then<br />
+        If MyBase.Text.Length >= _Text.Length Then<br />
             _Text += MyBase.Text.Substring(_Text.Length)<br />
         End If<br />
         DisplayMaskedCharacters()<br />
@@ -196,9 +196,9 @@ Public Class PasswordTextBox<br />
 
         &#39;&#39; Handle Delete and Backspace Keys Appropriately<br />
         If e.Key = Key.Back Or e.Key = Key.Delete Then<br />
-            If cursorPosition &lt; _Text.Length Then<br />
+            If cursorPosition < _Text.Length Then<br />
                 Dim lengthToRemove As Integer = 1<br />
-                If selectionLength &gt; 0 Then lengthToRemove = selectionLength<br />
+                If selectionLength > 0 Then lengthToRemove = selectionLength<br />
                 _Text = _Text.Remove(cursorPosition, lengthToRemove)<br />
             End If<br />
         End If 
@@ -206,7 +206,7 @@ Public Class PasswordTextBox<br />
 
 
         MyBase.Text = _Text<br />
-        If cursorPosition &gt; _Text.Length Then<br />
+        If cursorPosition > _Text.Length Then<br />
             Me.Select(_Text.Length, 0)<br />
         Else<br />
             Me.Select(cursorPosition, 0)<br />
@@ -226,7 +226,7 @@ Public Class PasswordTextBox<br />
 
 
 
-        If cursorPosition &gt; _Text.Length Then<br />
+        If cursorPosition > _Text.Length Then<br />
             Me.Select(_Text.Length, 0)<br />
         Else<br />
             Me.Select(cursorPosition, 0)<br />

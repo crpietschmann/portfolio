@@ -18,6 +18,6 @@ XAML is just plain awesome. XAML will allow you to configure the user interfaces
 
 The following example demonstrates that all you need to do to write a "Hello World" application in XML is to initialize a window class and add a button with text.: 
 
-<EM>&lt;?xml version="1.0" standalone="yes"?&gt;<BR>&lt;Window&gt;<BR>    &lt;Button&gt;Hello World&lt;/Button&gt;<BR>&lt;/Window&gt;</EM><BR>
+*<?xml version="1.0" standalone="yes"?><BR><Window><BR>    <Button>Hello World</Button><BR></Window>*<BR>
 
 Go to the following link to read more about XAML: <A href="http://longhorn.msdn.microsoft.com/?//longhorn.msdn.microsoft.com/lhsdk/core/overviews/about%20xaml.aspx">http://longhorn.msdn.microsoft.com/?//longhorn.msdn.microsoft.com/lhsdk/core/overviews/about%20xaml.aspx</A>

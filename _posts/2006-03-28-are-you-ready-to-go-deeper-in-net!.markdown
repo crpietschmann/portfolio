@@ -57,8 +57,8 @@ I have attended the last two annual events, and my expectations have always been
 </tr>
 <tr style="font-weight: bold; color: black; background-color: #ffff99; border: black 1px solid">
 <td>11:15 - 12:45</td>
-<td><em>Lunch</em></td>
-<td><em>Speaker Q&amp;A Panel</em></td>
+<td>*Lunch*</td>
+<td>*Speaker Q&amp;A Panel*</td>
 </tr>
 <tr style="font-weight: bold; color: black; background-color: #cccc00; border: black 1px solid">
 <td>12:45 - 2:15</td>

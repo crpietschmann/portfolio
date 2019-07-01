@@ -27,13 +27,13 @@ This example works in both 2D and 3D map modes.
 
 
 
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;<br />
-&lt;html&gt;<br />
-&lt;head&gt;<br />
-&lt;title&gt;&lt;/title&gt;<br />
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;<br />
-&lt;script type=&quot;text/javascript&quot; src=&quot;http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1&quot;&gt;&lt;/script&gt;<br />
-&lt;script type=&quot;text/javascript&quot;&gt;<br />
+<!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;><br />
+<html><br />
+<head><br />
+<title></title><br />
+<meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;><br />
+<script type=&quot;text/javascript&quot; src=&quot;http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1&quot;></script><br />
+<script type=&quot;text/javascript&quot;><br />
 var map = null; 
 
 
@@ -109,12 +109,12 @@ function Map_OnClick(e)<br />
         map.SetMapView(shape.GetPoints());<br />
     }<br />
 }<br />
-&lt;/script&gt;<br />
-&lt;/head&gt;<br />
-&lt;body onload=&quot;GetMap();&quot;&gt;<br />
-&lt;div id=&#39;myMap&#39; style=&quot;position:relative; width:400px; height:400px;&quot;&gt;&lt;/div&gt;<br />
-&lt;/body&gt;<br />
-&lt;/html&gt; 
+</script><br />
+</head><br />
+<body onload=&quot;GetMap();&quot;><br />
+<div id=&#39;myMap&#39; style=&quot;position:relative; width:400px; height:400px;&quot;></div><br />
+</body><br />
+</html> 
 
 
 

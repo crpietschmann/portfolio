@@ -22,7 +22,7 @@ Here’s an extremely simple example of the Factory Method (this one is implemen
     {
         <span class="kwrd">return</span> <span class="kwrd">new</span> SQLQuery {
             SQL = <span class="str">@&quot;SELECT * FROM [Person] WHERE [ID] = @ID&quot;</span>,
-            Parameters = <span class="kwrd">new</span> Dictionary&lt;<span class="kwrd">string</span>, <span class="kwrd">object</span>&gt; {
+            Parameters = <span class="kwrd">new</span> Dictionary<<span class="kwrd">string</span>, <span class="kwrd">object</span>> {
                 { <span class="str">&quot;@ID&quot;</span>, id }
             }
         };
@@ -32,7 +32,7 @@ Here’s an extremely simple example of the Factory Method (this one is implemen
 <span class="kwrd">public</span> <span class="kwrd">class</span> SQLQuery
 {
     <span class="kwrd">public</span> <span class="kwrd">string</span> SQL { get; set; }
-    <span class="kwrd">public</span> IDictionary&lt;<span class="kwrd">string</span>, <span class="kwrd">object</span>&gt; Parameters { get; set; }
+    <span class="kwrd">public</span> IDictionary<<span class="kwrd">string</span>, <span class="kwrd">object</span>> Parameters { get; set; }
 }</pre>
 <style type="text/css">
 .csharpcode, .csharpcode pre

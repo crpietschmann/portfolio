@@ -70,7 +70,7 @@ Here&rsquo;s an example of how to use this example &ldquo;ProgressDialog&rdquo; 
 
                 pd.Line2 = <span class="str">"Percent "</span> + progressPercent.ToString() + <span class="str">"%"</span>;
 
-                <span class="kwrd">if</span> (progressPercent &gt;= 100)
+                <span class="kwrd">if</span> (progressPercent >= 100)
                 {
                     timer1.Stop();
                     pd.CloseDialog();
@@ -118,7 +118,7 @@ And, here&rsquo;s the full code for the &ldquo;ProgressDialog&rdquo; class itsel
                 <span class="kwrd">if</span> (flags.Length != 0)
                 {
                     dialogFlags = flags[0];
-                    <span class="kwrd">for</span> (var i = 1; i &lt; flags.Length; i++)
+                    <span class="kwrd">for</span> (var i = 1; i < flags.Length; i++)
                     {
                         dialogFlags = dialogFlags | flags[i];
                     }
@@ -283,13 +283,13 @@ And, here&rsquo;s the full code for the &ldquo;ProgressDialog&rdquo; class itsel
         [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
         <span class="kwrd">public</span> <span class="kwrd">interface</span> Win32IProgressDialog
         {
-            <span class="rem">/// &lt;summary&gt;</span>
+            <span class="rem">/// <summary></span>
             <span class="rem">/// Starts the progress dialog box.</span>
-            <span class="rem">/// &lt;/summary&gt;</span>
-            <span class="rem">/// &lt;param name="hwndParent"&gt;A handle to the dialog box's parent window.&lt;/param&gt;</span>
-            <span class="rem">/// &lt;param name="punkEnableModless"&gt;Reserved. Set to null.&lt;/param&gt;</span>
-            <span class="rem">/// &lt;param name="dwFlags"&gt;Flags that control the operation of the progress dialog box. &lt;/param&gt;</span>
-            <span class="rem">/// &lt;param name="pvResevered"&gt;Reserved. Set to IntPtr.Zero&lt;/param&gt;</span>
+            <span class="rem">/// </summary></span>
+            <span class="rem">/// <param name="hwndParent">A handle to the dialog box's parent window.</param></span>
+            <span class="rem">/// <param name="punkEnableModless">Reserved. Set to null.</param></span>
+            <span class="rem">/// <param name="dwFlags">Flags that control the operation of the progress dialog box. </param></span>
+            <span class="rem">/// <param name="pvResevered">Reserved. Set to IntPtr.Zero</param></span>
             <span class="kwrd">void</span> StartProgressDialog(
                 IntPtr hwndParent, <span class="rem">//HWND</span>
                 [MarshalAs(UnmanagedType.IUnknown)]    <span class="kwrd">object</span> punkEnableModless, <span class="rem">//IUnknown</span>
@@ -297,70 +297,70 @@ And, here&rsquo;s the full code for the &ldquo;ProgressDialog&rdquo; class itsel
                 IntPtr pvResevered <span class="rem">//LPCVOID</span>
                 );
 
-            <span class="rem">/// &lt;summary&gt;</span>
+            <span class="rem">/// <summary></span>
             <span class="rem">/// Stops the progress dialog box and removes it from the screen.</span>
-            <span class="rem">/// &lt;/summary&gt;</span>
+            <span class="rem">/// </summary></span>
             <span class="kwrd">void</span> StopProgressDialog();
 
-            <span class="rem">/// &lt;summary&gt;</span>
+            <span class="rem">/// <summary></span>
             <span class="rem">/// Sets the title of the progress dialog box.</span>
-            <span class="rem">/// &lt;/summary&gt;</span>
-            <span class="rem">/// &lt;param name="pwzTitle"&gt;A pointer to a null-terminated Unicode string that contains the dialog box title.&lt;/param&gt;</span>
+            <span class="rem">/// </summary></span>
+            <span class="rem">/// <param name="pwzTitle">A pointer to a null-terminated Unicode string that contains the dialog box title.</param></span>
             <span class="kwrd">void</span> SetTitle(
                 [MarshalAs(UnmanagedType.LPWStr)] <span class="kwrd">string</span> pwzTitle <span class="rem">//LPCWSTR</span>
                 );
 
-            <span class="rem">/// &lt;summary&gt;</span>
+            <span class="rem">/// <summary></span>
             <span class="rem">/// Specifies an Audio-Video Interleaved (AVI) clip that runs in the dialog box. Note: Note  This method is not supported in Windows Vista or later versions.</span>
-            <span class="rem">/// &lt;/summary&gt;</span>
-            <span class="rem">/// &lt;param name="hInstAnimation"&gt;An instance handle to the module from which the AVI resource should be loaded.&lt;/param&gt;</span>
-            <span class="rem">/// &lt;param name="idAnimation"&gt;An AVI resource identifier. To create this value, use the MAKEINTRESOURCE macro. The control loads the AVI resource from the module specified by hInstAnimation.&lt;/param&gt;</span>
+            <span class="rem">/// </summary></span>
+            <span class="rem">/// <param name="hInstAnimation">An instance handle to the module from which the AVI resource should be loaded.</param></span>
+            <span class="rem">/// <param name="idAnimation">An AVI resource identifier. To create this value, use the MAKEINTRESOURCE macro. The control loads the AVI resource from the module specified by hInstAnimation.</param></span>
             <span class="kwrd">void</span> SetAnimation(
                 IntPtr hInstAnimation, <span class="rem">//HINSTANCE</span>
                 <span class="kwrd">ushort</span> idAnimation <span class="rem">//UINT</span>
                 );
 
-            <span class="rem">/// &lt;summary&gt;</span>
+            <span class="rem">/// <summary></span>
             <span class="rem">/// Checks whether the user has canceled the operation.</span>
-            <span class="rem">/// &lt;/summary&gt;</span>
-            <span class="rem">/// &lt;returns&gt;TRUE if the user has cancelled the operation; otherwise, FALSE.&lt;/returns&gt;</span>
-            <span class="rem">/// &lt;remarks&gt;</span>
+            <span class="rem">/// </summary></span>
+            <span class="rem">/// <returns>TRUE if the user has cancelled the operation; otherwise, FALSE.</returns></span>
+            <span class="rem">/// <remarks></span>
             <span class="rem">/// The system does not send a message to the application when the user clicks the Cancel button.</span>
             <span class="rem">/// You must periodically use this function to poll the progress dialog box object to determine</span>
             <span class="rem">/// whether the operation has been canceled.</span>
-            <span class="rem">/// &lt;/remarks&gt;</span>
+            <span class="rem">/// </remarks></span>
             [PreserveSig]
             [<span class="kwrd">return</span>: MarshalAs(UnmanagedType.Bool)]
             <span class="kwrd">bool</span> HasUserCancelled();
 
-            <span class="rem">/// &lt;summary&gt;</span>
+            <span class="rem">/// <summary></span>
             <span class="rem">/// Updates the progress dialog box with the current state of the operation.</span>
-            <span class="rem">/// &lt;/summary&gt;</span>
-            <span class="rem">/// &lt;param name="dwCompleted"&gt;An application-defined value that indicates what proportion of the operation has been completed at the time the method was called.&lt;/param&gt;</span>
-            <span class="rem">/// &lt;param name="dwTotal"&gt;An application-defined value that specifies what value dwCompleted will have when the operation is complete.&lt;/param&gt;</span>
+            <span class="rem">/// </summary></span>
+            <span class="rem">/// <param name="dwCompleted">An application-defined value that indicates what proportion of the operation has been completed at the time the method was called.</param></span>
+            <span class="rem">/// <param name="dwTotal">An application-defined value that specifies what value dwCompleted will have when the operation is complete.</param></span>
             <span class="kwrd">void</span> SetProgress(
                 <span class="kwrd">uint</span> dwCompleted, <span class="rem">//DWORD</span>
                 <span class="kwrd">uint</span> dwTotal <span class="rem">//DWORD</span>
                 );
 
-            <span class="rem">/// &lt;summary&gt;</span>
+            <span class="rem">/// <summary></span>
             <span class="rem">/// Updates the progress dialog box with the current state of the operation.</span>
-            <span class="rem">/// &lt;/summary&gt;</span>
-            <span class="rem">/// &lt;param name="ullCompleted"&gt;An application-defined value that indicates what proportion of the operation has been completed at the time the method was called.&lt;/param&gt;</span>
-            <span class="rem">/// &lt;param name="ullTotal"&gt;An application-defined value that specifies what value ullCompleted will have when the operation is complete.&lt;/param&gt;</span>
+            <span class="rem">/// </summary></span>
+            <span class="rem">/// <param name="ullCompleted">An application-defined value that indicates what proportion of the operation has been completed at the time the method was called.</param></span>
+            <span class="rem">/// <param name="ullTotal">An application-defined value that specifies what value ullCompleted will have when the operation is complete.</param></span>
             <span class="kwrd">void</span> SetProgress64(
                 <span class="kwrd">ulong</span> ullCompleted, <span class="rem">//ULONGLONG</span>
                 <span class="kwrd">ulong</span> ullTotal <span class="rem">//ULONGLONG</span>
                 );
 
-            <span class="rem">/// &lt;summary&gt;</span>
+            <span class="rem">/// <summary></span>
             <span class="rem">/// Displays a message in the progress dialog.</span>
-            <span class="rem">/// &lt;/summary&gt;</span>
-            <span class="rem">/// &lt;param name="dwLineNum"&gt;The line number on which the text is to be displayed. Currently there are three lines&mdash;1, 2, and 3. If the PROGDLG_AUTOTIME flag was included in the dwFlags parameter when IProgressDialog::StartProgressDialog was called, only lines 1 and 2 can be used. The estimated time will be displayed on line 3.&lt;/param&gt;</span>
-            <span class="rem">/// &lt;param name="pwzString"&gt;A null-terminated Unicode string that contains the text.&lt;/param&gt;</span>
-            <span class="rem">/// &lt;param name="fCompactPath"&gt;TRUE to have path strings compacted if they are too large to fit on a line. The paths are compacted with PathCompactPath.&lt;/param&gt;</span>
-            <span class="rem">/// &lt;param name="pvResevered"&gt; Reserved. Set to IntPtr.Zero.&lt;/param&gt;</span>
-            <span class="rem">/// &lt;remarks&gt;This function is typically used to display a message such as "Item XXX is now being processed." typically, messages are displayed on lines 1 and 2, with line 3 reserved for the estimated time.&lt;/remarks&gt;</span>
+            <span class="rem">/// </summary></span>
+            <span class="rem">/// <param name="dwLineNum">The line number on which the text is to be displayed. Currently there are three lines&mdash;1, 2, and 3. If the PROGDLG_AUTOTIME flag was included in the dwFlags parameter when IProgressDialog::StartProgressDialog was called, only lines 1 and 2 can be used. The estimated time will be displayed on line 3.</param></span>
+            <span class="rem">/// <param name="pwzString">A null-terminated Unicode string that contains the text.</param></span>
+            <span class="rem">/// <param name="fCompactPath">TRUE to have path strings compacted if they are too large to fit on a line. The paths are compacted with PathCompactPath.</param></span>
+            <span class="rem">/// <param name="pvResevered"> Reserved. Set to IntPtr.Zero.</param></span>
+            <span class="rem">/// <remarks>This function is typically used to display a message such as "Item XXX is now being processed." typically, messages are displayed on lines 1 and 2, with line 3 reserved for the estimated time.</remarks></span>
             <span class="kwrd">void</span> SetLine(
                 <span class="kwrd">uint</span> dwLineNum, <span class="rem">//DWORD</span>
                 [MarshalAs(UnmanagedType.LPWStr)] <span class="kwrd">string</span> pwzString, <span class="rem">//LPCWSTR</span>
@@ -368,35 +368,35 @@ And, here&rsquo;s the full code for the &ldquo;ProgressDialog&rdquo; class itsel
                 IntPtr pvResevered <span class="rem">//LPCVOID</span>
                 );
 
-            <span class="rem">/// &lt;summary&gt;</span>
+            <span class="rem">/// <summary></span>
             <span class="rem">/// Sets a message to be displayed if the user cancels the operation.</span>
-            <span class="rem">/// &lt;/summary&gt;</span>
-            <span class="rem">/// &lt;param name="pwzCancelMsg"&gt;A pointer to a null-terminated Unicode string that contains the message to be displayed.&lt;/param&gt;</span>
-            <span class="rem">/// &lt;param name="pvResevered"&gt;Reserved. Set to NULL.&lt;/param&gt;</span>
-            <span class="rem">/// &lt;remarks&gt;Even though the user clicks Cancel, the application cannot immediately call</span>
+            <span class="rem">/// </summary></span>
+            <span class="rem">/// <param name="pwzCancelMsg">A pointer to a null-terminated Unicode string that contains the message to be displayed.</param></span>
+            <span class="rem">/// <param name="pvResevered">Reserved. Set to NULL.</param></span>
+            <span class="rem">/// <remarks>Even though the user clicks Cancel, the application cannot immediately call</span>
             <span class="rem">/// IProgressDialog::StopProgressDialog to close the dialog box. The application must wait until the</span>
             <span class="rem">/// next time it calls IProgressDialog::HasUserCancelled to discover that the user has canceled the</span>
             <span class="rem">/// operation. Since this delay might be significant, the progress dialog box provides the user with</span>
             <span class="rem">/// immediate feedback by clearing text lines 1 and 2 and displaying the cancel message on line 3.</span>
             <span class="rem">/// The message is intended to let the user know that the delay is normal and that the progress dialog</span>
             <span class="rem">/// box will be closed shortly.</span>
-            <span class="rem">/// It is typically is set to something like "Please wait while ...". &lt;/remarks&gt;</span>
+            <span class="rem">/// It is typically is set to something like "Please wait while ...". </remarks></span>
             <span class="kwrd">void</span> SetCancelMsg(
                 [MarshalAs(UnmanagedType.LPWStr)] <span class="kwrd">string</span> pwzCancelMsg, <span class="rem">//LPCWSTR</span>
                 <span class="kwrd">object</span> pvResevered <span class="rem">//LPCVOID</span>
                 );
 
-            <span class="rem">/// &lt;summary&gt;</span>
+            <span class="rem">/// <summary></span>
             <span class="rem">/// Resets the progress dialog box timer to zero.</span>
-            <span class="rem">/// &lt;/summary&gt;</span>
-            <span class="rem">/// &lt;param name="dwTimerAction"&gt;Flags that indicate the action to be taken by the timer.&lt;/param&gt;</span>
-            <span class="rem">/// &lt;param name="pvResevered"&gt;Reserved. Set to NULL.&lt;/param&gt;</span>
-            <span class="rem">/// &lt;remarks&gt;</span>
+            <span class="rem">/// </summary></span>
+            <span class="rem">/// <param name="dwTimerAction">Flags that indicate the action to be taken by the timer.</param></span>
+            <span class="rem">/// <param name="pvResevered">Reserved. Set to NULL.</param></span>
+            <span class="rem">/// <remarks></span>
             <span class="rem">/// The timer is used to estimate the remaining time. It is started when your application</span>
             <span class="rem">/// calls IProgressDialog::StartProgressDialog. Unless your application will start immediately,</span>
             <span class="rem">/// it should call Timer just before starting the operation.</span>
             <span class="rem">/// This practice ensures that the time estimates will be as accurate as possible. This method</span>
-            <span class="rem">/// should not be called after the first call to IProgressDialog::SetProgress.&lt;/remarks&gt;</span>
+            <span class="rem">/// should not be called after the first call to IProgressDialog::SetProgress.</remarks></span>
             <span class="kwrd">void</span> Timer(
                 PDTIMER dwTimerAction, <span class="rem">//DWORD</span>
                 <span class="kwrd">object</span> pvResevered <span class="rem">//LPCVOID</span>
@@ -410,35 +410,35 @@ And, here&rsquo;s the full code for the &ldquo;ProgressDialog&rdquo; class itsel
         {
         }
 
-        <span class="rem">/// &lt;summary&gt;</span>
+        <span class="rem">/// <summary></span>
         <span class="rem">/// Flags that indicate the action to be taken by the ProgressDialog.SetTime() method.</span>
-        <span class="rem">/// &lt;/summary&gt;</span>
+        <span class="rem">/// </summary></span>
         <span class="kwrd">public</span> <span class="kwrd">enum</span> PDTIMER : <span class="kwrd">uint</span> <span class="rem">//DWORD</span>
         {
-            <span class="rem">/// &lt;summary&gt;Resets the timer to zero. Progress will be calculated from the time this method is called.&lt;/summary&gt;</span>
+            <span class="rem">/// <summary>Resets the timer to zero. Progress will be calculated from the time this method is called.</summary></span>
             Reset = (0x01),
-            <span class="rem">/// &lt;summary&gt;Progress has been suspended.&lt;/summary&gt;</span>
+            <span class="rem">/// <summary>Progress has been suspended.</summary></span>
             Pause = (0x02),
-            <span class="rem">/// &lt;summary&gt;Progress has been resumed.&lt;/summary&gt;</span>
+            <span class="rem">/// <summary>Progress has been resumed.</summary></span>
             Resume = (0x03)
         }
 
         [Flags]
         <span class="kwrd">public</span> <span class="kwrd">enum</span> PROGDLG : <span class="kwrd">uint</span> <span class="rem">//DWORD</span>
         {
-            <span class="rem">/// &lt;summary&gt;Normal progress dialog box behavior.&lt;/summary&gt;</span>
+            <span class="rem">/// <summary>Normal progress dialog box behavior.</summary></span>
             Normal = 0x00000000,
-            <span class="rem">/// &lt;summary&gt;The progress dialog box will be modal to the window specified by hwndParent. By default, a progress dialog box is modeless.&lt;/summary&gt;</span>
+            <span class="rem">/// <summary>The progress dialog box will be modal to the window specified by hwndParent. By default, a progress dialog box is modeless.</summary></span>
             Modal = 0x00000001,
-            <span class="rem">/// &lt;summary&gt;Automatically estimate the remaining time and display the estimate on line 3. &lt;/summary&gt;</span>
-            <span class="rem">/// &lt;remarks&gt;If this flag is set, IProgressDialog::SetLine can be used only to display text on lines 1 and 2.&lt;/remarks&gt;</span>
+            <span class="rem">/// <summary>Automatically estimate the remaining time and display the estimate on line 3. </summary></span>
+            <span class="rem">/// <remarks>If this flag is set, IProgressDialog::SetLine can be used only to display text on lines 1 and 2.</remarks></span>
             AutoTime = 0x00000002,
-            <span class="rem">/// &lt;summary&gt;Do not show the "time remaining" text.&lt;/summary&gt;</span>
+            <span class="rem">/// <summary>Do not show the "time remaining" text.</summary></span>
             NoTime = 0x00000004,
-            <span class="rem">/// &lt;summary&gt;Do not display a minimize button on the dialog box's caption bar.&lt;/summary&gt;</span>
+            <span class="rem">/// <summary>Do not display a minimize button on the dialog box's caption bar.</summary></span>
             NoMinimize = 0x00000008,
-            <span class="rem">/// &lt;summary&gt;Do not display a progress bar.&lt;/summary&gt;</span>
-            <span class="rem">/// &lt;remarks&gt;Typically, an application can quantitatively determine how much of the operation remains and periodically pass that value to IProgressDialog::SetProgress. The progress dialog box uses this information to update its progress bar. This flag is typically set when the calling application must wait for an operation to finish, but does not have any quantitative information it can use to update the dialog box.&lt;/remarks&gt;</span>
+            <span class="rem">/// <summary>Do not display a progress bar.</summary></span>
+            <span class="rem">/// <remarks>Typically, an application can quantitatively determine how much of the operation remains and periodically pass that value to IProgressDialog::SetProgress. The progress dialog box uses this information to update its progress bar. This flag is typically set when the calling application must wait for an operation to finish, but does not have any quantitative information it can use to update the dialog box.</remarks></span>
             NoProgressBar = 0x00000010
         }
         <span class="preproc">#endregion</span>

@@ -32,7 +32,7 @@ According to <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.exte
 
 
 
-<em>The ExtenderControl class enables you to programmatically add AJAX functionality to an ASP.NET server control. The ExtenderControl inherits from the Control class and implements the IExtenderControl interface. The Control class defines the properties, methods, and events that are shared by all ASP.NET server controls. The <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.iextendercontrol.aspx">IExtenderControl</a> interface is an abstract class, which you cannot instantiate directly. Instead, you create a derived type.</em> 
+*The ExtenderControl class enables you to programmatically add AJAX functionality to an ASP.NET server control. The ExtenderControl inherits from the Control class and implements the IExtenderControl interface. The Control class defines the properties, methods, and events that are shared by all ASP.NET server controls. The <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.iextendercontrol.aspx">IExtenderControl</a> interface is an abstract class, which you cannot instantiate directly. Instead, you create a derived type.* 
 
 <h3>Basics of created Extender Controls that Inherit from ExtenderControl</h3>
 
@@ -48,14 +48,14 @@ When first creating your custom extender control you need to inherit from the Ex
 [TargetControlType(typeof(Control))]<br />
 public class FocusExtender : System.Web.UI.ExtenderControl<br />
 {<br />
-    protected override System.Collections.Generic.IEnumerable&lt;ScriptDescriptor&gt; GetScriptDescriptors(Control targetControl)<br />
+    protected override System.Collections.Generic.IEnumerable<ScriptDescriptor> GetScriptDescriptors(Control targetControl)<br />
     {<br />
         throw new NotImplementedException();<br />
     } 
 
 
 
-    protected override System.Collections.Generic.IEnumerable&lt;ScriptReference&gt; GetScriptReferences()<br />
+    protected override System.Collections.Generic.IEnumerable<ScriptReference> GetScriptReferences()<br />
     {<br />
         throw new NotImplementedException();<br />
     }<br />
@@ -87,7 +87,7 @@ Here&#39;s a basic example of setting up a ScriptReference that includes a scrip
 
 
 
-protected override System.Collections.Generic.IEnumerable&lt;ScriptReference&gt; GetScriptReferences()<br />
+protected override System.Collections.Generic.IEnumerable<ScriptReference> GetScriptReferences()<br />
 {<br />
     yield return new ScriptReference(&quot;CustomExtenderControl.FocusExtender.js&quot;, &quot;CustomExtenderControl&quot;);;<br />
 } 
@@ -122,7 +122,7 @@ Here&#39;s a basic example of returning a ScriptBehaviorDescriptor without any p
 
 
 
-protected override System.Collections.Generic.IEnumerable&lt;ScriptDescriptor&gt; GetScriptDescriptors(Control targetControl)<br />
+protected override System.Collections.Generic.IEnumerable<ScriptDescriptor> GetScriptDescriptors(Control targetControl)<br />
 {<br />
     ScriptBehaviorDescriptor descriptor = new ScriptBehaviorDescriptor(this.GetType().FullName, targetControl.ClientID) 
 
@@ -145,7 +145,7 @@ There is a basic block of JavaScript code that you&#39;ll need to include that w
 
 
 
-Here&#39;s the basic JavaScript that will define the client-side JavaScript representation of the ForucExtender control we&#39;re using in this example. One thing to remember is that the namespaces and object name in the JavaScript file need to be the same as they are in the server-side .NET code. <em>In case you&#39;re wonderin, there is a way to make the client-side and server-side namespaces different, but that&#39;s beyond the scope of this article.</em> 
+Here&#39;s the basic JavaScript that will define the client-side JavaScript representation of the ForucExtender control we&#39;re using in this example. One thing to remember is that the namespaces and object name in the JavaScript file need to be the same as they are in the server-side .NET code. *In case you&#39;re wonderin, there is a way to make the client-side and server-side namespaces different, but that&#39;s beyond the scope of this article.* 
 
 
 
@@ -235,7 +235,7 @@ Just modify the GetScriptDescriptor method above to look like the following:
 
 
 
-protected override System.Collections.Generic.IEnumerable&lt;ScriptDescriptor&gt; GetScriptDescriptors(Control targetControl)<br />
+protected override System.Collections.Generic.IEnumerable<ScriptDescriptor> GetScriptDescriptors(Control targetControl)<br />
 {<br />
     ScriptBehaviorDescriptor descriptor = new ScriptBehaviorDescriptor(this.GetType().FullName, targetControl.ClientID) 
 
@@ -442,7 +442,7 @@ using System.Web.UI;
 
 public class ExtenderControlBase : ExtenderControl<br />
 {<br />
-    protected override IEnumerable&lt;ScriptDescriptor&gt; GetScriptDescriptors(Control targetControl)<br />
+    protected override IEnumerable<ScriptDescriptor> GetScriptDescriptors(Control targetControl)<br />
     {<br />
         ScriptControlDescriptor descriptor = new ScriptControlDescriptor(this.GetType().FullName, targetControl.ClientID); 
 
@@ -471,7 +471,7 @@ public class ExtenderControlBase : ExtenderControl<br />
 
 
 
-    protected override IEnumerable&lt;ScriptReference&gt; GetScriptReferences()<br />
+    protected override IEnumerable<ScriptReference> GetScriptReferences()<br />
     {<br />
         // Add all the ExtenderControls Client-Side JavaScript References<br />
         object[] scriptReferences = Attribute.GetCustomAttributes(this.GetType(), typeof(ScriptReferenceAttribute), false);<br />
@@ -588,7 +588,7 @@ To do this all we need to do is add a property named &quot;id&quot; to the Scrip
 
 
 
-protected override System.Collections.Generic.IEnumerable&lt;ScriptDescriptor&gt; GetScriptDescriptors(Control targetControl)<br />
+protected override System.Collections.Generic.IEnumerable<ScriptDescriptor> GetScriptDescriptors(Control targetControl)<br />
 {<br />
     ScriptBehaviorDescriptor descriptor = new ScriptBehaviorDescriptor(this.GetType().FullName, targetControl.ClientID); 
 
@@ -620,10 +620,10 @@ Now with the following FocusExtender control in the page:
 
 
 
-&lt;cec:FocusExtender runat=&quot;server&quot; id=&quot;FocusExtender1&quot;<br />
+<cec:FocusExtender runat=&quot;server&quot; id=&quot;FocusExtender1&quot;<br />
     TargetControlID=&quot;TextBox1&quot;<br />
-    HighlightCssClass=&quot;Highlight&quot; NoHighlightCssClass=&quot;NoHightlight&quot;&gt;<br />
-&lt;/cec:FocusExtender&gt; 
+    HighlightCssClass=&quot;Highlight&quot; NoHighlightCssClass=&quot;NoHightlight&quot;><br />
+</cec:FocusExtender> 
 
 
 
@@ -639,14 +639,14 @@ We can access it from JavaScript like so:
 
 
 
-&lt;input type=&quot;button&quot; value=&quot;Show HighlightCssClass&quot; onclick=&quot;ShowHighlightCssClass();&quot; /&gt;<br />
-&lt;script type=&quot;text/javascript&quot;&gt;<br />
+<input type=&quot;button&quot; value=&quot;Show HighlightCssClass&quot; onclick=&quot;ShowHighlightCssClass();&quot; /><br />
+<script type=&quot;text/javascript&quot;><br />
     function ShowHighlightCssClass()<br />
     {<br />
-        var focusExtender = $find(&quot;&lt;%=FocusExtender1.ClientID%&gt;&quot;);<br />
+        var focusExtender = $find(&quot;<%=FocusExtender1.ClientID%>&quot;);<br />
         alert(focusExtender.get_HighlightCssClass());<br />
     }<br />
-&lt;/script&gt; 
+</script> 
 
 
 

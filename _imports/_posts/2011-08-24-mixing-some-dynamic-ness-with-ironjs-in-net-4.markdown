@@ -122,7 +122,7 @@ If you want to change the behavior of DynamicCommonObject when the requested pro
 <span class="kwrd">using</span> System.Linq;
 <span class="kwrd">using</span> IronJS;
 
-<span class="kwrd">public</span> <span class="kwrd">class</span> DynamicCommonObject : DynamicObject, IEnumerable, IEnumerable&lt;KeyValuePair&lt;<span class="kwrd">string</span>, <span class="kwrd">object</span>&gt;&gt;, IDictionary&lt;<span class="kwrd">string</span>, <span class="kwrd">object</span>&gt;
+<span class="kwrd">public</span> <span class="kwrd">class</span> DynamicCommonObject : DynamicObject, IEnumerable, IEnumerable<KeyValuePair<<span class="kwrd">string</span>, <span class="kwrd">object</span>>>, IDictionary<<span class="kwrd">string</span>, <span class="kwrd">object</span>>
 {
     <span class="kwrd">public</span> DynamicCommonObject(CommonObject commonObject)
     {
@@ -151,18 +151,18 @@ If you want to change the behavior of DynamicCommonObject when the requested pro
         <span class="kwrd">return</span> <span class="kwrd">true</span>;
     }
 
-    <span class="kwrd">public</span> <span class="kwrd">override</span> IEnumerable&lt;<span class="kwrd">string</span>&gt; GetDynamicMemberNames()
+    <span class="kwrd">public</span> <span class="kwrd">override</span> IEnumerable<<span class="kwrd">string</span>> GetDynamicMemberNames()
     {
         <span class="kwrd">return</span> <span class="kwrd">this</span>.CommonObject.Members.Keys;
     }
 
     <span class="preproc">#endregion</span>
 
-    <span class="preproc">#region</span> <span class="str">&quot;IEnumerable&lt;KeyValuePair&lt;string, object&gt;&gt; Implementation&quot;</span>
+    <span class="preproc">#region</span> <span class="str">&quot;IEnumerable<KeyValuePair<string, object>> Implementation&quot;</span>
 
-    <span class="kwrd">public</span> IEnumerator&lt;KeyValuePair&lt;<span class="kwrd">string</span>, <span class="kwrd">object</span>&gt;&gt; GetEnumerator()
+    <span class="kwrd">public</span> IEnumerator<KeyValuePair<<span class="kwrd">string</span>, <span class="kwrd">object</span>>> GetEnumerator()
     {
-        <span class="kwrd">return</span> <span class="kwrd">this</span>.CommonObject.Members.Select(d =&gt; <span class="kwrd">new</span> KeyValuePair&lt;<span class="kwrd">string</span>, <span class="kwrd">object</span>&gt;(d.Key, getClrBoxedValue(d.Value))).AsEnumerable().GetEnumerator();
+        <span class="kwrd">return</span> <span class="kwrd">this</span>.CommonObject.Members.Select(d => <span class="kwrd">new</span> KeyValuePair<<span class="kwrd">string</span>, <span class="kwrd">object</span>>(d.Key, getClrBoxedValue(d.Value))).AsEnumerable().GetEnumerator();
     }
 
     System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
@@ -184,7 +184,7 @@ If you want to change the behavior of DynamicCommonObject when the requested pro
         <span class="kwrd">return</span> <span class="kwrd">this</span>.CommonObject.Members.Keys.Contains(key);
     }
 
-    <span class="kwrd">public</span> ICollection&lt;<span class="kwrd">string</span>&gt; Keys
+    <span class="kwrd">public</span> ICollection<<span class="kwrd">string</span>> Keys
     {
         get { <span class="kwrd">return</span> <span class="kwrd">this</span>.CommonObject.Members.Keys; }
     }
@@ -203,10 +203,10 @@ If you want to change the behavior of DynamicCommonObject when the requested pro
         <span class="kwrd">return</span> retVal;
     }
 
-    <span class="kwrd">public</span> ICollection&lt;<span class="kwrd">object</span>&gt; Values
+    <span class="kwrd">public</span> ICollection<<span class="kwrd">object</span>> Values
     {
         get {
-            <span class="kwrd">return</span> <span class="kwrd">this</span>.CommonObject.Members.Values.Select(d =&gt; getClrBoxedValue(d)).ToArray();
+            <span class="kwrd">return</span> <span class="kwrd">this</span>.CommonObject.Members.Values.Select(d => getClrBoxedValue(d)).ToArray();
         }
     }
 
@@ -222,7 +222,7 @@ If you want to change the behavior of DynamicCommonObject when the requested pro
         }
     }
 
-    <span class="kwrd">public</span> <span class="kwrd">void</span> Add(KeyValuePair&lt;<span class="kwrd">string</span>, <span class="kwrd">object</span>&gt; item)
+    <span class="kwrd">public</span> <span class="kwrd">void</span> Add(KeyValuePair<<span class="kwrd">string</span>, <span class="kwrd">object</span>> item)
     {
         <span class="kwrd">this</span>.CommonObject.Members.Add(item.Key, item.Value);
     }
@@ -232,12 +232,12 @@ If you want to change the behavior of DynamicCommonObject when the requested pro
         <span class="kwrd">this</span>.CommonObject.Members.Clear();
     }
 
-    <span class="kwrd">public</span> <span class="kwrd">bool</span> Contains(KeyValuePair&lt;<span class="kwrd">string</span>, <span class="kwrd">object</span>&gt; item)
+    <span class="kwrd">public</span> <span class="kwrd">bool</span> Contains(KeyValuePair<<span class="kwrd">string</span>, <span class="kwrd">object</span>> item)
     {
         <span class="kwrd">return</span> <span class="kwrd">this</span>.CommonObject.Members.Contains(item);
     }
 
-    <span class="kwrd">public</span> <span class="kwrd">void</span> CopyTo(KeyValuePair&lt;<span class="kwrd">string</span>, <span class="kwrd">object</span>&gt;[] array, <span class="kwrd">int</span> arrayIndex)
+    <span class="kwrd">public</span> <span class="kwrd">void</span> CopyTo(KeyValuePair<<span class="kwrd">string</span>, <span class="kwrd">object</span>>[] array, <span class="kwrd">int</span> arrayIndex)
     {
         <span class="kwrd">throw</span> <span class="kwrd">new</span> NotImplementedException();
     }
@@ -252,7 +252,7 @@ If you want to change the behavior of DynamicCommonObject when the requested pro
         get { <span class="kwrd">return</span> <span class="kwrd">false</span>; }
     }
 
-    <span class="kwrd">public</span> <span class="kwrd">bool</span> Remove(KeyValuePair&lt;<span class="kwrd">string</span>, <span class="kwrd">object</span>&gt; item)
+    <span class="kwrd">public</span> <span class="kwrd">bool</span> Remove(KeyValuePair<<span class="kwrd">string</span>, <span class="kwrd">object</span>> item)
     {
         var v = <span class="kwrd">this</span>.CommonObject.Members[item.Key];
         <span class="kwrd">if</span> (v == item.Value)

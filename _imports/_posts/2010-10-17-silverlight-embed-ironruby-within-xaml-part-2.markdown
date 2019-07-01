@@ -113,9 +113,9 @@ The below example demonstrates how to:
 
 I have also included a second example (commented out) of using IronRuby to add an event handler to the Click event in case you are interested in seeing two methods of accomplishing this.
 
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">local:DLRScriptUserControl</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;testusercontrol&quot;</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">local:DLRScriptUserControl.Script</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">system:String</span> <span class="attr">xml:space</span><span class="kwrd">=&quot;preserve&quot;</span><span class="kwrd">&gt;</span>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">local:DLRScriptUserControl</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;testusercontrol&quot;</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">local:DLRScriptUserControl.Script</span><span class="kwrd">></span>
+        <span class="kwrd"><</span><span class="html">system:String</span> <span class="attr">xml:space</span><span class="kwrd">=&quot;preserve&quot;</span><span class="kwrd">></span>
             # init variables that point directly to the controls
             # within the control
             txtName = Ctrl.FindName('txtName')
@@ -135,15 +135,15 @@ I have also included a second example (commented out) of using IronRuby to add a
             #     System::Windows::Browser::HtmlPage.Window.Alert('Hello from IronRuby!')
             # end
             # Ctrl.FindName('btnRubyButton').click.add method(:btnRubyButton_Click)
-        <span class="kwrd">&lt;/</span><span class="html">system:String</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;/</span><span class="html">local:DLRScriptUserControl.Script</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">local:DLRScriptUserControl.Content</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">StackPanel</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;</span><span class="html">TextBlock</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;txtName&quot;</span><span class="kwrd">&gt;</span>Default<span class="kwrd">&lt;/</span><span class="html">TextBlock</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;</span><span class="html">Button</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;btnRubyButton&quot;</span> <span class="attr">Content</span><span class="kwrd">=&quot;IronRuby Button&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">Button</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;/</span><span class="html">StackPanel</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;/</span><span class="html">local:DLRScriptUserControl.Content</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">local:DLRScriptUserControl</span><span class="kwrd">&gt;</span></pre>
+        <span class="kwrd"></</span><span class="html">system:String</span><span class="kwrd">></span>
+    <span class="kwrd"></</span><span class="html">local:DLRScriptUserControl.Script</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">local:DLRScriptUserControl.Content</span><span class="kwrd">></span>
+        <span class="kwrd"><</span><span class="html">StackPanel</span><span class="kwrd">></span>
+            <span class="kwrd"><</span><span class="html">TextBlock</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;txtName&quot;</span><span class="kwrd">></span>Default<span class="kwrd"></</span><span class="html">TextBlock</span><span class="kwrd">></span>
+            <span class="kwrd"><</span><span class="html">Button</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;btnRubyButton&quot;</span> <span class="attr">Content</span><span class="kwrd">=&quot;IronRuby Button&quot;</span><span class="kwrd">></</span><span class="html">Button</span><span class="kwrd">></span>
+        <span class="kwrd"></</span><span class="html">StackPanel</span><span class="kwrd">></span>
+    <span class="kwrd"></</span><span class="html">local:DLRScriptUserControl.Content</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">local:DLRScriptUserControl</span><span class="kwrd">></span></pre>
 <style type="text/css">
 
 .csharpcode, .csharpcode pre
@@ -199,7 +199,7 @@ To modify the previous example of DLRScriptUserControl to load it from a xaml fi
 
 **Step 1: Heres the ContentPresenter to add to the application**
 
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">ContentPresenter</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;parseXamlTest&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">ContentPresenter</span><span class="kwrd">&gt;</span></pre>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">ContentPresenter</span> <span class="attr">x:Name</span><span class="kwrd">=&quot;parseXamlTest&quot;</span><span class="kwrd">></</span><span class="html">ContentPresenter</span><span class="kwrd">></span></pre>
 <style type="text/css">
 
 .csharpcode, .csharpcode pre
@@ -236,14 +236,14 @@ To modify the previous example of DLRScriptUserControl to load it from a xaml fi
 
 In this case we are saving it as “DLRControl.xaml.” Also it is important to note that the root element within the XAML must have namespace declarations for all the namespaces used within the XAML file.
 
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">local:DLRScriptUserControl</span>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">local:DLRScriptUserControl</span>
             <span class="attr">xmlns</span><span class="kwrd">='http://schemas.microsoft.com/winfx/2006/xaml/presentation'</span>
             <span class="attr">xmlns:x</span><span class="kwrd">='http://schemas.microsoft.com/winfx/2006/xaml'</span>
             <span class="attr">xmlns:system</span><span class="kwrd">='clr-namespace:System;assembly=mscorlib'</span>
             <span class="attr">xmlns:local</span><span class="kwrd">='clr-namespace:SLXamlEmbeddedScript;assembly=SLXamlEmbeddedScript'</span>
-            <span class="attr">x:Name</span><span class="kwrd">='testusercontrol'</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">local:DLRScriptUserControl.Script</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">system:String</span> <span class="attr">xml:space</span><span class="kwrd">='preserve'</span><span class="kwrd">&gt;</span>
+            <span class="attr">x:Name</span><span class="kwrd">='testusercontrol'</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">local:DLRScriptUserControl.Script</span><span class="kwrd">></span>
+        <span class="kwrd"><</span><span class="html">system:String</span> <span class="attr">xml:space</span><span class="kwrd">='preserve'</span><span class="kwrd">></span>
             # init variables that point directly to the controls
             # within the control
             txtName = Ctrl.FindName('txtName')
@@ -262,15 +262,15 @@ In this case we are saving it as “DLRControl.xaml.” Also it is important to 
             #     System::Windows::Browser::HtmlPage.Window.Alert('Hello from IronRuby!')
             # end
             # Ctrl.FindName('btnRubyButton').click.add method(:btnRubyButton_Click)
-        <span class="kwrd">&lt;/</span><span class="html">system:String</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;/</span><span class="html">local:DLRScriptUserControl.Script</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">local:DLRScriptUserControl.Content</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">StackPanel</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;</span><span class="html">TextBlock</span> <span class="attr">x:Name</span><span class="kwrd">='txtName'</span><span class="kwrd">&gt;</span>Default<span class="kwrd">&lt;/</span><span class="html">TextBlock</span><span class="kwrd">&gt;</span>
-            <span class="kwrd">&lt;</span><span class="html">Button</span> <span class="attr">x:Name</span><span class="kwrd">='btnRubyButton'</span> <span class="attr">Content</span><span class="kwrd">='IronRuby Button'</span><span class="kwrd">&gt;&lt;/</span><span class="html">Button</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;/</span><span class="html">StackPanel</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;/</span><span class="html">local:DLRScriptUserControl.Content</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">local:DLRScriptUserControl</span><span class="kwrd">&gt;</span></pre>
+        <span class="kwrd"></</span><span class="html">system:String</span><span class="kwrd">></span>
+    <span class="kwrd"></</span><span class="html">local:DLRScriptUserControl.Script</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">local:DLRScriptUserControl.Content</span><span class="kwrd">></span>
+        <span class="kwrd"><</span><span class="html">StackPanel</span><span class="kwrd">></span>
+            <span class="kwrd"><</span><span class="html">TextBlock</span> <span class="attr">x:Name</span><span class="kwrd">='txtName'</span><span class="kwrd">></span>Default<span class="kwrd"></</span><span class="html">TextBlock</span><span class="kwrd">></span>
+            <span class="kwrd"><</span><span class="html">Button</span> <span class="attr">x:Name</span><span class="kwrd">='btnRubyButton'</span> <span class="attr">Content</span><span class="kwrd">='IronRuby Button'</span><span class="kwrd">></</span><span class="html">Button</span><span class="kwrd">></span>
+        <span class="kwrd"></</span><span class="html">StackPanel</span><span class="kwrd">></span>
+    <span class="kwrd"></</span><span class="html">local:DLRScriptUserControl.Content</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">local:DLRScriptUserControl</span><span class="kwrd">></span></pre>
 <style type="text/css">
 
 .csharpcode, .csharpcode pre
@@ -310,7 +310,7 @@ You could place this code anywhere in the app, but for this example I just place
 <pre class="csharpcode"><span class="kwrd">void</span> MainPage_Loaded(<span class="kwrd">object</span> sender, System.Windows.RoutedEventArgs e)
 {
     var client = <span class="kwrd">new</span> WebClient();
-    client.DownloadStringCompleted += (s, args) =&gt; {
+    client.DownloadStringCompleted += (s, args) => {
         <span class="rem">// Load XAML once downloaded, and set the resulting</span>
         <span class="rem">// UI control to the content of the ContentPresenter</span>
         parseXamlTest.Content = XamlReader.Load(args.Result);

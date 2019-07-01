@@ -19,17 +19,17 @@ Recently when looking at the analytics logs for referring urls to my website, I 
 
 
 
-In Scott&#39;s post, he talks about how placing your tech related certification acronyms after your name in your email signatures and such is rather meaningless. He states &quot;<em>Folks go to school for 20+ years to put PhD after their name. I could go take a cert test now, but should it be displayed so prominently?</em>&quot;
+In Scott&#39;s post, he talks about how placing your tech related certification acronyms after your name in your email signatures and such is rather meaningless. He states &quot;*Folks go to school for 20+ years to put PhD after their name. I could go take a cert test now, but should it be displayed so prominently?*&quot;
 
 My comments as posted:
 
 
-<em>I think it&#39;s ok to put one or two after your name, but no more than that. And only use them in places where you&#39;re not already stating your certified; Like on your resumt and cover letter. It&#39;s a good thing in emails and/or blog comments to show your cert. But, I do agree that it doesn&#39;t compare to a Phd.<br />
-- Christopher Pietschmann, MCSD</em>
+*I think it&#39;s ok to put one or two after your name, but no more than that. And only use them in places where you&#39;re not already stating your certified; Like on your resumt and cover letter. It&#39;s a good thing in emails and/or blog comments to show your cert. But, I do agree that it doesn&#39;t compare to a Phd.<br />
+- Christopher Pietschmann, MCSD*
 
 
 
-Now, reflecting back on this thought now that it&#39;s October 2008... What the heck was I thinking? It is absolutely meaningless for me to place &quot;<em>MCSD&quot;</em> after my name in the signature of the blog comment. 
+Now, reflecting back on this thought now that it&#39;s October 2008... What the heck was I thinking? It is absolutely meaningless for me to place &quot;*MCSD&quot;* after my name in the signature of the blog comment. 
 
 
 
@@ -41,7 +41,7 @@ You need to think about context when placing certs after your name. Basically, t
 
 
 
-<em>Chris Pietschmann, MCSD</em>
+*Chris Pietschmann, MCSD*
 
 
 
@@ -49,8 +49,8 @@ Or even better, add a second or third line to your signature that lists the most
 
 
 
-<em>Chris Pietschmann<br />
-Microsoft Certified Solution Developer</em>
+*Chris Pietschmann<br />
+Microsoft Certified Solution Developer*
 
 
 
@@ -58,8 +58,8 @@ Or
 
 
 
-<em>Chris Pietschmann<br />
-Microsoft MVP - Windows Live Platform</em>
+*Chris Pietschmann<br />
+Microsoft MVP - Windows Live Platform*
 
 
 
@@ -67,11 +67,11 @@ Here&#39;s the email signature that I&#39;ve started using lately. Just my name,
 
 
 
-<em>Chris Pietschmann<br />
+*Chris Pietschmann<br />
 President - Simplovation LLC<br />
 Microsoft MVP - Windows Live Platform<br />
 <a href="http://simplovation.com">http://simplovation.com</a><br />
-<a href=""></a></em>
+<a href=""></a>*
 
 
 
@@ -79,7 +79,7 @@ Doesn&#39;t it look much better/usefull than the following?
 
 
 
-<em>Chris Pietschmann, MVP, MCSD, MCAD, MCP </em>
+*Chris Pietschmann, MVP, MCSD, MCAD, MCP *
 
 
 

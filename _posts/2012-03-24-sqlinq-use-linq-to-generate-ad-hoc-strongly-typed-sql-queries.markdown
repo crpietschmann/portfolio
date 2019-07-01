@@ -18,9 +18,9 @@ SQLinq is a new library that allows ad-hoc SQL code to be generated at runtime i
 SQLinq is built with the core idea of simplicity and ease of use. SQLinq wont get in your way like other Data Access Layers will.  
 SQLinq is not so much a Data Access Layer (DAL) as it is a code generation tool. Although, it’s not a code generator like others you may be used to. If you look at Entity Framework, you’ll see a ton of C# or VB.NET code that gets generated from a complex data model defined in XML. Yes, Entity Framework gives you compile time validation of your queries, but it also can be a bit bloated (depending on your needs) and can be difficult to setup.  
 Personally, I have moved away from using Entity Framework for the most part due to the fact that it has performance issues with complex SQL queries that involve a lot of table joins and many where parameters to limit the results returned. The SQL code that Entity Framework generates generally has good performance, but Entity Framework’s performance issues can be seen when it loops through the data to instantiate the resulting object model. Because of these issues, I have mostly moved to manually writing SQL code and using straight ADO.NET for data access within the applications I build; that is at least until I created SQLinq.  
-With SQLinq there are no complex object models. You simply create Class or Interface that matches the scheme of your database table or view, and you can start querying it in a strongly typed manner.  <pre class="csharpcode">IEnumerable&lt;Person&gt; data = con.Query(
-    from p <span class="kwrd">in</span> SQLinq&lt;Person&gt;()
-    <span class="kwrd">where</span> p.FirstName.StartsWith(<span class="str">&quot;C&quot;</span>) &amp;&amp; p.Age &gt; 21
+With SQLinq there are no complex object models. You simply create Class or Interface that matches the scheme of your database table or view, and you can start querying it in a strongly typed manner.  <pre class="csharpcode">IEnumerable<Person> data = con.Query(
+    from p <span class="kwrd">in</span> SQLinq<Person>()
+    <span class="kwrd">where</span> p.FirstName.StartsWith(<span class="str">&quot;C&quot;</span>) &amp;&amp; p.Age > 21
     orderby p.FirstName
     select p
 );</pre>
@@ -98,9 +98,9 @@ With SQLinq there are no complex object models. You simply create Class or Inter
 
 **Step 2:** Use LINQ to generate the ad-hoc SQL query necessary
 
-<pre class="csharpcode">var query = from d <span class="kwrd">in</span> <span class="kwrd">new</span> SQLinq&lt;Person&gt;()
+<pre class="csharpcode">var query = from d <span class="kwrd">in</span> <span class="kwrd">new</span> SQLinq<Person>()
             <span class="kwrd">where</span> d.FirstName.StartsWith(<span class="str">&quot;C&quot;</span>)
-                 &amp;&amp; d.Age &gt; 18
+                 &amp;&amp; d.Age > 18
             orderby d.FirstName
             select <span class="kwrd">new</span> {
                 id = d.ID,
@@ -136,13 +136,13 @@ SQLinq.Dapper is a small extension library that bridges SQLinq and Dapper to mak
 
 Here’s a modified version of the above example that uses Dapper:
 
-<pre class="csharpcode">IEnumerable&lt;Person&gt; data = <span class="kwrd">null</span>;
+<pre class="csharpcode">IEnumerable<Person> data = <span class="kwrd">null</span>;
 <span class="kwrd">using</span>(IDbConnection con = GetDbConnection())
 {
     con.Open();
     data = con.Query(
-        from p <span class="kwrd">in</span> SQLinq&lt;Person&gt;()
-        <span class="kwrd">where</span> p.FirstName.StartsWith(<span class="str">&quot;C&quot;</span>) &amp;&amp; p.Age &gt; 21
+        from p <span class="kwrd">in</span> SQLinq<Person>()
+        <span class="kwrd">where</span> p.FirstName.StartsWith(<span class="str">&quot;C&quot;</span>) &amp;&amp; p.Age > 21
         orderby p.FirstName
         select p
     );

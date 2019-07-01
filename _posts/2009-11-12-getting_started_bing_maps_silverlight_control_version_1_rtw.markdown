@@ -51,24 +51,24 @@ If you would like to see the Bing Maps Silverligth Control &ldquo;In Action&rdqu
 <h5>Add a Reference to Microsoft.Maps.MapControl.dll</h5>
 <ul>
 <li>Go to the &ldquo;**Solution Explorer**&rdquo; and RIght-Click &ldquo; **References**&rdquo; in the Silverlight Project (not the ASP.NET Web Application Project), and Select &ldquo;**Add Reference&hellip;**&rdquo;       <br /><a rel="nofollow" href="/images/postsBingMapsRTW_AddReference.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="BingMapsRTW_AddReference" src="/images/postsBingMapsRTW_AddReference_thumb.png" border="0" alt="BingMapsRTW_AddReference" width="417" height="344" /></a>  </li>
-<li>Within the &ldquo;**Add Reference**&ldquo; Dialog, Select the &ldquo;**Browse**&ldquo; tab and navigate to the folder where the SDK is installed, then select the &ldquo;**Microsoft.Maps.MapControl.dll**&rdquo; and &ldquo;**Microsoft.Maps.MapControl.Common.dll**&rdquo; files.       <br /> <br /><em>Note: Be Default the SDK is installed in this folder on x64 version of Windows: &ldquo;C:\Program Files (x86)\Bing Maps Silverlight Control\V1\Libraries&rdquo;. On x86 (or 32-bit) versions of Windows it&rsquo;s installed within the &ldquo;Program Files&rdquo; folder instead of &ldquo;Program Files (x86)&rdquo;.</em> <br /> <br /><a rel="nofollow" href="/images/postsBingMapsRTW_AddReferenceBrowse.png">**<img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="BingMapsRTW_AddReferenceBrowse" src="/images/postsBingMapsRTW_AddReferenceBrowse_thumb.png" border="0" alt="BingMapsRTW_AddReferenceBrowse" width="644" height="394" />**</a>** ** </li>
+<li>Within the &ldquo;**Add Reference**&ldquo; Dialog, Select the &ldquo;**Browse**&ldquo; tab and navigate to the folder where the SDK is installed, then select the &ldquo;**Microsoft.Maps.MapControl.dll**&rdquo; and &ldquo;**Microsoft.Maps.MapControl.Common.dll**&rdquo; files.       <br /> <br />*Note: Be Default the SDK is installed in this folder on x64 version of Windows: &ldquo;C:\Program Files (x86)\Bing Maps Silverlight Control\V1\Libraries&rdquo;. On x86 (or 32-bit) versions of Windows it&rsquo;s installed within the &ldquo;Program Files&rdquo; folder instead of &ldquo;Program Files (x86)&rdquo;.* <br /> <br /><a rel="nofollow" href="/images/postsBingMapsRTW_AddReferenceBrowse.png">**<img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="BingMapsRTW_AddReferenceBrowse" src="/images/postsBingMapsRTW_AddReferenceBrowse_thumb.png" border="0" alt="BingMapsRTW_AddReferenceBrowse" width="644" height="394" />**</a>** ** </li>
 </ul>
 <h5>Display a Bing Maps Map!</h5>
 <ul>
-<li>Add a Namespace declaration to Page.xaml for the Microsoft Maps.MapControl namespace.      <br />To do this add the following to the &lt;UserControl&gt; tag:       <br /><em>xmlns:m=&rdquo;clr-namespace:Microsoft.Maps.MapControl;assembly=Microsoft.Maps.MapControl&rdquo;</em> </li>
-<li>Add the Map Control to the Page by adding the following tag within the Grid in the Page:      <br /><em>&lt;m:Map&gt;&lt;/m:Map&gt;</em> The resulting Page.xaml will look like this: </li>
+<li>Add a Namespace declaration to Page.xaml for the Microsoft Maps.MapControl namespace.      <br />To do this add the following to the <UserControl> tag:       <br />*xmlns:m=&rdquo;clr-namespace:Microsoft.Maps.MapControl;assembly=Microsoft.Maps.MapControl&rdquo;* </li>
+<li>Add the Map Control to the Page by adding the following tag within the Grid in the Page:      <br />*<m:Map></m:Map>* The resulting Page.xaml will look like this: </li>
 </ul>
 <ul>
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="BingMapsSilverlightApplication1.MainPage"</span>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="BingMapsSilverlightApplication1.MainPage"</span>
     <span class="attr">xmlns</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span> 
     <span class="attr">xmlns:x</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml"</span>
     <span class="attr">xmlns:d</span><span class="kwrd">="http://schemas.microsoft.com/expression/blend/2008"</span> <span class="attr">xmlns:mc</span><span class="kwrd">="http://schemas.openxmlformats.org/markup-compatibility/2006"</span> 
     <span class="attr">xmlns:m</span><span class="kwrd">="clr-namespace:Microsoft.Maps.MapControl;assembly=Microsoft.Maps.MapControl"</span>
-    <span class="attr">mc:Ignorable</span><span class="kwrd">="d"</span> <span class="attr">d:DesignWidth</span><span class="kwrd">="640"</span> <span class="attr">d:DesignHeight</span><span class="kwrd">="480"</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">Grid</span> <span class="attr">x:Name</span><span class="kwrd">="LayoutRoot"</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">m:Map</span><span class="kwrd">&gt;&lt;/</span><span class="html">m:Map</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;/</span><span class="html">Grid</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">UserControl</span><span class="kwrd">&gt;</span></pre>
+    <span class="attr">mc:Ignorable</span><span class="kwrd">="d"</span> <span class="attr">d:DesignWidth</span><span class="kwrd">="640"</span> <span class="attr">d:DesignHeight</span><span class="kwrd">="480"</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">Grid</span> <span class="attr">x:Name</span><span class="kwrd">="LayoutRoot"</span><span class="kwrd">></span>
+        <span class="kwrd"><</span><span class="html">m:Map</span><span class="kwrd">></</span><span class="html">m:Map</span><span class="kwrd">></span>
+    <span class="kwrd"></</span><span class="html">Grid</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">UserControl</span><span class="kwrd">></span></pre>
 <!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } --> 
 </ul>
 <ul>
@@ -79,7 +79,7 @@ Now, when you run the application (press F5 within Visual Studio) you will see a
 </ul>
 <h3><a rel="nofollow" href="/images/postsBingMapsRTW_BasicMapWithDevAccountSignUpWarning.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="BingMapsRTW_BasicMapWithDevAccountSignUpWarning" src="/images/postsBingMapsRTW_BasicMapWithDevAccountSignUpWarning_thumb.png" border="0" alt="BingMapsRTW_BasicMapWithDevAccountSignUpWarning" width="244" height="179" align="right" /></a>Setting Up a Bing Maps Developer Account</h3>
 
-When running the above example you may have noticed the &ldquo;<em>Invalid Credentials. Sign up for a developer account at: </em><a rel="nofollow" href="http://www.microsoft.com/maps/developers"><em>http://www.microsoft.com/maps/developers</em></a>&rdquo; message being displayed over top of the Map. This is because in order for you to use the Silverlight Map control within an application, Microsoft is requiring you to setup a Developer Account for the domain you will be hosting your application in.
+When running the above example you may have noticed the &ldquo;*Invalid Credentials. Sign up for a developer account at: *<a rel="nofollow" href="http://www.microsoft.com/maps/developers">*http://www.microsoft.com/maps/developers*</a>&rdquo; message being displayed over top of the Map. This is because in order for you to use the Silverlight Map control within an application, Microsoft is requiring you to setup a Developer Account for the domain you will be hosting your application in.
 <h5>Setup a Bing Maps Developer Account</h5>
 <ul>
 <li>Go to the Bing Maps Account Center at <a rel="nofollow" href="https://www.bingmapsportal.com">https://www.bingmapsportal.com</a> </li>
@@ -96,23 +96,23 @@ When running the above example you may have noticed the &ldquo;<em>Invalid Crede
 <li>Click the &ldquo;Create key&rdquo; button. Now you have a Bing Maps Key that you can use within your application to get rid of that pesky little warning message displayed over the top of the Map and everything on it.</li>
 </ul>
 <ul>
-<em>Note: For testing purposes I entered in an Application Name of &ldquo;Test&rdquo; and Application URL of &ldquo;http://localhost&rdquo;. This way I have a Bing Maps Key to use for testing/playing with the Silverlight Map Control that wont track any usage to the application I&rsquo;ll eventually build.</em> 
+*Note: For testing purposes I entered in an Application Name of &ldquo;Test&rdquo; and Application URL of &ldquo;http://localhost&rdquo;. This way I have a Bing Maps Key to use for testing/playing with the Silverlight Map Control that wont track any usage to the application I&rsquo;ll eventually build.* 
 </ul>
 <h5>Use the Bing Maps Key within Your Application</h5>
 
 Now that you have a Bing Maps Key for your application, you can set your Map within that application to use this key.
 
 To do so, just set the Map controls &ldquo;CredentialsProvider&rdquo; property value within XAML to the Bing Maps Key. Just copy and paste the key from the Bing Maps Account Center into your XAML code.
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="BingMapsSilverlightApplication1.MainPage"</span>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="BingMapsSilverlightApplication1.MainPage"</span>
     <span class="attr">xmlns</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span> 
     <span class="attr">xmlns:x</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml"</span>
     <span class="attr">xmlns:d</span><span class="kwrd">="http://schemas.microsoft.com/expression/blend/2008"</span> <span class="attr">xmlns:mc</span><span class="kwrd">="http://schemas.openxmlformats.org/markup-compatibility/2006"</span> 
     <span class="attr">xmlns:m</span><span class="kwrd">="clr-namespace:Microsoft.Maps.MapControl;assembly=Microsoft.Maps.MapControl"</span>
-    <span class="attr">mc:Ignorable</span><span class="kwrd">="d"</span> <span class="attr">d:DesignWidth</span><span class="kwrd">="640"</span> <span class="attr">d:DesignHeight</span><span class="kwrd">="480"</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">Grid</span> <span class="attr">x:Name</span><span class="kwrd">="LayoutRoot"</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">m:Map</span> <span class="attr">CredentialsProvider</span><span class="kwrd">="[Bing Maps Key Here]"</span><span class="kwrd">&gt;&lt;/</span><span class="html">m:Map</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;/</span><span class="html">Grid</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">UserControl</span><span class="kwrd">&gt;</span></pre>
+    <span class="attr">mc:Ignorable</span><span class="kwrd">="d"</span> <span class="attr">d:DesignWidth</span><span class="kwrd">="640"</span> <span class="attr">d:DesignHeight</span><span class="kwrd">="480"</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">Grid</span> <span class="attr">x:Name</span><span class="kwrd">="LayoutRoot"</span><span class="kwrd">></span>
+        <span class="kwrd"><</span><span class="html">m:Map</span> <span class="attr">CredentialsProvider</span><span class="kwrd">="[Bing Maps Key Here]"</span><span class="kwrd">></</span><span class="html">m:Map</span><span class="kwrd">></span>
+    <span class="kwrd"></</span><span class="html">Grid</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">UserControl</span><span class="kwrd">></span></pre>
 
  
 <h3>Set Map Properties Declaratively Using XAML and Programmatically Using Code</h3>
@@ -120,16 +120,16 @@ To do so, just set the Map controls &ldquo;CredentialsProvider&rdquo; property v
 You can change/set the Bing Maps Controls properties Declaratively using XAML, and Programmatically using Code.
 
 Below is an example of setting the Map Mode to Aerial using XAML:
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="BingMapsSilverlightApplication1.MainPage"</span>
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="BingMapsSilverlightApplication1.MainPage"</span>
     <span class="attr">xmlns</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span> 
     <span class="attr">xmlns:x</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml"</span>
     <span class="attr">xmlns:d</span><span class="kwrd">="http://schemas.microsoft.com/expression/blend/2008"</span> <span class="attr">xmlns:mc</span><span class="kwrd">="http://schemas.openxmlformats.org/markup-compatibility/2006"</span> 
     <span class="attr">xmlns:m</span><span class="kwrd">="clr-namespace:Microsoft.Maps.MapControl;assembly=Microsoft.Maps.MapControl"</span>
-    <span class="attr">mc:Ignorable</span><span class="kwrd">="d"</span> <span class="attr">d:DesignWidth</span><span class="kwrd">="640"</span> <span class="attr">d:DesignHeight</span><span class="kwrd">="480"</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">Grid</span> <span class="attr">x:Name</span><span class="kwrd">="LayoutRoot"</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">m:Map</span> <span class="attr">Mode</span><span class="kwrd">="Aerial"</span><span class="kwrd">&gt;&lt;/</span><span class="html">m:Map</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;/</span><span class="html">Grid</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">UserControl</span><span class="kwrd">&gt;</span></pre>
+    <span class="attr">mc:Ignorable</span><span class="kwrd">="d"</span> <span class="attr">d:DesignWidth</span><span class="kwrd">="640"</span> <span class="attr">d:DesignHeight</span><span class="kwrd">="480"</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">Grid</span> <span class="attr">x:Name</span><span class="kwrd">="LayoutRoot"</span><span class="kwrd">></span>
+        <span class="kwrd"><</span><span class="html">m:Map</span> <span class="attr">Mode</span><span class="kwrd">="Aerial"</span><span class="kwrd">></</span><span class="html">m:Map</span><span class="kwrd">></span>
+    <span class="kwrd"></</span><span class="html">Grid</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">UserControl</span><span class="kwrd">></span></pre>
 
  
 
@@ -154,17 +154,17 @@ Below is an example of setting the Map Mode to Aerial using C# code:
 
  
 
-First, in order to access the Map Control programmatically you&rsquo;ll need to assign its &ldquo;<em>Name&rdquo;</em>  property within XAML so you have a name to reference it by; like the following:
-<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="BingMapsSilverlightApplication1.MainPage"</span>
+First, in order to access the Map Control programmatically you&rsquo;ll need to assign its &ldquo;*Name&rdquo;*  property within XAML so you have a name to reference it by; like the following:
+<pre class="csharpcode"><span class="kwrd"><</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="BingMapsSilverlightApplication1.MainPage"</span>
     <span class="attr">xmlns</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span> 
     <span class="attr">xmlns:x</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml"</span>
     <span class="attr">xmlns:d</span><span class="kwrd">="http://schemas.microsoft.com/expression/blend/2008"</span> <span class="attr">xmlns:mc</span><span class="kwrd">="http://schemas.openxmlformats.org/markup-compatibility/2006"</span> 
     <span class="attr">xmlns:m</span><span class="kwrd">="clr-namespace:Microsoft.Maps.MapControl;assembly=Microsoft.Maps.MapControl"</span>
-    <span class="attr">mc:Ignorable</span><span class="kwrd">="d"</span> <span class="attr">d:DesignWidth</span><span class="kwrd">="640"</span> <span class="attr">d:DesignHeight</span><span class="kwrd">="480"</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;</span><span class="html">Grid</span> <span class="attr">x:Name</span><span class="kwrd">="LayoutRoot"</span><span class="kwrd">&gt;</span>
-        <span class="kwrd">&lt;</span><span class="html">m:Map</span> <span class="attr">Name</span><span class="kwrd">="Map1"</span><span class="kwrd">&gt;&lt;/</span><span class="html">m:Map</span><span class="kwrd">&gt;</span>
-    <span class="kwrd">&lt;/</span><span class="html">Grid</span><span class="kwrd">&gt;</span>
-<span class="kwrd">&lt;/</span><span class="html">UserControl</span><span class="kwrd">&gt;</span></pre>
+    <span class="attr">mc:Ignorable</span><span class="kwrd">="d"</span> <span class="attr">d:DesignWidth</span><span class="kwrd">="640"</span> <span class="attr">d:DesignHeight</span><span class="kwrd">="480"</span><span class="kwrd">></span>
+    <span class="kwrd"><</span><span class="html">Grid</span> <span class="attr">x:Name</span><span class="kwrd">="LayoutRoot"</span><span class="kwrd">></span>
+        <span class="kwrd"><</span><span class="html">m:Map</span> <span class="attr">Name</span><span class="kwrd">="Map1"</span><span class="kwrd">></</span><span class="html">m:Map</span><span class="kwrd">></span>
+    <span class="kwrd"></</span><span class="html">Grid</span><span class="kwrd">></span>
+<span class="kwrd"></</span><span class="html">UserControl</span><span class="kwrd">></span></pre>
 <h3> </h3>
 <h3>Additional Articles</h3>
 

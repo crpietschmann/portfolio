@@ -133,7 +133,7 @@ function map_onendpan(e)<br />
 
 
     //Check distance panned from original center point<br />
-    if (distance &gt; mapRestrictionDistance)<br />
+    if (distance > mapRestrictionDistance)<br />
     {<br />
         //Move map back to the last point that was<br />
         //within the desired restriction radius<br />
@@ -199,7 +199,7 @@ function map_onendzoom(e)<br />
 {<br />
     //Check if the map is zoomed out further than<br />
     //the set restriction<br />
-    if (e.zoomLevel &lt; mapRestrictionZoomLevel)<br />
+    if (e.zoomLevel < mapRestrictionZoomLevel)<br />
     {<br />
         //Zoom the map back in to the restricted area<br />
         map.SetZoomLevel(mapRestrictionZoomLevel);<br />

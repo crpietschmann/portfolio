@@ -14,13 +14,13 @@ redirect_from:
 ---
 <!-- more -->
 
-One of the most handy methods in .NET is the <em>int.TryParse</em> method. It makes it really convenient when evaluating a string value as an integer. But, JavaScript has no equivalent so you need to do your own evaluation every time.
+One of the most handy methods in .NET is the *int.TryParse* method. It makes it really convenient when evaluating a string value as an integer. But, JavaScript has no equivalent so you need to do your own evaluation every time.
 
 Here's a simple JavaScript method I wrote that takes the work out of evaluating a string to an integer:
 <pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">function TryParseInt(str,defaultValue) {
      var retValue = defaultValue;
      if(str !== null) {
-         if(str.length &gt; 0) {
+         if(str.length > 0) {
              if (!isNaN(str)) {
                  retValue = parseInt(str);
              }
