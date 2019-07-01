@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
-alias: ["/post/2005/10/07/A-deep-talk-about-ASPNET-Web-Controls", "/post/2005/10/07/a-deep-talk-about-aspnet-web-controls"]
+redirect_from: 
+  - /post/2005/10/07/A-deep-talk-about-ASPNET-Web-Controls
+ -  /post/2005/10/07/a-deep-talk-about-aspnet-web-controls
 ---
 <!-- more -->
 <p>This is another great episode of The <a title=".NET" href="http://www.microsoft.com/net/" target="_blank">.NET</a> Rocks show. This weeks episode is all about writing Web Controls in <a title="ASP.NET" href="http://asp.net" target="_blank">ASP.NET</a>. I think this is one of the more advanced topics they've covered on the show. I listened to it a couple times and since I don't author too many user controls, I think I'll have to play with more of the stuff they discuss.</p>

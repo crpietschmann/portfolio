@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["C#", "vb.net"]
-alias: ["/post/2008/02/26/NET-Why-arent-Private-Abstract-methods-allowed", "/post/2008/02/26/net-why-arent-private-abstract-methods-allowed"]
+redirect_from: 
+  - /post/2008/02/26/NET-Why-arent-Private-Abstract-methods-allowed
+ -  /post/2008/02/26/net-why-arent-private-abstract-methods-allowed
 ---
 <!-- more -->
 <p>Sometimes when creating base objects you want to create methods that are overridable by object that inherit the base object, but keep the methods from being public. However, the compiler throws an exceptions when you try to define&nbsp;a method as "Private Abstract".</p>

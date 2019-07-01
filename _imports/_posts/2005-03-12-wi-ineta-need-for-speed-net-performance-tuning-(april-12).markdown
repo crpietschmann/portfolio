@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General", "WI-INETA"]
-alias: ["/post/2005/03/12/WI-INETA-Need-for-Speed-NET-Performance-Tuning-(April-12)", "/post/2005/03/12/wi-ineta-need-for-speed-net-performance-tuning-(april-12)"]
+redirect_from: 
+  - /post/2005/03/12/WI-INETA-Need-for-Speed-NET-Performance-Tuning-(April-12)
+ -  /post/2005/03/12/wi-ineta-need-for-speed-net-performance-tuning-(april-12)
 ---
 <!-- more -->
 <p>

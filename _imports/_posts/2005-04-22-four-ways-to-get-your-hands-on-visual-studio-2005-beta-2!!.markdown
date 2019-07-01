@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2005/04/22/Four-ways-to-get-your-hands-on-Visual-Studio-2005-Beta-2!!", "/post/2005/04/22/four-ways-to-get-your-hands-on-visual-studio-2005-beta-2!!"]
+redirect_from: 
+  - /post/2005/04/22/Four-ways-to-get-your-hands-on-Visual-Studio-2005-Beta-2!!
+ -  /post/2005/04/22/four-ways-to-get-your-hands-on-visual-studio-2005-beta-2!!
 ---
 <!-- more -->
 <OL>

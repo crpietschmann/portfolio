@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General", "Bing Maps"]
-alias: ["/post/2008/06/17/WebMapsVE-20-Released-ASPNET-Virtual-Earth-Mapping-Server-Control", "/post/2008/06/17/webmapsve-20-released-aspnet-virtual-earth-mapping-server-control"]
+redirect_from: 
+  - /post/2008/06/17/WebMapsVE-20-Released-ASPNET-Virtual-Earth-Mapping-Server-Control
+ -  /post/2008/06/17/webmapsve-20-released-aspnet-virtual-earth-mapping-server-control
 ---
 <!-- more -->
 <p>

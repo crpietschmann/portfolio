@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2004/08/07/Funny-Flash-video-about-Linux-on-everything", "/post/2004/08/07/funny-flash-video-about-linux-on-everything"]
+redirect_from: 
+  - /post/2004/08/07/Funny-Flash-video-about-Linux-on-everything
+ -  /post/2004/08/07/funny-flash-video-about-linux-on-everything
 ---
 <!-- more -->
 <P>This is a pretty funny flash video about linux running on everything. I&nbsp;like the Fembot.</P>

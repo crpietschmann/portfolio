@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Silverlight"]
-alias: ["/post/2008/03/05/MIX08-KeyNote-Notes", "/post/2008/03/05/mix08-keynote-notes"]
+redirect_from: 
+  - /post/2008/03/05/MIX08-KeyNote-Notes
+ -  /post/2008/03/05/mix08-keynote-notes
 ---
 <!-- more -->
 <p>I watched the MIX'08 Keynote online this&nbsp;morning, and here are some notes I took.&nbsp;</p>

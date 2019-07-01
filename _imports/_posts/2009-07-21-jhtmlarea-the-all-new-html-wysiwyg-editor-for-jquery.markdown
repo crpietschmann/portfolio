@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
-alias: ["/post/2009/07/21/jHtmlArea-The-all-NEW-HTML-WYSIWYG-Editor-for-jQuery", "/post/2009/07/21/jhtmlarea-the-all-new-html-wysiwyg-editor-for-jquery"]
+redirect_from: 
+  - /post/2009/07/21/jHtmlArea-The-all-NEW-HTML-WYSIWYG-Editor-for-jQuery
+ -  /post/2009/07/21/jhtmlarea-the-all-new-html-wysiwyg-editor-for-jquery
 ---
 <!-- more -->
 <p><img src="/images/posts2009/7/Screenshot.png" alt="" width="298" height="402" align="right" /></p>

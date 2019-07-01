@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2005/03/07/Microsoft-Exams-FREE-Retake-Offer", "/post/2005/03/07/microsoft-exams-free-retake-offer"]
+redirect_from: 
+  - /post/2005/03/07/Microsoft-Exams-FREE-Retake-Offer
+ -  /post/2005/03/07/microsoft-exams-free-retake-offer
 ---
 <!-- more -->
 <P class=MsoNormal><SPAN style="FONT-SIZE: 8pt; FONT-FAMILY: Verdana">

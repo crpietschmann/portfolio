@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "C#", "Silverlight"]
-alias: ["/post/2009/11/13/Prototype_OpenStreetMap_Silverlight_Control_using_Bing_Maps_SDK_and_DeepEarth", "/post/2009/11/13/prototype_openstreetmap_silverlight_control_using_bing_maps_sdk_and_deepearth"]
+redirect_from: 
+  - /post/2009/11/13/Prototype_OpenStreetMap_Silverlight_Control_using_Bing_Maps_SDK_and_DeepEarth
+ -  /post/2009/11/13/prototype_openstreetmap_silverlight_control_using_bing_maps_sdk_and_deepearth
 ---
 <!-- more -->
 <p>I&rsquo;ve decided to expand a little on using OpenStreetMap imagery with the new Bing Maps Silverlight Control in response to the following <a rel="nofollow" href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx#id_a250bec2-e7f3-4324-8837-e167eff776e4">comment posted by John O&rsquo;Brien</a> on my previous &ldquo;<a href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx">Display OpenStreetMap Imagery using Bing Maps Silverlight Control v1</a>&rdquo; post:</p>

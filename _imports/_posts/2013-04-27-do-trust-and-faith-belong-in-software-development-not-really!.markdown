@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: []
-alias: ["/post/2013/04/27/Do-Trust-and-Faith-belong-in-Software-Development-Not-Really!", "/post/2013/04/27/do-trust-and-faith-belong-in-software-development-not-really!"]
+redirect_from: 
+  - /post/2013/04/27/Do-Trust-and-Faith-belong-in-Software-Development-Not-Really!
+ -  /post/2013/04/27/do-trust-and-faith-belong-in-software-development-not-really!
 ---
 <!-- more -->
 <p>The words "Trust" and "Faith" don't normally come up in discussion surrounding software development. However, whether we like to say it or not, we really do put a lot of both trust and faith in software. In fact, software developers often put a lot trust and faith in there development tool. While this can be justified in certain cases; it is most often a mistake.

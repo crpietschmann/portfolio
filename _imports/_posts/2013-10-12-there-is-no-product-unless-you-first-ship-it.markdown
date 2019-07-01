@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
-alias: ["/post/2013/10/12/There-is-no-product-unless-you-first-ship-it", "/post/2013/10/12/there-is-no-product-unless-you-first-ship-it"]
+redirect_from: 
+  - /post/2013/10/12/There-is-no-product-unless-you-first-ship-it
+ -  /post/2013/10/12/there-is-no-product-unless-you-first-ship-it
 ---
 <!-- more -->
 <p>Just as there is no business without something to sell; you do not have a product until you ship it.</p>

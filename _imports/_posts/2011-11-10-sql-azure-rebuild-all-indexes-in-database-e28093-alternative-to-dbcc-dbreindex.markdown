@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["SQL"]
-alias: ["/post/2011/11/10/SQL-Azure-REBUILD-All-Indexes-in-Database-e28093-Alternative-to-DBCC-DBREINDEX", "/post/2011/11/10/sql-azure-rebuild-all-indexes-in-database-e28093-alternative-to-dbcc-dbreindex"]
+redirect_from: 
+  - /post/2011/11/10/SQL-Azure-REBUILD-All-Indexes-in-Database-e28093-Alternative-to-DBCC-DBREINDEX
+ -  /post/2011/11/10/sql-azure-rebuild-all-indexes-in-database-e28093-alternative-to-dbcc-dbreindex
 ---
 <!-- more -->
 <p>Unfortunately there are some differences between SQL Server and SQL Azure. One of these differences is that SQL Azure does not support the &ldquo;DBCC DBREINDEX&rdquo; command. Thankfully there is an alternative you can use to rebuild the indexes within your SQL Azure databases.</p>

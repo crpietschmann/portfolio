@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
-alias: ["/post/2008/01/24/Getting-Started-with-Virtual-Earth-and-ASPNET-AJAX", "/post/2008/01/24/getting-started-with-virtual-earth-and-aspnet-ajax"]
+redirect_from: 
+  - /post/2008/01/24/Getting-Started-with-Virtual-Earth-and-ASPNET-AJAX
+ -  /post/2008/01/24/getting-started-with-virtual-earth-and-aspnet-ajax
 ---
 <!-- more -->
 <p>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
-alias: ["/post/2008/11/04/JavaScript-Mixing-OOP-and-Event-Driven-Programming", "/post/2008/11/04/javascript-mixing-oop-and-event-driven-programming"]
+redirect_from: 
+  - /post/2008/11/04/JavaScript-Mixing-OOP-and-Event-Driven-Programming
+ -  /post/2008/11/04/javascript-mixing-oop-and-event-driven-programming
 ---
 <!-- more -->
 <p>

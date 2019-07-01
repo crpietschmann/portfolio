@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/10/02/US-Cellular-is-dicontinuing-the-Motorola-v323i-but-you-can-still-buy-it-from-Motorola!", "/post/2007/10/02/us-cellular-is-dicontinuing-the-motorola-v323i-but-you-can-still-buy-it-from-motorola!"]
+redirect_from: 
+  - /post/2007/10/02/US-Cellular-is-dicontinuing-the-Motorola-v323i-but-you-can-still-buy-it-from-Motorola!
+ -  /post/2007/10/02/us-cellular-is-dicontinuing-the-motorola-v323i-but-you-can-still-buy-it-from-motorola!
 ---
 <!-- more -->
 <P>I just renewed my cell phone contract and was lucky enough to get a couple of the last <A href="http://www.store.motorola.com/mot/en/US/adirect/motorola?cmd=catProductDetail&amp;showAddButton=true&amp;productID=88772GHBPA">Motorola v323i</A> phones that the local stores had left. Apparently they are discontiuing this model, and US Cellular has them on sale (if you can find them) for $30 with a new contract. </P>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2004/07/02/PaintNET-This-thing-is-like-MS-Paint-on-steroids", "/post/2004/07/02/paintnet-this-thing-is-like-ms-paint-on-steroids"]
+redirect_from: 
+  - /post/2004/07/02/PaintNET-This-thing-is-like-MS-Paint-on-steroids
+ -  /post/2004/07/02/paintnet-this-thing-is-like-ms-paint-on-steroids
 ---
 <!-- more -->
 <p>

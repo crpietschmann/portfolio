@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
-alias: ["/post/2016/02/14/Find-Your-Passion", "/post/2016/02/14/find-your-passion"]
+redirect_from: 
+  - /post/2016/02/14/Find-Your-Passion
+ -  /post/2016/02/14/find-your-passion
 ---
 <!-- more -->
 <p>Much of success in life hinges on finding something you're passionate about. Sure, certain interests that turn into passions can be difficult to build a career around, but there's certainly ways to do it. No matter what your passion, you need to find it!</p>

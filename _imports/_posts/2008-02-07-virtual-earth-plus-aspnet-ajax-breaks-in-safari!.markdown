@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
-alias: ["/post/2008/02/07/Virtual-Earth-Plus-ASPNET-AJAX-Breaks-In-Safari!", "/post/2008/02/07/virtual-earth-plus-aspnet-ajax-breaks-in-safari!"]
+redirect_from: 
+  - /post/2008/02/07/Virtual-Earth-Plus-ASPNET-AJAX-Breaks-In-Safari!
+ -  /post/2008/02/07/virtual-earth-plus-aspnet-ajax-breaks-in-safari!
 ---
 <!-- more -->
 <p><strong>Update 5/17/2008:</strong> This issue has since been&nbsp;fixed with the release of the Virtual Earth v6.1 release. There is still a small issue related to the CalendarExtender and Virtual Earth that only occurs in Safari. You can read more about it <a href="/post.aspx?id=c75cbc89-6abf-4869-914d-6176bb6c7736">here</a>.</p>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2004/09/07/How-do-you-call-a-Console-application-from-ASPNET-and-get-the-results", "/post/2004/09/07/how-do-you-call-a-console-application-from-aspnet-and-get-the-results"]
+redirect_from: 
+  - /post/2004/09/07/How-do-you-call-a-Console-application-from-ASPNET-and-get-the-results
+ -  /post/2004/09/07/how-do-you-call-a-console-application-from-aspnet-and-get-the-results
 ---
 <!-- more -->
 <P>Here is a VB.NET version of a C# example that I found to do just that. It's really simple to do.</P>

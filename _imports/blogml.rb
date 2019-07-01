@@ -155,7 +155,14 @@ module Jekyll
   
             # Add URL rewrite to htaccess (broken now that we use old_url as an array)
             #htaccess.puts "RewriteRule ^post/#{old_url}$ /#{name}.html [R=301,NC]"
-  
+
+            # redirect_from
+
+            redirect_from = "\n  - " + item.attributes["post-url"]
+            if item.attributes["post-url"] != item.attributes["post-url"].downcase
+              redirect_from += ("\n -  " + item.attributes["post-url"].downcase)
+            end
+
             # since BlogML doesn't support tags, and I haphazardly used categories as tags,
             # we are going to read categories and use them as tags.
             tags = Array.new
@@ -182,7 +189,7 @@ comments: true
 published: #{published}
 categories: ["blog", "archives"]
 tags: #{tags}
-alias: #{old_url}
+redirect_from: #{redirect_from}
 ---
               HEADER
               # f.puts

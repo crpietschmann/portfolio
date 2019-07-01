@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
-alias: ["/post/2013/07/27/Work-Smart-Not-Hard", "/post/2013/07/27/work-smart-not-hard"]
+redirect_from: 
+  - /post/2013/07/27/Work-Smart-Not-Hard
+ -  /post/2013/07/27/work-smart-not-hard
 ---
 <!-- more -->
 <p><!--[if gte mso 9]><xml>

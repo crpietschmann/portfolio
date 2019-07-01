@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Silverlight"]
-alias: ["/post/2008/03/05/Silverlight-Anatomy-of-an-XAP-file", "/post/2008/03/05/silverlight-anatomy-of-an-xap-file"]
+redirect_from: 
+  - /post/2008/03/05/Silverlight-Anatomy-of-an-XAP-file
+ -  /post/2008/03/05/silverlight-anatomy-of-an-xap-file
 ---
 <!-- more -->
 <p>Silverlight 2 Beta 1 just came out this morning, so I started checking it out immediately. I installed the Silverlight Tools for Visual Studio and noticed that when a Silverlight Application is compiled a .xap file is created that contains the application. But, what exactly is a .xap file, and what exaclty is in there? </p>  <p><strong>What is an .xap file?</strong> </p>  <p>A .xap file is basically a compiled Silverlight application. The file is actually a .zip file that contains all the files necessary for the application. Just rename the .xap file to have a .zip extension and then you can open it up to see its contents. Just try it yourself. </p>  <p><strong>What files are contained within the .xap file?</strong> </p>  <p>The .xap file contains an application manifest (AppManifest.xaml) file and all the necessary DLL's that are required by the application. The first DLL contained is the compiled version of you application and has the same name of your application. In my test I created an application names &quot;SilverlightApplication1&quot;, so the DLL is named &quot;SilverlightApplication1.dll&quot;. The rest of the DLL's are the dependancies the application requires. </p>  <p><strong>What is the AppManifest.xaml file?</strong> </p>  <p>First lets look at an example AppManifest.xaml file:</p>  <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">Deployment</span>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/07/16/Free-Vista-SP1-Support-through-March-18-2009", "/post/2008/07/16/free-vista-sp1-support-through-march-18-2009"]
+redirect_from: 
+  - /post/2008/07/16/Free-Vista-SP1-Support-through-March-18-2009
+ -  /post/2008/07/16/free-vista-sp1-support-through-march-18-2009
 ---
 <!-- more -->
 <p>

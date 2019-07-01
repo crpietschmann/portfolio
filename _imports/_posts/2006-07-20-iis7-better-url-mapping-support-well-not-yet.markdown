@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2006/07/20/IIS7-Better-Url-Mapping-support-well-not-yet", "/post/2006/07/20/iis7-better-url-mapping-support-well-not-yet"]
+redirect_from: 
+  - /post/2006/07/20/IIS7-Better-Url-Mapping-support-well-not-yet
+ -  /post/2006/07/20/iis7-better-url-mapping-support-well-not-yet
 ---
 <!-- more -->
 <P>Recently, I search for articles/documentation about Url Mapping in IIS7, but I couldn't find anything. So, I asked <A href="http://weblogs.asp.net/scottgu/archive/2006/06/15/My-TechEd-Talk-Now-Available-for-Download.aspx#455783">Scott on his blog</A>, "What features does IIS7 offer for Url Mapping?"</P>

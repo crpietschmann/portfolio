@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/10/28/WPF-Toolkit-adds-Ribbon-Control-to-NET-35-SP1", "/post/2008/10/28/wpf-toolkit-adds-ribbon-control-to-net-35-sp1"]
+redirect_from: 
+  - /post/2008/10/28/WPF-Toolkit-adds-Ribbon-Control-to-NET-35-SP1
+ -  /post/2008/10/28/wpf-toolkit-adds-ribbon-control-to-net-35-sp1
 ---
 <!-- more -->
 <p>The first release of the new WPF Toolkit was released today. This toolkit includes a new Ribbon control as well as the following: new WPF DataGrid, DatePicker/Calendar, and VisualStateManger. The coolest feature of this Toolkit (IMO) is the new Ribbon control. In .NET 4.0 there will be a ribbon control baked in, but thanks to the WPF Toolkit we have access to utilize the new Ribbon control today in WPF with .NET 3.5 SP1!</p>

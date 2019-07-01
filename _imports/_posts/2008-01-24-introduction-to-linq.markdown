@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["vb.net"]
-alias: ["/post/2008/01/24/Introduction-to-LINQ", "/post/2008/01/24/introduction-to-linq"]
+redirect_from: 
+  - /post/2008/01/24/Introduction-to-LINQ
+ -  /post/2008/01/24/introduction-to-linq
 ---
 <!-- more -->
 <h3>What is LINQ?</h3>

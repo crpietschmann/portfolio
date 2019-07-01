@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/07/30/Why-wait-for-Windows-7-Dell-XT-has-Multi-Touch-already", "/post/2008/07/30/why-wait-for-windows-7-dell-xt-has-multi-touch-already"]
+redirect_from: 
+  - /post/2008/07/30/Why-wait-for-Windows-7-Dell-XT-has-Multi-Touch-already
+ -  /post/2008/07/30/why-wait-for-windows-7-dell-xt-has-multi-touch-already
 ---
 <!-- more -->
 <p>

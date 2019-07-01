@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Win32API"]
-alias: ["/post/2009/01/26/CSharp-Flash-Window-in-Taskbar-via-Win32-FlashWindowEx", "/post/2009/01/26/csharp-flash-window-in-taskbar-via-win32-flashwindowex"]
+redirect_from: 
+  - /post/2009/01/26/CSharp-Flash-Window-in-Taskbar-via-Win32-FlashWindowEx
+ -  /post/2009/01/26/csharp-flash-window-in-taskbar-via-win32-flashwindowex
 ---
 <!-- more -->
 <p>The Windows API (Win32) has the FlashWindowEx method within the User32 library; this method allows you (the developer) to Flash a Window, signifying to the user that some major event occurred within the application that requires their attention. The most common use of this is to flash the window until the user returns focus to the application. However, you can also flash the window a specified number of times, or just keep flashing it until you decide when to stop.</p>

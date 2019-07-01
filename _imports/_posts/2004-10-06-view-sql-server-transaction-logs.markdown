@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2004/10/06/View-SQL-Server-Transaction-Logs", "/post/2004/10/06/view-sql-server-transaction-logs"]
+redirect_from: 
+  - /post/2004/10/06/View-SQL-Server-Transaction-Logs
+ -  /post/2004/10/06/view-sql-server-transaction-logs
 ---
 <!-- more -->
 <P>Ever wanted to look in you SQL Server Transaction logs??</P>

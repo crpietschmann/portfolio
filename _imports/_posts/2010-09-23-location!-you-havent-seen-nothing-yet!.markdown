@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2010/09/23/Location!-You-Havent-Seen-Nothing-Yet!", "/post/2010/09/23/location!-you-havent-seen-nothing-yet!"]
+redirect_from: 
+  - /post/2010/09/23/Location!-You-Havent-Seen-Nothing-Yet!
+ -  /post/2010/09/23/location!-you-havent-seen-nothing-yet!
 ---
 <!-- more -->
 <p>The popularity of location aware devices and software has been on the rise for the last five years, since Google Maps and Microsoft Virtual Earth (now Bing Maps) were initially released. Surprisingly, however, the utilization and adoption of geo-location and mapping haven't been as rapid as I had speculated back in 2005. Today there are all kinds of location based applications and services popping up.</p>

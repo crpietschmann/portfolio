@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
-alias: ["/post/2007/10/19/Virtual-Earth-6-Bug-ShowSwitch-parameter-of-LoadMap-method-no-longer-works", "/post/2007/10/19/virtual-earth-6-bug-showswitch-parameter-of-loadmap-method-no-longer-works"]
+redirect_from: 
+  - /post/2007/10/19/Virtual-Earth-6-Bug-ShowSwitch-parameter-of-LoadMap-method-no-longer-works
+ -  /post/2007/10/19/virtual-earth-6-bug-showswitch-parameter-of-loadmap-method-no-longer-works
 ---
 <!-- more -->
 <p>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
-alias: ["/post/2006/07/26/PietschSoftVE3-v003-plus-Demo-site!", "/post/2006/07/26/pietschsoftve3-v003-plus-demo-site!"]
+redirect_from: 
+  - /post/2006/07/26/PietschSoftVE3-v003-plus-Demo-site!
+ -  /post/2006/07/26/pietschsoftve3-v003-plus-demo-site!
 ---
 <!-- more -->
 <p>

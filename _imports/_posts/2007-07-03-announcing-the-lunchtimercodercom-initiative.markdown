@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/07/03/Announcing-the-LunchTimerCodercom-Initiative", "/post/2007/07/03/announcing-the-lunchtimercodercom-initiative"]
+redirect_from: 
+  - /post/2007/07/03/Announcing-the-LunchTimerCodercom-Initiative
+ -  /post/2007/07/03/announcing-the-lunchtimercodercom-initiative
 ---
 <!-- more -->
 <p>

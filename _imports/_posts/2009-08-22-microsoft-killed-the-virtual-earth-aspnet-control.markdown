@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["asp.net", "Bing Maps"]
-alias: ["/post/2009/08/22/Microsoft-Killed-the-Virtual-Earth-ASPNET-Control", "/post/2009/08/22/microsoft-killed-the-virtual-earth-aspnet-control"]
+redirect_from: 
+  - /post/2009/08/22/Microsoft-Killed-the-Virtual-Earth-ASPNET-Control
+ -  /post/2009/08/22/microsoft-killed-the-virtual-earth-aspnet-control
 ---
 <!-- more -->
 <p>Yesterday, Chris Pendleton officially announced that the <a href="http://www.bing.com/community/blogs/maps/archive/2009/08/21/the-future-of-the-virtual-earth-asp-net-control.aspx" target="_blank">Microsoft Virtual Earth ASP.NET Control is now Dead</a>. Frankly, I&rsquo;ve considered it &ldquo;dead&rdquo; for a long time now since it didn&rsquo;t get updated much, didn&rsquo;t have a completely full feature support, has a few bugs AND you couldn&rsquo;t use it within your applications because it was just a Preview (CTP) anyway.</p>

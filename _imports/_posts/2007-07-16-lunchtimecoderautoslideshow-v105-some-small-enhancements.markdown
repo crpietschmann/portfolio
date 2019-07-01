@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
-alias: ["/post/2007/07/16/LunchTimeCoderAutoSlideShow-v105-some-small-enhancements", "/post/2007/07/16/lunchtimecoderautoslideshow-v105-some-small-enhancements"]
+redirect_from: 
+  - /post/2007/07/16/LunchTimeCoderAutoSlideShow-v105-some-small-enhancements
+ -  /post/2007/07/16/lunchtimecoderautoslideshow-v105-some-small-enhancements
 ---
 <!-- more -->
 <p>Today I spent a small amount of time enhancing the <a href="/Download/LunchTimeCoder/JavaScript/AutoSlideShow/">LunchTimeCoder.AutoSlideShow javascript component</a>.</p>

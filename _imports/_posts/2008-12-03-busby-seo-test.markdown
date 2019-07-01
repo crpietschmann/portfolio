@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/12/03/Busby-SEO-Test", "/post/2008/12/03/busby-seo-test"]
+redirect_from: 
+  - /post/2008/12/03/Busby-SEO-Test
+ -  /post/2008/12/03/busby-seo-test
 ---
 <!-- more -->
 <h1>Busby SEO Test is Polluting the Internet with Link Spam!!! <br />

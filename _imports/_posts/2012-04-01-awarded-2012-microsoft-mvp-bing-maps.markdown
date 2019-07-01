@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2012/04/01/Awarded-2012-Microsoft-MVP-Bing-Maps", "/post/2012/04/01/awarded-2012-microsoft-mvp-bing-maps"]
+redirect_from: 
+  - /post/2012/04/01/Awarded-2012-Microsoft-MVP-Bing-Maps
+ -  /post/2012/04/01/awarded-2012-microsoft-mvp-bing-maps
 ---
 <!-- more -->
 <p><img style="float: right;" src="/images/postsMVP_FullColor_ForScreen.png" alt="" width="157" /></p>

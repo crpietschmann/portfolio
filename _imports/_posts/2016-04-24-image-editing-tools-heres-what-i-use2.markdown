@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General", "Tools"]
-alias: ["/post/2016/04/24/Image-Editing-Tools-Heres-what-I-use2", "/post/2016/04/24/image-editing-tools-heres-what-i-use2"]
+redirect_from: 
+  - /post/2016/04/24/Image-Editing-Tools-Heres-what-I-use2
+ -  /post/2016/04/24/image-editing-tools-heres-what-i-use2
 ---
 <!-- more -->
 <p>If you follow my blogs (here, <a href="http://buildazure.com">BuildAzure.com</a>, <a href="http://buildhololens.com">BuildHoloLens.com</a>), Twitter (<a href="http://twitter.com/crpietschmann">@crpietschmann</a>, <a href="http://twitte.com/buildazure">@BuildAzure</a>, <a href="http://twitter.com/buildhololens">@BuildHoloLens</a>) and Open Source project then you're familiar that I have a number of custom drawn images and screenshots that I author to go with various content I'm authoring. Something I've never posted on is what tools I use for editing / creating all these images. The reason I felt this would be worth posting is that I do NOT use Photoshop or any other professional tool. In fact <strong>I use FREE tools</strong>!</p>

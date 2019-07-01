@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/11/27/Intel-Core-i7-920-Initial-Thoughts-Overclocking-Windows-Vista", "/post/2008/11/27/intel-core-i7-920-initial-thoughts-overclocking-windows-vista"]
+redirect_from: 
+  - /post/2008/11/27/Intel-Core-i7-920-Initial-Thoughts-Overclocking-Windows-Vista
+ -  /post/2008/11/27/intel-core-i7-920-initial-thoughts-overclocking-windows-vista
 ---
 <!-- more -->
 <p><img src="/images/postscorei7BlueLogo.png" alt="" align="right" />I recently upgraded my main desktop machine to a new Intel Core i7 920 CPU and all its glory. Here's a write up of my experience in choosing the Core i7 (over the Core 2 Quad) and my experiences with it so far.</p>

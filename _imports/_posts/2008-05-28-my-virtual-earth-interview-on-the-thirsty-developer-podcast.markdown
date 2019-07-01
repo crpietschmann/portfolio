@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General", "Bing Maps"]
-alias: ["/post/2008/05/28/My-Virtual-Earth-Interview-on-The-Thirsty-Developer-podcast", "/post/2008/05/28/my-virtual-earth-interview-on-the-thirsty-developer-podcast"]
+redirect_from: 
+  - /post/2008/05/28/My-Virtual-Earth-Interview-on-The-Thirsty-Developer-podcast
+ -  /post/2008/05/28/my-virtual-earth-interview-on-the-thirsty-developer-podcast
 ---
 <!-- more -->
 <p>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
-alias: ["/post/2007/12/21/Virtual-Earth-Getting-Started-Adding-a-basic-Map-to-a-page", "/post/2007/12/21/virtual-earth-getting-started-adding-a-basic-map-to-a-page"]
+redirect_from: 
+  - /post/2007/12/21/Virtual-Earth-Getting-Started-Adding-a-basic-Map-to-a-page
+ -  /post/2007/12/21/virtual-earth-getting-started-adding-a-basic-map-to-a-page
 ---
 <!-- more -->
 <h3>What is Microsoft Virtual Earth?</h3>

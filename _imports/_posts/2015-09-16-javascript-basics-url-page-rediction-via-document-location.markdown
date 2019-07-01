@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
-alias: ["/post/2015/09/16/JavaScript-Basics-Url-Page-Rediction-via-document-location", "/post/2015/09/16/javascript-basics-url-page-rediction-via-document-location"]
+redirect_from: 
+  - /post/2015/09/16/JavaScript-Basics-Url-Page-Rediction-via-document-location
+ -  /post/2015/09/16/javascript-basics-url-page-rediction-via-document-location
 ---
 <!-- more -->
 <p>Most often from an HTML page when you need to navigate the user to a different page it will be done via an anchor tag ("&lt;a/&gt;"). This works fine if the user explicitly initiates the navigation by clicking the link. However, there are many times when building a web application the page navigation needs to be performed from JavaScript / Ajax code. This can be done using "document.location" in the HTML DOM, but it supports a couple more features than most developers are aware of.</p>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2004/09/20/Color-the-background-of-items-in-a-Dropdown-box-in-your-HTML-pages", "/post/2004/09/20/color-the-background-of-items-in-a-dropdown-box-in-your-html-pages"]
+redirect_from: 
+  - /post/2004/09/20/Color-the-background-of-items-in-a-Dropdown-box-in-your-HTML-pages
+ -  /post/2004/09/20/color-the-background-of-items-in-a-dropdown-box-in-your-html-pages
 ---
 <!-- more -->
 <p>Color the background of items in a Dropdown box in your HTML pages. It's very easy to do, just look at the below example.</p>

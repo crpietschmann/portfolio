@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2005/09/14/Windows-Vista-Latest-Screenshots-Revealed", "/post/2005/09/14/windows-vista-latest-screenshots-revealed"]
+redirect_from: 
+  - /post/2005/09/14/Windows-Vista-Latest-Screenshots-Revealed
+ -  /post/2005/09/14/windows-vista-latest-screenshots-revealed
 ---
 <!-- more -->
 <P>I don't know about you, but I “<A href="http://digg.com/software/Windows_Vista_pre_Beta2_Screenshots" target=_new>digg</A>“ the latest screenshots of Windows Vista.</P>

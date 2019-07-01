@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
-alias: ["/post/2008/10/14/JavaScript-Gem-Null-Coalescing-using-the-OR-Operator", "/post/2008/10/14/javascript-gem-null-coalescing-using-the-or-operator"]
+redirect_from: 
+  - /post/2008/10/14/JavaScript-Gem-Null-Coalescing-using-the-OR-Operator
+ -  /post/2008/10/14/javascript-gem-null-coalescing-using-the-or-operator
 ---
 <!-- more -->
 <p>

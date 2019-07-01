@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2005/09/21/PHP-is-easy-to-learn", "/post/2005/09/21/php-is-easy-to-learn"]
+redirect_from: 
+  - /post/2005/09/21/PHP-is-easy-to-learn
+ -  /post/2005/09/21/php-is-easy-to-learn
 ---
 <!-- more -->
 <P>Now that's something I never imagined I would say.</P>

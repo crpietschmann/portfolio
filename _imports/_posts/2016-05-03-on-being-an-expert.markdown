@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
-alias: ["/post/2016/05/03/On-Being-an-Expert", "/post/2016/05/03/on-being-an-expert"]
+redirect_from: 
+  - /post/2016/05/03/On-Being-an-Expert
+ -  /post/2016/05/03/on-being-an-expert
 ---
 <!-- more -->
 <p>There are many definitions of what it means to be an expert. Everyone likes to be seen as an expert, but many don't feel worthy of the title. This feeling of being unworthy relates to the "Imposter Syndrome" where an individual feels inferior because they constantly compare their single self to everyone else's combined selves. While it's really not possible for everyone to be "THE" expert, it's an absolute constant that everyone is "AN" expert is some fashion.</p>

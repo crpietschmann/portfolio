@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Silverlight"]
-alias: ["/post/2008/05/19/Silverlight-Load-JavaScript-from-Embedded-Resource-and-Execute-Within-Page", "/post/2008/05/19/silverlight-load-javascript-from-embedded-resource-and-execute-within-page"]
+redirect_from: 
+  - /post/2008/05/19/Silverlight-Load-JavaScript-from-Embedded-Resource-and-Execute-Within-Page
+ -  /post/2008/05/19/silverlight-load-javascript-from-embedded-resource-and-execute-within-page
 ---
 <!-- more -->
 <p>

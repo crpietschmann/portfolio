@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
-alias: ["/post/2008/02/27/NET-35-JSON-Serialization-using-the-DataContractJsonSerializer", "/post/2008/02/27/net-35-json-serialization-using-the-datacontractjsonserializer"]
+redirect_from: 
+  - /post/2008/02/27/NET-35-JSON-Serialization-using-the-DataContractJsonSerializer
+ -  /post/2008/02/27/net-35-json-serialization-using-the-datacontractjsonserializer
 ---
 <!-- more -->
 <p>In ASP.NET AJAX Extensions v1.0 for ASP.NET 2.0 there is the JavaScriptSerializer class that provides JSON serialization and deserialization functionality. However, in .NET 3.5 the JavaScriptSerializer has been marked obsolete. The new object to use for JSON serialization in .NET 3.5 is the DataContractJsonSerliaizer object. I'm still new to the DataContractJsonSerializer, but here's a summary of what I've learned so far...</p>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
-alias: ["/post/2008/06/20/Plot-ZipCode-Boundaries-on-a-Map-Part1-Making-sense-of-US-Census-ZCTA-ARCINFO-Ungenerate-ASCII-files", "/post/2008/06/20/plot-zipcode-boundaries-on-a-map-part1-making-sense-of-us-census-zcta-arcinfo-ungenerate-ascii-files"]
+redirect_from: 
+  - /post/2008/06/20/Plot-ZipCode-Boundaries-on-a-Map-Part1-Making-sense-of-US-Census-ZCTA-ARCINFO-Ungenerate-ASCII-files
+ -  /post/2008/06/20/plot-zipcode-boundaries-on-a-map-part1-making-sense-of-us-census-zcta-arcinfo-ungenerate-ascii-files
 ---
 <!-- more -->
 <p>One question that I get fairly oftern is "How do I plot Zip Code boundaries on a map?". Well, the answer isn't simple, well at least it hasn't been. So, I've decided to write a series of articles going through the steps needed to obtain Zip Code boundary data, makes sense of it and plot it on a map. I'm not sure how many parts this series will be, but it'll probably be at least 3.</p>

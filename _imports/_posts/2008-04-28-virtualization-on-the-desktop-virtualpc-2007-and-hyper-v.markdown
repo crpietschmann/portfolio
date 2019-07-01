@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/04/28/Virtualization-on-the-Desktop-VirtualPC-2007-and-Hyper-V", "/post/2008/04/28/virtualization-on-the-desktop-virtualpc-2007-and-hyper-v"]
+redirect_from: 
+  - /post/2008/04/28/Virtualization-on-the-Desktop-VirtualPC-2007-and-Hyper-V
+ -  /post/2008/04/28/virtualization-on-the-desktop-virtualpc-2007-and-hyper-v
 ---
 <!-- more -->
 <p>

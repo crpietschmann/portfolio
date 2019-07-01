@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
-alias: ["/post/2008/02/25/JavaScript-Function-Tips-and-Tricks", "/post/2008/02/25/javascript-function-tips-and-tricks"]
+redirect_from: 
+  - /post/2008/02/25/JavaScript-Function-Tips-and-Tricks
+ -  /post/2008/02/25/javascript-function-tips-and-tricks
 ---
 <!-- more -->
 <p>First, What is a JavaScript Function? As defined by W3Schools.com a JavaScript Function is:</p>

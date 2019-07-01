@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
-alias: ["/post/2011/09/09/Tag-Editor-Field-using-jQuery-similar-to-StackOverflow", "/post/2011/09/09/tag-editor-field-using-jquery-similar-to-stackoverflow"]
+redirect_from: 
+  - /post/2011/09/09/Tag-Editor-Field-using-jQuery-similar-to-StackOverflow
+ -  /post/2011/09/09/tag-editor-field-using-jquery-similar-to-stackoverflow
 ---
 <!-- more -->
 <p>The tag editor featured on the <a href="http://stackoverflow.com">StackOverflow</a> website (and all the StackExchange websites) is a real slick tag editor that makes it much nicer to enter tags than just a plain textbox. I searched a little and couldn&rsquo;t find anything that works just like theirs, so I decided to build one.</p>

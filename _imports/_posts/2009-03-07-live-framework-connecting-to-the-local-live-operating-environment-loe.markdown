@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2009/03/07/Live-Framework-Connecting-to-the-Local-Live-Operating-Environment-LOE", "/post/2009/03/07/live-framework-connecting-to-the-local-live-operating-environment-loe"]
+redirect_from: 
+  - /post/2009/03/07/Live-Framework-Connecting-to-the-Local-Live-Operating-Environment-LOE
+ -  /post/2009/03/07/live-framework-connecting-to-the-local-live-operating-environment-loe
 ---
 <!-- more -->
 <p>One of the things the <a href="http://dev.live.com/liveframework/">Live Framework</a> has to offer is a Local Live Operating Environment you can connect to so that you can Offline Enable your Live Framework Enabled Desktop Applications. I found the process of getting it to work a little tricky (especially since I was running Win7 Beta; I'll explain down further) so I've decided to write up a summary of my experience to help anyone else interested.</p>

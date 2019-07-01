@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/03/27/Why-not-make-ASPNET-Web-Matrix-shared-source", "/post/2007/03/27/why-not-make-aspnet-web-matrix-shared-source"]
+redirect_from: 
+  - /post/2007/03/27/Why-not-make-ASPNET-Web-Matrix-shared-source
+ -  /post/2007/03/27/why-not-make-aspnet-web-matrix-shared-source
 ---
 <!-- more -->
 <P><A href="http://www.asp.net/webmatrix/">ASP.NET Web Matrix</A> was the Free ASP.NET editor back in the .NET 1.x days. The tool is actually <A href="http://www.asp.net/webmatrix/download.aspx?tabindex=4">still available for download</A>. The other day, I was thinking...</P>

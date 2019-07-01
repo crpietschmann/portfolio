@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
-alias: ["/post/2009/03/13/Virtual-Earth-Modify-the-Opacity-of-an-Existing-Custom-Tile-Layer", "/post/2009/03/13/virtual-earth-modify-the-opacity-of-an-existing-custom-tile-layer"]
+redirect_from: 
+  - /post/2009/03/13/Virtual-Earth-Modify-the-Opacity-of-an-Existing-Custom-Tile-Layer
+ -  /post/2009/03/13/virtual-earth-modify-the-opacity-of-an-existing-custom-tile-layer
 ---
 <!-- more -->
 <p>One of the features that the Custom Tile Layer functionality of the Virtual Earth JavaScript control is the ability to modify the Tile Layers Opacity after it's been added to the Map. It does include HideTileLayer and ShowTileLayer methods to dynamically toggle the display of Custom Tile Layers, but sometimes that's just not enough customization. However, I do have some good news, there is a small technique that you can use to modify the Tile Layer Opacity as necessary.</p>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2007/08/03/LunchTimeCoderServiceMonitor-v11-Released", "/post/2007/08/03/lunchtimecoderservicemonitor-v11-released"]
+redirect_from: 
+  - /post/2007/08/03/LunchTimeCoderServiceMonitor-v11-Released
+ -  /post/2007/08/03/lunchtimecoderservicemonitor-v11-released
 ---
 <!-- more -->
 <P>I just posted up the latest release (v1.1) of my windows service monitor app.</P>

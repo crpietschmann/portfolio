@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["asp.net", "JavaScript"]
-alias: ["/post/2007/08/05/ASPNET-AJAX-Extensions-to-standard-JavaScript-base-types", "/post/2007/08/05/aspnet-ajax-extensions-to-standard-javascript-base-types"]
+redirect_from: 
+  - /post/2007/08/05/ASPNET-AJAX-Extensions-to-standard-JavaScript-base-types
+ -  /post/2007/08/05/aspnet-ajax-extensions-to-standard-javascript-base-types
 ---
 <!-- more -->
 <p>Working with JavaScript can be a challenge at times, and there are a number of helpful things that the ASP.NET AJAX Extensions are bringing to the table. One of the things it does is extend some of the standard JavaScript base types with additional functionality. This is actually rather neat, and is something that you may not find unless you dig through the ASP.NET AJAX documentation like I did.</p>

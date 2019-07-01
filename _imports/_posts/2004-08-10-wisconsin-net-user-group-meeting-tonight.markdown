@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General", "WI-INETA"]
-alias: ["/post/2004/08/10/Wisconsin-NET-User-Group-meeting-tonight", "/post/2004/08/10/wisconsin-net-user-group-meeting-tonight"]
+redirect_from: 
+  - /post/2004/08/10/Wisconsin-NET-User-Group-meeting-tonight
+ -  /post/2004/08/10/wisconsin-net-user-group-meeting-tonight
 ---
 <!-- more -->
 <p>

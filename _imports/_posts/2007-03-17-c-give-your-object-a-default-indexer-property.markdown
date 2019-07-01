@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General", "General"]
-alias: ["/post/2007/03/17/C-Give-your-object-a-Default-Indexer-Property", "/post/2007/03/17/c-give-your-object-a-default-indexer-property"]
+redirect_from: 
+  - /post/2007/03/17/C-Give-your-object-a-Default-Indexer-Property
+ -  /post/2007/03/17/c-give-your-object-a-default-indexer-property
 ---
 <!-- more -->
 <P>I've seen/used objects within the .NET Framework that have default indexer&nbsp;properties (ie: SqlDataReader, System.Collections.Generic.List). Now how exactly do I give my own custom object type a default indexer&nbsp;property?</P>

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
-alias: ["/post/2008/02/06/Virtual-Earth-v2-Being-Depricated-March-31st", "/post/2008/02/06/virtual-earth-v2-being-depricated-march-31st"]
+redirect_from: 
+  - /post/2008/02/06/Virtual-Earth-v2-Being-Depricated-March-31st
+ -  /post/2008/02/06/virtual-earth-v2-being-depricated-march-31st
 ---
 <!-- more -->
 <p>

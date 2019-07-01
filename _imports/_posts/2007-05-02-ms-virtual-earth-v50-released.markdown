@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
-alias: ["/post/2007/05/02/MS-Virtual-Earth-v50-Released", "/post/2007/05/02/ms-virtual-earth-v50-released"]
+redirect_from: 
+  - /post/2007/05/02/MS-Virtual-Earth-v50-Released
+ -  /post/2007/05/02/ms-virtual-earth-v50-released
 ---
 <!-- more -->
 <p>

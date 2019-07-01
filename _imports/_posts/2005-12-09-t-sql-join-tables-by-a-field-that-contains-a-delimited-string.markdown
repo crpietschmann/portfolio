@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2005/12/09/T-SQL-Join-Tables-by-a-Field-that-contains-a-delimited-string", "/post/2005/12/09/t-sql-join-tables-by-a-field-that-contains-a-delimited-string"]
+redirect_from: 
+  - /post/2005/12/09/T-SQL-Join-Tables-by-a-Field-that-contains-a-delimited-string
+ -  /post/2005/12/09/t-sql-join-tables-by-a-field-that-contains-a-delimited-string
 ---
 <!-- more -->
 <p>This is the first time I ran into a situation where I needed to Join two tables (one with a varchar field and one with a varchar field that contains pipe delimited data) so I decided to post it for other who may not know you can do this.&nbsp;Below is a simplified example with solution of getting all rows of the first table whos values are contained in the pipe delimited field of the second table. This is really simple to do and you don't even have to use any User-Defined Functions or Cursors to do it. And I'm sure that not all of you who may read this know that you can use LIKE in a JOIN.</p>

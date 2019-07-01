@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
-alias: ["/post/2006/09/28/ASPNET-Add-Template-Support-to-your-User-Controls", "/post/2006/09/28/aspnet-add-template-support-to-your-user-controls"]
+redirect_from: 
+  - /post/2006/09/28/ASPNET-Add-Template-Support-to-your-User-Controls
+ -  /post/2006/09/28/aspnet-add-template-support-to-your-user-controls
 ---
 <!-- more -->
 <p>Here's a great article on how to <a href="http://msdn2.microsoft.com/en-us/library/36574bf6.aspx">add support for Templates&nbsp;to your&nbsp;ASP.NET User Controls</a>.</p>

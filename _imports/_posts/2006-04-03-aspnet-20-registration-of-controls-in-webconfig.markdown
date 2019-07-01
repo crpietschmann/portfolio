@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
-alias: ["/post/2006/04/03/ASPNET-20-Registration-of-Controls-in-WebConfig", "/post/2006/04/03/aspnet-20-registration-of-controls-in-webconfig"]
+redirect_from: 
+  - /post/2006/04/03/ASPNET-20-Registration-of-Controls-in-WebConfig
+ -  /post/2006/04/03/aspnet-20-registration-of-controls-in-webconfig
 ---
 <!-- more -->
 <p>In ASP.NET 1.x controls had to be registered in each page they were used. New since ASP.NET 2.0, controls can be registered in the web.config file. Visual Studio 2005 supports full intellisense when editing .aspx pages. This feature allows commonly used controls to be more easily used through out your application.</p>

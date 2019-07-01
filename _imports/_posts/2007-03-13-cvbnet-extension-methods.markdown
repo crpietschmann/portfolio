@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General", "vb.net", "C#"]
-alias: ["/post/2007/03/13/CVBNET-Extension-Methods", "/post/2007/03/13/cvbnet-extension-methods"]
+redirect_from: 
+  - /post/2007/03/13/CVBNET-Extension-Methods
+ -  /post/2007/03/13/cvbnet-extension-methods
 ---
 <!-- more -->
 <p>

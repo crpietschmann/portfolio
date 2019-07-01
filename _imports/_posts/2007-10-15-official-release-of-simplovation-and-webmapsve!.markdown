@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General", "Bing Maps"]
-alias: ["/post/2007/10/15/Official-Release-of-Simplovation-and-WebMapsVE!", "/post/2007/10/15/official-release-of-simplovation-and-webmapsve!"]
+redirect_from: 
+  - /post/2007/10/15/Official-Release-of-Simplovation-and-WebMapsVE!
+ -  /post/2007/10/15/official-release-of-simplovation-and-webmapsve!
 ---
 <!-- more -->
 <p>

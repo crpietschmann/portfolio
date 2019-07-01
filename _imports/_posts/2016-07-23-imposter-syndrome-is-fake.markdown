@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
-alias: ["/post/2016/07/23/Imposter-Syndrome-is-Fake", "/post/2016/07/23/imposter-syndrome-is-fake"]
+redirect_from: 
+  - /post/2016/07/23/Imposter-Syndrome-is-Fake
+ -  /post/2016/07/23/imposter-syndrome-is-fake
 ---
 <!-- more -->
 <p>Ok, maybe the title of this post is a little extreme. However, let me explain what I mean. Really, Imposter Syndrome is fake. It's just something you do to yourself. Think about it.</p>

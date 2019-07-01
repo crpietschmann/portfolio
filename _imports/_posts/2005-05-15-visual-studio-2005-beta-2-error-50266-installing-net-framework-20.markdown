@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2005/05/15/Visual-Studio-2005-Beta-2-Error-50266-installing-NET-Framework-20", "/post/2005/05/15/visual-studio-2005-beta-2-error-50266-installing-net-framework-20"]
+redirect_from: 
+  - /post/2005/05/15/Visual-Studio-2005-Beta-2-Error-50266-installing-NET-Framework-20
+ -  /post/2005/05/15/visual-studio-2005-beta-2-error-50266-installing-net-framework-20
 ---
 <!-- more -->
 <P>I ordered Visual Studio 2005 Beta 2 about 2 weeks ago, and I received it in the mail yesterday! The SQL Server 2005 CTP cam with it! I couldn't wait to install them and start playing. I didn't play around much with Beta 1; I just didn't make the point to spend much time with it (There are so many things to learn/do I can hardly find the time for it all.) One of the reasons I'm so excited about Beta 2 is because of the Go Live license (which you must go onlin and sign first; located here: <A href="http://lab.msdn.microsoft.com/vs2005/golive/">http://lab.msdn.microsoft.com/vs2005/golive/</A>). And so my journey began...</P>

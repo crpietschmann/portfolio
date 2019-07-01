@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/07/16/dotNetExt-NET-Extension-Method-Library-v01-Beta-Released", "/post/2008/07/16/dotnetext-net-extension-method-library-v01-beta-released"]
+redirect_from: 
+  - /post/2008/07/16/dotNetExt-NET-Extension-Method-Library-v01-Beta-Released
+ -  /post/2008/07/16/dotnetext-net-extension-method-library-v01-beta-released
 ---
 <!-- more -->
 <p>This is the first release of a small, new project I created. This is just the first release of the project, and I'll keep adding more functionality to it if there is enough interest by me or others in the project. So, please post any comments you have in the <a href="http://www.codeplex.com/dotNetExt/Thread/List.aspx">project discussion area</a>.</p>

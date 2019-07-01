@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["C#", "vb.net"]
-alias: ["/post/2006/06/29/C-NET-Convert-SystemDrawingColor-to-HTML-color", "/post/2006/06/29/c-net-convert-systemdrawingcolor-to-html-color"]
+redirect_from: 
+  - /post/2006/06/29/C-NET-Convert-SystemDrawingColor-to-HTML-color
+ -  /post/2006/06/29/c-net-convert-systemdrawingcolor-to-html-color
 ---
 <!-- more -->
 <p>Here is a small example of how to convert a System.Drawing.Color to the HTML color format (Hex value or HTML color name value) and back.</p>

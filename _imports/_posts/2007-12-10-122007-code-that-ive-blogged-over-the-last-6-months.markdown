@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General", "General"]
-alias: ["/post/2007/12/10/122007-Code-that-Ive-Blogged-over-the-last-6-months", "/post/2007/12/10/122007-code-that-ive-blogged-over-the-last-6-months"]
+redirect_from: 
+  - /post/2007/12/10/122007-Code-that-Ive-Blogged-over-the-last-6-months
+ -  /post/2007/12/10/122007-code-that-ive-blogged-over-the-last-6-months
 ---
 <!-- more -->
 <P>Here's a list of links to all the different code that I've blogged over the last 6 months.</P>

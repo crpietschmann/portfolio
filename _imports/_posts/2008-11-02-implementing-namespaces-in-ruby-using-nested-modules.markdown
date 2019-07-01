@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Ruby"]
-alias: ["/post/2008/11/02/Implementing-Namespaces-in-Ruby-using-Nested-Modules", "/post/2008/11/02/implementing-namespaces-in-ruby-using-nested-modules"]
+redirect_from: 
+  - /post/2008/11/02/Implementing-Namespaces-in-Ruby-using-Nested-Modules
+ -  /post/2008/11/02/implementing-namespaces-in-ruby-using-nested-modules
 ---
 <!-- more -->
 <p>

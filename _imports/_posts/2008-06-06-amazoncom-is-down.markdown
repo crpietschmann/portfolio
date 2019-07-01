@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/06/06/Amazoncom-is-down", "/post/2008/06/06/amazoncom-is-down"]
+redirect_from: 
+  - /post/2008/06/06/Amazoncom-is-down
+ -  /post/2008/06/06/amazoncom-is-down
 ---
 <!-- more -->
 <p>

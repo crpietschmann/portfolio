@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["ASP.NET MVC"]
-alias: ["/post/2008/08/29/Custom-Themes-in-ASPNET-MVC-Updated-for-Preview-5", "/post/2008/08/29/custom-themes-in-aspnet-mvc-updated-for-preview-5"]
+redirect_from: 
+  - /post/2008/08/29/Custom-Themes-in-ASPNET-MVC-Updated-for-Preview-5
+ -  /post/2008/08/29/custom-themes-in-aspnet-mvc-updated-for-preview-5
 ---
 <!-- more -->
 <p><img src="/images/postsASPNETMVC_Preview4_CustomThemeFolderLayout.png" alt="" align="right" /></p>

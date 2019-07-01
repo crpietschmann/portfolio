@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
-alias: ["/post/2009/03/20/Getting-Started-Virtual-Earth-Silverlight-Map-Control-SDK-CTP", "/post/2009/03/20/getting-started-virtual-earth-silverlight-map-control-sdk-ctp"]
+redirect_from: 
+  - /post/2009/03/20/Getting-Started-Virtual-Earth-Silverlight-Map-Control-SDK-CTP
+ -  /post/2009/03/20/getting-started-virtual-earth-silverlight-map-control-sdk-ctp
 ---
 <!-- more -->
 <p><strong>UPDATE: I have written a newer version of this article to specifically target the latest Bing Maps Silverlight Control Version 1.0 Release.</strong></p>

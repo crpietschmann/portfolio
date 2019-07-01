@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
-alias: ["/post/2007/03/30/PietschSoftVE-mentioned-during-a-Microsoft-Webcast-on-Virtual-Earth-yesterday", "/post/2007/03/30/pietschsoftve-mentioned-during-a-microsoft-webcast-on-virtual-earth-yesterday"]
+redirect_from: 
+  - /post/2007/03/30/PietschSoftVE-mentioned-during-a-Microsoft-Webcast-on-Virtual-Earth-yesterday
+ -  /post/2007/03/30/pietschsoftve-mentioned-during-a-microsoft-webcast-on-virtual-earth-yesterday
 ---
 <!-- more -->
 <p>

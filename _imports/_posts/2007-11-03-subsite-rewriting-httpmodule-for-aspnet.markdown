@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
-alias: ["/post/2007/11/03/Subsite-Rewriting-HttpModule-for-ASPNET", "/post/2007/11/03/subsite-rewriting-httpmodule-for-aspnet"]
+redirect_from: 
+  - /post/2007/11/03/Subsite-Rewriting-HttpModule-for-ASPNET
+ -  /post/2007/11/03/subsite-rewriting-httpmodule-for-aspnet
 ---
 <!-- more -->
 <p>Here's some simple code for easily adding Subsite functionality to an ASP.NET website using UrlRewriting/UrlMapping.</p>

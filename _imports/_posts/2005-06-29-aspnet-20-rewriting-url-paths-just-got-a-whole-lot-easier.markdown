@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2005/06/29/ASPNET-20-Rewriting-URL-Paths-just-got-a-whole-lot-easier", "/post/2005/06/29/aspnet-20-rewriting-url-paths-just-got-a-whole-lot-easier"]
+redirect_from: 
+  - /post/2005/06/29/ASPNET-20-Rewriting-URL-Paths-just-got-a-whole-lot-easier
+ -  /post/2005/06/29/aspnet-20-rewriting-url-paths-just-got-a-whole-lot-easier
 ---
 <!-- more -->
 <p>

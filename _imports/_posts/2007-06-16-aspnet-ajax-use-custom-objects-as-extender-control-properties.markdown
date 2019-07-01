@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["asp.net", "General"]
-alias: ["/post/2007/06/16/ASPNET-AJAX-Use-custom-objects-as-Extender-Control-Properties", "/post/2007/06/16/aspnet-ajax-use-custom-objects-as-extender-control-properties"]
+redirect_from: 
+  - /post/2007/06/16/ASPNET-AJAX-Use-custom-objects-as-Extender-Control-Properties
+ -  /post/2007/06/16/aspnet-ajax-use-custom-objects-as-extender-control-properties
 ---
 <!-- more -->
 <p style="margin: 0in 0in 10pt" class="MsoNormal">

@@ -6,7 +6,9 @@ comments: true
 published: true
 categories: ["blog", "archives"]
 tags: ["General"]
-alias: ["/post/2008/10/29/Watch-PDC08-Session-Online", "/post/2008/10/29/watch-pdc08-session-online"]
+redirect_from: 
+  - /post/2008/10/29/Watch-PDC08-Session-Online
+ -  /post/2008/10/29/watch-pdc08-session-online
 ---
 <!-- more -->
 <p>
