@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2006/11/16/Wisonsin-NET-Users-Group-website-Some-enhancements-may-be-coming
- -  /post/2006/11/16/wisonsin-net-users-group-website-some-enhancements-may-be-coming
+  - /post/2006/11/16/wisonsin-net-users-group-website-some-enhancements-may-be-coming
 ---
 <!-- more -->
 <p>

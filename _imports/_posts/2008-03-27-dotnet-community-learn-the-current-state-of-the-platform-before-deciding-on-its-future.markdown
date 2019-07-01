@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/03/27/dotNET-Community-Learn-The-Current-State-Of-The-Platform-Before-Deciding-On-Its-Future
- -  /post/2008/03/27/dotnet-community-learn-the-current-state-of-the-platform-before-deciding-on-its-future
+  - /post/2008/03/27/dotnet-community-learn-the-current-state-of-the-platform-before-deciding-on-its-future
 ---
 <!-- more -->
 <p>

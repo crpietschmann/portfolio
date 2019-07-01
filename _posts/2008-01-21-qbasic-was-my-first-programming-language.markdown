@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/01/21/QBasic-was-my-First-Programming-Language
- -  /post/2008/01/21/qbasic-was-my-first-programming-language
+  - /post/2008/01/21/qbasic-was-my-first-programming-language
 ---
 <!-- more -->
 <P>Recently, I got to thinking about my beginning of programming, and the Basic language. So, I thought I'd explain my early history with Basic a little bit.</P>

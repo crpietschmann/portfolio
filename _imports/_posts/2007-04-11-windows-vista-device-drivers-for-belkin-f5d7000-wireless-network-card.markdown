@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/04/11/Windows-Vista-Device-Drivers-for-Belkin-F5D7000-Wireless-Network-Card
- -  /post/2007/04/11/windows-vista-device-drivers-for-belkin-f5d7000-wireless-network-card
+  - /post/2007/04/11/windows-vista-device-drivers-for-belkin-f5d7000-wireless-network-card
 ---
 <!-- more -->
 <p>Update 2009-08-08: Belkin has since released a new device driver for this network card that supports Windows Vista x32 and x64. You'll want to try their driver first before continueing on to my "work around" solution below. I did try this new Belkin driver with Windows 7 and it didn't work, so now I'm back to my work around...</p>

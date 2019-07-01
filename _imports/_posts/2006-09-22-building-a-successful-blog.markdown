@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/09/22/Building-a-successful-blog
- -  /post/2006/09/22/building-a-successful-blog
+  - /post/2006/09/22/building-a-successful-blog
 ---
 <!-- more -->
 <P>Yes, I know there are tons of posts on other blogs that describe how to create a "successful" blog. Since, I've been bloging for over two years now, I thought I'd share some things that I've learned.</P>

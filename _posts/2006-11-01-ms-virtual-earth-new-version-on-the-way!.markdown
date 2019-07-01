@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2006/11/01/MS-Virtual-Earth-New-version-on-the-way!
- -  /post/2006/11/01/ms-virtual-earth-new-version-on-the-way!
+  - /post/2006/11/01/ms-virtual-earth-new-version-on-the-way!
 ---
 <!-- more -->
 <p>

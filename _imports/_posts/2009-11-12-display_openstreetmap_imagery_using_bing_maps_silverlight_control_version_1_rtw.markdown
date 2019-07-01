@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
   - /post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW
- -  /post/2009/11/12/display_openstreetmap_imagery_using_bing_maps_silverlight_control_version_1_rtw
+  - /post/2009/11/12/display_openstreetmap_imagery_using_bing_maps_silverlight_control_version_1_rtw
 ---
 <!-- more -->
 <p><a href="/images/postsBingMapsSilverlight_OpenStreetMap.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="BingMapsSilverlight_OpenStreetMap" src="/images/postsBingMapsSilverlight_OpenStreetMap_thumb.png" border="0" alt="BingMapsSilverlight_OpenStreetMap" width="244" height="158" align="right" /></a> The Bing Maps Silverlight SDK documentation on MSDN contains an article on <a href="http://msdn.microsoft.com/en-us/library/ee681902.aspx" target="_blank">Adding Tile Overlays to the Map</a>, that demonstrates how to overlay your own map imagery over top of the Bing Maps Imagery. However, what if you want to completely replace the Bing Maps Imagery with some other Imagery like the <a href="http://openstreetmap.org" target="_blank">OpenStreeMap</a> Imagery?</p>

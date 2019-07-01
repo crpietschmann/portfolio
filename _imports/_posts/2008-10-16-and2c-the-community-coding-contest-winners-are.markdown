@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/10/16/And2c-the-Community-Coding-Contest-Winners-Are
- -  /post/2008/10/16/and2c-the-community-coding-contest-winners-are
+  - /post/2008/10/16/and2c-the-community-coding-contest-winners-are
 ---
 <!-- more -->
 <p>

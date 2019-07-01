@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/09/22/Happy-Birthday-to-Me-yesterday!!
- -  /post/2004/09/22/happy-birthday-to-me-yesterday!!
+  - /post/2004/09/22/happy-birthday-to-me-yesterday!!
 ---
 <!-- more -->
 Happy Birthday to Me yesterday!!

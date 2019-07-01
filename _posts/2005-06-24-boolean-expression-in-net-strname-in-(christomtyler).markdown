@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/06/24/Boolean-Expression-in-NET-strName-IN-(CHRISTOMTYLER)
- -  /post/2005/06/24/boolean-expression-in-net-strname-in-(christomtyler)
+  - /post/2005/06/24/boolean-expression-in-net-strname-in-(christomtyler)
 ---
 <!-- more -->
 <P><BR>I think it would be really helpful if we could do boolean expressions with IN sort of like we can in SQL.</P>

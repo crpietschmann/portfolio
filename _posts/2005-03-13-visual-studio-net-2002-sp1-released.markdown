@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/13/Visual-Studio-NET-2002-SP1-Released
- -  /post/2005/03/13/visual-studio-net-2002-sp1-released
+  - /post/2005/03/13/visual-studio-net-2002-sp1-released
 ---
 <!-- more -->
 <P>On March 8th, The Visual Studio <a title=".NET" href="http://www.microsoft.com/net/" target="_blank">.NET</a> 2002 Service Pack 1 was released.</P>

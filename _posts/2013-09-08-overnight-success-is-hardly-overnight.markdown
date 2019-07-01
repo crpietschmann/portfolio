@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/09/08/Overnight-Success-is-Hardly-Overnight
- -  /post/2013/09/08/overnight-success-is-hardly-overnight
+  - /post/2013/09/08/overnight-success-is-hardly-overnight
 ---
 <!-- more -->
 <p>Every so often there are news headlines declaring that some person or company is an "overnight success." No personal reputation or business is ever built up overnight. It's a physical and social impossibility.</p>

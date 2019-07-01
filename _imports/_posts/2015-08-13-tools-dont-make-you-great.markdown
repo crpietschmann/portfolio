@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Inspiration", "Software Craftsmanship"]
 redirect_from: 
   - /post/2015/08/13/Tools-Dont-Make-You-Great
- -  /post/2015/08/13/tools-dont-make-you-great
+  - /post/2015/08/13/tools-dont-make-you-great
 ---
 <!-- more -->
 <p>Every career and industry has it's own set of tools that are commonly used. Software Development is no different. These tools offer varying degrees of functionality that help people do their jobs. To a certain extent these tools do help people do better work, more work, faster work, etc. However, there is a limit to this affect.</p>

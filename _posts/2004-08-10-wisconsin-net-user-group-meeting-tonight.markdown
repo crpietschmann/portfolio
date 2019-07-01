@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2004/08/10/Wisconsin-NET-User-Group-meeting-tonight
- -  /post/2004/08/10/wisconsin-net-user-group-meeting-tonight
+  - /post/2004/08/10/wisconsin-net-user-group-meeting-tonight
 ---
 <!-- more -->
 <p>

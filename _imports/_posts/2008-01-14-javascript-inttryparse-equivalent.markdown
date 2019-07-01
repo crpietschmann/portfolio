@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/01/14/JavaScript-intTryParse-Equivalent
- -  /post/2008/01/14/javascript-inttryparse-equivalent
+  - /post/2008/01/14/javascript-inttryparse-equivalent
 ---
 <!-- more -->
 <p>One of the most handy methods in .NET is the <em>int.TryParse</em> method. It makes it really convenient when evaluating a string value as an integer. But, JavaScript has no equivalent so you need to do your own evaluation every time.</p>

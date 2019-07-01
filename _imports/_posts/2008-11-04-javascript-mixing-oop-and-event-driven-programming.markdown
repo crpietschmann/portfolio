@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/11/04/JavaScript-Mixing-OOP-and-Event-Driven-Programming
- -  /post/2008/11/04/javascript-mixing-oop-and-event-driven-programming
+  - /post/2008/11/04/javascript-mixing-oop-and-event-driven-programming
 ---
 <!-- more -->
 <p>

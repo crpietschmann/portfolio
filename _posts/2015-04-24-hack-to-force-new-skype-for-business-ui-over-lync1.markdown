@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2015/04/24/Hack-to-Force-new-Skype-for-Business-UI-over-Lync1
- -  /post/2015/04/24/hack-to-force-new-skype-for-business-ui-over-lync1
+  - /post/2015/04/24/hack-to-force-new-skype-for-business-ui-over-lync1
 ---
 <!-- more -->
 <p><a style="float: right;" href="/images/posts/2015/04/SkypeForBusinessRestartPrompt.PNG" target="_blank"><img style="width: 200px;" src="/images/posts/2015/04/SkypeForBusinessRestartPrompt.PNG" alt="" /></a>Microsoft recently released an update that rebrands Lync as Skype for Business. Many got the update automatically through Windows Update, but not everyone gets the new user interface (UI). There is a Lync Server setting that tells the client to use the either the old Lync or the new Skype for Business UI. If the server doesn't have this setting, such as older Lync servers that haven't been updated yet, then the default is to show the old Lync UI. One frustrating part of this update/change from a user perspective is that you have no real choice of which UI version you want to see/use everyday; or is there?</p>

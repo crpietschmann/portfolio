@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/01/09/Apple-iPhone-has-been-confirmed-but-functionaly-similar-to-Windows-Mobile-Phone
- -  /post/2007/01/09/apple-iphone-has-been-confirmed-but-functionaly-similar-to-windows-mobile-phone
+  - /post/2007/01/09/apple-iphone-has-been-confirmed-but-functionaly-similar-to-windows-mobile-phone
 ---
 <!-- more -->
 <p>The Apple iPhone has been confirmed. I wasn't anticipating much for this thing, but it sure looks sweet. There are no keys, you just touch the screen. There seems to be alot of posibilities with this. <a href="http://www.engadget.com/2007/01/09/the-apple-iphone/">The iPhone also runs Mac OS X.</a></p>

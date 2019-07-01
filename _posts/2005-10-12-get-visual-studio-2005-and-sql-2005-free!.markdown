@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/10/12/Get-Visual-Studio-2005-and-SQL-2005-Free!
- -  /post/2005/10/12/get-visual-studio-2005-and-sql-2005-free!
+  - /post/2005/10/12/get-visual-studio-2005-and-sql-2005-free!
 ---
 <!-- more -->
 <P><IMG src="http://msdnevents.com/images/launch/free_head.gif" align=right border=0>If you attend <A title=Microsoft href="http://Microsoft.com" target=_blank>Microsoft</A>'s Best of Visual Studio 2005 Launch&nbsp;or Microsoft's&nbsp;Best of SQL Server 2005 Launch&nbsp;and you'll&nbsp;receive a free copy of Visual Studio 2005 Standard Edition and SQL Server 2005 Standard Edition. </P>

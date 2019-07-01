@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2006/10/18/Scott-Guthrie-interviewed-on-Hanselminutes
- -  /post/2006/10/18/scott-guthrie-interviewed-on-hanselminutes
+  - /post/2006/10/18/scott-guthrie-interviewed-on-hanselminutes
 ---
 <!-- more -->
 <p>Scott Hanselmen interviews <a href="http://weblogs.asp.net/scottgu/">Scott Guthrie (ScottGu)</a>&nbsp;covering Ajax, ASP.NET 2.0, extender controls, CSS adapters and more.</p>

@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["C#", "General", "vb.net"]
 redirect_from: 
   - /post/2004/08/24/Write-to-the-Event-Log-in-NET-(VBNET-and-CNET)
- -  /post/2004/08/24/write-to-the-event-log-in-net-(vbnet-and-cnet)
+  - /post/2004/08/24/write-to-the-event-log-in-net-(vbnet-and-cnet)
 ---
 <!-- more -->
 <p>

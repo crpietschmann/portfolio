@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/10/Wahoo!!-My-blog-is-fixed-for-now
- -  /post/2005/03/10/wahoo!!-my-blog-is-fixed-for-now
+  - /post/2005/03/10/wahoo!!-my-blog-is-fixed-for-now
 ---
 <!-- more -->
 <P>I Googled the problem, and found this article <A href="http://odetocode.com/Blogs/scott/archive/2004/05/26/259.aspx">http://odetocode.com/Blogs/scott/archive/2004/05/26/259.aspx</A></P>

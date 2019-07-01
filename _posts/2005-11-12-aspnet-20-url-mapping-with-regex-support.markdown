@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/11/12/ASPNET-20-URL-Mapping-with-RegEx-Support
- -  /post/2005/11/12/aspnet-20-url-mapping-with-regex-support
+  - /post/2005/11/12/aspnet-20-url-mapping-with-regex-support
 ---
 <!-- more -->
 <p>

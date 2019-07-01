@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Win32API"]
 redirect_from: 
   - /post/2009/02/05/NET-Framework-Communicate-through-NAT-Router-via-UPnP
- -  /post/2009/02/05/net-framework-communicate-through-nat-router-via-upnp
+  - /post/2009/02/05/net-framework-communicate-through-nat-router-via-upnp
 ---
 <!-- more -->
 <p>I've been working on an application recently that needs to be able to communicate through a router/firewall using TCP. I've read/heard a bit of information about NAT Routers and UPnP; the technoligies used in almost every router sold commercially. So, I knew that you could use the Universal Plug and Play (UPnP) features of the NAT Router to automatically open up the firewall via Port Forwarding to allow other computers on the Internet to connect directly to the one your application is running on. One thing I didn't know what that Windows (since Windows XP) has the NATUPnP 1.0 Type Library (NATUPNP.DLL) COM Component that you can utilize within your applications to do this for you.</p>

@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/09/27/Error-ASP-0178-on-Windows-2003-Server-(IIS6)-by-ServerCreateObject-on-DCOM-registered-Component
- -  /post/2004/09/27/error-asp-0178-on-windows-2003-server-(iis6)-by-servercreateobject-on-dcom-registered-component
+  - /post/2004/09/27/error-asp-0178-on-windows-2003-server-(iis6)-by-servercreateobject-on-dcom-registered-component
 ---
 <!-- more -->
 <P>This error is a permissions problem. This is a very frustrating problem for someone who doesn't know Windows Server 2003 very well. 

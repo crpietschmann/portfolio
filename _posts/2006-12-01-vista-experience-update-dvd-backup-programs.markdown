@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/12/01/Vista-Experience-Update-DVD-Backup-Programs
- -  /post/2006/12/01/vista-experience-update-dvd-backup-programs
+  - /post/2006/12/01/vista-experience-update-dvd-backup-programs
 ---
 <!-- more -->
 <p>Vista doesn't have any DVD backup programs builtin, but I'm just testing a couple of the popular DVD backup programs and they work perfectly.</p>

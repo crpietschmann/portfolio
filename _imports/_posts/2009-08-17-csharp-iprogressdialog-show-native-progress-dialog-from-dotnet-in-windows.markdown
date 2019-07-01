@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Win32API"]
 redirect_from: 
   - /post/2009/08/17/CSharp-IProgressDialog-Show-Native-Progress-Dialog-from-dotNet-in-Windows
- -  /post/2009/08/17/csharp-iprogressdialog-show-native-progress-dialog-from-dotnet-in-windows
+  - /post/2009/08/17/csharp-iprogressdialog-show-native-progress-dialog-from-dotnet-in-windows
 ---
 <!-- more -->
 <p><a href="/images/postsCSharp-IProgressDialog-Native-dotNet-in-Windows.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="CSharp-IProgressDialog-Native-dotNet-in-Windows" src="/images/postsCSharp-IProgressDialog-Native-dotNet-in-Windows_thumb.png" border="0" alt="CSharp-IProgressDialog-Native-dotNet-in-Windows" width="260" height="215" align="right" /></a> A <a href="/post.aspx?id=d76a12f5-9ead-4847-b21a-be221e790681" target="_blank">few months ago I posted some code that I originally wrote back in about 2004</a>&hellip; Well, I was looking through some more of my prototypes that I&rsquo;ve written and I came across the following example of how to use the <a href="http://msdn.microsoft.com/en-us/library/bb775248%28VS.85%29.aspx" target="_blank">IProgressDialog Win32 Interface</a> to harness the power of the Built-in Progress Dialog in Windows within your own .NET applications.</p>

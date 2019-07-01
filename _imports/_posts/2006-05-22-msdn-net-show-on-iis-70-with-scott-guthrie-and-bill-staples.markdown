@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/05/22/MSDN-NET-Show-on-IIS-70-with-Scott-Guthrie-and-Bill-Staples
- -  /post/2006/05/22/msdn-net-show-on-iis-70-with-scott-guthrie-and-bill-staples
+  - /post/2006/05/22/msdn-net-show-on-iis-70-with-scott-guthrie-and-bill-staples
 ---
 <!-- more -->
 <P>The latest episode of the MSDN .NET Show features a great interview with Scott Guthrie and Bill Staples on IIS 7.0. The show includes a 30 minute interview about the product, along with 30 minutes of demos.</P>

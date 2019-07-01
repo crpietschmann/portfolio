@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2008/03/25/LinkedIn-Group-for-the-Wisconsin-NET-Users-Group
- -  /post/2008/03/25/linkedin-group-for-the-wisconsin-net-users-group
+  - /post/2008/03/25/linkedin-group-for-the-wisconsin-net-users-group
 ---
 <!-- more -->
 <p>

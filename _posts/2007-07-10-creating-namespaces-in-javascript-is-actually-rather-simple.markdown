@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2007/07/10/Creating-Namespaces-in-JavaScript-is-actually-rather-simple
- -  /post/2007/07/10/creating-namespaces-in-javascript-is-actually-rather-simple
+  - /post/2007/07/10/creating-namespaces-in-javascript-is-actually-rather-simple
 ---
 <!-- more -->
 <p>

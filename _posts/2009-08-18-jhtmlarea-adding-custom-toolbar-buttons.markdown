@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2009/08/18/jHtmlArea-Adding-Custom-Toolbar-Buttons
- -  /post/2009/08/18/jhtmlarea-adding-custom-toolbar-buttons
+  - /post/2009/08/18/jhtmlarea-adding-custom-toolbar-buttons
 ---
 <!-- more -->
 <p>I&rsquo;ve gotten a couple questions lately about extending the <a href="http://jhtmlarea.codeplex.com/" target="_blank">jHtmlArea WYSIWYG editor</a>, so I thought I&rsquo;d post a little bit about how to add your own custom toolbar buttons to it. There is one example that is included with the component, but that doesn&rsquo;t cover inserting some html into the editor, so I&rsquo;m going to cover that here.</p>

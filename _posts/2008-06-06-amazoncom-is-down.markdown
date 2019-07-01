@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/06/06/Amazoncom-is-down
- -  /post/2008/06/06/amazoncom-is-down
+  - /post/2008/06/06/amazoncom-is-down
 ---
 <!-- more -->
 <p>

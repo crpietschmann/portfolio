@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/08/24/Happy-10th-birthday-Windows-95!
- -  /post/2005/08/24/happy-10th-birthday-windows-95!
+  - /post/2005/08/24/happy-10th-birthday-windows-95!
 ---
 <!-- more -->
 <P>Windows 95 was released 10 years ago today!</P>

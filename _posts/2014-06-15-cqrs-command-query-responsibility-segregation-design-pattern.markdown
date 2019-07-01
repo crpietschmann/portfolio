@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Design Patterns"]
 redirect_from: 
   - /post/2014/06/15/CQRS-Command-Query-Responsibility-Segregation-Design-Pattern
- -  /post/2014/06/15/cqrs-command-query-responsibility-segregation-design-pattern
+  - /post/2014/06/15/cqrs-command-query-responsibility-segregation-design-pattern
 ---
 <!-- more -->
 <p>I was recently turned onto the Command Query Responsibility Segregation (CQRS) design pattern by a co-worker. One of the biggest benefits of CQRS is that is aids in implementing distributed, highly scalable system. This notion can be intimidating, but at the heart of CQRS there are rather simple guidelines to follow. Now let's dive in and explore what this pattern is and some way of implementing it.</p>

@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/12/18/Dec-07-Are-the-latest-Vista-updates-full-of-error-Or-is-it-just-me
- -  /post/2007/12/18/dec-07-are-the-latest-vista-updates-full-of-error-or-is-it-just-me
+  - /post/2007/12/18/dec-07-are-the-latest-vista-updates-full-of-error-or-is-it-just-me
 ---
 <!-- more -->
 <p>I installed the 64-bit version of Vista Ultimate shortly after it RTM'd back in November 2006. Everything was going perfectly fine with it until a couple weeks ago. It started Blue Screening (BSOD) and giving me some&nbsp;other strange issues.</p>

@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/09/14/Windows-10-TV-Commercial-with-Steve-Ballmer
- -  /post/2004/09/14/windows-10-tv-commercial-with-steve-ballmer
+  - /post/2004/09/14/windows-10-tv-commercial-with-steve-ballmer
 ---
 <!-- more -->
 <P>I don't know if this is legit for sure, but it is pretty funny. <STRONG>Microsoft Windows for only $99, that's right $99!!!!!</STRONG></P>

@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/01/12/Windows-7-Beta-Has-Good-and-Bad-Points-A-Short-Review
- -  /post/2009/01/12/windows-7-beta-has-good-and-bad-points-a-short-review
+  - /post/2009/01/12/windows-7-beta-has-good-and-bad-points-a-short-review
 ---
 <!-- more -->
 <p>I've been using the Windows 7 Beta (build 7000) for a few days now, and I've starting to form opinions on some of the new changes that have been made. There are good and bad things about this next version of Windows; so I thought I'd share some of my thoughts with anyone interested.</p>

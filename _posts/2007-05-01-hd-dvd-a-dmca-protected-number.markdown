@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/05/01/HD-DVD-A-DMCA-Protected-Number
- -  /post/2007/05/01/hd-dvd-a-dmca-protected-number
+  - /post/2007/05/01/hd-dvd-a-dmca-protected-number
 ---
 <!-- more -->
 <P>09 f9 11 02 9d 74 e3 5b d8 41 56 c5 63 56 88 c0</P>

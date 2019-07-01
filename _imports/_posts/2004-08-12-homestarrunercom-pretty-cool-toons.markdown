@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/12/Homestarrunercom-pretty-cool-toons
- -  /post/2004/08/12/homestarrunercom-pretty-cool-toons
+  - /post/2004/08/12/homestarrunercom-pretty-cool-toons
 ---
 <!-- more -->
 <P>These are just plain funny toons here.</P>

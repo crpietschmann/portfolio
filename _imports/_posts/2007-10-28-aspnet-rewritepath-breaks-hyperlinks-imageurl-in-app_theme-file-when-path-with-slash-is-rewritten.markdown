@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2007/10/28/ASPNET-RewritePath-breaks-HyperLinks-ImageUrl-in-App_Theme-file-when-path-with-slash-is-rewritten
- -  /post/2007/10/28/aspnet-rewritepath-breaks-hyperlinks-imageurl-in-app_theme-file-when-path-with-slash-is-rewritten
+  - /post/2007/10/28/aspnet-rewritepath-breaks-hyperlinks-imageurl-in-app_theme-file-when-path-with-slash-is-rewritten
 ---
 <!-- more -->
 <p>Rewriting&nbsp;a path with a slash ("/") in it will cause a HyperLink's image specified in the ImageUrl property within an App_Theme file to not be displayed. This can also lead to a "Cannot use a leading ..." error when running the website within IIS.</p>

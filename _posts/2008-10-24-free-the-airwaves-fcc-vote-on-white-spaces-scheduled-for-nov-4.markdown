@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/10/24/Free-the-Airwaves-FCC-vote-on-white-spaces-scheduled-for-Nov-4
- -  /post/2008/10/24/free-the-airwaves-fcc-vote-on-white-spaces-scheduled-for-nov-4
+  - /post/2008/10/24/free-the-airwaves-fcc-vote-on-white-spaces-scheduled-for-nov-4
 ---
 <!-- more -->
 <div style="float: right">

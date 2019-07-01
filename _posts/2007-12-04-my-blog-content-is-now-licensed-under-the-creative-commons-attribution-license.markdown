@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/12/04/My-Blog-content-is-now-licensed-under-the-Creative-Commons-Attribution-License
- -  /post/2007/12/04/my-blog-content-is-now-licensed-under-the-creative-commons-attribution-license
+  - /post/2007/12/04/my-blog-content-is-now-licensed-under-the-creative-commons-attribution-license
 ---
 <!-- more -->
 <p>My Blog content is now licensed under the Creative Commons Attribution License by default. If I do license specific content under a different license, then I'll post the license with the content. So, pretty much unless explicitly stated otherwise all content on this blog is now under the Creative Commons Attribution License. For more info about what this license is; click the link below.</p>

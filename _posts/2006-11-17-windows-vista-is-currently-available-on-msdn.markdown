@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/11/17/Windows-Vista-is-currently-available-on-MSDN
- -  /post/2006/11/17/windows-vista-is-currently-available-on-msdn
+  - /post/2006/11/17/windows-vista-is-currently-available-on-msdn
 ---
 <!-- more -->
 <P>And, thanks to the MSDN Subscription I won at the Deeper in .NET event, I am lucky enough to get Windows Vista for Free. Yippee!!</P>

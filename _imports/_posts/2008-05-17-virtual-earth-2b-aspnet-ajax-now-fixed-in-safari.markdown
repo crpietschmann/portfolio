@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["asp.net", "Bing Maps"]
 redirect_from: 
   - /post/2008/05/17/Virtual-Earth-2b-ASPNET-AJAX-Now-Fixed-in-Safari
- -  /post/2008/05/17/virtual-earth-2b-aspnet-ajax-now-fixed-in-safari
+  - /post/2008/05/17/virtual-earth-2b-aspnet-ajax-now-fixed-in-safari
 ---
 <!-- more -->
 <p>

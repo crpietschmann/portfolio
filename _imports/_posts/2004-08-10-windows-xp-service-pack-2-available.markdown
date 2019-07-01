@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/10/Windows-XP-Service-Pack-2-Available
- -  /post/2004/08/10/windows-xp-service-pack-2-available
+  - /post/2004/08/10/windows-xp-service-pack-2-available
 ---
 <!-- more -->
 <P>I installed SP2 Final yesterday. I had SP2 RC2 installed since it was released to the public. I hadn't encountered a single problem with RC2.</P>

@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2007/12/11/WI-NET-Users-Group-Holiday-Party-07-has-been-Cancelled-due-to-Weather
- -  /post/2007/12/11/wi-net-users-group-holiday-party-07-has-been-cancelled-due-to-weather
+  - /post/2007/12/11/wi-net-users-group-holiday-party-07-has-been-cancelled-due-to-weather
 ---
 <!-- more -->
 <p>The WI .NET Users Group Holiday Party '07 has been Cancelled due to weather and will be rescheduled. The new date for the party will be announced as soom as possible.</p>

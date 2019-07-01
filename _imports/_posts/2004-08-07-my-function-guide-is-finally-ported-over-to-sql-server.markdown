@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/07/My-Function-Guide-is-finally-ported-over-to-SQL-Server
- -  /post/2004/08/07/my-function-guide-is-finally-ported-over-to-sql-server
+  - /post/2004/08/07/my-function-guide-is-finally-ported-over-to-sql-server
 ---
 <!-- more -->
 <P>I finally got my Function Guide ported over from the mySQL database it used on my old hosting provider to the SQL Server 2000 database on my new/current hosting provider.</P>

@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/05/11/Milwaukee_Visual_Studio_2008_Launch_Event_over_but_the_fun_has_only_begun
- -  /post/2008/05/11/milwaukee_visual_studio_2008_launch_event_over_but_the_fun_has_only_begun
+  - /post/2008/05/11/milwaukee_visual_studio_2008_launch_event_over_but_the_fun_has_only_begun
 ---
 <!-- more -->
 <p>

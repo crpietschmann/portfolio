@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2008/06/25/ASPNET-Fix-for-WebParts-2b-UrlRewriting-Issue
- -  /post/2008/06/25/aspnet-fix-for-webparts-2b-urlrewriting-issue
+  - /post/2008/06/25/aspnet-fix-for-webparts-2b-urlrewriting-issue
 ---
 <!-- more -->
 <p>The problem with using WebParts with UrlRewriting (or UrlMapping) is the WebPart PersonalizationProvider uses the path of the page being rendered to save/load the personalization state, not the path that was rewritten that the user sees. So, to fix this you just need to create a custom PersonalizationProvider and override all the methods that reference path, and call the base methods but pass in the path that was requested instead of the path being rendered.</p>

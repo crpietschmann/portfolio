@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/04/21/Alpha_Geeks_Are_Still_Joe_Schmoe_Community_Leads_Itself
- -  /post/2008/04/21/alpha_geeks_are_still_joe_schmoe_community_leads_itself
+  - /post/2008/04/21/alpha_geeks_are_still_joe_schmoe_community_leads_itself
 ---
 <!-- more -->
 <p>

@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/09/21/Happy-Birthday-Me!
- -  /post/2005/09/21/happy-birthday-me!
+  - /post/2005/09/21/happy-birthday-me!
 ---
 <!-- more -->
 It's my birthday today. My parents tell me I'm 24 today.

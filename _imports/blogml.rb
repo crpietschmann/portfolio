@@ -160,7 +160,7 @@ module Jekyll
 
             redirect_from = "\n  - " + item.attributes["post-url"]
             if item.attributes["post-url"] != item.attributes["post-url"].downcase
-              redirect_from += ("\n -  " + item.attributes["post-url"].downcase)
+              redirect_from += ("\n  - " + item.attributes["post-url"].downcase)
             end
 
             # since BlogML doesn't support tags, and I haphazardly used categories as tags,

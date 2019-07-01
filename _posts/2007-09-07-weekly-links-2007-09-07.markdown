@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/09/07/Weekly-Links-2007-09-07
- -  /post/2007/09/07/weekly-links-2007-09-07
+  - /post/2007/09/07/weekly-links-2007-09-07
 ---
 <!-- more -->
 <P><STRONG>C# - Generics<BR></STRONG><A href="http://www.codeguru.com/csharp/sample_chapter/article.php/c11673/">C# Generics, Part 2/4: Constraints, Members, Operators</A>&nbsp;- Patrick Smacchia</P>

@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Inspiration", "Software Craftsmanship"]
 redirect_from: 
   - /post/2014/07/12/Community-Engagement-Who-do-you-follow-What-do-you-share
- -  /post/2014/07/12/community-engagement-who-do-you-follow-what-do-you-share
+  - /post/2014/07/12/community-engagement-who-do-you-follow-what-do-you-share
 ---
 <!-- more -->
 <p>Some people have other people they follow in one manner or another. Some of the most commonly followed people in an industry are the "rockstars" of that industry. However, there are some people who refuse to follow others as they feel it might hinder their ability to think uniquely; think different. Although, if you don't follow anyone then you are turning yourself into a loner; an island. What's the best direction to take? Should you be a loner who works and thinks independently, or should you follow others and potentially risk this independence?</p>

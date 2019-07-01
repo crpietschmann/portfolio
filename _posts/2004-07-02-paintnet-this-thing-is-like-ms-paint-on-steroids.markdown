@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/07/02/PaintNET-This-thing-is-like-MS-Paint-on-steroids
- -  /post/2004/07/02/paintnet-this-thing-is-like-ms-paint-on-steroids
+  - /post/2004/07/02/paintnet-this-thing-is-like-ms-paint-on-steroids
 ---
 <!-- more -->
 <p>

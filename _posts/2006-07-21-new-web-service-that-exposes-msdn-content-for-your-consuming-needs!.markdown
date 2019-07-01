@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/07/21/New-Web-Service-that-exposes-MSDN-content-for-your-consuming-needs!
- -  /post/2006/07/21/new-web-service-that-exposes-msdn-content-for-your-consuming-needs!
+  - /post/2006/07/21/new-web-service-that-exposes-msdn-content-for-your-consuming-needs!
 ---
 <!-- more -->
 <P>Microsoft released a new XML Web Service that provides access to the content stored in the MSDN/TechNet Publishing System (MTPS). Using this new service, you can integrate documentation, technical articles, whitepapers, images and other content available from the MTPS system into your own application. This looks really cool! I can't wait to see what cool things people do with it.</P>

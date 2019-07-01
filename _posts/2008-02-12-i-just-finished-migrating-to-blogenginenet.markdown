@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/02/12/I-just-finished-migrating-to-BlogEngineNET
- -  /post/2008/02/12/i-just-finished-migrating-to-blogenginenet
+  - /post/2008/02/12/i-just-finished-migrating-to-blogenginenet
 ---
 <!-- more -->
 <p>

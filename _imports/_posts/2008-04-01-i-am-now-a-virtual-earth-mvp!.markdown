@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General", "Bing Maps"]
 redirect_from: 
   - /post/2008/04/01/I-am-now-a-Virtual-Earth-MVP!
- -  /post/2008/04/01/i-am-now-a-virtual-earth-mvp!
+  - /post/2008/04/01/i-am-now-a-virtual-earth-mvp!
 ---
 <!-- more -->
 <p>

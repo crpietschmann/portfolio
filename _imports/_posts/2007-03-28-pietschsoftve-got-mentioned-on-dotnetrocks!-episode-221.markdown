@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/03/28/PietschSoftVE-got-mentioned-on-DotNetRocks!-episode-221
- -  /post/2007/03/28/pietschsoftve-got-mentioned-on-dotnetrocks!-episode-221
+  - /post/2007/03/28/pietschsoftve-got-mentioned-on-dotnetrocks!-episode-221
 ---
 <!-- more -->
 <p>

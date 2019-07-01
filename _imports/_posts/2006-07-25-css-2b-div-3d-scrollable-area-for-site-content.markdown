@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/07/25/CSS-2b-DIV-3d-Scrollable-area-for-site-content
- -  /post/2006/07/25/css-2b-div-3d-scrollable-area-for-site-content
+  - /post/2006/07/25/css-2b-div-3d-scrollable-area-for-site-content
 ---
 <!-- more -->
 <P>Using the <A href="http://www.w3schools.com/css/pr_pos_overflow.asp">CSS Overflow property</A>&nbsp;you can create a box of scrollable content in your page without using an IFrame. This means you can have the same visual and usability effect that an IFrame offers and still be search engine friendly.</P>

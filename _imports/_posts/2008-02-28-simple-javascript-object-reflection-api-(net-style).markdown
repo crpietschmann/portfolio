@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/02/28/Simple-JavaScript-Object-Reflection-API-(NET-Style)
- -  /post/2008/02/28/simple-javascript-object-reflection-api-(net-style)
+  - /post/2008/02/28/simple-javascript-object-reflection-api-(net-style)
 ---
 <!-- more -->
 <p>

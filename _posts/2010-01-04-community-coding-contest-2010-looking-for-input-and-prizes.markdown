@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2010/01/04/Community-Coding-Contest-2010-Looking-for-Input-and-Prizes
- -  /post/2010/01/04/community-coding-contest-2010-looking-for-input-and-prizes
+  - /post/2010/01/04/community-coding-contest-2010-looking-for-input-and-prizes
 ---
 <!-- more -->
 <p>Now that it's 2010, and over a year since the first Community Coding Contest came to an end, I'm thinking about running the contest again in 2010.</p>

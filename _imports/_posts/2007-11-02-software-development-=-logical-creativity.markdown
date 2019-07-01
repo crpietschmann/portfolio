@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/11/02/Software-Development-=-Logical-Creativity
- -  /post/2007/11/02/software-development-=-logical-creativity
+  - /post/2007/11/02/software-development-=-logical-creativity
 ---
 <!-- more -->
 <H3>Programming = Logical</H3>

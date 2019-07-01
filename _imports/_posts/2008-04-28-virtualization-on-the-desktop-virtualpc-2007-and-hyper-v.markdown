@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/04/28/Virtualization-on-the-Desktop-VirtualPC-2007-and-Hyper-V
- -  /post/2008/04/28/virtualization-on-the-desktop-virtualpc-2007-and-hyper-v
+  - /post/2008/04/28/virtualization-on-the-desktop-virtualpc-2007-and-hyper-v
 ---
 <!-- more -->
 <p>

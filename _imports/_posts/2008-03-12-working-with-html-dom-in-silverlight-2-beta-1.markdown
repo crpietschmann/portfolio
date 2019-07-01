@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Silverlight"]
 redirect_from: 
   - /post/2008/03/12/Working-with-HTML-DOM-in-Silverlight-2-Beta-1
- -  /post/2008/03/12/working-with-html-dom-in-silverlight-2-beta-1
+  - /post/2008/03/12/working-with-html-dom-in-silverlight-2-beta-1
 ---
 <!-- more -->
 <p>

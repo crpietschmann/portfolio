@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/12/15/Vista-Sidebar-Gadget-for-Pandora-Radio
- -  /post/2008/12/15/vista-sidebar-gadget-for-pandora-radio
+  - /post/2008/12/15/vista-sidebar-gadget-for-pandora-radio
 ---
 <!-- more -->
 <p>

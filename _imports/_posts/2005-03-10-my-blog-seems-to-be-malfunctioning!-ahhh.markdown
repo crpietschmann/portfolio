@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/10/My-blog-seems-to-be-malfunctioning!-Ahhh
- -  /post/2005/03/10/my-blog-seems-to-be-malfunctioning!-ahhh
+  - /post/2005/03/10/my-blog-seems-to-be-malfunctioning!-ahhh
 ---
 <!-- more -->
 <P>My blog seems to be malfunctioning! Ahhh....</P>

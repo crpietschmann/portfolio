@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2009/07/29/JavaScript-Easily-Extend-an-Object-Element
- -  /post/2009/07/29/javascript-easily-extend-an-object-element
+  - /post/2009/07/29/javascript-easily-extend-an-object-element
 ---
 <!-- more -->
 <p>If you use jQuery then you may be familiar with its "<a href="http://docs.jquery.com/Utilities/jQuery.extend">jQuery.extend</a>" method. The "jQuery.extend" method allows you to easily extend one object with one or more others. This is something that can really come in handy, especially when dealing with passing in "options" to a method, and needing to have them "default" to certain values.</p>

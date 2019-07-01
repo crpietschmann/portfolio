@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2011/07/10/Bing-Maps-v7-Ajax-Hacks-InfoBox-Description-containing-Html-tags
- -  /post/2011/07/10/bing-maps-v7-ajax-hacks-infobox-description-containing-html-tags
+  - /post/2011/07/10/bing-maps-v7-ajax-hacks-infobox-description-containing-html-tags
 ---
 <!-- more -->
 <p>For some odd reason the Bing Maps team decided to not allow HTML tags within the Description property of the InfoBox class they baked into the Bing Maps v7 Ajax control. I don’t know why they would limit it in such a way, but thankfully I have figured out a hack to override it and allow HTML tags as desired.</p>  <p><a href="/images/postsBingMaps7HackInfoBoxDescriptionHTML.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="BingMaps7HackInfoBoxDescriptionHTML" border="0" alt="BingMaps7HackInfoBoxDescriptionHTML" src="/images/postsBingMaps7HackInfoBoxDescriptionHTML_thumb.png" width="485" height="255" /></a></p>  <p>Here’s a full sample page that adds a map with pushpin and infobox, and sets up overriding support to allow HTML tags within the infobox’s description:</p>  <p>&#160;</p>  <p>   <pre class="csharpcode">&lt;!DOCTYPE html&gt;

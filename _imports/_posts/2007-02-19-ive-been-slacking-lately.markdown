@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/02/19/Ive-been-slacking-lately
- -  /post/2007/02/19/ive-been-slacking-lately
+  - /post/2007/02/19/ive-been-slacking-lately
 ---
 <!-- more -->
 <P>Basically, I haven't been working on much in my spare time lately.</P>

@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/01/24/LINQ-to-JavaScript-(JSLINQ)-Open-Source-Project-Launched!
- -  /post/2008/01/24/linq-to-javascript-(jslinq)-open-source-project-launched!
+  - /post/2008/01/24/linq-to-javascript-(jslinq)-open-source-project-launched!
 ---
 <!-- more -->
 <p>I know LINQ is still rather fresh to everyone yet, and you may not have really used it much, but I just started a new Open Source project called "<a href="http://www.codeplex.com/JSLINQ">LINQ to JavaScript</a>". Or, <a href="http://www.codeplex.com/JSLINQ">JSLINQ</a> for short. This project brings the ease of querying data collections down to the JavaScript world.</p>

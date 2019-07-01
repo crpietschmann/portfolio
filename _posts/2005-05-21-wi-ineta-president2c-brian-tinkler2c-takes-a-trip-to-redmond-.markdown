@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2005/05/21/WI-INETA-President2c-Brian-Tinkler2c-takes-a-trip-to-Redmond-
- -  /post/2005/05/21/wi-ineta-president2c-brian-tinkler2c-takes-a-trip-to-redmond-
+  - /post/2005/05/21/wi-ineta-president2c-brian-tinkler2c-takes-a-trip-to-redmond-
 ---
 <!-- more -->
 <p>

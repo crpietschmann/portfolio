@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Software Craftsmanship"]
 redirect_from: 
   - /post/2013/08/25/Psychology-of-Software-and-its-Users
- -  /post/2013/08/25/psychology-of-software-and-its-users
+  - /post/2013/08/25/psychology-of-software-and-its-users
 ---
 <!-- more -->
 <p>The fact that Psychology plays an instrumental role in the development, design and everyday use of software is not something that is very apparent to most people. It is something that is hidden within the details, but is also blatantly obvious when to really think about how software is developed, designed and used.</p>

@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: []
 redirect_from: 
   - /page/About-Chris-Pietschmann
- -  /page/about-chris-pietschmann
+  - /page/about-chris-pietschmann
 ---
 <!-- more -->
 <p>My name is Chris Pietschmann. I do so many things, it's difficult to describe myself in just a single sentence. So here's a few:</p>

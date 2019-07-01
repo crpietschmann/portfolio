@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Silverlight"]
 redirect_from: 
   - /post/2008/03/08/Show-a-MessageBox-in-Silverlight-2-Beta-1
- -  /post/2008/03/08/show-a-messagebox-in-silverlight-2-beta-1
+  - /post/2008/03/08/show-a-messagebox-in-silverlight-2-beta-1
 ---
 <!-- more -->
 <p>

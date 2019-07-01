@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2006/03/30/ASPNET-20-Use-VBNET-and-C-within-the-App_Code-folder
- -  /post/2006/03/30/aspnet-20-use-vbnet-and-c-within-the-app_code-folder
+  - /post/2006/03/30/aspnet-20-use-vbnet-and-c-within-the-app_code-folder
 ---
 <!-- more -->
 <p>When I was creating my new blog site (this site your looking at), I chose to write it in C#. I had a problem with the App_Code folder because I had some code in VB.NET code and some C# code I needed to put in there. I didn't want to rewrite my VB.NET code in the App_Code folder just so I could write the rest of the code for the site in C#.</p>

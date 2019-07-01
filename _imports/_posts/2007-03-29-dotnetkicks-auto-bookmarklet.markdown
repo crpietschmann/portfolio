@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/03/29/DotNetKicks-auto-bookmarklet
- -  /post/2007/03/29/dotnetkicks-auto-bookmarklet
+  - /post/2007/03/29/dotnetkicks-auto-bookmarklet
 ---
 <!-- more -->
 <P>Here's a bookmarklet for submitting a link to <A href="http://dotnetkicks.com/">DotNetKicks </A>that automatically passes in the URL, Title and Description. To specify&nbsp;the&nbsp;description to submit all you have to do is highlight text on the page.</P>

@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/06/Windows-System-Properties-Add-Custom-Manufacturer-Properties
- -  /post/2004/08/06/windows-system-properties-add-custom-manufacturer-properties
+  - /post/2004/08/06/windows-system-properties-add-custom-manufacturer-properties
 ---
 <!-- more -->
 <p>

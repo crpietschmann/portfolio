@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["C#", "vb.net"]
 redirect_from: 
   - /post/2007/11/26/NET-How-to-Alias-Namespaces-and-Data-Types
- -  /post/2007/11/26/net-how-to-alias-namespaces-and-data-types
+  - /post/2007/11/26/net-how-to-alias-namespaces-and-data-types
 ---
 <!-- more -->
 <p>One of the little known features of .NET is that you can&nbsp;give complete namespaces and data types alias's that you can reference them with in code.</p>

@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["asp.net", "JavaScript"]
 redirect_from: 
   - /post/2008/11/07/ASPNET-AJAX-Create-a-JavaScript-Component-with-Events
- -  /post/2008/11/07/aspnet-ajax-create-a-javascript-component-with-events
+  - /post/2008/11/07/aspnet-ajax-create-a-javascript-component-with-events
 ---
 <!-- more -->
 <p>

@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/04/25/Virtual-Earth-Resources
- -  /post/2008/04/25/virtual-earth-resources
+  - /post/2008/04/25/virtual-earth-resources
 ---
 <!-- more -->
 <p>

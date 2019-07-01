@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["asp.net", "ASP.NET MVC"]
 redirect_from: 
   - /post/2008/08/17/How-To-Setup-Custom-Theme-Support-In-ASPNET-MVC-using-a-Custom-ViewEngine
- -  /post/2008/08/17/how-to-setup-custom-theme-support-in-aspnet-mvc-using-a-custom-viewengine
+  - /post/2008/08/17/how-to-setup-custom-theme-support-in-aspnet-mvc-using-a-custom-viewengine
 ---
 <!-- more -->
 <p><strong>Update 2009/03/26:</strong> There is an updated version of this code (with improvements) that targets the ASP.NET MVC 1.0 RTW located here: <a href="/post/2009/03/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx">/post/2009/03/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx</a>&nbsp;</p>

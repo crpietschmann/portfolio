@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/05/10/Thinking-about-switching-email-to-GMail-for-My-Domain
- -  /post/2007/05/10/thinking-about-switching-email-to-gmail-for-my-domain
+  - /post/2007/05/10/thinking-about-switching-email-to-gmail-for-my-domain
 ---
 <!-- more -->
 <P>When <A href="http://www.google.com/a/smallbiz/">GMail for My Doma</A>in was first available I set it up for SlapDev.com to test it out. It was really simple to setup&nbsp;and you get the benefit of the regular GMail web client for reading your emails. It's pretty neat.</P>

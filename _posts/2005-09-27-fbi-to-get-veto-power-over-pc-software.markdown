@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/09/27/FBI-to-get-veto-power-over-PC-software
- -  /post/2005/09/27/fbi-to-get-veto-power-over-pc-software
+  - /post/2005/09/27/fbi-to-get-veto-power-over-pc-software
 ---
 <!-- more -->
 <P>There's&nbsp;no way they'll be able to keep me or anyone else from writing software and distributing it.<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></P>

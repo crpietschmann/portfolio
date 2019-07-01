@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/07/03/Visual-SourceSafe-60-Automation
- -  /post/2004/07/03/visual-sourcesafe-60-automation
+  - /post/2004/07/03/visual-sourcesafe-60-automation
 ---
 <!-- more -->
 <P>One of my clients has a web application that automates updating their clients sites with the latest ASP pages, DLL, and SQL scripts on their databases. This week the idea came up of having that web application grab the latest version of the appropriate ASP pages from SourceSafe during this automation process. We figured it could be done, since Visual Studio can automate SourceSafe, and it also wouldn't be like Microsoft to not make that sort of thing automatable. Below are two links to documentation and example code.</P>

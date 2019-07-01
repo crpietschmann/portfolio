@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General", "vb.net"]
 redirect_from: 
   - /post/2009/01/20/Simple-Port-Scanner-Written-in-VBNET-2003-2008
- -  /post/2009/01/20/simple-port-scanner-written-in-vbnet-2003-2008
+  - /post/2009/01/20/simple-port-scanner-written-in-vbnet-2003-2008
 ---
 <!-- more -->
 <p>

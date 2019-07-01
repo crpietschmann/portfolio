@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/09/08/You-are-responsible-for-YOU
- -  /post/2013/09/08/you-are-responsible-for-you
+  - /post/2013/09/08/you-are-responsible-for-you
 ---
 <!-- more -->
 <p>It is easy to point fingers and pass blame to others. Although, ultimately, at the end of the day you are the only one responsible for YOU!</p>

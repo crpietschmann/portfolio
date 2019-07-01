@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
   - /post/2010/05/30/Draggable-Pushpins-using-Bing-Maps-Silverlight-Control
- -  /post/2010/05/30/draggable-pushpins-using-bing-maps-silverlight-control
+  - /post/2010/05/30/draggable-pushpins-using-bing-maps-silverlight-control
 ---
 <!-- more -->
 <p>Using a map to visualize data within an application is great, but you must first get the location of the data to be displayed. If you have the address you can geocode it using the Bing Maps Web Services, but &quot;What if you can't geocode it?&quot; Or, &quot;What if the geocoding can't find the address?&quot; Well, if your user knows where the location is, then you can have them point it out by clicking on the map. Creating Pushpins in response to a users click is nice, but wouldn't it be even nicer if they could &quot;Click and Drag&quot; the Pushpin around to define/edit/change the location of the data entity?</p>  <p>I have even seen this discussed a bit in regards to the Bing Maps Silverlight Control, and it isn't something that is built into the map control directly. However it isn't too difficult to implement, if you know what to do. So I decided to create and post a simple &quot;DraggablePushpin&quot; object deriving from the &quot;Microsoft.Maps.MapControl.Pushpin&quot; object that implements Dragging in a nice, self contained fashion. There's no need to wire up any events, you simple add a &quot;DraggablePushpin&quot; to you Map, and the user can drag it around.</p>  <p>Here's the code for the &quot;DraggablePushpin&quot;:</p>  <pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">class</span> DraggablePushpin : Microsoft.Maps.MapControl.Pushpin

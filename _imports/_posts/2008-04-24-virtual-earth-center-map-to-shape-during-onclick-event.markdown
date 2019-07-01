@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/04/24/Virtual-Earth-Center-Map-to-Shape-during-OnClick-Event
- -  /post/2008/04/24/virtual-earth-center-map-to-shape-during-onclick-event
+  - /post/2008/04/24/virtual-earth-center-map-to-shape-during-onclick-event
 ---
 <!-- more -->
 <p>

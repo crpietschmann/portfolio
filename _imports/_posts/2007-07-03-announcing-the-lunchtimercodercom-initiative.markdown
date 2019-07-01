@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/07/03/Announcing-the-LunchTimerCodercom-Initiative
- -  /post/2007/07/03/announcing-the-lunchtimercodercom-initiative
+  - /post/2007/07/03/announcing-the-lunchtimercodercom-initiative
 ---
 <!-- more -->
 <p>

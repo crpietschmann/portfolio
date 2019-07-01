@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/24/HVD-Holographic-Versatile-Disc
- -  /post/2004/08/24/hvd-holographic-versatile-disc
+  - /post/2004/08/24/hvd-holographic-versatile-disc
 ---
 <!-- more -->
 A Japanese company has achieved the world&#39;s first reliable recording and playback of digital movies on a transparent holographic recording disc.

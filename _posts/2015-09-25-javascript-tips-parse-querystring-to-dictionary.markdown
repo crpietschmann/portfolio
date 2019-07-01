@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2015/09/25/JavaScript-Tips-Parse-QueryString-to-Dictionary
- -  /post/2015/09/25/javascript-tips-parse-querystring-to-dictionary
+  - /post/2015/09/25/javascript-tips-parse-querystring-to-dictionary
 ---
 <!-- more -->
 <p>The URL Query String is something that is usually just sent to the server-side code and parse there for use in specifying the data to query. A somewhat little known feature of the JavaScript DOM is that the QueryString values are accessible from client-side javaScript code too.</p>

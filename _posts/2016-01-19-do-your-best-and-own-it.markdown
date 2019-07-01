@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/01/19/Do-your-best-and-Own-it
- -  /post/2016/01/19/do-your-best-and-own-it
+  - /post/2016/01/19/do-your-best-and-own-it
 ---
 <!-- more -->
 <p>A couple years ago I posted some thoughts on "<a href="/post/2013/09/08/You-are-responsible-for-YOU">You are responsible for YOU</a>" pointing out that you much take control for your own actions. I've been thinking about this a bit recently and thought I would expand on that thought and add a bit. You can't merely be responsible for yourself and your actions, but you much also "Own it."</p>

@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["CSS", "HTML", "JavaScript"]
 redirect_from: 
   - /post/2016/05/09/Study-Guide-for-70-480-Programming-HTML5-JavaScript-CSS3-Certification-Exam1
- -  /post/2016/05/09/study-guide-for-70-480-programming-html5-javascript-css3-certification-exam1
+  - /post/2016/05/09/study-guide-for-70-480-programming-html5-javascript-css3-certification-exam1
 ---
 <!-- more -->
 <p><img style="float: right;" src="/images/posts/2016/05/MS_ProgHTML5JSCSS.png" alt="" width="200px" />There are many benefits to getting certified in a given technology, as it helps to show / prove your expertise. While there are many certifications for various technologies, there are not very many available to get certified win HTML5, JavaScript, and CSS3 web technologies. The Microsoft 70-480 exam is a really good exam to get certified as a Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3.</p>

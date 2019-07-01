@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/02/05/Regular-Expressions-are-pretty-neato
- -  /post/2005/02/05/regular-expressions-are-pretty-neato
+  - /post/2005/02/05/regular-expressions-are-pretty-neato
 ---
 <!-- more -->
 <P>I never worked with regular expressions before. I heard how great they can be, but never really knew. Regular expressions are really cool.</P>

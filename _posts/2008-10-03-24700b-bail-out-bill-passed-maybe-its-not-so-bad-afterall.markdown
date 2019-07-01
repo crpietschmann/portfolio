@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/10/03/24700B-Bail-Out-Bill-Passed-Maybe-Its-Not-So-Bad-Afterall
- -  /post/2008/10/03/24700b-bail-out-bill-passed-maybe-its-not-so-bad-afterall
+  - /post/2008/10/03/24700b-bail-out-bill-passed-maybe-its-not-so-bad-afterall
 ---
 <!-- more -->
 <p>I generally don't post on political topics, but this is a big one...</p>

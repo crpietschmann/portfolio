@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/03/01/Never-Give-Up
- -  /post/2016/03/01/never-give-up
+  - /post/2016/03/01/never-give-up
 ---
 <!-- more -->
 <p>There is a statement that is very prevalent in our culture that "you only have 1 shot" at success. This promotes the premise that any failure is futile. This couldn't be further from the truth. We learn from failure. Failure is inevitable on the path to success, and every single person who has ever succeeded has failed at some point. It's what you do with failure that defines your chances at future success.</p>

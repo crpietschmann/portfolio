@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["C#", "vb.net"]
 redirect_from: 
   - /post/2006/10/11/Visual-Studio-2005-Add-In-Get-the-total-number-of-line-of-code-in-your-solution
- -  /post/2006/10/11/visual-studio-2005-add-in-get-the-total-number-of-line-of-code-in-your-solution
+  - /post/2006/10/11/visual-studio-2005-add-in-get-the-total-number-of-line-of-code-in-your-solution
 ---
 <!-- more -->
 <p>Here's a Visual Studio 2005 Add-In that shows you the total lines of code within your solution/project. It also show the breakout of each individual file.</p>

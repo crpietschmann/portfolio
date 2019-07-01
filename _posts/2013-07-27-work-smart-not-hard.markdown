@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/07/27/Work-Smart-Not-Hard
- -  /post/2013/07/27/work-smart-not-hard
+  - /post/2013/07/27/work-smart-not-hard
 ---
 <!-- more -->
 <p><!--[if gte mso 9]><xml>

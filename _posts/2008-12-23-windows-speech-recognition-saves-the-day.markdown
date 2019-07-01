@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/12/23/Windows-speech-recognition-saves-the-day
- -  /post/2008/12/23/windows-speech-recognition-saves-the-day
+  - /post/2008/12/23/windows-speech-recognition-saves-the-day
 ---
 <!-- more -->
 <p>

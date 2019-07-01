@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Bing Maps", "JavaScript"]
 redirect_from: 
   - /post/2009/04/04/Virtual-Earth-Shapes-(VEShape)-to-WKT-(Well-Known-Text)-and-Back-using-JavaScript
- -  /post/2009/04/04/virtual-earth-shapes-(veshape)-to-wkt-(well-known-text)-and-back-using-javascript
+  - /post/2009/04/04/virtual-earth-shapes-(veshape)-to-wkt-(well-known-text)-and-back-using-javascript
 ---
 <!-- more -->
 <p>One of the standard methods of representing geometric shapes is by using the WKT (Well-Known-Text) standard. This is a human readable standard method of representing geometric shapes that can be used to easily pass spatial data between applications. I know GML or GeoRSS may be a little more applicable since they are based on XML, but WKT can work just fine in some cases.</p>

@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/10/20/Is-this-necessary-Chris-Pietschmann-MVP-MCSD-MCAD-MCP
- -  /post/2008/10/20/is-this-necessary-chris-pietschmann-mvp-mcsd-mcad-mcp
+  - /post/2008/10/20/is-this-necessary-chris-pietschmann-mvp-mcsd-mcad-mcp
 ---
 <!-- more -->
 <p>

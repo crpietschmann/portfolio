@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2008/05/30/ASPNET_35_Create_AJAX_Extender_Controls_using_the_ExtenderControl_base_class
- -  /post/2008/05/30/aspnet_35_create_ajax_extender_controls_using_the_extendercontrol_base_class
+  - /post/2008/05/30/aspnet_35_create_ajax_extender_controls_using_the_extendercontrol_base_class
 ---
 <!-- more -->
 <p>

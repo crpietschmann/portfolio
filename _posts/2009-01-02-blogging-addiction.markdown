@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/01/02/Blogging-Addiction
- -  /post/2009/01/02/blogging-addiction
+  - /post/2009/01/02/blogging-addiction
 ---
 <!-- more -->
 <p>

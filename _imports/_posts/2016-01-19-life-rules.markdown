@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: []
 redirect_from: 
   - /page/Life-Rules
- -  /page/life-rules
+  - /page/life-rules
 ---
 <!-- more -->
 <p>I have a few life rules, principles and tips that I've shared over the years on my blog. Until now I haven't compiled them into a single list, so I thought I would do that here. The order doesn't really matter all that much as each is fairly equal to the other; except where painfully obvious.</p>

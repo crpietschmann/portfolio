@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/10/28/Virtual-Earth-6-Bug-GetDirections-breaks-when-Start-and-End-Address-are-the-same
- -  /post/2007/10/28/virtual-earth-6-bug-getdirections-breaks-when-start-and-end-address-are-the-same
+  - /post/2007/10/28/virtual-earth-6-bug-getdirections-breaks-when-start-and-end-address-are-the-same
 ---
 <!-- more -->
 <p>

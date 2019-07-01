@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/12/26/Virtual-Earth-Convert-Road-Map-Style-to-Shaded-Like-mapslivecom-does
- -  /post/2007/12/26/virtual-earth-convert-road-map-style-to-shaded-like-mapslivecom-does
+  - /post/2007/12/26/virtual-earth-convert-road-map-style-to-shaded-like-mapslivecom-does
 ---
 <!-- more -->
 <h3>What is the Shaded map Style?</h3>

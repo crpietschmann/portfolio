@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General", "Bing Maps", "asp.net"]
 redirect_from: 
   - /post/2007/12/28/WebMapsVE-Virtual-Earth-Without-JavaScript2c-plus-NET-35-Support-just-added!
- -  /post/2007/12/28/webmapsve-virtual-earth-without-javascript2c-plus-net-35-support-just-added!
+  - /post/2007/12/28/webmapsve-virtual-earth-without-javascript2c-plus-net-35-support-just-added!
 ---
 <!-- more -->
 <p>

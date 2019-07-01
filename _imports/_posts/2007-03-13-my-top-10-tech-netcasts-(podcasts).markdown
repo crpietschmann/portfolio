@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/03/13/My-Top-10-Tech-Netcasts-(podcasts)
- -  /post/2007/03/13/my-top-10-tech-netcasts-(podcasts)
+  - /post/2007/03/13/my-top-10-tech-netcasts-(podcasts)
 ---
 <!-- more -->
 <P>There are alot of podcasts being produced out there. I've had trouble over the last couple years in finding good quality podcasts to listen to.</P>

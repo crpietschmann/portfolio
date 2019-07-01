@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2006/11/15/WI-INETA-Overview-of-Web-20-with-Larry-Clarkin
- -  /post/2006/11/15/wi-ineta-overview-of-web-20-with-larry-clarkin
+  - /post/2006/11/15/wi-ineta-overview-of-web-20-with-larry-clarkin
 ---
 <!-- more -->
 <p>Larry Clarkin presented at tonight&rsquo;s WI .NET Users Group meeting on the topic of "Overview of Web 2.0". He provided a very good description of what really is "Web 2.0"; and he had a whole 5 days to prepare. The reason he had only 5 days to prepare is because the presenter that was scheduled for tonight couldn't present. Well done Larry</p>

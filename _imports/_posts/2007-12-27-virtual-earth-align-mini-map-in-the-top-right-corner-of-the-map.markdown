@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/12/27/Virtual-Earth-Align-Mini-Map-in-the-Top-Right-corner-of-the-Map
- -  /post/2007/12/27/virtual-earth-align-mini-map-in-the-top-right-corner-of-the-map
+  - /post/2007/12/27/virtual-earth-align-mini-map-in-the-top-right-corner-of-the-map
 ---
 <!-- more -->
 <p>If you take a look at <a href="http://maps.live.com/">maps.live.com</a> you'll see the Mini Map is in the Top Right corner of the map. Virtual Earth doesn't have any alignment options built in when showing the Mini Map. It just&nbsp;allows you to position the mini map using x and y offset coordinates relating to the top left corner of the map. This makes it really easy to show the mini map in relation to the top left corner, but what&nbsp;makes this tricky is the dashboard is already there.</p>

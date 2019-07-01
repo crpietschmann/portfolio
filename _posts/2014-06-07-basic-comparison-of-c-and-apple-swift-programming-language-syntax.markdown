@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["C#", "Swift"]
 redirect_from: 
   - /post/2014/06/07/Basic-Comparison-of-C-and-Apple-Swift-Programming-Language-Syntax
- -  /post/2014/06/07/basic-comparison-of-c-and-apple-swift-programming-language-syntax
+  - /post/2014/06/07/basic-comparison-of-c-and-apple-swift-programming-language-syntax
 ---
 <!-- more -->
 <p>Recently, Apple announced and released a beta version of the new <a href="https://developer.apple.com/swift/">Swift programming language</a> for building iOS and OSX applications. Swift is a modern language with the power of Objective-C without the "baggage of C." While we can't argue that Objective-C has it's difficulties being tied closely to C, but the real question is... How does Swift compare to a modern language like C#?</p>

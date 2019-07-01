@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2010/09/27/2010-Community-Coding-Contest-winners-have-been-announced
- -  /post/2010/09/27/2010-community-coding-contest-winners-have-been-announced
+  - /post/2010/09/27/2010-community-coding-contest-winners-have-been-announced
 ---
 <!-- more -->
 <p>The 2010 Community Coding Contest winners have been announced.</p>

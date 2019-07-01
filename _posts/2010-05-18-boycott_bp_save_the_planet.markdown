@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2010/05/18/Boycott_BP_Save_the_Planet
- -  /post/2010/05/18/boycott_bp_save_the_planet
+  - /post/2010/05/18/boycott_bp_save_the_planet
 ---
 <!-- more -->
 <p><a href="http://www.guardian.co.uk/environment/2010/may/10/deepwater-horizon-oil-junk-shot"><img style="float: right; border: 0;" src="/images/posts2010/5/bird-at-deepwater-horizon-006.jpg" alt="" width="150" /></a></p>

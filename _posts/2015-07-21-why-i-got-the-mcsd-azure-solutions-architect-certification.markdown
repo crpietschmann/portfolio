@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Azure"]
 redirect_from: 
   - /post/2015/07/21/Why-I-got-the-MCSD-Azure-Solutions-Architect-Certification
- -  /post/2015/07/21/why-i-got-the-mcsd-azure-solutions-architect-certification
+  - /post/2015/07/21/why-i-got-the-mcsd-azure-solutions-architect-certification
 ---
 <!-- more -->
 <p><img style="float: right;" src="/images/posts/2015/07/MCSD_Azure_Blk.png" alt="" /></p>

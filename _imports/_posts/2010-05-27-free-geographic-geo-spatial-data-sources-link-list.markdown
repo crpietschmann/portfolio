@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: []
 redirect_from: 
   - /page/Free-Geographic-Geo-Spatial-Data-Sources-Link-List
- -  /page/free-geographic-geo-spatial-data-sources-link-list
+  - /page/free-geographic-geo-spatial-data-sources-link-list
 ---
 <!-- more -->
 <p>This page lists a bunch of different geographic / geo-spatial data sources that provide FREE data to be consumed. I haven't really found any resource link list like this, so I thought I'd start one.</p>

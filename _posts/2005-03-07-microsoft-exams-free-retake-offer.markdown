@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/07/Microsoft-Exams-FREE-Retake-Offer
- -  /post/2005/03/07/microsoft-exams-free-retake-offer
+  - /post/2005/03/07/microsoft-exams-free-retake-offer
 ---
 <!-- more -->
 <P class=MsoNormal><SPAN style="FONT-SIZE: 8pt; FONT-FAMILY: Verdana">

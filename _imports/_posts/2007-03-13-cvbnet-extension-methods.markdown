@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General", "vb.net", "C#"]
 redirect_from: 
   - /post/2007/03/13/CVBNET-Extension-Methods
- -  /post/2007/03/13/cvbnet-extension-methods
+  - /post/2007/03/13/cvbnet-extension-methods
 ---
 <!-- more -->
 <p>

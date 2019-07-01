@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["C#"]
 redirect_from: 
   - /post/2015/12/17/Code-Tip-Simpler-Performance-Timer-Logging-in-C
- -  /post/2015/12/17/code-tip-simpler-performance-timer-logging-in-c
+  - /post/2015/12/17/code-tip-simpler-performance-timer-logging-in-c
 ---
 <!-- more -->
 <p>At this point application logging is pretty trivial as there are tons of logging libraries available for use. However, logging of performance timing is a bit ambiguous. There are many ways to do it, and one of the most common is to use the <em>System.Diagnostics.Stopwatch</em> class. Rather, than just embed the&nbsp;<em>Stopwatch</em> class code within and mixed with your application code; in this post I'll cover a more graceful approach to using a simple class along with the C#&nbsp;<em>using&nbsp;</em>keyword. If you're familiar with the MiniProfiler project, then you'll already be familiar with this type of class / usage.</p>

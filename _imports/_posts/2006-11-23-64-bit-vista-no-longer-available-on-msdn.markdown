@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/11/23/64-bit-Vista-no-longer-available-on-MSDN
- -  /post/2006/11/23/64-bit-vista-no-longer-available-on-msdn
+  - /post/2006/11/23/64-bit-vista-no-longer-available-on-msdn
 ---
 <!-- more -->
 <P>Apparently I downloaded the 64-bit version of Vista at a good time. They have since removed it from the list&nbsp;in MSDN subscriber downloads. I wonder why they removed it?</P>

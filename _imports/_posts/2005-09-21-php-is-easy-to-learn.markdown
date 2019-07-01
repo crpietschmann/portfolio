@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/09/21/PHP-is-easy-to-learn
- -  /post/2005/09/21/php-is-easy-to-learn
+  - /post/2005/09/21/php-is-easy-to-learn
 ---
 <!-- more -->
 <P>Now that's something I never imagined I would say.</P>

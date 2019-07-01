@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/02/01/I-found-a-bug-in-SQL-Server-2000
- -  /post/2005/02/01/i-found-a-bug-in-sql-server-2000
+  - /post/2005/02/01/i-found-a-bug-in-sql-server-2000
 ---
 <!-- more -->
 <p>

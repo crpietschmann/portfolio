@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/10/23/Real-Estate-The-Search-That-Should-Be
- -  /post/2007/10/23/real-estate-the-search-that-should-be
+  - /post/2007/10/23/real-estate-the-search-that-should-be
 ---
 <!-- more -->
 <P>There are so many real estate sites out there, and each one has certain features or aspects about them that attract certain users more than others. However, even though there are so many, it just seems that no one can really get it right.</P>

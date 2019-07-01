@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General", "Bing Maps"]
 redirect_from: 
   - /post/2006/05/26/What-Ive-been-up-to-lately-JavaScript2c-AJAX2c-Virtual-Earth-and-WebParts
- -  /post/2006/05/26/what-ive-been-up-to-lately-javascript2c-ajax2c-virtual-earth-and-webparts
+  - /post/2006/05/26/what-ive-been-up-to-lately-javascript2c-ajax2c-virtual-earth-and-webparts
 ---
 <!-- more -->
 <p>

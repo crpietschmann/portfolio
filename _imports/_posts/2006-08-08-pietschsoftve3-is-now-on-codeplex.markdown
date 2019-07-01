@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2006/08/08/PietschSoftVE3-is-now-on-CodePlex
- -  /post/2006/08/08/pietschsoftve3-is-now-on-codeplex
+  - /post/2006/08/08/pietschsoftve3-is-now-on-codeplex
 ---
 <!-- more -->
 <p>

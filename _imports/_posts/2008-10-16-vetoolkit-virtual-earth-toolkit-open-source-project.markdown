@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/10/16/VEToolkit-Virtual-Earth-Toolkit-Open-Source-Project
- -  /post/2008/10/16/vetoolkit-virtual-earth-toolkit-open-source-project
+  - /post/2008/10/16/vetoolkit-virtual-earth-toolkit-open-source-project
 ---
 <!-- more -->
 <p>

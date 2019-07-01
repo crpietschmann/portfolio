@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["asp.net", "JavaScript"]
 redirect_from: 
   - /post/2006/06/21/ASPNET-Atlas-is-full-of-JavaScript-goodness
- -  /post/2006/06/21/aspnet-atlas-is-full-of-javascript-goodness
+  - /post/2006/06/21/aspnet-atlas-is-full-of-javascript-goodness
 ---
 <!-- more -->
 <p>I was looking through the JavaScript code for <a href="http://atlas.asp.net">Atlas</a> and I noticed there is some pretty neat stuff in there. It is really a very large enhancement to JavaScript.</p>

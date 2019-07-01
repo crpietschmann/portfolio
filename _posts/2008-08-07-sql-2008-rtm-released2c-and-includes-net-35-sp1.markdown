@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/08/07/SQL-2008-RTM-Released2c-and-includes-NET-35-SP1
- -  /post/2008/08/07/sql-2008-rtm-released2c-and-includes-net-35-sp1
+  - /post/2008/08/07/sql-2008-rtm-released2c-and-includes-net-35-sp1
 ---
 <!-- more -->
 <p><img src="/images/postsSQL2008Logo.gif" alt="" align="right" />Yesterday, <a href="http://www.microsoft.com/presspass/press/2008/aug08/08-06SQLServer2008PR.mspx">Microsoft released the final RTM release of SQL Server 2008</a>. Finally, the long anticipated release of SQL 2008 is here. Unfortunately, the <a href="http://www.microsoft.com/sqlserver/2008/en/us/express.aspx">Express edition of SQL 2008</a> isn't available yet (and according to the previous link, it wont be until the end of August), but if you have an MSDN Subscription you can download any of the other editions today.</p>

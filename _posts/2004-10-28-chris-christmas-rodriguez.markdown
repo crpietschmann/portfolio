@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/10/28/CHRIS-CHRISTMAS-RODRIGUEZ
- -  /post/2004/10/28/chris-christmas-rodriguez
+  - /post/2004/10/28/chris-christmas-rodriguez
 ---
 <!-- more -->
 <P>These videos are hilarious!!</P>

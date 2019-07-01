@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/06/29/Community-Coding-Contest-Website-Launched!
- -  /post/2008/06/29/community-coding-contest-website-launched!
+  - /post/2008/06/29/community-coding-contest-website-launched!
 ---
 <!-- more -->
 <p>

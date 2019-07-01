@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2015/04/10/Apple-Watch-NOT-Insanely-Great-Not-Yet
- -  /post/2015/04/10/apple-watch-not-insanely-great-not-yet
+  - /post/2015/04/10/apple-watch-not-insanely-great-not-yet
 ---
 <!-- more -->
 <p><img style="float: right;" src="/images/posts/2015/04/AppleWatchv1.PNG" alt="" /></p>

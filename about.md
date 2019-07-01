@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 redirect_from:
   - /page/About-Chris-Pietschmann
+  - /page/about-chris-pietschmann
 ---
 
 <div class="container">

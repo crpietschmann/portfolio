@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/08/04/Comfort-is-Overrated-Change-is-Exciting-and-Revealing
- -  /post/2013/08/04/comfort-is-overrated-change-is-exciting-and-revealing
+  - /post/2013/08/04/comfort-is-overrated-change-is-exciting-and-revealing
 ---
 <!-- more -->
 <p>We naturally tend to resist change and cling to our comfort zones.</p>

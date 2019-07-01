@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/02/19/Virtual-PC-2007-released-with-improved-performance!
- -  /post/2007/02/19/virtual-pc-2007-released-with-improved-performance!
+  - /post/2007/02/19/virtual-pc-2007-released-with-improved-performance!
 ---
 <!-- more -->
 <P>Microsoft released Virtual PC 2007 today. I've been waiting for this since Virtual PC 2004 wont install on the 64-bit version of Vista.</P>

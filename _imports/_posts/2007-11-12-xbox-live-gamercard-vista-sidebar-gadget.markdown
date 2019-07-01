@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/11/12/XBox-Live-Gamercard-Vista-Sidebar-Gadget
- -  /post/2007/11/12/xbox-live-gamercard-vista-sidebar-gadget
+  - /post/2007/11/12/xbox-live-gamercard-vista-sidebar-gadget
 ---
 <!-- more -->
 <p>Just in case you want to display your <a href="http://brh.numbera.com/software/sidebargadgets/">XBox Live Gamercard within the Windows Vista Sidebar</a>; here's a gadget that does just that: <a href="http://brh.numbera.com/software/sidebargadgets/">http://brh.numbera.com/software/sidebargadgets/</a></p>

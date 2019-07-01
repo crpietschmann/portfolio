@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Azure"]
 redirect_from: 
   - /post/2015/06/06/How-I-passed-the-70-532-Developing-Microsoft-Azure-Solutions-certification-exam
- -  /post/2015/06/06/how-i-passed-the-70-532-developing-microsoft-azure-solutions-certification-exam
+  - /post/2015/06/06/how-i-passed-the-70-532-developing-microsoft-azure-solutions-certification-exam
 ---
 <!-- more -->
 <p><img style="float: right;" src="/images/posts/2015/06/Spec_Dev_AzureSol_BW.png" alt="" /></p>

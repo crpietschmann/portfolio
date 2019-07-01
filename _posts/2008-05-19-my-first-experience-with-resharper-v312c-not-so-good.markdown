@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/05/19/My-First-Experience-with-ReSharper-v312c-not-so-good
- -  /post/2008/05/19/my-first-experience-with-resharper-v312c-not-so-good
+  - /post/2008/05/19/my-first-experience-with-resharper-v312c-not-so-good
 ---
 <!-- more -->
 <p>

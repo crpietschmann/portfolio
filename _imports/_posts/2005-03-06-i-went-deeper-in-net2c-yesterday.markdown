@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2005/03/06/I-went-Deeper-in-NET2c-yesterday
- -  /post/2005/03/06/i-went-deeper-in-net2c-yesterday
+  - /post/2005/03/06/i-went-deeper-in-net2c-yesterday
 ---
 <!-- more -->
 <p>

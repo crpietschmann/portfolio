@@ -4,6 +4,7 @@ title: Life Rules
 permalink: /life-rules/
 redirect_from:
   - /page/Life-Rules
+  - /page/life-rules
 ---
 
 <div class='container'>

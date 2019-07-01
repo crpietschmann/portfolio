@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/10/31/A-Free-Open-Source-Ribbon-Control-for-Windows-Forms
- -  /post/2008/10/31/a-free-open-source-ribbon-control-for-windows-forms
+  - /post/2008/10/31/a-free-open-source-ribbon-control-for-windows-forms
 ---
 <!-- more -->
 <p>

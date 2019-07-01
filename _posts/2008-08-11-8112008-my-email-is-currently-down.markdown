@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/08/11/8112008-My-email-is-currently-down
- -  /post/2008/08/11/8112008-my-email-is-currently-down
+  - /post/2008/08/11/8112008-my-email-is-currently-down
 ---
 <!-- more -->
 <p>

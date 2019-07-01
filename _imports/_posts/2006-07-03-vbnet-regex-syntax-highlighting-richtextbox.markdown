@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["vb.net"]
 redirect_from: 
   - /post/2006/07/03/VBNET-RegEx-Syntax-Highlighting-RichTextBox
- -  /post/2006/07/03/vbnet-regex-syntax-highlighting-richtextbox
+  - /post/2006/07/03/vbnet-regex-syntax-highlighting-richtextbox
 ---
 <!-- more -->
 <p><img class="photosmall" src="/download/blog/1311/regexsyntaxhighlighter.png" border="0" alt="RegEx Syntax Highlighter" hspace="0" align="left" />Here&nbsp;is a version of my code for syntax highlighting in a RichTextBox that incorporates regular expressions.</p>

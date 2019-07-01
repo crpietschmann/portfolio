@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/04/Windows-Longhorn-Glass-Look-DHTML
- -  /post/2005/03/04/windows-longhorn-glass-look-dhtml
+  - /post/2005/03/04/windows-longhorn-glass-look-dhtml
 ---
 <!-- more -->
 <p>

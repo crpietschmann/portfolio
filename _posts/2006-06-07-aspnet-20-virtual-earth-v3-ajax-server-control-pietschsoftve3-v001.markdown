@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2006/06/07/ASPNET-20-Virtual-Earth-v3-Ajax-Server-Control-PietschSoftVE3-v001
- -  /post/2006/06/07/aspnet-20-virtual-earth-v3-ajax-server-control-pietschsoftve3-v001
+  - /post/2006/06/07/aspnet-20-virtual-earth-v3-ajax-server-control-pietschsoftve3-v001
 ---
 <!-- more -->
 <p>

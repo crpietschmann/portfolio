@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/09/11/VBNET-2005s-My-namespace-for-Mono
- -  /post/2004/09/11/vbnet-2005s-my-namespace-for-mono
+  - /post/2004/09/11/vbnet-2005s-my-namespace-for-mono
 ---
 <!-- more -->
 <p>

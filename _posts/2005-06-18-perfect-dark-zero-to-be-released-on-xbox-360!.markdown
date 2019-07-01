@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/06/18/Perfect-Dark-Zero-to-be-released-on-XBox-360!
- -  /post/2005/06/18/perfect-dark-zero-to-be-released-on-xbox-360!
+  - /post/2005/06/18/perfect-dark-zero-to-be-released-on-xbox-360!
 ---
 <!-- more -->
 <table border="0" cellspacing="0" cellpadding="0">

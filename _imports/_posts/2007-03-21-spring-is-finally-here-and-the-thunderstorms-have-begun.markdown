@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/03/21/Spring-is-finally-here-and-the-Thunderstorms-have-begun
- -  /post/2007/03/21/spring-is-finally-here-and-the-thunderstorms-have-begun
+  - /post/2007/03/21/spring-is-finally-here-and-the-thunderstorms-have-begun
 ---
 <!-- more -->
 <P>Today is the first day of Spring, and in the Milwaukee area we are lucky enough to have some rain and a thunderstorm today. I like thunderstorms so I'm glad the season is here. The only bad part is it's also the beginning of Tornado season.</P>

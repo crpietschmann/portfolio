@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2008/04/03/Some-ASPNET-AJAX-Tips-and-Tricks
- -  /post/2008/04/03/some-aspnet-ajax-tips-and-tricks
+  - /post/2008/04/03/some-aspnet-ajax-tips-and-tricks
 ---
 <!-- more -->
 <p>

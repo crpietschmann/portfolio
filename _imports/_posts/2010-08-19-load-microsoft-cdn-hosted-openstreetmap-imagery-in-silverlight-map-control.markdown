@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["Bing Maps", "C#", "Silverlight"]
 redirect_from: 
   - /post/2010/08/19/Load-Microsoft-CDN-Hosted-OpenStreetMap-Imagery-In-Silverlight-Map-Control
- -  /post/2010/08/19/load-microsoft-cdn-hosted-openstreetmap-imagery-in-silverlight-map-control
+  - /post/2010/08/19/load-microsoft-cdn-hosted-openstreetmap-imagery-in-silverlight-map-control
 ---
 <!-- more -->
 <p><a href="/images/postsMSHostedOpenStreetMapImageryFromSilverlight.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="MSHostedOpenStreetMapImageryFromSilverlight" src="/images/postsMSHostedOpenStreetMapImageryFromSilverlight_thumb.png" border="0" alt="MSHostedOpenStreetMapImageryFromSilverlight" width="204" height="179" align="right" /></a> Recently a new <a href="http://www.bing.com/toolbox/blogs/maps/archive/2010/08/02/bing-maps-adds-open-street-maps-layer.aspx">Bing Maps App for OpenStreetMap (OSM)</a> was released. This new feature of the Bing Maps consumer facing website is hosting the <a href="http://openstreetmap.org">OpenStreetMap</a> imagery using the Azure CDN, rather than relying on OpenStreetMap&rsquo;s server. There has been some question as to whether developers can use the Microsoft hosted OpenStreetMap imagery within their own applications.</p>

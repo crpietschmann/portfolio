@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/08/18/My-brother-in-law-and-cousin-are-in-Iraq
- -  /post/2005/08/18/my-brother-in-law-and-cousin-are-in-iraq
+  - /post/2005/08/18/my-brother-in-law-and-cousin-are-in-iraq
 ---
 <!-- more -->
 <P>I believe it was last October and November when Jeremy and Jake were sent over to Iraq. They had to leave there families to go for training a few months prior to leaving the States to go over there.</P>

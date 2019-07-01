@@ -8,7 +8,7 @@ categories: ["blog", "archives"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2005/02/09/WI-INETA-Meeting-on-Service-Oriented-Architecture
- -  /post/2005/02/09/wi-ineta-meeting-on-service-oriented-architecture
+  - /post/2005/02/09/wi-ineta-meeting-on-service-oriented-architecture
 ---
 <!-- more -->
 <p>
