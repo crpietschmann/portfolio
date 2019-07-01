@@ -18,6 +18,7 @@ redirect_from:
 
 This is really cool. I have always used .NET Reflector to peek into the source of the framework, but now I'll actually be able to look at the code itself.
 
-More Info:<br /><a href="http://weblogs.asp.net/scottgu/archive/2007/10/03/releasing-the-source-code-for-the-net-framework-libraries.aspx">Releasing the Source Code for the .NET Framework Libraries</a> - Scott Guthrie
+More Info:
+<a href="http://weblogs.asp.net/scottgu/archive/2007/10/03/releasing-the-source-code-for-the-net-framework-libraries.aspx">Releasing the Source Code for the .NET Framework Libraries</a> - Scott Guthrie
 
 <a href="http://dotnetkicks.com/opensource/NET_Framework_3_5_Is_Open_Source">.NET Framework 3.5 Is Shared Source</a> - DotNetKicks.com

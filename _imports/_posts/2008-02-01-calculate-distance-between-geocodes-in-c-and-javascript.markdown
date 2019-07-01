@@ -21,17 +21,64 @@ I decided to copy his code snippet and make sure it works in .NET 2.0 and also c
 
 Sample Usage:
 
-[code:c#]<br /> // Calculate Distance in Milesdouble <br /> d = GeoCodeCalc.CalcDistance(47.8131545175277, -122.783203125, 42.0982224111897, -87.890625);<br /> // Calculate Distance in Kilometersdouble <br /> d = GeoCodeCalc.CalcDistance(47.8131545175277, -122.783203125, 42.0982224111897, -87.890625, GeoCodeCalcMeasurement.Kilometers); <br /> ```
+[code:c#]
+ // Calculate Distance in Milesdouble 
+ d = GeoCodeCalc.CalcDistance(47.8131545175277, -122.783203125, 42.0982224111897, -87.890625);
+ // Calculate Distance in Kilometersdouble 
+ d = GeoCodeCalc.CalcDistance(47.8131545175277, -122.783203125, 42.0982224111897, -87.890625, GeoCodeCalcMeasurement.Kilometers); 
+ ```
 
 GeoCodeCalc C# Class:
 
-[code:c#]<br /> public static class GeoCodeCalc{ <br /> public const double EarthRadiusInMiles = 3956.0; <br /> public const double EarthRadiusInKilometers = 6367.0; <br /> public static double ToRadian(double val) { return val * (Math.PI / 180); } <br /> public static double DiffRadian(double val1, double val2) { return ToRadian(val2) - ToRadian(val1); } <br /> /// <summary> <br /> /// Calculate the distance between two geocodes. Defaults to using Miles. <br /> /// </summary> <br /> public static double CalcDistance(double lat1, double lng1, double lat2, double lng2) { <br /> return CalcDistance(lat1, lng1, lat2, lng2, GeoCodeCalcMeasurement.Miles); <br /> }<br />  /// <summary> <br /> /// Calculate the distance between two geocodes. <br /> /// </summary> <br /> public static double CalcDistance(double lat1, double lng1, double lat2, double lng2, GeoCodeCalcMeasurement m) { <br /> double radius = GeoCodeCalc.EarthRadiusInMiles; <br /> if (m == GeoCodeCalcMeasurement.Kilometers) { radius = GeoCodeCalc.EarthRadiusInKilometers; } <br /> return radius * 2 * Math.Asin( Math.Min(1, Math.Sqrt( ( Math.Pow(Math.Sin((DiffRadian(lat1, lat2)) / 2.0), 2.0) + Math.Cos(ToRadian(lat1)) * Math.Cos(ToRadian(lat2)) * Math.Pow(Math.Sin((DiffRadian(lng1, lng2)) / 2.0), 2.0) ) ) ) ); <br /> }<br /> }<br /> public enum GeoCodeCalcMeasurement : int<br /> { <br /> Miles = 0,<br /> Kilometers = 1<br /> }<br /> ```
+[code:c#]
+ public static class GeoCodeCalc{ 
+ public const double EarthRadiusInMiles = 3956.0; 
+ public const double EarthRadiusInKilometers = 6367.0; 
+ public static double ToRadian(double val) { return val * (Math.PI / 180); } 
+ public static double DiffRadian(double val1, double val2) { return ToRadian(val2) - ToRadian(val1); } 
+ /// <summary> 
+ /// Calculate the distance between two geocodes. Defaults to using Miles. 
+ /// </summary> 
+ public static double CalcDistance(double lat1, double lng1, double lat2, double lng2) { 
+ return CalcDistance(lat1, lng1, lat2, lng2, GeoCodeCalcMeasurement.Miles); 
+ }
+  /// <summary> 
+ /// Calculate the distance between two geocodes. 
+ /// </summary> 
+ public static double CalcDistance(double lat1, double lng1, double lat2, double lng2, GeoCodeCalcMeasurement m) { 
+ double radius = GeoCodeCalc.EarthRadiusInMiles; 
+ if (m == GeoCodeCalcMeasurement.Kilometers) { radius = GeoCodeCalc.EarthRadiusInKilometers; } 
+ return radius * 2 * Math.Asin( Math.Min(1, Math.Sqrt( ( Math.Pow(Math.Sin((DiffRadian(lat1, lat2)) / 2.0), 2.0) + Math.Cos(ToRadian(lat1)) * Math.Cos(ToRadian(lat2)) * Math.Pow(Math.Sin((DiffRadian(lng1, lng2)) / 2.0), 2.0) ) ) ) ); 
+ }
+ }
+ public enum GeoCodeCalcMeasurement : int
+ { 
+ Miles = 0,
+ Kilometers = 1
+ }
+ ```
 <h3>JavaScript</h3>
 
 Sample Usage:
 
-```javascript<br /> // Calculate distance in Milesvar <br /> d = GeoCodeCalc.CalcDistance(47.8131545175277, -122.783203125, 42.0982224111897, -87.890625, GeoCodeCalc.EarthRadiusInMiles); <br /> // Calculate distance in Kilometersvar <br /> d = GeoCodeCalc.CalcDistance(47.8131545175277, -122.783203125, 42.0982224111897, -87.890625, GeoCodeCalc.EarthRadiusInKilometers); <br /> ```
+```javascript
+ // Calculate distance in Milesvar 
+ d = GeoCodeCalc.CalcDistance(47.8131545175277, -122.783203125, 42.0982224111897, -87.890625, GeoCodeCalc.EarthRadiusInMiles); 
+ // Calculate distance in Kilometersvar 
+ d = GeoCodeCalc.CalcDistance(47.8131545175277, -122.783203125, 42.0982224111897, -87.890625, GeoCodeCalc.EarthRadiusInKilometers); 
+ ```
 
 GeoCodeCalc JavaScript Class:
 
-```javascript<br /> var GeoCodeCalc = {};<br /> GeoCodeCalc.EarthRadiusInMiles = 3956.0;<br /> GeoCodeCalc.EarthRadiusInKilometers = 6367.0;<br /> GeoCodeCalc.ToRadian = function(v) { return v * (Math.PI / 180);};<br /> GeoCodeCalc.DiffRadian = function(v1, v2) { <br /> return GeoCodeCalc.ToRadian(v2) - GeoCodeCalc.ToRadian(v1);<br /> };<br /> GeoCodeCalc.CalcDistance = function(lat1, lng1, lat2, lng2, radius) { <br /> return radius * 2 * Math.asin( Math.min(1, Math.sqrt( ( Math.pow(Math.sin((GeoCodeCalc.DiffRadian(lat1, lat2)) / 2.0), 2.0) + Math.cos(GeoCodeCalc.ToRadian(lat1)) * Math.cos(GeoCodeCalc.ToRadian(lat2)) * Math.pow(Math.sin((GeoCodeCalc.DiffRadian(lng1, lng2)) / 2.0), 2.0) ) ) ) );<br /> };<br /> ```
+```javascript
+ var GeoCodeCalc = {};
+ GeoCodeCalc.EarthRadiusInMiles = 3956.0;
+ GeoCodeCalc.EarthRadiusInKilometers = 6367.0;
+ GeoCodeCalc.ToRadian = function(v) { return v * (Math.PI / 180);};
+ GeoCodeCalc.DiffRadian = function(v1, v2) { 
+ return GeoCodeCalc.ToRadian(v2) - GeoCodeCalc.ToRadian(v1);
+ };
+ GeoCodeCalc.CalcDistance = function(lat1, lng1, lat2, lng2, radius) { 
+ return radius * 2 * Math.asin( Math.min(1, Math.sqrt( ( Math.pow(Math.sin((GeoCodeCalc.DiffRadian(lat1, lat2)) / 2.0), 2.0) + Math.cos(GeoCodeCalc.ToRadian(lat1)) * Math.cos(GeoCodeCalc.ToRadian(lat2)) * Math.pow(Math.sin((GeoCodeCalc.DiffRadian(lng1, lng2)) / 2.0), 2.0) ) ) ) );
+ };
+ ```

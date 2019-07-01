@@ -36,9 +36,12 @@ Since I've been doing alot of JavaScript programming lately, I figured I could s
 <body>
     <form id="frmMain" name="frmMain">
         <input type="hidden" name="ElemHidden" value="some hidden text" />
-        <input type="text" name="ElemText" value="some text" /><br />
-        <textarea name="ElemTextArea">Some text area text</textarea><br />
-        <br />
+        <input type="text" name="ElemText" value="some text" />
+
+        <textarea name="ElemTextArea">Some text area text</textarea>
+
+        
+
         <input type="button" value="Test" onclick="DisplayFormValues();" /> 
     </form>
     <hr />

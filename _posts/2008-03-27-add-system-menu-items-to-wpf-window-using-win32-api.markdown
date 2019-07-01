@@ -24,34 +24,94 @@ Below is a screenshot of it in action along with the complete source code in C#.
 
 [code:c#]
 
-using System;<br />using System.Windows;<br />using System.Runtime.InteropServices;<br />using System.Windows.Interop;
+using System;
+using System.Windows;
+using System.Runtime.InteropServices;
+using System.Windows.Interop;
 
-namespace WpfApplication3<br />{<br />    /// <summary><br />    /// Interaction logic for Window1.xaml<br />    /// </summary><br />    public partial class Window1 : Window<br />    {<br />        #region Win32 API Stuff
+namespace WpfApplication3
+{
+    /// <summary>
+    /// Interaction logic for Window1.xaml
+    /// </summary>
+    public partial class Window1 : Window
+    {
+        #region Win32 API Stuff
 
-        // Define the Win32 API methods we are going to use<br />        [DllImport("user32.dll")]<br />        private static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+        // Define the Win32 API methods we are going to use
+        [DllImport("user32.dll")]
+        private static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
 
-        [DllImport("user32.dll")]<br />        private static extern bool InsertMenu(IntPtr hMenu, Int32 wPosition, Int32 wFlags, Int32 wIDNewItem, string lpNewItem);
+        [DllImport("user32.dll")]
+        private static extern bool InsertMenu(IntPtr hMenu, Int32 wPosition, Int32 wFlags, Int32 wIDNewItem, string lpNewItem);
 
-        /// Define our Constants we will use<br />        public const Int32 WM_SYSCOMMAND = 0x112;<br />        public const Int32 MF_SEPARATOR = 0x800;<br />        public const Int32 MF_BYPOSITION = 0x400;<br />        public const Int32 MF_STRING = 0x0;
+        /// Define our Constants we will use
+        public const Int32 WM_SYSCOMMAND = 0x112;
+        public const Int32 MF_SEPARATOR = 0x800;
+        public const Int32 MF_BYPOSITION = 0x400;
+        public const Int32 MF_STRING = 0x0;
 
         #endregion
 
-        // The constants we'll use to identify our custom system menu items<br />        public const Int32 _SettingsSysMenuID = 1000;<br />        public const Int32 _AboutSysMenuID = 1001;
+        // The constants we'll use to identify our custom system menu items
+        public const Int32 _SettingsSysMenuID = 1000;
+        public const Int32 _AboutSysMenuID = 1001;
 
-        /// <summary><br />        /// This is the Win32 Interop Handle for this Window<br />        /// </summary><br />        public IntPtr Handle<br />        {<br />            get<br />            {<br />                return new WindowInteropHelper(this).Handle;<br />            }<br />        }
+        /// <summary>
+        /// This is the Win32 Interop Handle for this Window
+        /// </summary>
+        public IntPtr Handle
+        {
+            get
+            {
+                return new WindowInteropHelper(this).Handle;
+            }
+        }
 
-        public Window1()<br />        {<br />            InitializeComponent();
+        public Window1()
+        {
+            InitializeComponent();
 
-            this.Loaded += new RoutedEventHandler(Window1_Loaded);<br />        }
+            this.Loaded += new RoutedEventHandler(Window1_Loaded);
+        }
 
-        private void Window1_Loaded(object sender, RoutedEventArgs e)<br />        {<br />            /// Get the Handle for the Forms System Menu<br />            IntPtr systemMenuHandle = GetSystemMenu(this.Handle, false);
+        private void Window1_Loaded(object sender, RoutedEventArgs e)
+        {
+            /// Get the Handle for the Forms System Menu
+            IntPtr systemMenuHandle = GetSystemMenu(this.Handle, false);
 
-            /// Create our new System Menu items just before the Close menu item<br />            InsertMenu(systemMenuHandle, 5, MF_BYPOSITION | MF_SEPARATOR, 0, string.Empty); // <-- Add a menu seperator<br />            InsertMenu(systemMenuHandle, 6, MF_BYPOSITION, _SettingsSysMenuID, "Settings...");<br />            InsertMenu(systemMenuHandle, 7, MF_BYPOSITION, _AboutSysMenuID, "About...");
+            /// Create our new System Menu items just before the Close menu item
+            InsertMenu(systemMenuHandle, 5, MF_BYPOSITION | MF_SEPARATOR, 0, string.Empty); // <-- Add a menu seperator
+            InsertMenu(systemMenuHandle, 6, MF_BYPOSITION, _SettingsSysMenuID, "Settings...");
+            InsertMenu(systemMenuHandle, 7, MF_BYPOSITION, _AboutSysMenuID, "About...");
 
-            // Attach our WndProc handler to this Window<br />            HwndSource source = HwndSource.FromHwnd(this.Handle);<br />            source.AddHook(new HwndSourceHook(WndProc));<br />        }
+            // Attach our WndProc handler to this Window
+            HwndSource source = HwndSource.FromHwnd(this.Handle);
+            source.AddHook(new HwndSourceHook(WndProc));
+        }
 
-        private static IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)<br />        {<br />            // Check if a System Command has been executed<br />            if (msg == WM_SYSCOMMAND)<br />            {<br />                // Execute the appropriate code for the System Menu item that was clicked<br />                switch (wParam.ToInt32())<br />                {<br />                    case _SettingsSysMenuID:<br />                        MessageBox.Show("\"Settings\" was clicked");<br />                        handled = true;<br />                        break;<br />                    case _AboutSysMenuID:<br />                        MessageBox.Show("\"About\" was clicked");<br />                        handled = true;<br />                        break;<br />                }<br />            }
+        private static IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+        {
+            // Check if a System Command has been executed
+            if (msg == WM_SYSCOMMAND)
+            {
+                // Execute the appropriate code for the System Menu item that was clicked
+                switch (wParam.ToInt32())
+                {
+                    case _SettingsSysMenuID:
+                        MessageBox.Show("\"Settings\" was clicked");
+                        handled = true;
+                        break;
+                    case _AboutSysMenuID:
+                        MessageBox.Show("\"About\" was clicked");
+                        handled = true;
+                        break;
+                }
+            }
 
-            return IntPtr.Zero;<br />        }<br />    }<br />}
+            return IntPtr.Zero;
+        }
+    }
+}
 
 ```

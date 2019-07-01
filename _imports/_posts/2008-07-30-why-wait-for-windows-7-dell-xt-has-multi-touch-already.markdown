@@ -47,11 +47,19 @@ Also, if you are interested in learning more about the Multi-Touch functionality
 	<li><a href="http://www.winsupersite.com/showcase/win7_touch.asp">Windows 7 Multi-Touch: Hi-Res Shots</a> on Paul Thurrott&#39;s SuperSite for Windows </li>
 	<li><a href="http://www.youtube.com/watch?v=zBX0ZV2CQb8">Windows 7 - Multi-touch comes with Windows video</a> on YouTube</li>
 </ul>
-<br />
-Being a developer, one of my initial thoughts about the Dell XT is to wonder if there is a programming API for the Multi-Touch capabilities to be able to take advantage of it within my own applications. There doesn&#39;t seem to be an API in the works, but there is a request for one over at ideastorm.com, so go vote for it and get Dell to implement one.<br />
-<br />
-<a href="http://www.ideastorm.com/article/show/10079800/Offer_tablets_with_capacitive_multitouch_and_a_publicly_available_API">http://www.ideastorm.com/article/show/10079800/Offer_tablets_with_capacitive_multitouch_and_a_publicly_available_API</a><br />
-<br />
-Also, another related idea, I wonder when Dell or anyone else will start to come out with LCD displays with this same Multi-Touch capable technology?<br />
-<br />
-Now if only I could justify purchasing one of these for myself...<br />
+
+
+Being a developer, one of my initial thoughts about the Dell XT is to wonder if there is a programming API for the Multi-Touch capabilities to be able to take advantage of it within my own applications. There doesn&#39;t seem to be an API in the works, but there is a request for one over at ideastorm.com, so go vote for it and get Dell to implement one.
+
+
+
+<a href="http://www.ideastorm.com/article/show/10079800/Offer_tablets_with_capacitive_multitouch_and_a_publicly_available_API">http://www.ideastorm.com/article/show/10079800/Offer_tablets_with_capacitive_multitouch_and_a_publicly_available_API</a>
+
+
+
+Also, another related idea, I wonder when Dell or anyone else will start to come out with LCD displays with this same Multi-Touch capable technology?
+
+
+
+Now if only I could justify purchasing one of these for myself...
+

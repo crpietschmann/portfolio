@@ -24,29 +24,110 @@ Here's a screenshot of it in action:
 
 Here's the code:
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>"><br /> <html><br /> <head><br /> <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><br /> <script type="text/javascript" src="<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6</a>" mce_src="<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;></script">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6"></script</a>><br /> </head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>">
+ <html>
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <script type="text/javascript" src="<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6</a>" mce_src="<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;></script">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6"></script</a>>
+ </head>
 
 <body onload="PageLoad()">
 
-<script type="text/javascript"><br /> var map = null;
+<script type="text/javascript">
+ var map = null;
 
 var MiniMapSize = VEMiniMapSize.Small; // can also be set to VEMiniMapSize.Large
 
-function PageLoad()<br /> {<br />     // Load the Map on the page when the page loads<br />     map = new VEMap('myMap');<br />     map.LoadMap(new VELatLong(47.6, -122.33), 7, VEMapStyle.Road);<br />     <br />     // Attach our onresize event handler<br />     map.AttachEvent("onresize", MapResize);<br />     <br />     // Show the Mini Map<br />     map.ShowMiniMap(0,0,MiniMapSize);<br />     <br />     // Align the position of the Mini Map where we want it<br />     RealignMiniMap();<br /> }
+function PageLoad()
+ {
+     // Load the Map on the page when the page loads
+     map = new VEMap('myMap');
+     map.LoadMap(new VELatLong(47.6, -122.33), 7, VEMapStyle.Road);
+     
+     // Attach our onresize event handler
+     map.AttachEvent("onresize", MapResize);
+     
+     // Show the Mini Map
+     map.ShowMiniMap(0,0,MiniMapSize);
+     
+     // Align the position of the Mini Map where we want it
+     RealignMiniMap();
+ }
 
-function MapResize(e)<br /> {<br />     // When the map is resized, Realign the position of the Mini Map<br />     RealignMiniMap();<br /> }
+function MapResize(e)
+ {
+     // When the map is resized, Realign the position of the Mini Map
+     RealignMiniMap();
+ }
 
-function RealignMiniMap()<br /> {<br />     // Realign the position of the Mini Map so it appears<br />     // where we want it - The Upper Right Corner<br />     var minimap = document.getElementById("MSVE_minimap");<br />     var xoffset = (GetMapWidth() - minimap.offsetWidth);<br />     map.ShowMiniMap(xoffset, 0, MiniMapSize);<br />     <br />     /// Hide the Mini Map resizer so the Mini Map cannot be resized<br />     document.getElementById("MSVE_minimap_resize").style.display = "none";<br /> }
+function RealignMiniMap()
+ {
+     // Realign the position of the Mini Map so it appears
+     // where we want it - The Upper Right Corner
+     var minimap = document.getElementById("MSVE_minimap");
+     var xoffset = (GetMapWidth() - minimap.offsetWidth);
+     map.ShowMiniMap(xoffset, 0, MiniMapSize);
+     
+     /// Hide the Mini Map resizer so the Mini Map cannot be resized
+     document.getElementById("MSVE_minimap_resize").style.display = "none";
+ }
 
-function GetMapWidth()<br /> {   <br />     // Get the Width of the Map as an integer<br />     return document.getElementById("myMap").offsetWidth;<br /> }<br /> function GetMapHeight()<br /> {<br />     // Get the Height of the Map as an integer<br />     return document.getElementById("myMap").offsetHeight;<br /> }<br /> </script>
+function GetMapWidth()
+ {   
+     // Get the Width of the Map as an integer
+     return document.getElementById("myMap").offsetWidth;
+ }
+ function GetMapHeight()
+ {
+     // Get the Height of the Map as an integer
+     return document.getElementById("myMap").offsetHeight;
+ }
+ </script>
 
 <div id="myMap" style="position:relative; width:550px; height:400px;"></div>
 
-<br /><br /> **Resize Map:**&amp;nbsp;<br /> <a href="javascript:MakeMapBigger();" mce_href="javascript:MakeMapBigger();">Bigger</a>&amp;nbsp;&amp;nbsp;<br /> <a href="javascript:MakeMapSmaller();" mce_href="javascript:MakeMapSmaller();">Smaller</a><br /> <script type="text/javascript"><br />     function MakeMapBigger()<br />     {<br />         var width = GetMapWidth();<br />         var height = GetMapHeight();<br />         map.Resize(width + 50, height);<br />     }<br />     function MakeMapSmaller()<br />     {<br />         var width = GetMapWidth();<br />         var height = GetMapHeight();<br />         map.Resize(width - 50, height);<br />     }<br /> </script>
 
-<br /><br /><br /> **Change Mini Map Size:**&amp;nbsp;<br /> <a href="javascript:SetMiniMapSize(VEMiniMapSize.Small);" mce_href="javascript:SetMiniMapSize(VEMiniMapSize.Small);">Small</a>&amp;nbsp;&amp;nbsp;<br /> <a href="javascript:SetMiniMapSize(VEMiniMapSize.Large);" mce_href="javascript:SetMiniMapSize(VEMiniMapSize.Large);">Large</a><br /> <script type="text/javascript"><br />     function SetMiniMapSize(s)<br />     {<br />         // Set our global variable to the size we want<br />         MiniMapSize = s;<br />         <br />         // Show the Mini Map as our desired size<br />         map.ShowMiniMap(0,0,s);<br />         <br />         // Realign the Mini Map so it's in the desired position<br />         RealignMiniMap();<br />     }<br /> </script>
 
-</body><br /> </html>
+ **Resize Map:**&amp;nbsp;
+ <a href="javascript:MakeMapBigger();" mce_href="javascript:MakeMapBigger();">Bigger</a>&amp;nbsp;&amp;nbsp;
+ <a href="javascript:MakeMapSmaller();" mce_href="javascript:MakeMapSmaller();">Smaller</a>
+ <script type="text/javascript">
+     function MakeMapBigger()
+     {
+         var width = GetMapWidth();
+         var height = GetMapHeight();
+         map.Resize(width + 50, height);
+     }
+     function MakeMapSmaller()
+     {
+         var width = GetMapWidth();
+         var height = GetMapHeight();
+         map.Resize(width - 50, height);
+     }
+ </script>
+
+
+
+
+ **Change Mini Map Size:**&amp;nbsp;
+ <a href="javascript:SetMiniMapSize(VEMiniMapSize.Small);" mce_href="javascript:SetMiniMapSize(VEMiniMapSize.Small);">Small</a>&amp;nbsp;&amp;nbsp;
+ <a href="javascript:SetMiniMapSize(VEMiniMapSize.Large);" mce_href="javascript:SetMiniMapSize(VEMiniMapSize.Large);">Large</a>
+ <script type="text/javascript">
+     function SetMiniMapSize(s)
+     {
+         // Set our global variable to the size we want
+         MiniMapSize = s;
+         
+         // Show the Mini Map as our desired size
+         map.ShowMiniMap(0,0,s);
+         
+         // Realign the Mini Map so it's in the desired position
+         RealignMiniMap();
+     }
+ </script>
+
+</body>
+ </html>
 
 This code works in IE, Firefox and Safari 3 on Windows. I haven't tested any other browsers, but I assume it'll work in others as well. Another thing to note is that this code will only work if there is only a single Virtual Earth map on the page; it'll break with multiple maps on the same page.
 

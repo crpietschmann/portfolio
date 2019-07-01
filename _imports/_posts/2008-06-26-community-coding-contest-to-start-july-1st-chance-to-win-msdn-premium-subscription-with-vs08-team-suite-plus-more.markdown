@@ -30,7 +30,8 @@ Here are the basic rules for the contest. Once the website is launched, I will p
 	<li>All Code Submissions need to be created using one or more of the following tools: Microsoft Visual Studio 2008 Express/Standard/Professional, SQL Server 2005/2008 Express/Standard/etc. </li>
 	<li>All Code Submissions must run on the Windows platform and can be Web or Desktop/Windows applications; that means Windows XP, Windows Vista, Windows Server 2003, Windows Server 2008 and/or IIS. </li>
 	<li>You are inelligible to win if you are an active Microsoft MVP.</li>
-	<li>You must provide us with a United States shipping address upon submitting your code entry, that we can ship your prizes to if you win. **The United States shipping address is required, since the MSDN Subscriptions are region locked to the United States only.**<br />
+	<li>You must provide us with a United States shipping address upon submitting your code entry, that we can ship your prizes to if you win. **The United States shipping address is required, since the MSDN Subscriptions are region locked to the United States only.**
+
 	</li>
 	<li>These rules are subject to change any time during the duration of the contest, with or without notice, and such changes will be posted on the official contest website. </li>
 </ol>
@@ -88,11 +89,14 @@ I am currently looking for sponsors to donate in the following ways:
 
 <ul>
 	<li>Prizes</li>
-	<li>Graphic Design for the contest website<br />
+	<li>Graphic Design for the contest website
+
 	</li>
 </ul>
-If you are intested in sponsoring the contest by donating prizes to give away, or by donating graphic design work for the contest website, please <a href="/contact.aspx">Contact Me</a> so we can discuss things in further detail.<br />
-<br />
+If you are intested in sponsoring the contest by donating prizes to give away, or by donating graphic design work for the contest website, please <a href="/contact.aspx">Contact Me</a> so we can discuss things in further detail.
+
+
+
 
 
 More information about the contest <strike>will be</strike> **is **posted at the official contest website <strike>when it is launched within the next few days</strike>, that was launched on June 29th. 

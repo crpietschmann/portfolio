@@ -27,8 +27,10 @@ There is currently a bug in the Virtual Earth v3 API. When you create a map on t
 
 
 
-*Line: 2<br />
-Char: 159480<br />
+*Line: 2
+
+Char: 159480
+
 Error: &#39;footer&#39; is undefined*
 
 
@@ -37,9 +39,12 @@ What&#39;s this &quot;footer&quot; it&#39;s looking for? I don&#39;t see it in t
 
 
 
-More Info on Virtual Earth:<br />
-<a id="bp___v___r___postlist___EntryItems__ctl0_PostTitle" href="http://blogs.msdn.com/virtualearth/archive/2006/05/23/596729.aspx">Virtual Earth Map Control v3 &ndash; Great new features!</a><br />
-<a href="http://dev.live.com/virtualearth/sdk/">The Virtual Earth Interactive SDK</a><br />
+More Info on Virtual Earth:
+
+<a id="bp___v___r___postlist___EntryItems__ctl0_PostTitle" href="http://blogs.msdn.com/virtualearth/archive/2006/05/23/596729.aspx">Virtual Earth Map Control v3 &ndash; Great new features!</a>
+
+<a href="http://dev.live.com/virtualearth/sdk/">The Virtual Earth Interactive SDK</a>
+
 <a href="http://viavirtualearth.com/">ViaVirtualEarth.com</a>
 
 

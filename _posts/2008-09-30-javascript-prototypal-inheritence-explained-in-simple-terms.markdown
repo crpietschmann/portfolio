@@ -21,7 +21,8 @@ Recently, I started working on a new open source project (you&#39;ll have to wai
 
 One major JavaScript feature that I needed a refresher on, and ultimately get figured out, is Prototypal Inheritence. Sounds fancy, right? Well, it&#39;s actually rather simple to do, but can be a little cryptic since there isn&#39;t much info out there that just shows you a really basic example of doing it. So, this is why I decided to write this post; to give a really simple example and explanation on JavaScript Prototypal Inheritence.
 
-<h3>Basics of Prototypal Inheritence <br />
+<h3>Basics of Prototypal Inheritence 
+
 </h3>
 
 
@@ -33,16 +34,26 @@ First, here&#39;s the really simple code:
 
 
 
-FirstClass = function() {<br />
-    /// Constructor<br />
-   this.test1 = &quot;Chris&quot;;<br />
-};<br />
-FirstClass.prototype.GetTest1 = function() { return this.test1; };<br />
-<br />
-SecondClass = function() {<br />
-    /// Constructor<br />
-};<br />
-SecondClass.prototype = new FirstClass;<br />
+FirstClass = function() {
+
+    /// Constructor
+
+   this.test1 = &quot;Chris&quot;;
+
+};
+
+FirstClass.prototype.GetTest1 = function() { return this.test1; };
+
+
+
+SecondClass = function() {
+
+    /// Constructor
+
+};
+
+SecondClass.prototype = new FirstClass;
+
 SecondClass.prototype.GetTest1 = function() { return &quot;SecondClass: &quot; + this.test1; };
 
 
@@ -63,7 +74,8 @@ Here&#39;s an example of using the FirstClass object:
 
 
 
-var a = new FirstClass();<br />
+var a = new FirstClass();
+
 alert(a.GetTest1()); 
 
 
@@ -88,7 +100,8 @@ Here&#39;s an example of using the SecondClass object:
 
 
 
-var b = new SecondClass();<br />
+var b = new SecondClass();
+
 alert(b.GetTest1()); 
 
 
@@ -118,10 +131,14 @@ Here&#39;s an example of doing this:
 
 
 
-SecondClass = function() {<br />
-    this.base_GetTest1 = FirstClass.prototype.GetTest1;<br />
-};<br />
-SecondClass.prototype = new FirstClass;<br />
+SecondClass = function() {
+
+    this.base_GetTest1 = FirstClass.prototype.GetTest1;
+
+};
+
+SecondClass.prototype = new FirstClass;
+
 SecondClass.prototype.GetTest1 = function() { return &quot;SecondClass: &quot; + this.base_GetTest1(); }; 
 
 

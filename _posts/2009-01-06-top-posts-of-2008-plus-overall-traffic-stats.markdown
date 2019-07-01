@@ -37,7 +37,8 @@ Here&#39;s a list of my most popular posts from 2008. This list only counts the 
 	<li><a href="/post.aspx?id=8d7249a9-22fa-4075-af7b-d0de77c02cbf">Silverlight and JavaScript Interop Basics</a> - 2,693 pageviews</li>
 	<li><a href="/post.aspx?id=ae6cc53b-9e51-4355-a682-a6466af963cf">Show a MessageBox in Silverlight 2 Beta 1</a> - 2,605 pageviews</li>
 	<li><a href="/post.aspx?id=591b5d4e-b2a6-4b3b-a613-0bcc74f35219">Simple JavaScript Object Reflection API (.NET Style)</a> - 2,477 pageviews</li>
-	<li><a href="/post.aspx?id=195a44a8-f7ab-4fb0-8038-e88e67b3c10c">WPF Toolkit adds Ribbon Control to .NET 3.5 SP1</a> - 2,406 pageviews<br />
+	<li><a href="/post.aspx?id=195a44a8-f7ab-4fb0-8038-e88e67b3c10c">WPF Toolkit adds Ribbon Control to .NET 3.5 SP1</a> - 2,406 pageviews
+
 	</li>
 	<li><a href="/post.aspx?id=1e2824a0-3bef-4707-8f18-a624ad784432">Virtual Earth: Draw a Circle Radius Around a Lat/Long Point</a> - 2,257 pageviews</li>
 	<li><a href="/post.aspx?id=ba924765-2328-4995-a254-6a88d4e4ac11">ASP.NET 3.5: Create AJAX Extender Controls using the Extender Control base class</a> - 2,193 pageviews</li>
@@ -66,16 +67,20 @@ Here&#39;s a list of my most popular posts during 2008. This list counts all pos
 	<li><a href="/post.aspx?id=e78fc882-c172-46bd-ac8c-3a8d5ea56b14">ASP.NET: Create AJAX Server Controls using the ScriptControl base class</a> - 7,912 pageviews</li>
 	<li><a href="/post.aspx?id=b4619c83-9e85-4aa9-9c27-b224eb23efef">Configure Visual Studio 2005 for &quot;Classic&quot; ASP syntax highlighting and intellisense</a> - 6,012 pageviews</li>
 	<li><a href="/post.aspx?id=e1906bcf-983b-4bac-ad1e-cc787ceb4fdd">VB.NET: Syntax Highlighting in a RichTextBox control</a> - 5,879 pageviews</li>
-	<li><a href="/post.aspx?id=f31bec4c-4716-48fb-826b-ca5926e83c42">ASP.NET 2.0: Use VB.NET and C# within the App_Code folder</a> - 5,676 pageviews<br />
+	<li><a href="/post.aspx?id=f31bec4c-4716-48fb-826b-ca5926e83c42">ASP.NET 2.0: Use VB.NET and C# within the App_Code folder</a> - 5,676 pageviews
+
 	</li>
 	<li><a href="/post.aspx?id=7850f65e-8f57-4877-8ddf-f79e0d7a76b4">Safari 3 for Windows: Enable JavaScript Debugging</a> - 5,640 pageviews</li>
 	<li><a href="/post.aspx?id=de36b5e8-c030-40ec-8e24-3e458da8340b">Google Charts API: an ASP.NET 2.0 Server Control</a> - 5,411 pageviews</li>
 	<li><a href="/post.aspx?id=2a628f30-fe83-4e44-a34b-f31be76d1b4f">C#: Generate WebPage Thumbnail Screenshot Image</a> - 5,396 pageviews</li>
-	<li><a href="/post.aspx?id=e33bc9c0-b7d1-42f6-bbf7-15b97d1cce38">Write to the Event Log in .NET (VB.NET and C#.NET)</a> - 5,083 pageviews<br />
+	<li><a href="/post.aspx?id=e33bc9c0-b7d1-42f6-bbf7-15b97d1cce38">Write to the Event Log in .NET (VB.NET and C#.NET)</a> - 5,083 pageviews
+
 	</li>
 </ol>
-Interestingly enough, there are a few of the Most Trafficed posts that are from 2 or more years ago, and some of them are pretty much only a snippet of code without any descriptions.<br />
-<br />
+Interestingly enough, there are a few of the Most Trafficed posts that are from 2 or more years ago, and some of them are pretty much only a snippet of code without any descriptions.
+
+
+
 <h3>Top Keywords of 2008</h3>
 
 
@@ -158,7 +163,8 @@ Here&#39;s the top 10 referrers to my blogin 2008.
 	<li>dzone.com</li>
 	<li>stumbleupon.com</li>
 	<li>virtualearth.spaces.live.com</li>
-	<li>silverlight.net <br />
+	<li>silverlight.net 
+
 	</li>
 </ol>
 <h3>Overall Traffic Stats of 2008</h3>
@@ -200,8 +206,10 @@ That&#39;s a huge increase in traffic in my opinion.
 	</tbody>
 </table>
 
-<h3><br />
-Conclusion <br />
+<h3>
+
+Conclusion 
+
 </h3>
 
 

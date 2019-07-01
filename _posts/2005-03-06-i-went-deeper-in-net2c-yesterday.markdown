@@ -30,8 +30,10 @@ We learned about:
 </ol>
 
 
-There were sponsor prizes raffled off that included an Apple IPOD Mini, $250 gift card to Best Buy and more. There were also door prizes given away that were donated by <a href="http://ineta.org/" target="_blank" title="International .NET Association">INETA</a> and Microsoft. The door prizes were a few books on <a href="http://www.microsoft.com/net/" target="_blank" title=".NET">.NET</a>, a couple copies of Infragistics NetAdvantage, five copies of Visual Studio 2005 Professional and more. There were alot of prizes given away and the best part as always is this event was FREE and so were the prizes.<br />
-<br />
+There were sponsor prizes raffled off that included an Apple IPOD Mini, $250 gift card to Best Buy and more. There were also door prizes given away that were donated by <a href="http://ineta.org/" target="_blank" title="International .NET Association">INETA</a> and Microsoft. The door prizes were a few books on <a href="http://www.microsoft.com/net/" target="_blank" title=".NET">.NET</a>, a couple copies of Infragistics NetAdvantage, five copies of Visual Studio 2005 Professional and more. There were alot of prizes given away and the best part as always is this event was FREE and so were the prizes.
+
+
+
 They also had a bunch of the Winter &#39;05 <a href="http://msdn.microsoft.com/" target="_blank" title="MSDN">MSDN</a> Events DVDs they gave to those who attended. This is the same <a href="http://msdnevents.com/" target="_blank" title="MSDN Events">MSDN Events</a> DVD that is given away at FREE <a href="http://msdnevents.com/" target="_blank" title="MSDN Events">MSDN Events</a> (<a href="http://MSDNEvents.com">http://MSDNEvents.com</a>).
 
 

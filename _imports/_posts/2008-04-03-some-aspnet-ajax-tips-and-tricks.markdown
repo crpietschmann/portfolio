@@ -68,28 +68,51 @@ Default.aspx
 
 
 
-<%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;Default.aspx.cs&quot; Inherits=&quot;UpdatePanel_01_Default&quot; %><br />
-<!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;><br />
-<html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;><br />
-<head runat=&quot;server&quot;><br />
-    <title>Untitled Page</title><br />
-</head><br />
-<body><br />
-    <form id=&quot;form1&quot; runat=&quot;server&quot;><br />
-    <div><br />
-    <br />
-        <asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;></asp:ScriptManager><br />
-        <asp:Button runat=&quot;server&quot; ID=&quot;btnShowTime&quot; Text=&quot;Show Time&quot; OnClick=&quot;btnShowTime_Click&quot; /><br />
-        <br /><br />
-        <asp:UpdatePanel runat=&quot;server&quot; ID=&quot;UpdatePanel1&quot;><br />
-            <ContentTemplate><br />
-                <asp:Label runat=&quot;server&quot; ID=&quot;lblTime&quot;></asp:Label><br />
-            </ContentTemplate><br />
-        </asp:UpdatePanel><br />
-   <br />
-    </div><br />
-    </form><br />
-</body><br />
+<%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;Default.aspx.cs&quot; Inherits=&quot;UpdatePanel_01_Default&quot; %>
+
+<!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;>
+
+<html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
+
+<head runat=&quot;server&quot;>
+
+    <title>Untitled Page</title>
+
+</head>
+
+<body>
+
+    <form id=&quot;form1&quot; runat=&quot;server&quot;>
+
+    <div>
+
+    
+
+        <asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;></asp:ScriptManager>
+
+        <asp:Button runat=&quot;server&quot; ID=&quot;btnShowTime&quot; Text=&quot;Show Time&quot; OnClick=&quot;btnShowTime_Click&quot; />
+
+        
+
+
+        <asp:UpdatePanel runat=&quot;server&quot; ID=&quot;UpdatePanel1&quot;>
+
+            <ContentTemplate>
+
+                <asp:Label runat=&quot;server&quot; ID=&quot;lblTime&quot;></asp:Label>
+
+            </ContentTemplate>
+
+        </asp:UpdatePanel>
+
+   
+
+    </div>
+
+    </form>
+
+</body>
+
 </html> 
 
 
@@ -106,20 +129,30 @@ Default.aspx.cs
 
 
 
-public partial class UpdatePanel_01_Default : System.Web.UI.Page<br />
-{<br />
-    protected void Page_Load(object sender, EventArgs e)<br />
-    {<br />
-        /// Make btnShowTime postback asynchronously<br />
-        this.ScriptManager1.RegisterAsyncPostBackControl(btnShowTime);<br />
+public partial class UpdatePanel_01_Default : System.Web.UI.Page
+
+{
+
+    protected void Page_Load(object sender, EventArgs e)
+
+    {
+
+        /// Make btnShowTime postback asynchronously
+
+        this.ScriptManager1.RegisterAsyncPostBackControl(btnShowTime);
+
     } 
 
 
 
-    protected void btnShowTime_Click(object sender, EventArgs e)<br />
-    {<br />
-        lblTime.Text = DateTime.Now.ToLongTimeString();<br />
-    }<br />
+    protected void btnShowTime_Click(object sender, EventArgs e)
+
+    {
+
+        lblTime.Text = DateTime.Now.ToLongTimeString();
+
+    }
+
 } 
 
 
@@ -145,16 +178,26 @@ Here&#39;s a sample WebService with the ScriptService and ScriptMethod attribute
 
 
 
-[System.Web.Script.Services.ScriptService]<br />
-[WebService(Namespace = &quot;<a href="http://tempuri.org/">http://tempuri.org/</a>&quot;)]<br />
-[WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]<br />
-public class WSTime : System.Web.Services.WebService<br />
-{<br />
-    [WebMethod]<br />
-    [System.Web.Script.Services.ScriptMethod]<br />
-    public string GetServerTime()<br />
-    {<br />
-        return DateTime.Now.ToLongTimeString();<br />
+[System.Web.Script.Services.ScriptService]
+
+[WebService(Namespace = &quot;<a href="http://tempuri.org/">http://tempuri.org/</a>&quot;)]
+
+[WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+
+public class WSTime : System.Web.Services.WebService
+
+{
+
+    [WebMethod]
+
+    [System.Web.Script.Services.ScriptMethod]
+
+    public string GetServerTime()
+
+    {
+
+        return DateTime.Now.ToLongTimeString();
+
     } 
 
 
@@ -175,10 +218,14 @@ Then to access the WebService from within JavaScript you need to first tell the 
 
 
 
-<asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;><br />
-    <Services><br />
-        <asp:ServiceReference Path=&quot;~/WebMethods/WSTime.asmx&quot; /><br />
-    </Services><br />
+<asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;>
+
+    <Services>
+
+        <asp:ServiceReference Path=&quot;~/WebMethods/WSTime.asmx&quot; />
+
+    </Services>
+
 </asp:ScriptManager> 
 
 
@@ -199,16 +246,26 @@ Here&#39;s an example of using the WSTime.GetServerTime WebService method from w
 
 
 
-function btnGetServerTime_Click()<br />
-{<br />
-    // call the WebMethod and pass it the method<br />
-    // to call once it gets the response from<br />
-    // the server.<br />
-    WSTime.GetServerTime(SucceededCallback);<br />
-}<br />
-function SucceededCallback(result, eventArgs)<br />
-{<br />
-    alert(result);<br />
+function btnGetServerTime_Click()
+
+{
+
+    // call the WebMethod and pass it the method
+
+    // to call once it gets the response from
+
+    // the server.
+
+    WSTime.GetServerTime(SucceededCallback);
+
+}
+
+function SucceededCallback(result, eventArgs)
+
+{
+
+    alert(result);
+
 } 
 
 
@@ -233,17 +290,28 @@ Here&#39;s the C# code of an example page with a PageMethod defined:
 
 
 
-public partial class PageMethods_Default : System.Web.UI.Page<br />
-{<br />
-    protected void Page_Load(object sender, EventArgs e)<br />
-    {<br />
-    }<br />
-<br />
-    [WebMethod]<br />
-    public static string GetServerTime()<br />
-    {<br />
-        return DateTime.Now.ToLongTimeString();<br />
-    }<br />
+public partial class PageMethods_Default : System.Web.UI.Page
+
+{
+
+    protected void Page_Load(object sender, EventArgs e)
+
+    {
+
+    }
+
+
+
+    [WebMethod]
+
+    public static string GetServerTime()
+
+    {
+
+        return DateTime.Now.ToLongTimeString();
+
+    }
+
 } 
 
 
@@ -280,13 +348,20 @@ Here&#39;s the example code of calling the above PageMethod from JavaScript:
 
 
 
-function btnGetServerTime_Click()<br />
-{<br />
-    PageMethods.GetServerTime(SucceededCallback);<br />
-}<br />
-function SucceededCallback(result, eventArgs)<br />
-{<br />
-    alert(result);<br />
+function btnGetServerTime_Click()
+
+{
+
+    PageMethods.GetServerTime(SucceededCallback);
+
+}
+
+function SucceededCallback(result, eventArgs)
+
+{
+
+    alert(result);
+
 } 
 
 

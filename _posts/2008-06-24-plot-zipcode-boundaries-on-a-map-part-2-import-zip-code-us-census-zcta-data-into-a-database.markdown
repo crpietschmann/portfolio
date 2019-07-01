@@ -21,9 +21,17 @@ First lets create a couple database tables to hold all the Zip Code boundary dat
 
 The table scheme is as follows:
 
-**ZipCode**<br /> ID - uniqueidentifier<br /> ZipCode - char(5)
+**ZipCode**
+ ID - uniqueidentifier
+ ZipCode - char(5)
 
-**ZipCodeBoundary** <br /> ID - uniqueidentifier<br /> ZipCodeID - uniqueidentifier<br /> IslandID - int<br /> Latitude - float<br /> Longitude - float<br /> SortOrder - int
+**ZipCodeBoundary** 
+ ID - uniqueidentifier
+ ZipCodeID - uniqueidentifier
+ IslandID - int
+ Latitude - float
+ Longitude - float
+ SortOrder - int
 
 Here's a couple things to not about the ZipCodeBoundary talble:
 <ol>

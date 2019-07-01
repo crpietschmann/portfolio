@@ -18,14 +18,16 @@ While working with the Silverlight Business Application template in Visual Studi
 <h3>The project file "..\App.Website\App.Website.csproj" was not found.</h3>
 
  
-<h3>What Causes The Error<br /></h3>
+<h3>What Causes The Error
+</h3>
 
 What I did to cause this issue to come up was I created a New Project using the Silverlight 4 Business Application Template. Then I moved the each Projects folder to a different sub-folder to better organize the code since I needed to add multiple more projects/assemblies to each application (ASP.NET and Silverlight) to build out the application I'm working in a more module fashion. The reason I usually tend to do this is to keep the "Standard .NET" and "Silverlight-only" assemblies separate since you can not include a non-Silverlight Assembly within a Silverlight Project. (If only .NET and Silverlight made it easier to share whole assemblies...)
 
 After moving the projects to different sub-folders, and fixing the linked file references that I broke in the process, I tried building the project to make sure everything was "ok" and the compiler threw a *"The project file ... was not found." *error.
 
 To fix this is really simple, but then again only if you know what to look for.
-<h3>How To Fix It<br /></h3>
+<h3>How To Fix It
+</h3>
 
 To fix this all you need to do is go to the Project Properties for the Silverlight Project, and change the "WCF RIA Services link" dropdown to select the correct ASP.NET Project; then you'll be all ready to compile and keep developing.
 

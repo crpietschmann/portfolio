@@ -16,4 +16,5 @@ redirect_from:
 
 The ASP.NET Development Server inside Visual Studio 2005 runs the web application in a subfolder by default instead of on the root. This is an annouance for some. Can't it be configured to run the web app in the root? Yes, it can and theres an explanation of how to configure it on Scott Guthries blog.
 
-"How to Run a Root &ldquo;/&rdquo; Site with the VS/VWD 2005 Local Web Server"<br /><a href="http://weblogs.asp.net/scottgu/archive/2005/11/21/431138.aspx">http://weblogs.asp.net/scottgu/archive/2005/11/21/431138.aspx</a>
+"How to Run a Root &ldquo;/&rdquo; Site with the VS/VWD 2005 Local Web Server"
+<a href="http://weblogs.asp.net/scottgu/archive/2005/11/21/431138.aspx">http://weblogs.asp.net/scottgu/archive/2005/11/21/431138.aspx</a>

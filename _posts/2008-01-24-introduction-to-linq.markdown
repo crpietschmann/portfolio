@@ -21,7 +21,9 @@ The most important part is "Language Integrated". This allows you to more easily
 
  
 
-<span style="color: #2b91af; font-size: x-small;">IEnumerable</span><span style="font-size: x-small;"><</span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;">> filterExample1 = </span><span style="color: #0000ff; font-size: x-small;">from</span><span style="font-size: x-small;"> </span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">in</span><span style="font-size: x-small;"> people<br />                                                                </span><span style="color: #0000ff; font-size: x-small;">where</span><span style="font-size: x-small;"> Person.FirstName.ToUpperInvariant().StartsWith(</span><span style="color: #a31515; font-size: x-small;">"J"</span><span style="font-size: x-small;">)<br /></span><span style="color: #0000ff; font-size: x-small;">                                                                select</span><span style="font-size: x-small;"> Person;</span>
+<span style="color: #2b91af; font-size: x-small;">IEnumerable</span><span style="font-size: x-small;"><</span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;">> filterExample1 = </span><span style="color: #0000ff; font-size: x-small;">from</span><span style="font-size: x-small;"> </span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">in</span><span style="font-size: x-small;"> people
+                                                                </span><span style="color: #0000ff; font-size: x-small;">where</span><span style="font-size: x-small;"> Person.FirstName.ToUpperInvariant().StartsWith(</span><span style="color: #a31515; font-size: x-small;">"J"</span><span style="font-size: x-small;">)
+</span><span style="color: #0000ff; font-size: x-small;">                                                                select</span><span style="font-size: x-small;"> Person;</span>
 
  
 
@@ -29,7 +31,9 @@ Instead of:
 
  
 
-<span style="color: #2b91af; font-size: x-small;">IEnumerable</span><span style="font-size: x-small;"><</span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;">> filterExample2 = people<br />                                                            .Where(p => p.FirstName.ToUpperInvariant().StartsWith(</span><span style="color: #a31515; font-size: x-small;">"J"</span><span style="font-size: x-small;">))<br />                                                            .Select(p => p);</span>
+<span style="color: #2b91af; font-size: x-small;">IEnumerable</span><span style="font-size: x-small;"><</span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;">> filterExample2 = people
+                                                            .Where(p => p.FirstName.ToUpperInvariant().StartsWith(</span><span style="color: #a31515; font-size: x-small;">"J"</span><span style="font-size: x-small;">))
+                                                            .Select(p => p);</span>
 
 As you can see the second option takes a little longer to write and isn't quite as easy to read as the first option or a standard SQL query. It essentially allows us to query our data in a SQL-like fashion that we're already familiar with.
 
@@ -50,7 +54,9 @@ First lets look at the following example; which filters out all the Person objec
 
  
 
-<span style="color: #2b91af; font-size: x-small;">IEnumerable</span><span style="font-size: x-small;"><</span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;">> filterExample1 = </span><span style="color: #0000ff; font-size: x-small;">from</span><span style="font-size: x-small;"> </span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">in</span><span style="font-size: x-small;"> people<br />                                                                    </span><span style="color: #0000ff; font-size: x-small;">where</span><span style="font-size: x-small;"> Person.FirstName.ToUpperInvariant().StartsWith(</span><span style="color: #a31515; font-size: x-small;">"J"</span><span style="font-size: x-small;">)<br /></span><span style="color: #0000ff; font-size: x-small;">                                                                    select</span><span style="font-size: x-small;"> Person;</span>
+<span style="color: #2b91af; font-size: x-small;">IEnumerable</span><span style="font-size: x-small;"><</span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;">> filterExample1 = </span><span style="color: #0000ff; font-size: x-small;">from</span><span style="font-size: x-small;"> </span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">in</span><span style="font-size: x-small;"> people
+                                                                    </span><span style="color: #0000ff; font-size: x-small;">where</span><span style="font-size: x-small;"> Person.FirstName.ToUpperInvariant().StartsWith(</span><span style="color: #a31515; font-size: x-small;">"J"</span><span style="font-size: x-small;">)
+</span><span style="color: #0000ff; font-size: x-small;">                                                                    select</span><span style="font-size: x-small;"> Person;</span>
 
  
 
@@ -67,7 +73,9 @@ One thing to note when using LINQ: you must define the data to select Last, as c
 
  
 
-<span style="color: #2b91af; font-size: x-small;">IEnumerable</span><span style="font-size: x-small;"><</span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;">> orderByAge = </span><span style="color: #0000ff; font-size: x-small;">from</span><span style="font-size: x-small;"> </span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">in</span><span style="font-size: x-small;"> people<br /></span><span style="color: #0000ff; font-size: x-small;">                                                                    orderby</span><span style="font-size: x-small;"> Person.Age<br /></span><span style="color: #0000ff; font-size: x-small;">                                                                    select</span><span style="font-size: x-small;"> Person;</span>
+<span style="color: #2b91af; font-size: x-small;">IEnumerable</span><span style="font-size: x-small;"><</span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;">> orderByAge = </span><span style="color: #0000ff; font-size: x-small;">from</span><span style="font-size: x-small;"> </span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">in</span><span style="font-size: x-small;"> people
+</span><span style="color: #0000ff; font-size: x-small;">                                                                    orderby</span><span style="font-size: x-small;"> Person.Age
+</span><span style="color: #0000ff; font-size: x-small;">                                                                    select</span><span style="font-size: x-small;"> Person;</span>
 
  
 
@@ -75,7 +83,10 @@ One thing to note when using LINQ: you must define the data to select Last, as c
 
  
 
-<span style="color: #2b91af; font-size: x-small;">IEnumerable</span><span style="font-size: x-small;"><</span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;">> letExample1 = </span><span style="color: #0000ff; font-size: x-small;">from</span><span style="font-size: x-small;"> </span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">in</span><span style="font-size: x-small;"> people<br />                                                                </span><span style="color: #0000ff; font-size: x-small;">let</span><span style="font-size: x-small;"> firstname = Person.FirstName.ToUpperInvariant()<br /></span><span style="color: #0000ff; font-size: x-small;"><span style="color: #000000;">                                                                </span>where</span><span style="font-size: x-small;"> firstname.StartsWith(</span><span style="color: #a31515; font-size: x-small;">"J"</span><span style="font-size: x-small;">)<br /></span><span style="color: #0000ff; font-size: x-small;"><span style="color: #000000;">                                                                </span>select</span><span style="font-size: x-small;"> Person;</span>
+<span style="color: #2b91af; font-size: x-small;">IEnumerable</span><span style="font-size: x-small;"><</span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;">> letExample1 = </span><span style="color: #0000ff; font-size: x-small;">from</span><span style="font-size: x-small;"> </span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">in</span><span style="font-size: x-small;"> people
+                                                                </span><span style="color: #0000ff; font-size: x-small;">let</span><span style="font-size: x-small;"> firstname = Person.FirstName.ToUpperInvariant()
+</span><span style="color: #0000ff; font-size: x-small;"><span style="color: #000000;">                                                                </span>where</span><span style="font-size: x-small;"> firstname.StartsWith(</span><span style="color: #a31515; font-size: x-small;">"J"</span><span style="font-size: x-small;">)
+</span><span style="color: #0000ff; font-size: x-small;"><span style="color: #000000;">                                                                </span>select</span><span style="font-size: x-small;"> Person;</span>
 
  
 
@@ -83,7 +94,8 @@ One thing to note when using LINQ: you must define the data to select Last, as c
 
  
 
-<span style="color: #2b91af; font-size: x-small;">IEnumerable</span><span style="font-size: x-small;"><</span><span style="color: #2b91af; font-size: x-small;">String</span><span style="font-size: x-small;">> distinctExample2 = (</span><span style="color: #0000ff; font-size: x-small;">from</span><span style="font-size: x-small;"> </span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">in</span><span style="font-size: x-small;"> people<br />                                                                       </span><span style="color: #0000ff; font-size: x-small;">select</span><span style="font-size: x-small;"> Person.FirstName).Distinct();</span>
+<span style="color: #2b91af; font-size: x-small;">IEnumerable</span><span style="font-size: x-small;"><</span><span style="color: #2b91af; font-size: x-small;">String</span><span style="font-size: x-small;">> distinctExample2 = (</span><span style="color: #0000ff; font-size: x-small;">from</span><span style="font-size: x-small;"> </span><span style="color: #2b91af; font-size: x-small;">Person</span><span style="font-size: x-small;"> </span><span style="color: #0000ff; font-size: x-small;">in</span><span style="font-size: x-small;"> people
+                                                                       </span><span style="color: #0000ff; font-size: x-small;">select</span><span style="font-size: x-small;"> Person.FirstName).Distinct();</span>
 
  
 <h3>Conclusion</h3>

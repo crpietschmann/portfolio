@@ -19,8 +19,10 @@ redirect_from:
 
 
 
-<span style="font-size: 8.5pt; font-family: Verdana">My code allows to create Url Mappings similar to the following:<br />
-~/Chris.aspx to ~/Default.aspx?p=chris<br />
+<span style="font-size: 8.5pt; font-family: Verdana">My code allows to create Url Mappings similar to the following:
+
+~/Chris.aspx to ~/Default.aspx?p=chris
+
 ~/Show154.aspx to ~/Default.aspx?p=154</span>
 
 

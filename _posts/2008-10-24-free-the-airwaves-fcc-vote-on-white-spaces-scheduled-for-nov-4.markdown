@@ -71,11 +71,16 @@ I&#39;ve already signed the <a href="http://www.FreeTheAirwaves.com">Free The Ai
 
 
 
-*Just as Wi-Fi sparked a revolution in the way we connect to the web, freeing the &quot;white space&quot; airwaves could help unleash a new wave of technological innovation, create jobs, and boost our economy.<br />
-<br />
-But it can happen only if the FCC moves forward. Encourage your friends to sign the petition and call your Member of Congress today.<br />
-<br />
-Thanks,<br />
+*Just as Wi-Fi sparked a revolution in the way we connect to the web, freeing the &quot;white space&quot; airwaves could help unleash a new wave of technological innovation, create jobs, and boost our economy.
+
+
+
+But it can happen only if the FCC moves forward. Encourage your friends to sign the petition and call your Member of Congress today.
+
+
+
+Thanks,
+
 <a href="http://www.FreeTheAirwaves.com">FreeTheAirwaves.com</a>*
 
 
@@ -84,7 +89,8 @@ Thanks,<br />
 
 
 
-<br />
+
+
 Please go show your support for this now! This could change the way we communicate.
 
 

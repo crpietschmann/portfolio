@@ -15,9 +15,11 @@ redirect_from:
 <!-- more -->
 
 The popularity of location aware devices and software has been on the rise for the last five years, since Google Maps and Microsoft Virtual Earth (now Bing Maps) were initially released. Surprisingly, however, the utilization and adoption of geo-location and mapping haven't been as rapid as I had speculated back in 2005. Today there are all kinds of location based applications and services popping up.
-<h3>Paper Maps and Expensive Software<br /></h3>
+<h3>Paper Maps and Expensive Software
+</h3>
 
-Prior to 2005 the existence of maps were mostly on paper. You kept them in your cars glove box and pinned them to you office wall. I remember having a paper map of the world tacked to my bedroom wall as a kid. Mapping software did exist (ex: vehicle and asset tracking, military use, etc.), but it was prohibitively expensive for most businesses. Sure, there were less expensive mapping applications, like Microsoft MapPoint, but...* (I know I could discuss this in plenty of detail, but let's just get on to the point of this post.)<br />*
+Prior to 2005 the existence of maps were mostly on paper. You kept them in your cars glove box and pinned them to you office wall. I remember having a paper map of the world tacked to my bedroom wall as a kid. Mapping software did exist (ex: vehicle and asset tracking, military use, etc.), but it was prohibitively expensive for most businesses. Sure, there were less expensive mapping applications, like Microsoft MapPoint, but...* (I know I could discuss this in plenty of detail, but let's just get on to the point of this post.)
+*
 <h3>Google Maps and Microsoft Virtual Earth</h3>
 
 In 2005, both Google and Microsoft launched there own mapping services that utilized the latest web technologies and standards. This was a time when Web 2.0, Ajax, and plenty of other buzz words collided with maps. While the consumer facing websites for these services were (and still are) really nice, they don't bridge the gap between users, devices, data and location. Luckily for everyone, both Google and Microsoft have had a publish API to there mapping services since the beginning. This API allows software developers to utilize these mapping services within their own applications.

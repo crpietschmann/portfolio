@@ -20,13 +20,24 @@ For Example:
 
 ```javascript
 
-// "Default" to showing both Toolbar and Footer<br />var defaultOptions = { showToolbar: true, showFooter: true };
+// "Default" to showing both Toolbar and Footer
+var defaultOptions = { showToolbar: true, showFooter: true };
 
-function MyObject = function(options){<br />    // Create a new "opts" variable that is a copy of "defaultOptions", then apply all values from "options"<br />    var opts = jQuery.extend({}, defaultOptions, options);<br /><br />    // Now you have the "opts" variable that has all the "defaultOptions" values merged with the<br />    // "options" that were passed in to the function.<br /><br />    // Do Stuff According to "opts" defined
+function MyObject = function(options){
+    // Create a new "opts" variable that is a copy of "defaultOptions", then apply all values from "options"
+    var opts = jQuery.extend({}, defaultOptions, options);
 
-}<br />MyObject.prototype = {};
+    // Now you have the "opts" variable that has all the "defaultOptions" values merged with the
+    // "options" that were passed in to the function.
 
-// Example of creating new MyObject and passing it only the values you want to override the defaults<br />var obj = new MyObject({ showFooter: false });<br />// The above line will tell the new "MyObject" to show the toolbar, but not the footer.
+    // Do Stuff According to "opts" defined
+
+}
+MyObject.prototype = {};
+
+// Example of creating new MyObject and passing it only the values you want to override the defaults
+var obj = new MyObject({ showFooter: false });
+// The above line will tell the new "MyObject" to show the toolbar, but not the footer.
 
 ```
 <h3>Why use this?</h3>
@@ -34,7 +45,8 @@ function MyObject = function(options){<br />    // Create a new "opts" variable 
 As you can probably tell from the above example of doing this with jQuery, this really helps to simplify and reduce the amount of code you write. The benefits are smaller .js files for the browser to download, and it's just easier to read/maintain the code.
 
 If you still have questions about this, then the following non-jQuery example of doing the same thing should help clear things up for you.
-<h3>What if I'm Not using jQuery?<br /></h3>
+<h3>What if I'm Not using jQuery?
+</h3>
 
 As you can probably see, the above example can really help to keep things simple. However, if you're not using jQuery how would you do this?
 
@@ -42,7 +54,19 @@ Now the "jQuery.extend" method has some logic to make sure the resulting object 
 
 ```javascript
 
-// Create Global "extend" method<br />var extend = function(obj, extObj) {<br />    if (arguments.length > 2) {<br />        for (var a = 1; a < arguments.length; a++) {<br />            extend(obj, arguments[a]);<br />        }<br />    } else {<br />        for (var i in extObj) {<br />            obj[i] = extObj[i];<br />        }<br />    }<br />    return obj;<br />};
+// Create Global "extend" method
+var extend = function(obj, extObj) {
+    if (arguments.length > 2) {
+        for (var a = 1; a < arguments.length; a++) {
+            extend(obj, arguments[a]);
+        }
+    } else {
+        for (var i in extObj) {
+            obj[i] = extObj[i];
+        }
+    }
+    return obj;
+};
 
 ```
 
@@ -50,15 +74,43 @@ Here's some examples of using the above "extend" method:
 
 ```javascript
 
-var Person = function() {<br />};<br />Person.prototype = {<br />    FirstName: null,<br />    LastName: null<br />};        <br /><br />var person1 = new Person();<br />// Set multiple object properties with a single line of code<br />extend(person1, { FirstName: "John", LastName: "Doe" });<br />alert(person1.FirstName + " " + person1.LastName);<br /><br />// Create a new Person instance and set it's properties in 1 line<br />var person2 = extend(new Person(), { FirstName: "John", LastName: "Doe" });<br />alert(person2.FirstName);<br /><br />// "clone" person2<br />var person3 = extend(new Person(), person2);<br />alert(person3.LastName);<br /><br />// "clone" person2 and add new properties<br />var person4 = extend(new Person(), person2, { Age: 18 });<br />alert(person4.FirstName + " :: " + person4.Age);
+var Person = function() {
+};
+Person.prototype = {
+    FirstName: null,
+    LastName: null
+};        
+
+var person1 = new Person();
+// Set multiple object properties with a single line of code
+extend(person1, { FirstName: "John", LastName: "Doe" });
+alert(person1.FirstName + " " + person1.LastName);
+
+// Create a new Person instance and set it's properties in 1 line
+var person2 = extend(new Person(), { FirstName: "John", LastName: "Doe" });
+alert(person2.FirstName);
+
+// "clone" person2
+var person3 = extend(new Person(), person2);
+alert(person3.LastName);
+
+// "clone" person2 and add new properties
+var person4 = extend(new Person(), person2, { Age: 18 });
+alert(person4.FirstName + " :: " + person4.Age);
 
 ```
 
 This can also be used to more easily add new HTML Elements to a page:
 
-```javascript<br />var js = extend(document.createElement("script"), { type: "text/javascript", src: "test.js" });<br />document.body.appendChild(js);
+```javascript
+var js = extend(document.createElement("script"), { type: "text/javascript", src: "test.js" });
+document.body.appendChild(js);
 
-//As you can see the above is simpler than the traditional method of creating a new <script> Element<br />var js = document.createElement("script");<br />js.type = "text/javascript";<br />js.src = "test.js";<br />document.body.appendChild(js);
+//As you can see the above is simpler than the traditional method of creating a new <script> Element
+var js = document.createElement("script");
+js.type = "text/javascript";
+js.src = "test.js";
+document.body.appendChild(js);
 
 ```
 <h3>Conclusion</h3>

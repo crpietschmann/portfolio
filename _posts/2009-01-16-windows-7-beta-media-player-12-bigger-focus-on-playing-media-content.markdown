@@ -22,7 +22,8 @@ A couple days ago I posted some of my thoughts on the <a href="/post/2009/01/Win
 
  
 
-<h4>Bigger Focus on the Playing Media <br />
+<h4>Bigger Focus on the Playing Media 
+
 </h4>
 
 
@@ -31,8 +32,10 @@ The most noticable (IMO) change to Media Player in v12 is the bigger focus on th
 
 
 <img src="/images/posts/MediaPlayer12Beta-001.png" alt="" />
-<img src="/images/posts/MediaPlayer12Beta-002.png" alt="" /><br />
-<br />
+<img src="/images/posts/MediaPlayer12Beta-002.png" alt="" />
+
+
+
 As you can see in the screenshot on the Right, the media controls overlay on top of the playing media with transparency when you hover your mouse cursor over the player. IMO, this is much better than showing the media controls all the time, since you only need to see the controls when you want to use them.
 
 
@@ -55,7 +58,8 @@ Once you switch to the Library View, then you get the full user interface for ma
 
 
 
-<img src="/images/posts/MediaPlayer12Beta-LibraryUI.png" alt="" /><br />
+<img src="/images/posts/MediaPlayer12Beta-LibraryUI.png" alt="" />
+
 
 <h3>Vista Support for Media Player 12?</h3>
 

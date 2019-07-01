@@ -27,6 +27,7 @@ I just uploaded a new release (v0.02) of my ASP.NET 2.0 Virtual Earth v3 Server 
 
 
 
-Info on the initial release (v0.01) of the control:<br />
+Info on the initial release (v0.01) of the control:
+
 <a id="ctl00_MainContentPlaceHolder_DataList1_ctl00_HyperLink1" href="/post.aspx?id=1d6d498a-257f-4f08-aaf1-8cfa7c568d60">ASP.NET 2.0: Virtual Earth v3 Custom Control - PietschSoft.VE3 v0.01</a> 
 

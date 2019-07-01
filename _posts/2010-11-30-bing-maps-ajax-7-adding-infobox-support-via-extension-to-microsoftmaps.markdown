@@ -163,11 +163,13 @@ Here’s some documentation of the 2 methods I added to the Microsoft.Maps.Pushp
 
 
 **Pushpin.setInfoBox(infobox) 
-    <br />**This method is used to set a specific InfoBox to be show for the Pushpin.
+    
+**This method is used to set a specific InfoBox to be show for the Pushpin.
 
 
 **Pushpin.removeInfoBox() 
-    <br />**This method is used to remove a previously added InfoBox from the Pushpin.
+    
+**This method is used to remove a previously added InfoBox from the Pushpin.
 
 <h3>InfoBox Method Reference</h3>
 
@@ -177,7 +179,8 @@ Here’s some documentation on the Microsoft.Maps.Ext.InfoBox object:
 
 **Microsoft.Maps.Ext.InfoBox(title, description, map)** 
 
-  <br />This is the constructor of the InfoBox object.
+  
+This is the constructor of the InfoBox object.
 
 <ol>
   <li>**title** – The HTML to show in the InfoBox title area. </li>
@@ -190,12 +193,14 @@ Here’s some documentation on the Microsoft.Maps.Ext.InfoBox object:
 
 **InfoBox.title(title)** 
 
-  <br />This method gets or sets the Title of the InfoBox. If an argument is passed in, it will set the Title and return the InfoBox object to allow for a fluent interface. If no argument is passed in, it will return the value of the InfoBox Title.
+  
+This method gets or sets the Title of the InfoBox. If an argument is passed in, it will set the Title and return the InfoBox object to allow for a fluent interface. If no argument is passed in, it will return the value of the InfoBox Title.
 
 
 **InfoBox.descirption(description)** 
 
-  <br />This method gets or sets the Description of the InfoBox. If an argument is passed in, it will set the Description and return the InfoBox object to allow for a fluent interface. If no argument is passed in, it will return the value of the InfoBox Description.
+  
+This method gets or sets the Description of the InfoBox. If an argument is passed in, it will set the Description and return the InfoBox object to allow for a fluent interface. If no argument is passed in, it will return the value of the InfoBox Description.
 
 <h3>Full InfoBox Extension</h3>
 
@@ -204,14 +209,16 @@ Rather than add the InfoBox object to the root of the “Microsoft.Maps” names
 
 
 **Requirements: 
-    <br />**This extension requires <a title="jQuery" href="http://jquery.com">jQuery</a> to function.
+    
+**This extension requires <a title="jQuery" href="http://jquery.com">jQuery</a> to function.
 
 
 I could have coded the necessary JavaScript code to manipulate the HTML DOM myself, but it was just easier to use jQuery. Plus, if you’re like me, you will probably be using jQuery in your application anyway so it wont add any additional download.
 
 
 **Source Code: 
-    <br />**Now for the real meat of the post. Here is the full JavaScript code for the InfoBox extension.
+    
+**Now for the real meat of the post. Here is the full JavaScript code for the InfoBox extension.
 
 <pre class="csharpcode">(<span class="kwrd">function</span> ($m) {
     <span class="rem">/* $m == Microsoft.Maps namespace */</span>

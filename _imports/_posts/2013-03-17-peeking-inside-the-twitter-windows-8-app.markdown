@@ -15,7 +15,8 @@ redirect_from:
 <!-- more -->
 
 I decide to peek inside the Twitter Windows 8 App package to see what language they are using and to see if I can find any open source projects being used within. Well, I found some interesting stuff…  <h3>How to view inside the package</h3>  
-   <br />You can view any Windows 8 app package that is installed on your computer as it resides within the following folder:  
+   
+You can view any Windows 8 app package that is installed on your computer as it resides within the following folder:  
 *C:\Program Files\WindowsApps*  
 Each package has it’s own folder within that folder. Here’s the full path to the package folder where the Twitter apps files reside:  
 *C:\Program Files\WindowsApps\9E2F88E3.Twitter_1.0.0.1_x64__wgeqdkkx372wm*  

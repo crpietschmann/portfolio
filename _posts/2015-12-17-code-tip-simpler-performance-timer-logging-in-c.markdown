@@ -31,7 +31,8 @@ var ms = timer.ElapsedMilliseconds;
 
 * *
 
-While the above example is fairly simple, your code can start to get messy. So, lets make it better by encapsulating it into a special class to make it as easy to use as possible.*<br />*
+While the above example is fairly simple, your code can start to get messy. So, lets make it better by encapsulating it into a special class to make it as easy to use as possible.*
+*
 
 First, here's the usage example of the performance timing logging class that will be listed below:
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">using (new PerfTimerLogger("name of code being profiled"))

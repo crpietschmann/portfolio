@@ -23,7 +23,8 @@ I&#39;d post the code for the SQL Server user defined function that I wrote if I
 
 
 
-<font size="2" color="#ff0000">Server: Msg 8624, Level 16, State 8, Line 1<br />
+<font size="2" color="#ff0000">Server: Msg 8624, Level 16, State 8, Line 1
+
 Internal SQL Server error.</font>
 
 

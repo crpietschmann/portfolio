@@ -26,17 +26,35 @@ Here's the most basic ways of using functions to get things done that most web d
 
 ```javascript
 
-/// Function that performs an action <br /> function Test1()<br /> {<br />     alert("Test1");<br /> }<br /> <br /> /// Function that accepts arguments and performs an action<br /> function Test2(a, b)<br /> {<br />     alert(a + b);<br /> }
+/// Function that performs an action 
+ function Test1()
+ {
+     alert("Test1");
+ }
+ 
+ /// Function that accepts arguments and performs an action
+ function Test2(a, b)
+ {
+     alert(a + b);
+ }
 
-/// Function that returns returns a value<br /> function Test3(a, b)<br /> {<br />     return a + b;<br /> }
+/// Function that returns returns a value
+ function Test3(a, b)
+ {
+     return a + b;
+ }
 
 ```
 
 **Ok, but what else could there be?**
 
-Well, actually there are a couple more Function usages that most web developers aren't familiar with.<br /> <br /> To test your knowledge of JavaScript Functions, take the following quiz:
+Well, actually there are a couple more Function usages that most web developers aren't familiar with.
+ 
+ To test your knowledge of JavaScript Functions, take the following quiz:
 
-1) Is it possible to write a JavaScript Function "in-line"?<br /> 2) Is it possible to overload a JavaScript Function?<br /> 3) Is it possible to call a JavaScript Function Asynchronously?
+1) Is it possible to write a JavaScript Function "in-line"?
+ 2) Is it possible to overload a JavaScript Function?
+ 3) Is it possible to call a JavaScript Function Asynchronously?
 
 If you answered "Yes" to all three questions, then you're probably familiar with the tips listed in this article. If not, definitely read on.
 
@@ -46,7 +64,13 @@ You can write JavaScript Function "in-line".
 
 ```javascript
 
-var myFunction = function(a, b){ return a + b; };<br /> <br /> /// This actually does the exact same as the following:<br /> function myFunction(a, b)<br /> {<br />     return a + b;<br /> }
+var myFunction = function(a, b){ return a + b; };
+ 
+ /// This actually does the exact same as the following:
+ function myFunction(a, b)
+ {
+     return a + b;
+ }
 
 ```
 
@@ -54,7 +78,12 @@ You can also use "in-line" function to define custom functions for use within a 
 
 ```javascript
 
-function AddNumbers(a, b)<br /> {<br />     var add = function(){ return a + b; };<br /> <br />     return add();<br /> }
+function AddNumbers(a, b)
+ {
+     var add = function(){ return a + b; };
+ 
+     return add();
+ }
 
 ```
 
@@ -66,7 +95,11 @@ The "arguments" variable within a Function is an Array that contains all the arg
 
 ```javascript
 
-function Test()<br /> {<br />     /// Check how many arguments were passed in.<br />     alert("There were " + arguments.length + " argument(s) passed in.");<br /> }
+function Test()
+ {
+     /// Check how many arguments were passed in.
+     alert("There were " + arguments.length + " argument(s) passed in.");
+ }
 
 ```
 
@@ -74,7 +107,15 @@ Here's an implementation of the above AddNumbers function that will add any numb
 
 ```javascript
 
-function AddNumbers()<br /> {<br />     var r = 0;<br />     for(var i = 0; i < arguments.length; i++)<br />     {<br />         r += arguments[i];<br />     }<br />     return r;<br /> }
+function AddNumbers()
+ {
+     var r = 0;
+     for(var i = 0; i < arguments.length; i++)
+     {
+         r += arguments[i];
+     }
+     return r;
+ }
 
 ```
 
@@ -82,7 +123,31 @@ You can also do some basic Type checking in JavaScript to overload your function
 
 ```javascript
 
-function Test(a)<br /> {<br />     /// Get the Type of the object passed in<br />     var t = typeof(a);<br /> <br />     /// Execute different code depending on the type passed in<br />     switch (t)<br />     {<br />         case "number":<br />             /// Number Type Overload Stuff Here<br />             break;<br />         case "string":<br />             /// StringType Overload Stuff Here<br />             break;<br />         case "boolean":<br />             /// Boolean Type Overload Stuff Here<br />             break;<br />         case "object":<br />             /// Object Type Overload Stuff Here<br />             break;<br />         default:<br />             alert("No overload exists for this object type: " + t);<br />     }<br /> <br /> }
+function Test(a)
+ {
+     /// Get the Type of the object passed in
+     var t = typeof(a);
+ 
+     /// Execute different code depending on the type passed in
+     switch (t)
+     {
+         case "number":
+             /// Number Type Overload Stuff Here
+             break;
+         case "string":
+             /// StringType Overload Stuff Here
+             break;
+         case "boolean":
+             /// Boolean Type Overload Stuff Here
+             break;
+         case "object":
+             /// Object Type Overload Stuff Here
+             break;
+         default:
+             alert("No overload exists for this object type: " + t);
+     }
+ 
+ }
 
 ```
 
@@ -92,7 +157,13 @@ One trick with JavaScript Functions is that you can essentially call them asynch
 
 ```javascript
 
-function AddNumbers(a, b)<br /> {<br />     alert(a + b);<br /> }<br /> <br /> /// Call AddNumbers Asynchronously<br /> window.setTimeout("AddNumbers(5, 10);", 1);
+function AddNumbers(a, b)
+ {
+     alert(a + b);
+ }
+ 
+ /// Call AddNumbers Asynchronously
+ window.setTimeout("AddNumbers(5, 10);", 1);
 
 ```
 
@@ -102,19 +173,40 @@ Another trick when calling function asynchronously is to pass in a callback func
 
 ```javascript
 
-var asyncArguments = null;<br /> var asyncCallback = null;<br /> <br /> function AddNumbers(a, b, callback)<br /> {<br />     // Save a reference to the arguments<br />     asyncArguments = arguments;
+var asyncArguments = null;
+ var asyncCallback = null;
+ 
+ function AddNumbers(a, b, callback)
+ {
+     // Save a reference to the arguments
+     asyncArguments = arguments;
 
-    // Save a reference to the callback function<br />     asyncCallback = callback;
+    // Save a reference to the callback function
+     asyncCallback = callback;
 
-    // Call Function Asynchronously<br />     window.setTimeout("AsynchronousAddNumbers();", 1);<br /> }
+    // Call Function Asynchronously
+     window.setTimeout("AsynchronousAddNumbers();", 1);
+ }
 
-function AsynchronousAddNumbers()<br /> {<br />     // This is call asynchonously by AddNumbers, and then<br />     // calls the callback function when completed and passes<br />     // it the results.<br />     asyncCallback(asyncArguments[0] + asyncArguments[1]);<br /> }
+function AsynchronousAddNumbers()
+ {
+     // This is call asynchonously by AddNumbers, and then
+     // calls the callback function when completed and passes
+     // it the results.
+     asyncCallback(asyncArguments[0] + asyncArguments[1]);
+ }
 
-function AddNumbersCallback(result)<br /> {<br />     // This gets called when AddNumbers is completed asynchronously<br />     alert(result);<br /> }
+function AddNumbersCallback(result)
+ {
+     // This gets called when AddNumbers is completed asynchronously
+     alert(result);
+ }
 
 /// TO USE:
 
-/// Call AddNumbers to do our addition asynchronously<br /> /// and pass it the callback function to call when done<br /> AddNumbers(5, 10, AddNumbersCallback);
+/// Call AddNumbers to do our addition asynchronously
+ /// and pass it the callback function to call when done
+ AddNumbers(5, 10, AddNumbersCallback);
 
 ```
 

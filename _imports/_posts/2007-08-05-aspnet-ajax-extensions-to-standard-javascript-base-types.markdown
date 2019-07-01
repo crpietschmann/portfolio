@@ -16,27 +16,38 @@ redirect_from:
 
 Working with JavaScript can be a challenge at times, and there are a number of helpful things that the ASP.NET AJAX Extensions are bringing to the table. One of the things it does is extend some of the standard JavaScript base types with additional functionality. This is actually rather neat, and is something that you may not find unless you dig through the ASP.NET AJAX documentation like I did.
 
-<br /> **<span style="font-size: medium;">Array</span>**
+
+ **<span style="font-size: medium;">Array</span>**
 
 There are a number of extensions made to the Array base type, including "add", "remove" and "clear" functions that allow you to interact with your JavaScript Arrays much more like they are actually collections. This is my favorite Extension that they've added since Arrays are used so frequently with JavaScript.
 
-**Example Usage:** <br /> *var myArray = new Array();*
+**Example Usage:** 
+ *var myArray = new Array();*
 
-*// Add some elements to the Array<br /> Array.add(myArray, "String One");<br /> Array.add(myArray, "2");*
+*// Add some elements to the Array
+ Array.add(myArray, "String One");
+ Array.add(myArray, "2");*
 
-*// Remove an element from the Arrray<br /> Array.remove(myArray, "2");*
+*// Remove an element from the Arrray
+ Array.remove(myArray, "2");*
 
-*// Clear all elements from the Array<br /> Array.clear(myArray);*
+*// Clear all elements from the Array
+ Array.clear(myArray);*
 
 Another neat extension to the Array base type, is the "forEach" function. This function allows you to loop through the Array and execute some code on each of its elements. What makes this extension really nice it the fact that you don't need to use an iterator to loop through; it does that tedious stuff for you.
 
-**Example Usage:<br /> ***var m = ['1','20','40'];*
+**Example Usage:
+ ***var m = ['1','20','40'];*
 
-*function appendPercentSign(element, index, array)<br /> {<br />     array[index] += '%';<br /> }*
+*function appendPercentSign(element, index, array)
+ {
+     array[index] += '%';
+ }*
 
 *Array.forEach(m, appendPercentSign, this);*
 
-<br /> **<span style="font-size: medium;">Boolean</span>**
+
+ **<span style="font-size: medium;">Boolean</span>**
 
 A simple but effective one that's nice is the "parse" function that is added to Boolean. This one converts the string representation of "true" or "false" to their boolean counterparts.
 
@@ -50,23 +61,37 @@ A simple but effective one that's nice is the "parse" function that is added to 
 
 I don't really see any problems with the extensions that have been added. However I do have a small convenience issue with the way you use the Array extensions. These extensions are static methods that are called and you need to pass the Array instance to them. Why not a more object oriented approach?
 
-**Current ASP.NET AJAX use of Static methods:<br /> ***var myArray = new Array();*
+**Current ASP.NET AJAX use of Static methods:
+ ***var myArray = new Array();*
 
-*Array.add(myArray, "one");<br /> Array.remove(myArray, "two");*
+*Array.add(myArray, "one");
+ Array.remove(myArray, "two");*
 
-*function appendPercentSign(element, index, array)<br /> {<br />     array[index] += '%';<br /> }<br /> Array.forEach(m, appendPercentSign, this);*
+*function appendPercentSign(element, index, array)
+ {
+     array[index] += '%';
+ }
+ Array.forEach(m, appendPercentSign, this);*
 
 *Array.clear(myArray)*
 
-<br /> **Propose more object oriented way:**<br /> *var myArray = new Array();*
 
-*myArray.add("one");<br /> myArray.remove("two");*
+ **Propose more object oriented way:**
+ *var myArray = new Array();*
 
-*function appendPercentSign(element, index, array)<br /> {<br />     array[index] += '%';<br /> }<br /> myArray.forEach(appendPercentSign, this);*
+*myArray.add("one");
+ myArray.remove("two");*
+
+*function appendPercentSign(element, index, array)
+ {
+     array[index] += '%';
+ }
+ myArray.forEach(appendPercentSign, this);*
 
 *myArray.clear();*
 
-<br /> Now don't you agree that the more object oriented approach is just easier to read? I'm not sure why they implemented these extensions the way they did, but they've got their reasons (they always do).
+
+ Now don't you agree that the more object oriented approach is just easier to read? I'm not sure why they implemented these extensions the way they did, but they've got their reasons (they always do).
 
  
 
@@ -76,7 +101,23 @@ Yes, you can, but remember the ASP.NET AJAX Extensions are necessary to add your
 
 **Example to make the Array extensions more object oriented:**
 
-<br /> *Array.prototype.add = function(item)<br /> {<br />  Array.add(this, item);<br /> };<br /> Array.prototype.remove = function(item)<br /> {<br />  Array.remove(this, item);<br /> };<br /> Array.prototype.clear = function()<br /> {<br />  Array.clear(this);<br /> };<br /> Array.prototype.forEach(method, context)<br /> {<br />  Array.forEach(this, method, context);<br /> };*
+
+ *Array.prototype.add = function(item)
+ {
+  Array.add(this, item);
+ };
+ Array.prototype.remove = function(item)
+ {
+  Array.remove(this, item);
+ };
+ Array.prototype.clear = function()
+ {
+  Array.clear(this);
+ };
+ Array.prototype.forEach(method, context)
+ {
+  Array.forEach(this, method, context);
+ };*
 
 In fact JavaScript is so flexible, you can use prototyping to extend any JavaScript object type whether it's a base type or one you or a framework you are using created.
 
@@ -86,8 +127,12 @@ The ASP.NET AJAX JavaScript Base Type Extensions have some nice enhancements to 
 
  
 
-**<span style="font-size: medium;">Useful, Related Links:</span>**<br /> ASP.NET AJAX: JavaScript Base Type Extensions<br /> <a href="http://asp.net/AJAX/Documentation/Live/ClientReference/Global/JavascriptTypeExtensions/default.aspx">http://asp.net/AJAX/Documentation/Live/ClientReference/Global/JavascriptTypeExtensions/default.aspx</a>
+**<span style="font-size: medium;">Useful, Related Links:</span>**
+ ASP.NET AJAX: JavaScript Base Type Extensions
+ <a href="http://asp.net/AJAX/Documentation/Live/ClientReference/Global/JavascriptTypeExtensions/default.aspx">http://asp.net/AJAX/Documentation/Live/ClientReference/Global/JavascriptTypeExtensions/default.aspx</a>
 
-JScript Language Reference<br /> <a href="http://msdn2.microsoft.com/en-us/library/29f83a2c-48c5-49e2-9ae0-7371d2cda2ff">http://msdn2.microsoft.com/en-us/library/29f83a2c-48c5-49e2-9ae0-7371d2cda2ff</a>
+JScript Language Reference
+ <a href="http://msdn2.microsoft.com/en-us/library/29f83a2c-48c5-49e2-9ae0-7371d2cda2ff">http://msdn2.microsoft.com/en-us/library/29f83a2c-48c5-49e2-9ae0-7371d2cda2ff</a>
 
-ASP.NET AJAX and JavaScript Tutorials<br /> <a href="http://asp.net/AJAX/Documentation/Live/tutorials/ASPNETAJAXAndJavaScriptTutorials.aspx">http://asp.net/AJAX/Documentation/Live/tutorials/ASPNETAJAXAndJavaScriptTutorials.aspx</a>
+ASP.NET AJAX and JavaScript Tutorials
+ <a href="http://asp.net/AJAX/Documentation/Live/tutorials/ASPNETAJAXAndJavaScriptTutorials.aspx">http://asp.net/AJAX/Documentation/Live/tutorials/ASPNETAJAXAndJavaScriptTutorials.aspx</a>

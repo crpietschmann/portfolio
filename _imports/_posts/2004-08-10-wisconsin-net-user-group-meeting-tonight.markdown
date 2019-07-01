@@ -15,7 +15,8 @@ redirect_from:
 <!-- more -->
 
 
-<a href="http://wi-ineta.org" target="_blank" title="Wisconsin .NET Users Group">WI-INETA</a> meeting tonight, I&#39;m leavin in a little while to go. This months topic is GDI+ in Microsoft .NET<br />
+<a href="http://wi-ineta.org" target="_blank" title="Wisconsin .NET Users Group">WI-INETA</a> meeting tonight, I&#39;m leavin in a little while to go. This months topic is GDI+ in Microsoft .NET
+
 If you live in Wisconsin and are interested in learning about .NET you should check out the group.
 
 

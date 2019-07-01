@@ -26,6 +26,28 @@ Follow these steps to setup the aspnetdb database:
 
 4) Add the following stuff to your web sites Web.config file <span style="font-size: x-small;">*(this stuff tells ASP.NET to use your SQL Server 2000 database instead of SQL Express)*:</span>
 
-<connectionStrings><br />   <add name="SQLConnString" <br />      connectionString="Data Source=SQL_SERVER_NAME;Initial Catalog=aspnetdb;Integrated Security=True"<br />      providerName="System.Data.SqlClient" /><br /></connectionStrings><br /><br /><system.web><br />   <webParts><br />      <personalization<br />         defaultProvider="SqlPersonalizationProvider"><br />         <providers><br />            <add name="SqlPersonalizationProvider"<br />               type="System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider"<br />               connectionStringName="SQLConnString"<br />               applicationName="/" /><br />         </providers> <br />         <authorization><br />            <deny users="*" verbs="enterSharedScope" /><br />            <allow users="*" verbs="modifyState" /><br />         </authorization><br />      </personalization><br />   </webParts><br /></system.web>
+<connectionStrings>
+   <add name="SQLConnString" 
+      connectionString="Data Source=SQL_SERVER_NAME;Initial Catalog=aspnetdb;Integrated Security=True"
+      providerName="System.Data.SqlClient" />
+</connectionStrings>
+
+<system.web>
+   <webParts>
+      <personalization
+         defaultProvider="SqlPersonalizationProvider">
+         <providers>
+            <add name="SqlPersonalizationProvider"
+               type="System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider"
+               connectionStringName="SQLConnString"
+               applicationName="/" />
+         </providers> 
+         <authorization>
+            <deny users="*" verbs="enterSharedScope" />
+            <allow users="*" verbs="modifyState" />
+         </authorization>
+      </personalization>
+   </webParts>
+</system.web>
 
 And, that's it! Wasn't that simple to do. Even though it's so simple, for some reason I could could only find one article online *<span style="font-size: x-small;">(</span>*<a href="http://www.ondotnet.com/pub/a/dotnet/2005/06/06/webparts_2.html">*<span style="font-size: x-small;">http://www.ondotnet.com/pub/a/dotnet/2005/06/06/webparts_2.html</span>*</a>*<span style="font-size: x-small;">)</span>* that covers this topic. So I thought I would write a little blog post about it to increase the number of content online that covers using a SQL Server 2000 database with ASP.NET 2.0 WebParts.

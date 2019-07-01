@@ -23,7 +23,8 @@ A couple of the ideas we&#39;ve come up with are adding Blogging and/or Forums f
 
 
 
-If you are a fellow WI-INETA member, please let us know your thoughts on the website.<br />
+If you are a fellow WI-INETA member, please let us know your thoughts on the website.
+
 Here are a couple ways you can speak your voice:
 
 <ol>

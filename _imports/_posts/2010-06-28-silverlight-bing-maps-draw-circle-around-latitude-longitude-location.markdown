@@ -27,11 +27,79 @@ Download Full Source: <a href="/file.axd?file=SLBingMaps_DrawCircle.zip" target=
  
 
 Here&rsquo;s example usage:
-<pre class="csharpcode"><span class="rem">// Draw circle at the location where the user clicked</span><br /><span class="kwrd">private</span> <span class="kwrd">void</span> Map_MouseClick(<span class="kwrd">object</span> sender, Microsoft.Maps.MapControl.MapMouseEventArgs e)<br />{<br />    <span class="rem">// Get the location the mouse clicked</span><br />    var mousePoint = e.ViewportPoint;<br />    var clickedLocation = MainMap.ViewportPointToLocation(mousePoint);<br /><br />    <span class="rem">// Calculate the points to make up a circle with radius of 200 miles</span><br />    var locations = GeoCodeCalc.CreateCircle(clickedLocation, 200, DistanceMeasure.Miles);<br /><br />    <span class="rem">// Add Red Polyline to the Map</span><br />    var poly = <span class="kwrd">new</span> MapPolyline();<br />    poly.Locations = locations;<br />    poly.Stroke = <span class="kwrd">new</span> SolidColorBrush(Color.FromArgb(255, 255, 0, 0));<br />    poly.StrokeThickness = 2;<br />    MainMap.Children.Add(poly);            <br />}</pre>
+<pre class="csharpcode"><span class="rem">// Draw circle at the location where the user clicked</span>
+<span class="kwrd">private</span> <span class="kwrd">void</span> Map_MouseClick(<span class="kwrd">object</span> sender, Microsoft.Maps.MapControl.MapMouseEventArgs e)
+{
+    <span class="rem">// Get the location the mouse clicked</span>
+    var mousePoint = e.ViewportPoint;
+    var clickedLocation = MainMap.ViewportPointToLocation(mousePoint);
+
+    <span class="rem">// Calculate the points to make up a circle with radius of 200 miles</span>
+    var locations = GeoCodeCalc.CreateCircle(clickedLocation, 200, DistanceMeasure.Miles);
+
+    <span class="rem">// Add Red Polyline to the Map</span>
+    var poly = <span class="kwrd">new</span> MapPolyline();
+    poly.Locations = locations;
+    poly.Stroke = <span class="kwrd">new</span> SolidColorBrush(Color.FromArgb(255, 255, 0, 0));
+    poly.StrokeThickness = 2;
+    MainMap.Children.Add(poly);            
+}</pre>
 
 <!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
 
  
 
 And, here&rsquo;s the code that calculates the location points to make up the circle:
-<pre class="csharpcode"><span class="rem">/*</span><br /><span class="rem"> * Written by Chris Pietschmann ()</span><br /><span class="rem"> * This code is derived from the code posted in the following location:</span><br /><span class="rem"> * /post/2010/03/02/Bing-Maps-JS-Calculate-Area-of-Circle-and-Draw-Circle-on-Map.aspx</span><br /><span class="rem">*/</span><br /><span class="kwrd">using</span> System;<br /><span class="kwrd">using</span> System.Collections.Generic;<br /><span class="kwrd">using</span> Microsoft.Maps.MapControl;<br /><br /><span class="kwrd">namespace</span> SLBingMaps_DrawCircle<br />{<br />    <span class="kwrd">public</span> <span class="kwrd">enum</span> DistanceMeasure<br />    {<br />        Miles,<br />        Kilometers<br />    }<br /><br />    <span class="kwrd">public</span> <span class="kwrd">class</span> GeoCodeCalc<br />    {<br />        <span class="kwrd">public</span> <span class="kwrd">const</span> <span class="kwrd">double</span> EarthRadiusInMiles = 3956.0;<br />        <span class="kwrd">public</span> <span class="kwrd">const</span> <span class="kwrd">double</span> EarthRadiusInKilometers = 6367.0;<br /><br />        <span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">double</span> ToRadian(<span class="kwrd">double</span> degrees)<br />        {<br />            <span class="kwrd">return</span> degrees * (Math.PI / 180);<br />        }<br /><br />        <span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">double</span> ToDegrees(<span class="kwrd">double</span> radians)<br />        {<br />            <span class="kwrd">return</span> radians * (180 / Math.PI);<br />        }<br /><br />        <span class="kwrd">public</span> <span class="kwrd">static</span> LocationCollection CreateCircle(Location center, <span class="kwrd">double</span> radius, DistanceMeasure units)<br />        {<br />            var earthRadius = (units == DistanceMeasure.Miles ? GeoCodeCalc.EarthRadiusInMiles : GeoCodeCalc.EarthRadiusInKilometers);<br />            var lat = ToRadian(center.Latitude); <span class="rem">//radians</span><br />            var lng = ToRadian(center.Longitude); <span class="rem">//radians</span><br />            var d = radius / earthRadius; <span class="rem">// d = angular distance covered on earth's surface</span><br />            var locations = <span class="kwrd">new</span> LocationCollection();<br /><br />            <span class="kwrd">for</span> (var x = 0; x <= 360; x++)<br />            {<br />                var brng = ToRadian(x);<br />                var latRadians = Math.Asin(Math.Sin(lat) * Math.Cos(d) + Math.Cos(lat) * Math.Sin(d) * Math.Cos(brng));<br />                var lngRadians = lng + Math.Atan2(Math.Sin(brng) * Math.Sin(d) * Math.Cos(lat), Math.Cos(d) - Math.Sin(lat) * Math.Sin(latRadians));<br /><br />                locations.Add(<span class="kwrd">new</span> Location(ToDegrees(latRadians), ToDegrees(lngRadians)));<br />            }<br /><br />            <span class="kwrd">return</span> locations;<br />        }<br />    }<br />}</pre>
+<pre class="csharpcode"><span class="rem">/*</span>
+<span class="rem"> * Written by Chris Pietschmann ()</span>
+<span class="rem"> * This code is derived from the code posted in the following location:</span>
+<span class="rem"> * /post/2010/03/02/Bing-Maps-JS-Calculate-Area-of-Circle-and-Draw-Circle-on-Map.aspx</span>
+<span class="rem">*/</span>
+<span class="kwrd">using</span> System;
+<span class="kwrd">using</span> System.Collections.Generic;
+<span class="kwrd">using</span> Microsoft.Maps.MapControl;
+
+<span class="kwrd">namespace</span> SLBingMaps_DrawCircle
+{
+    <span class="kwrd">public</span> <span class="kwrd">enum</span> DistanceMeasure
+    {
+        Miles,
+        Kilometers
+    }
+
+    <span class="kwrd">public</span> <span class="kwrd">class</span> GeoCodeCalc
+    {
+        <span class="kwrd">public</span> <span class="kwrd">const</span> <span class="kwrd">double</span> EarthRadiusInMiles = 3956.0;
+        <span class="kwrd">public</span> <span class="kwrd">const</span> <span class="kwrd">double</span> EarthRadiusInKilometers = 6367.0;
+
+        <span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">double</span> ToRadian(<span class="kwrd">double</span> degrees)
+        {
+            <span class="kwrd">return</span> degrees * (Math.PI / 180);
+        }
+
+        <span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">double</span> ToDegrees(<span class="kwrd">double</span> radians)
+        {
+            <span class="kwrd">return</span> radians * (180 / Math.PI);
+        }
+
+        <span class="kwrd">public</span> <span class="kwrd">static</span> LocationCollection CreateCircle(Location center, <span class="kwrd">double</span> radius, DistanceMeasure units)
+        {
+            var earthRadius = (units == DistanceMeasure.Miles ? GeoCodeCalc.EarthRadiusInMiles : GeoCodeCalc.EarthRadiusInKilometers);
+            var lat = ToRadian(center.Latitude); <span class="rem">//radians</span>
+            var lng = ToRadian(center.Longitude); <span class="rem">//radians</span>
+            var d = radius / earthRadius; <span class="rem">// d = angular distance covered on earth's surface</span>
+            var locations = <span class="kwrd">new</span> LocationCollection();
+
+            <span class="kwrd">for</span> (var x = 0; x <= 360; x++)
+            {
+                var brng = ToRadian(x);
+                var latRadians = Math.Asin(Math.Sin(lat) * Math.Cos(d) + Math.Cos(lat) * Math.Sin(d) * Math.Cos(brng));
+                var lngRadians = lng + Math.Atan2(Math.Sin(brng) * Math.Sin(d) * Math.Cos(lat), Math.Cos(d) - Math.Sin(lat) * Math.Sin(latRadians));
+
+                locations.Add(<span class="kwrd">new</span> Location(ToDegrees(latRadians), ToDegrees(lngRadians)));
+            }
+
+            <span class="kwrd">return</span> locations;
+        }
+    }
+}</pre>

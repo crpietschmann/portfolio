@@ -39,7 +39,8 @@ Here’s some documentation for the “Pushpin.moveLocation” method:
 
 **Pushpin.moveLocation(location, speed)**
 
-  <br />This methods moves the pushpin to a new location using an animation of slowly moving the pushpin over the period of the specified interval.
+  
+This methods moves the pushpin to a new location using an animation of slowly moving the pushpin over the period of the specified interval.
 
 <ol>
   <li>**location **– The Location to move the pushpin to.</li>

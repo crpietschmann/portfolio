@@ -24,8 +24,33 @@ So, I decided to upgrade the code example to support VE6, and support both Miles
 
 And, in case you don't feel like downloading the example code that uses it, here's the source to the method that calculates the points that make up the radius: 
 
-```javascript<br /> /* *************************************************************************** */<br /> /* Written Chris Pietschmann (<a href="/"></a>) */<br /> /* This code is dependant on the GeoCodeCalc class found here: */<br /> /* <a href="/Blog/Post.aspx?PostID=1453">/Blog/Post.aspx?PostID=1453</a> */<br /> /* *************************************************************************** */<br /> /* This mathimatical code is a modified version of the code originally posted */<br /> /* at the following location: *//* <a href="http://viavirtualearth.com/Wiki/Draw+a+circle.ashx">http://viavirtualearth.com/Wiki/Draw+a+circle.ashx</a> */<br /> /* *************************************************************************** */<br /> if (GeoCodeCalc == undefined) <br />     var GeoCodeCalc = {}
+```javascript
+ /* *************************************************************************** */
+ /* Written Chris Pietschmann (<a href="/"></a>) */
+ /* This code is dependant on the GeoCodeCalc class found here: */
+ /* <a href="/Blog/Post.aspx?PostID=1453">/Blog/Post.aspx?PostID=1453</a> */
+ /* *************************************************************************** */
+ /* This mathimatical code is a modified version of the code originally posted */
+ /* at the following location: *//* <a href="http://viavirtualearth.com/Wiki/Draw+a+circle.ashx">http://viavirtualearth.com/Wiki/Draw+a+circle.ashx</a> */
+ /* *************************************************************************** */
+ if (GeoCodeCalc == undefined) 
+     var GeoCodeCalc = {}
 
 GeoCodeCalc.ToDegrees = function(radians){ return radians * 180 / Math.PI;};
 
-function CreateCircle(loc, radius, units){ <br /> var earthRadius = parseFloat(units); <br /> var lat = GeoCodeCalc.ToRadian(loc.Latitude); //radians <br /> var lon = GeoCodeCalc.ToRadian(loc.Longitude); //radians <br /> var d = parseFloat(radius) / earthRadius; // d = angular distance covered on earth&amp;#39;s surface <br /> var locs = new Array(); <br /> for (x = 0; x &amp;lt;= 360; x++) { <br /> var p2 = new VELatLong(0,0) <br /> brng = GeoCodeCalc.ToRadian(x); //radians <br /> var latRadians = Math.asin(Math.sin(lat) * Math.cos(d) + Math.cos(lat) * Math.sin(d) * Math.cos(brng)); <br /> var lngRadians = lon + Math.atan2(Math.sin(brng) * Math.sin(d) * Math.cos(lat), Math.cos(d) - Math.sin(lat) * Math.sin(latRadians)); <br /> locs.push(new VELatLong(GeoCodeCalc.ToDegrees(latRadians), GeoCodeCalc.ToDegrees(lngRadians))); <br /> } <br /> return new VEShape(VEShapeType.Polyline, locs); <br /> }<br /> ```
+function CreateCircle(loc, radius, units){ 
+ var earthRadius = parseFloat(units); 
+ var lat = GeoCodeCalc.ToRadian(loc.Latitude); //radians 
+ var lon = GeoCodeCalc.ToRadian(loc.Longitude); //radians 
+ var d = parseFloat(radius) / earthRadius; // d = angular distance covered on earth&amp;#39;s surface 
+ var locs = new Array(); 
+ for (x = 0; x &amp;lt;= 360; x++) { 
+ var p2 = new VELatLong(0,0) 
+ brng = GeoCodeCalc.ToRadian(x); //radians 
+ var latRadians = Math.asin(Math.sin(lat) * Math.cos(d) + Math.cos(lat) * Math.sin(d) * Math.cos(brng)); 
+ var lngRadians = lon + Math.atan2(Math.sin(brng) * Math.sin(d) * Math.cos(lat), Math.cos(d) - Math.sin(lat) * Math.sin(latRadians)); 
+ locs.push(new VELatLong(GeoCodeCalc.ToDegrees(latRadians), GeoCodeCalc.ToDegrees(lngRadians))); 
+ } 
+ return new VEShape(VEShapeType.Polyline, locs); 
+ }
+ ```

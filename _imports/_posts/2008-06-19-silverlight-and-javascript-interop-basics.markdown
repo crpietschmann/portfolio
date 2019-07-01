@@ -93,7 +93,8 @@ Here's some examples of casting the ScriptObject to different data types to retu
 One thing to always rememer when casting the object returned to a specific data type, is to check for NULL before casting, just to make sure a value was returned. 
 
 <h3>Returning Objects From JavaScript Method Calls and Accessing Its Methods and Properties
-  <br /></h3>
+  
+</h3>
 
 
 You can also pass back Objects to Silverlight from your JavaScript methods calls. Instead of casting the object returned from the Eval or Invoke method call to a double, string or any other data type; you'll need to cast it to a ScriptObject. ScriptObject is basically the data type used for a &quot;general&quot; JavaScript object.

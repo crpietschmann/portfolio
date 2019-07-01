@@ -124,4 +124,5 @@ Here's a full code sample demonstrating this. This sample allows you to click on
 </body>
 </html></pre>
 
-You can find the original MSDN article here: <br /><a href="http://msdn.microsoft.com/en-us/library/cc451895.aspx">http://msdn.microsoft.com/en-us/library/cc451895.aspx</a>
+You can find the original MSDN article here: 
+<a href="http://msdn.microsoft.com/en-us/library/cc451895.aspx">http://msdn.microsoft.com/en-us/library/cc451895.aspx</a>

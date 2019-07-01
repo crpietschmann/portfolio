@@ -20,6 +20,9 @@ If you look at the code for <a href="http://codeplex.com/blogengine">BlogEngine.
 
 <a href="http://www.codeplex.com/blogengine/SourceControl/ListDownloadableCommits.aspx">Go check out the code and learn how to implement the ASP.NET Provider Model by example!</a>
 
-Related Links:<br /> <a href="http://msdn2.microsoft.com/en-us/library/aa479030.aspx">Introduction to the Provider Model</a><br /> <a href="http://www.codeplex.com/blogengine">BlogEngine.NET</a> - full featured blog engine targeted at .NET developers. It is light weight and very simple to modify and extend.<br /> <a href="http://blog.madskristensen.dk">.NET Slave - Mads Kristensen's Blog</a> (don't forget to thank him for BlogEngine.NET!)
+Related Links:
+ <a href="http://msdn2.microsoft.com/en-us/library/aa479030.aspx">Introduction to the Provider Model</a>
+ <a href="http://www.codeplex.com/blogengine">BlogEngine.NET</a> - full featured blog engine targeted at .NET developers. It is light weight and very simple to modify and extend.
+ <a href="http://blog.madskristensen.dk">.NET Slave - Mads Kristensen's Blog</a> (don't forget to thank him for BlogEngine.NET!)
 
 Thanks Mads!

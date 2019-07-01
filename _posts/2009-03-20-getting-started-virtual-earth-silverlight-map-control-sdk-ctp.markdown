@@ -57,23 +57,45 @@ For those Virtual Earth developers new to Silverlight; If you need help getting 
 <h3>Let&rsquo;s Display a Map in Silverlight</h3>
 <h5>Create a New Silverlight Application Project</h5>
 <ol>
-<li>Run Visual Studio 2008 and create a New Project using the **Silverlight Application** template.       <br /> <br /><a href="/images/posts/CreateSilverlightApplicationProject.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="CreateSilverlightApplicationProject" src="/images/posts/CreateSilverlightApplicationProject_thumb.png" border="0" alt="CreateSilverlightApplicationProject" width="706" height="486" /></a> </li>
-<li>In the &ldquo;Add Silverlight Application&rdquo; dialog box, select the &ldquo;**Add a new ASP.NET Web project to the solution to host Silverlight**&rdquo; option and click &ldquo;OK&rdquo;. You must select this option to create an ASP.NET Web Application Project or ASP.NET Website because the <a href="http://msdn.microsoft.com/en-us/library/cc189008(VS.95).aspx" target="_blank">URL Access Restrictions in Silverlight</a> require the page that hosts the Map control to be hosted using HTTP in order to load/access the Virtual Earth Map Tiles.       <br /> <br /><a href="/images/posts/AddNewASP.NETWebProject.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="AddNewASP.NETWebProject" src="/images/posts/AddNewASP.NETWebProject_thumb.png" border="0" alt="AddNewASP.NETWebProject" width="457" height="409" /></a> </li>
+<li>Run Visual Studio 2008 and create a New Project using the **Silverlight Application** template.       
+ 
+<a href="/images/posts/CreateSilverlightApplicationProject.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="CreateSilverlightApplicationProject" src="/images/posts/CreateSilverlightApplicationProject_thumb.png" border="0" alt="CreateSilverlightApplicationProject" width="706" height="486" /></a> </li>
+<li>In the &ldquo;Add Silverlight Application&rdquo; dialog box, select the &ldquo;**Add a new ASP.NET Web project to the solution to host Silverlight**&rdquo; option and click &ldquo;OK&rdquo;. You must select this option to create an ASP.NET Web Application Project or ASP.NET Website because the <a href="http://msdn.microsoft.com/en-us/library/cc189008(VS.95).aspx" target="_blank">URL Access Restrictions in Silverlight</a> require the page that hosts the Map control to be hosted using HTTP in order to load/access the Virtual Earth Map Tiles.       
+ 
+<a href="/images/posts/AddNewASP.NETWebProject.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="AddNewASP.NETWebProject" src="/images/posts/AddNewASP.NETWebProject_thumb.png" border="0" alt="AddNewASP.NETWebProject" width="457" height="409" /></a> </li>
 </ol>
 <h4>Add a Reference to Microsoft.VirtualEarth.MapControl.dll</h4>
 <ol>
-<li>Go to the &ldquo;**Solution Explorer**&rdquo; and Right-Click &ldquo;**References**&rdquo; in the Silverlight Project (not the ASP.NET Web Application Project), and Select &ldquo;**Add Reference&hellip;**&rdquo;       <br /> <br /><a href="/images/posts/VEJS_003_AddReferenceToMapControlDLL.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_003_AddReferenceToMapControlDLL" src="/images/posts/VEJS_003_AddReferenceToMapControlDLL_thumb.png" border="0" alt="VEJS_003_AddReferenceToMapControlDLL" width="365" height="354" /></a> </li>
-<li>Within the &ldquo;Add Reference&rdquo; Dialog, Select the &ldquo;**Browse**&rdquo; tab and navigate to the folder where the SDK is installed, and select the &ldquo;**Microsoft.VirtualEarth.MapControl.dll**&rdquo;.       <br /> <br />*Note: By Default the SDK is installed in this folder &ldquo;C:\Program Files (x86)\Microsoft Virtual Earth Silverlight Map Control\CTP\Libraries&rdquo;        <br /> <br /><a href="/images/posts/VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile" src="/images/posts/VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile_thumb.png" border="0" alt="VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile" width="735" height="450" /></a> *</li>
+<li>Go to the &ldquo;**Solution Explorer**&rdquo; and Right-Click &ldquo;**References**&rdquo; in the Silverlight Project (not the ASP.NET Web Application Project), and Select &ldquo;**Add Reference&hellip;**&rdquo;       
+ 
+<a href="/images/posts/VEJS_003_AddReferenceToMapControlDLL.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_003_AddReferenceToMapControlDLL" src="/images/posts/VEJS_003_AddReferenceToMapControlDLL_thumb.png" border="0" alt="VEJS_003_AddReferenceToMapControlDLL" width="365" height="354" /></a> </li>
+<li>Within the &ldquo;Add Reference&rdquo; Dialog, Select the &ldquo;**Browse**&rdquo; tab and navigate to the folder where the SDK is installed, and select the &ldquo;**Microsoft.VirtualEarth.MapControl.dll**&rdquo;.       
+ 
+*Note: By Default the SDK is installed in this folder &ldquo;C:\Program Files (x86)\Microsoft Virtual Earth Silverlight Map Control\CTP\Libraries&rdquo;        
+ 
+<a href="/images/posts/VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile" src="/images/posts/VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile_thumb.png" border="0" alt="VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile" width="735" height="450" /></a> *</li>
 </ol>
 <h4>Display a Virtual Earth Map</h4>
 <ol>
-<li>Add a Namespace declaration to to Page.xaml for the Microsoft.VirtualEarth.MapControl namespace.      <br />To do this add the following to the <UserControl> tag:       <br />*xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"        <br />*</li>
-<li>Add the Map Control to Page by adding the following tag within the Grid in the Page:      <br />*<m:Map></m:Map>* </li>
+<li>Add a Namespace declaration to to Page.xaml for the Microsoft.VirtualEarth.MapControl namespace.      
+To do this add the following to the <UserControl> tag:       
+*xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"        
+*</li>
+<li>Add the Map Control to Page by adding the following tag within the Grid in the Page:      
+*<m:Map></m:Map>* </li>
 </ol>
 
 The resulting Page.xaml will look like this:
 
-<UserControl x:Class="VirtualEarthSilverlightApplication1.Page"    <br />    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     <br />    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     <br />    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     <br />    Width="400" Height="300">     <br />    <Grid x:Name="LayoutRoot" Background="White">     <br />        <m:Map></m:Map>     <br />    </Grid>     <br /></UserControl>
+<UserControl x:Class="VirtualEarthSilverlightApplication1.Page"    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     
+    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     
+    Width="400" Height="300">     
+    <Grid x:Name="LayoutRoot" Background="White">     
+        <m:Map></m:Map>     
+    </Grid>     
+</UserControl>
 
  
 
@@ -88,23 +110,49 @@ Below are examples using XAML and C#.
 
 **XAML:** You can change the Map Mode declaratively using XAML by just setting the &ldquo;Mode&rdquo; property. For Example, setting it to &ldquo;Aerial&rdquo; will change the Map Mode to AerialMapMode.
 
-<UserControl x:Class="VirtualEarthSilverlightApplication1.Page"    <br />    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     <br />    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     <br />    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     <br />    Width="400" Height="300">     <br />    <Grid x:Name="LayoutRoot" Background="White">     <br />        <m:Map Mode="Aerial"></m:Map>     <br />    </Grid>     <br /></UserControl>
+<UserControl x:Class="VirtualEarthSilverlightApplication1.Page"    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     
+    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     
+    Width="400" Height="300">     
+    <Grid x:Name="LayoutRoot" Background="White">     
+        <m:Map Mode="Aerial"></m:Map>     
+    </Grid>     
+</UserControl>
 
  
 
 **C#:** You can also change the Map Mode just as easily programatically using C#. Here&rsquo;s the same example of setting the Map Mode to AerialMapMode within the Page constructor:
 
-using System.Windows.Controls;    <br />using Microsoft.VirtualEarth.MapControl;
+using System.Windows.Controls;    
+using Microsoft.VirtualEarth.MapControl;
 
-namespace VirtualEarthSilverlightApplication1    <br />{     <br />    public partial class Page : UserControl     <br />    {     <br />        public Page()     <br />        {     <br />            InitializeComponent();
+namespace VirtualEarthSilverlightApplication1    
+{     
+    public partial class Page : UserControl     
+    {     
+        public Page()     
+        {     
+            InitializeComponent();
 
-            Map1.Mode = new AerialMode();    <br />        }     <br />    }     <br />}
+            Map1.Mode = new AerialMode();    
+        }     
+    }     
+}
 
  
 
 First, in order to access the Map Control programatically you&rsquo;ll need to set it&rsquo;s &ldquo;Name&rdquo; property within XAML; like the following:
 
-<UserControl x:Class="VirtualEarthSilverlightApplication1.Page"    <br />    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     <br />    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     <br />    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     <br />    Width="400" Height="300">     <br />    <Grid x:Name="LayoutRoot" Background="White">     <br />        <m:Map Name="Map1"></m:Map>     <br />    </Grid>     <br /></UserControl>
+<UserControl x:Class="VirtualEarthSilverlightApplication1.Page"    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     
+    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     
+    Width="400" Height="300">     
+    <Grid x:Name="LayoutRoot" Background="White">     
+        <m:Map Name="Map1"></m:Map>     
+    </Grid>     
+</UserControl>
 
  
 <h3>Conclusion</h3>

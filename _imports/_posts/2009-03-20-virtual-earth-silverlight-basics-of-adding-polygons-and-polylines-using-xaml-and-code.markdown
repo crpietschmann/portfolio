@@ -38,16 +38,49 @@ When adding Polygons to the Map you add your MapPolygon object instance to the M
 
 Here&rsquo;s an example of adding a Polygon to a Map programmatically:
 
-MapPolygon polygon = new MapPolygon();    <br />polygon.Fill = new SolidColorBrush(Colors.Red);     <br />polygon.Stroke = new SolidColorBrush(Colors.Yellow);     <br />polygon.StrokeThickness = 5;     <br />polygon.Opacity = 0.7;     <br />polygon.Locations = new LocationCollection()     <br />{     <br />    new Location(20, -20),     <br />    new Location(20, 20),     <br />    new Location(-20, 20),     <br />    new Location(-20, -20)     <br />};
+MapPolygon polygon = new MapPolygon();    
+polygon.Fill = new SolidColorBrush(Colors.Red);     
+polygon.Stroke = new SolidColorBrush(Colors.Yellow);     
+polygon.StrokeThickness = 5;     
+polygon.Opacity = 0.7;     
+polygon.Locations = new LocationCollection()     
+{     
+    new Location(20, -20),     
+    new Location(20, 20),     
+    new Location(-20, 20),     
+    new Location(-20, -20)     
+};
 
-Map1.AddChild(polygon);    <br />// Map1.Children.Add(polygon); // <&mdash;This also works just the same
+Map1.AddChild(polygon);    
+// Map1.Children.Add(polygon); // <&mdash;This also works just the same
 
  
 <h4>Add a Polygon Declaratively using XAML</h4>
 
 One other neat thing that you can do is add Polygons to a Map declaratively using XAML. Here&rsquo;s an example:
 
-<UserControl x:Class="VirtualEarthSilverlightApplication1.Page"    <br />    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     <br />    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     <br />    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     <br />    Width="400" Height="300">     <br />    <Grid x:Name="LayoutRoot" Background="White">     <br />        <m:Map Name="Map1">     <br />            <m:Map.Children>     <br />                <m:MapPolygon Fill="Red" Stroke="Yellow" StrokeThickness="5" Opacity="0.7">     <br />                    <m:MapPolygon.Locations>     <br />                        <m:LocationCollection>     <br />                            <m:Location>20, -20</m:Location>     <br />                            <m:Location>20, 20</m:Location>     <br />                            <m:Location>-20, 20</m:Location>     <br />                            <m:Location>-20, -20</m:Location>     <br />                        </m:LocationCollection>     <br />                    </m:MapPolygon.Locations>     <br />                </m:MapPolygon>     <br />            </m:Map.Children>     <br />        </m:Map>     <br />    </Grid>     <br /></UserControl>
+<UserControl x:Class="VirtualEarthSilverlightApplication1.Page"    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     
+    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     
+    Width="400" Height="300">     
+    <Grid x:Name="LayoutRoot" Background="White">     
+        <m:Map Name="Map1">     
+            <m:Map.Children>     
+                <m:MapPolygon Fill="Red" Stroke="Yellow" StrokeThickness="5" Opacity="0.7">     
+                    <m:MapPolygon.Locations>     
+                        <m:LocationCollection>     
+                            <m:Location>20, -20</m:Location>     
+                            <m:Location>20, 20</m:Location>     
+                            <m:Location>-20, 20</m:Location>     
+                            <m:Location>-20, -20</m:Location>     
+                        </m:LocationCollection>     
+                    </m:MapPolygon.Locations>     
+                </m:MapPolygon>     
+            </m:Map.Children>     
+        </m:Map>     
+    </Grid>     
+</UserControl>
 
  
 <h3>Adding Polylines to the Map</h3>
@@ -71,16 +104,48 @@ When adding Polylines to the Map you add your MapPolyline object instance to the
 
 Here&rsquo;s an example of adding a Polyline to a Map programmatically:
 
-MapPolyline polyline = new MapPolyline();    <br />polyline.Stroke = new SolidColorBrush(Colors.Yellow);     <br />polyline.StrokeThickness = 5;     <br />polyline.Opacity = 0.7;     <br />polyline.Locations = new LocationCollection()     <br />{     <br />    new Location(10, -10),     <br />    new Location(10, 10),     <br />    new Location(-10, -10),     <br />    new Location(-10, 10)     <br />};
+MapPolyline polyline = new MapPolyline();    
+polyline.Stroke = new SolidColorBrush(Colors.Yellow);     
+polyline.StrokeThickness = 5;     
+polyline.Opacity = 0.7;     
+polyline.Locations = new LocationCollection()     
+{     
+    new Location(10, -10),     
+    new Location(10, 10),     
+    new Location(-10, -10),     
+    new Location(-10, 10)     
+};
 
-Map1.AddChild(polyline);    <br />// Map1.Children.Add(polyline); // <&mdash;This also works just the same
+Map1.AddChild(polyline);    
+// Map1.Children.Add(polyline); // <&mdash;This also works just the same
 
  
 <h4>Add a Polyline Declaratively using XAML</h4>
 
 One other neat thing that you can do is add Polylines to a Map declaratively using XAML. Here&rsquo;s an example:
 
-<UserControl x:Class="VirtualEarthSilverlightApplication1.Page"    <br />    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     <br />    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     <br />    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     <br />    Width="400" Height="300">     <br />    <Grid x:Name="LayoutRoot" Background="White">     <br />        <m:Map Name="Map1">     <br />            <m:Map.Children>     <br />                <m:MapPolyline Stroke="Yellow" StrokeThickness="5" Opacity="0.7">     <br />                    <m:MapPolyline.Locations>     <br />                        <m:LocationCollection>     <br />                            <m:Location>10, -10</m:Location>     <br />                            <m:Location>10, 10</m:Location>     <br />                            <m:Location>-10, -10</m:Location>     <br />                            <m:Location>-10, 10</m:Location>     <br />                        </m:LocationCollection>     <br />                    </m:MapPolyline.Locations>     <br />                </m:MapPolyline>     <br />            </m:Map.Children>     <br />        </m:Map>     <br />    </Grid>     <br /></UserControl>
+<UserControl x:Class="VirtualEarthSilverlightApplication1.Page"    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     
+    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     
+    Width="400" Height="300">     
+    <Grid x:Name="LayoutRoot" Background="White">     
+        <m:Map Name="Map1">     
+            <m:Map.Children>     
+                <m:MapPolyline Stroke="Yellow" StrokeThickness="5" Opacity="0.7">     
+                    <m:MapPolyline.Locations>     
+                        <m:LocationCollection>     
+                            <m:Location>10, -10</m:Location>     
+                            <m:Location>10, 10</m:Location>     
+                            <m:Location>-10, -10</m:Location>     
+                            <m:Location>-10, 10</m:Location>     
+                        </m:LocationCollection>     
+                    </m:MapPolyline.Locations>     
+                </m:MapPolyline>     
+            </m:Map.Children>     
+        </m:Map>     
+    </Grid>     
+</UserControl>
 
  
 <h3>Adding Shape Layers</h3>
@@ -91,13 +156,28 @@ To use the MapLayer object you simply create a new MapLayer, add your Shapes (Po
 
 Here&rsquo;s an example of doing this:
 
-// Create MapLayer    <br />MapLayer myShapeLayer = new MapLayer();
+// Create MapLayer    
+MapLayer myShapeLayer = new MapLayer();
 
-// Create Polygon    <br />MapPolygon polygon = new MapPolygon();     <br />polygon.Fill = new SolidColorBrush(Colors.Red);     <br />polygon.Stroke = new SolidColorBrush(Colors.Yellow);     <br />polygon.StrokeThickness = 5;     <br />polygon.Opacity = 0.7;     <br />polygon.Locations = new LocationCollection()     <br />{     <br />    new Location(20, -20),     <br />    new Location(20, 20),     <br />    new Location(-20, 20),     <br />    new Location(-20, -20)     <br />};
+// Create Polygon    
+MapPolygon polygon = new MapPolygon();     
+polygon.Fill = new SolidColorBrush(Colors.Red);     
+polygon.Stroke = new SolidColorBrush(Colors.Yellow);     
+polygon.StrokeThickness = 5;     
+polygon.Opacity = 0.7;     
+polygon.Locations = new LocationCollection()     
+{     
+    new Location(20, -20),     
+    new Location(20, 20),     
+    new Location(-20, 20),     
+    new Location(-20, -20)     
+};
 
-// Add Polygon to the Layer    <br />myShapeLayer.AddChild(polygon);
+// Add Polygon to the Layer    
+myShapeLayer.AddChild(polygon);
 
-// Add the Layer to the Map    <br />Map1.AddChild(myShapeLayer);
+// Add the Layer to the Map    
+Map1.AddChild(myShapeLayer);
 
  
 <h3>Easily Add a &ldquo;Hover Over&rdquo; Effect Via Tooltips</h3>
@@ -109,22 +189,69 @@ If you want to quickly and easily add some content that gets displayed when the 
 Here are some code examples of doing this that add to the above Polygon examples (the exact same can be done with Polylines).
 <h4>Add Tooltip Declaratively using XAML</h4>
 
-<UserControl x:Class="VirtualEarthSilverlightApplication1.Page"    <br />    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     <br />    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     <br />    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     <br />    Width="400" Height="300">     <br />    <Grid x:Name="LayoutRoot" Background="White">     <br />        <m:Map Name="Map1">     <br />            <m:Map.Children>     <br />                <m:MapPolygon Fill="Red" Stroke="Yellow" StrokeThickness="5" Opacity="0.7">     <br />                    <ToolTipService.ToolTip>     <br />                        <StackPanel>     <br />                            <TextBlock FontWeight="Bold">A Huge Square Title</TextBlock>     <br />                            <TextBlock>This is an arbitrary description of the "Huge Square" to be displayed within the Tooltip.</TextBlock>     <br />                        </StackPanel>     <br />                    </ToolTipService.ToolTip>     <br />                    <m:MapPolygon.Locations>     <br />                        <m:LocationCollection>     <br />                            <m:Location>20, -20</m:Location>     <br />                            <m:Location>20, 20</m:Location>     <br />                            <m:Location>-20, 20</m:Location>     <br />                            <m:Location>-20, -20</m:Location>     <br />                        </m:LocationCollection>     <br />                    </m:MapPolygon.Locations>     <br />                </m:MapPolygon>     <br />            </m:Map.Children>     <br />        </m:Map>     <br />    </Grid>     <br /></UserControl>
+<UserControl x:Class="VirtualEarthSilverlightApplication1.Page"    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     
+    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     
+    Width="400" Height="300">     
+    <Grid x:Name="LayoutRoot" Background="White">     
+        <m:Map Name="Map1">     
+            <m:Map.Children>     
+                <m:MapPolygon Fill="Red" Stroke="Yellow" StrokeThickness="5" Opacity="0.7">     
+                    <ToolTipService.ToolTip>     
+                        <StackPanel>     
+                            <TextBlock FontWeight="Bold">A Huge Square Title</TextBlock>     
+                            <TextBlock>This is an arbitrary description of the "Huge Square" to be displayed within the Tooltip.</TextBlock>     
+                        </StackPanel>     
+                    </ToolTipService.ToolTip>     
+                    <m:MapPolygon.Locations>     
+                        <m:LocationCollection>     
+                            <m:Location>20, -20</m:Location>     
+                            <m:Location>20, 20</m:Location>     
+                            <m:Location>-20, 20</m:Location>     
+                            <m:Location>-20, -20</m:Location>     
+                        </m:LocationCollection>     
+                    </m:MapPolygon.Locations>     
+                </m:MapPolygon>     
+            </m:Map.Children>     
+        </m:Map>     
+    </Grid>     
+</UserControl>
 
  
 <h4>Add Tooltip Programmatically using Code</h4>
 
-// Declare Polygon    <br />MapPolygon polygon = new MapPolygon();     <br />polygon.Fill = new SolidColorBrush(Colors.Red);     <br />polygon.Stroke = new SolidColorBrush(Colors.Yellow);     <br />polygon.StrokeThickness = 5;     <br />polygon.Opacity = 0.7;     <br />polygon.Locations = new LocationCollection()     <br />{     <br />    new Location(20, -20),     <br />    new Location(20, 20),     <br />    new Location(-20, 20),     <br />    new Location(-20, -20)     <br />};
+// Declare Polygon    
+MapPolygon polygon = new MapPolygon();     
+polygon.Fill = new SolidColorBrush(Colors.Red);     
+polygon.Stroke = new SolidColorBrush(Colors.Yellow);     
+polygon.StrokeThickness = 5;     
+polygon.Opacity = 0.7;     
+polygon.Locations = new LocationCollection()     
+{     
+    new Location(20, -20),     
+    new Location(20, 20),     
+    new Location(-20, 20),     
+    new Location(-20, -20)     
+};
 
-// Add Tooltip    <br />var tooltipObject = new StackPanel();
+// Add Tooltip    
+var tooltipObject = new StackPanel();
 
-var title = new TextBlock();    <br />title.FontWeight = FontWeights.Bold;     <br />title.Text = "A Huge Square Title";     <br />tooltipObject.Children.Add(title);
+var title = new TextBlock();    
+title.FontWeight = FontWeights.Bold;     
+title.Text = "A Huge Square Title";     
+tooltipObject.Children.Add(title);
 
-var description = new TextBlock();    <br />description.Text = "This is an arbitrary description of the \"Huge Square\" to be displayed within the Tooltip.";     <br />tooltipObject.Children.Add(description);
+var description = new TextBlock();    
+description.Text = "This is an arbitrary description of the \"Huge Square\" to be displayed within the Tooltip.";     
+tooltipObject.Children.Add(description);
 
 ToolTipService.SetToolTip(polygon, tooltipObject);
 
-// Add Polygon to Map    <br />Map1.AddChild(polygon);     <br />// Map1.Children.Add(polygon); // <&mdash;This also works just the same
+// Add Polygon to Map    
+Map1.AddChild(polygon);     
+// Map1.Children.Add(polygon); // <&mdash;This also works just the same
 
  
 <h3>Conclusion</h3>

@@ -16,4 +16,32 @@ redirect_from:
 
 Its just 5 days until the awesome Deeper in <a title=".NET" href="http://www.microsoft.com/net/" target="_blank">.NET</a> 2005 event! I know this years event wont be anything less than last years. Go to the <a href="http://www.wi-ineta.org">http://www.wi-ineta.org</a> site for more information on this event.
 
-<br /> AGENDA for the Event<br /> (please visit us online at <a href="http://www.wi-ineta.org/DesktopDefault.aspx?tabid=41" target="_blank">http://www.wi-ineta.org/DesktopDefault.aspx?tabid=41</a> for<br /> newest details)<br /> <br /> 7:00am  - Registration and Check-In for Attendees<br /> <br /> 7:45am  - Brian Tinkler, Announcements and Introductions<br /> <br /> 8:00am  - Rocky Lhotka, Creation of Distributed Object-Oriented Applications in .NET<br /> <br /> 9:30am  - BREAK<br /> <br /> 9:45am  - Scott Guthrie, ASP.NET 2.0 &amp; Visual Studio Team System<br /> <br /> 11:45am - LUNCH (provided at Radisson Hotel)<br />                <br />                Speaker Q&amp;A Panel from 12pm - 1pm<br /> <br /> 1:15pm - Rob Howard, Blackbelt ASP.NET Tips &amp; Tricks<br /> <br /> 2:45pm  - Chris Mayo, ClickOnce with Visual Studio 2005<br /> <br /> 4:15pm - BREAK<br /> <br /> 4:30pm  - Jason Beres, Smart Client Applications with WinForms<br /> <br /> 6:00pm  - Raffle Prize Drawings (must be present to win - thousands of dollars in<br /> prizes)
+
+ AGENDA for the Event
+ (please visit us online at <a href="http://www.wi-ineta.org/DesktopDefault.aspx?tabid=41" target="_blank">http://www.wi-ineta.org/DesktopDefault.aspx?tabid=41</a> for
+ newest details)
+ 
+ 7:00am  - Registration and Check-In for Attendees
+ 
+ 7:45am  - Brian Tinkler, Announcements and Introductions
+ 
+ 8:00am  - Rocky Lhotka, Creation of Distributed Object-Oriented Applications in .NET
+ 
+ 9:30am  - BREAK
+ 
+ 9:45am  - Scott Guthrie, ASP.NET 2.0 &amp; Visual Studio Team System
+ 
+ 11:45am - LUNCH (provided at Radisson Hotel)
+                
+                Speaker Q&amp;A Panel from 12pm - 1pm
+ 
+ 1:15pm - Rob Howard, Blackbelt ASP.NET Tips &amp; Tricks
+ 
+ 2:45pm  - Chris Mayo, ClickOnce with Visual Studio 2005
+ 
+ 4:15pm - BREAK
+ 
+ 4:30pm  - Jason Beres, Smart Client Applications with WinForms
+ 
+ 6:00pm  - Raffle Prize Drawings (must be present to win - thousands of dollars in
+ prizes)

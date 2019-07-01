@@ -19,42 +19,50 @@ Here&#39;s links to some excellent resources for MS Virtual Earth development:
 
 
 
-<a href="http://garzilla.net/vemaps/">Virtual Earth Concepts by Mike Garza</a><br />
+<a href="http://garzilla.net/vemaps/">Virtual Earth Concepts by Mike Garza</a>
+
 These are some excellent concept examples for building rich user experiences with Virtual Earth. Some of the examples include: Draggable Shapes/Pushpins,  Select plotted Shapes using a Selection Box, and Sidebar listing plotted Shapes that highlights the Shape on the map when hovered over. Today he just posted two new examples of adding Drag Handles to Polygons and Polylines to allow the user to easily move/resize the shapes using the Mouse. These are some really excellent example! 
 
 
 
-<a href="http://viavirtualearth.com">ViaVirtualEarth</a> and <a href="http://www.viawindowslive.com/VirtualEarth.aspx">ViaWindowsLive</a><br />
+<a href="http://viavirtualearth.com">ViaVirtualEarth</a> and <a href="http://www.viawindowslive.com/VirtualEarth.aspx">ViaWindowsLive</a>
+
 Both of these sites are run by the same guys, but both contains some really excellent articles. I don&#39;t know if they are still updating ViaVirtualEarth, I believe ViaWindowsLive was created as a replacement. 
 
 
 
-<a href="http://dev.live.com/virtualearth/sdk">Virtual Earth Interactive SDK</a><br />
+<a href="http://dev.live.com/virtualearth/sdk">Virtual Earth Interactive SDK</a>
+
 This is the official interactive SDK for Virtual Earth. I should need to list this since everyone probably already knows about it, but it&#39;s such a great resourec I can&#39;t leave it out. 
 
 
 
-<a href="http://forums.msdn.microsoft.com/en-US/vemapcontroldev/threads/">Virtual Earth Forums on MSDN</a><br />
+<a href="http://forums.msdn.microsoft.com/en-US/vemapcontroldev/threads/">Virtual Earth Forums on MSDN</a>
+
 These are the official Microsoft forums for Virtual Earth development
 
 
 
-<a href="http://blogs.msdn.com/VirtualEarth3D/">Virtual Earth 3D Team Blog</a><br />
+<a href="http://blogs.msdn.com/VirtualEarth3D/">Virtual Earth 3D Team Blog</a>
+
 This is the new blog started by the Virtual Earth 3D Team. It already has a couple nice articles. I hope they keep this one up and keep adding content.
 
 
 
-<a href="http://blogs.msdn.com/VirtualEarth3D/">Hannes&#39;s Virtual Earth Blog</a><br />
+<a href="http://blogs.msdn.com/VirtualEarth3D/">Hannes&#39;s Virtual Earth Blog</a>
+
 He has alot of code posted on various topics working with Virtual Earth. Definately a nice resource.
 
 
 
-<a href="http://blogs.msdn.com/keithkin/default.aspx">Keith Kinnan&#39;s Blog</a><br />
+<a href="http://blogs.msdn.com/keithkin/default.aspx">Keith Kinnan&#39;s Blog</a>
+
 There is alot of Virtual Earth content posted here. An excellent resource.
 
 
 
-And lastly...<br />
+And lastly...
+
 You can find a bunch of the articles I&#39;ve written myself in the <a href="/category/Virtual-Earth.aspx">Virtual Earth category of my Blog</a>.
 
 

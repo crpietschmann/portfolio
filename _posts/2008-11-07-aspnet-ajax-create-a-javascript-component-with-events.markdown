@@ -17,7 +17,8 @@ redirect_from:
 
 In the spirit of my &quot;<a href="/post.aspx?id=349f567f-1615-4913-a702-ad70902933cb">Mixing OOP and Event Driving Programming</a>&quot; article I posted a couple days ago; this article discusses how to implement the same thing using the <a href="http://www.asp.net/ajax/">ASP.NET AJAX JavaScript Library</a>. Using inheritence (the ASP.NET AJAX way) it is even easier to implement a little Event Driven Model into your client-side, JavaScript classes/components.
 
-<h3>Event Driven Basics <br />
+<h3>Event Driven Basics 
+
 </h3>
 
 
@@ -29,17 +30,28 @@ First we&#39;ll start by creating a Person class that inherits from the Sys.Comp
 
 
 
-Person = function() {<br />
-    Person.initializeBase(this);<br />
-};<br />
-Person.prototype = {<br />
-    initialize: function() {<br />
-        Person.callBaseMethod(this, &quot;initialize&quot;);<br />
-   },<br />
-    dispose: function() {<br />
-        Person.callBaseMethod(this, &quot;dispose&quot;);<br />
-    }<br />
-};<br />
+Person = function() {
+
+    Person.initializeBase(this);
+
+};
+
+Person.prototype = {
+
+    initialize: function() {
+
+        Person.callBaseMethod(this, &quot;initialize&quot;);
+
+   },
+
+    dispose: function() {
+
+        Person.callBaseMethod(this, &quot;dispose&quot;);
+
+    }
+
+};
+
 Person.registerClass(&quot;Person&quot;, Sys.Component);
 
 
@@ -68,17 +80,27 @@ First, lets create a &quot;raiseEvent&quot; method, since this isn&#39;t created
 
 
 
-Person.prototype = {<br />
-    raiseEvent: function(eventName, eventArgs) {<br />
-        var handler = this.get_events().getHandler(eventName);<br />
-        if (handler) {<br />
-            if (!eventArgs) {<br />
-                eventArgs = Sys.EventArgs.Empty;<br />
+Person.prototype = {
+
+    raiseEvent: function(eventName, eventArgs) {
+
+        var handler = this.get_events().getHandler(eventName);
+
+        if (handler) {
+
+            if (!eventArgs) {
+
+                eventArgs = Sys.EventArgs.Empty;
+
     
-        }<br />
-            handler(this, eventArgs);<br />
-        }<br />
-    }<br />
+        }
+
+            handler(this, eventArgs);
+
+        }
+
+    }
+
 };
 
 
@@ -95,20 +117,34 @@ Now lets add the &quot;Name&quot; property (with accessors) to our Person class,
 
 
 
-Person.prototype = {<br />
-    get_Name: function() {<br />
-        return this._name;<br />
-    },<br />
-    set_Name: function(value) {<br />
-        // get old value<br />
-        var oldValue = this._name;<br />
-<br />
-        // set new value<br />
-        this._name = value;<br />
-<br />
-        // Raise the Event and send the old value as the &quot;EventArgs&quot;<br />
-       this.raiseEvent(&quot;onchangename&quot;, oldValue);<br />
-   }<br />
+Person.prototype = {
+
+    get_Name: function() {
+
+        return this._name;
+
+    },
+
+    set_Name: function(value) {
+
+        // get old value
+
+        var oldValue = this._name;
+
+
+
+        // set new value
+
+        this._name = value;
+
+
+
+        // Raise the Event and send the old value as the &quot;EventArgs&quot;
+
+       this.raiseEvent(&quot;onchangename&quot;, oldValue);
+
+   }
+
 };
 
 
@@ -125,15 +161,24 @@ Here&#39;s an example of using the Person class, and attaching a function to han
 
 
 
-var p = new Person();<br />
-<br />
-p.get_events().addHandler(<br />
-        &quot;onchangename&quot;,<br />
-        function(sender, eventArgs) {<br />
-            alert(&quot;Old Value: &quot; + eventArgs);<br />
-        }<br />
-    );<br />
-<br />
+var p = new Person();
+
+
+
+p.get_events().addHandler(
+
+        &quot;onchangename&quot;,
+
+        function(sender, eventArgs) {
+
+            alert(&quot;Old Value: &quot; + eventArgs);
+
+        }
+
+    );
+
+
+
 p.set_Name(&quot;Charlie&quot;);
 
 
@@ -161,18 +206,30 @@ To do this, we&#39;ll first create our own custom EventArgs class that inherits 
 
 
 
-PersonEventArgs = function(oldNameValue, newNameValue) {<br />
-    this._oldName = oldNameValue;<br />
-    this._newName = newNameValue;<br />
-};<br />
-PersonEventArgs.prototype = {<br />
-    get_OldName: function() {<br />
-        return this._oldName;<br />
-    },<br />
-    get_NewName: function() {<br />
-        return this._newName;<br />
-    }<br />
-};<br />
+PersonEventArgs = function(oldNameValue, newNameValue) {
+
+    this._oldName = oldNameValue;
+
+    this._newName = newNameValue;
+
+};
+
+PersonEventArgs.prototype = {
+
+    get_OldName: function() {
+
+        return this._oldName;
+
+    },
+
+    get_NewName: function() {
+
+        return this._newName;
+
+    }
+
+};
+
 PersonEventArgs.registerClass(&quot;PersonEventArgs&quot;, Sys.EventArgs);
 
 
@@ -205,12 +262,18 @@ Now to access the &quot;OldName&quot; and &quot;NewName&quot; properties of the 
 
 
 
-var p = new Person();<br />
-p.get_events().addHandler(<br />
-    &quot;onchangename&quot;,<br />
-    function(sender, eventArgs) {<br />
-        alert(&quot;Old Name: &quot; + eventArgs.get_OldName();<br />
-        alert(&quot;New Name: &quot; + eventArgs.get_NewName();<br />
+var p = new Person();
+
+p.get_events().addHandler(
+
+    &quot;onchangename&quot;,
+
+    function(sender, eventArgs) {
+
+        alert(&quot;Old Name: &quot; + eventArgs.get_OldName();
+
+        alert(&quot;New Name: &quot; + eventArgs.get_NewName();
+
    });
 
 
@@ -228,13 +291,20 @@ Having to call the &quot;get_events&quot; method, the calling the &quot;addHandl
 
 
 
-Person.prototype = {<br />
-    add_changeName: function(handler) {<br />
-        this.get_events().addHandler(&quot;onchangename&quot;, handler);<br />
-    },<br />
-    remove_changeName: function(handler) {<br />
-        this.get_events().removeHandler(&quot;onchangename&quot;, handler);<br />
-    }<br />
+Person.prototype = {
+
+    add_changeName: function(handler) {
+
+        this.get_events().addHandler(&quot;onchangename&quot;, handler);
+
+    },
+
+    remove_changeName: function(handler) {
+
+        this.get_events().removeHandler(&quot;onchangename&quot;, handler);
+
+    }
+
 };
 
 
@@ -251,10 +321,14 @@ If you compare the below example of adding an event handler for the &quot;onchan
 
 
 
-var p = new Person();<br />
-p.add_changeName(function(sender, eventArgs) {<br />
-        alert(&quot;Old Name: &quot; + eventArgs.get_OldName();<br />
-        alert(&quot;New Name: &quot; + eventArgs.get_NewName();<br />
+var p = new Person();
+
+p.add_changeName(function(sender, eventArgs) {
+
+        alert(&quot;Old Name: &quot; + eventArgs.get_OldName();
+
+        alert(&quot;New Name: &quot; + eventArgs.get_NewName();
+
    }); 
 
 
@@ -276,15 +350,24 @@ First, the example usage code:
 
 
 
-var p = new Person();<br />
-<br />
-p.add_changeName(function(sender, eventArgs) {<br />
-    alert(&quot;Old Name: &quot; + eventArgs.get_OldName());<br />
-    //alert(&quot;New Name: &quot; + eventArgs.get_NewName());<br />
-});<br />
-<br />
-p.set_Name(&quot;Charlie&quot;);<br />
-<br />
+var p = new Person();
+
+
+
+p.add_changeName(function(sender, eventArgs) {
+
+    alert(&quot;Old Name: &quot; + eventArgs.get_OldName());
+
+    //alert(&quot;New Name: &quot; + eventArgs.get_NewName());
+
+});
+
+
+
+p.set_Name(&quot;Charlie&quot;);
+
+
+
 p.set_Name(&quot;Chris&quot;); 
 
 
@@ -301,64 +384,122 @@ And, now the full Person and PersonEventArgs code:
 
 
 
-Person = function() {<br />
-    Person.initializeBase(this);<br />
-    this._name = null;<br />
-};<br />
-Person.prototype = {<br />
-    initialize: function() {<br />
-        Person.callBaseMethod(this, &quot;initialize&quot;);<br />
-    },<br />
-    dispose: function() {<br />
-        Person.callBaseMethod(this, &quot;dispose&quot;);<br />
-    },<br />
-<br />
-    raiseEvent: function(eventName, eventArgs) {<br />
-        var handler = this.get_events().getHandler(eventName);<br />
-        if (handler) {<br />
-            if (!eventArgs) {<br />
-                eventArgs = Sys.EventArgs.Empty;<br />
-            }<br />
-            handler(this, eventArgs);<br />
-        }<br />
-    },<br />
-<br />
-    // Property Accessors<br />
-    get_Name: function() {<br />
-        return this._name;<br />
-    },<br />
-    set_Name: function(value) {<br />
-        // get old value<br />
-        var oldValue = this._name;<br />
-<br />
-        // set new value<br />
-        this._name = value;<br />
-<br />
-        // Raise the Event and send the old value as the &quot;EventArgs&quot;<br />
-        this.raiseEvent(&quot;onchangename&quot;, new PersonEventArgs(oldValue, this._name));<br />
-    },<br />
-<br />
-    add_changeName: function(handler) {<br />
-        this.get_events().addHandler(&quot;onchangename&quot;, handler);<br />
-    },<br />
-    remove_changeName: function(handler) {<br />
-        this.get_events().removeHandler(&quot;onchangename&quot;, handler);<br />
-    }<br />
-};<br />
-Person.registerClass(&quot;Person&quot;, Sys.Component);<br />
-<br />
-PersonEventArgs = function(oldNameValue, newNameValue) {<br />
-    this._oldName = oldNameValue;<br />
-    this._newName = newNameValue;<br />
-};<br />
-PersonEventArgs.prototype = {<br />
-    get_OldName: function() {<br />
-        return this._oldName;<br />
-    },<br />
-    get_NewName: function() {<br />
-        return this._newName;<br />
-    }<br />
-};<br />
+Person = function() {
+
+    Person.initializeBase(this);
+
+    this._name = null;
+
+};
+
+Person.prototype = {
+
+    initialize: function() {
+
+        Person.callBaseMethod(this, &quot;initialize&quot;);
+
+    },
+
+    dispose: function() {
+
+        Person.callBaseMethod(this, &quot;dispose&quot;);
+
+    },
+
+
+
+    raiseEvent: function(eventName, eventArgs) {
+
+        var handler = this.get_events().getHandler(eventName);
+
+        if (handler) {
+
+            if (!eventArgs) {
+
+                eventArgs = Sys.EventArgs.Empty;
+
+            }
+
+            handler(this, eventArgs);
+
+        }
+
+    },
+
+
+
+    // Property Accessors
+
+    get_Name: function() {
+
+        return this._name;
+
+    },
+
+    set_Name: function(value) {
+
+        // get old value
+
+        var oldValue = this._name;
+
+
+
+        // set new value
+
+        this._name = value;
+
+
+
+        // Raise the Event and send the old value as the &quot;EventArgs&quot;
+
+        this.raiseEvent(&quot;onchangename&quot;, new PersonEventArgs(oldValue, this._name));
+
+    },
+
+
+
+    add_changeName: function(handler) {
+
+        this.get_events().addHandler(&quot;onchangename&quot;, handler);
+
+    },
+
+    remove_changeName: function(handler) {
+
+        this.get_events().removeHandler(&quot;onchangename&quot;, handler);
+
+    }
+
+};
+
+Person.registerClass(&quot;Person&quot;, Sys.Component);
+
+
+
+PersonEventArgs = function(oldNameValue, newNameValue) {
+
+    this._oldName = oldNameValue;
+
+    this._newName = newNameValue;
+
+};
+
+PersonEventArgs.prototype = {
+
+    get_OldName: function() {
+
+        return this._oldName;
+
+    },
+
+    get_NewName: function() {
+
+        return this._newName;
+
+    }
+
+};
+
 PersonEventArgs.registerClass(&quot;PersonEventArgs&quot;, Sys.EventArgs); 
 
 

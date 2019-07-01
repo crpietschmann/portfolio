@@ -102,5 +102,6 @@ Also, if the case is a standard ATX case, then you&#39;ll also need to verify th
 
 
 
-**Happy System Building!**<br />
+**Happy System Building!**
+
 

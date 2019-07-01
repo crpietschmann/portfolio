@@ -37,7 +37,29 @@ And here's the usage code for putting your badge on your site:
 
 [ code:html ]
 
-<%@ Register Src="~/StackOverflowBadge.ascx" TagPrefix="StackOverflow" TagName="Badge" %> <br /> <br /> <style type="text/css"><br />     .stackoverflow-badge {border: solid 1px black; padding: 2px;}<br />     .stackoverflow-badge .user-info .user-gravatar32{float: left; width: 32px;}<br />     .stackoverflow-badge .user-info .user-gravatar32 img{border: none;}<br />     .stackoverflow-badge .user-info .user-details{<br />      float: left; margin-left: 5px; width: 138px; overflow: hidden; white-space: nowrap;<br />     }<br />     .stackoverflow-badge .user-details{color: #888; line-height:17px;}<br />     .stackoverflow-badge .reputation-score{font-weight: bold; color: #333; font-size: 120%; margin-right:2px;}<br />     .stackoverflow-badge .badge{<br />      color: #fff; background-color: #333; border: 1px solid #333; margin: 0 3px 3px 0;<br />      padding: 4px 8px 4px 3px; color: white !important; text-decoration: none; line-height: 1.9;<br />     }<br />     .stackoverflow-badge .badge:hover{border: 1px solid #555;background-color: #555;text-decoration: none;}<br />     .stackoverflow-badge .badge1{margin-left:3px;font-size: 120%;color: #FFCC00;}<br />     .stackoverflow-badge .badge2{margin-left:3px;font-size: 120%;color: #C0C0C0;}<br />     .stackoverflow-badge .badge3{margin-left:3px;font-size: 120%;color: #CC9966;}<br />     .stackoverflow-badge .badgecount{padding-left: 1px; color: #808185;}<br /> </style><br /> <br /> <StackOverflow:Badge runat="server" id="sob1" DisplayName="Chris Pietschmann"></StackOverflow:Badge>
+<%@ Register Src="~/StackOverflowBadge.ascx" TagPrefix="StackOverflow" TagName="Badge" %> 
+ 
+ <style type="text/css">
+     .stackoverflow-badge {border: solid 1px black; padding: 2px;}
+     .stackoverflow-badge .user-info .user-gravatar32{float: left; width: 32px;}
+     .stackoverflow-badge .user-info .user-gravatar32 img{border: none;}
+     .stackoverflow-badge .user-info .user-details{
+      float: left; margin-left: 5px; width: 138px; overflow: hidden; white-space: nowrap;
+     }
+     .stackoverflow-badge .user-details{color: #888; line-height:17px;}
+     .stackoverflow-badge .reputation-score{font-weight: bold; color: #333; font-size: 120%; margin-right:2px;}
+     .stackoverflow-badge .badge{
+      color: #fff; background-color: #333; border: 1px solid #333; margin: 0 3px 3px 0;
+      padding: 4px 8px 4px 3px; color: white !important; text-decoration: none; line-height: 1.9;
+     }
+     .stackoverflow-badge .badge:hover{border: 1px solid #555;background-color: #555;text-decoration: none;}
+     .stackoverflow-badge .badge1{margin-left:3px;font-size: 120%;color: #FFCC00;}
+     .stackoverflow-badge .badge2{margin-left:3px;font-size: 120%;color: #C0C0C0;}
+     .stackoverflow-badge .badge3{margin-left:3px;font-size: 120%;color: #CC9966;}
+     .stackoverflow-badge .badgecount{padding-left: 1px; color: #808185;}
+ </style>
+ 
+ <StackOverflow:Badge runat="server" id="sob1" DisplayName="Chris Pietschmann"></StackOverflow:Badge>
 
 [/ code ]
 
@@ -49,7 +71,8 @@ And finally, here's the source for the StackOverflowBadge.ascx user control:
 
 [ code:html ]
 
-<%@ Control Language="C#" AutoEventWireup="true" CodeFile="StackOverflowBadge.ascx.cs" Inherits="StackOverflowBadge" %><br /> <%=this.HTML%>
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="StackOverflowBadge.ascx.cs" Inherits="StackOverflowBadge" %>
+ <%=this.HTML%>
 
 [/ code ]
 
@@ -57,39 +80,127 @@ And finally, here's the source for the StackOverflowBadge.ascx user control:
 
 [code:c#]
 
-using System;<br /> using System.IO;<br /> using System.Net;<br /> using System.Text;
+using System;
+ using System.IO;
+ using System.Net;
+ using System.Text;
 
-public partial class StackOverflowBadge : System.Web.UI.UserControl<br /> {<br />     protected void Page_Load(object sender, EventArgs e)<br />     {<br />         GetStackOverflowData();<br />     }
+public partial class StackOverflowBadge : System.Web.UI.UserControl
+ {
+     protected void Page_Load(object sender, EventArgs e)
+     {
+         GetStackOverflowData();
+     }
 
-    public string DisplayName { get; set; }<br />     public string Reputation { get; set; }<br />     public string UserID { get; set; }<br />     public string ImageURL { get; set; }<br />     public string HTML { get; set; }
+    public string DisplayName { get; set; }
+     public string Reputation { get; set; }
+     public string UserID { get; set; }
+     public string ImageURL { get; set; }
+     public string HTML { get; set; }
 
-    protected void GetStackOverflowData()<br />     {<br />         string username = this.DisplayName;<br />         username = username.ToLowerInvariant();
+    protected void GetStackOverflowData()
+     {
+         string username = this.DisplayName;
+         username = username.ToLowerInvariant();
 
-<br />         WebRequest r = WebRequest.Create("http://stackoverflow.com/users/browser-filter");<br />         ((HttpWebRequest)r).UserAgent = "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; WOW64; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0;)";<br />         r.Method = "POST";
+
+         WebRequest r = WebRequest.Create("http://stackoverflow.com/users/browser-filter");
+         ((HttpWebRequest)r).UserAgent = "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; WOW64; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0;)";
+         r.Method = "POST";
 
         Byte[] byteArray = Encoding.ASCII.GetBytes("filter=" + username);
 
-        r.ContentType = "application/x-www-form-urlencoded";<br />         r.ContentLength = byteArray.Length;
+        r.ContentType = "application/x-www-form-urlencoded";
+         r.ContentLength = byteArray.Length;
 
-        Stream requestStream = r.GetRequestStream();<br />         requestStream.Write(byteArray, 0, byteArray.Length);<br />         requestStream.Close();
+        Stream requestStream = r.GetRequestStream();
+         requestStream.Write(byteArray, 0, byteArray.Length);
+         requestStream.Close();
 
-<br />         WebResponse resp = r.GetResponse();
+
+         WebResponse resp = r.GetResponse();
 
         StreamReader reader = new StreamReader(resp.GetResponseStream());
 
         string responseContent = reader.ReadToEnd();
 
-<br />         // Fix username to look for in HTML returned<br />         username = username.Replace(" ", "-");
 
-<br />         // Get UserID<br />         string userid = null;<br />         if (responseContent.IndexOf("<a href=\"/users/") > 0)<br />         {<br />             string tempUserID = responseContent.Substring(responseContent.IndexOf("<a href=\"/users/"));<br />             if (tempUserID.Length > 16)<br />             {<br />                 tempUserID = tempUserID.Substring(16);<br />                 if (tempUserID.IndexOf("/" + username) > 0)<br />                 {<br />                     userid = tempUserID.Substring(0, tempUserID.IndexOf("/" + username));<br />                 }<br />             }<br />             this.UserID = userid;<br />         }
+         // Fix username to look for in HTML returned
+         username = username.Replace(" ", "-");
 
-        // Get Reputation Score<br />         string rep = null;<br />         if (responseContent.IndexOf("title=\"reputation score\">") > 0)<br />         {<br />             string tempRep = responseContent.Substring(responseContent.IndexOf("title=\"reputation score\">"));<br />             if (tempRep.Length > 25)<br />             {<br />                 tempRep = tempRep.Substring(25);<br />                 if (tempRep.IndexOf("</span>") > 0)<br />                 {<br />                     rep = tempRep.Substring(0, tempRep.IndexOf("</span>"));<br />                 }<br />             }<br />         }<br />         this.Reputation = rep;
 
-<br />         // Get Image URL<br />         string img = null;<br />         if (responseContent.IndexOf("\"><img src=\"") > 0)<br />         {<br />             string tempImg = responseContent.Substring(responseContent.IndexOf("\"><img src=\""));<br />             if (tempImg.Length > 12)<br />             {<br />                 tempImg = tempImg.Substring(12);<br />                 if (tempImg.IndexOf("\" height=32 width=32 />") > 0)<br />                 {<br />                     img = tempImg.Substring(0, tempImg.IndexOf("\" height=32 width=32 />"));<br />                 }<br />             }<br />         }<br />         this.ImageURL = img;
+         // Get UserID
+         string userid = null;
+         if (responseContent.IndexOf("<a href=\"/users/") > 0)
+         {
+             string tempUserID = responseContent.Substring(responseContent.IndexOf("<a href=\"/users/"));
+             if (tempUserID.Length > 16)
+             {
+                 tempUserID = tempUserID.Substring(16);
+                 if (tempUserID.IndexOf("/" + username) > 0)
+                 {
+                     userid = tempUserID.Substring(0, tempUserID.IndexOf("/" + username));
+                 }
+             }
+             this.UserID = userid;
+         }
+
+        // Get Reputation Score
+         string rep = null;
+         if (responseContent.IndexOf("title=\"reputation score\">") > 0)
+         {
+             string tempRep = responseContent.Substring(responseContent.IndexOf("title=\"reputation score\">"));
+             if (tempRep.Length > 25)
+             {
+                 tempRep = tempRep.Substring(25);
+                 if (tempRep.IndexOf("</span>") > 0)
+                 {
+                     rep = tempRep.Substring(0, tempRep.IndexOf("</span>"));
+                 }
+             }
+         }
+         this.Reputation = rep;
+
+
+         // Get Image URL
+         string img = null;
+         if (responseContent.IndexOf("\"><img src=\"") > 0)
+         {
+             string tempImg = responseContent.Substring(responseContent.IndexOf("\"><img src=\""));
+             if (tempImg.Length > 12)
+             {
+                 tempImg = tempImg.Substring(12);
+                 if (tempImg.IndexOf("\" height=32 width=32 />") > 0)
+                 {
+                     img = tempImg.Substring(0, tempImg.IndexOf("\" height=32 width=32 />"));
+                 }
+             }
+         }
+         this.ImageURL = img;
 
  
 
-        // Get Full Html for Display<br />         string html = null;<br />         if (responseContent.IndexOf("; width:860px;\">") > 0)<br />         {<br />             string tempHtml = responseContent.Substring(responseContent.IndexOf("; width:860px;\">"));<br />             if (tempHtml.Length > 16)<br />             {<br />                 tempHtml = tempHtml.Substring(16);<br />                 if (tempHtml.IndexOf("<div style=\"float:") > 0)<br />                 {<br />                     html = tempHtml.Substring(0, tempHtml.IndexOf("<div style=\"float:"));<br />                     html = html.Replace("<a href=\"/users", "<a href=\"<a href="http://stackoverflow.com/users">http://stackoverflow.com/users</a>");<br />                     html = html.Replace("<table style=\"margin: 0px 5px 5px;\">", "<table cellpadding='0' cellspacing='0' class=\"stackoverflow-badge\">");<br />                     html = html.Replace("<div class=\"user-action-time\"><br /></div>", "");<br />                     html = html.Replace("<td width=200>", "<td>");<br />                 }<br />             }<br />         }<br />         this.HTML = html;<br />     }
+        // Get Full Html for Display
+         string html = null;
+         if (responseContent.IndexOf("; width:860px;\">") > 0)
+         {
+             string tempHtml = responseContent.Substring(responseContent.IndexOf("; width:860px;\">"));
+             if (tempHtml.Length > 16)
+             {
+                 tempHtml = tempHtml.Substring(16);
+                 if (tempHtml.IndexOf("<div style=\"float:") > 0)
+                 {
+                     html = tempHtml.Substring(0, tempHtml.IndexOf("<div style=\"float:"));
+                     html = html.Replace("<a href=\"/users", "<a href=\"<a href="http://stackoverflow.com/users">http://stackoverflow.com/users</a>");
+                     html = html.Replace("<table style=\"margin: 0px 5px 5px;\">", "<table cellpadding='0' cellspacing='0' class=\"stackoverflow-badge\">");
+                     html = html.Replace("<div class=\"user-action-time\">
+</div>", "");
+                     html = html.Replace("<td width=200>", "<td>");
+                 }
+             }
+         }
+         this.HTML = html;
+     }
 
 }
 

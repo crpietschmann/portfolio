@@ -41,8 +41,11 @@ Now, in the Windows 7 Beta, instead of the little button with the "power" icon b
 <h4>4) Aero / Glass is more mature</h4>
 
 This one is purely eye candy, but it does make Windows 7 look more visually appealing than Vista. Both the Taskbar and Maximized Window Titlebars are transparent glass the same as a non-maximized windows titlebar. This just makes sense, and actually makes Vista look as if it was rushed (you don't say) out the door. In fact, when Vista was released I wondered why this wasn't done.
-<h3>Windows 7 Beta Bad Points <br /><br /></h3>
-<h4>**1) Taskbar, oh how you've gotten a bit more challenging to switch applications!<br />**</h4>
+<h3>Windows 7 Beta Bad Points 
+
+</h3>
+<h4>**1) Taskbar, oh how you've gotten a bit more challenging to switch applications!
+**</h4>
 
 This is the biggest issue I've had with the Windows 7 Beta so far, and it's annoying enough for me to wish Windows 7 Beta had a way to use the "classic" XP/Vista style Taskbar.
 

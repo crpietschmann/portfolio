@@ -24,7 +24,8 @@ In Scott&#39;s post, he talks about how placing your tech related certification 
 My comments as posted:
 
 
-*I think it&#39;s ok to put one or two after your name, but no more than that. And only use them in places where you&#39;re not already stating your certified; Like on your resumt and cover letter. It&#39;s a good thing in emails and/or blog comments to show your cert. But, I do agree that it doesn&#39;t compare to a Phd.<br />
+*I think it&#39;s ok to put one or two after your name, but no more than that. And only use them in places where you&#39;re not already stating your certified; Like on your resumt and cover letter. It&#39;s a good thing in emails and/or blog comments to show your cert. But, I do agree that it doesn&#39;t compare to a Phd.
+
 - Christopher Pietschmann, MCSD*
 
 
@@ -49,7 +50,8 @@ Or even better, add a second or third line to your signature that lists the most
 
 
 
-*Chris Pietschmann<br />
+*Chris Pietschmann
+
 Microsoft Certified Solution Developer*
 
 
@@ -58,7 +60,8 @@ Or
 
 
 
-*Chris Pietschmann<br />
+*Chris Pietschmann
+
 Microsoft MVP - Windows Live Platform*
 
 
@@ -67,10 +70,14 @@ Here&#39;s the email signature that I&#39;ve started using lately. Just my name,
 
 
 
-*Chris Pietschmann<br />
-President - Simplovation LLC<br />
-Microsoft MVP - Windows Live Platform<br />
-<a href="http://simplovation.com">http://simplovation.com</a><br />
+*Chris Pietschmann
+
+President - Simplovation LLC
+
+Microsoft MVP - Windows Live Platform
+
+<a href="http://simplovation.com">http://simplovation.com</a>
+
 <a href=""></a>*
 
 
@@ -86,7 +93,8 @@ Doesn&#39;t it look much better/usefull than the following?
 And, finally, here&#39;s some rules to use when listing your certs by your name: 
 
 <ul>
-	<li>Only include 1 or 2 credentials/certs. Any more will just clutter things up.<br />
+	<li>Only include 1 or 2 credentials/certs. Any more will just clutter things up.
+
 	</li>
 	<li>Always make sure it&#39;s necessary/relavent to list them in the first place.</li>
 	<li>Never list your certs after your name when you comment on blog posts!</li>

@@ -23,12 +23,14 @@ This is an exciting April fools day for me. I recieved the following email from 
 
 
 
-*Dear Chris Pietschmann,<br />
+*Dear Chris Pietschmann,
+
 **Congratulations! We are pleased to present you with the 2008 Microsoft&reg; MVP Award! The MVP Award is our way to say thank you for promoting the spirit of community and improving people&rsquo;s lives and the industry&rsquo;s success every day. We appreciate your extraordinary efforts in Virtual Earth technical communities during the past year. Microsoft will soon send your MVP Award gift package. It is our way to say &ldquo;thank you for making a difference.&quot;* 
 
 
 
-Wait a minute... Is this some kind of April Fools joke?<br />
+Wait a minute... Is this some kind of April Fools joke?
+
 No, this is real. I knew I had gotten nominated back in February; Microsoft had contacted me with a few questions regarding my community contributions over the last year. It seemed like forever that I had to wait until I would find out if I would be awarded MVP or not. 
 
 

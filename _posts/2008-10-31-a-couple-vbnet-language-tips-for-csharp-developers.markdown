@@ -21,7 +21,9 @@ Null Coalescing is really simple in C#:
 
 [code:c#]
 
-// If "someValue" is Null then set "i" to 0 (zero)<br /> // otherwise set it to the value of "someValue"<br /> int? i = someValue ?? 0;
+// If "someValue" is Null then set "i" to 0 (zero)
+ // otherwise set it to the value of "someValue"
+ int? i = someValue ?? 0;
 
 ```
 
@@ -40,7 +42,8 @@ This is the ability have a complete If..Else..Then statement on a single line an
 
 [code:c#]
 
-// This performs the same logical operation as the Null Coalesce example above<br /> int? i = (someValue == null ? 0 : someValue);
+// This performs the same logical operation as the Null Coalesce example above
+ int? i = (someValue == null ? 0 : someValue);
 
 ```
 
@@ -48,7 +51,17 @@ How about in VB.NET?
 
 <code:VB>
 
-Dim i = If(someValue = Nothing, 0, someValue)<br /> <br /> '' The above can be simplified, since if the first parameter is equal to "Nothing"<br /> '' then the "true" (second) parameter is return, otherwise the<br /> '' "false" (third) parameter is returned.<br /> Dim i = If(someValue, 0, someValue)<br /> <br /> '' Also to further simplify, you can just pass in the "false" (second) parameter<br /> '' and if its equal to "Nothing" then the "false" (second) parameter is returns,<br /> '' otherwise the value itself is returned.<br /> Dim i = If(someValue, 0) 
+Dim i = If(someValue = Nothing, 0, someValue)
+ 
+ '' The above can be simplified, since if the first parameter is equal to "Nothing"
+ '' then the "true" (second) parameter is return, otherwise the
+ '' "false" (third) parameter is returned.
+ Dim i = If(someValue, 0, someValue)
+ 
+ '' Also to further simplify, you can just pass in the "false" (second) parameter
+ '' and if its equal to "Nothing" then the "false" (second) parameter is returns,
+ '' otherwise the value itself is returned.
+ Dim i = If(someValue, 0) 
 
 </code>
 <h3>Lock Statement</h3>
@@ -57,7 +70,12 @@ You may be familiar with the *lock *statement in C#, especially if you're used t
 
 [code:c#]
 
-lock (expression)<br /> {<br /> <br />     ...Some Code...<br /> <br /> }
+lock (expression)
+ {
+ 
+     ...Some Code...
+ 
+ }
 
 ```
 
@@ -65,7 +83,11 @@ At first it appears to not exist in VB.NET, but they just named it SyncLock inst
 
 <code:VB>
 
-SyncLock (expression)<br /> <br />     ...Some Code...<br /> <br /> End SyncLock
+SyncLock (expression)
+ 
+     ...Some Code...
+ 
+ End SyncLock
 
 </code>
 

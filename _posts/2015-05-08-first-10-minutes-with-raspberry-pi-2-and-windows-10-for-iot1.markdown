@@ -52,7 +52,8 @@ After some searching on what size Micro SD card to get I decided to get an 8GB. 
 For the SD Card Speed / Class, I did find somewhere that only a "Class 10" Micro SD card is supported. Then to verify I was able to find the following Known Issue within the Windows 10 for IoT readme:
 <blockquote>
 
-27. A black screen may be seen during boot because the default app is failing on slow class 4 SD cards. (2462306)<br />        WORKAROUND:    Do not use a class 4 SD card.
+27. A black screen may be seen during boot because the default app is failing on slow class 4 SD cards. (2462306)
+        WORKAROUND:    Do not use a class 4 SD card.
 </blockquote>
 
 So, at least with the Insider Preview build, a **Class 10 Micro SD Card is needed**.

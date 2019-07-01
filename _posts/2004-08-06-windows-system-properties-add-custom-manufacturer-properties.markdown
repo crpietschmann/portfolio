@@ -22,9 +22,12 @@ Here is a pretty neat edit you can do to add your own manufacturer information a
 <img src="/images/posts/WinXPSysPropCustomManufacturer.jpg" alt="" align="right" />
 
 
-<font size="-1"><span class="header">Show Computer Manufacturer and Support Information</span> *(All Windows)*<br />
-This tip lets you include company and support information on the System Properties page in Control Panel. This is especially useful if you run a computer store and want your customers to be reminded where they bought their PC and where to get technical support.<br />
-<br />
+<font size="-1"><span class="header">Show Computer Manufacturer and Support Information</span> *(All Windows)*
+
+This tip lets you include company and support information on the System Properties page in Control Panel. This is especially useful if you run a computer store and want your customers to be reminded where they bought their PC and where to get technical support.
+
+
+
 To add the manufacturer and support information you need to create two new files in the Windows system directly, normally &quot;C:\WINDOWS\SYSTEM&quot; for Windows 95, 98 and Me and &quot;C:\WINNT\SYSTEM32&quot; for Windows NT and 2000.</font>
 
 

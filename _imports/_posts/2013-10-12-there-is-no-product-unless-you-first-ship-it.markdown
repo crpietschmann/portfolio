@@ -18,11 +18,13 @@ Just as there is no business without something to sell; you do not have a produc
 
 What to ship? How to ship? When to ship? Where to ship?
 
-There are many questions that need to be answered before shipping a product. However, one thing always remains true:<br />**A product only succeeds if you ship it.**
+There are many questions that need to be answered before shipping a product. However, one thing always remains true:
+**A product only succeeds if you ship it.**
 
 It may be difficult to determine when/if/how/where your product fits. However, you can always reiterate and improve the product for the next release. Every product isn&rsquo;t as great at version 1 as it will be at version 2, 3 or even 4 or 5!
 
-The most important thing to look at when shipping that version 1 product is:<br />**Does this product provide greater value to a set of customers than what I&rsquo;ll be charging for it?**
+The most important thing to look at when shipping that version 1 product is:
+**Does this product provide greater value to a set of customers than what I&rsquo;ll be charging for it?**
 
 If version 1 answers a resounding **&ldquo;YES!&rdquo;** to that question, then by all means get it shipped!
 

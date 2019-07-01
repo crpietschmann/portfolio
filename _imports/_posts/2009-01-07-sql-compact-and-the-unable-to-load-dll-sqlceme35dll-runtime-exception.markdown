@@ -17,7 +17,8 @@ redirect_from:
 I <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=DC614AEE-7E1C-4881-9C32-3A6CE53384D9&amp;displaylang=en">installed SQL Server Compact 3.5 x86</a> and started testing it out when I got a nice "Unable to load DLL 'sqlceme35.dll" runtime exception. This seems like odd behaviour for a clean install. In a fairly quick search I found an article on the <a href="http://blogs.msdn.com/sqlservercompact">SQL Server Compact Team Blog</a> that covers a couple possible causes/solutions for this exception.
 
 <a href="http://blogs.msdn.com/sqlservercompact/archive/2007/10/26/can-t-find-p-invoke-dll-sqlcemenn-dll.aspx">http://blogs.msdn.com/sqlservercompact/archive/2007/10/26/can-t-find-p-invoke-dll-sqlcemenn-dll.aspx</a>
-<h3>My Solution - Target x86 Only<br /></h3>
+<h3>My Solution - Target x86 Only
+</h3>
 
 Even though there are 5 possible causes/solutions listed, only one of them was the issue I was experiencing and I think is probably the most common issue.
 
@@ -38,6 +39,8 @@ Now, if you distribute your application targeting "Any CPU" and bootstrap the SQ
 <li>Alternatively, you could create two seperate versions of the installer for your application; one that targets x86 and one that targets x64.</li>
 </ol>
 
-I prefer the first option because it has a couple benefits. Even though it only targets x86, it will work on x64 systems too, and you relieve users from being required to understand whether they should install the x86 or x64 version. Plus this way you only need to worry about building your application and installer a single time for each release.<br /><br />At the below link you can download both the x86 and x64 versions of SQL Server Compact 3.5 SP1:
+I prefer the first option because it has a couple benefits. Even though it only targets x86, it will work on x64 systems too, and you relieve users from being required to understand whether they should install the x86 or x64 version. Plus this way you only need to worry about building your application and installer a single time for each release.
+
+At the below link you can download both the x86 and x64 versions of SQL Server Compact 3.5 SP1:
 
 <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=DC614AEE-7E1C-4881-9C32-3A6CE53384D9&amp;displaylang=en">http://www.microsoft.com/downloads/details.aspx?FamilyId=DC614AEE-7E1C-4881-9C32-3A6CE53384D9&amp;displaylang=en</a>

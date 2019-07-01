@@ -23,32 +23,38 @@ Below is a list of &quot;helper&quot; methods that the project currently include
 
 
 
-**VEToolkit.Drawing.DrawCircle**<br />
+**VEToolkit.Drawing.DrawCircle**
+
 - This method returns an array of VELatLong objects that represent a circle drawn to the specified radius around a given center point.
 
 
 
-**VEToolkit.Math.CalculateBearing**<br />
+**VEToolkit.Math.CalculateBearing**
+
 - This method calculates the bearing (or direction) from 1 VELatLong coordinate to another.
 
 
 
-**VEToolkit.Math.CalculateDistance**<br />
+**VEToolkit.Math.CalculateDistance**
+
 - This method calculates the distance between 2 VELatLong coordinates using the specified unit of measurement (Miles or Kilometers). 
 
 
 
-**VEToolkit.Math.CalculateMidPoint**<br />
+**VEToolkit.Math.CalculateMidPoint**
+
 - This method calculates the mid point (or center point) between 2 VELatLong coordinates. 
 
 
 
-**VEToolkit.Math.GetPolygonCentroid**<br />
+**VEToolkit.Math.GetPolygonCentroid**
+
 - This method calculates the approximate centroid (or center point) of a given Polygon&#39;s points.
 
 
 
-**VEToolkit.Math.IsInPolygon**<br />
+**VEToolkit.Math.IsInPolygon**
+
 - This method returns true or false specifying if the given VELatLong point is within the bounds of the given Polygon coordinates.
 
 
@@ -61,17 +67,20 @@ Also, here&#39;s a list of the current JavaScript-based &quot;Extender&quot; con
 
 
 
-**VEToolkit.ContextMenuExtender**<br />
+**VEToolkit.ContextMenuExtender**
+
 - This extender provides easy to use Context Menu functionality for Virtual Earth.
 
 
 
-**VEToolkit.DragShapeExtender**<br />
+**VEToolkit.DragShapeExtender**
+
 - This extender allows you to easily link up functionality that allows you to drag-n-drop specific Shape&#39;s that are plotted. 
 
 
 
-**VEToolkit.MiniMapExtender**<br />
+**VEToolkit.MiniMapExtender**
+
 - This extender provides easy to use functionality for controlling the position of the MiniMap. For Example: Auto-Align MiniMap to the Top Right Corner of the Map. 
 
 

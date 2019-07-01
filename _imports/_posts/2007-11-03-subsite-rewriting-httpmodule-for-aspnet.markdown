@@ -18,33 +18,78 @@ Here's some simple code for easily adding Subsite functionality to an ASP.NET we
 
 Urls are rewritten in the following fashion:
 
-~/jdoe/default.aspx  => ~/default.aspx?site=jdoe<br /> ~/jdoe/subfolder/default.aspx => ~/subfolder/default.aspx?site=jdoe
+~/jdoe/default.aspx  => ~/default.aspx?site=jdoe
+ ~/jdoe/subfolder/default.aspx => ~/subfolder/default.aspx?site=jdoe
 
 And this is all done by the 65 line HttpModule below:
 
 [code:c#]
 
-using System;<br /> using System.Web;
+using System;
+ using System.Web;
 
-/// <summary><br /> /// Summary description for SubsiteRewriteModule<br /> /// </summary><br /> public class SubsiteRewriteModule : IHttpModule<br /> {<br />     #region IHttpModule Members
+/// <summary>
+ /// Summary description for SubsiteRewriteModule
+ /// </summary>
+ public class SubsiteRewriteModule : IHttpModule
+ {
+     #region IHttpModule Members
 
     void IHttpModule.Dispose() { }
 
-    void IHttpModule.Init(HttpApplication context)<br />     {<br />         context.BeginRequest += new EventHandler(context_BeginRequest);<br />     }
+    void IHttpModule.Init(HttpApplication context)
+     {
+         context.BeginRequest += new EventHandler(context_BeginRequest);
+     }
 
     #endregion
 
-    private void context_BeginRequest(object sender, EventArgs e)<br />     {<br />         HttpContext context = ((HttpApplication)sender).Context;<br />         HttpRequest Request = context.Request;
+    private void context_BeginRequest(object sender, EventArgs e)
+     {
+         HttpContext context = ((HttpApplication)sender).Context;
+         HttpRequest Request = context.Request;
 
-        if (Request.Path.ToLowerInvariant().EndsWith(".aspx"))<br />         {<br />             string UrlToRewrite = VirtualPathUtility.ToAppRelative(Request.Path).ToLowerInvariant();<br />             bool doRewrite = false;<br />             System.Text.RegularExpressions.Regex regex;
+        if (Request.Path.ToLowerInvariant().EndsWith(".aspx"))
+         {
+             string UrlToRewrite = VirtualPathUtility.ToAppRelative(Request.Path).ToLowerInvariant();
+             bool doRewrite = false;
+             System.Text.RegularExpressions.Regex regex;
 
-<br />             regex = new System.Text.RegularExpressions.Regex("~/(\\w+)/(.*)");<br />             if (regex.Match(UrlToRewrite).Success)<br />             {<br />                 UrlToRewrite = regex.Replace(UrlToRewrite, "~/$2?site=$1");<br />                 doRewrite = true;<br />             }
 
-<br />             /// Rewrite the URL and inlude all querystring criteria so we don't lose it<br />             if (doRewrite)<br />             {<br />                 if (UrlToRewrite.Contains("?"))<br />                 {<br />                     UrlToRewrite = UrlToRewrite + "&amp;" + GetQueryString(context);<br />                 }<br />                 else<br />                 {<br />                     UrlToRewrite = UrlToRewrite + "?" + GetQueryString(context);<br />                 }<br />                 context.RewritePath(UrlToRewrite, false);<br />             }<br />         }
+             regex = new System.Text.RegularExpressions.Regex("~/(\\w+)/(.*)");
+             if (regex.Match(UrlToRewrite).Success)
+             {
+                 UrlToRewrite = regex.Replace(UrlToRewrite, "~/$2?site=$1");
+                 doRewrite = true;
+             }
+
+
+             /// Rewrite the URL and inlude all querystring criteria so we don't lose it
+             if (doRewrite)
+             {
+                 if (UrlToRewrite.Contains("?"))
+                 {
+                     UrlToRewrite = UrlToRewrite + "&amp;" + GetQueryString(context);
+                 }
+                 else
+                 {
+                     UrlToRewrite = UrlToRewrite + "?" + GetQueryString(context);
+                 }
+                 context.RewritePath(UrlToRewrite, false);
+             }
+         }
 
     }
 
-    private static string GetQueryString(HttpContext context)<br />     {<br />         string returnVal = context.Request.QueryString.ToString();<br />         if (string.IsNullOrEmpty(returnVal))<br />             return "";<br />         else<br />             return returnVal;<br />     }<br /> }
+    private static string GetQueryString(HttpContext context)
+     {
+         string returnVal = context.Request.QueryString.ToString();
+         if (string.IsNullOrEmpty(returnVal))
+             return "";
+         else
+             return returnVal;
+     }
+ }
 
 ```
 

@@ -27,24 +27,42 @@ Here an example of creating a new DIV element and setting some of it&#39;s prope
 
 
 
-HtmlElement myDiv = HtmlPage.Document.CreateElement(&quot;div&quot;);<br />
-<br />
-// Set the innerHTML property<br />
-myDiv.SetProperty(&quot;innerHTML&quot;, &quot;**Some HTML Content**&quot;);<br />
-<br />
-// Set some style properties<br />
-myDiv.SetStyleAttribute(&quot;border&quot;, &quot;solid 1px black&quot;);<br />
-myDiv.SetStyleAttribute(&quot;position&quot;, &quot;absolute&quot;);<br />
-myDiv.SetStyleAttribute(&quot;top&quot;, &quot;10px&quot;);<br />
-myDiv.SetStyleAttribute(&quot;left&quot;, &quot;10px&quot;);<br />
-<br />
-// Add the myDiv element to the page<br />
-HtmlPage.Document.Body.AppendChild(myDiv);<br />
-<br />
-// Get the innerHTML property<br />
-string html = myDiv.GetProperty(&quot;innerHTML&quot;);<br />
-<br />
-// Get the Position Style attribute<br />
+HtmlElement myDiv = HtmlPage.Document.CreateElement(&quot;div&quot;);
+
+
+
+// Set the innerHTML property
+
+myDiv.SetProperty(&quot;innerHTML&quot;, &quot;**Some HTML Content**&quot;);
+
+
+
+// Set some style properties
+
+myDiv.SetStyleAttribute(&quot;border&quot;, &quot;solid 1px black&quot;);
+
+myDiv.SetStyleAttribute(&quot;position&quot;, &quot;absolute&quot;);
+
+myDiv.SetStyleAttribute(&quot;top&quot;, &quot;10px&quot;);
+
+myDiv.SetStyleAttribute(&quot;left&quot;, &quot;10px&quot;);
+
+
+
+// Add the myDiv element to the page
+
+HtmlPage.Document.Body.AppendChild(myDiv);
+
+
+
+// Get the innerHTML property
+
+string html = myDiv.GetProperty(&quot;innerHTML&quot;);
+
+
+
+// Get the Position Style attribute
+
 string pos = myDiv.GetStyleAttribute(&quot;position&quot;); 
 
 
@@ -73,12 +91,18 @@ Here&#39;s an example of using a class that implements the Bridge Pattern to do 
 
 
 
-HtmlElementHelper myDiv = new HtmlElementHelper(HtmlPage.Document.CreateElement(&quot;div&quot;));<br />
-myDiv.innerHTML = &quot;**Some HTML Content**&quot;;<br />
-myDiv.Style.Position = &quot;absolute&quot;;<br />
-myDiv.Style.Border = &quot;solid 1px black&quot;;<br />
-myDiv.Style.Top = &quot;10px&quot;;<br />
-myDiv.Style.Left = &quot;10px&quot;;<br />
+HtmlElementHelper myDiv = new HtmlElementHelper(HtmlPage.Document.CreateElement(&quot;div&quot;));
+
+myDiv.innerHTML = &quot;**Some HTML Content**&quot;;
+
+myDiv.Style.Position = &quot;absolute&quot;;
+
+myDiv.Style.Border = &quot;solid 1px black&quot;;
+
+myDiv.Style.Top = &quot;10px&quot;;
+
+myDiv.Style.Left = &quot;10px&quot;;
+
 HtmlPage.Document.Body.AppendChild(myDiv.Element); 
 
 
@@ -99,156 +123,238 @@ Not only is the code using the Bridge Pattern easier to read, but now we have th
 
 
 
- public class HtmlElementHelper<br />
-    {<br />
-        private HtmlElement _elem = null;<br />
-        private HtmlElementStyleHelper _styleHelper = null;<br />
-        <br />
-        public HtmlElementHelper(HtmlElement elem)<br />
-        {<br />
-            this._elem = elem;<br />
+ public class HtmlElementHelper
+
+    {
+
+        private HtmlElement _elem = null;
+
+        private HtmlElementStyleHelper _styleHelper = null;
+
+        
+
+        public HtmlElementHelper(HtmlElement elem)
+
+        {
+
+            this._elem = elem;
+
         } 
 
 
 
-        public HtmlElement Element<br />
-        {<br />
-            get { return _elem; }<br />
+        public HtmlElement Element
+
+        {
+
+            get { return _elem; }
+
         } 
 
 
 
-        public object GetProperty(string propertyName)<br />
-        {<br />
-            return _elem.GetProperty(propertyName);<br />
+        public object GetProperty(string propertyName)
+
+        {
+
+            return _elem.GetProperty(propertyName);
+
         } 
 
 
 
-        public void SetProperty(string propertyName, object value)<br />
-        {<br />
-            _elem.SetProperty(propertyName, value);<br />
-        }<br />
-        <br />
-        public HtmlElementStyleHelper Style<br />
-        {<br />
-            get<br />
-            {<br />
-                if (_styleHelper == null)<br />
-                {<br />
-                    _styleHelper = new HtmlElementStyleHelper(this._elem);<br />
-                }<br />
-                return _styleHelper;<br />
-            }<br />
+        public void SetProperty(string propertyName, object value)
+
+        {
+
+            _elem.SetProperty(propertyName, value);
+
+        }
+
+        
+
+        public HtmlElementStyleHelper Style
+
+        {
+
+            get
+
+            {
+
+                if (_styleHelper == null)
+
+                {
+
+                    _styleHelper = new HtmlElementStyleHelper(this._elem);
+
+                }
+
+                return _styleHelper;
+
+            }
+
         } 
 
 
 
-        public string innerHTML<br />
-        {<br />
-            get { return GetProperty(&quot;innerHTML&quot;) as string; }<br />
-            set { this.SetProperty(&quot;innerHTML&quot;, value); }<br />
+        public string innerHTML
+
+        {
+
+            get { return GetProperty(&quot;innerHTML&quot;) as string; }
+
+            set { this.SetProperty(&quot;innerHTML&quot;, value); }
+
         } 
 
 
 
-        public string innerText<br />
-        {<br />
-            get { return GetProperty(&quot;innerText&quot;) as string; }<br />
-            set { this.SetProperty(&quot;innerText&quot;, value); }<br />
+        public string innerText
+
+        {
+
+            get { return GetProperty(&quot;innerText&quot;) as string; }
+
+            set { this.SetProperty(&quot;innerText&quot;, value); }
+
         } 
 
 
 
-        public string className<br />
-        {<br />
-            get { return GetProperty(&quot;className&quot;) as string; }<br />
-            set { SetProperty(&quot;className&quot;, value); }<br />
+        public string className
+
+        {
+
+            get { return GetProperty(&quot;className&quot;) as string; }
+
+            set { SetProperty(&quot;className&quot;, value); }
+
         } 
 
 
 
-        public string Id<br />
-        {<br />
-            get { return _elem.Id; }<br />
-            set { _elem.Id = value; }<br />
-        }<br />
+        public string Id
+
+        {
+
+            get { return _elem.Id; }
+
+            set { _elem.Id = value; }
+
+        }
+
     } 
 
 
 
-    public class HtmlElementStyleHelper<br />
-    {<br />
+    public class HtmlElementStyleHelper
+
+    {
+
         private HtmlElement _elem = null; 
 
 
 
-        public HtmlElementStyleHelper(HtmlElement elem)<br />
-        {<br />
-            this._elem = elem;<br />
+        public HtmlElementStyleHelper(HtmlElement elem)
+
+        {
+
+            this._elem = elem;
+
         } 
 
 
 
-        public string GetAttribute(string name)<br />
-        {<br />
-            return _elem.GetStyleAttribute(name);<br />
+        public string GetAttribute(string name)
+
+        {
+
+            return _elem.GetStyleAttribute(name);
+
         } 
 
 
 
-        public void SetAttribute(string name, string value)<br />
-        {<br />
-            _elem.SetStyleAttribute(name, value);<br />
+        public void SetAttribute(string name, string value)
+
+        {
+
+            _elem.SetStyleAttribute(name, value);
+
         } 
 
 
 
-        public string Position<br />
-        {<br />
-            get { return GetAttribute(&quot;position&quot;); }<br />
-            set { SetAttribute(&quot;position&quot;, value); }<br />
+        public string Position
+
+        {
+
+            get { return GetAttribute(&quot;position&quot;); }
+
+            set { SetAttribute(&quot;position&quot;, value); }
+
         } 
 
 
 
-        public string Border<br />
-        {<br />
-            get { return GetAttribute(&quot;border&quot;); }<br />
-            set { SetAttribute(&quot;border&quot;, value); }<br />
+        public string Border
+
+        {
+
+            get { return GetAttribute(&quot;border&quot;); }
+
+            set { SetAttribute(&quot;border&quot;, value); }
+
         } 
 
 
 
-        public string Top<br />
-        {<br />
-            get { return GetAttribute(&quot;top&quot;); }<br />
-            set { SetAttribute(&quot;top&quot;, value); }<br />
+        public string Top
+
+        {
+
+            get { return GetAttribute(&quot;top&quot;); }
+
+            set { SetAttribute(&quot;top&quot;, value); }
+
         } 
 
 
 
-        public string Left<br />
-        {<br />
-            get { return GetAttribute(&quot;left&quot;); }<br />
-            set { SetAttribute(&quot;left&quot;, value); }<br />
+        public string Left
+
+        {
+
+            get { return GetAttribute(&quot;left&quot;); }
+
+            set { SetAttribute(&quot;left&quot;, value); }
+
         } 
 
 
 
-        public string Width<br />
-        {<br />
-            get { return GetAttribute(&quot;width&quot;); }<br />
-            set { SetAttribute(&quot;width&quot;, value); }<br />
+        public string Width
+
+        {
+
+            get { return GetAttribute(&quot;width&quot;); }
+
+            set { SetAttribute(&quot;width&quot;, value); }
+
         } 
 
 
 
-        public string Height<br />
-        {<br />
-            get { return GetAttribute(&quot;height&quot;); }<br />
-            set { SetAttribute(&quot;height&quot;, value); }<br />
-        }<br />
+        public string Height
+
+        {
+
+            get { return GetAttribute(&quot;height&quot;); }
+
+            set { SetAttribute(&quot;height&quot;, value); }
+
+        }
+
     } 
 
 

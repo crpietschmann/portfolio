@@ -16,7 +16,8 @@ redirect_from:
 
 **UPDATE: I have written a newer version of this article to specifically target the latest Bing Maps Silverlight Control Version 1.0 Release.**
 
-**You can find the new article here: <a href="/post.aspx?id=b3812d3c-cb64-4947-b6df-4ebb8e3a2e43">Display OpenStreetMap Imagery using Bing Maps Silverlight Control v1</a><br />**
+**You can find the new article here: <a href="/post.aspx?id=b3812d3c-cb64-4947-b6df-4ebb8e3a2e43">Display OpenStreetMap Imagery using Bing Maps Silverlight Control v1</a>
+**
 <hr />
 
 In the &ldquo;<a href="/post.aspx?id=ce8b5456-ef99-4311-8099-16976ebcc5e2" target="_blank">Using Tile Layers to Overlay Custom Map Imagery</a>&rdquo; article I showed you how to overlay your own Custom Map Imagery that you generated using the MapCruncher tool on top of the Map. Now, in this article I&rsquo;ll show you what you need to know in order to overlay map imagery from other competing mapping services (OpenStreetMap, OpenAerialMap and Yahoo Maps). This allows you to easily build in functionality that allows your users to easily switch (with the click of a button or selection of a dropdown) which mapping service imagery is used to visualize the data in your application.
@@ -63,9 +64,21 @@ Also, when you&rsquo;re showing Map Imagery that will completely overlay over th
 
 The resulting Custom Tile Source object is so simple, it&rsquo;s probably easier to just show you the code.
 
-namespace VirtualEarthSilverlight01    <br />{     <br />    public class OpenStreetMapTileSource : Microsoft.VirtualEarth.MapControl.TileSource     <br />    {     <br />        public OpenStreetMapTileSource()     <br />            : base("http://tile.openstreetmap.org/{2}/{0}/{1}.png")     <br />        {     <br />        }
+namespace VirtualEarthSilverlight01    
+{     
+    public class OpenStreetMapTileSource : Microsoft.VirtualEarth.MapControl.TileSource     
+    {     
+        public OpenStreetMapTileSource()     
+            : base("http://tile.openstreetmap.org/{2}/{0}/{1}.png")     
+        {     
+        }
 
-        public override Uri GetUri(int x, int y, int zoomLevel)    <br />        {     <br />            return new Uri(String.Format(this.UriFormat, x, y, zoomLevel));     <br />        }     <br />    }     <br />}
+        public override Uri GetUri(int x, int y, int zoomLevel)    
+        {     
+            return new Uri(String.Format(this.UriFormat, x, y, zoomLevel));     
+        }     
+    }     
+}
 
  
 
@@ -73,7 +86,28 @@ If you aren&rsquo;t familiar with the above method of using &ldquo;String.Format
 
 Now using the described overview above, we can add the new OpenStreetMapTileSource object to a MapTileLayer on the Map and display the OpenStreetMap Imagery within the Silverlight Map Control. Here&rsquo;s an example of doing this with XAML.
 
-<UserControl x:Class="VirtualEarthSilverlight01.Page"    <br />    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     <br />    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     <br />    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     <br />    xmlns:mCore="clr-namespace:Microsoft.VirtualEarth.MapControl.Core;assembly=Microsoft.VirtualEarth.MapControl"  <br />    xmlns:local="clr-namespace:VirtualEarthSilverlight01"     <br />    Width="1600" Height="768">     <br />    <Grid x:Name="LayoutRoot" Background="White">     <br />        <m:Map Name="MainMap">     <br />            <m:Map.Mode>     <br />                <mCore:MercatorMode></mCore:MercatorMode>     <br />            </m:Map.Mode>     <br />            <m:Map.Children>     <br />                <m:MapTileLayer>     <br />                    <m:MapTileLayer.TileSources>     <br />                        <local:OpenStreetMapTileSource></local:OpenStreetMapTileSource>     <br />                    </m:MapTileLayer.TileSources>     <br />                </m:MapTileLayer>     <br />            </m:Map.Children>     <br />        </m:Map>     <br />    </Grid>     <br /></UserControl>
+<UserControl x:Class="VirtualEarthSilverlight01.Page"    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     
+    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     
+    xmlns:mCore="clr-namespace:Microsoft.VirtualEarth.MapControl.Core;assembly=Microsoft.VirtualEarth.MapControl"  
+    xmlns:local="clr-namespace:VirtualEarthSilverlight01"     
+    Width="1600" Height="768">     
+    <Grid x:Name="LayoutRoot" Background="White">     
+        <m:Map Name="MainMap">     
+            <m:Map.Mode>     
+                <mCore:MercatorMode></mCore:MercatorMode>     
+            </m:Map.Mode>     
+            <m:Map.Children>     
+                <m:MapTileLayer>     
+                    <m:MapTileLayer.TileSources>     
+                        <local:OpenStreetMapTileSource></local:OpenStreetMapTileSource>     
+                    </m:MapTileLayer.TileSources>     
+                </m:MapTileLayer>     
+            </m:Map.Children>     
+        </m:Map>     
+    </Grid>     
+</UserControl>
 
  
 
@@ -84,17 +118,49 @@ Also, since the OpenStreetMapTileSource object is contained within the projects 
 
 The resulting Custom Tile Source object for showing OpenAerialMap Imagery:
 
-namespace VirtualEarthSilverlight01    <br />{     <br />    public class OpenAerialMapTileSource : Microsoft.VirtualEarth.MapControl.TileSource     <br />    {     <br />        public OpenAerialMapTileSource()     <br />            : base("http://tile.openaerialmap.org/tiles/1.0.0/openaerialmap-900913/{2}/{0}/{1}.jpg")     <br />        {     <br />        }
+namespace VirtualEarthSilverlight01    
+{     
+    public class OpenAerialMapTileSource : Microsoft.VirtualEarth.MapControl.TileSource     
+    {     
+        public OpenAerialMapTileSource()     
+            : base("http://tile.openaerialmap.org/tiles/1.0.0/openaerialmap-900913/{2}/{0}/{1}.jpg")     
+        {     
+        }
 
-        public override Uri GetUri(int x, int y, int zoomLevel)    <br />        {     <br />            return new Uri(String.Format(this.UriFormat, x, y, zoomLevel));     <br />        }     <br />    }     <br />}
+        public override Uri GetUri(int x, int y, int zoomLevel)    
+        {     
+            return new Uri(String.Format(this.UriFormat, x, y, zoomLevel));     
+        }     
+    }     
+}
 
  
 
 Here&rsquo;s some example XAML that adds the OpenAerialMapTileSource object to the Map:
 
-<UserControl x:Class="VirtualEarthSilverlight01.Page"    <br />    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     <br />    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     <br />    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     <br />    xmlns:mCore="clr-namespace:Microsoft.VirtualEarth.MapControl.Core;assembly=Microsoft.VirtualEarth.MapControl"     <br />    xmlns:local="clr-namespace:VirtualEarthSilverlight01"     <br />    Width="1600" Height="768">     <br />    <Grid x:Name="LayoutRoot" Background="White">     <br />        <m:Map Name="MainMap">
+<UserControl x:Class="VirtualEarthSilverlight01.Page"    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     
+    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     
+    xmlns:mCore="clr-namespace:Microsoft.VirtualEarth.MapControl.Core;assembly=Microsoft.VirtualEarth.MapControl"     
+    xmlns:local="clr-namespace:VirtualEarthSilverlight01"     
+    Width="1600" Height="768">     
+    <Grid x:Name="LayoutRoot" Background="White">     
+        <m:Map Name="MainMap">
 
-             <m:Map.Mode>    <br />                <mCore:MercatorMode></mCore:MercatorMode>     <br />            </m:Map.Mode>  <br />            <m:Map.Children>     <br />                <m:MapTileLayer>     <br />                    <m:MapTileLayer.TileSources>     <br />                        <local:OpenAerialMapTileSource></local:OpenAerialMapTileSource>     <br />                    </m:MapTileLayer.TileSources>     <br />                </m:MapTileLayer>     <br />            </m:Map.Children>     <br />        </m:Map>     <br />    </Grid>     <br /></UserControl>
+             <m:Map.Mode>    
+                <mCore:MercatorMode></mCore:MercatorMode>     
+            </m:Map.Mode>  
+            <m:Map.Children>     
+                <m:MapTileLayer>     
+                    <m:MapTileLayer.TileSources>     
+                        <local:OpenAerialMapTileSource></local:OpenAerialMapTileSource>     
+                    </m:MapTileLayer.TileSources>     
+                </m:MapTileLayer>     
+            </m:Map.Children>     
+        </m:Map>     
+    </Grid>     
+</UserControl>
 
  
 <h3>Create a TileSource for Yahoo Maps (Street, Aerial and Hybrid)</h3>
@@ -104,42 +170,126 @@ Again, the process for creating a Custom Tile Source for Yahoo Maps and adding i
 
 <a href="/images/posts/VEJS_007_YahooMapsStreetImagery.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_007_YahooMapsStreetImagery" src="/images/posts/VEJS_007_YahooMapsStreetImagery_thumb.png" border="0" alt="VEJS_007_YahooMapsStreetImagery" width="244" height="215" align="right" /></a>Here&rsquo;s the code for the Custom Tile Source for Yahoo Maps Street Imagery:
 
-namespace VirtualEarthSilverlight01    <br />{     <br />    public class YahooStreetTileSource : Microsoft.VirtualEarth.MapControl.TileSource     <br />    {     <br />        public YahooStreetTileSource()     <br />            : base("http://us.maps2.yimg.com/us.png.maps.yimg.com/png?v=3.52&amp;t=m&amp;x={0}&amp;y={1}&amp;z={2}")     <br />        {     <br />        }
+namespace VirtualEarthSilverlight01    
+{     
+    public class YahooStreetTileSource : Microsoft.VirtualEarth.MapControl.TileSource     
+    {     
+        public YahooStreetTileSource()     
+            : base("http://us.maps2.yimg.com/us.png.maps.yimg.com/png?v=3.52&amp;t=m&amp;x={0}&amp;y={1}&amp;z={2}")     
+        {     
+        }
 
-        public override Uri GetUri(int x, int y, int zoomLevel)    <br />        {     <br />            // The math used here was copied from the DeepEarth Project (http://deepearth.codeplex.com)     <br />            double posY;     <br />            double zoom = 18 - zoomLevel;     <br />            double num4 = Math.Pow(2.0, zoomLevel) / 2.0;
+        public override Uri GetUri(int x, int y, int zoomLevel)    
+        {     
+            // The math used here was copied from the DeepEarth Project (http://deepearth.codeplex.com)     
+            double posY;     
+            double zoom = 18 - zoomLevel;     
+            double num4 = Math.Pow(2.0, zoomLevel) / 2.0;
 
-            if (y < num4)    <br />            {     <br />                posY = (num4 - Convert.ToDouble(y)) - 1.0;     <br />            }     <br />            else     <br />            {     <br />                posY = ((Convert.ToDouble(y) + 1) - num4) * -1.0;     <br />            }
+            if (y < num4)    
+            {     
+                posY = (num4 - Convert.ToDouble(y)) - 1.0;     
+            }     
+            else     
+            {     
+                posY = ((Convert.ToDouble(y) + 1) - num4) * -1.0;     
+            }
 
-            return new Uri(String.Format(this.UriFormat, x, posY, zoom));    <br />        }     <br />    }     <br />}
+            return new Uri(String.Format(this.UriFormat, x, posY, zoom));    
+        }     
+    }     
+}
 
  
 
 And, here&rsquo;s some example XAML that adds the YahooStreetTileSource object to the Map:
 
-<UserControl x:Class="VirtualEarthSilverlight01.Page"    <br />    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     <br />    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     <br />    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     <br />    xmlns:mCore="clr-namespace:Microsoft.VirtualEarth.MapControl.Core;assembly=Microsoft.VirtualEarth.MapControl"     <br />    xmlns:local="clr-namespace:VirtualEarthSilverlight01"     <br />    Width="1600" Height="768">     <br />    <Grid x:Name="LayoutRoot" Background="White">     <br />        <m:Map Name="MainMap">
+<UserControl x:Class="VirtualEarthSilverlight01.Page"    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     
+    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     
+    xmlns:mCore="clr-namespace:Microsoft.VirtualEarth.MapControl.Core;assembly=Microsoft.VirtualEarth.MapControl"     
+    xmlns:local="clr-namespace:VirtualEarthSilverlight01"     
+    Width="1600" Height="768">     
+    <Grid x:Name="LayoutRoot" Background="White">     
+        <m:Map Name="MainMap">
 
-             <m:Map.Mode>    <br />                <mCore:MercatorMode></mCore:MercatorMode>     <br />            </m:Map.Mode>  <br />            <m:Map.Children>     <br />                <m:MapTileLayer>     <br />                    <m:MapTileLayer.TileSources>     <br />                        <local:YahooStreetTileSource></local:YahooStreetTileSource>     <br />                    </m:MapTileLayer.TileSources>     <br />                </m:MapTileLayer>     <br />            </m:Map.Children>     <br />        </m:Map>     <br />    </Grid>     <br /></UserControl>
+             <m:Map.Mode>    
+                <mCore:MercatorMode></mCore:MercatorMode>     
+            </m:Map.Mode>  
+            <m:Map.Children>     
+                <m:MapTileLayer>     
+                    <m:MapTileLayer.TileSources>     
+                        <local:YahooStreetTileSource></local:YahooStreetTileSource>     
+                    </m:MapTileLayer.TileSources>     
+                </m:MapTileLayer>     
+            </m:Map.Children>     
+        </m:Map>     
+    </Grid>     
+</UserControl>
 
  
 <h4>Yahoo Maps &ndash; Aerial Imagery</h4>
 
 <a href="/images/posts/VEJS_007_YahooMapsAerialImagery.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_007_YahooMapsAerialImagery" src="/images/posts/VEJS_007_YahooMapsAerialImagery_thumb.png" border="0" alt="VEJS_007_YahooMapsAerialImagery" width="244" height="215" align="right" /></a>Here&rsquo;s the code for the Custom Tile Source for Yahoo Maps Aerial Imagery:
 
-namespace VirtualEarthSilverlight01    <br />{     <br />    public class YahooAerialTileSource : Microsoft.VirtualEarth.MapControl.TileSource     <br />    {     <br />        public YahooAerialTileSource()     <br />            : base("http://us.maps3.yimg.com/aerial.maps.yimg.com/tile?v=1.7&amp;t=a&amp;x={0}&amp;y={1}&amp;z={2}")     <br />        {     <br />        }
+namespace VirtualEarthSilverlight01    
+{     
+    public class YahooAerialTileSource : Microsoft.VirtualEarth.MapControl.TileSource     
+    {     
+        public YahooAerialTileSource()     
+            : base("http://us.maps3.yimg.com/aerial.maps.yimg.com/tile?v=1.7&amp;t=a&amp;x={0}&amp;y={1}&amp;z={2}")     
+        {     
+        }
 
-        public override Uri GetUri(int x, int y, int zoomLevel)    <br />        {     <br />            // The math used here was copied from the DeepEarth Project (http://deepearth.codeplex.com)     <br />            double posY;     <br />            double zoom = 18 - zoomLevel;     <br />            double num4 = Math.Pow(2.0, zoomLevel) / 2.0;
+        public override Uri GetUri(int x, int y, int zoomLevel)    
+        {     
+            // The math used here was copied from the DeepEarth Project (http://deepearth.codeplex.com)     
+            double posY;     
+            double zoom = 18 - zoomLevel;     
+            double num4 = Math.Pow(2.0, zoomLevel) / 2.0;
 
-            if (y < num4)    <br />            {     <br />                posY = (num4 - Convert.ToDouble(y)) - 1.0;     <br />            }     <br />            else     <br />            {     <br />                posY = ((Convert.ToDouble(y) + 1) - num4) * -1.0;     <br />            }
+            if (y < num4)    
+            {     
+                posY = (num4 - Convert.ToDouble(y)) - 1.0;     
+            }     
+            else     
+            {     
+                posY = ((Convert.ToDouble(y) + 1) - num4) * -1.0;     
+            }
 
-            return new Uri(String.Format(this.UriFormat, x, posY, zoom));    <br />        }     <br />    }     <br />}
+            return new Uri(String.Format(this.UriFormat, x, posY, zoom));    
+        }     
+    }     
+}
 
  
 
 And, here&rsquo;s some example XAML that adds the YahooAerialTileSource object to the Map:
 
-<UserControl x:Class="VirtualEarthSilverlight01.Page"    <br />    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     <br />    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     <br />    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     <br />    xmlns:mCore="clr-namespace:Microsoft.VirtualEarth.MapControl.Core;assembly=Microsoft.VirtualEarth.MapControl"     <br />    xmlns:local="clr-namespace:VirtualEarthSilverlight01"     <br />    Width="1600" Height="768">     <br />    <Grid x:Name="LayoutRoot" Background="White">     <br />        <m:Map Name="MainMap">
+<UserControl x:Class="VirtualEarthSilverlight01.Page"    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     
+    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     
+    xmlns:mCore="clr-namespace:Microsoft.VirtualEarth.MapControl.Core;assembly=Microsoft.VirtualEarth.MapControl"     
+    xmlns:local="clr-namespace:VirtualEarthSilverlight01"     
+    Width="1600" Height="768">     
+    <Grid x:Name="LayoutRoot" Background="White">     
+        <m:Map Name="MainMap">
 
-             <m:Map.Mode>    <br />                <mCore:MercatorMode></mCore:MercatorMode>     <br />            </m:Map.Mode>     <br />            <m:Map.Children>     <br />                <m:MapTileLayer>     <br />                    <m:MapTileLayer.TileSources>     <br />                        <local:YahooAerialTileSource></local:YahooAerialTileSource>     <br />                    </m:MapTileLayer.TileSources>     <br />                </m:MapTileLayer>     <br />            </m:Map.Children>     <br />        </m:Map>     <br />    </Grid>     <br /></UserControl>
+             <m:Map.Mode>    
+                <mCore:MercatorMode></mCore:MercatorMode>     
+            </m:Map.Mode>     
+            <m:Map.Children>     
+                <m:MapTileLayer>     
+                    <m:MapTileLayer.TileSources>     
+                        <local:YahooAerialTileSource></local:YahooAerialTileSource>     
+                    </m:MapTileLayer.TileSources>     
+                </m:MapTileLayer>     
+            </m:Map.Children>     
+        </m:Map>     
+    </Grid>     
+</UserControl>
 
  
 <h4>Yahoo Maps &ndash; Hybrid Imagery</h4>
@@ -148,19 +298,63 @@ And, here&rsquo;s some example XAML that adds the YahooAerialTileSource object t
 
 Here&rsquo;s the code for the Custom Tile Source for Yahoo Maps Hybrid Imagery:
 
-namespace VirtualEarthSilverlight01    <br />{     <br />    public class YahooHybridTileSource : Microsoft.VirtualEarth.MapControl.TileSource     <br />    {     <br />        public YahooHybridTileSource()     <br />            : base("http://us.maps3.yimg.com/aerial.maps.yimg.com/png?v=2.2&amp;t=h&amp;x={0}&amp;y={1}&amp;z={2}&rdquo;)     <br />        {     <br />        }
+namespace VirtualEarthSilverlight01    
+{     
+    public class YahooHybridTileSource : Microsoft.VirtualEarth.MapControl.TileSource     
+    {     
+        public YahooHybridTileSource()     
+            : base("http://us.maps3.yimg.com/aerial.maps.yimg.com/png?v=2.2&amp;t=h&amp;x={0}&amp;y={1}&amp;z={2}&rdquo;)     
+        {     
+        }
 
-        public override Uri GetUri(int x, int y, int zoomLevel)    <br />        {     <br />            // The math used here was copied from the DeepEarth Project (http://deepearth.codeplex.com)     <br />            double posY;     <br />            double zoom = 18 - zoomLevel;     <br />            double num4 = Math.Pow(2.0, zoomLevel) / 2.0;
+        public override Uri GetUri(int x, int y, int zoomLevel)    
+        {     
+            // The math used here was copied from the DeepEarth Project (http://deepearth.codeplex.com)     
+            double posY;     
+            double zoom = 18 - zoomLevel;     
+            double num4 = Math.Pow(2.0, zoomLevel) / 2.0;
 
-            if (y < num4)    <br />            {     <br />                posY = (num4 - Convert.ToDouble(y)) - 1.0;     <br />            }     <br />            else     <br />            {     <br />                posY = ((Convert.ToDouble(y) + 1) - num4) * -1.0;     <br />            }
+            if (y < num4)    
+            {     
+                posY = (num4 - Convert.ToDouble(y)) - 1.0;     
+            }     
+            else     
+            {     
+                posY = ((Convert.ToDouble(y) + 1) - num4) * -1.0;     
+            }
 
-            return new Uri(String.Format(this.UriFormat, x, posY, zoom));    <br />        }     <br />    }     <br />}
+            return new Uri(String.Format(this.UriFormat, x, posY, zoom));    
+        }     
+    }     
+}
 
  
 
 And, here&rsquo;s some example XAML that adds the YahooAerialTileSource and YahooHybridTileSource objects to the Map:
 
-<UserControl x:Class="VirtualEarthSilverlight01.Page"    <br />    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     <br />    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     <br />    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     <br />    xmlns:mCore="clr-namespace:Microsoft.VirtualEarth.MapControl.Core;assembly=Microsoft.VirtualEarth.MapControl"     <br />    xmlns:local="clr-namespace:VirtualEarthSilverlight01"     <br />    Width="1600" Height="768">     <br />    <Grid x:Name="LayoutRoot" Background="White">     <br />        <m:Map Name="MainMap">     <br />            <m:Map.Mode>     <br />                <mCore:MercatorMode></mCore:MercatorMode>     <br />            </m:Map.Mode>     <br />            <m:Map.Children>     <br />                <m:MapTileLayer>     <br />                    <m:MapTileLayer.TileSources>     <br />                        <local:YahooAerialTileSource></local:YahooAerialTileSource>     <br />                        <local:YahooHybridTileSource></local:YahooHybridTileSource>     <br />                    </m:MapTileLayer.TileSources>     <br />                </m:MapTileLayer>     <br />            </m:Map.Children>     <br />        </m:Map>     <br />    </Grid>     <br /></UserControl>
+<UserControl x:Class="VirtualEarthSilverlight01.Page"    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     
+    xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     
+    xmlns:mCore="clr-namespace:Microsoft.VirtualEarth.MapControl.Core;assembly=Microsoft.VirtualEarth.MapControl"     
+    xmlns:local="clr-namespace:VirtualEarthSilverlight01"     
+    Width="1600" Height="768">     
+    <Grid x:Name="LayoutRoot" Background="White">     
+        <m:Map Name="MainMap">     
+            <m:Map.Mode>     
+                <mCore:MercatorMode></mCore:MercatorMode>     
+            </m:Map.Mode>     
+            <m:Map.Children>     
+                <m:MapTileLayer>     
+                    <m:MapTileLayer.TileSources>     
+                        <local:YahooAerialTileSource></local:YahooAerialTileSource>     
+                        <local:YahooHybridTileSource></local:YahooHybridTileSource>     
+                    </m:MapTileLayer.TileSources>     
+                </m:MapTileLayer>     
+            </m:Map.Children>     
+        </m:Map>     
+    </Grid>     
+</UserControl>
 
  
 <h3>Conclusion</h3>

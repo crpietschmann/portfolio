@@ -20,21 +20,55 @@ This basic example opens up a user specified file, and displays its contents wit
 
 **Page.xaml file**
 
-<UserControl x:Class="SilverlightFileSystemInfo.Page"<br />     xmlns="http://schemas.microsoft.com/client/2007" <br />     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" <br />     Width="480"><br />     <Grid x:Name="LayoutRoot" Background="White"><br />         <Grid HorizontalAlignment="Left"><br />             <TextBox x:Name="txtFile" Width="400" Height="250" AcceptsReturn="True" />    <br />         </Grid><br />         <Grid HorizontalAlignment="Right" VerticalAlignment="Top"><br />             <Button x:Name="btnSelectFile" Content="Add File" Width="75" Height="30" Click="btnSelectFile_Click"></Button><br />         </Grid><br />     </Grid><br /> </UserControl>
+<UserControl x:Class="SilverlightFileSystemInfo.Page"
+     xmlns="http://schemas.microsoft.com/client/2007" 
+     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+     Width="480">
+     <Grid x:Name="LayoutRoot" Background="White">
+         <Grid HorizontalAlignment="Left">
+             <TextBox x:Name="txtFile" Width="400" Height="250" AcceptsReturn="True" />    
+         </Grid>
+         <Grid HorizontalAlignment="Right" VerticalAlignment="Top">
+             <Button x:Name="btnSelectFile" Content="Add File" Width="75" Height="30" Click="btnSelectFile_Click"></Button>
+         </Grid>
+     </Grid>
+ </UserControl>
 
 **Page.xaml.cs file** 
 
 [code:c#]
 
-using System.Windows;<br /> using System.Windows.Controls;<br /> using System.IO;
+using System.Windows;
+ using System.Windows.Controls;
+ using System.IO;
 
-namespace SilverlightOpenFileTest<br /> {<br />     public partial class Page : UserControl<br />     {<br />         public Page()<br />         {<br />             InitializeComponent();<br />         }
+namespace SilverlightOpenFileTest
+ {
+     public partial class Page : UserControl
+     {
+         public Page()
+         {
+             InitializeComponent();
+         }
 
-        private void btnSelectFile_Click(object sender, RoutedEventArgs e)<br />         {<br />             OpenFileDialog fileDialog = new OpenFileDialog();
+        private void btnSelectFile_Click(object sender, RoutedEventArgs e)
+         {
+             OpenFileDialog fileDialog = new OpenFileDialog();
 
-            // Show the Open File Dialog<br />             DialogResult result = fileDialog.ShowDialog();
+            // Show the Open File Dialog
+             DialogResult result = fileDialog.ShowDialog();
 
-            // Open the file if OK was clicked in the dialog<br />             if (result == DialogResult.OK)<br />             {<br />                 FileDialogFileInfo fi = fileDialog.SelectedFile;<br />                 Stream s = fi.OpenRead();<br />                 StreamReader reader = new StreamReader(s);<br />                 txtFile.Text = reader.ReadToEnd();<br />             }<br />         }<br />     }<br /> }
+            // Open the file if OK was clicked in the dialog
+             if (result == DialogResult.OK)
+             {
+                 FileDialogFileInfo fi = fileDialog.SelectedFile;
+                 Stream s = fi.OpenRead();
+                 StreamReader reader = new StreamReader(s);
+                 txtFile.Text = reader.ReadToEnd();
+             }
+         }
+     }
+ }
 
 ```
 

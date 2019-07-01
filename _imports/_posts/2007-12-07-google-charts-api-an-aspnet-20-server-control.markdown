@@ -23,14 +23,29 @@ Put the Chart control on the page:
 
 <span style="font-size: x-small;">
 
-<span style="color: #0000ff; font-size: x-small;"><</span><span style="color: #a31515; font-size: x-small;">GoogleAPI</span><span style="color: #0000ff; font-size: x-small;">:</span><span style="color: #a31515; font-size: x-small;">Chart</span><span style="font-size: x-small;"> </span><span style="color: #ff0000; font-size: x-small;">runat</span><span style="color: #0000ff; font-size: x-small;">="server"</span><span style="font-size: x-small;"> </span><span style="color: #ff0000; font-size: x-small;">id</span><span style="color: #0000ff; font-size: x-small;">="Chart1"</span><span style="font-size: x-small;"> <br /> </span><span style="color: #ff0000; font-size: x-small;">Width</span><span style="color: #0000ff; font-size: x-small;">="200"</span><span style="font-size: x-small;"> </span><span style="color: #ff0000; font-size: x-small;">Height</span><span style="color: #0000ff; font-size: x-small;">="150"</span><span style="font-size: x-small;"> </span><span style="color: #ff0000; font-size: x-small;">LineColor</span><span style="color: #0000ff; font-size: x-small;">="ff0000"<br /> </span><span style="color: #ff0000; font-size: x-small;">BackgroundColor</span><span style="color: #0000ff; font-size: x-small;">="efefef"<br /> </span><span style="color: #ff0000; font-size: x-small;">ToolTip</span><span style="color: #0000ff; font-size: x-small;">="Hello World"><br /> </span><span style="color: #0000ff; font-size: x-small;"></</span><span style="color: #a31515; font-size: x-small;">GoogleAPI</span><span style="color: #0000ff; font-size: x-small;">:</span><span style="color: #a31515; font-size: x-small;">Chart</span><span style="color: #0000ff; font-size: x-small;">></span>
+<span style="color: #0000ff; font-size: x-small;"><</span><span style="color: #a31515; font-size: x-small;">GoogleAPI</span><span style="color: #0000ff; font-size: x-small;">:</span><span style="color: #a31515; font-size: x-small;">Chart</span><span style="font-size: x-small;"> </span><span style="color: #ff0000; font-size: x-small;">runat</span><span style="color: #0000ff; font-size: x-small;">="server"</span><span style="font-size: x-small;"> </span><span style="color: #ff0000; font-size: x-small;">id</span><span style="color: #0000ff; font-size: x-small;">="Chart1"</span><span style="font-size: x-small;"> 
+ </span><span style="color: #ff0000; font-size: x-small;">Width</span><span style="color: #0000ff; font-size: x-small;">="200"</span><span style="font-size: x-small;"> </span><span style="color: #ff0000; font-size: x-small;">Height</span><span style="color: #0000ff; font-size: x-small;">="150"</span><span style="font-size: x-small;"> </span><span style="color: #ff0000; font-size: x-small;">LineColor</span><span style="color: #0000ff; font-size: x-small;">="ff0000"
+ </span><span style="color: #ff0000; font-size: x-small;">BackgroundColor</span><span style="color: #0000ff; font-size: x-small;">="efefef"
+ </span><span style="color: #ff0000; font-size: x-small;">ToolTip</span><span style="color: #0000ff; font-size: x-small;">="Hello World">
+ </span><span style="color: #0000ff; font-size: x-small;"></</span><span style="color: #a31515; font-size: x-small;">GoogleAPI</span><span style="color: #0000ff; font-size: x-small;">:</span><span style="color: #a31515; font-size: x-small;">Chart</span><span style="color: #0000ff; font-size: x-small;">></span>
 </span>
 
 In the page load event define the values to be charted
 
 <span style="color: #0000ff; font-size: x-small;"><span style="font-size: x-small;">
 
-Chart1.MaxValue = 60;<br /> <br /> Chart1.Values.Clear();<br /> <br /> Chart1.Values.Add(<span style="color: #a31515; font-size: x-small;">"Jan"</span><span style="font-size: x-small;">, 10);<br /> Chart1.Values.Add(</span><span style="color: #a31515; font-size: x-small;">"Feb"</span><span style="font-size: x-small;">, 20);<br /> Chart1.Values.Add(</span><span style="color: #a31515; font-size: x-small;">"Mar"</span><span style="font-size: x-small;">, 30);<br /> Chart1.Values.Add(</span><span style="color: #a31515; font-size: x-small;">"Apr"</span><span style="font-size: x-small;">, 50);<br /> Chart1.Values.Add(</span><span style="color: #a31515; font-size: x-small;">"May"</span><span style="font-size: x-small;">, 5);<br /> Chart1.YAxisLabels.Add(</span><span style="color: #a31515; font-size: x-small;">"0 Kb"</span><span style="font-size: x-small;">);<br /> Chart1.YAxisLabels.Add(</span><span style="color: #a31515; font-size: x-small;">"25+ Kb"</span><span style="font-size: x-small;">);<br /> Chart1.YAxisLabels.Add(</span><span style="color: #a31515; font-size: x-small;">"50+ Kb"</span><span style="font-size: x-small;">);</span>
+Chart1.MaxValue = 60;
+ 
+ Chart1.Values.Clear();
+ 
+ Chart1.Values.Add(<span style="color: #a31515; font-size: x-small;">"Jan"</span><span style="font-size: x-small;">, 10);
+ Chart1.Values.Add(</span><span style="color: #a31515; font-size: x-small;">"Feb"</span><span style="font-size: x-small;">, 20);
+ Chart1.Values.Add(</span><span style="color: #a31515; font-size: x-small;">"Mar"</span><span style="font-size: x-small;">, 30);
+ Chart1.Values.Add(</span><span style="color: #a31515; font-size: x-small;">"Apr"</span><span style="font-size: x-small;">, 50);
+ Chart1.Values.Add(</span><span style="color: #a31515; font-size: x-small;">"May"</span><span style="font-size: x-small;">, 5);
+ Chart1.YAxisLabels.Add(</span><span style="color: #a31515; font-size: x-small;">"0 Kb"</span><span style="font-size: x-small;">);
+ Chart1.YAxisLabels.Add(</span><span style="color: #a31515; font-size: x-small;">"25+ Kb"</span><span style="font-size: x-small;">);
+ Chart1.YAxisLabels.Add(</span><span style="color: #a31515; font-size: x-small;">"50+ Kb"</span><span style="font-size: x-small;">);</span>
 </span></span>
 
 And, that's all you have to do to put a Chart on your page using my little control.

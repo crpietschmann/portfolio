@@ -46,7 +46,8 @@ Here&#39;s an event handler using Virtual Earth directly:
 <font size="2" color="#0000ff">
 
 
-var<font size="2"> map;<br />
+var<font size="2"> map;
+
 </font><font size="2" color="#0000ff">function</font><font size="2"> Map_Click(eventArgs){map.ZoomIn();}</font>
 
 </font>

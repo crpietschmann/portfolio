@@ -31,9 +31,12 @@ I&#39;ve been playing around with Silverlight 2 Beta 1 alot lately, and one of t
 
 
 
-// Load JavaScript code from Embedded Resource<br />
-System.IO.Stream stream = this.GetType().Assembly.GetManifestResourceStream(&quot;[namespace].[javascriptFileName]&quot;);<br />
-System.IO.StreamReader reader = new System.IO.StreamReader(stream);<br />
+// Load JavaScript code from Embedded Resource
+
+System.IO.Stream stream = this.GetType().Assembly.GetManifestResourceStream(&quot;[namespace].[javascriptFileName]&quot;);
+
+System.IO.StreamReader reader = new System.IO.StreamReader(stream);
+
 string script = reader.ReadToEnd(); 
 
 

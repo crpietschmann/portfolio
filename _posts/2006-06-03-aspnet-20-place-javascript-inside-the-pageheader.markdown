@@ -18,10 +18,20 @@ The Page.ClientScript object allows you to place JavaScript inside the Page, but
 
 Add a .js file include inside the page header:
 
-[code:c#]<br /> HtmlGenericControl Include = new HtmlGenericControl("script");<br /> Include.Attributes.Add("type", "text/javascript");<br /> Include.Attributes.Add("src", "http://dev.virtualearth.net/mapcontrol/v3/mapcontrol.js");<br /> this.Page.Header.Controls.Add(Include);<br /> ```
+[code:c#]
+ HtmlGenericControl Include = new HtmlGenericControl("script");
+ Include.Attributes.Add("type", "text/javascript");
+ Include.Attributes.Add("src", "http://dev.virtualearth.net/mapcontrol/v3/mapcontrol.js");
+ this.Page.Header.Controls.Add(Include);
+ ```
 
 Add some JavaScript inside the page header:
 
-[code:c#]<br /> HtmlGenericControl Include2 = new HtmlGenericControl("script");<br /> Include2.Attributes.Add("type", "text/javascript");<br /> Include2.InnerHtml = "alert('JavaScript in Page Header');";<br /> this.Page.Header.Controls.Add(Include2);<br /> ```
+[code:c#]
+ HtmlGenericControl Include2 = new HtmlGenericControl("script");
+ Include2.Attributes.Add("type", "text/javascript");
+ Include2.InnerHtml = "alert('JavaScript in Page Header');";
+ this.Page.Header.Controls.Add(Include2);
+ ```
 
 It would be nice if there was a Page.Header.ClientScript object that you could use to place JavaScript within the header of the Page, but for now we'll just have to use the method stated above.

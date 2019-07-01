@@ -26,6 +26,31 @@ I don't have a Mac, so keep in mind that I haven't tested this in Safari on the 
 
 Below is a code example using the CalendarExtender in the Ajax Control Toolkit to demonstrate the issue. If you run the following code, you will notice that when you click on the textbox in Safari, the calendar never pops up, and the JavaScript console will register a couple exceptions in the ASP.NET AJAX Extensions JavaScript code.
 
-[code:html]<br /> <%@ Page Language="C#" AutoEventWireup="true" CodeFile="SafariTest.aspx.cs" Inherits="SafariTest" %><br /> <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %><br /> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><br /> <html xmlns="http://www.w3.org/1999/xhtml"><br /> <head runat="server"><br /> <title>Untitled Page</title><br /> <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><br /> <script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6" mce_src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6"></script><br /> <script type="text/javascript"> var map = null; function GetMap() { map = new VEMap('myMap'); map.LoadMap(); } </script><br /> </head><br /> <body onload="GetMap();"><br /> <form id="form1" runat="server"><br /> <asp:ScriptManager runat="server" ID="ScriptManager1"></asp:ScriptManager><br /> <div><br /> <asp:TextBox runat="server" id="txtDate"></asp:TextBox><br /> <ajaxToolkit:CalendarExtender runat="server" ID="CalendarExtender1" TargetControlID="txtDate"></ajaxToolkit:CalendarExtender><br /> <br /><br /><br /> <div id='myMap' style="position:relative; width:400px; height:400px;"></div><br /> </div><br /> </form><br /> </body><br /> </html><br /> ```
+[code:html]
+ <%@ Page Language="C#" AutoEventWireup="true" CodeFile="SafariTest.aspx.cs" Inherits="SafariTest" %>
+ <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head runat="server">
+ <title>Untitled Page</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6" mce_src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6"></script>
+ <script type="text/javascript"> var map = null; function GetMap() { map = new VEMap('myMap'); map.LoadMap(); } </script>
+ </head>
+ <body onload="GetMap();">
+ <form id="form1" runat="server">
+ <asp:ScriptManager runat="server" ID="ScriptManager1"></asp:ScriptManager>
+ <div>
+ <asp:TextBox runat="server" id="txtDate"></asp:TextBox>
+ <ajaxToolkit:CalendarExtender runat="server" ID="CalendarExtender1" TargetControlID="txtDate"></ajaxToolkit:CalendarExtender>
+ 
+
+
+ <div id='myMap' style="position:relative; width:400px; height:400px;"></div>
+ </div>
+ </form>
+ </body>
+ </html>
+ ```
 
 This is a real issue for me, since I can not add Safari support to my <a href="http://simplovation.com/Page/WebMapsVE.aspx">Web.Maps.VE</a> product because of this issue. I know it's probably an issue with Safari, since everything works perfect in IE and Firefox, but I hope it gets fixed soon.

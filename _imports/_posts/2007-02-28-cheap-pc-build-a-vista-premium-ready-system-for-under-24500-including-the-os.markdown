@@ -77,7 +77,8 @@ Now, before you complain about about the lower end specs, let me explain a littl
 </ul>
 
 
-<br />
+
+
 As you can see, I put alot of thought into specing out a system. The biggest point i keep in mind is the ability for the system to be upgraded. I don&#39;t like buying a complete new system every couple years either.
 
 

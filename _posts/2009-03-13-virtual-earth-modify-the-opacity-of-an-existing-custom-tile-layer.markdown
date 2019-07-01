@@ -23,7 +23,19 @@ Here's the main javascript method that does the work for you:
 
 ```javascript
 
-function SetTileLayerOpacity(tileLayerID, newOpacity) {<br />     // Get TileLayer<br />     var layer = map.GetTileLayerByID(tileLayerID);<br /> <br />     // Set new Opacity Value<br />     layer.Opacity = newOpacity;<br /> <br />     // Delete Existing TileLayer from Map<br />     map.DeleteTileLayer(tileLayerID);<br />     <br />     // Re-Add the TileLayer with new Opacity<br />     map.AddTileLayer(layer);<br /> }
+function SetTileLayerOpacity(tileLayerID, newOpacity) {
+     // Get TileLayer
+     var layer = map.GetTileLayerByID(tileLayerID);
+ 
+     // Set new Opacity Value
+     layer.Opacity = newOpacity;
+ 
+     // Delete Existing TileLayer from Map
+     map.DeleteTileLayer(tileLayerID);
+     
+     // Re-Add the TileLayer with new Opacity
+     map.AddTileLayer(layer);
+ }
 
 ```
 
@@ -40,6 +52,67 @@ Here's a full example page that implements the javascript method above. To build
 
 ```javascript
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><br /> <html><br /> <head><br />       <title></title><br />       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><br />       <script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.2"></script><br />       <script type="text/javascript"><br />         var map = null;<br />         var tileLayer;<br />          <br />         function GetMap()<br />         {<br />             map = new VEMap('myMap');<br />             map.LoadMap(new VELatLong(48.03,-122.4),12,'r' ,false);<br />             GetTiles();<br />         }   <br />          <br />         function GetTiles()<br />         {<br />             var bounds = [new VELatLongRectangle(new VELatLong(49,-123),new VELatLong(47,-121))];<br /> <br />             var tileSourceSpec = new VETileSourceSpecification("lidar", "http://dev.live.com/virtualearth/sdk/layers/lidar/%4.png");<br />             tileSourceSpec.NumServers = 1;<br />             tileSourceSpec.Bounds = bounds;<br />             tileSourceSpec.MinZoomLevel = 10;<br />             tileSourceSpec.MaxZoomLevel = 18;<br />             tileSourceSpec.Opacity = 0.5; //opacity;<br />             tileSourceSpec.ZIndex = 100;<br /> <br />             map.AddTileLayer(tileSourceSpec, true);<br />         }<br />         <br />         function DeleteTileLayer()<br />         {<br />             map.DeleteTileLayer("lidar");<br />         }<br />         <br />         function SetTileLayerOpacity(tileLayerID, newOpacity) {<br />             // Get TileLayer<br />             var layer = map.GetTileLayerByID(tileLayerID);<br /> <br />             // Set new Opacity Value<br />             layer.Opacity = newOpacity;<br /> <br />             // Delete Existing TileLayer from Map<br />             map.DeleteTileLayer(tileLayerID);<br />             <br />             // Re-Add the TileLayer with new Opacity<br />             map.AddTileLayer(layer);<br />         }<br />       </script><br />    </head><br />    <body onload="GetMap();"><br />       <div id='myMap' style="position:relative; width:400px; height:400px;"></div><br />       <a href="#" onclick="SetTileLayerOpacity('lidar', 0.5);">Set Opacity to 0.5</a><br /><br />       <a href="#" onclick="SetTileLayerOpacity('lidar', 1.0);">Set Opacity to 1.0</a><br /><br />       <hr /><br />       <a href="#" onclick="DeleteTileLayer();">Remove the tile layer</a><br />    </body><br /> </html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html>
+ <head>
+       <title></title>
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+       <script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.2"></script>
+       <script type="text/javascript">
+         var map = null;
+         var tileLayer;
+          
+         function GetMap()
+         {
+             map = new VEMap('myMap');
+             map.LoadMap(new VELatLong(48.03,-122.4),12,'r' ,false);
+             GetTiles();
+         }   
+          
+         function GetTiles()
+         {
+             var bounds = [new VELatLongRectangle(new VELatLong(49,-123),new VELatLong(47,-121))];
+ 
+             var tileSourceSpec = new VETileSourceSpecification("lidar", "http://dev.live.com/virtualearth/sdk/layers/lidar/%4.png");
+             tileSourceSpec.NumServers = 1;
+             tileSourceSpec.Bounds = bounds;
+             tileSourceSpec.MinZoomLevel = 10;
+             tileSourceSpec.MaxZoomLevel = 18;
+             tileSourceSpec.Opacity = 0.5; //opacity;
+             tileSourceSpec.ZIndex = 100;
+ 
+             map.AddTileLayer(tileSourceSpec, true);
+         }
+         
+         function DeleteTileLayer()
+         {
+             map.DeleteTileLayer("lidar");
+         }
+         
+         function SetTileLayerOpacity(tileLayerID, newOpacity) {
+             // Get TileLayer
+             var layer = map.GetTileLayerByID(tileLayerID);
+ 
+             // Set new Opacity Value
+             layer.Opacity = newOpacity;
+ 
+             // Delete Existing TileLayer from Map
+             map.DeleteTileLayer(tileLayerID);
+             
+             // Re-Add the TileLayer with new Opacity
+             map.AddTileLayer(layer);
+         }
+       </script>
+    </head>
+    <body onload="GetMap();">
+       <div id='myMap' style="position:relative; width:400px; height:400px;"></div>
+       <a href="#" onclick="SetTileLayerOpacity('lidar', 0.5);">Set Opacity to 0.5</a>
+
+       <a href="#" onclick="SetTileLayerOpacity('lidar', 1.0);">Set Opacity to 1.0</a>
+
+       <hr />
+       <a href="#" onclick="DeleteTileLayer();">Remove the tile layer</a>
+    </body>
+ </html>
 
 ```

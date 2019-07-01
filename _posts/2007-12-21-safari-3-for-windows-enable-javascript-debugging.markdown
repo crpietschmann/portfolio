@@ -19,9 +19,11 @@ As you probably know, Safari 3 doesn't allow you to turn on the debug menu withi
 
 **Step 1:** Open up the Preferences.plist file in notepad.
 
-In Windows XP:<br />*C:\Documents and Settings\USERNAME\Application Data\Apple Computer\Safari\Preferences.plist*
+In Windows XP:
+*C:\Documents and Settings\USERNAME\Application Data\Apple Computer\Safari\Preferences.plist*
 
-In Windows Vista:<br />*C:\Users\USERNAME\AppData\Roaming\Apple Computer\Safari\Preferences.plist*
+In Windows Vista:
+*C:\Users\USERNAME\AppData\Roaming\Apple Computer\Safari\Preferences.plist*
 
 **Step 2:** Add the following to the end of the file, just before "*</dict></plist>*":
 
@@ -30,7 +32,8 @@ In Windows Vista:<br />*C:\Users\USERNAME\AppData\Roaming\Apple Computer\Safari\
 **Step 3:** Now open up Safari and you have the Debug menu
 <h3>Where can I find a Debugger for Safari?</h3>
 
-You can download the Drosera debugger here: <a href="http://nightly.webkit.org">http://nightly.webkit.org</a><br />Now, before you go trying to run it, you'll want to read the next section below.
+You can download the Drosera debugger here: <a href="http://nightly.webkit.org">http://nightly.webkit.org</a>
+Now, before you go trying to run it, you'll want to read the next section below.
 <h3>How do I run Drosera in Windows?</h3>
 
 **Step 1:** Make sure you download the Webkit Nightly Build located at <a href="http://nightly.webkit.org">http://nightly.webkit.org</a> and extract its contents somewhere on your harddrive.
@@ -52,7 +55,8 @@ If you have multiple instance you may want to close all but one. I don't know if
 **Step 6:** Now you can access web pages with Safari and step through / break on errors in the code.
 <h3>Additional Links</h3>
 
-<a href="http://webkit.org">The WebKit Open Source Project</a><br /><a href="http://developer.apple.com/internet/safari/faq.html#anchor14">Safai Developer FAQ - How do I debug JavaScript in Safari?</a>
+<a href="http://webkit.org">The WebKit Open Source Project</a>
+<a href="http://developer.apple.com/internet/safari/faq.html#anchor14">Safai Developer FAQ - How do I debug JavaScript in Safari?</a>
 <h3>Additional Comments</h3>
 
 I'm not exactly sure why Apple makes us jump through these hoops to be able to debug JavaScript within Safari. It's quite a hassle, and even after all that work I still have the following issues with the experience:

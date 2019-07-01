@@ -19,7 +19,9 @@ It&rsquo;s not very often that I need to build a Windows Service for a specific 
 
 Just create a Setup Project within your Solution in Visual Studio, then follow the below steps:
 
-1) Right-Click the Setup Project you just created <br />2) Click &ldquo;Add&rdquo;, then &ldquo;Project Output&hellip;&rdquo; <br />3) In the dialog that appears select your Windows Service Project as Primary Output, then click OK.
+1) Right-Click the Setup Project you just created 
+2) Click &ldquo;Add&rdquo;, then &ldquo;Project Output&hellip;&rdquo; 
+3) In the dialog that appears select your Windows Service Project as Primary Output, then click OK.
 
 That&rsquo;s really all that&rsquo;s required. When the resulting Installer is executed it will Install / Uninstall the Windows Service.
 

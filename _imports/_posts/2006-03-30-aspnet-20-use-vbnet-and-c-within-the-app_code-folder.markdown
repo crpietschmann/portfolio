@@ -34,6 +34,9 @@ Even if you don't use multiple different programming languages for your code fil
     </system.web>
 </configuration></pre>
 
-**Step 2:** Create a sub-folder in the App_Code folder for each language you want to support.<br /> For Example:<br /> /App_Code/VB_Code<br /> /App_Code/CS_Code
+**Step 2:** Create a sub-folder in the App_Code folder for each language you want to support.
+ For Example:
+ /App_Code/VB_Code
+ /App_Code/CS_Code
 
 **Step 3:** Place your VB.NET code in the VB_Code folder and place C# code in the CS_Code folder.

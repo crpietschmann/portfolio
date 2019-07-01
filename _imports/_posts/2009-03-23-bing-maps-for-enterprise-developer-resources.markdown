@@ -18,7 +18,8 @@ One thing that the Bing Maps Development Community is lacking (at least in an of
 
 NOTE: I am currently in the process of migrating the content of this page, plus much more, over to the <a title="Bing Maps Showcase" href="http://bingmaps.codeplex.com/">Bing Maps Showcase</a> on CodePlex.
 
-Enjoy,<br />Chris Pietschmann
+Enjoy,
+Chris Pietschmann
 
 List Last Updated: 10/13/2010
 <h1>Bing Maps Dev Search</h1>

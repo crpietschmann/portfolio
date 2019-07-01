@@ -16,7 +16,8 @@ redirect_from:
 
 With the release of C# 3.0 came the addition (among many others) of the “var” keyword. I’ve seen MANY people confused about what this keyword is, does and means. Among these people with incorrect assumptions to the function of the “var” keyword, I have seen programmers/developers with varying amounts / years of experience. So, I’ve decided to write up a simple explanation; actually the same one I’ve told and/or emailed people over the last couple years.  <h3>“var” is not variant!</h3>  
 Since “var” is the beginning of the word “variant”, and especially since JavaScript uses “var” and is dynamically typed it is easy to assume that “var” means “variant.” Although, it is important to remember that C# is a statically typed language; which leaves no room for variant types.  
-Straight from <a href="http://msdn.microsoft.com/en-us/library/bb384061.aspx">MSDN</a>:    <br />*”It is important to understand that the var keyword does not mean “variant” and does not indicate that the variable is loosely typed, or late-bound. It just means that the compiler determines and assigns the most appropriate type.”*  
+Straight from <a href="http://msdn.microsoft.com/en-us/library/bb384061.aspx">MSDN</a>:    
+*”It is important to understand that the var keyword does not mean “variant” and does not indicate that the variable is loosely typed, or late-bound. It just means that the compiler determines and assigns the most appropriate type.”*  
 The C# compiler wants to know what type a variable is so it can validate (at compile-time) all method calls and property accessors against the object that variable references.  
 It’s also important to remember that as “var” is not “variant”, neither does it mean “dynamic.” **Variables declared using “var” are strongly typed.**  <h3>What does “var” do?</h3>  
 It’s easier to think of “var” as a short-hand version of declaring your variables. Instead of defining what Type your variable is twice, you get to do it once with “var.” Take the following traditional examples:  <pre class="csharpcode"><span class="rem">// traditional variable declarations in C#</span>
@@ -359,4 +360,5 @@ myPerson.Name = <span class="str">&quot;Steve&quot;</span>;</pre>
 
 <a href="http://msdn.microsoft.com/en-us/library/bb383973(v=vs.110).aspx">MSDN: var (C# Reference)</a>
 
-  <br /><a href="http://msdn.microsoft.com/en-us/library/bb384061.aspx">MSDN: Implicitly Typed Local Variables (C# Programming Guide)</a>
+  
+<a href="http://msdn.microsoft.com/en-us/library/bb384061.aspx">MSDN: Implicitly Typed Local Variables (C# Programming Guide)</a>

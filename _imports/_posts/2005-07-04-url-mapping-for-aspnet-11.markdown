@@ -24,54 +24,154 @@ With the help of an http module, a custom config handler and a few lines of code
 
 Imports System.Web
 
-Public Class BaseModuleRewriter<br />     Implements System.Web.IHttpModule
+Public Class BaseModuleRewriter
+     Implements System.Web.IHttpModule
 
-    Sub Init(ByVal app As HttpApplication) Implements IHttpModule.Init<br />         AddHandler app.AuthorizeRequest, AddressOf Me.BaseModuleRewriter_AuthorizeRequest<br />     End Sub
+    Sub Init(ByVal app As HttpApplication) Implements IHttpModule.Init
+         AddHandler app.AuthorizeRequest, AddressOf Me.BaseModuleRewriter_AuthorizeRequest
+     End Sub
 
-    Sub Dispose() Implements System.Web.IHttpModule.Dispose<br />     End Sub
+    Sub Dispose() Implements System.Web.IHttpModule.Dispose
+     End Sub
 
-    Sub BaseModuleRewriter_AuthorizeRequest(ByVal sender As Object, ByVal e As EventArgs)<br />         Dim app As HttpApplication = CType(sender, HttpApplication)<br />         Rewrite(app.Request.Path, app)<br />     End Sub
+    Sub BaseModuleRewriter_AuthorizeRequest(ByVal sender As Object, ByVal e As EventArgs)
+         Dim app As HttpApplication = CType(sender, HttpApplication)
+         Rewrite(app.Request.Path, app)
+     End Sub
 
-    Overridable Sub Rewrite(ByVal requestedPath As String, ByVal app As HttpApplication)<br />     End Sub
+    Overridable Sub Rewrite(ByVal requestedPath As String, ByVal app As HttpApplication)
+     End Sub
 
 End Class
 
 <span style="text-decoration: underline;">URLMappingModule.vb</span>
 
-Imports System.Web<br /> Imports System.Configuration
+Imports System.Web
+ Imports System.Configuration
 
-Public Class URLMappingModule<br />     Inherits BaseModuleRewriter
+Public Class URLMappingModule
+     Inherits BaseModuleRewriter
 
-    Overrides Sub Rewrite(ByVal requestedPath As String, ByVal app As HttpApplication)<br />         ''Implement functionality here that mimics the 'URL Mapping' features of ASP.NET 2.0<br />         Dim config As UrlMappingsConfigHandler = CType(ConfigurationSettings.GetConfig("system.web/urlMappings"), UrlMappingsConfigHandler)
+    Overrides Sub Rewrite(ByVal requestedPath As String, ByVal app As HttpApplication)
+         ''Implement functionality here that mimics the 'URL Mapping' features of ASP.NET 2.0
+         Dim config As UrlMappingsConfigHandler = CType(ConfigurationSettings.GetConfig("system.web/urlMappings"), UrlMappingsConfigHandler)
 
-        Dim pathOld As String, queryStringArg As String, pathNew As String = ""<br />         If config.Enabled Then<br />             pathOld = app.Request.RawUrl
+        Dim pathOld As String, queryStringArg As String, pathNew As String = ""
+         If config.Enabled Then
+             pathOld = app.Request.RawUrl
 
-            ''Get the request page without the querystring parameters<br />             Dim requestedPage As String = app.Request.RawUrl.ToLower<br />             If requestedPage.IndexOf("?") > -1 Then<br />                 requestedPage = requestedPage.Substring(0, requestedPage.IndexOf("?"))<br />             End If
+            ''Get the request page without the querystring parameters
+             Dim requestedPage As String = app.Request.RawUrl.ToLower
+             If requestedPage.IndexOf("?") > -1 Then
+                 requestedPage = requestedPage.Substring(0, requestedPage.IndexOf("?"))
+             End If
 
-            ''Format the requested page (url) to have a ~ instead of the virtual path of the app<br />             Dim appVirtualPath As String = app.Request.ApplicationPath<br />             If requestedPage.Length >= appVirtualPath.Length Then<br />                 If requestedPage.Substring(0, appVirtualPath.Length).ToLower = appVirtualPath.ToLower Then<br />                     requestedPage = requestedPage.Substring(appVirtualPath.Length)<br />                     If requestedPage.Substring(0, 1) = "/" Then<br />                         requestedPage = "~" &amp; requestedPage<br />                     Else<br />                         requestedPage = "~/" &amp; requestedPage<br />                     End If<br />                 End If<br />             End If
+            ''Format the requested page (url) to have a ~ instead of the virtual path of the app
+             Dim appVirtualPath As String = app.Request.ApplicationPath
+             If requestedPage.Length >= appVirtualPath.Length Then
+                 If requestedPage.Substring(0, appVirtualPath.Length).ToLower = appVirtualPath.ToLower Then
+                     requestedPage = requestedPage.Substring(appVirtualPath.Length)
+                     If requestedPage.Substring(0, 1) = "/" Then
+                         requestedPage = "~" &amp; requestedPage
+                     Else
+                         requestedPage = "~/" &amp; requestedPage
+                     End If
+                 End If
+             End If
 
-            ''Get the new path to rewrite the url to if it meets one<br />             ''of the defined virtual urls.<br />             pathNew = config.MappedUrl(requestedPage)
+            ''Get the new path to rewrite the url to if it meets one
+             ''of the defined virtual urls.
+             pathNew = config.MappedUrl(requestedPage)
 
-            ''If the requested url matches one of the virtual one<br />             ''the lets go and rewrite it.<br />             If pathNew.Length > 0 Then<br />                 If pathNew.IndexOf("?") > -1 Then<br />                     ''The matched page has a querystring defined<br />                     If pathOld.IndexOf("?") > -1 Then<br />                         pathNew += "&amp;" &amp; Right(pathOld, pathOld.Length - pathOld.IndexOf("?") - 1)<br />                     End If<br />                 Else<br />                     ''The matched page doesn't have a querystring defined<br />                     If pathOld.IndexOf("?") > -1 Then<br />                         pathNew += Right(pathOld, pathOld.Length - pathOld.IndexOf("?"))<br />                     End If<br />                 End If
+            ''If the requested url matches one of the virtual one
+             ''the lets go and rewrite it.
+             If pathNew.Length > 0 Then
+                 If pathNew.IndexOf("?") > -1 Then
+                     ''The matched page has a querystring defined
+                     If pathOld.IndexOf("?") > -1 Then
+                         pathNew += "&amp;" &amp; Right(pathOld, pathOld.Length - pathOld.IndexOf("?") - 1)
+                     End If
+                 Else
+                     ''The matched page doesn't have a querystring defined
+                     If pathOld.IndexOf("?") > -1 Then
+                         pathNew += Right(pathOld, pathOld.Length - pathOld.IndexOf("?"))
+                     End If
+                 End If
 
-                ''Rewrite to the new url<br />                 app.Context.Current.RewritePath(pathNew)<br />             End If
+                ''Rewrite to the new url
+                 app.Context.Current.RewritePath(pathNew)
+             End If
 
-        End If<br />     End Sub
+        End If
+     End Sub
 
 End Class
 
 <span style="text-decoration: underline;">UrlMappingsConfigHandler.vb</span>
 
-Imports System.Configuration<br /> Imports System.Xml
+Imports System.Configuration
+ Imports System.Xml
 
-Public Class UrlMappingsConfigHandler<br /> Implements IConfigurationSectionHandler<br /> Dim _Section As XmlNode
+Public Class UrlMappingsConfigHandler
+ Implements IConfigurationSectionHandler
+ Dim _Section As XmlNode
 
-Public Function Create(ByVal parent As Object, ByVal configContext As Object, ByVal section As System.Xml.XmlNode) As Object Implements System.Configuration.IConfigurationSectionHandler.Create<br />     _Section = section<br />     Return Me<br /> End Function
+Public Function Create(ByVal parent As Object, ByVal configContext As Object, ByVal section As System.Xml.XmlNode) As Object Implements System.Configuration.IConfigurationSectionHandler.Create
+     _Section = section
+     Return Me
+ End Function
 
-Friend Function Enabled() As Boolean<br />     ''' Get whether url mapping is enabled in the app.config<br />     If _Section.Attributes("enabled").Value.ToLower = "true" Then<br />         Return True<br />     Else<br />         Return False<br />     End If<br /> End Function
+Friend Function Enabled() As Boolean
+     ''' Get whether url mapping is enabled in the app.config
+     If _Section.Attributes("enabled").Value.ToLower = "true" Then
+         Return True
+     Else
+         Return False
+     End If
+ End Function
 
-Friend Function MappedUrl(ByVal url As String) As String<br />     ''' Get the matching "mapped Url" from the web.config file if there is one.<br />     Dim x As XmlNode<br />     Dim _mappedURL As String = ""<br />     For Each x In _Section.ChildNodes<br />         If url.ToLower = x.Attributes("url").Value.ToLower Then<br />             _mappedURL = x.Attributes("mappedUrl").Value<br />         End If<br />     Next<br />     Return _mappedURL<br /> End Function
+Friend Function MappedUrl(ByVal url As String) As String
+     ''' Get the matching "mapped Url" from the web.config file if there is one.
+     Dim x As XmlNode
+     Dim _mappedURL As String = ""
+     For Each x In _Section.ChildNodes
+         If url.ToLower = x.Attributes("url").Value.ToLower Then
+             _mappedURL = x.Attributes("mappedUrl").Value
+         End If
+     Next
+     Return _mappedURL
+ End Function
 
 3) Now in the ASP.NET 1.1 app that you would like to use this in, just add the following lines to your web.config file:
 
-[code:html]<br /> <?xml version="1.0" encoding="utf-8" ?><br /> <configuration><br />  <!-- Declare the custom 'urlMappings' section and handler --><br />  <configSections><br />         <sectionGroup name="system.web"><br />             <section name="urlMappings" type="URLMapping_HTTPModule.UrlMappingsConfigHandler,URLMapping_HTTPModule"/><br />         </sectionGroup><br />     </configSections><br />     <br />  <system.web><br />   <!-- Tell ASP.NET to use the URL Mapping HTTP Module --><br />   <httpModules><br />    <add type="URLMapping_HTTPModule.URLMappingModule, URLMapping_HTTPModule" name="URLMappingModule" /><br />   </httpModules><br />   <br />   <!-- This is the custom 'urlMappings' section --><br />   <urlMappings enabled="true"><br />    <add<br />     url="~/Chris.aspx"<br />     mappedUrl="~/Default.aspx?p=chris" /><br />    <add<br />     url="~/Kate.aspx"<br />     mappedUrl="~/Default.aspx?p=kate" /><br />    <add<br />     url="~/folder/test.aspx"<br />     mappedUrl="~/Default.aspx?p=foldertest" /><br />   </urlMappings><br />  </system.web><br /> </configuration><br /> ```
+[code:html]
+ <?xml version="1.0" encoding="utf-8" ?>
+ <configuration>
+  <!-- Declare the custom 'urlMappings' section and handler -->
+  <configSections>
+         <sectionGroup name="system.web">
+             <section name="urlMappings" type="URLMapping_HTTPModule.UrlMappingsConfigHandler,URLMapping_HTTPModule"/>
+         </sectionGroup>
+     </configSections>
+     
+  <system.web>
+   <!-- Tell ASP.NET to use the URL Mapping HTTP Module -->
+   <httpModules>
+    <add type="URLMapping_HTTPModule.URLMappingModule, URLMapping_HTTPModule" name="URLMappingModule" />
+   </httpModules>
+   
+   <!-- This is the custom 'urlMappings' section -->
+   <urlMappings enabled="true">
+    <add
+     url="~/Chris.aspx"
+     mappedUrl="~/Default.aspx?p=chris" />
+    <add
+     url="~/Kate.aspx"
+     mappedUrl="~/Default.aspx?p=kate" />
+    <add
+     url="~/folder/test.aspx"
+     mappedUrl="~/Default.aspx?p=foldertest" />
+   </urlMappings>
+  </system.web>
+ </configuration>
+ ```

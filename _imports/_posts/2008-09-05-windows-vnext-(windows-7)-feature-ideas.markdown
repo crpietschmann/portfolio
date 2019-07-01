@@ -18,7 +18,8 @@ Here are some of my thoughts on the Windows operating system and how thing could
 <h3>1) Make the Desktop version of Windows more Modular, like Windows Server 2008</h3>
 
 Windows Server 2008 is more modular, you can install Server Core that doesn't even have a graphical interface, or you can install Windows Server 2008 with just the features you want/need. Why not make a Desktop version of the OS like that? Let the advanced users, during installation or from the Programs/Features Dialog, decide which features they want to install. Currently, Windows Vista Ultimate could be considered a little bloated, and the extra features installed that I don't use are just taking up space, and some run in memory affecting my system performance. For instance, If I don't want or use Windows Media Center, then don't install it, it's not required for Windows to run.
-<h3>2) Improve Data CD/DVD Burning, make it usable<br /></h3>
+<h3>2) Improve Data CD/DVD Burning, make it usable
+</h3>
 
 Since WinXP, we've had Data CD burning capabilities. It hasn't been the best functioning, and IMO is too slow to use. I actually use a Free burning program called Deep Burner to burn data discs, and its' performance is much faster. This is an area in Windows that needs improvement, and since the functionality is already baked into Windows, why not improve it to be the best it can be?
 <h3>3) Add Mount ISO and Burn ISO Support</h3>
@@ -27,7 +28,8 @@ Developers and Sys Admins get ISO images from their MSDN subscriptions and elsew
 <h3>4) Add Blu-Ray Burning Support</h3>
 
 Lets face it, our backup needs are growing in size. When I backup my data I need to use multiple writable DVD's to back everything up. Soon enough, Blu-Ray burners and media will drop in price enough to make them practical to use for backups. Since that will happen in the next couple years, why not add support for it to the OS?
-<h3>5) Custom Themes and Visual Styles<br /></h3>
+<h3>5) Custom Themes and Visual Styles
+</h3>
 
 It's nice to have a consistent look and feel for Windows, especially for branding. But, why not add customizability to Windows for users to design and use their own Visual Styles and Themes? It would make Windows more enjoyable to use, since you could change the look of it to match your personality and preference. Or, alternatively a bunch more (like 10 or more) Visual Styles could be baked into Windows for the users to choose from. This feature idea is all about personality.
 <h3>6) Decouple Internet Explorer from the OS</h3>
@@ -46,7 +48,8 @@ Here's a little secret, I haven't had a Virus scanner installed on my machine in
 <h3>9) More Sidebar Plugins Baked into Windows</h3>
 
 There need to be more Sidebar plugins baked into Windows.  Yes, you can go online and download more, but why not have Windows come with more usefull ones? For example, I was initially surprised that Vista didn't come with Media Player or Live Messenger Sidebar Plugins.
-<h3>10) Isn't it about time MS Paint gets an overhaul??<br /></h3>
+<h3>10) Isn't it about time MS Paint gets an overhaul??
+</h3>
 
 The functionality in MS Paint hasn't changed since Windows 95! There's a Free app called <a href="http://getpaint.net">Paint.NET</a> that is just plain awesome! Why not integrate a nicer image editing application into Windows?
 
@@ -59,4 +62,8 @@ The functionality in MS Paint hasn't changed since Windows 95! There's a Free ap
  
 <h3>**11) Be able to ReOrder Windows in the Taskbar by drag-and-drop**</h3>
 
-It sure would be nice if you could reorder your task list in the Taskbar by using drag-and-drop to change their order. The automatic ordering of the windows/applications along with its automatic grouping by application is a bit counter productive.<br /><br /><br /><br />Ok, there's the first 10 things I could think of at the moment of how to improve Windows. If you have any other ideas, please post a comment, I'd be interesting in hearing them.
+It sure would be nice if you could reorder your task list in the Taskbar by using drag-and-drop to change their order. The automatic ordering of the windows/applications along with its automatic grouping by application is a bit counter productive.
+
+
+
+Ok, there's the first 10 things I could think of at the moment of how to improve Windows. If you have any other ideas, please post a comment, I'd be interesting in hearing them.

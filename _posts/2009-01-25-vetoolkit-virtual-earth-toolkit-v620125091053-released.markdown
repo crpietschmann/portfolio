@@ -32,8 +32,10 @@ Download the Release: <a href="http://www.codeplex.com/VEToolkit/Release/Project
 Virtual Earth Toolkit is a set of JavaScript-based Controls/Tools that
 Extend Virtual Earth with functionality that is commonly implemented,
 but hasn&#39;t been implemented within the Virtual Earth JavaScript Map
-Control.<br />
-<br />
+Control.
+
+
+
 The Controls/Tools in the VEToolkit library are
 completely self contained, and don&#39;t require the use of any other
 JavaScript library to use other than Virtual Earth 6.2 (current
@@ -42,7 +44,8 @@ JavaScript library (jQuery, ASP.NET AJAX, etc.); plus you can make use
 of it with any server-side framework of you choice (ASP.NET, ASP.NET
 MVC, PHP, etc.).</span>* 
 
-<h3>Features <br />
+<h3>Features 
+
 </h3>
 
 
@@ -52,7 +55,8 @@ Below is a summary of what&#39;s included in this release:
 
 <span>
 <ul>
-	<li>Controls <br />
+	<li>Controls 
+
 	<ul>
 		<li>VEToolkit.ShapeListControl
 		<ul>
@@ -133,7 +137,8 @@ Below is a summary of what&#39;s included in this release:
 </ul>
 </span>
 
-<h3>JavaScript Intellisense<br />
+<h3>JavaScript Intellisense
+
 </h3>
 
 

@@ -27,35 +27,56 @@ Example Web.Config File:
 
 
 
-[code:html]<br />
-<?xml version=&quot;1.0&quot; ?><br />
-<configuration xmlns=&quot;<a href="http://schemas.microsoft.com/.NetConfiguration/v2.0">http://schemas.microsoft.com/.NetConfiguration/v2.0</a>&quot;><br />
+[code:html]
+
+<?xml version=&quot;1.0&quot; ?>
+
+<configuration xmlns=&quot;<a href="http://schemas.microsoft.com/.NetConfiguration/v2.0">http://schemas.microsoft.com/.NetConfiguration/v2.0</a>&quot;>
+
   <system.web>
 
 
 
-    <urlMappings enabled=&quot;true&quot;><br />
-      <add<br />
-          url=&quot;~/Category.aspx&quot;<br />
-          mappedUrl=&quot;~/Default.aspx?category=default&quot; /><br />
-      <add<br />
-          url=&quot;~/Autos.aspx&quot;<br />
-          mappedUrl=&quot;~/Default.aspx?category=autos&quot; /><br />
-      <add<br />
-          url=&quot;~/Games.aspx&quot;<br />
-          mappedUrl=&quot;~/Default.aspx?category=games&quot; /><br />
-      <add<br />
-          url=&quot;~/Health.aspx&quot;<br />
-          mappedUrl=&quot;~/Default.aspx?category=health&quot; /><br />
-      <add<br />
-          url=&quot;~/News.aspx&quot;<br />
-          mappedUrl=&quot;~/Default.aspx?category=news&quot; /><br />
+    <urlMappings enabled=&quot;true&quot;>
+
+      <add
+
+          url=&quot;~/Category.aspx&quot;
+
+          mappedUrl=&quot;~/Default.aspx?category=default&quot; />
+
+      <add
+
+          url=&quot;~/Autos.aspx&quot;
+
+          mappedUrl=&quot;~/Default.aspx?category=autos&quot; />
+
+      <add
+
+          url=&quot;~/Games.aspx&quot;
+
+          mappedUrl=&quot;~/Default.aspx?category=games&quot; />
+
+      <add
+
+          url=&quot;~/Health.aspx&quot;
+
+          mappedUrl=&quot;~/Default.aspx?category=health&quot; />
+
+      <add
+
+          url=&quot;~/News.aspx&quot;
+
+          mappedUrl=&quot;~/Default.aspx?category=news&quot; />
+
     </urlMappings>
 
 
 
-  </system.web><br />
-</configuration><br />
+  </system.web>
+
+</configuration>
+
 ```
 
 

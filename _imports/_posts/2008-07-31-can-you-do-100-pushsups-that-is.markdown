@@ -32,7 +32,8 @@ Here's a quote from the website:
 *However, it really doesn't matter which group you fall into. If you follow the progressive push ups training program, I'm positive you'll soon be able to do 100 push ups!*
 
  
-<h3>My Initial Test <br /></h3>
+<h3>My Initial Test 
+</h3>
 
 I did the initial test today and was able to do 30 pushups. As I remember, I haven't been able to do many more consecutive pushups than this, even in high school when I did some light weight lifting for a little while. I started some other light weight lifting today as well, and I am planning to do other regular exercise (like walking, biking, etc.) and eat a little better as well. I actually went on my first 5 mile bike ride in 2 years the other day. I had to pump the tires up on my bike first of course.
 

@@ -20,10 +20,32 @@ Download the WPF Toolkit October 2008 Release: <a href="http://www.codeplex.com/
 
 Ribbon Feature Walkthrough: <a href="http://windowsclient.net/wpf/wpf35/wpf-35sp1-ribbon-walkthrough.aspx">http://windowsclient.net/wpf/wpf35/wpf-35sp1-ribbon-walkthrough.aspx</a>
 
-<img src="/images/posts/WPFToolkit_RibbonControl.png" alt="" /><br /><br />Here's some sample XAML markup for a complete Ribbon Tab with Button Groups defined:
+<img src="/images/posts/WPFToolkit_RibbonControl.png" alt="" />
+
+Here's some sample XAML markup for a complete Ribbon Tab with Button Groups defined:
 
 [code:xml]
 
-<r:Ribbon><br />    <r:RibbonTab Label="Banking"><br />        <r:RibbonGroup><br />            <r:RibbonButton Command="me:AppCommands.Cut"/><br />            <r:RibbonButton Command="me:AppCommands.Copy"/><br />            <r:RibbonButton Command="me:AppCommands.Paste"/><br />        </r:RibbonGroup><br /><br />        <r:RibbonGroup><br />            <r:RibbonButton Command="me:AppCommands.AddNew"/><br />            <r:RibbonButton Command="me:AppCommands.Clear" /><br />            <r:RibbonButton Command="me:AppCommands.Delete"/><br />        </r:RibbonGroup><br /><br />        <r:RibbonGroup><br />            <r:RibbonButton Command="me:AppCommands.DownloadStatements"/><br />            <r:RibbonButton Command="me:AppCommands.DownloadCreditCards"/><br />            <r:RibbonButton Command="me:AppCommands.Transfer"/><br />        </r:RibbonGroup><br />    </r:RibbonTab><br /></r:Ribbon>
+<r:Ribbon>
+    <r:RibbonTab Label="Banking">
+        <r:RibbonGroup>
+            <r:RibbonButton Command="me:AppCommands.Cut"/>
+            <r:RibbonButton Command="me:AppCommands.Copy"/>
+            <r:RibbonButton Command="me:AppCommands.Paste"/>
+        </r:RibbonGroup>
+
+        <r:RibbonGroup>
+            <r:RibbonButton Command="me:AppCommands.AddNew"/>
+            <r:RibbonButton Command="me:AppCommands.Clear" />
+            <r:RibbonButton Command="me:AppCommands.Delete"/>
+        </r:RibbonGroup>
+
+        <r:RibbonGroup>
+            <r:RibbonButton Command="me:AppCommands.DownloadStatements"/>
+            <r:RibbonButton Command="me:AppCommands.DownloadCreditCards"/>
+            <r:RibbonButton Command="me:AppCommands.Transfer"/>
+        </r:RibbonGroup>
+    </r:RibbonTab>
+</r:Ribbon>
 
 ```

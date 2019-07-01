@@ -27,25 +27,36 @@ This example works in both 2D and 3D map modes.
 
 
 
-<!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;><br />
-<html><br />
-<head><br />
-<title></title><br />
-<meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;><br />
-<script type=&quot;text/javascript&quot; src=&quot;http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1&quot;></script><br />
-<script type=&quot;text/javascript&quot;><br />
+<!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;>
+
+<html>
+
+<head>
+
+<title></title>
+
+<meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;>
+
+<script type=&quot;text/javascript&quot; src=&quot;http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1&quot;></script>
+
+<script type=&quot;text/javascript&quot;>
+
 var map = null; 
 
 
 
-function GetMap()<br />
-{<br />
-    map = new VEMap(&#39;myMap&#39;);<br />
+function GetMap()
+
+{
+
+    map = new VEMap(&#39;myMap&#39;);
+
     map.LoadMap(); 
 
 
 
-<br />
+
+
     /// Attach a handler to the Maps OnClick Event 
 
 
@@ -62,16 +73,22 @@ function GetMap()<br />
 
 
 
-    var shape1 = new VEShape(VEShapeType.Pushpin, new VELatLong(49.74999, -99.71));<br />
-    shape1.SetTitle(&quot;Shape 1&quot;);<br />
-    shape1.SetDescription(&quot;Test Shape 1&quot;);<br />
+    var shape1 = new VEShape(VEShapeType.Pushpin, new VELatLong(49.74999, -99.71));
+
+    shape1.SetTitle(&quot;Shape 1&quot;);
+
+    shape1.SetDescription(&quot;Test Shape 1&quot;);
+
     map.AddShape(shape1); 
 
 
 
-    var shape2 = new VEShape(VEShapeType.Pushpin, new VELatLong(39.74999, -96.71));<br />
-    shape2.SetTitle(&quot;Shape 2&quot;);<br />
-    shape2.SetDescription(&quot;Test Shape2&quot;);<br />
+    var shape2 = new VEShape(VEShapeType.Pushpin, new VELatLong(39.74999, -96.71));
+
+    shape2.SetTitle(&quot;Shape 2&quot;);
+
+    shape2.SetDescription(&quot;Test Shape2&quot;);
+
     map.AddShape(shape2); 
 
 
@@ -80,12 +97,18 @@ function GetMap()<br />
 
 
 
-    var shape3points = new Array();<br />
-    shape3points[shape3points.length] = new VELatLong(37.74999, -99.71);<br />
-    shape3points[shape3points.length] = new VELatLong(37.74999, -110.71);<br />
-    shape3points[shape3points.length] = new VELatLong(32.74999, -111.71);<br />
-    var shape3 = new VEShape(VEShapeType.Polygon, shape3points);<br />
-    shape3.HideIcon(); // Hide the Polygons Icon Image<br />
+    var shape3points = new Array();
+
+    shape3points[shape3points.length] = new VELatLong(37.74999, -99.71);
+
+    shape3points[shape3points.length] = new VELatLong(37.74999, -110.71);
+
+    shape3points[shape3points.length] = new VELatLong(32.74999, -111.71);
+
+    var shape3 = new VEShape(VEShapeType.Polygon, shape3points);
+
+    shape3.HideIcon(); // Hide the Polygons Icon Image
+
     map.AddShape(shape3); 
 
 
@@ -94,26 +117,42 @@ function GetMap()<br />
 
 
 
-function Map_OnClick(e)<br />
-{<br />
-    // Check if a Shape was clicked<br />
-    if (e.elementID != null)<br />
-    {<br />
-        // Get a reference to the Shape that was clicked<br />
+function Map_OnClick(e)
+
+{
+
+    // Check if a Shape was clicked
+
+    if (e.elementID != null)
+
+    {
+
+        // Get a reference to the Shape that was clicked
+
         var shape = map.GetShapeByID(e.elementID); 
 
 
 
-        // Set the MapView to the Shapes collection of VELatLong points<br />
-        // This will zoom and pan the map to the best view to show all the points of this Shape<br />
-        map.SetMapView(shape.GetPoints());<br />
-    }<br />
-}<br />
-</script><br />
-</head><br />
-<body onload=&quot;GetMap();&quot;><br />
-<div id=&#39;myMap&#39; style=&quot;position:relative; width:400px; height:400px;&quot;></div><br />
-</body><br />
+        // Set the MapView to the Shapes collection of VELatLong points
+
+        // This will zoom and pan the map to the best view to show all the points of this Shape
+
+        map.SetMapView(shape.GetPoints());
+
+    }
+
+}
+
+</script>
+
+</head>
+
+<body onload=&quot;GetMap();&quot;>
+
+<div id=&#39;myMap&#39; style=&quot;position:relative; width:400px; height:400px;&quot;></div>
+
+</body>
+
 </html> 
 
 

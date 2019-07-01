@@ -25,12 +25,18 @@ Anyways, here&#39;s a small implementation I wrote that wraps up the JavaScript 
 
 [code:c#] 
 
-public static class MessageBox<br />
-{<br />
-    public static void Show(string message)<br />
-    {<br />
-        HtmlPage.Window.Alert(message);<br />
-    }<br />
+public static class MessageBox
+
+{
+
+    public static void Show(string message)
+
+    {
+
+        HtmlPage.Window.Alert(message);
+
+    }
+
 } 
 
 
@@ -46,10 +52,14 @@ Also, here&#39;s the above code example in VB.NET:
 
 
 
-Module MessageBox<br />
-    Public Sub Show(ByVal message As String)<br />
-        HtmlPage.Window.Alert(message)<br />
-    End Sub<br />
+Module MessageBox
+
+    Public Sub Show(ByVal message As String)
+
+        HtmlPage.Window.Alert(message)
+
+    End Sub
+
 End Module
 
 

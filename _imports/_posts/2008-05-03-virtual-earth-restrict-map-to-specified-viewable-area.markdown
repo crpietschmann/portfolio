@@ -34,8 +34,10 @@ This article was written with Virtual Earth v6.1, and will also work with Virtua
 <h3>Other Code Used In This Example</h3>
 
 
-This example utilizes code that was included in the following two examples I&#39;ve previously written:<br />
-<a href="/post.aspx?id=3bd04a2e-7df6-48d5-a359-1cbc3764889e">Calculate Distance Between Geocodes in C# and JavaScript</a><br />
+This example utilizes code that was included in the following two examples I&#39;ve previously written:
+
+<a href="/post.aspx?id=3bd04a2e-7df6-48d5-a359-1cbc3764889e">Calculate Distance Between Geocodes in C# and JavaScript</a>
+
 <a href="/post.aspx?id=1e2824a0-3bef-4707-8f18-a624ad784432">Virtual Earth: Draw a Circle Radius Around a Lat/Long Point</a> 
 
 <h3>Restrict Viewable Area</h3>
@@ -49,15 +51,20 @@ First create your map as usual; nothing special the creation of the VE map neede
 
 
 
-//Attach our onendpan event handler<br />
+//Attach our onendpan event handler
+
 map.AttachEvent(&quot;onendpan&quot;, map_onendpan); 
 
 
 
-//Attach our onstartpan event handler<br />
-map.AttachEvent(&quot;onstartpan&quot;, map_onstartpan);<br />
-<br />
-function map_onendpan(e) { }<br />
+//Attach our onstartpan event handler
+
+map.AttachEvent(&quot;onstartpan&quot;, map_onstartpan);
+
+
+
+function map_onendpan(e) { }
+
 function map_onstartpan(e) { } 
 
 
@@ -72,7 +79,8 @@ Next, setup a couple global variables that will be used to define the restrictio
 
 ```javascript 
 
-var mapRestrictionDistance = 100;<br />
+var mapRestrictionDistance = 100;
+
 var mapRestrictionUnit = GeoCodeCalc.EarthRadiusInMiles; 
 
 
@@ -96,13 +104,20 @@ In the map_onstartpan event handler you will record the maps center point in a g
 
 
 
-// global variable to keep track of maps center point before panning began<br />
-var mapStartPanPoint = null;<br />
-<br />
-function map_onstartpan(e)<br />
-{<br />
-    //Get the current map center point before panning begins<br />
-    mapStartPanPoint = map.GetCenter();<br />
+// global variable to keep track of maps center point before panning began
+
+var mapStartPanPoint = null;
+
+
+
+function map_onstartpan(e)
+
+{
+
+    //Get the current map center point before panning begins
+
+    mapStartPanPoint = map.GetCenter();
+
 } 
 
 
@@ -119,26 +134,42 @@ In the map_onendpan event handler you will place the actual code that imposes ou
 
 
 
-function map_onendpan(e)<br />
-{<br />
-    //Get total distance panned from map center<br />
-    var distance = GeoCodeCalc.CalcDistance(<br />
-        mapOriginalCenterPoint.Latitude,<br />
-        mapOriginalCenterPoint.Longitude,<br />
-        map.GetCenter().Latitude,<br />
-        map.GetCenter().Longitude,<br />
-        mapRestrictionUnit<br />
+function map_onendpan(e)
+
+{
+
+    //Get total distance panned from map center
+
+    var distance = GeoCodeCalc.CalcDistance(
+
+        mapOriginalCenterPoint.Latitude,
+
+        mapOriginalCenterPoint.Longitude,
+
+        map.GetCenter().Latitude,
+
+        map.GetCenter().Longitude,
+
+        mapRestrictionUnit
+
         ); 
 
 
 
-    //Check distance panned from original center point<br />
-    if (distance > mapRestrictionDistance)<br />
-    {<br />
-        //Move map back to the last point that was<br />
-        //within the desired restriction radius<br />
-        map.SetCenter(mapStartPanPoint);<br />
-    }<br />
+    //Check distance panned from original center point
+
+    if (distance > mapRestrictionDistance)
+
+    {
+
+        //Move map back to the last point that was
+
+        //within the desired restriction radius
+
+        map.SetCenter(mapStartPanPoint);
+
+    }
+
 } 
 
 
@@ -160,9 +191,12 @@ Use the following code to attach an event handler to the OnEndZoom event:
 
 
 
-//Attach our onendzoom event handler<br />
-map.AttachEvent(&quot;onendzoom&quot;, map_onendzoom);<br />
-<br />
+//Attach our onendzoom event handler
+
+map.AttachEvent(&quot;onendzoom&quot;, map_onendzoom);
+
+
+
 function map_onendzoom(e) { } 
 
 
@@ -195,15 +229,24 @@ Now that you have the global variable in place, and the event is being handled b
 
 
 
-function map_onendzoom(e)<br />
-{<br />
-    //Check if the map is zoomed out further than<br />
-    //the set restriction<br />
-    if (e.zoomLevel < mapRestrictionZoomLevel)<br />
-    {<br />
-        //Zoom the map back in to the restricted area<br />
-        map.SetZoomLevel(mapRestrictionZoomLevel);<br />
-    }<br />
+function map_onendzoom(e)
+
+{
+
+    //Check if the map is zoomed out further than
+
+    //the set restriction
+
+    if (e.zoomLevel < mapRestrictionZoomLevel)
+
+    {
+
+        //Zoom the map back in to the restricted area
+
+        map.SetZoomLevel(mapRestrictionZoomLevel);
+
+    }
+
 } 
 
 

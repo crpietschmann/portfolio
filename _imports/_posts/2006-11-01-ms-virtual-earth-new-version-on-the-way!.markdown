@@ -19,7 +19,8 @@ Microsoft announced yesterday that they will be releasing a new version of the V
 
 
 
-Could this new version be v4?<br />
+Could this new version be v4?
+
 What cool new features will they be adding?
 
 

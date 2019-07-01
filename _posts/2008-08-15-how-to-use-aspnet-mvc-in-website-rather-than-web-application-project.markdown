@@ -37,6 +37,7 @@ The ASP.NET MVC release I used for this was the <a href="http://www.codeplex.com
 
 
 
-Also, here&#39;s a link to download the code: <a rel="enclosure" href="/file.axd?file=ASPNETMVC_Preview4_Website.zip">ASP.NET MVC_Preview4_Website Project.zip (192.03 kb) <br />
+Also, here&#39;s a link to download the code: <a rel="enclosure" href="/file.axd?file=ASPNETMVC_Preview4_Website.zip">ASP.NET MVC_Preview4_Website Project.zip (192.03 kb) 
+
 </a>
 

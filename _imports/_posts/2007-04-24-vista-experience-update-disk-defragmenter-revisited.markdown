@@ -26,7 +26,8 @@ Apparently, the only way to view the fragmentation stats is to use the* *defrag 
 
 **Steps to view the Fragmentation Analysis Report for the C drive**
 <ol>
-<li>Run the Command Prompt.<br />*Note: Don't forget to right-click the shortcut and click "Run as administrator"*</li>
+<li>Run the Command Prompt.
+*Note: Don't forget to right-click the shortcut and click "Run as administrator"*</li>
 <li>Type the following in the command line: *defrag c: -a*</li>
 <li>Press Enter and in a few moments it's display the Percent file fragmentation</li>
 </ol>

@@ -17,7 +17,8 @@ redirect_from:
 This page lists a bunch of different geographic / geo-spatial data sources that provide FREE data to be consumed. I haven't really found any resource link list like this, so I thought I'd start one.
 <h3>Maps / Charts</h3>
 
-<a href="http://www.nauticalcharts.noaa.gov/">http://www.nauticalcharts.noaa.gov/</a> - NOAA's Office of Coast Survey --- USA<br /><a href="http://www.nauticalcharts.noaa.gov/mcd/Raster/download_agreement.htm">http://www.nauticalcharts.noaa.gov/mcd/Raster/download_agreement.htm</a>
+<a href="http://www.nauticalcharts.noaa.gov/">http://www.nauticalcharts.noaa.gov/</a> - NOAA's Office of Coast Survey --- USA
+<a href="http://www.nauticalcharts.noaa.gov/mcd/Raster/download_agreement.htm">http://www.nauticalcharts.noaa.gov/mcd/Raster/download_agreement.htm</a>
 
 <a href="http://www.nauticalcharts.noaa.gov/mcd/Raster/index.htm">http://www.nauticalcharts.noaa.gov/mcd/Raster/index.htm</a> - Raster Navigational Charts: NOAA RNCs
 <h3>Cartographic Boundary Data</h3>

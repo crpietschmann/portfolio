@@ -27,31 +27,44 @@ Creating Namespaces in JavaScript is rather simple due to the fact that JavaScri
 
 
 
-/// Create the Namespace Manager that we&#39;ll use to<br />
+/// Create the Namespace Manager that we&#39;ll use to
+
 /// make creating namespaces a little easier.
 
 
 
-if (typeof Namespace == &#39;undefined&#39;) var Namespace = {};<br />
+if (typeof Namespace == &#39;undefined&#39;) var Namespace = {};
+
 if (!Namespace.Manager) Namespace.Manager = {};
 
 
 
-Namespace.Manager = {<br />
- Register:function(namespace){<br />
+Namespace.Manager = {
+
+ Register:function(namespace){
+
   namespace = namespace.split(&#39;.&#39;);
 
 
 
-  if(!window[namespace[0]]) window[namespace[0]] = {};<br />
-  <br />
-  var strFullNamespace = namespace[0];<br />
-  for(var i = 1; i < namespace.length; i++)<br />
-  {<br />
-   strFullNamespace += &quot;.&quot; + namespace[i];<br />
-   eval(&quot;if(!window.&quot; + strFullNamespace + &quot;)window.&quot; + strFullNamespace + &quot;={};&quot;);<br />
-  }<br />
- }<br />
+  if(!window[namespace[0]]) window[namespace[0]] = {};
+
+  
+
+  var strFullNamespace = namespace[0];
+
+  for(var i = 1; i < namespace.length; i++)
+
+  {
+
+   strFullNamespace += &quot;.&quot; + namespace[i];
+
+   eval(&quot;if(!window.&quot; + strFullNamespace + &quot;)window.&quot; + strFullNamespace + &quot;={};&quot;);
+
+  }
+
+ }
+
 };
 
 
@@ -68,27 +81,36 @@ Namespace.Manager = {<br />
 
 
 
-// Register our Namespace<br />
+// Register our Namespace
+
 Namespace.Manager.Register(&quot;PietschSoft.Utility.Class&quot;);
 
 
 
-// Add the Triplet class to the namespace created above<br />
-PietschSoft.Utility.Class.Triplet = function(one, two, three)<br />
-{<br />
- this.First = one;<br />
- this.Second = two;<br />
- this.Third = three;<br />
+// Add the Triplet class to the namespace created above
+
+PietschSoft.Utility.Class.Triplet = function(one, two, three)
+
+{
+
+ this.First = one;
+
+ this.Second = two;
+
+ this.Third = three;
+
 }
 
 
 
-// Create an instance of our Triplet class<br />
+// Create an instance of our Triplet class
+
 var myTriplet = new PietschSoft.Utility.Class.Triplet(&quot;1&quot;, &quot;2&quot;, &quot;3&quot;);
 
 
 
-// Read the values out of the properties of you Triplet class<br />
+// Read the values out of the properties of you Triplet class
+
 alert(myTriplet.First + &quot;\n&quot; + myTriplet.Second + &quot;\n&quot; + myTriplet.Third);
 
 

@@ -16,7 +16,8 @@ redirect_from:
 
 I&rsquo;ve decided to expand a little on using OpenStreetMap imagery with the new Bing Maps Silverlight Control in response to the following <a rel="nofollow" href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx#id_a250bec2-e7f3-4324-8837-e167eff776e4">comment posted by John O&rsquo;Brien</a> on my previous &ldquo;<a href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx">Display OpenStreetMap Imagery using Bing Maps Silverlight Control v1</a>&rdquo; post:
 
-*&ldquo;Very close Chris but you will still need to enter a Bing Maps AppID.      <br />If however you create your own map from MapCore and don't use the Bing Maps services then you don't need creditials&rdquo;*
+*&ldquo;Very close Chris but you will still need to enter a Bing Maps AppID.      
+If however you create your own map from MapCore and don't use the Bing Maps services then you don't need creditials&rdquo;*
 
 Yes, it is true that by just displaying the OpenStreetMap imagery on the Bing Maps Silverlight Control using a custom TileSource you still need to provide the control a Bing Maps Key (App ID). However, what if you inherited from the &ldquo;MapCore&rdquo; base class (the same one that the Bing Maps &ldquo;Map&rdquo; object inherits) and built out a full OpenStreetMap Map control?
 <h3>Custom &ldquo;OpenStreetMap&rdquo; Control</h3>

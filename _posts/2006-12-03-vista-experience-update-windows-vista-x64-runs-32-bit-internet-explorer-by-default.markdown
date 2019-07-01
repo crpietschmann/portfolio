@@ -20,9 +20,11 @@ There are actually two shortcuts for Internet Explorer in the "All Programs" men
 
 Here's the title of each and the exe's they run:
 
-Internet Explorer<br />"C:\Program Files (x86)\Internet Explorer\iexplore.exe"
+Internet Explorer
+"C:\Program Files (x86)\Internet Explorer\iexplore.exe"
 
-Internet Explorer (64-bit)<br />"C:\Program Files\Internet Explorer\iexplore.exe"
+Internet Explorer (64-bit)
+"C:\Program Files\Internet Explorer\iexplore.exe"
 
 The first one runs IE from the "Program Files (x86)" folder, this is the 32-bit version. The second one is the 64-bit version.
 

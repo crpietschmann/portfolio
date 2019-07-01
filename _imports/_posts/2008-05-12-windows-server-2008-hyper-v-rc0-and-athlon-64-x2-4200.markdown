@@ -47,7 +47,8 @@ Um, ok... What&#39;s the problem. It sounds like it could be any number of thing
 
 
 
-1) Yes, I know my cpu supports hardware-assisted virtualization. AMD&#39;s documentation states so, and VirtualPC 2007 was able to use it.<br />
+1) Yes, I know my cpu supports hardware-assisted virtualization. AMD&#39;s documentation states so, and VirtualPC 2007 was able to use it.
+
 3) Um.. I didn&#39;t change anything, so it wont be this. 
 
 

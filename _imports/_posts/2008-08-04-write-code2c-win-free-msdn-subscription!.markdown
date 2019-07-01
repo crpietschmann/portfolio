@@ -15,8 +15,10 @@ redirect_from:
 <!-- more -->
 
 
-Have you got a cool piece of code you wrote, but don&#39;t know what to do with?<br />
-Have you got a cool idea, but need the motivation to work on it?<br />
+Have you got a cool piece of code you wrote, but don&#39;t know what to do with?
+
+Have you got a cool idea, but need the motivation to work on it?
+
 Would you like an MSDN Subscription, but don&#39;t have the money to pay for it?
 
 

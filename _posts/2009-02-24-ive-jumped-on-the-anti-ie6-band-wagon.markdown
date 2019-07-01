@@ -27,17 +27,20 @@ For example, these things are ALL Younger than IE6:
 
 <ul>
 	<li>Google Adsense</li>
-	<li>Friendster<br />
+	<li>Friendster
+
 	</li>
 	<li>iPod</li>
 	<li>Original XBox</li>
-	<li>Halo<br />
+	<li>Halo
+
 	</li>
 	<li>Nintendo Gamecube</li>
 	<li>Hummer H2</li>
 	<li>Windows XP</li>
 	<li>Internet Explorer 5 for Mac OS</li>
-	<li>Canon Digital SLR Cameras<br />
+	<li>Canon Digital SLR Cameras
+
 	</li>
 </ul>
 

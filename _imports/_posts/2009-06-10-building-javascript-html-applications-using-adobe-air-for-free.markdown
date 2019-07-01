@@ -80,11 +80,13 @@ The easiest way to do this is to place all you Application files within a Sub-Fo
 
 build.bat example:
 
-*cd App_Files <br />adt &ndash;package &ndash;storetype pkcs12 &ndash;keystore ../certificate ../MyApp.air application.xml .*
+*cd App_Files 
+adt &ndash;package &ndash;storetype pkcs12 &ndash;keystore ../certificate ../MyApp.air application.xml .*
 
 test.bat example
 
-*cd App_Files <br />adl application.xml*
+*cd App_Files 
+adl application.xml*
 
 Also, one thing to note about the above modified &ldquo;build.bat&rdquo; file is that it will place the Built &ldquo;.air&rdquo; file/application within the Main folder where the .BAT files and Certificate are located.
 <h3>Creating a Self-Signed Certificate</h3>

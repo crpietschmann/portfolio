@@ -23,7 +23,8 @@ This is the second bug in Virtual Earth 6 that I&#39;ve found today. It appears 
 
 
 
-As the documentation states:<br />
+As the documentation states:
+
 *&quot;A Boolean value that specifies whether to show the map mode switch on the dashboard control. Optional. Default is true (the switch is displayed).&quot;* 
 
 

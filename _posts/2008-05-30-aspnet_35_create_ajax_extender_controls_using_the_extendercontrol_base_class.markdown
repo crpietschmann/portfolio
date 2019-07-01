@@ -45,20 +45,30 @@ When first creating your custom extender control you need to inherit from the Ex
 
 
 
-[TargetControlType(typeof(Control))]<br />
-public class FocusExtender : System.Web.UI.ExtenderControl<br />
-{<br />
-    protected override System.Collections.Generic.IEnumerable<ScriptDescriptor> GetScriptDescriptors(Control targetControl)<br />
-    {<br />
-        throw new NotImplementedException();<br />
+[TargetControlType(typeof(Control))]
+
+public class FocusExtender : System.Web.UI.ExtenderControl
+
+{
+
+    protected override System.Collections.Generic.IEnumerable<ScriptDescriptor> GetScriptDescriptors(Control targetControl)
+
+    {
+
+        throw new NotImplementedException();
+
     } 
 
 
 
-    protected override System.Collections.Generic.IEnumerable<ScriptReference> GetScriptReferences()<br />
-    {<br />
-        throw new NotImplementedException();<br />
-    }<br />
+    protected override System.Collections.Generic.IEnumerable<ScriptReference> GetScriptReferences()
+
+    {
+
+        throw new NotImplementedException();
+
+    }
+
 } 
 
 
@@ -87,9 +97,12 @@ Here&#39;s a basic example of setting up a ScriptReference that includes a scrip
 
 
 
-protected override System.Collections.Generic.IEnumerable<ScriptReference> GetScriptReferences()<br />
-{<br />
-    yield return new ScriptReference(&quot;CustomExtenderControl.FocusExtender.js&quot;, &quot;CustomExtenderControl&quot;);;<br />
+protected override System.Collections.Generic.IEnumerable<ScriptReference> GetScriptReferences()
+
+{
+
+    yield return new ScriptReference(&quot;CustomExtenderControl.FocusExtender.js&quot;, &quot;CustomExtenderControl&quot;);;
+
 } 
 
 
@@ -122,13 +135,16 @@ Here&#39;s a basic example of returning a ScriptBehaviorDescriptor without any p
 
 
 
-protected override System.Collections.Generic.IEnumerable<ScriptDescriptor> GetScriptDescriptors(Control targetControl)<br />
-{<br />
+protected override System.Collections.Generic.IEnumerable<ScriptDescriptor> GetScriptDescriptors(Control targetControl)
+
+{
+
     ScriptBehaviorDescriptor descriptor = new ScriptBehaviorDescriptor(this.GetType().FullName, targetControl.ClientID) 
 
 
 
-    yield return descriptor;<br />
+    yield return descriptor;
+
 } 
 
 
@@ -153,19 +169,28 @@ Type.registerNamespace(&quot;CustomExtenderControl&quot;);
 
 
 
-CustomExtenderControl.FocusExtender = function(element) {<br />
-    CustomExtenderControl.FocusExtender.initializeBase(this, [element]);<br />
+CustomExtenderControl.FocusExtender = function(element) {
+
+    CustomExtenderControl.FocusExtender.initializeBase(this, [element]);
+
 }; 
 
 
 
-CustomExtenderControl.FocusExtender.prototype = {<br />
-    initialize:function(){<br />
-        CustomExtenderControl.FocusExtender.callBaseMethod(this, &quot;initialize&quot;);<br />
-    },<br />
-    dispose:function(){<br />
-        CustomExtenderControl.FocusExtender.callBaseMethod(this, &quot;dispose&quot;);<br />
-    }<br />
+CustomExtenderControl.FocusExtender.prototype = {
+
+    initialize:function(){
+
+        CustomExtenderControl.FocusExtender.callBaseMethod(this, &quot;initialize&quot;);
+
+    },
+
+    dispose:function(){
+
+        CustomExtenderControl.FocusExtender.callBaseMethod(this, &quot;dispose&quot;);
+
+    }
+
 }; 
 
 
@@ -214,7 +239,8 @@ In this article, I&#39;m going to keep things extemely simple, and we&#39;re goi
 
 
 
-public string HighlightCssClass { get; set; }<br />
+public string HighlightCssClass { get; set; }
+
 public string NoHighlightCssClass { get; set; } 
 
 
@@ -235,18 +261,22 @@ Just modify the GetScriptDescriptor method above to look like the following:
 
 
 
-protected override System.Collections.Generic.IEnumerable<ScriptDescriptor> GetScriptDescriptors(Control targetControl)<br />
-{<br />
+protected override System.Collections.Generic.IEnumerable<ScriptDescriptor> GetScriptDescriptors(Control targetControl)
+
+{
+
     ScriptBehaviorDescriptor descriptor = new ScriptBehaviorDescriptor(this.GetType().FullName, targetControl.ClientID) 
 
 
 
-    descriptor.AddProperty(&quot;HighlightCssClass&quot;, this.HighlightCssClass);<br />
+    descriptor.AddProperty(&quot;HighlightCssClass&quot;, this.HighlightCssClass);
+
     descriptor.AddProperty(&quot;NoHighlightCssClass&quot;, this.NoHighlightCssClass); 
 
 
 
-    yield return descriptor;<br />
+    yield return descriptor;
+
 } 
 
 
@@ -271,34 +301,58 @@ Type.registerNamespace(&quot;CustomExtenderControl&quot;);
 
 
 
-CustomExtenderControl.FocusExtender = function(element) {<br />
-    CustomExtenderControl.FocusExtender.initializeBase(this, [element]);<br />
-    this._HighlightCssClass = null;<br />
-    this._NoHighlightCssClass = null;<br />
+CustomExtenderControl.FocusExtender = function(element) {
+
+    CustomExtenderControl.FocusExtender.initializeBase(this, [element]);
+
+    this._HighlightCssClass = null;
+
+    this._NoHighlightCssClass = null;
+
 }; 
 
 
 
-CustomExtenderControl.FocusExtender.prototype = {<br />
-    initialize:function(){<br />
-        CustomExtenderControl.FocusExtender.callBaseMethod(this, &quot;initialize&quot;);<br />
-    },<br />
-    dispose:function(){<br />
-        CustomExtenderControl.FocusExtender.callBaseMethod(this, &quot;dispose&quot;);<br />
-    },<br />
-    <br />
-    get_HighlightCssClass:function() {<br />
-        return this._HighlightCssClass;<br />
-    },<br />
-    set_HighlightCssClass:function(v) {<br />
-        this._HighlightCssClass = v;<br />
-    },<br />
-    get_NoHighlightCssClass:function() {<br />
-        return this._NoHighlightCssClass;<br />
-    },<br />
-    set_NoHighlightCssClass:function(v) {<br />
-        this._NoHighlightCssClass = v;<br />
-    }<br />
+CustomExtenderControl.FocusExtender.prototype = {
+
+    initialize:function(){
+
+        CustomExtenderControl.FocusExtender.callBaseMethod(this, &quot;initialize&quot;);
+
+    },
+
+    dispose:function(){
+
+        CustomExtenderControl.FocusExtender.callBaseMethod(this, &quot;dispose&quot;);
+
+    },
+
+    
+
+    get_HighlightCssClass:function() {
+
+        return this._HighlightCssClass;
+
+    },
+
+    set_HighlightCssClass:function(v) {
+
+        this._HighlightCssClass = v;
+
+    },
+
+    get_NoHighlightCssClass:function() {
+
+        return this._NoHighlightCssClass;
+
+    },
+
+    set_NoHighlightCssClass:function(v) {
+
+        this._NoHighlightCssClass = v;
+
+    }
+
 }; 
 
 
@@ -323,63 +377,120 @@ Here&#39;s the above JavaScript code with the event handlers added:
 
 
 
-Type.registerNamespace(&quot;CustomExtenderControl&quot;);<br />
-CustomExtenderControl.FocusExtender = function(element) {<br />
-    CustomExtenderControl.FocusExtender.initializeBase(this, [element]);<br />
-    this._HighlightCssClass = null;<br />
-    this._NoHighlightCssClass = null;<br />
-    <br />
-    this._focusHandler = Function.createDelegate(this, this._onFocus);<br />
-    this._blurHandler = Function.createDelegate(this, this._onBlur);<br />
-};<br />
-CustomExtenderControl.FocusExtender.prototype = {<br />
-    initialize:function(){<br />
-        CustomExtenderControl.FocusExtender.callBaseMethod(this, &quot;initialize&quot;);<br />
-        <br />
-        var targetElement = this.get_element();<br />
-        <br />
-        $addHandler(targetElement, &quot;focus&quot;, this._focusHandler);<br />
-        $addHandler(targetElement, &quot;blur&quot;, this._blurHandler);        <br />
-    },<br />
-    dispose:function(){<br />
-        var targetElement = this.get_element();<br />
-        <br />
-        $removeHandler(targetElement, &quot;focus&quot;, this._focusHandler);    <br />
-        $removeHandler(targetElement, &quot;blur&quot;, this._blurHandler);<br />
-    <br />
-        CustomExtenderControl.FocusExtender.callBaseMethod(this, &quot;dispose&quot;);<br />
-    },<br />
-    <br />
-    get_HighlightCssClass:function() {<br />
-        return this._HighlightCssClass;<br />
-    },<br />
-    set_HighlightCssClass:function(v) {<br />
-        this._HighlightCssClass = v;<br />
-    },<br />
-    get_NoHighlightCssClass:function() {<br />
-        return this._NoHighlightCssClass;<br />
-    },<br />
-    set_NoHighlightCssClass:function(v) {<br />
-        this._NoHighlightCssClass = v;<br />
-    },<br />
-    <br />
-    //Event Handler Methods<br />
-    _onFocus:function(eventArgs) {<br />
-        var targetElement = this.get_element();<br />
-        if (targetElement != null)<br />
-        {<br />
-            targetElement.className = this.get_HighlightCssClass();<br />
-        }<br />
-    },<br />
-    _onBlur:function(eventArgs) {<br />
-        var targetElement = this.get_element();<br />
-        if (targetElement != null)<br />
-        {<br />
-            targetElement.className = this.get_NoHighlightCssClass();<br />
-        }<br />
-    }<br />
-};<br />
-CustomExtenderControl.FocusExtender.registerClass(&quot;CustomExtenderControl.FocusExtender&quot;, Sys.UI.Behavior);<br />
+Type.registerNamespace(&quot;CustomExtenderControl&quot;);
+
+CustomExtenderControl.FocusExtender = function(element) {
+
+    CustomExtenderControl.FocusExtender.initializeBase(this, [element]);
+
+    this._HighlightCssClass = null;
+
+    this._NoHighlightCssClass = null;
+
+    
+
+    this._focusHandler = Function.createDelegate(this, this._onFocus);
+
+    this._blurHandler = Function.createDelegate(this, this._onBlur);
+
+};
+
+CustomExtenderControl.FocusExtender.prototype = {
+
+    initialize:function(){
+
+        CustomExtenderControl.FocusExtender.callBaseMethod(this, &quot;initialize&quot;);
+
+        
+
+        var targetElement = this.get_element();
+
+        
+
+        $addHandler(targetElement, &quot;focus&quot;, this._focusHandler);
+
+        $addHandler(targetElement, &quot;blur&quot;, this._blurHandler);        
+
+    },
+
+    dispose:function(){
+
+        var targetElement = this.get_element();
+
+        
+
+        $removeHandler(targetElement, &quot;focus&quot;, this._focusHandler);    
+
+        $removeHandler(targetElement, &quot;blur&quot;, this._blurHandler);
+
+    
+
+        CustomExtenderControl.FocusExtender.callBaseMethod(this, &quot;dispose&quot;);
+
+    },
+
+    
+
+    get_HighlightCssClass:function() {
+
+        return this._HighlightCssClass;
+
+    },
+
+    set_HighlightCssClass:function(v) {
+
+        this._HighlightCssClass = v;
+
+    },
+
+    get_NoHighlightCssClass:function() {
+
+        return this._NoHighlightCssClass;
+
+    },
+
+    set_NoHighlightCssClass:function(v) {
+
+        this._NoHighlightCssClass = v;
+
+    },
+
+    
+
+    //Event Handler Methods
+
+    _onFocus:function(eventArgs) {
+
+        var targetElement = this.get_element();
+
+        if (targetElement != null)
+
+        {
+
+            targetElement.className = this.get_HighlightCssClass();
+
+        }
+
+    },
+
+    _onBlur:function(eventArgs) {
+
+        var targetElement = this.get_element();
+
+        if (targetElement != null)
+
+        {
+
+            targetElement.className = this.get_NoHighlightCssClass();
+
+        }
+
+    }
+
+};
+
+CustomExtenderControl.FocusExtender.registerClass(&quot;CustomExtenderControl.FocusExtender&quot;, Sys.UI.Behavior);
+
 Sys.Application.notifyScriptLoaded(); 
 
 
@@ -402,17 +513,24 @@ Here&#39;s what the final server-side code for the FocusExtender object would lo
 
 
 
-[TargetControlType(typeof(Control)),<br />
-ScriptReference(&quot;CustomExtenderControl.FocusExtender.js&quot;, &quot;CustomExtenderControl&quot;)]<br />
-public class FocusExtender : ExtenderControlBase<br />
-{<br />
-    [ExtenderControlProperty]<br />
+[TargetControlType(typeof(Control)),
+
+ScriptReference(&quot;CustomExtenderControl.FocusExtender.js&quot;, &quot;CustomExtenderControl&quot;)]
+
+public class FocusExtender : ExtenderControlBase
+
+{
+
+    [ExtenderControlProperty]
+
     public string HighlightCssClass { get; set; } 
 
 
 
-    [ExtenderControlProperty]<br />
-    public string NoHighlightCssClass { get; set; }<br />
+    [ExtenderControlProperty]
+
+    public string NoHighlightCssClass { get; set; }
+
 } 
 
 
@@ -433,140 +551,214 @@ Here&#39;s the complete code for the ExtenderControlBase, ScriptReferenceAttribu
 
 
 
-using System;<br />
-using System.Collections.Generic;<br />
-using System.ComponentModel;<br />
+using System;
+
+using System.Collections.Generic;
+
+using System.ComponentModel;
+
 using System.Web.UI; 
 
 
 
-public class ExtenderControlBase : ExtenderControl<br />
-{<br />
-    protected override IEnumerable<ScriptDescriptor> GetScriptDescriptors(Control targetControl)<br />
-    {<br />
+public class ExtenderControlBase : ExtenderControl
+
+{
+
+    protected override IEnumerable<ScriptDescriptor> GetScriptDescriptors(Control targetControl)
+
+    {
+
         ScriptControlDescriptor descriptor = new ScriptControlDescriptor(this.GetType().FullName, targetControl.ClientID); 
 
 
 
-        // Add all the ExtenderControls Client-Side Object Properties<br />
-        PropertyDescriptorCollection props = TypeDescriptor.GetProperties(this);<br />
-        foreach (PropertyDescriptor prop in props)<br />
-        {<br />
-            ExtenderControlPropertyAttribute propAttr = prop.Attributes[typeof(ExtenderControlPropertyAttribute)] as ExtenderControlPropertyAttribute;<br />
-            if (propAttr != null)<br />
-            {<br />
-                object value = prop.GetValue(this);<br />
-                string name = (propAttr.Name != null) ? propAttr.Name : prop.Name;<br />
-                if (value != null)<br />
-                {<br />
-                    descriptor.AddProperty(name, value);<br />
-                }<br />
-            }<br />
+        // Add all the ExtenderControls Client-Side Object Properties
+
+        PropertyDescriptorCollection props = TypeDescriptor.GetProperties(this);
+
+        foreach (PropertyDescriptor prop in props)
+
+        {
+
+            ExtenderControlPropertyAttribute propAttr = prop.Attributes[typeof(ExtenderControlPropertyAttribute)] as ExtenderControlPropertyAttribute;
+
+            if (propAttr != null)
+
+            {
+
+                object value = prop.GetValue(this);
+
+                string name = (propAttr.Name != null) ? propAttr.Name : prop.Name;
+
+                if (value != null)
+
+                {
+
+                    descriptor.AddProperty(name, value);
+
+                }
+
+            }
+
         } 
 
 
 
-        yield return descriptor;<br />
+        yield return descriptor;
+
     } 
 
 
 
-    protected override IEnumerable<ScriptReference> GetScriptReferences()<br />
-    {<br />
-        // Add all the ExtenderControls Client-Side JavaScript References<br />
-        object[] scriptReferences = Attribute.GetCustomAttributes(this.GetType(), typeof(ScriptReferenceAttribute), false);<br />
-        foreach (ScriptReferenceAttribute r in scriptReferences)<br />
-        {<br />
-            yield return r.GetScriptReference();<br />
-        }<br />
-    }<br />
+    protected override IEnumerable<ScriptReference> GetScriptReferences()
+
+    {
+
+        // Add all the ExtenderControls Client-Side JavaScript References
+
+        object[] scriptReferences = Attribute.GetCustomAttributes(this.GetType(), typeof(ScriptReferenceAttribute), false);
+
+        foreach (ScriptReferenceAttribute r in scriptReferences)
+
+        {
+
+            yield return r.GetScriptReference();
+
+        }
+
+    }
+
 } 
 
 
 
-[AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]<br />
-public class ExtenderControlPropertyAttribute : Attribute<br />
-{<br />
+[AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
+
+public class ExtenderControlPropertyAttribute : Attribute
+
+{
+
     public ExtenderControlPropertyAttribute() { } 
 
 
 
-    public ExtenderControlPropertyAttribute(string name)<br />
-    {<br />
-        this.Name = name;<br />
+    public ExtenderControlPropertyAttribute(string name)
+
+    {
+
+        this.Name = name;
+
     } 
 
 
 
-    public string Name { get; set; }<br />
+    public string Name { get; set; }
+
 } 
 
 
 
-[AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]<br />
-public class ScriptReferenceAttribute : Attribute<br />
-{<br />
-    public ScriptReferenceAttribute(string path)<br />
-    {<br />
-        this.Path = path;<br />
+[AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
+
+public class ScriptReferenceAttribute : Attribute
+
+{
+
+    public ScriptReferenceAttribute(string path)
+
+    {
+
+        this.Path = path;
+
     } 
 
 
 
-    public ScriptReferenceAttribute(string name, string assembly)<br />
-    {<br />
-        this.Name = name;<br />
-        this.Assembly = assembly;<br />
+    public ScriptReferenceAttribute(string name, string assembly)
+
+    {
+
+        this.Name = name;
+
+        this.Assembly = assembly;
+
     } 
 
 
 
-    private string _path = null;<br />
-    public string Path<br />
-    {<br />
-        get { return _path; }<br />
-        set { _path = value; }<br />
+    private string _path = null;
+
+    public string Path
+
+    {
+
+        get { return _path; }
+
+        set { _path = value; }
+
     } 
 
 
 
-    private string _name = null;<br />
-    public string Name<br />
-    {<br />
-        get { return _name; }<br />
-        set { _name = value; }<br />
+    private string _name = null;
+
+    public string Name
+
+    {
+
+        get { return _name; }
+
+        set { _name = value; }
+
     } 
 
 
 
-    private string _assembly = null;<br />
-    public string Assembly<br />
-    {<br />
-        get { return _assembly; }<br />
-        set { _assembly = value; }<br />
+    private string _assembly = null;
+
+    public string Assembly
+
+    {
+
+        get { return _assembly; }
+
+        set { _assembly = value; }
+
     } 
 
 
 
-    public ScriptReference GetScriptReference()<br />
-    {<br />
+    public ScriptReference GetScriptReference()
+
+    {
+
         ScriptReference r = null; 
 
 
 
-        if (this.Path == null)<br />
-        {<br />
-            r = new ScriptReference(this.Name, this.Assembly);<br />
-        }<br />
-        else<br />
-        {<br />
-            r = new ScriptReference(this.Path);<br />
+        if (this.Path == null)
+
+        {
+
+            r = new ScriptReference(this.Name, this.Assembly);
+
+        }
+
+        else
+
+        {
+
+            r = new ScriptReference(this.Path);
+
         } 
 
 
 
-        return r;<br />
-    }<br />
+        return r;
+
+    }
+
 } 
 
 
@@ -588,8 +780,10 @@ To do this all we need to do is add a property named &quot;id&quot; to the Scrip
 
 
 
-protected override System.Collections.Generic.IEnumerable<ScriptDescriptor> GetScriptDescriptors(Control targetControl)<br />
-{<br />
+protected override System.Collections.Generic.IEnumerable<ScriptDescriptor> GetScriptDescriptors(Control targetControl)
+
+{
+
     ScriptBehaviorDescriptor descriptor = new ScriptBehaviorDescriptor(this.GetType().FullName, targetControl.ClientID); 
 
 
@@ -598,12 +792,14 @@ protected override System.Collections.Generic.IEnumerable<ScriptDescriptor> GetS
 
 
 
-    descriptor.AddProperty(&quot;HighlightCssClass&quot;, this.HighlightCssClass);<br />
+    descriptor.AddProperty(&quot;HighlightCssClass&quot;, this.HighlightCssClass);
+
     descriptor.AddProperty(&quot;NoHighlightCssClass&quot;, this.NoHighlightCssClass); 
 
 
 
-    yield return descriptor;<br />
+    yield return descriptor;
+
 } 
 
 
@@ -620,9 +816,12 @@ Now with the following FocusExtender control in the page:
 
 
 
-<cec:FocusExtender runat=&quot;server&quot; id=&quot;FocusExtender1&quot;<br />
-    TargetControlID=&quot;TextBox1&quot;<br />
-    HighlightCssClass=&quot;Highlight&quot; NoHighlightCssClass=&quot;NoHightlight&quot;><br />
+<cec:FocusExtender runat=&quot;server&quot; id=&quot;FocusExtender1&quot;
+
+    TargetControlID=&quot;TextBox1&quot;
+
+    HighlightCssClass=&quot;Highlight&quot; NoHighlightCssClass=&quot;NoHightlight&quot;>
+
 </cec:FocusExtender> 
 
 
@@ -639,13 +838,20 @@ We can access it from JavaScript like so:
 
 
 
-<input type=&quot;button&quot; value=&quot;Show HighlightCssClass&quot; onclick=&quot;ShowHighlightCssClass();&quot; /><br />
-<script type=&quot;text/javascript&quot;><br />
-    function ShowHighlightCssClass()<br />
-    {<br />
-        var focusExtender = $find(&quot;<%=FocusExtender1.ClientID%>&quot;);<br />
-        alert(focusExtender.get_HighlightCssClass());<br />
-    }<br />
+<input type=&quot;button&quot; value=&quot;Show HighlightCssClass&quot; onclick=&quot;ShowHighlightCssClass();&quot; />
+
+<script type=&quot;text/javascript&quot;>
+
+    function ShowHighlightCssClass()
+
+    {
+
+        var focusExtender = $find(&quot;<%=FocusExtender1.ClientID%>&quot;);
+
+        alert(focusExtender.get_HighlightCssClass());
+
+    }
+
 </script> 
 
 

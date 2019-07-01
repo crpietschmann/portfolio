@@ -35,7 +35,8 @@ else
     var hostname = ipinfo.HostName;
 }</pre>
 
-<br />Below is the full code of my &ldquo;IPInfo&rdquo; class:
+
+Below is the full code of my &ldquo;IPInfo&rdquo; class:
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">using System;
 using System.Collections.Generic;
 using System.Diagnostics;

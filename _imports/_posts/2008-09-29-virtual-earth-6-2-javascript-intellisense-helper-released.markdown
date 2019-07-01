@@ -26,4 +26,5 @@ In case you aren't familiar with what the "Virtual Earth JavaScript Intellisense
 
 *Creating Microsoft Virtual Earth mashups and applications just got a whole lot easier. This JavaScript library enables Intellisense for the Microsoft Virtual Earth 6.2 (current release) AJAX control in Visual Studio 2008"** *
 
-<img src="http://www.codeplex.com/Project/Download/FileDownload.aspx?ProjectName=VEJS&amp;DownloadId=29908" alt="" /><br /> <img src="http://www.codeplex.com/Project/Download/FileDownload.aspx?ProjectName=VEJS&amp;DownloadId=29907" alt="" />
+<img src="http://www.codeplex.com/Project/Download/FileDownload.aspx?ProjectName=VEJS&amp;DownloadId=29908" alt="" />
+ <img src="http://www.codeplex.com/Project/Download/FileDownload.aspx?ProjectName=VEJS&amp;DownloadId=29907" alt="" />

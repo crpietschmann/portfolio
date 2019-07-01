@@ -80,9 +80,11 @@ Now, you'll be able to able to easily import this data into a database, which br
 
 See the following links for reference in addition to this article:
 
-<a href="http://www.census.gov/geo/www/cob/z52000.html">U.S. Census Bureau - Census 2000 5-Digit ZIP Code Tabulation Areas (ZCTAs) Cartographic Boundary Files</a> <br /> This is where you can download the U.S. Census Bureau's 5-Digit ZCTA files, specifically the ARC/INFO Ungenerate (ASCII) files used by the utility in this article.
+<a href="http://www.census.gov/geo/www/cob/z52000.html">U.S. Census Bureau - Census 2000 5-Digit ZIP Code Tabulation Areas (ZCTAs) Cartographic Boundary Files</a> 
+ This is where you can download the U.S. Census Bureau's 5-Digit ZCTA files, specifically the ARC/INFO Ungenerate (ASCII) files used by the utility in this article.
 
-<a href="http://www.census.gov/geo/www/cob/ascii_info.html">ARC/INFO Generate (ASCII) Metadata Cartographic Boundary Files</a><br /> This page contains the description of the file format used for the ARC/INFO Generate (ASCII) files.
+<a href="http://www.census.gov/geo/www/cob/ascii_info.html">ARC/INFO Generate (ASCII) Metadata Cartographic Boundary Files</a>
+ This page contains the description of the file format used for the ARC/INFO Generate (ASCII) files.
 
  
 

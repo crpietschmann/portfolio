@@ -18,7 +18,8 @@ Larry Clarkin presented at tonight&rsquo;s WI .NET Users Group meeting on the to
 
 You can view the presentation notes here: <a href="http://28thessential.com/"><span style="color: #800080;">http://28thEssential.com</span></a>
 
-One of the items discussed was Google, Yahoo and MS Virtual Earth mapping. If you are interested in implementing mapping within your ASP.NET applications then you should check out my <a href="http://www.codeplex.com/Wiki/View.aspx?ProjectName=PietschSoftVE3">Open Source ASP.NET Virtual Earth mapping control</a>.<br /> PietschSoft.VE: <a href="http://www.codeplex.com/Wiki/View.aspx?ProjectName=PietschSoftVE3">http://www.codeplex.com/Wiki/View.aspx?ProjectName=PietschSoftVE3</a>
+One of the items discussed was Google, Yahoo and MS Virtual Earth mapping. If you are interested in implementing mapping within your ASP.NET applications then you should check out my <a href="http://www.codeplex.com/Wiki/View.aspx?ProjectName=PietschSoftVE3">Open Source ASP.NET Virtual Earth mapping control</a>.
+ PietschSoft.VE: <a href="http://www.codeplex.com/Wiki/View.aspx?ProjectName=PietschSoftVE3">http://www.codeplex.com/Wiki/View.aspx?ProjectName=PietschSoftVE3</a>
 
 On a related note, there was a disruptive and rude user group member in attendance tonight. I would like to apologize to all in attendance for the disruption, and I thank Larry, Scott, Gerry and anyone else involved in handling the situation. If the meeting tonight was your first; I must assure you that this is not a normal occurrence. I am actually a little embarrassed that a fellow community member would be disrespectful of a presenter and be so disruptive
 

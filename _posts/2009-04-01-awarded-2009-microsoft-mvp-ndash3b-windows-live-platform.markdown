@@ -22,7 +22,9 @@ redirect_from:
 
 *The Microsoft MVP Award provides us the unique opportunity to celebrate and honor your significant contributions and say "Thank you for your technical leadership."*
 
-*Toby Richards     <br />General Manager       <br />Community Support Services*
+*Toby Richards     
+General Manager       
+Community Support Services*
 
 I&rsquo;m lucky enough to be one of the April Fools MVPs. Last year I wasn&rsquo;t sure at first if the email was an April Fools joke or not, and this year I&rsquo;m just as happy that it&rsquo;s not. This marks the second time I&rsquo;ve been awarded Microsoft MVP. Last year I was awarded in the &ldquo;Virtual Earth&rdquo; category, and last fall they renamed me to &ldquo;Windows Live Platform&rdquo;. This year I am awarded in the same &ldquo;Windows Live Platform&rdquo; category.
 

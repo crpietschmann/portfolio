@@ -27,8 +27,10 @@ I recently purchased <a href="http://www.amazon.com/JavaScript-Good-Parts-Dougla
 
 
 
-// Note: only this code example is quoted from the book<br />
-var middle = stooge[&quot;middle-name&quot;] || &quot;(none)&quot;;<br />
+// Note: only this code example is quoted from the book
+
+var middle = stooge[&quot;middle-name&quot;] || &quot;(none)&quot;;
+
 var status = flight.status || &quot;unknown&quot;;
 
 
@@ -49,7 +51,8 @@ Below is an example of what I used to do Previous to learning this trick:
 
 
 
-var middle = (stooge[&quot;middle-name&quot;] != null ? stoog[&quot;middle-name&quot;] : &quot;(none)&quot;);<br />
+var middle = (stooge[&quot;middle-name&quot;] != null ? stoog[&quot;middle-name&quot;] : &quot;(none)&quot;);
+
 var status = (flight.status != null ? flight.status : &quot;unknown&quot;);
 
 
@@ -66,6 +69,7 @@ This new trick makes the code much easier to read, and checks for *undefined *al
 
 
 
-**Reference:**<br />
+**Reference:**
+
 JavaScript: The Good Parts by Douglas Crockford. Copyright 2008 Yahoo! inc., 978-0-596-51774-8. 
 

@@ -27,17 +27,28 @@ To demonstrate this, I&#39;ll show you how to create the familiar (for .NET deve
 
 
 
-module System<br />
-  module Windows<br />
-    module Forms<br />
-      module MessageBox<br />
-        def MessageBox.Show(title, message)<br />
-          api = Win32API.new(&quot;user32&quot;,&quot;MessageBox&quot;,[&quot;L&quot;,&quot;P&quot;,&quot;P&quot;,&quot;L&quot;],&quot;I&quot;)<br />
-          api.call(0, message, title, 0)<br />
-        end<br />
-      end<br />
-    end<br />
-  end<br />
+module System
+
+  module Windows
+
+    module Forms
+
+      module MessageBox
+
+        def MessageBox.Show(title, message)
+
+          api = Win32API.new(&quot;user32&quot;,&quot;MessageBox&quot;,[&quot;L&quot;,&quot;P&quot;,&quot;P&quot;,&quot;L&quot;],&quot;I&quot;)
+
+          api.call(0, message, title, 0)
+
+        end
+
+      end
+
+    end
+
+  end
+
 end 
 
 
@@ -70,8 +81,10 @@ Or by including the &quot;namespace&quot;:
 
 
 
-include System::Windows::Forms<br />
-<br />
+include System::Windows::Forms
+
+
+
 MessageBox.Show(&quot;Some Title&quot;, &quot;This is another test message.&quot;)
 
 

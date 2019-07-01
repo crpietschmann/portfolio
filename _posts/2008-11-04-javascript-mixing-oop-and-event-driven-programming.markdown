@@ -21,7 +21,8 @@ To expand on my previous article on<a href="/post.aspx?id=5c7d6bc1-2926-467d-a47
 
 To keep with the Prototypal Inheritence theme, we&#39;ll create an &quot;EventObject&quot; class that will have the plumbing necessary for implementing Events, and then we&#39;ll inherit that class with a simple &quot;Person&quot; class that will have an &quot;onnamechanged&quot; event.
 
-<h3>How To Mix OOP and Event Driven Programming in JavaScript<br />
+<h3>How To Mix OOP and Event Driven Programming in JavaScript
+
 </h3>
 
 
@@ -33,18 +34,30 @@ Here&#39;s the base EventObject class and Person class with a Name Property (via
 
 
 
-EventObject = function() {};<br />
-EventObject.prototype = {};<br />
-<br />
-Person = function(name) {<br />
-    this._name = name;<br />
-};<br />
-Person.prototype = new EventObject;<br />
-Person.prototype.GetName = function() {<br />
-    return this._name;<br />
-};<br />
-Person.prototype.SetName = function(value) {<br />
-    this._name = value;<br />
+EventObject = function() {};
+
+EventObject.prototype = {};
+
+
+
+Person = function(name) {
+
+    this._name = name;
+
+};
+
+Person.prototype = new EventObject;
+
+Person.prototype.GetName = function() {
+
+    return this._name;
+
+};
+
+Person.prototype.SetName = function(value) {
+
+    this._name = value;
+
 };
 
 
@@ -61,16 +74,26 @@ Now, here&#39;s some basic example code for using the the Person class:
 
 
 
-// Create an instance of the Person Object<br />
-var myPerson = new Person(&quot;John McCain&quot;);<br />
-<br />
-// Get the Name currently set<br />
-alert(myPerson.GetName());<br />
-<br />
-// Set the Name Property to a different name<br />
-myPerson.SetName(&quot;Barack Obama&quot;);<br />
-<br />
-// Get the Name currently set<br />
+// Create an instance of the Person Object
+
+var myPerson = new Person(&quot;John McCain&quot;);
+
+
+
+// Get the Name currently set
+
+alert(myPerson.GetName());
+
+
+
+// Set the Name Property to a different name
+
+myPerson.SetName(&quot;Barack Obama&quot;);
+
+
+
+// Get the Name currently set
+
 alert(myPerson.GetName()); 
 
 
@@ -91,8 +114,10 @@ First we&#39;ll create an &quot;internal&quot; Object (that we&#39;ll use a hash
 
 
 
-EventObject.prototype = {<br />
-    _eventList: {}<br />
+EventObject.prototype = {
+
+    _eventList: {}
+
 }; 
 
 
@@ -109,55 +134,104 @@ Next, we&#39;ll create &quot;attachEvent&quot; and &quot;detachEvent&quot; metho
 
 
 
-EventObject.prototype = {<br />
-    _getEvent: function(eventName, create){<br />
-        // Check if Array of Event Handlers has been created<br />
-        if (!this._eventList[eventName]){<br />
-<br />
-            // Check if the calling method wants to create the Array<br />
-            // if not created. This reduces unneeded memory usage.<br />
-            if (!create) {<br />
-                return null;<br />
-            }<br />
-<br />
-        // Create the Array of Event Handlers<br />
-            this._eventList[eventName] = []; // new Array<br />
-        }<br />
-<br />
-        // return the Array of Event Handlers already added<br />
-        return this._eventList[eventName];<br />
-    },<br />
-    attachEvent: function(eventName, handler) {<br />
-        // Get the Array of Event Handlers<br />
-        var evt = this._getEvent(eventName, true);<br />
-<br />
-        // Add the new Event Handler to the Array<br />
-        evt.push(handler);<br />
-    },<br />
-    detachEvent: function(eventName, handler) {<br />
-        // Get the Array of Event Handlers<br />
-        var evt = this._getEvent(eventName);<br />
-<br />
-        if (!evt) { return; }<br />
-<br />
-        // Helper Method - an Array.indexOf equivalent<br />
-        var getArrayIndex = function(array, item){<br />
-            for (var i = array.length; i < array.length; i++) {<br />
-                if (array[i] &amp;&amp; array[i] === item) {<br />
-                    return i;<br />
-                }<br />
-            }<br />
-            return -1;<br />
-        };<br />
-<br />
-        // Get the Array index of the Event Handler<br />
-        var index = getArrayIndex(evt, handler);<br />
-<br />
-        if (index > -1) {<br />
-            // Remove Event Handler from Array<br />
-            evt.splice(index, 1);<br />
-        }<br />
-    }<br />
+EventObject.prototype = {
+
+    _getEvent: function(eventName, create){
+
+        // Check if Array of Event Handlers has been created
+
+        if (!this._eventList[eventName]){
+
+
+
+            // Check if the calling method wants to create the Array
+
+            // if not created. This reduces unneeded memory usage.
+
+            if (!create) {
+
+                return null;
+
+            }
+
+
+
+        // Create the Array of Event Handlers
+
+            this._eventList[eventName] = []; // new Array
+
+        }
+
+
+
+        // return the Array of Event Handlers already added
+
+        return this._eventList[eventName];
+
+    },
+
+    attachEvent: function(eventName, handler) {
+
+        // Get the Array of Event Handlers
+
+        var evt = this._getEvent(eventName, true);
+
+
+
+        // Add the new Event Handler to the Array
+
+        evt.push(handler);
+
+    },
+
+    detachEvent: function(eventName, handler) {
+
+        // Get the Array of Event Handlers
+
+        var evt = this._getEvent(eventName);
+
+
+
+        if (!evt) { return; }
+
+
+
+        // Helper Method - an Array.indexOf equivalent
+
+        var getArrayIndex = function(array, item){
+
+            for (var i = array.length; i < array.length; i++) {
+
+                if (array[i] &amp;&amp; array[i] === item) {
+
+                    return i;
+
+                }
+
+            }
+
+            return -1;
+
+        };
+
+
+
+        // Get the Array index of the Event Handler
+
+        var index = getArrayIndex(evt, handler);
+
+
+
+        if (index > -1) {
+
+            // Remove Event Handler from Array
+
+            evt.splice(index, 1);
+
+        }
+
+    }
+
 };
 
 
@@ -174,32 +248,58 @@ Next, we need to add a &quot;raiseEvent&quot; method that allows us to actually 
 
 
 
-EventObject.prototype = {<br />
-    raiseEvent: function(eventName, eventArgs) {<br />
-        // Get a function that will call all the Event Handlers internally<br />
-        var handler = this._getEventHandler(eventName);<br />
-        if (handler) {<br />
-            // call the handler function<br />
-            // Pass in &quot;sender&quot; and &quot;eventArgs&quot; parameters<br />
-            handler(this, eventArgs);<br />
-        }<br />
-    },<br />
-    _getEventHandler: function(eventName) {<br />
-        // Get Event Handler Array for this Event<br />
-        var evt = this._getEvent(eventName, false);<br />
-        if (!evt || evt.length === 0) { return null; }<br />
-<br />
-        // Create the Handler method that will use currying to<br />
-        // call all the Events Handlers internally<br />
-        var h = function(sender, args) {<br />
-            for (var i = 0; i < evt.length; i++) {<br />
-                evt[i](sender, args);<br />
-            }<br />
-        };<br />
-<br />
-        // Return this new Handler method<br />
-        return h;<br />
-    }<br />
+EventObject.prototype = {
+
+    raiseEvent: function(eventName, eventArgs) {
+
+        // Get a function that will call all the Event Handlers internally
+
+        var handler = this._getEventHandler(eventName);
+
+        if (handler) {
+
+            // call the handler function
+
+            // Pass in &quot;sender&quot; and &quot;eventArgs&quot; parameters
+
+            handler(this, eventArgs);
+
+        }
+
+    },
+
+    _getEventHandler: function(eventName) {
+
+        // Get Event Handler Array for this Event
+
+        var evt = this._getEvent(eventName, false);
+
+        if (!evt || evt.length === 0) { return null; }
+
+
+
+        // Create the Handler method that will use currying to
+
+        // call all the Events Handlers internally
+
+        var h = function(sender, args) {
+
+            for (var i = 0; i < evt.length; i++) {
+
+                evt[i](sender, args);
+
+            }
+
+        };
+
+
+
+        // Return this new Handler method
+
+        return h;
+
+    }
+
 };
 
 
@@ -216,16 +316,26 @@ Now that the &quot;EventObject&quot; class has the Event &quot;plumbing&quot; in
 
 
 
-Person.prototype.SetName = function(value) {<br />
-    // Get old value<br />
-    var oldValue = this._name;<br />
-<br />
-    // Set new value<br />
-    this._name = value;<br />
-<br />
-    // Raise &quot;onchangename&quot; event and pass the old<br />
-    // value as the event arguments<br />
-    this.raiseEvent(&quot;onchangename&quot;, oldValue);<br />
+Person.prototype.SetName = function(value) {
+
+    // Get old value
+
+    var oldValue = this._name;
+
+
+
+    // Set new value
+
+    this._name = value;
+
+
+
+    // Raise &quot;onchangename&quot; event and pass the old
+
+    // value as the event arguments
+
+    this.raiseEvent(&quot;onchangename&quot;, oldValue);
+
 }; 
 
 
@@ -242,13 +352,20 @@ And, now to actually handle the event, we just need to call the &quot;addHandler
 
 
 
-myPerson.attachEvent(&quot;onchangename&quot;,<br />
-    function(sender, eventArgs) {<br />
-        // The Person object is passed as the &quot;sender&quot;<br />
-        // The Old Name Value is passed as the &quot;eventArgs&quot;<br />
-        alert(&quot;Old Value: &quot; + eventArgs);<br />
-        alert(&quot;New Value: &quot; + sender.GetName());<br />
-    }<br />
+myPerson.attachEvent(&quot;onchangename&quot;,
+
+    function(sender, eventArgs) {
+
+        // The Person object is passed as the &quot;sender&quot;
+
+        // The Old Name Value is passed as the &quot;eventArgs&quot;
+
+        alert(&quot;Old Value: &quot; + eventArgs);
+
+        alert(&quot;New Value: &quot; + sender.GetName());
+
+    }
+
 ); 
 
 
@@ -262,132 +379,258 @@ myPerson.attachEvent(&quot;onchangename&quot;,<br />
 
 
 
-EventObject = function() {};<br />
-EventObject.prototype = {<br />
-    _eventList: {},<br />
-    _getEvent: function(eventName, create){<br />
-        // Check if Array of Event Handlers has been created<br />
-        if (!this._eventList[eventName]){<br />
-<br />
-            // Check if the calling method wants to create the Array<br />
-            // if not created. This reduces unneeded memory usage.<br />
-            if (!create) {<br />
-                return null;<br />
-            }<br />
-<br />
-        // Create the Array of Event Handlers<br />
-            this._eventList[eventName] = []; // new Array<br />
-        }<br />
-<br />
-        // return the Array of Event Handlers already added<br />
-        return this._eventList[eventName];<br />
-    },<br />
-    attachEvent: function(eventName, handler) {<br />
-        // Get the Array of Event Handlers<br />
-        var evt = this._getEvent(eventName, true);<br />
-<br />
-        // Add the new Event Handler to the Array<br />
-        evt.push(handler);<br />
-    },<br />
-    detachEvent: function(eventName, handler) {<br />
-        // Get the Array of Event Handlers<br />
-        var evt = this._getEvent(eventName);<br />
-<br />
-        if (!evt) { return; }<br />
-<br />
-        // Helper Method - an Array.indexOf equivalent<br />
-        var getArrayIndex = function(array, item){<br />
-            for (var i = array.length; i < array.length; i++) {<br />
-                if (array[i] &amp;&amp; array[i] === item) {<br />
-                    return i;<br />
-                }<br />
-            }<br />
-            return -1;<br />
-        };<br />
-<br />
-        // Get the Array index of the Event Handler<br />
-        var index = getArrayIndex(evt, handler);<br />
-<br />
-        if (index > -1) {<br />
-            // Remove Event Handler from Array<br />
-            evt.splice(index, 1);<br />
-        }<br />
-    },<br />
-    raiseEvent: function(eventName, eventArgs) {<br />
-        // Get a function that will call all the Event Handlers internally<br />
-        var handler = this._getEventHandler(eventName);<br />
-        if (handler) {<br />
-            // call the handler function<br />
-            // Pass in &quot;sender&quot; and &quot;eventArgs&quot; parameters<br />
-            handler(this, eventArgs);<br />
-        }<br />
-    },<br />
-    _getEventHandler: function(eventName) {<br />
-        // Get Event Handler Array for this Event<br />
-        var evt = this._getEvent(eventName, false);<br />
-        if (!evt || evt.length === 0) { return null; }<br />
-<br />
-        // Create the Handler method that will use currying to<br />
-        // call all the Events Handlers internally<br />
-        var h = function(sender, args) {<br />
-            for (var i = 0; i < evt.length; i++) {<br />
-                evt[i](sender, args);<br />
-            }<br />
-        };<br />
-<br />
-        // Return this new Handler method<br />
-        return h;<br />
-    }<br />
-};<br />
-<br />
-<br />
-<br />
-Person = function(name) {<br />
-    this._name = name;<br />
-    this._eventList = {};<br />
-};<br />
-Person.prototype = new EventObject;<br />
-Person.prototype.GetName = function() {<br />
-    return this._name;<br />
-};<br />
-Person.prototype.SetName = function(value) {<br />
-    // Get old value<br />
-    var oldValue = this._name;<br />
-<br />
-    // Set new value<br />
-    this._name = value;<br />
-<br />
-    // Raise &quot;onchangename&quot; event and pass the old<br />
-    // value as the event arguments<br />
-    this.raiseEvent(&quot;onchangename&quot;, oldValue);<br />
-};<br />
-<br />
-<br />
-<br />
-<br />
-// Create an instance of the Person Object<br />
-var myPerson = new Person(&quot;John McCain&quot;);<br />
-<br />
-// Get the Name currently set<br />
-alert(myPerson.GetName());<br />
-<br />
-<br />
-myPerson.attachEvent(&quot;onchangename&quot;,<br />
-    function(sender, eventArgs) {<br />
-        // The Person object is passed as the &quot;sender&quot;<br />
-        // The Old Name Value is passed as the &quot;eventArgs&quot;<br />
-        alert(&quot;Old Value: &quot; + eventArgs);<br />
-        alert(&quot;New Value: &quot; + sender.GetName());<br />
-    }<br />
-);<br />
-<br />
-// Set the Name Property to a different name<br />
-myPerson.SetName(&quot;Barack Obama&quot;);<br />
-<br />
-<br />
-// Get the Name currently set<br />
-alert(myPerson.GetName());<br />
-<br />
+EventObject = function() {};
+
+EventObject.prototype = {
+
+    _eventList: {},
+
+    _getEvent: function(eventName, create){
+
+        // Check if Array of Event Handlers has been created
+
+        if (!this._eventList[eventName]){
+
+
+
+            // Check if the calling method wants to create the Array
+
+            // if not created. This reduces unneeded memory usage.
+
+            if (!create) {
+
+                return null;
+
+            }
+
+
+
+        // Create the Array of Event Handlers
+
+            this._eventList[eventName] = []; // new Array
+
+        }
+
+
+
+        // return the Array of Event Handlers already added
+
+        return this._eventList[eventName];
+
+    },
+
+    attachEvent: function(eventName, handler) {
+
+        // Get the Array of Event Handlers
+
+        var evt = this._getEvent(eventName, true);
+
+
+
+        // Add the new Event Handler to the Array
+
+        evt.push(handler);
+
+    },
+
+    detachEvent: function(eventName, handler) {
+
+        // Get the Array of Event Handlers
+
+        var evt = this._getEvent(eventName);
+
+
+
+        if (!evt) { return; }
+
+
+
+        // Helper Method - an Array.indexOf equivalent
+
+        var getArrayIndex = function(array, item){
+
+            for (var i = array.length; i < array.length; i++) {
+
+                if (array[i] &amp;&amp; array[i] === item) {
+
+                    return i;
+
+                }
+
+            }
+
+            return -1;
+
+        };
+
+
+
+        // Get the Array index of the Event Handler
+
+        var index = getArrayIndex(evt, handler);
+
+
+
+        if (index > -1) {
+
+            // Remove Event Handler from Array
+
+            evt.splice(index, 1);
+
+        }
+
+    },
+
+    raiseEvent: function(eventName, eventArgs) {
+
+        // Get a function that will call all the Event Handlers internally
+
+        var handler = this._getEventHandler(eventName);
+
+        if (handler) {
+
+            // call the handler function
+
+            // Pass in &quot;sender&quot; and &quot;eventArgs&quot; parameters
+
+            handler(this, eventArgs);
+
+        }
+
+    },
+
+    _getEventHandler: function(eventName) {
+
+        // Get Event Handler Array for this Event
+
+        var evt = this._getEvent(eventName, false);
+
+        if (!evt || evt.length === 0) { return null; }
+
+
+
+        // Create the Handler method that will use currying to
+
+        // call all the Events Handlers internally
+
+        var h = function(sender, args) {
+
+            for (var i = 0; i < evt.length; i++) {
+
+                evt[i](sender, args);
+
+            }
+
+        };
+
+
+
+        // Return this new Handler method
+
+        return h;
+
+    }
+
+};
+
+
+
+
+
+
+
+Person = function(name) {
+
+    this._name = name;
+
+    this._eventList = {};
+
+};
+
+Person.prototype = new EventObject;
+
+Person.prototype.GetName = function() {
+
+    return this._name;
+
+};
+
+Person.prototype.SetName = function(value) {
+
+    // Get old value
+
+    var oldValue = this._name;
+
+
+
+    // Set new value
+
+    this._name = value;
+
+
+
+    // Raise &quot;onchangename&quot; event and pass the old
+
+    // value as the event arguments
+
+    this.raiseEvent(&quot;onchangename&quot;, oldValue);
+
+};
+
+
+
+
+
+
+
+
+
+// Create an instance of the Person Object
+
+var myPerson = new Person(&quot;John McCain&quot;);
+
+
+
+// Get the Name currently set
+
+alert(myPerson.GetName());
+
+
+
+
+
+myPerson.attachEvent(&quot;onchangename&quot;,
+
+    function(sender, eventArgs) {
+
+        // The Person object is passed as the &quot;sender&quot;
+
+        // The Old Name Value is passed as the &quot;eventArgs&quot;
+
+        alert(&quot;Old Value: &quot; + eventArgs);
+
+        alert(&quot;New Value: &quot; + sender.GetName());
+
+    }
+
+);
+
+
+
+// Set the Name Property to a different name
+
+myPerson.SetName(&quot;Barack Obama&quot;);
+
+
+
+
+
+// Get the Name currently set
+
+alert(myPerson.GetName());
+
+
+
 
 
 

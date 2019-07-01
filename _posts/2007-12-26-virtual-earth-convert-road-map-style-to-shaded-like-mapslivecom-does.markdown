@@ -44,8 +44,10 @@ To do this we first need to create our StyleChangeHandler method:
 <font size="2" color="#0000ff">
 
 
-function<font size="2"> StyleChangeHandler(e)<br />
-{<br />
+function<font size="2"> StyleChangeHandler(e)
+
+{
+
 }</font>
 
 </font>
@@ -70,9 +72,12 @@ map.AttachEvent(<font size="2" color="#a31515">&quot;onchangemapstyle&quot;</fon
 <font size="2" color="#0000ff">
 
 
-if<font size="2"> (map.GetMapStyle() == VEMapStyle.Road)<br />
-{<br />
-map.SetMapStyle(VEMapStyle.Shaded);<br />
+if<font size="2"> (map.GetMapStyle() == VEMapStyle.Road)
+
+{
+
+map.SetMapStyle(VEMapStyle.Shaded);
+
 }</font>
 
 </font>
@@ -87,40 +92,62 @@ For easier reference, and so you don&#39;t have to type everything in yourself; 
 
 
 
-<!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>&quot;><br />
-<html><br />
-<head><br />
-<meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;><br />
-<script type=&quot;text/javascript&quot; src=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6</a>&quot; mce_src=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;></script">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;></script</a>><br />
+<!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>&quot;>
+
+<html>
+
+<head>
+
+<meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;>
+
+<script type=&quot;text/javascript&quot; src=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6</a>&quot; mce_src=&quot;<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;></script">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;></script</a>>
+
 </head>
 
 
 
-<body onload=&quot;PageLoad()&quot;><br />
-<script type=&quot;text/javascript&quot;><br />
+<body onload=&quot;PageLoad()&quot;>
+
+<script type=&quot;text/javascript&quot;>
+
 var map = null; /// This is a global reference to the VEMap object
 
 
 
-function PageLoad()<br />
-{<br />
-    map = new VEMap(&#39;myMap&#39;);<br />
-    /// Load the map with the Shaded Map Style<br />
-    map.LoadMap(new VELatLong(47.6, -122.33), 7, VEMapStyle.Shaded);<br />
-    /// Attach our event handler<br />
-    map.AttachEvent(&quot;onchangemapstyle&quot;, StyleChangeHandler);<br />
+function PageLoad()
+
+{
+
+    map = new VEMap(&#39;myMap&#39;);
+
+    /// Load the map with the Shaded Map Style
+
+    map.LoadMap(new VELatLong(47.6, -122.33), 7, VEMapStyle.Shaded);
+
+    /// Attach our event handler
+
+    map.AttachEvent(&quot;onchangemapstyle&quot;, StyleChangeHandler);
+
 }
 
 
 
-function StyleChangeHandler(e)<br />
-{<br />
-    /// Change the map style to Shaded if it&#39;s set to Road<br />
-    if (map.GetMapStyle() == VEMapStyle.Road)<br />
-    {<br />
-        map.SetMapStyle(VEMapStyle.Shaded);<br />
-    }<br />
-}<br />
+function StyleChangeHandler(e)
+
+{
+
+    /// Change the map style to Shaded if it&#39;s set to Road
+
+    if (map.GetMapStyle() == VEMapStyle.Road)
+
+    {
+
+        map.SetMapStyle(VEMapStyle.Shaded);
+
+    }
+
+}
+
 </script>
 
 
@@ -129,6 +156,7 @@ function StyleChangeHandler(e)<br />
 
 
 
-</body><br />
+</body>
+
 </html>
 

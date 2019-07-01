@@ -59,10 +59,14 @@ Here are some links so you can learn more about Windows Server 2008 Hyper-V:
 
 
 
-<a href="http://www.microsoft.com/windowsserver2008/en/us/virtualization-consolidation.aspx">Windows Server 2008: Virtualization and Server Consolidation</a><br />
-<a href="http://technet2.microsoft.com/windowsserver2008/en/library/c513e254-adf1-400e-8fcb-c1aec8a029311033.mspx">Step-by-Step Guide to Getting Started with Hyper-V</a><br />
-<a href="http://www.microsoft.com/events/series/windowsserver2008.aspx?tab=webcasts&amp;id=42531">Windows Server 2008 Server Virtualization Webcasts</a><br />
-<a href="http://blogs.technet.com/virtualization/">Microsoft Windows Virtualization Team Blog</a><br />
+<a href="http://www.microsoft.com/windowsserver2008/en/us/virtualization-consolidation.aspx">Windows Server 2008: Virtualization and Server Consolidation</a>
+
+<a href="http://technet2.microsoft.com/windowsserver2008/en/library/c513e254-adf1-400e-8fcb-c1aec8a029311033.mspx">Step-by-Step Guide to Getting Started with Hyper-V</a>
+
+<a href="http://www.microsoft.com/events/series/windowsserver2008.aspx?tab=webcasts&amp;id=42531">Windows Server 2008 Server Virtualization Webcasts</a>
+
+<a href="http://blogs.technet.com/virtualization/">Microsoft Windows Virtualization Team Blog</a>
+
 <a href="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;taxonomyName=operating_systems&amp;articleId=9053781&amp;taxonomyId=89&amp;intsrc=kc_feat">Windows Server 2008 Revealed: Hyper-V Virtualization</a> 
 
 
@@ -90,6 +94,7 @@ I can use VirtualPC 2007 with Vista as the host OS to do all this, and everythin
 
 
 
-I&#39;ll post an update once I decide what I&#39;m going to do to fill my virtualization needs.<br />
+I&#39;ll post an update once I decide what I&#39;m going to do to fill my virtualization needs.
+
 But until then, if you have any virtualization suggestions and/or tips using VirtualPC, Virtual Server or Hyper-V, please post them in the comments. 
 

@@ -25,7 +25,11 @@ Basically to connect to the Live Operating Environment you need to prompt the us
 
 [code:c#]
 
-var credentials = new System.Net.NetworkCredentials(windowsLiveID, password);<br /><br />var LOE = new LiveOperatingEnvironment();<br /><br />LOE.Connect(credentials);
+var credentials = new System.Net.NetworkCredentials(windowsLiveID, password);
+
+var LOE = new LiveOperatingEnvironment();
+
+LOE.Connect(credentials);
 
 ```
 
@@ -36,7 +40,9 @@ Now, to connect to the **Local **Live Operating Environment instead, you basical
 
 [code:c#]
 
-var LOE = new LiveOperatingEnvironment();<br /><br />LOE.ConnectLocal();
+var LOE = new LiveOperatingEnvironment();
+
+LOE.ConnectLocal();
 
 ```
 
@@ -57,7 +63,8 @@ Actually, the latest update (April CTP) to the Live Framework Client does instal
 <li><span style="text-decoration: line-through;">Uninstall Live Framework Client.</span></li>
 <li><span style="text-decoration: line-through;">Install Mesh Client Beta from <a href="http://mesh.com">http://mesh.com</a></span></li>
 <li><span style="text-decoration: line-through;">Add the following registry item: HKCU\Software\Microsoft\Live Framework Client\AllowSxS = 1 (DWORD)</span></li>
-<li><span style="text-decoration: line-through;">Install Live Framework Client from <a href="http://developer.mesh-ctp.com">http://developer.mesh-ctp.com</a><br /></span></li>
+<li><span style="text-decoration: line-through;">Install Live Framework Client from <a href="http://developer.mesh-ctp.com">http://developer.mesh-ctp.com</a>
+</span></li>
 </ol>
 
 <span style="text-decoration: line-through;">The original posting of these instructions and a little more detail about them can be found here: </span>

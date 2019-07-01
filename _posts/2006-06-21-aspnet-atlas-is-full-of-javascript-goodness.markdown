@@ -20,7 +20,28 @@ One of the things I noticed is they are adding support for the XMLHttpRequest ob
 
 Below is the above mentioned chunk of JS code for your viewing pleasure:
 
-//-----------------------------------------------------------------------<br />// Copyright (C) Microsoft Corporation. All rights reserved.<br />//-----------------------------------------------------------------------<br />// Atlas.js<br />// Atlas Framework.<br />//<br />if (!window.XMLHttpRequest) {<br />    window.XMLHttpRequest = function() {<br />        var progIDs = [ 'Msxml2.XMLHTTP', 'Microsoft.XMLHTTP' ];<br />     <br />        for (var i = 0; i < progIDs.length; i++) {<br />            try {<br />                var xmlHttp = new ActiveXObject(progIDs[i]);<br />                return xmlHttp;<br />            }<br />            catch (ex) {<br />            }<br />        }<br />     <br />        return null;<br />    }<br />}
+//-----------------------------------------------------------------------
+// Copyright (C) Microsoft Corporation. All rights reserved.
+//-----------------------------------------------------------------------
+// Atlas.js
+// Atlas Framework.
+//
+if (!window.XMLHttpRequest) {
+    window.XMLHttpRequest = function() {
+        var progIDs = [ 'Msxml2.XMLHTTP', 'Microsoft.XMLHTTP' ];
+     
+        for (var i = 0; i < progIDs.length; i++) {
+            try {
+                var xmlHttp = new ActiveXObject(progIDs[i]);
+                return xmlHttp;
+            }
+            catch (ex) {
+            }
+        }
+     
+        return null;
+    }
+}
 
  
 

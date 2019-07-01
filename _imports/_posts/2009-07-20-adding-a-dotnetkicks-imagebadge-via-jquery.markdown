@@ -34,6 +34,18 @@ Here's the jQuery / JavaScript code:
 
 ```javascript
 
-$(function() {<br />    var currentPageUrl = document.location.protocol + "//" + document.location.host + document.location.pathname;<br />    $('#postToolbar').append(<br />            $('<a/>').<br />                    attr('href', 'http://www.dotnetkicks.com/kick/?url=' + currentPageUrl).<br />                    css({ border: 'none' }).<br />                append(<br />                    $('<img/>').<br />                        attr('src', 'http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=' + currentPageUrl).<br />                        css({ border: 'none' })<br />                )<br />        );<br />});
+$(function() {
+    var currentPageUrl = document.location.protocol + "//" + document.location.host + document.location.pathname;
+    $('#postToolbar').append(
+            $('<a/>').
+                    attr('href', 'http://www.dotnetkicks.com/kick/?url=' + currentPageUrl).
+                    css({ border: 'none' }).
+                append(
+                    $('<img/>').
+                        attr('src', 'http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=' + currentPageUrl).
+                        css({ border: 'none' })
+                )
+        );
+});
 
 ```

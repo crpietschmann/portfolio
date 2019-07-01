@@ -36,16 +36,26 @@ redirect_from:
 
 
 
-public class GenericTypeConverter : TypeConverter<br />
-{<br />
-    public override object ConvertTo(ITypeDescriptorContext context, <br />
-       System.Globalization.CultureInfo culture,<br />
-        object value, Type destinationType) <br />
-   {<br />
-        JavaScriptSerializer jss = new JavaScriptSerializer();<br />
-        string s = jss.Serialize(value);<br />
-        return s;<br />
-    } <br />
+public class GenericTypeConverter : TypeConverter
+
+{
+
+    public override object ConvertTo(ITypeDescriptorContext context, 
+
+       System.Globalization.CultureInfo culture,
+
+        object value, Type destinationType) 
+
+   {
+
+        JavaScriptSerializer jss = new JavaScriptSerializer();
+
+        string s = jss.Serialize(value);
+
+        return s;
+
+    } 
+
 }
 
 
@@ -61,20 +71,34 @@ public class GenericTypeConverter : TypeConverter<br />
 
 
 
-[TypeConverter(typeof(GenericTypeConverter))]<br />
-public class Person{<br />
-    private string _FirstName;<br />
-    public string FirstName<br />
-    {<br />
-        get { return _FirstName; }<br />
-        set { _FirstName = value; }<br />
-    }<br />
-     private string _LastName;<br />
-    public string LastName<br />
-    {<br />
-        get { return _LastName; }<br />
-        set { _LastName = value; }<br />
-    }<br />
+[TypeConverter(typeof(GenericTypeConverter))]
+
+public class Person{
+
+    private string _FirstName;
+
+    public string FirstName
+
+    {
+
+        get { return _FirstName; }
+
+        set { _FirstName = value; }
+
+    }
+
+     private string _LastName;
+
+    public string LastName
+
+    {
+
+        get { return _LastName; }
+
+        set { _LastName = value; }
+
+    }
+
 }
 
 
@@ -95,8 +119,10 @@ public class Person{<br />
 
 
 
-if(this._myPersonValue!=null){<br />
-this._myPersonValue=Sys.Serialization.JavaScriptSerializer.deserialize(this._myPersonValue);<br />
+if(this._myPersonValue!=null){
+
+this._myPersonValue=Sys.Serialization.JavaScriptSerializer.deserialize(this._myPersonValue);
+
 }
 
 

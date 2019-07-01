@@ -19,9 +19,12 @@ Over a year ago I posted a question about doing a <a href="/Blog/Post.aspx?PostI
 
 
 
-*Dim arrNames() AS String = New Array{&quot;CHRIS&quot;, &quot;TOM&quot;, &quot;TYLER&quot;}<br />
-If strName IN arrNames Then<br />
-   &#39;do something<br />
+*Dim arrNames() AS String = New Array{&quot;CHRIS&quot;, &quot;TOM&quot;, &quot;TYLER&quot;}
+
+If strName IN arrNames Then
+
+   &#39;do something
+
 End If*
 
 
@@ -46,19 +49,32 @@ The code for the IN method goes like this:
 
 
 
-*namespace SqlInMethodExtension<br />
-{<br />
-    public static class SqlInMethodExtension<br />
-    {<br />
-        public static bool IN(this object o, IEnumerable c)<br />
-        {<br />
-            foreach (object i in c)<br />
-            {<br />
-                 if (i.Equals(o)) return true;<br />
-            }<br />
-            return false;<br />
-        }<br />
-    }<br />
+*namespace SqlInMethodExtension
+
+{
+
+    public static class SqlInMethodExtension
+
+    {
+
+        public static bool IN(this object o, IEnumerable c)
+
+        {
+
+            foreach (object i in c)
+
+            {
+
+                 if (i.Equals(o)) return true;
+
+            }
+
+            return false;
+
+        }
+
+    }
+
 }*
 
 
@@ -67,17 +83,28 @@ Now using the method is as simple as this:
 
 
 
-*using SqlInMethodExtension;<br />
-public class Test<br />
-{<br />
-    void Test(string myValue)<br />
-    {<br />
-        string [] values = {&quot;Chris&quot;,&quot;John&quot;,&quot;Sam&quot;};<br />
-        if (myValue.IN(values))<br />
-        {<br />
-            // Do something here<br />
-        }<br />
-    }<br />
+*using SqlInMethodExtension;
+
+public class Test
+
+{
+
+    void Test(string myValue)
+
+    {
+
+        string [] values = {&quot;Chris&quot;,&quot;John&quot;,&quot;Sam&quot;};
+
+        if (myValue.IN(values))
+
+        {
+
+            // Do something here
+
+        }
+
+    }
+
 }*
 
 
@@ -90,6 +117,8 @@ You&#39;ve probably read about the new LINQ features that are also coming in .NE
 
 
 
-To read more about Extension Methods:<br />
-<a href="http://weblogs.asp.net/scottgu/archive/2007/03/13/new-orcas-language-feature-extension-methods.aspx">New &quot;Orcas&quot; Language Feature: Extension Methods</a><br />
+To read more about Extension Methods:
+
+<a href="http://weblogs.asp.net/scottgu/archive/2007/03/13/new-orcas-language-feature-extension-methods.aspx">New &quot;Orcas&quot; Language Feature: Extension Methods</a>
+
 
