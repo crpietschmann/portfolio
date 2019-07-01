@@ -27,7 +27,7 @@ The standard TextBox control that is built into Silverlight 2 Beta 2 is a bit la
 
 
 
-[code:c#] 
+```csharp 
 
 
 

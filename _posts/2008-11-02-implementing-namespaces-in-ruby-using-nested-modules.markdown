@@ -23,7 +23,7 @@ To demonstrate this, I&#39;ll show you how to create the familiar (for .NET deve
 
 
 
-[code:c#]
+```csharp
 
 
 
@@ -61,7 +61,7 @@ Now to use the namespace you can use one of the following methods:
 
 
 
-[code:c#]
+```csharp
 
 
 
@@ -77,7 +77,7 @@ Or by including the &quot;namespace&quot;:
 
 
 
-[code:c#]
+```csharp
 
 
 

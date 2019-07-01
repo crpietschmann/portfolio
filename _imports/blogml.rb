@@ -139,6 +139,7 @@ module Jekyll
             content.gsub!(/\[code:js\]/, "```javascript")
             content.gsub!(/\[code:bash\]/, "```bash")
             content.gsub!(/\[code:csharp\]/, "```csharp")
+            content.gsub!(/\[code:c#\]/, "```csharp")
             content.gsub!(/\[code\]/, "```")
             content.gsub!(/\[\/code\]/, "```")
 

@@ -78,7 +78,7 @@ And finally, here's the source for the StackOverflowBadge.ascx user control:
 
 **StackOverflowBadge.ascx.cs:**
 
-[code:c#]
+```csharp
 
 using System;
  using System.IO;

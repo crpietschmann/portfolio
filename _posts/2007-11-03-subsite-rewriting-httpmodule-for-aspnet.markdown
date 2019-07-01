@@ -23,7 +23,7 @@ Urls are rewritten in the following fashion:
 
 And this is all done by the 65 line HttpModule below:
 
-[code:c#]
+```csharp
 
 using System;
  using System.Web;

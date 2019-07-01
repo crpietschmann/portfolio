@@ -20,7 +20,7 @@ Below is a screenshot of it in action along with the complete source code in C#.
 
 <img src="/files/Win32API_AddSystemMenuItem.png" alt="" width="301" height="299" />
 
-[code:c#]
+```csharp
 
 using System;
  using System.Windows.Forms;

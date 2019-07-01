@@ -41,7 +41,7 @@ When first creating your custom extender control you need to inherit from the Ex
 
 
 
-[code:c#] 
+```csharp 
 
 
 
@@ -93,7 +93,7 @@ Here&#39;s a basic example of setting up a ScriptReference that includes a scrip
 
 
 
-[code:c#] 
+```csharp 
 
 
 
@@ -131,7 +131,7 @@ Here&#39;s a basic example of returning a ScriptBehaviorDescriptor without any p
 
 
 
-[code:c#] 
+```csharp 
 
 
 
@@ -207,7 +207,7 @@ Also, in order for the ExtenderControl to correctly load the &quot;CustomExtende
 
 
 
-[code:c#] 
+```csharp 
 
 
 
@@ -235,7 +235,7 @@ In this article, I&#39;m going to keep things extemely simple, and we&#39;re goi
 
 
 
-[code:c#] 
+```csharp 
 
 
 
@@ -257,7 +257,7 @@ Just modify the GetScriptDescriptor method above to look like the following:
 
 
 
-[code:c#] 
+```csharp 
 
 
 
@@ -509,7 +509,7 @@ Here&#39;s what the final server-side code for the FocusExtender object would lo
 
 
 
-[code:c#] 
+```csharp 
 
 
 
@@ -547,7 +547,7 @@ Here&#39;s the complete code for the ExtenderControlBase, ScriptReferenceAttribu
 
 
 
-[code:c#] 
+```csharp 
 
 
 
@@ -776,7 +776,7 @@ To do this all we need to do is add a property named &quot;id&quot; to the Scrip
 
 
 
-[code:c#] 
+```csharp 
 
 
 

@@ -21,7 +21,7 @@ I decided to copy his code snippet and make sure it works in .NET 2.0 and also c
 
 Sample Usage:
 
-[code:c#]
+```csharp
  // Calculate Distance in Milesdouble 
  d = GeoCodeCalc.CalcDistance(47.8131545175277, -122.783203125, 42.0982224111897, -87.890625);
  // Calculate Distance in Kilometersdouble 
@@ -30,7 +30,7 @@ Sample Usage:
 
 GeoCodeCalc C# Class:
 
-[code:c#]
+```csharp
  public static class GeoCodeCalc{ 
  public const double EarthRadiusInMiles = 3956.0; 
  public const double EarthRadiusInKilometers = 6367.0; 

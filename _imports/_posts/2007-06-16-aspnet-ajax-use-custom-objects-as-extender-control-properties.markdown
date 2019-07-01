@@ -32,7 +32,7 @@ redirect_from:
 
 
 
-[code:c#]
+```csharp
 
 
 
@@ -67,7 +67,7 @@ public class GenericTypeConverter : TypeConverter
 
 
 
-[code:c#]
+```csharp
 
 
 
@@ -115,7 +115,7 @@ public class Person{
 
 
 
-[code:c#] 
+```csharp 
 
 
 

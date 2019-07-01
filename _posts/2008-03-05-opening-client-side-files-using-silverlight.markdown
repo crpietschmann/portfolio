@@ -36,7 +36,7 @@ This basic example opens up a user specified file, and displays its contents wit
 
 **Page.xaml.cs file** 
 
-[code:c#]
+```csharp
 
 using System.Windows;
  using System.Windows.Controls;

@@ -19,7 +19,7 @@ Originally, I started out as a Visual Basic developer, and have since moved most
 
 Null Coalescing is really simple in C#:
 
-[code:c#]
+```csharp
 
 // If "someValue" is Null then set "i" to 0 (zero)
  // otherwise set it to the value of "someValue"
@@ -40,7 +40,7 @@ Granted the VB.NET Null Coalesce is a method call, but at least there's still an
 
 This is the ability have a complete If..Else..Then statement on a single line and have it return a value. This is really simple in C#:
 
-[code:c#]
+```csharp
 
 // This performs the same logical operation as the Null Coalesce example above
  int? i = (someValue == null ? 0 : someValue);
@@ -68,7 +68,7 @@ Dim i = If(someValue = Nothing, 0, someValue)
 
 You may be familiar with the *lock *statement in C#, especially if you're used to worrying about concurrency.
 
-[code:c#]
+```csharp
 
 lock (expression)
  {

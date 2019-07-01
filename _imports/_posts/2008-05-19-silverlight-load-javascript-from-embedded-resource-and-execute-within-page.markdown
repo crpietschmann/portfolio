@@ -27,7 +27,7 @@ I&#39;ve been playing around with Silverlight 2 Beta 1 alot lately, and one of t
 
 
 
-[code:c#] 
+```csharp 
 
 
 
@@ -53,7 +53,7 @@ Note: Replace the *[namespace]* text above with the full namespace of your Silve
 
 
 
-[code:c#] 
+```csharp 
 
 
 

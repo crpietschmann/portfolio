@@ -34,7 +34,7 @@ Here&#39;s some sample code to access a table named &quot;PersonTable&quot; usin
 
 
 
-[code:c#]
+```csharp
 
 
 
@@ -87,7 +87,7 @@ Here&#39;s the code for the &quot;PersonTable&quot; class used above:
 
 
 
-[code:c#]
+```csharp
 
 
 
@@ -313,7 +313,7 @@ And, here&#39;s the code for the Person class that is used in this example:
 
 
 
-[code:c#]
+```csharp
 
 
 

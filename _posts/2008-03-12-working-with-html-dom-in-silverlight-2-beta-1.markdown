@@ -23,7 +23,7 @@ Here an example of creating a new DIV element and setting some of it&#39;s prope
 
 
 
-[code:c#] 
+```csharp 
 
 
 
@@ -87,7 +87,7 @@ Here&#39;s an example of using a class that implements the Bridge Pattern to do 
 
 
 
-[code:c#] 
+```csharp 
 
 
 
@@ -119,7 +119,7 @@ Not only is the code using the Bridge Pattern easier to read, but now we have th
 
 
 
-[code:c#] 
+```csharp 
 
 
 

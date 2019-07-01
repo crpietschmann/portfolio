@@ -23,7 +23,7 @@ The "Live Operating Environment" is the main service that is hosted in the cloud
 
 Basically to connect to the Live Operating Environment you need to prompt the user for their Windows Live ID and Password. Below is a very simple example of what is needed to create an instance of the LiveOperatingEnvironment object in C# and connect to the Live Operating Environment server.
 
-[code:c#]
+```csharp
 
 var credentials = new System.Net.NetworkCredentials(windowsLiveID, password);
 
@@ -38,7 +38,7 @@ I you haven't really looked in to how this works, you can look at the ConnectClo
 
 Now, to connect to the **Local **Live Operating Environment instead, you basically just call the <a href="http://msdn.microsoft.com/en-us/library/dd139363.aspx">LiveOperatingEnvironment.ConnectLocal()</a> method instead of the <a href="http://msdn.microsoft.com/en-us/library/dd157894.aspx">Connect()</a> method shown above. Also, another big difference is you don't need to prompt the user for their Windows Live ID and Password, since the Local Live Operating Environment handles all the authentication for you.
 
-[code:c#]
+```csharp
 
 var LOE = new LiveOperatingEnvironment();
 

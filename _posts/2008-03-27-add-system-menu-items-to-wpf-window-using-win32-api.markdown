@@ -22,7 +22,7 @@ Below is a screenshot of it in action along with the complete source code in C#.
 
 <img src="/files/WPF_Add_System_Menu_Items.png" alt="" width="315" height="313" />
 
-[code:c#]
+```csharp
 
 using System;
 using System.Windows;
