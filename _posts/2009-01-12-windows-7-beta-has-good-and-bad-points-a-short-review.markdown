@@ -33,7 +33,7 @@ Also, this feature is especially nice for moving maximized windows from one moni
 
 In Vista to shut down / turn off the computer you needed to click click the Start Orbe to open the Start Ment, then click the little arrow next to the "power" icon and then finally click "Shutdown". As I'm sure is the case with most users, I don't like to just put the computer to sleep, especially since it doesn't always restore from sleep correctly, so clicking the "power" icon in the start menu doesn't make sense. Also, that extra step isn't too bad, but slightly annoying.
 
-<img src="/images/postsWin7Beta-StartMenu-ShutdownButton.png" alt="" />
+<img src="/images/posts/Win7Beta-StartMenu-ShutdownButton.png" alt="" />
 
  
 
@@ -48,7 +48,7 @@ This is the biggest issue I've had with the Windows 7 Beta so far, and it's anno
 
 The new Taskbar has combined the concepts of both the Quick Launch bar in XP/Vista and the Application list. All instances of the same application are now grouped under it's respective icon in what looks like the old "Quick Launch" bar. Any new applications run that aren't pinned to the Taskbar, get a Icon placed in this bar for the duration of that instances execution. Now to switch the application in focus you can still click on it's icon in the Taskbar to bring it to focus. But not entirely, if you have multiple instances of an application running you need to either hover or click on the icon in the Taskbar, then click on the specific application instance you want to switch to. Now instead of 1 click, you have 2 clicks, and this isn't a trivial feature like the "Shutdown" button mentioned above. Most users need to switch between applications constantly, and I find this extra click to be REALLY annoying!
 
-<img src="/images/postsWin7Beta-TaskbarCombinedQuickLaunch.png" alt="" />
+<img src="/images/posts/Win7Beta-TaskbarCombinedQuickLaunch.png" alt="" />
 
 Now, when you thought the Taskbar couldn't get any worse, just try to click on the applications icon in th
 
@@ -73,7 +73,7 @@ I'm not sure what I think of Internet Explorer 8 just yet. I know there have bee
 
 Even though the look and feel of both MS Paint and WordPad have been overhauled to employ the new Ribbon Interface (as in Office 2007) they haven't been extended with any noticable new features. These are pretty much the same MS Paint and WordPad that we remember from Windows 95; the only real difference is a new skin to make them look like they've been updated.
 
-<img src="/images/postsWin7-MSPaint-Ribbon.png" alt="" />
+<img src="/images/posts/Win7-MSPaint-Ribbon.png" alt="" />
 
 One small thing to note about MS Paint is now in Windows 7 Beta it saves images in .PNG by default, instead of .BMP that's been the default for the last 13 or so years. I think it's about time.
 <h3>Conclusion</h3>

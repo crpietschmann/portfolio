@@ -16,7 +16,7 @@ redirect_from:
 
 Some times a Range slider is the appropriate UI tool to allow a user to select a number within a given range. HTML5 adds such an element with it&rsquo;s <a href="http://www.w3.org/TR/html-markup/input.range.html">new &ldquo;range&rdquo; input type</a>.
 
-<a href="/images/postsHTML5_Day6_InputRange_Screenshot.png"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="HTML5_Day6_InputRange_Screenshot" src="/images/postsHTML5_Day6_InputRange_Screenshot_thumb.png" alt="HTML5_Day6_InputRange_Screenshot" width="464" height="251" border="0" /></a>
+<a href="/images/posts/HTML5_Day6_InputRange_Screenshot.png"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="HTML5_Day6_InputRange_Screenshot" src="/images/posts/HTML5_Day6_InputRange_Screenshot_thumb.png" alt="HTML5_Day6_InputRange_Screenshot" width="464" height="251" border="0" /></a>
 <h3>Display in Modern Browsers</h3>
 
 In the above screenshot shows an example of the <input type=range/> element as it is rendered in the Opera web browser.

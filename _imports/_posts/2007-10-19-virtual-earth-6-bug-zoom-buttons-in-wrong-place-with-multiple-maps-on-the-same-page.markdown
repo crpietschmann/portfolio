@@ -19,7 +19,7 @@ I&#39;m currently working on adding Virtual Earth v6 support to <a href="http://
 
 
 
-<img src="/images/postsVE6Bug_MultipleMapsOnPage.png" alt="" />
+<img src="/images/posts/VE6Bug_MultipleMapsOnPage.png" alt="" />
 
 
 

@@ -26,7 +26,7 @@ I know some of you may want to download the code and look at it before reading o
 Source Code: <a href="/file.axd?file=AspNetMvc1CustomThemeImplementation.zip" rel="enclosure">AspNetMvc1CustomThemeImplementation.zip (262.99 kb)</a>
 <h3>Create &ldquo;~/Themes&rdquo; Folder and a &ldquo;Default&rdquo; View Theme</h3>
 
-<a href="/images/postsASPNETMVC_1_CustomThemeFolderLayout.png"><img style="display: inline; border-width: 0px;" title="ASPNETMVC_1_CustomThemeFolderLayout" src="/images/postsASPNETMVC_1_CustomThemeFolderLayout_thumb.png" alt="ASPNETMVC_1_CustomThemeFolderLayout" width="275" height="508" align="right" border="0" /></a>First, we&rsquo;ll make some changes to the Views contained within the default ASP.NET MVC Template.
+<a href="/images/posts/ASPNETMVC_1_CustomThemeFolderLayout.png"><img style="display: inline; border-width: 0px;" title="ASPNETMVC_1_CustomThemeFolderLayout" src="/images/posts/ASPNETMVC_1_CustomThemeFolderLayout_thumb.png" alt="ASPNETMVC_1_CustomThemeFolderLayout" width="275" height="508" align="right" border="0" /></a>First, we&rsquo;ll make some changes to the Views contained within the default ASP.NET MVC Template.
 
 Here&rsquo;s a brief summary of what changes are needed:
 <ol>

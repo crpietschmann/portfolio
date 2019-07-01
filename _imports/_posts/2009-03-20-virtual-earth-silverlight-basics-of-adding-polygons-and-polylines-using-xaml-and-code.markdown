@@ -104,7 +104,7 @@ Here&rsquo;s an example of doing this:
 
 If you want to quickly and easily add some content that gets displayed when the user hovers the mouse over the Polygon or Polyline; you can implement it very easily by taking advantage of Silverlights Tooltip feature.
 
-<a href="/images/postsVEJS_PolygonShapeTooltip.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_PolygonShapeTooltip" src="/images/postsVEJS_PolygonShapeTooltip_thumb.png" border="0" alt="VEJS_PolygonShapeTooltip" width="489" height="304" /></a>
+<a href="/images/posts/VEJS_PolygonShapeTooltip.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_PolygonShapeTooltip" src="/images/posts/VEJS_PolygonShapeTooltip_thumb.png" border="0" alt="VEJS_PolygonShapeTooltip" width="489" height="304" /></a>
 
 Here are some code examples of doing this that add to the above Polygon examples (the exact same can be done with Polylines).
 <h4>Add Tooltip Declaratively using XAML</h4>

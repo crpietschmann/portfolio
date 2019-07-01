@@ -18,7 +18,7 @@ Today, I was introduced to <a href="http://hundredpushups.com/">hundredpushups.c
 
  
 
-<a href="http://hundredpushups.com"><img src="/images/postsonehundredpushups_big.gif" border="0" alt="" /></a>
+<a href="http://hundredpushups.com"><img src="/images/posts/onehundredpushups_big.gif" border="0" alt="" /></a>
 <h3>What is the hundred pushup program?</h3>
 
 Here's a quote from the website:

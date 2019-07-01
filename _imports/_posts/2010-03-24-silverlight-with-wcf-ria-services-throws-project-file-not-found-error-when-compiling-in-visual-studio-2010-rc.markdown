@@ -31,7 +31,7 @@ To fix this all you need to do is go to the Project Properties for the Silverlig
 
 Below is a screenshot of VS'10RC showing the Error Message and the Properties UI for changing the WCF RIA Services link.
 
-<a href="/images/posts2010/3/VS2010RC1_Silverlight_BusinessTemplate_WCFRIAServicesLink_ProjectNotFound.png"><img src="/images/posts2010/3/VS2010RC1_Silverlight_BusinessTemplate_WCFRIAServicesLink_ProjectNotFound.png" border="0" alt="" /></a>
+<a href="/images/posts/2010/3/VS2010RC1_Silverlight_BusinessTemplate_WCFRIAServicesLink_ProjectNotFound.png"><img src="/images/posts/2010/3/VS2010RC1_Silverlight_BusinessTemplate_WCFRIAServicesLink_ProjectNotFound.png" border="0" alt="" /></a>
 <h3>Is This A Bug?</h3>
 
 I certainly consider this to be a bug, since the error message that is shown if you have the "WCF RIA Services link" set to a non-existent project doesn't really point you in the direction of fixing the issue; at least directly. Yes, if you look at the "Project" specified for the Error it does specify the Silverlight Project, but doesn't exactly spell out where to look to fix the issue.

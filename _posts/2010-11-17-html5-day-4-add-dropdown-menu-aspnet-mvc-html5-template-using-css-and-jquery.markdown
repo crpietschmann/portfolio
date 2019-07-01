@@ -20,11 +20,11 @@ Before we begin, you&rsquo;ll need to create a new site using the code from Day 
 
 Here&rsquo;s a screenshot of the finished dropdown menu:
 
-<a href="/images/postsASPNETMVCHTML5DropDownMenu_IE8.jpg"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="ASPNETMVCHTML5DropDownMenu_IE8" src="/images/postsASPNETMVCHTML5DropDownMenu_IE8_thumb.jpg" alt="ASPNETMVCHTML5DropDownMenu_IE8" width="504" height="323" border="0" /></a>
+<a href="/images/posts/ASPNETMVCHTML5DropDownMenu_IE8.jpg"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="ASPNETMVCHTML5DropDownMenu_IE8" src="/images/posts/ASPNETMVCHTML5DropDownMenu_IE8_thumb.jpg" alt="ASPNETMVCHTML5DropDownMenu_IE8" width="504" height="323" border="0" /></a>
 
 Here&rsquo;s another screenshot of the menu in Chrome:
 
-<a href="/images/postsASPNETMVCHTML5DropDownMenu_Chrome.jpg"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="ASPNETMVCHTML5DropDownMenu_Chrome" src="/images/postsASPNETMVCHTML5DropDownMenu_Chrome_thumb.jpg" alt="ASPNETMVCHTML5DropDownMenu_Chrome" width="244" height="156" border="0" /></a>
+<a href="/images/posts/ASPNETMVCHTML5DropDownMenu_Chrome.jpg"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="ASPNETMVCHTML5DropDownMenu_Chrome" src="/images/posts/ASPNETMVCHTML5DropDownMenu_Chrome_thumb.jpg" alt="ASPNETMVCHTML5DropDownMenu_Chrome" width="244" height="156" border="0" /></a>
 <h3>Add Sub-Menu Items</h3>
 
 First, modify the <nav> item in the Site.Master file to include sub-menu items as <ul> child elements added to the &ldquo;nav ul&rdquo; element. Below is an example:

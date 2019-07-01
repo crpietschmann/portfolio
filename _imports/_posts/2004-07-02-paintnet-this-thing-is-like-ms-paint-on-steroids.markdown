@@ -25,4 +25,4 @@ Paint.NET is a senior design project aided by a mentor at Microsoft.  It is a pa
 
  
 
-<img src="/images/postsPaintDotNET10_nsx.jpg" alt="" />
+<img src="/images/posts/PaintDotNET10_nsx.jpg" alt="" />

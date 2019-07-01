@@ -48,7 +48,7 @@ Here&#39;s a screenshot of the results displayed on the map:
 
 
  
-<img src="/images/postsVE6Bug_MultiPointDirections.png" alt="" />
+<img src="/images/posts/VE6Bug_MultiPointDirections.png" alt="" />
 
 
 

@@ -16,7 +16,7 @@ redirect_from:
 
 The new Bing Maps Ajax v7 control may be faster and smaller, but it is pretty light on features at the moment compared to its older brother; the v6.3 control. One of the features missing is support for showing InfoBox’s. Its simple to handle mouse events and display a <div> next to the pushpin, but I thought I’d take a little time to write a simple InfoBox extension to the new Microsoft.Maps namespace.  
 Here’s a screenshot of it in action:  
-<a href="/images/postsBingMaps7_InfoBox_Screenshot.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="BingMaps7_InfoBox_Screenshot" border="0" alt="BingMaps7_InfoBox_Screenshot" src="/images/postsBingMaps7_InfoBox_Screenshot_thumb.png" width="304" height="276" /></a>  <h3>Usage</h3>  
+<a href="/images/posts/BingMaps7_InfoBox_Screenshot.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="BingMaps7_InfoBox_Screenshot" border="0" alt="BingMaps7_InfoBox_Screenshot" src="/images/posts/BingMaps7_InfoBox_Screenshot_thumb.png" width="304" height="276" /></a>  <h3>Usage</h3>  
 Let’s start with some sample usage of the InfoBox extension.  <pre class="csharpcode"><span class="rem">// Create Pushpin</span>
 <span class="kwrd">var</span> pushpin = <span class="kwrd">new</span> Microsoft.Maps.Pushpin(
     <span class="kwrd">new</span> Microsoft.Maps.Location(0,0)

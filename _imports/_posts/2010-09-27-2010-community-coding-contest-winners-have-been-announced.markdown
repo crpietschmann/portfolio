@@ -18,4 +18,4 @@ The 2010 Community Coding Contest winners have been announced.
 
 <a href="http://CommunityCodingContest.org">http://CommunityCodingContest.org</a>
 
-<img src="/images/posts2010/9/2010CommunityCodingContestWinners.png" alt="" />
+<img src="/images/posts/2010/9/2010CommunityCodingContestWinners.png" alt="" />

@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<a href="http://www.guardian.co.uk/environment/2010/may/10/deepwater-horizon-oil-junk-shot"><img style="float: right; border: 0;" src="/images/posts2010/5/bird-at-deepwater-horizon-006.jpg" alt="" width="150" /></a>
+<a href="http://www.guardian.co.uk/environment/2010/may/10/deepwater-horizon-oil-junk-shot"><img style="float: right; border: 0;" src="/images/posts/2010/5/bird-at-deepwater-horizon-006.jpg" alt="" width="150" /></a>
 
 I've decided to boycott BP until the Oil Spill in the Guld of Mexico is fixed/cleaned up! If you remember the oil spill in Alaska back in the '80's then you remember all the pictures/videos of all the animals killed by being covered in oil. The same thing is happening today in the Gulf of Mexico with the oil drilling blowout that has been spewing oil into the ocean for a month now.
 

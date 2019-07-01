@@ -68,7 +68,7 @@ CREATE TABLE [dbo].[ZipCodeBoundary](
 ) ON [PRIMARY]</pre>
 <h3>Import Data Into Database Tables</h3>
 
-<img src="/images/postsImportARCINFOASCIIToSql05Database_Screenshot.png" alt="" align="right" />To make things easier, I wrote a small utility that reads in the "a.dat.csv" and ".dat.csv" files generated in Part 1 of this series and imports the data into the table defined above. One thing to note when importing the data from these file (and the original ARC/INFO Ungenerate (ASCII) files) is that each set of files starts numbering the ZipCodes at 1. So when importing into the database we much give each Zip Code a unique ID (in this article I'm using GUID's for this) and setting that ID correctly for each of the Zip Code Boundary Points.
+<img src="/images/posts/ImportARCINFOASCIIToSql05Database_Screenshot.png" alt="" align="right" />To make things easier, I wrote a small utility that reads in the "a.dat.csv" and ".dat.csv" files generated in Part 1 of this series and imports the data into the table defined above. One thing to note when importing the data from these file (and the original ARC/INFO Ungenerate (ASCII) files) is that each set of files starts numbering the ZipCodes at 1. So when importing into the database we much give each Zip Code a unique ID (in this article I'm using GUID's for this) and setting that ID correctly for each of the Zip Code Boundary Points.
 
 Download the Import Utility: <a href="/file.axd?file=ImportARCINFOASCIIToSql05Database.zip" rel="enclosure">ImportARCINFOASCIIToSql05Database.zip (15.18 kb)</a>
 

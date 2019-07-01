@@ -19,7 +19,7 @@ I recently decided to really dig into HTML5 to see what it&rsquo;s all about. Af
 
 Instead of reading the enormous HTML5 Specifications, I decided to purchase a book that would sum things up much more nicely. Below is the book:
 
-<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; float: left; padding-top: 0px; border-width: 0px;" title="IntoHtml5SharpLawson" src="/images/postsIntoHtml5SharpLawson.jpg" alt="IntoHtml5SharpLawson" width="48" height="61" align="left" border="0" />*<a href="http://amzn.to/2acBCG7" target="_blank">Introducing HTML5</a> <br />by Bruce Lawson and Remy Sharp*
+<img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; float: left; padding-top: 0px; border-width: 0px;" title="IntoHtml5SharpLawson" src="/images/posts/IntoHtml5SharpLawson.jpg" alt="IntoHtml5SharpLawson" width="48" height="61" align="left" border="0" />*<a href="http://amzn.to/2acBCG7" target="_blank">Introducing HTML5</a> <br />by Bruce Lawson and Remy Sharp*
 
 This book is relatively short at 223 pages and sums everything up very nicely. I&rsquo;m not finished with the book yet, as I&rsquo;m playing around with things more rather than reading cover to cover.
 

@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<img style="float: right;" src="/images/postsMVP_Logo_Horizontal.png" alt="Microsoft Most Valuable Professional Award" />*"Congratulations! We are pleased to present you with the 2010 Microsoft&reg;  MVP Award!"*
+<img style="float: right;" src="/images/posts/MVP_Logo_Horizontal.png" alt="Microsoft Most Valuable Professional Award" />*"Congratulations! We are pleased to present you with the 2010 Microsoft&reg;  MVP Award!"*
 
 I'm happy to announce that I've been awarded the Microsoft MVP award for the third year in a row. Just like last year, I've been awarded within the "Windows Live Platform" category. The "Windows Live Platform" category includes the Bing Maps SDK (both JavaScript and Silverlight Map Controls) which is the product/technology that I work with and help out others with the most in this category.
 

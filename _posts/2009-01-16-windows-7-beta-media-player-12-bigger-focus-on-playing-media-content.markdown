@@ -30,8 +30,8 @@ The most noticable (IMO) change to Media Player in v12 is the bigger focus on th
 
 
 
-<img src="/images/postsMediaPlayer12Beta-001.png" alt="" />
-<img src="/images/postsMediaPlayer12Beta-002.png" alt="" /><br />
+<img src="/images/posts/MediaPlayer12Beta-001.png" alt="" />
+<img src="/images/posts/MediaPlayer12Beta-002.png" alt="" /><br />
 <br />
 As you can see in the screenshot on the Right, the media controls overlay on top of the playing media with transparency when you hover your mouse cursor over the player. IMO, this is much better than showing the media controls all the time, since you only need to see the controls when you want to use them.
 
@@ -39,11 +39,11 @@ As you can see in the screenshot on the Right, the media controls overlay on top
 
 You can also double click the player, anywhere on the content that is
 playing, and it will toggle Full Screen mode. Alternatively you can
-also click the &quot;View full screen&quot; button/icon <img src="/images/postsMediaPlayer12Beta-FullScreenIcon.png" alt="" /> on the right side of the media contols. 
+also click the &quot;View full screen&quot; button/icon <img src="/images/posts/MediaPlayer12Beta-FullScreenIcon.png" alt="" /> on the right side of the media contols. 
 
 
 
-To view your full Media Library along with the interface for managing it, just click the&quot;Switch To Library&quot; button/icon <img src="/images/postsMediaPlayer12Beta-ViewLibraryIcon.png" alt="" /> on the right side of the media controls.
+To view your full Media Library along with the interface for managing it, just click the&quot;Switch To Library&quot; button/icon <img src="/images/posts/MediaPlayer12Beta-ViewLibraryIcon.png" alt="" /> on the right side of the media controls.
 
 
 
@@ -55,7 +55,7 @@ Once you switch to the Library View, then you get the full user interface for ma
 
 
 
-<img src="/images/postsMediaPlayer12Beta-LibraryUI.png" alt="" /><br />
+<img src="/images/posts/MediaPlayer12Beta-LibraryUI.png" alt="" /><br />
 
 <h3>Vista Support for Media Player 12?</h3>
 

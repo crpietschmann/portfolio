@@ -15,7 +15,7 @@ redirect_from:
 <!-- more -->
 
 
-<a href="http://iedeathmarch.org"><img src="/images/postsiedeathmarch2009badge.png" border="0" alt="IE DEATH MARCH 2009" align="right" /></a>I&#39;ve come across the <a href="http://iedeathmarch.org">http://iedeathmarch.org</a> website a couple times recently, and I definately agree.
+<a href="http://iedeathmarch.org"><img src="/images/posts/iedeathmarch2009badge.png" border="0" alt="IE DEATH MARCH 2009" align="right" /></a>I&#39;ve come across the <a href="http://iedeathmarch.org">http://iedeathmarch.org</a> website a couple times recently, and I definately agree.
 
 
 

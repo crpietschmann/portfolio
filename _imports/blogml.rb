@@ -119,7 +119,7 @@ module Jekyll
             # Replace /image.axd?picture= with /images/
             content.gsub!(/\/image\.axd\?picture\=%2f/, "/images/posts/")
             content.gsub!(/\/image\.axd\?picture\=%2F/, "/images/posts/")
-            content.gsub!(/\/image\.axd\?picture\=/, "/images/posts")
+            content.gsub!(/\/image\.axd\?picture\=/, "/images/posts/")
             # Replace /file.axd?file= with /files/
             #content.gsub!(/\/file\.axd\?file\=/, "/files/")
             # Replace encoded /'s with real thing
@@ -153,6 +153,8 @@ module Jekyll
             content.gsub!(/<\/BR\/>/, "\n")
             content.gsub!(/<\/br \/>/, "\n")
             content.gsub!(/<\/BR \/>/, "\n")
+
+            content.gsub!(//, "")
 
             content.gsub!(/&nbsp;/, " ")
             content.gsub!(/<strong>/, "**");

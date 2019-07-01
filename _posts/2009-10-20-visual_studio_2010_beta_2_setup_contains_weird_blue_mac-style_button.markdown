@@ -20,4 +20,4 @@ The button looks so incredibly out of place, and I wonder who decided that it sh
 
 You can see a screenshot of it below:
 
-<a href="/images/postsVS2010_WeirdGelButton01.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VS2010_WeirdGelButton01" src="/images/postsVS2010_WeirdGelButton01_thumb.png" border="0" alt="VS2010_WeirdGelButton01" width="631" height="484" /></a>
+<a href="/images/posts/VS2010_WeirdGelButton01.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VS2010_WeirdGelButton01" src="/images/posts/VS2010_WeirdGelButton01_thumb.png" border="0" alt="VS2010_WeirdGelButton01" width="631" height="484" /></a>

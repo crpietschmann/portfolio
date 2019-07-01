@@ -34,4 +34,4 @@ Below is a screenshot showing what is incorrectly happening and what should be h
 
  
 
-<img src="/images/postsVE6Bug_ShowSwitchOptionIsBroken.png" alt="" />
+<img src="/images/posts/VE6Bug_ShowSwitchOptionIsBroken.png" alt="" />

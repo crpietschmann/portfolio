@@ -18,7 +18,7 @@ Rewriting a path with a slash ("/") in it will cause a HyperLink's image specifi
 
 Here's a screenshot of the issue occuring:
 
-<img src="/images/postsASPNETRewritePathHyperLinkBug.png" alt="" /> 
+<img src="/images/posts/ASPNETRewritePathHyperLinkBug.png" alt="" /> 
 
 This is kind of a strange bug, since doing the same thing with an Image works just fine. It's only the HyperLink that breaks. I experienced this issue the other day, and it took me a little bit to figure out what was causing the problem. The answer is ASP.NET, kind of.
 

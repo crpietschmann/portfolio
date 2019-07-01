@@ -20,7 +20,7 @@ This is something I used to have a code snippet for in VB6, but I haven't needed
 
 Below is a screenshot of it in action along with the complete source code in C#.
 
-<img src="/images/postsWPF_Add_System_Menu_Items.png" alt="" width="315" height="313" />
+<img src="/images/posts/WPF_Add_System_Menu_Items.png" alt="" width="315" height="313" />
 
 [code:c#]
 

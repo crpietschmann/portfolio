@@ -15,7 +15,7 @@ redirect_from:
 <!-- more -->
 
 
-<img src="/images/postspushuptheweb.png" alt="Pushup The Web" align="right" />There have been a lot of talk online for a while now about the much desired demise of Internet Explorer 6, and other out dated web browsers. I don&#39;t think I&#39;ve used IE6 since the first Beta of IE7, and I haven&#39;t used Firefox 2.0 since Firefox 3.0 was released. However, I can see that there are still a few users that visit this blog of whom are still using some of these OLD versions of these web browsers. So, I am joining the effort to &quot;Push up the web&quot; by including the script found at <a href="http://www.pushuptheweb.com">http://www.pushuptheweb.com</a> in my website to kindly remind any visitor using an out dated web browser that they may want to update.
+<img src="/images/posts/pushuptheweb.png" alt="Pushup The Web" align="right" />There have been a lot of talk online for a while now about the much desired demise of Internet Explorer 6, and other out dated web browsers. I don&#39;t think I&#39;ve used IE6 since the first Beta of IE7, and I haven&#39;t used Firefox 2.0 since Firefox 3.0 was released. However, I can see that there are still a few users that visit this blog of whom are still using some of these OLD versions of these web browsers. So, I am joining the effort to &quot;Push up the web&quot; by including the script found at <a href="http://www.pushuptheweb.com">http://www.pushuptheweb.com</a> in my website to kindly remind any visitor using an out dated web browser that they may want to update.
 
 
 

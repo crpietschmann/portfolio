@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<img src="/images/posts2009/7/jHtmlArea_0.6.0_Screenshot.png" alt="" align="right" />
+<img src="/images/posts/2009/7/jHtmlArea_0.6.0_Screenshot.png" alt="" align="right" />
 
 I just posted a pretty good update the the jHtmlArea project that includes quite a few more toolbar buttons and a new Color Picker Menu extension/plugin (jHtmlAreaColorPickerMenu) that adds a nice, simple color picker when using the "forecolor" toolbar button.
 

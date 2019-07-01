@@ -15,7 +15,7 @@ redirect_from:
 <!-- more -->
 
 
-<img src="/images/postsASPNETMVC_Preview4_WebsiteFileStructure.png" alt="" align="right" />
+<img src="/images/posts/ASPNETMVC_Preview4_WebsiteFileStructure.png" alt="" align="right" />
 I recently started getting to know the ASP.NET MVC Framework (more specifically the Preview 4 release). The first thing I noticed upon installation is that it only comes with a Web Application Project Template. There is no regular ASP.NET Website template. So, I decided to try converting the Web Application Project Template to a regular ASP.NET Website. I actually prefer to use Website projects instead of Web Application projects since it gives a little more flexibility to deploy changes to the website after the website is already live. Plus, you can still throw anything you want into a DLL that goes into the Bin if you want.
 
 

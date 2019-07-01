@@ -20,6 +20,6 @@ My Brother In Law, Jeremy, is back now after his second tour in Iraq. This time 
 
 <a rel="nofollow" href="http://www.wxow.com/global/video/popup/pop_playerLaunch.asp?clipId1=4450249&amp;flvUri=&amp;partnerclipid=&amp;at1=News&amp;vt1=v&amp;h1=Family%20waits%20for%20soldiers%20return&amp;d1=138033&amp;redirUrl=&amp;activePane=info&amp;LaunchPageAdTag=homepage&amp;clipFormat=flv">Video of Interview - "Family waits for soldiers return"</a>
 
-<a rel="nofollow" href="http://www.wxow.com/Global/story.asp?S=11805417"><img src="/images/posts2010/1/FamilyWaitsForSoldiersReturnWXOW10LaCrosse.png" border="0" alt="" /></a>
+<a rel="nofollow" href="http://www.wxow.com/Global/story.asp?S=11805417"><img src="/images/posts/2010/1/FamilyWaitsForSoldiersReturnWXOW10LaCrosse.png" border="0" alt="" /></a>
 
 *The above picture is from the video, and is most likely owned / copyright WXOW Channel 19. FYI, This picture is not under the Creative Commons Attribution License that covers all other content on this blog.*

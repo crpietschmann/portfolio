@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<img src="/images/postsASPNETMVC_Preview4_CustomThemeFolderLayout.png" alt="" align="right" />
+<img src="/images/posts/ASPNETMVC_Preview4_CustomThemeFolderLayout.png" alt="" align="right" />
 
 **Update 2009/03/26:** There is an updated version of this code (with improvements) that targets the ASP.NET MVC 1.0 RTW located here: <a href="/post/2009/03/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx">/post/2009/03/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx</a> 
 
