@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Vista Experience Update: Vista automatically defragments your hard drives for you"
-  date: 2006-11-22 19:44:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2006/11/22/Vista-Experience-Update-Vista-automatically-defragments-your-hard-drives-for-you", "/post/2006/11/22/vista-experience-update-vista-automatically-defragments-your-hard-drives-for-you"]
-  ---
+---
+layout: post
+title: "Vista Experience Update: Vista automatically defragments your hard drives for you"
+date: 2006-11-22 19:44:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2006/11/22/Vista-Experience-Update-Vista-automatically-defragments-your-hard-drives-for-you", "/post/2006/11/22/vista-experience-update-vista-automatically-defragments-your-hard-drives-for-you"]
+---
 <!-- more -->
 <p>I guess this is one of the changes they made to always keep Windows running smoothly.</p>
 <p>When Windows Vista is installed it automatically sets up a schedule to defragment your hard drives once a week. You no longer need to remember to defrag your hard drives once in awhile in order to keep your system running efficiently.</p>

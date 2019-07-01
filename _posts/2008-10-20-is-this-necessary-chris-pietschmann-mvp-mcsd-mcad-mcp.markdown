@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Is this necessary?- Chris Pietschmann, MVP, MCSD, MCAD, MCP"
-  date: 2008-10-20 21:06:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/10/20/Is-this-necessary-Chris-Pietschmann-MVP-MCSD-MCAD-MCP", "/post/2008/10/20/is-this-necessary-chris-pietschmann-mvp-mcsd-mcad-mcp"]
-  ---
+---
+layout: post
+title: "Is this necessary?- Chris Pietschmann, MVP, MCSD, MCAD, MCP"
+date: 2008-10-20 21:06:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/10/20/Is-this-necessary-Chris-Pietschmann-MVP-MCSD-MCAD-MCP", "/post/2008/10/20/is-this-necessary-chris-pietschmann-mvp-mcsd-mcad-mcp"]
+---
 <!-- more -->
 <p>
 Recently when looking at the analytics logs for referring urls to my website, I noticed one from Hanselmen.com. It&#39;s actually a click-through from a comment I posted on his blog way back on April 21, 2006. His blog post that I commented on is titled &quot;<a href="http://www.hanselman.com/blog/ScottHanselman11SuccessfulLargeProjects3OpenSourceApplications1CollossalFailure.aspx">Scott Hanselman, 11 Successful Large Projects, 3 Open Source Applications, 1 Collossal Failure</a>&quot;.
@@ -54,7 +54,7 @@ Here&#39;s the email signature that I&#39;ve started using lately. Just my name,
 President - Simplovation LLC<br />
 Microsoft MVP - Windows Live Platform<br />
 <a href="http://simplovation.com">http://simplovation.com</a><br />
-<a href="http://pietschsoft.com">http://pietschsoft.com</a></em>
+<a href=""></a></em>
 </p>
 <p>
 Doesn&#39;t it look much better/usefull than the following?

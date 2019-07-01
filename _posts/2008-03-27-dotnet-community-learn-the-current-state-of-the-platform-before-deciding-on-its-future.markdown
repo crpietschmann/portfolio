@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: ".NET Community: Learn The Current State Of The Platform Before Deciding On Its Future"
-  date: 2008-03-27 10:51:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/03/27/dotNET-Community-Learn-The-Current-State-Of-The-Platform-Before-Deciding-On-Its-Future", "/post/2008/03/27/dotnet-community-learn-the-current-state-of-the-platform-before-deciding-on-its-future"]
-  ---
+---
+layout: post
+title: ".NET Community: Learn The Current State Of The Platform Before Deciding On Its Future"
+date: 2008-03-27 10:51:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/03/27/dotNET-Community-Learn-The-Current-State-Of-The-Platform-Before-Deciding-On-Its-Future", "/post/2008/03/27/dotnet-community-learn-the-current-state-of-the-platform-before-deciding-on-its-future"]
+---
 <!-- more -->
 <p>
 There has been some discussion lately in the blogosphere and on DotNetKicks around the subject of &quot;What is wrong with the ASP.NET Community?&quot;. There has been alot of discussions goin on, and it has really gotten me thinking. 

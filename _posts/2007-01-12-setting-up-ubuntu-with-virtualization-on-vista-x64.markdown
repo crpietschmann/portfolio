@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Setting Up Ubuntu with virtualization on Vista x64"
-  date: 2007-01-12 22:49:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2007/01/12/Setting-Up-Ubuntu-with-virtualization-on-Vista-x64", "/post/2007/01/12/setting-up-ubuntu-with-virtualization-on-vista-x64"]
-  ---
+---
+layout: post
+title: "Setting Up Ubuntu with virtualization on Vista x64"
+date: 2007-01-12 22:49:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2007/01/12/Setting-Up-Ubuntu-with-virtualization-on-Vista-x64", "/post/2007/01/12/setting-up-ubuntu-with-virtualization-on-vista-x64"]
+---
 <!-- more -->
 <P>I've decided to make the leap into Ubuntu; well sorta. I'm going to run it in a Virtual Machine for now. I'll set it up in a multi boot on my main pc once I'm more familiar with Linux and related stuff, but then again I may keep it running in a virtual machine if virtualization works out&nbsp;well enough.</P>
 <P>Below are the steps I took to get things setup.</P>

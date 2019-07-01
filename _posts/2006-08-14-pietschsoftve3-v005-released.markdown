@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "PietschSoft.VE3 v0.05 Released"
-  date: 2006-08-14 23:38:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2006/08/14/PietschSoftVE3-v005-Released", "/post/2006/08/14/pietschsoftve3-v005-released"]
-  ---
+---
+layout: post
+title: "PietschSoft.VE3 v0.05 Released"
+date: 2006-08-14 23:38:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2006/08/14/PietschSoftVE3-v005-Released", "/post/2006/08/14/pietschsoftve3-v005-released"]
+---
 <!-- more -->
 <p>
 Tonight I released v0.05 of the PietschSoft.VE3 Virtual Earth mapping control for ASP.NET.

@@ -1,15 +1,15 @@
-  ---
-  layout: post
-  title: "Silverlight: Embed IronRuby within XAML Part 2"
-  date: 2010-10-17 10:44:27 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Silverlight", "DLR", "Ruby"]
-  alias: ["/post/2010/10/17/Silverlight-Embed-IronRuby-within-XAML-Part-2", "/post/2010/10/17/silverlight-embed-ironruby-within-xaml-part-2"]
-  ---
+---
+layout: post
+title: "Silverlight: Embed IronRuby within XAML Part 2"
+date: 2010-10-17 10:44:27 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Silverlight", "DLR", "Ruby"]
+alias: ["/post/2010/10/17/Silverlight-Embed-IronRuby-within-XAML-Part-2", "/post/2010/10/17/silverlight-embed-ironruby-within-xaml-part-2"]
+---
 <!-- more -->
-<p>In the previous post I explored the possibility of <a href="http://pietschsoft.com/post/2010/10/02/Silverlight-Embed-IronRubyDLR-Scripting-within-XAML-using-IValueConverter-and-Custom-UserControl.aspx">embedding IronRuby / DLR Script within XAML using both an IValueConverter and Custom UserControl</a>. I spent a little more time experimenting with the DLRScriptUserControl I posted, and came up with some small modifications to it that allow UI event handlers to be wired up using a DLR language (such as IronRuby.</p>  <h3>Loading Assemblies Into the ScriptEngine.Runtime Context</h3>  <p>Something nice with how the ScriptEngine class allows you to execute a script of IronRuby (or other DLR language) is that it requires the implementer of the ScriptEngine (not the DLR script writer) to call “ScriptEngine.Runtime.LoadAssembly” in order to make a certain CLR assembly accessible within the DLR script that gets executed. This allows the scripts to be run in a sort of sandboxed environment.</p>  <p>There are two ways of doing this:</p>  <pre class="csharpcode"><span class="rem">// One: Load the assemblies of known types you want to</span>
+<p>In the previous post I explored the possibility of <a href="/post/2010/10/02/Silverlight-Embed-IronRubyDLR-Scripting-within-XAML-using-IValueConverter-and-Custom-UserControl.aspx">embedding IronRuby / DLR Script within XAML using both an IValueConverter and Custom UserControl</a>. I spent a little more time experimenting with the DLRScriptUserControl I posted, and came up with some small modifications to it that allow UI event handlers to be wired up using a DLR language (such as IronRuby.</p>  <h3>Loading Assemblies Into the ScriptEngine.Runtime Context</h3>  <p>Something nice with how the ScriptEngine class allows you to execute a script of IronRuby (or other DLR language) is that it requires the implementer of the ScriptEngine (not the DLR script writer) to call “ScriptEngine.Runtime.LoadAssembly” in order to make a certain CLR assembly accessible within the DLR script that gets executed. This allows the scripts to be run in a sort of sandboxed environment.</p>  <p>There are two ways of doing this:</p>  <pre class="csharpcode"><span class="rem">// One: Load the assemblies of known types you want to</span>
 <span class="rem">//      make available within the script.</span>
 <span class="rem">// Load System.Windows</span>
 engine.Runtime.LoadAssembly(<span class="kwrd">typeof</span>(UserControl).Assembly);
@@ -329,4 +329,4 @@ engine.Runtime.LoadAssembly(
 
 <p><strong>Download the Code: </strong></p>
 
-<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:d2b7394e-0db3-4f4d-b3b0-182aa242efab" class="wlWriterEditableSmartContent"><p><div><a href="http://pietschsoft.com/file.axd?file=SLXamlEmbeddedDLRScriptPart2_2.zip" target="_self">SLXamlEmbeddedDLRScriptPart2.zip</a></div></p></div>
+<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:d2b7394e-0db3-4f4d-b3b0-182aa242efab" class="wlWriterEditableSmartContent"><p><div><a href="/file.axd?file=SLXamlEmbeddedDLRScriptPart2_2.zip" target="_self">SLXamlEmbeddedDLRScriptPart2.zip</a></div></p></div>

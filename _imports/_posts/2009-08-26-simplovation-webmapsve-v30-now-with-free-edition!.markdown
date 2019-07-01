@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Simplovation Web.Maps.VE v3.0 Now With FREE Edition!"
-  date: 2009-08-26 18:57:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["asp.net", "Bing Maps", "JavaScript"]
-  alias: ["/post/2009/08/26/Simplovation-WebMapsVE-v30-Now-With-FREE-Edition!", "/post/2009/08/26/simplovation-webmapsve-v30-now-with-free-edition!"]
-  ---
+---
+layout: post
+title: "Simplovation Web.Maps.VE v3.0 Now With FREE Edition!"
+date: 2009-08-26 18:57:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["asp.net", "Bing Maps", "JavaScript"]
+alias: ["/post/2009/08/26/Simplovation-WebMapsVE-v30-Now-With-FREE-Edition!", "/post/2009/08/26/simplovation-webmapsve-v30-now-with-free-edition!"]
+---
 <!-- more -->
 <p><a href="http://simplovation.com"><img style="float: right;margin: 3px;" src="http://simplovation.com/Files/Images/FocusAreaScreenshot.png" border="0" alt="Simplovation Web.Maps.VE v3.0!" /></a>Today, I just posted the latest Web.Maps.VE v3.0 release. The coolest thing about this new version is that is has a FREE Edition for non-commercial use!</p>
 <p><a href="http://simplovation.com/download/">Download Web.Maps.VE v3.0 FREE Edition!</a></p>

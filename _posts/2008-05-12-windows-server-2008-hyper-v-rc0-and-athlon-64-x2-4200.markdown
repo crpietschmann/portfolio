@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Windows Server 2008 Hyper-V RC0 and Athlon 64 X2 4200+"
-  date: 2008-05-12 12:33:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/05/12/Windows-Server-2008-Hyper-V-RC0-and-Athlon-64-X2-4200", "/post/2008/05/12/windows-server-2008-hyper-v-rc0-and-athlon-64-x2-4200"]
-  ---
+---
+layout: post
+title: "Windows Server 2008 Hyper-V RC0 and Athlon 64 X2 4200+"
+date: 2008-05-12 12:33:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/05/12/Windows-Server-2008-Hyper-V-RC0-and-Athlon-64-X2-4200", "/post/2008/05/12/windows-server-2008-hyper-v-rc0-and-athlon-64-x2-4200"]
+---
 <!-- more -->
 <p>
 I used virtualization through VirtualPC 2007 on this computer, an Athlon 64 X2 4200+ with a Gigabyte GA-M55SLI-S4 motherboard, and it worked perfectly. The Athlon 64 X2 even support Hardware-Assisted Virtualization, so things actually run pretty smooth. 

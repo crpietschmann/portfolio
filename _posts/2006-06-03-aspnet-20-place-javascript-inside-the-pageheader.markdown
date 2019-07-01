@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "ASP.NET 2.0: Place JavaScript inside the Page.Header"
-  date: 2006-06-03 00:38:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["asp.net", "JavaScript"]
-  alias: ["/post/2006/06/03/ASPNET-20-Place-JavaScript-inside-the-PageHeader", "/post/2006/06/03/aspnet-20-place-javascript-inside-the-pageheader"]
-  ---
+---
+layout: post
+title: "ASP.NET 2.0: Place JavaScript inside the Page.Header"
+date: 2006-06-03 00:38:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["asp.net", "JavaScript"]
+alias: ["/post/2006/06/03/ASPNET-20-Place-JavaScript-inside-the-PageHeader", "/post/2006/06/03/aspnet-20-place-javascript-inside-the-pageheader"]
+---
 <!-- more -->
 <p>The Page.ClientScript object allows you to place JavaScript inside the Page, but it's limited in the fact that you cannot use it to place JavaScript inside the Head tags of the Page. But fortunately there is a way to do this.</p>
 <p>Add a .js file include inside the page header:</p>

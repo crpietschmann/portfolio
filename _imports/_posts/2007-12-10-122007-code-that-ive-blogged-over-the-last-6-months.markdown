@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "12/2007: Code that I've Blogged over the last 6 months"
-  date: 2007-12-10 11:48:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General", "General"]
-  alias: ["/post/2007/12/10/122007-Code-that-Ive-Blogged-over-the-last-6-months", "/post/2007/12/10/122007-code-that-ive-blogged-over-the-last-6-months"]
-  ---
+---
+layout: post
+title: "12/2007: Code that I've Blogged over the last 6 months"
+date: 2007-12-10 11:48:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General", "General"]
+alias: ["/post/2007/12/10/122007-Code-that-Ive-Blogged-over-the-last-6-months", "/post/2007/12/10/122007-code-that-ive-blogged-over-the-last-6-months"]
+---
 <!-- more -->
 <P>Here's a list of links to all the different code that I've blogged over the last 6 months.</P>
 <H3>.NET Framework</H3>

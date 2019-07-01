@@ -1,15 +1,15 @@
-  ---
-  layout: post
-  title: "Awarded 2012 Microsoft MVP - Bing Maps"
-  date: 2012-04-01 15:33:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2012/04/01/Awarded-2012-Microsoft-MVP-Bing-Maps", "/post/2012/04/01/awarded-2012-microsoft-mvp-bing-maps"]
-  ---
+---
+layout: post
+title: "Awarded 2012 Microsoft MVP - Bing Maps"
+date: 2012-04-01 15:33:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2012/04/01/Awarded-2012-Microsoft-MVP-Bing-Maps", "/post/2012/04/01/awarded-2012-microsoft-mvp-bing-maps"]
+---
 <!-- more -->
-<p><img style="float: right;" src="http://pietschsoft.com/image.axd?picture=MVP_FullColor_ForScreen.png" alt="" width="157" /></p>
+<p><img style="float: right;" src="/images/postsMVP_FullColor_ForScreen.png" alt="" width="157" /></p>
 <p>Whether I won MVP or not I would still do what I do. My passion for technology and the pleasure of helping others it what drives me. This marks the 5th time I've been awarded Microsoft MVP, and am honored for this recognition.</p>
 <p>Thank you Microsoft!</p>
 <p><strong>Congratulations to all April Fools MVP's; new and renewed!</strong></p>

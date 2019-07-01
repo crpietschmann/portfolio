@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "C#/VB.NET: Extension Methods"
-  date: 2007-03-13 20:42:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General", "vb.net", "C#"]
-  alias: ["/post/2007/03/13/CVBNET-Extension-Methods", "/post/2007/03/13/cvbnet-extension-methods"]
-  ---
+---
+layout: post
+title: "C#/VB.NET: Extension Methods"
+date: 2007-03-13 20:42:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General", "vb.net", "C#"]
+alias: ["/post/2007/03/13/CVBNET-Extension-Methods", "/post/2007/03/13/cvbnet-extension-methods"]
+---
 <!-- more -->
 <p>
 Over a year ago I posted a question about doing a <a href="/Blog/Post.aspx?PostID=601">SQL-like IN operation in .NET</a>. Here&#39;s the examples I posted of how it could work:

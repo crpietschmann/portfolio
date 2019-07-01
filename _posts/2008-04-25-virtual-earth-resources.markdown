@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Virtual Earth Resources"
-  date: 2008-04-25 14:52:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2008/04/25/Virtual-Earth-Resources", "/post/2008/04/25/virtual-earth-resources"]
-  ---
+---
+layout: post
+title: "Virtual Earth Resources"
+date: 2008-04-25 14:52:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2008/04/25/Virtual-Earth-Resources", "/post/2008/04/25/virtual-earth-resources"]
+---
 <!-- more -->
 <p>
 Here&#39;s&nbsp;links to&nbsp;some excellent resources&nbsp;for MS&nbsp;Virtual Earth development: 

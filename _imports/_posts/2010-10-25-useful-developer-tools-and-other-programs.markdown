@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Useful Developer Tools and Other Programs"
-  date: 2010-10-25 06:03:15 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: []
-  alias: ["/page/Useful-Developer-Tools-and-Other-Programs", "/page/useful-developer-tools-and-other-programs"]
-  ---
+---
+layout: post
+title: "Useful Developer Tools and Other Programs"
+date: 2010-10-25 06:03:15 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: []
+alias: ["/page/Useful-Developer-Tools-and-Other-Programs", "/page/useful-developer-tools-and-other-programs"]
+---
 <!-- more -->
 <p>This page contains a list of some of the applications I use for various tasks. This list is mainly comprised of developer tools and other free applications.</p>
 <p><span style="color: #ff0000;">This is an old list, and this page hasn't been updated in a few years. Beware. Just keeping it here so any links to it don't break / 404. Thanks!</span></p>

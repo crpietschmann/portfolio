@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "PasswordTextBox for Silverlight 2 Beta 2"
-  date: 2008-03-14 20:25:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Silverlight"]
-  alias: ["/post/2008/03/14/PasswordTextBox-for-Silverlight-2-Beta-1", "/post/2008/03/14/passwordtextbox-for-silverlight-2-beta-1"]
-  ---
+---
+layout: post
+title: "PasswordTextBox for Silverlight 2 Beta 2"
+date: 2008-03-14 20:25:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Silverlight"]
+alias: ["/post/2008/03/14/PasswordTextBox-for-Silverlight-2-Beta-1", "/post/2008/03/14/passwordtextbox-for-silverlight-2-beta-1"]
+---
 <!-- more -->
 <p>
 The standard TextBox control that is built into Silverlight 2 Beta&nbsp;2&nbsp;is a bit lacking and is missing alot of features that we have become accustomed to in a TextBox. One of those features is being able to mask the characters being displayed when its used to accept passwords. Here&#39;s a small PasswordTextBox control I built that does just that; it masks the characters from being displayed so you can accept passwords like you&#39;re used to. 
@@ -22,14 +22,14 @@ The standard TextBox control that is built into Silverlight 2 Beta&nbsp;2&nbsp;i
 [code:c#] 
 </p>
 <p>
-/// Copyright 2008 Chris Pietschmann (http://pietschsoft.com)<br />
+/// Copyright 2008 Chris Pietschmann ()<br />
 /// This work is licensed under a Creative Commons Attribution 3.0 United States License<br />
 /// http://creativecommons.org/licenses/by/3.0/us/<br />
 ///<br />
 /// This is a Password TextBox built for use with Silverlight 2 Beta 1<br />
 /// The reason this was built, is because the standard TextBox in<br />
 /// Silverlight 2 Beta 1 does not have Password support.<br />
-/// Original Link: http://pietschsoft.com/post/2008/03/PasswordTextBox-for-Silverlight-2-Beta-1.aspx<br />
+/// Original Link: /post/2008/03/PasswordTextBox-for-Silverlight-2-Beta-1.aspx<br />
 /// 
 </p>
 <p>
@@ -139,14 +139,14 @@ namespace SilverlightPasswordTextBox<br />
 <strong>Update 4/2/2008: Here&#39;s the above code translated to VB.NET</strong> 
 </p>
 <p>
-&#39;&#39; Copyright 2008 Chris Pietschmann (http://pietschsoft.com)<br />
+&#39;&#39; Copyright 2008 Chris Pietschmann ()<br />
 &#39;&#39; This work is licensed under a Creative Commons Attribution 3.0 United States License<br />
 &#39;&#39; http://creativecommons.org/licenses/by/3.0/us/<br />
 &#39;&#39;<br />
 &#39;&#39; This is a Password TextBox built for use with Silverlight 2 Beta 1<br />
 &#39;&#39; The reason this was built, is because the standard TextBox in<br />
 &#39;&#39; Silverlight 2 Beta 1 does not have Password support.<br />
-&#39;&#39; Original Link: http://pietschsoft.com/post/2008/03/PasswordTextBox-for-Silverlight-2-Beta-1.aspx<br />
+&#39;&#39; Original Link: /post/2008/03/PasswordTextBox-for-Silverlight-2-Beta-1.aspx<br />
 Public Class PasswordTextBox<br />
 &nbsp;&nbsp;&nbsp; Inherits TextBox 
 </p>

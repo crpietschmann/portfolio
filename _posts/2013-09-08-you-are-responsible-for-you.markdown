@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "You are responsible for YOU"
-  date: 2013-09-08 06:32:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Inspiration"]
-  alias: ["/post/2013/09/08/You-are-responsible-for-YOU", "/post/2013/09/08/you-are-responsible-for-you"]
-  ---
+---
+layout: post
+title: "You are responsible for YOU"
+date: 2013-09-08 06:32:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Inspiration"]
+alias: ["/post/2013/09/08/You-are-responsible-for-YOU", "/post/2013/09/08/you-are-responsible-for-you"]
+---
 <!-- more -->
 <p>It is easy to point fingers and pass blame to others. Although, ultimately, at the end of the day you are the only one responsible for YOU!</p>
 <p>No matter what good or bad decisions you've made at home, at work, in life; you are the only one to blame. Take responsibility and own your actions. For once you fully take responsibility for yourself, and only then, will you achieve a greater level of freedom.</p>

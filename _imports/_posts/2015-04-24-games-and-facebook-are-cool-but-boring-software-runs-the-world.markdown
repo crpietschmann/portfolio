@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Games and Facebook are Cool but Boring Software Runs the World"
-  date: 2015-04-24 05:00:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Inspiration"]
-  alias: ["/post/2015/04/24/Games-and-Facebook-are-Cool-but-Boring-Software-Runs-the-World", "/post/2015/04/24/games-and-facebook-are-cool-but-boring-software-runs-the-world"]
-  ---
+---
+layout: post
+title: "Games and Facebook are Cool but Boring Software Runs the World"
+date: 2015-04-24 05:00:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Inspiration"]
+alias: ["/post/2015/04/24/Games-and-Facebook-are-Cool-but-Boring-Software-Runs-the-World", "/post/2015/04/24/games-and-facebook-are-cool-but-boring-software-runs-the-world"]
+---
 <!-- more -->
 <p>Mostly all tech news speaks about are either the latest consumer&nbsp;features of your favorite Mobile Operating System (iOS, Android, Windows Mobile) or all the cool startups. There certainly have been a lot of startups over the years to make it big. To name a few: Facebook, Twitter, Skype, Uber. However magical and exciting these consumer companies and their software products appear to be, they still don't fundamentally make the world run. Yes, some of these have fundamentally changed the way people use computers and technology. Some you might say have "changed the world" or "made a dent in the universe."</p>
 <p>All the hype and magic aside, games, Facebook, Twitter, cool Android/iOS features do NOT run the world.</p>

@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "LunchTimeCoder: Windows Service Monitor that runs in the System Tray"
-  date: 2007-07-19 12:21:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2007/07/19/LunchTimeCoder-Windows-Service-Monitor-that-runs-in-the-System-Tray", "/post/2007/07/19/lunchtimecoder-windows-service-monitor-that-runs-in-the-system-tray"]
-  ---
+---
+layout: post
+title: "LunchTimeCoder: Windows Service Monitor that runs in the System Tray"
+date: 2007-07-19 12:21:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2007/07/19/LunchTimeCoder-Windows-Service-Monitor-that-runs-in-the-System-Tray", "/post/2007/07/19/lunchtimecoder-windows-service-monitor-that-runs-in-the-system-tray"]
+---
 <!-- more -->
 <P>Yesterday I started writing a Windows Service Monitor, but I didn't finish it during my lunch time. And, since I had a little extra time last night and this morning (I'm off work today by the way), I spent some time finishing it. Yeah I know it's cheating but I'm the one who wrote the rules for this initiative anyway.</P>
 <P><IMG alt="LunchTimeCoder.ServiceMonitor minimized to the system tray" hspace=0 src="/download/lunchtimecoder/dotnet/windowsservicemonitor/images/screenshot002.png" align=right border=0></P>

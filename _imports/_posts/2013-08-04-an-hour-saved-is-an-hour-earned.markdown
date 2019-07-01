@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "An Hour Saved is an Hour Earned"
-  date: 2013-08-04 13:55:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Inspiration"]
-  alias: ["/post/2013/08/04/An-Hour-Saved-is-an-Hour-Earned", "/post/2013/08/04/an-hour-saved-is-an-hour-earned"]
-  ---
+---
+layout: post
+title: "An Hour Saved is an Hour Earned"
+date: 2013-08-04 13:55:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Inspiration"]
+alias: ["/post/2013/08/04/An-Hour-Saved-is-an-Hour-Earned", "/post/2013/08/04/an-hour-saved-is-an-hour-earned"]
+---
 <!-- more -->
 <p>Time is the scarcest resource we have. More scarce than land, More scarce than water. More scarce than money. This is one of the reasons that life is so precious.</p>
 <p><em>"A penny saved is a penny earned." - Benjamin Franklin</em></p>

@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "MIX'09: Virtual Earth Silverlight CTP Session Online for Viewing"
-  date: 2009-03-21 16:46:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Silverlight", "Bing Maps"]
-  alias: ["/post/2009/03/21/MIX09-Virtual-Earth-Silverlight-CTP-Session-Online-For-Viewing", "/post/2009/03/21/mix09-virtual-earth-silverlight-ctp-session-online-for-viewing"]
-  ---
+---
+layout: post
+title: "MIX'09: Virtual Earth Silverlight CTP Session Online for Viewing"
+date: 2009-03-21 16:46:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Silverlight", "Bing Maps"]
+alias: ["/post/2009/03/21/MIX09-Virtual-Earth-Silverlight-CTP-Session-Online-For-Viewing", "/post/2009/03/21/mix09-virtual-earth-silverlight-ctp-session-online-for-viewing"]
+---
 <!-- more -->
 <p>The "<a href="http://sessions.visitmix.com/MIX09/T34F">Introducing the Microsoft Virtual Earth Silverlight Map Control CTP</a>" session from MIX'09 by Chris Pendlton is now available for your viewing pleasure online.</p>
 <p><a href="http://sessions.visitmix.com/MIX09/T34F">http://sessions.visitmix.com/MIX09/T34F</a></p>

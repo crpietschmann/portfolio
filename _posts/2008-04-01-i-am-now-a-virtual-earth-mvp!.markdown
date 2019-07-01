@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "I am now a Virtual Earth MVP!"
-  date: 2008-04-01 11:12:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General", "Bing Maps"]
-  alias: ["/post/2008/04/01/I-am-now-a-Virtual-Earth-MVP!", "/post/2008/04/01/i-am-now-a-virtual-earth-mvp!"]
-  ---
+---
+layout: post
+title: "I am now a Virtual Earth MVP!"
+date: 2008-04-01 11:12:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General", "Bing Maps"]
+alias: ["/post/2008/04/01/I-am-now-a-Virtual-Earth-MVP!", "/post/2008/04/01/i-am-now-a-virtual-earth-mvp!"]
+---
 <!-- more -->
 <p>
 This is an exciting April fools day for me. I recieved the following email from Microsoft: 

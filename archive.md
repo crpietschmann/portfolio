@@ -5,8 +5,6 @@ permalink: /archive/
 ---
 
 <div class="container">
-  <h1>Archive</h1>
-
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -20,5 +18,4 @@ permalink: /archive/
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>

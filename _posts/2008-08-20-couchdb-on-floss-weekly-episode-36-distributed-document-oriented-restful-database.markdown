@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "CouchDB on FLOSS Weekly Episode 36 - distributed, document-oriented, RESTful database"
-  date: 2008-08-20 17:46:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/08/20/CouchDB-on-FLOSS-Weekly-Episode-36-distributed-document-oriented-RESTful-database", "/post/2008/08/20/couchdb-on-floss-weekly-episode-36-distributed-document-oriented-restful-database"]
-  ---
+---
+layout: post
+title: "CouchDB on FLOSS Weekly Episode 36 - distributed, document-oriented, RESTful database"
+date: 2008-08-20 17:46:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/08/20/CouchDB-on-FLOSS-Weekly-Episode-36-distributed-document-oriented-RESTful-database", "/post/2008/08/20/couchdb-on-floss-weekly-episode-36-distributed-document-oriented-restful-database"]
+---
 <!-- more -->
 <p>
 I just listened to the latest episode of <a href="http://twit.tv/FLOSS">FLOSS Weekly</a>; <a href="http://twit.tv/floss36">episode 36 on CouchDB</a>. This episode is an interview with <a href="http://jan.prima.de/">Jan Lehnardt</a> about <a href="http://incubator.apache.org/couchdb/">CouchBD</a>.

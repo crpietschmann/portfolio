@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Free the Airwaves! FCC vote on "white spaces" scheduled for Nov. 4!"
-  date: 2008-10-24 14:12:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/10/24/Free-the-Airwaves-FCC-vote-on-white-spaces-scheduled-for-Nov-4", "/post/2008/10/24/free-the-airwaves-fcc-vote-on-white-spaces-scheduled-for-nov-4"]
-  ---
+---
+layout: post
+title: "Free the Airwaves! FCC vote on "white spaces" scheduled for Nov. 4!"
+date: 2008-10-24 14:12:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/10/24/Free-the-Airwaves-FCC-vote-on-white-spaces-scheduled-for-Nov-4", "/post/2008/10/24/free-the-airwaves-fcc-vote-on-white-spaces-scheduled-for-nov-4"]
+---
 <!-- more -->
 <div style="float: right">
 <a href="http://www.freetheairwaves.com/"><img src="http://www.freetheairwaves.com/images/blog_badges/badge2_rev.jpg" border="0" alt="FreeTheAirwaves.com" /></a>

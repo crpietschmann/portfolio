@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "(Cross Post) Chris Pietschmann Awarded 2018 Microsoft MVP Award"
-  date: 2018-07-02 10:44:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Azure"]
-  alias: ["/post/2018/07/02/Chris-Pietschmann-Awarded-2018-Microsoft-MVP-Award-Cross-Post", "/post/2018/07/02/chris-pietschmann-awarded-2018-microsoft-mvp-award-cross-post"]
-  ---
+---
+layout: post
+title: "(Cross Post) Chris Pietschmann Awarded 2018 Microsoft MVP Award"
+date: 2018-07-02 10:44:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Azure"]
+alias: ["/post/2018/07/02/Chris-Pietschmann-Awarded-2018-Microsoft-MVP-Award-Cross-Post", "/post/2018/07/02/chris-pietschmann-awarded-2018-microsoft-mvp-award-cross-post"]
+---
 <!-- more -->
 <p class="no-underline" style="box-sizing: border-box; border: 0px; font-family: 'Segoe UI', 'Open Sans', sans-serif; font-size: 19px; margin: 0px 0px 1.4em; outline: 0px; padding: 0px; vertical-align: baseline; caret-color: #343e47; color: #343e47;"><img class="alignright wp-image-2187" style="box-sizing: border-box; height: auto; max-width: 100%; display: inline; float: right; margin: 0.5em 0px 1.5em 2em;" src="https://i0.wp.com/buildazure.com/wp-content/uploads/2015/06/mvp_logo_horizontal_preferred_cyan300_rgb_300ppi.png?zoom=2&amp;resize=200%2C81&amp;ssl=1" alt="" width="200" height="81" data-attachment-id="2187" data-permalink="https://buildazure.com/about/mvp_logo_horizontal_preferred_cyan300_rgb_300ppi/" data-orig-file="https://i0.wp.com/buildazure.com/wp-content/uploads/2015/06/mvp_logo_horizontal_preferred_cyan300_rgb_300ppi.png?fit=751%2C303&amp;ssl=1" data-orig-size="751,303" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="mvp_logo_horizontal_preferred_cyan300_rgb_300ppi" data-image-description="" data-medium-file="https://i0.wp.com/buildazure.com/wp-content/uploads/2015/06/mvp_logo_horizontal_preferred_cyan300_rgb_300ppi.png?fit=300%2C121&amp;ssl=1" data-large-file="https://i0.wp.com/buildazure.com/wp-content/uploads/2015/06/mvp_logo_horizontal_preferred_cyan300_rgb_300ppi.png?fit=751%2C303&amp;ssl=1" />Hi! My name is Chris Pietschmann, and I&rsquo;m the primary person behind BuildAzure.com and the Build Azure Weekly newsletter. I started BuildAzure.com back in June 2015 after I passed the&nbsp;<a style="box-sizing: border-box; border-width: 0px 0px 2px; border-bottom-style: solid; border-color: rgba(199, 214, 228, 0.298039); font-style: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: #191919; text-decoration: none; transition: 0.2s ease-in-out;" href="https://buildazure.com/2015/07/16/mcsd-azure-solutions-architect-certification/">Azure MCSD certification</a>&nbsp;as an effort for me to be able to focus my Azure blogging efforts into a more targeted fashion. Over time, as a result of my many community contributions, including the success of sharing information on BuildAzure.com, I was awarded the Microsoft MVP award in 2017 in the expertise category of Microsoft Azure.</p>
 <p class="no-underline" style="box-sizing: border-box; border: 0px; font-family: 'Segoe UI', 'Open Sans', sans-serif; font-size: 19px; margin: 0px 0px 1.4em; outline: 0px; padding: 0px; vertical-align: baseline; caret-color: #343e47; color: #343e47;">Most recently, on July 1, 2018, I was&nbsp;<a style="box-sizing: border-box; border-width: 0px 0px 2px; border-bottom-style: solid; border-color: rgba(199, 214, 228, 0.298039); font-style: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: #191919; text-decoration: none; transition: 0.2s ease-in-out;" href="https://mvp.microsoft.com/en-us/PublicProfile/4015549">re-awarded the Microsoft MVP award for 2018</a>&nbsp;in the category of Microsoft Azure. While this is my 2nd Microsoft MVP award for Microsoft Azure, it&rsquo;s actually my 7th time winning the Microsoft MVP award!</p>

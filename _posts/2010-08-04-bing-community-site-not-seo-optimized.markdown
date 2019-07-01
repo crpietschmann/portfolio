@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Bing Community Site Not SEO Optimized"
-  date: 2010-08-04 09:54:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2010/08/04/Bing-Community-Site-Not-SEO-Optimized", "/post/2010/08/04/bing-community-site-not-seo-optimized"]
-  ---
+---
+layout: post
+title: "Bing Community Site Not SEO Optimized"
+date: 2010-08-04 09:54:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2010/08/04/Bing-Community-Site-Not-SEO-Optimized", "/post/2010/08/04/bing-community-site-not-seo-optimized"]
+---
 <!-- more -->
 <p>Since Bing is a search (ahem, I mean &ldquo;decision&rdquo;) engine, I would assume that the rest of the website, other than the search, would be SEO optimized (Search Engine Optimization). It hosts blogs and forums, and I would assume Microsoft would want them to be indexed by Google and Yahoo. After all, more traffic to the Bing site should be a good thing. However, it seems that the &ldquo;Bing Community&rdquo; sections of <a href="http://bing.com">http://bing.com</a> are lacking when it comes to SEO.</p>
 <p>Below are some links to blog and forum posts with examples of how the Bing Community, a sub-section of Bing, is lacking when it comes to SEO.</p>

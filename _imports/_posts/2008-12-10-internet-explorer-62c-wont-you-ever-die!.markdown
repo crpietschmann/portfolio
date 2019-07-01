@@ -1,16 +1,16 @@
-  ---
-  layout: post
-  title: "Internet Explorer 6, wont you ever die?!"
-  date: 2008-12-10 16:15:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/12/10/Internet-Explorer-62c-wont-you-ever-die!", "/post/2008/12/10/internet-explorer-62c-wont-you-ever-die!"]
-  ---
+---
+layout: post
+title: "Internet Explorer 6, wont you ever die?!"
+date: 2008-12-10 16:15:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/12/10/Internet-Explorer-62c-wont-you-ever-die!", "/post/2008/12/10/internet-explorer-62c-wont-you-ever-die!"]
+---
 <!-- more -->
 <p>
-<a href="http://iedeathmarch.org"><img src="/image.axd?picture=iedeathmarch2009badge.png" border="0" alt="IE DEATH MARCH 2009" align="right" /></a>I&#39;ve come across the <a href="http://iedeathmarch.org">http://iedeathmarch.org</a> website a couple times recently, and I definately agree.
+<a href="http://iedeathmarch.org"><img src="/images/postsiedeathmarch2009badge.png" border="0" alt="IE DEATH MARCH 2009" align="right" /></a>I&#39;ve come across the <a href="http://iedeathmarch.org">http://iedeathmarch.org</a> website a couple times recently, and I definately agree.
 </p>
 <p>
 And I quote from the site:

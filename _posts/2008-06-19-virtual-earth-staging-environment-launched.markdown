@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Virtual Earth Staging Environment Launched"
-  date: 2008-06-19 20:02:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2008/06/19/Virtual-Earth-Staging-Environment-Launched", "/post/2008/06/19/virtual-earth-staging-environment-launched"]
-  ---
+---
+layout: post
+title: "Virtual Earth Staging Environment Launched"
+date: 2008-06-19 20:02:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2008/06/19/Virtual-Earth-Staging-Environment-Launched", "/post/2008/06/19/virtual-earth-staging-environment-launched"]
+---
 <!-- more -->
 <p>The <a href="http://blogs.msdn.com/virtualearth/archive/2008/06/19/virtual-earth-staging-environment.aspx">Virtual Earth team has officially launched their Virtual Earth Staging Environment</a>. The staging environment allows you to access all the features of Virtual Earth (during development and testing) without incurring transaction costs against your production account.</p>
 <p><strong>How do I access the Virtual Earth Staging Environment?</strong></p>

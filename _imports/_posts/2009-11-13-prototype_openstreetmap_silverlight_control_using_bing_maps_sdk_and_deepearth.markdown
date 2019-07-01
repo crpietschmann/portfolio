@@ -1,15 +1,15 @@
-  ---
-  layout: post
-  title: "Prototype of OpenStreetMap Silverlight Control using DeepEarth and Bing Maps SDK"
-  date: 2009-11-13 07:40:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps", "C#", "Silverlight"]
-  alias: ["/post/2009/11/13/Prototype_OpenStreetMap_Silverlight_Control_using_Bing_Maps_SDK_and_DeepEarth", "/post/2009/11/13/prototype_openstreetmap_silverlight_control_using_bing_maps_sdk_and_deepearth"]
-  ---
+---
+layout: post
+title: "Prototype of OpenStreetMap Silverlight Control using DeepEarth and Bing Maps SDK"
+date: 2009-11-13 07:40:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps", "C#", "Silverlight"]
+alias: ["/post/2009/11/13/Prototype_OpenStreetMap_Silverlight_Control_using_Bing_Maps_SDK_and_DeepEarth", "/post/2009/11/13/prototype_openstreetmap_silverlight_control_using_bing_maps_sdk_and_deepearth"]
+---
 <!-- more -->
-<p>I&rsquo;ve decided to expand a little on using OpenStreetMap imagery with the new Bing Maps Silverlight Control in response to the following <a rel="nofollow" href="http://pietschsoft.com/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx#id_a250bec2-e7f3-4324-8837-e167eff776e4">comment posted by John O&rsquo;Brien</a> on my previous &ldquo;<a href="http://pietschsoft.com/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx">Display OpenStreetMap Imagery using Bing Maps Silverlight Control v1</a>&rdquo; post:</p>
+<p>I&rsquo;ve decided to expand a little on using OpenStreetMap imagery with the new Bing Maps Silverlight Control in response to the following <a rel="nofollow" href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx#id_a250bec2-e7f3-4324-8837-e167eff776e4">comment posted by John O&rsquo;Brien</a> on my previous &ldquo;<a href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx">Display OpenStreetMap Imagery using Bing Maps Silverlight Control v1</a>&rdquo; post:</p>
 <p><em>&ldquo;Very close Chris but you will still need to enter a Bing Maps AppID.      <br />If however you create your own map from MapCore and don't use the Bing Maps services then you don't need creditials&rdquo;</em></p>
 <p>Yes, it is true that by just displaying the OpenStreetMap imagery on the Bing Maps Silverlight Control using a custom TileSource you still need to provide the control a Bing Maps Key (App ID). However, what if you inherited from the &ldquo;MapCore&rdquo; base class (the same one that the Bing Maps &ldquo;Map&rdquo; object inherits) and built out a full OpenStreetMap Map control?</p>
 <h3>Custom &ldquo;OpenStreetMap&rdquo; Control</h3>
@@ -211,7 +211,7 @@
 <p>Anyway, here&rsquo;s a download link to the full code of the project for the above code:</p>
 <div id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:d6d36e07-63fe-464f-82cc-7b8216c68372" class="wlWriterEditableSmartContent" style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px">
 <p>&nbsp;</p>
-<div><a href="http://pietschsoft.com/file.axd?file=OpenStreetMapDeepEarthPrototype_1.zip" target="_self">OpenStreetMapDeepEarthPrototype.zip</a></div>
+<div><a href="/file.axd?file=OpenStreetMapDeepEarthPrototype_1.zip" target="_self">OpenStreetMapDeepEarthPrototype.zip</a></div>
 <p>&nbsp;</p>
 </div>
 <p>&nbsp;</p>

@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "The Purina Diet {Joke}"
-  date: 2008-02-14 09:58:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/02/14/The-Purina-Diet-7bJoke7d", "/post/2008/02/14/the-purina-diet-7bjoke7d"]
-  ---
+---
+layout: post
+title: "The Purina Diet {Joke}"
+date: 2008-02-14 09:58:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/02/14/The-Purina-Diet-7bJoke7d", "/post/2008/02/14/the-purina-diet-7bjoke7d"]
+---
 <!-- more -->
 <p>
 I don&#39;t know who originally wrote this, but I received it in an email the other day. I thought it funny enough to share. 

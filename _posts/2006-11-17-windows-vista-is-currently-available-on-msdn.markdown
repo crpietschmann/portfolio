@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Windows Vista is currently available on MSDN"
-  date: 2006-11-17 08:01:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2006/11/17/Windows-Vista-is-currently-available-on-MSDN", "/post/2006/11/17/windows-vista-is-currently-available-on-msdn"]
-  ---
+---
+layout: post
+title: "Windows Vista is currently available on MSDN"
+date: 2006-11-17 08:01:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2006/11/17/Windows-Vista-is-currently-available-on-MSDN", "/post/2006/11/17/windows-vista-is-currently-available-on-msdn"]
+---
 <!-- more -->
 <P>And, thanks to the MSDN Subscription I won at the Deeper in .NET event, I am lucky enough to get Windows Vista for Free. Yippee!!</P>
 <P>As you probably know there is only one installation DVD to install all editions of Vista. Finally, only one disc to keep track of. But there are however seperate discs for both x86 and x64 editions. Both of which are up on MSDN right now.</P>

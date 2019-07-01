@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "ASP.NET: Extend BoundField Control - Add MultiLine support"
-  date: 2006-09-20 00:18:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["asp.net"]
-  alias: ["/post/2006/09/20/ASPNET-Extend-BoundField-Control-Add-MultiLine-support", "/post/2006/09/20/aspnet-extend-boundfield-control-add-multiline-support"]
-  ---
+---
+layout: post
+title: "ASP.NET: Extend BoundField Control - Add MultiLine support"
+date: 2006-09-20 00:18:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["asp.net"]
+alias: ["/post/2006/09/20/ASPNET-Extend-BoundField-Control-Add-MultiLine-support", "/post/2006/09/20/aspnet-extend-boundfield-control-add-multiline-support"]
+---
 <!-- more -->
 <p>I've been working with the data controls and&nbsp;it's somewhat cumbersome to&nbsp;use a TemplateField control everytime you want to just have a MultiLine TextBox. So, I decided to extend upon the BoundField control to add MultiLine support. It is actually rather simple to do.</p>
 <p>Using the BoundTextBoxField control in the page:</p>

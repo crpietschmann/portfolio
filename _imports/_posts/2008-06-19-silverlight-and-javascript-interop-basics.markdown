@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Silverlight and JavaScript Interop Basics"
-  date: 2008-06-19 23:18:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Silverlight"]
-  alias: ["/post/2008/06/19/Silverlight-and-JavaScript-Interop-Basics", "/post/2008/06/19/silverlight-and-javascript-interop-basics"]
-  ---
+---
+layout: post
+title: "Silverlight and JavaScript Interop Basics"
+date: 2008-06-19 23:18:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Silverlight"]
+alias: ["/post/2008/06/19/Silverlight-and-JavaScript-Interop-Basics", "/post/2008/06/19/silverlight-and-javascript-interop-basics"]
+---
 <!-- more -->
 <p>I've been looking into Silverlight in my spare time a bit, to see what it has to offer, and the JavaScript &quot;Interop&quot; is actually pretty neat and simple to use. About three months ago I wrote a post titled &quot;<a href="/post/2008/03/Working-with-HTML-DOM-in-Silverlight-2-Beta-1.aspx">Working with HTML DOM in Silverlight using the Bridge Pattern</a>&quot;; so I think this time I'll go over some of the basics involved with communicating back and forth between Silverlight and JavaScript. This article is written by referencing Silverlight 2 Beta 2, but should still hold relevent in the final release of Silverlight 2. </p>  <h3>Call a JavaScript Methods from within Silverlight</h3>  <p><strong>1) Using the Eval method</strong></p>  <p>Silverlight does expose the JavaScript Eval method, so you can use it to call some JavaScript in the page </p>  <p>Here's a couple examples of calling Eval from in Silverlight:</p>  <pre class="csharpcode"><span class="kwrd">using</span> System.Windows.Browser; 
 

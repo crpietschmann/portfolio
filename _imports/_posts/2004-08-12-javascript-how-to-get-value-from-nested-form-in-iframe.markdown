@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "JavaScript: How to get value from nested form in iframe?"
-  date: 2004-08-12 23:12:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2004/08/12/JavaScript-How-to-get-value-from-nested-form-in-iframe", "/post/2004/08/12/javascript-how-to-get-value-from-nested-form-in-iframe"]
-  ---
+---
+layout: post
+title: "JavaScript: How to get value from nested form in iframe?"
+date: 2004-08-12 23:12:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2004/08/12/JavaScript-How-to-get-value-from-nested-form-in-iframe", "/post/2004/08/12/javascript-how-to-get-value-from-nested-form-in-iframe"]
+---
 <!-- more -->
 <P>Here is an example of how to get a value from a nested form in an iframe. It works in IE6, but not Netscape 7.1.</P>
 <P><STRONG>PageOne.htm<BR></STRONG>&lt;html&gt;<BR>&lt;head&gt;<BR>&lt;script language='JavaScript'&gt;</P>

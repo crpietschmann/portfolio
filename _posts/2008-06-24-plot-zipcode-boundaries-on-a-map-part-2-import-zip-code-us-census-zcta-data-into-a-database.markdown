@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Plot ZipCode Boundaries on a Map: Part 2 - Import Zip Code (U.S. Census ZCTA) Data Into A Database"
-  date: 2008-06-24 16:00:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2008/06/24/Plot-ZipCode-Boundaries-on-a-Map-Part-2-Import-Zip-Code-US-Census-ZCTA-Data-Into-A-Database", "/post/2008/06/24/plot-zipcode-boundaries-on-a-map-part-2-import-zip-code-us-census-zcta-data-into-a-database"]
-  ---
+---
+layout: post
+title: "Plot ZipCode Boundaries on a Map: Part 2 - Import Zip Code (U.S. Census ZCTA) Data Into A Database"
+date: 2008-06-24 16:00:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2008/06/24/Plot-ZipCode-Boundaries-on-a-Map-Part-2-Import-Zip-Code-US-Census-ZCTA-Data-Into-A-Database", "/post/2008/06/24/plot-zipcode-boundaries-on-a-map-part-2-import-zip-code-us-census-zcta-data-into-a-database"]
+---
 <!-- more -->
 <p>Now that we've <a href="/post/2008/06/Plot-ZipCode-Boundaries-on-a-Map-Part1-Making-sense-of-US-Census-ZCTA-ARCINFO-Ungenerate-ASCII-files.aspx">Made Sense of the U.S. Census ZCTA ARC/INFO Ungenerate (ASCII) files in Part 1</a> of this series, we are ready to import the U.S Census ZCTA Zip Code data into a database. In Part 2, we'll create database tables and import the Zip Code Boundary data into those tables in a MS SQL 2005 database.</p>
 <h3>Create SQL 2005/2008 Database Tables</h3>
@@ -56,7 +56,7 @@ CREATE TABLE [dbo].[ZipCodeBoundary](
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 ) ON [PRIMARY]</pre>
 <h3>Import Data Into Database Tables</h3>
-<p><img src="/image.axd?picture=ImportARCINFOASCIIToSql05Database_Screenshot.png" alt="" align="right" />To make things easier, I wrote a small utility that reads in the "a.dat.csv" and ".dat.csv" files generated in Part 1 of this series and imports the data into the table defined above. One thing to note when importing the data from these file (and the original ARC/INFO Ungenerate (ASCII) files) is that each set of files starts numbering the ZipCodes at 1. So when importing into the database we much give each Zip Code a unique ID (in this article I'm using GUID's for this) and setting that ID correctly for each of the Zip Code Boundary Points.</p>
+<p><img src="/images/postsImportARCINFOASCIIToSql05Database_Screenshot.png" alt="" align="right" />To make things easier, I wrote a small utility that reads in the "a.dat.csv" and ".dat.csv" files generated in Part 1 of this series and imports the data into the table defined above. One thing to note when importing the data from these file (and the original ARC/INFO Ungenerate (ASCII) files) is that each set of files starts numbering the ZipCodes at 1. So when importing into the database we much give each Zip Code a unique ID (in this article I'm using GUID's for this) and setting that ID correctly for each of the Zip Code Boundary Points.</p>
 <p>Download the Import Utility: <a href="/file.axd?file=ImportARCINFOASCIIToSql05Database.zip" rel="enclosure">ImportARCINFOASCIIToSql05Database.zip (15.18 kb)</a></p>
 <p>Remember, that when running this utility, it can take awhile to import ALL the ZipCode Boundary data for the entire country.</p>
 <p>Note, this example utility has the connection string hard coded in the Form1.cs code file. Don't forget to change it to point to your database, unless you create your database on the local SQL Express instance and name it "ZipCodeBoundaries" like I do in this article.</p>

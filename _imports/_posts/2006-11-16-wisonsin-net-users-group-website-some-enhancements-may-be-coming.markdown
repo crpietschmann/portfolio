@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Wisonsin .NET Users Group website - Some enhancements may be coming..."
-  date: 2006-11-16 15:07:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General", "WI-INETA"]
-  alias: ["/post/2006/11/16/Wisonsin-NET-Users-Group-website-Some-enhancements-may-be-coming", "/post/2006/11/16/wisonsin-net-users-group-website-some-enhancements-may-be-coming"]
-  ---
+---
+layout: post
+title: "Wisonsin .NET Users Group website - Some enhancements may be coming..."
+date: 2006-11-16 15:07:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General", "WI-INETA"]
+alias: ["/post/2006/11/16/Wisonsin-NET-Users-Group-website-Some-enhancements-may-be-coming", "/post/2006/11/16/wisonsin-net-users-group-website-some-enhancements-may-be-coming"]
+---
 <!-- more -->
 <p>
 After the last Wisconsin .NET Users Group meeting (on Tuesday) I discussed with Scott and a couple others some potential ideas for enhancing the groups website. Hopefully in not too long, we will be working on a new website for the group.

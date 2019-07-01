@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Software is Written FOR PEOPLE"
-  date: 2016-09-09 17:54:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Inspiration"]
-  alias: ["/post/2016/09/09/Software-is-Written-FOR-PEOPLE", "/post/2016/09/09/software-is-written-for-people"]
-  ---
+---
+layout: post
+title: "Software is Written FOR PEOPLE"
+date: 2016-09-09 17:54:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Inspiration"]
+alias: ["/post/2016/09/09/Software-is-Written-FOR-PEOPLE", "/post/2016/09/09/software-is-written-for-people"]
+---
 <!-- more -->
 <p>To most software developers it can seem extremely obvious that software is written for computers. After all it runs on the computer and tells the computer how / what to do. But this isn't the entirety of the purpose of software. Through and through, software is really written / built for PEOPLE.</p>
 <p>There is a movement in computer programming called "Clean Code" that pushes the idea that software is written for other developers. Clean Code is human readable and as such is more easily maintained over time. All software is updated, fixed and changed over time, and it's useless if it needs to be completely rewritten from scratch anytime a change or bug fix is needed. So with Clean Code is move the obvious point to say that software code is written for not just computers to run, but also for developers to be able to read and the modify more easily.</p>

@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Virtual Earth: Getting Started - Adding a basic Map to a page"
-  date: 2007-12-21 16:24:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2007/12/21/Virtual-Earth-Getting-Started-Adding-a-basic-Map-to-a-page", "/post/2007/12/21/virtual-earth-getting-started-adding-a-basic-map-to-a-page"]
-  ---
+---
+layout: post
+title: "Virtual Earth: Getting Started - Adding a basic Map to a page"
+date: 2007-12-21 16:24:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2007/12/21/Virtual-Earth-Getting-Started-Adding-a-basic-Map-to-a-page", "/post/2007/12/21/virtual-earth-getting-started-adding-a-basic-map-to-a-page"]
+---
 <!-- more -->
 <h3>What is Microsoft Virtual Earth?</h3>
 <p>

@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Work Smart, Not Hard"
-  date: 2013-07-27 06:20:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Inspiration"]
-  alias: ["/post/2013/07/27/Work-Smart-Not-Hard", "/post/2013/07/27/work-smart-not-hard"]
-  ---
+---
+layout: post
+title: "Work Smart, Not Hard"
+date: 2013-07-27 06:20:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Inspiration"]
+alias: ["/post/2013/07/27/Work-Smart-Not-Hard", "/post/2013/07/27/work-smart-not-hard"]
+---
 <!-- more -->
 <p><!--[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>

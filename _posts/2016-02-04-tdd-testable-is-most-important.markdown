@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "TDD: Testable is most important"
-  date: 2016-02-04 18:55:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Software Craftsmanship", "TDD"]
-  alias: ["/post/2016/02/04/TDD-Testable-is-most-important", "/post/2016/02/04/tdd-testable-is-most-important"]
-  ---
+---
+layout: post
+title: "TDD: Testable is most important"
+date: 2016-02-04 18:55:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Software Craftsmanship", "TDD"]
+alias: ["/post/2016/02/04/TDD-Testable-is-most-important", "/post/2016/02/04/tdd-testable-is-most-important"]
+---
 <!-- more -->
 <p>Test Driven Development (TDD) is great and it really helps you build better, higher quality systems. Unit Tests FTW! However, when TDD meets the real world, there is a clash and many times developers just don't write unit tests. This is bad, but it can be better if the right steps are taken. Writing code that is testable is the key; whether you write the unit tests now or later. Testability FTW!</p>
 <p>Testability is when you write code using the same best practices (short methods, use interfaces, clean code, etc.) that lend to being able to write unit tests to get good code coverage. While it can take quite a bit of practice to be able to design class / interface structures and method signatures that are more easily unit testable, it is a key to building more maintainable systems in the long run. Refactoring code to allow for testability is hard; it can be really hard. As long as your code is unit testable in the first place you can always write unit tests at any time in the future.</p>

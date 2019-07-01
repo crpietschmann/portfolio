@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Site Referral Keywords: Top 10, Strange and Surprising"
-  date: 2007-05-16 14:45:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2007/05/16/Site-Referral-Keywords-Top-10-Strange-and-Surprising", "/post/2007/05/16/site-referral-keywords-top-10-strange-and-surprising"]
-  ---
+---
+layout: post
+title: "Site Referral Keywords: Top 10, Strange and Surprising"
+date: 2007-05-16 14:45:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2007/05/16/Site-Referral-Keywords-Top-10-Strange-and-Surprising", "/post/2007/05/16/site-referral-keywords-top-10-strange-and-surprising"]
+---
 <!-- more -->
 <P>I've had Google Analytics set up on my site since the middle of January so I can get an idea on what content gets the most traffic. The goal has been satisfied; I know which pages get the most hits. Now, if there were a way to integrate it within my RSS feed... but that is another topic to discuss elsewhere.</P>
 <P>I was looking at some of my referral keywords from search engines, and I thought I'd share some of them. I was actually a little surprise that some of my posts ranked as high as they did with some of these keywords.</P>

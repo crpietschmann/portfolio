@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Virtual Earth 6 Bug: ShowSwitch parameter of LoadMap method no longer works"
-  date: 2007-10-19 19:14:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2007/10/19/Virtual-Earth-6-Bug-ShowSwitch-parameter-of-LoadMap-method-no-longer-works", "/post/2007/10/19/virtual-earth-6-bug-showswitch-parameter-of-loadmap-method-no-longer-works"]
-  ---
+---
+layout: post
+title: "Virtual Earth 6 Bug: ShowSwitch parameter of LoadMap method no longer works"
+date: 2007-10-19 19:14:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2007/10/19/Virtual-Earth-6-Bug-ShowSwitch-parameter-of-LoadMap-method-no-longer-works", "/post/2007/10/19/virtual-earth-6-bug-showswitch-parameter-of-loadmap-method-no-longer-works"]
+---
 <!-- more -->
 <p>
 <em>Update 12/29/2007: This is no longer a bug. It has been fixed since I originally posted this.</em> 
@@ -25,4 +25,4 @@ Below is a screenshot showing what is incorrectly happening and what should be h
 <p>
 &nbsp;
 </p>
-<img src="/image.axd?picture=VE6Bug_ShowSwitchOptionIsBroken.png" alt="" />
+<img src="/images/postsVE6Bug_ShowSwitchOptionIsBroken.png" alt="" />

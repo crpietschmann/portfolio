@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Introduction to LINQ"
-  date: 2008-01-24 02:00:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["vb.net"]
-  alias: ["/post/2008/01/24/Introduction-to-LINQ", "/post/2008/01/24/introduction-to-linq"]
-  ---
+---
+layout: post
+title: "Introduction to LINQ"
+date: 2008-01-24 02:00:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["vb.net"]
+alias: ["/post/2008/01/24/Introduction-to-LINQ", "/post/2008/01/24/introduction-to-linq"]
+---
 <!-- more -->
 <h3>What is LINQ?</h3>
 <p>LINQ (Language INtegrated Query) is more than just a new method of embedding SQL queries within code. It allows to to perform Strongly Typed&nbsp;queries on any kind of data, just as long as the collection of data implements the IEnumerable interface.</p>

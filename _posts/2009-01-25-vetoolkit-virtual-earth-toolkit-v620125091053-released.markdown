@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "VEToolkit - Virtual Earth Toolkit v6.2.012509.1053 Released!"
-  date: 2009-01-25 11:56:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2009/01/25/VEToolkit-Virtual-Earth-Toolkit-v620125091053-Released", "/post/2009/01/25/vetoolkit-virtual-earth-toolkit-v620125091053-released"]
-  ---
+---
+layout: post
+title: "VEToolkit - Virtual Earth Toolkit v6.2.012509.1053 Released!"
+date: 2009-01-25 11:56:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2009/01/25/VEToolkit-Virtual-Earth-Toolkit-v620125091053-Released", "/post/2009/01/25/vetoolkit-virtual-earth-toolkit-v620125091053-released"]
+---
 <!-- more -->
 <p>
 This is the first official release of the <a href="http://codeplex.com/VEToolkit">Virtual Earth Toolkit</a>. The toolkit is by no means complete, but this is a &quot;stable&quot; collection of the Controls, Extenders and Methods that have been implemented thus far.

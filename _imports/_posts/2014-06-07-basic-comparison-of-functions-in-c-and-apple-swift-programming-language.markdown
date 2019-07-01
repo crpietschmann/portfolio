@@ -1,15 +1,15 @@
-  ---
-  layout: post
-  title: "Basic Comparison of Functions in C# and Apple Swift Programming Language"
-  date: 2014-06-07 13:01:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["C#", "Swift"]
-  alias: ["/post/2014/06/07/Basic-Comparison-of-Functions-in-C-and-Apple-Swift-Programming-Language", "/post/2014/06/07/basic-comparison-of-functions-in-c-and-apple-swift-programming-language"]
-  ---
+---
+layout: post
+title: "Basic Comparison of Functions in C# and Apple Swift Programming Language"
+date: 2014-06-07 13:01:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["C#", "Swift"]
+alias: ["/post/2014/06/07/Basic-Comparison-of-Functions-in-C-and-Apple-Swift-Programming-Language", "/post/2014/06/07/basic-comparison-of-functions-in-c-and-apple-swift-programming-language"]
+---
 <!-- more -->
-<p>Previously I wrote a <a href="http://pietschsoft.com/post/2014/06/07/Basic-Comparison-of-C-and-Apple-Swift-Programming-Language-Syntax">basic comparison of the C# and Apple Swift programming language syntax</a>. In this article we'll dive a little deeper into a comparison in to how defining and calling Functions work in both. Functions are first class citizens in both C# and Apple Swift, so lets see how they compare against each other!</p>
+<p>Previously I wrote a <a href="/post/2014/06/07/Basic-Comparison-of-C-and-Apple-Swift-Programming-Language-Syntax">basic comparison of the C# and Apple Swift programming language syntax</a>. In this article we'll dive a little deeper into a comparison in to how defining and calling Functions work in both. Functions are first class citizens in both C# and Apple Swift, so lets see how they compare against each other!</p>
 <h3>Define Basic Parameterless Function</h3>
 <p>At the most basic level there really aren't many differences between the 2 languages as you can see below. Even the way you return a value from a Function uses the "return" keyword in both languages.</p>
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Parameterless Without Return Value
@@ -360,4 +360,4 @@ action(number)</pre>
 <p>It's worth mentioning that the current beta release of the Apple Swift programming language does not include support for Access Modifiers. Access Modifiers are what allow you to declare Functions, Properties and Members as being Private, Public, etc. Currently all things defined in Swift are accessible relative to their scoping; although different than C# it is exactly how things work in JavaScript. This may change in a future release of the language; perhaps that was a compiler feature that wasn't quite stable enough for this first release of the language. Or, perhaps they want the functional constructs and protocols (Swift's version of Interfaces) to be used to "hide" things as necessary instead of implementing these. This may perhaps remain a fundamental difference between the paradigms that govern the use of the two languages.</p>
 <h3>Conclusion</h3>
 <p>As we've seen thus far, the basic syntax of the languages are really similar, and both are Functional languages. However what is apparent from the syntax differences, when it comes to Functions, it's clear that Swift was meant to be functional from the start, where C# had Functional constructs added on top after its creation.</p>
-<p><strong>Previous Post in Series: <a href="http://pietschsoft.com/post/2014/06/07/Basic-Comparison-of-C-and-Apple-Swift-Programming-Language-Syntax">Basic Comparison of C# and Swift Language Syntax</a></strong></p>
+<p><strong>Previous Post in Series: <a href="/post/2014/06/07/Basic-Comparison-of-C-and-Apple-Swift-Programming-Language-Syntax">Basic Comparison of C# and Swift Language Syntax</a></strong></p>

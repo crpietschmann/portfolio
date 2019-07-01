@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Virtual Earth: Restrict Map to Specified Viewable Area"
-  date: 2008-05-03 20:36:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2008/05/03/Virtual-Earth-Restrict-Map-to-Specified-Viewable-Area", "/post/2008/05/03/virtual-earth-restrict-map-to-specified-viewable-area"]
-  ---
+---
+layout: post
+title: "Virtual Earth: Restrict Map to Specified Viewable Area"
+date: 2008-05-03 20:36:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2008/05/03/Virtual-Earth-Restrict-Map-to-Specified-Viewable-Area", "/post/2008/05/03/virtual-earth-restrict-map-to-specified-viewable-area"]
+---
 <!-- more -->
 <p>
 This example demonstrates the ability to restrict the viewable area (and impose map boundaries)&nbsp;of a Virtual Earth map to be within a specified distance from the maps original center point (at time of initial load), and restrict to a maximum zoom level. 
@@ -18,7 +18,7 @@ Why might you want to do this? There are times when you may want to restrict you
 <p>
 This article was written with Virtual Earth v6.1, and will also work with Virtual Earth v6.0.
 </p>
-<img style="float: right" src="/image.axd?picture=VE_RestrictMapSpecifiedViewableArea.png" alt="" width="230" height="314" /> 
+<img style="float: right" src="/images/postsVE_RestrictMapSpecifiedViewableArea.png" alt="" width="230" height="314" /> 
 <h5>Download the Code:</h5>
 <p>
 <a rel="enclosure" href="/file.axd?file=VE_RestrictMapSpecifiedViewableArea.zip">VE_RestrictMapSpecifiedViewableArea.zip (3.01 kb)</a> 

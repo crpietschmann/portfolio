@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Failure Is Greater Success Than Success."
-  date: 2013-09-08 06:49:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Inspiration"]
-  alias: ["/post/2013/09/08/Failure-Is-Greater-Success-Than-Success", "/post/2013/09/08/failure-is-greater-success-than-success"]
-  ---
+---
+layout: post
+title: "Failure Is Greater Success Than Success."
+date: 2013-09-08 06:49:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Inspiration"]
+alias: ["/post/2013/09/08/Failure-Is-Greater-Success-Than-Success", "/post/2013/09/08/failure-is-greater-success-than-success"]
+---
 <!-- more -->
 <p>Our society has a tendency to constantly focus on failure. Success is often short lived and generally only achieves "15 minutes of fame."</p>
 <p><em>"I've missed more than 9000 shots in my career. I've lost almost 300 games. 26 times, I've been trusted to take the game winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed." - Michael Jordan</em></p>

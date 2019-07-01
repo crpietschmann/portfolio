@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "ASP.NET 3.5: Create AJAX Extender Controls using the ExtenderControl base class"
-  date: 2008-05-30 23:22:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["asp.net"]
-  alias: ["/post/2008/05/30/ASPNET_35_Create_AJAX_Extender_Controls_using_the_ExtenderControl_base_class", "/post/2008/05/30/aspnet_35_create_ajax_extender_controls_using_the_extendercontrol_base_class"]
-  ---
+---
+layout: post
+title: "ASP.NET 3.5: Create AJAX Extender Controls using the ExtenderControl base class"
+date: 2008-05-30 23:22:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["asp.net"]
+alias: ["/post/2008/05/30/ASPNET_35_Create_AJAX_Extender_Controls_using_the_ExtenderControl_base_class", "/post/2008/05/30/aspnet_35_create_ajax_extender_controls_using_the_extendercontrol_base_class"]
+---
 <!-- more -->
 <p>
 As a followup to&nbsp;the &quot;Create AJAX Server Controls using the ScriptControl base class&quot; post I wrote a couple weeks ago, I&#39;ve decided to write on how to create ASP.NET AJAX Extender Controls using the ExtenderControl base class in ASP.NET 3.5. There is already an article titled &quot;<a href="http://msdn.microsoft.com/en-us/library/bb386403.aspx">Adding ASP.NET AJAX Client Behaviors to Web Server Controls</a>&quot; in MSDN, but it doesn&#39;t show all the code involved in creating Extender Controls, especially the JavaScript code. 

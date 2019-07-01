@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Virtual Earth: SSL Support"
-  date: 2007-12-21 21:48:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2007/12/21/Virtual-Earth-SSL-Support", "/post/2007/12/21/virtual-earth-ssl-support"]
-  ---
+---
+layout: post
+title: "Virtual Earth: SSL Support"
+date: 2007-12-21 21:48:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2007/12/21/Virtual-Earth-SSL-Support", "/post/2007/12/21/virtual-earth-ssl-support"]
+---
 <!-- more -->
 <p>
 I&#39;ve implemented Virtual Earth within many web applications, but one thing that I&#39;ve only had to do a couple times is run the site under SSL. If you have ever done this, then you know that the web browser doesn&#39;t like this and complains with the &quot;Do you want to display nonsecure items?&quot; prompt. This can be a pain for users, escpecially when they click &quot;No&quot; and then wonder why the map isn&#39;t there.

@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Show a MessageBox in Silverlight 2 Beta 1"
-  date: 2008-03-08 18:13:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Silverlight"]
-  alias: ["/post/2008/03/08/Show-a-MessageBox-in-Silverlight-2-Beta-1", "/post/2008/03/08/show-a-messagebox-in-silverlight-2-beta-1"]
-  ---
+---
+layout: post
+title: "Show a MessageBox in Silverlight 2 Beta 1"
+date: 2008-03-08 18:13:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Silverlight"]
+alias: ["/post/2008/03/08/Show-a-MessageBox-in-Silverlight-2-Beta-1", "/post/2008/03/08/show-a-messagebox-in-silverlight-2-beta-1"]
+---
 <!-- more -->
 <p>
 Since Silverlight is just a subset of WPF, there are alot of things missing. One missing thing I found is the System.Windows.MessageBox. I&#39;m a little puzzled as to why they would have left this out, but I imagine MessageBox&#39;s are handled very differently in different Operating Systems. It&#39;s probably a little work to get it working on both Mac and Windows, but I hope it gets into the final release. It&#39;s not a major feature, but one that is used quite often when developing desktop applications, so I can see it being used alot in Silverlight applications. 

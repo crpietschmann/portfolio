@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "There is no product unless you first ship it!"
-  date: 2013-10-12 08:24:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Inspiration"]
-  alias: ["/post/2013/10/12/There-is-no-product-unless-you-first-ship-it", "/post/2013/10/12/there-is-no-product-unless-you-first-ship-it"]
-  ---
+---
+layout: post
+title: "There is no product unless you first ship it!"
+date: 2013-10-12 08:24:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Inspiration"]
+alias: ["/post/2013/10/12/There-is-no-product-unless-you-first-ship-it", "/post/2013/10/12/there-is-no-product-unless-you-first-ship-it"]
+---
 <!-- more -->
 <p>Just as there is no business without something to sell; you do not have a product until you ship it.</p>
 <p>What to ship? How to ship? When to ship? Where to ship?</p>

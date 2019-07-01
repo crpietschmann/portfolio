@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Silverlight: Client-Side Database via LINQ and Isolated Storage"
-  date: 2008-10-10 18:08:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Silverlight"]
-  alias: ["/post/2008/10/10/Silverlight-Client-Side-Database-via-LINQ-and-Isolated-Storage", "/post/2008/10/10/silverlight-client-side-database-via-linq-and-isolated-storage"]
-  ---
+---
+layout: post
+title: "Silverlight: Client-Side Database via LINQ and Isolated Storage"
+date: 2008-10-10 18:08:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Silverlight"]
+alias: ["/post/2008/10/10/Silverlight-Client-Side-Database-via-LINQ-and-Isolated-Storage", "/post/2008/10/10/silverlight-client-side-database-via-linq-and-isolated-storage"]
+---
 <!-- more -->
 <p>
 When I did a search on &quot;Silverlight Database&quot; there weren&#39;t many results, and none of them actually mentioned a small database that you could embed into your Silverlight application. So, I thought I&#39;d share a solution that I&#39;ve used to store application data on the client using a combination of LINQ and Isolated Storage. This actually gives you a small &quot;SQL&quot;-like database since you can use LINQ to interact with it.

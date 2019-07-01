@@ -1,15 +1,15 @@
-  ---
-  layout: post
-  title: "Unit Testing with SqlException in .NET: Only with help from Reflection"
-  date: 2012-03-02 07:32:58 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["C#", "TDD"]
-  alias: ["/post/2012/03/02/Unit-Testing-with-SqlException-in-NET-Only-with-help-from-Reflection", "/post/2012/03/02/unit-testing-with-sqlexception-in-net-only-with-help-from-reflection"]
-  ---
+---
+layout: post
+title: "Unit Testing with SqlException in .NET: Only with help from Reflection"
+date: 2012-03-02 07:32:58 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["C#", "TDD"]
+alias: ["/post/2012/03/02/Unit-Testing-with-SqlException-in-NET-Only-with-help-from-Reflection", "/post/2012/03/02/unit-testing-with-sqlexception-in-net-only-with-help-from-reflection"]
+---
 <!-- more -->
-<p>If you are writing you code to be able to easily unit test each method, and you would like to unit test situations where a SqlException exception is thrown, then you’ll definitely run into the issue of the SqlException objects constructor being marked “internal.” Members marked “internal” can be a nightmare for unit testing, and they are found all over the place in the .NET Framework. Basically you can’t call “internal” methods, constructors, fields, etc from you own code because it doesn’t reside within the same assembly as the internal code. Or can you? Actually, Yes, you can, but only with a little help from reflection. While it is not recommended (because of permissions, performance, and such) to do this within your applications, it should be perfectly fine within your Unit Test code base.</p>  <p>While working on my <a href="http://dotnetext.codeplex.com/">dotNetExt</a> project, I wrote a simple helper that allowed me to easily instantiate a SqlException object with a specified error number. This allows me to write units tests that throw any SqlException I want, when I want.</p>  <p>Here’s a direct link to the source code for the SqlExceptionHelper.Generate method:</p>  <p><a title="http://dotnetext.codeplex.com/SourceControl/changeset/view/65504#1129234" href="http://dotnetext.codeplex.com/SourceControl/changeset/view/65504#1129234">http://dotnetext.codeplex.com/SourceControl/changeset/view/65504#1129234</a></p>  <p>Here’s the full code so you can see it here. Remember, the latest source of the <a href="http://dotnetext.codeplex.com">dotNetExt</a> project will always have the latest source used within the project, and the code pasted below may become stale over time.</p>  <pre class="csharpcode"><span class="rem">//Copyright (c) Chris Pietschmann 2012 (http://pietschsoft.com)</span>
+<p>If you are writing you code to be able to easily unit test each method, and you would like to unit test situations where a SqlException exception is thrown, then you’ll definitely run into the issue of the SqlException objects constructor being marked “internal.” Members marked “internal” can be a nightmare for unit testing, and they are found all over the place in the .NET Framework. Basically you can’t call “internal” methods, constructors, fields, etc from you own code because it doesn’t reside within the same assembly as the internal code. Or can you? Actually, Yes, you can, but only with a little help from reflection. While it is not recommended (because of permissions, performance, and such) to do this within your applications, it should be perfectly fine within your Unit Test code base.</p>  <p>While working on my <a href="http://dotnetext.codeplex.com/">dotNetExt</a> project, I wrote a simple helper that allowed me to easily instantiate a SqlException object with a specified error number. This allows me to write units tests that throw any SqlException I want, when I want.</p>  <p>Here’s a direct link to the source code for the SqlExceptionHelper.Generate method:</p>  <p><a title="http://dotnetext.codeplex.com/SourceControl/changeset/view/65504#1129234" href="http://dotnetext.codeplex.com/SourceControl/changeset/view/65504#1129234">http://dotnetext.codeplex.com/SourceControl/changeset/view/65504#1129234</a></p>  <p>Here’s the full code so you can see it here. Remember, the latest source of the <a href="http://dotnetext.codeplex.com">dotNetExt</a> project will always have the latest source used within the project, and the code pasted below may become stale over time.</p>  <pre class="csharpcode"><span class="rem">//Copyright (c) Chris Pietschmann 2012 ()</span>
 <span class="rem">//All rights reserved.</span>
 <span class="rem">//Licensed under the GNU Library General Public License (LGPL)</span>
 <span class="rem">//License can be found here: http://www.codeplex.com/dotNetExt/license</span>

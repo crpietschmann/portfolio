@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Top Posts of 2008 Plus Overall Traffic Stats"
-  date: 2009-01-06 16:16:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2009/01/06/Top-Posts-of-2008-Plus-Overall-Traffic-Stats", "/post/2009/01/06/top-posts-of-2008-plus-overall-traffic-stats"]
-  ---
+---
+layout: post
+title: "Top Posts of 2008 Plus Overall Traffic Stats"
+date: 2009-01-06 16:16:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2009/01/06/Top-Posts-of-2008-Plus-Overall-Traffic-Stats", "/post/2009/01/06/top-posts-of-2008-plus-overall-traffic-stats"]
+---
 <!-- more -->
 <p>
 Now that 2008 has come to a close, and I finally have a full two years of traffic history that I can use for comparison I&#39;ve decided to post a traffic summary as well as list the top posts of 2008.

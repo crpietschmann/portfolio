@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "I went Deeper in .NET yesterday again!"
-  date: 2006-04-23 23:58:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["WI-INETA"]
-  alias: ["/post/2006/04/23/I-went-Deeper-in-NET-yesterday-again!", "/post/2006/04/23/i-went-deeper-in-net-yesterday-again!"]
-  ---
+---
+layout: post
+title: "I went Deeper in .NET yesterday again!"
+date: 2006-04-23 23:58:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["WI-INETA"]
+alias: ["/post/2006/04/23/I-went-Deeper-in-NET-yesterday-again!", "/post/2006/04/23/i-went-deeper-in-net-yesterday-again!"]
+---
 <!-- more -->
 <p class="MsoNormal" style="margin: 0in 0in 0pt">I attended <a href="http://wi-ineta.org/didn">Deeper in .NET</a> yesterday, along with a few hundred others. It was an excellent day filled with .NET goodness. I&rsquo;m not sure what the actual attendance count was, but I guess it was higher than last year&rsquo;s event.</p>
 &nbsp;

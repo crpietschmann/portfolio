@@ -1,17 +1,17 @@
-  ---
-  layout: post
-  title: "Can you do 100? Pushups that is."
-  date: 2008-07-31 19:02:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/07/31/Can-you-do-100-Pushsups-that-is", "/post/2008/07/31/can-you-do-100-pushsups-that-is"]
-  ---
+---
+layout: post
+title: "Can you do 100? Pushups that is."
+date: 2008-07-31 19:02:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/07/31/Can-you-do-100-Pushsups-that-is", "/post/2008/07/31/can-you-do-100-pushsups-that-is"]
+---
 <!-- more -->
 <p>Today, I was introduced to <a href="http://hundredpushups.com/">hundredpushups.com</a>, via a <a href="http://twitter.com/shanselman/statuses/873898459">Tweet by Scott Hanselman</a>. In short, the One Hundred Pushups training program is a simple program that requires about 30 minutes a week of exercise doing pushups, with the goal of working up to being able to do 100 consecutive pushups at the end of the 6 weeks program. This is such a simple program, it's free, and there isn't much easier than doing pushups.</p>
 <p>&nbsp;</p>
-<p><a href="http://hundredpushups.com"><img src="/image.axd?picture=onehundredpushups_big.gif" border="0" alt="" /></a></p>
+<p><a href="http://hundredpushups.com"><img src="/images/postsonehundredpushups_big.gif" border="0" alt="" /></a></p>
 <h3>What is the hundred pushup program?</h3>
 <p>Here's a quote from the website:</p>
 <p><em>If you're serious about increasing your strength, follow this six week training program and you'll soon be on your way to completing 100 consecutive push ups!</em></p>

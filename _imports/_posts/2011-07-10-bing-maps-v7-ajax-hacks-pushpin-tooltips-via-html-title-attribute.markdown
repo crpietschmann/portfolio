@@ -1,15 +1,15 @@
-  ---
-  layout: post
-  title: "Bing Maps v7 Ajax Hacks: Pushpin Tooltips via Html Title Attribute"
-  date: 2011-07-10 15:02:24 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2011/07/10/Bing-Maps-v7-Ajax-Hacks-Pushpin-Tooltips-via-Html-Title-Attribute", "/post/2011/07/10/bing-maps-v7-ajax-hacks-pushpin-tooltips-via-html-title-attribute"]
-  ---
+---
+layout: post
+title: "Bing Maps v7 Ajax Hacks: Pushpin Tooltips via Html Title Attribute"
+date: 2011-07-10 15:02:24 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2011/07/10/Bing-Maps-v7-Ajax-Hacks-Pushpin-Tooltips-via-Html-Title-Attribute", "/post/2011/07/10/bing-maps-v7-ajax-hacks-pushpin-tooltips-via-html-title-attribute"]
+---
 <!-- more -->
-<p>The Bing Maps v7 Ajax control is still a bit lacking in functionality, and good for us it’s written in JavaScript so it’s easy to extent and hack. The following hack is an “unsupported” method of adding Tooltips to Pushpins by making use of the HTML Title attribute.</p>  <p><a href="http://pietschsoft.com/image.axd?picture=BingMaps7HackPushpinTooltip.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="BingMaps7HackPushpinTooltip" border="0" alt="BingMaps7HackPushpinTooltip" src="http://pietschsoft.com/image.axd?picture=BingMaps7HackPushpinTooltip_thumb.png" width="361" height="131" /></a></p>  <p>The Google Maps API already has a “setTitle” method on Markers to add a Tooltip to the pins plotted. Now, thanks to this hack, the same can be done using the Bing Maps v7 Ajax control.</p>  <p>Here’s a full sample page that adds a map with pushpin and sets up the pushpin to have a Tooltip:</p>  <pre class="csharpcode"><span class="kwrd">&lt;!</span><span class="html">DOCTYPE</span> <span class="attr">html</span><span class="kwrd">&gt;</span>
+<p>The Bing Maps v7 Ajax control is still a bit lacking in functionality, and good for us it’s written in JavaScript so it’s easy to extent and hack. The following hack is an “unsupported” method of adding Tooltips to Pushpins by making use of the HTML Title attribute.</p>  <p><a href="/images/postsBingMaps7HackPushpinTooltip.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="BingMaps7HackPushpinTooltip" border="0" alt="BingMaps7HackPushpinTooltip" src="/images/postsBingMaps7HackPushpinTooltip_thumb.png" width="361" height="131" /></a></p>  <p>The Google Maps API already has a “setTitle” method on Markers to add a Tooltip to the pins plotted. Now, thanks to this hack, the same can be done using the Bing Maps v7 Ajax control.</p>  <p>Here’s a full sample page that adds a map with pushpin and sets up the pushpin to have a Tooltip:</p>  <pre class="csharpcode"><span class="kwrd">&lt;!</span><span class="html">DOCTYPE</span> <span class="attr">html</span><span class="kwrd">&gt;</span>
 <span class="kwrd">&lt;</span><span class="html">html</span><span class="kwrd">&gt;</span>
    <span class="kwrd">&lt;</span><span class="html">head</span><span class="kwrd">&gt;</span>
       <span class="kwrd">&lt;</span><span class="html">title</span><span class="kwrd">&gt;&lt;/</span><span class="html">title</span><span class="kwrd">&gt;</span>

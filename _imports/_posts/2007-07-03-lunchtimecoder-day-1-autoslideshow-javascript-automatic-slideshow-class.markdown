@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "LunchTimeCoder Day 1: AutoSlideShow - JavaScript Automatic SlideShow Class"
-  date: 2007-07-03 15:00:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2007/07/03/LunchTimeCoder-Day-1-AutoSlideShow-JavaScript-Automatic-SlideShow-Class", "/post/2007/07/03/lunchtimecoder-day-1-autoslideshow-javascript-automatic-slideshow-class"]
-  ---
+---
+layout: post
+title: "LunchTimeCoder Day 1: AutoSlideShow - JavaScript Automatic SlideShow Class"
+date: 2007-07-03 15:00:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2007/07/03/LunchTimeCoder-Day-1-AutoSlideShow-JavaScript-Automatic-SlideShow-Class", "/post/2007/07/03/lunchtimecoder-day-1-autoslideshow-javascript-automatic-slideshow-class"]
+---
 <!-- more -->
 <P><STRONG>Day 1</STRONG></P>
 <P>Todays code is a JavaScript automatic slideshow component. This is a very simple class that you just tell what div to render within and what images to show, and it does the rest.</P>

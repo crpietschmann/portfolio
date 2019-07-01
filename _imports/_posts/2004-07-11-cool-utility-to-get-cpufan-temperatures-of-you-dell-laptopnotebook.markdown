@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Cool Utility to get CPU/Fan Temperatures of you DELL Laptop/Notebook"
-  date: 2004-07-11 16:58:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2004/07/11/Cool-Utility-to-get-CPUFan-Temperatures-of-you-DELL-LaptopNotebook", "/post/2004/07/11/cool-utility-to-get-cpufan-temperatures-of-you-dell-laptopnotebook"]
-  ---
+---
+layout: post
+title: "Cool Utility to get CPU/Fan Temperatures of you DELL Laptop/Notebook"
+date: 2004-07-11 16:58:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2004/07/11/Cool-Utility-to-get-CPUFan-Temperatures-of-you-DELL-LaptopNotebook", "/post/2004/07/11/cool-utility-to-get-cpufan-temperatures-of-you-dell-laptopnotebook"]
+---
 <!-- more -->
 <p>
 Dell Inspiron 8x00 fan control utility by Christian Diefer
@@ -23,4 +23,4 @@ He even has a command prompt version you can use. There is a full compatibility 
 <p>
 I have to say, Great Job Christian!
 </p>
-<img src="/image.axd?picture=I8kfanGUI.jpg" alt="" />
+<img src="/images/postsI8kfanGUI.jpg" alt="" />

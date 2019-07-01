@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Ubuntu 6.10 is the easiest version of Linux thus far!"
-  date: 2007-01-13 10:32:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2007/01/13/Ubuntu-610-is-the-easiest-version-of-Linux-thus-far!", "/post/2007/01/13/ubuntu-610-is-the-easiest-version-of-linux-thus-far!"]
-  ---
+---
+layout: post
+title: "Ubuntu 6.10 is the easiest version of Linux thus far!"
+date: 2007-01-13 10:32:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2007/01/13/Ubuntu-610-is-the-easiest-version-of-Linux-thus-far!", "/post/2007/01/13/ubuntu-610-is-the-easiest-version-of-linux-thus-far!"]
+---
 <!-- more -->
 <P>I've installed many distributions of linux (different versions of Red Hat and&nbsp;Mandrake)&nbsp;over the past seven years to play around with and the install process was always a little cumbersome. The user doing the install was always required to have some technical knowledge to get things installed and configured. I have to say though that Mandrake 10 was the easiest, that was until now.</P>
 <P>I installed Ubuntu 6.10 last night and it was a breeze. It actually took me longer to get Microsoft Virtual Server 2005 R2 installed and the Virtual Machine created than it took to install Ubuntu on the Virtual Machine. If you are looking for a Linux distro to install on a spare machine or even your primary pc then I would definately recommend Ubuntu.</P>

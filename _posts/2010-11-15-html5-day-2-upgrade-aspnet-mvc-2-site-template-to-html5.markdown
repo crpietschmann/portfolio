@@ -1,15 +1,15 @@
-  ---
-  layout: post
-  title: "HTML5 Day 2: Upgrade ASP.NET MVC 2 Site Template to HTML5"
-  date: 2010-11-15 03:02:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["ASP.NET MVC", "HTML"]
-  alias: ["/post/2010/11/15/HTML5-Day-2-Upgrade-ASPNET-MVC-2-Site-Template-to-HTML5", "/post/2010/11/15/html5-day-2-upgrade-aspnet-mvc-2-site-template-to-html5"]
-  ---
+---
+layout: post
+title: "HTML5 Day 2: Upgrade ASP.NET MVC 2 Site Template to HTML5"
+date: 2010-11-15 03:02:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["ASP.NET MVC", "HTML"]
+alias: ["/post/2010/11/15/HTML5-Day-2-Upgrade-ASPNET-MVC-2-Site-Template-to-HTML5", "/post/2010/11/15/html5-day-2-upgrade-aspnet-mvc-2-site-template-to-html5"]
+---
 <!-- more -->
-<p>Since HTML5 can be used in older browsers with some helper scripts, <a title="HTML5 Day 1: New tags work in older browser? Awesome!" href="http://pietschsoft.com/post/2010/11/14/HTML5-Day-1-New-tags-work-in-older-browsers-Awesome.aspx">as covered in Day 1</a>, I thought I&rsquo;d use what I&rsquo;ve learned to convert the default ASP.NET MVC 2 site template to HTML5.</p>
+<p>Since HTML5 can be used in older browsers with some helper scripts, <a title="HTML5 Day 1: New tags work in older browser? Awesome!" href="/post/2010/11/14/HTML5-Day-1-New-tags-work-in-older-browsers-Awesome.aspx">as covered in Day 1</a>, I thought I&rsquo;d use what I&rsquo;ve learned to convert the default ASP.NET MVC 2 site template to HTML5.</p>
 <h3>Convert Default ASP.NET MVC Site Template to HTML5</h3>
 <p>First, add the helper scripts, mentioned in Day 1, to the Site.Master and convert all magical DIVs over to &ldquo;header&rdquo;, &ldquo;section&rdquo;, &ldquo;nav&rdquo; and &ldquo;footer&rdquo; tags.</p>
 <p>Don&rsquo;t worry about copy/paste, a download link for the full source code is at the bottom of the post.</p>
@@ -183,5 +183,5 @@ body nav /* #menucontainer */
 <p>I started building my own extension methods for ASP.NET MVC to add support for the new HTML5 tags in an effort to familiarize myself with them. It usually doesn&rsquo;t make too much sense to duplicate effort, so I may submit some patches to the MVC HTML5 Toolkit in the future. That is of course if my &ldquo;HTML5 + ASP.NET MVC&rdquo; endeavors bring me to the point where I need/want more that the project has to offer.</p>
 <p>However, I&rsquo;ll probably spend more play time looking at (and working with/on) jQuery plugins that will help add the functional aspects of HTML5 tags to older browsers. <em>(It feels somewhat odd calling the current generation of browsers &ldquo;older browsers,&rdquo; but after all they don&rsquo;t fully support HTML5.)</em></p>
 <div id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:ff548906-7d70-4179-8b99-397af3ebb620" class="wlWriterEditableSmartContent" style="margin: 0px; display: inline; float: none; padding: 0px;">
-<div>Source Code:<a href="http://pietschsoft.com/file.axd?file=MvcHTML5.zip" target="_self">MvcHTML5.zip</a></div>
+<div>Source Code:<a href="/file.axd?file=MvcHTML5.zip" target="_self">MvcHTML5.zip</a></div>
 </div>

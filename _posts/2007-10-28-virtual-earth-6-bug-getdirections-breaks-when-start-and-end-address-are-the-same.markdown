@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Virtual Earth 6 Bug: GetDirections breaks when Start and End Address are the same"
-  date: 2007-10-28 00:28:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2007/10/28/Virtual-Earth-6-Bug-GetDirections-breaks-when-Start-and-End-Address-are-the-same", "/post/2007/10/28/virtual-earth-6-bug-getdirections-breaks-when-start-and-end-address-are-the-same"]
-  ---
+---
+layout: post
+title: "Virtual Earth 6 Bug: GetDirections breaks when Start and End Address are the same"
+date: 2007-10-28 00:28:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2007/10/28/Virtual-Earth-6-Bug-GetDirections-breaks-when-Start-and-End-Address-are-the-same", "/post/2007/10/28/virtual-earth-6-bug-getdirections-breaks-when-start-and-end-address-are-the-same"]
+---
 <!-- more -->
 <p>
 When using the new GetDirections method to get multi-point driving directions everything works fine if the Start and End address are different. But it shows unexpected results on the map when plotting a multi-point route that has&nbsp;an End address the same as its Start.
@@ -40,7 +40,7 @@ Here&#39;s a screenshot of the results displayed on the map:
 </p>
 <p>
 &nbsp;
-<img src="/image.axd?picture=VE6Bug_MultiPointDirections.png" alt="" />
+<img src="/images/postsVE6Bug_MultiPointDirections.png" alt="" />
 </p>
 <p>
 This is the third bug in Virtual Earth 6 that I&#39;ve found since it was released almost 2 weeks ago.

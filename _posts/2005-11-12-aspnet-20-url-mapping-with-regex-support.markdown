@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "ASP.NET 2.0: URL Mapping with RegEx Support"
-  date: 2005-11-12 13:36:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2005/11/12/ASPNET-20-URL-Mapping-with-RegEx-Support", "/post/2005/11/12/aspnet-20-url-mapping-with-regex-support"]
-  ---
+---
+layout: post
+title: "ASP.NET 2.0: URL Mapping with RegEx Support"
+date: 2005-11-12 13:36:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2005/11/12/ASPNET-20-URL-Mapping-with-RegEx-Support", "/post/2005/11/12/aspnet-20-url-mapping-with-regex-support"]
+---
 <!-- more -->
 <p>
 <span style="font-size: 8.5pt; font-family: Verdana">The one big limitation of the URL Mapping functionality built in to <a href="http://asp.net/" target="_blank" title="ASP.NET"><font color="#336699">ASP.NET</font></a> 2.0 is that it doesn&#39;t support regular expressions. I ported my v1.1 URL Mapping implementation over to v2.0 and added support for regular expressions. It really wasn&#39;t too difficult; I only had to modify two lines of code to port it over to ASP.NET 2.0. Then I had to modify 4 lines of code to add RegEx support. My implementation works just like the ASP.NET 2.0 URL Mapping functionality with the addition of RegEx.</span>
@@ -426,7 +426,7 @@
 <span style="font-size: 10pt; color: blue; font-family: Verdana">&nbsp;</span>
 </p>
 <p>
-<span style="color: black; font-family: Arial">ASP.NET 1.1 Url Mapping code can be found here: <a href="/Blog/archive/2005/07/04/717.aspx"><font color="#336699">http://pietschsoft.com/Blog/archive/2005/07/04/717.aspx</font></a></span><span style="font-size: 10pt; color: blue; font-family: Verdana"></span>
+<span style="color: black; font-family: Arial">ASP.NET 1.1 Url Mapping code can be found here: <a href="/Blog/archive/2005/07/04/717.aspx"><font color="#336699">/Blog/archive/2005/07/04/717.aspx</font></a></span><span style="font-size: 10pt; color: blue; font-family: Verdana"></span>
 </p>
 <p style="margin: 0in 0in 0pt" class="MsoNormal">
 <strong>Update 11/14/2005</strong> <strong>-</strong> Scoth Guthrie has posted about why they didn&#39;t add Regular Expression support to the ASP.NET 2.0 URL Mapping on his blog. He has also posted a link to this blog entry in that blog post. It&#39;s pretty cool that my blog has gotten noticed by him.

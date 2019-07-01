@@ -1,15 +1,15 @@
-  ---
-  layout: post
-  title: "Bing Maps Silverlight CTP: Using MouseClick Event To Add "Pushpins""
-  date: 2009-03-25 22:38:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps", "Silverlight"]
-  alias: ["/post/2009/03/25/Virtual-Earth-Silverlight-Using-MouseClick-Event-To-Add-Pushpins", "/post/2009/03/25/virtual-earth-silverlight-using-mouseclick-event-to-add-pushpins"]
-  ---
+---
+layout: post
+title: "Bing Maps Silverlight CTP: Using MouseClick Event To Add "Pushpins""
+date: 2009-03-25 22:38:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps", "Silverlight"]
+alias: ["/post/2009/03/25/Virtual-Earth-Silverlight-Using-MouseClick-Event-To-Add-Pushpins", "/post/2009/03/25/virtual-earth-silverlight-using-mouseclick-event-to-add-pushpins"]
+---
 <!-- more -->
-<p>In previous tutorials I covered the “<a href="http://pietschsoft.com/post.aspx?id=6a098f41-2df4-4362-a577-606863de838c">Basics of Adding Polygons and Polylines</a>” and “<a href="http://pietschsoft.com/post.aspx?id=2c25c9bc-e290-41e4-9a03-daa75a912c63">Adding Media (Images, Video, etc.)</a>”, but what about handling user input via Map Events? Well, in this tutorial I’ll cover the basics of working with the Map.MouseClick Event (equivalent of the old “onclick” event in the Virtual Earth JavaScript Control).</p>  <p>This was written for the Bing Maps Silverlight CTP Release.</p>  <h3>Adding a MouseClick Event Handler</h3>  <p>In order to wire things up to manipulate the Map using the MouseClick event, we must first attach an Event Handler to it. The Event Handler for the MouseClick event needs to be just like any other event handler in .NET; it must accept two parameters: 1) a “sender” object, and 2) an “EventArgs” object.</p>  <p>Before we create our event handler, it’s worth noting that to be more specific, the value that gets passed to the “EventArgs” parameter of the Map.MouseClick event is actually of Type MapMouseEventArgs.</p>  <p>The MapMouseEventArgs object has the following two properties:</p>  <ol>   <li><strong>Handled</strong> – Gets or Sets a value indicating whether the Map event was handled. If you want to prevent the “default” event handling behavior from executing, then all you need to do is set this to True. </li>    <li><strong>ViewportPoint</strong> – Gets the viewport point where the mouse event occurred. This is a System.Windows.Point object that represents the X and Y coordinates where the mouse was clicked. </li> </ol>  <p>To declare the MouseClick event handler a method that matched the following signature: void(object sender, MapMouseEventArgs e)</p>  <p>Here’s an example Map.MouseClick event handler method:</p>  <pre class="csharpcode"><span class="kwrd">private</span> <span class="kwrd">void</span> myMap_MouseClick(<span class="kwrd">object</span> sender, MapMouseEventArgs e)
+<p>In previous tutorials I covered the “<a href="/post.aspx?id=6a098f41-2df4-4362-a577-606863de838c">Basics of Adding Polygons and Polylines</a>” and “<a href="/post.aspx?id=2c25c9bc-e290-41e4-9a03-daa75a912c63">Adding Media (Images, Video, etc.)</a>”, but what about handling user input via Map Events? Well, in this tutorial I’ll cover the basics of working with the Map.MouseClick Event (equivalent of the old “onclick” event in the Virtual Earth JavaScript Control).</p>  <p>This was written for the Bing Maps Silverlight CTP Release.</p>  <h3>Adding a MouseClick Event Handler</h3>  <p>In order to wire things up to manipulate the Map using the MouseClick event, we must first attach an Event Handler to it. The Event Handler for the MouseClick event needs to be just like any other event handler in .NET; it must accept two parameters: 1) a “sender” object, and 2) an “EventArgs” object.</p>  <p>Before we create our event handler, it’s worth noting that to be more specific, the value that gets passed to the “EventArgs” parameter of the Map.MouseClick event is actually of Type MapMouseEventArgs.</p>  <p>The MapMouseEventArgs object has the following two properties:</p>  <ol>   <li><strong>Handled</strong> – Gets or Sets a value indicating whether the Map event was handled. If you want to prevent the “default” event handling behavior from executing, then all you need to do is set this to True. </li>    <li><strong>ViewportPoint</strong> – Gets the viewport point where the mouse event occurred. This is a System.Windows.Point object that represents the X and Y coordinates where the mouse was clicked. </li> </ol>  <p>To declare the MouseClick event handler a method that matched the following signature: void(object sender, MapMouseEventArgs e)</p>  <p>Here’s an example Map.MouseClick event handler method:</p>  <pre class="csharpcode"><span class="kwrd">private</span> <span class="kwrd">void</span> myMap_MouseClick(<span class="kwrd">object</span> sender, MapMouseEventArgs e)
 {
 }</pre>
 
@@ -49,9 +49,9 @@ var lng = location.Longitude;</pre>
 <p>If you have any questions on how to add a Shape or “Pushpin” to the Map, I recommend reading the following two tutorials:</p>
 
 <ul>
-  <li><a href="http://pietschsoft.com/post.aspx?id=6a098f41-2df4-4362-a577-606863de838c">Basics of Adding Polygons and Polylines using XAML and Code</a> </li>
+  <li><a href="/post.aspx?id=6a098f41-2df4-4362-a577-606863de838c">Basics of Adding Polygons and Polylines using XAML and Code</a> </li>
 
-  <li><a href="http://pietschsoft.com/post.aspx?id=2c25c9bc-e290-41e4-9a03-daa75a912c63">Adding Media (Images, Video, etc.) to the Map</a> </li>
+  <li><a href="/post.aspx?id=2c25c9bc-e290-41e4-9a03-daa75a912c63">Adding Media (Images, Video, etc.) to the Map</a> </li>
 </ul>
 
 <p>In this example to keep things simple, we’ll add a Square (via the System.Windows.Shapes.Rectangle object) to the Map at the clicked location that is 10x10 in size.</p>
@@ -179,4 +179,4 @@ var lng = location.Longitude;</pre>
 
 <p>There are a few other events that the Map object exposes, and I’ll be covering some of those in additional tutorials. So, keep an eye out for future posts.</p>
 
-<h4>Previous Tutorial/Article: <a href="http://pietschsoft.com/post.aspx?id=88a585cd-f90a-40e1-963d-ca1932ce2535">Overlay OpenStreetMap, OpenAerialMap and Yahoo Map Imagery using Custom Tile Layers</a></h4>
+<h4>Previous Tutorial/Article: <a href="/post.aspx?id=88a585cd-f90a-40e1-963d-ca1932ce2535">Overlay OpenStreetMap, OpenAerialMap and Yahoo Map Imagery using Custom Tile Layers</a></h4>

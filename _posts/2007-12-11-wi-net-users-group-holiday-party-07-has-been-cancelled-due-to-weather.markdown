@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "WI .NET Users Group Holiday Party '07 has been Cancelled due to Weather..."
-  date: 2007-12-11 18:04:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["WI-INETA"]
-  alias: ["/post/2007/12/11/WI-NET-Users-Group-Holiday-Party-07-has-been-Cancelled-due-to-Weather", "/post/2007/12/11/wi-net-users-group-holiday-party-07-has-been-cancelled-due-to-weather"]
-  ---
+---
+layout: post
+title: "WI .NET Users Group Holiday Party '07 has been Cancelled due to Weather..."
+date: 2007-12-11 18:04:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["WI-INETA"]
+alias: ["/post/2007/12/11/WI-NET-Users-Group-Holiday-Party-07-has-been-Cancelled-due-to-Weather", "/post/2007/12/11/wi-net-users-group-holiday-party-07-has-been-cancelled-due-to-weather"]
+---
 <!-- more -->
 <p>The WI .NET Users Group Holiday Party '07 has been Cancelled due to weather and will be rescheduled. The new date for the party will be announced as soom as possible.</p>
 <p>Here's the announcement that went out to all registered attendees via email:</p>

@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "LunchTimeCoder.ServiceMonitor v1.1 Released"
-  date: 2007-08-03 01:16:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2007/08/03/LunchTimeCoderServiceMonitor-v11-Released", "/post/2007/08/03/lunchtimecoderservicemonitor-v11-released"]
-  ---
+---
+layout: post
+title: "LunchTimeCoder.ServiceMonitor v1.1 Released"
+date: 2007-08-03 01:16:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2007/08/03/LunchTimeCoderServiceMonitor-v11-Released", "/post/2007/08/03/lunchtimecoderservicemonitor-v11-released"]
+---
 <!-- more -->
 <P>I just posted up the latest release (v1.1) of my windows service monitor app.</P>
 <P><A href="/download/lunchtimecoder/dotNet/WindowsServiceMonitor/">Download LunchTimeCoder.ServiceMonitor&nbsp;v1.1</A></P>

@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Perfect Dark Zero to be released on XBox 360!"
-  date: 2005-06-18 17:37:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2005/06/18/Perfect-Dark-Zero-to-be-released-on-XBox-360!", "/post/2005/06/18/perfect-dark-zero-to-be-released-on-xbox-360!"]
-  ---
+---
+layout: post
+title: "Perfect Dark Zero to be released on XBox 360!"
+date: 2005-06-18 17:37:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2005/06/18/Perfect-Dark-Zero-to-be-released-on-XBox-360!", "/post/2005/06/18/perfect-dark-zero-to-be-released-on-xbox-360!"]
+---
 <!-- more -->
 <table border="0" cellspacing="0" cellpadding="0">
 	<tbody>

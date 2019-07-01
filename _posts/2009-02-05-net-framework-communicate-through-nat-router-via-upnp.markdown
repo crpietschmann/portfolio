@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: ".NET Framework: Communicate through NAT Router via UPnP (Universal Plug and Play)"
-  date: 2009-02-05 19:27:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Win32API"]
-  alias: ["/post/2009/02/05/NET-Framework-Communicate-through-NAT-Router-via-UPnP", "/post/2009/02/05/net-framework-communicate-through-nat-router-via-upnp"]
-  ---
+---
+layout: post
+title: ".NET Framework: Communicate through NAT Router via UPnP (Universal Plug and Play)"
+date: 2009-02-05 19:27:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Win32API"]
+alias: ["/post/2009/02/05/NET-Framework-Communicate-through-NAT-Router-via-UPnP", "/post/2009/02/05/net-framework-communicate-through-nat-router-via-upnp"]
+---
 <!-- more -->
 <p>I've been working on an application recently that needs to be able to communicate through a router/firewall using TCP. I've read/heard a bit of information about NAT Routers and UPnP; the technoligies used in almost every router sold commercially. So, I knew that you could use the Universal Plug and Play (UPnP) features of the NAT Router to automatically open up the firewall via Port Forwarding to allow other computers on the Internet to connect directly to the one your application is running on. One thing I didn't know what that Windows (since Windows XP) has the NATUPnP 1.0 Type Library (NATUPNP.DLL) COM Component that you can utilize within your applications to do this for you.</p>
 <p>I haven't found very many articles online (via Google search) on using the NATUPnP 1.0 Type Library; there's pretty much only small code snippets available. So, I've decided to explain a little further, in this article, the What and Why of communicating through a NAT Router utilizing UPnP.</p>
@@ -34,7 +34,7 @@
 <p>The NATUPnP 1.0 Type Library (NATUPNP.DLL) COM Component, which is part of Windows (since Windows XP), makes it possible to easily manage Network Address Translation (NAT) through Universal Plug and Play (UPnP). This library provides the ability to configure port mappings on a remote Gateway Device (IGD) that uses NAT. It is worth mentioning that the remote Gateway Device could be another computer running Windows with Internet Connection Sharing and Windows Firewall, or a dedicated hardware device.</p>
 <p>The API Reference for the NATUPnP 1.0 Type Library can be found here: <a href="http://msdn.microsoft.com/en-us/library/aa366276(VS.85).aspx">http://msdn.microsoft.com/en-us/library/aa366276(VS.85).aspx</a></p>
 <p>In order to use the NATUPnP Library you need to first add a reference to it to your project within Visual Studio. To do so open the Add Reference dialog, click the COM tab and select the "NATUPnP 1.0 Type Library". The resulting reference that's added will be named "NATUPNPLib" and will be the namespace that contains all the functionality contained within the library (all Interfaces and Classes).</p>
-<p><img src="/image.axd?picture=NATUPNPCOMLibrary_001.png" alt="" /><br /> <br /> The NATUPnP 1.0 Type Library makes it so easy to setup Port Forwarding it literally only requires a couple lines of code.</p>
+<p><img src="/images/postsNATUPNPCOMLibrary_001.png" alt="" /><br /> <br /> The NATUPnP 1.0 Type Library makes it so easy to setup Port Forwarding it literally only requires a couple lines of code.</p>
 <h3>Get a listing of all existing Static Port Mappings</h3>
 <p>To get a list of all the Static Port Mappings that are already setup in your NAT enabled Internet Gateway Device (such as Router) you simply create an instance of the UPnPNATClass object and access its StaticPortMappingCollection property.</p>
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">NATUPNPLib.UPnPNATClass upnpnat = new NATUPNPLib.UPnPNATClass();
@@ -61,6 +61,6 @@ mappings.Remove(8080, "UDP");</pre>
 <h3>Example Port Forwarding Management Application</h3>
 <p>While working with the NATUPnP 1.0 Type Library I created a simple application that allows you to maintain the Static Port Mappings that are setup on your Private Networks NAT Router.</p>
 <p>Download Sample: <a href="/file.axd?file=NATUPnPPortForwardManager.zip" rel="enclosure">NATUPnPPortForwardManager.zip (20.68 kb)</a></p>
-<p><img src="/image.axd?picture=NATUPNPCOMLibrary_002.png" alt="" /></p>
+<p><img src="/images/postsNATUPNPCOMLibrary_002.png" alt="" /></p>
 <h3>Conclusion</h3>
 <p>Setup up Port Forwarding on your local router via UPnP makes it extremely convenient for users of your networking application. Instead of requiring them to manually setup Port Forwarding, we can automatically set it up for them. Many popular P2P applications have utilized this functionality for years, and I'm positive you've used at least one of these applications already at some point.</p>

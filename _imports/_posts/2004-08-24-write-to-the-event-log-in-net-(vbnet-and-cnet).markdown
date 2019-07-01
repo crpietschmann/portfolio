@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Write to the Event Log in .NET (VB.NET and C#.NET)"
-  date: 2004-08-24 18:03:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["C#", "General", "vb.net"]
-  alias: ["/post/2004/08/24/Write-to-the-Event-Log-in-NET-(VBNET-and-CNET)", "/post/2004/08/24/write-to-the-event-log-in-net-(vbnet-and-cnet)"]
-  ---
+---
+layout: post
+title: "Write to the Event Log in .NET (VB.NET and C#.NET)"
+date: 2004-08-24 18:03:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["C#", "General", "vb.net"]
+alias: ["/post/2004/08/24/Write-to-the-Event-Log-in-NET-(VBNET-and-CNET)", "/post/2004/08/24/write-to-the-event-log-in-net-(vbnet-and-cnet)"]
+---
 <!-- more -->
 <p>
 It is as simple as this to write to the Windows Event Log in .NET

@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "PietschSoft.VE3 v0.03 plus Demo site!"
-  date: 2006-07-26 01:04:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2006/07/26/PietschSoftVE3-v003-plus-Demo-site!", "/post/2006/07/26/pietschsoftve3-v003-plus-demo-site!"]
-  ---
+---
+layout: post
+title: "PietschSoft.VE3 v0.03 plus Demo site!"
+date: 2006-07-26 01:04:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2006/07/26/PietschSoftVE3-v003-plus-Demo-site!", "/post/2006/07/26/pietschsoftve3-v003-plus-demo-site!"]
+---
 <!-- more -->
 <p>
 The PietschSoft.VE3 library is really taking shape and has been downloaded 100+ times already. I&#39;ve even had someone contact me about using my code as the basis for a mapping control they need to create for a project they are working on.

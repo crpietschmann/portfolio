@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "5 Common C# tasks in Apple Swift Programming Language"
-  date: 2014-11-21 18:19:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["C#", "Swift"]
-  alias: ["/post/2014/11/21/5-Common-CSharp-tasks-in-Apple-Swift-Programming-Language", "/post/2014/11/21/5-common-csharp-tasks-in-apple-swift-programming-language"]
-  ---
+---
+layout: post
+title: "5 Common C# tasks in Apple Swift Programming Language"
+date: 2014-11-21 18:19:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["C#", "Swift"]
+alias: ["/post/2014/11/21/5-Common-CSharp-tasks-in-Apple-Swift-Programming-Language", "/post/2014/11/21/5-common-csharp-tasks-in-apple-swift-programming-language"]
+---
 <!-- more -->
 <p>There are many simple tasks performed by C# developers over and over. These are common things necessary in all kinds of applications. This post will give an overview of a few of the most common tasks performed by C# developers with examples on how to perform those tasks using the Swift programming language from Apple.</p>
 <h3>Type Casting</h3>

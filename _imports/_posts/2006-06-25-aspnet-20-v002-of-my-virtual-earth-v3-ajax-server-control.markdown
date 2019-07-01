@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "ASP.NET 2.0: v0.02 of my Virtual Earth v3 Ajax Server Control"
-  date: 2006-06-25 23:52:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2006/06/25/ASPNET-20-v002-of-my-Virtual-Earth-v3-Ajax-Server-Control", "/post/2006/06/25/aspnet-20-v002-of-my-virtual-earth-v3-ajax-server-control"]
-  ---
+---
+layout: post
+title: "ASP.NET 2.0: v0.02 of my Virtual Earth v3 Ajax Server Control"
+date: 2006-06-25 23:52:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2006/06/25/ASPNET-20-v002-of-my-Virtual-Earth-v3-Ajax-Server-Control", "/post/2006/06/25/aspnet-20-v002-of-my-virtual-earth-v3-ajax-server-control"]
+---
 <!-- more -->
 <p>
 <strong>Update (11/7/2007):</strong> This control is now located here: <a href="http://codeplex.com/pietschsoftve3">http://codeplex.com/pietschsoftve3</a>

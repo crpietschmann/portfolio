@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Creating Namespaces in JavaScript is actually rather simple..."
-  date: 2007-07-10 19:31:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["JavaScript"]
-  alias: ["/post/2007/07/10/Creating-Namespaces-in-JavaScript-is-actually-rather-simple", "/post/2007/07/10/creating-namespaces-in-javascript-is-actually-rather-simple"]
-  ---
+---
+layout: post
+title: "Creating Namespaces in JavaScript is actually rather simple..."
+date: 2007-07-10 19:31:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["JavaScript"]
+alias: ["/post/2007/07/10/Creating-Namespaces-in-JavaScript-is-actually-rather-simple", "/post/2007/07/10/creating-namespaces-in-javascript-is-actually-rather-simple"]
+---
 <!-- more -->
 <p>
 Creating Namespaces in JavaScript is rather simple due to the fact that JavaScript is a&nbsp;very flexible language. As far as I know all the popular Ajax frameworks do this (including the&nbsp;ASP.NET AJAX Extensions). Being a .NET programmer (I&#39;m assuming Java programmers would feel the same way), having classes devided up into&nbsp;namespaces makes code alot easier to manage.

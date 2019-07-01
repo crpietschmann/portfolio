@@ -1,15 +1,15 @@
-  ---
-  layout: post
-  title: "jHtmlArea 0.6.0 Update with Improved Functionality"
-  date: 2009-07-24 16:44:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["JavaScript"]
-  alias: ["/post/2009/07/24/jHtmlArea_060_Update_with_Improved_Functionality", "/post/2009/07/24/jhtmlarea_060_update_with_improved_functionality"]
-  ---
+---
+layout: post
+title: "jHtmlArea 0.6.0 Update with Improved Functionality"
+date: 2009-07-24 16:44:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["JavaScript"]
+alias: ["/post/2009/07/24/jHtmlArea_060_Update_with_Improved_Functionality", "/post/2009/07/24/jhtmlarea_060_update_with_improved_functionality"]
+---
 <!-- more -->
-<p><img src="/image.axd?picture=2009%2f7%2fjHtmlArea_0.6.0_Screenshot.png" alt="" align="right" /></p>
+<p><img src="/images/posts2009/7/jHtmlArea_0.6.0_Screenshot.png" alt="" align="right" /></p>
 <p>I just posted a pretty good update the the jHtmlArea project that includes quite a few more toolbar buttons and a new Color Picker Menu extension/plugin (jHtmlAreaColorPickerMenu) that adds a nice, simple color picker when using the "forecolor" toolbar button.</p>
 <p><span id="ctl00_ctl00_MasterContent_Content_wikiSourceLabel">jHtmlArea is a simple, light weight, extensible WYSIWYG HTML Editor built on top of jQuery. This component allows you to easily display a WYSIWYG HTML Editor in place of any TextArea DOM Elements on the page. The minified script alone is 8.7kb, and with css and image files it's a total of 22k.</span></p>
 <p>Download: <a href="http://jhtmlarea.codeplex.com">jHtmlArea Project Home</a></p>

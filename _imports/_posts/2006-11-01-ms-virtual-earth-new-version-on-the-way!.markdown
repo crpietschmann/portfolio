@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "MS Virtual Earth: New version on the way!"
-  date: 2006-11-01 09:42:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2006/11/01/MS-Virtual-Earth-New-version-on-the-way!", "/post/2006/11/01/ms-virtual-earth-new-version-on-the-way!"]
-  ---
+---
+layout: post
+title: "MS Virtual Earth: New version on the way!"
+date: 2006-11-01 09:42:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2006/11/01/MS-Virtual-Earth-New-version-on-the-way!", "/post/2006/11/01/ms-virtual-earth-new-version-on-the-way!"]
+---
 <!-- more -->
 <p>
 Microsoft announced yesterday that they will be releasing a new version of the Virtual Earth Map Control next week on Nov. 7. They are stating that existing sites using versions 2 and 3 will not be impacted and will continue to work. They also mention an upcoming marketing campaign surrounding this next release.

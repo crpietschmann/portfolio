@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "I found a bug in SQL Server 2000..."
-  date: 2005-02-01 14:53:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2005/02/01/I-found-a-bug-in-SQL-Server-2000", "/post/2005/02/01/i-found-a-bug-in-sql-server-2000"]
-  ---
+---
+layout: post
+title: "I found a bug in SQL Server 2000..."
+date: 2005-02-01 14:53:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2005/02/01/I-found-a-bug-in-SQL-Server-2000", "/post/2005/02/01/i-found-a-bug-in-sql-server-2000"]
+---
 <!-- more -->
 <p>
 Well, I didn&#39;t find a new bug, but it is the first time I discovered a bug in SQL Server by just doing my everyday job.

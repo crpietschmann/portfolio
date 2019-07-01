@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "OS-tans - these are like Anime mascots for the OS's"
-  date: 2005-01-27 09:56:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2005/01/27/OS-tans-these-are-like-Anime-mascots-for-the-OSs", "/post/2005/01/27/os-tans-these-are-like-anime-mascots-for-the-oss"]
-  ---
+---
+layout: post
+title: "OS-tans - these are like Anime mascots for the OS's"
+date: 2005-01-27 09:56:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2005/01/27/OS-tans-these-are-like-Anime-mascots-for-the-OSs", "/post/2005/01/27/os-tans-these-are-like-anime-mascots-for-the-oss"]
+---
 <!-- more -->
 <P>A small Internet phenomenon on Futaba Channel, the <B>OS-tan</B> (OS for Operating System, and the Japanese "-tan" (??) which is an overly cute mispronounciation of, specifically a child's slurring of "-chan" (???), a diminutive honorific for a person) or simply <B>OS Girls</B> are the personification of several OSes, most famously Windows, by various amateur Japanese artists. A pure fan creation, the appearance of each character is generally consistent across artists. OSes are almost always portrayed as women, the Windows girls usually as sisters, despite sometimes seeming the same age.</P>
 <P><STRONG><A title="Windows " href="http://msdn.microsoft.com/longhorn/" target=_blank Longhorn??>Longhorn</A></STRONG><BR><IMG alt="Longhorn OS-tan" src="http://upload.wikimedia.org/wikipedia/en/f/f5/Longhorn-jpb.jpg" align=left>This character doesn't have many pictures and not much is known about her as she is based on Microsoft Operating System Windows Longhorn, which is still in development. One picture shows her as a girl with dark blue hair and two horns extending from the back of her head to the front; her clothing is all white except across the shoulders where it's black and there are the letters L and H on her chest. A design becoming more common is a young girl with long brown hair in pigtails wearing one or two clips featuring an orange and black logo resembling a stylized bull's head.<BR><BR><BR><BR></P>

@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Attend WI .NET Users Group Holiday Party and get Visual Studio 2008 Free!"
-  date: 2007-11-19 21:44:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["WI-INETA"]
-  alias: ["/post/2007/11/19/Attend-WI-NET-Users-Group-Holiday-Party-and-get-Visual-Studio-2008-Free!", "/post/2007/11/19/attend-wi-net-users-group-holiday-party-and-get-visual-studio-2008-free!"]
-  ---
+---
+layout: post
+title: "Attend WI .NET Users Group Holiday Party and get Visual Studio 2008 Free!"
+date: 2007-11-19 21:44:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["WI-INETA"]
+alias: ["/post/2007/11/19/Attend-WI-NET-Users-Group-Holiday-Party-and-get-Visual-Studio-2008-Free!", "/post/2007/11/19/attend-wi-net-users-group-holiday-party-and-get-visual-studio-2008-free!"]
+---
 <!-- more -->
 <p><strong>Update Dec. 11, 2007: </strong>The <a href="/Blog/Post.aspx?PostID=1431">WI .NET Users Group&nbsp;Holiday Party has been cancelled due to weather</a>, and will be rescheduled.</p>
 <p>On Dec. 11, 2007, <a href="http://www.wi-ineta.org/holiday">Microsoft is teaming up with the Wisconsin .NET Users Group</a> to throw a special holiday part. There will be Free food and prizes, just like&nbsp;at every other&nbsp;group meeting.</p>

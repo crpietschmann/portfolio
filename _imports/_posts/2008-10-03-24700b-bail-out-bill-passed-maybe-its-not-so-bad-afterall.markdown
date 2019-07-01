@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "$700B Bail-Out Bill Passes, Maybe It's Not So Bad Afterall..."
-  date: 2008-10-03 20:02:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/10/03/24700B-Bail-Out-Bill-Passed-Maybe-Its-Not-So-Bad-Afterall", "/post/2008/10/03/24700b-bail-out-bill-passed-maybe-its-not-so-bad-afterall"]
-  ---
+---
+layout: post
+title: "$700B Bail-Out Bill Passes, Maybe It's Not So Bad Afterall..."
+date: 2008-10-03 20:02:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/10/03/24700B-Bail-Out-Bill-Passed-Maybe-Its-Not-So-Bad-Afterall", "/post/2008/10/03/24700b-bail-out-bill-passed-maybe-its-not-so-bad-afterall"]
+---
 <!-- more -->
 <p>I generally don't post on political topics, but this is a big one...</p>
 <p>Today, as I'm sure it isn't news to you anymore, the House of Representatives passed the Economic Stabilization Act of 2008 (H.R.1424), which includes <a href="http://www.latimes.com/news/nationworld/nation/la-fi-bailout4-2008oct04,0,5359201.story">$700 Billion to bailout the troubled financial institutions, plus aproximately $110 Billion in tax cuts</a>.</p>

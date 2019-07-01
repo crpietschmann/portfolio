@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "JavaScript ForEach Equivalent"
-  date: 2008-02-28 18:23:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["JavaScript"]
-  alias: ["/post/2008/02/28/JavaScript-ForEach-Equivalent", "/post/2008/02/28/javascript-foreach-equivalent"]
-  ---
+---
+layout: post
+title: "JavaScript ForEach Equivalent"
+date: 2008-02-28 18:23:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["JavaScript"]
+alias: ["/post/2008/02/28/JavaScript-ForEach-Equivalent", "/post/2008/02/28/javascript-foreach-equivalent"]
+---
 <!-- more -->
 <p>One thing with the For Loop in JavaScript is it doesn't seem to be very well documented that you can use it to do an equivalent of a ForEach loop.</p>
 <p>Here's a short example of doing the ForEach loop equivalent in JavaScript:</p>

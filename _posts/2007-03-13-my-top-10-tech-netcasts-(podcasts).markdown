@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "My Top 10 Tech Netcasts (podcasts)"
-  date: 2007-03-13 14:18:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2007/03/13/My-Top-10-Tech-Netcasts-(podcasts)", "/post/2007/03/13/my-top-10-tech-netcasts-(podcasts)"]
-  ---
+---
+layout: post
+title: "My Top 10 Tech Netcasts (podcasts)"
+date: 2007-03-13 14:18:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2007/03/13/My-Top-10-Tech-Netcasts-(podcasts)", "/post/2007/03/13/my-top-10-tech-netcasts-(podcasts)"]
+---
 <!-- more -->
 <P>There are alot of podcasts being produced out there. I've had trouble over the last couple years in finding good quality podcasts to listen to.</P>
 <P>Here's a collection of the podcasts I listen to regularly:</P>

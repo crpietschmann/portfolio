@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Alpha Geeks Are Still Joe Schmoe! And the Community Leads Itself."
-  date: 2008-04-21 19:53:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/04/21/Alpha_Geeks_Are_Still_Joe_Schmoe_Community_Leads_Itself", "/post/2008/04/21/alpha_geeks_are_still_joe_schmoe_community_leads_itself"]
-  ---
+---
+layout: post
+title: "Alpha Geeks Are Still Joe Schmoe! And the Community Leads Itself."
+date: 2008-04-21 19:53:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/04/21/Alpha_Geeks_Are_Still_Joe_Schmoe_Community_Leads_Itself", "/post/2008/04/21/alpha_geeks_are_still_joe_schmoe_community_leads_itself"]
+---
 <!-- more -->
 <p>
 There&#39;s been some major discusson back and forth the last few weeks on the state of the .NET Development Community. I even wrote a little on it myself almost a month ago. 

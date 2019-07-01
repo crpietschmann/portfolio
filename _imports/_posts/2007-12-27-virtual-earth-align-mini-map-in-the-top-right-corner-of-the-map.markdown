@@ -1,18 +1,18 @@
-  ---
-  layout: post
-  title: "Virtual Earth 6: Align Mini Map in the Top Right corner of the Map"
-  date: 2007-12-27 18:35:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2007/12/27/Virtual-Earth-Align-Mini-Map-in-the-Top-Right-corner-of-the-Map", "/post/2007/12/27/virtual-earth-align-mini-map-in-the-top-right-corner-of-the-map"]
-  ---
+---
+layout: post
+title: "Virtual Earth 6: Align Mini Map in the Top Right corner of the Map"
+date: 2007-12-27 18:35:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2007/12/27/Virtual-Earth-Align-Mini-Map-in-the-Top-Right-corner-of-the-Map", "/post/2007/12/27/virtual-earth-align-mini-map-in-the-top-right-corner-of-the-map"]
+---
 <!-- more -->
 <p>If you take a look at <a href="http://maps.live.com/">maps.live.com</a> you'll see the Mini Map is in the Top Right corner of the map. Virtual Earth doesn't have any alignment options built in when showing the Mini Map. It just&nbsp;allows you to position the mini map using x and y offset coordinates relating to the top left corner of the map. This makes it really easy to show the mini map in relation to the top left corner, but what&nbsp;makes this tricky is the dashboard is already there.</p>
 <p>Here's&nbsp;small example&nbsp;I wrote up on how to align the Mini Map in the Top Right corner of the map. This code also hooks into the Maps onresize event so it can move the Mini Map to the desired location when ever the map is resized.</p>
 <p>Here's a screenshot of it in action:</p>
-<p><img src="/image.axd?picture=2009%2f6%2f20091227_Virtual_Earth_MiniMap_Align_Top_Right_Corner.png" alt="" /></p>
+<p><img src="/images/posts2009/6/20091227_Virtual_Earth_MiniMap_Align_Top_Right_Corner.png" alt="" /></p>
 <p>Here's the code:</p>
 <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>"&gt;<br /> &lt;html&gt;<br /> &lt;head&gt;<br /> &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;<br /> &lt;script type="text/javascript" src="<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6</a>" mce_src="<a href="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6&quot;&gt;&lt;/script">http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6"&gt;&lt;/script</a>&gt;<br /> &lt;/head&gt;</p>
 <p>&lt;body onload="PageLoad()"&gt;</p>

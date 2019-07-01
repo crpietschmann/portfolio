@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "QBasic was my First Programming Language"
-  date: 2008-01-21 16:20:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/01/21/QBasic-was-my-First-Programming-Language", "/post/2008/01/21/qbasic-was-my-first-programming-language"]
-  ---
+---
+layout: post
+title: "QBasic was my First Programming Language"
+date: 2008-01-21 16:20:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/01/21/QBasic-was-my-First-Programming-Language", "/post/2008/01/21/qbasic-was-my-first-programming-language"]
+---
 <!-- more -->
 <P>Recently, I got to thinking about my beginning of programming, and the Basic language. So, I thought I'd explain my early history with Basic a little bit.</P>
 <H3>Basic was Easy</H3>

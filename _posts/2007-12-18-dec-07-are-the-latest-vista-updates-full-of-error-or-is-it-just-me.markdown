@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Dec. '07: Are the latest Vista updates full of error? Or is it just me?"
-  date: 2007-12-18 13:40:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2007/12/18/Dec-07-Are-the-latest-Vista-updates-full-of-error-Or-is-it-just-me", "/post/2007/12/18/dec-07-are-the-latest-vista-updates-full-of-error-or-is-it-just-me"]
-  ---
+---
+layout: post
+title: "Dec. '07: Are the latest Vista updates full of error? Or is it just me?"
+date: 2007-12-18 13:40:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2007/12/18/Dec-07-Are-the-latest-Vista-updates-full-of-error-Or-is-it-just-me", "/post/2007/12/18/dec-07-are-the-latest-vista-updates-full-of-error-or-is-it-just-me"]
+---
 <!-- more -->
 <p>I installed the 64-bit version of Vista Ultimate shortly after it RTM'd back in November 2006. Everything was going perfectly fine with it until a couple weeks ago. It started Blue Screening (BSOD) and giving me some&nbsp;other strange issues.</p>
 <p>Here's a list of some of the issues I've been having:</p>

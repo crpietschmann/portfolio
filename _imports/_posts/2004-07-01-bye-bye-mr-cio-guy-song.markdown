@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: ""Bye Bye Mr. CIO Guy" Song..."
-  date: 2004-07-01 19:54:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2004/07/01/Bye-Bye-Mr-CIO-Guy-Song", "/post/2004/07/01/bye-bye-mr-cio-guy-song"]
-  ---
+---
+layout: post
+title: ""Bye Bye Mr. CIO Guy" Song..."
+date: 2004-07-01 19:54:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2004/07/01/Bye-Bye-Mr-CIO-Guy-Song", "/post/2004/07/01/bye-bye-mr-cio-guy-song"]
+---
 <!-- more -->
 <P>Now, this is just hilarious. &#8220;Bye, Bye Mr. CIO-Guy, Gonna outsource every resource &#8216;til the business runs dry.&#8221;</P>
 <P><A href="http://channel9.msdn.com/ShowPost.aspx?PostID=11950">http://channel9.msdn.com/ShowPost.aspx?PostID=11950</A></P>

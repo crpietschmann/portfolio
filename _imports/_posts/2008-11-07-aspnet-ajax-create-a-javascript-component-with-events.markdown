@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "ASP.NET AJAX: Create a JavaScript Component with Events"
-  date: 2008-11-07 21:07:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["asp.net", "JavaScript"]
-  alias: ["/post/2008/11/07/ASPNET-AJAX-Create-a-JavaScript-Component-with-Events", "/post/2008/11/07/aspnet-ajax-create-a-javascript-component-with-events"]
-  ---
+---
+layout: post
+title: "ASP.NET AJAX: Create a JavaScript Component with Events"
+date: 2008-11-07 21:07:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["asp.net", "JavaScript"]
+alias: ["/post/2008/11/07/ASPNET-AJAX-Create-a-JavaScript-Component-with-Events", "/post/2008/11/07/aspnet-ajax-create-a-javascript-component-with-events"]
+---
 <!-- more -->
 <p>
 In the spirit of my &quot;<a href="/post.aspx?id=349f567f-1615-4913-a702-ad70902933cb">Mixing OOP and Event Driving Programming</a>&quot; article I posted a couple days ago; this article discusses how to implement the same thing using the <a href="http://www.asp.net/ajax/">ASP.NET AJAX JavaScript Library</a>. Using inheritence (the ASP.NET AJAX way) it is even easier to implement a little Event Driven Model into your client-side, JavaScript classes/components.

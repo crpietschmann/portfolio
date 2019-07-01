@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "What's the best web-based RSS reader?"
-  date: 2007-07-30 15:05:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2007/07/30/Whats-the-best-web-based-RSS-reader", "/post/2007/07/30/whats-the-best-web-based-rss-reader"]
-  ---
+---
+layout: post
+title: "What's the best web-based RSS reader?"
+date: 2007-07-30 15:05:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2007/07/30/Whats-the-best-web-based-RSS-reader", "/post/2007/07/30/whats-the-best-web-based-rss-reader"]
+---
 <!-- more -->
 <P>Calling all subscribers... What RSS readers do you use?</P>
 <P>I am looking for a really good web-based RSS reader to use. I haven't found one that I really like yet, and am thinking about just writing my own. But, first, I thought I would call out to see what YOU are using.</P>

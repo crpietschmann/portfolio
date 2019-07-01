@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Community Coding Contest to start July 1st - Chance to Win MSDN Premium Subscription with VS'08 Team Suite, plus more"
-  date: 2008-06-26 16:04:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/06/26/Community-Coding-Contest-to-start-July-1st-Chance-to-Win-MSDN-Premium-Subscription-with-VS08-Team-Suite-plus-more", "/post/2008/06/26/community-coding-contest-to-start-july-1st-chance-to-win-msdn-premium-subscription-with-vs08-team-suite-plus-more"]
-  ---
+---
+layout: post
+title: "Community Coding Contest to start July 1st - Chance to Win MSDN Premium Subscription with VS'08 Team Suite, plus more"
+date: 2008-06-26 16:04:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/06/26/Community-Coding-Contest-to-start-July-1st-Chance-to-Win-MSDN-Premium-Subscription-with-VS08-Team-Suite-plus-more", "/post/2008/06/26/community-coding-contest-to-start-july-1st-chance-to-win-msdn-premium-subscription-with-vs08-team-suite-plus-more"]
+---
 <!-- more -->
 <p>
 A few weeks ago Microsoft sent me 3 MSDN Premium Subscriptions with Visual Studio 2008 Team Suite to give away to members of the community. I thought long and hard, and the best way I could come up with who to give them to is to hold a coding contest. So I&#39;m happy to announce the <a href="http://communitycodingcontest.org">Community Coding Contest</a>! <strike>I don&#39;t have the website up yet, but I&#39;ll get it up as soon as I can.</strike> The website is now Live! 

@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Implementing Namespaces in Ruby using Nested Modules"
-  date: 2008-11-02 18:48:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Ruby"]
-  alias: ["/post/2008/11/02/Implementing-Namespaces-in-Ruby-using-Nested-Modules", "/post/2008/11/02/implementing-namespaces-in-ruby-using-nested-modules"]
-  ---
+---
+layout: post
+title: "Implementing Namespaces in Ruby using Nested Modules"
+date: 2008-11-02 18:48:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Ruby"]
+alias: ["/post/2008/11/02/Implementing-Namespaces-in-Ruby-using-Nested-Modules", "/post/2008/11/02/implementing-namespaces-in-ruby-using-nested-modules"]
+---
 <!-- more -->
 <p>
 Recently, I finally got around to starting to learn Ruby. I am finding it to be rather pleasant to program in. Now, one thing that I am used to using with an Object Oriented language (especially with my .NET background) are Namespaces. The only problem is that you can&#39;t just declare a namespace in Ruby using a &quot;namespace&quot; keyword. However, it&#39;s not difficult to implement Namespaces in Ruby, all you need to do is nest some modules.

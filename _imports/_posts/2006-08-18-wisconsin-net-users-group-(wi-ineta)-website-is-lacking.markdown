@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Wisconsin .NET Users Group (WI-INETA) Website is lacking..."
-  date: 2006-08-18 14:25:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General", "WI-INETA"]
-  alias: ["/post/2006/08/18/Wisconsin-NET-Users-Group-(WI-INETA)-Website-is-lacking", "/post/2006/08/18/wisconsin-net-users-group-(wi-ineta)-website-is-lacking"]
-  ---
+---
+layout: post
+title: "Wisconsin .NET Users Group (WI-INETA) Website is lacking..."
+date: 2006-08-18 14:25:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General", "WI-INETA"]
+alias: ["/post/2006/08/18/Wisconsin-NET-Users-Group-(WI-INETA)-Website-is-lacking", "/post/2006/08/18/wisconsin-net-users-group-(wi-ineta)-website-is-lacking"]
+---
 <!-- more -->
 <p>
 I&#39;ve been thinking about it awhile now and have the following comments/suggestions to make regarding the <a href="http://wi-ineta.org/">Wisconsin .NET Users Group (WI-INETA)</a> website.

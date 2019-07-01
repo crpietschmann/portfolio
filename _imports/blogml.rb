@@ -115,12 +115,12 @@ module Jekyll
             ## This section is used to cleanup any content data.
             #
             # Replace /image.axd?picture= with /images/
-            #content.gsub!(/\/image\.axd\?picture\=/, "/images/")
+            content.gsub!(/\/image\.axd\?picture\=/, "/images/posts")
             # Replace /file.axd?file= with /files/
             #content.gsub!(/\/file\.axd\?file\=/, "/files/")
             # Replace encoded /'s with real thing
-            #content.gsub!(/\%2f/, "/")
-            content.gsub!(/http:\/\/eduncan911.com/, "")  # remove the domain from my links and images
+            content.gsub!(/\%2f/, "/")
+            content.gsub!(/http:\/\/pietschsoft.com/, "")  # remove the domain from my links and images
             content.gsub!(/\/blog\/thumbnail\//, "/blog/archives/images/")
             # handle my old [PostIcon] mod
             content.gsub!(/\[PostIcon((.*;)|(.*"))?\]+/i, "<img alt='#{title}' src='")
@@ -174,16 +174,16 @@ module Jekyll
               #     # "time" => timestamp,
               #   },
               f.puts <<-HEADER
-  ---
-  layout: post
-  title: "#{title}"
-  date: #{timestamp.strftime("%Y-%m-%d %H:%M:%S %z")}
-  comments: true
-  published: #{published}
-  categories: ["blog", "archives"]
-  tags: #{tags}
-  alias: #{old_url}
-  ---
+---
+layout: post
+title: "#{title}"
+date: #{timestamp.strftime("%Y-%m-%d %H:%M:%S %z")}
+comments: true
+published: #{published}
+categories: ["blog", "archives"]
+tags: #{tags}
+alias: #{old_url}
+---
               HEADER
               # f.puts
               # )

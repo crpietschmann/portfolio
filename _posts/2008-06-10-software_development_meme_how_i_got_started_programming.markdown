@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Software Development Meme - How I got started programming"
-  date: 2008-06-10 17:29:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/06/10/Software_Development_Meme_How_I_got_started_programming", "/post/2008/06/10/software_development_meme_how_i_got_started_programming"]
-  ---
+---
+layout: post
+title: "Software Development Meme - How I got started programming"
+date: 2008-06-10 17:29:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/06/10/Software_Development_Meme_How_I_got_started_programming", "/post/2008/06/10/software_development_meme_how_i_got_started_programming"]
+---
 <!-- more -->
 <p>Ok, I'm it. I've been tagged by <a href="http://larryclarkin.com">Larry Clarkin</a> with the latest questionnaire floating around the blogs. This one is focused on how everyone got started into programming.</p>
 <h3>How old were you when you started programming?</h3>
@@ -16,7 +16,7 @@
 <p>In 1994, my dad got an IBM PC (486SX, 4MB RAM, No Sound, No CD) with Windows 3.1. After being so used to the graphics of the Apple IIe, I was amazed at the sight on actual photos on the computer screen after my dad signed on to AOL. My true fascination had begun, and I spent countless hours playing around with Windows 3.1 and PC-DOS over the next two years trying to figure out how it worked. One time, I actually crashed the computer (my dad was beyond mad) by playing with the DOS "debug" command. Yeah, don't do that.</p>
 <p>Ok, the year was 1996 (I was 14); the blockbuster of the summer was <a href="http://www.imdb.com/title/tt0116629/">Independence Day</a>, and the movies <a href="http://www.imdb.com/title/tt0113243/">Hackers</a>&nbsp;and <a href="http://www.imdb.com/title/tt0113957/">The Net</a>&nbsp;came out the year before.&nbsp;Even though my dad had the "internet" (AOL)&nbsp;for 2 years already, I finally convinced him to give me access and I was finally unleashed on the net, um I mean AOL, but it was AOL v2.5 and did have access to the actual internet through AOL's own web browser.</p>
 <p>Once I was online, I started research how to make computer programs. I thought "It can't be that hard?" I started reading about telnet, telenet, UNIX, VAX, among other things, then I discovered QBasic and C++. I read that C++ was more widely used than QBasic, so I tried to find a compiler and tutorials, but there were much more resources on QBasic, so I started with that. I actually didn't find very many tutorials, so I downloaded as much of other people code as I could, loading up floppy disks. I would change code in random places and run it, then see what it did. Mostly through trial and error, I learned how to program in QBasic, once I couldn't find any further help other than the QBasic Help File.</p>
-<p>Here's another post I wrote about this very question back in 2005: <a href="/post/2005/04/My-introduction-to-computers-and-programming.aspx">http://pietschsoft.com/post/2005/04/My-introduction-to-computers-and-programming.aspx</a></p>
+<p>Here's another post I wrote about this very question back in 2005: <a href="/post/2005/04/My-introduction-to-computers-and-programming.aspx">/post/2005/04/My-introduction-to-computers-and-programming.aspx</a></p>
 <h3>What was your first language?</h3>
 <p>Tied between <a href="/post/2008/01/QBasic-was-my-First-Programming-Language.aspx">QBasic</a> and MS-DOS Batch (.bat) files</p>
 <p>I even started creating my own interpreted language using a QBasic.</p>

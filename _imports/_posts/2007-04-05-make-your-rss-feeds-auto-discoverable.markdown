@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Make your RSS feeds Auto-Discoverable"
-  date: 2007-04-05 01:07:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2007/04/05/Make-your-RSS-feeds-Auto-Discoverable", "/post/2007/04/05/make-your-rss-feeds-auto-discoverable"]
-  ---
+---
+layout: post
+title: "Make your RSS feeds Auto-Discoverable"
+date: 2007-04-05 01:07:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2007/04/05/Make-your-RSS-feeds-Auto-Discoverable", "/post/2007/04/05/make-your-rss-feeds-auto-discoverable"]
+---
 <!-- more -->
 <P>RSS Autodiscovery is a technique that makes it possible for browsers and other software to automatically find a site's RSS feed. This feature is actually support by both Firefox 2.0 and Internet Explorer 7.</P>
 <P>To make your RSS feeds auto-discoverable just include an HTML/XHTML Link tag inside the Head tag of your website. You can even include multiple Link tags, which allows you to make all your RSS feeds auto-discoverable at the same time.</P>

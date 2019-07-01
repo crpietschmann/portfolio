@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "JavaScript: Null Coalesce using the || Operator"
-  date: 2008-10-14 09:00:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["JavaScript"]
-  alias: ["/post/2008/10/14/JavaScript-Gem-Null-Coalescing-using-the-OR-Operator", "/post/2008/10/14/javascript-gem-null-coalescing-using-the-or-operator"]
-  ---
+---
+layout: post
+title: "JavaScript: Null Coalesce using the || Operator"
+date: 2008-10-14 09:00:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["JavaScript"]
+alias: ["/post/2008/10/14/JavaScript-Gem-Null-Coalescing-using-the-OR-Operator", "/post/2008/10/14/javascript-gem-null-coalescing-using-the-or-operator"]
+---
 <!-- more -->
 <p>
 I recently purchased <a href="http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742?&amp;camp=212361&amp;linkCode=wey&amp;tag=pietschsoft-20&amp;creative=380729">&quot;JavaScript: The Good Parts&quot; by Douglas Crockford</a>, and I found this little gem on page 21, although he listed in in the section <em>Objects - Retrieval</em>.

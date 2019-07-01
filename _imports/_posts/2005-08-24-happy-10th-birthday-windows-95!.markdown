@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Happy 10th birthday Windows 95!"
-  date: 2005-08-24 13:29:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2005/08/24/Happy-10th-birthday-Windows-95!", "/post/2005/08/24/happy-10th-birthday-windows-95!"]
-  ---
+---
+layout: post
+title: "Happy 10th birthday Windows 95!"
+date: 2005-08-24 13:29:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2005/08/24/Happy-10th-birthday-Windows-95!", "/post/2005/08/24/happy-10th-birthday-windows-95!"]
+---
 <!-- more -->
 <P>Windows 95 was released 10 years ago today!</P>
 <P><A href="http://www.microsoft.com/windows95/">http://www.microsoft.com/windows95/</A></P>

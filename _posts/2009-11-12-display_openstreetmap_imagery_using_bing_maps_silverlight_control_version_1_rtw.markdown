@@ -1,15 +1,15 @@
-  ---
-  layout: post
-  title: "Display OpenStreetMap Imagery using Bing Maps Silverlight Control v1"
-  date: 2009-11-12 09:02:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps", "Silverlight"]
-  alias: ["/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW", "/post/2009/11/12/display_openstreetmap_imagery_using_bing_maps_silverlight_control_version_1_rtw"]
-  ---
+---
+layout: post
+title: "Display OpenStreetMap Imagery using Bing Maps Silverlight Control v1"
+date: 2009-11-12 09:02:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps", "Silverlight"]
+alias: ["/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW", "/post/2009/11/12/display_openstreetmap_imagery_using_bing_maps_silverlight_control_version_1_rtw"]
+---
 <!-- more -->
-<p><a href="http://pietschsoft.com/image.axd?picture=BingMapsSilverlight_OpenStreetMap.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="BingMapsSilverlight_OpenStreetMap" src="http://pietschsoft.com/image.axd?picture=BingMapsSilverlight_OpenStreetMap_thumb.png" border="0" alt="BingMapsSilverlight_OpenStreetMap" width="244" height="158" align="right" /></a> The Bing Maps Silverlight SDK documentation on MSDN contains an article on <a href="http://msdn.microsoft.com/en-us/library/ee681902.aspx" target="_blank">Adding Tile Overlays to the Map</a>, that demonstrates how to overlay your own map imagery over top of the Bing Maps Imagery. However, what if you want to completely replace the Bing Maps Imagery with some other Imagery like the <a href="http://openstreetmap.org" target="_blank">OpenStreeMap</a> Imagery?</p>
+<p><a href="/images/postsBingMapsSilverlight_OpenStreetMap.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="BingMapsSilverlight_OpenStreetMap" src="/images/postsBingMapsSilverlight_OpenStreetMap_thumb.png" border="0" alt="BingMapsSilverlight_OpenStreetMap" width="244" height="158" align="right" /></a> The Bing Maps Silverlight SDK documentation on MSDN contains an article on <a href="http://msdn.microsoft.com/en-us/library/ee681902.aspx" target="_blank">Adding Tile Overlays to the Map</a>, that demonstrates how to overlay your own map imagery over top of the Bing Maps Imagery. However, what if you want to completely replace the Bing Maps Imagery with some other Imagery like the <a href="http://openstreetmap.org" target="_blank">OpenStreeMap</a> Imagery?</p>
 <p>In the &ldquo;Adding Tile Overlays to the Map&rdquo; article it shows using a &ldquo;LocationRectTileSource&rdquo; to add the custom map imagery overlay. To implement the OpenStreetMap imagery you will need to create a simple class that inherits from &ldquo;TileSource&rdquo; since you wont be restricting the imagery to only a small portion of the map, but instead will be showing all the OpenStreetMap Imagery in place of the Bing Maps Imagery.</p>
 <h3>First, Hide the Bing Maps Imagery</h3>
 <p>Since we will be displaying the OpenStreetMap imagery instead of the Bing Maps Imagery, we want to prevent the Map control from loading/displaying the Bing Maps Imagery completely.</p>
@@ -74,4 +74,4 @@
 <span class="kwrd">&lt;/</span><span class="html">UserControl</span><span class="kwrd">&gt;</span></pre>
 <p>&nbsp;</p>
 <h3>Conclusion</h3>
-<p>It&rsquo;s really pretty simple to display your own custom map tile image sets and even completely replace the Bing Maps Imagery with the new control. If your interested in seeing how to display Yahoo Maps imagery within the control, then you&rsquo;ll want to refer to my <a href="http://pietschsoft.com/post.aspx?id=88a585cd-f90a-40e1-963d-ca1932ce2535" target="_blank">previous article</a> on doing this with the CTP version of the Bing Maps Silverlight Control.</p>
+<p>It&rsquo;s really pretty simple to display your own custom map tile image sets and even completely replace the Bing Maps Imagery with the new control. If your interested in seeing how to display Yahoo Maps imagery within the control, then you&rsquo;ll want to refer to my <a href="/post.aspx?id=88a585cd-f90a-40e1-963d-ca1932ce2535" target="_blank">previous article</a> on doing this with the CTP version of the Bing Maps Silverlight Control.</p>

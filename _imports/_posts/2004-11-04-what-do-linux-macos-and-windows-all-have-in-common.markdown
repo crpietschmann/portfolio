@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "What do Linux, MacOS and Windows all have in Common??"
-  date: 2004-11-04 13:10:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2004/11/04/What-do-Linux-MacOS-and-Windows-all-have-in-Common", "/post/2004/11/04/what-do-linux-macos-and-windows-all-have-in-common"]
-  ---
+---
+layout: post
+title: "What do Linux, MacOS and Windows all have in Common??"
+date: 2004-11-04 13:10:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2004/11/04/What-do-Linux-MacOS-and-Windows-all-have-in-Common", "/post/2004/11/04/what-do-linux-macos-and-windows-all-have-in-common"]
+---
 <!-- more -->
 <P>When you think about it, the three major Operating System's (Linux, MacOS and Windows) come down to one person/entity&nbsp;that controls them. No matter which Operating System you use, you are relying on a single person/entity to update/maintain your platform.</P>
 <P>Linus Torvalds contols the <a title="Linux" href="http://www.linux.org/" target="_blank">Linux</a> kernel.<BR>Microsoft Corp. controls Windows.<BR>Apple Computer, Inc.&nbsp;controls MacOS.</P>

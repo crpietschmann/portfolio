@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "8/11/2008 - My email is currently down"
-  date: 2008-08-11 16:57:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/08/11/8112008-My-email-is-currently-down", "/post/2008/08/11/8112008-my-email-is-currently-down"]
-  ---
+---
+layout: post
+title: "8/11/2008 - My email is currently down"
+date: 2008-08-11 16:57:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/08/11/8112008-My-email-is-currently-down", "/post/2008/08/11/8112008-my-email-is-currently-down"]
+---
 <!-- more -->
 <p>
 Update: Ok, my email is back and working again. 

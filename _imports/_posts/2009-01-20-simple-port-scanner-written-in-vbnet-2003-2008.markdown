@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Simple Port Scanner Written in VB.NET 2003/2008"
-  date: 2009-01-20 18:00:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General", "vb.net"]
-  alias: ["/post/2009/01/20/Simple-Port-Scanner-Written-in-VBNET-2003-2008", "/post/2009/01/20/simple-port-scanner-written-in-vbnet-2003-2008"]
-  ---
+---
+layout: post
+title: "Simple Port Scanner Written in VB.NET 2003/2008"
+date: 2009-01-20 18:00:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General", "vb.net"]
+alias: ["/post/2009/01/20/Simple-Port-Scanner-Written-in-VBNET-2003-2008", "/post/2009/01/20/simple-port-scanner-written-in-vbnet-2003-2008"]
+---
 <!-- more -->
 <p>
 I was looking over some of the old prototypes&nbsp;I&#39;ve written&nbsp;in the past, and I can across a Simple Port Scanner&nbsp;that I originally wrote in VB.NET 2003. I originally wrote this back in&nbsp;2004 (I think), and even posted a compiled version on my website that I have since removed/deleted. So, since it&#39;s just&nbsp;sitting on my hard drive collecting virtual dust, I thought I&#39;d post it here in case anyone else can find it usefull. 
@@ -26,5 +26,5 @@ Here&#39;s a couple download links for the source code in VB.NET 2003 and VB.NET
 </p>
 <a href="/file.axd?file=VBdotNET_PortScanner_VS2008.zip">VB.NET 2008 - Simple Port Scanner Source Code (16kb)</a> 
 <p>
-<img src="/image.axd?picture=VBdotNet_SimplePortScanner.png" alt="" /> 
+<img src="/images/postsVBdotNet_SimplePortScanner.png" alt="" /> 
 </p>

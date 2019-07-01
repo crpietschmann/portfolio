@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Real Estate - The Search That Should Be."
-  date: 2007-10-23 17:46:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2007/10/23/Real-Estate-The-Search-That-Should-Be", "/post/2007/10/23/real-estate-the-search-that-should-be"]
-  ---
+---
+layout: post
+title: "Real Estate - The Search That Should Be."
+date: 2007-10-23 17:46:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2007/10/23/Real-Estate-The-Search-That-Should-Be", "/post/2007/10/23/real-estate-the-search-that-should-be"]
+---
 <!-- more -->
 <P>There are so many real estate sites out there, and each one has certain features or aspects about them that attract certain users more than others. However, even though there are so many, it just seems that no one can really get it right.</P>
 <H3>Property Search</H3>

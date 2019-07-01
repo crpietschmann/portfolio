@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Feb. 23rd 2010: Blogs been dark lately, but I've been busy, busy... Neuroscience what?"
-  date: 2010-02-23 08:22:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2010/02/23/Feb-23rd-2010-Blogs-been-dark-lately-but-Ive-been-busy-busy-busy", "/post/2010/02/23/feb-23rd-2010-blogs-been-dark-lately-but-ive-been-busy-busy-busy"]
-  ---
+---
+layout: post
+title: "Feb. 23rd 2010: Blogs been dark lately, but I've been busy, busy... Neuroscience what?"
+date: 2010-02-23 08:22:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2010/02/23/Feb-23rd-2010-Blogs-been-dark-lately-but-Ive-been-busy-busy-busy", "/post/2010/02/23/feb-23rd-2010-blogs-been-dark-lately-but-ive-been-busy-busy-busy"]
+---
 <!-- more -->
 <p>I've read a couple of "Intro" to neuroscience and psychology books, and what I've learned has fascinated and inspired my way more than anything I've learned about computers and electronics over the years. The Brain is truly the more complex "computer" the work has ever seen!</p>
 <p>Here's a couple books I've read that I highly recommend:</p>

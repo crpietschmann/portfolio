@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Write code, Win FREE MSDN Subscription!"
-  date: 2008-08-04 11:17:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/08/04/Write-code2c-Win-FREE-MSDN-Subscription!", "/post/2008/08/04/write-code2c-win-free-msdn-subscription!"]
-  ---
+---
+layout: post
+title: "Write code, Win FREE MSDN Subscription!"
+date: 2008-08-04 11:17:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/08/04/Write-code2c-Win-FREE-MSDN-Subscription!", "/post/2008/08/04/write-code2c-win-free-msdn-subscription!"]
+---
 <!-- more -->
 <p>
 Have you got a cool piece of code you wrote, but don&#39;t know what to do with?<br />

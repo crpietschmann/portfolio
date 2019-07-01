@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "MIX'08 - KeyNote Notes of Ray Ozzies talk"
-  date: 2008-03-05 11:32:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Silverlight"]
-  alias: ["/post/2008/03/05/MIX08-KeyNote-Notes", "/post/2008/03/05/mix08-keynote-notes"]
-  ---
+---
+layout: post
+title: "MIX'08 - KeyNote Notes of Ray Ozzies talk"
+date: 2008-03-05 11:32:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Silverlight"]
+alias: ["/post/2008/03/05/MIX08-KeyNote-Notes", "/post/2008/03/05/mix08-keynote-notes"]
+---
 <!-- more -->
 <p>I watched the MIX'08 Keynote online this&nbsp;morning, and here are some notes I took.&nbsp;</p>
 <p><strong>Notes from Ray Ozzies talk:</strong></p>

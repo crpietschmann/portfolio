@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "PietschSoft.VE: Is it Dead? What about Ajax and Virtual Earth v5?"
-  date: 2007-05-09 09:12:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2007/05/09/PietschSoftVE-Is-it-Dead-What-about-Ajax-and-Virtual-Earth-v5", "/post/2007/05/09/pietschsoftve-is-it-dead-what-about-ajax-and-virtual-earth-v5"]
-  ---
+---
+layout: post
+title: "PietschSoft.VE: Is it Dead? What about Ajax and Virtual Earth v5?"
+date: 2007-05-09 09:12:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2007/05/09/PietschSoftVE-Is-it-Dead-What-about-Ajax-and-Virtual-Earth-v5", "/post/2007/05/09/pietschsoftve-is-it-dead-what-about-ajax-and-virtual-earth-v5"]
+---
 <!-- more -->
 <p>
 <strong>Is PietschSoft.VE Dead?</strong>

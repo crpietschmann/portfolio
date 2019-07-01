@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Silverlight Isolated Storage File/Directory Location"
-  date: 2008-09-29 16:33:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Silverlight"]
-  alias: ["/post/2008/09/29/Silverlight-Isolated-Storage-File-Directory-Location", "/post/2008/09/29/silverlight-isolated-storage-file-directory-location"]
-  ---
+---
+layout: post
+title: "Silverlight Isolated Storage File/Directory Location"
+date: 2008-09-29 16:33:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Silverlight"]
+alias: ["/post/2008/09/29/Silverlight-Isolated-Storage-File-Directory-Location", "/post/2008/09/29/silverlight-isolated-storage-file-directory-location"]
+---
 <!-- more -->
 <p>
 I was just building something in Silverlight that makes use of the Isolated Storage, and I uncovered a bug in Silverlight 2 Beta 2 that cause&#39;s it to crash and you are unable to write to the Isolated Storage. So, I dug in and found the location on disk where Silverlight stores the files for Isolated Storage.

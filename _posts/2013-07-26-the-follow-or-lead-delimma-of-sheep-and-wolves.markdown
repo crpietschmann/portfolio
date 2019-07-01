@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "The Follow Or Lead Delimma of Sheep and Wolves"
-  date: 2013-07-26 07:40:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Inspiration"]
-  alias: ["/post/2013/07/26/The-Follow-Or-Lead-Delimma-of-Sheep-and-Wolves", "/post/2013/07/26/the-follow-or-lead-delimma-of-sheep-and-wolves"]
-  ---
+---
+layout: post
+title: "The Follow Or Lead Delimma of Sheep and Wolves"
+date: 2013-07-26 07:40:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Inspiration"]
+alias: ["/post/2013/07/26/The-Follow-Or-Lead-Delimma-of-Sheep-and-Wolves", "/post/2013/07/26/the-follow-or-lead-delimma-of-sheep-and-wolves"]
+---
 <!-- more -->
 <p>To follow or lead; that is the question.</p>
 <p>No matter how you look at it, people in our society are constantly following in one capacity or another.</p>

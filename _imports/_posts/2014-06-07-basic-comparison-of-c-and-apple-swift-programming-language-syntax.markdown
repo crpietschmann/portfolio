@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Basic Comparison of C# and Apple Swift Programming Language Syntax"
-  date: 2014-06-07 05:33:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["C#", "Swift"]
-  alias: ["/post/2014/06/07/Basic-Comparison-of-C-and-Apple-Swift-Programming-Language-Syntax", "/post/2014/06/07/basic-comparison-of-c-and-apple-swift-programming-language-syntax"]
-  ---
+---
+layout: post
+title: "Basic Comparison of C# and Apple Swift Programming Language Syntax"
+date: 2014-06-07 05:33:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["C#", "Swift"]
+alias: ["/post/2014/06/07/Basic-Comparison-of-C-and-Apple-Swift-Programming-Language-Syntax", "/post/2014/06/07/basic-comparison-of-c-and-apple-swift-programming-language-syntax"]
+---
 <!-- more -->
 <p>Recently, Apple announced and released a beta version of the new <a href="https://developer.apple.com/swift/">Swift programming language</a> for building iOS and OSX applications. Swift is a modern language with the power of Objective-C without the "baggage of C." While we can't argue that Objective-C has it's difficulties being tied closely to C, but the real question is... How does Swift compare to a modern language like C#?</p>
 <p>Please, keep in mind that this post is not supposed to be an Apple vs Microsoft post. There are a lot of developers that use C# every day and the purpose of this post is to help them understand what Swift offers at a language level compared to C#. And, before you start the "apples and oranges" arguments, it's worth pointing out that using <a href="http://xamarin.com/">Xamarin </a>you can develop iOS and OSX apps using C#.</p>
@@ -336,7 +336,7 @@ switch i {
         // do something
 }</pre>
 <h3>Functions</h3>
-<p>While <a href="http://pietschsoft.com/post/2014/06/07/Basic-Comparison-of-Functions-in-C-and-Apple-Swift-Programming-Language">Functions are a much bigger comparison</a> to be made, here's a basic example:</p>
+<p>While <a href="/post/2014/06/07/Basic-Comparison-of-Functions-in-C-and-Apple-Swift-Programming-Language">Functions are a much bigger comparison</a> to be made, here's a basic example:</p>
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Function with Parameter and Return Value
 // C#
 string sayHello(string name) {
@@ -347,11 +347,11 @@ string sayHello(string name) {
 func sayHello(name: String) -&gt; String {
     // do something
 }</pre>
-<p>The post <a href="http://pietschsoft.com/post/2014/06/07/Basic-Comparison-of-Functions-in-C-and-Apple-Swift-Programming-Language">Basic Comparison of Functions in C# and Swift</a> goes into much more depth on Functions; as that is a much bigger comparison that could fit into this post.</p>
+<p>The post <a href="/post/2014/06/07/Basic-Comparison-of-Functions-in-C-and-Apple-Swift-Programming-Language">Basic Comparison of Functions in C# and Swift</a> goes into much more depth on Functions; as that is a much bigger comparison that could fit into this post.</p>
 <h3>Conclusion</h3>
 <p>This concludes my basic comparison of C# and Apple Swift programming languages. The two languages are rather similar in many respects; at least in what I've compared thus far. More language feature comparisons will have to wait for future posts.</p>
 <p>One of the bigger differences that's worth pointing out explicitly is the difference in how each language handles Array's. Arrays in Swift are extremely similar to the List&lt;&gt; class in C#; which is what most developers use today in C# instead of arrays anyway (unless performance requires it.)</p>
 <p>You can find more information about the Swift programming language on Apple's site at the following links:</p>
 <p><a href="https://developer.apple.com/swift/">https://developer.apple.com/swift/</a></p>
 <p><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/">https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/</a></p>
-<p><strong>Next Post in this Series: <a href="http://pietschsoft.com/post/2014/06/07/Basic-Comparison-of-Functions-in-C-and-Apple-Swift-Programming-Language">Basic Comparison of Functions in C# and Swift</a></strong></p>
+<p><strong>Next Post in this Series: <a href="/post/2014/06/07/Basic-Comparison-of-Functions-in-C-and-Apple-Swift-Programming-Language">Basic Comparison of Functions in C# and Swift</a></strong></p>

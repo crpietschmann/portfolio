@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "msdn2.microsoft.com - Lots of improvements for MSDN Online!"
-  date: 2005-06-12 23:44:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2005/06/12/msdn2microsoftcom-Lots-of-improvements-for-MSDN-Online!", "/post/2005/06/12/msdn2microsoftcom-lots-of-improvements-for-msdn-online!"]
-  ---
+---
+layout: post
+title: "msdn2.microsoft.com - Lots of improvements for MSDN Online!"
+date: 2005-06-12 23:44:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2005/06/12/msdn2microsoftcom-Lots-of-improvements-for-MSDN-Online!", "/post/2005/06/12/msdn2microsoftcom-lots-of-improvements-for-msdn-online!"]
+---
 <!-- more -->
 <P>For those who don't know, <A href="http://msdn2.microsoft.com">http://msdn2.microsoft.com</A> has all the Visual Studio &#8220;Whidbey&#8221; 2005 documentation. It's not fully complete because they are still building up the library, but it is still quite extensive.</P>
 <P>I found this blog post by Tim Ewald (<A href="http://pluralsight.com/blogs/tewald/archive/2004/09/23/2368.aspx">http://pluralsight.com/blogs/tewald/archive/2004/09/23/2368.aspx</A>), outlining some of the major improvements they are making with the new version of the <a title="MSDN" href="http://msdn.microsoft.com" target="_blank">MSDN</a> web site. They are basically making it so we wont have so many darn broken links when we link to MSDN articles on our blogs or other sites. (I'm sure your familiar with the oddity that is broken links to the MSDN)</P>

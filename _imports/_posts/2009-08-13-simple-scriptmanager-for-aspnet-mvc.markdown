@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "A Simple ScriptManager for ASP.NET MVC"
-  date: 2009-08-13 16:23:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["ASP.NET MVC"]
-  alias: ["/post/2009/08/13/Simple-ScriptManager-for-ASPNET-MVC", "/post/2009/08/13/simple-scriptmanager-for-aspnet-mvc"]
-  ---
+---
+layout: post
+title: "A Simple ScriptManager for ASP.NET MVC"
+date: 2009-08-13 16:23:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["ASP.NET MVC"]
+alias: ["/post/2009/08/13/Simple-ScriptManager-for-ASPNET-MVC", "/post/2009/08/13/simple-scriptmanager-for-aspnet-mvc"]
+---
 <!-- more -->
 <p>The <a href="http://www.asp.net/Ajax/Documentation/Live/overview/ScriptManagerOverview.aspx" target="_blank">ASP.NET AJAX ScriptManager</a> makes it really easy to include JavaScript references and register JavaScript blocks into the rendered Page output of an ASP.NET WebForms application. However nice the ScriptManager control is, it&rsquo;s still just a WebForms control for use with ASP.NET AJAX; thus it&rsquo;s use isn&rsquo;t really supported with ASP.NET MVC. Also, to make things just a little more difficult, ASP.NET MVC doesn&rsquo;t have it&rsquo;s own &ldquo;ScriptManager&rdquo; implementation. This brings me to the point of posting this&hellip;</p>
 <p>I have worked out a really simple &ldquo;ScriptManager&rdquo; component for use with ASP.NET MVC, and I think it works really nice to help simplify the effort of including JavaScript blocks and references in a page.</p>
@@ -101,7 +101,7 @@
 <p>This is actually a fairly simple design, and the code that &ldquo;attaches&rdquo; the SimpleScriptManager to the HttpContext is includes within the HtmlHelper Extension Method itself; the rest of the code is contained within the actual SimpleScriptManager object.</p>
 <h3>Full &ldquo;SimpleScriptManager&rdquo; Code</h3>
 <p>SimpleScriptManagerExtension.cs</p>
-<pre class="csharpcode"><span class="rem">// Copyright (c) 2009 Chris Pietschmann (http://pietschsoft.com)</span>
+<pre class="csharpcode"><span class="rem">// Copyright (c) 2009 Chris Pietschmann ()</span>
 <span class="rem">// All rights reserved.</span>
 <span class="rem">// Licensed under the Microsoft Public License (Ms-PL)</span>
 <span class="rem">// http://opensource.org/licenses/ms-pl.html</span>
@@ -134,7 +134,7 @@
 <p><!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } --></p>
 <p>&nbsp;</p>
 <p>SimpleScriptManager.cs</p>
-<pre class="csharpcode"><span class="rem">// Copyright (c) 2009 Chris Pietschmann (http://pietschsoft.com)</span>
+<pre class="csharpcode"><span class="rem">// Copyright (c) 2009 Chris Pietschmann ()</span>
 <span class="rem">// All rights reserved.</span>
 <span class="rem">// Licensed under the Microsoft Public License (Ms-PL)</span>
 <span class="rem">// http://opensource.org/licenses/ms-pl.html</span>

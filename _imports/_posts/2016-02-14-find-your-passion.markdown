@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Find Your Passion"
-  date: 2016-02-14 11:56:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Inspiration"]
-  alias: ["/post/2016/02/14/Find-Your-Passion", "/post/2016/02/14/find-your-passion"]
-  ---
+---
+layout: post
+title: "Find Your Passion"
+date: 2016-02-14 11:56:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Inspiration"]
+alias: ["/post/2016/02/14/Find-Your-Passion", "/post/2016/02/14/find-your-passion"]
+---
 <!-- more -->
 <p>Much of success in life hinges on finding something you're passionate about. Sure, certain interests that turn into passions can be difficult to build a career around, but there's certainly ways to do it. No matter what your passion, you need to find it!</p>
 <p>Once you find your passion, you need to figure out how you can exploit that to build a career. What ever your passion may be, you will be able to find something related to it that you can build a career around.</p>

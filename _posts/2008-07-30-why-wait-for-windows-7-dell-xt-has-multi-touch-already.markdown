@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Why wait for Windows 7? Dell XT has Multi-Touch already"
-  date: 2008-07-30 21:07:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/07/30/Why-wait-for-Windows-7-Dell-XT-has-Multi-Touch-already", "/post/2008/07/30/why-wait-for-windows-7-dell-xt-has-multi-touch-already"]
-  ---
+---
+layout: post
+title: "Why wait for Windows 7? Dell XT has Multi-Touch already"
+date: 2008-07-30 21:07:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/07/30/Why-wait-for-Windows-7-Dell-XT-has-Multi-Touch-already", "/post/2008/07/30/why-wait-for-windows-7-dell-xt-has-multi-touch-already"]
+---
 <!-- more -->
 <p>
 Really the only feature that Microsoft has promised for the next version of Windows after Windows Vista, is Multi-Touch. We&#39;re all becoming familiar with the idea of multi-touch displays thanks to the iPhone and iPod Touch, but it&#39;s about time for this capability to come to the PC (or rather Laptop / Tablet). I haven&#39;t owned a Table PC yet, but I&#39;ve had my sights on getting one for a while. I just found out that the <a href="http://www.dell.com/tablet?s=bsd&amp;cs=04">Dell XT (Dell&#39;s version of the convertable laptop / tablet)</a> not only has touch capability, but through it&#39;s capacitive digitizing hardware is capable of Multi-Touch as well!

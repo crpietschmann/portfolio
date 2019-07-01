@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "I recieved my MSDN subscription today!!"
-  date: 2006-05-09 19:17:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2006/05/09/I-recieved-my-MSDN-subscription-today!!", "/post/2006/05/09/i-recieved-my-msdn-subscription-today!!"]
-  ---
+---
+layout: post
+title: "I recieved my MSDN subscription today!!"
+date: 2006-05-09 19:17:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2006/05/09/I-recieved-my-MSDN-subscription-today!!", "/post/2006/05/09/i-recieved-my-msdn-subscription-today!!"]
+---
 <!-- more -->
 <P>Sweet! I finally recieved my MSDN Subscription ID today! It only took two weeks since I signed up on the MVPInvite.com website using my secret Invite Code. Everything is so automatic these days, I was almost thinking something got screwed up and I wouldn't get my subscription.</P>
 <P>The MVPInvite.com domain name isn't registered to Microsoft, so it must be a third party that runs that site. I figure they had to write my info on a piece of paper, then snail mail it to Microsoft's MSDN department who then manually entered the info into the computer. Once entered into the computer they had to write it down onto a different piece of paper and snail mail it back to the third party and wait for a confirmation snail mail letter before&nbsp;sending me a&nbsp;confirmation email with my MSDN Subscription ID. At least that's my guess as to why it took so long.</P>

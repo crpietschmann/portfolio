@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Deeper in .NET 2008 is less than 15 hours away!"
-  date: 2008-04-04 17:17:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General", "WI-INETA"]
-  alias: ["/post/2008/04/04/Deeper-in-NET-2008-is-less-than-15-hours-away!", "/post/2008/04/04/deeper-in-net-2008-is-less-than-15-hours-away!"]
-  ---
+---
+layout: post
+title: "Deeper in .NET 2008 is less than 15 hours away!"
+date: 2008-04-04 17:17:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General", "WI-INETA"]
+alias: ["/post/2008/04/04/Deeper-in-NET-2008-is-less-than-15-hours-away!", "/post/2008/04/04/deeper-in-net-2008-is-less-than-15-hours-away!"]
+---
 <!-- more -->
 <p>
 <a href="http://deeperin.net" title="Deeper in .NET 2008 by the Wisconsin .NET Users Group">Deeper in .NET 2008</a> is less than a day away. It&#39;s tomorrow already! I am probably more excited about DiDN this year since we didn&#39;t have one last year, but it&#39;s still going to be awesome. 

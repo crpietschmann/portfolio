@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "XNA and XBox 360: Not until you pony up some ca$h!!"
-  date: 2007-11-26 17:45:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2007/11/26/XNA-and-XBox-360-Not-until-you-pony-up-some-ca24h!!", "/post/2007/11/26/xna-and-xbox-360-not-until-you-pony-up-some-ca24h!!"]
-  ---
+---
+layout: post
+title: "XNA and XBox 360: Not until you pony up some ca$h!!"
+date: 2007-11-26 17:45:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2007/11/26/XNA-and-XBox-360-Not-until-you-pony-up-some-ca24h!!", "/post/2007/11/26/xna-and-xbox-360-not-until-you-pony-up-some-ca24h!!"]
+---
 <!-- more -->
 <P>I recently got an XBox 360; and until I got one I didn't fully realize what all its features are. This is a really sweet system! So, naturally I downloaded the XNA Game&nbsp;Studio Express to check out what's all possible with building homebrew games for the 360.</P>
 <P>After registering my gamertag with the XNA Creators Club and&nbsp;installing XNA Game Studio Express on my PC, I took the following steps:</P>
@@ -19,4 +19,4 @@
 <P>Yeah, WTF!!! This is really crappy of MS to do! All I want to do is play around with XNA Game Studio and my 360 and they want me to either pay $50 for four months access or $100 for&nbsp;a year access. In order to even play around with putting a homebrew game using XNA on your 360 you need to pay a reoccurring subscription fee! There's no way I'm going to pay a fee that HIGH to just play around.</P>
 <P>What in the world is Microsoft thinking?!? They have the best game system and they are providing an easy way for the average developer to write games for it. This is something that will only make the 360 even more popular. But, then they go and make all the benefit they could get from XNA on the 360 and eliminate it virtually completely by charging such a high fee.</P>
 <P>Here's my suggestion: Make it either FREE or a one time fee of say $25 to be able to put your homebrew games on the 360. Then allow developers to pay a larger fee to be able to put their games on DVD or in the Live Arcade so they can sell them to the masses.</P>
-<P><A href="http://www.dotnetkicks.com/kick/?url=http%3a%2f%2fpietschsoft.com%2fBlog%2fPost.aspx%3fPostID%3d1427"><IMG alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http%3a%2f%2fpietschsoft.com%2fBlog%2fPost.aspx%3fPostID%3d1427&amp;bgcolor=0099FF" border=0></A></P>
+<P><A href="http://www.dotnetkicks.com/kick/?url=http%3a//pietschsoft.com/Blog/Post.aspx%3fPostID%3d1427"><IMG alt="kick it on DotNetKicks.com" src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http%3a//pietschsoft.com/Blog/Post.aspx%3fPostID%3d1427&amp;bgcolor=0099FF" border=0></A></P>

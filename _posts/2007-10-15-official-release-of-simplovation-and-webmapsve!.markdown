@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Official Release of Simplovation and Web.Maps.VE!"
-  date: 2007-10-15 15:28:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General", "Bing Maps"]
-  alias: ["/post/2007/10/15/Official-Release-of-Simplovation-and-WebMapsVE!", "/post/2007/10/15/official-release-of-simplovation-and-webmapsve!"]
-  ---
+---
+layout: post
+title: "Official Release of Simplovation and Web.Maps.VE!"
+date: 2007-10-15 15:28:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General", "Bing Maps"]
+alias: ["/post/2007/10/15/Official-Release-of-Simplovation-and-WebMapsVE!", "/post/2007/10/15/official-release-of-simplovation-and-webmapsve!"]
+---
 <!-- more -->
 <p>
 I am proud to announce that I have just officially launched&nbsp;<a href="http://simplovation.com/">Simplovation</a> and&nbsp;released our first product, <a href="http://simplovation.com/Page/WebMapsVE.aspx">Web.Maps.VE</a>!

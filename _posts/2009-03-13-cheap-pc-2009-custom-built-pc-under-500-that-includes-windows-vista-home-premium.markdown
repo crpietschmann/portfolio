@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Cheap PC 2009 - Custom Built PC under $500 that includes Windows Vista Home Premium"
-  date: 2009-03-13 13:15:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2009/03/13/Cheap-PC-2009-Custom-Built-PC-under-500-that-includes-Windows-Vista-Home-Premium", "/post/2009/03/13/cheap-pc-2009-custom-built-pc-under-500-that-includes-windows-vista-home-premium"]
-  ---
+---
+layout: post
+title: "Cheap PC 2009 - Custom Built PC under $500 that includes Windows Vista Home Premium"
+date: 2009-03-13 13:15:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2009/03/13/Cheap-PC-2009-Custom-Built-PC-under-500-that-includes-Windows-Vista-Home-Premium", "/post/2009/03/13/cheap-pc-2009-custom-built-pc-under-500-that-includes-windows-vista-home-premium"]
+---
 <!-- more -->
 <p>
 Two years ago I posted &quot;<a href="/post.aspx?id=a0e03135-de80-4cdb-8b9e-f53c846f5189">Cheap PC - Build a Vista Premium Ready system for under $500 including the OS</a>&quot;. I can&#39;t believe that was two years ago already! Anyway, the original premise of the post was to point out that you could build a &quot;cheap&quot; PC for under $500 that included and could run Windows Vista with &quot;Aero&quot; Glass Enabled. After I wrote that post I decided that I would try to remember to write a post like that every year to serve two purposes: 1) chronicle what kind of PC $500 can buy you, and 2) to help other people realize that it&#39;s possible to build a custom pc for cheap that isn&#39;t total crap. Well, it seems I skipped a year, so here&#39;s the &quot;Cheap PC 2009&quot; post.

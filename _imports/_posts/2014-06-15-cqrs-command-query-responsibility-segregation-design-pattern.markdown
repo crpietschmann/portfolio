@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "CQRS: Command Query Responsibility Segregation Design Pattern"
-  date: 2014-06-15 07:49:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Design Patterns"]
-  alias: ["/post/2014/06/15/CQRS-Command-Query-Responsibility-Segregation-Design-Pattern", "/post/2014/06/15/cqrs-command-query-responsibility-segregation-design-pattern"]
-  ---
+---
+layout: post
+title: "CQRS: Command Query Responsibility Segregation Design Pattern"
+date: 2014-06-15 07:49:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Design Patterns"]
+alias: ["/post/2014/06/15/CQRS-Command-Query-Responsibility-Segregation-Design-Pattern", "/post/2014/06/15/cqrs-command-query-responsibility-segregation-design-pattern"]
+---
 <!-- more -->
 <p>I was recently turned onto the Command Query Responsibility Segregation (CQRS) design pattern by a co-worker. One of the biggest benefits of CQRS is that is aids in implementing distributed, highly scalable system. This notion can be intimidating, but at the heart of CQRS there are rather simple guidelines to follow. Now let's dive in and explore what this pattern is and some way of implementing it.</p>
 <h3>Purpose of Command Query Responsibility Segregation (CQRS)</h3>
@@ -58,7 +58,7 @@ public class CommandDataStore {
 }</pre>
 <p>The seemingly simple change to completely separate Command and Query methods has some fairly big implications on the way you implement the Command and Query methods themselves. By breaking them apart to completely separate contexts, they must be able to function in isolation, completely independent from each other. What this means is that the Command object in the above example must not have a hard dependency on the Query object. If they were to depend on each other, then the design would still be CQS instead of CQRS.</p>
 <p>Here's a simple diagram to help clarify the separation of Command and Query how it pertains to CQRS:</p>
-<p><img src="/image.axd?picture=%2f2014%2f06%2fCQRS-Diagram.png" alt="" /></p>
+<p><img src="/images/posts/2014/06/CQRS-Diagram.png" alt="" /></p>
 <h3>Separate Models for Command and Query</h3>
 <p>The way CQRS enforces Responsibility Segregation is by requiring there to be separate models used for Command methods than for Query methods. The above responsibility segregation methods example would then be built out so that the Query class and Command class can operate completely independently without either one having dependencies on the other. One of the key principles for this in CQRS is that the pattern is really meant to allow for there to be multiple Query and/or Command classes, each with it's own methods, that get used when it's unique circumstance require. For example, there may be a Query class for simple data retrieval with a separate Query class used for a more complex, power user search.</p>
 <h3>CQRS + Event Sourcing</h3>
@@ -69,7 +69,7 @@ public class CommandDataStore {
 <li>A system that has the main database used for editing, with a separate database used for extremely specific query operations where searching and reporting have their own data models to facilitate higher query performance.</li>
 </ol>
 <p>Here's a simple diagram to help clarify how CQRS can be combined with Event Sourcing:</p>
-<p><img src="/image.axd?picture=%2f2014%2f06%2fCQRS-Diagram-Plus-Event-Sourcing.png" alt="" /></p>
+<p><img src="/images/posts/2014/06/CQRS-Diagram-Plus-Event-Sourcing.png" alt="" /></p>
 <p>It is important to remember that Event Sourcing is not a requirement of CQRS unless the system architecture is utilizing distributed data. Event Sourcing gives the system the ability to maintain eventual consistency of the Query models while maintaining the Command model as the source of that consistency. Without Event Sourcing there really isn't any way to effectively build a system using CQRS and Distributed Data.</p>
 <h3>Single Database for both Command and Query</h3>
 <p>Just because you have separate models for Command methods than Query methods doesn't mean the data can't be stored and queried in the same place. This is just an implementation detail for you to decide when using the pattern; however, the biggest benefits of CQRS come when using it to maintain completely separate data stores for Writing data (Command) than for Reading data (Query.) CQRS is really meant to be used for building systems with distributed data, and high performance and scalability.</p>

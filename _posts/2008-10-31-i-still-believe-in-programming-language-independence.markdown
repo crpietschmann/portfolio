@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "I Still Believe in Programming Language Independence"
-  date: 2008-10-31 00:14:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/10/31/I-Still-Believe-in-Programming-Language-Independence", "/post/2008/10/31/i-still-believe-in-programming-language-independence"]
-  ---
+---
+layout: post
+title: "I Still Believe in Programming Language Independence"
+date: 2008-10-31 00:14:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/10/31/I-Still-Believe-in-Programming-Language-Independence", "/post/2008/10/31/i-still-believe-in-programming-language-independence"]
+---
 <!-- more -->
 <p>
 Four years ago I <a href="/post.aspx?id=14bcf749-3fb3-446f-96ca-01b9e123efc0">posted about an idea of having the IDE (Visual Studio) do auto-conversion of your code from one programming language to another so give developers more language independence</a>. I recognize that the only languages, perhaps, that would lend themselves to this are C# and VB.NET. They aren&#39;t completely equal yet, so it would still be difficult at this time, since each has a few features that the other doesn&#39;t.

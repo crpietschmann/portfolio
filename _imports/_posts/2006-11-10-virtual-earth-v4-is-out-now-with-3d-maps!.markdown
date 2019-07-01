@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Virtual Earth v4 is out now with 3D maps!"
-  date: 2006-11-10 12:54:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2006/11/10/Virtual-Earth-v4-is-out-now-with-3D-maps!", "/post/2006/11/10/virtual-earth-v4-is-out-now-with-3d-maps!"]
-  ---
+---
+layout: post
+title: "Virtual Earth v4 is out now with 3D maps!"
+date: 2006-11-10 12:54:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2006/11/10/Virtual-Earth-v4-is-out-now-with-3D-maps!", "/post/2006/11/10/virtual-earth-v4-is-out-now-with-3d-maps!"]
+---
 <!-- more -->
 <p>
 I know this post is a bit delayed, but a couple days ago Microsoft released Virtual Earth v4. Basically this new version is v3 with some stuff added. The major addition is the 3D maps. Now this feature is cool.

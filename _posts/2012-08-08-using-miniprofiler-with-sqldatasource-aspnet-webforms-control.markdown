@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Using MiniProfiler with SqlDataSource ASP.NET WebForms Control"
-  date: 2012-08-08 20:27:21 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["C#", "asp.net"]
-  alias: ["/post/2012/08/08/Using-MiniProfiler-with-SqlDataSource-ASPNET-WebForms-Control", "/post/2012/08/08/using-miniprofiler-with-sqldatasource-aspnet-webforms-control"]
-  ---
+---
+layout: post
+title: "Using MiniProfiler with SqlDataSource ASP.NET WebForms Control"
+date: 2012-08-08 20:27:21 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["C#", "asp.net"]
+alias: ["/post/2012/08/08/Using-MiniProfiler-with-SqlDataSource-ASPNET-WebForms-Control", "/post/2012/08/08/using-miniprofiler-with-sqldatasource-aspnet-webforms-control"]
+---
 <!-- more -->
 <p>I recently implemented MiniProfiler into an existing ASP.NET WebForms application that makes use of databinding to the SqlDataSource control. Since the SqlDataSource uses a DbProviderFactory internally, it is fairly simple to exend the control to utilize MiniProfiler through inheritance and overriding a single method of the SqlDataSource.</p>  <p>Here’s a very simple class that inherits from the SqlDataSource control and injects MiniProfiler support to be able to profile the SQL query used by the control:</p>  <pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">class</span> ProfiledSqlDataSource : SqlDataSource
 {

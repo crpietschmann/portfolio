@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Vista Sidebar Gadget for Pandora Radio"
-  date: 2008-12-15 22:06:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/12/15/Vista-Sidebar-Gadget-for-Pandora-Radio", "/post/2008/12/15/vista-sidebar-gadget-for-pandora-radio"]
-  ---
+---
+layout: post
+title: "Vista Sidebar Gadget for Pandora Radio"
+date: 2008-12-15 22:06:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/12/15/Vista-Sidebar-Gadget-for-Pandora-Radio", "/post/2008/12/15/vista-sidebar-gadget-for-pandora-radio"]
+---
 <!-- more -->
 <p>
 I see that Pandora has released a Windows Sidebar Gadget themselves.

@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "WI .NET Users Group - Having troubles finding meeting locations!"
-  date: 2007-03-18 00:07:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General", "WI-INETA"]
-  alias: ["/post/2007/03/18/WI-NET-Users-Group-Having-troubles-finding-meeting-locations!", "/post/2007/03/18/wi-net-users-group-having-troubles-finding-meeting-locations!"]
-  ---
+---
+layout: post
+title: "WI .NET Users Group - Having troubles finding meeting locations!"
+date: 2007-03-18 00:07:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General", "WI-INETA"]
+alias: ["/post/2007/03/18/WI-NET-Users-Group-Having-troubles-finding-meeting-locations!", "/post/2007/03/18/wi-net-users-group-having-troubles-finding-meeting-locations!"]
+---
 <!-- more -->
 <p>
 The turn out for each of the <a href="http://wi-ineta.org">Wisconsin .NET Users Group</a> meetings is really great. So great, there are regularly 100+ attendees. The reason for such great attendance can be attributed to two things:

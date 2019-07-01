@@ -1,16 +1,16 @@
-  ---
-  layout: post
-  title: "Web.Maps.VE 2.0 Released - ASP.NET Virtual Earth Mapping Server Control"
-  date: 2008-06-17 21:29:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General", "Bing Maps"]
-  alias: ["/post/2008/06/17/WebMapsVE-20-Released-ASPNET-Virtual-Earth-Mapping-Server-Control", "/post/2008/06/17/webmapsve-20-released-aspnet-virtual-earth-mapping-server-control"]
-  ---
+---
+layout: post
+title: "Web.Maps.VE 2.0 Released - ASP.NET Virtual Earth Mapping Server Control"
+date: 2008-06-17 21:29:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General", "Bing Maps"]
+alias: ["/post/2008/06/17/WebMapsVE-20-Released-ASPNET-Virtual-Earth-Mapping-Server-Control", "/post/2008/06/17/webmapsve-20-released-aspnet-virtual-earth-mapping-server-control"]
+---
 <!-- more -->
 <p>
-<img style="width: 280px; height: 214px" src="/image.axd?picture=WebMapsVE20_SampleWebsite_001.png" alt="" hspace="4" width="280" height="214" align="right" />Today, I released <a href="http://simplovation.com/page/webmapsve.aspx">Web.Maps.VE v2.0</a>!! I had originally planned to release it on June 30th, but was able to reach that goal about 2 weeks early, so here we are. Web.Maps.VE v2.0 builds on top of the previous v1.0 release, and adds many new features. 
+<img style="width: 280px; height: 214px" src="/images/postsWebMapsVE20_SampleWebsite_001.png" alt="" hspace="4" width="280" height="214" align="right" />Today, I released <a href="http://simplovation.com/page/webmapsve.aspx">Web.Maps.VE v2.0</a>!! I had originally planned to release it on June 30th, but was able to reach that goal about 2 weeks early, so here we are. Web.Maps.VE v2.0 builds on top of the previous v1.0 release, and adds many new features. 
 </p>
 <p>
 If you aren&#39;t familiar with Web.Maps.VE, it is the industries first ASP.NET Virtual Earth Mapping Server Control. It enables you (the developer) to implement MS Virtual Earth mapping into your ASP.NET web applications by writing only server-side code; there is absolutely no javascript required. It has never been easier to implement MS Virtual Earth mapping. 

@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "HVD: Holographic Versatile Disc"
-  date: 2004-08-24 13:46:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2004/08/24/HVD-Holographic-Versatile-Disc", "/post/2004/08/24/hvd-holographic-versatile-disc"]
-  ---
+---
+layout: post
+title: "HVD: Holographic Versatile Disc"
+date: 2004-08-24 13:46:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2004/08/24/HVD-Holographic-Versatile-Disc", "/post/2004/08/24/hvd-holographic-versatile-disc"]
+---
 <!-- more -->
 A Japanese company has achieved the world&#39;s first reliable recording and playback of digital movies on a transparent holographic recording disc.
 <p>

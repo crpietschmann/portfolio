@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Plot ZipCode Boundaries on a Map: Part 1 - Making sense of U.S. Census ZCTA ARC/INFO Ungenerate (ASCII) files"
-  date: 2008-06-20 16:01:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2008/06/20/Plot-ZipCode-Boundaries-on-a-Map-Part1-Making-sense-of-US-Census-ZCTA-ARCINFO-Ungenerate-ASCII-files", "/post/2008/06/20/plot-zipcode-boundaries-on-a-map-part1-making-sense-of-us-census-zcta-arcinfo-ungenerate-ascii-files"]
-  ---
+---
+layout: post
+title: "Plot ZipCode Boundaries on a Map: Part 1 - Making sense of U.S. Census ZCTA ARC/INFO Ungenerate (ASCII) files"
+date: 2008-06-20 16:01:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2008/06/20/Plot-ZipCode-Boundaries-on-a-Map-Part1-Making-sense-of-US-Census-ZCTA-ARCINFO-Ungenerate-ASCII-files", "/post/2008/06/20/plot-zipcode-boundaries-on-a-map-part1-making-sense-of-us-census-zcta-arcinfo-ungenerate-ascii-files"]
+---
 <!-- more -->
 <p>One question that I get fairly oftern is "How do I plot Zip Code boundaries on a map?". Well, the answer isn't simple, well at least it hasn't been. So, I've decided to write a series of articles going through the steps needed to obtain Zip Code boundary data, makes sense of it and plot it on a map. I'm not sure how many parts this series will be, but it'll probably be at least 3.</p>
 <h3>Where do I get Zip Cod Boundary Data From?</h3>
@@ -38,7 +38,7 @@
 <p>The files that end in "a.dat" contain the zip codes and some other info along with an ID used to reference them in the other file.</p>
 <p>The files that end in ".dat" contain all the geocode points for each of the zip codes defined in the other file.</p>
 <h3>How do I convert it to CSV?</h3>
-<p><img src="/image.axd?picture=ARCINFOASCIItoCSVConverter_Screenshot.png" alt="" width="660" height="534" align="right" />Well, you could look at the ARC/INFO Generate (ASCII) Metadata Cartographic Boundary File Format definition and write a parser that then saves in in a CSV format.</p>
+<p><img src="/images/postsARCINFOASCIItoCSVConverter_Screenshot.png" alt="" width="660" height="534" align="right" />Well, you could look at the ARC/INFO Generate (ASCII) Metadata Cartographic Boundary File Format definition and write a parser that then saves in in a CSV format.</p>
 <p>Or, you could just download and use the one I wrote for this article:</p>
 <p>Download Conversion Utility: <a href="/file.axd?file=ARCINFOASCIItoCSVConverter.zip" rel="enclosure">ARCINFOASCIItoCSVConverter.zip (11.90 kb)</a></p>
 <p>To use this utility, just unzip the contents of all the Zip files you downloaded from the U.S. Census Bureau website into a single folder, and click the "Convert All Files in Folder" button to select that folder and automatically convert all the files in that folder to a CSV file format.</p>

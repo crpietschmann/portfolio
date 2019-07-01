@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Stupid Blog is broke again..."
-  date: 2005-03-10 16:59:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2005/03/10/Stupid-Blog-is-broke-again", "/post/2005/03/10/stupid-blog-is-broke-again"]
-  ---
+---
+layout: post
+title: "Stupid Blog is broke again..."
+date: 2005-03-10 16:59:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2005/03/10/Stupid-Blog-is-broke-again", "/post/2005/03/10/stupid-blog-is-broke-again"]
+---
 <!-- more -->
 <P>Darn it... I'm actually quite irritated that this thing worked for like 10 months with absolutely no problems.</P>
 <P>And then last night, it started giving this error: Value cannot be null. Parameter name: value</P>

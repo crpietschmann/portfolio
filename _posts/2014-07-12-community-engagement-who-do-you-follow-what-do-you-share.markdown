@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Community Engagement: Who do you follow? What do you share?"
-  date: 2014-07-12 07:34:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Inspiration", "Software Craftsmanship"]
-  alias: ["/post/2014/07/12/Community-Engagement-Who-do-you-follow-What-do-you-share", "/post/2014/07/12/community-engagement-who-do-you-follow-what-do-you-share"]
-  ---
+---
+layout: post
+title: "Community Engagement: Who do you follow? What do you share?"
+date: 2014-07-12 07:34:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Inspiration", "Software Craftsmanship"]
+alias: ["/post/2014/07/12/Community-Engagement-Who-do-you-follow-What-do-you-share", "/post/2014/07/12/community-engagement-who-do-you-follow-what-do-you-share"]
+---
 <!-- more -->
 <p>Some people have other people they follow in one manner or another. Some of the most commonly followed people in an industry are the "rockstars" of that industry. However, there are some people who refuse to follow others as they feel it might hinder their ability to think uniquely; think different. Although, if you don't follow anyone then you are turning yourself into a loner; an island. What's the best direction to take? Should you be a loner who works and thinks independently, or should you follow others and potentially risk this independence?</p>
 <p>Over the course of my own career building software I have seen many people who follow other members of the community differently. I have also seen the community change greatly many time over the course of the last 15 years. There have even been many different tactics I've tried with this in my own adventure to learn, grow and share in being a member of the greater community in this great industry I am in. Below are some of these tactics that I've used or seen others use including some of the benefits of each.</p>

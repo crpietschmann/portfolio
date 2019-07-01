@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Entity Framework Tips and Tricks: Use GetObjectByKey When Querying a Single Entity"
-  date: 2011-09-07 14:30:46 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["C#"]
-  alias: ["/post/2011/09/07/Entity-Framework-Tips-and-Tricks-Use-GetObjectByKey-When-Querying-a-Single-Entity", "/post/2011/09/07/entity-framework-tips-and-tricks-use-getobjectbykey-when-querying-a-single-entity"]
-  ---
+---
+layout: post
+title: "Entity Framework Tips and Tricks: Use GetObjectByKey When Querying a Single Entity"
+date: 2011-09-07 14:30:46 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["C#"]
+alias: ["/post/2011/09/07/Entity-Framework-Tips-and-Tricks-Use-GetObjectByKey-When-Querying-a-Single-Entity", "/post/2011/09/07/entity-framework-tips-and-tricks-use-getobjectbykey-when-querying-a-single-entity"]
+---
 <!-- more -->
 <p>I’ve been using Entity Framework a lot lately and it makes data access really nice. It’s fairly simple to use and maps all your tables to a .NET object model. However, just like any other library, it can be misused and have it’s own issues. I’ve been figuring some things out as I’ve been using it, so I thought I’d share a few tip and tricks that I’ve learned. Here’s the first one:</p>  <h3>Use “GetObjectByKey” when Querying for a Single data entity</h3>  <p>Take the following query:</p>  <pre class="csharpcode">var person = (from p <span class="kwrd">in</span> context.Persons
               <span class="kwrd">where</span> p.ID == id

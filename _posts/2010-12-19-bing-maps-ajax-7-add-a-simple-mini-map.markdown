@@ -1,15 +1,15 @@
-  ---
-  layout: post
-  title: "Bing Maps Ajax 7: Add a Simple Mini Map"
-  date: 2010-12-19 13:15:02 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2010/12/19/Bing-Maps-Ajax-7-Add-a-Simple-Mini-Map", "/post/2010/12/19/bing-maps-ajax-7-add-a-simple-mini-map"]
-  ---
+---
+layout: post
+title: "Bing Maps Ajax 7: Add a Simple Mini Map"
+date: 2010-12-19 13:15:02 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2010/12/19/Bing-Maps-Ajax-7-Add-a-Simple-Mini-Map", "/post/2010/12/19/bing-maps-ajax-7-add-a-simple-mini-map"]
+---
 <!-- more -->
-<p>The Bing Maps Ajax v7 control doesn’t include support for adding a Mini Map. So, I decided to quickly work up a simple example of adding one. Below is the source code for it and a zip download of the code at the bottom of the post.</p>  <p><a href="http://pietschsoft.com/image.axd?picture=BingMapsAjax7QuickMiniMap.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="BingMapsAjax7QuickMiniMap" border="0" alt="BingMapsAjax7QuickMiniMap" src="http://pietschsoft.com/image.axd?picture=BingMapsAjax7QuickMiniMap_thumb.png" width="539" height="307" /></a></p>  <h3>Source Code</h3>  <pre class="csharpcode"><span class="kwrd">&lt;!</span><span class="html">DOCTYPE</span> <span class="attr">html</span> <span class="attr">PUBLIC</span> <span class="kwrd">&quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</span> <span class="kwrd">&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;</span><span class="kwrd">&gt;</span>
+<p>The Bing Maps Ajax v7 control doesn’t include support for adding a Mini Map. So, I decided to quickly work up a simple example of adding one. Below is the source code for it and a zip download of the code at the bottom of the post.</p>  <p><a href="/images/postsBingMapsAjax7QuickMiniMap.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="BingMapsAjax7QuickMiniMap" border="0" alt="BingMapsAjax7QuickMiniMap" src="/images/postsBingMapsAjax7QuickMiniMap_thumb.png" width="539" height="307" /></a></p>  <h3>Source Code</h3>  <pre class="csharpcode"><span class="kwrd">&lt;!</span><span class="html">DOCTYPE</span> <span class="attr">html</span> <span class="attr">PUBLIC</span> <span class="kwrd">&quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</span> <span class="kwrd">&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;</span><span class="kwrd">&gt;</span>
 <span class="kwrd">&lt;</span><span class="html">html</span> <span class="attr">xmlns</span><span class="kwrd">=&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="kwrd">&gt;</span>
 <span class="kwrd">&lt;</span><span class="html">head</span><span class="kwrd">&gt;</span>
     <span class="kwrd">&lt;</span><span class="html">meta</span> <span class="attr">http-equiv</span><span class="kwrd">=&quot;Content-Type&quot;</span> <span class="attr">content</span><span class="kwrd">=&quot;text/html; charset=utf-8&quot;</span> <span class="kwrd">/&gt;</span>
@@ -101,4 +101,4 @@
 }
 .csharpcode .lnum { color: #606060; }</style></p>
 
-<p>Download: <a href="http://pietschsoft.com/file.axd?file=BingMapsAjax7SimpleMiniMap.zip">BingMapsAjax7SimpleMiniMap.zip (1 KB)</a></p>
+<p>Download: <a href="/file.axd?file=BingMapsAjax7SimpleMiniMap.zip">BingMapsAjax7SimpleMiniMap.zip (1 KB)</a></p>

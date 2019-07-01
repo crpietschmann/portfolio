@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "I went Deeper in .NET, yesterday"
-  date: 2005-03-06 12:06:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General", "WI-INETA"]
-  alias: ["/post/2005/03/06/I-went-Deeper-in-NET2c-yesterday", "/post/2005/03/06/i-went-deeper-in-net2c-yesterday"]
-  ---
+---
+layout: post
+title: "I went Deeper in .NET, yesterday"
+date: 2005-03-06 12:06:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General", "WI-INETA"]
+alias: ["/post/2005/03/06/I-went-Deeper-in-NET2c-yesterday", "/post/2005/03/06/i-went-deeper-in-net2c-yesterday"]
+---
 <!-- more -->
 <p>
 The speakers were great, and I learned alot as usual. These were the same speakers that speak at events such as: TechEd and PDC.

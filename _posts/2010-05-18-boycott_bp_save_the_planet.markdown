@@ -1,15 +1,15 @@
-  ---
-  layout: post
-  title: "Boycott BP, Save the Planet!"
-  date: 2010-05-18 07:37:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2010/05/18/Boycott_BP_Save_the_Planet", "/post/2010/05/18/boycott_bp_save_the_planet"]
-  ---
+---
+layout: post
+title: "Boycott BP, Save the Planet!"
+date: 2010-05-18 07:37:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2010/05/18/Boycott_BP_Save_the_Planet", "/post/2010/05/18/boycott_bp_save_the_planet"]
+---
 <!-- more -->
-<p><a href="http://www.guardian.co.uk/environment/2010/may/10/deepwater-horizon-oil-junk-shot"><img style="float: right; border: 0;" src="/image.axd?picture=2010%2f5%2fbird-at-deepwater-horizon-006.jpg" alt="" width="150" /></a></p>
+<p><a href="http://www.guardian.co.uk/environment/2010/may/10/deepwater-horizon-oil-junk-shot"><img style="float: right; border: 0;" src="/images/posts2010/5/bird-at-deepwater-horizon-006.jpg" alt="" width="150" /></a></p>
 <p>I've decided to boycott BP until the Oil Spill in the Guld of Mexico is fixed/cleaned up! If you remember the oil spill in Alaska back in the '80's then you remember all the pictures/videos of all the animals killed by being covered in oil. The same thing is happening today in the Gulf of Mexico with the oil drilling blowout that has been spewing oil into the ocean for a month now.</p>
 <p>Oil does not occur naturaling in the ocean or on land. As a result animals can not breath or fly when covered in oil. This is killing OUR environment!</p>
 <p>Bottom line, if we can't keep things like this from happening, or hold accountable those responsible, then there is no way we should continue drilling for oil. Period.</p>

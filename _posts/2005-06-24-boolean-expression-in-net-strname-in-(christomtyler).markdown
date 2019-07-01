@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Boolean Expression in .NET: strName IN ("CHRIS","TOM","TYLER")"
-  date: 2005-06-24 12:00:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2005/06/24/Boolean-Expression-in-NET-strName-IN-(CHRISTOMTYLER)", "/post/2005/06/24/boolean-expression-in-net-strname-in-(christomtyler)"]
-  ---
+---
+layout: post
+title: "Boolean Expression in .NET: strName IN ("CHRIS","TOM","TYLER")"
+date: 2005-06-24 12:00:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2005/06/24/Boolean-Expression-in-NET-strName-IN-(CHRISTOMTYLER)", "/post/2005/06/24/boolean-expression-in-net-strname-in-(christomtyler)"]
+---
 <!-- more -->
 <P><BR>I think it would be really helpful if we could do boolean expressions with IN sort of like we can in SQL.</P>
 <P>For Example:<BR>&nbsp;&nbsp; 'just like SQL<BR>&nbsp;&nbsp; If strName IN ("CHRIS","TOM","TYLER") Then<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'do something<BR>&nbsp;&nbsp; End If</P>

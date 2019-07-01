@@ -1,20 +1,20 @@
-  ---
-  layout: post
-  title: "Windows System Properties - Add Custom Manufacturer Properties"
-  date: 2004-08-06 20:29:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2004/08/06/Windows-System-Properties-Add-Custom-Manufacturer-Properties", "/post/2004/08/06/windows-system-properties-add-custom-manufacturer-properties"]
-  ---
+---
+layout: post
+title: "Windows System Properties - Add Custom Manufacturer Properties"
+date: 2004-08-06 20:29:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2004/08/06/Windows-System-Properties-Add-Custom-Manufacturer-Properties", "/post/2004/08/06/windows-system-properties-add-custom-manufacturer-properties"]
+---
 <!-- more -->
 <p>
 Here is a pretty neat edit you can do to add your own manufacturer information and logo to the System Properties dialog.
 </p>
 <font size="-1">
 </font>
-<img src="/image.axd?picture=WinXPSysPropCustomManufacturer.jpg" alt="" align="right" />
+<img src="/images/postsWinXPSysPropCustomManufacturer.jpg" alt="" align="right" />
 <p>
 <font size="-1"><span class="header">Show Computer Manufacturer and Support Information</span> <em>(All Windows)</em><br />
 This tip lets you include company and support information on the System Properties page in Control Panel. This is especially useful if you run a computer store and want your customers to be reminded where they bought their PC and where to get technical support.<br />

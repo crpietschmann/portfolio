@@ -1,18 +1,18 @@
-  ---
-  layout: post
-  title: "HTML5 Day 1: New tags work in older browsers? Awesome!"
-  date: 2010-11-14 14:51:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["HTML"]
-  alias: ["/post/2010/11/14/HTML5-Day-1-New-tags-work-in-older-browsers-Awesome", "/post/2010/11/14/html5-day-1-new-tags-work-in-older-browsers-awesome"]
-  ---
+---
+layout: post
+title: "HTML5 Day 1: New tags work in older browsers? Awesome!"
+date: 2010-11-14 14:51:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["HTML"]
+alias: ["/post/2010/11/14/HTML5-Day-1-New-tags-work-in-older-browsers-Awesome", "/post/2010/11/14/html5-day-1-new-tags-work-in-older-browsers-awesome"]
+---
 <!-- more -->
 <p>I recently decided to really dig into HTML5 to see what it&rsquo;s all about. After all, the web (err... <a title="Ted Stevens: Series of Tubes" href="http://www.youtube.com/watch?v=f99PcP0aFNE">tubes</a>) is full of talk about how the new HTML5 Canvas element will bring an end to both Silverlight and Flash. In reality HTML5 is much more than just the Canvas element. In fact, HTML5 brings with it a large list of enhancements, including 28 new elements and form controls that do client-side data validation for you!</p>
 <h3>Specification Doc or Book?</h3>
 <p>Instead of reading the enormous HTML5 Specifications, I decided to purchase a book that would sum things up much more nicely. Below is the book:</p>
-<p><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; float: left; padding-top: 0px; border-width: 0px;" title="IntoHtml5SharpLawson" src="http://pietschsoft.com/image.axd?picture=IntoHtml5SharpLawson.jpg" alt="IntoHtml5SharpLawson" width="48" height="61" align="left" border="0" /><em><a href="http://amzn.to/2acBCG7" target="_blank">Introducing HTML5</a> <br />by Bruce Lawson and Remy Sharp</em></p>
+<p><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; float: left; padding-top: 0px; border-width: 0px;" title="IntoHtml5SharpLawson" src="/images/postsIntoHtml5SharpLawson.jpg" alt="IntoHtml5SharpLawson" width="48" height="61" align="left" border="0" /><em><a href="http://amzn.to/2acBCG7" target="_blank">Introducing HTML5</a> <br />by Bruce Lawson and Remy Sharp</em></p>
 <p>This book is relatively short at 223 pages and sums everything up very nicely. I&rsquo;m not finished with the book yet, as I&rsquo;m playing around with things more rather than reading cover to cover.</p>
 <p>I know there are other resources available online (for free), but nothing beats a good book to get you up to speed with a new technology.</p>
 <h3>HTML5 Design Principles</h3>
@@ -53,9 +53,9 @@
 <p>I&rsquo;m really liking the new additions to HTML5, and it&rsquo;s awesome that you can still use them in older browsers with only a little help.</p>
 <p>I plan on continuing this series for a little while, and will post links to subsequent articles below as they are posted.</p>
 <ul>
-<li><a href="http://pietschsoft.com/post/2010/11/15/HTML5-Day-2-Upgrade-ASPNET-MVC-2-Site-Template-to-HTML5.aspx">Day 2: Upgrade ASP.NET MVC 2 Site Template to HTML5</a></li>
-<li><a href="http://pietschsoft.com/post/2010/11/16/HTML5-Day-3-Detecting-HTML5-Support-via-JavaScript.aspx">Day 3: Detecting HTML5 Support via JavaScript</a></li>
-<li><a href="http://pietschsoft.com/post/2010/11/17/HTML5-Day-4-Add-DropDown-Menu-ASPNET-MVC-HTML5-Template-using-CSS-and-jQuery.aspx">Day 4: Add Drop Down Menu to ASP.NET MVC HTML5 Template using CSS and jQuery</a></li>
-<li><a href="http://pietschsoft.com/post/2010/11/18/HTML5-Day-5-New-Date-Input-Type.aspx">Day 5: New Date Input Type &lt;input type=date /&gt;</a></li>
-<li><a href="http://pietschsoft.com/post/2010/11/22/HTML5-Day-6-New-Range-Input-Type-3cinput-type3drange-3e.aspx">Day 6: New Range Input Type &lt;input type=range /&gt;</a></li>
+<li><a href="/post/2010/11/15/HTML5-Day-2-Upgrade-ASPNET-MVC-2-Site-Template-to-HTML5.aspx">Day 2: Upgrade ASP.NET MVC 2 Site Template to HTML5</a></li>
+<li><a href="/post/2010/11/16/HTML5-Day-3-Detecting-HTML5-Support-via-JavaScript.aspx">Day 3: Detecting HTML5 Support via JavaScript</a></li>
+<li><a href="/post/2010/11/17/HTML5-Day-4-Add-DropDown-Menu-ASPNET-MVC-HTML5-Template-using-CSS-and-jQuery.aspx">Day 4: Add Drop Down Menu to ASP.NET MVC HTML5 Template using CSS and jQuery</a></li>
+<li><a href="/post/2010/11/18/HTML5-Day-5-New-Date-Input-Type.aspx">Day 5: New Date Input Type &lt;input type=date /&gt;</a></li>
+<li><a href="/post/2010/11/22/HTML5-Day-6-New-Range-Input-Type-3cinput-type3drange-3e.aspx">Day 6: New Range Input Type &lt;input type=range /&gt;</a></li>
 </ul>

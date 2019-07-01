@@ -1,16 +1,16 @@
-  ---
-  layout: post
-  title: "How To Use ASP.NET MVC in Website rather than Web Application Project"
-  date: 2008-08-15 16:15:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["asp.net", "ASP.NET MVC"]
-  alias: ["/post/2008/08/15/How-To-Use-ASPNET-MVC-in-Website-rather-than-Web-Application-Project", "/post/2008/08/15/how-to-use-aspnet-mvc-in-website-rather-than-web-application-project"]
-  ---
+---
+layout: post
+title: "How To Use ASP.NET MVC in Website rather than Web Application Project"
+date: 2008-08-15 16:15:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["asp.net", "ASP.NET MVC"]
+alias: ["/post/2008/08/15/How-To-Use-ASPNET-MVC-in-Website-rather-than-Web-Application-Project", "/post/2008/08/15/how-to-use-aspnet-mvc-in-website-rather-than-web-application-project"]
+---
 <!-- more -->
 <p>
-<img src="/image.axd?picture=ASPNETMVC_Preview4_WebsiteFileStructure.png" alt="" align="right" />
+<img src="/images/postsASPNETMVC_Preview4_WebsiteFileStructure.png" alt="" align="right" />
 I recently started getting to know the ASP.NET MVC Framework (more specifically the Preview 4 release). The first thing I noticed upon installation is that it only comes with a Web Application Project Template. There is no regular ASP.NET Website template. So, I decided to try converting the Web Application Project Template to a regular ASP.NET Website. I actually prefer to use Website projects instead of Web Application projects since it gives a little more flexibility to deploy changes to the website after the website is already live. Plus, you can still throw anything you want into a DLL that goes into the Bin if you want.
 </p>
 <p>

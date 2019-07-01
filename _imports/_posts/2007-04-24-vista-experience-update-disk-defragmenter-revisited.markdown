@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Vista Experience Update: Disk Defragmenter Revisited"
-  date: 2007-04-24 22:29:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2007/04/24/Vista-Experience-Update-Disk-Defragmenter-Revisited", "/post/2007/04/24/vista-experience-update-disk-defragmenter-revisited"]
-  ---
+---
+layout: post
+title: "Vista Experience Update: Disk Defragmenter Revisited"
+date: 2007-04-24 22:29:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2007/04/24/Vista-Experience-Update-Disk-Defragmenter-Revisited", "/post/2007/04/24/vista-experience-update-disk-defragmenter-revisited"]
+---
 <!-- more -->
 <p>About 5 months ago, way back when Vista RTM'd, I posted about how <a href="/Blog/Post.aspx?PostID=1338">Vista now automatically defragments your hard drives</a>. This is a really neat feature, especially since I would never remember to defrag until my system started to get noticably slow. So, I thought I would revisit this to just see how well is it working.</p>
 <p><strong>But, How well does the automatically scheduled defrag work?</strong></p>

@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Place a StackOverflow badge on your website"
-  date: 2008-10-10 07:09:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["asp.net"]
-  alias: ["/post/2008/10/10/Place-a-StackOverflow-badge-on-your-website", "/post/2008/10/10/place-a-stackoverflow-badge-on-your-website"]
-  ---
+---
+layout: post
+title: "Place a StackOverflow badge on your website"
+date: 2008-10-10 07:09:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["asp.net"]
+alias: ["/post/2008/10/10/Place-a-StackOverflow-badge-on-your-website", "/post/2008/10/10/place-a-stackoverflow-badge-on-your-website"]
+---
 <!-- more -->
 <p><strong>Update:</strong> StackOverflow.com has since added the ability to include <a href="http://stackoverflow.com/users/flair">StackOverflow "Flair"</a> on your own website; basically a "badge" that contains your StackOverflow.com Name, Avatar, Score and Medal counts within a nice little box. I'm not sure when they added it, but now it's officially supported.</p>
 <p>
@@ -19,7 +19,7 @@
 <p>I was thinking it would be cool if you could place a StackOverflow "badge" on your website or blog showing your current Reputation score with a link to your profile. So I look into it, and it actually wasn't that difficult to "scrape" the information off the StackOverflow.com website.</p>
 <p><em>Disclaimer: I didn't see any terms of use on the site prohibiting this, but it very well may be against the terms of use. Use at your own risk.</em></p>
 <p>Well, here's a small ASP.NET User Control that does it:</p>
-<p><img src="/image.axd?picture=StackOverflowBadge.png" alt="" width="193" height="52" /></p>
+<p><img src="/images/postsStackOverflowBadge.png" alt="" width="193" height="52" /></p>
 <p>And here's the usage code for putting your badge on your site:</p>
 <p>[ code:html ]</p>
 <p>&lt;%@ Register Src="~/StackOverflowBadge.ascx" TagPrefix="StackOverflow" TagName="Badge" %&gt; <br /> <br /> &lt;style type="text/css"&gt;<br /> &nbsp;&nbsp;&nbsp; .stackoverflow-badge {border: solid 1px black; padding: 2px;}<br /> &nbsp;&nbsp;&nbsp; .stackoverflow-badge .user-info .user-gravatar32{float: left; width: 32px;}<br /> &nbsp;&nbsp;&nbsp; .stackoverflow-badge .user-info .user-gravatar32 img{border: none;}<br /> &nbsp;&nbsp;&nbsp; .stackoverflow-badge .user-info .user-details{<br /> &nbsp;&nbsp;&nbsp; &nbsp;float: left; margin-left: 5px; width: 138px; overflow: hidden; white-space: nowrap;<br /> &nbsp;&nbsp;&nbsp; }<br /> &nbsp;&nbsp;&nbsp; .stackoverflow-badge .user-details{color: #888; line-height:17px;}<br /> &nbsp;&nbsp;&nbsp; .stackoverflow-badge .reputation-score{font-weight: bold; color: #333; font-size: 120%; margin-right:2px;}<br /> &nbsp;&nbsp;&nbsp; .stackoverflow-badge .badge{<br /> &nbsp;&nbsp;&nbsp; &nbsp;color: #fff; background-color: #333; border: 1px solid #333; margin: 0 3px 3px 0;<br /> &nbsp;&nbsp;&nbsp; &nbsp;padding: 4px 8px 4px 3px; color: white !important; text-decoration: none; line-height: 1.9;<br /> &nbsp;&nbsp;&nbsp; }<br /> &nbsp;&nbsp;&nbsp; .stackoverflow-badge .badge:hover{border: 1px solid #555;background-color: #555;text-decoration: none;}<br /> &nbsp;&nbsp;&nbsp; .stackoverflow-badge .badge1{margin-left:3px;font-size: 120%;color: #FFCC00;}<br /> &nbsp;&nbsp;&nbsp; .stackoverflow-badge .badge2{margin-left:3px;font-size: 120%;color: #C0C0C0;}<br /> &nbsp;&nbsp;&nbsp; .stackoverflow-badge .badge3{margin-left:3px;font-size: 120%;color: #CC9966;}<br /> &nbsp;&nbsp;&nbsp; .stackoverflow-badge .badgecount{padding-left: 1px; color: #808185;}<br /> &lt;/style&gt;<br /> <br /> &lt;StackOverflow:Badge runat="server" id="sob1" DisplayName="Chris Pietschmann"&gt;&lt;/StackOverflow:Badge&gt;</p>

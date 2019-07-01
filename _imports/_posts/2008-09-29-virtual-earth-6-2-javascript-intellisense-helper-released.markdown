@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Virtual Earth 6.2 (Bing Maps) JavaScript Intellisense Helper Released"
-  date: 2008-09-29 20:30:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2008/09/29/Virtual-Earth-6-2-JavaScript-Intellisense-Helper-Released", "/post/2008/09/29/virtual-earth-6-2-javascript-intellisense-helper-released"]
-  ---
+---
+layout: post
+title: "Virtual Earth 6.2 (Bing Maps) JavaScript Intellisense Helper Released"
+date: 2008-09-29 20:30:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2008/09/29/Virtual-Earth-6-2-JavaScript-Intellisense-Helper-Released", "/post/2008/09/29/virtual-earth-6-2-javascript-intellisense-helper-released"]
+---
 <!-- more -->
 <p>Today, "We" released a new updated version of the <a href="http://codeplex.com/vejs">Virtual Earth JavaScript Intellisense Helper</a> that is updated to support the brand new Virtual Earth v6.2. You can learn more about what's new in Virtual Earth v6.2 <a href="http://blogs.msdn.com/virtualearth/archive/2008/09/24/announcing-the-virtual-earth-web-service-and-virtual-earth-map-control-6-2.aspx">here: http://blogs.msdn.com/virtualearth/archive/2008/09/24/announcing-the-virtual-earth-web-service-and-virtual-earth-map-control-6-2.aspx</a></p>
 <p>It appears that Mark beat me to blogging this release (which makes sense since he's the one that posted the final ZIP of the release): <a href="http://blogs.msdn.com/devkeydet/archive/2008/09/30/released-virtual-earth-javascript-intellisense-helper-for-6-2.aspx">http://blogs.msdn.com/devkeydet/archive/2008/09/30/released-virtual-earth-javascript-intellisense-helper-for-6-2.aspx</a></p>

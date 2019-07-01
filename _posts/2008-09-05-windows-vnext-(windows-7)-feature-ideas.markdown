@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Windows vNext (Windows 7?) Feature Ideas"
-  date: 2008-09-05 10:42:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/09/05/Windows-vNext-(Windows-7)-Feature-Ideas", "/post/2008/09/05/windows-vnext-(windows-7)-feature-ideas"]
-  ---
+---
+layout: post
+title: "Windows vNext (Windows 7?) Feature Ideas"
+date: 2008-09-05 10:42:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/09/05/Windows-vNext-(Windows-7)-Feature-Ideas", "/post/2008/09/05/windows-vnext-(windows-7)-feature-ideas"]
+---
 <!-- more -->
 <p>Here are some of my thoughts on the Windows operating system and how thing could be improved in the "next" version after Vista. Also, the ideas aren't in any particular order of importance, they are just in the order I typed them in.</p>
 <h3>1) Make the Desktop version of Windows more Modular, like Windows Server 2008</h3>

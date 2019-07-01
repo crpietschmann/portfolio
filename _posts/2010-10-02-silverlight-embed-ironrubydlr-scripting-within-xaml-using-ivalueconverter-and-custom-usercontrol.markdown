@@ -1,15 +1,15 @@
-  ---
-  layout: post
-  title: "Silverlight: Embed IronRuby/DLR Scripting within XAML using IValueConverter and Custom UserControl"
-  date: 2010-10-02 14:40:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["DLR", "Ruby", "Silverlight"]
-  alias: ["/post/2010/10/02/Silverlight-Embed-IronRubyDLR-Scripting-within-XAML-using-IValueConverter-and-Custom-UserControl", "/post/2010/10/02/silverlight-embed-ironrubydlr-scripting-within-xaml-using-ivalueconverter-and-custom-usercontrol"]
-  ---
+---
+layout: post
+title: "Silverlight: Embed IronRuby/DLR Scripting within XAML using IValueConverter and Custom UserControl"
+date: 2010-10-02 14:40:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["DLR", "Ruby", "Silverlight"]
+alias: ["/post/2010/10/02/Silverlight-Embed-IronRubyDLR-Scripting-within-XAML-using-IValueConverter-and-Custom-UserControl", "/post/2010/10/02/silverlight-embed-ironrubydlr-scripting-within-xaml-using-ivalueconverter-and-custom-usercontrol"]
+---
 <!-- more -->
-<p>After I wrote the “<a href="http://pietschsoft.com/post/2010/09/29/Intro-to-IronRubyDLR-Scripting-in-C-Silverlight-4-Application.aspx">Intro to IronRuby/DLR Scripting in C# Silverlight 4 Application</a>” post, I came across an interesting series on <a href="http://www.thinkbottomup.com.au/site/blog/Embedding_DLR_Scripts_in_XAML_Part_6">embedding DLR scripts in XAML with WPF</a>. This is an interesting series, although the code doesn’t run in Silverlight, due to the fact that Silverlight is only a subset of WPF and doesn’t support the <a href="http://msdn.microsoft.com/en-us/library/system.windows.markup.markupextension.aspx">System.Windows.Markup.MarkupExtension</a> class. I test out a couple things in Silverlight, and I was able to get similar DLR scripting functionality working under Silverlight using a combination of a simple, custom <a href="http://msdn.microsoft.com/en-us/library/system.windows.data.ivalueconverter.aspx">IValueConverter</a> and a custom UserControl class.</p>  <p>If you are unfamiliar with <a href="http://timheuer.com/blog/archive/2008/07/30/format-data-in-silverlight-databinding-valueconverter.aspx">value converters</a> and the <a href="http://msdn.microsoft.com/en-us/library/system.windows.data.ivalueconverter.aspx">IValueConverter</a> interface (same for both Silverlight and WPF), you may want to look it up and learn how to create your own. Value converters are tremendously helpful when performing data binding.</p>  <h3>Embedded IronRuby within XAML</h3>  <p>To start, here’s a few examples of IronRuby code embedded within a custom IValueConverter and custom UserControl. As you’ll see, this can be very effective to embed scripting to define how to display the values bound, or to manipulate the content of the custom user control. Although, you must keep in mind that this is not limited to simple tasks such as these. You have the full power of the DLR and .NET within the DLR scripts being executed, so there really is no limit to what could be coded within.</p>  <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">=&quot;SLXamlEmbeddedScript.MainPage&quot;</span>
+<p>After I wrote the “<a href="/post/2010/09/29/Intro-to-IronRubyDLR-Scripting-in-C-Silverlight-4-Application.aspx">Intro to IronRuby/DLR Scripting in C# Silverlight 4 Application</a>” post, I came across an interesting series on <a href="http://www.thinkbottomup.com.au/site/blog/Embedding_DLR_Scripts_in_XAML_Part_6">embedding DLR scripts in XAML with WPF</a>. This is an interesting series, although the code doesn’t run in Silverlight, due to the fact that Silverlight is only a subset of WPF and doesn’t support the <a href="http://msdn.microsoft.com/en-us/library/system.windows.markup.markupextension.aspx">System.Windows.Markup.MarkupExtension</a> class. I test out a couple things in Silverlight, and I was able to get similar DLR scripting functionality working under Silverlight using a combination of a simple, custom <a href="http://msdn.microsoft.com/en-us/library/system.windows.data.ivalueconverter.aspx">IValueConverter</a> and a custom UserControl class.</p>  <p>If you are unfamiliar with <a href="http://timheuer.com/blog/archive/2008/07/30/format-data-in-silverlight-databinding-valueconverter.aspx">value converters</a> and the <a href="http://msdn.microsoft.com/en-us/library/system.windows.data.ivalueconverter.aspx">IValueConverter</a> interface (same for both Silverlight and WPF), you may want to look it up and learn how to create your own. Value converters are tremendously helpful when performing data binding.</p>  <h3>Embedded IronRuby within XAML</h3>  <p>To start, here’s a few examples of IronRuby code embedded within a custom IValueConverter and custom UserControl. As you’ll see, this can be very effective to embed scripting to define how to display the values bound, or to manipulate the content of the custom user control. Although, you must keep in mind that this is not limited to simple tasks such as these. You have the full power of the DLR and .NET within the DLR scripts being executed, so there really is no limit to what could be coded within.</p>  <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">=&quot;SLXamlEmbeddedScript.MainPage&quot;</span>
     <span class="attr">xmlns</span><span class="kwrd">=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;</span>
     <span class="attr">xmlns:x</span><span class="kwrd">=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;</span>
     <span class="attr">xmlns:d</span><span class="kwrd">=&quot;http://schemas.microsoft.com/expression/blend/2008&quot;</span>
@@ -280,4 +280,4 @@
 
 <p>Hope this helps someone.</p>
 
-<p><strong>Continued Here: </strong><a href="http://pietschsoft.com/post/2010/10/17/Silverlight-Embed-IronRuby-within-XAML-Part-2.aspx"><strong>Silverlight: Embed IronRuby within XAML Part 2</strong></a></p>
+<p><strong>Continued Here: </strong><a href="/post/2010/10/17/Silverlight-Embed-IronRuby-within-XAML-Part-2.aspx"><strong>Silverlight: Embed IronRuby within XAML Part 2</strong></a></p>

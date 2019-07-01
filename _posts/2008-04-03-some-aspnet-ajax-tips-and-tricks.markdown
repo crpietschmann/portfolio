@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Some ASP.NET AJAX Tips and Tricks"
-  date: 2008-04-03 21:56:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["asp.net"]
-  alias: ["/post/2008/04/03/Some-ASPNET-AJAX-Tips-and-Tricks", "/post/2008/04/03/some-aspnet-ajax-tips-and-tricks"]
-  ---
+---
+layout: post
+title: "Some ASP.NET AJAX Tips and Tricks"
+date: 2008-04-03 21:56:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["asp.net"]
+alias: ["/post/2008/04/03/Some-ASPNET-AJAX-Tips-and-Tricks", "/post/2008/04/03/some-aspnet-ajax-tips-and-tricks"]
+---
 <!-- more -->
 <p>
 I&#39;ve been using ASP.NET AJAX alot for a while now, so I thought I&#39;d share some of the Tips and Tricks that I&#39;ve learned though my adventures.&nbsp;Lately, all the&nbsp;buzz has been around Silverlight, but I know there are still a lot of devs out there that can benefit from these tips and tricks. 

@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Software Development = Logical Creativity"
-  date: 2007-11-02 12:16:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2007/11/02/Software-Development-=-Logical-Creativity", "/post/2007/11/02/software-development-=-logical-creativity"]
-  ---
+---
+layout: post
+title: "Software Development = Logical Creativity"
+date: 2007-11-02 12:16:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2007/11/02/Software-Development-=-Logical-Creativity", "/post/2007/11/02/software-development-=-logical-creativity"]
+---
 <!-- more -->
 <H3>Programming = Logical</H3>
 <P>There is a lot of <A href="http://en.wikipedia.org/wiki/Logic">logic</A> involved in computer programming, just as there is in Math. In college they teach you a lot of mathematics and how to use that same logical thinking with programming. It's true that if you're good at math, you may have the potential to&nbsp;be good at programming.</P>

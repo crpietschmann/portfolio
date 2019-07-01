@@ -1,16 +1,16 @@
-  ---
-  layout: post
-  title: "CTP: Getting Started with Bing Maps Silverlight CTP Map Control SDK"
-  date: 2009-03-20 18:27:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps", "Silverlight"]
-  alias: ["/post/2009/03/20/Getting-Started-Virtual-Earth-Silverlight-Map-Control-SDK-CTP", "/post/2009/03/20/getting-started-virtual-earth-silverlight-map-control-sdk-ctp"]
-  ---
+---
+layout: post
+title: "CTP: Getting Started with Bing Maps Silverlight CTP Map Control SDK"
+date: 2009-03-20 18:27:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps", "Silverlight"]
+alias: ["/post/2009/03/20/Getting-Started-Virtual-Earth-Silverlight-Map-Control-SDK-CTP", "/post/2009/03/20/getting-started-virtual-earth-silverlight-map-control-sdk-ctp"]
+---
 <!-- more -->
 <p><strong>UPDATE: I have written a newer version of this article to specifically target the latest Bing Maps Silverlight Control Version 1.0 Release.</strong></p>
-<p><strong>You can find the new article here: <a href="http://pietschsoft.com/post.aspx?id=82ad46e3-73c5-468f-be62-6247970f31e1">Getting Started with Bing Maps Silverlight Control v1.0</a></strong></p>
+<p><strong>You can find the new article here: <a href="/post.aspx?id=82ad46e3-73c5-468f-be62-6247970f31e1">Getting Started with Bing Maps Silverlight Control v1.0</a></strong></p>
 <hr />
 <p>It seems like forever since MIX&rsquo;08 when a demo was shown of a new Silverlight-based Virtual Earth Map Control. Well, now FINALLY we actually have a version of the control to &ldquo;play&rdquo; around with. The reason I say &ldquo;play&rdquo; is because it&rsquo;s still a CTP (Community Technology Preview). If you read the license file you&rsquo;ll see that basically the most important points of Microsoft&rsquo;s position on CTP&rsquo;s are: 1) You can NOT use it in a production environment, and 2) It&rsquo;s a Preview, so anything can change from now until the next release (CTP, Beta, whatever). Well, anyway&hellip;</p>
 <p><strong>I introduce you to the Virtual Earth Silverlight Map Control SDK CTP!</strong></p>
@@ -41,13 +41,13 @@
 <h3>Let&rsquo;s Display a Map in Silverlight</h3>
 <h5>Create a New Silverlight Application Project</h5>
 <ol>
-<li>Run Visual Studio 2008 and create a New Project using the <strong>Silverlight Application</strong> template.       <br /> <br /><a href="/image.axd?picture=CreateSilverlightApplicationProject.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="CreateSilverlightApplicationProject" src="/image.axd?picture=CreateSilverlightApplicationProject_thumb.png" border="0" alt="CreateSilverlightApplicationProject" width="706" height="486" /></a> </li>
-<li>In the &ldquo;Add Silverlight Application&rdquo; dialog box, select the &ldquo;<strong>Add a new ASP.NET Web project to the solution to host Silverlight</strong>&rdquo; option and click &ldquo;OK&rdquo;. You must select this option to create an ASP.NET Web Application Project or ASP.NET Website because the <a href="http://msdn.microsoft.com/en-us/library/cc189008(VS.95).aspx" target="_blank">URL Access Restrictions in Silverlight</a> require the page that hosts the Map control to be hosted using HTTP in order to load/access the Virtual Earth Map Tiles.       <br /> <br /><a href="/image.axd?picture=AddNewASP.NETWebProject.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="AddNewASP.NETWebProject" src="/image.axd?picture=AddNewASP.NETWebProject_thumb.png" border="0" alt="AddNewASP.NETWebProject" width="457" height="409" /></a> </li>
+<li>Run Visual Studio 2008 and create a New Project using the <strong>Silverlight Application</strong> template.       <br /> <br /><a href="/images/postsCreateSilverlightApplicationProject.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="CreateSilverlightApplicationProject" src="/images/postsCreateSilverlightApplicationProject_thumb.png" border="0" alt="CreateSilverlightApplicationProject" width="706" height="486" /></a> </li>
+<li>In the &ldquo;Add Silverlight Application&rdquo; dialog box, select the &ldquo;<strong>Add a new ASP.NET Web project to the solution to host Silverlight</strong>&rdquo; option and click &ldquo;OK&rdquo;. You must select this option to create an ASP.NET Web Application Project or ASP.NET Website because the <a href="http://msdn.microsoft.com/en-us/library/cc189008(VS.95).aspx" target="_blank">URL Access Restrictions in Silverlight</a> require the page that hosts the Map control to be hosted using HTTP in order to load/access the Virtual Earth Map Tiles.       <br /> <br /><a href="/images/postsAddNewASP.NETWebProject.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="AddNewASP.NETWebProject" src="/images/postsAddNewASP.NETWebProject_thumb.png" border="0" alt="AddNewASP.NETWebProject" width="457" height="409" /></a> </li>
 </ol>
 <h4>Add a Reference to Microsoft.VirtualEarth.MapControl.dll</h4>
 <ol>
-<li>Go to the &ldquo;<strong>Solution Explorer</strong>&rdquo; and Right-Click &ldquo;<strong>References</strong>&rdquo; in the Silverlight Project (not the ASP.NET Web Application Project), and Select &ldquo;<strong>Add Reference&hellip;</strong>&rdquo;       <br /> <br /><a href="/image.axd?picture=VEJS_003_AddReferenceToMapControlDLL.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_003_AddReferenceToMapControlDLL" src="/image.axd?picture=VEJS_003_AddReferenceToMapControlDLL_thumb.png" border="0" alt="VEJS_003_AddReferenceToMapControlDLL" width="365" height="354" /></a> </li>
-<li>Within the &ldquo;Add Reference&rdquo; Dialog, Select the &ldquo;<strong>Browse</strong>&rdquo; tab and navigate to the folder where the SDK is installed, and select the &ldquo;<strong>Microsoft.VirtualEarth.MapControl.dll</strong>&rdquo;.       <br /> <br /><em>Note: By Default the SDK is installed in this folder &ldquo;C:\Program Files (x86)\Microsoft Virtual Earth Silverlight Map Control\CTP\Libraries&rdquo;        <br /> <br /><a href="/image.axd?picture=VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile" src="/image.axd?picture=VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile_thumb.png" border="0" alt="VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile" width="735" height="450" /></a> </em></li>
+<li>Go to the &ldquo;<strong>Solution Explorer</strong>&rdquo; and Right-Click &ldquo;<strong>References</strong>&rdquo; in the Silverlight Project (not the ASP.NET Web Application Project), and Select &ldquo;<strong>Add Reference&hellip;</strong>&rdquo;       <br /> <br /><a href="/images/postsVEJS_003_AddReferenceToMapControlDLL.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_003_AddReferenceToMapControlDLL" src="/images/postsVEJS_003_AddReferenceToMapControlDLL_thumb.png" border="0" alt="VEJS_003_AddReferenceToMapControlDLL" width="365" height="354" /></a> </li>
+<li>Within the &ldquo;Add Reference&rdquo; Dialog, Select the &ldquo;<strong>Browse</strong>&rdquo; tab and navigate to the folder where the SDK is installed, and select the &ldquo;<strong>Microsoft.VirtualEarth.MapControl.dll</strong>&rdquo;.       <br /> <br /><em>Note: By Default the SDK is installed in this folder &ldquo;C:\Program Files (x86)\Microsoft Virtual Earth Silverlight Map Control\CTP\Libraries&rdquo;        <br /> <br /><a href="/images/postsVEJS_004_AddReferenceToMapControlDLL_SelectDLLFile.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile" src="/images/postsVEJS_004_AddReferenceToMapControlDLL_SelectDLLFile_thumb.png" border="0" alt="VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile" width="735" height="450" /></a> </em></li>
 </ol>
 <h4>Display a Virtual Earth Map</h4>
 <ol>
@@ -58,7 +58,7 @@
 <p>&lt;UserControl x:Class="VirtualEarthSilverlightApplication1.Page"    <br />&nbsp;&nbsp;&nbsp; xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"     <br />&nbsp;&nbsp;&nbsp; xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     <br />&nbsp;&nbsp;&nbsp; xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"     <br />&nbsp;&nbsp;&nbsp; Width="400" Height="300"&gt;     <br />&nbsp;&nbsp;&nbsp; &lt;Grid x:Name="LayoutRoot" Background="White"&gt;     <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;m:Map&gt;&lt;/m:Map&gt;     <br />&nbsp;&nbsp;&nbsp; &lt;/Grid&gt;     <br />&lt;/UserControl&gt;</p>
 <p>&nbsp;</p>
 <p>Now, when you run the application (press F5) you will see a fully interactive Virtual Earth Map displayed:</p>
-<p><a href="/image.axd?picture=VEJS_005_SimpleMapDisplayed.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_005_SimpleMapDisplayed" src="/image.axd?picture=VEJS_005_SimpleMapDisplayed_thumb.png" border="0" alt="VEJS_005_SimpleMapDisplayed" width="489" height="304" /></a></p>
+<p><a href="/images/postsVEJS_005_SimpleMapDisplayed.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_005_SimpleMapDisplayed" src="/images/postsVEJS_005_SimpleMapDisplayed_thumb.png" border="0" alt="VEJS_005_SimpleMapDisplayed" width="489" height="304" /></a></p>
 <h3>Change/Set Map Properties Declaratively using XAML and Programatically using C#</h3>
 <p>You can change/set the Map Control&rsquo;s properties Declaratively using XAML and Programatically using C# (or any other .NET language).</p>
 <p>Below are examples using XAML and C#.</p>

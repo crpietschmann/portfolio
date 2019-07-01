@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Four ways to get your hands on Visual Studio 2005 Beta 2!!"
-  date: 2005-04-22 00:31:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2005/04/22/Four-ways-to-get-your-hands-on-Visual-Studio-2005-Beta-2!!", "/post/2005/04/22/four-ways-to-get-your-hands-on-visual-studio-2005-beta-2!!"]
-  ---
+---
+layout: post
+title: "Four ways to get your hands on Visual Studio 2005 Beta 2!!"
+date: 2005-04-22 00:31:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2005/04/22/Four-ways-to-get-your-hands-on-Visual-Studio-2005-Beta-2!!", "/post/2005/04/22/four-ways-to-get-your-hands-on-visual-studio-2005-beta-2!!"]
+---
 <!-- more -->
 <OL>
 <LI>I posted a couple days ago that non-MSDN subscribers can get Visual Studio 2005 Beta 2 for FREE from <A href="http://msdn.microsoft.com/getthebetas/">http://msdn.microsoft.com/getthebetas/</A>. 

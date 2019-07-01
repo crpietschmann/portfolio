@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Mocking HttpRequestBase.ServerVariables using Moq"
-  date: 2012-08-03 21:12:58 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["C#", "ASP.NET MVC", "TDD"]
-  alias: ["/post/2012/08/03/Mocking-HttpRequestBaseServerVariables-using-Moq", "/post/2012/08/03/mocking-httprequestbaseservervariables-using-moq"]
-  ---
+---
+layout: post
+title: "Mocking HttpRequestBase.ServerVariables using Moq"
+date: 2012-08-03 21:12:58 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["C#", "ASP.NET MVC", "TDD"]
+alias: ["/post/2012/08/03/Mocking-HttpRequestBaseServerVariables-using-Moq", "/post/2012/08/03/mocking-httprequestbaseservervariables-using-moq"]
+---
 <!-- more -->
 <p>Mocking is a very handy tool for unit testing code, especially when it comes to mocking the HttpContext for web application code. However, it’s not as straight forward as you might think to mock the HttpRequestBase.ServerVariables, however once you know what to do it really is pretty simple.</p>  <p>Here’s a code example (using <a href="http://code.google.com/p/moq/">moq</a>) that shows how to create a mock HttpContextBase that contains a mock HttpRequestBase with a mock ServerVariables property:</p>  <pre class="csharpcode"><span class="kwrd">public</span> HttpContextBase CreateMockHttpContext()
 {

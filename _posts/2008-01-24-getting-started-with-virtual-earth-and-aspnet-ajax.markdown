@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Getting Started with Virtual Earth and ASP.NET AJAX"
-  date: 2008-01-24 03:40:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Bing Maps"]
-  alias: ["/post/2008/01/24/Getting-Started-with-Virtual-Earth-and-ASPNET-AJAX", "/post/2008/01/24/getting-started-with-virtual-earth-and-aspnet-ajax"]
-  ---
+---
+layout: post
+title: "Getting Started with Virtual Earth and ASP.NET AJAX"
+date: 2008-01-24 03:40:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Bing Maps"]
+alias: ["/post/2008/01/24/Getting-Started-with-Virtual-Earth-and-ASPNET-AJAX", "/post/2008/01/24/getting-started-with-virtual-earth-and-aspnet-ajax"]
+---
 <!-- more -->
 <p>
 About a month ago, I wrote an article titled &quot;<a href="/Blog/Post.aspx?PostID=1435">Virtual Earth: Getting Started - Adding a basic Map to a page</a>&quot;. In that article I explained the basics of using Virtual Earth with plain HTML and JavaScript. This time I&#39;m going to explain the basics of using Virtual Earth with ASP.NET AJAX. 

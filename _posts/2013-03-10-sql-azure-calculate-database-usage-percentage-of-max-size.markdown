@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "SQL Azure: Calculate Database Usage Percentage of Max Size"
-  date: 2013-03-10 14:24:51 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["Azure", "SQL"]
-  alias: ["/post/2013/03/10/SQL-Azure-Calculate-Database-Usage-Percentage-of-Max-Size", "/post/2013/03/10/sql-azure-calculate-database-usage-percentage-of-max-size"]
-  ---
+---
+layout: post
+title: "SQL Azure: Calculate Database Usage Percentage of Max Size"
+date: 2013-03-10 14:24:51 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["Azure", "SQL"]
+alias: ["/post/2013/03/10/SQL-Azure-Calculate-Database-Usage-Percentage-of-Max-Size", "/post/2013/03/10/sql-azure-calculate-database-usage-percentage-of-max-size"]
+---
 <!-- more -->
 <p>Some times it can be useful to programmatically monitor your SQL Azure database usage statistics. Luckily, there is some short SQL code that can be run on the database to check how much disk space is currently used and what the currently allotted max database size is. The following script does just that.</p>  <pre class="csharpcode"><span class="kwrd">DECLARE</span> @dbName nvarchar(255) = <span class="str">'{database_name}'</span>;
 
@@ -51,4 +51,4 @@
 
 <p>Also, here’s a sample of the output from this query in SQL Management Studio:</p>
 
-<p><a href="http://pietschsoft.com/image.axd?picture=SQLAzure_CalcDBUsagePercentage.png"><img title="SQLAzure_CalcDBUsagePercentage" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="SQLAzure_CalcDBUsagePercentage" src="http://pietschsoft.com/image.axd?picture=SQLAzure_CalcDBUsagePercentage_thumb.png" width="328" height="81" /></a></p>
+<p><a href="/images/postsSQLAzure_CalcDBUsagePercentage.png"><img title="SQLAzure_CalcDBUsagePercentage" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="SQLAzure_CalcDBUsagePercentage" src="/images/postsSQLAzure_CalcDBUsagePercentage_thumb.png" width="328" height="81" /></a></p>

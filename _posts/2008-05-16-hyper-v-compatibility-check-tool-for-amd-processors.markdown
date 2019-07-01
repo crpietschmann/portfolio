@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Hyper-V Compatibility Check Tool for AMD Processors"
-  date: 2008-05-16 10:44:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/05/16/Hyper-V-Compatibility-Check-Tool-for-AMD-Processors", "/post/2008/05/16/hyper-v-compatibility-check-tool-for-amd-processors"]
-  ---
+---
+layout: post
+title: "Hyper-V Compatibility Check Tool for AMD Processors"
+date: 2008-05-16 10:44:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/05/16/Hyper-V-Compatibility-Check-Tool-for-AMD-Processors", "/post/2008/05/16/hyper-v-compatibility-check-tool-for-amd-processors"]
+---
 <!-- more -->
 <p>I just found that AMD has a tool titled "<a href="http://www.amd.com/us-en/Processors/TechnicalResources/0,,30_182_871_9033,00.html">AMD-V Technology and Microsoft Hyper-V System Compatibility Check Utility</a>". You can run this tool on Windows Vista or Windows Server 2008 (make sure you run it with elevated privileges) to see if your hardware combination of AMD Processor and Motherboard support Hyper-V.</p>
 <p>I guess this would have saved me from the trouble of installing Win 2008 with Hyper-V just to figure out that <a href="/post.aspx?id=aa54ec2f-c8db-4472-ba47-ea06fef3eba0">my AMD Athlon 64 X2 4200+ supports Hyper-V, but my motherboard doesn't</a>.</p>

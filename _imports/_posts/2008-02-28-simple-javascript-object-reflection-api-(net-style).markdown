@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Simple JavaScript Object Reflection API (.NET Style)"
-  date: 2008-02-28 19:17:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2008/02/28/Simple-JavaScript-Object-Reflection-API-(NET-Style)", "/post/2008/02/28/simple-javascript-object-reflection-api-(net-style)"]
-  ---
+---
+layout: post
+title: "Simple JavaScript Object Reflection API (.NET Style)"
+date: 2008-02-28 19:17:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2008/02/28/Simple-JavaScript-Object-Reflection-API-(NET-Style)", "/post/2008/02/28/simple-javascript-object-reflection-api-(net-style)"]
+---
 <!-- more -->
 <p>
 I was thinking about how JavaScript JSON serializers go about serializing objects. But how does the serializer know about each of the objects properties? I figured JavaScript must have some method of object reflection (similar to .NET Reflection) and it does. 

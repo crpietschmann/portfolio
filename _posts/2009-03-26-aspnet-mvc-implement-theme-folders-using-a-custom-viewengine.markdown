@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "ASP.NET MVC: Implement Theme Folders using a Custom ViewEngine"
-  date: 2009-03-26 18:09:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["ASP.NET MVC"]
-  alias: ["/post/2009/03/26/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine", "/post/2009/03/26/aspnet-mvc-implement-theme-folders-using-a-custom-viewengine"]
-  ---
+---
+layout: post
+title: "ASP.NET MVC: Implement Theme Folders using a Custom ViewEngine"
+date: 2009-03-26 18:09:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["ASP.NET MVC"]
+alias: ["/post/2009/03/26/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine", "/post/2009/03/26/aspnet-mvc-implement-theme-folders-using-a-custom-viewengine"]
+---
 <!-- more -->
 <p>One of the things that ASP.NET MVC 1.0 is missing is the ability to easily implement Themes. The older, more mature standard ASP.NET framework includes theme support via the App_Themes folder; however limited it can be, it&rsquo;s still more than ASP.NET MVC currently has. Well, at least until I wrote this little custom ViewEngine and ControllerBase class to help out and allow us to very easily implement Themes within our ASP.NET MVC applications.</p>
 <p>A little history: A few months back I wrote up a post on &ldquo;<a href="/post.aspx?id=ee0e253d-c746-4099-9795-81aaf14ad608">How To Setup Custom Theme Support In ASP.NET MVC Preview 4 using a Custom ViewEngine</a>&rdquo;, then a couple weeks later I posted an updated version that added <a href="/post.aspx?id=5a6945d0-933a-4971-aac1-13dcd73711d9">Custom Themes to ASP.NET MVC Preview 5</a>. So I&rsquo;ve decided to update the code from Preview 5 and make it all work with ASP.NET MVC v1.0 Final Release.</p>
@@ -16,7 +16,7 @@
 <p>I know some of you may want to download the code and look at it before reading on, so here's the download link:</p>
 <p>Source Code: <a href="/file.axd?file=AspNetMvc1CustomThemeImplementation.zip" rel="enclosure">AspNetMvc1CustomThemeImplementation.zip (262.99 kb)</a></p>
 <h3>Create &ldquo;~/Themes&rdquo; Folder and a &ldquo;Default&rdquo; View Theme</h3>
-<p><a href="/image.axd?picture=ASPNETMVC_1_CustomThemeFolderLayout.png"><img style="display: inline; border-width: 0px;" title="ASPNETMVC_1_CustomThemeFolderLayout" src="/image.axd?picture=ASPNETMVC_1_CustomThemeFolderLayout_thumb.png" alt="ASPNETMVC_1_CustomThemeFolderLayout" width="275" height="508" align="right" border="0" /></a>First, we&rsquo;ll make some changes to the Views contained within the default ASP.NET MVC Template.</p>
+<p><a href="/images/postsASPNETMVC_1_CustomThemeFolderLayout.png"><img style="display: inline; border-width: 0px;" title="ASPNETMVC_1_CustomThemeFolderLayout" src="/images/postsASPNETMVC_1_CustomThemeFolderLayout_thumb.png" alt="ASPNETMVC_1_CustomThemeFolderLayout" width="275" height="508" align="right" border="0" /></a>First, we&rsquo;ll make some changes to the Views contained within the default ASP.NET MVC Template.</p>
 <p>Here&rsquo;s a brief summary of what changes are needed:</p>
 <ol>
 <li>Create a sub-folder named &ldquo;Themes&rdquo; within the website root folder</li>

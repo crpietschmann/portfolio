@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "Virtual Earth + ASP.NET AJAX Now Fixed in Safari"
-  date: 2008-05-17 13:13:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["asp.net", "Bing Maps"]
-  alias: ["/post/2008/05/17/Virtual-Earth-2b-ASPNET-AJAX-Now-Fixed-in-Safari", "/post/2008/05/17/virtual-earth-2b-aspnet-ajax-now-fixed-in-safari"]
-  ---
+---
+layout: post
+title: "Virtual Earth + ASP.NET AJAX Now Fixed in Safari"
+date: 2008-05-17 13:13:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["asp.net", "Bing Maps"]
+alias: ["/post/2008/05/17/Virtual-Earth-2b-ASPNET-AJAX-Now-Fixed-in-Safari", "/post/2008/05/17/virtual-earth-2b-aspnet-ajax-now-fixed-in-safari"]
+---
 <!-- more -->
 <p>
 A couple months ago I blogged about the fact that using <a href="/post.aspx?id=600a0bbc-5e22-4bd2-bef2-542d70e682b2">Virtual Earth and ASP.NET AJAX together on the same page caused errors in Safari</a>. There is good new to report back, the latest update to Virtual Earth has fixed this issue. In fact Virtual Earth v6.1 actually includes much better Safari support that previous versions; it actually works correctly in Safari. I found this to be especially helpful since I can now support Safari with my <a href="http://simplovation.com/page/webmapsve.aspx">Web.Maps.VE</a> product.

@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "MSDN .NET Show on IIS 7.0 with Scott Guthrie and Bill Staples"
-  date: 2006-05-22 21:01:00 -0500
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2006/05/22/MSDN-NET-Show-on-IIS-70-with-Scott-Guthrie-and-Bill-Staples", "/post/2006/05/22/msdn-net-show-on-iis-70-with-scott-guthrie-and-bill-staples"]
-  ---
+---
+layout: post
+title: "MSDN .NET Show on IIS 7.0 with Scott Guthrie and Bill Staples"
+date: 2006-05-22 21:01:00 -0500
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2006/05/22/MSDN-NET-Show-on-IIS-70-with-Scott-Guthrie-and-Bill-Staples", "/post/2006/05/22/msdn-net-show-on-iis-70-with-scott-guthrie-and-bill-staples"]
+---
 <!-- more -->
 <P>The latest episode of the MSDN .NET Show features a great interview with Scott Guthrie and Bill Staples on IIS 7.0. The show includes a 30 minute interview about the product, along with 30 minutes of demos.</P>
 <P><A href="http://weblogs.asp.net/scottgu/archive/2006/05/20/IIS-7.0-on-the-MSDN-.NET-Show.aspx">IIS 7.0 on the MSDN .NET Show</A></P>

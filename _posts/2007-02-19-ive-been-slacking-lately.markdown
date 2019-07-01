@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "I've been slacking lately..."
-  date: 2007-02-19 21:14:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["General"]
-  alias: ["/post/2007/02/19/Ive-been-slacking-lately", "/post/2007/02/19/ive-been-slacking-lately"]
-  ---
+---
+layout: post
+title: "I've been slacking lately..."
+date: 2007-02-19 21:14:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["General"]
+alias: ["/post/2007/02/19/Ive-been-slacking-lately", "/post/2007/02/19/ive-been-slacking-lately"]
+---
 <!-- more -->
 <P>Basically, I haven't been working on much in my spare time lately.</P>
 <P>A week and a half ago, my wife and I got back from spending a week in Punta Cana, Dominican Republic. We went to an all inclusive resort and everything was very relaxing. Neither of us had ever flown, so this was a whole new experience for both.</P>

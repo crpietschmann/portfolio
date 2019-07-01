@@ -1,13 +1,13 @@
-  ---
-  layout: post
-  title: "WI-INETA: Augmented Reality with .NET on 11/13/2007 with Casey Chesnut"
-  date: 2007-11-12 17:34:00 -0600
-  comments: true
-  published: true
-  categories: ["blog", "archives"]
-  tags: ["WI-INETA"]
-  alias: ["/post/2007/11/12/WI-INETA-Augmented-Reality-with-NET-on-11132007-with-Casey-Chesnut", "/post/2007/11/12/wi-ineta-augmented-reality-with-net-on-11132007-with-casey-chesnut"]
-  ---
+---
+layout: post
+title: "WI-INETA: Augmented Reality with .NET on 11/13/2007 with Casey Chesnut"
+date: 2007-11-12 17:34:00 -0600
+comments: true
+published: true
+categories: ["blog", "archives"]
+tags: ["WI-INETA"]
+alias: ["/post/2007/11/12/WI-INETA-Augmented-Reality-with-NET-on-11132007-with-Casey-Chesnut", "/post/2007/11/12/wi-ineta-augmented-reality-with-net-on-11132007-with-casey-chesnut"]
+---
 <!-- more -->
 <p>This months <a href="http://wi-ineta.org/DesktopDefault.aspx?tabid=58">Wisconsin .NET Users Group meeting</a> (and the last one of the year) is tommorow (Nov. 13th) night.&nbsp;This month <a href="http://www.mperfect.net/brains-n-brawn/">Casey Chesnut</a> will be presenting on&nbsp;"Augmented Reality with .NET".</p>
 <p>On a related note, Casey has an article titled "<a href="http://www.mperfect.net/wpfAugReal/">/wpfAugReal: Augmented Reality with Windows Presentation Foundation</a>" that he posted back in the beginning of October. I don't know any details of what he'll be presenting (other than the below meeting description), but I'm assuming he'll be covering some of the stuff in this article.</p>
