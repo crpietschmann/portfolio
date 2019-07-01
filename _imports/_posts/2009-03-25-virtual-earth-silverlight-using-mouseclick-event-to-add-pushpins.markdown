@@ -1,7 +1,7 @@
 ---
 layout: post
 blogengineid: 9f492f0f-8da4-4606-9f43-098074d8b9e9
-title: "Bing Maps Silverlight CTP: Using MouseClick Event To Add "Pushpins""
+title: "Bing Maps Silverlight CTP: Using MouseClick Event To Add 'Pushpins'"
 date: 2009-03-25 22:38:00 -0500
 comments: true
 published: true

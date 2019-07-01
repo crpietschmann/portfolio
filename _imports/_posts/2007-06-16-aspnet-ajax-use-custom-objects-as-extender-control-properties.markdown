@@ -1,7 +1,7 @@
 ---
 layout: post
 blogengineid: 5487e70e-a4e7-4d2e-b1aa-42a93211179d
-title: "ASP.NET AJAX: Use "custom" objects as Extender Control Properties"
+title: "ASP.NET AJAX: Use 'custom' objects as Extender Control Properties"
 date: 2007-06-16 14:53:00 -0500
 comments: true
 published: true

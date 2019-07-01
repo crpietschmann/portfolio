@@ -1,7 +1,7 @@
 ---
 layout: post
 blogengineid: 346ae3c5-817d-4d03-acf6-56850bfb34e4
-title: "ASP.NET 2.0: "Atlas" now has a Go-Live license"
+title: "ASP.NET 2.0: 'Atlas' now has a Go-Live license"
 date: 2006-04-02 15:45:00 -0500
 comments: true
 published: true

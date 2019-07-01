@@ -1,7 +1,7 @@
 ---
 layout: post
 blogengineid: 9b6e1082-e828-40dd-a470-7896a4569776
-title: "I've jumped on the "Anti-IE6" band wagon"
+title: "I've jumped on the 'Anti-IE6' band wagon"
 date: 2009-02-24 22:18:00 -0600
 comments: true
 published: true

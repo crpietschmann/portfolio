@@ -77,6 +77,8 @@ module Jekyll
             link = item.attributes["post-url"]
   
             title = item.elements["title"].text
+            title.gsub!(/\"/, "'")
+
             puts "        title: #{title}"
             
             # Use the URL after the last slash as the post's name

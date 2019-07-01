@@ -1,7 +1,7 @@
 ---
 layout: post
 blogengineid: a2d820aa-2a18-491e-8552-cf6f30ff4913
-title: "JavaScript: Easily "Extend" an Object/Element"
+title: "JavaScript: Easily 'Extend' an Object/Element"
 date: 2009-07-29 17:03:00 -0500
 comments: true
 published: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 blogengineid: 128f2f72-41c5-40bd-9b3d-d5f8d310eecd
-title: "VB.NET 2005's "My" namespace for Mono"
+title: "VB.NET 2005's 'My' namespace for Mono"
 date: 2004-09-11 03:47:00 -0500
 comments: true
 published: true

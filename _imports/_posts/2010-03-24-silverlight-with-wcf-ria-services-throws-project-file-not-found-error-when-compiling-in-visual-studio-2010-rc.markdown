@@ -1,7 +1,7 @@
 ---
 layout: post
 blogengineid: c4f6aa92-1aea-4632-8397-d0b0baabc900
-title: "Silverlight with WCF RIA Services Throws "Project File ... Not Found" Error When Compiling in Visual Studio 2010 RC"
+title: "Silverlight with WCF RIA Services Throws 'Project File ... Not Found' Error When Compiling in Visual Studio 2010 RC"
 date: 2010-03-24 15:24:00 -0500
 comments: true
 published: true

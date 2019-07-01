@@ -1,7 +1,7 @@
 ---
 layout: post
 blogengineid: 091362bb-cfb5-40c8-abff-bdb4156ca837
-title: "Creating Ruby-like "Extensions" in JavaScript"
+title: "Creating Ruby-like 'Extensions' in JavaScript"
 date: 2009-07-16 11:48:00 -0500
 comments: true
 published: true

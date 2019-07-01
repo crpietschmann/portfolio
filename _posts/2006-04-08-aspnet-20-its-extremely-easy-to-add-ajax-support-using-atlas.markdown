@@ -1,7 +1,7 @@
 ---
 layout: post
 blogengineid: 5c495e88-21c4-405b-803c-e528e31b109a
-title: "ASP.NET 2.0: It's extremely easy to add Ajax support using "Atlas""
+title: "ASP.NET 2.0: It's extremely easy to add Ajax support using 'Atlas'"
 date: 2006-04-08 16:18:00 -0500
 comments: true
 published: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 blogengineid: 078b5298-9c02-4b20-990b-4b14a6b6c2bd
-title: "Visual Studio "Whidbey" 2005 ship date slips again..."
+title: "Visual Studio 'Whidbey' 2005 ship date slips again..."
 date: 2005-03-21 15:59:00 -0600
 comments: true
 published: true
