@@ -117,6 +117,8 @@ module Jekyll
             ## This section is used to cleanup any content data.
             #
             # Replace /image.axd?picture= with /images/
+            content.gsub!(/\/image\.axd\?picture\=%2f/, "/images/posts/")
+            content.gsub!(/\/image\.axd\?picture\=%2F/, "/images/posts/")
             content.gsub!(/\/image\.axd\?picture\=/, "/images/posts")
             # Replace /file.axd?file= with /files/
             #content.gsub!(/\/file\.axd\?file\=/, "/files/")
