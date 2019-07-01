@@ -27,15 +27,38 @@ layout: default
 
   </header>
 
-  <div class="float-right ml-3 mb-3">
-      <script type="text/javascript"><!--
-        document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
-        // --></script>
-  </div>
-  <article class="post-content">
-    {{ content }}
-  </article>
+  <div class="row">
+    <div class="col-12 col-md-9">
+      <article class="post-content">
+        {{ content }}
+      </article>
+    </div>
+    <div class="col-md-3">
+  
+      <div class="mb-3">
+        <script type="text/javascript"><!--
+          document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
+          // --></script>
+      </div>
 
+      <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+      <div class="related">
+        <h4>Recent Posts</h4>
+        <ul>
+          {% for post in site.related_posts limit:3 %}
+            <li>
+              <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
+              <span class="text-muted">{{ post.date | date_to_string }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+
+
+    </div>
+  </div>
+  
   <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="728x90"></div>
 
   <!-- Go to www.addthis.com/dashboard to customize your tools -->
