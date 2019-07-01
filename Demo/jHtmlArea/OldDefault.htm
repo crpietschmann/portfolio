@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jHtmlArea Live Demo - WYSIWYG HTML Editor for jQuery</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+    <!-- Please do NOT link to this script in your pages. -->
+    <!-- You MUST host the script yourself on your own server. -->
+    <!-- Thank You -->
+    <script type="text/javascript" src="scripts/jHtmlArea-0.6.0.min.js"></script>
+    <link rel="Stylesheet" type="text/css" href="style/jHtmlArea.css" />
+    
+    <style type="text/css">
+        /* body { background: #ccc;} */
+        div.jHtmlArea .ToolBar ul li a.custom_disk_button 
+        {
+            background: url(images/disk.png) no-repeat;
+            background-position: 0 0;
+        }
+        
+        div.jHtmlArea { border: solid 1px #ccc; }
+    </style>
+</head>
+<body>
+
+<!-- Lake Quincy Media / DeveloperMedia -->
+<div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="728x90"></div>
+
+<h1>jHtmlArea Live Demo - WYSIWYG HTML Editor for jQuery</h1>
+<p>
+A simple, light weight, extensible WYSIWYG HTML Editor built on top of jQuery. This component allows you to easily display a WYSIWYG HTML Editor in place of any TextArea DOM Elements on the page. The minified script alone is 8.7kb, and with css and image files it's a total of 22kb.
+</p>
+<p>
+<a href="http://jhtmlarea.codeplex.com">jHtmlArea Project Homepage</a>
+&nbsp;|&nbsp;
+<a href="http://jhtmlarea.codeplex.com/Release/ProjectReleases.aspx">Downloads</a>
+&nbsp;|&nbsp;
+<a href="http://jhtmlarea.codeplex.com/Thread/List.aspx">Discussions</a>
+&nbsp;|&nbsp;
+<a href="http://jhtmlarea.codeplex.com/WorkItem/List.aspx">Issue Tracker</a>
+</p>
+
+    <script type="text/javascript">
+        // You can do this to perform a global override of any of the "default" options
+        // jHtmlArea.fn.defaultOptions.css = "jHtmlArea.Editor.css";
+
+        $(function() {
+            //$("textarea").htmlarea(); // Initialize all TextArea's as jHtmlArea's with default values
+
+            $("#txtDefaultHtmlArea").htmlarea(); // Initialize jHtmlArea's with all default values
+
+            $("#txtCustomHtmlArea").htmlarea({
+                // Override/Specify the Toolbar buttons to show
+                toolbar: [
+                    ["bold", "italic", "underline", "|", "forecolor"],
+                    ["h1", "h2", "h3", "h4", "h5", "h6"],
+                    ["link", "unlink", "|", "image"],                    
+                    [{
+                        // This is how to add a completely custom Toolbar Button
+                        css: "custom_disk_button",
+                        text: "Save",
+                        action: function(btn) {
+                            // 'this' = jHtmlArea object
+                            // 'btn' = jQuery object that represents the <A> "anchor" tag for the Toolbar Button
+                            alert('SAVE!\n\n' + this.toHtmlString());
+                        }
+                    }]
+                ],
+
+                // Override any of the toolbarText values - these are the Alt Text / Tooltips shown
+                // when the user hovers the mouse over the Toolbar Buttons
+                // Here are a couple translated to German, thanks to Google Translate.
+                toolbarText: $.extend({}, jHtmlArea.defaultOptions.toolbarText, {
+                        "bold": "fett",
+                        "italic": "kursiv",
+                        "underline": "unterstreichen"
+                    }),
+
+                // Specify a specific CSS file to use for the Editor
+                css: "style//jHtmlArea.Editor.css",
+
+                // Do something once the editor has finished loading
+                loaded: function() {
+                    //// 'this' is equal to the jHtmlArea object
+                    //alert("jHtmlArea has loaded!");
+                    //this.showHTMLView(); // show the HTML view once the editor has finished loading
+                }
+            });
+        });
+    </script>
+
+<h3>Default Editor</h3>
+<p>The first example demonstrates the <a href="http://jhtmlarea.codeplex.com">jHtmlArea</a> editor using the "default" options (toolbar buttons, css, etc.)</p>
+    
+<textarea id="txtDefaultHtmlArea" cols="50" rows="15"><p><h3>Test H3</h3>This is some sample text to test out the <b>WYSIWYG Control</b>.</p></textarea>
+<input type="button" value="Alert HTML" onclick="alert($('#txtDefaultHtmlArea').htmlarea('toHtmlString'));" />
+    
+<hr />
+<!-- Lake Quincy Media / DeveloperMedia -->
+<div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div>
+<hr/>
+
+<h3>Custom Editor</h3>
+<p>The second example demonstrates the <a href="http://jhtmlarea.codeplex.com">jHtmlArea</a> editor using some "custom" options (toolbar buttons, css, etc.)</p>
+
+<textarea id="txtCustomHtmlArea" cols="50" rows="15"><p><h3>Another TextArea</h3>This is some sample text to test out the <b>WYSIWYG Control</b>.</p></textarea>
+
+<p>To see a "proper" example of the "Font Color" button, you'll want to see the "<a href="ColorPickerMenu.htm">jHtmlAreaColorPickerMenu</a>" in action here: <a href="ColorPickerMenu.htm">ColorPickerMenu.htm</a></p>
+<hr/>
+
+<p>
+This jHtmlArea project is hosted and maintained by <a href="http://pietschsoft.com">Chris Pietschmann</a>.
+</p>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1172995-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- Lake Quincy Media / DeveloperMedia -->
+<script type='text/javascript'>
+    function _dmBootstrap(file) { 
+        var _dma = document.createElement('script');  
+        _dma.type = 'text/javascript'; 
+        _dma.async = true;  
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file; 
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined')  _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000);})();
+</script>
+
+</body>
+</html>

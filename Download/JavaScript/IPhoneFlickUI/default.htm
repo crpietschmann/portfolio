@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+UL {
+	list-style-type: none;
+}
+</style>
+<script type="text/javascript" src="pietschsoft_iPhoneFlickUI.js"></script>
+<title>iPhone style flicking support using JavaScript</title>
+</head>
+
+<body onselectstart="return false;"
+	onmousemove="pietschsoft_iPhoneFlickUI_MouseMove(event);"
+	onmousedown="pietschsoft_iPhoneFlickUI_OnMouseDown();"
+	onmouseup="pietschsoft_iPhoneFlickUI_OnMouseUp();"
+	>
+<h1>iPhone style flicking support using JavaScript</h1>
+<i>
+Copyright (c) 2007, <a href="http://pietschsoft.com">Chris Pietschmann</a> (http://pietschsoft.com)<br/>
+All rights reserved<br/>
+</i>
+<br/>
+This page uses JavaScript to implement iPhone style flicking to scroll up/down the page.<br/>
+This code does not work properly in Firefox. I didn't bother getting it to work in Firefox, since this is a UI feature that is really only meant to be used with Mobile devices (such as the Apple iPhone).<br/>
+<br/>
+<strong>How to use:</strong>
+<ul>
+	<li>On a PC: Click and drag your mouse real quick and let go of the mouse button shortly after dragging.</li>
+	<li>On the iPhone: Just flick the page with your finger.</li>
+</ul>
+If you flick real quick it'll keep scrolling all the way to the top or bottom of the page.<br/>
+To stop it from auto-scrolling, just click or tap the page.<br/>
+<br/>
+<strong>Browsers Supported:</strong>
+<ul>
+	<li>Apple Safari 3.0 (I only tested the Windows version since I don't have a Mac.)</li>
+	<li>Applie iPhone (I haven't tested this, could someone with an iPhone <a href="http://pietschsoft.com/contact.aspx">please let me know if it has any problems?</a>)</li>
+	<li>Microsoft Internet Explorer 7</li>
+</ul>
+<strong>Source Code Available:</strong><br/>
+<sub><i>(right-click the below links and select "save as")</i></sub><br/>
+<a href="default.htm">default.htm</a><br/>
+<a href="pietschsoft_iPhoneFlickUI.js">pietschsoft_iPhoneFlickUI.js</a><br/>
+<br/><br/>
+<hr/>
+<ul>
+	<li>1 - ONE</li>
+	<li>2 - TWO</li>
+	<li>3 - THREE</li>
+	<li>4 - FOUR</li>
+	<li>5 - FIVE</li>
+	<li>6 - SIX</li>
+	<li>7 - SEVEN</li>
+	<li>8 - EIGHT</li>
+	<li>9 - NINE</li>
+	<li>10 - TEN</li>
+	<li>11 - ELEVEN</li>
+	<li>12 - TWELVE</li>
+	<li>13 - THIRTEEN</li>
+	<li>14 - FOURTEEN</li>
+	<li>15 - FIFTEEN</li>
+	<li>16 - SIXTEEN</li>
+	<li>17 - SEVENTEEN</li>
+	<li>18 - EIGHTEEN</li>
+	<li>19 - NINETEEN</li>
+	<li>20 - TWENTY</li>
+	<li>21 - TWENTY ONE</li>
+	<li>22 - TWENTY TWO</li>
+	<li>23 - TWENTY THREE</li>
+	<li>24 - TWENTY FOUR</li>
+	<li>25 - TWENTY FIVE</li>
+	<li> ----- </li>
+<li>1 - ONE</li>
+	<li>2 - TWO</li>
+	<li>3 - THREE</li>
+	<li>4 - FOUR</li>
+	<li>5 - FIVE</li>
+	<li>6 - SIX</li>
+	<li>7 - SEVEN</li>
+	<li>8 - EIGHT</li>
+	<li>9 - NINE</li>
+	<li>10 - TEN</li>
+	<li>11 - ELEVEN</li>
+	<li>12 - TWELVE</li>
+	<li>13 - THIRTEEN</li>
+	<li>14 - FOURTEEN</li>
+	<li>15 - FIFTEEN</li>
+	<li>16 - SIXTEEN</li>
+	<li>17 - SEVENTEEN</li>
+	<li>18 - EIGHTEEN</li>
+	<li>19 - NINETEEN</li>
+	<li>20 - TWENTY</li>
+	<li>21 - TWENTY ONE</li>
+	<li>22 - TWENTY TWO</li>
+	<li>23 - TWENTY THREE</li>
+	<li>24 - TWENTY FOUR</li>
+	<li>25 - TWENTY FIVE</li>
+	<li> ----- </li>
+<li>1 - ONE</li>
+	<li>2 - TWO</li>
+	<li>3 - THREE</li>
+	<li>4 - FOUR</li>
+	<li>5 - FIVE</li>
+	<li>6 - SIX</li>
+	<li>7 - SEVEN</li>
+	<li>8 - EIGHT</li>
+	<li>9 - NINE</li>
+	<li>10 - TEN</li>
+	<li>11 - ELEVEN</li>
+	<li>12 - TWELVE</li>
+	<li>13 - THIRTEEN</li>
+	<li>14 - FOURTEEN</li>
+	<li>15 - FIFTEEN</li>
+	<li>16 - SIXTEEN</li>
+	<li>17 - SEVENTEEN</li>
+	<li>18 - EIGHTEEN</li>
+	<li>19 - NINETEEN</li>
+	<li>20 - TWENTY</li>
+	<li>21 - TWENTY ONE</li>
+	<li>22 - TWENTY TWO</li>
+	<li>23 - TWENTY THREE</li>
+	<li>24 - TWENTY FOUR</li>
+	<li>25 - TWENTY FIVE</li>
+	<li> ----- </li>
+<li>1 - ONE</li>
+	<li>2 - TWO</li>
+	<li>3 - THREE</li>
+	<li>4 - FOUR</li>
+	<li>5 - FIVE</li>
+	<li>6 - SIX</li>
+	<li>7 - SEVEN</li>
+	<li>8 - EIGHT</li>
+	<li>9 - NINE</li>
+	<li>10 - TEN</li>
+	<li>11 - ELEVEN</li>
+	<li>12 - TWELVE</li>
+	<li>13 - THIRTEEN</li>
+	<li>14 - FOURTEEN</li>
+	<li>15 - FIFTEEN</li>
+	<li>16 - SIXTEEN</li>
+	<li>17 - SEVENTEEN</li>
+	<li>18 - EIGHTEEN</li>
+	<li>19 - NINETEEN</li>
+	<li>20 - TWENTY</li>
+	<li>21 - TWENTY ONE</li>
+	<li>22 - TWENTY TWO</li>
+	<li>23 - TWENTY THREE</li>
+	<li>24 - TWENTY FOUR</li>
+	<li>25 - TWENTY FIVE</li>
+	<li> ----- </li>
+<li>1 - ONE</li>
+	<li>2 - TWO</li>
+	<li>3 - THREE</li>
+	<li>4 - FOUR</li>
+	<li>5 - FIVE</li>
+	<li>6 - SIX</li>
+	<li>7 - SEVEN</li>
+	<li>8 - EIGHT</li>
+	<li>9 - NINE</li>
+	<li>10 - TEN</li>
+	<li>11 - ELEVEN</li>
+	<li>12 - TWELVE</li>
+	<li>13 - THIRTEEN</li>
+	<li>14 - FOURTEEN</li>
+	<li>15 - FIFTEEN</li>
+	<li>16 - SIXTEEN</li>
+	<li>17 - SEVENTEEN</li>
+	<li>18 - EIGHTEEN</li>
+	<li>19 - NINETEEN</li>
+	<li>20 - TWENTY</li>
+	<li>21 - TWENTY ONE</li>
+	<li>22 - TWENTY TWO</li>
+	<li>23 - TWENTY THREE</li>
+	<li>24 - TWENTY FOUR</li>
+	<li>25 - TWENTY FIVE</li>
+	<li> ----- </li>
+</ul>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1172995-1";
+urchinTracker();
+</script>
+</body>
+</html>

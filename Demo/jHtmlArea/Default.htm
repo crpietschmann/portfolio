@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jHtmlArea Live Demo - WYSIWYG HTML Editor for jQuery</title>
+
+    <link href="content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="content/jHtmlArea/jHtmlArea.css" rel="stylesheet" />
+    <link href="content/jHtmlArea/jHtmlArea.ColorPickerMenu.css" rel="stylesheet" />
+
+    <style>
+        body{
+            position: relative;
+            padding-top: 50px;
+        }
+
+        h1 .text-muted {
+            font-size: 0.7em;
+        }
+
+        .bs-header {
+            font-size: 21px;
+            padding: 30px 30px 40px;
+            border-bottom: solid 1px #e5e5e5;
+        }
+        .bs-header h1 {
+            font-size: 50px;
+        }
+
+        textarea {
+            width:100%;
+            height:200px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Docs master nav -->
+    <div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
+        <div class="container">
+            <a href="/jHtmlArea" class="navbar-brand">jHtmlArea</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="nav-collapse collapse bs-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Getting started</a></li>
+                    <li><a href="http://jhtmlarea.codeplex.com/documentation">Documentation</a></li>
+                    <li><a href="http://jhtmlarea.codeplex.com/releases">Download</a></li>
+                    <li><a href="http://jhtmlarea.codeplex.com/SourceControl/latest">Source code</a></li>
+                    <li><a href="https://www.nuget.org/packages/jHtmlArea/">Nuget package</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Docs page layout -->
+    <div class="bs-header">
+      <div class="container">
+        
+        <div class="pull-right">
+            <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="125x125"></div>
+            <!--
+            <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div>
+            -->
+        </div>
+
+        <h1>jHtmlArea <span class="text-muted">Getting started</span></h1>
+        <p>An overview of jHtmlArea, how to download, basic use, examples and more.</p>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="bs-sidebar">
+                    <ul class="nav bs-sidenav">
+                        <li>
+                            <a href="#overview">Overview</a>
+                              <ul class="nav">
+                                <li><a href="#overview-advantages">Advantages</a></li>
+                                <li><a href="#overview-nuget">Available on Nuget</a></li>
+                              </ul>
+                        </li>
+                        <li>
+                            <a href="#usage">Basic Usage</a>
+                        </li>
+                        <li>
+                            <a href="#usage-custom-toolbar">Custom Toolbar</a>
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    <div class="alert alert-info">
+                        This page uses <strong>pre-release source code</strong> <a href="http://jhtmlarea.codeplex.com/SourceControl/latest">available here</a>.
+                    </div>
+                </p>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="overview">Overview</h1>
+                    </div>
+                    <p class="lead">A simple, light weight, easily extensible WYSIWYG Html Editor built on top of jQuery. This component allows you to easily display a WYSIWYG Html Editor in place of any <code class="prettyprint language-html">&lt;textarea/&gt;</code> Html element. The minified script alone is only 9.21kb.</p>
+
+                    <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="728x90"></div>
+
+                    <h3 id="overview-advantages">Advantages</h3>
+                    <p>Here are some key advantages to using jHtmlArea:</p>
+                    <p>
+                        <ul>
+                            <li>Free, open source (Microsoft Publis License)</li>
+                            <li>Simple and Lightweight - 9.21kb minified</li>
+                            <li>Supports all mainstream browsers</li>
+                            <li>Built on top of jQuery</li>
+                            <li>Full Documentation</li>
+                        </ul>
+                    </p>
+
+                    <h3 id="overview-nuget">Available on Nuget</h3>
+                    <p>jHtmlArea is conveniently available as a Nuget package.</p>
+                    <p><a href="http://nuget.org/packages/jHtmlArea"><img src="content/jHtmlArea_Nuget_Install.png" /></a></p>
+                </div>
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="usage">Basic Usage</h1>
+                    </div>
+
+                    <p class="lead">jHtmlArea is really easy to use!</p>
+
+                    <p>Example:</p>
+                    <p><textarea id="txtUsage1">&lt;H1>jHtmlArea is simple to use!&lt;/H1>&lt;p>It's also light weight and extensible!&lt;/p></textarea></p>
+
+                    <p>Source:</p>
+                    <pre class="prettyprint language-java">// Turn all &lt;textarea/> tags into WYSIWYG editors
+$(function() {
+    $("textarea").htmlarea();
+});
+                    </pre>
+
+                </div>
+
+                <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="728x90"></div>
+
+                <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h1 id="usage-custom-toolbar">Custom Toolbar</h1>
+                    </div>
+
+                    <p class="lead">Specifying a custom set of toolbar buttons</p>
+
+                    <p>Example:</p>
+                    <p><textarea id="txtCustomToolbar">&lt;h1 style="color: #ffcc66">Custom Toolbar!&lt;/h1>&lt;p>You can specify your own custom toolbar with all the buttons you want to make available to your users.&lt/p></textarea></p>
+
+                    <p>Source:</p>
+                    <pre class="prettyprint language-java">$(function() {
+    $("textarea").htmlarea({
+                toolbar: ["html", "|",
+                        "forecolor",  // <-- Add the "forecolor" Toolbar Button
+                        "|", "bold", "italic", "underline", "|", "h1", "h2", "h3", "|", "link", "unlink"] // Overrides/Specifies the Toolbar buttons to show
+                });
+});
+                    </pre>
+
+                </div>
+
+                <p>
+                <div class="footer">
+                    Copyright (c) 2013 <a href="http://pietschsoft.com">Chris Pietschmann</a>
+                </div>
+                </p>
+            </div>
+        </div>       
+    </div>
+
+    
+
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+
+    <script src="scripts/jHtmlArea-0.8.alpha.min.js"></script>
+    <script src="scripts/jHtmlArea.ColorPickerMenu-0.8.alpha.min.js"></script>
+    
+    <script src="scripts/Prettify/run_prettify.js"></script>
+
+    <script>
+
+        $('#txtUsage1').htmlarea();
+
+        $('#txtCustomToolbar').htmlarea({
+            toolbar: ["html", "|",
+                    "forecolor",  // <-- Add the "forecolor" Toolbar Button
+                    "|", "bold", "italic", "underline", "|", "h1", "h2", "h3", "|", "link", "unlink"] // Overrides/Specifies the Toolbar buttons to show
+        });
+    
+    </script>
+
+
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-1172995-1");
+            pageTracker._trackPageview();
+        } catch (err) { }</script>
+
+    <!-- Lake Quincy Media / DeveloperMedia -->
+    <script type='text/javascript'>
+        function _dmBootstrap(file) {
+            var _dma = document.createElement('script');
+            _dma.type = 'text/javascript';
+            _dma.async = true;
+            _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+        }
+        function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+        (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+</script>
+
+</body>
+</html>

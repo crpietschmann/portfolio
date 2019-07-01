@@ -1,0 +1,21 @@
+  ---
+  layout: post
+  title: "jHtmlArea 0.6.0 Update with Improved Functionality"
+  date: 2009-07-24 16:44:00 -0500
+  comments: true
+  published: true
+  categories: ["blog", "archives"]
+  tags: ["JavaScript"]
+  alias: ["/post/2009/07/24/jHtmlArea_060_Update_with_Improved_Functionality", "/post/2009/07/24/jhtmlarea_060_update_with_improved_functionality"]
+  ---
+<!-- more -->
+{% include imported_disclaimer.html %}
+<p><img src="/image.axd?picture=2009%2f7%2fjHtmlArea_0.6.0_Screenshot.png" alt="" align="right" /></p>
+<p>I just posted a pretty good update the the jHtmlArea project that includes quite a few more toolbar buttons and a new Color Picker Menu extension/plugin (jHtmlAreaColorPickerMenu) that adds a nice, simple color picker when using the "forecolor" toolbar button.</p>
+<p><span id="ctl00_ctl00_MasterContent_Content_wikiSourceLabel">jHtmlArea is a simple, light weight, extensible WYSIWYG HTML Editor built on top of jQuery. This component allows you to easily display a WYSIWYG HTML Editor in place of any TextArea DOM Elements on the page. The minified script alone is 8.7kb, and with css and image files it's a total of 22k.</span></p>
+<p>Download: <a href="http://jhtmlarea.codeplex.com">jHtmlArea Project Home</a></p>
+<p>To the right is an updated screenshot of the latest release, plus below is a full change log for this update release:</p>
+<p>- Hide All Toolbar buttons except the "html" button when entering<br />HTML Source view (via clicking "html" button or executing<br />jHtmlArea.showHTMLView). When toggling view back to the WYSIWYG editor<br />all other buttons will then be shown again.<br /><br />- Added jHtmlArea.dispose method - Allows you to remove the WYSIWYG</p>
+<p>editor, and go back to having a plain TextArea. Beware, there is a<br />memory leak when using this method; it's not too bad, but you want<br />to call this as few a number of times if you can. The memory leak<br />is due to the way the browsers handle removing DOM Elements.<br /><br />- Added Indent and Outdent functionality - This includes toolbar buttons<br />and jHtmlArea.indent and jHtmlArea.outdent buttons.<br /><br />- Added justifyLeft, justifyCenter, justifyRight functionality and toolbar<br />buttons.<br /><br />- Added insertHorizontalRule functionality and toolbar button. This adds a<br />&lt;hr&gt; tag to the currently selected area.<br /><br />- Added an "alias" method for jHtmlArea.execCommand named "ec" to help reduce the<br />file size of the script.<br /><br />- Added increaseFontSize and decreaseFontSize functionality and toolbar buttons.<br />The increaseFontSize and decreaseFontSize doesn't currently work in Safari.<br /><br />- Added forecolor functionality - Changes a font color for the selection or at the<br />insertion point. Requires a color value string to be passed in as a value argument.<br /><br />- Fixed bug in jHtmlArea.toString method<br /><br />- Added jHtmlArea.queryCommandValue method and it's alias "jHtmlArea.qc"</p>
+<p>- Added the jHtmlAreaColorPickerMenu plugin/extension that resides within the<br />"jHtmlAreaColorPickerMenu.js" file. This file includes a somewhat generic color<br />picker menu that can be used for any purpose, plus it includes the code to wire<br />up and override the "stock" jHtmlColor.forecolor functionality and inject the new<br />Color Picker Menu functionality in it's place when you click on the "forecolor"<br />toolbar button.<br /><br />- Changed the "execCommand" and "ec" second parameter to default to "false" if not<br />specified, and third parameter to default to "null" if not specified. This helps to<br />reduce the overall file size of the script.<br /><br />- Added support for Toolbar Button Grouping, now with the additional buttons included<br />in this release, or even when any custom buttons are used, they will be able to display<br />nicely by "auto-wrapping" to the next line.<br /><br />- Added a gradient background to the Toolbar Button Groups, with a slight reverse<br />gradient on the Buttons when the mouse is hovered over.</p>
+<p>&nbsp;</p>

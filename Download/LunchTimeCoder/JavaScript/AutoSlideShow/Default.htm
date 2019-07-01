@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>AutoSlideShow - A JavaScript Automatic SlideShow Class</title>
+<script type="text/javascript" src="js/LunchTimeCoder_AutoSlideShow.js"></script>
+<style>
+h2 {margin-bottom: 1px;}
+</style>
+</head>
+<body>
+<h1>AutoSlideShow - A JavaScript Automatic SlideShow Class</h1>
+<i>
+version 1.05<br />
+Copyright (c) 2007, <a href="http://pietschsoft.com">Chris Pietschmann</a> (http://pietschsoft.com)<br/>
+All rights reserved<br/>
+</i>
+<br/>
+This was created as part of the <a href="http://lunchtimecoder.com">Lunch Time Coder</a> initiative.<br />
+
+<p>
+<!-- Lake Quincy Media / DeveloperMedia -->
+<div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="728x90"></div>
+</p>
+
+<table>
+    <tr>
+        <td>
+            <div id="divMainSlideShow" style="width: 300px; height: 200px; border: solid 1px black;"></div>
+            <script type="text/javascript">
+                var autoSlideShow = new LunchTimeCoder.AutoSlideShow("divMainSlideShow", 2000);
+                autoSlideShow.AddImage("images/AutoSlideShow1.png");
+                autoSlideShow.AddImage("images/AutoSlideShow2.png");
+                autoSlideShow.AddImage("images/AutoSlideShow3.png");
+            </script>
+            <div>
+                <center>
+                    <input type="button" id="btnPrevious" value="<" onclick="autoSlideShow.Previous();" />
+                    <input type="button" id="btnStart" value="Start" onclick="autoSlideShow.Start();" />
+                    <input type="button" id="btnStop" value="Stop" onclick="autoSlideShow.Stop();" />
+                    <input type="button" id="btnNext" value=">" onclick="autoSlideShow.Next();" />
+                </center>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<br />
+
+<h2>Usage Example:</h2>
+            <textarea cols="90" rows="10"><script type="text/javascript" src="js/LunchTimeCoder_AutoSlideShow.js"></script>
+<div id="divMainSlideShow" style="width: 300px; height: 200px; border: solid 1px black;"></div>
+<script type="text/javascript">
+    var autoSlideShow = new LunchTimeCoder.AutoSlideShow("divMainSlideShow", 1000);
+    autoSlideShow.AddImage("images/AutoSlideShow1.png");
+    autoSlideShow.AddImage("images/AutoSlideShow2.png");
+    autoSlideShow.AddImage("images/AutoSlideShow3.png");
+</script>
+<input type="button" id="btnPrevious" value="<" onclick="autoSlideShow.Previous();" />
+<input type="button" id="btnStart" value="Start" onclick="autoSlideShow.Start();" />
+<input type="button" id="btnStop" value="Stop" onclick="autoSlideShow.Stop();" />
+<input type="button" id="btnNext" value=">" onclick="autoSlideShow.Next();" /></textarea>
+
+
+
+<h2>Documentation:</h2>
+<ul>
+	<li><i>LunchTimeCoder.AutoSlideShow Object</i></li>
+	<ul>
+		<li><i>Constructor(parentDivId, timerInterval)</i></li>
+		<ul>
+			<li><i>parentDivId</i> parameter<br/>Required - This is the ID of the DIV that will contain the slide show. This allows you to place the DIV anywhere on the page like a placeholder, and the slideshow will be render inside it.</li>
+			<li><i>timerInterval</i> parameter<br/>Optional - This is the time span (in milliseconds) that each image is displayed. The Default is 500 (0.5 seconds).</li>
+		</ul>
+		<li>Methods</li>
+		<ul>
+			<li><i>AddImage(imageUrl)</i><br/>This method adds an image to the array of images that are flipped through. The images are flipped through in the order they are added.</li>
+			<ul>
+				<li><i>imageUrl</i> parameter<br/>Required - This is the URL of the image to be displayed.</li>
+			</ul>
+			
+			<li><i>Start()</i><br/>Starts the slide show if it's in the stopped state.</li>
+			<li><i>Stop()</i><br/>Stops the slide show if it's in a started state.</li>
+			<li><i>Next()</i><br/>Advances the slide show to the next image.</li>
+			<li><i>Previous()</i><br/>Reverts the slide show back to the previous image.</li>
+		</ul>
+	</ul>
+</ul>
+
+
+
+<h2>Source Code Available:</h2>
+<small><i>(right-click the below links and select "save as")</i></small><br/>
+<a href="default.htm">default.htm</a><br/>
+<a href="js/LunchTimeCoder_AutoSlideShow.js">LunchTimeCoder_AutoSlideShow.js</a><br/>
+
+
+<h2>Change Log:</h2>
+<strong>07/16/2007</strong> - v1.05<br />
+- Added Image Caching<br />
+- Converted to use DOM to add Image tag instead of innerHTML property<br />
+- Added Start, Stop and Previous methods to allow user/programmatic control of slide show<br />
+<br />
+<strong>07/03/2007</strong> - v1.0 Created<br />
+
+
+<h2>Future Thoughts:</h2>
+<i>Possible additions to the component if more time were spent on it.</i>
+<ul style="margin-top: 2px;">
+	<li>Some type of transition animations (like fading and scrolling) would be nice when changing between images</li>
+	<li>It would be nice if there were Remove and Reorder capabilities with the array of images so that this could be used more dynamically in Ajax scenario</li>
+	<li>The ability to point the component to an XML file that it would read in all settings (including image array and transitions to use).</li>
+	<li>It would be kind of neat if the component used custom html tags/attributes for default "page load" configurations</li>
+</ul>
+
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1172995-1";
+urchinTracker();
+</script>
+
+<script type='text/javascript'>
+    function _dmBootstrap(file) { 
+        var _dma = document.createElement('script');  
+        _dma.type = 'text/javascript'; 
+        _dma.async = true;  
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file; 
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined')  _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000);})();
+</script>
+
+</body>
+</html>
+

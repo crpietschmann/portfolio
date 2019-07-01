@@ -1,0 +1,14 @@
+  ---
+  layout: post
+  title: "Thinking about switching email to GMail for My Domain?"
+  date: 2007-05-10 14:30:00 -0500
+  comments: true
+  published: true
+  categories: ["blog", "archives"]
+  tags: ["General"]
+  alias: ["/post/2007/05/10/Thinking-about-switching-email-to-GMail-for-My-Domain", "/post/2007/05/10/thinking-about-switching-email-to-gmail-for-my-domain"]
+  ---
+<!-- more -->
+{% include imported_disclaimer.html %}
+<P>When <A href="http://www.google.com/a/smallbiz/">GMail for My Doma</A>in was first available I set it up for SlapDev.com to test it out. It was really simple to setup&nbsp;and you get the benefit of the regular GMail web client for reading your emails. It's pretty neat.</P>
+<P>I'm thinking about moving my email hosting for PietschSoft.com over to <A href="http://www.google.com/a/smallbiz/">GMail for My Domain</A>. Have any of you been using it? Could you give me some feedback on your experiences?</P>

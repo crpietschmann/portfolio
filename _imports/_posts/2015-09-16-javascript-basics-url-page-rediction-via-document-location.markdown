@@ -1,0 +1,28 @@
+  ---
+  layout: post
+  title: "JavaScript Basics: Url / Page Navigation via document.location"
+  date: 2015-09-16 19:15:00 -0500
+  comments: true
+  published: true
+  categories: ["blog", "archives"]
+  tags: ["JavaScript"]
+  alias: ["/post/2015/09/16/JavaScript-Basics-Url-Page-Rediction-via-document-location", "/post/2015/09/16/javascript-basics-url-page-rediction-via-document-location"]
+  ---
+<!-- more -->
+{% include imported_disclaimer.html %}
+<p>Most often from an HTML page when you need to navigate the user to a different page it will be done via an anchor tag ("&lt;a/&gt;"). This works fine if the user explicitly initiates the navigation by clicking the link. However, there are many times when building a web application the page navigation needs to be performed from JavaScript / Ajax code. This can be done using "document.location" in the HTML DOM, but it supports a couple more features than most developers are aware of.</p>
+<h3>Simple Page Navigation from JavaScript</h3>
+<p>The simplest way to perform page navigation using JavaScript is to simple set "document.location" to a new value. This will cause the browser to navigate away from the current page to the URL specified.</p>
+<pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">document.location = 'http://pietschsoft.com';</pre>
+<p>The behavior of this method of navigation is identical to a user clicking on an anchor (&lt;a/&gt;) tag within the page. This navigates to the new URL an leave both in the history, so the browsers back button works to go back to the previous page after navigating to the new URL.</p>
+<h3>Page Navigation Without Back Button Support</h3>
+<p>A feature of "document.location" that isn't the most widely known is the ability to basically replace (or swap out) the current page with a new URL.</p>
+<pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">document.location.replace('http://buildazure.com')</pre>
+<p>The behavior of this method of navigation is a bit different than the previous. Using the "document.location.replace" method will cause the browser to replace the current page with the new URL. This essentially navigates to the new URL while removing the previous URL from the browser history. After navigating using this method, the browser back button will no longer bring the user back to the previous URL.</p>
+<p>Using this method of navigating can be useful if you have a web application where the application may break or behave in an unexpected way when allowing the back button to function with it's default behavior. This essentially gives you an option to disable the browsers back button for your website or application.</p>
+<p>Documentation: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/replace" target="_blank">https://developer.mozilla.org/en-US/docs/Web/API/Location/replace</a></p>
+<h3>Reload the Current Page</h3>
+<p>Reloading the current page isn't normally considered a method of "page navigation", however, with web applications this may give you a desired behavior that could reset the current state of the page.</p>
+<pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">document.location.reload(true);</pre>
+<p>The "location.reload" method accepts a single boolean parameter that determines if the page is forced to reload from the web server (if 'true'), or if it's allowed to load from cache (if 'false').</p>
+<p>Documentation: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/reload" target="_blank">https://developer.mozilla.org/en-US/docs/Web/API/Location/reload</a></p>

@@ -1,0 +1,25 @@
+  ---
+  layout: post
+  title: "ASP.NET 2.0: v0.02 of my Virtual Earth v3 Ajax Server Control"
+  date: 2006-06-25 23:52:00 -0500
+  comments: true
+  published: true
+  categories: ["blog", "archives"]
+  tags: ["Bing Maps"]
+  alias: ["/post/2006/06/25/ASPNET-20-v002-of-my-Virtual-Earth-v3-Ajax-Server-Control", "/post/2006/06/25/aspnet-20-v002-of-my-virtual-earth-v3-ajax-server-control"]
+  ---
+<!-- more -->
+{% include imported_disclaimer.html %}
+<p>
+<strong>Update (11/7/2007):</strong> This control is now located here: <a href="http://codeplex.com/pietschsoftve3">http://codeplex.com/pietschsoftve3</a>
+</p>
+<p>
+I just uploaded a new release (v0.02) of my ASP.NET 2.0 Virtual Earth v3 Server Control. The download contains a Visual Studio 2005 solution that contains the source code for the server control dll and a sample website that uses the control. The only new feature in this release is full ViewState support. I do plan on adding many more features to this control as I get time to work on it. Enjoy!
+</p>
+<p>
+<a href="http://codeplex.com/pietschsoftve3">Download PietschSoft.VE3 v0.02 Server Control</a>
+</p>
+<p>
+Info on the initial release (v0.01) of the control:<br />
+<a id="ctl00_MainContentPlaceHolder_DataList1_ctl00_HyperLink1" href="/post.aspx?id=1d6d498a-257f-4f08-aaf1-8cfa7c568d60">ASP.NET 2.0: Virtual Earth v3 Custom Control - PietschSoft.VE3 v0.01</a> 
+</p>
