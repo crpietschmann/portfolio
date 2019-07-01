@@ -19,7 +19,7 @@ Here is a pretty neat edit you can do to add your own manufacturer information a
 
 <font size="-1">
 </font>
-<img src="/images/posts/WinXPSysPropCustomManufacturer.jpg" alt="" align="right" />
+<img src="/files/WinXPSysPropCustomManufacturer.jpg" alt="" align="right" />
 
 
 <font size="-1"><span class="header">Show Computer Manufacturer and Support Information</span> *(All Windows)*

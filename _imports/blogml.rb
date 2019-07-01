@@ -117,11 +117,11 @@ module Jekyll
             ## This section is used to cleanup any content data.
             #
             # Replace /image.axd?picture= with /images/
-            content.gsub!(/\/image\.axd\?picture\=%2f/, "/images/posts/")
-            content.gsub!(/\/image\.axd\?picture\=%2F/, "/images/posts/")
-            content.gsub!(/\/image\.axd\?picture\=/, "/images/posts/")
+            content.gsub!(/\/image\.axd\?picture\=%2f/, "/files/")
+            content.gsub!(/\/image\.axd\?picture\=%2F/, "/files/")
+            content.gsub!(/\/image\.axd\?picture\=/, "/files/")
             # Replace /file.axd?file= with /files/
-            #content.gsub!(/\/file\.axd\?file\=/, "/files/")
+            content.gsub!(/\/file\.axd\?file\=/, "/files/")
             # Replace encoded /'s with real thing
             content.gsub!(/\%2f/, "/")
             content.gsub!(/http:\/\/pietschsoft.com/, "")  # remove the domain from my links and images

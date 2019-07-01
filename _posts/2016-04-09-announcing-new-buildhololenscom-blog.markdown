@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
- <img src="/images/posts/2016/04/BuildHoloLensBanner.jpg" alt="" />
+ <img src="/files/2016/04/BuildHoloLensBanner.jpg" alt="" />
 
 With the recent release of the Microsoft HoloLens, I've decided to dig deep into HoloLens development. In an effort to continue in a similar fashion to what I'm already doing with <a href="http://buildazure.com" target="_blank">BuildAzure.com</a>, I've decided to create a dedicated site for all my Microsoft HoloLens content.
 

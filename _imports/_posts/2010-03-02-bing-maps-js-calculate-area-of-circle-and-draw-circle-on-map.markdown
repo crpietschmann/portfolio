@@ -24,4 +24,4 @@ Anyway, I know this isn't a very advanced math problem. If fact it's much simple
 
 Here's the full, modified source code that contains this:
 
-<a href="/file.axd?file=2010/3/DrawRadiusCalcArea_JS_BingMaps.zip">DrawRadiusCalcArea_JS_BingMaps.zip (3.28 kb)</a>
+<a href="/files/2010/3/DrawRadiusCalcArea_JS_BingMaps.zip">DrawRadiusCalcArea_JS_BingMaps.zip (3.28 kb)</a>

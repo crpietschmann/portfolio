@@ -18,7 +18,7 @@ Plotting pushpins on the Bing Maps Silverlight control is really simple when usi
 <h3>Use ScaleTransform to Resize Pushpins
 </h3>
 
-<img style="float: right;" src="/images/posts/2010/6/SLBingMapsPushpinResizeScaleTransform.png" alt="" />
+<img style="float: right;" src="/files/2010/6/SLBingMapsPushpinResizeScaleTransform.png" alt="" />
 
 The answer is simple. All you need to do is use a <a rel="nofollow external" href="http://msdn.microsoft.com/en-us/library/system.windows.media.scaletransform%28VS.95%29.aspx">ScaleTransform</a>. Below is a couple examples, one making the pushpin smaller and the other bigger.
 
@@ -40,7 +40,7 @@ How did I decide to set CenterX to 17 and CenterY to 35? Well, the Pushpins "def
 The image to the right shows an example of this in action.
 <h3>Auto Scale Pushpin with Map Zoom Level</h3>
 
-<img style="float: right;" src="/images/posts/2010/6/SLBingMapsPushpinAutoScaleToZoomLevel.png" alt="" />
+<img style="float: right;" src="/files/2010/6/SLBingMapsPushpinAutoScaleToZoomLevel.png" alt="" />
 
 A neat feature that becomes available with the Bing Maps Silverlight control once you start using ScaleTransforms to modify the size of Pushpins is the ability to change the size of the Pushpins when the Map Zoom Level is changed. All it takes is a little help from a custom <a href="http://msdn.microsoft.com/en-us/library/system.windows.data.ivalueconverter%28VS.95%29.aspx">IValueConverter</a> and a little Data Binding.
 
@@ -111,4 +111,4 @@ using System.Windows.Media;*
 
 Here's a link to download a small Silverlight project that implements the above code examples.
 
-<a href="/file.axd?file=2010/6/SLBingMapsScalePushpins.zip">SLBingMapsScalePushpins.zip (446.52 kb)</a>
+<a href="/files/2010/6/SLBingMapsScalePushpins.zip">SLBingMapsScalePushpins.zip (446.52 kb)</a>

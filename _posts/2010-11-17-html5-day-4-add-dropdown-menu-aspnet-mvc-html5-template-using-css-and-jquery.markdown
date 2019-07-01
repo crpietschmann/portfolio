@@ -20,11 +20,11 @@ Before we begin, you&rsquo;ll need to create a new site using the code from Day 
 
 Here&rsquo;s a screenshot of the finished dropdown menu:
 
-<a href="/images/posts/ASPNETMVCHTML5DropDownMenu_IE8.jpg"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="ASPNETMVCHTML5DropDownMenu_IE8" src="/images/posts/ASPNETMVCHTML5DropDownMenu_IE8_thumb.jpg" alt="ASPNETMVCHTML5DropDownMenu_IE8" width="504" height="323" border="0" /></a>
+<a href="/files/ASPNETMVCHTML5DropDownMenu_IE8.jpg"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="ASPNETMVCHTML5DropDownMenu_IE8" src="/files/ASPNETMVCHTML5DropDownMenu_IE8_thumb.jpg" alt="ASPNETMVCHTML5DropDownMenu_IE8" width="504" height="323" border="0" /></a>
 
 Here&rsquo;s another screenshot of the menu in Chrome:
 
-<a href="/images/posts/ASPNETMVCHTML5DropDownMenu_Chrome.jpg"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="ASPNETMVCHTML5DropDownMenu_Chrome" src="/images/posts/ASPNETMVCHTML5DropDownMenu_Chrome_thumb.jpg" alt="ASPNETMVCHTML5DropDownMenu_Chrome" width="244" height="156" border="0" /></a>
+<a href="/files/ASPNETMVCHTML5DropDownMenu_Chrome.jpg"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="ASPNETMVCHTML5DropDownMenu_Chrome" src="/files/ASPNETMVCHTML5DropDownMenu_Chrome_thumb.jpg" alt="ASPNETMVCHTML5DropDownMenu_Chrome" width="244" height="156" border="0" /></a>
 <h3>Add Sub-Menu Items</h3>
 
 First, modify the <nav> item in the Site.Master file to include sub-menu items as <ul> child elements added to the &ldquo;nav ul&rdquo; element. Below is an example:
@@ -115,5 +115,5 @@ I know this post isn&rsquo;t so much HTML5 as it is jQuery and CSS. But, after a
 
 I know, <a title="HTML5 Day 3: Detecting HTML5 Support via JavaScript" href="/post/2010/11/16/HTML5-Day-3-Detecting-HTML5-Support-via-JavaScript.aspx">yesterday</a>, I said that today I would move on to adding some &ldquo;patch&rdquo; code to add some HTML5 support to older browsers. I decided to take a detour back to the ASP.NET MVC HTML5 template. We shall see, again, where tomorrow takes us.
 <div id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:c0edff3b-c8c4-4f8c-9e45-bccf338894f9" class="wlWriterEditableSmartContent" style="margin: 0px; display: inline; float: none; padding: 0px;">
-<div>Source Code:<a href="/file.axd?file=MvcHTML5DropDownMenu_1.zip" target="_self">MvcHTML5DropDownMenu.zip</a></div>
+<div>Source Code:<a href="/files/MvcHTML5DropDownMenu_1.zip" target="_self">MvcHTML5DropDownMenu.zip</a></div>
 </div>

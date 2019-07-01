@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<a style="float: right;" href="/images/posts/2015/04/SkypeForBusinessRestartPrompt.PNG" target="_blank"><img style="width: 200px;" src="/images/posts/2015/04/SkypeForBusinessRestartPrompt.PNG" alt="" /></a>Microsoft recently released an update that rebrands Lync as Skype for Business. Many got the update automatically through Windows Update, but not everyone gets the new user interface (UI). There is a Lync Server setting that tells the client to use the either the old Lync or the new Skype for Business UI. If the server doesn't have this setting, such as older Lync servers that haven't been updated yet, then the default is to show the old Lync UI. One frustrating part of this update/change from a user perspective is that you have no real choice of which UI version you want to see/use everyday; or is there?
+<a style="float: right;" href="/files/2015/04/SkypeForBusinessRestartPrompt.PNG" target="_blank"><img style="width: 200px;" src="/files/2015/04/SkypeForBusinessRestartPrompt.PNG" alt="" /></a>Microsoft recently released an update that rebrands Lync as Skype for Business. Many got the update automatically through Windows Update, but not everyone gets the new user interface (UI). There is a Lync Server setting that tells the client to use the either the old Lync or the new Skype for Business UI. If the server doesn't have this setting, such as older Lync servers that haven't been updated yet, then the default is to show the old Lync UI. One frustrating part of this update/change from a user perspective is that you have no real choice of which UI version you want to see/use everyday; or is there?
 
 Fortunately, I figured out a hack to allow you to use the new Skype for Business UI even if your organizations Lync server hasn't been updated, or the admins just want you to use the Lync UI instead. The hack involves making a small edit to the Windows Registry for the app.
 <h3>Steps to Enable Skype UI</h3>
@@ -39,7 +39,7 @@ To force the Skype for Business UI you need to update the following registry key
 
 The "False" value is "00 00 00 00". So updating this to "00 00 00 01" will set it to "True". Here's a screenshot of the Registry Editor:
 
-<img src="/images/posts/2015/04/SkypeForBusinessRegistryHack.PNG" alt="" />
+<img src="/files/2015/04/SkypeForBusinessRegistryHack.PNG" alt="" />
 <h3> </h3>
 <h3>Requirements and Pitfalls</h3>
 

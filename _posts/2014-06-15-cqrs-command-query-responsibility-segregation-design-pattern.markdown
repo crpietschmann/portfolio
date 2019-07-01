@@ -72,7 +72,7 @@ The seemingly simple change to completely separate Command and Query methods has
 
 Here's a simple diagram to help clarify the separation of Command and Query how it pertains to CQRS:
 
-<img src="/images/posts/2014/06/CQRS-Diagram.png" alt="" />
+<img src="/files/2014/06/CQRS-Diagram.png" alt="" />
 <h3>Separate Models for Command and Query</h3>
 
 The way CQRS enforces Responsibility Segregation is by requiring there to be separate models used for Command methods than for Query methods. The above responsibility segregation methods example would then be built out so that the Query class and Command class can operate completely independently without either one having dependencies on the other. One of the key principles for this in CQRS is that the pattern is really meant to allow for there to be multiple Query and/or Command classes, each with it's own methods, that get used when it's unique circumstance require. For example, there may be a Query class for simple data retrieval with a separate Query class used for a more complex, power user search.
@@ -88,7 +88,7 @@ Here's some example breakouts of systems that would benefit from a CQRS plus Eve
 
 Here's a simple diagram to help clarify how CQRS can be combined with Event Sourcing:
 
-<img src="/images/posts/2014/06/CQRS-Diagram-Plus-Event-Sourcing.png" alt="" />
+<img src="/files/2014/06/CQRS-Diagram-Plus-Event-Sourcing.png" alt="" />
 
 It is important to remember that Event Sourcing is not a requirement of CQRS unless the system architecture is utilizing distributed data. Event Sourcing gives the system the ability to maintain eventual consistency of the Query models while maintaining the Command model as the source of that consistency. Without Event Sourcing there really isn't any way to effectively build a system using CQRS and Distributed Data.
 <h3>Single Database for both Command and Query</h3>

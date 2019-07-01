@@ -31,10 +31,10 @@ Here&#39;s a couple download links for the source code in VB.NET 2003 and VB.NET
 
 
 
-<a href="/file.axd?file=VBdotNet_PortScanner_VS2003.zip">VB.NET 2003 - Simple Port Scanner Source Code (15kb)</a> 
+<a href="/files/VBdotNet_PortScanner_VS2003.zip">VB.NET 2003 - Simple Port Scanner Source Code (15kb)</a> 
 
-<a href="/file.axd?file=VBdotNET_PortScanner_VS2008.zip">VB.NET 2008 - Simple Port Scanner Source Code (16kb)</a> 
+<a href="/files/VBdotNET_PortScanner_VS2008.zip">VB.NET 2008 - Simple Port Scanner Source Code (16kb)</a> 
 
 
-<img src="/images/posts/VBdotNet_SimplePortScanner.png" alt="" /> 
+<img src="/files/VBdotNet_SimplePortScanner.png" alt="" /> 
 

@@ -60,7 +60,7 @@ You then need to convert (within this method) the x, y, and zoomLevel values int
 Also, when you&rsquo;re showing Map Imagery that will completely overlay over the top of the Virtual Earth Imagery, it&rsquo;s a good practice to set the Map&rsquo;s Mode to an &ldquo;Empty&rdquo; mode that will prevent the Virtual Earth imagery from even being downloaded for display. This will increase performance a little (whether you notice it or not), and it will prevent you from using up unnecessary transactions using the Virtual Earth Web Service (this is how the control loads the Virtual Earth imagery behind the scenes.)
 <h3>Create a TileSource for OpenStreetMap</h3>
 
-<a href="/images/posts/VEJS_007_OpenStreetMapImagery.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_007_OpenStreetMapImagery" src="/images/posts/VEJS_007_OpenStreetMapImagery_thumb.png" border="0" alt="VEJS_007_OpenStreetMapImagery" width="244" height="215" align="right" /></a>First we need to create custom TileSource object, set the UriFormat to be used to generate the Imagery Uri, and then override the &ldquo;GetUri&rdquo; method with code that generates the appropriate Imagery Uri&rsquo;s using &ldquo;String.Format&rdquo;.
+<a href="/files/VEJS_007_OpenStreetMapImagery.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_007_OpenStreetMapImagery" src="/files/VEJS_007_OpenStreetMapImagery_thumb.png" border="0" alt="VEJS_007_OpenStreetMapImagery" width="244" height="215" align="right" /></a>First we need to create custom TileSource object, set the UriFormat to be used to generate the Imagery Uri, and then override the &ldquo;GetUri&rdquo; method with code that generates the appropriate Imagery Uri&rsquo;s using &ldquo;String.Format&rdquo;.
 
 The resulting Custom Tile Source object is so simple, it&rsquo;s probably easier to just show you the code.
 
@@ -114,7 +114,7 @@ Now using the described overview above, we can add the new OpenStreetMapTileSour
 Also, since the OpenStreetMapTileSource object is contained within the projects namespace (&ldquo;VirtualEarthSilverlight01&rdquo;) we need to also add a namespace reference to the XAML file. In the example above I&rsquo;m giving it the prefix of &ldquo;local&rdquo;. Once the namespace is included, we can then use our OpenStreetMapTileSource object within the XAML.
 <h3>Create a TileSource for OpenAerialMap</h3>
 
-<a href="/images/posts/VEJS_007_OpenAerialMapImagery.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_007_OpenAerialMapImagery" src="/images/posts/VEJS_007_OpenAerialMapImagery_thumb.png" border="0" alt="VEJS_007_OpenAerialMapImagery" width="244" height="215" align="right" /></a>The process of creating a Custom Tile Source and adding it to the Map is identical for OpenAerialMap Imagery as the above example for OpenStreetMap; with the exception of the uriFormat that is used to load the imagery. So, I&rsquo;m not going to re-explain the process all over again. Instead, I&rsquo;ll just show you the code.
+<a href="/files/VEJS_007_OpenAerialMapImagery.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_007_OpenAerialMapImagery" src="/files/VEJS_007_OpenAerialMapImagery_thumb.png" border="0" alt="VEJS_007_OpenAerialMapImagery" width="244" height="215" align="right" /></a>The process of creating a Custom Tile Source and adding it to the Map is identical for OpenAerialMap Imagery as the above example for OpenStreetMap; with the exception of the uriFormat that is used to load the imagery. So, I&rsquo;m not going to re-explain the process all over again. Instead, I&rsquo;ll just show you the code.
 
 The resulting Custom Tile Source object for showing OpenAerialMap Imagery:
 
@@ -168,7 +168,7 @@ Here&rsquo;s some example XAML that adds the OpenAerialMapTileSource object to t
 Again, the process for creating a Custom Tile Source for Yahoo Maps and adding it to the Map is almost identical to the above examples. Except, with Yahoo maps there&rsquo;s a little math that needs to be done to convert the x, y and zoomLevel arguments that are passed in to the &ldquo;TileSource.GetUri&rdquo; method to be the correct values need to load the Yahoo Maps Imagery. I&rsquo;m not going to cover the process of what&rsquo;s needed to convert them from the Virtual Earth values to the Yahoo Maps values, but the as you&rsquo;ll see below the code needed is fairly simple.
 <h4>Yahoo Maps &ndash; Street Imagery</h4>
 
-<a href="/images/posts/VEJS_007_YahooMapsStreetImagery.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_007_YahooMapsStreetImagery" src="/images/posts/VEJS_007_YahooMapsStreetImagery_thumb.png" border="0" alt="VEJS_007_YahooMapsStreetImagery" width="244" height="215" align="right" /></a>Here&rsquo;s the code for the Custom Tile Source for Yahoo Maps Street Imagery:
+<a href="/files/VEJS_007_YahooMapsStreetImagery.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_007_YahooMapsStreetImagery" src="/files/VEJS_007_YahooMapsStreetImagery_thumb.png" border="0" alt="VEJS_007_YahooMapsStreetImagery" width="244" height="215" align="right" /></a>Here&rsquo;s the code for the Custom Tile Source for Yahoo Maps Street Imagery:
 
 namespace VirtualEarthSilverlight01    
 {     
@@ -231,7 +231,7 @@ And, here&rsquo;s some example XAML that adds the YahooStreetTileSource object t
  
 <h4>Yahoo Maps &ndash; Aerial Imagery</h4>
 
-<a href="/images/posts/VEJS_007_YahooMapsAerialImagery.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_007_YahooMapsAerialImagery" src="/images/posts/VEJS_007_YahooMapsAerialImagery_thumb.png" border="0" alt="VEJS_007_YahooMapsAerialImagery" width="244" height="215" align="right" /></a>Here&rsquo;s the code for the Custom Tile Source for Yahoo Maps Aerial Imagery:
+<a href="/files/VEJS_007_YahooMapsAerialImagery.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_007_YahooMapsAerialImagery" src="/files/VEJS_007_YahooMapsAerialImagery_thumb.png" border="0" alt="VEJS_007_YahooMapsAerialImagery" width="244" height="215" align="right" /></a>Here&rsquo;s the code for the Custom Tile Source for Yahoo Maps Aerial Imagery:
 
 namespace VirtualEarthSilverlight01    
 {     
@@ -294,7 +294,7 @@ And, here&rsquo;s some example XAML that adds the YahooAerialTileSource object t
  
 <h4>Yahoo Maps &ndash; Hybrid Imagery</h4>
 
-<a href="/images/posts/VEJS_007_YahooMapsHybridImagery.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_007_YahooMapsHybridImagery" src="/images/posts/VEJS_007_YahooMapsHybridImagery_thumb.png" border="0" alt="VEJS_007_YahooMapsHybridImagery" width="244" height="215" align="right" /></a>One thing with the Yahoo Maps Hybrid Imagery is it only shows the roads in the imagery, everything else is transparent. So in order to get the same view as the Virtual Earth Hybrid Map Mode, you need to add the Yahoo Maps Aerial Imagery to the Map, then add the Yahoo Maps Hybrid Imagery so it overlays on top of the the Aerial imagery. You&rsquo;ll see below that this is really simple to do.
+<a href="/files/VEJS_007_YahooMapsHybridImagery.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_007_YahooMapsHybridImagery" src="/files/VEJS_007_YahooMapsHybridImagery_thumb.png" border="0" alt="VEJS_007_YahooMapsHybridImagery" width="244" height="215" align="right" /></a>One thing with the Yahoo Maps Hybrid Imagery is it only shows the roads in the imagery, everything else is transparent. So in order to get the same view as the Virtual Earth Hybrid Map Mode, you need to add the Yahoo Maps Aerial Imagery to the Map, then add the Yahoo Maps Hybrid Imagery so it overlays on top of the the Aerial imagery. You&rsquo;ll see below that this is really simple to do.
 
 Here&rsquo;s the code for the Custom Tile Source for Yahoo Maps Hybrid Imagery:
 

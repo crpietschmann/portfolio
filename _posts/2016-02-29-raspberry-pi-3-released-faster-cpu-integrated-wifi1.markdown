@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<img style="float: right;" src="/images/posts/2016/02/RaspberryPi3MobelB.png" alt="" />It's only been a year since the Raspberry Pi 2 Model B was released, and to mark the 4th birthday of the Raspberry Pi a new Pi is being released today. The <a href="http://amzn.to/2cxvgT0" target="_blank">NEW Raspberry Pi 3 Model B</a>! This new Pi offers a faster CPU at 1.2Ghz, along with integrated 802.11n Wireless LAN and Bluetooth 4.1 with Bluetooth LE.
+<img style="float: right;" src="/files/2016/02/RaspberryPi3MobelB.png" alt="" />It's only been a year since the Raspberry Pi 2 Model B was released, and to mark the 4th birthday of the Raspberry Pi a new Pi is being released today. The <a href="http://amzn.to/2cxvgT0" target="_blank">NEW Raspberry Pi 3 Model B</a>! This new Pi offers a faster CPU at 1.2Ghz, along with integrated 802.11n Wireless LAN and Bluetooth 4.1 with Bluetooth LE.
 
 Over the last few months I'd been wondering if a new Pi might come this year. After all, hardware keeps advancing so there's not much reason to stand still on RPi2 for long. I also didn't want to be spoiled by rumors, so I kept those thoughts to myself, with the possible comments on Twitter.
 

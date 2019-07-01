@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<img src="/images/posts/ASPNETMVC_Preview4_CustomThemeFolderLayout.png" alt="" align="right" />
+<img src="/files/ASPNETMVC_Preview4_CustomThemeFolderLayout.png" alt="" align="right" />
 
 **Update 2009/03/26:** There is an updated version of this code (with improvements) that targets the ASP.NET MVC 1.0 RTW located here: <a href="/post/2009/03/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx">/post/2009/03/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx</a> 
 
@@ -31,7 +31,7 @@ Here's a short list to a couple of the changes I had to make to my code from the
 
 Just for reference here's the code for the WebFormThemeViewEngine.
 
-**Download Code:** <a href="/file.axd?file=ASPNETMVC_Preview5_CustomThemeImplementation.zip" rel="enclosure">ASPNETMVC_Preview5_CustomThemeImplementation.zip (226.05 kb)</a>
+**Download Code:** <a href="/files/ASPNETMVC_Preview5_CustomThemeImplementation.zip" rel="enclosure">ASPNETMVC_Preview5_CustomThemeImplementation.zip (226.05 kb)</a>
 
 Below is the entire code for the WebFormThemeViewEngine, just for reference. If you are interested in looking at how I implemented this, just download and check out the entire code sample at the link above.
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">using System;

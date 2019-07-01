@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<img style="float: right;" src="/images/posts/2015/04/AppleWatchv1.PNG" alt="" />
+<img style="float: right;" src="/files/2015/04/AppleWatchv1.PNG" alt="" />
 
 Today is the day that Apple has opened preorders for the Apple Watch. There's a lot of conversation about this new product, but we must all remember that it's the very first version of this brand new product. It's not just the first version, but the first version of a brand new product category for the company. This all adds up to a v1 product that has a lot stacked up against it for being all that great.
 

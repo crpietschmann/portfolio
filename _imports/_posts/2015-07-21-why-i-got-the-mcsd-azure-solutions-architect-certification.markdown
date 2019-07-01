@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<img style="float: right;" src="/images/posts/2015/07/MCSD_Azure_Blk.png" alt="" />
+<img style="float: right;" src="/files/2015/07/MCSD_Azure_Blk.png" alt="" />
 
 Over the last few months I spent a ton of time studying for and passing the 3 exams required to earn the Microsoft Certified Solutions Developer (MCSD) Azure Solutions Architect certification. Microsoft has really built out an incredible, cloud platform that is Azure! And, this is fitting since it's the future of Microsoft's Enterprise business. This is the root of the reason why I decided to pursue and obtain the MCSD: Azure Solutions Architect certification.
 <h3>Azure Solutions Architect is a unique MCSD certification</h3>
@@ -40,7 +40,7 @@ Additionally, I wrote some of my own <a href="http://crpietschmann.github.io/Azu
 
 Azure is the huge cornerstone to the future of both Microsoft and Enterprise Data Centers. As companies are moving things "To the Cloud" for initial cost savings of not having to purchase or manage hardware, they are reaping the benefits of the huge platform Microsoft has built out. The initial development of Microsoft Azure seemed a bit slow the first couple years, but they have slowly been investing in Azure more and more. As a result, there have been more and more innovations in Azure over the last couple years, and Microsoft has been picking up the pace.
 
-<img style="float: right;" src="/images/posts/2015/07/MCSD_Azure_Thumbnail.png" alt="" />
+<img style="float: right;" src="/files/2015/07/MCSD_Azure_Thumbnail.png" alt="" />
 
 If you don't learn cloud development, you'll be left behind. Whether you develop or use Microsoft technology based solutions, or even Linux, you really should start gaining some knowledge and expertise in the Azure Platform. The Windows Server isn't going to disappear anytime soon, but the differentiation between "Cloud" and On-premises are starting to blur and will soon be barely distinguishable.
 

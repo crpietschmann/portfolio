@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<img style="float: right;" src="/images/posts/MVP_FullColor_ForScreen.png" alt="" width="157" />
+<img style="float: right;" src="/files/MVP_FullColor_ForScreen.png" alt="" width="157" />
 
 Whether I won MVP or not I would still do what I do. My passion for technology and the pleasure of helping others it what drives me. This marks the 5th time I've been awarded Microsoft MVP, and am honored for this recognition.
 

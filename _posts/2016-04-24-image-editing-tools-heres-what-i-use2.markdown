@@ -21,12 +21,12 @@ Here's the tools I use for various Operating Systems:
 
 When using Windows, I use the <a href="http://www.getpaint.net/index.html" target="_blank">Paint.NET</a> image editing tool. This is a completely FREE image editing application. It's simple, has TONS of features, and importantly is extremely easy to use! I've been using this app for over 10 years!
 
-<img src="/images/posts/2016/04/pdn310_car_thumb.jpg" alt="" />
+<img src="/files/2016/04/pdn310_car_thumb.jpg" alt="" />
 <h3>GIMP on Mac OSX</h3>
 
 When using Mac OSX, I use the <a href="https://www.gimp.org/downloads/" target="_blank">GIMP</a> image editing tool. This is a completely FREE image editing application that is simple, has TONS of features, and importantly is extremely easy to use!
 
- <img src="/images/posts/2016/04/wilber-big.png" alt="" width="139" height="104" />
+ <img src="/files/2016/04/wilber-big.png" alt="" width="139" height="104" />
 <h3>How difficult is it switching between the two?</h3>
 
 Yes, I use 2 different applications for image editing depending on the Operating System I am using when I need to edit / create / modify images, art and screenshots. This isn't as confusing as you might think. These 2 tools are very similar in the primary features they support. In addition, the UI's of both are fairly similar. This helps when switching between the two, but you will still need to figure out how to use each apps tools as there are some differences.

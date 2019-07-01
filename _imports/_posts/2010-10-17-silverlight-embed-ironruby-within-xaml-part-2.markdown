@@ -356,4 +356,4 @@ My initial goal when experimenting with the DLR was to figure out some technique
 **Download the Code: **
 
 <div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:d2b7394e-0db3-4f4d-b3b0-182aa242efab" class="wlWriterEditableSmartContent">
-<div><a href="/file.axd?file=SLXamlEmbeddedDLRScriptPart2_2.zip" target="_self">SLXamlEmbeddedDLRScriptPart2.zip</a></div></div>
+<div><a href="/files/SLXamlEmbeddedDLRScriptPart2_2.zip" target="_self">SLXamlEmbeddedDLRScriptPart2.zip</a></div></div>

@@ -25,4 +25,4 @@ Heres a Windows <a href="http://msdn.microsoft.com/longhorn/" target="_blank" ti
 
  
 
-<img src="/images/posts/o_WindowsLonhornGlassLook.JPG" alt="" />
+<img src="/files/o_WindowsLonhornGlassLook.JPG" alt="" />

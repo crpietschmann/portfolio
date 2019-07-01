@@ -33,4 +33,4 @@ He even has a command prompt version you can use. There is a full compatibility 
 
 I have to say, Great Job Christian!
 
-<img src="/images/posts/I8kfanGUI.jpg" alt="" />
+<img src="/files/I8kfanGUI.jpg" alt="" />

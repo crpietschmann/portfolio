@@ -238,7 +238,7 @@ Anyway, here&rsquo;s a download link to the full code of the project for the abo
 <div id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:d6d36e07-63fe-464f-82cc-7b8216c68372" class="wlWriterEditableSmartContent" style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px">
 
  
-<div><a href="/file.axd?file=OpenStreetMapDeepEarthPrototype_1.zip" target="_self">OpenStreetMapDeepEarthPrototype.zip</a></div>
+<div><a href="/files/OpenStreetMapDeepEarthPrototype_1.zip" target="_self">OpenStreetMapDeepEarthPrototype.zip</a></div>
 
  
 </div>

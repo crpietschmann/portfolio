@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<img style="float: right;" src="/images/posts/2015/06/Spec_Dev_AzureSol_BW.png" alt="" />
+<img style="float: right;" src="/files/2015/06/Spec_Dev_AzureSol_BW.png" alt="" />
 
 I've been taking on <a href="http://blogs.perficient.com/microsoft/2015/04/become-a-microsoft-certified-specialist-with-html5-js-css3/" target="_blank">some Microsoft certifications recently</a>, and my latest success is passing the <a href="https://www.microsoft.com/learning/en-us/exam-70-532.aspx">70-532 Developing Microsoft Azure Solutions exam</a>; earning me the Microsoft Specialist: Developing Microsoft Azure Solutions Certification. As with all Microsoft certification exams, this exam covers a huge amount of information and content. As a result of this, a variety of materials and sources need to be studied in order to get the level understanding and memorization necessary to pass the exam.
 

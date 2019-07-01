@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<a rel="nofollow" href="/images/posts/BingMapsRTW_BasicMap_8.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="BingMapsRTW_BasicMap" src="/images/posts/BingMapsRTW_BasicMap_thumb_6.png" border="0" alt="BingMapsRTW_BasicMap" width="244" height="179" align="right" /></a>It&rsquo;s been 8 months since the CTP release of the Bing Maps Silverlight Control at MIX&rsquo;08, and finally this week Microsoft released the Final v1.0 release of the control to the web.  Now, we can all finally start using the Bing Maps Silverlight Control in Production!
+<a rel="nofollow" href="/files/BingMapsRTW_BasicMap_8.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="BingMapsRTW_BasicMap" src="/files/BingMapsRTW_BasicMap_thumb_6.png" border="0" alt="BingMapsRTW_BasicMap" width="244" height="179" align="right" /></a>It&rsquo;s been 8 months since the CTP release of the Bing Maps Silverlight Control at MIX&rsquo;08, and finally this week Microsoft released the Final v1.0 release of the control to the web.  Now, we can all finally start using the Bing Maps Silverlight Control in Production!
 
 If you&rsquo;ve worked with the CTP, then you&rsquo;ll want to take a look at Ricky&rsquo;s &ldquo;<a rel="nofollow" href="http://rbrundritt.spaces.live.com/blog/cns!E7DBA9A4BFD458C5!1038.entry" target="_blank">Migrating from Bing Maps Silverlight CTP to Production Version</a>&rdquo; article. It explains all the stuff you&rsquo;ll need to modify within your project in order to gracefully switch from the CTP to the v1 Map Control.
 
@@ -46,19 +46,19 @@ If you would like to see the Bing Maps Silverligth Control &ldquo;In Action&rdqu
 <h5>Create a New Silverlight Application Project</h5>
 <ul>
 <li>Run VIsual Studio 2008 and Create a New Project using the Silverlight Application template.      
-<a rel="nofollow" href="/images/posts/BingMapsRTW_CreateSilverlightProject.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="BingMapsRTW_CreateSilverlightProject" src="/images/posts/BingMapsRTW_CreateSilverlightProject_thumb.png" border="0" alt="BingMapsRTW_CreateSilverlightProject" width="644" height="459" /></a> </li>
+<a rel="nofollow" href="/files/BingMapsRTW_CreateSilverlightProject.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="BingMapsRTW_CreateSilverlightProject" src="/files/BingMapsRTW_CreateSilverlightProject_thumb.png" border="0" alt="BingMapsRTW_CreateSilverlightProject" width="644" height="459" /></a> </li>
 <li>In the &ldquo;**Add Silverlight Application**&rdquo; dialog box, select &ldquo;**Host the Silverlight application in a new Web site**&rdquo; option and click &ldquo;OK&rdquo;. You must select this option to create an ASP.NET Web Application Project, ASP.NET Website, or ASP.NET MVC Website because the <a rel="nofollow" href="http://msdn.microsoft.com/en-us/library/cc189008(VS.95).aspx" target="_blank">URL Access Restrictions in Silverlight</a> require the page that hosts the Map control be hosted using HTTP in order to load/access the Map TIle Imagery.       
-<a rel="nofollow" href="/images/posts/BingMapsRTW_CreateHostWebsite.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="BingMapsRTW_CreateHostWebsite" src="/images/posts/BingMapsRTW_CreateHostWebsite_thumb.png" border="0" alt="BingMapsRTW_CreateHostWebsite" width="452" height="271" /></a>  </li>
+<a rel="nofollow" href="/files/BingMapsRTW_CreateHostWebsite.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="BingMapsRTW_CreateHostWebsite" src="/files/BingMapsRTW_CreateHostWebsite_thumb.png" border="0" alt="BingMapsRTW_CreateHostWebsite" width="452" height="271" /></a>  </li>
 </ul>
 <h5>Add a Reference to Microsoft.Maps.MapControl.dll</h5>
 <ul>
 <li>Go to the &ldquo;**Solution Explorer**&rdquo; and RIght-Click &ldquo; **References**&rdquo; in the Silverlight Project (not the ASP.NET Web Application Project), and Select &ldquo;**Add Reference&hellip;**&rdquo;       
-<a rel="nofollow" href="/images/posts/BingMapsRTW_AddReference.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="BingMapsRTW_AddReference" src="/images/posts/BingMapsRTW_AddReference_thumb.png" border="0" alt="BingMapsRTW_AddReference" width="417" height="344" /></a>  </li>
+<a rel="nofollow" href="/files/BingMapsRTW_AddReference.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="BingMapsRTW_AddReference" src="/files/BingMapsRTW_AddReference_thumb.png" border="0" alt="BingMapsRTW_AddReference" width="417" height="344" /></a>  </li>
 <li>Within the &ldquo;**Add Reference**&ldquo; Dialog, Select the &ldquo;**Browse**&ldquo; tab and navigate to the folder where the SDK is installed, then select the &ldquo;**Microsoft.Maps.MapControl.dll**&rdquo; and &ldquo;**Microsoft.Maps.MapControl.Common.dll**&rdquo; files.       
  
 *Note: Be Default the SDK is installed in this folder on x64 version of Windows: &ldquo;C:\Program Files (x86)\Bing Maps Silverlight Control\V1\Libraries&rdquo;. On x86 (or 32-bit) versions of Windows it&rsquo;s installed within the &ldquo;Program Files&rdquo; folder instead of &ldquo;Program Files (x86)&rdquo;.* 
  
-<a rel="nofollow" href="/images/posts/BingMapsRTW_AddReferenceBrowse.png">**<img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="BingMapsRTW_AddReferenceBrowse" src="/images/posts/BingMapsRTW_AddReferenceBrowse_thumb.png" border="0" alt="BingMapsRTW_AddReferenceBrowse" width="644" height="394" />**</a>** ** </li>
+<a rel="nofollow" href="/files/BingMapsRTW_AddReferenceBrowse.png">**<img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="BingMapsRTW_AddReferenceBrowse" src="/files/BingMapsRTW_AddReferenceBrowse_thumb.png" border="0" alt="BingMapsRTW_AddReferenceBrowse" width="644" height="394" />**</a>** ** </li>
 </ul>
 <h5>Display a Bing Maps Map!</h5>
 <ul>
@@ -85,9 +85,9 @@ To do this add the following to the <UserControl> tag:
 Now, when you run the application (press F5 within Visual Studio) you will see a fully interactive Bing Maps map displayed. 
 </ul>
 <ul>
-<a rel="nofollow" href="/images/posts/BingMapsRTW_BasicMap_9.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="BingMapsRTW_BasicMap" src="/images/posts/BingMapsRTW_BasicMap_thumb_7.png" border="0" alt="BingMapsRTW_BasicMap" width="504" height="369" /></a> 
+<a rel="nofollow" href="/files/BingMapsRTW_BasicMap_9.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="BingMapsRTW_BasicMap" src="/files/BingMapsRTW_BasicMap_thumb_7.png" border="0" alt="BingMapsRTW_BasicMap" width="504" height="369" /></a> 
 </ul>
-<h3><a rel="nofollow" href="/images/posts/BingMapsRTW_BasicMapWithDevAccountSignUpWarning.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="BingMapsRTW_BasicMapWithDevAccountSignUpWarning" src="/images/posts/BingMapsRTW_BasicMapWithDevAccountSignUpWarning_thumb.png" border="0" alt="BingMapsRTW_BasicMapWithDevAccountSignUpWarning" width="244" height="179" align="right" /></a>Setting Up a Bing Maps Developer Account</h3>
+<h3><a rel="nofollow" href="/files/BingMapsRTW_BasicMapWithDevAccountSignUpWarning.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="BingMapsRTW_BasicMapWithDevAccountSignUpWarning" src="/files/BingMapsRTW_BasicMapWithDevAccountSignUpWarning_thumb.png" border="0" alt="BingMapsRTW_BasicMapWithDevAccountSignUpWarning" width="244" height="179" align="right" /></a>Setting Up a Bing Maps Developer Account</h3>
 
 When running the above example you may have noticed the &ldquo;*Invalid Credentials. Sign up for a developer account at: *<a rel="nofollow" href="http://www.microsoft.com/maps/developers">*http://www.microsoft.com/maps/developers*</a>&rdquo; message being displayed over top of the Map. This is because in order for you to use the Silverlight Map control within an application, Microsoft is requiring you to setup a Developer Account for the domain you will be hosting your application in.
 <h5>Setup a Bing Maps Developer Account</h5>
@@ -98,7 +98,7 @@ When running the above example you may have noticed the &ldquo;*Invalid Credenti
 <li>Enter it the required Account Details </li>
 </ul>
 <h5>Get a Bing Maps Key</h5>
-<h5><a rel="nofollow" href="/images/posts/BingMapsRTW_CreateBingMapsKey.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="BingMapsRTW_CreateBingMapsKey" src="/images/posts/BingMapsRTW_CreateBingMapsKey_thumb.png" border="0" alt="BingMapsRTW_CreateBingMapsKey" width="244" height="158" align="right" /></a></h5>
+<h5><a rel="nofollow" href="/files/BingMapsRTW_CreateBingMapsKey.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="BingMapsRTW_CreateBingMapsKey" src="/files/BingMapsRTW_CreateBingMapsKey_thumb.png" border="0" alt="BingMapsRTW_CreateBingMapsKey" width="244" height="158" align="right" /></a></h5>
 <ul>
 <li>Once you have created a Bing Maps Developer Account, just click the &ldquo;Create or view keys&rdquo; link on the left side of the Bing Maps Account Center website. </li>
 <li>Type in some Application Name. This is your name for the application. </li>

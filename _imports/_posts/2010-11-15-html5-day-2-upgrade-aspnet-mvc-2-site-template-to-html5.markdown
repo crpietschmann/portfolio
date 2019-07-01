@@ -203,5 +203,5 @@ I started building my own extension methods for ASP.NET MVC to add support for t
 
 However, I&rsquo;ll probably spend more play time looking at (and working with/on) jQuery plugins that will help add the functional aspects of HTML5 tags to older browsers. *(It feels somewhat odd calling the current generation of browsers &ldquo;older browsers,&rdquo; but after all they don&rsquo;t fully support HTML5.)*
 <div id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:ff548906-7d70-4179-8b99-397af3ebb620" class="wlWriterEditableSmartContent" style="margin: 0px; display: inline; float: none; padding: 0px;">
-<div>Source Code:<a href="/file.axd?file=MvcHTML5.zip" target="_self">MvcHTML5.zip</a></div>
+<div>Source Code:<a href="/files/MvcHTML5.zip" target="_self">MvcHTML5.zip</a></div>
 </div>

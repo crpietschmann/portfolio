@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<a href="https://www.teambeachbody.com/tbbsignup/-/tbbsignup/club?referringRepId=322348" target="_blank"><img style="float: right;" src="/images/posts/2016/01/stream-free-beachbody-workouts.png" alt="" /></a>
+<a href="https://www.teambeachbody.com/tbbsignup/-/tbbsignup/club?referringRepId=322348" target="_blank"><img style="float: right;" src="/files/2016/01/stream-free-beachbody-workouts.png" alt="" /></a>
 
 Personally, I've been a Beachbody customer since 2010 when I originally began my own personal fitness and health journey. I first started with P90X and then purchased the newer P90X3 from Beachbody and Tony Horton. For a long time the only way to do Beachbody workouts were to put in a DVD (in your TV, Computer or portable DVD player); while this works just fine there are a few things that can go wrong. What if the DVDs get scratched? or Lost? Fortunately, Beachbody has innovated recently with the all new <a href="https://www.teambeachbody.com/tbbsignup/-/tbbsignup/club?referringRepId=322348" target="_blank">Beachbody On Demand streaming service</a>. This service is like Netflix or Amazon Video from Beachbody workout programs.
 <h3>Workouts</h3>
@@ -25,9 +25,9 @@ Also, **your first month is completely FREE!**
 
 In addition to the MANY various workout programs, Beachbody On Demand also have workouts that are exclusive to the the "on demand" service from Tony Horton, Autumn Calabrese, and Sagi Kalev.
 
-<a href="https://www.teambeachbody.com/tbbsignup/-/tbbsignup/club?referringRepId=322348" target="_blank"><img src="/images/posts/2016/01/BOD_Exclusive_Workouts.png" alt="Beachbody On Demand Exclusive Workouts" /></a>
+<a href="https://www.teambeachbody.com/tbbsignup/-/tbbsignup/club?referringRepId=322348" target="_blank"><img src="/files/2016/01/BOD_Exclusive_Workouts.png" alt="Beachbody On Demand Exclusive Workouts" /></a>
 <h3>How to Access</h3>
 
 Accessing <a href="https://www.teambeachbody.com/tbbsignup/-/tbbsignup/club?referringRepId=322348" target="_blank">Beachbody On Demand</a> is extremely simple since you can play the workouts from any web browser, or even via the Beachbody On Demand app for the new Apple TV.
 
-<a href="https://www.teambeachbody.com/tbbsignup/-/tbbsignup/club?referringRepId=322348" target="_blank"><img src="/images/posts/2016/01/BOD_Website.png" alt="Beachbody On Demand Website" /></a>
+<a href="https://www.teambeachbody.com/tbbsignup/-/tbbsignup/club?referringRepId=322348" target="_blank"><img src="/files/2016/01/BOD_Website.png" alt="Beachbody On Demand Website" /></a>

@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<img style="float: right;" src="/images/posts/2015/05/RaspberryPi2withMicroSDCard.png" alt="" />
+<img style="float: right;" src="/files/2015/05/RaspberryPi2withMicroSDCard.png" alt="" />
 
 My very first Raspberry Pi arrived yesterday. I'm super excited to get playing, and frankly I probably should have gotten one of the older versions sooner. Now that I've got Pi, I can start hacking! Since this is a <a href="http://amzn.to/2bUfR3e" target="_blank">Raspberry Pi 2</a> (same goes for the <a href="http://amzn.to/2bUfR3e" target="_blank">Raspberry Pi 3</a>!), it can run the new Windows 10 for IoT making it easy to build apps for it with C# and Visual Studio. Well, I haven't gotten to actually building any apps yet, but was able to get Windows 10 for IoT setup.
 <h3>Install Windows 10 for IoT</h3>
@@ -36,10 +36,10 @@ If you want a bigger explanation of the steps, see Scott Hanselman's post. Thank
 
 Here's a screenshot of the console installing the "flash.ffu" image to the Micro SD card:
 
-<img src="/images/posts/2015/05/InstalWin10ImageOnMicroSDCard.PNG" alt="" />
+<img src="/files/2015/05/InstalWin10ImageOnMicroSDCard.PNG" alt="" />
 <h3>Micro SD Card Details</h3>
 
-<img style="float: right;" src="/images/posts/2015/05/Win10IOTDiskSpaceUsageOnMicroSDCard.PNG" alt="" />
+<img style="float: right;" src="/files/2015/05/Win10IOTDiskSpaceUsageOnMicroSDCard.PNG" alt="" />
 
 A couple questions I wondered when I bought the Raspberry Pi 2 were:
 <ol>
@@ -63,11 +63,11 @@ Once you have the Windows 10 for IoT image on the Micro SD card, you can put it 
 
 Initially, it went though a couple different screens, including a mysterious blank screen.
 
-<img src="/images/posts/2015/05/Win10IoTRaspberryPi2InitialStartupScreens.png" alt="" />
+<img src="/files/2015/05/Win10IoTRaspberryPi2InitialStartupScreens.png" alt="" />
 
 Then after a couple minutes, it displayed the default screen displaying the machine name and IP Address configuration.
 
-<img src="/images/posts/2015/05/IMG_1875.JPG" alt="" />
+<img src="/files/2015/05/IMG_1875.JPG" alt="" />
 <h3>Conclusion</h3>
 
 This is pretty much as far as I got on day 1. I didn't have much time, but I just could wait to get things booted up. Now that I know it works I can start hacking soon, hopefully I'll have time this weekend!

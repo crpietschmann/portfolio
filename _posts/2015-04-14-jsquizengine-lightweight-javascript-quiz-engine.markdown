@@ -22,4 +22,4 @@ Source Code: <a href="https://github.com/crpietschmann/jsquizengine">https://git
 
 Also, here's some screenshots of where it's at so far. Keep in mind this project is really simple at this point, but it does work.
 
-<img src="/images/posts/2015/04/jsQuizEngineScreenshots.png" alt="" />
+<img src="/files/2015/04/jsQuizEngineScreenshots.png" alt="" />

@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<img style="float: right;" src="/images/posts/2015/08/Win10MinecraftBeta001_300x168.png" alt="" />Microsoft recently released the Minecraft: Windows 10 Edition Beta. It's a free app for existing Mojang customers who have already purchased the desktop/Java version of Minecraft. This is one of the first UWP apps for Windows 10 from Microsoft and given Minecraft's long history with Java, I thought I'd peek inside and see how much implementation details I could gleam. This post chronicles what I've been able to find out.
+<img style="float: right;" src="/files/2015/08/Win10MinecraftBeta001_300x168.png" alt="" />Microsoft recently released the Minecraft: Windows 10 Edition Beta. It's a free app for existing Mojang customers who have already purchased the desktop/Java version of Minecraft. This is one of the first UWP apps for Windows 10 from Microsoft and given Minecraft's long history with Java, I thought I'd peek inside and see how much implementation details I could gleam. This post chronicles what I've been able to find out.
 
 **Platform Details**
 
@@ -33,11 +33,11 @@ Below is the folder location where the app package is stored, along with a scree
 
 *C:\Program Files\WindowsApps\Microsoft.MinecraftUWP_0.12.1.0_x64__8wekyb3d8bbwe*
 
-<img src="/images/posts/2015/08/Win10MinecraftBetaPackageFolder.png" alt="" />
+<img src="/files/2015/08/Win10MinecraftBetaPackageFolder.png" alt="" />
 
 **Package Inspection**
 
-<img style="float: right;" src="/images/posts/2015/08/MCSquare310x310Logo.scale-100.png" alt="" />
+<img style="float: right;" src="/files/2015/08/MCSquare310x310Logo.scale-100.png" alt="" />
 
 Upon further inspection of the image resources contained within the app package, it appears that this is the "Minecraft: Pocket Edition". Looking at the ".png" file in the root package folder, the images show "Pocket Edition" instead of "Windows 10 Edition Beta". This indicates that they possibly started with the Pocket Edition code base and ported it over to Windows 10.
 
@@ -45,7 +45,7 @@ The "*Minecraft.Win10.DX11.exe*" contains virtually the entire application, as t
 
 The "data" sub-folder within the package contains all the game asset (images, audio, etc) files.
 
-<img style="display: block; margin-left: auto; margin-right: auto;" src="/images/posts/2015/08/Win10MinecraftImageAssets.png" alt="" />
+<img style="display: block; margin-left: auto; margin-right: auto;" src="/files/2015/08/Win10MinecraftImageAssets.png" alt="" />
 
 It can be concluded that the Minecraft Beta for Windows 10 uses DirectX 11, rather than the newer DirectX 12. This can be determined by the fact that the .EXE filename contains "DX11" as well as the existence of the "*data/shaders/dx11*" sub-folder within the package.
 

@@ -52,11 +52,11 @@ The files that end in "a.dat" contain the zip codes and some other info along wi
 The files that end in ".dat" contain all the geocode points for each of the zip codes defined in the other file.
 <h3>How do I convert it to CSV?</h3>
 
-<img src="/images/posts/ARCINFOASCIItoCSVConverter_Screenshot.png" alt="" width="660" height="534" align="right" />Well, you could look at the ARC/INFO Generate (ASCII) Metadata Cartographic Boundary File Format definition and write a parser that then saves in in a CSV format.
+<img src="/files/ARCINFOASCIItoCSVConverter_Screenshot.png" alt="" width="660" height="534" align="right" />Well, you could look at the ARC/INFO Generate (ASCII) Metadata Cartographic Boundary File Format definition and write a parser that then saves in in a CSV format.
 
 Or, you could just download and use the one I wrote for this article:
 
-Download Conversion Utility: <a href="/file.axd?file=ARCINFOASCIItoCSVConverter.zip" rel="enclosure">ARCINFOASCIItoCSVConverter.zip (11.90 kb)</a>
+Download Conversion Utility: <a href="/files/ARCINFOASCIItoCSVConverter.zip" rel="enclosure">ARCINFOASCIItoCSVConverter.zip (11.90 kb)</a>
 
 To use this utility, just unzip the contents of all the Zip files you downloaded from the U.S. Census Bureau website into a single folder, and click the "Convert All Files in Folder" button to select that folder and automatically convert all the files in that folder to a CSV file format.
 

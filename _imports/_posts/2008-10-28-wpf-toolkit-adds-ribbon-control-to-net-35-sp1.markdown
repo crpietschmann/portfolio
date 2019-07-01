@@ -20,7 +20,7 @@ Download the WPF Toolkit October 2008 Release: <a href="http://www.codeplex.com/
 
 Ribbon Feature Walkthrough: <a href="http://windowsclient.net/wpf/wpf35/wpf-35sp1-ribbon-walkthrough.aspx">http://windowsclient.net/wpf/wpf35/wpf-35sp1-ribbon-walkthrough.aspx</a>
 
-<img src="/images/posts/WPFToolkit_RibbonControl.png" alt="" />
+<img src="/files/WPFToolkit_RibbonControl.png" alt="" />
 
 Here's some sample XAML markup for a complete Ribbon Tab with Button Groups defined:
 

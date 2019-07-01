@@ -14,11 +14,11 @@ redirect_from:
 ---
 <!-- more -->
 
-<a href="/images/posts/SLBingMaps_DrawCircles.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="SLBingMaps_DrawCircles" src="/images/posts/SLBingMaps_DrawCircles_thumb.png" border="0" alt="SLBingMaps_DrawCircles" width="244" height="196" align="right" /></a> Over 2 years ago I posted an example of how to <a href="/post/2008/02/09/Virtual-Earth-Draw-a-Circle-Radius-Around-a-LatLong-Point.aspx">draw circles on the Bing Maps JavaScript control</a>. I thought it was about time to update that post to demonstrate how to do this using the Bing Maps Silverlight control. This is basically a C# port of the original JavaScript code.
+<a href="/files/SLBingMaps_DrawCircles.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="SLBingMaps_DrawCircles" src="/files/SLBingMaps_DrawCircles_thumb.png" border="0" alt="SLBingMaps_DrawCircles" width="244" height="196" align="right" /></a> Over 2 years ago I posted an example of how to <a href="/post/2008/02/09/Virtual-Earth-Draw-a-Circle-Radius-Around-a-LatLong-Point.aspx">draw circles on the Bing Maps JavaScript control</a>. I thought it was about time to update that post to demonstrate how to do this using the Bing Maps Silverlight control. This is basically a C# port of the original JavaScript code.
 
 Sometimes this can be really useful, but it isn&rsquo;t built into the Sivleright Bing Maps Control. So you need to implement it yourself in order to do it. However, instead of writing from scratch, feel free to copy the code from this post.
 
-Download Full Source: <a href="/file.axd?file=SLBingMaps_DrawCircle.zip" target="_self">SLBingMaps_DrawCircle.zip</a>
+Download Full Source: <a href="/files/SLBingMaps_DrawCircle.zip" target="_self">SLBingMaps_DrawCircle.zip</a>
 <div id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:d0dc3616-ed94-46b2-a1ef-1768009e7fae" class="wlWriterEditableSmartContent" style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px">
 
  

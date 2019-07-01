@@ -16,7 +16,7 @@ redirect_from:
 
 <a href="http://www.w3schools.com/css/css3_animations.asp" target="_blank">CSS Animations</a> are a feature that's been around for a few years, but not many web developers know about it. CSS Animations allow you to define animations and transitions for HTML elements without the need to write JavaScript to do it, or even create an animated GIF file.
 
-<img src="/images/posts/2015/04/CSS-Spinner.gif" alt="" />
+<img src="/files/2015/04/CSS-Spinner.gif" alt="" />
 
 Here's a simple Loading Spinner using a simple CSS Animation:
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; "><style>

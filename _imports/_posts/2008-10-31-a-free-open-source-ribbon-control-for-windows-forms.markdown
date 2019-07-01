@@ -23,5 +23,5 @@ Go check it out: <a href="http://www.codeproject.com/KB/toolbars/WinFormsRibbon.
 
 
 
-<img src="/images/posts/FreeOpenSourceProfessionalRibbonForWinForms.gif" alt="" />
+<img src="/files/FreeOpenSourceProfessionalRibbonForWinForms.gif" alt="" />
 

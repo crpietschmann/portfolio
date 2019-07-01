@@ -22,7 +22,7 @@ One option to do theming in ASP.NET MVC is to use the standard ASP.NET Theme fun
 
 *I used the ASP.NET MVC Preview 4 release to write this article.*
 
-<img src="/images/posts/ASPNETMVC_Preview4_CustomThemeFolderLayout.png" alt="" align="right" />
+<img src="/files/ASPNETMVC_Preview4_CustomThemeFolderLayout.png" alt="" align="right" />
 <h3>Create Themed Views</h3>
 
 First, we'll make some changes to the Views contained within the default ASP.NET MVC Template.
@@ -113,4 +113,4 @@ In the code attached to this article, I've created a "~/Controls" folder and pla
 
 Ok, after reading all the above, I'm sure you're probably a little confuses since I only gave a brief overview. Well, here's the code. I started with an <a href="/post.aspx?id=fa4fbb6a-6f47-4f43-91c1-f0ebb04544f8">ASP.NET MVC Website (as described in one of my previous posts)</a> using the Preview 4 release and made all the changes described above. Have fun, and please post any comments you have on this, or any suggestions on making it better.
 
-Download Code: <a href="/file.axd?file=ASPNETMVC_CustomThemeImplementation.zip" rel="enclosure">ASPNETMVC_CustomThemeImplementation.zip (207.98 kb)</a>
+Download Code: <a href="/files/ASPNETMVC_CustomThemeImplementation.zip" rel="enclosure">ASPNETMVC_CustomThemeImplementation.zip (207.98 kb)</a>

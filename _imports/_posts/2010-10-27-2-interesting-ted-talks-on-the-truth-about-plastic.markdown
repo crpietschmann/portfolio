@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<img style="float: right;" src="../../images/posts/2010/10/PlasticPollution.jpg" alt="" />Below are videos of two TED talks that I discovered over at <a href="http://ted.com">TED.com</a>. They talk about how bad plastic is for the environment, the earth, for us in the end. One disturbing thing that's mentioned is that plastic does break down into smaller pieces over time, but plastic is always plastic, is always plastic. It never truly breaks down to a point where the environment can use if for something other than pollution.
+<img style="float: right;" src="../../files/2010/10/PlasticPollution.jpg" alt="" />Below are videos of two TED talks that I discovered over at <a href="http://ted.com">TED.com</a>. They talk about how bad plastic is for the environment, the earth, for us in the end. One disturbing thing that's mentioned is that plastic does break down into smaller pieces over time, but plastic is always plastic, is always plastic. It never truly breaks down to a point where the environment can use if for something other than pollution.
 
 <a title="Dianna Cohen: Tough truths about plastic pollution" href="http://www.ted.com/talks/dianna_cohen_tough_truths_about_plastic_pollution.html">Dianna Cohen: Tough truths about plastic pollution</a>
 

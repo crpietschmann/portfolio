@@ -31,7 +31,7 @@ I was thinking it would be cool if you could place a StackOverflow "badge" on yo
 
 Well, here's a small ASP.NET User Control that does it:
 
-<img src="/images/posts/StackOverflowBadge.png" alt="" width="193" height="52" />
+<img src="/files/StackOverflowBadge.png" alt="" width="193" height="52" />
 
 And here's the usage code for putting your badge on your site:
 

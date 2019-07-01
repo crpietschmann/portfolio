@@ -25,11 +25,11 @@ Why might you want to do this? There are times when you may want to restrict you
 
 This article was written with Virtual Earth v6.1, and will also work with Virtual Earth v6.0.
 
-<img style="float: right" src="/images/posts/VE_RestrictMapSpecifiedViewableArea.png" alt="" width="230" height="314" /> 
+<img style="float: right" src="/files/VE_RestrictMapSpecifiedViewableArea.png" alt="" width="230" height="314" /> 
 <h5>Download the Code:</h5>
 
 
-<a rel="enclosure" href="/file.axd?file=VE_RestrictMapSpecifiedViewableArea.zip">VE_RestrictMapSpecifiedViewableArea.zip (3.01 kb)</a> 
+<a rel="enclosure" href="/files/VE_RestrictMapSpecifiedViewableArea.zip">VE_RestrictMapSpecifiedViewableArea.zip (3.01 kb)</a> 
 
 <h3>Other Code Used In This Example</h3>
 

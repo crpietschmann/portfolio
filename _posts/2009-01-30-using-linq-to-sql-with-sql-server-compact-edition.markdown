@@ -31,7 +31,7 @@ It doesn't matter if it's a Windows Forms or WPF applciation. For this example, 
 
 You can do this by right-clicking on your Solution within the Solution Explorer and selecting "Add - New Item..." then select the "Data" category on the left and "Local Database" on the right.
 
-<img src="/images/posts/LINQSQLCompact_CreateDatabaseFile.png" alt="" />
+<img src="/files/LINQSQLCompact_CreateDatabaseFile.png" alt="" />
 
 **Step 3: Add some Tables to the Database**
 
@@ -51,13 +51,13 @@ By default, the SqlMetal.exe is located at *drive*:\Progream Files\Microsoft SDK
 
 Once you add the .dbml file, Visual Studio 2008 will automatically generate the .NET code (C# or VB.NET) for the System.Data.Linq.DataContext class that you'll use to access your data.
 
- <img src="/images/posts/LINQSQLCompact_DataContextClass.png" alt="" />
+ <img src="/files/LINQSQLCompact_DataContextClass.png" alt="" />
 
 **Step 6: Start Coding away using LINQ to SQL! **
 
 You can now code using LINQ and your new System.Data.Linq.DataContext class against your database.
 
-<img src="/images/posts/LINQSQLCompact_LinqCode.png" alt="" />
+<img src="/files/LINQSQLCompact_LinqCode.png" alt="" />
 <h3>A GUI UI for SqlMetal.exe</h3>
 
 The <a href="http://www.codeplex.com/sqlmetalosui">SQL Metal Open Source User Interface</a> Project over on CodePlex has been built just for the purpose of making it easier to generate mapping files for SQL Server Compact databases.

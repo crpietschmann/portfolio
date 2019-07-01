@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<img style="float: right;" src="/images/posts/2009/7/azure-logo.jpg" alt="" />
+<img style="float: right;" src="/files/2009/7/azure-logo.jpg" alt="" />
 
 *NOTE: Azure pricing and functionality has changes alot since this post was written making the details below out of date.*
 

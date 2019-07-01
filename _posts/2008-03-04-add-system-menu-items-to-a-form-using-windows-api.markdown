@@ -18,7 +18,7 @@ This is something I used to have a code snippet for in VB6, but I haven't needed
 
 Below is a screenshot of it in action along with the complete source code in C#.
 
-<img src="/images/posts/Win32API_AddSystemMenuItem.png" alt="" width="301" height="299" />
+<img src="/files/Win32API_AddSystemMenuItem.png" alt="" width="301" height="299" />
 
 [code:c#]
 

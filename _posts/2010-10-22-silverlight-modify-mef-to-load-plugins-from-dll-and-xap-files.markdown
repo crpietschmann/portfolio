@@ -100,4 +100,4 @@ A note about the code: Instead of just inheriting from DeploymentCatalog and ove
 You can download the source file here:
 
 
-<a href="/file.axd?file=SuperDeploymentCatalog_1.cs">SuperDeploymentCatalog.cs</a>
+<a href="/files/SuperDeploymentCatalog_1.cs">SuperDeploymentCatalog.cs</a>

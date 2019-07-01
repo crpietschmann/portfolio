@@ -396,7 +396,7 @@ Here's the complete code for the ScriptControlBase, ScriptReferenceAttribute and
 As you can see it's fairly simple to get started creating your own custom server controls that inherit from ScriptControl, especially if you use the above ScriptControlBase class along with its ScriptControlPropertyAttribute and ScriptReferenceAttribute attributes. 
 
 
-Download Full Source Code: <a href="/file.axd?file=CreateAJAXServerControlUsingScriptControlBaseClass.zip" rel="enclosure">CreateAJAXServerControlUsingScriptControlBaseClass.zip (33.31 kb)</a> 
+Download Full Source Code: <a href="/files/CreateAJAXServerControlUsingScriptControlBaseClass.zip" rel="enclosure">CreateAJAXServerControlUsingScriptControlBaseClass.zip (33.31 kb)</a> 
 
 
 **Update 5/31/2008:** I recently posted an article titled &quot;<a href="/post/2008/05/ASPNET_35_Create_AJAX_Extender_Controls_using_the_ExtenderControl_base_class.aspx">Create AJAX Extender Controls using the ExtenderControl base class</a>&quot; on how to create Extender Controls in ASP.NET using the System.Web.UI.ExtenderControl base class. 

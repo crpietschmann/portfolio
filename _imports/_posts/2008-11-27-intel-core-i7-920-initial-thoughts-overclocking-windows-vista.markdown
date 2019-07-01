@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-<img src="/images/posts/corei7BlueLogo.png" alt="" align="right" />I recently upgraded my main desktop machine to a new Intel Core i7 920 CPU and all its glory. Here's a write up of my experience in choosing the Core i7 (over the Core 2 Quad) and my experiences with it so far.
+<img src="/files/corei7BlueLogo.png" alt="" align="right" />I recently upgraded my main desktop machine to a new Intel Core i7 920 CPU and all its glory. Here's a write up of my experience in choosing the Core i7 (over the Core 2 Quad) and my experiences with it so far.
 <h3>Thoughts Before Upgrading - Core 2 Quad or Core i7?</h3>
 
 My previous machine was an AMD Athlon 64 X2 4200+ (2.2Ghz) with 4GB DDR2 800Mhz Ram. The system ran great, but it was two years old and my requirements for using Virtualization (via Virtual PC) have increased so it's time for an upgrade.
@@ -36,20 +36,20 @@ Running Vista on the new Core i7 920 (stock settings), things seem snappier than
 
 Here's a screenshot of my Windows Experience Index with the Core i7 920 and 4GB Ram at "stock" settings:
 
-<img src="/images/posts/Core_i7_920_4GB_WindowsExperienceIndexRating.png" alt="" />
+<img src="/files/Core_i7_920_4GB_WindowsExperienceIndexRating.png" alt="" />
 
 *Update: After originally posting this I found out that the <a href="http://www.microsoft.com/windows/windows-vista/get/experience-index.aspx">highest Windows Experience Rating under Vista that any component can score is a 5.9</a>. Until I found this out, I was curious as to why the Core i7 920 running at 2.6Ghz scored the same as running at 3.4Ghz. I wonder how high the Core i7 CPU's would score if Vista were able to give a score higher than 5.9? I also wonder what the max Windows Experience Index Score will be in Windows 7 when if comes out.*
 
 And for comparison, here's the Windows Experience Index for the old Athlon 64 X2 4200+ with 4GB Ram: 
 
-<img src="/images/posts/AMDAthlon64X2_4400%2b_4GB_WindowsExperienceIndexRating.png" alt="" />
+<img src="/files/AMDAthlon64X2_4400%2b_4GB_WindowsExperienceIndexRating.png" alt="" />
 
 *Note: The reason the Graphics Score (and ultimately the Base Score) are so low is because I'm still using my old NVidia GeForce 6600 (256MB) Video Card; which I am thinking of upgrading soon to.*
 
 *Update 08/10/2009:* I have since upgraded my machine to Windows 7 RTM (final release). The overall Windows Experience Index Rating is actually higher than the Beta at 5.3 with the Core i7 920 running at "stock" 2.6Ghz settings. The video card is the same nVidia 9500 w/ 512MB VRam. The most interesting thing to note with Windows 7 RTM is that the Video Card's Gaming Graphics score is 6.4; that's quite the increase from 5.0 in the Beta, and is most likely due to a final release of a more compatible video card driver from nVidia. Also, the Core i7 920 CPU scores a higher 7.5 and the Memory (RAM) scores a higher 7.6. So actually the overall performance of the system with Windows 7 RTM scores higher than the Beta did.
 
 <span style="text-decoration: line-through;">*Update 1/29/2009:* I have since installed Windows 7 Beta 1 on this Core i7 920 system, so I thought I'd share the Windows 7 Beta 1 Windows Experience Index Rating with it running at the "stock" 2.6Ghz settings. One thing to note, is I have upgraded this systems video card to an nVidia 9500 w/ 512MB VRam. Interestingly, the Core i7 920 rates a 7.4 out of a maximum 7.9. Screen shot is below.</span>
-<h3>Overclocking the Core i7 920!<img src="/images/posts/Core_i7_920_3.4Ghz" alt="" align="right" /></h3>
+<h3>Overclocking the Core i7 920!<img src="/files/Core_i7_920_3.4Ghz" alt="" align="right" /></h3>
 
 This is probably the most interesting part of this post; what you're really interested in, right?
 

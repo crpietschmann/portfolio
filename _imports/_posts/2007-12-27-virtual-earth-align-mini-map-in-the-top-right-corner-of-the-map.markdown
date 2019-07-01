@@ -20,7 +20,7 @@ Here's small example I wrote up on how to align the Mini Map in the Top Right co
 
 Here's a screenshot of it in action:
 
-<img src="/images/posts/2009/6/20091227_Virtual_Earth_MiniMap_Align_Top_Right_Corner.png" alt="" />
+<img src="/files/2009/6/20091227_Virtual_Earth_MiniMap_Align_Top_Right_Corner.png" alt="" />
 
 Here's the code:
 

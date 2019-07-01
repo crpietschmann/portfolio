@@ -18,6 +18,6 @@ In my previous blog, I used the <a href="http://scott.yang.id.au/code/se-hilite/
 
 Here it is...
 
-<img src="/images/posts/SearchKeywordHighlighter.png" alt="" width="502" height="311" />
+<img src="/files/SearchKeywordHighlighter.png" alt="" width="502" height="311" />
 
-<a rel="enclosure" href="/file.axd?file=SearchKeywordHighlighter.zip">SearchKeywordHighlighter.zip (2.55 kb)</a>
+<a rel="enclosure" href="/files/SearchKeywordHighlighter.zip">SearchKeywordHighlighter.zip (2.55 kb)</a>

@@ -59,7 +59,7 @@ The API Reference for the NATUPnP 1.0 Type Library can be found here: <a href="h
 
 In order to use the NATUPnP Library you need to first add a reference to it to your project within Visual Studio. To do so open the Add Reference dialog, click the COM tab and select the "NATUPnP 1.0 Type Library". The resulting reference that's added will be named "NATUPNPLib" and will be the namespace that contains all the functionality contained within the library (all Interfaces and Classes).
 
-<img src="/images/posts/NATUPNPCOMLibrary_001.png" alt="" />
+<img src="/files/NATUPNPCOMLibrary_001.png" alt="" />
  
  The NATUPnP 1.0 Type Library makes it so easy to setup Port Forwarding it literally only requires a couple lines of code.
 <h3>Get a listing of all existing Static Port Mappings</h3>
@@ -93,9 +93,9 @@ mappings.Remove(8080, "UDP");</pre>
 
 While working with the NATUPnP 1.0 Type Library I created a simple application that allows you to maintain the Static Port Mappings that are setup on your Private Networks NAT Router.
 
-Download Sample: <a href="/file.axd?file=NATUPnPPortForwardManager.zip" rel="enclosure">NATUPnPPortForwardManager.zip (20.68 kb)</a>
+Download Sample: <a href="/files/NATUPnPPortForwardManager.zip" rel="enclosure">NATUPnPPortForwardManager.zip (20.68 kb)</a>
 
-<img src="/images/posts/NATUPNPCOMLibrary_002.png" alt="" />
+<img src="/files/NATUPNPCOMLibrary_002.png" alt="" />
 <h3>Conclusion</h3>
 
 Setup up Port Forwarding on your local router via UPnP makes it extremely convenient for users of your networking application. Instead of requiring them to manually setup Port Forwarding, we can automatically set it up for them. Many popular P2P applications have utilized this functionality for years, and I'm positive you've used at least one of these applications already at some point.

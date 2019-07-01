@@ -16,7 +16,7 @@ redirect_from:
 
 The new Bing Maps Ajax v7 control may be faster and smaller, but it is pretty light on features at the moment compared to its older brother; the v6.3 control. One of the features missing is support for showing InfoBox’s. Its simple to handle mouse events and display a <div> next to the pushpin, but I thought I’d take a little time to write a simple InfoBox extension to the new Microsoft.Maps namespace.  
 Here’s a screenshot of it in action:  
-<a href="/images/posts/BingMaps7_InfoBox_Screenshot.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="BingMaps7_InfoBox_Screenshot" border="0" alt="BingMaps7_InfoBox_Screenshot" src="/images/posts/BingMaps7_InfoBox_Screenshot_thumb.png" width="304" height="276" /></a>  <h3>Usage</h3>  
+<a href="/files/BingMaps7_InfoBox_Screenshot.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="BingMaps7_InfoBox_Screenshot" border="0" alt="BingMaps7_InfoBox_Screenshot" src="/files/BingMaps7_InfoBox_Screenshot_thumb.png" width="304" height="276" /></a>  <h3>Usage</h3>  
 Let’s start with some sample usage of the InfoBox extension.  <pre class="csharpcode"><span class="rem">// Create Pushpin</span>
 <span class="kwrd">var</span> pushpin = <span class="kwrd">new</span> Microsoft.Maps.Pushpin(
     <span class="kwrd">new</span> Microsoft.Maps.Location(0,0)
@@ -352,4 +352,4 @@ I could have coded the necessary JavaScript code to manipulate the HTML DOM myse
 I didn’t go over the specifics of writing this plugin too much. If you want to see more examples of what’s involved, then I recommend reading the “<a href="http://social.msdn.microsoft.com/Forums/en-US/vemapcontroldev/thread/8eec78d8-e211-4245-b47c-e83289755f2c">Creating Infoboxes in Bing Maps AJAX v7</a>” post on MSDN Social.
 
 <div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:a1d0c9d3-fd57-4da7-bf10-24654b5ace8d" class="wlWriterEditableSmartContent">
-<div>Full Example:<a href="/file.axd?file=BingMapsAjaxv7InfoBoxExtensionExampleUsage.zip" target="_self">BingMapsAjaxv7InfoBoxExtensionExampleUsage.zip</a></div></div>
+<div>Full Example:<a href="/files/BingMapsAjaxv7InfoBoxExtensionExampleUsage.zip" target="_self">BingMapsAjaxv7InfoBoxExtensionExampleUsage.zip</a></div></div>

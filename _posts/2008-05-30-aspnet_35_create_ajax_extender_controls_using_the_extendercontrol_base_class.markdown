@@ -869,5 +869,5 @@ As you can see it&#39;s fairly simple to get started creating your own custom ex
 
 
 
-Download Full Source Code: <a rel="enclosure" href="/file.axd?file=CreateAJAXExtenderControlUsingExtenderControlBaseClass.zip">CreateAJAXExtenderControlUsingExtenderControlBaseClass.zip (21.36 kb)</a>
+Download Full Source Code: <a rel="enclosure" href="/files/CreateAJAXExtenderControlUsingExtenderControlBaseClass.zip">CreateAJAXExtenderControlUsingExtenderControlBaseClass.zip (21.36 kb)</a>
 
