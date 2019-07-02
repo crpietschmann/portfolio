@@ -139,6 +139,9 @@ $brand-background: radial-gradient(rgba(0,0,0,0),rgba(0,0,0,0.3)), url(/images/b
   color: $grey-color;
 }
 
+.post-content img {
+  max-width: 100%;
+}
 
 
 .post table th {
