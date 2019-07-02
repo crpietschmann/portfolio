@@ -13,7 +13,7 @@ I'm Chris Pietschmann and I have a few life rules, principles and tips that I've
 So here's my list:
 
 - [Work Smart, Not Hard](/post/2013/07/27/Work-Smart-Not-Hard)
-- [Do you best, and Own it](/post/2016/01/19/Do-your-best-and-Own-it)
+- [Do your best, and Own it](/post/2016/01/19/Do-your-best-and-Own-it)
 - [Be True to Yourself, First](/post/2016/01/30/Be-True-to-Yourself-First)
 - [Stop, Relax, Now, Go!](/post/2013/08/02/Stop-Relax-Now-GO)
 - [Comfort is Overrated](/post/2013/08/04/Comfort-is-Overrated-Change-is-Exciting-and-Revealing)
