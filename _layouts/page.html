@@ -7,8 +7,30 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+  <div class="row">
+    <div class="col-md-9">
+      <article class="post-content">
+        {{ content }}
+      </article>
+    </div>
+    <div class="col-md-3">
+        <div class="mb-3">
+            <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+        </div>
+    
+          <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+          <div class="related">
+            <h4>Recent Posts</h4>
+            <ul class="list-unstyled">
+              {% for post in site.related_posts limit:10 %}
+                <li class="mb-3">
+                  <h6 class="mb-0"><a href="{{ post.url }}">{{ post.title }}</a></h6>
+                  <span class="small text-muted">{{ post.date | date_to_string }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+    </div>
+  </div>
 
 </div>
