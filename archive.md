@@ -10,7 +10,6 @@ redirect_from:
   <div class="row">
       <div class="col-md-9">    
           <ul class="post-list">
-            {% postCount = 1 %}
             {% for post in site.posts %}
               <li>
                 <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -18,10 +17,10 @@ redirect_from:
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h2>
               </li>
-              {% postCount += 1}
-              {% if postCount == 4 %}
+              {% increment postCounter}
+              {% if postCounter == 4 %}
                 <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="728x90" data-zone="ros" ></div>
-              {% end %}
+              {% endif %}
             {% endfor %}
           </ul>
           <p class="rss-subscribe">subscribe <a href="{{ "/feed" | prepend: site.baseurl }}">via RSS</a></p>
