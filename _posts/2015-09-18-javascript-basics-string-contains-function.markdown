@@ -18,23 +18,31 @@ In many of the server-side programming languages like C#, the String object has 
 <h3>Simple JavaScript String Contains Method</h3>
 
 Here's a simple implementation of a ".contains" function that is case sensitive:
-<pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">function contains(value, searchFor)
+
+```js
+function contains(value, searchFor)
 {
 	return (value || '').indexOf(searchFor) > -1;
-}</pre>
+}
+```
 
 Sample Usage:
-<pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">// returns true
+
+```js
+// returns true
 var v1 = contains('one value', 'value');
 
 // returns false
-var v2 = contains('another value', 'two');</pre>
+var v2 = contains('another value', 'two');
+```
 
 Something to note about the above method is that it implements a <a href="/post/2008/10/14/JavaScript-Gem-Null-Coalescing-using-the-OR-Operator">JavaScript Null Coallesce</a> to prevent the method from throwing an exception if 'null' or 'undefined' are passed in. This may or may not be necessary for your use, but most times a false result is preferred over a JavaScript exception.
 <h3>Make it Ignore Case</h3>
 
 To make it ignore case you just need to modify the function to convert the passed in strings to be either all uppercase or all lowercase. Here's a modified version that does this:
-<pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">function contains(value, searchFor)
+
+```js
+function contains(value, searchFor)
 {
 	var v = (value || '').toLowerCase();
 	var v2 = searchFor;
@@ -42,4 +50,5 @@ To make it ignore case you just need to modify the function to convert the passe
 		v2 = v2.toLowerCase();
 	}
 	return v.indexOf(v2) > -1;
-}</pre>
+}
+```
