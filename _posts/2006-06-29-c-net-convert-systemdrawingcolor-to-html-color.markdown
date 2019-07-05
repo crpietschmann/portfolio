@@ -15,5 +15,8 @@ redirect_from:
 <!-- more -->
 
 Here is a small example of how to convert a System.Drawing.Color to the HTML color format (Hex value or HTML color name value) and back.
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">System.Drawing.Color c = System.Drawing.ColorTranslator.FromHtml("#F5F7F8");
-String strHtmlColor = System.Drawing.ColorTranslator.ToHtml(c);</pre>
+
+```
+System.Drawing.Color c = System.Drawing.ColorTranslator.FromHtml("#F5F7F8");
+String strHtmlColor = System.Drawing.ColorTranslator.ToHtml(c);
+```

@@ -18,7 +18,9 @@ Previously I wrote a <a href="/post/2014/06/07/Basic-Comparison-of-C-and-Apple-S
 <h3>Define Basic Parameterless Function</h3>
 
 At the most basic level there really aren't many differences between the 2 languages as you can see below. Even the way you return a value from a Function uses the "return" keyword in both languages.
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Parameterless Without Return Value
+
+```csharp
+// Parameterless Without Return Value
 // C#
 void sayHello() {
     // do something
@@ -47,13 +49,17 @@ func sayHello() -> String {
 var message = sayHello();
 
 // Swift
-var message = sayHello()</pre>
+var message = sayHello()
+```
 
 One key difference above is where the return value gets specified in Swift (after the function name) and in C# (before the function name.)
-<h3>Define Function with Parameters</h3>
+
+## Define Function with Parameters
 
 Now let's get a little more complex with adding some parameters to the above example.
-<pre class="brush: c-sharp; auto-links: false; first-line: 1; tab-size: 4; toolbar: false; ">// Single Parameter
+
+```csharp
+// Single Parameter
 // C#
 string sayHello(string name) {
     // do something
@@ -74,13 +80,17 @@ string sayHello(string name, int age) {
 // Swift
 func sayHello(name: String, age: Int) -> String {
     // do something
-}</pre>
+}
+```
 
 As you can see the key difference in specifying parameters is that in Swift the Type is specified after the parameter name, and in C# it's before.
-<h3>Multiple Return Values</h3>
+
+## Multiple Return Values
 
 Multiple return values is a feature in Swift that is rather interesting (as compared to C#) since C# only support single return values; unless you use a Struct or Class to encapsulate multiple into a single return value.
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Multiple Return Values
+
+```csharp
+// Multiple Return Values
 // C# - using a Struct
 struct Person {
     public string firstName;
@@ -110,13 +120,17 @@ var lName = p.lastName;
 // Swift
 let p = getPerson()
 var fname = p.firstName
-var lname = p.lastName</pre>
+var lname = p.lastName
+```
 
 Easily seen in the above example is that Swift is much simpler to return complex results from a Function that require multiple return values without the need to declare a special Struct or Class to faciliate it.
-<h3>Function Parameter Name Alias</h3>
+
+## Function Parameter Name Alias
 
 Swift provides a mechanism for defining different parameter names for use within the function than by the calling function. This is something that C# does not support.
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// External Parameter Names
+
+```csharp
+// External Parameter Names
 // C#
 // no equivalent exists
 
@@ -129,11 +143,15 @@ func combineName(firstName first: String, lastName last: String) {
 
 // Calling With External Parameter Names
 // Swift
-var fullName = combineName(firstName: "Steve", lastName: "Wozniak")</pre>
-<h3>Defining Default Parameter Values</h3>
+var fullName = combineName(firstName: "Steve", lastName: "Wozniak")
+```
+
+## Defining Default Parameter Values
 
 Both languages provide methods of defining default parameter values and allowing what's referred to in C# as Optional Parameters.
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Default Parameter Value
+
+```csharp
+// Default Parameter Value
 // C#
 string combineName(string firstName, string lastName, string separator = " ") {
     return firstName + separator + lastName;
@@ -172,11 +190,15 @@ var fullName = combineName(
     firstName: "Leo",
     lastName: "Laporte",
     parameter: "-"
-)</pre>
-<h3>Variadic Parameters</h3>
+)
+```
+
+## Variadic Parameters
 
 Or, commonly referred to in C# as "variable number of parameters." This essentially allows you to (as the developer) pass in multiple values to a Function without needing to create an Array to contain them as using this method will trigger the compiler to do that for you.
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Variadic Parameters
+
+```csharp
+// Variadic Parameters
 // C#
 int add(params int[] numbers) {
     var total = 0;
@@ -202,11 +224,15 @@ var total = add(20, 22);
 
 // Swift
 var total = add(10, 13, 6, 3, 5, 2, 3)
-// returns 42</pre>
-<h3>In-Out Parameters</h3>
+// returns 42
+```
+
+## In-Out Parameters
 
 Both languages provide methods of telling the compiler that a Function can modify the variable passed in as a parameter. This may remind you of Output Parameters in C#, but that is only 1 way; output. What the In-Out Parameter feature of Swift does is allow you to pass in a value and modify it; while passing the value through the Function back to the variable that it originated in. In C# this can be performed by passing parameter values in by reference.
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// In-Out Parameters
+
+```csharp
+// In-Out Parameters
 // C#
 void swap(ref int a, ref int b) {
     var c = a;
@@ -231,13 +257,17 @@ swap(ref a, ref b);
 // Swift
 var a = 1
 var b = 2
-swap(&amp;a, &amp;b)</pre>
+swap(&a, &b)
+```
 
 It is worth noting that in neither language allows for In-Out parameters to have default values.
-<h3>Function Types</h3>
+
+## Function Types
 
 Here comes the Functional aspects of the languages! They both allow for Functions to be variables and for those variables to be passed in other Functions as parameters.
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Declare Functions
+
+```csharp
+// Declare Functions
 // C#
 // no return value
 void doSomething(string name) {
@@ -278,13 +308,16 @@ process("Alan")
 
 // with return value
 var doMath: (Int, Int) -> Int = add
-var total = doMath(19, 23)</pre>
+var total = doMath(19, 23)
+```
 
-Declaring function types in Swift is a little more like the standard Function definition; as apposed to the C# style of utilizing the Func<> and Action<> generic types.
-<h3>Passing a Function as a Parameter</h3>
+Declaring function types in Swift is a little more like the standard Function definition; as apposed to the C# style of utilizing the `Func<>` and `Action<>` generic types.
+## Passing a Function as a Parameter
 
 Since a Function is just another Type in both languages it can then be passed in to another Function as a parameter.
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Declare Functions
+
+```csharp
+// Declare Functions
 // C#
 int doMath(int a, int b, Func<int, int, int> operation) {
     return operation(a, b);
@@ -302,10 +335,13 @@ func doMath(a: Int, b: Int, operation: (Int, Int) -> Int) {
 var total = doMath(1, 2, add);
 
 // Swift
-var total = doMath(1, 2, add)</pre>
+var total = doMath(1, 2, add)
+```
 
 This is probably the most obvious feature of C# that allows for LINQ and all it's niceties to work. Now let's look at how C# Lambda Expressions can be used as parameters and how it compares to Swift.
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Functions as Parameters
+
+```csharp
+// Functions as Parameters
 // using "Lambda Expressions"
 // C#
 var total = doMath(2, 21, (a, b) => a * b);
@@ -314,11 +350,15 @@ var total = doMath(2, 21, (a, b) => a * b);
 func multiply (a: Int, a: Int) -> Int {
     return a * b
 }
-var toal = doMath(21, 2, multiply)</pre>
-<h3>Nested Functions</h3>
+var toal = doMath(21, 2, multiply)
+```
+
+## Nested Functions
 
 Functions can be nested within other Functions, as eluded to in the previous example about Function Parameters, in both languages.
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Nested Functions
+
+```csharp
+// Nested Functions
 // C#
 int doSomething(int a, int b) {
     var add = new Func<int, int, int>(
@@ -335,11 +375,15 @@ func doSomething(a: Int, b: Int) -> Int {
         return first + second
     }
     return add(a, b)
-}</pre>
-<h3>Function As Return Type</h3>
+}
+```
+
+## Function As Return Type
 
 Since Functions can be passed around as variables and parameters, then the obvious next step is that Functions can also be passed out of Functions as their return value.
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// Function as Return Type
+
+```csharp
+// Function as Return Type
 // C#
 void positiveAction(int i) {
     // do something
@@ -377,11 +421,14 @@ action(number);
 // Swift
 var number = 5
 var action = chooseAction(number)
-action(number)</pre>
-<h3>Access Modifiers</h3>
+action(number)
+```
+
+## Access Modifiers
 
 It's worth mentioning that the current beta release of the Apple Swift programming language does not include support for Access Modifiers. Access Modifiers are what allow you to declare Functions, Properties and Members as being Private, Public, etc. Currently all things defined in Swift are accessible relative to their scoping; although different than C# it is exactly how things work in JavaScript. This may change in a future release of the language; perhaps that was a compiler feature that wasn't quite stable enough for this first release of the language. Or, perhaps they want the functional constructs and protocols (Swift's version of Interfaces) to be used to "hide" things as necessary instead of implementing these. This may perhaps remain a fundamental difference between the paradigms that govern the use of the two languages.
-<h3>Conclusion</h3>
+
+## Conclusion
 
 As we've seen thus far, the basic syntax of the languages are really similar, and both are Functional languages. However what is apparent from the syntax differences, when it comes to Functions, it's clear that Swift was meant to be functional from the start, where C# had Functional constructs added on top after its creation.
 
