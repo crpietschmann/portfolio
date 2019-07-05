@@ -18,17 +18,20 @@ Today I was playing around with using jQuery to create a drop down menu. I thoug
 
 Before we begin, you&rsquo;ll need to create a new site using the code from Day 2. You can either copy/paste the code from the article, or download the full source code. You&rsquo;ll find the download link at the bottom of the post for Day 2.
 
-Here&rsquo;s a screenshot of the finished dropdown menu:
+Here's a screenshot of the finished dropdown menu:
 
 <a href="/files/ASPNETMVCHTML5DropDownMenu_IE8.jpg"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="ASPNETMVCHTML5DropDownMenu_IE8" src="/files/ASPNETMVCHTML5DropDownMenu_IE8_thumb.jpg" alt="ASPNETMVCHTML5DropDownMenu_IE8" width="504" height="323" border="0" /></a>
 
-Here&rsquo;s another screenshot of the menu in Chrome:
+Here's another screenshot of the menu in Chrome:
 
 <a href="/files/ASPNETMVCHTML5DropDownMenu_Chrome.jpg"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="ASPNETMVCHTML5DropDownMenu_Chrome" src="/files/ASPNETMVCHTML5DropDownMenu_Chrome_thumb.jpg" alt="ASPNETMVCHTML5DropDownMenu_Chrome" width="244" height="156" border="0" /></a>
-<h3>Add Sub-Menu Items</h3>
+
+## Add Sub-Menu Items
 
 First, modify the <nav> item in the Site.Master file to include sub-menu items as <ul> child elements added to the &ldquo;nav ul&rdquo; element. Below is an example:
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><nav>
+
+```html
+<nav>
     <ul>
         <li><%: Html.ActionLink("Home", "Index", "Home")%></li>
         <li>
@@ -51,23 +54,30 @@ First, modify the <nav> item in the Site.Master file to include sub-menu items a
         </li>
         <li><%: Html.ActionLink("About", "About", "Home")%></li>
     </ul>
-</nav></pre>
+</nav>
+```
 
 Of course don&rsquo;t forget to replace the &ldquo;<a href&rdquo; tags with &ldquo;Html.ActionLink&rdquo; calls to wire up the Views in your application. For this article, we&rsquo;ll just leave the code like this.
-<h3>Add CSS Styles to the Sub-Menus</h3>
+
+## Add CSS Styles to the Sub-Menus
 
 We do not need to modify the styles in the &ldquo;Site.css&rdquo; file for this. We just need to add some CSS to style the sub-menus appropriately.
 
 Here&rsquo;s the minimum styles necessary for the sub-menu to display correctly:
-<pre class="brush: css; first-line: 1; tab-size: 4; toolbar: false; ">body nav ul ul {
+
+```css
+body nav ul ul {
     display: none;
     position:absolute;
-}</pre>
+}
+```
 
 Even though the above style will make the sub-menus display correctly (hide on page load, and absolutely positioned), we still need to style them to match the overall style of the ASP.NET MVC site template.
 
 Here&rsquo;s the full CSS necessary to style the sub-menus in the new ASP.NET MVC HTML5 Template:
-<pre class="brush: css; first-line: 1; tab-size: 4; toolbar: false; ">body nav ul ul {
+
+```css
+body nav ul ul {
     display: none;
     position:absolute;
     width: 100%;
@@ -81,13 +91,16 @@ Here&rsquo;s the full CSS necessary to style the sub-menus in the new ASP.NET MV
 }
 body nav ul ul li a{
     line-height: 3.1em;
-}</pre>
+}
+```
 
 This CSS colors the background of the sub-menu area the same color blue as the page, but it also makes it semi-transparent. So any content behind the sub-menu will show through just a little bit.
 <h3>Let&rsquo;s wire things up with jQuery</h3>
 
 Now we just need a little jQuery code to wire up our sub-menus to display when the use hovers the mouse over their parents. The jQuery code I&rsquo;m using for this was inspired by Dan Wellman&rsquo;s &ldquo;<a href="http://net.tutsplus.com/tutorials/html-css-techniques/how-to-create-a-drop-down-nav-menu-with-html5-css3-and-jquery/">How to Create a Drop-down Nav Menu with HTML5, CSS3 and jQuery</a>&rdquo; post.
-<pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">$(function () {
+
+```javascript
+$(function () {
     $("body nav li").each(function () {
         if ($(this).find("ul").length > 0) {
 
@@ -106,10 +119,12 @@ Now we just need a little jQuery code to wire up our sub-menus to display when t
             });
         }
     });
-});</pre>
+});
+```
 
 As you can see, with jQuery the javascript code necessary to wire this up is rather short. Oh, and did I mention that the sub-menus slide down into place?
-<h3>Conclusion</h3>
+
+## Conclusion
 
 I know this post isn&rsquo;t so much HTML5 as it is jQuery and CSS. But, after all, isn&rsquo;t HTML5 really about the same thing as jQuery? RIA.
 

@@ -19,9 +19,9 @@ It&rsquo;s not very often that I need to build a Windows Service for a specific 
 
 Just create a Setup Project within your Solution in Visual Studio, then follow the below steps:
 
-1) Right-Click the Setup Project you just created 
-2) Click &ldquo;Add&rdquo;, then &ldquo;Project Output&hellip;&rdquo; 
-3) In the dialog that appears select your Windows Service Project as Primary Output, then click OK.
+1. Right-Click the Setup Project you just created 
+2. Click &ldquo;Add&rdquo;, then &ldquo;Project Output&hellip;&rdquo; 
+3. In the dialog that appears select your Windows Service Project as Primary Output, then click OK.
 
 That&rsquo;s really all that&rsquo;s required. When the resulting Installer is executed it will Install / Uninstall the Windows Service.
 
@@ -33,7 +33,9 @@ You can find a longer description of how to do this here:
 Whether you use a Setup Project of the &ldquo;installutil&rdquo; tool to install your Windows Service, it can be very convenient if the service were to automatically start once installed. To do this all it takes is adding a couple lines of code to the ServiceInstaller that you have defined within your Windows Service Project to handle the &ldquo;Committed&rdquo; event, then use the ServiceController class to Start the service.
 
 Here&rsquo;s an example ServiceInstaller with the &ldquo;Auto Start&rdquo; code in place:
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">[RunInstaller(true)]
+
+```csharp
+[RunInstaller(true)]
 public class ServiceInstaller : Installer
 {
     string strServiceName = "MyServiceName";
@@ -64,8 +66,10 @@ public class ServiceInstaller : Installer
         var controller = new ServiceController(strServiceName);
         controller.Start();
     }
-}</pre>
-<h3>Conclusion</h3>
+}
+```
+
+## Conclusion
 
 These are two tips that for some reason had eluded me for a long time. Usually I just created a .bat file to call &ldquo;installutil&rdquo; and &ldquo;net start&rdquo; to install and start my services manually. In most cases that worked perfect since it was very rare that the service was installed on a new computer or updated to a newer version. However, while building an &ldquo;End User Friendly&rdquo; Installer that anyone can run, you need to automate the installation and start up of the Windows Service.
 
