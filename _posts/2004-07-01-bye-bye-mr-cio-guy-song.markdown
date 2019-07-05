@@ -14,7 +14,7 @@ redirect_from:
 ---
 <!-- more -->
 
-Now, this is just hilarious. &#8220;Bye, Bye Mr. CIO-Guy, Gonna outsource every resource &#8216;til the business runs dry.&#8221;
+Now, this is just hilarious. "Bye, Bye Mr. CIO-Guy, Gonna outsource every resource 'til the business runs dry."
 
 <A href="http://channel9.msdn.com/ShowPost.aspx?PostID=11950">http://channel9.msdn.com/ShowPost.aspx?PostID=11950</A>
 

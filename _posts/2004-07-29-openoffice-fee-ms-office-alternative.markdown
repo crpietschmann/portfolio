@@ -40,8 +40,6 @@ There is a Free Open Source alternative to MS-Office. Open Office is a professio
 <TD><FONT size=-1>Draw</FONT></TD>
 <TD><FONT size=-1>Will produce everything from simple diagrams to dynamic 3D illustrations and special effects.</FONT></TD></TR></TBODY></TABLE>
 
-
-
 Flash Introduction to Open Office: <A href="http://www.digitaldistribution.com/samples/openofficeintro11en.swf">http://www.digitaldistribution.com/samples/openofficeintro11en.swf</A>
 
 For more information or to get Open Office: <A href="http://www.openoffice.org/">http://www.openoffice.org</A>

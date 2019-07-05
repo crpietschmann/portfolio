@@ -14,20 +14,14 @@ redirect_from:
 ---
 <!-- more -->
 
+Well, I didn't find a new bug, but it is the first time I discovered a bug in SQL Server by just doing my everyday job.
 
-Well, I didn&#39;t find a new bug, but it is the first time I discovered a bug in SQL Server by just doing my everyday job.
+I'd post the code for the SQL Server user defined function that I wrote if I could, but I can't (confidential). Its nice to have a reminder once in awhile that even Microsoft's software has bugs.
 
+```
+Server: Msg 8624, Level 16, State 8, Line 1
 
-
-I&#39;d post the code for the SQL Server user defined function that I wrote if I could, but I can&#39;t (confidential). Its nice to have a reminder once in awhile that even Microsoft&#39;s software has bugs.
-
-
-
-<font size="2" color="#ff0000">Server: Msg 8624, Level 16, State 8, Line 1
-
-Internal SQL Server error.</font>
-
-
+Internal SQL Server error.
+```
 
 <a href="http://support.microsoft.com/kb/290817">http://support.microsoft.com/kb/290817</a>
-

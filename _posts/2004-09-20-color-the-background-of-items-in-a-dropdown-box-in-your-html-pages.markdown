@@ -40,7 +40,9 @@ Color the background of items in a Dropdown box in your HTML pages. It's very ea
 <option style="background-color: burlywood;" value="#DEB887">BurlyWood</option>
 <option style="background-color: beige;" value="#F5F5DC">Beige</option>
 </select>
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><select>
+
+```
+<select>
 <option value="">Highlight</option>
 <option value="#000000" style="background-color: Black;color: #FFFFFF;">Black</option>
 <option value="#808080" style="background-color: Gray;">Gray</option>
@@ -63,5 +65,5 @@ Color the background of items in a Dropdown box in your HTML pages. It's very ea
 <option value="#A52A2A" style="background-color: Brown;">Brown</option>
 <option value="#DEB887" style="background-color: BurlyWood;">BurlyWood</option>
 <option value="#F5F5DC" style="background-color: Beige;">Beige</option>
-</select></pre>
-<pre class="csharpcode"><span class="kwrd"> </span></pre>
+</select>
+```

@@ -14,8 +14,12 @@ redirect_from:
 ---
 <!-- more -->
 
+```
 DECLARE @NAME_TO_SEARCH_FOR nvarchar(50)
 
 SET @NAME_TO_SEARCH_FOR = '%photo%'
 
-SELECT sysobjects.name AS Table_Name, syscolumns.name AS Column_Name <BR>FROM syscolumns INNER JOIN sysobjects ON syscolumns.id = sysobjects.id<BR>WHERE syscolumns.name LIKE @NAME_TO_SEARCH_FOR AND sysobjects.Type Like 'U%'
+SELECT sysobjects.name AS Table_Name, syscolumns.name AS Column_Name 
+FROM syscolumns INNER JOIN sysobjects ON syscolumns.id = sysobjects.id
+WHERE syscolumns.name LIKE @NAME_TO_SEARCH_FOR AND sysobjects.Type Like 'U%'
+```
