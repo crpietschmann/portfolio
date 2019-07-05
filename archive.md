@@ -20,7 +20,7 @@ redirect_from:
               {% increment postCounter}
               {% if postCounter == 4 %}
                 <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="728x90" data-zone="ros" ></div>
-              {% endif %}
+              {% end %}
             {% endfor %}
           </ul>
           <p class="rss-subscribe">subscribe <a href="{{ "/feed" | prepend: site.baseurl }}">via RSS</a></p>
