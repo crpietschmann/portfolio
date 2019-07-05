@@ -14,8 +14,10 @@ redirect_from:
 ---
 <!-- more -->
 
-Since I've been doing alot of JavaScript programming lately, I figured I could start blogging some code snippets. Here is a JavaScript snippet that shows how to loop through all the elements in a form and retrieve their element type, name and values. I had to use this code to gather all form values so I could post them to the server using AJAX.
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><html>
+Since I've been doing a lot of JavaScript programming lately, I figured I could start blogging some code snippets. Here is a JavaScript snippet that shows how to loop through all the elements in a form and retrieve their element type, name and values. I had to use this code to gather all form values so I could post them to the server using AJAX.
+
+```html
+<html>
 <head>
 <script type="text/javascript">
     function DisplayFormValues()
@@ -47,11 +49,11 @@ Since I've been doing alot of JavaScript programming lately, I figured I could s
     <hr />
     <div id="lblValues"></div>
 </body>
-</html></pre>
+</html>
+```
 
 I revisited this code and tested it again to make sure it still works. I found that it works with the latest browser versions available today, in addition to older browsers, such as:
-<ul>
-<li>Internet Explorer 6, 7, 8</li>
-<li>FireFox 3 &amp; 4 Beta 4</li>
-<li>Google Chrome</li>
-</ul>
+
+- Internet Explorer 6, 7, 8
+- FireFox 3 &amp; 4 Beta 4
+- Google Chrome
