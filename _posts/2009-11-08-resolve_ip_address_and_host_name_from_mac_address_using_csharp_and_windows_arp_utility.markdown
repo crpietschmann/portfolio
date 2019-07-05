@@ -23,7 +23,9 @@ To see the IP / MAC Address translations, just open up the Command Prompt in Win
 Now, you may be asking, how do we use this utility from within a .NET application? Well, it&rsquo;s rather simple. All you need to do is use the <a href="http://msdn.microsoft.com/en-us/library/system.diagnostics.process.aspx" target="_blank">System.Diagnostics.Process</a> class to execute the &ldquo;arp &ndash;a&rdquo; call and retrieve the results. Then just parse through the results and get out the IP Address for the desired MAC Address.
 
 I&rsquo;m not going to give full detail on how to call &ldquo;arp&rdquo; from .NET. Below is an example on using the &ldquo;IPInfo&rdquo; class I created to perform the previously mentioned method of retrieving the IP Address for a specified MAC Address. I also added in the ability to get the machines Host Name using the the &ldquo;<a href="http://msdn.microsoft.com/en-us/library/ms143998.aspx" target="_blank">Dns.GetHostEntry</a>&rdquo; method.
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">var ipinfo = IPInfo.GetIPInfo(txtMAC.Text);
+
+```csharp
+var ipinfo = IPInfo.GetIPInfo(txtMAC.Text);
 
 if (ipinfo == null)
 {
@@ -33,11 +35,14 @@ else
 {
     var ip = ipinfo.IPAddress;
     var hostname = ipinfo.HostName;
-}</pre>
+}
+```
 
 
 Below is the full code of my &ldquo;IPInfo&rdquo; class:
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">using System;
+
+```csharp
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -167,4 +172,5 @@ public class IPInfo
     }
 
     #endregion
-}</pre>
+}
+```
