@@ -1,9 +1,11 @@
 ---
 layout: page
-title: Archive
-permalink: /archive/
+title: Blog
+permalink: /blog/
 redirect_from:
   - /post.aspx
+  - /archive/
+  - /archive
 ---
 
 <div class="container">
