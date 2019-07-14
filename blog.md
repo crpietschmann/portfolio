@@ -24,8 +24,5 @@ redirect_from:
           </ul>
           <p class="rss-subscribe">subscribe <a href="{{ "/feed" | prepend: site.baseurl }}">via RSS</a></p>
         </div>
-        <div class="col-md-3">
-            <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="160x600" data-zone="ros" ></div>
-        </div>
     </div>
 </div>
