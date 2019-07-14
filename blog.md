@@ -11,7 +11,6 @@ redirect_from:
 <div class="container">
   <div class="row">
       <div class="col-md-9">    
-          <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
           <ul class="post-list">
             {% for post in site.posts %}
               <li>
