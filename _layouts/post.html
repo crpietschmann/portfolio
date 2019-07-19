@@ -33,15 +33,7 @@ layout: default
         {{ content }}
       </article>
 
-      <div id="fixedad" data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
-      <style>
-        @media (min-width: 768px) {
-          #fixedad:offscreen {
-            position: fixed;
-            top: 4em;
-          }
-        }
-      </style>
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
 
       <br/><br/>
       <em class="small text-muted mb-5 mt-5">
@@ -74,11 +66,36 @@ layout: default
         </ul>
       </div>
 
-      <div class="mt-3">
+
+      <div id="fixedadmarker"></div>
+      <div id="fixedad" class="mt-3">
         <script type="text/javascript"><!--
           document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
           // --></script>
       </div>
+      <style>
+        @media (min-width: 768px) {
+            .fixedad-float {
+                position: fixed;
+                top: 1em;
+            }
+        }
+      </style>
+      <script>
+        window.setInterval(function() {
+            var elem = $('#fixedadmarker'),
+                top = elem.offset().top || 0,
+                height = elem[0].offsetHeight || 0,
+                bottom = top + height,
+                scrollY = window.scrollY || 0,
+                elemToBeFixed = $('#fixedad');
+            if (scrollY >= bottom) {
+                elemToBeFixed.addClass('fixedad-float');
+            } else {
+                elemToBeFixed.removeClass('fixedad-float');
+            }
+        }, 100);
+      </script>
 
 
     </div>
