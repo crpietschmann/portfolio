@@ -35,10 +35,12 @@ layout: default
 
       <div id="fixedad" data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
       <style>
-      #fixedad:offscreen {
-        position: fixed;
-        top: 4em;
-      }
+        @media (min-width: 768px) {
+          #fixedad:offscreen {
+            position: fixed;
+            top: 4em;
+          }
+        }
       </style>
 
       <br/><br/>
