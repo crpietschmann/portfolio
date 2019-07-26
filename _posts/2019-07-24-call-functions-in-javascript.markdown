@@ -133,12 +133,12 @@ var fullName = author.getFullName();
 
 ## Invoke JavaScript Functions using the `call()` method
 
-If you have a JavaScript object that has it's own properties and methods, you can call also call those methods using the `call()` method. The `call()` method enables you to pass a function, and any required parameters, to be executed in the context of a JavaScript object. This enables you to scope the `this` keyword for the method to reference the object.
+If you have a JavaScript object that has it's own properties and methods, you can call also call those methods using the `call()` method. The `call()` method enables you to call a function by passing in the context for the `this` keyword within the function, and any required parameters. This enables you to scope the `this` keyword for the method to reference the object.
 
 Here's an example of using the `call()` method to call the `getFullName` method of the above `author` object:
 
 ```javascript
-var fullName = author.call(author.getFullName);
+var fullName = author.getFullName.call(author);
 ```
 
 Here's an example of defining a new function that doesn't exist as a method of the object, then calling it with the context of the `this` keyword to the object.
@@ -148,10 +148,10 @@ function doubleFavoriteNumber() {
     return this.favoriteNumber * 2;
 }
 
-var a = author.call(doubleFavoriteNumber);
+var a = doubleFavoriteNumber.call(author);
 ```
 
-The `call()` method accepts the function to call as a method, in addition to any parameters needed for that function. You can pass these parameters to the function by appending these parameter values to the parameters list sent to the `call()` method.
+The `call()` method accepts the `this` context to call the method with, in addition to any parameters needed for that function. You can pass these parameters to the function by appending these parameter values to the parameters list sent to the `call()` method.
 
 Here's another example that accepts a parameter value:
 
@@ -160,7 +160,7 @@ function doubleFavoriteNumber(n) {
     return this.favoriteNumber * n;
 }
 
-var a = author.call(doubleFavoriteNumber, 2);
+var a = doubleFavoriteNumber.call(author, 2);
 ```
 
 ## Function as Return Value of Function
