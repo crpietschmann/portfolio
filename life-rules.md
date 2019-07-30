@@ -7,7 +7,6 @@ redirect_from:
   - /page/life-rules
 ---
 
-<div class='container'>
 I'm Chris Pietschmann and I have a few life rules, principles and tips that I've shared over the years on my blog. Until now I haven't compiled them into a single list, so I thought I would do that here. The order doesn't really matter all that much as each is fairly equal to the other; except where painfully obvious.
 
 So here's my list:
@@ -31,4 +30,3 @@ So here's my list:
 - [Never Give Up](/post/2016/03/01/Never-Give-Up)
 - [Overnight Success is Hardly Overnight](/post/2013/09/08/Overnight-Success-is-Hardly-Overnight)
 - [On Being an Expert](/post/2016/05/03/On-Being-an-Expert)
-</div>
