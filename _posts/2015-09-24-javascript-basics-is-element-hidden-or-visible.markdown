@@ -48,6 +48,8 @@ Helpful Hint: If the CSS "display: none" is applied to the element, then ":visib
 
 Full Documentation: <a href="https://api.jquery.com/visible-selector/" target="_blank">https://api.jquery.com/visible-selector/</a>
 
+{% include embedad.html %}
+
 ## Toggle Element Visibility
 
 On a related note, toggling element visibility can be done using the ".hide()" and ".show()" jQuery methods.

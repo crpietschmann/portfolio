@@ -53,6 +53,8 @@ dict[1] = "one";
 dict.FirstName = "Chris";
 ```
 
+{% include embedad.html %}
+
 ## Iterating Key/Value Pairs
 
 A simple JavaScript "for" loop can be used to iterate through your new dictionary.

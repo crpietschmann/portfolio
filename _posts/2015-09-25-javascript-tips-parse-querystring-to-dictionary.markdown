@@ -22,6 +22,8 @@ The following code can be used to read what the full QueryString value is from t
 var queryString = document.location.search;
 ```
 
+{% include embedad.html %}
+
 Although, the QueryString value can be accessed from JavaScript, it isn't parsed and separated out into any kind of Key/Value pairs automatically. This parsing must be done manually. Below is an example parsing function and it's example usage:
 
 ```js

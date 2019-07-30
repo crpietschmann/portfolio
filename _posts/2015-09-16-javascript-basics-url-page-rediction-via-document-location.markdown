@@ -34,6 +34,8 @@ document.location.replace('http://buildazure.com')
 
 The behavior of this method of navigation is a bit different than the previous. Using the "document.location.replace" method will cause the browser to replace the current page with the new URL. This essentially navigates to the new URL while removing the previous URL from the browser history. After navigating using this method, the browser back button will no longer bring the user back to the previous URL.
 
+{% include embedad.html %}
+
 Using this method of navigating can be useful if you have a web application where the application may break or behave in an unexpected way when allowing the back button to function with it's default behavior. This essentially gives you an option to disable the browsers back button for your website or application.
 
 Documentation: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/replace" target="_blank">https://developer.mozilla.org/en-US/docs/Web/API/Location/replace</a>

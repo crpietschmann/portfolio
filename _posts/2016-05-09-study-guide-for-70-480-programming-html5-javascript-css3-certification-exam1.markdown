@@ -31,6 +31,9 @@ Here's a high level breakdown of the exam objectives:
 Note: The percentage next to each is the approximate break out of how much of the exam focuses on each objective area. As you can see it's pretty evenly distributed across the 4 areas.
 
 The full exam objectives are listed on the office page for the <a href="https://www.microsoft.com/en-us/learning/exam-70-480.aspx" target="_blank">70-480 Programming in HTML5 with JavaScript and CSS3 exam</a>.
+
+{% include embedad.html %}
+
 <h3>Free Video Courses / Training</h3>
 
 There are a number of video training courses available online that cover the topics on this exam. However, the courses available over at the Microsoft Virtual Academy are completely **FREE**, and they are targeted towards this specific exam.

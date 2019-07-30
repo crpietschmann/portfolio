@@ -33,6 +33,8 @@ A custom domain name will help you give a domain name to your blog that adds val
 
 There are also SEO (Search Engine Optimization) benefits of a custom domain as well. All pages at a domain (including it's subdomains) will contribute to the Page Rank of that site in Google and other search engines. With it hosted at *.wordpress.com it loses some of this. With a custom domain you are funneling all your SEO of your posts together in a more targeted way.
 
+{% include embedad.html %}
+
 ## 4) Don't waste time designing the perfect theme; at first
 
 It can be easy to be swept up in choosing the best Wordpress theme, customizing the CSS styles, and installing all the greatest Wordpress plugins. Do not let yourself get all wrapped up in this. Sure, it's important to have a nice looking website, but try to be a minimalist with this (especially at first) so you can spend more time writing the content that will get visitors and page views. Be sure to spend your time on things that will add value to your blog.

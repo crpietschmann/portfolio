@@ -36,6 +36,8 @@ var v1 = contains('one value', 'value');
 var v2 = contains('another value', 'two');
 ```
 
+{% include embedad.html %}
+
 Something to note about the above method is that it implements a <a href="/post/2008/10/14/JavaScript-Gem-Null-Coalescing-using-the-OR-Operator">JavaScript Null Coallesce</a> to prevent the method from throwing an exception if 'null' or 'undefined' are passed in. This may or may not be necessary for your use, but most times a false result is preferred over a JavaScript exception.
 <h3>Make it Ignore Case</h3>
 

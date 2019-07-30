@@ -85,6 +85,8 @@ func sayHello(name: String, age: Int) -> String {
 
 As you can see the key difference in specifying parameters is that in Swift the Type is specified after the parameter name, and in C# it's before.
 
+{% include embedad.html %}
+
 ## Multiple Return Values
 
 Multiple return values is a feature in Swift that is rather interesting (as compared to C#) since C# only support single return values; unless you use a Struct or Class to encapsulate multiple into a single return value.

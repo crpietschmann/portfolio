@@ -64,6 +64,8 @@ var firstName: String
 
 You may notice the lack of the semi-colon in Swift. Yes, Swift is a mostly C-style syntax without requiring semi-colons. Swift does support and require the use of semi-colons if you want to have multiple code statements on the same line.
 
+{% include embedad.html %}
+
 ## Variable Names and Unicode
 
 Both languages support the use of Unicode characters as variable names. Basically, you could use Emoticons or other non-ASCII characters as variable names if you want, but who does that anyway?
@@ -251,6 +253,8 @@ var newArr = list.ToArray();
 // Swift
 var newArr = arr.removeAtIndex(0)
 ```
+
+{% include embedad.html %}
 
 ## Declaring Dictionaries
 
