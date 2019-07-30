@@ -22,11 +22,11 @@ Go ahead write down a list or think of it in your head.
 
 Ok, now that you have a list...
 
-Every reason you can come up with of why you're an imposter is based on comparing yourself to someone else. And, to make it worse you aren't comparing yourself to the whole person. You're comparing yourself to all the best parts of that one person, or group of people. You need to remember, they have failures too, and they don't know everything. No on can know "everything." Really, think about it!
+Every reason you can come up with of why you're an imposter is based on comparing yourself to someone else. And, to make it worse you aren't comparing yourself to the whole person. You're comparing yourself to all the best parts of that one person, or group of people. You need to remember, they have failures too, and they don't know everything. No one can know "everything." Really, think about it!
 
 Since Imposter Syndrome is Fake, you can eliminate it. Just stop comparing yourself to others. It really is that simple.
 
-Now, instead, come up with a list of reason your better than your past self. Make a list of your accomplishments; of how far you've come from where you were.
+Now, instead, come up with a list of reason you're better than your past self. Make a list of your accomplishments; of how far you've come from where you were.
 
 Look at that list of your self comparison. Doesn't it look awesome!?
 
