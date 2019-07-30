@@ -1,0 +1,51 @@
+<div class="mb-3">
+<script type="text/javascript"><!--
+    document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
+    // --></script>
+</div>
+
+<div class="mb-3">
+<a href="https://buildazure.com" alt="Build Azure - All about the Microsoft cloud"><img src="https://buildazure.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build Azure - All about the Microsoft cloud"/></a>
+</div>
+
+<!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+<div class="related">
+<h4>Recent Posts</h4>
+<ul class="list-unstyled">
+    {% for post in site.related_posts limit:10 %}
+    <li class="mb-3">
+        <h6 class="mb-0"><a href="{{ post.url }}">{{ post.title }}</a></h6>
+        <span class="small text-muted">{{ post.date | date_to_string }}</span>
+    </li>
+    {% endfor %}
+</ul>
+</div>
+
+
+<div id="fixedadmarker"></div>
+<div id="fixedad" class="mt-3">
+    <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+</div>
+<style>
+@media (min-width: 768px) {
+    .fixedad-float {
+        position: fixed;
+        top: 3em;
+    }
+}
+</style>
+<script>
+window.setInterval(function() {
+    var elem = $('#fixedadmarker'),
+        top = elem.offset().top || 0,
+        height = elem[0].offsetHeight || 0,
+        bottom = top + height,
+        scrollY = window.scrollY || 0,
+        elemToBeFixed = $('#fixedad');
+    if (scrollY >= bottom) {
+        elemToBeFixed.addClass('fixedad-float');
+    } else {
+        elemToBeFixed.removeClass('fixedad-float');
+    }
+}, 100);
+</script>
