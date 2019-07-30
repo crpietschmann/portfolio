@@ -43,6 +43,8 @@ sayHello("Chris", "Pietschmann", 42);
 
 This previous example accepts three parameters. The first two are string values, while the third parameter accepts a number.
 
+{% include embedad.html %}
+
 ## Call a JavaScript function with return value
 
 While parameters are used to pass one or more values into a JavaScript function, you can use a return value to pass a value out of the function as well. The function can use the `return` statement to exit and pass some value back to the caller when it's completed execution.
