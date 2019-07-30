@@ -8,14 +8,14 @@ redirect_from:
   - /archive
 ---
 
-<ul class="post-list">
+<div class="post-list">
   {% for post in site.posts %}
-    <li>
+    <p>
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
       <h2>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
-    </li>
+    </p>
   {% endfor %}
-</ul>
+</div>
 <p class="rss-subscribe">subscribe <a href="{{ "/feed" | prepend: site.baseurl }}">via RSS</a></p>
