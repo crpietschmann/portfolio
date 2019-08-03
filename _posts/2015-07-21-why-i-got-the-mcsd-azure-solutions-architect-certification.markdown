@@ -17,6 +17,11 @@ redirect_from:
 <img style="float: right;" src="/files/2015/07/MCSD_Azure_Blk.png" alt="" />
 
 Over the last few months I spent a ton of time studying for and passing the 3 exams required to earn the Microsoft Certified Solutions Developer (MCSD) Azure Solutions Architect certification. Microsoft has really built out an incredible, cloud platform that is Azure! And, this is fitting since it's the future of Microsoft's Enterprise business. This is the root of the reason why I decided to pursue and obtain the MCSD: Azure Solutions Architect certification.
+
+<p>
+<a href="https://buildazure.com/books/microsoft-certification-guide/"><img src="https://i2.wp.com/buildazure.com/wp-content/uploads/2019/08/microsoft-certification-guide-pre-order-wood-banner-ad-300x222.jpg?resize=300%2C222&ssl=1" alt="How to get certified and grow your career!"></a>
+</p>
+
 <h3>Azure Solutions Architect is a unique MCSD certification</h3>
 
 The other MCSD (Web, Windows, SharePoint) certifications are specifically geared towards Developers and cover lots of code and developer tools as a result. The MCSD: Azure Solutions Architect is a rather unique certification in comparision to the other MCSD certifications from Microsoft. The MCSD: Azure Solutions Architect certification is fully an **Architect certification**.

@@ -21,6 +21,11 @@ I've been taking on <a href="http://blogs.perficient.com/microsoft/2015/04/becom
 Now that I've passed the exam, I thought I'd share what I used so you too can become a certified Azure developer!
 
 *UPDATE: November 2016, the <a href="https://buildazure.com/2016/11/06/azure-developer-exam-70-532-gets-arm-refresh/" target="_blank">70-532 Developing Microsoft Azure Solutions exam is getting a big update</a> to include Azure Resource Manager (ARM) coverage as well as Azure Functions, DocumentDB, Logic Apps, and many more newer Azure features and services. This is a major refresh, so you'll want to go <a href="https://buildazure.com/2016/11/06/azure-developer-exam-70-532-gets-arm-refresh/" target="_blank">check out the latest list of exam objectives</a> to make sure you're studying the right stuff.*
+
+<p>
+<a href="https://buildazure.com/books/microsoft-certification-guide/"><img src="https://i2.wp.com/buildazure.com/wp-content/uploads/2019/08/microsoft-certification-guide-pre-order-wood-banner-ad-300x222.jpg?resize=300%2C222&ssl=1" alt="How to get certified and grow your career!"></a>
+</p>
+
 <h3>Exam Target Audience</h3>
 
 The 70-532 Developing Microsoft Azure Solutions exam is targeted towards a **Developer** audience. If you're an experienced .NET developer, then you'll likely have an easier time preparing for this exam. As a result, the exam will assume you are proficient with development tools, techniques and have experience developing scalable and resilient solutions.

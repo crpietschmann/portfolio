@@ -15,6 +15,11 @@ redirect_from:
 <!-- more -->
 
 <img style="float: right;" src="/files/2016/05/MS_ProgHTML5JSCSS.png" alt="" width="200px" />There are many benefits to getting certified in a given technology, as it helps to show / prove your expertise. While there are many certifications for various technologies, there are not very many available to get certified win HTML5, JavaScript, and CSS3 web technologies. The Microsoft 70-480 exam is a really good exam to get certified as a Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3.
+
+<p>
+<a href="https://buildazure.com/books/microsoft-certification-guide/"><img src="https://i2.wp.com/buildazure.com/wp-content/uploads/2019/08/microsoft-certification-guide-pre-order-wood-banner-ad-300x222.jpg?resize=300%2C222&ssl=1" alt="How to get certified and grow your career!"></a>
+</p>
+
 <h3>Exam Target Audience</h3>
 
 The target audience of the <a href="https://www.microsoft.com/en-us/learning/exam-70-480.aspx" target="_blank">Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3 (exam 70-480)</a> certification is **any** **Web Developer** that uses HTML5, JavaScript and CSS3. While the certification exam is offered by Microsoft to compliment the larger MCSD: Web Developer certification with ASP.NET, this exam doesn't require any Microsoft technologies as it covers standard web technologies.
