@@ -8,15 +8,16 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/04/22/My-introduction-to-computers-and-programming.aspx
   - /post/2005/04/22/My-introduction-to-computers-and-programming
   - /post/2005/04/22/my-introduction-to-computers-and-programming
   - /post.aspx?id=6b742247-2b42-4829-917b-9d7f63d4dbc3
 ---
-<!-- more -->
 
 My introduction to computers started when I was about 3 years old with an Apple IIe. We had a few games over the years: Ghost Busters, Alf, Spy Hunter, and a few others. If you ever think you can't trust a 3 year old with puting a DVD into the player, just think about a 3 year old being able to switch 5.25 inch floppy disks in an Apple IIe. We actually got the Apple IIe in like '84 or '85, it was used when we got it.
 
 My first PC (when I was about 13) with Windows 3.1 was actually my dads. It was an IBM 486-SX 33Mhz with 4MB RAM and a 20MB Hard drive. We later got a Compaq 166Mhz Pentium w/ MMX with 48MB Ram (when I was about 16). There were a few things I did in those days:
+
 <ol>
 <li>Those were the days of dialing in to the local BBS (Aarrgghh!! BBS run by Victor Loberger) and playing text based games, chating and sharing files over FidoNet</li>
 <li>QBasic, VB for DOS, VB3, VB4, VB6 and a little C/C++ programming.</li>
@@ -25,6 +26,7 @@ My first PC (when I was about 13) with Windows 3.1 was actually my dads. It was 
 </ol>
 
 The first four programs I wrote (in order of creation):
+
 <ol>
 <li>A text based Star Trek adventure game written in QBasic, with sounds and some really simple graphics.</li>
 <li>A Program Manager program for DOS in QBasic. It allowed you to use the mouse and was event driven (this was before I was introduced to VB and the event driven programming model it brings). It allowed you to setup keyboard shortcuts to start programs or you could click a button on the screen to run a program; the shortcuts were stored in a text file.</li>

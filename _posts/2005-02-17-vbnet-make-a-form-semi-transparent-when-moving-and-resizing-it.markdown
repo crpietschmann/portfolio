@@ -8,257 +8,102 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General", "vb.net"]
 redirect_from: 
+  - /post/2005/02/17/VBNET-Make-a-Form-semi-transparent-when-moving-and-resizing-it.aspx
   - /post/2005/02/17/VBNET-Make-a-Form-semi-transparent-when-moving-and-resizing-it
   - /post/2005/02/17/vbnet-make-a-form-semi-transparent-when-moving-and-resizing-it
   - /post.aspx?id=8f7a6806-5632-454b-a510-d2c47b19bc58
 ---
-<!-- more -->
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
-Here&#39;s a little VB.NET code snippet that I wrote to make a Form semi-transparent when moving and resizing it. I think this is a neat little effect to add to an application.
 
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
- 
+Here's a little VB.NET code snippet that I wrote to make a Form semi-transparent when moving and resizing it. I think this is a neat little effect to add to an application.
 
-<font size="2" color="#0000ff">Public</font><font size="2"> </font><font size="2" color="#0000ff">Class</font><font size="2"> frmTransparentMoveResize</font><font size="2"> 
-<blockquote dir="ltr" style="margin-right: 0px">
-	
+```VB
+Public Class frmTransparentMoveResize
+Inherits System.Windows.Forms.Form
 
-	<font size="2" color="#0000ff">Inherits</font><font size="2"> System.Windows.Forms.Form</font>
-	
-	<font size="2" color="#0000ff">Private</font><font size="2"> _OpacityResize </font><font size="2" color="#0000ff">As</font><font size="2"> </font><font size="2" color="#0000ff">Double</font><font size="2"> = 0.5</font><font size="2"> </font><font size="2" color="#0000ff">Private</font><font size="2"> _OpacityMove </font><font size="2" color="#0000ff">As</font><font size="2"> </font><font size="2" color="#0000ff">Double</font><font size="2"> = 0.5</font><font size="2"> 
-	
+Private _OpacityResize As Double = 0.5 Private _OpacityMove As Double = 0.5
+Private _OpacityOriginal As Double
 
-	<font size="2" color="#0000ff">Private</font><font size="2"> _OpacityOriginal </font><font size="2" color="#0000ff">As</font><font size="2"> </font><font size="2" color="#0000ff">Double</font>
-	
-	</font><font size="2"></font><font size="2" color="#0000ff">Private</font><font size="2"> </font><font size="2" color="#0000ff">Const</font><font size="2"> WM_NCLBUTTONDOWN </font><font size="2" color="#0000ff">As</font><font size="2"> </font><font size="2" color="#0000ff">Long</font><font size="2"> = &amp;HA1</font><font size="2"> 
-	
+Private Const WM_NCLBUTTONDOWN As Long = &HA1
+Private Const WM_NCLBUTTONUP As Long = &HA0
 
-	<font size="2" color="#0000ff">Private</font><font size="2"> </font><font size="2" color="#0000ff">Const</font><font size="2"> WM_NCLBUTTONUP </font><font size="2" color="#0000ff">As</font><font size="2"> </font><font size="2" color="#0000ff">Long</font><font size="2"> = &amp;HA0</font>
-	
-	</font><font size="2" color="#0000ff">Private</font><font size="2"> </font><font size="2" color="#0000ff">Const</font><font size="2"> WM_MOVING </font><font size="2" color="#0000ff">As</font><font size="2"> </font><font size="2" color="#0000ff">Long</font><font size="2"> = &amp;H216</font><font size="2"> 
-	
+Private Const WM_MOVING As Long = &H216
+Private Const WM_SIZE As Long = &H5
 
-	<font size="2" color="#0000ff">Private</font><font size="2"> </font><font size="2" color="#0000ff">Const</font><font size="2"> WM_SIZE </font><font size="2" color="#0000ff">As</font><font size="2"> </font><font size="2" color="#0000ff">Long</font><font size="2"> = &amp;H5</font>
-	
-	</font><font size="2" color="#0000ff">Protected</font><font size="2"> </font><font size="2" color="#0000ff">Overrides</font><font size="2"> </font><font size="2" color="#0000ff">Sub</font><font size="2"> DefWndProc(</font><font size="2" color="#0000ff">ByRef</font><font size="2"> m </font><font size="2" color="#0000ff">As</font><font size="2"> System.Windows.Forms.Message)</font><font size="2"> 
-	<blockquote dir="ltr" style="margin-right: 0px">
-		
+Protected Overrides Sub DefWndProc(ByRef m As System.Windows.Forms.Message)
+Static LButtonDown As Boolean
 
-		<font size="2" color="#0000ff">Static</font><font size="2"> LButtonDown </font><font size="2" color="#0000ff">As</font><font size="2"> </font><font size="2" color="#0000ff">Boolean</font>
-		
-		<font size="2">
-		
+'Check the state of the Left Mouse Button
 
-		<font size="2" color="#008000">&#39;Check the state of the Left Mouse Button</font>
-		
-		</font><font size="2">
-		
+If CLng(m.Msg) = WM_NCLBUTTONDOWN Then
 
-		<font size="2" color="#0000ff">If</font><font size="2"> </font><font size="2" color="#0000ff">CLng</font><font size="2">(m.Msg) = WM_NCLBUTTONDOWN </font><font size="2" color="#0000ff">Then</font>
-		
-		</font><font size="2">
-		<blockquote dir="ltr" style="margin-right: 0px">
-			
+'set LButtonDown to True is Left Mouse Button is down
 
-			<font size="2" color="#008000">&#39;set LButtonDown to True is Left Mouse Button is down</font>
-			
-			<font size="2">
-			
+LButtonDown = True
 
-			LButtonDown = <font size="2" color="#0000ff">True</font>
-			
-			</font>
-		</blockquote>
-		</font><font size="2">
-		
+ElseIf CLng(m.Msg) = WM_NCLBUTTONUP Then
 
-		<font size="2" color="#0000ff">ElseIf</font><font size="2"> </font><font size="2" color="#0000ff">CLng</font><font size="2">(m.Msg) = WM_NCLBUTTONUP </font><font size="2" color="#0000ff">Then</font>
-		
-		</font><font size="2">
-		<blockquote dir="ltr" style="margin-right: 0px">
-			
+'set LButtonDown to False is Left Mouse Button is not down
 
-			<font size="2" color="#008000">&#39;set LButtonDown to False is Left Mouse Button is not down</font>
-			
-			<font size="2">
-			
+LButtonDown = False
 
-			LButtonDown = <font size="2" color="#0000ff">False</font>
-			
-			</font>
-		</blockquote>
-		</font><font size="2">
-		
+End If
 
-		<font size="2" color="#0000ff">End</font><font size="2"> </font><font size="2" color="#0000ff">If</font>
-		
-		</font><font size="2">
-		
+If LButtonDown Then
 
-		<font size="2" color="#0000ff">If</font><font size="2"> LButtonDown </font><font size="2" color="#0000ff">Then</font>
-		
-		</font><font size="2">
-		<blockquote dir="ltr" style="margin-right: 0px">
-			
+If CLng(m.Msg) = WM_MOVING Then
 
-			<font size="2" color="#0000ff">If</font><font size="2"> </font><font size="2" color="#0000ff">CLng</font><font size="2">(m.Msg) = WM_MOVING </font><font size="2" color="#0000ff">Then</font>
-			
-			<font size="2">
-			<blockquote dir="ltr" style="margin-right: 0px">
-				
+'Set the forms opacity to 50% if user is draging the window
 
-				<font size="2" color="#008000">&#39;Set the forms opacity to 50% if user is draging the window</font>
-				
-				<font size="2">
-				
+If Me.Opacity <> _OpacityMove Then
 
-				<font size="2" color="#0000ff">If</font><font size="2"> </font><font size="2" color="#0000ff">Me</font><font size="2">.Opacity <> _OpacityMove </font><font size="2" color="#0000ff">Then</font>
-				
-				</font><font size="2">
-				<blockquote dir="ltr" style="margin-right: 0px">
-					_OpacityOriginal = <font size="2" color="#0000ff">Me</font><font size="2">.Opacity</font><font size="2"> </font><font size="2" color="#0000ff">Me</font><font size="2">.Opacity = _OpacityMove</font><font size="2">
-					
+_OpacityOriginal = Me.Opacity Me.Opacity = _OpacityMove
+End If
 
-					<font size="2" color="#0000ff">End</font><font size="2"> </font><font size="2" color="#0000ff">If</font>
-					
-					</font>
-				</blockquote>
-				</font>
-			</blockquote>
-			</font><font size="2">
-			
+ElseIf CLng(m.Msg) = WM_SIZE Then
 
-			<font size="2" color="#0000ff">ElseIf</font><font size="2"> </font><font size="2" color="#0000ff">CLng</font><font size="2">(m.Msg) = WM_SIZE </font><font size="2" color="#0000ff">Then</font>
-			
-			</font><font size="2">
-			<blockquote dir="ltr" style="margin-right: 0px">
-				
+'Set the forms opacity to 50% if user is resizing the window
 
-				<font size="2" color="#008000">&#39;Set the forms opacity to 50% if user is resizing the window</font>
-				
-				<font size="2">
-				
+If Me.Opacity <> _OpacityResize Then
 
-				<font size="2" color="#0000ff">If</font><font size="2"> </font><font size="2" color="#0000ff">Me</font><font size="2">.Opacity <> _OpacityResize </font><font size="2" color="#0000ff">Then</font>
-				
-				</font><font size="2">
-				<blockquote dir="ltr" style="margin-right: 0px">
-					_OpacityOriginal = <font size="2" color="#0000ff">Me</font><font size="2">.Opacity</font><font size="2"> </font><font size="2" color="#0000ff">Me</font><font size="2">.Opacity = _OpacityResize</font><font size="2">
-					
+_OpacityOriginal = Me.Opacity Me.Opacity = _OpacityResize
+End If
 
-					<font size="2" color="#0000ff">End</font><font size="2"> </font><font size="2" color="#0000ff">If</font>
-					
-					</font>
-				</blockquote>
-				</font>
-			</blockquote>
-			</font><font size="2">
-			
+End If
 
-			<font size="2" color="#0000ff">End</font><font size="2"> </font><font size="2" color="#0000ff">If</font>
-			
-			</font>
-		</blockquote>
-		</font><font size="2">
-		
+ElseIf Not LButtonDown Then
 
-		<font size="2" color="#0000ff">ElseIf</font><font size="2"> </font><font size="2" color="#0000ff">Not</font><font size="2"> LButtonDown </font><font size="2" color="#0000ff">Then</font>
-		
-		</font><font size="2">
-		<blockquote dir="ltr" style="margin-right: 0px">
-			<font size="2" color="#0000ff">If</font><font size="2"> </font><font size="2" color="#0000ff">Me</font><font size="2">.Opacity <> _OpacityOriginal </font><font size="2" color="#0000ff">Then</font><font size="2"> </font><font size="2" color="#0000ff">Me</font><font size="2">.Opacity = _OpacityOriginal</font><font size="2">
-			
+If Me.Opacity <> _OpacityOriginal Then Me.Opacity = _OpacityOriginal
+End If
 
-			<font size="2" color="#0000ff">End</font><font size="2"> </font><font size="2" color="#0000ff">If</font>
-			
-			</font>
-		</blockquote>
-		</font><font size="2"></font><font size="2" color="#0000ff">MyBase</font><font size="2">.DefWndProc(m)</font><font size="2">
-		
+MyBase.DefWndProc(m)
+End Sub
 
-		<font size="2" color="#0000ff">End</font><font size="2"> </font><font size="2" color="#0000ff">Sub</font>
-		
-		</font>
-	</blockquote>
-	</font><font size="2">
-	
+Public Property OpacityMove() As Double
 
-	<font size="2" color="#0000ff">Public</font><font size="2"> </font><font size="2" color="#0000ff">Property</font><font size="2"> OpacityMove() </font><font size="2" color="#0000ff">As</font><font size="2"> </font><font size="2" color="#0000ff">Double</font>
-	
-	</font><font size="2">
-	<blockquote dir="ltr" style="margin-right: 0px">
-		
+Get
 
-		<font size="2" color="#0000ff">Get</font>
-		
-		<font size="2">
-		<blockquote dir="ltr" style="margin-right: 0px">
-			<font size="2" color="#0000ff">Return</font><font size="2"> _OpacityMove</font><font size="2">
-			
+Return _OpacityMove
+End Get
 
-			<font size="2" color="#0000ff">End</font><font size="2"> </font><font size="2" color="#0000ff">Get</font>
-			
-			</font>
-		</blockquote>
-		</font><font size="2"></font><font size="2" color="#0000ff">Set</font><font size="2">(</font><font size="2" color="#0000ff">ByVal</font><font size="2"> Value </font><font size="2" color="#0000ff">As</font><font size="2"> </font><font size="2" color="#0000ff">Double</font><font size="2">)</font><font size="2"> 
-		<blockquote dir="ltr" style="margin-right: 0px">
-			
+Set(ByVal Value As Double)
+_OpacityMove = Value
 
-			_OpacityMove = Value
-			
-		</blockquote>
-		
+End Set
 
-		<font size="2" color="#0000ff">End</font><font size="2"> </font><font size="2" color="#0000ff">Set</font>
-		
-		</font>
-	</blockquote>
-	</font><font size="2">
-	
+End Property
 
-	<font size="2" color="#0000ff">End</font><font size="2"> </font><font size="2" color="#0000ff">Property</font>
-	
-	</font><font size="2">
-	
+Public Property OpacityResize() As Double
 
-	<font size="2" color="#0000ff">Public</font><font size="2"> </font><font size="2" color="#0000ff">Property</font><font size="2"> OpacityResize() </font><font size="2" color="#0000ff">As</font><font size="2"> </font><font size="2" color="#0000ff">Double</font>
-	
-	</font><font size="2">
-	<blockquote dir="ltr" style="margin-right: 0px">
-		
+Get
 
-		<font size="2" color="#0000ff">Get</font>
-		
-		<font size="2">
-		<blockquote dir="ltr" style="margin-right: 0px">
-			<font size="2" color="#0000ff">Return</font><font size="2"> _OpacityResize</font><font size="2">
-			
+Return _OpacityResize
+End Get
 
-			<font size="2" color="#0000ff">End</font><font size="2"> </font><font size="2" color="#0000ff">Get</font>
-			
-			</font>
-		</blockquote>
-		</font><font size="2"></font><font size="2" color="#0000ff">Set</font><font size="2">(</font><font size="2" color="#0000ff">ByVal</font><font size="2"> Value </font><font size="2" color="#0000ff">As</font><font size="2"> </font><font size="2" color="#0000ff">Double</font><font size="2">)</font><font size="2"> 
-		<blockquote dir="ltr" style="margin-right: 0px">
-			
+Set(ByVal Value As Double)
+_OpacityResize = Value
 
-			_OpacityResize = Value
-			
-		</blockquote>
-		
+End Set
 
-		<font size="2" color="#0000ff">End</font><font size="2"> </font><font size="2" color="#0000ff">Set</font>
-		
-		</font>
-	</blockquote>
-	</font><font size="2"></font><font size="2" color="#0000ff">End</font><font size="2"> </font><font size="2" color="#0000ff">Property</font><font size="2" color="#0000ff">
-	
-
-	End<font size="2"> </font><font size="2" color="#0000ff">Class</font>
-	
-	</font>
-</blockquote>
-</font>
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
- 
-
+End Property
+End Class
+```

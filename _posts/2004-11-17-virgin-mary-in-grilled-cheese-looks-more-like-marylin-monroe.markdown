@@ -8,13 +8,13 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2004/11/17/Virgin-Mary-In-Grilled-Cheese-Looks-more-like-Marylin-Monroe.aspx
   - /post/2004/11/17/Virgin-Mary-In-Grilled-Cheese-Looks-more-like-Marylin-Monroe
   - /post/2004/11/17/virgin-mary-in-grilled-cheese-looks-more-like-marylin-monroe
   - /post.aspx?id=22b4a9f0-71e4-43dc-a55a-9147000a96d6
 ---
-<!-- more -->
 
-The Vrigin Mary in a grilled cheese sandwich??? I think it looks more like Marylin Monroe. The last I checked the ebay auction was up to almost $7,000. I wanna make me one to sell!
+The Virgin Mary in a grilled cheese sandwich??? I think it looks more like Marylin Monroe. The last I checked the eBay auction was up to almost $7,000. I wanna make me one to sell!
 
 <IMG src="http://www.theregister.co.uk/2004/11/17/our_lady.JPG">
 

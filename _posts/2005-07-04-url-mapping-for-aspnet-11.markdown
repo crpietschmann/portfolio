@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2005/07/04/URL-Mapping-for-ASPNET-11.aspx
   - /post/2005/07/04/URL-Mapping-for-ASPNET-11
   - /post/2005/07/04/url-mapping-for-aspnet-11
   - /post.aspx?id=1948704a-e7ab-420c-aec7-1c9f85de5665
 ---
-<!-- more -->
 
 With the help of an http module, a custom config handler and a few lines of code we can add the same ASP.NET 2.0 style URL Mapping to our ASP.NET 1.1 apps.
 
@@ -20,8 +20,9 @@ With the help of an http module, a custom config handler and a few lines of code
 
 2) Then create three files as listed below:
 
-<span style="text-decoration: underline;">BaseModuleRewriter.vb</span>
+## BaseModuleRewriter.vb
 
+```VB
 Imports System.Web
 
 Public Class BaseModuleRewriter
@@ -43,9 +44,11 @@ Public Class BaseModuleRewriter
      End Sub
 
 End Class
+```
 
-<span style="text-decoration: underline;">URLMappingModule.vb</span>
+## URLMappingModule.vb
 
+```VB
 Imports System.Web
  Imports System.Configuration
 
@@ -106,9 +109,11 @@ Public Class URLMappingModule
      End Sub
 
 End Class
+```
 
-<span style="text-decoration: underline;">UrlMappingsConfigHandler.vb</span>
+## UrlMappingsConfigHandler.vb
 
+```VB
 Imports System.Configuration
  Imports System.Xml
 
@@ -141,10 +146,11 @@ Friend Function MappedUrl(ByVal url As String) As String
      Next
      Return _mappedURL
  End Function
+```
 
 3) Now in the ASP.NET 1.1 app that you would like to use this in, just add the following lines to your web.config file:
 
-[code:html]
+```html
  <?xml version="1.0" encoding="utf-8" ?>
  <configuration>
   <!-- Declare the custom 'urlMappings' section and handler -->

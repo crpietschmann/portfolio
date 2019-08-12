@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2004/10/06/View-SQL-Server-Transaction-Logs.aspx
   - /post/2004/10/06/View-SQL-Server-Transaction-Logs
   - /post/2004/10/06/view-sql-server-transaction-logs
   - /post.aspx?id=57b5c70e-d7c4-41e1-b336-5f8d70241f59
 ---
-<!-- more -->
 
 Ever wanted to look in you SQL Server Transaction logs??
 

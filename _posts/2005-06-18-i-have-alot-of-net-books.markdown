@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/06/18/I-have-alot-of-NET-books.aspx
   - /post/2005/06/18/I-have-alot-of-NET-books
   - /post/2005/06/18/i-have-alot-of-net-books
   - /post.aspx?id=6a5fae60-9887-4805-a320-ecb55ef15cf4
 ---
-<!-- more -->
 
 It's been two years since I started learning <A title=.NET href="http://www.microsoft.com/net/" target=_blank>.NET</A> and recieved my MCAD, and I now have a total of **18** books on <A title=.NET href="http://www.microsoft.com/net/" target=_blank>.NET</A> related development topics. I never counted them until today; I just kept buying/winning one every 4 to 6 weeks. Most of them are from Microsoft Press.
 

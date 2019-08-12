@@ -8,20 +8,20 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/01/07/XBox-II.aspx
   - /post/2005/01/07/XBox-II
   - /post/2005/01/07/xbox-ii
   - /post.aspx?id=c37d45af-2018-440f-86e1-4acad7586d27
 ---
-<!-- more -->
 
-1) Hard Drive... Yes!  There was some speculation that MS was going to take the HD out to make it more difficult to Mod.
+1. Hard Drive... Yes!  There was some speculation that MS was going to take the HD out to make it more difficult to Mod.
 
-2) Flash based HD... Yes!!!  It was told to me that the HD was going to be flash based... small size fast access... BAM!
+2. Flash based HD... Yes!!!  It was told to me that the HD was going to be flash based... small size fast access... BAM!
 
-3) No Stupid Dongle DVD playback... Yes!!!  The reason that the first Xbox didn't have built in DVD playback is a simple one, Sony owns the Intellectual Property rights for DVD playback.  Nuf said...
+3. No Stupid Dongle DVD playback... Yes!!!  The reason that the first Xbox didn't have built in DVD playback is a simple one, Sony owns the Intellectual Property rights for DVD playback.  Nuf said...
 
-4) Xbox II at E3... Hell Yes!!!  There will be an Xbox II maybe more at E3 this year...
+4. Xbox II at E3... Hell Yes!!!  There will be an Xbox II maybe more at E3 this year...
 
-5) Xbox II release date announced at E3... another Hell Yes!!!  MS will be announcing a release date for Xbox II...
+5. Xbox II release date announced at E3... another Hell Yes!!!  MS will be announcing a release date for Xbox II...
 
 <A href="http://alexalbrecht.typepad.com/alex/2005/01/xbox_ii.html">http://alexalbrecht.typepad.com/alex/2005/01/xbox_ii.html</A>

@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/12/02/Video-Game-Music-on-Piano!.aspx
   - /post/2005/12/02/Video-Game-Music-on-Piano!
   - /post/2005/12/02/video-game-music-on-piano!
   - /post.aspx?id=6cd2fe7a-425a-462f-b8e5-ce808f7ed0a9
 ---
-<!-- more -->
 
 Ever wanted to hear your favorite video game music played on piano?
 

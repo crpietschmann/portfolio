@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/01/27/OS-tans-these-are-like-Anime-mascots-for-the-OSs.aspx
   - /post/2005/01/27/OS-tans-these-are-like-Anime-mascots-for-the-OSs
   - /post/2005/01/27/os-tans-these-are-like-anime-mascots-for-the-oss
   - /post.aspx?id=4067af4f-af8d-4807-bdc2-e9fefa2ec823
 ---
-<!-- more -->
 
 A small Internet phenomenon on Futaba Channel, the <B>OS-tan</B> (OS for Operating System, and the Japanese "-tan" (??) which is an overly cute mispronounciation of, specifically a child's slurring of "-chan" (???), a diminutive honorific for a person) or simply <B>OS Girls</B> are the personification of several OSes, most famously Windows, by various amateur Japanese artists. A pure fan creation, the appearance of each character is generally consistent across artists. OSes are almost always portrayed as women, the Windows girls usually as sisters, despite sometimes seeming the same age.
 

@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net", "JavaScript"]
 redirect_from: 
+  - /post/2006/06/21/ASPNET-Atlas-is-full-of-JavaScript-goodness.aspx
   - /post/2006/06/21/ASPNET-Atlas-is-full-of-JavaScript-goodness
   - /post/2006/06/21/aspnet-atlas-is-full-of-javascript-goodness
   - /post.aspx?id=1ce510c9-0c22-428e-bd5b-9c1e9fee7d32
 ---
-<!-- more -->
 
 I was looking through the JavaScript code for <a href="http://atlas.asp.net">Atlas</a> and I noticed there is some pretty neat stuff in there. It is really a very large enhancement to JavaScript.
 
@@ -20,6 +20,7 @@ One of the things I noticed is they are adding support for the XMLHttpRequest ob
 
 Below is the above mentioned chunk of JS code for your viewing pleasure:
 
+```js
 //-----------------------------------------------------------------------
 // Copyright (C) Microsoft Corporation. All rights reserved.
 //-----------------------------------------------------------------------
@@ -42,9 +43,8 @@ if (!window.XMLHttpRequest) {
         return null;
     }
 }
-
- 
+``` 
 
 Remember the above code is technically copyrighted to Microsoft and is part of the Atlas Framework.
 
-<a href="http://atlas.asp.net">ASP.NET Atlas Framwork</a>
+<a href="http://atlas.asp.net">ASP.NET Atlas Framework</a>

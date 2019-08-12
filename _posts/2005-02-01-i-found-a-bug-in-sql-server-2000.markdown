@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/02/01/I-found-a-bug-in-SQL-Server-2000.aspx
   - /post/2005/02/01/I-found-a-bug-in-SQL-Server-2000
   - /post/2005/02/01/i-found-a-bug-in-sql-server-2000
   - /post.aspx?id=9190c4b2-4963-49f5-b433-40e5c6900b05
 ---
-<!-- more -->
 
 Well, I didn't find a new bug, but it is the first time I discovered a bug in SQL Server by just doing my everyday job.
 

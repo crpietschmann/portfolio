@@ -8,11 +8,12 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/06/18/Is-Visual-Studio-2005-divine.aspx
   - /post/2005/06/18/Is-Visual-Studio-2005-divine
   - /post/2005/06/18/is-visual-studio-2005-divine
   - /post.aspx?id=bebe8a4a-70a1-4c5e-a499-d5757c4082c0
 ---
-<!-- more -->
+
 <table border="0" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>

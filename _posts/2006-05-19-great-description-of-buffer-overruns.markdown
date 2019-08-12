@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/05/19/Great-description-of-Buffer-Overruns.aspx
   - /post/2006/05/19/Great-description-of-Buffer-Overruns
   - /post/2006/05/19/great-description-of-buffer-overruns
   - /post.aspx?id=1679ba83-7696-448d-a06a-ba13ab43e612
 ---
-<!-- more -->
 
 Last weeks episode of Security Now! has a great explanation of how buffer overruns work.
 

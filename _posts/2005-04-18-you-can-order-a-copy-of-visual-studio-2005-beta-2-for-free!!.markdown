@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/04/18/You-can-order-a-copy-of-Visual-Studio-2005-Beta-2-for-FREE!!.aspx
   - /post/2005/04/18/You-can-order-a-copy-of-Visual-Studio-2005-Beta-2-for-FREE!!
   - /post/2005/04/18/you-can-order-a-copy-of-visual-studio-2005-beta-2-for-free!!
   - /post.aspx?id=634b4903-a6d3-4426-b834-d1bb59b601f4
 ---
-<!-- more -->
 
 You can order a copy of Visual Studio 2005 Beta 2 for FREE!!
 

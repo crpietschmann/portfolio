@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2004/07/01/Bye-Bye-Mr-CIO-Guy-Song.aspx
   - /post/2004/07/01/Bye-Bye-Mr-CIO-Guy-Song
   - /post/2004/07/01/bye-bye-mr-cio-guy-song
   - /post.aspx?id=800e46fd-be20-437a-a066-1c352e2a34e7
 ---
-<!-- more -->
 
 Now, this is just hilarious. "Bye, Bye Mr. CIO-Guy, Gonna outsource every resource 'til the business runs dry."
 

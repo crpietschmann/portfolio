@@ -8,14 +8,22 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2004/09/27/Error-ASP-0178-on-Windows-2003-Server-(IIS6)-by-ServerCreateObject-on-DCOM-registered-Component.aspx
   - /post/2004/09/27/Error-ASP-0178-on-Windows-2003-Server-(IIS6)-by-ServerCreateObject-on-DCOM-registered-Component
   - /post/2004/09/27/error-asp-0178-on-windows-2003-server-(iis6)-by-servercreateobject-on-dcom-registered-component
   - /post.aspx?id=814636aa-7f7a-49ba-bdc9-6cbf2cd10f2d
 ---
-<!-- more -->
 
-This error is a permissions problem. This is a very frustrating problem for someone who doesn't know Windows Server 2003 very well. 
+This error is a permissions problem. This is a very frustrating problem for someone who doesn't know Windows Server 2003 very well.
 
-Heres is a workaround:<BR>1. go to Administrative Tools> Component Services <BR>2. expand COM Services <BR>3. expand My Computer. <BR>4. expand COM+ Applications. <BR>5. Right click on your Application, select Properties <BR>6. Go to the Security tab<BR>7. In the Authorization frame, uncheck &#8220;Enforce access checks for this application&#8220;<BR>
+Heres is a workaround:
+
+1. go to Administrative Tools> Component Services
+2. expand COM Services
+3. expand My Computer
+4. expand COM+ Applications
+5. Right-click on your Application, select Properties
+6. Go to the Security tab
+7. In the Authorization frame, uncheck `Enforce access checks for this application`
 
 This isn't the best, since it grants every account on the machine access to create the objects in this application, but it's a quick/easy work around.

@@ -8,11 +8,12 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/04/22/Four-ways-to-get-your-hands-on-Visual-Studio-2005-Beta-2!!.aspx
   - /post/2005/04/22/Four-ways-to-get-your-hands-on-Visual-Studio-2005-Beta-2!!
   - /post/2005/04/22/four-ways-to-get-your-hands-on-visual-studio-2005-beta-2!!
   - /post.aspx?id=45d5e352-d33a-4468-91aa-33af3336a4ec
 ---
-<!-- more -->
+
 <OL>
 <LI>I posted a couple days ago that non-MSDN subscribers can get Visual Studio 2005 Beta 2 for FREE from <A href="http://msdn.microsoft.com/getthebetas/">http://msdn.microsoft.com/getthebetas/</A>. 
 <LI>The <A title="MSDN Events" href="http://msdnevents.com/" target=_blank>MSDN Events</A> Resource DVD that will be given out at the Spring <A title="MSDN Events" href="http://msdnevents.com/" target=_blank>MSDN Events</A> will have Visual Studio 2005 Beta 2 on it. 

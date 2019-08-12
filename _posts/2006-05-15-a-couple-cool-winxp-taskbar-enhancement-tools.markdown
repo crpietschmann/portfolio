@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/05/15/A-couple-cool-WinXP-TaskBar-enhancement-tools.aspx
   - /post/2006/05/15/A-couple-cool-WinXP-TaskBar-enhancement-tools
   - /post/2006/05/15/a-couple-cool-winxp-taskbar-enhancement-tools
   - /post.aspx?id=f6b3a7ec-852b-445f-92f5-482d542e58bc
 ---
-<!-- more -->
 
 I've come across two cool WinXP TaskBar enhancement tools.
 

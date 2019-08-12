@@ -8,23 +8,29 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2006/04/03/ASPNET-20-Registration-of-Controls-in-WebConfig.aspx
   - /post/2006/04/03/ASPNET-20-Registration-of-Controls-in-WebConfig
   - /post/2006/04/03/aspnet-20-registration-of-controls-in-webconfig
   - /post.aspx?id=f1e2ea63-fdc5-42f4-9cc9-68cf4586d61d
 ---
-<!-- more -->
 
 In ASP.NET 1.x controls had to be registered in each page they were used. New since ASP.NET 2.0, controls can be registered in the web.config file. Visual Studio 2005 supports full intellisense when editing .aspx pages. This feature allows commonly used controls to be more easily used through out your application.
 
-**Web.Config**
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "><system.web>
+## Web.Config
+
+```xml
+<system.web>
     <pages>
         <controls>
             <add tagPrefix="mycontrol" src="~/Controls/Header.ascx" tagName="header"/>
             <add tagPrefix="mycontrol" src="~/Controls/Footer.ascx" tagName="footer"/>
         </controls>
     </pages>
-</system.web></pre>
+</system.web>
+```
 
-**Use the control in an .aspx page**
-<pre class="brush: xml; first-line: 1; tab-size: 4; toolbar: false; "> <mycontrol:header id="Header" runat="server" /></pre>
+## Use the control in an .aspx page
+
+```xml
+<mycontrol:header id="Header" runat="server" />
+```

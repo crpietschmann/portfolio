@@ -8,30 +8,14 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/06/18/Perfect-Dark-Zero-to-be-released-on-XBox-360!.aspx
   - /post/2005/06/18/Perfect-Dark-Zero-to-be-released-on-XBox-360!
   - /post/2005/06/18/perfect-dark-zero-to-be-released-on-xbox-360!
   - /post.aspx?id=51561c1e-85bf-41ab-ae4c-642eface487e
 ---
-<!-- more -->
-<table border="0" cellspacing="0" cellpadding="0">
-	<tbody>
-		<tr>
-			<td>
-			<div class="post">
-			
 
-			Score!! I&#39;ve been waiting for this game for years (I don&#39;t even remember how long). I&#39;ll have to buy an XBox 360 so I can play it.
-			
-			
+Score!! I&#39;ve been waiting for this game for years (I don&#39;t even remember how long). I&#39;ll have to buy an XBox 360 so I can play it.
 
-			<img src="/Blog/images/14/o_wallpaper1lg.jpg" border="0" alt="" width="258" height="153" />
-			
-			
+<img src="/Blog/images/14/o_wallpaper1lg.jpg" border="0" alt="" width="258" height="153" />
 
-			Check it out: <a href="http://www.perfectdarkzero.com/">http://www.PerfectDarkZero.com</a>
-			
-			</div>
-			</td>
-		</tr>
-	</tbody>
-</table>
+Check it out: <a href="http://www.perfectdarkzero.com/">http://www.PerfectDarkZero.com</a>

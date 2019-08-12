@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2006/06/01/JavaScript-Loop-through-all-elements-in-a-form.aspx
   - /post/2006/06/01/JavaScript-Loop-through-all-elements-in-a-form
   - /post/2006/06/01/javascript-loop-through-all-elements-in-a-form
   - /post.aspx?id=75287b5b-1d1f-47d1-a9ed-6d5c0eb4a545
 ---
-<!-- more -->
 
 Since I've been doing a lot of JavaScript programming lately, I figured I could start blogging some code snippets. Here is a JavaScript snippet that shows how to loop through all the elements in a form and retrieve their element type, name and values. I had to use this code to gather all form values so I could post them to the server using AJAX.
 

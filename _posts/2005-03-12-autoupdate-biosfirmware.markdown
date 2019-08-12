@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/03/12/AutoUpdate-BIOSFirmware.aspx
   - /post/2005/03/12/AutoUpdate-BIOSFirmware
   - /post/2005/03/12/autoupdate-biosfirmware
   - /post.aspx?id=6e3d6bbf-ed43-46ab-b563-d01dfad622a3
 ---
-<!-- more -->
 
 I was talking to one of my friends and he mentioned a conversation he had with someone about AutoUpdating Firmware/BIOS in the background while you are using your computer. The person my friend was talking about seems to think that his <a title="WinXP" href="http://www.microsoft.com/windowsxp/default.mspx" target="_blank">WinXP</a> system at home currently does this. He must be thinking that Windows Update does a little more than update Windows. Even though this isn't something that is or can be done now; it got me thinking.
 

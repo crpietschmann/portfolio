@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
+  - /post/2004/08/10/Wisconsin-NET-User-Group-meeting-tonight.aspx
   - /post/2004/08/10/Wisconsin-NET-User-Group-meeting-tonight
   - /post/2004/08/10/wisconsin-net-user-group-meeting-tonight
   - /post.aspx?id=772d2592-f037-4039-ae6e-38a53e7319a5
 ---
-<!-- more -->
 
 <a href="http://wi-ineta.org" target="_blank" title="Wisconsin .NET Users Group">WI-INETA</a> meeting tonight, I&#39;m leavin in a little while to go. This months topic is GDI+ in Microsoft .NET
 

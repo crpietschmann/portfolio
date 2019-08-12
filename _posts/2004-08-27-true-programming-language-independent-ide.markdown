@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2004/08/27/True-Programming-Language-Independent-IDE.aspx
   - /post/2004/08/27/True-Programming-Language-Independent-IDE
   - /post/2004/08/27/true-programming-language-independent-ide
   - /post.aspx?id=14bcf749-3fb3-446f-96ca-01b9e123efc0
 ---
-<!-- more -->
 
 I watch a video on <A href="http://channel9.msdn.com">http://channel9.msdn.com</A> about how we will be able to mix C++, C# and VB.NET code files within the same project in Visual Studio 2005. Watch the video here: <A href="http://channel9.msdn.com/ShowPost.aspx?PostID=19445">http://channel9.msdn.com/ShowPost.aspx?PostID=19445</A>
 

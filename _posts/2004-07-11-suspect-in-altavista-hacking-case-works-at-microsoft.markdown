@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2004/07/11/Suspect-in-AltaVista-hacking-case-works-at-Microsoft.aspx
   - /post/2004/07/11/Suspect-in-AltaVista-hacking-case-works-at-Microsoft
   - /post/2004/07/11/suspect-in-altavista-hacking-case-works-at-microsoft
   - /post.aspx?id=1bd9e847-d33f-4fc6-9735-7691bffdb382
 ---
-<!-- more -->
 
 Last week a man charged with stealing proprietary technology from AltaVista search engine two years was arrested. No big deal right, well this man also is an employee at Microsoft and has been working on Microsoft's new MSN Search technology. Lets see how long till AltaVista presses charges against the software giant Microsoft.
 

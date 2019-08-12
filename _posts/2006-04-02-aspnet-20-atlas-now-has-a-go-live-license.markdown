@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2006/04/02/ASPNET-20-Atlas-now-has-a-Go-Live-license.aspx
   - /post/2006/04/02/ASPNET-20-Atlas-now-has-a-Go-Live-license
   - /post/2006/04/02/aspnet-20-atlas-now-has-a-go-live-license
   - /post.aspx?id=346ae3c5-817d-4d03-acf6-56850bfb34e4
 ---
-<!-- more -->
 
 At last, the new <a href="http://go.microsoft.com/fwlink/?LinkId=52384">March ASP.NET "Atlas" CTP </a>comes with Go-Live. I downloaded the latest release and am planning on playing around with it alot soon. I've been waiting for it to have a Go-Live license so I can use it in some of my personal projects I'm working on.
 

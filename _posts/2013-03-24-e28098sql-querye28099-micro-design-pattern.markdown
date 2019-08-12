@@ -8,116 +8,96 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Design Patterns"]
 redirect_from: 
+  - /post/2013/03/24/e28098SQL-Querye28099-Micro-Design-Pattern.aspx
   - /post/2013/03/24/e28098SQL-Querye28099-Micro-Design-Pattern
   - /post/2013/03/24/e28098sql-querye28099-micro-design-pattern
   - /post.aspx?id=e7f7d727-8416-49e7-b5df-63ce59205969
 ---
-<!-- more -->
 
-There are a few programming practices, that I like to call Micro Design Patterns, that I use over and over again on various software projects I work on. One pattern that I call SQL Query, and use quite frequently when I need to write ad-hoc SQL queries for use within a Data Access Layer. This pattern lends itself to easier testability and a cleaner separation of concerns.  <h3>What is the ‘SQL Query’ Micro Pattern?</h3>  
+There are a few programming practices, that I like to call Micro Design Patterns, that I use over and over again on various software projects I work on. One pattern that I call SQL Query, and use quite frequently when I need to write ad-hoc SQL queries for use within a Data Access Layer. This pattern lends itself to easier testability and a cleaner separation of concerns.
+
+## What is the ‘SQL Query’ Micro Pattern?
+
 Basically, the SQL Query micro pattern involves using a Factory Method to return an object that contains all the necessary data for performing a SQL query (the full SQL code and a collection of all the parameters and their values.)  
-Here’s an extremely simple example of the Factory Method (this one is implemented as Static for simplicity) and a necessary SQLQuery object:  <pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">class</span> SQLGenerator
+Here’s an extremely simple example of the Factory Method (this one is implemented as Static for simplicity) and a necessary SQLQuery object:
+
+```csharp
+public static class SQLGenerator
 {
-    <span class="kwrd">public</span> <span class="kwrd">static</span> SQLQuery GetPersonQuery(<span class="kwrd">int</span> id)
+    public static SQLQuery GetPersonQuery(int id)
     {
-        <span class="kwrd">return</span> <span class="kwrd">new</span> SQLQuery {
-            SQL = <span class="str">@&quot;SELECT * FROM [Person] WHERE [ID] = @ID&quot;</span>,
-            Parameters = <span class="kwrd">new</span> Dictionary<<span class="kwrd">string</span>, <span class="kwrd">object</span>> {
-                { <span class="str">&quot;@ID&quot;</span>, id }
+        return new SQLQuery {
+            SQL = @"SELECT * FROM [Person] WHERE [ID] = @ID",
+            Parameters = new Dictionary<string, object> {
+                { "@ID", id }
             }
         };
     }
 }
 
-<span class="kwrd">public</span> <span class="kwrd">class</span> SQLQuery
+public class SQLQuery
 {
-    <span class="kwrd">public</span> <span class="kwrd">string</span> SQL { get; set; }
-    <span class="kwrd">public</span> IDictionary<<span class="kwrd">string</span>, <span class="kwrd">object</span>> Parameters { get; set; }
-}</pre>
-<style type="text/css">
-.csharpcode, .csharpcode pre
-{
-	font-size: small;
-	color: black;
-	font-family: consolas, "Courier New", courier, monospace;
-	background-color: #ffffff;
-	/*white-space: pre;*/
+    public string SQL { get; set; }
+    public IDictionary<string, object> Parameters { get; set; }
 }
-.csharpcode pre { margin: 0em; }
-.csharpcode .rem { color: #008000; }
-.csharpcode .kwrd { color: #0000ff; }
-.csharpcode .str { color: #006080; }
-.csharpcode .op { color: #0000c0; }
-.csharpcode .preproc { color: #cc6633; }
-.csharpcode .asp { background-color: #ffff00; }
-.csharpcode .html { color: #800000; }
-.csharpcode .attr { color: #ff0000; }
-.csharpcode .alt 
-{
-	background-color: #f4f4f4;
-	width: 100%;
-	margin: 0em;
-}
-.csharpcode .lnum { color: #606060; }</style>
-
+```
 
 And, here’s an example using it:
 
-<pre class="csharpcode">var query = SQLGenerator.GetPersonQuery(4);
+```csharp
+var query = SQLGenerator.GetPersonQuery(4);
 
-<span class="rem">// SQL will equal 'SELECT * FROM [Person] WHERE [ID] = @ID'</span>
-<span class="rem">// Parameters will contain a single entry with the key of '@ID'</span>
-// and the <span class="kwrd">value</span> of 4</pre>
+// SQL will equal 'SELECT * FROM [Person] WHERE [ID] = @ID'
+// Parameters will contain a single entry with the key of '@ID'
+// and the value of 4
+```
 
-<h3>Why / When to use the pattern?</h3>
-
+## Why / When to use the pattern?
 
 Basically, when ever you are writing your own ad-hoc SQL queries or building them dynamically within code (instead of using an ORM like Entity Framework or LINQ to SQL) then the SQL Query pattern comes in handy.
 
-
 Personally, I have encountered quite a few scenarios where it was necessary to drop down to using straight ad-hoc SQL queries against the database for performance reasons. This is where it became necessary for me to come up with this micro pattern.
 
-<h3>Easily Testability and Separation of Concerns</h3>
-
+## Easily Testability and Separation of Concerns
 
 The very nature of breaking out your SQL query generation code to a separate method or class of methods increases the overall separation of concerns within your code.
 
-
 Think about how you would write unit tests for the following fairly traditional example:
 
-<pre class="csharpcode">var personID = 4;
-<span class="kwrd">using</span> (var con = <span class="kwrd">new</span> SqlConnection(connectionString))
+```csharp
+var personID = 4;
+using (var con = new SqlConnection(connectionString))
 {
-    <span class="kwrd">using</span>(var cmd = <span class="kwrd">new</span> SqlCommand(
-        <span class="str">&quot;SELECT * FROM [Person] WHERE ID = @ID&quot;</span>, con))
+    using(var cmd = new SqlCommand(
+        "SELECT * FROM [Person] WHERE ID = @ID", con))
     {
-        cms.Parameters.AddWithValue(<span class="str">&quot;@ID&quot;</span>, personId);
+        cms.Parameters.AddWithValue("@ID", personId);
 
         con.Open();
 
         var reader = cmd.ExecuteReader();
 
-        <span class="rem">// Do something with the reader</span>
+        // Do something with the reader
     }
-}</pre>
-
+}
+```
 
 You really wouldn’t be able to write any unit tests for this code; unless you are willing to write a full integration test against the database which is not best practice just to test whether the correct ad-hoc SQL query is generated by the code.
 
-
 Now look at it refactored to use the SQL Query micro pattern:
 
-<pre class="csharpcode">var personID = 4;
+```csharp
+var personID = 4;
 
-<span class="rem">// use SQL Query pattern</span>
+// use SQL Query pattern
 var query = SQLGenerator.GetPersonQuery(personID);
 
-<span class="kwrd">using</span> (var con = <span class="kwrd">new</span> SqlConnection(connectionString))
+using (var con = new SqlConnection(connectionString))
 {
-    <span class="kwrd">using</span> (var cmd = <span class="kwrd">new</span> SqlCommand(query.SQL, con))
+    using (var cmd = new SqlCommand(query.SQL, con))
     {
-        <span class="rem">// Add query parameters to SqlCommand</span>
-        forach(var item <span class="kwrd">in</span> query.Parameters)
+        // Add query parameters to SqlCommand
+        foreach(var item in query.Parameters)
         {
             cmd.Parameters.AddWithValue(item.Key, item.Value);
         }
@@ -126,20 +106,17 @@ var query = SQLGenerator.GetPersonQuery(personID);
 
         var reader = cmd.ExecuteReader();
 
-        <span class="rem">// Do something with the reader</span>
+        // Do something with the reader
     }
-}</pre>
-
+}
+```
 
 The overall code isn’t much different, but now the generation of the ad-hoc SQL query and its necessary parameters is separated out into a method call that is easily testable.
 
-
 Using the SQL Query pattern you can write unit tests to verify that the correct ad-hoc SQL query and necessary parameters are being generated by the factory method (the GetPersonQuery method in the above example.)
 
-<h3>Conclusion</h3>
-
+## Conclusion
 
 As you can see, the ‘SQL Query’ micro pattern is rather simplistic, but it works to serve a few very important tenets; including: easier testability, increased separation of concerns, cleaner code and increased reusability.
-
 
 The examples shown in this article are really simple for the purpose of making it easy to learn the pattern. The biggest benefits of using this pattern come into play when you have much more complex ad-hoc SQL query generation that might involve many conditional elements for building WHERE, JOIN, SELECT and ORDER BY clauses. In these cases it becomes even more of a necessity to unit test the SQL generation code.

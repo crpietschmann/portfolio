@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2005/12/10/ASPNET-20-Client-Callbacks-inside-a-User-Control.aspx
   - /post/2005/12/10/ASPNET-20-Client-Callbacks-inside-a-User-Control
   - /post/2005/12/10/aspnet-20-client-callbacks-inside-a-user-control
   - /post.aspx?id=cb2fb342-bf26-4aad-9d46-29a1450ef83e
@@ -15,74 +16,69 @@ redirect_from:
 <!-- more -->
 
 Implementing Client Callbacks (AJAX) in ASP.NET 2.0 is actually really simple to do as long as you know a little JavaScript. Heres is a small example of using a Client Callback from within a User Control. I've tested this example with IE6 and Firefox 1.5
-<div class="Indent">
-<pre><div><!--
 
-Code highlighting produced by Actipro CodeHighlighter (freeware)
-http://www.CodeHighlighter.com/
-
---><span style="COLOR: #008080"> 1</span> <span style="COLOR: #000000"><</span><span style="COLOR: #000000">%@ Control Language</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">VB</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"> ClassName</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">ClientCallbackControl</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">%</span><span style="COLOR: #000000">></span><span style="COLOR: #000000">
-</span><span style="COLOR: #008080"> 2</span> <span style="COLOR: #000000"><</span><span style="COLOR: #000000">%@ </span><span style="COLOR: #0000ff">Implements</span><span style="COLOR: #000000"> </span><span style="COLOR: #0000ff">Interface</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">System.Web.UI.ICallbackEventHandler</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">%</span><span style="COLOR: #000000">></span><span style="COLOR: #000000">
-</span><span style="COLOR: #008080"> 3</span> <span style="COLOR: #000000"><</span><span style="COLOR: #000000">script runat</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">server</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">></span><span style="COLOR: #000000">
-</span><span style="COLOR: #008080"> 4</span> <span style="COLOR: #000000">    </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'This is the variable that holds the client callback</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080"> 5</span> <span style="COLOR: #000000">    </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'results that will be returned to the client.</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080"> 6</span> <span style="COLOR: #000000">    </span><span style="COLOR: #0000ff">Dim</span><span style="COLOR: #000000"> MyCallbackResult </span><span style="COLOR: #0000ff">As</span><span style="COLOR: #000000"> </span><span style="COLOR: #0000ff">String</span><span style="COLOR: #000000">
-</span><span style="COLOR: #008080"> 7</span> <span style="COLOR: #000000">
-</span><span style="COLOR: #008080"> 8</span> <span style="COLOR: #000000">    </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'This is the server-side function that is called when the</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080"> 9</span> <span style="COLOR: #000000">    </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'client callback results are returned to the browser.</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">10</span> <span style="COLOR: #000000">    </span><span style="COLOR: #0000ff">Public</span><span style="COLOR: #000000"> </span><span style="COLOR: #0000ff">Function</span><span style="COLOR: #000000"> GetCallbackResult() </span><span style="COLOR: #0000ff">As</span><span style="COLOR: #000000"> </span><span style="COLOR: #0000ff">String</span><span style="COLOR: #000000"> </span><span style="COLOR: #0000ff">Implements</span><span style="COLOR: #000000"> System.Web.UI.ICallbackEventHandler.GetCallbackResult
-</span><span style="COLOR: #008080">11</span> <span style="COLOR: #000000">        </span><span style="COLOR: #0000ff">Return</span><span style="COLOR: #000000"> MyCallbackResult
-</span><span style="COLOR: #008080">12</span> <span style="COLOR: #000000">    </span><span style="COLOR: #0000ff">End Function</span><span style="COLOR: #000000">
-</span><span style="COLOR: #008080">13</span> <span style="COLOR: #000000">
-</span><span style="COLOR: #008080">14</span> <span style="COLOR: #000000">    </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'This is the server-side function that is called when the</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">15</span> <span style="COLOR: #000000">    </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'client callback is fired off.</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">16</span> <span style="COLOR: #000000">    </span><span style="COLOR: #0000ff">Public</span><span style="COLOR: #000000"> </span><span style="COLOR: #0000ff">Sub</span><span style="COLOR: #000000"> RaiseCallbackEvent(</span><span style="COLOR: #0000ff">ByVal</span><span style="COLOR: #000000"> eventArgument </span><span style="COLOR: #0000ff">As</span><span style="COLOR: #000000"> </span><span style="COLOR: #0000ff">String</span><span style="COLOR: #000000">) </span><span style="COLOR: #0000ff">Implements</span><span style="COLOR: #000000"> System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent
-</span><span style="COLOR: #008080">17</span> <span style="COLOR: #000000">        MyCallbackResult </span><span style="COLOR: #000000">=</span><span style="COLOR: #000000"> Now.ToString
-</span><span style="COLOR: #008080">18</span> <span style="COLOR: #000000">    </span><span style="COLOR: #0000ff">End Sub</span><span style="COLOR: #000000">
-</span><span style="COLOR: #008080">19</span> <span style="COLOR: #000000">
-</span><span style="COLOR: #008080">20</span> <span style="COLOR: #000000">    </span><span style="COLOR: #0000ff">Protected</span><span style="COLOR: #000000"> </span><span style="COLOR: #0000ff">Sub</span><span style="COLOR: #000000"> Page_Load(</span><span style="COLOR: #0000ff">ByVal</span><span style="COLOR: #000000"> sender </span><span style="COLOR: #0000ff">As</span><span style="COLOR: #000000"> </span><span style="COLOR: #0000ff">Object</span><span style="COLOR: #000000">, </span><span style="COLOR: #0000ff">ByVal</span><span style="COLOR: #000000"> e </span><span style="COLOR: #0000ff">As</span><span style="COLOR: #000000"> System.EventArgs) </span><span style="COLOR: #0000ff">Handles</span><span style="COLOR: #000000"> </span><span style="COLOR: #0000ff">Me</span><span style="COLOR: #000000">.Load
-</span><span style="COLOR: #008080">21</span> <span style="COLOR: #000000">        </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'Get Client Side ID of this instance of the User Control</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">22</span> <span style="COLOR: #000000">        </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'This will be used to Prefix all the JavaScript functions</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">23</span> <span style="COLOR: #000000">        </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'this control uses so that you can have multiple instances</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">24</span> <span style="COLOR: #000000">        </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'of this control on the same page.</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">25</span> <span style="COLOR: #000000">        </span><span style="COLOR: #0000ff">Dim</span><span style="COLOR: #000000"> strJSCallbackPrefix </span><span style="COLOR: #0000ff">As</span><span style="COLOR: #000000"> </span><span style="COLOR: #0000ff">String</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">=</span><span style="COLOR: #000000"> </span><span style="COLOR: #0000ff">Me</span><span style="COLOR: #000000">.ClientID
-</span><span style="COLOR: #008080">26</span> <span style="COLOR: #000000">
-</span><span style="COLOR: #008080">27</span> <span style="COLOR: #000000">        </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'Get the JavaScript that will callback to the server</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">28</span> <span style="COLOR: #000000">        </span><span style="COLOR: #0000ff">Dim</span><span style="COLOR: #000000"> cm </span><span style="COLOR: #0000ff">As</span><span style="COLOR: #000000"> ClientScriptManager </span><span style="COLOR: #000000">=</span><span style="COLOR: #000000"> Page.ClientScript
-</span><span style="COLOR: #008080">29</span> <span style="COLOR: #000000">        </span><span style="COLOR: #0000ff">Dim</span><span style="COLOR: #000000"> cbReference </span><span style="COLOR: #0000ff">As</span><span style="COLOR: #000000"> </span><span style="COLOR: #0000ff">String</span><span style="COLOR: #000000">
-</span><span style="COLOR: #008080">30</span> <span style="COLOR: #000000">        cbReference </span><span style="COLOR: #000000">=</span><span style="COLOR: #000000"> cm.GetCallbackEventReference(</span><span style="COLOR: #0000ff">Me</span><span style="COLOR: #000000">, _
-</span><span style="COLOR: #008080">31</span> <span style="COLOR: #000000">            </span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">arg</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">, _
-</span><span style="COLOR: #008080">32</span> <span style="COLOR: #000000">            strJSCallbackPrefix </span><span style="COLOR: #000000">&amp;</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">ReceiveServerData</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">, _
-</span><span style="COLOR: #008080">33</span> <span style="COLOR: #000000">            </span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">context</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">)
-</span><span style="COLOR: #008080">34</span> <span style="COLOR: #000000">
-</span><span style="COLOR: #008080">35</span> <span style="COLOR: #000000">        </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'Declare the function that will be called to fire off a</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">36</span> <span style="COLOR: #000000">        </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'client callback to the server.</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">37</span> <span style="COLOR: #000000">        </span><span style="COLOR: #0000ff">Dim</span><span style="COLOR: #000000"> callbackScript </span><span style="COLOR: #0000ff">As</span><span style="COLOR: #000000"> </span><span style="COLOR: #0000ff">String</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">=</span><span style="COLOR: #000000"> _
-</span><span style="COLOR: #008080">38</span> <span style="COLOR: #000000">            </span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">function </span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">&amp;</span><span style="COLOR: #000000"> strJSCallbackPrefix </span><span style="COLOR: #000000">&amp;</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">CallServer(arg, context){</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">&amp;</span><span style="COLOR: #000000"> cbReference </span><span style="COLOR: #000000">&amp;</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">; }</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">
-</span><span style="COLOR: #008080">39</span> <span style="COLOR: #000000">        cm.RegisterClientScriptBlock(</span><span style="COLOR: #0000ff">Me</span><span style="COLOR: #000000">.GetType(), strJSCallbackPrefix </span><span style="COLOR: #000000">&amp;</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">CallServer</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">, callbackScript, </span><span style="COLOR: #0000ff">True</span><span style="COLOR: #000000">)
-</span><span style="COLOR: #008080">40</span> <span style="COLOR: #000000">
-</span><span style="COLOR: #008080">41</span> <span style="COLOR: #000000">        </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'Declare the function that will recieve the client callback</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">42</span> <span style="COLOR: #000000">        </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'results from the server.</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">43</span> <span style="COLOR: #000000">        </span><span style="COLOR: #0000ff">Dim</span><span style="COLOR: #000000"> strReceiveServerData </span><span style="COLOR: #0000ff">As</span><span style="COLOR: #000000"> </span><span style="COLOR: #0000ff">String</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">=</span><span style="COLOR: #000000"> _
-</span><span style="COLOR: #008080">44</span> <span style="COLOR: #000000">            </span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">function </span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">&amp;</span><span style="COLOR: #000000"> strJSCallbackPrefix </span><span style="COLOR: #000000">&amp;</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">ReceiveServerData(arg, context){context.innerHTML = arg;}</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">
-</span><span style="COLOR: #008080">45</span> <span style="COLOR: #000000">        cm.RegisterClientScriptBlock(</span><span style="COLOR: #0000ff">Me</span><span style="COLOR: #000000">.GetType, strJSCallbackPrefix </span><span style="COLOR: #000000">&amp;</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">ReceiveServerData</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">, strReceiveServerData, </span><span style="COLOR: #0000ff">True</span><span style="COLOR: #000000">)
-</span><span style="COLOR: #008080">46</span> <span style="COLOR: #000000">
-</span><span style="COLOR: #008080">47</span> <span style="COLOR: #000000">
-</span><span style="COLOR: #008080">48</span> <span style="COLOR: #000000">        </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'Set the JavaScript that is run when the button is clicked</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">49</span> <span style="COLOR: #000000">        </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'This sends the context of lblMessage1 so that the</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">50</span> <span style="COLOR: #000000">        </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'ReceiveServerData function can change its value to what is</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">51</span> <span style="COLOR: #000000">        </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'returned from the server.</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">52</span> <span style="COLOR: #000000">        Button1.OnClientClick </span><span style="COLOR: #000000">=</span><span style="COLOR: #000000"> _
-</span><span style="COLOR: #008080">53</span> <span style="COLOR: #000000">            strJSCallbackPrefix </span><span style="COLOR: #000000">&amp;</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">CallServer(1, document.getElementById('</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">&amp;</span><span style="COLOR: #000000"> lblMessage1.ClientID </span><span style="COLOR: #000000">&amp;</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">')); </span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">&amp;</span><span style="COLOR: #000000"> _
-</span><span style="COLOR: #008080">54</span> <span style="COLOR: #000000">            </span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">return false;</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">
-</span><span style="COLOR: #008080">55</span> <span style="COLOR: #000000">
-</span><span style="COLOR: #008080">56</span> <span style="COLOR: #000000">
-</span><span style="COLOR: #008080">57</span> <span style="COLOR: #000000">        </span><span style="COLOR: #008000">'</span><span style="COLOR: #008000">'Load lblMessage1 with it's value on initial load of the page.</span><span style="COLOR: #008000">
-</span><span style="COLOR: #008080">58</span> <span style="COLOR: #000000">        RaiseCallbackEvent(</span><span style="COLOR: #000000">1</span><span style="COLOR: #000000">)
-</span><span style="COLOR: #008080">59</span> <span style="COLOR: #000000">        lblMessage1.Text </span><span style="COLOR: #000000">=</span><span style="COLOR: #000000"> GetCallbackResult()
-</span><span style="COLOR: #008080">60</span> <span style="COLOR: #000000">    </span><span style="COLOR: #0000ff">End Sub</span><span style="COLOR: #000000">
-</span><span style="COLOR: #008080">61</span> <span style="COLOR: #000000"></</span><span style="COLOR: #000000">script</span><span style="COLOR: #000000">></span><span style="COLOR: #000000">
-</span><span style="COLOR: #008080">62</span> <span style="COLOR: #000000"><</span><span style="COLOR: #000000">asp:Button ID</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Button1</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"> runat</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">server</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"> Text</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">Get DateTime Stamp</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"> </span><span style="COLOR: #000000">/></span><span style="COLOR: #000000">
-</span><span style="COLOR: #008080">63</span> <span style="COLOR: #000000">&amp;</span><span style="COLOR: #000000">nbsp;</span><span style="COLOR: #000000">&amp;</span><span style="COLOR: #000000">nbsp;
-</span><span style="COLOR: #008080">64</span> <span style="COLOR: #000000"><</span><span style="COLOR: #000000">asp:Label runat</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">server</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000"> ID</span><span style="COLOR: #000000">=</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">lblMessage1</span><span style="COLOR: #000000">"</span><span style="COLOR: #000000">></</span><span style="COLOR: #000000">asp:Label</span><span style="COLOR: #000000">></span></div></pre>
-</div>
+```VB
+<%@ Control Language="VB" ClassName="ClientCallbackControl"%>
+ <%@ Implements Interface="System.Web.UI.ICallbackEventHandler"%>
+ <script runat="server">
+     ''This is the variable that holds the client callback
+     ''results that will be returned to the client.
+     Dim MyCallbackResult As String
+ 
+     ''This is the server-side function that is called when the
+     ''client callback results are returned to the browser.
+     Public Function GetCallbackResult() As String Implements System.Web.UI.ICallbackEventHandler.GetCallbackResult
+         Return MyCallbackResult
+     End Function
+ 
+     ''This is the server-side function that is called when the
+     ''client callback is fired off.
+     Public Sub RaiseCallbackEvent(ByVal eventArgument As String) Implements System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent
+         MyCallbackResult = Now.ToString
+     End Sub
+ 
+     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+         ''Get Client Side ID of this instance of the User Control
+         ''This will be used to Prefix all the JavaScript functions
+         ''this control uses so that you can have multiple instances
+         ''of this control on the same page.
+         Dim strJSCallbackPrefix As String = Me.ClientID
+ 
+         ''Get the JavaScript that will callback to the server
+         Dim cm As ClientScriptManager = Page.ClientScript
+         Dim cbReference As String
+         cbReference = cm.GetCallbackEventReference(Me, _
+             "arg", _
+             strJSCallbackPrefix & "ReceiveServerData", _
+             "context")
+ 
+         ''Declare the function that will be called to fire off a
+         ''client callback to the server.
+         Dim callbackScript As String = _
+             "function " & strJSCallbackPrefix & "CallServer(arg, context){" & cbReference & "; }"
+         cm.RegisterClientScriptBlock(Me.GetType(), strJSCallbackPrefix & "CallServer", callbackScript, True)
+ 
+         ''Declare the function that will recieve the client callback
+         ''results from the server.
+         Dim strReceiveServerData As String = _
+             "function " & strJSCallbackPrefix & "ReceiveServerData(arg, context){context.innerHTML = arg;}"
+         cm.RegisterClientScriptBlock(Me.GetType, strJSCallbackPrefix & "ReceiveServerData", strReceiveServerData, True)
+ 
+ 
+         ''Set the JavaScript that is run when the button is clicked
+         ''This sends the context of lblMessage1 so that the
+         ''ReceiveServerData function can change its value to what is
+         ''returned from the server.
+        Button1.OnClientClick = _
+             strJSCallbackPrefix & "CallServer(1, document.getElementById('" & lblMessage1.ClientID & "')); " & _
+             "return false;"
+ 
+ 
+         ''Load lblMessage1 with it's value on initial load of the page.
+         RaiseCallbackEvent(1)
+         lblMessage1.Text = GetCallbackResult()
+     End Sub
+ </script>
+ <asp:Button ID="Button1" runat="server" Text="Get DateTime Stamp" />
+ <asp:Label runat="server" ID="lblMessage1"></asp:Label>
+```

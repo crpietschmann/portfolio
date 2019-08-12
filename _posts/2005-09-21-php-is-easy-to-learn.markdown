@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/09/21/PHP-is-easy-to-learn.aspx
   - /post/2005/09/21/PHP-is-easy-to-learn
   - /post/2005/09/21/php-is-easy-to-learn
   - /post.aspx?id=7d9f3de5-b8e0-44d8-874e-363701a3d51e
 ---
-<!-- more -->
 
 Now that's something I never imagined I would say.
 

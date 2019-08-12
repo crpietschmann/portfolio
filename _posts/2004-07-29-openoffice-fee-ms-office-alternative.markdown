@@ -8,14 +8,13 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2004/07/29/OpenOffice-Fee-MS-Office-alternative.aspx
   - /post/2004/07/29/OpenOffice-Fee-MS-Office-alternative
   - /post/2004/07/29/openoffice-fee-ms-office-alternative
   - /post.aspx?id=fbc4db93-df9f-4291-b719-5932100fc83e
 ---
-<!-- more -->
 
-There is a Free Open Source alternative to MS-Office. Open Office is a professional quality application suite unlike most of the open source projects I've seen. It has all the features of MS-Office and you can even open and save all the MS Document Formats. Open Office even has a couple really neat features that MS-Office doesn't have: Writer can save to PDF and Impress can save SWF (Macromedia Flash). It is currently at Version 1.1, and 2.0 is currently in development. I haven't looked very indepth at the features of this suite, but I am very impressed with it being Free Open Source and all.
-
+There is a Free Open Source alternative to MS-Office. Open Office is a professional quality application suite unlike most of the open source projects I've seen. It has all the features of MS-Office and you can even open and save all the MS Document Formats. Open Office even has a couple really neat features that MS-Office doesn't have: Writer can save to PDF and Impress can save SWF (Macromedia Flash). It is currently at Version 1.1, and 2.0 is currently in development. I haven't looked very in-depth at the features of this suite, but I am very impressed with it being Free Open Source and all.
 
 <TABLE border=1>
 <TBODY>

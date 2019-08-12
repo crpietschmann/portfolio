@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "Swift"]
 redirect_from: 
+  - /post/2014/11/21/5-Common-CSharp-tasks-in-Apple-Swift-Programming-Language.aspx
   - /post/2014/11/21/5-Common-CSharp-tasks-in-Apple-Swift-Programming-Language
   - /post/2014/11/21/5-common-csharp-tasks-in-apple-swift-programming-language
   - /post.aspx?id=20cce4b8-5584-4d49-a55d-617390cccdc6

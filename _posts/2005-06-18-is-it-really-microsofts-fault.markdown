@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/06/18/Is-it-really-Microsofts-fault.aspx
   - /post/2005/06/18/Is-it-really-Microsofts-fault
   - /post/2005/06/18/is-it-really-microsofts-fault
   - /post.aspx?id=7834d5f6-077c-453f-bfea-b8e5d7d84cc7
 ---
-<!-- more -->
 
 Most of the problems I've experienced with Win9x and Win2K/XP with "blue screens" have been caused by problems with device drivers. These were all device drivers that <a title="Microsoft" href="http://Microsoft.com" target="_blank">Microsoft</a> didn't write. Yes, they were third party device drivers, but should I blame Microsoft? I think my analogy of nails on the road (stated above) somes this up perfectly.
 

@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/11/23/RSS-is-no-longer-a-one-way-street.aspx
   - /post/2005/11/23/RSS-is-no-longer-a-one-way-street
   - /post/2005/11/23/rss-is-no-longer-a-one-way-street
   - /post.aspx?id=ecd20c62-c000-44c6-a261-32365de93b05
 ---
-<!-- more -->
 
 The Simple Sharing Extensions (SSE) from <a title="Microsoft" href="http://Microsoft.com" target="_blank">Microsoft</a> is a specification that extends RSS allowing a bidirectional flow of data. I haven't read through the entire FAQ yet, but this sounds awesome! The SSE specifications are being licensed under the Creative Commons license, which allows anyone to use it and extend upon it as they see fit.
 

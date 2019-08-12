@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/03/10/My-blog-seems-to-be-malfunctioning!-Ahhh.aspx
   - /post/2005/03/10/My-blog-seems-to-be-malfunctioning!-Ahhh
   - /post/2005/03/10/my-blog-seems-to-be-malfunctioning!-ahhh
   - /post.aspx?id=61c7549c-c67d-4998-a15a-f38f0cf5bbb1
 ---
-<!-- more -->
 
 My blog seems to be malfunctioning! Ahhh....
 

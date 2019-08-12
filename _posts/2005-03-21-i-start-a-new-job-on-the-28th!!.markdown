@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/03/21/I-start-a-new-job-on-the-28th!!.aspx
   - /post/2005/03/21/I-start-a-new-job-on-the-28th!!
   - /post/2005/03/21/i-start-a-new-job-on-the-28th!!
   - /post.aspx?id=2de52298-44ae-41d8-9781-8ee559365924
 ---
-<!-- more -->
 
 <IMG src="/Blog/images/14/o_HomestoreLogo.gif" align=right border=0>I'm starting a new job on next Monday, the 28th. I'm pretty psyched about it. I have needs and well my current job just isn't cutting it. I don't want to go to far into detail at this moment. (Must play the whole politics thing.)
 

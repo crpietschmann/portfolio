@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/05/09/I-recieved-my-MSDN-subscription-today!!.aspx
   - /post/2006/05/09/I-recieved-my-MSDN-subscription-today!!
   - /post/2006/05/09/i-recieved-my-msdn-subscription-today!!
   - /post.aspx?id=6e6cedba-11e1-4a39-86a5-c7c41e822f11
 ---
-<!-- more -->
 
 Sweet! I finally recieved my MSDN Subscription ID today! It only took two weeks since I signed up on the MVPInvite.com website using my secret Invite Code. Everything is so automatic these days, I was almost thinking something got screwed up and I wouldn't get my subscription.
 

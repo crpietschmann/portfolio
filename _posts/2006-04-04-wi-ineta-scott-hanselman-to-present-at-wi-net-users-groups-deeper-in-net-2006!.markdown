@@ -8,11 +8,11 @@ published: true
 categories: ["blog", "archives"]
 tags: ["WI-INETA"]
 redirect_from: 
+  - /post/2006/04/04/WI-INETA-Scott-Hanselman-to-present-at-WI-NET-Users-Groups-Deeper-in-NET-2006!.aspx
   - /post/2006/04/04/WI-INETA-Scott-Hanselman-to-present-at-WI-NET-Users-Groups-Deeper-in-NET-2006!
   - /post/2006/04/04/wi-ineta-scott-hanselman-to-present-at-wi-net-users-groups-deeper-in-net-2006!
   - /post.aspx?id=0fb5416e-6d0e-4909-bfa6-25af29af72ca
 ---
-<!-- more -->
 
 On April 22nd at the <a href="http://www.wi-ineta.org/didn/06">Wisconsin .NET Users Group's Deeper in .NET 2006 </a>event, Scott Hanselman will be presenting on "<a href="http://wi-ineta.org/DesktopDefault.aspx?tabid=104#anatomy">Anatomy of a Successful ASP.NET Application: Inside DasBlog</a>". DasBlog is one of the most popular ASP.NET blogging engines. In this presentation Scott will cover creative uses of HttpModules and HttpHandlers, using background threads within ASP.NET, internationalization, caching, skinning, creating a macro language, Web Services that are more than SOAP and more.
 

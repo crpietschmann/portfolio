@@ -8,599 +8,302 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2005/11/12/ASPNET-20-URL-Mapping-with-RegEx-Support.aspx
   - /post/2005/11/12/ASPNET-20-URL-Mapping-with-RegEx-Support
   - /post/2005/11/12/aspnet-20-url-mapping-with-regex-support
   - /post.aspx?id=21c6af9f-f2b6-47a0-9749-c3731c41d475
+  - /Blog/archive/2005/11/12/762.aspx
 ---
-<!-- more -->
 
+The one big limitation of the URL Mapping functionality built in to ASP.NET 2.0 is that it doesn't support regular expressions. I ported my v1.1 URL Mapping implementation over to v2.0 and added support for regular expressions. It really wasn't too difficult; I only had to modify two lines of code to port it over to ASP.NET 2.0. Then I had to modify 4 lines of code to add RegEx support. My implementation works just like the ASP.NET 2.0 URL Mapping functionality with the addition of RegEx.
 
-<span style="font-size: 8.5pt; font-family: Verdana">The one big limitation of the URL Mapping functionality built in to <a href="http://asp.net/" target="_blank" title="ASP.NET"><font color="#336699">ASP.NET</font></a> 2.0 is that it doesn&#39;t support regular expressions. I ported my v1.1 URL Mapping implementation over to v2.0 and added support for regular expressions. It really wasn&#39;t too difficult; I only had to modify two lines of code to port it over to ASP.NET 2.0. Then I had to modify 4 lines of code to add RegEx support. My implementation works just like the ASP.NET 2.0 URL Mapping functionality with the addition of RegEx.</span>
-
-
-
-<span style="font-size: 8.5pt; font-family: Verdana">My code allows to create Url Mappings similar to the following:
-
+My code allows to create Url Mappings similar to the following:
 ~/Chris.aspx to ~/Default.aspx?p=chris
+~/Show154.aspx to ~/Default.aspx?p=154
 
-~/Show154.aspx to ~/Default.aspx?p=154</span>
+Some Performance tips for using this code:
 
+1. Use as few Url Mapping definitions as possible since it parses them from the first to the last and stops when it finds a match. If a page requested doesn't match any of the definitions it will go through all of them before moving on to complete the page request.
+2. Put the most frequently used Url Mappings first in the list so that they the ones that are parsed first.
+3. The first Url Mapping in placed in my code (`<add url="~/(.*)default\.aspx" mappedUrl="~/$1default.aspx" />`) is a little trick that allows all requests for the Default.aspx page in the root or any sub-folder of the application to be completed with out having to parse through the entire list of Url Mappings.
+Regular expression support just seems logical in the v2.0 URL Mapping functionality, but I don't know why Microsoft didn't add it. I guess they wanted me to have something to do.  :)
 
+Enjoy!
 
-**<span style="font-size: 8.5pt; font-family: Verdana">Some Performance tips for using this code:</span>**<span style="font-size: 8.5pt; font-family: Verdana"></span>
+Code for this implementation listed below:
 
-<p style="margin: 0in 0in 0pt 0.5in; text-indent: -0.25in" class="MsoNormal">
-<span style="font-size: 8.5pt; font-family: Verdana"><span>1.<span style="font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal">       </span></span></span><span style="font-size: 8.5pt; font-family: Verdana">Use as few Url Mapping definitions as possible since it parses them from the first to the last and stops when it finds a match. If a page requested doesn&#39;t match any of the definitions it will go through all of them before moving on to complete the page request. </span>
+## /App_Code/RegExUrlMappingBaseModule.vb
 
-<p style="margin: 0in 0in 0pt 0.5in; text-indent: -0.25in" class="MsoNormal">
-<span style="font-size: 8.5pt; font-family: Verdana"><span>2.<span style="font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal">       </span></span></span><span style="font-size: 8.5pt; font-family: Verdana">Put the most frequently used Url Mappings first in the list so that they the ones that are parsed first.</span>
+```VB
+Imports Microsoft.VisualBasic
 
-<p style="margin: 0in 0in 0pt 0.5in; text-indent: -0.25in" class="MsoNormal">
-<span style="font-size: 8.5pt; font-family: Verdana"><span>3.<span style="font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal">       </span></span></span><span style="font-size: 8.5pt; font-family: Verdana">The first Url Mapping in placed in my code (</span><span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">add</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">url</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">~/(.*)default\.aspx</span>&quot;<span style="color: blue"> </span><span style="color: red">mappedUrl</span><span style="color: blue">=</span>&quot;<span style="color: blue">~/$1default.aspx</span>&quot;<span style="color: blue"> /></span></span><span style="font-size: 8.5pt; font-family: Verdana">) is a little trick that allows all requests for the Default.aspx page in the root or any sub-folder of the application to be completed with out having to parse through the entire list of Url Mappings.</span>
+Imports System.Web
 
+Namespace RegExUrlMapping_HTTPModule
 
+Public Class RegExUrlMappingBaseModule
 
-<span style="font-size: 8.5pt; font-family: Verdana">Regular expression support just seems logical in the v2.0 URL Mapping functionality, but I don&#39;t know why <a href="http://microsoft.com/" target="_blank" title="Microsoft"><font color="#336699">Microsoft</font></a> didn&#39;t add it. I guess they wanted me to have something to do.  :)</span>
+Implements System.Web.IHttpModule
 
+Sub Init(ByVal app As HttpApplication) Implements IHttpModule.Init
 
+AddHandler app.AuthorizeRequest, AddressOf Me.BaseModuleRewriter_AuthorizeRequest
 
-<span style="font-size: 8.5pt; font-family: Verdana">Enjoy!</span>
+End Sub
 
+Sub Dispose() Implements System.Web.IHttpModule.Dispose
 
+End Sub
 
-<span style="font-size: 8.5pt; font-family: Verdana">Code for this implementation listed below:</span>
+Sub BaseModuleRewriter_AuthorizeRequest(ByVal sender As Object, ByVal e As EventArgs)
 
+Dim app As HttpApplication = CType(sender, HttpApplication)
 
+Rewrite(app.Request.Path, app)
 
-**<span style="font-size: 18pt; font-family: Verdana">/App_Code/RegExUrlMappingBaseModule.vb</span>**<span style="font-size: 8.5pt; font-family: Verdana"></span>
+End Sub
 
+Overridable Sub Rewrite(ByVal requestedPath As String, ByVal app As HttpApplication)
 
+End Sub
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Imports</span><span style="font-size: 10pt; font-family: Verdana"> Microsoft.VisualBasic</span>
+End Class
 
+End Namespace
+```
 
+## /App_Code/RegExUrlMappingConfigHandler.vb
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Imports</span><span style="font-size: 10pt; font-family: Verdana"> System.Web</span>
+```VB
+Imports Microsoft.VisualBasic
 
+Imports System.Configuration
 
+Imports System.Xml
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Namespace</span><span style="font-size: 10pt; font-family: Verdana"> RegExUrlMapping_HTTPModule</span>
+Namespace RegExUrlMapping_HTTPModule
 
+Public Class RegExUrlMappingConfigHandler
 
+Implements IConfigurationSectionHandler
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Public</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Class</span> RegExUrlMappingBaseModule</span>
+Dim _Section As XmlNode
 
+Public Function Create(ByVal parent As Object, ByVal configContext As Object, ByVal section As System.Xml.XmlNode) As Object Implements System.Configuration.IConfigurationSectionHandler.Create
 
+_Section = section
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Implements</span><span style="font-size: 10pt; font-family: Verdana"> System.Web.IHttpModule</span>
+Return Me
 
+End Function
 
+''' Get whether url mapping is enabled in the app.config
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Sub</span><span style="font-size: 10pt; font-family: Verdana"> Init(<span style="color: blue">ByVal</span> app <span style="color: blue">As</span> HttpApplication) <span style="color: blue">Implements</span> IHttpModule.Init</span>
+Friend Function Enabled() As Boolean
 
+If _Section.Attributes("enabled").Value.ToLower = "true" Then
 
+Return True
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">AddHandler</span><span style="font-size: 10pt; font-family: Verdana"> app.AuthorizeRequest, <span style="color: blue">AddressOf</span> <span style="color: blue">Me</span>.BaseModuleRewriter_AuthorizeRequest</span>
+Else
 
+Return False
 
+End If
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Sub</span></span>
+End Function
 
+''' Get the matching "mapped Url" from the web.config file if there is one.
 
+Friend Function MappedUrl(ByVal url As String) As String
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Sub</span><span style="font-size: 10pt; font-family: Verdana"> Dispose() <span style="color: blue">Implements</span> System.Web.IHttpModule.Dispose</span>
+Dim x As XmlNode
 
+Dim oReg As Regex
 
+For Each x In _Section.ChildNodes
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Sub</span></span>
+oReg = New Regex(x.Attributes("url").Value.ToLower)
 
+If oReg.Match(url).Success Then
 
+Return oReg.Replace(url, x.Attributes("mappedUrl").Value.ToLower)
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Sub</span><span style="font-size: 10pt; font-family: Verdana"> BaseModuleRewriter_AuthorizeRequest(<span style="color: blue">ByVal</span> sender <span style="color: blue">As</span> <span style="color: blue">Object</span>, <span style="color: blue">ByVal</span> e <span style="color: blue">As</span> EventArgs)</span>
+End If
 
+Next
 
+Return ""
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Dim</span><span style="font-size: 10pt; font-family: Verdana"> app <span style="color: blue">As</span> HttpApplication = <span style="color: blue">CType</span>(sender, HttpApplication)</span>
+End Function
 
+End Class
 
+End Namespace
+```
 
-<span style="font-size: 10pt; font-family: Verdana">Rewrite(app.Request.Path, app)</span>
+## /App_Code/RegExUrlMappingModule.vb
 
+```VB
+Imports Microsoft.VisualBasic
 
+Imports System.Web
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Sub</span></span>
+Imports System.Configuration
 
+Namespace RegExUrlMapping_HTTPModule
 
+Public Class RegExUrlMappingModule
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Overridable</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Sub</span> Rewrite(<span style="color: blue">ByVal</span> requestedPath <span style="color: blue">As</span> <span style="color: blue">String</span>, <span style="color: blue">ByVal</span> app <span style="color: blue">As</span> HttpApplication)</span>
+Inherits RegExUrlMappingBaseModule
 
+Overrides Sub Rewrite(ByVal requestedPath As String, ByVal app As HttpApplication)
 
+''Implement functionality here that mimics the 'URL Mapping' features of ASP.NET 2.0
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Sub</span></span>
+Dim config As RegExUrlMappingConfigHandler = CType(ConfigurationManager.GetSection("system.web/RegExUrlMapping"), RegExUrlMappingConfigHandler)
 
+Dim pathOld As String, pathNew As String = ""
 
+If config.Enabled Then
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Class</span></span>
+pathOld = app.Request.RawUrl
 
+''Get the request page without the querystring parameters
 
+Dim requestedPage As String = app.Request.RawUrl.ToLower
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Namespace</span></span>
+If requestedPage.IndexOf("?") > -1 Then
 
+requestedPage = requestedPage.Substring(0, requestedPage.IndexOf("?"))
 
+End If
 
-**<span style="font-size: 18pt; font-family: Verdana">/App_Code/RegExUrlMappingConfigHandler.vb</span>**<span style="font-size: 8.5pt; font-family: Verdana"></span>
+''Format the requested page (url) to have a ~ instead of the virtual path of the app
 
+Dim appVirtualPath As String = app.Request.ApplicationPath
 
+If requestedPage.Length >= appVirtualPath.Length Then
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Imports</span><span style="font-size: 10pt; font-family: Verdana"> Microsoft.VisualBasic</span>
+If requestedPage.Substring(0, appVirtualPath.Length).ToLower = appVirtualPath.ToLower Then
 
+requestedPage = requestedPage.Substring(appVirtualPath.Length)
 
+If requestedPage.Substring(0, 1) = "/" Then
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Imports</span><span style="font-size: 10pt; font-family: Verdana"> System.Configuration</span>
+requestedPage = "~" & requestedPage
 
+Else
 
+requestedPage = "~/" & requestedPage
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Imports</span><span style="font-size: 10pt; font-family: Verdana"> System.Xml</span>
+End If
 
+End If
 
+End If
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Namespace</span><span style="font-size: 10pt; font-family: Verdana"> RegExUrlMapping_HTTPModule</span>
+''Get the new path to rewrite the url to if it meets one
 
+''of the defined virtual urls.
 
+pathNew = config.MappedUrl(requestedPage)
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Public</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Class</span> RegExUrlMappingConfigHandler</span>
+''If the requested url matches one of the virtual one
 
+''the lets go and rewrite it.
 
+If pathNew.Length > 0 Then
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Implements</span><span style="font-size: 10pt; font-family: Verdana"> IConfigurationSectionHandler</span>
+If pathNew.IndexOf("?") > -1 Then
 
+''The matched page has a querystring defined
 
+If pathOld.IndexOf("?") > -1 Then
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Dim</span><span style="font-size: 10pt; font-family: Verdana"> _Section <span style="color: blue">As</span> XmlNode</span>
+pathNew += "&" & Right(pathOld, pathOld.Length - pathOld.IndexOf("?") - 1)
 
+End If
 
+Else
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Public</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Function</span> Create(<span style="color: blue">ByVal</span> parent <span style="color: blue">As</span> <span style="color: blue">Object</span>, <span style="color: blue">ByVal</span> configContext <span style="color: blue">As</span> <span style="color: blue">Object</span>, <span style="color: blue">ByVal</span> section <span style="color: blue">As</span> System.Xml.XmlNode) <span style="color: blue">As</span> <span style="color: blue">Object</span> <span style="color: blue">Implements</span> System.Configuration.IConfigurationSectionHandler.Create</span>
+''The matched page doesn't have a querystring defined
 
+If pathOld.IndexOf("?") > -1 Then
 
+pathNew += Right(pathOld, pathOld.Length - pathOld.IndexOf("?"))
 
-<span style="font-size: 10pt; font-family: Verdana">_Section = section</span>
+End If
 
+End If
 
+''Rewrite to the new url
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Return</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Me</span></span>
+HttpContext.Current.RewritePath(pathNew, false)
 
+End If
 
+End If
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Function</span></span>
+End Sub
 
+End Class
 
+End Namespace
+```
 
-<span style="font-size: 10pt; color: green; font-family: Verdana">&#39;&#39;&#39; Get whether url mapping is enabled in the app.config</span>
+## /Web.Config
 
+```
+<configuration>
 
+<!-- Declare the custom 'RegExUrlMapping' section and handler -->
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Friend</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Function</span> Enabled() <span style="color: blue">As</span> <span style="color: blue">Boolean</span></span>
+<configSections>
 
+<sectionGroup name="system.web">
 
+<section name="RegExUrlMapping" type="RegExUrlMapping_HTTPModule.RegExUrlMappingConfigHandler"/>
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> _Section.Attributes(<span style="color: maroon">&quot;enabled&quot;</span>).Value.ToLower = <span style="color: maroon">&quot;true&quot;</span> <span style="color: blue">Then</span></span>
+</sectionGroup>
 
+</configSections>
 
+<system.web>
+<!-- Tell ASP.NET to use the RegEx URL Mapping HTTP Module -->
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Return</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">True</span></span>
+<httpModules>
 
+<add type="RegExUrlMapping_HTTPModule.RegExUrlMappingModule" name="RegExUrlMappingModule"/>
 
+</httpModules>
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Else</span>
+<!-- The RegEx URL Mapping parser goes through these in sequential order. -->
 
+<RegExUrlMapping enabled="true">
+<add url="~/(.*)default\.aspx" mappedUrl="~/$1default.aspx" />
 
+<add url="~/Chris.aspx" mappedUrl="~/Default.aspx?p=chris"/>
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Return</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">False</span></span>
+<add url="~/show(.*)\.aspx" mappedUrl="~/Default.aspx?p=$1&amp;section=3"/>
 
+</RegExUrlMapping>
 
+</system.web>
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">If</span></span>
+</configuration>
+```
 
+ASP.NET 1.1 Url Mapping code can be found here: <http://pietschsoft.com/Blog/archive/2005/07/04/717.aspx>
 
+> **Update 11/14/2005** - Scott Guthrie (ScottGu) has posted about why they didn't add Regular Expression support to the ASP.NET 2.0 URL Mapping on his blog. He has also posted a link to this blog entry in that blog post. It's pretty cool that my blog has gotten noticed by him. <http://weblogs.asp.net/scottgu/archive/2005/11/14/430493.aspx>
 
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Function</span></span>
+> **Update 9/10/2007** - I fixed a bug in the RegExUrlMapping code that was preventing ASP.NET Themes from correctly loading.
+>
+> In the RegExUrlMappingModule class change the following line of the Rewrite method: `HttpContext.Current.RewritePath(pathNew)`
+>
+> To be the following instead: `HttpContext.Current.RewritePath(pathNew, false)`
+>
+> I already made this change to the code above so anyone copying it from now on will get this fix.
 
-
-
-<span style="font-size: 10pt; color: green; font-family: Verdana">&#39;&#39;&#39; Get the matching &quot;mapped Url&quot; from the web.config file if there is one.</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Friend</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Function</span> MappedUrl(<span style="color: blue">ByVal</span> url <span style="color: blue">As</span> <span style="color: blue">String</span>) <span style="color: blue">As</span> <span style="color: blue">String</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Dim</span><span style="font-size: 10pt; font-family: Verdana"> x <span style="color: blue">As</span> XmlNode</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Dim</span><span style="font-size: 10pt; font-family: Verdana"> oReg <span style="color: blue">As</span> Regex</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">For</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Each</span> x <span style="color: blue">In</span> _Section.ChildNodes</span>
-
-
-
-<span style="font-size: 10pt; font-family: Verdana">oReg = <span style="color: blue">New</span> Regex(x.Attributes(<span style="color: maroon">&quot;url&quot;</span>).Value.ToLower)</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> oReg.Match(url).Success <span style="color: blue">Then</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Return</span><span style="font-size: 10pt; font-family: Verdana"> oReg.Replace(url, x.Attributes(<span style="color: maroon">&quot;mappedUrl&quot;</span>).Value.ToLower)</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">If</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Next</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Return</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: maroon">&quot;&quot;</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Function</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Class</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Namespace</span></span>
-
-
-
-**<span style="font-size: 18pt; font-family: Verdana">/App_Code/RegExUrlMappingModule.vb</span>**<span style="font-size: 8.5pt; font-family: Verdana"></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Imports</span><span style="font-size: 10pt; font-family: Verdana"> Microsoft.VisualBasic</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Imports</span><span style="font-size: 10pt; font-family: Verdana"> System.Web</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Imports</span><span style="font-size: 10pt; font-family: Verdana"> System.Configuration</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Namespace</span><span style="font-size: 10pt; font-family: Verdana"> RegExUrlMapping_HTTPModule</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Public</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Class</span> RegExUrlMappingModule</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Inherits</span><span style="font-size: 10pt; font-family: Verdana"> RegExUrlMappingBaseModule</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Overrides</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Sub</span> Rewrite(<span style="color: blue">ByVal</span> requestedPath <span style="color: blue">As</span> <span style="color: blue">String</span>, <span style="color: blue">ByVal</span> app <span style="color: blue">As</span> HttpApplication)</span>
-
-
-
-<span style="font-size: 10pt; color: green; font-family: Verdana">&#39;&#39;Implement functionality here that mimics the &#39;URL Mapping&#39; features of ASP.NET 2.0</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Dim</span><span style="font-size: 10pt; font-family: Verdana"> config <span style="color: blue">As</span> RegExUrlMappingConfigHandler = <span style="color: blue">CType</span>(ConfigurationManager.GetSection(<span style="color: maroon">&quot;system.web/RegExUrlMapping&quot;</span>), RegExUrlMappingConfigHandler)</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Dim</span><span style="font-size: 10pt; font-family: Verdana"> pathOld <span style="color: blue">As</span> <span style="color: blue">String</span>, pathNew <span style="color: blue">As</span> <span style="color: blue">String</span> = <span style="color: maroon">&quot;&quot;</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> config.Enabled <span style="color: blue">Then</span></span>
-
-
-
-<span style="font-size: 10pt; font-family: Verdana">pathOld = app.Request.RawUrl</span>
-
-
-
-<span style="font-size: 10pt; color: green; font-family: Verdana">&#39;&#39;Get the request page without the querystring parameters</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Dim</span><span style="font-size: 10pt; font-family: Verdana"> requestedPage <span style="color: blue">As</span> <span style="color: blue">String</span> = app.Request.RawUrl.ToLower</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> requestedPage.IndexOf(<span style="color: maroon">&quot;?&quot;</span>) > -1 <span style="color: blue">Then</span></span>
-
-
-
-<span style="font-size: 10pt; font-family: Verdana">requestedPage = requestedPage.Substring(0, requestedPage.IndexOf(<span style="color: maroon">&quot;?&quot;</span>))</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">If</span></span>
-
-
-
-<span style="font-size: 10pt; color: green; font-family: Verdana">&#39;&#39;Format the requested page (url) to have a ~ instead of the virtual path of the app</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Dim</span><span style="font-size: 10pt; font-family: Verdana"> appVirtualPath <span style="color: blue">As</span> <span style="color: blue">String</span> = app.Request.ApplicationPath</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> requestedPage.Length >= appVirtualPath.Length <span style="color: blue">Then</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> requestedPage.Substring(0, appVirtualPath.Length).ToLower = appVirtualPath.ToLower <span style="color: blue">Then</span></span>
-
-
-
-<span style="font-size: 10pt; font-family: Verdana">requestedPage = requestedPage.Substring(appVirtualPath.Length)</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> requestedPage.Substring(0, 1) = <span style="color: maroon">&quot;/&quot;</span> <span style="color: blue">Then</span></span>
-
-
-
-<span style="font-size: 10pt; font-family: Verdana">requestedPage = <span style="color: maroon">&quot;~&quot;</span> &amp; requestedPage</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Else</span>
-
-
-
-<span style="font-size: 10pt; font-family: Verdana">requestedPage = <span style="color: maroon">&quot;~/&quot;</span> &amp; requestedPage</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">If</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">If</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">If</span></span>
-
-
-
-<span style="font-size: 10pt; color: green; font-family: Verdana">&#39;&#39;Get the new path to rewrite the url to if it meets one</span>
-
-
-
-<span style="font-size: 10pt; color: green; font-family: Verdana">&#39;&#39;of the defined virtual urls.</span>
-
-
-
-<span style="font-size: 10pt; font-family: Verdana">pathNew = config.MappedUrl(requestedPage)</span>
-
-
-
-<span style="font-size: 10pt; color: green; font-family: Verdana">&#39;&#39;If the requested url matches one of the virtual one</span>
-
-
-
-<span style="font-size: 10pt; color: green; font-family: Verdana">&#39;&#39;the lets go and rewrite it.</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> pathNew.Length > 0 <span style="color: blue">Then</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> pathNew.IndexOf(<span style="color: maroon">&quot;?&quot;</span>) > -1 <span style="color: blue">Then</span></span>
-
-
-
-<span style="font-size: 10pt; color: green; font-family: Verdana">&#39;&#39;The matched page has a querystring defined</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> pathOld.IndexOf(<span style="color: maroon">&quot;?&quot;</span>) > -1 <span style="color: blue">Then</span></span>
-
-
-
-<span style="font-size: 10pt; font-family: Verdana">pathNew += <span style="color: maroon">&quot;&amp;&quot;</span> &amp; Right(pathOld, pathOld.Length - pathOld.IndexOf(<span style="color: maroon">&quot;?&quot;</span>) - 1)</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">If</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">Else</span>
-
-
-
-<span style="font-size: 10pt; color: green; font-family: Verdana">&#39;&#39;The matched page doesn&#39;t have a querystring defined</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">If</span><span style="font-size: 10pt; font-family: Verdana"> pathOld.IndexOf(<span style="color: maroon">&quot;?&quot;</span>) > -1 <span style="color: blue">Then</span></span>
-
-
-
-<span style="font-size: 10pt; font-family: Verdana">pathNew += Right(pathOld, pathOld.Length - pathOld.IndexOf(<span style="color: maroon">&quot;?&quot;</span>))</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">If</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">If</span></span>
-
-
-
-<span style="font-size: 10pt; color: green; font-family: Verdana">&#39;&#39;Rewrite to the new url</span>
-
-
-
-<span style="font-size: 10pt; font-family: Verdana">HttpContext.Current.RewritePath(pathNew, <font color="#0000ff">false</font>)</span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">If</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">If</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Sub</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Class</span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana">End</span><span style="font-size: 10pt; font-family: Verdana"> <span style="color: blue">Namespace</span></span>
-
-
-
-**<span style="font-size: 18pt; font-family: Verdana">/Web.Config</span>**<span style="font-size: 8.5pt; font-family: Verdana"></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">configuration</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"><!--</span><span style="font-size: 10pt; color: green; font-family: Verdana"> Declare the custom &#39;RegExUrlMapping&#39; section and handler </span><span style="font-size: 10pt; color: blue; font-family: Verdana">--></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">configSections</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">sectionGroup</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">name</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">system.web</span>&quot;<span style="color: blue">></span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">section</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">name</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">RegExUrlMapping</span>&quot;<span style="color: blue"> </span><span style="color: red">type</span><span style="color: blue">=</span>&quot;<span style="color: blue">RegExUrlMapping_HTTPModule.RegExUrlMappingConfigHandler</span>&quot;<span style="color: blue">/></span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"></</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">sectionGroup</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"></</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">configSections</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span>
-
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
-<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">system.web</span><span style="font-size: 10pt; color: blue; font-family: Verdana">> </span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"><!--</span><span style="font-size: 10pt; color: green; font-family: Verdana"> Tell ASP.NET to use the RegEx URL Mapping HTTP Module </span><span style="font-size: 10pt; color: blue; font-family: Verdana">--></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">httpModules</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">add</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">type</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">RegExUrlMapping_HTTPModule.RegExUrlMappingModule</span>&quot;<span style="color: blue"> </span><span style="color: red">name</span><span style="color: blue">=</span>&quot;<span style="color: blue">RegExUrlMappingModule</span>&quot;<span style="color: blue">/></span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"></</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">httpModules</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"><!--</span><span style="font-size: 10pt; color: green; font-family: Verdana"> The RegEx URL Mapping parser goes through these in sequential order. </span><span style="font-size: 10pt; color: blue; font-family: Verdana">--></span>
-
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
-<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">RegExUrlMapping</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">enabled</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">true</span>&quot;<span style="color: blue">> </span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">add</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">url</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">~/(.*)default\.aspx</span>&quot;<span style="color: blue"> </span><span style="color: red">mappedUrl</span><span style="color: blue">=</span>&quot;<span style="color: blue">~/$1default.aspx</span>&quot;<span style="color: blue"> /></span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">add</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">url</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">~/Chris.aspx</span>&quot;<span style="color: blue"> </span><span style="color: red">mappedUrl</span><span style="color: blue">=</span>&quot;<span style="color: blue">~/Default.aspx?p=chris</span>&quot;<span style="color: blue">/></span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"><</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">add</span><span style="font-size: 10pt; color: blue; font-family: Verdana"> </span><span style="font-size: 10pt; color: red; font-family: Verdana">url</span><span style="font-size: 10pt; color: blue; font-family: Verdana">=</span><span style="font-size: 10pt; font-family: Verdana">&quot;<span style="color: blue">~/show(.*)\.aspx</span>&quot;<span style="color: blue"> </span><span style="color: red">mappedUrl</span><span style="color: blue">=</span>&quot;<span style="color: blue">~/Default.aspx?p=$1</span><span style="color: red">&amp;amp;</span><span style="color: blue">section=3</span>&quot;<span style="color: blue">/></span></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"></</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">RegExUrlMapping</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span><span style="font-size: 8.5pt; font-family: Verdana"></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"></</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">system.web</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"></</span><span style="font-size: 10pt; color: maroon; font-family: Verdana">configuration</span><span style="font-size: 10pt; color: blue; font-family: Verdana">></span><span style="font-size: 8.5pt; font-family: Verdana"></span>
-
-
-
-<span style="font-size: 10pt; color: blue; font-family: Verdana"> </span>
-
-
-
-<span style="color: black; font-family: Arial">ASP.NET 1.1 Url Mapping code can be found here: <a href="/Blog/archive/2005/07/04/717.aspx"><font color="#336699">/Blog/archive/2005/07/04/717.aspx</font></a></span><span style="font-size: 10pt; color: blue; font-family: Verdana"></span>
-
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
-**Update 11/14/2005** **-** Scoth Guthrie has posted about why they didn&#39;t add Regular Expression support to the ASP.NET 2.0 URL Mapping on his blog. He has also posted a link to this blog entry in that blog post. It&#39;s pretty cool that my blog has gotten noticed by him.
-
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
-<a href="http://weblogs.asp.net/scottgu/archive/2005/11/14/430493.aspx">http://weblogs.asp.net/scottgu/archive/2005/11/14/430493.aspx</a>
-
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
- 
-
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
-**Update 9/10/2007 - **I fixed a bug in the RegExUrlMapping code that was preventing ASP.NET Themes from correctly loading.
-
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
-In the RegExUrlMappingModule class change the following line of the Rewrite method:
-
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
-*   HttpContext.Current.RewritePath(pathNew)*
-
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
-To be the following instead:
-
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
-   *HttpContext.Current.RewritePath(pathNew, false)*
-
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
-I already made this change to the code above so anyone copying it from now on will get this fix.
-
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
- 
-
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
-**Update 3/23/2009** -I just found that this post is mentioned in the &quot;<a href="http://books.google.com/books?id=PTc6v1sKWmAC&amp;pg=PA357&amp;lpg=PA357&amp;dq=%22christopher+pietschmann%22&amp;source=bl&amp;ots=1S1NOYBYaS&amp;sig=y1SJixunMYU29Pgy8Am3L_NgI6U&amp;hl=en&amp;ei=TU7ISae7BtzmnQf_lsCdAw&amp;sa=X&amp;oi=book_result&amp;resnum=7&amp;ct=result#PPA357,M1" target="_blank">ASP.NET 2.0 MVP Hacks and Tips</a>&quot; book that was published in May 2006 on Page 357. I find that one of my blog posts being mentioned in a book like this to be really interesting. Thanks for the props guys!! 
-
-<p style="margin: 0in 0in 0pt" class="MsoNormal">
- 
-
+> **Update 3/23/2009** - I just found that this post is mentioned in the "ASP.NET 2.0 MVP Hacks and Tips" book that was published in May 2006 on Page 357. I find that one of my blog posts being mentioned in a book like this to be really interesting. Thanks for the props guys!!

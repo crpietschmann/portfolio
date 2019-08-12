@@ -8,45 +8,42 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#"]
 redirect_from: 
+  - /post/2006/06/13/Scrape-Geocodes-from-Google-Maps-w-C.aspx
   - /post/2006/06/13/Scrape-Geocodes-from-Google-Maps-w-C
   - /post/2006/06/13/scrape-geocodes-from-google-maps-w-c
   - /post.aspx?id=fdfb2e52-5591-41d0-8fc7-4854e363b5d0
 ---
-<!-- more -->
 
 I need to geocode some addresses once in a while and I notice if you view the source of the Google Maps page, the geocodes are right there. So instead of looking at the source of the page manually, I just created a little app that scrapes them from the page for me and places them into textboxes.
 
 Below is a small code snippet I wrote that does just that. It's not perfect but it is simple and it just plain works.
 
-<span style="color: #0000ff; font-size: x-small;"> </span>
+```csharp
+string lat = "";
+string lng = "";
+string address = "1 Microsoft Way, Redmond WA";
 
-<span style="color: #0000ff; font-size: x-small;">string</span><span style="font-size: x-small;"> lat = </span><span style="color: #800000; font-size: x-small;">""</span><span style="font-size: x-small;">;
-</span><span style="color: #0000ff; font-size: x-small;">string</span><span style="font-size: x-small;"> lng = </span><span style="color: #800000; font-size: x-small;">""</span><span style="font-size: x-small;">;
-</span><span style="color: #0000ff; font-size: x-small;">string</span><span style="font-size: x-small;"> address = </span><span style="color: #800000; font-size: x-small;">"1 Microsoft Way, Redmond WA"</span><span style="font-size: x-small;">;</span>
-
-<span style="font-size: x-small;"> </span>
-
-<span style="color: #0000ff; font-size: x-small;">try
-</span><span style="font-size: x-small;">{
-System.Net.</span><span style="color: #008080; font-size: x-small;">WebClient</span><span style="font-size: x-small;"> client = </span><span style="color: #0000ff; font-size: x-small;">new</span><span style="font-size: x-small;"> System.Net.</span><span style="color: #008080; font-size: x-small;">WebClient</span><span style="font-size: x-small;">();
-</span><span style="color: #0000ff; font-size: x-small;">string</span><span style="font-size: x-small;"> page = client.DownloadString(</span><span style="color: #800000; font-size: x-small;">"http://maps.google.com/maps?q="</span><span style="font-size: x-small;"> + address);
-</span><span style="color: #0000ff; font-size: x-small;">int</span><span style="font-size: x-small;"> begin = page.IndexOf(</span><span style="color: #800000; font-size: x-small;">"markers: ["</span><span style="font-size: x-small;">);
-</span><span style="color: #0000ff; font-size: x-small;">string</span><span style="font-size: x-small;"> str = page.Substring(begin);
-</span><span style="color: #0000ff; font-size: x-small;">int</span><span style="font-size: x-small;"> end = str.IndexOf(</span><span style="color: #800000; font-size: x-small;">",image:"</span><span style="font-size: x-small;">);
-str = str.Substring(0, end);</span>
-
-<span style="color: #008000; font-size: x-small;">//Parse out Latitude
-</span><span style="font-size: x-small;">lat = str.Substring(str.IndexOf(</span><span style="color: #800000; font-size: x-small;">",lat: "</span><span style="font-size: x-small;">) + 6);
-lat = lat.Substring(0, lat.IndexOf(</span><span style="color: #800000; font-size: x-small;">",lng: "</span><span style="font-size: x-small;">));
-</span><span style="color: #008000; font-size: x-small;">//Parse out Longitude
-</span><span style="font-size: x-small;">lng = str.Substring(str.IndexOf(</span><span style="color: #800000; font-size: x-small;">",lng: "</span><span style="font-size: x-small;">) + 6);
-}
-</span><span style="color: #0000ff; font-size: x-small;">catch</span><span style="font-size: x-small;"> (</span><span style="color: #008080; font-size: x-small;">Exception</span><span style="font-size: x-small;"> ex)
+try
 {
-</span><span style="color: #008080; font-size: x-small;">MessageBox</span><span style="font-size: x-small;">.Show(</span><span style="color: #800000; font-size: x-small;">"An Error Occured Loading Geocode!\nCheck that a valid address has been entered."</span><span style="font-size: x-small;">, </span><span style="color: #800000; font-size: x-small;">"An Error Occured Loading Geocode!"</span><span style="font-size: x-small;">);
-}
-</span><span style="color: #008080; font-size: x-small;">MessageBox</span><span style="font-size: x-small;">.Show(</span><span style="color: #800000; font-size: x-small;">"Latitude:\n"</span><span style="font-size: x-small;"> + lat + </span><span style="color: #800000; font-size: x-small;">"\n\nLongitude:\n"</span><span style="font-size: x-small;"> + lng);</span>
+    System.Net.WebClient client = new System.Net.WebClient();
+    string page = client.DownloadString("http://maps.google.com/maps?q=" + address);
+    int begin = page.IndexOf("markers: [");
+    string str = page.Substring(begin);
+    int end = str.IndexOf(",image:");
+    str = str.Substring(0, end);
 
- 
+    //Parse out Latitude
+    lat = str.Substring(str.IndexOf(",lat: ") + 6);
+    lat = lat.Substring(0, lat.IndexOf(",lng: "));
+    //Parse out Longitude
+    lng = str.Substring(str.IndexOf(",lng: ") + 6);
+}
+catch (Exception ex)
+{
+    MessageBox.Show("An Error Occured Loading Geocode!\nCheck that a valid address has been entered.", "An Error Occured Loading Geocode!");
+}
+
+MessageBox.Show("Latitude:\n" + lat + "\n\nLongitude:\n" + lng);
+```
 
 I know I should have used Regular Expressions, but I don't know them very well and this was just quicker/easier to do. It took all of like 5 minutes.
