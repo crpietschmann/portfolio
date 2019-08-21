@@ -17,7 +17,8 @@ redirect_from:
 I'm currently building a desktop application that needs to store a bunch of data on the users computer, so I've decided to use <a href="http://www.microsoft.com/Sqlserver/2008/en/us/compact.aspx">SQL Server Compact 3.5</a> for this. There's only one problem, Visual Studio 2008 doesn't support using LINQ to SQL with SQL Server Compact. However, the .NET Framework does and there's a work around to get it working in VS'08 that I'll describe below.
 
 In case you aren't aware of what <a href="http://www.microsoft.com/Sqlserver/2008/en/us/compact.aspx">SQL Server Compact 3.5</a> is, here's the short description that Microsoft gives on their website: "Microsoft SQL Server Compact is a free SQL Server embedded database ideal for building standalone and occasionally connected applications for mobile devices, desktops, and Web clients." You can download it and view more information here: <a href="http://www.microsoft.com/Sqlserver/2008/en/us/compact.aspx">http://www.microsoft.com/Sqlserver/2008/en/us/compact.aspx</a>
-<h3>Steps to create a LINQ to SQL application using SQL Server Compact</h3>
+
+## Steps to create a LINQ to SQL application using SQL Server Compact
 
 To make this easy to follow I'm going to start with Creating a Solution in Visual Studio and go through all the steps needed to get it running off of SQL Server Compact.
 
@@ -45,7 +46,7 @@ To do this you need to use the <a href="http://msdn.microsoft.com/en-us/library/
 
 *SqlMetal.exe MyDatabase.sdf /dbml:MyDatabase.dbml*
 
-By default, the SqlMetal.exe is located at *drive*:\Progream Files\Microsoft SDKs\Windows\v*n.nn*\bin.
+By default, the SqlMetal.exe is located at *drive*:\Program Files\Microsoft SDKs\Windows\v*n.nn*\bin.
 
 **Step 5: Add the Existing .dbml file to your project**
 
@@ -53,17 +54,19 @@ Once you add the .dbml file, Visual Studio 2008 will automatically generate the 
 
  <img src="/files/LINQSQLCompact_DataContextClass.png" alt="" />
 
-**Step 6: Start Coding away using LINQ to SQL! **
+**Step 6: Start Coding away using LINQ to SQL!**
 
 You can now code using LINQ and your new System.Data.Linq.DataContext class against your database.
 
 <img src="/files/LINQSQLCompact_LinqCode.png" alt="" />
-<h3>A GUI UI for SqlMetal.exe</h3>
+
+## A GUI UI for SqlMetal.exe
 
 The <a href="http://www.codeplex.com/sqlmetalosui">SQL Metal Open Source User Interface</a> Project over on CodePlex has been built just for the purpose of making it easier to generate mapping files for SQL Server Compact databases.
 
 You can download it here: <a href="http://www.codeplex.com/sqlmetalosui">http://www.codeplex.com/sqlmetalosui</a>
-<h3>Related Links</h3>
+
+## Related Links
 
 Here are some related links on this topic:
 

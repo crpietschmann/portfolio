@@ -21,7 +21,9 @@ The use of the FlashWindowEx method however isn't built into the .NET Framework 
 Now rather than go too deep into the specifics of PInvoke or the Win32 FlashWindowEx method, below is a simple static class in C# that allows you to easily utilize this method. There is actually quite a bit of information needed to explain how to use PInvoke to utilize the Windows API (Win32), so maybe I'll cover that in a future article.
 
 Here's some example usage of this static class:
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">// One this to note with this example usage code, is the "this" keyword is referring to
+
+```CSharp
+// One this to note with this example usage code, is the "this" keyword is referring to
 // the current System.Windows.Forms.Form.
 
 // Flash window until it recieves focus
@@ -34,12 +36,15 @@ FlashWindow.Flash(this, 5);
 FlashWindow.Start(this);
 
 // Stop the "Indefinate" Flashing
-FlashWindow.Stop(this);</pre>
+FlashWindow.Stop(this);
+```
 
 One thing to note about the FlashWindowEx method is that it requires (and will only work on) Windows 2000 or later.
 
 Here's the code for the static class in C#:
-<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">public static class FlashWindow
+
+```csharp
+public static class FlashWindow
 {
     [DllImport("user32.dll")]
     [return: MarshalAs(UnmanagedType.Bool)]
@@ -182,4 +187,5 @@ Here's the code for the static class in C#:
     {
         get { return System.Environment.OSVersion.Version.Major >= 5; }
     }
-}</pre>
+}
+```

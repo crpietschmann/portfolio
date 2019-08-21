@@ -14,11 +14,13 @@ redirect_from:
 ---
 <!-- more -->
 
-Something that can be usefull at times in being able to calculate the total Area of a circle, especially when plotting it on a map. So, I decided to slightly modify my "<a href="/post/2008/02/09/Virtual-Earth-Draw-a-Circle-Radius-Around-a-LatLong-Point.aspx">Draw a Circle Radius Around Lat/Lng Point</a>" to make it also calculate the Area of the circles and display that value within the TItle of the Circle Shapes Pushpin.
+Something that can be useful at times in being able to calculate the total Area of a circle, especially when plotting it on a map. So, I decided to slightly modify my "<a href="/post/2008/02/09/Virtual-Earth-Draw-a-Circle-Radius-Around-a-LatLong-Point.aspx">Draw a Circle Radius Around Lat/Lng Point</a>" to make it also calculate the Area of the circles and display that value within the TItle of the Circle Shapes Pushpin.
 
 Remember, back in Trig class, it's fairly simple to calculate the area of a circle. You just Multiply Pi by the Radius Squared.
 
-*Area = Pi * (radius * radius)*
+```
+Area = Pi * (radius * radius)
+```
 
 Anyway, I know this isn't a very advanced math problem. If fact it's much simpler than calculating out the point that make up the circle in the first place. However, I thought I'd post it since it may be usefull to someone that maybe doesn't quite remember this little trick from Trig class.
 

@@ -15,7 +15,8 @@ redirect_from:
 <!-- more -->
 
 One of the features that the Custom Tile Layer functionality of the Virtual Earth JavaScript control is the ability to modify the Tile Layers Opacity after it's been added to the Map. It does include HideTileLayer and ShowTileLayer methods to dynamically toggle the display of Custom Tile Layers, but sometimes that's just not enough customization. However, I do have some good news, there is a small technique that you can use to modify the Tile Layer Opacity as necessary.
-<h3>How to Change Custom Tile Layer Opacity</h3>
+
+## How to Change Custom Tile Layer Opacity
 
 To change the Opacity of a Custom Tile Layer you basically need to Delete and then Re-Add the Custom Tile Layer. However, the technique shown below gets the existing Tile Layer by ID, changes it's Opacity value only, then deletes and re-adds it.
 
@@ -46,7 +47,8 @@ And, here's the simple code needed to change a Custom Tile Layer's Opacity as ne
 SetTileLayerOpacity("tilerLayerID", 0.5);
 
 ```
-<h3>Complete Code Example</h3>
+
+## Complete Code Example
 
 Here's a full example page that implements the javascript method above. To build this example I actually copied the "Add a tile layer" example from the Virtual Earth Interactive SDK and added the SetTileLayerOpacity methed/functionality to it.
 

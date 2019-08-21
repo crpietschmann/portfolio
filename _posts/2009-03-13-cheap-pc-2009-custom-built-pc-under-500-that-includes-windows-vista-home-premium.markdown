@@ -17,18 +17,11 @@ redirect_from:
 
 Two years ago I posted &quot;<a href="/post.aspx?id=a0e03135-de80-4cdb-8b9e-f53c846f5189">Cheap PC - Build a Vista Premium Ready system for under $500 including the OS</a>&quot;. I can&#39;t believe that was two years ago already! Anyway, the original premise of the post was to point out that you could build a &quot;cheap&quot; PC for under $500 that included and could run Windows Vista with &quot;Aero&quot; Glass Enabled. After I wrote that post I decided that I would try to remember to write a post like that every year to serve two purposes: 1) chronicle what kind of PC $500 can buy you, and 2) to help other people realize that it&#39;s possible to build a custom pc for cheap that isn&#39;t total crap. Well, it seems I skipped a year, so here&#39;s the &quot;Cheap PC 2009&quot; post.
 
-
-
 One thing I decided to change from the previous post is I&#39;m going to factor the shipping into the total price. So basically when &quot;all said and done&quot; the overall total price you&#39;ll pay for what I list will be No More Than $500 (US). 
 
-<h3>
-**Total Cost: $491.48 **(this includes shipping)
-</h3>
-
+## Total Cost: $491.48 (this includes shipping)
 
 Now for the parts breakout: 
-
-
 
 Motherboard - <a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16813131338">$49.99 - ASUS P5N73-AM LGA775 with Integrated GeForce 7050 Graphics</a> 
 
