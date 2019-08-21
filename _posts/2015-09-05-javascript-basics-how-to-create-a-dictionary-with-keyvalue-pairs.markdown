@@ -48,6 +48,9 @@ This can be done by either setting the values using the Object's Indexer propert
 dict["one"] = 1;
 dict[1] = "one";
 
+// add new or update property
+dict["Age"] = 42;
+
 // direct property by name
 // because it's a dynamic language
 dict.FirstName = "Chris";
