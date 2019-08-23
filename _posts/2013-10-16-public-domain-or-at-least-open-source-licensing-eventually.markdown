@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2013/10/16/Public-Domain-or-at-least-Open-Source-Licensing-Eventually.aspx
   - /post/2013/10/16/Public-Domain-or-at-least-Open-Source-Licensing-Eventually
   - /post/2013/10/16/public-domain-or-at-least-open-source-licensing-eventually
   - /post.aspx?id=20155713-d63f-4cda-b69e-d6f75f55f3a5

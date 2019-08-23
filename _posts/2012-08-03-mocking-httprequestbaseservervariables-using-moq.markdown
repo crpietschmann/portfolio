@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "ASP.NET MVC", "TDD"]
 redirect_from: 
+  - /post/2012/08/03/Mocking-HttpRequestBaseServerVariables-using-Moq.aspx
   - /post/2012/08/03/Mocking-HttpRequestBaseServerVariables-using-Moq
   - /post/2012/08/03/mocking-httprequestbaseservervariables-using-moq
   - /post.aspx?id=828d1198-8b0c-4b95-835c-f5e3abec4b8d

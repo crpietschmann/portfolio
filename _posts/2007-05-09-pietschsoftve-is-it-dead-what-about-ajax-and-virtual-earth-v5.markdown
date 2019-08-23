@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2007/05/09/PietschSoftVE-Is-it-Dead-What-about-Ajax-and-Virtual-Earth-v5.aspx
   - /post/2007/05/09/PietschSoftVE-Is-it-Dead-What-about-Ajax-and-Virtual-Earth-v5
   - /post/2007/05/09/pietschsoftve-is-it-dead-what-about-ajax-and-virtual-earth-v5
   - /post.aspx?id=b84110ff-c366-4a80-9430-cd162eecd0e4

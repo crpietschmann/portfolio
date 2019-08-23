@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: []
 redirect_from: 
+  - /page/Useful-Developer-Tools-and-Other-Programs.aspx
   - /page/Useful-Developer-Tools-and-Other-Programs
   - /page/useful-developer-tools-and-other-programs
   - /post.aspx?id=50883a4e-17e5-44a0-b836-18bd35d96876

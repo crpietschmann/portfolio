@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2010/11/30/Bing-Maps-Ajax-7-Adding-InfoBox-Support-via-Extension-to-MicrosoftMaps.aspx
   - /post/2010/11/30/Bing-Maps-Ajax-7-Adding-InfoBox-Support-via-Extension-to-MicrosoftMaps
   - /post/2010/11/30/bing-maps-ajax-7-adding-infobox-support-via-extension-to-microsoftmaps
   - /post.aspx?id=d3b3b88e-6d1f-4f8b-86fd-c74ba908eb5e

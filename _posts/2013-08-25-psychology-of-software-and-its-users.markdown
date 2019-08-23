@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Software Craftsmanship"]
 redirect_from: 
+  - /post/2013/08/25/Psychology-of-Software-and-its-Users.aspx
   - /post/2013/08/25/Psychology-of-Software-and-its-Users
   - /post/2013/08/25/psychology-of-software-and-its-users
   - /post.aspx?id=74aef5a1-11de-42b1-b571-8c2669e38685

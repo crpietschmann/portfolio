@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2010/01/12/My-Brother-In-Law-Is-Home-After-Second-Tour-In-Iraq.aspx
   - /post/2010/01/12/My-Brother-In-Law-Is-Home-After-Second-Tour-In-Iraq
   - /post/2010/01/12/my-brother-in-law-is-home-after-second-tour-in-iraq
   - /post.aspx?id=d140421b-7509-4788-a4f9-bab0a94cd16d

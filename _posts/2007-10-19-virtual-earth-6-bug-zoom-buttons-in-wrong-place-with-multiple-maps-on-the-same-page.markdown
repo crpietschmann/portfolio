@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2007/10/19/Virtual-Earth-6-Bug-Zoom-buttons-in-wrong-place-with-multiple-maps-on-the-same-page.aspx
   - /post/2007/10/19/Virtual-Earth-6-Bug-Zoom-buttons-in-wrong-place-with-multiple-maps-on-the-same-page
   - /post/2007/10/19/virtual-earth-6-bug-zoom-buttons-in-wrong-place-with-multiple-maps-on-the-same-page
   - /post.aspx?id=1b839cf3-26c6-480a-b034-20d49c7b12d4

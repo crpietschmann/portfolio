@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/10/02/US-Cellular-is-dicontinuing-the-Motorola-v323i-but-you-can-still-buy-it-from-Motorola!.aspx
   - /post/2007/10/02/US-Cellular-is-dicontinuing-the-Motorola-v323i-but-you-can-still-buy-it-from-Motorola!
   - /post/2007/10/02/us-cellular-is-dicontinuing-the-motorola-v323i-but-you-can-still-buy-it-from-motorola!
   - /post.aspx?id=00285c24-3c96-4982-96bb-e544780e915f

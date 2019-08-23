@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
+  - /post/2011/01/26/Bing-Maps-Silverlight-and-an-Out-Of-Browser-(OOB)-Application.aspx
   - /post/2011/01/26/Bing-Maps-Silverlight-and-an-Out-Of-Browser-(OOB)-Application
   - /post/2011/01/26/bing-maps-silverlight-and-an-out-of-browser-(oob)-application
   - /post.aspx?id=1f2938fd-eee7-4ec7-8d97-e80d307804bd

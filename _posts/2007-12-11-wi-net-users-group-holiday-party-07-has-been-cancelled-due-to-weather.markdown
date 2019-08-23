@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["WI-INETA"]
 redirect_from: 
+  - /post/2007/12/11/WI-NET-Users-Group-Holiday-Party-07-has-been-Cancelled-due-to-Weather.aspx
   - /post/2007/12/11/WI-NET-Users-Group-Holiday-Party-07-has-been-Cancelled-due-to-Weather
   - /post/2007/12/11/wi-net-users-group-holiday-party-07-has-been-cancelled-due-to-weather
   - /post.aspx?id=b896b861-3059-40b6-9042-3d079cdddadb

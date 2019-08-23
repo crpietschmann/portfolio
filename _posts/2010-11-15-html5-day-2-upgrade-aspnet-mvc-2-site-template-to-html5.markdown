@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["ASP.NET MVC", "HTML"]
 redirect_from: 
+  - /post/2010/11/15/HTML5-Day-2-Upgrade-ASPNET-MVC-2-Site-Template-to-HTML5.aspx
   - /post/2010/11/15/HTML5-Day-2-Upgrade-ASPNET-MVC-2-Site-Template-to-HTML5
   - /post/2010/11/15/html5-day-2-upgrade-aspnet-mvc-2-site-template-to-html5
   - /post.aspx?id=9a32a5cb-01b0-42da-90b6-21747146d03d

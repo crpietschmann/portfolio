@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2013/09/08/Failure-Is-Greater-Success-Than-Success.aspx
   - /post/2013/09/08/Failure-Is-Greater-Success-Than-Success
   - /post/2013/09/08/failure-is-greater-success-than-success
   - /post.aspx?id=3b57360f-00a5-45a9-9726-b62ee45c8180

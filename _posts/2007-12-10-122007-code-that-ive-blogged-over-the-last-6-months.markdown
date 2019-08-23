@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General", "General"]
 redirect_from: 
+  - /post/2007/12/10/122007-Code-that-Ive-Blogged-over-the-last-6-months.aspx
   - /post/2007/12/10/122007-Code-that-Ive-Blogged-over-the-last-6-months
   - /post/2007/12/10/122007-code-that-ive-blogged-over-the-last-6-months
   - /post.aspx?id=77b66b63-6046-4b3e-a4fa-053dfe5fbea7

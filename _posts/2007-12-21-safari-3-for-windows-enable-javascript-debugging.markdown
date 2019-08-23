@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2007/12/21/Safari-3-for-Windows-Enable-JavaScript-Debugging.aspx
   - /post/2007/12/21/Safari-3-for-Windows-Enable-JavaScript-Debugging
   - /post/2007/12/21/safari-3-for-windows-enable-javascript-debugging
   - /post.aspx?id=7850f65e-8f57-4877-8ddf-f79e0d7a76b4

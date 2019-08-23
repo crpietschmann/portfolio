@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
+  - /post/2009/08/04/Bing-Maps-Silverlight-Plot-Edit-Pushpin-data-via-a-ChildWindow.aspx
   - /post/2009/08/04/Bing-Maps-Silverlight-Plot-Edit-Pushpin-data-via-a-ChildWindow
   - /post/2009/08/04/bing-maps-silverlight-plot-edit-pushpin-data-via-a-childwindow
   - /post.aspx?id=85a6ee8c-71b5-4c7e-8aec-2adeb2b97919

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["WI-INETA"]
 redirect_from: 
+  - /post/2007/11/12/WI-INETA-Augmented-Reality-with-NET-on-11132007-with-Casey-Chesnut.aspx
   - /post/2007/11/12/WI-INETA-Augmented-Reality-with-NET-on-11132007-with-Casey-Chesnut
   - /post/2007/11/12/wi-ineta-augmented-reality-with-net-on-11132007-with-casey-chesnut
   - /post.aspx?id=feee04b8-a183-4698-9a64-710f5bdf011c

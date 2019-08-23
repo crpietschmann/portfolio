@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/09/26/Links-2007-09-26.aspx
   - /post/2007/09/26/Links-2007-09-26
   - /post/2007/09/26/links-2007-09-26
   - /post.aspx?id=1fc4941e-d60b-4bb6-b6b9-8eeb087e2fa1

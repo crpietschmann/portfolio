@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "asp.net"]
 redirect_from: 
+  - /post/2012/08/08/Using-MiniProfiler-with-SqlDataSource-ASPNET-WebForms-Control.aspx
   - /post/2012/08/08/Using-MiniProfiler-with-SqlDataSource-ASPNET-WebForms-Control
   - /post/2012/08/08/using-miniprofiler-with-sqldatasource-aspnet-webforms-control
   - /post.aspx?id=03d5d230-54bc-4c55-af70-22d84ac83bdf

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/10/24/Ultimate-Mac-vs-PC-Steve-Jobs-vs-Bill-Gates.aspx
   - /post/2007/10/24/Ultimate-Mac-vs-PC-Steve-Jobs-vs-Bill-Gates
   - /post/2007/10/24/ultimate-mac-vs-pc-steve-jobs-vs-bill-gates
   - /post.aspx?id=f3a00521-8ff0-40c3-ba5c-f8356c66d3c1

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2016/01/19/Do-your-best-and-Own-it.aspx
   - /post/2016/01/19/Do-your-best-and-Own-it
   - /post/2016/01/19/do-your-best-and-own-it
   - /post.aspx?id=f3e50a08-ef34-47ac-84a9-f14043edcd1e

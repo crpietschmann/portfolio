@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General", "Tools"]
 redirect_from: 
+  - /post/2016/04/24/Image-Editing-Tools-Heres-what-I-use2.aspx
   - /post/2016/04/24/Image-Editing-Tools-Heres-what-I-use2
   - /post/2016/04/24/image-editing-tools-heres-what-i-use2
   - /post.aspx?id=f84f63d3-8576-44cb-a4a3-7d3df8495c2f

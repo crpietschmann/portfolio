@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net", "JavaScript"]
 redirect_from: 
+  - /post/2007/08/05/ASPNET-AJAX-Extensions-to-standard-JavaScript-base-types.aspx
   - /post/2007/08/05/ASPNET-AJAX-Extensions-to-standard-JavaScript-base-types
   - /post/2007/08/05/aspnet-ajax-extensions-to-standard-javascript-base-types
   - /post.aspx?id=b67ee48a-600b-45bb-980c-93b1fae64838

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2008/06/24/Plot-ZipCode-Boundaries-on-a-Map-Part-2-Import-Zip-Code-US-Census-ZCTA-Data-Into-A-Database.aspx
   - /post/2008/06/24/Plot-ZipCode-Boundaries-on-a-Map-Part-2-Import-Zip-Code-US-Census-ZCTA-Data-Into-A-Database
   - /post/2008/06/24/plot-zipcode-boundaries-on-a-map-part-2-import-zip-code-us-census-zcta-data-into-a-database
   - /post.aspx?id=7ec1dc8e-e27f-4d79-a22f-bd4259dd1381

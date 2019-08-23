@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/07/16/dotNetExt-NET-Extension-Method-Library-v01-Beta-Released.aspx
   - /post/2008/07/16/dotNetExt-NET-Extension-Method-Library-v01-Beta-Released
   - /post/2008/07/16/dotnetext-net-extension-method-library-v01-beta-released
   - /post.aspx?id=991001f5-399b-42ff-829c-2b80cb49a8b8

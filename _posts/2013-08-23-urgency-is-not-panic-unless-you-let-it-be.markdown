@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2013/08/23/Urgency-is-not-Panic-unless-you-let-it-be.aspx
   - /post/2013/08/23/Urgency-is-not-Panic-unless-you-let-it-be
   - /post/2013/08/23/urgency-is-not-panic-unless-you-let-it-be
   - /post.aspx?id=fe4ffe81-41a0-4dcc-806f-c57420bbad76

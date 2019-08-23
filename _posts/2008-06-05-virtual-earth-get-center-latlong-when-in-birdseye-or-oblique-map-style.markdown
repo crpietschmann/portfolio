@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2008/06/05/Virtual-Earth-Get-Center-LatLong-When-In-Birdseye-or-Oblique-Map-Style.aspx
   - /post/2008/06/05/Virtual-Earth-Get-Center-LatLong-When-In-Birdseye-or-Oblique-Map-Style
   - /post/2008/06/05/virtual-earth-get-center-latlong-when-in-birdseye-or-oblique-map-style
   - /post.aspx?id=09bd09f5-2cd1-4c0b-a273-eb7c91c3acb3

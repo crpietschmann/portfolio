@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/09/05/Windows-vNext-(Windows-7)-Feature-Ideas.aspx
   - /post/2008/09/05/Windows-vNext-(Windows-7)-Feature-Ideas
   - /post/2008/09/05/windows-vnext-(windows-7)-feature-ideas
   - /post.aspx?id=fd819a8b-25ac-42df-b9fe-7bd3eb724c1a

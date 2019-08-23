@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "C#", "Silverlight"]
 redirect_from: 
+  - /post/2009/11/13/Prototype_OpenStreetMap_Silverlight_Control_using_Bing_Maps_SDK_and_DeepEarth.aspx
   - /post/2009/11/13/Prototype_OpenStreetMap_Silverlight_Control_using_Bing_Maps_SDK_and_DeepEarth
   - /post/2009/11/13/prototype_openstreetmap_silverlight_control_using_bing_maps_sdk_and_deepearth
   - /post.aspx?id=3ad2707d-615b-45a6-9a69-29c5d8bc1c28

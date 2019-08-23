@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2009/07/24/jHtmlArea_060_Update_with_Improved_Functionality.aspx
   - /post/2009/07/24/jHtmlArea_060_Update_with_Improved_Functionality
   - /post/2009/07/24/jhtmlarea_060_update_with_improved_functionality
   - /post.aspx?id=9901a400-8fdb-4811-a030-6827de25695a

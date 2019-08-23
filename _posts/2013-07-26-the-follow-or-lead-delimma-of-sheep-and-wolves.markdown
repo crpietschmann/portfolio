@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2013/07/26/The-Follow-Or-Lead-Delimma-of-Sheep-and-Wolves.aspx
   - /post/2013/07/26/The-Follow-Or-Lead-Delimma-of-Sheep-and-Wolves
   - /post/2013/07/26/the-follow-or-lead-delimma-of-sheep-and-wolves
   - /post.aspx?id=de296a61-0d2a-469c-a6f2-a96b8ff05be0

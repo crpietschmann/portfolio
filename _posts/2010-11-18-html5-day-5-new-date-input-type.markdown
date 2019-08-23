@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["HTML", "JavaScript"]
 redirect_from: 
+  - /post/2010/11/18/HTML5-Day-5-New-Date-Input-Type.aspx
   - /post/2010/11/18/HTML5-Day-5-New-Date-Input-Type
   - /post/2010/11/18/html5-day-5-new-date-input-type
   - /post.aspx?id=ae065d67-d849-419d-9091-2df37e1afee5

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/03/01/JavaScriptAJAX-Example-1-Load-File-Asynchronously-and-Display-within-TextArea.aspx
   - /post/2007/03/01/JavaScriptAJAX-Example-1-Load-File-Asynchronously-and-Display-within-TextArea
   - /post/2007/03/01/javascriptajax-example-1-load-file-asynchronously-and-display-within-textarea
   - /post.aspx?id=107964f8-dfb4-4254-9a7f-d8a7afdf5d38

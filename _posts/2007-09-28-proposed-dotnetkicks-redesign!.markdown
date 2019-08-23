@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/09/28/Proposed-DotNetKicks-Redesign!.aspx
   - /post/2007/09/28/Proposed-DotNetKicks-Redesign!
   - /post/2007/09/28/proposed-dotnetkicks-redesign!
   - /post.aspx?id=6c15c4b3-498b-461e-9df4-551a1cb563cf

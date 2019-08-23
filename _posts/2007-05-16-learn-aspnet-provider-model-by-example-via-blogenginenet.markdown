@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2007/05/16/Learn-ASPNET-Provider-Model-By-Example-via-BlogEngineNET.aspx
   - /post/2007/05/16/Learn-ASPNET-Provider-Model-By-Example-via-BlogEngineNET
   - /post/2007/05/16/learn-aspnet-provider-model-by-example-via-blogenginenet
   - /post.aspx?id=11c439a9-7027-457d-8b79-8a7daf1b80d8

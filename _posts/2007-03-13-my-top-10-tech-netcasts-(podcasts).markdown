@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/03/13/My-Top-10-Tech-Netcasts-(podcasts).aspx
   - /post/2007/03/13/My-Top-10-Tech-Netcasts-(podcasts)
   - /post/2007/03/13/my-top-10-tech-netcasts-(podcasts)
   - /post.aspx?id=b512d1ca-74a6-44c3-be34-66ee950ea277

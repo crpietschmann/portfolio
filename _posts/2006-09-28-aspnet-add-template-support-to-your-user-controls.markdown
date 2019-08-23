@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2006/09/28/ASPNET-Add-Template-Support-to-your-User-Controls.aspx
   - /post/2006/09/28/ASPNET-Add-Template-Support-to-your-User-Controls
   - /post/2006/09/28/aspnet-add-template-support-to-your-user-controls
   - /post.aspx?id=ed2f12ec-fd2c-40f5-8887-5dacd8b58d1d

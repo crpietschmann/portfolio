@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Azure"]
 redirect_from: 
+  - /post/2018/07/02/Chris-Pietschmann-Awarded-2018-Microsoft-MVP-Award-Cross-Post.aspx
   - /post/2018/07/02/Chris-Pietschmann-Awarded-2018-Microsoft-MVP-Award-Cross-Post
   - /post/2018/07/02/chris-pietschmann-awarded-2018-microsoft-mvp-award-cross-post
   - /post.aspx?id=79e0bd5d-6a97-44fe-9f80-b7b5280be819

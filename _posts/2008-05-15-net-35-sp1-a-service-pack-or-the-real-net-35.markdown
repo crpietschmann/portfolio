@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/05/15/NET-35-SP1-A-Service-Pack-or-The-Real-NET-35.aspx
   - /post/2008/05/15/NET-35-SP1-A-Service-Pack-or-The-Real-NET-35
   - /post/2008/05/15/net-35-sp1-a-service-pack-or-the-real-net-35
   - /post.aspx?id=7b976614-8d22-4d53-86c1-3b7bd19dd2e9

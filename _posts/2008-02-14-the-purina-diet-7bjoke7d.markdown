@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/02/14/The-Purina-Diet-7bJoke7d.aspx
   - /post/2008/02/14/The-Purina-Diet-7bJoke7d
   - /post/2008/02/14/the-purina-diet-7bjoke7d
   - /post.aspx?id=ed52dc8d-baef-46ba-aa0c-1b422f471c9e

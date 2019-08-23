@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/10/08/New-Touchless-SDK-brings-Multi-Touch-using-a-WebCam.aspx
   - /post/2008/10/08/New-Touchless-SDK-brings-Multi-Touch-using-a-WebCam
   - /post/2008/10/08/new-touchless-sdk-brings-multi-touch-using-a-webcam
   - /post.aspx?id=406617f5-ca53-4c55-9942-6bc2da0272d1

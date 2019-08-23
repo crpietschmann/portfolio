@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "C#"]
 redirect_from: 
+  - /post/2007/06/23/NET-35-How-to-Convert-from-one-TimeZone-to-another.aspx
   - /post/2007/06/23/NET-35-How-to-Convert-from-one-TimeZone-to-another
   - /post/2007/06/23/net-35-how-to-convert-from-one-timezone-to-another
   - /post.aspx?id=5c01800e-2dc5-4223-832e-8b992db3116c

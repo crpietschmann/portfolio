@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2010/12/18/Bing-Maps-Ajax-7-Add-Custom-Navigation-Bar-Buttons-using-jQuery.aspx
   - /post/2010/12/18/Bing-Maps-Ajax-7-Add-Custom-Navigation-Bar-Buttons-using-jQuery
   - /post/2010/12/18/bing-maps-ajax-7-add-custom-navigation-bar-buttons-using-jquery
   - /post.aspx?id=855f7483-06fe-4042-b8c4-0ebfd6b372e9

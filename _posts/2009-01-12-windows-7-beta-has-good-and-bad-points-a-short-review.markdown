@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2009/01/12/Windows-7-Beta-Has-Good-and-Bad-Points-A-Short-Review.aspx
   - /post/2009/01/12/Windows-7-Beta-Has-Good-and-Bad-Points-A-Short-Review
   - /post/2009/01/12/windows-7-beta-has-good-and-bad-points-a-short-review
   - /post.aspx?id=4fbc9488-3308-498b-bac5-386e09cc7730

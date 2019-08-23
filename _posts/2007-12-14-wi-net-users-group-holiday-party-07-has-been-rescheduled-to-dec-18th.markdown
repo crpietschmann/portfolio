@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["WI-INETA"]
 redirect_from: 
+  - /post/2007/12/14/WI-NET-Users-Group-Holiday-Party-07-has-been-rescheduled-to-Dec-18th.aspx
   - /post/2007/12/14/WI-NET-Users-Group-Holiday-Party-07-has-been-rescheduled-to-Dec-18th
   - /post/2007/12/14/wi-net-users-group-holiday-party-07-has-been-rescheduled-to-dec-18th
   - /post.aspx?id=724f7ae0-590d-4a53-bb83-26e8bfb1c360

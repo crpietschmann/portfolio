@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
+  - /post/2008/04/04/Deeper-in-NET-2008-is-less-than-15-hours-away!.aspx
   - /post/2008/04/04/Deeper-in-NET-2008-is-less-than-15-hours-away!
   - /post/2008/04/04/deeper-in-net-2008-is-less-than-15-hours-away!
   - /post.aspx?id=c2cd019c-6d75-4226-adab-c196fedd18bf

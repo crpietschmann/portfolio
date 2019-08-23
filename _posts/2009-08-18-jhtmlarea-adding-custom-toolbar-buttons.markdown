@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2009/08/18/jHtmlArea-Adding-Custom-Toolbar-Buttons.aspx
   - /post/2009/08/18/jHtmlArea-Adding-Custom-Toolbar-Buttons
   - /post/2009/08/18/jhtmlarea-adding-custom-toolbar-buttons
   - /post.aspx?id=c34da319-5160-4b22-918b-bfea938271ef

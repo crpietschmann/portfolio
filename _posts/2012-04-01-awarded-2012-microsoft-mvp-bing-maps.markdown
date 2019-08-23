@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2012/04/01/Awarded-2012-Microsoft-MVP-Bing-Maps.aspx
   - /post/2012/04/01/Awarded-2012-Microsoft-MVP-Bing-Maps
   - /post/2012/04/01/awarded-2012-microsoft-mvp-bing-maps
   - /post.aspx?id=6482da0a-bd20-457a-b9d8-08a076609e79

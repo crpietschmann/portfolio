@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration", "Software Craftsmanship"]
 redirect_from: 
+  - /post/2015/08/13/Tools-Dont-Make-You-Great.aspx
   - /post/2015/08/13/Tools-Dont-Make-You-Great
   - /post/2015/08/13/tools-dont-make-you-great
   - /post.aspx?id=fc2d61e4-acf4-4797-b8e7-6624dc1f22ce

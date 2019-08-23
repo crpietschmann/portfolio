@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/09/07/Weekly-Links-2007-09-07.aspx
   - /post/2007/09/07/Weekly-Links-2007-09-07
   - /post/2007/09/07/weekly-links-2007-09-07
   - /post.aspx?id=3a7bd0c6-d33e-42d7-9cd1-e763e854734e

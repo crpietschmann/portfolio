@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["WI-INETA"]
 redirect_from: 
+  - /post/2007/11/19/Attend-WI-NET-Users-Group-Holiday-Party-and-get-Visual-Studio-2008-Free!.aspx
   - /post/2007/11/19/Attend-WI-NET-Users-Group-Holiday-Party-and-get-Visual-Studio-2008-Free!
   - /post/2007/11/19/attend-wi-net-users-group-holiday-party-and-get-visual-studio-2008-free!
   - /post.aspx?id=8e2d3e0c-fa6a-4d8c-95d2-f69e9e59a6cd

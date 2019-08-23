@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2008/01/30/LINQ-to-JavaScript-Update-Release-v101-With-More-Functionality.aspx
   - /post/2008/01/30/LINQ-to-JavaScript-Update-Release-v101-With-More-Functionality
   - /post/2008/01/30/linq-to-javascript-update-release-v101-with-more-functionality
   - /post.aspx?id=021c726f-8a7f-4d39-8f02-d70d64da66f7

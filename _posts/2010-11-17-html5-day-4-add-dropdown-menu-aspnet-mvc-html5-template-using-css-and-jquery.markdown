@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["ASP.NET MVC", "HTML", "JavaScript"]
 redirect_from: 
+  - /post/2010/11/17/HTML5-Day-4-Add-DropDown-Menu-ASPNET-MVC-HTML5-Template-using-CSS-and-jQuery.aspx
   - /post/2010/11/17/HTML5-Day-4-Add-DropDown-Menu-ASPNET-MVC-HTML5-Template-using-CSS-and-jQuery
   - /post/2010/11/17/html5-day-4-add-dropdown-menu-aspnet-mvc-html5-template-using-css-and-jquery
   - /post.aspx?id=004257a6-6fc4-4635-b5e1-a79b87b8cea6

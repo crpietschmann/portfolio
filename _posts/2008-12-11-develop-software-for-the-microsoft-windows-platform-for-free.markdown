@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/12/11/Develop-Software-for-the-Microsoft-Windows-Platform-for-FREE.aspx
   - /post/2008/12/11/Develop-Software-for-the-Microsoft-Windows-Platform-for-FREE
   - /post/2008/12/11/develop-software-for-the-microsoft-windows-platform-for-free
   - /post.aspx?id=43a9817e-e3f4-4047-a087-51ed37070c56

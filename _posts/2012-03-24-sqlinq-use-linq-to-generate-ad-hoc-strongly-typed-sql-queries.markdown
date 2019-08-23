@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "SQL"]
 redirect_from: 
+  - /post/2012/03/24/SQLinq-Use-LINQ-to-generate-Ad-Hoc-strongly-typed-SQL-queries.aspx
   - /post/2012/03/24/SQLinq-Use-LINQ-to-generate-Ad-Hoc-strongly-typed-SQL-queries
   - /post/2012/03/24/sqlinq-use-linq-to-generate-ad-hoc-strongly-typed-sql-queries
   - /post.aspx?id=3917ad4f-9b27-44b7-9437-c6661cd41949

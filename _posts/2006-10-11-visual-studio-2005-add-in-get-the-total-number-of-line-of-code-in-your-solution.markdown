@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "vb.net"]
 redirect_from: 
+  - /post/2006/10/11/Visual-Studio-2005-Add-In-Get-the-total-number-of-line-of-code-in-your-solution.aspx
   - /post/2006/10/11/Visual-Studio-2005-Add-In-Get-the-total-number-of-line-of-code-in-your-solution
   - /post/2006/10/11/visual-studio-2005-add-in-get-the-total-number-of-line-of-code-in-your-solution
   - /post.aspx?id=a4330182-18aa-41fe-bdaf-b496b17d3dc6

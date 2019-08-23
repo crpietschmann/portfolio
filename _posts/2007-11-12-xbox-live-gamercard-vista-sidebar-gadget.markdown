@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/11/12/XBox-Live-Gamercard-Vista-Sidebar-Gadget.aspx
   - /post/2007/11/12/XBox-Live-Gamercard-Vista-Sidebar-Gadget
   - /post/2007/11/12/xbox-live-gamercard-vista-sidebar-gadget
   - /post.aspx?id=5ff60137-862a-4ced-b63d-e9dd5a44bdb3

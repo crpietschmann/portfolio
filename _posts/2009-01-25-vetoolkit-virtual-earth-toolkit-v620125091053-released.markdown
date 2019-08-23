@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2009/01/25/VEToolkit-Virtual-Earth-Toolkit-v620125091053-Released.aspx
   - /post/2009/01/25/VEToolkit-Virtual-Earth-Toolkit-v620125091053-Released
   - /post/2009/01/25/vetoolkit-virtual-earth-toolkit-v620125091053-released
   - /post.aspx?id=76ef247b-9a57-4577-b45e-34ebb506bdac

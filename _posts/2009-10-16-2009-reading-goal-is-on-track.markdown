@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2009/10/16/2009-Reading-Goal-Is-On-Track.aspx
   - /post/2009/10/16/2009-Reading-Goal-Is-On-Track
   - /post/2009/10/16/2009-reading-goal-is-on-track
   - /post.aspx?id=f49f6aed-6b75-444d-9c28-e0ac07073d11

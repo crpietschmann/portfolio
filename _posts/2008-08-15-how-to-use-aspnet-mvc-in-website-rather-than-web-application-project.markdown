@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net", "ASP.NET MVC"]
 redirect_from: 
+  - /post/2008/08/15/How-To-Use-ASPNET-MVC-in-Website-rather-than-Web-Application-Project.aspx
   - /post/2008/08/15/How-To-Use-ASPNET-MVC-in-Website-rather-than-Web-Application-Project
   - /post/2008/08/15/how-to-use-aspnet-mvc-in-website-rather-than-web-application-project
   - /post.aspx?id=fa4fbb6a-6f47-4f43-91c1-f0ebb04544f8

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2009/09/24/ITS-A-GIRL.aspx
   - /post/2009/09/24/ITS-A-GIRL
   - /post/2009/09/24/its-a-girl
   - /post.aspx?id=2748181a-4a5e-49c8-bc78-eaca5a664b18

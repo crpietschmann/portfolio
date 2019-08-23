@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "Swift"]
 redirect_from: 
+  - /post/2014/06/07/Basic-Comparison-of-C-and-Apple-Swift-Programming-Language-Syntax.aspx
   - /post/2014/06/07/Basic-Comparison-of-C-and-Apple-Swift-Programming-Language-Syntax
   - /post/2014/06/07/basic-comparison-of-c-and-apple-swift-programming-language-syntax
   - /post.aspx?id=8dc47db8-15c9-438a-b5d0-51df42fb01ef

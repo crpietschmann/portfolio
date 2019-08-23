@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2008/02/09/Virtual-Earth-Draw-a-Circle-Radius-Around-a-LatLong-Point.aspx
   - /post/2008/02/09/Virtual-Earth-Draw-a-Circle-Radius-Around-a-LatLong-Point
   - /post/2008/02/09/virtual-earth-draw-a-circle-radius-around-a-latlong-point
   - /post.aspx?id=1e2824a0-3bef-4707-8f18-a624ad784432

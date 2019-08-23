@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/11/21/I-have-Windows-Vista-Ultimate-x64-installed-in-a-dual-boot-with-WinXP-Pro.aspx
   - /post/2006/11/21/I-have-Windows-Vista-Ultimate-x64-installed-in-a-dual-boot-with-WinXP-Pro
   - /post/2006/11/21/i-have-windows-vista-ultimate-x64-installed-in-a-dual-boot-with-winxp-pro
   - /post.aspx?id=beab6120-b505-4976-b08d-d0e973cf189f

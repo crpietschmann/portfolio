@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/07/31/Can-you-do-100-Pushsups-that-is.aspx
   - /post/2008/07/31/Can-you-do-100-Pushsups-that-is
   - /post/2008/07/31/can-you-do-100-pushsups-that-is
   - /post.aspx?id=516b5da4-c2e2-4f4f-bf0a-19ca09680926

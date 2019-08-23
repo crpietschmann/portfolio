@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2012/10/05/Office-365-2b-Microsoft-Account-2b-Password-Expiration-3d-FAIL!.aspx
   - /post/2012/10/05/Office-365-2b-Microsoft-Account-2b-Password-Expiration-3d-FAIL!
   - /post/2012/10/05/office-365-2b-microsoft-account-2b-password-expiration-3d-fail!
   - /post.aspx?id=0b29da72-c004-4b7e-a4f9-73a7a549f863

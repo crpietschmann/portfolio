@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net", "C#"]
 redirect_from: 
+  - /post/2008/07/23/C-Generate-WebPage-Thumbmail-Screenshot-Image.aspx
   - /post/2008/07/23/C-Generate-WebPage-Thumbmail-Screenshot-Image
   - /post/2008/07/23/c-generate-webpage-thumbmail-screenshot-image
   - /post.aspx?id=2a628f30-fe83-4e44-a34b-f31be76d1b4f

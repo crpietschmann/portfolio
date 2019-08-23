@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/07/25/CSS-2b-DIV-3d-Scrollable-area-for-site-content.aspx
   - /post/2006/07/25/CSS-2b-DIV-3d-Scrollable-area-for-site-content
   - /post/2006/07/25/css-2b-div-3d-scrollable-area-for-site-content
   - /post.aspx?id=36924250-aeb5-4f67-8114-f66fc354876c

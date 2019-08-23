@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
+  - /post/2010/06/04/Resizing-and-Auto-Scaling-Pushpin-in-Bing-Maps-Silverlight.aspx
   - /post/2010/06/04/Resizing-and-Auto-Scaling-Pushpin-in-Bing-Maps-Silverlight
   - /post/2010/06/04/resizing-and-auto-scaling-pushpin-in-bing-maps-silverlight
   - /post.aspx?id=f5cc395e-a712-4884-ab24-3e556e6da666

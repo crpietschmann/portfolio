@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2013/09/13/Programming-is-the-Reading-and-Writing-of-the-Future.aspx
   - /post/2013/09/13/Programming-is-the-Reading-and-Writing-of-the-Future
   - /post/2013/09/13/programming-is-the-reading-and-writing-of-the-future
   - /post.aspx?id=297f7422-b742-4afa-8f8a-f6cea8a28ab6

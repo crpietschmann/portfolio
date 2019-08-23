@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/04/05/Make-your-RSS-feeds-Auto-Discoverable.aspx
   - /post/2007/04/05/Make-your-RSS-feeds-Auto-Discoverable
   - /post/2007/04/05/make-your-rss-feeds-auto-discoverable
   - /post.aspx?id=ed99da1a-d955-48d0-bfec-20c31cbe6771

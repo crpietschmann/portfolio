@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2008/02/06/Virtual-Earth-Calculate-Distance-of-User-Drawn-Polyline.aspx
   - /post/2008/02/06/Virtual-Earth-Calculate-Distance-of-User-Drawn-Polyline
   - /post/2008/02/06/virtual-earth-calculate-distance-of-user-drawn-polyline
   - /post.aspx?id=d414be9d-1bdf-4345-8001-cce09c485584

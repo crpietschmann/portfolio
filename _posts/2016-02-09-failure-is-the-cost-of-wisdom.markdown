@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2016/02/09/Failure-is-the-cost-of-Wisdom.aspx
   - /post/2016/02/09/Failure-is-the-cost-of-Wisdom
   - /post/2016/02/09/failure-is-the-cost-of-wisdom
   - /post.aspx?id=6562353c-1045-499f-a850-3f45bb038f01

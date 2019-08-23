@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/10/02/Motorolacom-PromoCoupon-Code-for-1525-Off.aspx
   - /post/2007/10/02/Motorolacom-PromoCoupon-Code-for-1525-Off
   - /post/2007/10/02/motorolacom-promocoupon-code-for-1525-off
   - /post.aspx?id=971e5491-7134-4552-a6f7-5b53a70912fd

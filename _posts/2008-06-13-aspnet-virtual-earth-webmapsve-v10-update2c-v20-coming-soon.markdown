@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2008/06/13/ASPNET-Virtual-Earth-WebMapsVE-v10-Update2c-v20-Coming-Soon.aspx
   - /post/2008/06/13/ASPNET-Virtual-Earth-WebMapsVE-v10-Update2c-v20-Coming-Soon
   - /post/2008/06/13/aspnet-virtual-earth-webmapsve-v10-update2c-v20-coming-soon
   - /post.aspx?id=843fed49-94ef-4647-91a2-167530edde0a

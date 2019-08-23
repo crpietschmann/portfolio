@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2013/08/21/Execution-is-Most-Important-to-be-Successful.aspx
   - /post/2013/08/21/Execution-is-Most-Important-to-be-Successful
   - /post/2013/08/21/execution-is-most-important-to-be-successful
   - /post.aspx?id=41887667-61ac-4e3f-a530-9f4132665d98

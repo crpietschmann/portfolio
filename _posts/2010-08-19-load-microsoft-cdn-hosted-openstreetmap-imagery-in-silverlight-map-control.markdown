@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "C#", "Silverlight"]
 redirect_from: 
+  - /post/2010/08/19/Load-Microsoft-CDN-Hosted-OpenStreetMap-Imagery-In-Silverlight-Map-Control.aspx
   - /post/2010/08/19/Load-Microsoft-CDN-Hosted-OpenStreetMap-Imagery-In-Silverlight-Map-Control
   - /post/2010/08/19/load-microsoft-cdn-hosted-openstreetmap-imagery-in-silverlight-map-control
   - /post.aspx?id=fd2f37b1-3f8e-428f-8310-a9aee245a162

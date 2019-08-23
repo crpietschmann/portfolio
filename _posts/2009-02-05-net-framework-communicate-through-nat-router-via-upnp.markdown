@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Win32API"]
 redirect_from: 
+  - /post/2009/02/05/NET-Framework-Communicate-through-NAT-Router-via-UPnP.aspx
   - /post/2009/02/05/NET-Framework-Communicate-through-NAT-Router-via-UPnP
   - /post/2009/02/05/net-framework-communicate-through-nat-router-via-upnp
   - /post.aspx?id=31200e6d-4b61-48b8-a9cb-91e3dd8e97f3

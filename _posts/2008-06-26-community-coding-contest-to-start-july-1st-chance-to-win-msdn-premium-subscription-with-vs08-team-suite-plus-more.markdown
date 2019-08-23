@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/06/26/Community-Coding-Contest-to-start-July-1st-Chance-to-Win-MSDN-Premium-Subscription-with-VS08-Team-Suite-plus-more.aspx
   - /post/2008/06/26/Community-Coding-Contest-to-start-July-1st-Chance-to-Win-MSDN-Premium-Subscription-with-VS08-Team-Suite-plus-more
   - /post/2008/06/26/community-coding-contest-to-start-july-1st-chance-to-win-msdn-premium-subscription-with-vs08-team-suite-plus-more
   - /post.aspx?id=901aa50c-3f65-4a0c-93d9-22f499e19c57

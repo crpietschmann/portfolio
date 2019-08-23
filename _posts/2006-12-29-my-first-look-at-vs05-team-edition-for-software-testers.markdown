@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/12/29/My-first-look-at-VS05-Team-Edition-for-Software-Testers.aspx
   - /post/2006/12/29/My-first-look-at-VS05-Team-Edition-for-Software-Testers
   - /post/2006/12/29/my-first-look-at-vs05-team-edition-for-software-testers
   - /post.aspx?id=60318f70-74ce-4191-b517-39b18462c661

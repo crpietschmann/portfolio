@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2009/01/02/Blogging-Addiction.aspx
   - /post/2009/01/02/Blogging-Addiction
   - /post/2009/01/02/blogging-addiction
   - /post.aspx?id=51d2a521-ec49-43e3-8899-24220b6195fe

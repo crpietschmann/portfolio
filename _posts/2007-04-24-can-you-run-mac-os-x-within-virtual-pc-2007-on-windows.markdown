@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/04/24/Can-you-run-Mac-OS-X-within-Virtual-PC-2007-on-Windows.aspx
   - /post/2007/04/24/Can-you-run-Mac-OS-X-within-Virtual-PC-2007-on-Windows
   - /post/2007/04/24/can-you-run-mac-os-x-within-virtual-pc-2007-on-windows
   - /post.aspx?id=74349c15-05f9-46b7-a16c-5cefa0d1c64f

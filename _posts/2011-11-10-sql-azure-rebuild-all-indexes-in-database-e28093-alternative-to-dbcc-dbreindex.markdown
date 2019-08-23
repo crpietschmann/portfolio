@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["SQL"]
 redirect_from: 
+  - /post/2011/11/10/SQL-Azure-REBUILD-All-Indexes-in-Database-e28093-Alternative-to-DBCC-DBREINDEX.aspx
   - /post/2011/11/10/SQL-Azure-REBUILD-All-Indexes-in-Database-e28093-Alternative-to-DBCC-DBREINDEX
   - /post/2011/11/10/sql-azure-rebuild-all-indexes-in-database-e28093-alternative-to-dbcc-dbreindex
   - /post.aspx?id=e4ba6b86-79cc-4d7d-81d0-f53e35dff7ca

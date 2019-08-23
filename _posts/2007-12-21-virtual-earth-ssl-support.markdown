@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2007/12/21/Virtual-Earth-SSL-Support.aspx
   - /post/2007/12/21/Virtual-Earth-SSL-Support
   - /post/2007/12/21/virtual-earth-ssl-support
   - /post.aspx?id=2b0b150d-b75c-4d4d-8926-82662e02237e

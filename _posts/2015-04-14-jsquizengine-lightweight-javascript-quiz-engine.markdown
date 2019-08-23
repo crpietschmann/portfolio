@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: []
 redirect_from: 
+  - /post/2015/04/14/jsQuizEngine-lightweight-javascript-quiz-engine.aspx
   - /post/2015/04/14/jsQuizEngine-lightweight-javascript-quiz-engine
   - /post/2015/04/14/jsquizengine-lightweight-javascript-quiz-engine
   - /post.aspx?id=e208ba60-51df-4971-b579-3a5b2efd206a

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#"]
 redirect_from: 
+  - /post/2013/03/16/What-e2809cvare2809d-really-means-in-Ce28093Ite28099s-not-e2809cvariante2809d.aspx
   - /post/2013/03/16/What-e2809cvare2809d-really-means-in-Ce28093Ite28099s-not-e2809cvariante2809d
   - /post/2013/03/16/what-e2809cvare2809d-really-means-in-ce28093ite28099s-not-e2809cvariante2809d
   - /post.aspx?id=208e1052-daef-4bb0-aea3-b90a9f199701

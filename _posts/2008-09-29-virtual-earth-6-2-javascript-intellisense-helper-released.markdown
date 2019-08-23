@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2008/09/29/Virtual-Earth-6-2-JavaScript-Intellisense-Helper-Released.aspx
   - /post/2008/09/29/Virtual-Earth-6-2-JavaScript-Intellisense-Helper-Released
   - /post/2008/09/29/virtual-earth-6-2-javascript-intellisense-helper-released
   - /post.aspx?id=96a3a347-aa0f-46e1-bc94-261e5279256c

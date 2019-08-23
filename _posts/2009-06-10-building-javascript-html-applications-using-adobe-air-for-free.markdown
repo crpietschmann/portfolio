@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2009/06/10/Building-JavaScript-HTML-Applications-using-Adobe-AIR-for-FREE.aspx
   - /post/2009/06/10/Building-JavaScript-HTML-Applications-using-Adobe-AIR-for-FREE
   - /post/2009/06/10/building-javascript-html-applications-using-adobe-air-for-free
   - /post.aspx?id=b5ce781e-d427-42d2-95c7-d01f6cf3c690

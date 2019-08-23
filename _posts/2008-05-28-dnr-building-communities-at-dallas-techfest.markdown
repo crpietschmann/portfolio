@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["WI-INETA"]
 redirect_from: 
+  - /post/2008/05/28/DNR-Building-Communities-at-Dallas-TechFest.aspx
   - /post/2008/05/28/DNR-Building-Communities-at-Dallas-TechFest
   - /post/2008/05/28/dnr-building-communities-at-dallas-techfest
   - /post.aspx?id=61ba37eb-e21a-405d-b0ae-e8766bc4b575

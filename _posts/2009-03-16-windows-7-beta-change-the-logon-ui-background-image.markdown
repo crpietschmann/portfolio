@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2009/03/16/Windows-7-Beta-Change-the-Logon-UI-Background-Image.aspx
   - /post/2009/03/16/Windows-7-Beta-Change-the-Logon-UI-Background-Image
   - /post/2009/03/16/windows-7-beta-change-the-logon-ui-background-image
   - /post.aspx?id=bc314f2b-930f-48b4-9d8b-3bc84cc69f45

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General", "Inspiration"]
 redirect_from: 
+  - /post/2016/04/30/Advice-on-Starting-a-Business.aspx
   - /post/2016/04/30/Advice-on-Starting-a-Business
   - /post/2016/04/30/advice-on-starting-a-business
   - /post.aspx?id=32a10582-e1c1-4445-8cc6-13c0dee51697

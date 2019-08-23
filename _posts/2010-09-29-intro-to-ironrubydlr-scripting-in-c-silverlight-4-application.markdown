@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Silverlight", "DLR", "Ruby"]
 redirect_from: 
+  - /post/2010/09/29/Intro-to-IronRubyDLR-Scripting-in-C-Silverlight-4-Application.aspx
   - /post/2010/09/29/Intro-to-IronRubyDLR-Scripting-in-C-Silverlight-4-Application
   - /post/2010/09/29/intro-to-ironrubydlr-scripting-in-c-silverlight-4-application
   - /post.aspx?id=a5b169ee-bfde-4edc-b1b5-847d43a65d37

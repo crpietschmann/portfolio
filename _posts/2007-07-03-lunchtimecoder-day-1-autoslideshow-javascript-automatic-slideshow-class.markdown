@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/07/03/LunchTimeCoder-Day-1-AutoSlideShow-JavaScript-Automatic-SlideShow-Class.aspx
   - /post/2007/07/03/LunchTimeCoder-Day-1-AutoSlideShow-JavaScript-Automatic-SlideShow-Class
   - /post/2007/07/03/lunchtimecoder-day-1-autoslideshow-javascript-automatic-slideshow-class
   - /post.aspx?id=f0037190-b496-41fd-947e-cfdef493a3dd

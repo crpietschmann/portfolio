@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/10/28/WPF-Toolkit-adds-Ribbon-Control-to-NET-35-SP1.aspx
   - /post/2008/10/28/WPF-Toolkit-adds-Ribbon-Control-to-NET-35-SP1
   - /post/2008/10/28/wpf-toolkit-adds-ribbon-control-to-net-35-sp1
   - /post.aspx?id=195a44a8-f7ab-4fb0-8038-e88e67b3c10c

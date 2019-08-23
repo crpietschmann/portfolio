@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2008/01/24/Virtual-Earth-Dynamically-Load-InfoBox-Using-ASPNET-AJAX.aspx
   - /post/2008/01/24/Virtual-Earth-Dynamically-Load-InfoBox-Using-ASPNET-AJAX
   - /post/2008/01/24/virtual-earth-dynamically-load-infobox-using-aspnet-ajax
   - /post.aspx?id=6271e9a0-4100-4919-af08-bd31ededb45b

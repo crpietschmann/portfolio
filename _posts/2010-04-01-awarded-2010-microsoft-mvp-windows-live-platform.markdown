@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "General"]
 redirect_from: 
+  - /post/2010/04/01/Awarded-2010-Microsoft-MVP-Windows-Live-Platform.aspx
   - /post/2010/04/01/Awarded-2010-Microsoft-MVP-Windows-Live-Platform
   - /post/2010/04/01/awarded-2010-microsoft-mvp-windows-live-platform
   - /post.aspx?id=c8ca950f-a789-41da-a19e-ca5dd85836d7

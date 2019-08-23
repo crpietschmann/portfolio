@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: []
 redirect_from: 
+  - /post/2016/03/17/Why-Companies-Should-Contribute-to-Open-Source.aspx
   - /post/2016/03/17/Why-Companies-Should-Contribute-to-Open-Source
   - /post/2016/03/17/why-companies-should-contribute-to-open-source
   - /post.aspx?id=c4125a26-9da8-40b2-978e-11fdb817cfe3

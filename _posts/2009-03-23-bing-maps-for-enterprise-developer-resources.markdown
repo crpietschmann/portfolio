@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: []
 redirect_from: 
+  - /page/Bing-Maps-for-Enterprise-Developer-Resources.aspx
   - /page/Bing-Maps-for-Enterprise-Developer-Resources
   - /page/bing-maps-for-enterprise-developer-resources
   - /post.aspx?id=31ade64f-92b6-4507-b3c9-a8b7ff4b18e2

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2012/12/06/All-Information-Workers-are-NOT-Equal-or-Even-Approximate!.aspx
   - /post/2012/12/06/All-Information-Workers-are-NOT-Equal-or-Even-Approximate!
   - /post/2012/12/06/all-information-workers-are-not-equal-or-even-approximate!
   - /post.aspx?id=db54d3a6-fcfd-400b-b1f0-a8ca48c8e6c3

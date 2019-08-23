@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/10/31/I-Still-Believe-in-Programming-Language-Independence.aspx
   - /post/2008/10/31/I-Still-Believe-in-Programming-Language-Independence
   - /post/2008/10/31/i-still-believe-in-programming-language-independence
   - /post.aspx?id=de7bf974-cbc0-4ae0-accd-a44176ac7016

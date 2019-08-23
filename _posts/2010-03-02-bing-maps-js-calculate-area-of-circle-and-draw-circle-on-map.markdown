@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2010/03/02/Bing-Maps-JS-Calculate-Area-of-Circle-and-Draw-Circle-on-Map.aspx
   - /post/2010/03/02/Bing-Maps-JS-Calculate-Area-of-Circle-and-Draw-Circle-on-Map
   - /post/2010/03/02/bing-maps-js-calculate-area-of-circle-and-draw-circle-on-map
   - /post.aspx?id=09e73b5d-431b-43df-b0be-4e5f44cca05c

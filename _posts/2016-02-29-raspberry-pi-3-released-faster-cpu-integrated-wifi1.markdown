@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: []
 redirect_from: 
+  - /post/2016/02/29/Raspberry-Pi-3-released-faster-CPU-integrated-Wifi1.aspx
   - /post/2016/02/29/Raspberry-Pi-3-released-faster-CPU-integrated-Wifi1
   - /post/2016/02/29/raspberry-pi-3-released-faster-cpu-integrated-wifi1
   - /post.aspx?id=3ed827a8-9ebc-4588-8dc2-bf2f77dedac9

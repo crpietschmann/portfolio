@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/04/11/Windows-Vista-Device-Drivers-for-Belkin-F5D7000-Wireless-Network-Card.aspx
   - /post/2007/04/11/Windows-Vista-Device-Drivers-for-Belkin-F5D7000-Wireless-Network-Card
   - /post/2007/04/11/windows-vista-device-drivers-for-belkin-f5d7000-wireless-network-card
   - /post.aspx?id=169e6628-9850-464d-b1e5-cef002568bcf

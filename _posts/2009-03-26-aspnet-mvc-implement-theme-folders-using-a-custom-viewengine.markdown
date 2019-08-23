@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["ASP.NET MVC"]
 redirect_from: 
+  - /post/2009/03/26/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx
   - /post/2009/03/26/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine
   - /post/2009/03/26/aspnet-mvc-implement-theme-folders-using-a-custom-viewengine
   - /post.aspx?id=237305ef-7b41-45f4-af3b-d7b1b116e78b

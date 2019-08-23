@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2013/09/08/You-are-responsible-for-YOU.aspx
   - /post/2013/09/08/You-are-responsible-for-YOU
   - /post/2013/09/08/you-are-responsible-for-you
   - /post.aspx?id=12f5f0a9-3c35-4d38-ae7d-96d863c60324

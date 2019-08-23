@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "vb.net"]
 redirect_from: 
+  - /post/2007/09/12/Parallel-FX-Library-Optimize-your-code-for-Multi-Core-machines.aspx
   - /post/2007/09/12/Parallel-FX-Library-Optimize-your-code-for-Multi-Core-machines
   - /post/2007/09/12/parallel-fx-library-optimize-your-code-for-multi-core-machines
   - /post.aspx?id=cfa97a5b-e672-425e-b3d1-92fec592fa72

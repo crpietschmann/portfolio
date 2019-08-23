@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2011/04/06/Bing-Maps-JavaScript-Intellisense-Helper-Now-Available-as-Nuget-Package.aspx
   - /post/2011/04/06/Bing-Maps-JavaScript-Intellisense-Helper-Now-Available-as-Nuget-Package
   - /post/2011/04/06/bing-maps-javascript-intellisense-helper-now-available-as-nuget-package
   - /post.aspx?id=2f0ecc1e-282d-4f95-a9f6-f7f2699e88a8

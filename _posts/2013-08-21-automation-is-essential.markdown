@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2013/08/21/Automation-is-Essential.aspx
   - /post/2013/08/21/Automation-is-Essential
   - /post/2013/08/21/automation-is-essential
   - /post.aspx?id=473145aa-91dc-432e-912b-63e6643970e9

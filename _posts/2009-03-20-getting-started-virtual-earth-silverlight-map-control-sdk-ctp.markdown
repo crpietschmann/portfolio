@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
+  - /post/2009/03/20/Getting-Started-Virtual-Earth-Silverlight-Map-Control-SDK-CTP.aspx
   - /post/2009/03/20/Getting-Started-Virtual-Earth-Silverlight-Map-Control-SDK-CTP
   - /post/2009/03/20/getting-started-virtual-earth-silverlight-map-control-sdk-ctp
   - /post.aspx?id=20736f64-9876-4d0f-b60e-3fe20252d4c4

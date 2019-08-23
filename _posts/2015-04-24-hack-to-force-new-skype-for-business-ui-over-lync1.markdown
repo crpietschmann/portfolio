@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2015/04/24/Hack-to-Force-new-Skype-for-Business-UI-over-Lync1.aspx
   - /post/2015/04/24/Hack-to-Force-new-Skype-for-Business-UI-over-Lync1
   - /post/2015/04/24/hack-to-force-new-skype-for-business-ui-over-lync1
   - /post.aspx?id=83b0a1cb-e4a7-4635-9c4d-108aa49fbf4f

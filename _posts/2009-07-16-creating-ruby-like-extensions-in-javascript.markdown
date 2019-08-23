@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript", "Ruby"]
 redirect_from: 
+  - /post/2009/07/16/Creating-Ruby-like-Extensions-in-JavaScript.aspx
   - /post/2009/07/16/Creating-Ruby-like-Extensions-in-JavaScript
   - /post/2009/07/16/creating-ruby-like-extensions-in-javascript
   - /post.aspx?id=091362bb-cfb5-40c8-abff-bdb4156ca837

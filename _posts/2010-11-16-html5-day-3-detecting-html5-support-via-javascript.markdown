@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["HTML", "JavaScript"]
 redirect_from: 
+  - /post/2010/11/16/HTML5-Day-3-Detecting-HTML5-Support-via-JavaScript.aspx
   - /post/2010/11/16/HTML5-Day-3-Detecting-HTML5-Support-via-JavaScript
   - /post/2010/11/16/html5-day-3-detecting-html5-support-via-javascript
   - /post.aspx?id=a74bb15d-fc92-4f33-9d43-c112b33857d9

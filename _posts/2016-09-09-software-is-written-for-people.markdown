@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2016/09/09/Software-is-Written-FOR-PEOPLE.aspx
   - /post/2016/09/09/Software-is-Written-FOR-PEOPLE
   - /post/2016/09/09/software-is-written-for-people
   - /post.aspx?id=7eb6c26c-8e7e-4638-94d3-a18216044057

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2007/12/21/Virtual-Earth-Getting-Started-Adding-a-basic-Map-to-a-page.aspx
   - /post/2007/12/21/Virtual-Earth-Getting-Started-Adding-a-basic-Map-to-a-page
   - /post/2007/12/21/virtual-earth-getting-started-adding-a-basic-map-to-a-page
   - /post.aspx?id=80f10444-7e23-45b5-bf7b-f6781fc31925

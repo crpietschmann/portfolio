@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: []
 redirect_from: 
+  - /page/Life-Rules.aspx
   - /page/Life-Rules
   - /page/life-rules
   - /post.aspx?id=9a4a7cbc-1cfa-460e-bb6f-90f89ddd8357

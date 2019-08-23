@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2015/12/14/Windows-Live-Writer-now-Open-Source.aspx
   - /post/2015/12/14/Windows-Live-Writer-now-Open-Source
   - /post/2015/12/14/windows-live-writer-now-open-source
   - /post.aspx?id=4274d678-40d0-406b-bde7-27d7b8c21ec5

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "vb.net"]
 redirect_from: 
+  - /post/2011/01/01/Odd-NET-Namespace-Scoping-Causes-Compile-Time-Exception.aspx
   - /post/2011/01/01/Odd-NET-Namespace-Scoping-Causes-Compile-Time-Exception
   - /post/2011/01/01/odd-net-namespace-scoping-causes-compile-time-exception
   - /post.aspx?id=3b8c88bd-386c-43fa-95f7-b1ba62218b17

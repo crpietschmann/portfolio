@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2007/07/16/LunchTimeCoderAutoSlideShow-v105-some-small-enhancements.aspx
   - /post/2007/07/16/LunchTimeCoderAutoSlideShow-v105-some-small-enhancements
   - /post/2007/07/16/lunchtimecoderautoslideshow-v105-some-small-enhancements
   - /post.aspx?id=19c4fbfa-6ec6-47b8-be44-e31ed01e01ec

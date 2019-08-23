@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/12/03/Vista-Experience-Update-Vista-Sidebar-Gadgets.aspx
   - /post/2006/12/03/Vista-Experience-Update-Vista-Sidebar-Gadgets
   - /post/2006/12/03/vista-experience-update-vista-sidebar-gadgets
   - /post.aspx?id=b0029f4d-2160-4384-976f-704e3994dd30

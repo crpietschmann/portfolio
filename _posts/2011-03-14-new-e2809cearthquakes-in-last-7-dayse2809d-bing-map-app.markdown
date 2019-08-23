@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: []
 redirect_from: 
+  - /post/2011/03/14/New-e2809cEarthquakes-in-Last-7-Dayse2809d-Bing-Map-App.aspx
   - /post/2011/03/14/New-e2809cEarthquakes-in-Last-7-Dayse2809d-Bing-Map-App
   - /post/2011/03/14/new-e2809cearthquakes-in-last-7-dayse2809d-bing-map-app
   - /post.aspx?id=cd6706a5-7852-4f22-b0ff-39e774080767

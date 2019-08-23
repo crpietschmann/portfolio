@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2010/08/31/Today-is-last-day-to-enter-2010-Community-Coding-Contest-for-Chance-to-win-MSDN-Ultimate-Subscription.aspx
   - /post/2010/08/31/Today-is-last-day-to-enter-2010-Community-Coding-Contest-for-Chance-to-win-MSDN-Ultimate-Subscription
   - /post/2010/08/31/today-is-last-day-to-enter-2010-community-coding-contest-for-chance-to-win-msdn-ultimate-subscription
   - /post.aspx?id=38300790-5ba9-4e12-bdae-e793b866df87

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2013/08/04/An-Hour-Saved-is-an-Hour-Earned.aspx
   - /post/2013/08/04/An-Hour-Saved-is-an-Hour-Earned
   - /post/2013/08/04/an-hour-saved-is-an-hour-earned
   - /post.aspx?id=db8bb25b-1bb5-4a04-87f0-29a8be6014c9

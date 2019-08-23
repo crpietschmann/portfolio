@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2008/01/24/LINQ-to-JavaScript-(JSLINQ)-Open-Source-Project-Launched!.aspx
   - /post/2008/01/24/LINQ-to-JavaScript-(JSLINQ)-Open-Source-Project-Launched!
   - /post/2008/01/24/linq-to-javascript-(jslinq)-open-source-project-launched!
   - /post.aspx?id=c7f8e44c-0ee9-41f9-b164-79b1aca705ef

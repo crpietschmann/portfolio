@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2015/09/18/JavaScript-Basics-String-Contains-Function.aspx
   - /post/2015/09/18/JavaScript-Basics-String-Contains-Function
   - /post/2015/09/18/javascript-basics-string-contains-function
   - /post.aspx?id=adddb895-e44a-4354-b21a-eecbb5c294bf

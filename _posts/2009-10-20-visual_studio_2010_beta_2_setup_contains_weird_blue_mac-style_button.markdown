@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2009/10/20/Visual_Studio_2010_Beta_2_Setup_Contains_Weird_Blue_Mac-Style_Button.aspx
   - /post/2009/10/20/Visual_Studio_2010_Beta_2_Setup_Contains_Weird_Blue_Mac-Style_Button
   - /post/2009/10/20/visual_studio_2010_beta_2_setup_contains_weird_blue_mac-style_button
   - /post.aspx?id=9dd08a92-e8c0-45c9-97a7-44d2e652c5dd

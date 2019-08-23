@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript", "JavaScript"]
 redirect_from: 
+  - /post/2010/11/26/jHash-Easily-Manage-Browser-History-windowlocationhash.aspx
   - /post/2010/11/26/jHash-Easily-Manage-Browser-History-windowlocationhash
   - /post/2010/11/26/jhash-easily-manage-browser-history-windowlocationhash
   - /post.aspx?id=af2d7ca7-0a4a-4d50-ad41-fbc320ec714c

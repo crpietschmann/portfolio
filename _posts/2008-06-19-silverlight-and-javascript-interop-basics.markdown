@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Silverlight"]
 redirect_from: 
+  - /post/2008/06/19/Silverlight-and-JavaScript-Interop-Basics.aspx
   - /post/2008/06/19/Silverlight-and-JavaScript-Interop-Basics
   - /post/2008/06/19/silverlight-and-javascript-interop-basics
   - /post.aspx?id=8d7249a9-22fa-4075-af7b-d0de77c02cbf

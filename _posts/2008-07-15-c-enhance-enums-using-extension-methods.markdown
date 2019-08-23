@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#"]
 redirect_from: 
+  - /post/2008/07/15/C-Enhance-Enums-using-Extension-Methods.aspx
   - /post/2008/07/15/C-Enhance-Enums-using-Extension-Methods
   - /post/2008/07/15/c-enhance-enums-using-extension-methods
   - /post.aspx?id=4bc01ef2-0463-4739-aa4d-bfe73c7a00bb

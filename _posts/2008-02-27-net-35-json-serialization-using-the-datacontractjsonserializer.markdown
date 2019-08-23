@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2008/02/27/NET-35-JSON-Serialization-using-the-DataContractJsonSerializer.aspx
   - /post/2008/02/27/NET-35-JSON-Serialization-using-the-DataContractJsonSerializer
   - /post/2008/02/27/net-35-json-serialization-using-the-datacontractjsonserializer
   - /post.aspx?id=5ad641db-7f0e-499c-a653-e388b441caf9

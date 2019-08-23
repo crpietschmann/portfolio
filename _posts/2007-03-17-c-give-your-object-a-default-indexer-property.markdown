@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General", "General"]
 redirect_from: 
+  - /post/2007/03/17/C-Give-your-object-a-Default-Indexer-Property.aspx
   - /post/2007/03/17/C-Give-your-object-a-Default-Indexer-Property
   - /post/2007/03/17/c-give-your-object-a-default-indexer-property
   - /post.aspx?id=19fce326-b2f2-45a7-b1b0-da2f45fdcb07

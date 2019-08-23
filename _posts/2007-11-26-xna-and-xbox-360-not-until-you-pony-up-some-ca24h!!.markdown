@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/11/26/XNA-and-XBox-360-Not-until-you-pony-up-some-ca24h!!.aspx
   - /post/2007/11/26/XNA-and-XBox-360-Not-until-you-pony-up-some-ca24h!!
   - /post/2007/11/26/xna-and-xbox-360-not-until-you-pony-up-some-ca24h!!
   - /post.aspx?id=6cd2cb86-ed93-4cee-be35-b17ba39c80c3

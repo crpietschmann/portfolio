@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/05/03/Want-to-eliminate-DRM-Just-Boycott-all-DRM-protected-content.aspx
   - /post/2007/05/03/Want-to-eliminate-DRM-Just-Boycott-all-DRM-protected-content
   - /post/2007/05/03/want-to-eliminate-drm-just-boycott-all-drm-protected-content
   - /post.aspx?id=5a74bb88-8c85-42c3-98a2-c333593fd84e

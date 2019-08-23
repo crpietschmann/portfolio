@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/06/11/Medical-Technology-Robotic-Assisted-Surgery.aspx
   - /post/2008/06/11/Medical-Technology-Robotic-Assisted-Surgery
   - /post/2008/06/11/medical-technology-robotic-assisted-surgery
   - /post.aspx?id=5695fabf-dc76-4ef4-b8e5-39c41518c782

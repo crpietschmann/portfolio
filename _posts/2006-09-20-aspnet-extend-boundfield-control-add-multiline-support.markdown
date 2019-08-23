@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2006/09/20/ASPNET-Extend-BoundField-Control-Add-MultiLine-support.aspx
   - /post/2006/09/20/ASPNET-Extend-BoundField-Control-Add-MultiLine-support
   - /post/2006/09/20/aspnet-extend-boundfield-control-add-multiline-support
   - /post.aspx?id=153234aa-4896-47f3-8bb3-83663c56b7ee

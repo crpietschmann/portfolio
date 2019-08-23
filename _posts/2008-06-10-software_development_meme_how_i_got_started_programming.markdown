@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/06/10/Software_Development_Meme_How_I_got_started_programming.aspx
   - /post/2008/06/10/Software_Development_Meme_How_I_got_started_programming
   - /post/2008/06/10/software_development_meme_how_i_got_started_programming
   - /post.aspx?id=8630ce81-819e-47f6-9a48-02068d28234b

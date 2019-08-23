@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["WI-INETA"]
 redirect_from: 
+  - /post/2011/03/21/Deeper-in-NET-2011-in-Review-with-Pictures.aspx
   - /post/2011/03/21/Deeper-in-NET-2011-in-Review-with-Pictures
   - /post/2011/03/21/deeper-in-net-2011-in-review-with-pictures
   - /post.aspx?id=c0149992-ebb3-4502-9312-7054fbeeee09

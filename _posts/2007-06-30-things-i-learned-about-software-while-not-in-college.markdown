@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/06/30/Things-I-learned-about-Software-WHILE-NOT-in-College.aspx
   - /post/2007/06/30/Things-I-learned-about-Software-WHILE-NOT-in-College
   - /post/2007/06/30/things-i-learned-about-software-while-not-in-college
   - /post.aspx?id=120aa90a-e869-4b8e-b5ff-4e883a93bba7

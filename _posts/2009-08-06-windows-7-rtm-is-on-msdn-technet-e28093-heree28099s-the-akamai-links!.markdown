@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2009/08/06/Windows-7-RTM-is-on-MSDN-TechNet-e28093-Heree28099s-the-AKAMAI-links!.aspx
   - /post/2009/08/06/Windows-7-RTM-is-on-MSDN-TechNet-e28093-Heree28099s-the-AKAMAI-links!
   - /post/2009/08/06/windows-7-rtm-is-on-msdn-technet-e28093-heree28099s-the-akamai-links!
   - /post.aspx?id=0a4dba86-eec6-465b-9398-ec0c6f020e05

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/05/29/Mount-ISO-Images-in-Vista-x64.aspx
   - /post/2008/05/29/Mount-ISO-Images-in-Vista-x64
   - /post/2008/05/29/mount-iso-images-in-vista-x64
   - /post.aspx?id=b62b14ef-179a-4c1b-ba5e-dc58d3c80584

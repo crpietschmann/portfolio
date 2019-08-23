@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/07/24/Apples-iCal-implemented-in-NETMono.aspx
   - /post/2006/07/24/Apples-iCal-implemented-in-NETMono
   - /post/2006/07/24/apples-ical-implemented-in-netmono
   - /post.aspx?id=649df41e-22c4-493c-98f6-866761c63846

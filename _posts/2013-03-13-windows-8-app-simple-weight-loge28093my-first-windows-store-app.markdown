@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Windows Store App"]
 redirect_from: 
+  - /post/2013/03/13/Windows-8-App-Simple-Weight-Loge28093My-first-Windows-Store-App.aspx
   - /post/2013/03/13/Windows-8-App-Simple-Weight-Loge28093My-first-Windows-Store-App
   - /post/2013/03/13/windows-8-app-simple-weight-loge28093my-first-windows-store-app
   - /post.aspx?id=4b3ea35d-4d26-4281-9335-6154990657d1

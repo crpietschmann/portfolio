@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["DLR", "Ruby", "Silverlight"]
 redirect_from: 
+  - /post/2010/10/02/Silverlight-Embed-IronRubyDLR-Scripting-within-XAML-using-IValueConverter-and-Custom-UserControl.aspx
   - /post/2010/10/02/Silverlight-Embed-IronRubyDLR-Scripting-within-XAML-using-IValueConverter-and-Custom-UserControl
   - /post/2010/10/02/silverlight-embed-ironrubydlr-scripting-within-xaml-using-ivalueconverter-and-custom-usercontrol
   - /post.aspx?id=e06592b2-190b-4ac4-b992-c68081e89afd

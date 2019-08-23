@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/05/16/Site-Referral-Keywords-Top-10-Strange-and-Surprising.aspx
   - /post/2007/05/16/Site-Referral-Keywords-Top-10-Strange-and-Surprising
   - /post/2007/05/16/site-referral-keywords-top-10-strange-and-surprising
   - /post.aspx?id=e753977d-7a4e-43df-9983-44e57a9d84b2

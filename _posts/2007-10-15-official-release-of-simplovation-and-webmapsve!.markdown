@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General", "Bing Maps"]
 redirect_from: 
+  - /post/2007/10/15/Official-Release-of-Simplovation-and-WebMapsVE!.aspx
   - /post/2007/10/15/Official-Release-of-Simplovation-and-WebMapsVE!
   - /post/2007/10/15/official-release-of-simplovation-and-webmapsve!
   - /post.aspx?id=67c90ddd-12f5-4716-9cc1-cb2dde3b0c24

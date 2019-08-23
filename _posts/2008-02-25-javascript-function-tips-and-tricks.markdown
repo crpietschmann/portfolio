@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2008/02/25/JavaScript-Function-Tips-and-Tricks.aspx
   - /post/2008/02/25/JavaScript-Function-Tips-and-Tricks
   - /post/2008/02/25/javascript-function-tips-and-tricks
   - /post.aspx?id=7847c5f4-64eb-4ca3-9c15-9992806d9aa2

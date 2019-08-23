@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2009/02/24/Ive-jumped-on-the-Anti-IE6-band-wagon.aspx
   - /post/2009/02/24/Ive-jumped-on-the-Anti-IE6-band-wagon
   - /post/2009/02/24/ive-jumped-on-the-anti-ie6-band-wagon
   - /post.aspx?id=9b6e1082-e828-40dd-a470-7896a4569776

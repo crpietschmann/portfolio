@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/03/06/MIX08-Session-Recordings-Now-Available-Online.aspx
   - /post/2008/03/06/MIX08-Session-Recordings-Now-Available-Online
   - /post/2008/03/06/mix08-session-recordings-now-available-online
   - /post.aspx?id=3f6e5b62-cee1-437c-a1b5-3bae661bf772

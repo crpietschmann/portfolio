@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2009/03/13/Virtual-Earth-Modify-the-Opacity-of-an-Existing-Custom-Tile-Layer.aspx
   - /post/2009/03/13/Virtual-Earth-Modify-the-Opacity-of-an-Existing-Custom-Tile-Layer
   - /post/2009/03/13/virtual-earth-modify-the-opacity-of-an-existing-custom-tile-layer
   - /post.aspx?id=ea0010eb-d51d-406a-82b1-3d1c6031a34c

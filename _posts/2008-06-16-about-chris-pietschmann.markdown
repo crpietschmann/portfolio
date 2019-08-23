@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: []
 redirect_from: 
+  - /page/About-Chris-Pietschmann.aspx
   - /page/About-Chris-Pietschmann
   - /page/about-chris-pietschmann
   - /post.aspx?id=29eaeda8-6724-4be9-b2c4-ec4e6415c049

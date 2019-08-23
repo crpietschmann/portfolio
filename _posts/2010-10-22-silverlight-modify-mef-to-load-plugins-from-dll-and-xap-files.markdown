@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Silverlight", "C#"]
 redirect_from: 
+  - /post/2010/10/22/Silverlight-Modify-MEF-to-load-plugins-from-DLL-and-XAP-files.aspx
   - /post/2010/10/22/Silverlight-Modify-MEF-to-load-plugins-from-DLL-and-XAP-files
   - /post/2010/10/22/silverlight-modify-mef-to-load-plugins-from-dll-and-xap-files
   - /post.aspx?id=0a7d9d3f-9f03-4c26-8536-620a899d1903

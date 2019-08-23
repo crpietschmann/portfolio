@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/10/23/Real-Estate-The-Search-That-Should-Be.aspx
   - /post/2007/10/23/Real-Estate-The-Search-That-Should-Be
   - /post/2007/10/23/real-estate-the-search-that-should-be
   - /post.aspx?id=5f7f77c5-b67c-4d25-a100-de58a97fe385

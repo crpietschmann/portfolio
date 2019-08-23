@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2009/03/21/Im-starting-a-Virtual-Earth-Developer-Resource-list.aspx
   - /post/2009/03/21/Im-starting-a-Virtual-Earth-Developer-Resource-list
   - /post/2009/03/21/im-starting-a-virtual-earth-developer-resource-list
   - /post.aspx?id=99f42301-b361-4bd0-8968-dd138820d57e

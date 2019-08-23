@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/07/20/DotNetKicks-Social-bookmarking-site-for-NET.aspx
   - /post/2006/07/20/DotNetKicks-Social-bookmarking-site-for-NET
   - /post/2006/07/20/dotnetkicks-social-bookmarking-site-for-net
   - /post.aspx?id=2d3c60b9-faab-403b-b814-690e0bce4897

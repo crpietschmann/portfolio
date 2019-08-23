@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["HTML", "JavaScript"]
 redirect_from: 
+  - /post/2012/01/21/HTML5-IE9-Bug-SELECT-box-is-Un-Selected-using-Mouse-if-CSS-modifies-position-on-hover.aspx
   - /post/2012/01/21/HTML5-IE9-Bug-SELECT-box-is-Un-Selected-using-Mouse-if-CSS-modifies-position-on-hover
   - /post/2012/01/21/html5-ie9-bug-select-box-is-un-selected-using-mouse-if-css-modifies-position-on-hover
   - /post.aspx?id=ccc4c389-058d-40d5-ac71-46819daeef7c

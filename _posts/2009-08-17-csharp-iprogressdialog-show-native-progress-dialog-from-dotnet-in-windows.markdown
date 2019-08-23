@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Win32API"]
 redirect_from: 
+  - /post/2009/08/17/CSharp-IProgressDialog-Show-Native-Progress-Dialog-from-dotNet-in-Windows.aspx
   - /post/2009/08/17/CSharp-IProgressDialog-Show-Native-Progress-Dialog-from-dotNet-in-Windows
   - /post/2009/08/17/csharp-iprogressdialog-show-native-progress-dialog-from-dotnet-in-windows
   - /post.aspx?id=8cdbe666-e375-4311-b6ca-4794ec44ff41

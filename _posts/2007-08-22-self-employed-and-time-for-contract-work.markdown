@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/08/22/Self-Employed-and-time-for-contract-work.aspx
   - /post/2007/08/22/Self-Employed-and-time-for-contract-work
   - /post/2007/08/22/self-employed-and-time-for-contract-work
   - /post.aspx?id=02fef48a-5d94-4e4b-8bb4-6c2180a55c25

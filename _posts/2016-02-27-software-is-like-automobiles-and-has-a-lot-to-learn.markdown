@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration", "Software Craftsmanship"]
 redirect_from: 
+  - /post/2016/02/27/Software-is-like-Automobiles-and-has-a-lot-to-learn.aspx
   - /post/2016/02/27/Software-is-like-Automobiles-and-has-a-lot-to-learn
   - /post/2016/02/27/software-is-like-automobiles-and-has-a-lot-to-learn
   - /post.aspx?id=bc0927e0-d1e0-46e3-9342-bee607216b95

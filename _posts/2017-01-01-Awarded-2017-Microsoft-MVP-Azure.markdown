@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2017/01/01/Awarded-2017-Microsoft-MVP-Azure.aspx
   - /post/2017/01/01/Awarded-2017-Microsoft-MVP-Azure
   - /post/2017/01/01/awarded-2017-microsoft-mvp-azure
   - /post.aspx?id=e0db37b7-9700-497b-854f-4c48141c171c

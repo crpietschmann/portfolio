@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["HTML", "Bing Maps"]
 redirect_from: 
+  - /post/2011/01/13/Geomap-Project-HTML-Extensions-for-Rendering-Map-Displays.aspx
   - /post/2011/01/13/Geomap-Project-HTML-Extensions-for-Rendering-Map-Displays
   - /post/2011/01/13/geomap-project-html-extensions-for-rendering-map-displays
   - /post.aspx?id=59014567-e99d-4eb6-a550-7fcbf3117651

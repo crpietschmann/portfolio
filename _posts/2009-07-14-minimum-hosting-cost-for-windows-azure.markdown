@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2009/07/14/Minimum-Hosting-Cost-for-Windows-Azure.aspx
   - /post/2009/07/14/Minimum-Hosting-Cost-for-Windows-Azure
   - /post/2009/07/14/minimum-hosting-cost-for-windows-azure
   - /post.aspx?id=73f87ea2-e1fe-4231-b8b9-c849938fad4e

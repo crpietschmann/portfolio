@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/04/24/Vista-Experience-Update-Disk-Defragmenter-Revisited.aspx
   - /post/2007/04/24/Vista-Experience-Update-Disk-Defragmenter-Revisited
   - /post/2007/04/24/vista-experience-update-disk-defragmenter-revisited
   - /post.aspx?id=b2beb7a3-6297-4bd9-8496-ade8db7b02c8

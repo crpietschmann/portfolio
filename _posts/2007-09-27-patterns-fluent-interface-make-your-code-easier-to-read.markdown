@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/09/27/Patterns-Fluent-Interface-make-your-code-easier-to-read.aspx
   - /post/2007/09/27/Patterns-Fluent-Interface-make-your-code-easier-to-read
   - /post/2007/09/27/patterns-fluent-interface-make-your-code-easier-to-read
   - /post.aspx?id=d2f6d84b-8265-4c32-a427-ba570e322cef

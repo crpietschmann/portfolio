@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
+  - /post/2009/03/25/Virtual-Earth-Silverlight-Using-MouseClick-Event-To-Add-Pushpins.aspx
   - /post/2009/03/25/Virtual-Earth-Silverlight-Using-MouseClick-Event-To-Add-Pushpins
   - /post/2009/03/25/virtual-earth-silverlight-using-mouseclick-event-to-add-pushpins
   - /post.aspx?id=9f492f0f-8da4-4606-9f43-098074d8b9e9

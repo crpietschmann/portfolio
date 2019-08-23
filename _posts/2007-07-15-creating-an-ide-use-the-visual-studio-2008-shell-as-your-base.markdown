@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "vb.net"]
 redirect_from: 
+  - /post/2007/07/15/Creating-an-IDE-Use-the-Visual-Studio-2008-shell-as-your-base.aspx
   - /post/2007/07/15/Creating-an-IDE-Use-the-Visual-Studio-2008-shell-as-your-base
   - /post/2007/07/15/creating-an-ide-use-the-visual-studio-2008-shell-as-your-base
   - /post.aspx?id=a4a74629-4c48-4a09-b01e-7bf6dc51f4d5

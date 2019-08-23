@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2009/06/02/Bing-Maps-for-Enterprise-Virtual-Earth-Licensing-FAQ-Questions.aspx
   - /post/2009/06/02/Bing-Maps-for-Enterprise-Virtual-Earth-Licensing-FAQ-Questions
   - /post/2009/06/02/bing-maps-for-enterprise-virtual-earth-licensing-faq-questions
   - /post.aspx?id=ad070bf0-ed36-4dcf-995a-d8f4217869a3

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/12/10/Internet-Explorer-62c-wont-you-ever-die!.aspx
   - /post/2008/12/10/Internet-Explorer-62c-wont-you-ever-die!
   - /post/2008/12/10/internet-explorer-62c-wont-you-ever-die!
   - /post.aspx?id=232a24c0-7ceb-4f5f-b662-a273b3b34311

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2008/08/27/NET-35-SP1-DataContractJsonSerializer-Bug.aspx
   - /post/2008/08/27/NET-35-SP1-DataContractJsonSerializer-Bug
   - /post/2008/08/27/net-35-sp1-datacontractjsonserializer-bug
   - /post.aspx?id=ff9ab12f-8a69-4fc7-9bd8-8c5e2ee873c4

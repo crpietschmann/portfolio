@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Silverlight"]
 redirect_from: 
+  - /post/2008/03/05/Opening-Client-Side-Files-using-Silverlight.aspx
   - /post/2008/03/05/Opening-Client-Side-Files-using-Silverlight
   - /post/2008/03/05/opening-client-side-files-using-silverlight
   - /post.aspx?id=f823d977-be23-4989-a881-cdabdafc2910

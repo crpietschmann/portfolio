@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2008/01/14/JavaScript-intTryParse-Equivalent.aspx
   - /post/2008/01/14/JavaScript-intTryParse-Equivalent
   - /post/2008/01/14/javascript-inttryparse-equivalent
   - /post.aspx?id=51e7a0ad-809c-40eb-8b8a-50bf49848a43

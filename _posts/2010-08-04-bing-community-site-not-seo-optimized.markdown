@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2010/08/04/Bing-Community-Site-Not-SEO-Optimized.aspx
   - /post/2010/08/04/Bing-Community-Site-Not-SEO-Optimized
   - /post/2010/08/04/bing-community-site-not-seo-optimized
   - /post.aspx?id=8fd4381d-25b8-4adb-bb57-77ebc58a69a9

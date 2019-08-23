@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/01/13/Ubuntu-610-is-the-easiest-version-of-Linux-thus-far!.aspx
   - /post/2007/01/13/Ubuntu-610-is-the-easiest-version-of-Linux-thus-far!
   - /post/2007/01/13/ubuntu-610-is-the-easiest-version-of-linux-thus-far!
   - /post.aspx?id=1a54eec1-c728-462f-ac3f-6e889b11d4f4

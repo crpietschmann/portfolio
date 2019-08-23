@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#"]
 redirect_from: 
+  - /post/2011/09/07/Entity-Framework-Tips-and-Tricks-Use-GetObjectByKey-When-Querying-a-Single-Entity.aspx
   - /post/2011/09/07/Entity-Framework-Tips-and-Tricks-Use-GetObjectByKey-When-Querying-a-Single-Entity
   - /post/2011/09/07/entity-framework-tips-and-tricks-use-getobjectbykey-when-querying-a-single-entity
   - /post.aspx?id=9cfe92c8-0f36-489b-8993-557350c48256

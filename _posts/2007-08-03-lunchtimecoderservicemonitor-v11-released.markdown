@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/08/03/LunchTimeCoderServiceMonitor-v11-Released.aspx
   - /post/2007/08/03/LunchTimeCoderServiceMonitor-v11-Released
   - /post/2007/08/03/lunchtimecoderservicemonitor-v11-released
   - /post.aspx?id=1c2b8431-1490-4594-97e0-cb70b61c3e25

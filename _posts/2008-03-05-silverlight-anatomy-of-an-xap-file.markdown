@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Silverlight"]
 redirect_from: 
+  - /post/2008/03/05/Silverlight-Anatomy-of-an-XAP-file.aspx
   - /post/2008/03/05/Silverlight-Anatomy-of-an-XAP-file
   - /post/2008/03/05/silverlight-anatomy-of-an-xap-file
   - /post.aspx?id=96ea5cad-e161-4bbb-b90a-12522b711312

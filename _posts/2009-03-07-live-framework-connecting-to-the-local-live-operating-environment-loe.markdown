@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2009/03/07/Live-Framework-Connecting-to-the-Local-Live-Operating-Environment-LOE.aspx
   - /post/2009/03/07/Live-Framework-Connecting-to-the-Local-Live-Operating-Environment-LOE
   - /post/2009/03/07/live-framework-connecting-to-the-local-live-operating-environment-loe
   - /post.aspx?id=047fae73-c0f0-457c-a0ec-9d7454f6810e

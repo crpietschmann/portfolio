@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/11/22/Vista-Experience-Update-Vista-automatically-defragments-your-hard-drives-for-you.aspx
   - /post/2006/11/22/Vista-Experience-Update-Vista-automatically-defragments-your-hard-drives-for-you
   - /post/2006/11/22/vista-experience-update-vista-automatically-defragments-your-hard-drives-for-you
   - /post.aspx?id=6b2e5336-c4cf-40a6-9dbd-276536836b31

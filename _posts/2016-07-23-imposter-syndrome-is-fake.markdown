@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2016/07/23/Imposter-Syndrome-is-Fake.aspx
   - /post/2016/07/23/Imposter-Syndrome-is-Fake
   - /post/2016/07/23/imposter-syndrome-is-fake
   - /post.aspx?id=d5372547-3dd9-4726-81cd-234b664a860a

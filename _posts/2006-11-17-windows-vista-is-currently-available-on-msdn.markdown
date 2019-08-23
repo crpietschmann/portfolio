@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/11/17/Windows-Vista-is-currently-available-on-MSDN.aspx
   - /post/2006/11/17/Windows-Vista-is-currently-available-on-MSDN
   - /post/2006/11/17/windows-vista-is-currently-available-on-msdn
   - /post.aspx?id=4423f3d7-a4b0-4781-b403-4167ed20b60b

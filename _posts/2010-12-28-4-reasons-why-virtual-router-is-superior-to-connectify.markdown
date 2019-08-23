@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: []
 redirect_from: 
+  - /post/2010/12/28/4-Reasons-Why-Virtual-Router-is-Superior-to-Connectify.aspx
   - /post/2010/12/28/4-Reasons-Why-Virtual-Router-is-Superior-to-Connectify
   - /post/2010/12/28/4-reasons-why-virtual-router-is-superior-to-connectify
   - /post.aspx?id=d9d50489-8c5d-4b2c-8101-758bfe153fa3

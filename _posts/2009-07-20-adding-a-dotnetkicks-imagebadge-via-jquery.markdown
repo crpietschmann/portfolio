@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2009/07/20/Adding-a-DotNetKicks-ImageBadge-via-jQuery.aspx
   - /post/2009/07/20/Adding-a-DotNetKicks-ImageBadge-via-jQuery
   - /post/2009/07/20/adding-a-dotnetkicks-imagebadge-via-jquery
   - /post.aspx?id=0c65924b-8ae3-4375-b115-c216ac01f489

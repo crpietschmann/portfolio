@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/11/02/SimpleBlack-Theme-for-BlogEngineNET-v12.aspx
   - /post/2007/11/02/SimpleBlack-Theme-for-BlogEngineNET-v12
   - /post/2007/11/02/simpleblack-theme-for-blogenginenet-v12
   - /post.aspx?id=f5251bf7-5f7e-4940-896d-7dead38582bd

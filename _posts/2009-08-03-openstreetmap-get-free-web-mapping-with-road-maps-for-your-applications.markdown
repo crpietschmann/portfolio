@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript", "Silverlight"]
 redirect_from: 
+  - /post/2009/08/03/OpenStreetMap-Get-FREE-Web-Mapping-with-Road-Maps-for-your-Applications.aspx
   - /post/2009/08/03/OpenStreetMap-Get-FREE-Web-Mapping-with-Road-Maps-for-your-Applications
   - /post/2009/08/03/openstreetmap-get-free-web-mapping-with-road-maps-for-your-applications
   - /post.aspx?id=0b30a5c1-d379-42d8-ba81-4552045f48e1

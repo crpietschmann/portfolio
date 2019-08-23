@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/10/03/24700B-Bail-Out-Bill-Passed-Maybe-Its-Not-So-Bad-Afterall.aspx
   - /post/2008/10/03/24700B-Bail-Out-Bill-Passed-Maybe-Its-Not-So-Bad-Afterall
   - /post/2008/10/03/24700b-bail-out-bill-passed-maybe-its-not-so-bad-afterall
   - /post.aspx?id=e7a0a6e2-3fea-4c87-89cb-f998513a52a0

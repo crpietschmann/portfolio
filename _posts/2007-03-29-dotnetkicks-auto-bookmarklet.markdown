@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/03/29/DotNetKicks-auto-bookmarklet.aspx
   - /post/2007/03/29/DotNetKicks-auto-bookmarklet
   - /post/2007/03/29/dotnetkicks-auto-bookmarklet
   - /post.aspx?id=ce7c6ab2-0d0c-47f3-b241-5902566e7db5

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2010/05/18/Boycott_BP_Save_the_Planet.aspx
   - /post/2010/05/18/Boycott_BP_Save_the_Planet
   - /post/2010/05/18/boycott_bp_save_the_planet
   - /post.aspx?id=bce05118-3642-4cf8-a4c7-fdafab615dee

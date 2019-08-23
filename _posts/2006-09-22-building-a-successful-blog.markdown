@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/09/22/Building-a-successful-blog.aspx
   - /post/2006/09/22/Building-a-successful-blog
   - /post/2006/09/22/building-a-successful-blog
   - /post.aspx?id=01441b6f-d7ff-4e74-bce6-d7aa9f8584aa

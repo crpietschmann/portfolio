@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration", "Software Craftsmanship"]
 redirect_from: 
+  - /post/2014/07/12/Community-Engagement-Who-do-you-follow-What-do-you-share.aspx
   - /post/2014/07/12/Community-Engagement-Who-do-you-follow-What-do-you-share
   - /post/2014/07/12/community-engagement-who-do-you-follow-what-do-you-share
   - /post.aspx?id=c8eae403-3dfd-45c7-93fe-775288bb7b55

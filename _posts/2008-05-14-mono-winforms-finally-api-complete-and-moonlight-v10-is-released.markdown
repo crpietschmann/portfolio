@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General", "Silverlight"]
 redirect_from: 
+  - /post/2008/05/14/Mono-WinForms-finally-API-complete-and-Moonlight-v10-is-released.aspx
   - /post/2008/05/14/Mono-WinForms-finally-API-complete-and-Moonlight-v10-is-released
   - /post/2008/05/14/mono-winforms-finally-api-complete-and-moonlight-v10-is-released
   - /post.aspx?id=1bb9b157-def5-4521-896b-45fdeadf6f95

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/06/06/Amazoncom-is-down.aspx
   - /post/2008/06/06/Amazoncom-is-down
   - /post/2008/06/06/amazoncom-is-down
   - /post.aspx?id=fb40ca26-f3c4-4f91-a8d8-b7ac76af5325

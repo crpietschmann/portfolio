@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2008/09/30/JavaScript-Prototypal-Inheritence-Explained-in-Simple-Terms.aspx
   - /post/2008/09/30/JavaScript-Prototypal-Inheritence-Explained-in-Simple-Terms
   - /post/2008/09/30/javascript-prototypal-inheritence-explained-in-simple-terms
   - /post.aspx?id=5c7d6bc1-2926-467d-a47a-5d826dbc467f

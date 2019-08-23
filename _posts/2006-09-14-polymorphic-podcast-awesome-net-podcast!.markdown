@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/09/14/Polymorphic-Podcast-Awesome-NET-Podcast!.aspx
   - /post/2006/09/14/Polymorphic-Podcast-Awesome-NET-Podcast!
   - /post/2006/09/14/polymorphic-podcast-awesome-net-podcast!
   - /post.aspx?id=a5a320a2-1439-4853-bc86-8a2388f81150

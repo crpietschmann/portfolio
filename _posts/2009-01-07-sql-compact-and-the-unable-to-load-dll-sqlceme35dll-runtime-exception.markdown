@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2009/01/07/SQL-Compact-And-The-Unable-to-load-DLL-sqlceme35dll-Runtime-Exception.aspx
   - /post/2009/01/07/SQL-Compact-And-The-Unable-to-load-DLL-sqlceme35dll-Runtime-Exception
   - /post/2009/01/07/sql-compact-and-the-unable-to-load-dll-sqlceme35dll-runtime-exception
   - /post.aspx?id=59c49b54-7263-4e42-805d-2d05691a3a1f

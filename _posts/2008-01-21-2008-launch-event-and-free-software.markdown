@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "vb.net"]
 redirect_from: 
+  - /post/2008/01/21/2008-Launch-Event-and-Free-Software.aspx
   - /post/2008/01/21/2008-Launch-Event-and-Free-Software
   - /post/2008/01/21/2008-launch-event-and-free-software
   - /post.aspx?id=9edb9095-d3b5-4f2a-a58c-0bb25987bb4b

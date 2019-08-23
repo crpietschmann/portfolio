@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript", "HTML"]
 redirect_from: 
+  - /post/2012/05/01/jHash-v20-Released-Now-with-Routing-Support!.aspx
   - /post/2012/05/01/jHash-v20-Released-Now-with-Routing-Support!
   - /post/2012/05/01/jhash-v20-released-now-with-routing-support!
   - /post.aspx?id=132350f3-c5ad-4eca-8c4f-2c1110f9a345

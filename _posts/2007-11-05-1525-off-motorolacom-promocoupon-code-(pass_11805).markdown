@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/11/05/1525-Off-Motorolacom-PromoCoupon-Code-(PASS_11805).aspx
   - /post/2007/11/05/1525-Off-Motorolacom-PromoCoupon-Code-(PASS_11805)
   - /post/2007/11/05/1525-off-motorolacom-promocoupon-code-(pass_11805)
   - /post.aspx?id=d48ac510-b943-41ea-8101-71c43a7e4e2b

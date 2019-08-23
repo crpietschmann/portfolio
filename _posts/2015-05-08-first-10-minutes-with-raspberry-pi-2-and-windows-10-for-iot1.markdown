@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Internet of Things", "Raspberry Pi"]
 redirect_from: 
+  - /post/2015/05/08/First-10-Minutes-with-Raspberry-Pi-2-and-Windows-10-for-IoT1.aspx
   - /post/2015/05/08/First-10-Minutes-with-Raspberry-Pi-2-and-Windows-10-for-IoT1
   - /post/2015/05/08/first-10-minutes-with-raspberry-pi-2-and-windows-10-for-iot1
   - /post.aspx?id=a8b8af34-4bf2-47ec-ab22-19d83e7f03af

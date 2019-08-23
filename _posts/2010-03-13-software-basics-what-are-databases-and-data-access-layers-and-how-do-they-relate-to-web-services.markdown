@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2010/03/13/Software-Basics-What-are-Databases-and-Data-Access-Layers-and-How-do-they-relate-to-Web-Services.aspx
   - /post/2010/03/13/Software-Basics-What-are-Databases-and-Data-Access-Layers-and-How-do-they-relate-to-Web-Services
   - /post/2010/03/13/software-basics-what-are-databases-and-data-access-layers-and-how-do-they-relate-to-web-services
   - /post.aspx?id=c2786425-6a63-4bb0-b0ad-5fcc64b2c557

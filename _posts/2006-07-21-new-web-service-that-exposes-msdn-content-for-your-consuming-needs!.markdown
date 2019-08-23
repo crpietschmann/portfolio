@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/07/21/New-Web-Service-that-exposes-MSDN-content-for-your-consuming-needs!.aspx
   - /post/2006/07/21/New-Web-Service-that-exposes-MSDN-content-for-your-consuming-needs!
   - /post/2006/07/21/new-web-service-that-exposes-msdn-content-for-your-consuming-needs!
   - /post.aspx?id=0e2b73c0-7693-40f3-8762-c025aad3a0e3

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/05/01/HD-DVD-A-DMCA-Protected-Number.aspx
   - /post/2007/05/01/HD-DVD-A-DMCA-Protected-Number
   - /post/2007/05/01/hd-dvd-a-dmca-protected-number
   - /post.aspx?id=39e6e58d-3417-433e-8aa6-b02008146897

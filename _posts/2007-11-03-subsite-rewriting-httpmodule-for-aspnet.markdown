@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2007/11/03/Subsite-Rewriting-HttpModule-for-ASPNET.aspx
   - /post/2007/11/03/Subsite-Rewriting-HttpModule-for-ASPNET
   - /post/2007/11/03/subsite-rewriting-httpmodule-for-aspnet
   - /post.aspx?id=b68ec42e-5a4f-4d08-8c83-1a7346dd36c6

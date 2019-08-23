@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/01/09/Apple-iPhone-has-been-confirmed-but-functionaly-similar-to-Windows-Mobile-Phone.aspx
   - /post/2007/01/09/Apple-iPhone-has-been-confirmed-but-functionaly-similar-to-Windows-Mobile-Phone
   - /post/2007/01/09/apple-iphone-has-been-confirmed-but-functionaly-similar-to-windows-mobile-phone
   - /post.aspx?id=5bda6be1-84fb-4699-8902-3845a9e8d8cc

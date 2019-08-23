@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2012/01/21/IronJSMVC-Script-ASPNET-MVC-in-JavaScript-using-IronJS.aspx
   - /post/2012/01/21/IronJSMVC-Script-ASPNET-MVC-in-JavaScript-using-IronJS
   - /post/2012/01/21/ironjsmvc-script-aspnet-mvc-in-javascript-using-ironjs
   - /post.aspx?id=577fc138-9a5b-4061-99cc-50bfc7f12522

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "JavaScript"]
 redirect_from: 
+  - /post/2009/04/04/Virtual-Earth-Shapes-(VEShape)-to-WKT-(Well-Known-Text)-and-Back-using-JavaScript.aspx
   - /post/2009/04/04/Virtual-Earth-Shapes-(VEShape)-to-WKT-(Well-Known-Text)-and-Back-using-JavaScript
   - /post/2009/04/04/virtual-earth-shapes-(veshape)-to-wkt-(well-known-text)-and-back-using-javascript
   - /post.aspx?id=7b110c3f-e26c-446e-967f-084357c59f31

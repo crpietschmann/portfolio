@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2015/04/24/Games-and-Facebook-are-Cool-but-Boring-Software-Runs-the-World.aspx
   - /post/2015/04/24/Games-and-Facebook-are-Cool-but-Boring-Software-Runs-the-World
   - /post/2015/04/24/games-and-facebook-are-cool-but-boring-software-runs-the-world
   - /post.aspx?id=988d885f-6924-4b80-960e-7d423413431b

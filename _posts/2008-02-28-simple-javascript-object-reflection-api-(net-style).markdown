@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/02/28/Simple-JavaScript-Object-Reflection-API-(NET-Style).aspx
   - /post/2008/02/28/Simple-JavaScript-Object-Reflection-API-(NET-Style)
   - /post/2008/02/28/simple-javascript-object-reflection-api-(net-style)
   - /post.aspx?id=591b5d4e-b2a6-4b3b-a613-0bcc74f35219

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["ASP.NET MVC"]
 redirect_from: 
+  - /post/2011/01/09/MvcXaml-Images-from-XAML-within-ASPNET-MVC-Application.aspx
   - /post/2011/01/09/MvcXaml-Images-from-XAML-within-ASPNET-MVC-Application
   - /post/2011/01/09/mvcxaml-images-from-xaml-within-aspnet-mvc-application
   - /post.aspx?id=2ae98273-f10c-46f1-9db1-c07dd646c16b

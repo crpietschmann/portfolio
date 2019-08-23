@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2009/01/02/Single-Instance-WPF-Application-in-NET-3.aspx
   - /post/2009/01/02/Single-Instance-WPF-Application-in-NET-3
   - /post/2009/01/02/single-instance-wpf-application-in-net-3
   - /post.aspx?id=8a6c0335-37ea-427f-a599-4249230e9c44

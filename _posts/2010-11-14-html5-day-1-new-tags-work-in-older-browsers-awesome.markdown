@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["HTML"]
 redirect_from: 
+  - /post/2010/11/14/HTML5-Day-1-New-tags-work-in-older-browsers-Awesome.aspx
   - /post/2010/11/14/HTML5-Day-1-New-tags-work-in-older-browsers-Awesome
   - /post/2010/11/14/html5-day-1-new-tags-work-in-older-browsers-awesome
   - /post.aspx?id=82a3b9b6-8165-4b91-adce-4c613c95c068

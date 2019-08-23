@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
+  - /post/2009/03/20/Virtual-Earth-Silverlight-Using-Tile-Layers-to-Overlay-Custom-Map-Imagery.aspx
   - /post/2009/03/20/Virtual-Earth-Silverlight-Using-Tile-Layers-to-Overlay-Custom-Map-Imagery
   - /post/2009/03/20/virtual-earth-silverlight-using-tile-layers-to-overlay-custom-map-imagery
   - /post.aspx?id=ce8b5456-ef99-4311-8099-16976ebcc5e2

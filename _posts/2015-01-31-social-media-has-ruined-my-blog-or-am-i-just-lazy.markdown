@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2015/01/31/Social-Media-has-ruined-my-blog-or-am-I-just-lazy.aspx
   - /post/2015/01/31/Social-Media-has-ruined-my-blog-or-am-I-just-lazy
   - /post/2015/01/31/social-media-has-ruined-my-blog-or-am-i-just-lazy
   - /post.aspx?id=d2b25c79-7b79-4ffc-a82e-2c1ed1e096ba

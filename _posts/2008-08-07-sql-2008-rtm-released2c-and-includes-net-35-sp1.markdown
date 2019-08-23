@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/08/07/SQL-2008-RTM-Released2c-and-includes-NET-35-SP1.aspx
   - /post/2008/08/07/SQL-2008-RTM-Released2c-and-includes-NET-35-SP1
   - /post/2008/08/07/sql-2008-rtm-released2c-and-includes-net-35-sp1
   - /post.aspx?id=f70a394d-93b4-4fed-bbb0-f3e39326ec55

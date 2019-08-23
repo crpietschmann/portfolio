@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["ASP.NET MVC"]
 redirect_from: 
+  - /post/2011/11/19/ASPNET-MVC-Themes-3-different-theming-methods.aspx
   - /post/2011/11/19/ASPNET-MVC-Themes-3-different-theming-methods
   - /post/2011/11/19/aspnet-mvc-themes-3-different-theming-methods
   - /post.aspx?id=3b8f4be4-102c-4315-b53b-f551f60a2b86

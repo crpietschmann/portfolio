@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Silverlight"]
 redirect_from: 
+  - /post/2008/10/10/Silverlight-Client-Side-Database-via-LINQ-and-Isolated-Storage.aspx
   - /post/2008/10/10/Silverlight-Client-Side-Database-via-LINQ-and-Isolated-Storage
   - /post/2008/10/10/silverlight-client-side-database-via-linq-and-isolated-storage
   - /post.aspx?id=a3f36d52-ab47-4082-93d1-4d6cb5999c13

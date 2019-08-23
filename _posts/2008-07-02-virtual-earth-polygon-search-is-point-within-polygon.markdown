@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2008/07/02/Virtual-Earth-Polygon-Search-Is-Point-Within-Polygon.aspx
   - /post/2008/07/02/Virtual-Earth-Polygon-Search-Is-Point-Within-Polygon
   - /post/2008/07/02/virtual-earth-polygon-search-is-point-within-polygon
   - /post.aspx?id=57e3e956-a3cd-445f-8445-48bee9c14494

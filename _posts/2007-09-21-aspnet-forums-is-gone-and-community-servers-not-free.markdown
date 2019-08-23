@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/09/21/ASPNET-Forums-is-gone-and-Community-Servers-not-free.aspx
   - /post/2007/09/21/ASPNET-Forums-is-gone-and-Community-Servers-not-free
   - /post/2007/09/21/aspnet-forums-is-gone-and-community-servers-not-free
   - /post.aspx?id=12cc4b1d-fb02-4851-9c5f-f258003ecca6

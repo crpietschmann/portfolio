@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
+  - /post/2009/03/20/Virtual-Earth-Silverlight-Overlay-OpenStreetMap2c-OpenAerialMap-and-Yahoo-Map-Imagery-using-Custom-Tile-Layers!.aspx
   - /post/2009/03/20/Virtual-Earth-Silverlight-Overlay-OpenStreetMap2c-OpenAerialMap-and-Yahoo-Map-Imagery-using-Custom-Tile-Layers!
   - /post/2009/03/20/virtual-earth-silverlight-overlay-openstreetmap2c-openaerialmap-and-yahoo-map-imagery-using-custom-tile-layers!
   - /post.aspx?id=88a585cd-f90a-40e1-963d-ca1932ce2535

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "vb.net"]
 redirect_from: 
+  - /post/2007/11/26/NET-How-to-Alias-Namespaces-and-Data-Types.aspx
   - /post/2007/11/26/NET-How-to-Alias-Namespaces-and-Data-Types
   - /post/2007/11/26/net-how-to-alias-namespaces-and-data-types
   - /post.aspx?id=0d9e4dc4-5353-4b82-9977-50d1aa34c01c

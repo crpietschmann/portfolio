@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2006/10/18/Scott-Guthrie-interviewed-on-Hanselminutes.aspx
   - /post/2006/10/18/Scott-Guthrie-interviewed-on-Hanselminutes
   - /post/2006/10/18/scott-guthrie-interviewed-on-hanselminutes
   - /post.aspx?id=9ec8eee4-8d42-4cb7-a1ea-ef309844374e

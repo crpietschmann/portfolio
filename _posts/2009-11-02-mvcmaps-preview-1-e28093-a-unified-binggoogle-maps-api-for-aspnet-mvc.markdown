@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["ASP.NET MVC", "Bing Maps"]
 redirect_from: 
+  - /post/2009/11/02/MvcMaps-Preview-1-e28093-A-Unified-BingGoogle-Maps-API-for-ASPNET-MVC.aspx
   - /post/2009/11/02/MvcMaps-Preview-1-e28093-A-Unified-BingGoogle-Maps-API-for-ASPNET-MVC
   - /post/2009/11/02/mvcmaps-preview-1-e28093-a-unified-binggoogle-maps-api-for-aspnet-mvc
   - /post.aspx?id=3a97ee01-5b36-4f43-abdb-1a9b685c6440

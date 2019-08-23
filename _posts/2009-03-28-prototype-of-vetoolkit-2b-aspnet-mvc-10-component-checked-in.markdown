@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "JavaScript", "ASP.NET MVC"]
 redirect_from: 
+  - /post/2009/03/28/Prototype-of-VEToolkit-2b-ASPNET-MVC-10-Component-Checked-In.aspx
   - /post/2009/03/28/Prototype-of-VEToolkit-2b-ASPNET-MVC-10-Component-Checked-In
   - /post/2009/03/28/prototype-of-vetoolkit-2b-aspnet-mvc-10-component-checked-in
   - /post.aspx?id=b74f5ac6-44de-4e42-b485-78d44e5be15c

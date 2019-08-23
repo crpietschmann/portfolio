@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2006/08/17/I-Found-a-bug-in-the-Rating-control-in-the-Atlas-Control-Toolkit.aspx
   - /post/2006/08/17/I-Found-a-bug-in-the-Rating-control-in-the-Atlas-Control-Toolkit
   - /post/2006/08/17/i-found-a-bug-in-the-rating-control-in-the-atlas-control-toolkit
   - /post.aspx?id=fc04a906-1489-44c2-924e-424bdabba07c

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2013/10/12/There-is-no-product-unless-you-first-ship-it.aspx
   - /post/2013/10/12/There-is-no-product-unless-you-first-ship-it
   - /post/2013/10/12/there-is-no-product-unless-you-first-ship-it
   - /post.aspx?id=ced7e137-7e8b-44e3-8fee-458475eddaef

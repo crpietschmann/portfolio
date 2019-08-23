@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2010/11/30/Bing-Maps-Ajax-7-Simple-Pushpin-Animation-via-Extension-to-MicrosoftMaps.aspx
   - /post/2010/11/30/Bing-Maps-Ajax-7-Simple-Pushpin-Animation-via-Extension-to-MicrosoftMaps
   - /post/2010/11/30/bing-maps-ajax-7-simple-pushpin-animation-via-extension-to-microsoftmaps
   - /post.aspx?id=db9b20db-30e1-4f41-b114-c47bd7b8b35d

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#"]
 redirect_from: 
+  - /post/2009/11/06/dotNet-Windows-Service-Installer-And-Auto-Start-After-Installation.aspx
   - /post/2009/11/06/dotNet-Windows-Service-Installer-And-Auto-Start-After-Installation
   - /post/2009/11/06/dotnet-windows-service-installer-and-auto-start-after-installation
   - /post.aspx?id=c86d128f-970b-4b3a-bfeb-4d51ab34f051

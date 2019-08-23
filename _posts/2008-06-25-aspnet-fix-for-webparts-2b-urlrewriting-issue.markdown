@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2008/06/25/ASPNET-Fix-for-WebParts-2b-UrlRewriting-Issue.aspx
   - /post/2008/06/25/ASPNET-Fix-for-WebParts-2b-UrlRewriting-Issue
   - /post/2008/06/25/aspnet-fix-for-webparts-2b-urlrewriting-issue
   - /post.aspx?id=0ab8de98-7bbc-4140-8172-2fddbbe990df

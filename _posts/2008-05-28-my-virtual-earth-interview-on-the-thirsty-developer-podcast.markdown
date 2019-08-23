@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General", "Bing Maps"]
 redirect_from: 
+  - /post/2008/05/28/My-Virtual-Earth-Interview-on-The-Thirsty-Developer-podcast.aspx
   - /post/2008/05/28/My-Virtual-Earth-Interview-on-The-Thirsty-Developer-podcast
   - /post/2008/05/28/my-virtual-earth-interview-on-the-thirsty-developer-podcast
   - /post.aspx?id=56064712-c77e-4942-b311-29372b231c79

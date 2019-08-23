@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "Design Patterns"]
 redirect_from: 
+  - /post/2012/04/13/Design-Patterns-Basics-of-Dependency-Injection.aspx
   - /post/2012/04/13/Design-Patterns-Basics-of-Dependency-Injection
   - /post/2012/04/13/design-patterns-basics-of-dependency-injection
   - /post.aspx?id=3fab0ff2-25a5-47f2-a7b6-a1dfefb9e4c6

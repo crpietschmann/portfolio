@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Win32API"]
 redirect_from: 
+  - /post/2009/01/26/CSharp-Flash-Window-in-Taskbar-via-Win32-FlashWindowEx.aspx
   - /post/2009/01/26/CSharp-Flash-Window-in-Taskbar-via-Win32-FlashWindowEx
   - /post/2009/01/26/csharp-flash-window-in-taskbar-via-win32-flashwindowex
   - /post.aspx?id=bbbd744b-f793-45ce-9036-a6518b5f7db8

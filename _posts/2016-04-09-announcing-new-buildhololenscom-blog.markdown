@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2016/04/09/Announcing-New-BuildHoloLenscom-Blog.aspx
   - /post/2016/04/09/Announcing-New-BuildHoloLenscom-Blog
   - /post/2016/04/09/announcing-new-buildhololenscom-blog
   - /post.aspx?id=86fe4f0c-5e2c-4f13-8946-9540ef86328c

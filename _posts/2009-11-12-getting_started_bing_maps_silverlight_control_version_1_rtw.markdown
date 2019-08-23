@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "C#", "Silverlight"]
 redirect_from: 
+  - /post/2009/11/12/Getting_Started_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx
   - /post/2009/11/12/Getting_Started_Bing_Maps_Silverlight_Control_Version_1_RTW
   - /post/2009/11/12/getting_started_bing_maps_silverlight_control_version_1_rtw
   - /post.aspx?id=82ad46e3-73c5-468f-be62-6247970f31e1

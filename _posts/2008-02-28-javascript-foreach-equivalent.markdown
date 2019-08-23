@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2008/02/28/JavaScript-ForEach-Equivalent.aspx
   - /post/2008/02/28/JavaScript-ForEach-Equivalent
   - /post/2008/02/28/javascript-foreach-equivalent
   - /post.aspx?id=f0843935-2753-4621-b521-7d41a180c28f

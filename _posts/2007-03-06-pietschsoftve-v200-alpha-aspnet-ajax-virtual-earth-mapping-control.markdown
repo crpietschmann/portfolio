@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2007/03/06/PietschSoftVE-v200-Alpha-ASPNET-AJAX-Virtual-Earth-Mapping-Control.aspx
   - /post/2007/03/06/PietschSoftVE-v200-Alpha-ASPNET-AJAX-Virtual-Earth-Mapping-Control
   - /post/2007/03/06/pietschsoftve-v200-alpha-aspnet-ajax-virtual-earth-mapping-control
   - /post.aspx?id=2f90514d-4bf8-4dcf-a39a-14ed4b55f1c7

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Silverlight"]
 redirect_from: 
+  - /post/2010/03/24/Silverlight-with-WCF-RIA-Services-Throws-Project-File-Not-Found-Error-When-Compiling-in-Visual-Studio-2010-RC.aspx
   - /post/2010/03/24/Silverlight-with-WCF-RIA-Services-Throws-Project-File-Not-Found-Error-When-Compiling-in-Visual-Studio-2010-RC
   - /post/2010/03/24/silverlight-with-wcf-ria-services-throws-project-file-not-found-error-when-compiling-in-visual-studio-2010-rc
   - /post.aspx?id=c4f6aa92-1aea-4632-8397-d0b0baabc900

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript", "C#", "DLR"]
 redirect_from: 
+  - /post/2011/08/24/Mixing-some-Dynamic-ness-with-IronJS-in-NET-4.aspx
   - /post/2011/08/24/Mixing-some-Dynamic-ness-with-IronJS-in-NET-4
   - /post/2011/08/24/mixing-some-dynamic-ness-with-ironjs-in-net-4
   - /post.aspx?id=57194bdd-11c5-4627-888c-e3331fec2a4b

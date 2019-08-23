@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
+  - /post/2006/08/18/Wisconsin-NET-Users-Group-(WI-INETA)-Website-is-lacking.aspx
   - /post/2006/08/18/Wisconsin-NET-Users-Group-(WI-INETA)-Website-is-lacking
   - /post/2006/08/18/wisconsin-net-users-group-(wi-ineta)-website-is-lacking
   - /post.aspx?id=9cbfac69-480d-4fa9-b9a9-74611f1e23c1

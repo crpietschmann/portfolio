@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
+  - /post/2007/03/18/WI-NET-Users-Group-Having-troubles-finding-meeting-locations!.aspx
   - /post/2007/03/18/WI-NET-Users-Group-Having-troubles-finding-meeting-locations!
   - /post/2007/03/18/wi-net-users-group-having-troubles-finding-meeting-locations!
   - /post.aspx?id=697756fb-6077-408e-afa2-3c8337cf508c

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2011/12/19/2012-Bing-Maps-Feature-Wish-List.aspx
   - /post/2011/12/19/2012-Bing-Maps-Feature-Wish-List
   - /post/2011/12/19/2012-bing-maps-feature-wish-list
   - /post.aspx?id=683215b1-c45a-467a-a458-b2a81ab48816

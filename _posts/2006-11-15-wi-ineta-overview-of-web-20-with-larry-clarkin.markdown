@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["WI-INETA"]
 redirect_from: 
+  - /post/2006/11/15/WI-INETA-Overview-of-Web-20-with-Larry-Clarkin.aspx
   - /post/2006/11/15/WI-INETA-Overview-of-Web-20-with-Larry-Clarkin
   - /post/2006/11/15/wi-ineta-overview-of-web-20-with-larry-clarkin
   - /post.aspx?id=991a3036-915a-4441-93be-1b5a64273997

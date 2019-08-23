@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2007/10/28/ASPNET-RewritePath-breaks-HyperLinks-ImageUrl-in-App_Theme-file-when-path-with-slash-is-rewritten.aspx
   - /post/2007/10/28/ASPNET-RewritePath-breaks-HyperLinks-ImageUrl-in-App_Theme-file-when-path-with-slash-is-rewritten
   - /post/2007/10/28/aspnet-rewritepath-breaks-hyperlinks-imageurl-in-app_theme-file-when-path-with-slash-is-rewritten
   - /post.aspx?id=904fc37a-0ba4-4068-bebf-1c3cb15f8808

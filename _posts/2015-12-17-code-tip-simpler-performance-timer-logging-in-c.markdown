@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#"]
 redirect_from: 
+  - /post/2015/12/17/Code-Tip-Simpler-Performance-Timer-Logging-in-C.aspx
   - /post/2015/12/17/Code-Tip-Simpler-Performance-Timer-Logging-in-C
   - /post/2015/12/17/code-tip-simpler-performance-timer-logging-in-c
   - /post.aspx?id=1222502c-69d2-476d-ba6f-9bf22a8946e1

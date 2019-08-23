@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2010/08/14/Microsoft-BizSpark-Does-Not-Care-About-Startups.aspx
   - /post/2010/08/14/Microsoft-BizSpark-Does-Not-Care-About-Startups
   - /post/2010/08/14/microsoft-bizspark-does-not-care-about-startups
   - /post.aspx?id=72b0abe6-58c6-458c-ae1d-70c9628463bb

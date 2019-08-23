@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net", "ASP.NET MVC"]
 redirect_from: 
+  - /post/2008/08/17/How-To-Setup-Custom-Theme-Support-In-ASPNET-MVC-using-a-Custom-ViewEngine.aspx
   - /post/2008/08/17/How-To-Setup-Custom-Theme-Support-In-ASPNET-MVC-using-a-Custom-ViewEngine
   - /post/2008/08/17/how-to-setup-custom-theme-support-in-aspnet-mvc-using-a-custom-viewengine
   - /post.aspx?id=ee0e253d-c746-4099-9795-81aaf14ad608

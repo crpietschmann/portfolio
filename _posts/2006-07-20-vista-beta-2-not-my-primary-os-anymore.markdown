@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/07/20/Vista-Beta-2-Not-my-Primary-OS-anymore.aspx
   - /post/2006/07/20/Vista-Beta-2-Not-my-Primary-OS-anymore
   - /post/2006/07/20/vista-beta-2-not-my-primary-os-anymore
   - /post.aspx?id=7fbc2334-1e6e-4943-b781-b326eb9629e8

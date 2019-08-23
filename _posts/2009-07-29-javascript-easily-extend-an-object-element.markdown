@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2009/07/29/JavaScript-Easily-Extend-an-Object-Element.aspx
   - /post/2009/07/29/JavaScript-Easily-Extend-an-Object-Element
   - /post/2009/07/29/javascript-easily-extend-an-object-element
   - /post.aspx?id=a2d820aa-2a18-491e-8552-cf6f30ff4913

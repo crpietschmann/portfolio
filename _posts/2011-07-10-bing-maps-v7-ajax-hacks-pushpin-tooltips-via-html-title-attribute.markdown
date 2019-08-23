@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2011/07/10/Bing-Maps-v7-Ajax-Hacks-Pushpin-Tooltips-via-Html-Title-Attribute.aspx
   - /post/2011/07/10/Bing-Maps-v7-Ajax-Hacks-Pushpin-Tooltips-via-Html-Title-Attribute
   - /post/2011/07/10/bing-maps-v7-ajax-hacks-pushpin-tooltips-via-html-title-attribute
   - /post.aspx?id=0597582d-eb65-47af-b3c0-86f2b227ccdc

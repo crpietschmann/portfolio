@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2010/10/27/2-Interesting-TED-Talks-on-The-Truth-About-Plastic.aspx
   - /post/2010/10/27/2-Interesting-TED-Talks-on-The-Truth-About-Plastic
   - /post/2010/10/27/2-interesting-ted-talks-on-the-truth-about-plastic
   - /post.aspx?id=7c661d03-02e2-44ba-854d-6c866a87b763

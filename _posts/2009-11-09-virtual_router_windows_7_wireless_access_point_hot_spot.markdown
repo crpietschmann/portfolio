@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#"]
 redirect_from: 
+  - /post/2009/11/09/Virtual_Router_Windows_7_Wireless_Access_Point_Hot_Spot.aspx
   - /post/2009/11/09/Virtual_Router_Windows_7_Wireless_Access_Point_Hot_Spot
   - /post/2009/11/09/virtual_router_windows_7_wireless_access_point_hot_spot
   - /post.aspx?id=49387950-9b3d-4ac1-8a5a-2d78ce373225

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net", "Bing Maps"]
 redirect_from: 
+  - /post/2009/08/22/Microsoft-Killed-the-Virtual-Earth-ASPNET-Control.aspx
   - /post/2009/08/22/Microsoft-Killed-the-Virtual-Earth-ASPNET-Control
   - /post/2009/08/22/microsoft-killed-the-virtual-earth-aspnet-control
   - /post.aspx?id=ed7aa020-e1b3-4783-8f3f-d1af9d3a0b54

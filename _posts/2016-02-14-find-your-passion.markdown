@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2016/02/14/Find-Your-Passion.aspx
   - /post/2016/02/14/Find-Your-Passion
   - /post/2016/02/14/find-your-passion
   - /post.aspx?id=4a72d82f-6645-4730-b82d-8006b70bddb6

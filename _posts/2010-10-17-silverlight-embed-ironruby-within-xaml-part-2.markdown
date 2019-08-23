@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Silverlight", "DLR", "Ruby"]
 redirect_from: 
+  - /post/2010/10/17/Silverlight-Embed-IronRuby-within-XAML-Part-2.aspx
   - /post/2010/10/17/Silverlight-Embed-IronRuby-within-XAML-Part-2
   - /post/2010/10/17/silverlight-embed-ironruby-within-xaml-part-2
   - /post.aspx?id=73b4583b-9f6a-400c-8fe2-cf8db20b75ee

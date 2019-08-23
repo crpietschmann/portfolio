@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Software Craftsmanship", "TDD"]
 redirect_from: 
+  - /post/2016/02/04/TDD-Testable-is-most-important.aspx
   - /post/2016/02/04/TDD-Testable-is-most-important
   - /post/2016/02/04/tdd-testable-is-most-important
   - /post.aspx?id=6d401941-cf57-4a9e-8388-64cf175434e9

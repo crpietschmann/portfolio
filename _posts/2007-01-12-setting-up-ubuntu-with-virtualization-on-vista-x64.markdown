@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/01/12/Setting-Up-Ubuntu-with-virtualization-on-Vista-x64.aspx
   - /post/2007/01/12/Setting-Up-Ubuntu-with-virtualization-on-Vista-x64
   - /post/2007/01/12/setting-up-ubuntu-with-virtualization-on-vista-x64
   - /post.aspx?id=7290da55-6015-41cc-a8a4-9d4d87b9aa66

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2008/05/03/Virtual-Earth-Restrict-Map-to-Specified-Viewable-Area.aspx
   - /post/2008/05/03/Virtual-Earth-Restrict-Map-to-Specified-Viewable-Area
   - /post/2008/05/03/virtual-earth-restrict-map-to-specified-viewable-area
   - /post.aspx?id=d5025e10-f1bf-4b56-9eae-71095fe256a8

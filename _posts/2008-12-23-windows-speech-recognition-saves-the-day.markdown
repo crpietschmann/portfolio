@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/12/23/Windows-speech-recognition-saves-the-day.aspx
   - /post/2008/12/23/Windows-speech-recognition-saves-the-day
   - /post/2008/12/23/windows-speech-recognition-saves-the-day
   - /post.aspx?id=1531c0fe-7962-4128-87b2-41510915b39b

@@ -9,6 +9,7 @@ categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2010/12/19/Bing-Maps-Ajax-7-Add-a-Simple-Mini-Map
+  - /post/2010/12/19/Bing-Maps-Ajax-7-Add-a-Simple-Mini-Map.aspx
   - /post/2010/12/19/bing-maps-ajax-7-add-a-simple-mini-map
   - /post.aspx?id=6a0a75d6-afe3-427b-896f-812dc590dc4d
 ---

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["WI-INETA"]
 redirect_from: 
+  - /post/2007/07/09/WI-NET-User-Group-7102007-Silverlight!!-buzz.aspx
   - /post/2007/07/09/WI-NET-User-Group-7102007-Silverlight!!-buzz
   - /post/2007/07/09/wi-net-user-group-7102007-silverlight!!-buzz
   - /post.aspx?id=91ddec0d-a5bd-4a69-ab85-954a76684fc7

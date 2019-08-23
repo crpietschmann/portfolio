@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Win32API"]
 redirect_from: 
+  - /post/2008/03/04/Add-System-Menu-Items-to-a-Form-using-Windows-API.aspx
   - /post/2008/03/04/Add-System-Menu-Items-to-a-Form-using-Windows-API
   - /post/2008/03/04/add-system-menu-items-to-a-form-using-windows-api
   - /post.aspx?id=482989d9-32d1-4bd1-9692-c0718e4044c1

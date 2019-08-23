@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Azure"]
 redirect_from: 
+  - /post/2015/07/25/Announcing-new-Azure-blog-BuildAzurecom.aspx
   - /post/2015/07/25/Announcing-new-Azure-blog-BuildAzurecom
   - /post/2015/07/25/announcing-new-azure-blog-buildazurecom
   - /post.aspx?id=cd5c1b30-309f-4f99-8937-8e20890ca5e5

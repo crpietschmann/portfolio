@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "JavaScript"]
 redirect_from: 
+  - /post/2008/02/01/Calculate-Distance-Between-Geocodes-in-C-and-JavaScript.aspx
   - /post/2008/02/01/Calculate-Distance-Between-Geocodes-in-C-and-JavaScript
   - /post/2008/02/01/calculate-distance-between-geocodes-in-c-and-javascript
   - /post.aspx?id=3bd04a2e-7df6-48d5-a359-1cbc3764889e

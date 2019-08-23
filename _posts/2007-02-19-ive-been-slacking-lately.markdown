@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/02/19/Ive-been-slacking-lately.aspx
   - /post/2007/02/19/Ive-been-slacking-lately
   - /post/2007/02/19/ive-been-slacking-lately
   - /post.aspx?id=5a64fa6d-adb0-4dd2-b572-b42ce2847494

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/06/22/EmailWebsite-Outage-06222007.aspx
   - /post/2007/06/22/EmailWebsite-Outage-06222007
   - /post/2007/06/22/emailwebsite-outage-06222007
   - /post.aspx?id=8211d9ff-52fe-4fc2-8851-e1a6714f28d2

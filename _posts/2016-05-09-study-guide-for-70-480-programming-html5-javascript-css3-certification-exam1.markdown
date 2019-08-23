@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["CSS", "HTML", "JavaScript"]
 redirect_from: 
+  - /post/2016/05/09/Study-Guide-for-70-480-Programming-HTML5-JavaScript-CSS3-Certification-Exam1.aspx
   - /post/2016/05/09/Study-Guide-for-70-480-Programming-HTML5-JavaScript-CSS3-Certification-Exam1
   - /post/2016/05/09/study-guide-for-70-480-programming-html5-javascript-css3-certification-exam1
   - /post.aspx?id=97e57d38-e49f-4dcd-9adb-7c3da6be901a

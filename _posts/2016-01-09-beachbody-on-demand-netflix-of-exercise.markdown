@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2016/01/09/Beachbody-On-Demand-Netflix-of-Exercise.aspx
   - /post/2016/01/09/Beachbody-On-Demand-Netflix-of-Exercise
   - /post/2016/01/09/beachbody-on-demand-netflix-of-exercise
   - /post.aspx?id=79ea9487-3e6b-4a2e-b444-28708eaa778b

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2007/05/02/AjaxControlToolkit-TabContainer-TabPanelVisible3dFalse-should-not-display-header-text.aspx
   - /post/2007/05/02/AjaxControlToolkit-TabContainer-TabPanelVisible3dFalse-should-not-display-header-text
   - /post/2007/05/02/ajaxcontroltoolkit-tabcontainer-tabpanelvisible3dfalse-should-not-display-header-text
   - /post.aspx?id=e46cfcd4-020b-48fc-beae-f7f12a586dae

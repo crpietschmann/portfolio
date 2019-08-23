@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Win32API"]
 redirect_from: 
+  - /post/2008/03/27/Add-System-Menu-Items-to-WPF-Window-using-Win32-API.aspx
   - /post/2008/03/27/Add-System-Menu-Items-to-WPF-Window-using-Win32-API
   - /post/2008/03/27/add-system-menu-items-to-wpf-window-using-win32-api
   - /post.aspx?id=10e7b7af-f0d0-44c6-ad55-770c67e357d9

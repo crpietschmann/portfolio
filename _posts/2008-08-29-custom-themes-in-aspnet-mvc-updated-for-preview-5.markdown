@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["ASP.NET MVC"]
 redirect_from: 
+  - /post/2008/08/29/Custom-Themes-in-ASPNET-MVC-Updated-for-Preview-5.aspx
   - /post/2008/08/29/Custom-Themes-in-ASPNET-MVC-Updated-for-Preview-5
   - /post/2008/08/29/custom-themes-in-aspnet-mvc-updated-for-preview-5
   - /post.aspx?id=5a6945d0-933a-4971-aac1-13dcd73711d9

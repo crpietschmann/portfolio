@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Silverlight"]
 redirect_from: 
+  - /post/2008/09/29/Silverlight-Isolated-Storage-File-Directory-Location.aspx
   - /post/2008/09/29/Silverlight-Isolated-Storage-File-Directory-Location
   - /post/2008/09/29/silverlight-isolated-storage-file-directory-location
   - /post.aspx?id=8d43d52a-981b-4086-9afc-26d0913edf26

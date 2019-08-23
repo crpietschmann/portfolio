@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "TDD"]
 redirect_from: 
+  - /post/2012/03/02/Unit-Testing-with-SqlException-in-NET-Only-with-help-from-Reflection.aspx
   - /post/2012/03/02/Unit-Testing-with-SqlException-in-NET-Only-with-help-from-Reflection
   - /post/2012/03/02/unit-testing-with-sqlexception-in-net-only-with-help-from-reflection
   - /post.aspx?id=74cd5433-76cf-4f17-bee6-1d46f7225070

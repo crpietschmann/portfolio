@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2008/02/01/LINQ-to-JavaScript-Interactive-SDK-Now-Available!.aspx
   - /post/2008/02/01/LINQ-to-JavaScript-Interactive-SDK-Now-Available!
   - /post/2008/02/01/linq-to-javascript-interactive-sdk-now-available!
   - /post.aspx?id=d6987782-aa32-4f26-b77a-cb3c2ffb6f53

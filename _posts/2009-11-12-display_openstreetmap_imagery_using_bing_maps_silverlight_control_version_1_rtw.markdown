@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
+  - /post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx
   - /post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW
   - /post/2009/11/12/display_openstreetmap_imagery_using_bing_maps_silverlight_control_version_1_rtw
   - /post.aspx?id=b3812d3c-cb64-4947-b6df-4ebb8e3a2e43

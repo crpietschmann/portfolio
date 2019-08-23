@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2007/05/02/MS-Virtual-Earth-v50-Released.aspx
   - /post/2007/05/02/MS-Virtual-Earth-v50-Released
   - /post/2007/05/02/ms-virtual-earth-v50-released
   - /post.aspx?id=ce4bffe2-e3f0-4246-a12c-689e01d885d8

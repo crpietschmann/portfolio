@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2008/02/07/Virtual-Earth-Plus-ASPNET-AJAX-Breaks-In-Safari!.aspx
   - /post/2008/02/07/Virtual-Earth-Plus-ASPNET-AJAX-Breaks-In-Safari!
   - /post/2008/02/07/virtual-earth-plus-aspnet-ajax-breaks-in-safari!
   - /post.aspx?id=600a0bbc-5e22-4bd2-bef2-542d70e682b2

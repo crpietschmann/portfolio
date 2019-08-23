@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/12/13/An-Open-Source-Virtual-World-like-Second-Life.aspx
   - /post/2006/12/13/An-Open-Source-Virtual-World-like-Second-Life
   - /post/2006/12/13/an-open-source-virtual-world-like-second-life
   - /post.aspx?id=e9930373-891d-47a5-ad5e-f0168a79ff54

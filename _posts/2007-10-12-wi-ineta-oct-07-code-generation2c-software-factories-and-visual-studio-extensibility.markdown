@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["WI-INETA"]
 redirect_from: 
+  - /post/2007/10/12/WI-INETA-Oct-07-Code-Generation2c-Software-Factories-and-Visual-Studio-Extensibility.aspx
   - /post/2007/10/12/WI-INETA-Oct-07-Code-Generation2c-Software-Factories-and-Visual-Studio-Extensibility
   - /post/2007/10/12/wi-ineta-oct-07-code-generation2c-software-factories-and-visual-studio-extensibility
   - /post.aspx?id=f08465e4-74ca-45cc-8691-f869ad4aee42

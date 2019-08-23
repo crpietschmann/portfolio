@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2016/05/03/On-Being-an-Expert.aspx
   - /post/2016/05/03/On-Being-an-Expert
   - /post/2016/05/03/on-being-an-expert
   - /post.aspx?id=c81378fb-3b55-40d8-83e3-168881a5ec7a

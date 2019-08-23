@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
+  - /post/2009/03/19/Virtual-Earth-Silverlight-Control-CTP-Teaser-Some-Initial-Thoughts.aspx
   - /post/2009/03/19/Virtual-Earth-Silverlight-Control-CTP-Teaser-Some-Initial-Thoughts
   - /post/2009/03/19/virtual-earth-silverlight-control-ctp-teaser-some-initial-thoughts
   - /post.aspx?id=6b2b935a-f941-4357-8e30-2d5f61644935

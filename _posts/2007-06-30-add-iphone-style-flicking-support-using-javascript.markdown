@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/06/30/Add-iPhone-style-flicking-support-using-JavaScript.aspx
   - /post/2007/06/30/Add-iPhone-style-flicking-support-using-JavaScript
   - /post/2007/06/30/add-iphone-style-flicking-support-using-javascript
   - /post.aspx?id=fcfce3b4-6ea5-4ba3-8b32-a682cfe5195b

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/08/04/Write-code2c-Win-FREE-MSDN-Subscription!.aspx
   - /post/2008/08/04/Write-code2c-Win-FREE-MSDN-Subscription!
   - /post/2008/08/04/write-code2c-win-free-msdn-subscription!
   - /post.aspx?id=0488799a-2a75-4cb6-b9e3-3ae2cd3e8a99

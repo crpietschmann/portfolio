@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2016/03/01/Never-Give-Up.aspx
   - /post/2016/03/01/Never-Give-Up
   - /post/2016/03/01/never-give-up
   - /post.aspx?id=a1865b7a-3891-4787-98f2-5b38ae5f8ee1

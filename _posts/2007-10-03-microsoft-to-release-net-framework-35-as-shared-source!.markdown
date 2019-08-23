@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net", "C#", "vb.net"]
 redirect_from: 
+  - /post/2007/10/03/Microsoft-to-release-NET-Framework-35-as-Shared-Source!.aspx
   - /post/2007/10/03/Microsoft-to-release-NET-Framework-35-as-Shared-Source!
   - /post/2007/10/03/microsoft-to-release-net-framework-35-as-shared-source!
   - /post.aspx?id=4f76fbfe-c99f-41b7-ae07-14de84c06d77

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/12/21/My-RSS-Feed-URL-has-changed.aspx
   - /post/2007/12/21/My-RSS-Feed-URL-has-changed
   - /post/2007/12/21/my-rss-feed-url-has-changed
   - /post.aspx?id=9c491a71-c464-4ac3-9ea0-b6c50a02d8c9

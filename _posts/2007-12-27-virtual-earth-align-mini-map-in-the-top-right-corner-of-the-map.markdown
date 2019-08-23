@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2007/12/27/Virtual-Earth-Align-Mini-Map-in-the-Top-Right-corner-of-the-Map.aspx
   - /post/2007/12/27/Virtual-Earth-Align-Mini-Map-in-the-Top-Right-corner-of-the-Map
   - /post/2007/12/27/virtual-earth-align-mini-map-in-the-top-right-corner-of-the-map
   - /post.aspx?id=edce98b3-6f8d-46d8-a5d4-84599de9635b

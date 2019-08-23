@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/12/03/Busby-SEO-Test.aspx
   - /post/2008/12/03/Busby-SEO-Test
   - /post/2008/12/03/busby-seo-test
   - /post.aspx?id=9bb63183-2c05-450a-9984-73a7d4e15c3a

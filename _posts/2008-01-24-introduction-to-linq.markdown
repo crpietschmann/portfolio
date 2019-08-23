@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["vb.net"]
 redirect_from: 
+  - /post/2008/01/24/Introduction-to-LINQ.aspx
   - /post/2008/01/24/Introduction-to-LINQ
   - /post/2008/01/24/introduction-to-linq
   - /post.aspx?id=3016b3d2-25b0-4a49-8b21-40d0c78fa88a

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/11/02/Software-Development-=-Logical-Creativity.aspx
   - /post/2007/11/02/Software-Development-=-Logical-Creativity
   - /post/2007/11/02/software-development-=-logical-creativity
   - /post.aspx?id=647687a0-8628-4287-a380-91108332faca

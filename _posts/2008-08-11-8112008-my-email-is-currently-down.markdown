@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/08/11/8112008-My-email-is-currently-down.aspx
   - /post/2008/08/11/8112008-My-email-is-currently-down
   - /post/2008/08/11/8112008-my-email-is-currently-down
   - /post.aspx?id=5792ef80-d82c-4cfa-a6e1-c3dd14f2547c

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/12/03/Vista-Experience-Update-Windows-Vista-x64-runs-32-bit-Internet-Explorer-by-Default.aspx
   - /post/2006/12/03/Vista-Experience-Update-Windows-Vista-x64-runs-32-bit-Internet-Explorer-by-Default
   - /post/2006/12/03/vista-experience-update-windows-vista-x64-runs-32-bit-internet-explorer-by-default
   - /post.aspx?id=a355a85d-e17e-425f-9600-cb7ceec16a6f

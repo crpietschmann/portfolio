@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Internet of Things", "Raspberry Pi"]
 redirect_from: 
+  - /post/2015/12/16/Exciting-Time-for-Makers-Were-in-a-Maker-Renaissance.aspx
   - /post/2015/12/16/Exciting-Time-for-Makers-Were-in-a-Maker-Renaissance
   - /post/2015/12/16/exciting-time-for-makers-were-in-a-maker-renaissance
   - /post.aspx?id=b6e03e3d-d52e-4553-a88e-ac04e0db2453

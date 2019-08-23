@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: []
 redirect_from: 
+  - /post/2011/04/01/Awarded-2011-Microsoft-MVPe28093Windows-Live-Platform.aspx
   - /post/2011/04/01/Awarded-2011-Microsoft-MVPe28093Windows-Live-Platform
   - /post/2011/04/01/awarded-2011-microsoft-mvpe28093windows-live-platform
   - /post.aspx?id=5d06364b-5928-4763-9e43-ad03999a6924

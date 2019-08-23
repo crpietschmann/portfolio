@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
+  - /post/2010/06/14/Display_Google_Maps_Imagery_using_Bing_Maps_Silverlight_Control.aspx
   - /post/2010/06/14/Display_Google_Maps_Imagery_using_Bing_Maps_Silverlight_Control
   - /post/2010/06/14/display_google_maps_imagery_using_bing_maps_silverlight_control
   - /post.aspx?id=0ac24a38-25bc-43d8-9ba8-421dbbebfaa1

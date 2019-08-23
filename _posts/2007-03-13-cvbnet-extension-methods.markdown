@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General", "vb.net", "C#"]
 redirect_from: 
+  - /post/2007/03/13/CVBNET-Extension-Methods.aspx
   - /post/2007/03/13/CVBNET-Extension-Methods
   - /post/2007/03/13/cvbnet-extension-methods
   - /post.aspx?id=58f0ea08-ecce-4a63-9b4b-258d9fa9e030

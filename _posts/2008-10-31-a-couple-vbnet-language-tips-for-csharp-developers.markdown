@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "vb.net"]
 redirect_from: 
+  - /post/2008/10/31/A-Couple-VBNET-Language-Tips-for-CSharp-Developers.aspx
   - /post/2008/10/31/A-Couple-VBNET-Language-Tips-for-CSharp-Developers
   - /post/2008/10/31/a-couple-vbnet-language-tips-for-csharp-developers
   - /post.aspx?id=3e3e5d35-10e4-4362-b8e3-fd97dbff3796

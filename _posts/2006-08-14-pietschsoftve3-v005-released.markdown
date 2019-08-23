@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2006/08/14/PietschSoftVE3-v005-Released.aspx
   - /post/2006/08/14/PietschSoftVE3-v005-Released
   - /post/2006/08/14/pietschsoftve3-v005-released
   - /post.aspx?id=9ae95430-c7c2-451e-8b0d-bf1f6bd52461

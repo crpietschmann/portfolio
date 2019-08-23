@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2009/01/16/Windows-7-Beta-Media-Player-12-Bigger-Focus-On-Playing-Media-Content.aspx
   - /post/2009/01/16/Windows-7-Beta-Media-Player-12-Bigger-Focus-On-Playing-Media-Content
   - /post/2009/01/16/windows-7-beta-media-player-12-bigger-focus-on-playing-media-content
   - /post.aspx?id=267a4f51-b7b0-4e37-8737-f197070701a0

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/12/04/My-Blog-content-is-now-licensed-under-the-Creative-Commons-Attribution-License.aspx
   - /post/2007/12/04/My-Blog-content-is-now-licensed-under-the-Creative-Commons-Attribution-License
   - /post/2007/12/04/my-blog-content-is-now-licensed-under-the-creative-commons-attribution-license
   - /post.aspx?id=d76fcb3e-9aa9-4931-ba8c-fcb7760d4f03

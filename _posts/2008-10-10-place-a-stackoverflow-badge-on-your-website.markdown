@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2008/10/10/Place-a-StackOverflow-badge-on-your-website.aspx
   - /post/2008/10/10/Place-a-StackOverflow-badge-on-your-website
   - /post/2008/10/10/place-a-stackoverflow-badge-on-your-website
   - /post.aspx?id=36e89f5e-4e11-4a73-81c6-3dde5c757fba

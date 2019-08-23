@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/03/27/Why-not-make-ASPNET-Web-Matrix-shared-source.aspx
   - /post/2007/03/27/Why-not-make-ASPNET-Web-Matrix-shared-source
   - /post/2007/03/27/why-not-make-aspnet-web-matrix-shared-source
   - /post.aspx?id=677ff719-dff2-467f-8bd6-a4a0707f275d

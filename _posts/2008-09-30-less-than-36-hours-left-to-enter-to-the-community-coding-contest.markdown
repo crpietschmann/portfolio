@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/09/30/Less-Than-36-Hours-Left-to-Enter-to-the-Community-Coding-Contest.aspx
   - /post/2008/09/30/Less-Than-36-Hours-Left-to-Enter-to-the-Community-Coding-Contest
   - /post/2008/09/30/less-than-36-hours-left-to-enter-to-the-community-coding-contest
   - /post.aspx?id=67770600-dea8-4796-9212-84376bca62db

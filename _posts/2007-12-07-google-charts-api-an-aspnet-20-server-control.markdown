@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2007/12/07/Google-Charts-API-an-ASPNET-20-Server-Control.aspx
   - /post/2007/12/07/Google-Charts-API-an-ASPNET-20-Server-Control
   - /post/2007/12/07/google-charts-api-an-aspnet-20-server-control
   - /post.aspx?id=de36b5e8-c030-40ec-8e24-3e458da8340b

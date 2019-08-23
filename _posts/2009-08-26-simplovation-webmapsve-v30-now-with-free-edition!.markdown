@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net", "Bing Maps", "JavaScript"]
 redirect_from: 
+  - /post/2009/08/26/Simplovation-WebMapsVE-v30-Now-With-FREE-Edition!.aspx
   - /post/2009/08/26/Simplovation-WebMapsVE-v30-Now-With-FREE-Edition!
   - /post/2009/08/26/simplovation-webmapsve-v30-now-with-free-edition!
   - /post.aspx?id=e5800ac8-e5f7-442c-911e-00af6951462d

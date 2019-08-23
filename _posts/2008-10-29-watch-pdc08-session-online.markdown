@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/10/29/Watch-PDC08-Session-Online.aspx
   - /post/2008/10/29/Watch-PDC08-Session-Online
   - /post/2008/10/29/watch-pdc08-session-online
   - /post.aspx?id=0786d14c-6d4a-41da-96a3-a94daea0158c

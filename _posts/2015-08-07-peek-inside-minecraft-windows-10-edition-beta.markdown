@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Windows Store App"]
 redirect_from: 
+  - /post/2015/08/07/Peek-Inside-Minecraft-Windows-10-Edition-Beta.aspx
   - /post/2015/08/07/Peek-Inside-Minecraft-Windows-10-Edition-Beta
   - /post/2015/08/07/peek-inside-minecraft-windows-10-edition-beta
   - /post.aspx?id=d9031fc9-fa01-4f33-b729-3f4d5a0d955d

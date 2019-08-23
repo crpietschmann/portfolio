@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2008/06/19/Virtual-Earth-Staging-Environment-Launched.aspx
   - /post/2008/06/19/Virtual-Earth-Staging-Environment-Launched
   - /post/2008/06/19/virtual-earth-staging-environment-launched
   - /post.aspx?id=345b4752-e49b-4612-83c3-6cdc13a1f024

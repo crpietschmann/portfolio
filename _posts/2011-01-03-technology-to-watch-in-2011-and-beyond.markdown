@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2011/01/03/Technology-to-Watch-in-2011-and-Beyond.aspx
   - /post/2011/01/03/Technology-to-Watch-in-2011-and-Beyond
   - /post/2011/01/03/technology-to-watch-in-2011-and-beyond
   - /post.aspx?id=fe7f232e-18cf-45a0-8abe-39d5fad27ff4

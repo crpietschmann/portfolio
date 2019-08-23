@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2010/09/23/Location!-You-Havent-Seen-Nothing-Yet!.aspx
   - /post/2010/09/23/Location!-You-Havent-Seen-Nothing-Yet!
   - /post/2010/09/23/location!-you-havent-seen-nothing-yet!
   - /post.aspx?id=e3f9d281-beeb-4aa5-98ef-4c7891f3767e

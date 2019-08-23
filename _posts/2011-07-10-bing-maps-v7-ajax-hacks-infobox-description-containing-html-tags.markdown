@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps"]
 redirect_from: 
+  - /post/2011/07/10/Bing-Maps-v7-Ajax-Hacks-InfoBox-Description-containing-Html-tags.aspx
   - /post/2011/07/10/Bing-Maps-v7-Ajax-Hacks-InfoBox-Description-containing-Html-tags
   - /post/2011/07/10/bing-maps-v7-ajax-hacks-infobox-description-containing-html-tags
   - /post.aspx?id=4cc95c7e-52bc-487b-9b6f-54d0b59f0d02

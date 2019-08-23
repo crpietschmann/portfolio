@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/01/08/DotNetKicks-is-2-years-old-today!-Way-to-go!.aspx
   - /post/2008/01/08/DotNetKicks-is-2-years-old-today!-Way-to-go!
   - /post/2008/01/08/dotnetkicks-is-2-years-old-today!-way-to-go!
   - /post.aspx?id=b497247d-ea24-448a-bdfe-8e734f422945

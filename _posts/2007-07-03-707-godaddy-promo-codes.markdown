@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/07/03/707-Godaddy-Promo-Codes.aspx
   - /post/2007/07/03/707-Godaddy-Promo-Codes
   - /post/2007/07/03/707-godaddy-promo-codes
   - /post.aspx?id=4ce0ba3d-5c25-43d7-ad73-5cfd98ff692b

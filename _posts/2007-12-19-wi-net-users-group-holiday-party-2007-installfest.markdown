@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["WI-INETA"]
 redirect_from: 
+  - /post/2007/12/19/WI-NET-Users-Group-Holiday-Party-2007-InstallFest.aspx
   - /post/2007/12/19/WI-NET-Users-Group-Holiday-Party-2007-InstallFest
   - /post/2007/12/19/wi-net-users-group-holiday-party-2007-installfest
   - /post.aspx?id=b4670a24-7fae-45e1-bed2-644ccb86ea69

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net", "JavaScript"]
 redirect_from: 
+  - /post/2007/11/15/Cryptographic-Extensions-for-Microsoft-AJAX-Extensions-Framework.aspx
   - /post/2007/11/15/Cryptographic-Extensions-for-Microsoft-AJAX-Extensions-Framework
   - /post/2007/11/15/cryptographic-extensions-for-microsoft-ajax-extensions-framework
   - /post.aspx?id=0ad29a34-14dc-4046-9e43-abb1889fbae9

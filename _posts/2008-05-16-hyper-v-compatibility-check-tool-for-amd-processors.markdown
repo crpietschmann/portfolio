@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/05/16/Hyper-V-Compatibility-Check-Tool-for-AMD-Processors.aspx
   - /post/2008/05/16/Hyper-V-Compatibility-Check-Tool-for-AMD-Processors
   - /post/2008/05/16/hyper-v-compatibility-check-tool-for-amd-processors
   - /post.aspx?id=34bdeb30-4c2c-4b41-81fa-e2e3981d3461

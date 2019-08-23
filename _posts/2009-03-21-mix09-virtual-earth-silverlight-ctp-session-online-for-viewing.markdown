@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Silverlight", "Bing Maps"]
 redirect_from: 
+  - /post/2009/03/21/MIX09-Virtual-Earth-Silverlight-CTP-Session-Online-For-Viewing.aspx
   - /post/2009/03/21/MIX09-Virtual-Earth-Silverlight-CTP-Session-Online-For-Viewing
   - /post/2009/03/21/mix09-virtual-earth-silverlight-ctp-session-online-for-viewing
   - /post.aspx?id=096a349c-9fa9-4502-b05b-ad3fecb92d96

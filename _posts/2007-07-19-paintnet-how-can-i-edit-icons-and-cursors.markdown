@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/07/19/PaintNET-How-can-I-edit-Icons-and-Cursors.aspx
   - /post/2007/07/19/PaintNET-How-can-I-edit-Icons-and-Cursors
   - /post/2007/07/19/paintnet-how-can-i-edit-icons-and-cursors
   - /post.aspx?id=9811cd49-9ce5-4caa-8942-6012a9ca5200

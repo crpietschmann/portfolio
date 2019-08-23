@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
+  - /post/2010/06/28/Silverlight-Bing-Maps-Draw-Circle-Around-Latitude-Longitude-Location.aspx
   - /post/2010/06/28/Silverlight-Bing-Maps-Draw-Circle-Around-Latitude-Longitude-Location
   - /post/2010/06/28/silverlight-bing-maps-draw-circle-around-latitude-longitude-location
   - /post.aspx?id=f1194fa7-c70b-4f63-aa03-62fec6ec6581

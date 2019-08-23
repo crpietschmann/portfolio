@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2008/05/15/ASPNET_Create_AJAX_Server_Controls_using_the_ScriptControl_base_class.aspx
   - /post/2008/05/15/ASPNET_Create_AJAX_Server_Controls_using_the_ScriptControl_base_class
   - /post/2008/05/15/aspnet_create_ajax_server_controls_using_the_scriptcontrol_base_class
   - /post.aspx?id=e78fc882-c172-46bd-ac8c-3a8d5ea56b14

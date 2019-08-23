@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/07/16/Could-WiFi-be-used-to-cook-food.aspx
   - /post/2007/07/16/Could-WiFi-be-used-to-cook-food
   - /post/2007/07/16/could-wifi-be-used-to-cook-food
   - /post.aspx?id=7b341431-400f-47b4-bae1-117566664a6b

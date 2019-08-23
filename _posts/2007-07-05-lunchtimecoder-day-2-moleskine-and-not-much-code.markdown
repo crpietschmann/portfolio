@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/07/05/LunchTimeCoder-Day-2-Moleskine-and-not-much-code.aspx
   - /post/2007/07/05/LunchTimeCoder-Day-2-Moleskine-and-not-much-code
   - /post/2007/07/05/lunchtimecoder-day-2-moleskine-and-not-much-code
   - /post.aspx?id=d3d901c7-8942-4d8a-847c-67da084cb9db

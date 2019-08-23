@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2009/01/30/Using-LINQ-to-SQL-with-SQL-Server-Compact-Edition.aspx
   - /post/2009/01/30/Using-LINQ-to-SQL-with-SQL-Server-Compact-Edition
   - /post/2009/01/30/using-linq-to-sql-with-sql-server-compact-edition
   - /post.aspx?id=006d7ee4-ac7d-4fc4-a748-3ba8d846deeb

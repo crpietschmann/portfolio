@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript"]
 redirect_from: 
+  - /post/2007/09/24/JavaScript-Add-Search-Engine-Keyword-Highlight-Support-to-your-site-with-ease.aspx
   - /post/2007/09/24/JavaScript-Add-Search-Engine-Keyword-Highlight-Support-to-your-site-with-ease
   - /post/2007/09/24/javascript-add-search-engine-keyword-highlight-support-to-your-site-with-ease
   - /post.aspx?id=4d751d89-ea35-4ad2-b916-4b3561d56c0b

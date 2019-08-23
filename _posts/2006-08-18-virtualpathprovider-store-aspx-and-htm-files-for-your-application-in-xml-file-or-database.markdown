@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["asp.net"]
 redirect_from: 
+  - /post/2006/08/18/VirtualPathProvider-Store-ASPX-and-HTM-files-for-your-application-in-xml-file-or-database.aspx
   - /post/2006/08/18/VirtualPathProvider-Store-ASPX-and-HTM-files-for-your-application-in-xml-file-or-database
   - /post/2006/08/18/virtualpathprovider-store-aspx-and-htm-files-for-your-application-in-xml-file-or-database
   - /post.aspx?id=bb4e12e0-645d-4e3a-8479-333e77b9bfd6

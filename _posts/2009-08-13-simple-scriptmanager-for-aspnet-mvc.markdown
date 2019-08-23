@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["ASP.NET MVC"]
 redirect_from: 
+  - /post/2009/08/13/Simple-ScriptManager-for-ASPNET-MVC.aspx
   - /post/2009/08/13/Simple-ScriptManager-for-ASPNET-MVC
   - /post/2009/08/13/simple-scriptmanager-for-aspnet-mvc
   - /post.aspx?id=fccc2f93-f7a3-481d-bcd7-a3b9425420bd

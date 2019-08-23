@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["JavaScript", "General"]
 redirect_from: 
+  - /post/2009/06/12/Managed-JScript-on-the-DLR-from-Microsoft-is-DEAD-Why.aspx
   - /post/2009/06/12/Managed-JScript-on-the-DLR-from-Microsoft-is-DEAD-Why
   - /post/2009/06/12/managed-jscript-on-the-dlr-from-microsoft-is-dead-why
   - /post.aspx?id=dc3bbf5e-2708-4f70-b67a-cba6fb779a8b

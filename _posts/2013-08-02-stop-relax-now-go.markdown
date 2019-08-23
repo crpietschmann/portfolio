@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2013/08/02/Stop-Relax-Now-GO.aspx
   - /post/2013/08/02/Stop-Relax-Now-GO
   - /post/2013/08/02/stop-relax-now-go
   - /post.aspx?id=55ad708f-74e4-4837-ad05-c0bb75fe1835

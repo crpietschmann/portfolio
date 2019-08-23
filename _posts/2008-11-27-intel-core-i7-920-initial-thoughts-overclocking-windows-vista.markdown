@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/11/27/Intel-Core-i7-920-Initial-Thoughts-Overclocking-Windows-Vista.aspx
   - /post/2008/11/27/Intel-Core-i7-920-Initial-Thoughts-Overclocking-Windows-Vista
   - /post/2008/11/27/intel-core-i7-920-initial-thoughts-overclocking-windows-vista
   - /post.aspx?id=84cffaa2-1856-4b3d-b7fc-5c74126bd318

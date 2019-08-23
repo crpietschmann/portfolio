@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
+  - /post/2009/03/20/Virtual-Earth-Silverlight-Adding-Media-(Images2c-Video2c-etc)-to-the-Map.aspx
   - /post/2009/03/20/Virtual-Earth-Silverlight-Adding-Media-(Images2c-Video2c-etc)-to-the-Map
   - /post/2009/03/20/virtual-earth-silverlight-adding-media-(images2c-video2c-etc)-to-the-map
   - /post.aspx?id=2c25c9bc-e290-41e4-9a03-daa75a912c63

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/07/20/IIS7-Better-Url-Mapping-support-well-not-yet.aspx
   - /post/2006/07/20/IIS7-Better-Url-Mapping-support-well-not-yet
   - /post/2006/07/20/iis7-better-url-mapping-support-well-not-yet
   - /post.aspx?id=a351803c-cfc5-4259-9701-d38ca7e89699

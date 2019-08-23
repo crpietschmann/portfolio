@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2016/03/02/Follow-You-Own-Path-Dreams-and-Passion.aspx
   - /post/2016/03/02/Follow-You-Own-Path-Dreams-and-Passion
   - /post/2016/03/02/follow-you-own-path-dreams-and-passion
   - /post.aspx?id=1edc1ab6-770d-43b0-b369-bc2e705c77a1

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: []
 redirect_from: 
+  - /post/2013/04/27/Do-Trust-and-Faith-belong-in-Software-Development-Not-Really!.aspx
   - /post/2013/04/27/Do-Trust-and-Faith-belong-in-Software-Development-Not-Really!
   - /post/2013/04/27/do-trust-and-faith-belong-in-software-development-not-really!
   - /post.aspx?id=57e10123-5ce7-4af2-bcd5-059771fdacd9

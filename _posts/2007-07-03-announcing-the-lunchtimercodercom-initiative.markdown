@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/07/03/Announcing-the-LunchTimerCodercom-Initiative.aspx
   - /post/2007/07/03/Announcing-the-LunchTimerCodercom-Initiative
   - /post/2007/07/03/announcing-the-lunchtimercodercom-initiative
   - /post.aspx?id=0cf7334d-ef3c-4af7-976b-05b770f17051

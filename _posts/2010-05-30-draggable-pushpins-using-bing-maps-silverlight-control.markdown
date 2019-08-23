@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
+  - /post/2010/05/30/Draggable-Pushpins-using-Bing-Maps-Silverlight-Control.aspx
   - /post/2010/05/30/Draggable-Pushpins-using-Bing-Maps-Silverlight-Control
   - /post/2010/05/30/draggable-pushpins-using-bing-maps-silverlight-control
   - /post.aspx?id=e1ff8913-504e-4df4-a852-069647a6259b

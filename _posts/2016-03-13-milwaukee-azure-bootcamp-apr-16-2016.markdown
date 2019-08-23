@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Azure"]
 redirect_from: 
+  - /post/2016/03/13/Milwaukee-Azure-Bootcamp-Apr-16-2016.aspx
   - /post/2016/03/13/Milwaukee-Azure-Bootcamp-Apr-16-2016
   - /post/2016/03/13/milwaukee-azure-bootcamp-apr-16-2016
   - /post.aspx?id=3b40bd61-5063-4768-8046-f004b8a37267

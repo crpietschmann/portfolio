@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "JavaScript"]
 redirect_from: 
+  - /post/2012/01/05/CanvasMap-Prototype-3d-HTML5-Canvas-2b-Mapping.aspx
   - /post/2012/01/05/CanvasMap-Prototype-3d-HTML5-Canvas-2b-Mapping
   - /post/2012/01/05/canvasmap-prototype-3d-html5-canvas-2b-mapping
   - /post.aspx?id=2c00d505-e1d3-483a-a157-090f0cf654e2

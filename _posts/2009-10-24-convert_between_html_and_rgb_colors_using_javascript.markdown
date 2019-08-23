@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "JavaScript"]
 redirect_from: 
+  - /post/2009/10/24/Convert_Between_HTML_and_RGB_Colors_using_JavaScript.aspx
   - /post/2009/10/24/Convert_Between_HTML_and_RGB_Colors_using_JavaScript
   - /post/2009/10/24/convert_between_html_and_rgb_colors_using_javascript
   - /post.aspx?id=4b595a62-7f09-41cc-9ca3-da351bb27a8a

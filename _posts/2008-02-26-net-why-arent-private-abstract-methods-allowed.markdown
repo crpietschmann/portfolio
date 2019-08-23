@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "vb.net"]
 redirect_from: 
+  - /post/2008/02/26/NET-Why-arent-Private-Abstract-methods-allowed.aspx
   - /post/2008/02/26/NET-Why-arent-Private-Abstract-methods-allowed
   - /post/2008/02/26/net-why-arent-private-abstract-methods-allowed
   - /post.aspx?id=a1caf97a-cced-40c6-97f7-d639c2840c00

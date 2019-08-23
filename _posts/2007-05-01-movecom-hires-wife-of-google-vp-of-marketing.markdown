@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/05/01/Movecom-hires-wife-of-Google-VP-of-Marketing.aspx
   - /post/2007/05/01/Movecom-hires-wife-of-Google-VP-of-Marketing
   - /post/2007/05/01/movecom-hires-wife-of-google-vp-of-marketing
   - /post.aspx?id=837663d6-b121-4020-bf35-918bdde1f991

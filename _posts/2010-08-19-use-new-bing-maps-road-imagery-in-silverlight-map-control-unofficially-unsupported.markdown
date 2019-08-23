@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Bing Maps", "C#", "Silverlight"]
 redirect_from: 
+  - /post/2010/08/19/Use-New-Bing-Maps-Road-Imagery-In-Silverlight-Map-Control-Unofficially-Unsupported.aspx
   - /post/2010/08/19/Use-New-Bing-Maps-Road-Imagery-In-Silverlight-Map-Control-Unofficially-Unsupported
   - /post/2010/08/19/use-new-bing-maps-road-imagery-in-silverlight-map-control-unofficially-unsupported
   - /post.aspx?id=a19c8078-1a42-4654-aeca-19386bf402bb

@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["Inspiration"]
 redirect_from: 
+  - /post/2016/01/30/Be-True-to-Yourself-First.aspx
   - /post/2016/01/30/Be-True-to-Yourself-First
   - /post/2016/01/30/be-true-to-yourself-first
   - /post.aspx?id=32d1927e-66f7-4d68-8556-15a6e944a894

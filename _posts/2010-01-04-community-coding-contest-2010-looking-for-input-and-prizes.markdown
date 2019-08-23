@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2010/01/04/Community-Coding-Contest-2010-Looking-for-Input-and-Prizes.aspx
   - /post/2010/01/04/Community-Coding-Contest-2010-Looking-for-Input-and-Prizes
   - /post/2010/01/04/community-coding-contest-2010-looking-for-input-and-prizes
   - /post.aspx?id=ee3a6383-39ea-4ad1-a86a-164dcb7b7bcc

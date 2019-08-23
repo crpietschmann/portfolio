@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2008/01/21/QBasic-was-my-First-Programming-Language.aspx
   - /post/2008/01/21/QBasic-was-my-First-Programming-Language
   - /post/2008/01/21/qbasic-was-my-first-programming-language
   - /post.aspx?id=0bf28a8b-fa50-46f5-97f3-f6e21933cda6

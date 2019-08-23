@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2006/11/17/I-now-have-my-key-for-Vista-Ultimate.aspx
   - /post/2006/11/17/I-now-have-my-key-for-Vista-Ultimate
   - /post/2006/11/17/i-now-have-my-key-for-vista-ultimate
   - /post.aspx?id=4c03ec73-56af-46db-9ece-22f0af16d566

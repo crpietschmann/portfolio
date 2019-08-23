@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["HTML", "JavaScript"]
 redirect_from: 
+  - /post/2010/11/22/HTML5-Day-6-New-Range-Input-Type-3cinput-type3drange-3e.aspx
   - /post/2010/11/22/HTML5-Day-6-New-Range-Input-Type-3cinput-type3drange-3e
   - /post/2010/11/22/html5-day-6-new-range-input-type-3cinput-type3drange-3e
   - /post.aspx?id=22671886-2906-4a2b-b184-5a4371785b1a

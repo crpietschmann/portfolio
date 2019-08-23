@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["CSS"]
 redirect_from: 
+  - /post/2015/04/28/CSS-only-Animated-Loading-Spinner.aspx
   - /post/2015/04/28/CSS-only-Animated-Loading-Spinner
   - /post/2015/04/28/css-only-animated-loading-spinner
   - /post.aspx?id=d0028042-516a-49dc-a8eb-3c4a41901bf8

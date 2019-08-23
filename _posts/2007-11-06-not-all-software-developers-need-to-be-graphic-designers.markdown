@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/11/06/Not-All-Software-Developers-Need-To-Be-Graphic-Designers.aspx
   - /post/2007/11/06/Not-All-Software-Developers-Need-To-Be-Graphic-Designers
   - /post/2007/11/06/not-all-software-developers-need-to-be-graphic-designers
   - /post.aspx?id=2f8c9152-fd96-4e9b-b5b7-a5520b0a581e

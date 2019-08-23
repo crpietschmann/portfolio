@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["C#", "Swift"]
 redirect_from: 
+  - /post/2014/06/07/Basic-Comparison-of-Functions-in-C-and-Apple-Swift-Programming-Language.aspx
   - /post/2014/06/07/Basic-Comparison-of-Functions-in-C-and-Apple-Swift-Programming-Language
   - /post/2014/06/07/basic-comparison-of-functions-in-c-and-apple-swift-programming-language
   - /post.aspx?id=24c0d0bb-d83d-4c36-a75d-1cfe1405f9e6

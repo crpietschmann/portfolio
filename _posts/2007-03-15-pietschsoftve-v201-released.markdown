@@ -8,6 +8,7 @@ published: true
 categories: ["blog", "archives"]
 tags: ["General"]
 redirect_from: 
+  - /post/2007/03/15/PietschSoftVE-v201-Released.aspx
   - /post/2007/03/15/PietschSoftVE-v201-Released
   - /post/2007/03/15/pietschsoftve-v201-released
   - /post.aspx?id=62165e87-f795-40eb-8fe7-642cde26f1a8
