@@ -18,11 +18,14 @@ redirect_from:
 One thing with the For Loop in JavaScript is it doesn't seem to be very well documented that you can use it to do an equivalent of a ForEach loop.
 
 Here's a short example of doing the ForEach loop equivalent in JavaScript:
-<pre class="brush: js; first-line: 1; tab-size: 4; toolbar: false; ">var names = ["Chris", "Kate", "Steve"];
+
+```js
+var names = ["Chris", "Kate", "Steve"];
 for(var i in names)
 {
     alert(names[i]);
-}</pre>
+}
+```
 
 In the above code, the variable "i" is our iterator and by using the "in" keyword the "for" loop actually loops through all elements in the Array for us. Using this you no longer have to worry about the length of the array.
 
