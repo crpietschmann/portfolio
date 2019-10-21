@@ -20,7 +20,7 @@ If you are writing you code to be able to easily unit test each method, and you 
 While working on my <a href="https://github.com/crpietschmann/dotnetext">dotNetExt</a> project, I wrote a simple helper that allowed me to easily instantiate a SqlException object with a specified error number. This allows me to write units tests that throw any SqlException I want, when I want.
 
 Here’s a direct link to the source code for the SqlExceptionHelper.Generate method:  
-<a title="SqlExceptionHelper source code" href="https://github.com/crpietschmann/dotnetext/blob/4ed40d20dbab210256d93fd20660e3fa2c264ad6/TestProject/SqlExceptionHelper.cs">https://github.com/crpietschmann/dotnetext/blob/4ed40d20dbab210256d93fd20660e3fa2c264ad6/TestProject/SqlExceptionHelper.cs</a>
+<a title="SqlExceptionHelper source code" href="https://github.com/crpietschmann/dotnetext/blob/4ed40d20dbab210256d93fd20660e3fa2c264ad6/TestProject/SqlExceptionHelper.cs">/TestProject/SqlExceptionHelper.cs</a>
 
 Here’s the full code so you can see it here. Remember, the latest source of the <a href="https://github.com/crpietschmann/dotnetext">dotNetExt</a> project will always have the latest source used within the project, and the code pasted below may become stale over time.  
 
