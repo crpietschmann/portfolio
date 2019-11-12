@@ -6,9 +6,9 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://pietschsoft.com" # the base hostname & protocol for your site
 author: Chris Pietschmann
-contact_url: https://buildazure.com/contact
+contact_url: https://build5nines.com/contact
 twitter_username: crpietschmann
-twitter_username_2: buildazure
+twitter_username_2: build5nines
 github_username:  crpietschmann
 youtube_channel: buildazure
 linkedin_url: http://linkedin.com/in/crpietschmann
