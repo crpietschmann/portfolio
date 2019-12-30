@@ -34,7 +34,8 @@ $brand-background: radial-gradient(rgba(0,0,0,0),rgba(0,0,0,0.3)), url(/images/b
 
 
 blockquote {
-  background: #eee;
+  background: $grey-color-light;
+  border: solid 0.1em $grey-color;
   border-left: solid 0.3em $brand-color;
   padding: 0.3em;
   padding-left: 0.5em;
