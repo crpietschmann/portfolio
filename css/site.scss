@@ -33,6 +33,13 @@ $brand-background: radial-gradient(rgba(0,0,0,0),rgba(0,0,0,0.3)), url(/images/b
   margin-top: 2em;
 }
 
+.container.lowlight {
+  background-color: $grey-color-light;
+}
+.container.highlight {
+  background-color: $brand-color;
+  color: $background-color;
+}
 
 blockquote {
   background: $grey-color-lighter;
