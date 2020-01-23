@@ -62,6 +62,21 @@ redirect_from:
   </div>
 </div>
 
+<span id="awards"></span>
+<div class="container">
+  <h2>Microsoft MVP</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <img style="width: 100%" src="images/logos/microsoftmvp.png"/>
+    </div>
+    <div class="col-md-8">
+      <p>I have been recognized by Microsoft as being an expert in my field. My current award category is Microsoft Azure, and I have a specialty in Azure IoT.</p>
+      <p>I've received the Microsoft MVP Award in the following years:<br/>&#x1f3c6; 2019, &#x1f3c6; 2018, &#x1f3c6; 2017, &#x1f3c6; 2012, &#x1f3c6; 2011, &#x1f3c6; 2010, &#x1f3c6; 2009, &#x1f3c6; 2008</p>
+      <p>You can view my official Microsoft MVP profile here: <a href="https://mvp.microsoft.com/en-us/PublicProfile/4015549?fullName=Christopher%20%20Pietschmann" target="_blank">Chris Pietschmann's Microsoft MVP Profile</a></a></p>
+    </div>
+  </div>
+</div>
+
 <span id="popular"></span>
 <div class="container">
 
@@ -102,34 +117,20 @@ redirect_from:
       </div>
     </div>
  
-      <span id="recent"></span>
-      <h2>Recent Posts</h2>
-      <div class="row">
-        {% for post in site.posts limit:6 %}
-          <div class="col-md-6 mb-2">
-              <h6 class="mb-0"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
-              <span class="small text-muted">{{ post.date | date: "%b %-d, %Y" }}</span>
-          </div>
-        {% endfor %}
-      </div>
+    <span id="recent"></span>
+    <h2>Recent Posts</h2>
+    <div class="row">
+      {% for post in site.posts limit:6 %}
+        <div class="col-md-6 mb-2">
+            <h6 class="mb-0"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
+            <span class="small text-muted">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
+      {% endfor %}
+    </div>
  
     <p class="mt-5"><a href="/blog">View full post list</a></p>
-  </div>
-
-<span id="awards"></span>
-<div class="container">
-  <h2>Microsoft MVP</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <img style="width: 100%" src="images/logos/microsoftmvp.png"/>
-    </div>
-    <div class="col-md-8">
-      <p>I have been recognized by Microsoft as being an expert in my field. My current award category is Microsoft Azure, and I have a specialty in Azure IoT.</p>
-      <p>I've received the Microsoft MVP Award in the following years:<br/>&#x1f3c6; 2019, &#x1f3c6; 2018, &#x1f3c6; 2017, &#x1f3c6; 2012, &#x1f3c6; 2011, &#x1f3c6; 2010, &#x1f3c6; 2009, &#x1f3c6; 2008</p>
-      <p>You can view my official Microsoft MVP profile here: <a href="https://mvp.microsoft.com/en-us/PublicProfile/4015549?fullName=Christopher%20%20Pietschmann" target="_blank">Chris Pietschmann's Microsoft MVP Profile</a></a></p>
-    </div>
-  </div>
 </div>
+
 
 <!--
 <div class="container-fluid bg-blue">
