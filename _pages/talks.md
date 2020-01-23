@@ -6,8 +6,6 @@ permalink: /talks/
 
 Hi! I'm Chris Pietschmann, and I have a ton of experience public speaking at user groups, conferences, webinars, and other training events. I'm a [Microsoft MVP](/#awards) and a Microsoft Certified Trainer (MCT). I have many years of experience as an instructor leading multi-day instructor-led training classes; both on-site and virtually over the Internet.
 
-[Speaker Bio](#bio) | [Sessions](#sessions) | [Events](#events) | [Courses](#courses)
-
 Please [contact me]({{ site.contact_url }}) if you're interested in inviting me to speak at your event, or would like to have me train your team for certifications or other classes as well. Let's talk!
 
 <a id="bio"></a>
