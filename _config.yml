@@ -13,7 +13,9 @@ github_username:  crpietschmann
 youtube_channel: buildazure
 linkedin_url: http://linkedin.com/in/crpietschmann
 
+
 # Build settings
+include: ['_pages']
 markdown: kramdown
 permalink: /post/:year/:month/:day/:title
 plugins:
