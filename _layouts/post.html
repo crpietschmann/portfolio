@@ -8,7 +8,6 @@ layout: default
 
       <header class="post-header">
           <h1 class="post-title">{{ page.title }}</h1>
-          
           <!--
           <div class="post-categories">
               {% if post %}
@@ -22,12 +21,7 @@ layout: default
               {% endfor %}
             </div>
           -->
-
           <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-
-          <!-- Go to www.addthis.com/dashboard to customize your tools -->
-          <div class="addthis_sharing_toolbox"></div>
-
       </header>
 
       <article class="post-content">
@@ -35,14 +29,6 @@ layout: default
       </article>
 
       <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
-
-      <!--
-      <br/><br/>
-      <em class="small text-muted mb-5 mt-5">
-        <a href="http://creativecommons.org/licenses/by/3.0/us/" class="float-left"><img src="http://creativecommons.org/images/public/somerights20.png"/></a> This blog post is licensed under the <a href="https://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution 3.0 United States License</a>, unless explicitly stated otherwise within the blog post content. All other content on this website is not licensed under Creative Commons licensing.
-      </em>
-      -->
-
     </div>
     <div class="col-md-4">
       {% include sidebar.html %}
