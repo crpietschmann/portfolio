@@ -48,6 +48,23 @@ You can download it from here: <https://software.intel.com/en-us/articles/intel-
 
 You can see this utility shows us the Power usage, Clock Frequency, Temperature, and Core Utilization information for the machine. You can also use the **Test** menu to run tests of hitting the CPU and/or GPU to 100% utilization which is pretty nice to have.
 
+<a id="cpusetter"></a>
+## CPU Setter
+
+CPUSetter adjusts the number of active cores in your cpu(s). It can also enable/disable hyperthreading on supported cpus.
+
+To do this requires administrator access to the machine and a small privileged helper program is installed when you first execute CPUSetter.
+A convenient link to the system Activity Monitor is provided so you can observe the impact of changes.
+Authentication with your administrator credentials is required to make changes to your system.
+
+The Processes window allows you to change the priority (nice value) of your processes, and to also limit the maximum CPU usage of any of your processes. You cannot adjust processes that do not belong to you.
+
+You can download CPU Setter here: <https://www.whatroute.net/cpusetter.html#download>
+
+While the CPU Setter utility is meant to help you control the Intel Hyperthreading feature of the CPU, it also has a really great view of **System Stats**. This utility that let's you view additional information about the system that includes: Disk I/O, Wifi, Power usage, and more.
+
+![](/images/posts/2020-02-15-macos-monitor-cpu-usage-info/cpu-setter.jpg)
+
 <a id="turbo"></a>
 ## Turbo Boost Switcher
 
