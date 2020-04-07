@@ -41,7 +41,7 @@ var val1 = 4 + '1';
 
 However, what about when the string is not a number? Well, in this case instead of a parsed number being returned, JavaScript will return a value of `NaN` or not a number.
 
-```
+```javascript
 var val1 = +'chris';
 // return NaN
 ```
@@ -50,7 +50,7 @@ When you are returned a `NaN` (not a number) result in your variable, if you att
 
 To do this, you can use the `isNaN` function in JavaScript to double check the string to number parsing worked successfully:
 
-```
+```javascript
 var val1 = +'chris';
 if (isNaN(val1)) {
     val1 = 0;
