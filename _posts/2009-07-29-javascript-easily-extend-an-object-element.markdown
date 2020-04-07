@@ -41,17 +41,18 @@ var obj = new MyObject({ showFooter: false });
 // The above line will tell the new "MyObject" to show the toolbar, but not the footer.
 
 ```
-<h3>Why use this?</h3>
+
+## Why use this?
 
 As you can probably tell from the above example of doing this with jQuery, this really helps to simplify and reduce the amount of code you write. The benefits are smaller .js files for the browser to download, and it's just easier to read/maintain the code.
 
 If you still have questions about this, then the following non-jQuery example of doing the same thing should help clear things up for you.
-<h3>What if I'm Not using jQuery?
-</h3>
+
+## What if I'm Not using jQuery?
 
 As you can probably see, the above example can really help to keep things simple. However, if you're not using jQuery how would you do this?
 
-Now the "jQuery.extend" method has some logic to make sure the resulting object is only a copy and doesn't contain any references to the original so you don't mess things up, but below is really simplified version that will get the job done in most cases.
+Now the `jQuery.extend` method has some logic to make sure the resulting object is only a copy and doesn't contain any references to the original so you don't mess things up, but below is really simplified version that will get the job done in most cases.
 
 ```javascript
 
@@ -80,7 +81,7 @@ var Person = function() {
 Person.prototype = {
     FirstName: null,
     LastName: null
-};        
+};
 
 var person1 = new Person();
 // Set multiple object properties with a single line of code
@@ -114,8 +115,9 @@ js.src = "test.js";
 document.body.appendChild(js);
 
 ```
-<h3>Conclusion</h3>
 
-Now the use of the above method is actually really simple, and the end result is pretty much identical to the "jQuery.extend" method for simple tasks. If you want to have a cleaner "cloning" of the object values that get merged, then you'll probably want to use the "jQuery.extend" method or just copy it into your project if you aren't using jQuery.
+## Conclusion
 
-Enjoy.
+Now the use of the above method is actually really simple, and the end result is pretty much identical to the `jQuery.extend` method for simple tasks. If you want to have a cleaner "cloning" of the object values that get merged, then you'll probably want to use the `jQuery.extend` method or just copy it into your project if you aren't using jQuery.
+
+Enjoy!

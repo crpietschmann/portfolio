@@ -1,5 +1,8 @@
 ---
 layout: default
+redirect_from: 
+  - /OLD/
+  - /OLD/index.html
 ---
 <style>
 /*
@@ -54,23 +57,28 @@ layout: default
   <div class="col-md-5 p-lg-5 mx-auto my-5" style="color: #fff; background: rgba(0,0,0,0.7); border-radius: 0.6em;">
     <h1 class="display-4 font-weight-normal">Chris Pietschmann</h1>
     <p class="lead font-weight-normal">I have nearly 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my portfolio website, and old blog post archive!</p>
-    <a class="btn btn-outline-primary" href="https://buildazure.com">Read BuildAzure.com</a>
+    <a class="btn btn-outline-primary" href="https://build5nines.com">Read Build5Nines.com</a>
     <a class="btn btn-outline-secondary" href="/blog">Read the Blog</a>
+  </div>
+</div>
+
+<span id="awards"></span>
+<div class="container">
+  <h2>Microsoft MVP</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <img style="width: 100%" src="images/logos/microsoftmvp.png"/>
+    </div>
+    <div class="col-md-8">
+      <p>I have been recognized by Microsoft as being an expert in my field. My current award category is Microsoft Azure, and I have a specialty in Azure IoT.</p>
+      <p>I've received the Microsoft MVP Award in the following years:<br/>&#x1f3c6; 2019, &#x1f3c6; 2018, &#x1f3c6; 2017, &#x1f3c6; 2012, &#x1f3c6; 2011, &#x1f3c6; 2010, &#x1f3c6; 2009, &#x1f3c6; 2008</p>
+      <p>You can view my official Microsoft MVP profile here: <a href="https://mvp.microsoft.com/en-us/PublicProfile/4015549?fullName=Christopher%20%20Pietschmann" target="_blank">Chris Pietschmann's Microsoft MVP Profile</a></a></p>
+    </div>
   </div>
 </div>
 
 <span id="popular"></span>
 <div class="container">
-
-    <h2>Recent Posts</h2>
-    <div class="row">
-      {% for post in site.posts limit:4 %}
-        <div class="col-md-6 mb-2">
-            <h6 class="mb-0"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
-            <span class="small text-muted">{{ post.date | date: "%b %-d, %Y" }}</span>
-        </div>
-      {% endfor %}
-    </div>
 
     <h2>Popular Posts</h2>
     <div class="row">
@@ -107,27 +115,22 @@ layout: default
         <h6 class="mb-0"><a href="/post/2015/12/18/code-tip-simpler-performance-timer-logging-in-c">Code Tip: Simpler Performance Timer Logging in C#</a></h6>
         <span class="small text-muted">Dec 18, 2015</span>
       </div>
-
     </div>
+ 
+    <span id="recent"></span>
+    <h2>Recent Posts</h2>
+    <div class="row">
+      {% for post in site.posts limit:6 %}
+        <div class="col-md-6 mb-2">
+            <h6 class="mb-0"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
+            <span class="small text-muted">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
+      {% endfor %}
+    </div>
+ 
     <p class="mt-5"><a href="/blog">View full post list</a></p>
-  </div>
-
-
-
-<span id="awards"></span>
-<div class="container">
-  <h2>Microsoft MVP</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <img style="width: 100%" src="images/logos/microsoftmvp.png"/>
-    </div>
-    <div class="col-md-8">
-      <p>I have been recognized by Microsoft as being an expert in my field. My current award category is Microsoft Azure.</p>
-      <p>I've received the Microsoft MVP Award in the following years:<br/>2019, 2018, 2017, 2012, 2011, 2010, 2009, 2008</p>
-      <p>You can view my official Microsoft MVP profile here: <a href="https://mvp.microsoft.com/en-us/PublicProfile/4015549?fullName=Christopher%20%20Pietschmann" target="_blank">Chris Pietschmann's Microsoft MVP Profile</a></a></p>
-    </div>
-  </div>
 </div>
+
 
 <!--
 <div class="container-fluid bg-blue">
@@ -541,6 +544,9 @@ section h2 {
       <a href="http://microsoft.com" target="_blank"><img src="images/logos/microsoft.png" alt="Microsoft"/></a>
     </div>
     <div class="col-2">
+      <a href="http://solliance.net" target="_blank"><img src="images/logos/solliance.svg" alt="Solliance"/></a>
+    </div>
+    <div class="col-2">
       <a href="http://boeing.com" target="_blank"><img src="images/logos/boeing.png" alt="Boeing"/></a>
     </div>
     <div class="col-2">
@@ -605,11 +611,11 @@ section h2 {
 <div class="row">
   <div class="col-md-6 bg-primary text-center text-white overflow-hidden">
     <div class="my-3 py-3">
-      <h2 class="display-5"><a href="http://buildazure.com" target="_blank" class="text-white">BuildAzure.com</a></h2>
-      <p class="lead">A website (with email newsletter) dedicated to the Microsoft Cloud by publishing articles and related content. Founded in 2015.</p>
+      <h2 class="display-5"><a href="http://build5nines.com" target="_blank" class="text-white">Build5Nines.com</a></h2>
+      <p class="lead">A website (with weekly newsletter) dedicated to Cloudn & Enterprise Technology around Microsoft and Open Source publishing articles and related content. Founded in 2015 as BuildAzure.com, and renamed Build5Nines.com in late 2019.</p>
     </div>
-    <div class="bg-light box-shadow mx-auto overflow-hidden" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-      <a href="http://buildazure.com" target="_blank"><img src="images/buildazure-website.png" style="width: 100%"/></a>
+    <div class="bg-primary box-shadow mx-auto overflow-hidden" style="width: 80%; height: 225px; border-radius: 21px 21px 0 0;">
+      <a href="http://build5nines.com" target="_blank"><img src="images/buildazure-website.png" style="width: 100%"/></a>
     </div>
   </div>
   <div class="col-md-6 bg-light text-center overflow-hidden">
@@ -617,7 +623,7 @@ section h2 {
       <h2 class="display-5"><a href="http://simplovation.com">Simplovation</a></h2>
       <p class="lead">My Consulting business and Independent Software Vendor (ISV) building developer tools and apps; started in 2007.</p>
     </div>
-    <div class="bg-dark box-shadow mx-auto overflow-hidden" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+    <div class="bg-light box-shadow mx-auto overflow-hidden" style="width: 80%; height: 225px; border-radius: 21px 21px 0 0;">
       <a href="http://simplovation.com" target="_blank"><img src="images/simplovation-website.png" style="width: 100%"/></a>
     </div>
   </div>
@@ -626,17 +632,17 @@ section h2 {
       <h2 class="display-5"><a href="http://pietschsoft.com" target="_blank">Pietschsoft.com</a></h2>
       <p class="lead">My original blog since 2004. I have posted here on many different technology related topics.</p>
     </div>
-    <div class="bg-dark box-shadow mx-auto overflow-hidden" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+    <div class="bg-light box-shadow mx-auto overflow-hidden" style="width: 80%; height: 225px; border-radius: 21px 21px 0 0;">
       <a href="http://pietschsoft.com" target="_blank"><img src="images/pietschsoft-website.png" style="width: 100%"/></a>
     </div>
   </div>
   <div class="col-md-6 bg-dark text-center text-white overflow-hidden">
     <div class="my-3 py-3">
       <h2 class="display-5">BuildHololens.com</h2>
-      <p class="lead">A blog I started in 2015 dedicated to topics around Mixed Reality and the Microsoft Hololens.</p>
+      <p class="lead">Blog I started in 2015 dedicated to topics around Mixed Reality and the Microsoft Hololens. Merged with Build5Nines.com in late 2019.</p>
     </div>
-    <div class="bg-light box-shadow mx-auto overflow-hidden" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-      <a href="http://BuildHololens.com" target="_blank"><img src="images/buildhololens-website.png" style="width: 100%"/></a>
+    <div class="bg-dark box-shadow mx-auto overflow-hidden" style="width: 80%; height: 225px; border-radius: 21px 21px 0 0;">
+      <a href="https://build5nines.com/category/hololens/" target="_blank"><img src="images/buildhololens-website.png" style="width: 100%"/></a>
     </div>
   </div>
 </div>
@@ -647,7 +653,7 @@ section h2 {
 <span id="content"></span>
 <div class="container">
   <h2>Content Development</h2>
-  <p>Here is a list of some content development projects I've contributed to for Microsoft and other clients.</p>
+  <p>Here is a list of some content development projects I've contributed to for Microsoft and other clients. These are some pretty neat projects I had the pleasure to be involved in creating and working on.</p>
 </div>
 <div class="container">
   <div class="row">
@@ -656,16 +662,60 @@ section h2 {
         <h2 class="display-5"><a href="http://microsoftcloudworkshop.com" target="_blank" class="text-white">Microsoft Cloud Workshops</a></h2>
         <p class="lead">Each workshop is a 6 hour long package of content (4 hour hackathon lab, 2 hour design session) to foster cloud learning and adoption.</p>
       </div>
-      <div class="bg-dark box-shadow mx-auto overflow-hidden" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+      <div class="bg-primary box-shadow mx-auto overflow-hidden" style="width: 80%; height: 225px; border-radius: 21px 21px 0 0;">
         <a href="http://microsoftcloudworkshop.com" target="_blank"><img src="images/mcw-website.png" style="width: 100%"/></a>
       </div>
     </div>
     <div class="col-md-6 bg-light text-center overflow-hidden">
       <div class="my-3 p-3">
+        <h2 class="display-5"><a href="http://aka.ms/smartpaper" rel="nofollow" target="_blank">Azure Migration Readiness Whitepaper</a></h2>
+        <p class="lead">A Whitepaper on the topic of Azure Migration Readiness. Also, here's a <a href="https://azure.microsoft.com/en-us/blog/accelerating-customer-success-with-azure-migration/">blog post</a> from Microsoft discussing the whitepaper.</p>
+      </div>
+      <div class="bg-light box-shadow mx-auto overflow-hidden" style="width: 80%; height: 225px; border-radius: 21px 21px 0 0;">
+        <a href="http://aka.ms/smartpaper" rel="nofollow" target="_blank"><img src="images/azure-migration-readiness-whitepaper.jpg" style="width: 100%"/></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 bg-light text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5"><a href="https://microsoftlearning.github.io/AZ-220-Microsoft-Azure-IoT-Developer/" rel="nofollow" target="_blank">AZ-220 Azure IoT Developer Certification Labs</a></h2>
+        <p class="lead">I authored most of the hands-on labs for the AZ-220 Microsoft Azure IoT Developer certification that are a part of the MOC ILT course and published to MS Learn.</p>
+      </div>
+      <div class="bg-light box-shadow mx-auto overflow-hidden" style="width: 80%; height: 225px; border-radius: 21px 21px 0 0;">
+        <a href="https://microsoftlearning.github.io/AZ-220-Microsoft-Azure-IoT-Developer/" rel="nofollow" target="_blank"><img src="images/az-220-azure-iot-developer-certification-labs.jpg" style="width: 100%"/></a>
+      </div>
+    </div>
+    <div class="col-md-6 bg-dark text-center text-white overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5"><a href="https://partner.microsoft.com/en-US/campaigns/cloud-practice-playbooks" target="_blank" class="text-white">Microsoft Cloud Practice Playbooks</a></h2>
+        <p class="lead">The Microsoft Cloud Partner Playbooks are guides to cloud business transformation: the Cloud Practice Development Playbooks provide the essential blueprints and tools to develop, analyze, manage, and secure an effective cloud practice that’s built to last.</p>
+      </div>
+      <div class="bg-dark box-shadow mx-auto overflow-hidden" style="width: 80%; height: 225px; border-radius: 21px 21px 0 0;">
+        <a href="https://partner.microsoft.com/en-US/campaigns/cloud-practice-playbooks" target="_blank"><img src="images/ms-partner-playbooks.jpg" style="width: 100%"/></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+  <div class="col-md-6 bg-primary text-center text-white overflow-hidden">
+    <div class="my-3 p-3">
+      <h2 class="display-5"><a href="https://build5nines.com/az-220-microsoft-azure-iot-developer-specialty-certification-exam/" target="_blank" class="text-white">AZ-220 Microsoft Azure IoT Developer Certification</a></h2>
+      <p class="lead">I worked on the team that created the AZ-220 Microsoft Azure IoT Developer certification. I helped Microsoft define the Azure IoT Developer roles skills list and the Objective Domains tested and verified by this certification exam.</p>
+    </div>
+    <div class="bg-primary box-shadow mx-auto overflow-hidden" style="width: 80%; height: 225px; border-radius: 21px 21px 0 0;">
+      <a href="https://build5nines.com/az-220-microsoft-azure-iot-developer-specialty-certification-exam/" target="_blank"><img src="images/az-220-azure-iot-developer-certification-exam.jpg" style="width: 100%"/></a>
+    </div>
+  </div>
+    <div class="col-md-6 bg-light text-center overflow-hidden">
+      <div class="my-3 p-3">
         <h2 class="display-5"><a href="http://skillmeup.com/author/crpietschmann" rel="nofollow" target="_blank">SkillMeUp On-Demand Courses</a></h2>
         <p class="lead">I've authored many instructor-led courses, 26+ on-demand video courses, and 10+ hands-on labs for SkillMeUp.com.</p>
       </div>
-      <div class="bg-dark box-shadow mx-auto overflow-hidden" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+      <div class="bg-light box-shadow mx-auto overflow-hidden" style="width: 80%; height: 225px; border-radius: 21px 21px 0 0;">
         <a href="http://skillmeup.com/author/crpietschmann" rel="nofollow" target="_blank"><img src="images/skillmeup-website.png" style="width: 100%"/></a>
       </div>
     </div>

@@ -17,6 +17,7 @@ $brand-color:      rgb(48, 94, 192);
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
+$grey-color-lighter: lighten($grey-color, 50%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 $on-palm:          600px;
@@ -30,6 +31,26 @@ $brand-background: radial-gradient(rgba(0,0,0,0),rgba(0,0,0,0.3)), url(/images/b
 .container > h2 {
   text-align: center;
   margin-top: 2em;
+}
+
+.container.lowlight {
+  background-color: $grey-color-light;
+}
+.container.highlight {
+  background-color: $brand-color;
+  color: $background-color;
+}
+
+blockquote {
+  background: $grey-color-lighter;
+  border: solid 0.1em $grey-color-light;
+  border-left: solid 0.3em $brand-color;
+  padding: 0.3em;
+  padding-left: 0.5em;
+  size: 1.1em;
+}
+blockquote > p {
+  margin: 0;
 }
 
 /*
