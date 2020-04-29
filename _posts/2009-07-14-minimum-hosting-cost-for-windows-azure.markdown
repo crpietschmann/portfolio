@@ -17,7 +17,7 @@ redirect_from:
 
 <img style="float: right;" src="/files/2009/7/azure-logo.jpg" alt="" />
 
-*NOTE: Azure pricing and functionality has changes alot since this post was written making the details below out of date.*
+> *Update: Azure pricing and functionality has changes alot since this post was written making the details below out of date.*
 
 Microsoft has announced the <a href="http://blogs.msdn.com/windowsazure/archive/2009/07/14/confirming-commercial-availability-and-announcing-business-model.aspx">initial pricing for Windows Azure, SQL Azure and .NET Services</a>. My question is still "**What is the Minimum it will cost to host a small website/application on Azure?**"
 
@@ -35,17 +35,17 @@ If you add all these up, that's a **Total of $98.04!** And that looks like the v
 
 Below is a summary of the pricing:
 
-*Windows Azure:
+**Windows Azure:**
 
-    * Compute @ $0.12 / hour
-    * Storage @ $0.15 / GB stored
-    * Storage Transactions @ $0.01 / 10K
+- Compute @ $0.12 / hour
+- Storage @ $0.15 / GB stored
+- Storage Transactions @ $0.01 / 10K
 
-SQL Azure:
+**SQL Azure:**
 
-    * Web Edition &ndash; Up to 1 GB relational database @ $9.99
-    * Business Edition &ndash; Up to 10 GB relational database @ $99.99
+- Web Edition - Up to 1 GB relational database @ $9.99
+- Business Edition - Up to 10 GB relational database @ $99.99
 
 Bandwidth across all three services will be charged at $0.10 in / $0.15 out / GB
-*
+
 <a href="http://blogs.msdn.com/windowsazure/archive/2009/07/14/confirming-commercial-availability-and-announcing-business-model.aspx">More Info on Azure Pricing</a>
