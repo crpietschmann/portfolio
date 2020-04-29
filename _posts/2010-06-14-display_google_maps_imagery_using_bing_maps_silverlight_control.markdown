@@ -23,82 +23,78 @@ You may only continue reading if you are willing to break the Google Maps Terms 
 
 Remember the below code most likely violates the Google Maps Terms of Use, and probably shouldn&rsquo;t be used in a production system; unless of course you really don&rsquo;t mind breaking the terms of use.
 
-The below code follows suite after the code I posted a while back on displaying <a href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx">OpenStreetMap</a> and <a href="/post/2009/03/20/Virtual-Earth-Silverlight-Overlay-OpenStreetMap2c-OpenAerialMap-and-Yahoo-Map-Imagery-using-Custom-Tile-Layers!.aspx">Yahoo Maps</a> imagery within the Bing Maps Silverlight Control.
+The below code follows suite after the code I posted a while back on displaying <a href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW">OpenStreetMap</a> and <a href="/post/2009/03/20/Virtual-Earth-Silverlight-Overlay-OpenStreetMap2c-OpenAerialMap-and-Yahoo-Map-Imagery-using-Custom-Tile-Layers!">Yahoo Maps</a> imagery within the Bing Maps Silverlight Control.
 
 First, here&rsquo;s some XAML usage samples using the Google Maps TIle Source classes listed further down. The first one is showing the Google Maps Road/Terrain imagery, the second shows the Google Maps Aerial/Satellite imagery:
-<pre class="csharpcode"><span class="rem"><!-- Display Google Maps Road/Terrain Imagery --></span>
-<span class="kwrd"><</span><span class="html">m:Map</span> <span class="attr">CopyrightVisibility</span><span class="kwrd">="Collapsed"</span> <span class="attr">LogoVisibility</span><span class="kwrd">="Collapsed"</span><span class="kwrd">></span>
-    <span class="kwrd"><</span><span class="html">m:Map.Mode</span><span class="kwrd">></span>
-        <span class="rem"><!-- Do Not Display Bing Maps Imagery --></span>
-        <span class="kwrd"><</span><span class="html">mCore:MercatorMode</span><span class="kwrd">></</span><span class="html">mCore:MercatorMode</span><span class="kwrd">></span>
-    <span class="kwrd"></</span><span class="html">m:Map.Mode</span><span class="kwrd">></span>
-    <span class="kwrd"><</span><span class="html">m:Map.Children</span><span class="kwrd">></span>
-        <span class="kwrd"><</span><span class="html">m:MapTileLayer</span><span class="kwrd">></span>
-            <span class="kwrd"><</span><span class="html">m:MapTileLayer.TileSources</span><span class="kwrd">></span>
-                <span class="kwrd"><</span><span class="html">local:GoogleMapsRoadTileSource</span><span class="kwrd">></</span><span class="html">local:GoogleMapsRoadTileSource</span><span class="kwrd">></span>
-            <span class="kwrd"></</span><span class="html">m:MapTileLayer.TileSources</span><span class="kwrd">></span>
-        <span class="kwrd"></</span><span class="html">m:MapTileLayer</span><span class="kwrd">></span>
-    <span class="kwrd"></</span><span class="html">m:Map.Children</span><span class="kwrd">></span>
-<span class="kwrd"></</span><span class="html">m:Map</span><span class="kwrd">></span>
 
-<span class="rem"><!-- Display Google Maps Aerial/Satellite Imagery with Labels --></span>
-<span class="kwrd"><</span><span class="html">m:Map</span> <span class="attr">CopyrightVisibility</span><span class="kwrd">="Collapsed"</span> <span class="attr">LogoVisibility</span><span class="kwrd">="Collapsed"</span><span class="kwrd">></span>
-    <span class="kwrd"><</span><span class="html">m:Map.Mode</span><span class="kwrd">></span>
-        <span class="rem"><!-- Do Not Display Bing Maps Imagery --></span>
-        <span class="kwrd"><</span><span class="html">mCore:MercatorMode</span><span class="kwrd">></</span><span class="html">mCore:MercatorMode</span><span class="kwrd">></span>
-    <span class="kwrd"></</span><span class="html">m:Map.Mode</span><span class="kwrd">></span>
-    <span class="kwrd"><</span><span class="html">m:Map.Children</span><span class="kwrd">></span>
-        <span class="kwrd"><</span><span class="html">m:MapTileLayer</span><span class="kwrd">></span>
-            <span class="kwrd"><</span><span class="html">m:MapTileLayer.TileSources</span><span class="kwrd">></span>
-                <span class="kwrd"><</span><span class="html">local:GoogleMapsAerialTileSource</span><span class="kwrd">></</span><span class="html">local:GoogleMapsAerialTileSource</span><span class="kwrd">></span>
-                <span class="kwrd"><</span><span class="html">local:GoogleMapsLabelsTileSource</span><span class="kwrd">></</span><span class="html">local:GoogleMapsLabelsTileSource</span><span class="kwrd">></span>
-            <span class="kwrd"></</span><span class="html">m:MapTileLayer.TileSources</span><span class="kwrd">></span>
-        <span class="kwrd"></</span><span class="html">m:MapTileLayer</span><span class="kwrd">></span>
-    <span class="kwrd"></</span><span class="html">m:Map.Children</span><span class="kwrd">></span>
-<span class="kwrd"></</span><span class="html">m:Map</span><span class="kwrd">></span></pre>
+```xaml
+<m:Map CopyrightVisibility="Collapsed" LogoVisibility="Collapsed">
+    <m:Map.Mode>
+        
+        <mCore:MercatorMode></mCore:MercatorMode>
+    </m:Map.Mode>
+    <m:Map.Children>
+        <m:MapTileLayer>
+            <m:MapTileLayer.TileSources>
+                <local:GoogleMapsRoadTileSource></local:GoogleMapsRoadTileSource>
+            </m:MapTileLayer.TileSources>
+        </m:MapTileLayer>
+    </m:Map.Children>
+</m:Map>
 
-<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
-
- 
+<m:Map CopyrightVisibility="Collapsed" LogoVisibility="Collapsed">
+    <m:Map.Mode>
+        
+        <mCore:MercatorMode></mCore:MercatorMode>
+    </m:Map.Mode>
+    <m:Map.Children>
+        <m:MapTileLayer>
+            <m:MapTileLayer.TileSources>
+                <local:GoogleMapsAerialTileSource></local:GoogleMapsAerialTileSource>
+                <local:GoogleMapsLabelsTileSource></local:GoogleMapsLabelsTileSource>
+            </m:MapTileLayer.TileSources>
+        </m:MapTileLayer>
+    </m:Map.Children>
+</m:Map>
+```
 
 If you notice, the second example showing the usage of the Google Maps Aerial/Satellite imagery is displaying 2 tile sources. This is because Google Maps has separate tile sources for both the Aerial/Satellite imagery and the Labels. This example shows the Labels tile source over the top of the Aerial/Satellite tile source to give the desired effect of &ldquo;Aerial with Labels.&rdquo;
 
 Now, here&rsquo;s the main attraction of this article; the actual Google Maps TileSource objects referred to above:
-<pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">class</span> GoogleMapsRoadTileSource : GoogleMapsTileSourceBase
+
+```csharp
+public class GoogleMapsRoadTileSource : GoogleMapsTileSourceBase
 {
-    <span class="kwrd">public</span> GoogleMapsRoadTileSource()
-        : <span class="kwrd">base</span>(<span class="str">"http://mt{0}.google.com/vt/lyrs=m@128&amp;hl=en&amp;x={1}&amp;y={2}&amp;z={3}&amp;s="</span>)
+    public GoogleMapsRoadTileSource()
+        : base("http://mt{0}.google.com/vt/lyrs=m@128&hl=en&x={1}&y={2}&z={3}&s=")
     { }
 }
 
-<span class="kwrd">public</span> <span class="kwrd">class</span> GoogleMapsAerialTileSource : GoogleMapsTileSourceBase
+public class GoogleMapsAerialTileSource : GoogleMapsTileSourceBase
 {
-    <span class="kwrd">public</span> GoogleMapsAerialTileSource()
-        : <span class="kwrd">base</span>(<span class="str">"http://khm{0}.google.com/kh/v=62&amp;x={1}&amp;y={2}&amp;z={3}&amp;s="</span>)
+    public GoogleMapsAerialTileSource()
+        : base("http://khm{0}.google.com/kh/v=62&x={1}&y={2}&z={3}&s=")
     { }
 }
 
-<span class="kwrd">public</span> <span class="kwrd">class</span> GoogleMapsLabelsTileSource : GoogleMapsTileSourceBase
+public class GoogleMapsLabelsTileSource : GoogleMapsTileSourceBase
 {
-    <span class="kwrd">public</span> GoogleMapsLabelsTileSource()
-        : <span class="kwrd">base</span>(<span class="str">"http://mt{0}.google.com/vt/lyrs=h@128&amp;hl=en&amp;x={1}&amp;y={2}&amp;z={3}&amp;s="</span>)
+    public GoogleMapsLabelsTileSource()
+        : base("http://mt{0}.google.com/vt/lyrs=h@128&hl=en&x={1}&y={2}&z={3}&s=")
     { }
 }
 
-<span class="kwrd">public</span> <span class="kwrd">abstract</span> <span class="kwrd">class</span> GoogleMapsTileSourceBase : Microsoft.Maps.MapControl.TileSource
+public abstract class GoogleMapsTileSourceBase : Microsoft.Maps.MapControl.TileSource
 {
-    <span class="kwrd">public</span> GoogleMapsTileSourceBase(<span class="kwrd">string</span> uriFormat)
-        : <span class="kwrd">base</span>(uriFormat)
+    public GoogleMapsTileSourceBase(string uriFormat)
+        : base(uriFormat)
     { }
 
-    <span class="kwrd">public</span> <span class="kwrd">override</span> System.Uri GetUri(<span class="kwrd">int</span> x, <span class="kwrd">int</span> y, <span class="kwrd">int</span> zoomLevel)
+    public override System.Uri GetUri(int x, int y, int zoomLevel)
     {
-        <span class="kwrd">return</span> <span class="kwrd">new</span> Uri(<span class="kwrd">string</span>.Format(<span class="kwrd">this</span>.UriFormat, <span class="kwrd">new</span> Random().Next() % 4, x, y, zoomLevel));
+        return new Uri(string.Format(this.UriFormat, new Random().Next() % 4, x, y, zoomLevel));
     }
-}</pre>
+}
+``` 
 
-<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
-
- 
-
-**Disclaimer:** Use the above posted code at your own risk. The usage of it may be in violation of the Google Maps Terms of Use.
+> **Disclaimer:** Use the above posted code at your own risk. The usage of it may be in violation of the Google Maps Terms of Use.
