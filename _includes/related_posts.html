@@ -8,14 +8,15 @@
                 <{{ include.htag | default: 'h2 '}}>
                     Related Posts
                 </{{ include.htag | default: 'h2 '}}>
-                <ul>
+                <ul class="{{ include.ul_class | default: ''}}">
                 {% endif %}
-                <li class="relatedPost">
-                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}
                     {% if post.series %}
                         (Series: {{ post.series }})
                     {% endif %}
-                    </a>
+                    </a></h6>
+                    <span class="small text-muted">{{ post.date | date_to_string }}</span>
                 </li>
                 {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
                 {% assign postHasSimilar = true %}
