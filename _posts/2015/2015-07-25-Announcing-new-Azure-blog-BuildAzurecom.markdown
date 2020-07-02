@@ -5,7 +5,7 @@ title: "Announcing new Azure blog: BuildAzure.com"
 date: 2015-07-25 15:38:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Azure", "BuildAzure", "Build5Nines", "Blog"]
 tags: ["Azure"]
 redirect_from: 
   - /post/2015/07/25/Announcing-new-Azure-blog-BuildAzurecom.aspx

@@ -5,7 +5,7 @@ title: "CTP: Bing Maps Silverlight CTP: Basics of Adding Polygons and Polylines 
 date: 2009-03-20 18:40:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "Silverlight"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
   - /post/2009/03/20/Virtual-Earth-Silverlight-Basics-of-Adding-Polygons-and-Polylines-using-XAML-and-Code.aspx

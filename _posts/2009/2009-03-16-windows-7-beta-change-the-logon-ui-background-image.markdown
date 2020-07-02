@@ -5,7 +5,7 @@ title: "Windows 7 Beta: Change the Logon UI Background Image"
 date: 2009-03-16 19:03:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows 7"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/03/16/Windows-7-Beta-Change-the-Logon-UI-Background-Image.aspx

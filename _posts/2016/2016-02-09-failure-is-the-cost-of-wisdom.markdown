@@ -5,7 +5,7 @@ title: "Failure is the cost of Wisdom"
 date: 2016-02-09 17:39:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life", "Business"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/02/09/Failure-is-the-cost-of-Wisdom.aspx

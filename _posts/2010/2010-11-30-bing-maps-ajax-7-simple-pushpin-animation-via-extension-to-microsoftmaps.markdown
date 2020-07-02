@@ -5,7 +5,7 @@ title: "Bing Maps Ajax 7: Simple Pushpin Animation via Extension to Microsoft.Ma
 date: 2010-11-30 23:10:29 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2010/11/30/Bing-Maps-Ajax-7-Simple-Pushpin-Animation-via-Extension-to-MicrosoftMaps.aspx

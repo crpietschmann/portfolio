@@ -5,7 +5,7 @@ title: "Bing Maps Silverlight CTP: Using Tile Layers to Overlay Custom Map Image
 date: 2009-03-20 18:47:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "Silverlight"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
   - /post/2009/03/20/Virtual-Earth-Silverlight-Using-Tile-Layers-to-Overlay-Custom-Map-Imagery.aspx

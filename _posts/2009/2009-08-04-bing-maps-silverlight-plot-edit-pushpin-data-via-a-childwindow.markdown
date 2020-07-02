@@ -5,7 +5,7 @@ title: "Bing Maps Silverlight CTP: Plot/Edit Pushpin data via a ChildWindow"
 date: 2009-08-04 16:57:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "Silverlight"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
   - /post/2009/08/04/Bing-Maps-Silverlight-Plot-Edit-Pushpin-data-via-a-ChildWindow.aspx

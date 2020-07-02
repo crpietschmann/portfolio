@@ -5,7 +5,7 @@ title: "All Information Workers are NOT Equal or Even Approximate!"
 date: 2012-12-06 04:11:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life", "Career", "Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2012/12/06/All-Information-Workers-are-NOT-Equal-or-Even-Approximate!.aspx

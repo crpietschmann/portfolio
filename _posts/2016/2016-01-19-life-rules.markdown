@@ -5,7 +5,7 @@ title: "Life Rules"
 date: 2016-01-19 17:55:29 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life", "Archive", "Blog"]
 tags: []
 redirect_from: 
   - /page/Life-Rules.aspx

@@ -5,7 +5,7 @@ title: "Bing Maps Ajax 7: Add a Simple Mini Map"
 date: 2010-12-19 13:15:02 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2010/12/19/Bing-Maps-Ajax-7-Add-a-Simple-Mini-Map

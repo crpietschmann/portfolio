@@ -5,7 +5,7 @@ title: "Use New Bing Maps Road Imagery In Silverlight Map Control (Unofficially 
 date: 2010-08-19 15:55:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "Silverlight"]
 tags: ["Bing Maps", "C#", "Silverlight"]
 redirect_from: 
   - /post/2010/08/19/Use-New-Bing-Maps-Road-Imagery-In-Silverlight-Map-Control-Unofficially-Unsupported.aspx

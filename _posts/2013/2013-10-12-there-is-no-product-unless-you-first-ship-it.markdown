@@ -5,7 +5,7 @@ title: "There is no product unless you first ship it!"
 date: 2013-10-12 08:24:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Entrepreneur", "Career", "Business"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/10/12/There-is-no-product-unless-you-first-ship-it.aspx

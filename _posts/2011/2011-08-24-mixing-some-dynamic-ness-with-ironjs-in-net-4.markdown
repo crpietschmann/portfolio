@@ -5,7 +5,7 @@ title: "Mixing some Dynamic-ness with IronJS in .NET 4"
 date: 2011-08-24 10:01:01 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["IronJS", ".NET", "DLR", "JavaScript"]
 tags: ["JavaScript", "C#", "DLR"]
 redirect_from: 
   - /post/2011/08/24/Mixing-some-Dynamic-ness-with-IronJS-in-NET-4.aspx

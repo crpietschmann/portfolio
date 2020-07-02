@@ -5,7 +5,7 @@ title: "Silverlight: Modify MEF to load plugins from DLL and XAP files"
 date: 2010-10-22 12:44:42 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverliht"]
 tags: ["Silverlight", "C#"]
 redirect_from: 
   - /post/2010/10/22/Silverlight-Modify-MEF-to-load-plugins-from-DLL-and-XAP-files.aspx

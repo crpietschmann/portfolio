@@ -5,7 +5,7 @@ title: "Blogging Addiction"
 date: 2009-01-02 19:18:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/01/02/Blogging-Addiction.aspx

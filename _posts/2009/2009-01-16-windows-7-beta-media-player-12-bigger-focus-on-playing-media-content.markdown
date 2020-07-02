@@ -5,7 +5,7 @@ title: "Windows 7 Beta - Media Player 12 - Bigger Focus On Playing Media/Content
 date: 2009-01-16 09:57:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows 7", "Media Player"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/01/16/Windows-7-Beta-Media-Player-12-Bigger-Focus-On-Playing-Media-Content.aspx

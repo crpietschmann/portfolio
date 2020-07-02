@@ -5,7 +5,7 @@ title: "Find Your Passion"
 date: 2016-02-14 11:56:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life", "Business", "Entrepreneur"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/02/14/Find-Your-Passion.aspx

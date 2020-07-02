@@ -5,7 +5,7 @@ title: "Bing Maps JavaScript Intellisense Helper Now Available as Nuget Package"
 date: 2011-04-06 22:39:44 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2011/04/06/Bing-Maps-JavaScript-Intellisense-Helper-Now-Available-as-Nuget-Package.aspx

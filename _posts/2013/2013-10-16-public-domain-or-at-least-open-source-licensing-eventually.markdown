@@ -5,7 +5,7 @@ title: "Public Domain or at least Open Source Licensing Eventually"
 date: 2013-10-16 05:35:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Open Source", "Technology"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/10/16/Public-Domain-or-at-least-Open-Source-Licensing-Eventually.aspx

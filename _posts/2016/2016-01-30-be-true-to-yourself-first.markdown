@@ -5,7 +5,7 @@ title: "Be True to Yourself, First"
 date: 2016-01-30 11:14:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life", "Career"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/01/30/Be-True-to-Yourself-First.aspx

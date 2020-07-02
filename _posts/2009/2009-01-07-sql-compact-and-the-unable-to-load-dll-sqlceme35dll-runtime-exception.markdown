@@ -5,7 +5,7 @@ title: "SQL Compact And The 'Unable to load DLL 'sqlceme35.dll'' Runtime Excepti
 date: 2009-01-07 19:40:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["SQL", "SQL Compact"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/01/07/SQL-Compact-And-The-Unable-to-load-DLL-sqlceme35dll-Runtime-Exception.aspx

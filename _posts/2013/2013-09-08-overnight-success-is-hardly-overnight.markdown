@@ -5,7 +5,7 @@ title: "Overnight Success is Hardly Overnight"
 date: 2013-09-08 07:06:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life", "Business"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/09/08/Overnight-Success-is-Hardly-Overnight.aspx

@@ -5,7 +5,7 @@ title: "Awarded 2009 Microsoft MVP - Windows Live Platform"
 date: 2009-04-01 16:17:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Microsoft MVP", "Windows Live"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/04/01/Awarded-2009-Microsoft-MVP-ndash3b-Windows-Live-Platform.aspx

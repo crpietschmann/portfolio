@@ -5,7 +5,7 @@ title: "Display OpenStreetMap Imagery using Bing Maps Silverlight Control v1"
 date: 2009-11-12 09:02:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["OpenStreetMap", "Bing Maps", "Silverlight"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
   - /post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx

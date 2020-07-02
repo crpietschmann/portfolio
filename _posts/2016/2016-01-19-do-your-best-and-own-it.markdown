@@ -5,7 +5,7 @@ title: "Do your best and Own it"
 date: 2016-01-19 17:32:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life", "Career"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/01/19/Do-your-best-and-Own-it.aspx

@@ -5,7 +5,7 @@ title: "The Future of Location: You Haven't Seen Nothing Yet!"
 date: 2010-09-23 11:59:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["GIS", "Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2010/09/23/Location!-You-Havent-Seen-Nothing-Yet!.aspx

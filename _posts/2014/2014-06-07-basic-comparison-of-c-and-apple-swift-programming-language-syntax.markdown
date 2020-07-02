@@ -5,7 +5,7 @@ title: "Basic Comparison of C# and Apple Swift Programming Language Syntax"
 date: 2014-06-07 05:33:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["C#", "Swift", "XCode", "Visual Studio"]
 tags: ["C#", "Swift"]
 redirect_from: 
   - /post/2014/06/07/Basic-Comparison-of-C-and-Apple-Swift-Programming-Language-Syntax.aspx

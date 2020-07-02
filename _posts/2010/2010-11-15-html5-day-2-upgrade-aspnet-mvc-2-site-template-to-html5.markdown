@@ -5,7 +5,7 @@ title: "HTML5 Day 2: Upgrade ASP.NET MVC 2 Site Template to HTML5"
 date: 2010-11-15 03:02:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "MVC", "HTML5"]
 tags: ["ASP.NET MVC", "HTML"]
 redirect_from: 
   - /post/2010/11/15/HTML5-Day-2-Upgrade-ASPNET-MVC-2-Site-Template-to-HTML5.aspx

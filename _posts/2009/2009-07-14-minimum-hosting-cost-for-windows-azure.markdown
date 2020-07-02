@@ -5,7 +5,7 @@ title: "What's the Minimum Hosting Cost for Windows Azure?"
 date: 2009-07-14 15:36:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Azure", "Windows Azure"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/07/14/Minimum-Hosting-Cost-for-Windows-Azure.aspx

@@ -5,7 +5,7 @@ title: "jHtmlArea - The all NEW HTML WYSIWYG Editor for jQuery"
 date: 2009-07-21 19:11:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["jHtmlArea", "jQuery", "Open Source"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2009/07/21/jHtmlArea-The-all-NEW-HTML-WYSIWYG-Editor-for-jQuery.aspx

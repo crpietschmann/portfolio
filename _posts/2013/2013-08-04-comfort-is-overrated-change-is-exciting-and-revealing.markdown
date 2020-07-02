@@ -5,7 +5,7 @@ title: "Comfort is Overrated. Change is Exciting and Revealing!"
 date: 2013-08-04 13:41:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life", "Career"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/08/04/Comfort-is-Overrated-Change-is-Exciting-and-Revealing.aspx

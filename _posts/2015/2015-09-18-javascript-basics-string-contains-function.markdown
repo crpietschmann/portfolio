@@ -5,7 +5,7 @@ title: "JavaScript Basics: String Contains Function"
 date: 2015-09-18 06:30:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2015/09/18/JavaScript-Basics-String-Contains-Function.aspx

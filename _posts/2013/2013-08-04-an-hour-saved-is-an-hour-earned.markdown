@@ -5,7 +5,7 @@ title: "An Hour Saved is an Hour Earned"
 date: 2013-08-04 13:55:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Career", "Life"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/08/04/An-Hour-Saved-is-an-Hour-Earned.aspx

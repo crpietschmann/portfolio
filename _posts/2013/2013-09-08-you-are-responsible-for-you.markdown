@@ -5,7 +5,7 @@ title: "You are responsible for YOU"
 date: 2013-09-08 06:32:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/09/08/You-are-responsible-for-YOU.aspx

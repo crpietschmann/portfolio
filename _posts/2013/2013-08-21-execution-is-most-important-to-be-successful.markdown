@@ -5,7 +5,7 @@ title: "Execution is Most Important to be Successful"
 date: 2013-08-21 12:00:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life", "Career"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/08/21/Execution-is-Most-Important-to-be-Successful.aspx

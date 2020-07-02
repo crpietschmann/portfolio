@@ -5,7 +5,7 @@ title: "Bing Maps Silverlight CTP: Adding Media (Images, Video, etc.) to the Map
 date: 2009-03-20 18:43:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "Silverlight"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
   - /post/2009/03/20/Virtual-Earth-Silverlight-Adding-Media-(Images2c-Video2c-etc)-to-the-Map.aspx

@@ -5,7 +5,7 @@ title: "Image Editing Tools: Here's what I use"
 date: 2016-04-24 10:52:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blogging", "Tools"]
 tags: ["General", "Tools"]
 redirect_from: 
   - /post/2016/04/24/Image-Editing-Tools-Heres-what-I-use2.aspx

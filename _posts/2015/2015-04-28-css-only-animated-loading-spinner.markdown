@@ -5,7 +5,7 @@ title: "CSS-only Animated Loading Spinner"
 date: 2015-04-28 09:00:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["CSS"]
 tags: ["CSS"]
 redirect_from: 
   - /post/2015/04/28/CSS-only-Animated-Loading-Spinner.aspx

@@ -5,7 +5,7 @@ title: "Silverlight: Embed IronRuby/DLR Scripting within XAML using IValueConver
 date: 2010-10-02 14:40:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverlight", "IronRuby", "DLR"]
 tags: ["DLR", "Ruby", "Silverlight"]
 redirect_from: 
   - /post/2010/10/02/Silverlight-Embed-IronRubyDLR-Scripting-within-XAML-using-IValueConverter-and-Custom-UserControl.aspx

@@ -5,7 +5,7 @@ title: "OpenStreetMap: Get FREE Web Mapping with Road Maps for your Applications
 date: 2009-08-03 21:29:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["OpenStreetMap", "GIS"]
 tags: ["JavaScript", "Silverlight"]
 redirect_from: 
   - /post/2009/08/03/OpenStreetMap-Get-FREE-Web-Mapping-with-Road-Maps-for-your-Applications.aspx

@@ -5,7 +5,7 @@ title: "Hack to Force new Skype for Business UI over Lync"
 date: 2015-04-24 06:57:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Software", "Skype"]
 tags: ["General"]
 redirect_from: 
   - /post/2015/04/24/Hack-to-Force-new-Skype-for-Business-UI-over-Lync1.aspx

@@ -5,7 +5,7 @@ title: "JavaScript Basics: How to create a Dictionary with Key/Value pairs"
 date: 2015-09-05 09:15:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2015/09/05/JavaScript-Basics-How-to-create-a-Dictionary-with-KeyValue-pairs.aspx

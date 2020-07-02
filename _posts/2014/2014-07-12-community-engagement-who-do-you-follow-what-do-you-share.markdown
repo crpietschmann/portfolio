@@ -5,7 +5,7 @@ title: "Community Engagement: Who do you follow? What do you share?"
 date: 2014-07-12 07:34:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Career", "Community"]
 tags: ["Inspiration", "Software Craftsmanship"]
 redirect_from: 
   - /post/2014/07/12/Community-Engagement-Who-do-you-follow-What-do-you-share.aspx

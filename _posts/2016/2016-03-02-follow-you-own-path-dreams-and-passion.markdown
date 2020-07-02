@@ -5,7 +5,7 @@ title: "Follow You Own Path, Dreams and Passion"
 date: 2016-03-02 18:03:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/03/02/Follow-You-Own-Path-Dreams-and-Passion.aspx

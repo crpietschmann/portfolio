@@ -5,7 +5,7 @@ title: "Bing Community Site Not SEO Optimized"
 date: 2010-08-04 09:54:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Community", "Bing"]
 tags: ["General"]
 redirect_from: 
   - /post/2010/08/04/Bing-Community-Site-Not-SEO-Optimized.aspx

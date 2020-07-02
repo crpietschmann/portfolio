@@ -5,7 +5,7 @@ title: "HTML5 Day 4: Add Drop Down Menu to ASP.NET MVC HTML5 Template using CSS 
 date: 2010-11-17 11:32:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["HTML5", "ASP.NET", "CSS", "jQuery"]
 tags: ["ASP.NET MVC", "HTML", "JavaScript"]
 redirect_from: 
   - /post/2010/11/17/HTML5-Day-4-Add-DropDown-Menu-ASPNET-MVC-HTML5-Template-using-CSS-and-jQuery.aspx

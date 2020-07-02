@@ -5,7 +5,7 @@ title: "Apple Watch NOT Insanely Great, Not Yet"
 date: 2015-04-10 12:08:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology", "Hardware", "Apple", "AppleWatch"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2015/04/10/Apple-Watch-NOT-Insanely-Great-Not-Yet.aspx

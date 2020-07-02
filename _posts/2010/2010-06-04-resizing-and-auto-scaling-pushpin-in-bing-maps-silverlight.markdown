@@ -5,7 +5,7 @@ title: "Resizing and Auto-Scaling Pushpin in Bing Maps Silverlight"
 date: 2010-06-04 00:26:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverlight", "GIS", "Bing Maps"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
   - /post/2010/06/04/Resizing-and-Auto-Scaling-Pushpin-in-Bing-Maps-Silverlight.aspx

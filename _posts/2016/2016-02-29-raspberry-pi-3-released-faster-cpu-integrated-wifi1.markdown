@@ -5,7 +5,7 @@ title: "Raspberry Pi 3 released, faster CPU, integrated Wifi"
 date: 2016-02-29 07:30:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Raspberry Pi", "Hardware", "IoT"]
 tags: []
 redirect_from: 
   - /post/2016/02/29/Raspberry-Pi-3-released-faster-CPU-integrated-Wifi1.aspx

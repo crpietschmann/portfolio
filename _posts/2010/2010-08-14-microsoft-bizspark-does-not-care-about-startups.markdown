@@ -5,7 +5,7 @@ title: "Microsoft BizSpark: My new startup is enrolled, but was denied twice bef
 date: 2010-08-14 08:23:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["BizSpark", "Entrepreneur"]
 tags: ["General"]
 redirect_from: 
   - /post/2010/08/14/Microsoft-BizSpark-Does-Not-Care-About-Startups.aspx

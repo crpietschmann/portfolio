@@ -5,7 +5,7 @@ title: "SQL Azure: REBUILD All Indexes in Database – Alternative to DBCC DBREI
 date: 2011-11-10 17:43:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["SQL", "Azure", "Database"]
 tags: ["SQL"]
 redirect_from: 
   - /post/2011/11/10/SQL-Azure-REBUILD-All-Indexes-in-Database-e28093-Alternative-to-DBCC-DBREINDEX.aspx

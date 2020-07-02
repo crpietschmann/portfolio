@@ -5,7 +5,7 @@ title: "Windows Live Writer now Open Source! as Open Live Writer"
 date: 2015-12-14 14:02:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blogging", "Writing"]
 tags: ["General"]
 redirect_from: 
   - /post/2015/12/14/Windows-Live-Writer-now-Open-Source.aspx

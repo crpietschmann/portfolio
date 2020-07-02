@@ -5,7 +5,7 @@ title: "Getting Started with Bing Maps Silverlight Control v1.0"
 date: 2009-11-12 05:45:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "Silverlight"]
 tags: ["Bing Maps", "C#", "Silverlight"]
 redirect_from: 
   - /post/2009/11/12/Getting_Started_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx

@@ -5,7 +5,7 @@ title: ".NET Framework: Communicate through NAT Router via UPnP (Universal Plug 
 date: 2009-02-05 19:27:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET", "NAT", "UPnP", "Networking"]
 tags: ["Win32API"]
 redirect_from: 
   - /post/2009/02/05/NET-Framework-Communicate-through-NAT-Router-via-UPnP.aspx

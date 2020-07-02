@@ -5,7 +5,7 @@ title: "Feb. 23rd 2010: Blogs been dark lately, but I've been busy, busy... Neur
 date: 2010-02-23 08:22:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2010/02/23/Feb-23rd-2010-Blogs-been-dark-lately-but-Ive-been-busy-busy-busy.aspx

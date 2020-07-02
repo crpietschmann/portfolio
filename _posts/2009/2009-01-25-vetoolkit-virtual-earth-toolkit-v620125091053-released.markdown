@@ -5,7 +5,7 @@ title: "VEToolkit - Virtual Earth Toolkit v6.2.012509.1053 Released!"
 date: 2009-01-25 11:56:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["VEToolkit", "Bing Maps", "Virtual Earth"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2009/01/25/VEToolkit-Virtual-Earth-Toolkit-v620125091053-Released.aspx

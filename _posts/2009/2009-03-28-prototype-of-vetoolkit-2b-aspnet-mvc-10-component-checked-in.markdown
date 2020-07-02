@@ -5,7 +5,7 @@ title: "Prototype of VEToolkit + ASP.NET MVC 1.0 Component Checked In"
 date: 2009-03-28 16:17:06 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["VEToolkit", "Bing Maps", "Virtual Earth"]
 tags: ["Bing Maps", "JavaScript", "ASP.NET MVC"]
 redirect_from: 
   - /post/2009/03/28/Prototype-of-VEToolkit-2b-ASPNET-MVC-10-Component-Checked-In.aspx

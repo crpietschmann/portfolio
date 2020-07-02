@@ -5,7 +5,7 @@ title: "Free Geographic / Geo-Spatial Data Sources Link List"
 date: 2010-05-27 14:53:44 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["GIS", "Data"]
 tags: []
 redirect_from: 
   - /page/Free-Geographic-Geo-Spatial-Data-Sources-Link-List.aspx

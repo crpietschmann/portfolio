@@ -5,7 +5,7 @@ title: "TDD: Testable is most important"
 date: 2016-02-04 18:55:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Software", "Technology", "TDD"]
 tags: ["Software Craftsmanship", "TDD"]
 redirect_from: 
   - /post/2016/02/04/TDD-Testable-is-most-important.aspx

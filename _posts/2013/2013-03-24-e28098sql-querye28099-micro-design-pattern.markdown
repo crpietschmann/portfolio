@@ -5,7 +5,7 @@ title: "‘SQL Query’ Micro Design Pattern"
 date: 2013-03-24 07:52:26 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Design Pattern", "Software", "OOP", "SQL"]
 tags: ["Design Patterns"]
 redirect_from: 
   - /post/2013/03/24/e28098SQL-Querye28099-Micro-Design-Pattern.aspx

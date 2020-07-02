@@ -5,7 +5,7 @@ title: "Software is like Automobiles and has a lot to learn"
 date: 2016-02-27 11:17:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology", "Software"]
 tags: ["Inspiration", "Software Craftsmanship"]
 redirect_from: 
   - /post/2016/02/27/Software-is-like-Automobiles-and-has-a-lot-to-learn.aspx

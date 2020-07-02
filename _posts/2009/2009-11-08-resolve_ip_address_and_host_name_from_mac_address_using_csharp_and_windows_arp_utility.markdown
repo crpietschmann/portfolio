@@ -5,7 +5,7 @@ title: "Resolve IP Address And Host Name From MAC Address using C# and Windows A
 date: 2009-11-08 08:04:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["C#", "ARP", "IP Address", "MAC Address"]
 tags: ["C#"]
 redirect_from: 
   - /post/2009/11/08/Resolve_IP_Address_And_Host_Name_From_MAC_Address_using_CSharp_and_Windows_ARP_Utility.aspx

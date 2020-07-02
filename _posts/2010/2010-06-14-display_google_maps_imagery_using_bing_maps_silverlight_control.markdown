@@ -5,7 +5,7 @@ title: "Display Google Maps Imagery using Bing Maps Silverlight Control"
 date: 2010-06-14 23:15:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Google Maps", "Silverlight", "Bing Maps"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
   - /post/2010/06/14/Display_Google_Maps_Imagery_using_Bing_Maps_Silverlight_Control.aspx

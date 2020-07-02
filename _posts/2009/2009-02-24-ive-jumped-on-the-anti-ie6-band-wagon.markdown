@@ -5,7 +5,7 @@ title: "I've jumped on the 'Anti-IE6' band wagon"
 date: 2009-02-24 22:18:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["IE"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/02/24/Ive-jumped-on-the-Anti-IE6-band-wagon.aspx

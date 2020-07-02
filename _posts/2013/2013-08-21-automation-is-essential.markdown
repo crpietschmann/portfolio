@@ -5,7 +5,7 @@ title: "Automation is Essential"
 date: 2013-08-21 08:58:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Career", "Technology", "Life"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/08/21/Automation-is-Essential.aspx

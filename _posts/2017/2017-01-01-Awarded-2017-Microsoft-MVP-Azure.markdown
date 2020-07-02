@@ -5,7 +5,7 @@ title: "Awarded 2017 Microsoft MVP - Azure"
 date: 2017-01-01 11:39:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Microsoft MVP", "Azure"]
 tags: ["General"]
 redirect_from: 
   - /post/2017/01/01/Awarded-2017-Microsoft-MVP-Azure.aspx

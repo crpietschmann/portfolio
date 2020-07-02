@@ -5,7 +5,7 @@ title: "HTML5 Day 6: New Range Input Type <input type=range />"
 date: 2010-11-22 07:43:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["HTML5"]
 tags: ["HTML", "JavaScript"]
 redirect_from: 
   - /post/2010/11/22/HTML5-Day-6-New-Range-Input-Type-3cinput-type3drange-3e.aspx

@@ -5,7 +5,7 @@ title: "HTML5 IE9 Bug: SELECT box is Un-Selected using Mouse if CSS modifies pos
 date: 2012-01-21 10:43:41 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["HTML5", "CSS"]
 tags: ["HTML", "JavaScript"]
 redirect_from: 
   - /post/2012/01/21/HTML5-IE9-Bug-SELECT-box-is-Un-Selected-using-Mouse-if-CSS-modifies-position-on-hover.aspx

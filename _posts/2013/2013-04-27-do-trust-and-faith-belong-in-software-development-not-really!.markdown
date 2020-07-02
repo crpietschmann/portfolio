@@ -5,7 +5,7 @@ title: "Do Trust and Faith belong in Software Development? Not Really!"
 date: 2013-04-27 07:21:14 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Software", "Technology"]
 tags: []
 redirect_from: 
   - /post/2013/04/27/Do-Trust-and-Faith-belong-in-Software-Development-Not-Really!.aspx

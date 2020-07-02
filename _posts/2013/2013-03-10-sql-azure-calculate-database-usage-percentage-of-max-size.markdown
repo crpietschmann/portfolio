@@ -5,7 +5,7 @@ title: "SQL Azure: Calculate Database Usage Percentage of Max Size"
 date: 2013-03-10 14:24:51 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Azure", "SQL", "Database"]
 tags: ["Azure", "SQL"]
 redirect_from: 
   - /post/2013/03/10/SQL-Azure-Calculate-Database-Usage-Percentage-of-Max-Size.aspx

@@ -5,7 +5,7 @@ title: "Visual Studio 2010 Beta 2 Setup Contains a Weird Blue Mac-Style Button!"
 date: 2009-10-20 06:39:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Visual Studio"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/10/20/Visual_Studio_2010_Beta_2_Setup_Contains_Weird_Blue_Mac-Style_Button.aspx

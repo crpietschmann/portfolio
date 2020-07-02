@@ -5,7 +5,7 @@ title: "Bing Maps Shapes (VEShape) to WKT (Well-Known-Text) and Back using JavaS
 date: 2009-04-04 12:38:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "WKT", "JavaScript"]
 tags: ["Bing Maps", "JavaScript"]
 redirect_from: 
   - /post/2009/04/04/Virtual-Earth-Shapes-(VEShape)-to-WKT-(Well-Known-Text)-and-Back-using-JavaScript.aspx

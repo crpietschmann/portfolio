@@ -5,7 +5,7 @@ title: "My Brother In Law Is Home After Second Tour In Iraq"
 date: 2010-01-12 15:03:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Family"]
 tags: ["General"]
 redirect_from: 
   - /post/2010/01/12/My-Brother-In-Law-Is-Home-After-Second-Tour-In-Iraq.aspx

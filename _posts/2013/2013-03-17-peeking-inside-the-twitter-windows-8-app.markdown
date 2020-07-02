@@ -5,7 +5,7 @@ title: "Peeking inside the Twitter Windows 8 App"
 date: 2013-03-17 07:54:32 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows 10", "Twitter", "Software"]
 tags: ["Windows Store App"]
 redirect_from: 
   - /post/2013/03/17/Peeking-inside-the-Twitter-Windows-8-App.aspx

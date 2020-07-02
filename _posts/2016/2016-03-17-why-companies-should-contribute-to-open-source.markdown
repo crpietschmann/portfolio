@@ -5,7 +5,7 @@ title: "Why Companies Should Contribute to Open Source"
 date: 2016-03-17 12:27:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Open Source", "Business", "Technology"]
 tags: []
 redirect_from: 
   - /post/2016/03/17/Why-Companies-Should-Contribute-to-Open-Source.aspx

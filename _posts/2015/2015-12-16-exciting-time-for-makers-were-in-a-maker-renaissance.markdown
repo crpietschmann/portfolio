@@ -5,7 +5,7 @@ title: "Exciting Time for Makers! We're in a Maker Renaissance!"
 date: 2015-12-16 18:10:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Maker", "Raspberry Pi", "IoT"]
 tags: ["Internet of Things", "Raspberry Pi"]
 redirect_from: 
   - /post/2015/12/16/Exciting-Time-for-Makers-Were-in-a-Maker-Renaissance.aspx

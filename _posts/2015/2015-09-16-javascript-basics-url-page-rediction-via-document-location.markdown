@@ -5,7 +5,7 @@ title: "JavaScript Basics: Url / Page Navigation via document.location"
 date: 2015-09-16 19:15:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2015/09/16/JavaScript-Basics-Url-Page-Rediction-via-document-location.aspx

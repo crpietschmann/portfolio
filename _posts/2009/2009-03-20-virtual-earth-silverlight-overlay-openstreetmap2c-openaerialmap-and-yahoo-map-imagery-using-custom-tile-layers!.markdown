@@ -5,7 +5,7 @@ title: "Bing Maps Silverlight CTP: Overlay OpenStreetMap, OpenAerialMap and Yaho
 date: 2009-03-20 18:51:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "Silverlight"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
   - /post/2009/03/20/Virtual-Earth-Silverlight-Overlay-OpenStreetMap2c-OpenAerialMap-and-Yahoo-Map-Imagery-using-Custom-Tile-Layers!.aspx

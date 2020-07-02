@@ -5,7 +5,7 @@ title: "jHash: Easily Manage Browser History / window.location.hash"
 date: 2010-11-26 10:11:56 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["jHash", "JavaScript", "Open Source"]
 tags: ["JavaScript", "JavaScript"]
 redirect_from: 
   - /post/2010/11/26/jHash-Easily-Manage-Browser-History-windowlocationhash.aspx

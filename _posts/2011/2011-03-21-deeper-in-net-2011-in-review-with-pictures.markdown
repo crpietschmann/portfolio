@@ -5,7 +5,7 @@ title: "Deeper in .NET 2011 in Review with Pictures"
 date: 2011-03-21 21:04:04 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Conference", ".NET"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2011/03/21/Deeper-in-NET-2011-in-Review-with-Pictures.aspx

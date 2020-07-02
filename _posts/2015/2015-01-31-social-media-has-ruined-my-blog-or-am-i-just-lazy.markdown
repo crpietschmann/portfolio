@@ -5,7 +5,7 @@ title: "Social Media has ruined my blog, or am I just lazy?"
 date: 2015-01-31 08:26:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blogging", "Social Media"]
 tags: ["General"]
 redirect_from: 
   - /post/2015/01/31/Social-Media-has-ruined-my-blog-or-am-I-just-lazy.aspx

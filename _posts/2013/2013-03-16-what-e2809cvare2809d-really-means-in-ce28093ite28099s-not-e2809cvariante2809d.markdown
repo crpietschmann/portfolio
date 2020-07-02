@@ -5,7 +5,7 @@ title: "What “var” really means in C#–It’s not “variant”"
 date: 2013-03-16 04:57:23 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["C#", ".NET", "Visual Studio"]
 tags: ["C#"]
 redirect_from: 
   - /post/2013/03/16/What-e2809cvare2809d-really-means-in-Ce28093Ite28099s-not-e2809cvariante2809d.aspx

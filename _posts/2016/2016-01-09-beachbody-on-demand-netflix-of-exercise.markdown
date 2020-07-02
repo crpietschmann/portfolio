@@ -5,7 +5,7 @@ title: "Beachbody On Demand - Netflix of Exercise"
 date: 2016-01-09 12:08:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Beachbody", "Fitness"]
 tags: ["General"]
 redirect_from: 
   - /post/2016/01/09/Beachbody-On-Demand-Netflix-of-Exercise.aspx

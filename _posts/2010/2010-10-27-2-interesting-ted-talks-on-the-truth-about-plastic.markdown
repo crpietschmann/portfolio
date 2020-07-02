@@ -5,7 +5,7 @@ title: "2 Interesting TED Talks on The Truth About Plastic"
 date: 2010-10-27 06:02:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["TED", "Conference", "Pollution"]
 tags: ["General"]
 redirect_from: 
   - /post/2010/10/27/2-Interesting-TED-Talks-on-The-Truth-About-Plastic.aspx

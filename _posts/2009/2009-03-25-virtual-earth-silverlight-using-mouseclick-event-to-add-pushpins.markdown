@@ -5,7 +5,7 @@ title: "Bing Maps Silverlight CTP: Using MouseClick Event To Add 'Pushpins'"
 date: 2009-03-25 22:38:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "Silverlight"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
   - /post/2009/03/25/Virtual-Earth-Silverlight-Using-MouseClick-Event-To-Add-Pushpins.aspx

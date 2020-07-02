@@ -5,7 +5,7 @@ title: "Failure Is Greater Success Than Success."
 date: 2013-09-08 06:49:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life", "Business", "Entrepreneur"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/09/08/Failure-Is-Greater-Success-Than-Success.aspx

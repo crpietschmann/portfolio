@@ -5,7 +5,7 @@ title: "Awarded 2011 Microsoft MVP–Windows Live Platform"
 date: 2011-04-01 12:58:19 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Microsoft MVP", "Windows Live"]
 tags: []
 redirect_from: 
   - /post/2011/04/01/Awarded-2011-Microsoft-MVPe28093Windows-Live-Platform.aspx

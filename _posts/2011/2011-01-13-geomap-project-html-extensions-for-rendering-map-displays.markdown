@@ -5,7 +5,7 @@ title: "Geomap Project - HTML Extensions for Rendering Map Displays"
 date: 2011-01-13 06:54:06 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "Google Maps", "GIS", "Geomap"]
 tags: ["HTML", "Bing Maps"]
 redirect_from: 
   - /post/2011/01/13/Geomap-Project-HTML-Extensions-for-Rendering-Map-Displays.aspx

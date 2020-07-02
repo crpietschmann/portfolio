@@ -5,7 +5,7 @@ title: "5 Common C# tasks in Apple Swift Programming Language"
 date: 2014-11-21 18:19:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["C#", ".NET", "Swift", "XCode", "Visual Studio"]
 tags: ["C#", "Swift"]
 redirect_from: 
   - /post/2014/11/21/5-Common-CSharp-tasks-in-Apple-Swift-Programming-Language.aspx

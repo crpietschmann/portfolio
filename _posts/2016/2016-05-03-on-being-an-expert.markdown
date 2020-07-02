@@ -5,7 +5,7 @@ title: "On Being an Expert"
 date: 2016-05-03 08:49:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/05/03/On-Being-an-Expert.aspx

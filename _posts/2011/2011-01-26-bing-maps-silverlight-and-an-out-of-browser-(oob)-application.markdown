@@ -5,7 +5,7 @@ title: "Step By Step: Bing Maps Silverlight and an Out Of Browser (OOB) Applicat
 date: 2011-01-26 08:40:19 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverlight", "Bing Maps"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
   - /post/2011/01/26/Bing-Maps-Silverlight-and-an-Out-Of-Browser-(OOB)-Application.aspx

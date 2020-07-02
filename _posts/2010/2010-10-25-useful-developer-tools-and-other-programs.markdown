@@ -5,7 +5,7 @@ title: "Useful Developer Tools and Other Programs"
 date: 2010-10-25 06:03:15 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: []
 redirect_from: 
   - /page/Useful-Developer-Tools-and-Other-Programs.aspx

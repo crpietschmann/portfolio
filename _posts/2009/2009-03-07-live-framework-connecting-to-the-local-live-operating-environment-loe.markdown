@@ -5,7 +5,7 @@ title: "Live Framework: Connecting to the Local Live Operating Environment (LOE)
 date: 2009-03-07 20:28:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Live"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/03/07/Live-Framework-Connecting-to-the-Local-Live-Operating-Environment-LOE.aspx

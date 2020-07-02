@@ -5,7 +5,7 @@ title: "Cheap PC 2009 - Custom Built PC under $500 that includes Windows Vista H
 date: 2009-03-13 13:15:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["PC", "Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/03/13/Cheap-PC-2009-Custom-Built-PC-under-500-that-includes-Windows-Vista-Home-Premium.aspx

@@ -5,7 +5,7 @@ title: "Windows 7 RTM is on MSDN & TechNet – Here’s the AKAMAI links!"
 date: 2009-08-06 15:32:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows 7"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/08/06/Windows-7-RTM-is-on-MSDN-TechNet-e28093-Heree28099s-the-AKAMAI-links!.aspx

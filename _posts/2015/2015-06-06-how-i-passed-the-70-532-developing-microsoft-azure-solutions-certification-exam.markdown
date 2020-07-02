@@ -5,7 +5,7 @@ title: "How I passed the 70-532 Developing Microsoft Azure Solutions certificati
 date: 2015-06-06 08:33:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Azure", "Developer", "Certification", "MCSD"]
 tags: ["Azure"]
 redirect_from: 
   - /post/2015/06/06/How-I-passed-the-70-532-Developing-Microsoft-Azure-Solutions-certification-exam.aspx

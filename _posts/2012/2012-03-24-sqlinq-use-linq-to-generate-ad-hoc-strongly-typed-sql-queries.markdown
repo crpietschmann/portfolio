@@ -5,7 +5,7 @@ title: "SQLinq: Use LINQ to generate Ad-Hoc, strongly typed SQL queries"
 date: 2012-03-24 10:33:33 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["SQLinq", "LINQ", "C#", ".NET"]
 tags: ["C#", "SQL"]
 redirect_from: 
   - /post/2012/03/24/SQLinq-Use-LINQ-to-generate-Ad-Hoc-strongly-typed-SQL-queries.aspx

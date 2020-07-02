@@ -5,7 +5,7 @@ title: "C#: Flash Window in Taskbar via Win32 FlashWindowEx"
 date: 2009-01-26 23:19:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["C#", "Win32"]
 tags: ["Win32API"]
 redirect_from: 
   - /post/2009/01/26/CSharp-Flash-Window-in-Taskbar-via-Win32-FlashWindowEx.aspx

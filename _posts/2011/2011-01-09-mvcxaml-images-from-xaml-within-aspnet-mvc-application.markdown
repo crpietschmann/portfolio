@@ -5,7 +5,7 @@ title: "MvcXaml - Images from XAML within ASP.NET MVC Application"
 date: 2011-01-09 09:41:28 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["XAML", "MVC", "ASP.NET", "C#"]
 tags: ["ASP.NET MVC"]
 redirect_from: 
   - /post/2011/01/09/MvcXaml-Images-from-XAML-within-ASPNET-MVC-Application.aspx

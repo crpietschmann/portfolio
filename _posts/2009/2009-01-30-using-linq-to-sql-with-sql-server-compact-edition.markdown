@@ -5,7 +5,7 @@ title: "Using LINQ to SQL with SQL Server Compact Edition"
 date: 2009-01-30 20:31:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["LINQ", "SQL", "SQL Server"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/01/30/Using-LINQ-to-SQL-with-SQL-Server-Compact-Edition.aspx

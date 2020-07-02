@@ -5,7 +5,7 @@ title: "HTML5 Day 1: New tags work in older browsers? Awesome!"
 date: 2010-11-14 14:51:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["HTML5"]
 tags: ["HTML"]
 redirect_from: 
   - /post/2010/11/14/HTML5-Day-1-New-tags-work-in-older-browsers-Awesome.aspx

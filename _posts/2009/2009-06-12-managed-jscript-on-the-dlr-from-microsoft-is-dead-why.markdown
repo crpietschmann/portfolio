@@ -5,7 +5,7 @@ title: "Managed JScript on the DLR from Microsoft is DEAD!! WHY?!??"
 date: 2009-06-12 15:03:28 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JScript", "DLR", ".NET"]
 tags: ["JavaScript", "General"]
 redirect_from: 
   - /post/2009/06/12/Managed-JScript-on-the-DLR-from-Microsoft-is-DEAD-Why.aspx

@@ -5,7 +5,7 @@ title: "Imposter Syndrome is Fake"
 date: 2016-07-23 09:09:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/07/23/Imposter-Syndrome-is-Fake.aspx

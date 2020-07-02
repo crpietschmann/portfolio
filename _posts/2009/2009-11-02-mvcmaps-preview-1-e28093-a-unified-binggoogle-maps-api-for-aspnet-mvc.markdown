@@ -5,7 +5,7 @@ title: "MvcMaps Preview 1 – A Unified Bing/Google Maps API for ASP.NET MVC"
 date: 2009-11-02 22:01:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["MVC", "MvcMaps", "Open Source", "Google Maps", "Bing Maps", "ASP.NET"]
 tags: ["ASP.NET MVC", "Bing Maps"]
 redirect_from: 
   - /post/2009/11/02/MvcMaps-Preview-1-e28093-A-Unified-BingGoogle-Maps-API-for-ASPNET-MVC.aspx

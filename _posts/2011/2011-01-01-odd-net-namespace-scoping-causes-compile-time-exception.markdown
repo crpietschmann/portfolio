@@ -5,7 +5,7 @@ title: "Odd .NET Namespace Scoping Causes Compile-Time Exception"
 date: 2011-01-01 23:46:01 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET", "C#"]
 tags: ["C#", "vb.net"]
 redirect_from: 
   - /post/2011/01/01/Odd-NET-Namespace-Scoping-Causes-Compile-Time-Exception.aspx

@@ -5,7 +5,7 @@ title: "IronJSMVC: Script ASP.NET MVC in JavaScript using IronJS"
 date: 2012-01-21 18:54:03 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript", "IronJSMVC", "MVC", "ASP.NET", "IronJS"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2012/01/21/IronJSMVC-Script-ASPNET-MVC-in-JavaScript-using-IronJS.aspx

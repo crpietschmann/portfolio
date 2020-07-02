@@ -5,7 +5,7 @@ title: "Adding a DotNetKicks Image/Badge via jQuery"
 date: 2009-07-20 18:08:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["DotNetKicks", "jQuery"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2009/07/20/Adding-a-DotNetKicks-ImageBadge-via-jQuery.aspx

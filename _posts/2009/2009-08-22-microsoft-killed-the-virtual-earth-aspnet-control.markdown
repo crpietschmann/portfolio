@@ -5,7 +5,7 @@ title: "Microsoft Killed the Virtual Earth ASP.NET Control"
 date: 2009-08-22 10:52:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "ASP.NET"]
 tags: ["asp.net", "Bing Maps"]
 redirect_from: 
   - /post/2009/08/22/Microsoft-Killed-the-Virtual-Earth-ASPNET-Control.aspx

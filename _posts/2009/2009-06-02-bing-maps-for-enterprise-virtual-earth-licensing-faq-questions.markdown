@@ -5,7 +5,7 @@ title: "Bing Maps for Enterprise (formerly Virtual Earth) Licensing FAQ"
 date: 2009-06-02 18:52:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2009/06/02/Bing-Maps-for-Enterprise-Virtual-Earth-Licensing-FAQ-Questions.aspx

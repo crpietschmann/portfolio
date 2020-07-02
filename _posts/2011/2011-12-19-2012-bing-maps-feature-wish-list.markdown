@@ -5,7 +5,7 @@ title: "2012 Bing Maps Feature Wish List"
 date: 2011-12-19 14:42:13 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2011/12/19/2012-Bing-Maps-Feature-Wish-List.aspx

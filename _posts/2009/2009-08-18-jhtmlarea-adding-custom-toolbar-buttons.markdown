@@ -5,7 +5,7 @@ title: "jHtmlArea – Adding Custom Toolbar Buttons"
 date: 2009-08-18 17:21:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["jHtmlArea", "Open Source"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2009/08/18/jHtmlArea-Adding-Custom-Toolbar-Buttons.aspx

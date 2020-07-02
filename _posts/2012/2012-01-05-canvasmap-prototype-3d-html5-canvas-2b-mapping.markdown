@@ -5,7 +5,7 @@ title: "CanvasMap Prototype = HTML5 Canvas + Mapping"
 date: 2012-01-05 08:46:17 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["HTML5", "JavaScrip", "GIS"]
 tags: ["Bing Maps", "JavaScript"]
 redirect_from: 
   - /post/2012/01/05/CanvasMap-Prototype-3d-HTML5-Canvas-2b-Mapping.aspx

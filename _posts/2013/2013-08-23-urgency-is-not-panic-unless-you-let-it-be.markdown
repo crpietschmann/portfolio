@@ -5,7 +5,7 @@ title: "Urgency is not Panic, unless you let it be"
 date: 2013-08-23 15:15:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life", "Career"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/08/23/Urgency-is-not-Panic-unless-you-let-it-be.aspx

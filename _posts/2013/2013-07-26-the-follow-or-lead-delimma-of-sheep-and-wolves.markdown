@@ -5,7 +5,7 @@ title: "The Follow Or Lead Delimma of Sheep and Wolves"
 date: 2013-07-26 07:40:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life", "Business"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/07/26/The-Follow-Or-Lead-Delimma-of-Sheep-and-Wolves.aspx

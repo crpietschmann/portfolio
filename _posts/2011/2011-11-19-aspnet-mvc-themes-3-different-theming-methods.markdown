@@ -5,7 +5,7 @@ title: "ASP.NET MVC Themes: 3 different theming methods"
 date: 2011-11-19 11:11:04 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "MVC"]
 tags: ["ASP.NET MVC"]
 redirect_from: 
   - /post/2011/11/19/ASPNET-MVC-Themes-3-different-theming-methods.aspx

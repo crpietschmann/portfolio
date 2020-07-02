@@ -5,7 +5,7 @@ title: "MIX'09: Virtual Earth Silverlight CTP Session Online for Viewing"
 date: 2009-03-21 16:46:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "Conference"]
 tags: ["Silverlight", "Bing Maps"]
 redirect_from: 
   - /post/2009/03/21/MIX09-Virtual-Earth-Silverlight-CTP-Session-Online-For-Viewing.aspx

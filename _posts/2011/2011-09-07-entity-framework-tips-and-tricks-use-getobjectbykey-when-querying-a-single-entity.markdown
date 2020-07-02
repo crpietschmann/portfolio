@@ -5,7 +5,7 @@ title: "Entity Framework Tips and Tricks: Use GetObjectByKey When Querying a Sin
 date: 2011-09-07 14:30:46 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["EF", "Entity Framework", "C#", ".NET"]
 tags: ["C#"]
 redirect_from: 
   - /post/2011/09/07/Entity-Framework-Tips-and-Tricks-Use-GetObjectByKey-When-Querying-a-Single-Entity.aspx

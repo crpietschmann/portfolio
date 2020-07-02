@@ -5,7 +5,7 @@ title: "Design Patterns: Basics of Dependency Injection"
 date: 2012-04-13 14:42:29 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Design Pattern", "TDD", ".NET", "C#"]
 tags: ["C#", "Design Patterns"]
 redirect_from: 
   - /post/2012/04/13/Design-Patterns-Basics-of-Dependency-Injection.aspx

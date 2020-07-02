@@ -5,7 +5,7 @@ title: "Peek Inside Minecraft Windows 10 Edition Beta"
 date: 2015-08-07 17:15:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Minecraft", "Software"]
 tags: ["Windows Store App"]
 redirect_from: 
   - /post/2015/08/07/Peek-Inside-Minecraft-Windows-10-Edition-Beta.aspx

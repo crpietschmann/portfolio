@@ -5,7 +5,7 @@ title: "CTP: Getting Started with Bing Maps Silverlight CTP Map Control SDK"
 date: 2009-03-20 18:27:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "Silverlight"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
   - /post/2009/03/20/Getting-Started-Virtual-Earth-Silverlight-Map-Control-SDK-CTP.aspx

@@ -5,7 +5,7 @@ title: "Bing Maps v7 Ajax Hacks: InfoBox Description containing Html tags"
 date: 2011-07-10 15:29:17 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2011/07/10/Bing-Maps-v7-Ajax-Hacks-InfoBox-Description-containing-Html-tags.aspx

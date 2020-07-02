@@ -5,7 +5,7 @@ title: "Bing Maps: Modify the Opacity of an Existing Custom Tile Layer"
 date: 2009-03-13 19:27:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2009/03/13/Virtual-Earth-Modify-the-Opacity-of-an-Existing-Custom-Tile-Layer.aspx

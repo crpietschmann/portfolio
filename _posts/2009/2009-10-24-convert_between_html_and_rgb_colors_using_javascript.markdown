@@ -5,7 +5,7 @@ title: "Easily Convert Between HTML and RGB Colors using JavaScript"
 date: 2009-10-24 14:08:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["HTML", "RGB", "JavaScript"]
 tags: ["Bing Maps", "JavaScript"]
 redirect_from: 
   - /post/2009/10/24/Convert_Between_HTML_and_RGB_Colors_using_JavaScript.aspx

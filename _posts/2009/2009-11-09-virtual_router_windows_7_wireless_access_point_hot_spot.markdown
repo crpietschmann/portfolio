@@ -5,7 +5,7 @@ title: "Virtual Router Project – Turn any Windows 7 PC into a Wireless Access 
 date: 2009-11-09 16:33:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Router", "Open Source", "Windows 7", "Wifi"]
 tags: ["C#"]
 redirect_from: 
   - /post/2009/11/09/Virtual_Router_Windows_7_Wireless_Access_Point_Hot_Spot.aspx

@@ -5,7 +5,7 @@ title: "Bing Maps JS: Calculate Area of Circle and Draw Circle on Map"
 date: 2010-03-02 12:24:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2010/03/02/Bing-Maps-JS-Calculate-Area-of-Circle-and-Draw-Circle-on-Map.aspx

@@ -5,7 +5,7 @@ title: "Milwaukee Azure Bootcamp - Apr 16, 2016"
 date: 2016-03-13 12:18:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Global Azure Bootcamp", "Conference", "Azure"]
 tags: ["Azure"]
 redirect_from: 
   - /post/2016/03/13/Milwaukee-Azure-Bootcamp-Apr-16-2016.aspx

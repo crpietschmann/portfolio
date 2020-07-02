@@ -5,7 +5,7 @@ title: "Announcing New BuildHoloLens.com Blog!"
 date: 2016-04-09 21:32:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["HoloLens", "Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2016/04/09/Announcing-New-BuildHoloLenscom-Blog.aspx

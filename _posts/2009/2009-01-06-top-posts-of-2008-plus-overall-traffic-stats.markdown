@@ -5,7 +5,7 @@ title: "Top Posts of 2008 Plus Overall Traffic Stats"
 date: 2009-01-06 16:16:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/01/06/Top-Posts-of-2008-Plus-Overall-Traffic-Stats.aspx

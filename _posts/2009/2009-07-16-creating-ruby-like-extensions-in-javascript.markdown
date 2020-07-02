@@ -5,7 +5,7 @@ title: "Creating Ruby-like 'Extensions' in JavaScript"
 date: 2009-07-16 11:48:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Ruby", "JavaScript"]
 tags: ["JavaScript", "Ruby"]
 redirect_from: 
   - /post/2009/07/16/Creating-Ruby-like-Extensions-in-JavaScript.aspx

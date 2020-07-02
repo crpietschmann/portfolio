@@ -5,7 +5,7 @@ title: "Prototype of OpenStreetMap Silverlight Control using DeepEarth and Bing 
 date: 2009-11-13 07:40:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["OpenStreetMap", "Silverlight", "DeepEarth", "Bing Maps"]
 tags: ["Bing Maps", "C#", "Silverlight"]
 redirect_from: 
   - /post/2009/11/13/Prototype_OpenStreetMap_Silverlight_Control_using_Bing_Maps_SDK_and_DeepEarth.aspx

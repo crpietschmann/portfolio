@@ -5,7 +5,7 @@ title: "Simple Port Scanner Written in VB.NET 2003/2008"
 date: 2009-01-20 18:00:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Open Source", "VB.NET", ".NET"]
 tags: ["General", "vb.net"]
 redirect_from: 
   - /post/2009/01/20/Simple-Port-Scanner-Written-in-VBNET-2003-2008.aspx

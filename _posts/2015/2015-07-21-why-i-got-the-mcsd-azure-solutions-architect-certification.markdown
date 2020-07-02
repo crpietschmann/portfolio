@@ -5,7 +5,7 @@ title: "Why I got the MCSD: Azure Solutions Architect Certification"
 date: 2015-07-21 19:06:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["MCSD", "Certification", "Azure"]
 tags: ["Azure"]
 redirect_from: 
   - /post/2015/07/21/Why-I-got-the-MCSD-Azure-Solutions-Architect-Certification.aspx

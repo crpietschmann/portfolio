@@ -5,7 +5,7 @@ title: "Software is Written FOR PEOPLE"
 date: 2016-09-09 17:54:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life", "Technology"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/09/09/Software-is-Written-FOR-PEOPLE.aspx

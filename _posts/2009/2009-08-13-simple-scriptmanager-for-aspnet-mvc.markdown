@@ -5,7 +5,7 @@ title: "A Simple ScriptManager for ASP.NET MVC"
 date: 2009-08-13 16:23:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "MVC", "ScriptManager"]
 tags: ["ASP.NET MVC"]
 redirect_from: 
   - /post/2009/08/13/Simple-ScriptManager-for-ASPNET-MVC.aspx

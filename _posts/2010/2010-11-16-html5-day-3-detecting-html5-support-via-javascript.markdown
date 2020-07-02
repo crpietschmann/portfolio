@@ -5,7 +5,7 @@ title: "HTML5 Day 3: Detecting HTML5 Support via JavaScript"
 date: 2010-11-16 09:19:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["HTML5", "JavaScript"]
 tags: ["HTML", "JavaScript"]
 redirect_from: 
   - /post/2010/11/16/HTML5-Day-3-Detecting-HTML5-Support-via-JavaScript.aspx

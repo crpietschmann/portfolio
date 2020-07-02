@@ -5,7 +5,7 @@ title: "HTML5 Day 5: New Date Input Type <input type=date />"
 date: 2010-11-18 13:35:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["HTML5"]
 tags: ["HTML", "JavaScript"]
 redirect_from: 
   - /post/2010/11/18/HTML5-Day-5-New-Date-Input-Type.aspx

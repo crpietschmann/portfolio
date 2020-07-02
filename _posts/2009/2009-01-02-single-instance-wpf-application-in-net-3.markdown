@@ -5,7 +5,7 @@ title: "Single Instance WPF Application in .NET 3.x"
 date: 2009-01-02 20:12:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["WPF", ".NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/01/02/Single-Instance-WPF-Application-in-NET-3.aspx

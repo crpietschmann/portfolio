@@ -5,7 +5,7 @@ title: "Windows 8 App: Simple Weight Log–My first Windows Store App"
 date: 2013-03-13 18:13:44 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows 10", "Simplovation"]
 tags: ["Windows Store App"]
 redirect_from: 
   - /post/2013/03/13/Windows-8-App-Simple-Weight-Loge28093My-first-Windows-Store-App.aspx

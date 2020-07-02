@@ -5,7 +5,7 @@ title: "C#: Using IProgressDialog to show a “native” Progress Dialog from .N
 date: 2009-08-17 20:03:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["C#", ".NET", "IProgressDialog"]
 tags: ["Win32API"]
 redirect_from: 
   - /post/2009/08/17/CSharp-IProgressDialog-Show-Native-Progress-Dialog-from-dotNet-in-Windows.aspx

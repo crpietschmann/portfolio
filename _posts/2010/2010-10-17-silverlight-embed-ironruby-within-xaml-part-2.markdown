@@ -5,7 +5,7 @@ title: "Silverlight: Embed IronRuby within XAML Part 2"
 date: 2010-10-17 10:44:27 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverlight", "IronRuby"]
 tags: ["Silverlight", "DLR", "Ruby"]
 redirect_from: 
   - /post/2010/10/17/Silverlight-Embed-IronRuby-within-XAML-Part-2.aspx

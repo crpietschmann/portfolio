@@ -5,7 +5,7 @@ title: "Awarded 2010 Microsoft MVP - Windows Live Platform"
 date: 2010-04-01 11:53:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Microsoft MVP", "Windows Live"]
 tags: ["Bing Maps", "General"]
 redirect_from: 
   - /post/2010/04/01/Awarded-2010-Microsoft-MVP-Windows-Live-Platform.aspx

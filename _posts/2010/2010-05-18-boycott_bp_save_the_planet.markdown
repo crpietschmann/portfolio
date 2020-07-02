@@ -5,7 +5,7 @@ title: "Boycott BP, Save the Planet!"
 date: 2010-05-18 07:37:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Pollution"]
 tags: ["General"]
 redirect_from: 
   - /post/2010/05/18/Boycott_BP_Save_the_Planet.aspx

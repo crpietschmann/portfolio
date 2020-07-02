@@ -5,7 +5,7 @@ title: "Simplovation Web.Maps.VE v3.0 Now With FREE Edition!"
 date: 2009-08-26 18:57:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Simplovation", "Web.Maps.VE", "Bing Maps"]
 tags: ["asp.net", "Bing Maps", "JavaScript"]
 redirect_from: 
   - /post/2009/08/26/Simplovation-WebMapsVE-v30-Now-With-FREE-Edition!.aspx

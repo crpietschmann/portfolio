@@ -5,7 +5,7 @@ title: "Windows 7 Beta Has Good and Bad Points - A Short Review"
 date: 2009-01-12 22:52:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows 7"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/01/12/Windows-7-Beta-Has-Good-and-Bad-Points-A-Short-Review.aspx

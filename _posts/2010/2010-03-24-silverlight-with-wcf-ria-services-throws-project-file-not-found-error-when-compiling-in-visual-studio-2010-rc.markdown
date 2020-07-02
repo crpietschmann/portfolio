@@ -5,7 +5,7 @@ title: "Silverlight with WCF RIA Services Throws 'Project File ... Not Found' Er
 date: 2010-03-24 15:24:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverlight", "WCF"]
 tags: ["Silverlight"]
 redirect_from: 
   - /post/2010/03/24/Silverlight-with-WCF-RIA-Services-Throws-Project-File-Not-Found-Error-When-Compiling-in-Visual-Studio-2010-RC.aspx

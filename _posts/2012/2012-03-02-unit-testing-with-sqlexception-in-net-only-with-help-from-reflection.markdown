@@ -5,7 +5,7 @@ title: "Unit Testing with SqlException in .NET: Only with help from Reflection"
 date: 2012-03-02 07:32:58 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["TDD", ".NET", "SqlException", "Reflection", "C#"]
 tags: ["C#", "TDD"]
 redirect_from: 
   - /post/2012/03/02/Unit-Testing-with-SqlException-in-NET-Only-with-help-from-Reflection.aspx

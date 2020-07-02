@@ -5,7 +5,7 @@ title: "Tag Editor Field using jQuery similar to StackOverflow"
 date: 2011-09-09 00:55:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript", "jQuery", "StackOverflow"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2011/09/09/Tag-Editor-Field-using-jQuery-similar-to-StackOverflow.aspx

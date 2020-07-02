@@ -5,7 +5,7 @@ title: "jHtmlArea 0.6.0 Update with Improved Functionality"
 date: 2009-07-24 16:44:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["jHtmlArea", "Open Source"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2009/07/24/jHtmlArea_060_Update_with_Improved_Functionality.aspx

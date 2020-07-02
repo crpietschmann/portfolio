@@ -5,7 +5,7 @@ title: "4 Reasons Why Virtual Router is Superior to Connectify"
 date: 2010-12-28 13:54:27 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Open Source", "Virtual Router", "Connectify"]
 tags: []
 redirect_from: 
   - /post/2010/12/28/4-Reasons-Why-Virtual-Router-is-Superior-to-Connectify.aspx

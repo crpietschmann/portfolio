@@ -5,7 +5,7 @@ title: "Never Give Up"
 date: 2016-03-01 05:45:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life", "Career", "Entrepremeur"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2016/03/01/Never-Give-Up.aspx

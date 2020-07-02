@@ -5,7 +5,7 @@ title: "Software Basics: What are Databases and Data Access Layers, and How do t
 date: 2010-03-13 19:23:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Software", "Design Pattern", "Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2010/03/13/Software-Basics-What-are-Databases-and-Data-Access-Layers-and-How-do-they-relate-to-Web-Services.aspx

@@ -5,7 +5,7 @@ title: "Virtual Earth Silverlight Control CTP Teaser and Some Initial Thoughts"
 date: 2009-03-19 18:12:21 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "Silverlight"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
   - /post/2009/03/19/Virtual-Earth-Silverlight-Control-CTP-Teaser-Some-Initial-Thoughts.aspx

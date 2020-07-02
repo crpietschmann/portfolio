@@ -5,7 +5,7 @@ title: "Draggable Pushpins using Bing Maps Silverlight Control"
 date: 2010-05-30 08:39:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "Silverlight"]
 tags: ["Bing Maps", "Silverlight"]
 redirect_from: 
   - /post/2010/05/30/Draggable-Pushpins-using-Bing-Maps-Silverlight-Control.aspx

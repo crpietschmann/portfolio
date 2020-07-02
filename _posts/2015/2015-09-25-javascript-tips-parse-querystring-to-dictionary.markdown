@@ -5,7 +5,7 @@ title: "JavaScript Tips: Parse QueryString to Dictionary"
 date: 2015-09-25 06:04:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2015/09/25/JavaScript-Tips-Parse-QueryString-to-Dictionary.aspx

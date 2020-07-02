@@ -5,7 +5,7 @@ title: "Study Guide for 70-480 Programming HTML5, JavaScript, CSS3 Certification
 date: 2016-05-09 17:15:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Certification", "MCSD"]
 tags: ["CSS", "HTML", "JavaScript"]
 redirect_from: 
   - /post/2016/05/09/Study-Guide-for-70-480-Programming-HTML5-JavaScript-CSS3-Certification-Exam1.aspx

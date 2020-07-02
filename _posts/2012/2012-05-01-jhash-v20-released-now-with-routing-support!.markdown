@@ -5,7 +5,7 @@ title: "jHash v2.0 Released: Now with Routing Support!"
 date: 2012-05-01 17:34:30 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["jHash", "Open Source", "JavaScript"]
 tags: ["JavaScript", "HTML"]
 redirect_from: 
   - /post/2012/05/01/jHash-v20-Released-Now-with-Routing-Support!.aspx

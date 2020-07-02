@@ -5,7 +5,7 @@ title: "Today (8/31) is last day to enter 2010 Community Coding Contest for chan
 date: 2010-08-31 13:22:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Community", "Contest"]
 tags: ["General"]
 redirect_from: 
   - /post/2010/08/31/Today-is-last-day-to-enter-2010-Community-Coding-Contest-for-Chance-to-win-MSDN-Ultimate-Subscription.aspx

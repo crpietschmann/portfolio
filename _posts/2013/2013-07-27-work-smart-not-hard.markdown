@@ -5,7 +5,7 @@ title: "Work Smart, Not Hard"
 date: 2013-07-27 06:20:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life", "Business", "Entrepreneur"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/07/27/Work-Smart-Not-Hard

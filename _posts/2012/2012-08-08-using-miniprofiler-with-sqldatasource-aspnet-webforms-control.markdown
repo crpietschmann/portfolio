@@ -5,7 +5,7 @@ title: "Using MiniProfiler with SqlDataSource ASP.NET WebForms Control"
 date: 2012-08-08 20:27:21 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", ".NET", "MiniProfiler", "SqlDataSource", "WebForms"]
 tags: ["C#", "asp.net"]
 redirect_from: 
   - /post/2012/08/08/Using-MiniProfiler-with-SqlDataSource-ASPNET-WebForms-Control.aspx

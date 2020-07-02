@@ -5,7 +5,7 @@ title: "Awarded 2012 Microsoft MVP - Bing Maps"
 date: 2012-04-01 15:33:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Microsoft MVP", "Bing Maps"]
 tags: ["General"]
 redirect_from: 
   - /post/2012/04/01/Awarded-2012-Microsoft-MVP-Bing-Maps.aspx

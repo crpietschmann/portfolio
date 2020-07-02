@@ -5,7 +5,7 @@ title: "jsQuizEngine - lightweight javascript quiz engine"
 date: 2015-04-14 19:36:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript", "Open Source", "jsQuizEngine"]
 tags: []
 redirect_from: 
   - /post/2015/04/14/jsQuizEngine-lightweight-javascript-quiz-engine.aspx

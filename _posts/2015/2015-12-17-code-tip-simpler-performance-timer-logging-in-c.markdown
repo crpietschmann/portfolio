@@ -5,7 +5,7 @@ title: "Code Tip: Simpler Performance Timer Logging in C#"
 date: 2015-12-17 18:02:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["C#", "Visual Studio", ".NET"]
 tags: ["C#"]
 redirect_from: 
   - /post/2015/12/17/Code-Tip-Simpler-Performance-Timer-Logging-in-C.aspx

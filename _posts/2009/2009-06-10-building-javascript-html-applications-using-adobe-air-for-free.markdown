@@ -5,7 +5,7 @@ title: "Building JavaScript / HTML based Applications using Adobe Air for FREE"
 date: 2009-06-10 20:44:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript", "Adobe Air"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2009/06/10/Building-JavaScript-HTML-Applications-using-Adobe-AIR-for-FREE.aspx

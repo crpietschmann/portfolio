@@ -5,7 +5,7 @@ title: "Psychology of Software and its Users"
 date: 2013-08-25 07:33:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Software", "Technology"]
 tags: ["Software Craftsmanship"]
 redirect_from: 
   - /post/2013/08/25/Psychology-of-Software-and-its-Users.aspx

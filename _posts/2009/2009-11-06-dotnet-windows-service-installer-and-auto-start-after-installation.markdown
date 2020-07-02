@@ -5,7 +5,7 @@ title: ".NET Windows Service Installer and Auto Start After Installation"
 date: 2009-11-06 10:10:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET", "Windows Service"]
 tags: ["C#"]
 redirect_from: 
   - /post/2009/11/06/dotNet-Windows-Service-Installer-And-Auto-Start-After-Installation.aspx

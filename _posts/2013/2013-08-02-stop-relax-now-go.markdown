@@ -5,7 +5,7 @@ title: "Stop. Relax. Now, GO!"
 date: 2013-08-02 09:01:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Life", "Business"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/08/02/Stop-Relax-Now-GO.aspx

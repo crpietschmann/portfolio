@@ -5,7 +5,7 @@ title: "Bing Maps for Enterprise Developer Resources"
 date: 2009-03-23 15:50:36 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps"]
 tags: []
 redirect_from: 
   - /page/Bing-Maps-for-Enterprise-Developer-Resources.aspx

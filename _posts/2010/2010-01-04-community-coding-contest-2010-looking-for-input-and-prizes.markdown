@@ -5,7 +5,7 @@ title: "Community Coding Contest 2010 - Looking for Input and Prizes"
 date: 2010-01-04 10:49:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Community", "Contest"]
 tags: ["General"]
 redirect_from: 
   - /post/2010/01/04/Community-Coding-Contest-2010-Looking-for-Input-and-Prizes.aspx

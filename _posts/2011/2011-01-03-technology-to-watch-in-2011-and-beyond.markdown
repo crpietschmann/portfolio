@@ -5,7 +5,7 @@ title: "Technology to Watch in 2011 and Beyond"
 date: 2011-01-03 12:06:27 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2011/01/03/Technology-to-Watch-in-2011-and-Beyond.aspx

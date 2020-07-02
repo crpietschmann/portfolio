@@ -5,7 +5,7 @@ title: "Games and Facebook are Cool but Boring Software Runs the World"
 date: 2015-04-24 05:00:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Software", "Life", "Technology"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2015/04/24/Games-and-Facebook-are-Cool-but-Boring-Software-Runs-the-World.aspx

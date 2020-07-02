@@ -5,7 +5,7 @@ title: "Intro to IronRuby/DLR Scripting in C# Silverlight 4 Application"
 date: 2010-09-29 12:44:33 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverlight", "IronRuby", "DLR"]
 tags: ["Silverlight", "DLR", "Ruby"]
 redirect_from: 
   - /post/2010/09/29/Intro-to-IronRubyDLR-Scripting-in-C-Silverlight-4-Application.aspx

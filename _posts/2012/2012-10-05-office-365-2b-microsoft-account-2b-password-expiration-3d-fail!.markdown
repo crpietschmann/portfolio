@@ -5,7 +5,7 @@ title: "Office 365 + Microsoft Account + Password Expiration = FAIL!"
 date: 2012-10-05 06:05:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Security", "Office 365", "Microsoft"]
 tags: ["General"]
 redirect_from: 
   - /post/2012/10/05/Office-365-2b-Microsoft-Account-2b-Password-Expiration-3d-FAIL!.aspx

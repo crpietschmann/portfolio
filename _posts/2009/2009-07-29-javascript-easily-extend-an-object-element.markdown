@@ -5,7 +5,7 @@ title: "JavaScript: Easily 'Extend' an Object/Element"
 date: 2009-07-29 17:03:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2009/07/29/JavaScript-Easily-Extend-an-Object-Element.aspx

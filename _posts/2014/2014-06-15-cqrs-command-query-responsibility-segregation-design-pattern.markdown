@@ -5,7 +5,7 @@ title: "CQRS: Command Query Responsibility Segregation Design Pattern"
 date: 2014-06-15 07:49:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Architecture", "Software", "CQRS", "Design Pattern"]
 tags: ["Design Patterns"]
 redirect_from: 
   - /post/2014/06/15/CQRS-Command-Query-Responsibility-Segregation-Design-Pattern.aspx

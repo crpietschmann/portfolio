@@ -5,7 +5,7 @@ title: "Bing Maps Ajax 7: Adding InfoBox Support via Extension to Microsoft.Maps
 date: 2010-11-30 11:54:48 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2010/11/30/Bing-Maps-Ajax-7-Adding-InfoBox-Support-via-Extension-to-MicrosoftMaps.aspx

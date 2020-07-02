@@ -5,7 +5,7 @@ title: "Mocking HttpRequestBase.ServerVariables using Moq"
 date: 2012-08-03 21:12:58 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["TDD", "Moq", "ASP.NET", "C#"]
 tags: ["C#", "ASP.NET MVC", "TDD"]
 redirect_from: 
   - /post/2012/08/03/Mocking-HttpRequestBaseServerVariables-using-Moq.aspx

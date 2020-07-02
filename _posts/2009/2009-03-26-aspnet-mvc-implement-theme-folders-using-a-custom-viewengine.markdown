@@ -5,7 +5,7 @@ title: "ASP.NET MVC: Implement Theme Folders using a Custom ViewEngine"
 date: 2009-03-26 18:09:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "MVC", "ViewEngine"]
 tags: ["ASP.NET MVC"]
 redirect_from: 
   - /post/2009/03/26/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx

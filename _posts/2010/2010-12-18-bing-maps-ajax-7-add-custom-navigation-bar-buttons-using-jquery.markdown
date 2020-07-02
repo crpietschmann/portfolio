@@ -5,7 +5,7 @@ title: "Bing Maps Ajax 7: Add Custom Navigation Bar Buttons using jQuery"
 date: 2010-12-18 09:42:19 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2010/12/18/Bing-Maps-Ajax-7-Add-Custom-Navigation-Bar-Buttons-using-jQuery.aspx

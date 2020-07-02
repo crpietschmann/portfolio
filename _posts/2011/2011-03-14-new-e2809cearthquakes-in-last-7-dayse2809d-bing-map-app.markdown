@@ -5,7 +5,7 @@ title: "New “Earthquakes in Last 7 Days” Bing Map App"
 date: 2011-03-14 11:40:35 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "GIS"]
 tags: []
 redirect_from: 
   - /post/2011/03/14/New-e2809cEarthquakes-in-Last-7-Dayse2809d-Bing-Map-App.aspx
