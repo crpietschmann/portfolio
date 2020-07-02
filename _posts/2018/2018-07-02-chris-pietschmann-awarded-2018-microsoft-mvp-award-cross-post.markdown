@@ -5,7 +5,7 @@ title: "(Cross Post) Chris Pietschmann Awarded 2018 Microsoft MVP Award"
 date: 2018-07-02 10:44:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Microsoft MVP", "Azure"]
 tags: ["Azure"]
 redirect_from: 
   - /post/2018/07/02/Chris-Pietschmann-Awarded-2018-Microsoft-MVP-Award-Cross-Post.aspx

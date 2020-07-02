@@ -5,7 +5,7 @@ title: "Chris Pietschmann Awarded 2019 Microsoft MVP Award"
 date: 2019-07-01 02:50:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Microsoft MVP", "Azure"]
 tags: ["Azure"]
 ---
 Hi! I don't blog on this site much anymore, but I though I'd post about getting awarded the Microsoft MVP award this year. This marks the 8th time I've been awarded Microsoft MVP in the last 12 years. It's always humbling and exciting to be recognized by Microsoft for everything I do in the community. My contributions include activities in both online and offline outlets.

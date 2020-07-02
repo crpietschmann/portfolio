@@ -5,7 +5,7 @@ title: "Encryption and Code are Greater Than Guns and Bombs"
 date: 2020-03-11 10:51:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives", "Politics"]
+categories: ["Politics", "Life"]
 tags: ["Inspiration", "future"]
 ---
 

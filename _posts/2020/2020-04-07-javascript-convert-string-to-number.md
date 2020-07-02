@@ -5,7 +5,7 @@ title: "JavaScript: Convert String to Number"
 date: 2020-04-06 21:00:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives", "JavaScript"]
+categories: ["JavaScript"]
 tags: ["JavaScript", "String", "Number", "Convert"]
 ---
 

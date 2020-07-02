@@ -5,7 +5,7 @@ title: "macOS: Monitor CPU Usage and Frequency Info"
 date: 2020-02-15 18:00:00 -0500
 comments: true
 published: true
-categories: ["macOS"]
+categories: ["macOS", "Apple"]
 tags: ["cpu", "intel", "core i9"]
 ---
 

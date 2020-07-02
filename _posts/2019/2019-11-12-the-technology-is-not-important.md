@@ -5,7 +5,7 @@ title: "The Technology is NOT Important"
 date: 2019-11-12 10:51:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology", "Entrepreneur"]
 tags: ["Inspiration"]
 ---
 
