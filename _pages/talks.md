@@ -4,7 +4,7 @@ title: Chris Pietschmann's Talks
 permalink: /talks/
 ---
 
-Hi! I'm Chris Pietschmann, and I have a ton of experience public speaking at user groups, conferences, webinars, and other training events. I'm a [Microsoft MVP](/#awards) and a Microsoft Certified Trainer (MCT). I have many years of experience as an instructor leading multi-day instructor-led training classes; both on-site and virtually over the Internet.
+Hi! I'm Chris Pietschmann, I am experienced in public speaking at user groups, conferences, webinars, and other training events. I'm a [Microsoft MVP](/#awards) and a Microsoft Certified Trainer (MCT). I have many years of experience as an instructor leading multi-day instructor-led training classes; both on-site and virtually over the Internet.
 
 Please [contact me]({{ site.contact_url }}) if you're interested in inviting me to speak at your event, or would like to have me train your team for certifications or other classes as well. Let's talk!
 
@@ -12,7 +12,7 @@ Please [contact me]({{ site.contact_url }}) if you're interested in inviting me 
 
 ## Speaker Bio
 
-<a href="/">Chris Pietschmann</a> is a Microsoft MVP with Azure and IoT technologies, and a Microsoft Certified Trainer (MCT) with 20+ years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in Internet of Things (IoT), DevOps, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+<a href="/">Chris Pietschmann</a> is a Microsoft MVP with **Azure** and **IoT** technologies, and a Microsoft Certified Trainer (MCT) with 20+ years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in Internet of Things (IoT), DevOps, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
 
 <a id="sessions"></a>
 
@@ -50,6 +50,7 @@ Here's a short list of a few of the user groups, conferences, and other events t
 - [That Conference](https://thatconference.com) in Wisconsin Dells, WI
 - [Milwaukee Azure](https://www.meetup.com/Milwaukee-Azure-Meetup/) meetup group
 
+<!--
 <a id="courses"></a>
 
 ## Instructor-led Courses and Workshops
@@ -63,3 +64,4 @@ Here are instructor-led courses I teach. I can come to your company, or deliver 
 - Azure Fundamentals (Exam AZ-900) Certification Course
 
 I am able to delivery these as anywhere from a full 3 - 5 day long course, or as shorter hands-on workshops.
+-->
