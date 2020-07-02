@@ -27,7 +27,7 @@ layout: default
       <article class="post-content">
         {% if content contains "<!-- ad -->" %}
         {{ content | split:"<!-- ad -->" | first % }}
-            CONTENT TO INJECT
+            {% include embedad.html %}
         {{ content | split:"<!-- ad -->" | last % }}
         {% else %}
             {{ content }}
