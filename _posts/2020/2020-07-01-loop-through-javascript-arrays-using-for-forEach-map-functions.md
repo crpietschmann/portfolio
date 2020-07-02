@@ -46,6 +46,8 @@ When passing a _Callback_ function to the `forEach` function, the minimum requir
 
 When calling the `forEach` functions and passing in a _Callback_ function, you can also pass in a second argument to the `forEach` function itself. You can pass in a value for the `thisArg` argument. The `thisArg` argument is used as the value of what `this` will be set to when the _Callback_ is executed as `forEach` iterates through each element in the Array. Normally, you probably wont use the `thisArg` argument, but it's there in case you need to curry a specific value for `this`; as can be necessary at times.
 
+<!-- ad -->
+
 ## Process Array elements using `map` function
 
 The Array prototype (aka "Object") in JavaScript also supports the `map` method. If you're familiar with Functional programming languages, then you may be familiar with the idea of a `map` function. In JavaScript, you can also use the `map` function as an alternative to the `forEach` functions. The `map` function accepts a _Callback_ function to use for processing each element in the Array, as well as a `thisArg` argument that can be used to assign a desired value to `this` when executing the _Callback_ function.
