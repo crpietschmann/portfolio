@@ -5,7 +5,7 @@ title: "Loading Microsoft CDN Hosted OpenStreetMap Imagery in Silverlight Bing M
 date: 2010-08-19 15:42:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["OpenStreetMap", "BingMaps"]
 tags: ["Bing Maps", "C#", "Silverlight"]
 redirect_from: 
   - /post/2010/08/19/Load-Microsoft-CDN-Hosted-OpenStreetMap-Imagery-In-Silverlight-Map-Control.aspx
