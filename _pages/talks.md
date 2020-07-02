@@ -49,6 +49,7 @@ Here's a short list of a few of the user groups, conferences, and other events t
 - [Microsoft Azure + AI Conference](https://azureaiconf.com)
 - [That Conference](https://thatconference.com) in Wisconsin Dells, WI
 - [Milwaukee Azure](https://www.meetup.com/Milwaukee-Azure-Meetup/) meetup group
+- [Global Azure Bootcamp](https://globalazure.net/)
 
 <!--
 <a id="courses"></a>
