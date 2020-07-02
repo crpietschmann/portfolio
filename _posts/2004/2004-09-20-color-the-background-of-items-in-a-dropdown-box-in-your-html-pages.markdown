@@ -5,7 +5,7 @@ title: "Color the background of items in a Dropdown box in your HTML pages."
 date: 2004-09-20 22:02:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["HTML", "Color", "CSS"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/09/20/Color-the-background-of-items-in-a-Dropdown-box-in-your-HTML-pages.aspx
@@ -15,7 +15,11 @@ redirect_from:
 ---
 <!-- more -->
 
-Color the background of items in a Dropdown box in your HTML pages. It's very easy to do, just look at the below example.
+It is possible to color the background of items in a Dropdown box within your HTML pages. It's very easy to do by setting the `style` CSS of the `<option>` tags within the `<select>` element.
+
+> **Note:** It's worth noting that you'll need to test this in your target browser and platform. This feature may or may not be supported for certain web browser and / or operating system combinations. This is especially true with the modern mobile device platforms.
+
+Please see the below example:
 
 ## Example
 
@@ -44,7 +48,7 @@ Color the background of items in a Dropdown box in your HTML pages. It's very ea
 <option style="background-color: beige;" value="#F5F5DC">Beige</option>
 </select>
 
-## Code
+## Source Code
 
 ```html
 <select>

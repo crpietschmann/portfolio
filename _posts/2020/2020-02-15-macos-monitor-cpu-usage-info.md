@@ -26,6 +26,8 @@ You can also click on the **Window** menu and select options to view the CPU Usa
 
 _The above screenshot shows these 3 windows tiled. You can toggle their view individually and position them where you want._
 
+<!-- ad -->
+
 <a id="maccpuid"></a>
 ## Intel MacCPUID
 

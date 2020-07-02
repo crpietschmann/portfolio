@@ -57,7 +57,7 @@ dict["Age"] = 42;
 dict.FirstName = "Chris";
 ```
 
-{% include embedad.html %}
+<!-- ad -->
 
 ## Iterating Key/Value Pairs
 

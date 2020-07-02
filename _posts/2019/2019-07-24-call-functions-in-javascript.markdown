@@ -43,7 +43,7 @@ sayHello("Chris", "Pietschmann", 42);
 
 This previous example accepts three parameters. The first two are string values, while the third parameter accepts a number.
 
-{% include embedad.html %}
+<!-- ad -->
 
 ## Call a JavaScript function with return value
 

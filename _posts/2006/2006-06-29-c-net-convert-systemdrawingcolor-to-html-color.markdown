@@ -5,7 +5,7 @@ title: "C# .NET: Convert System.Drawing.Color to HTML color"
 date: 2006-06-29 14:48:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["HTML", "C#", ".NET", "Color"]
 tags: ["C#", "vb.net"]
 redirect_from: 
   - /post/2006/06/29/C-NET-Convert-SystemDrawingColor-to-HTML-color.aspx
@@ -31,8 +31,13 @@ System.Drawing.ColorTranslator.ToHtml(c);
 Here is a small C# example of how to convert a `System.Drawing.Color` to the HTML color format (Hex value or HTML color name value) and back.
 
 ```csharp
-System.Drawing.Color c = System.Drawing.ColorTranslator.FromHtml("#F5F7F8");
-String strHtmlColor = System.Drawing.ColorTranslator.ToHtml(c);
+// Convert from HTML color
+System.Drawing.Color c = System.Drawing.ColorTranslator
+    .FromHtml("#F5F7F8");
+
+// Convert to HTML color
+String strHtmlColor = System.Drawing.ColorTranslator
+    .ToHtml(c);
 ```
 
 Hopefully this helps you with the color code conversions you are needing to perform within your applications.

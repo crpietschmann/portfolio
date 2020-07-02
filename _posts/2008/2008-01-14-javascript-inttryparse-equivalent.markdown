@@ -5,7 +5,7 @@ title: "JavaScript int.TryParse Equivalent"
 date: 2008-01-14 21:47:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/01/14/JavaScript-intTryParse-Equivalent.aspx
@@ -33,7 +33,9 @@ function TryParseInt(str,defaultValue) {
 }
 ```
 
-The first parameter of the TryParseInt method is the string you want to evaluate, and the second parameter is the default value to return if the string cannot be evaluated to an integer.
+<!-- ad -->
+
+The first parameter of the `TryParseInt` method is the string you want to evaluate, and the second parameter is the default value to return if the string cannot be evaluated to an integer.
 
 Here are some example usages:
 
@@ -50,3 +52,5 @@ alert(b);
 var c = TryParseInt("chris", null);
 alert(c);
 ```
+
+Happy coding!

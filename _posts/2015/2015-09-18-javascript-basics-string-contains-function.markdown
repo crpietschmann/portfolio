@@ -15,8 +15,9 @@ redirect_from:
 ---
 <!-- more -->
 
-In many of the server-side programming languages like C#, the String object has a "Contains" method that returns a boolean indicating if the string contains another specified string. JavaScript however does not have a ".contains" method. Fortunately, the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf" target="_blank">".indexOf" method in JavaScript</a> can easily be used to mimic or build your own ".contains" method.
-<h3>Simple JavaScript String Contains Method</h3>
+In many of the server-side programming languages like C#, the String object has a `Contains` method that returns a boolean indicating if the string contains another specified string. JavaScript however does not have a `.contains` method. Fortunately, the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf" target="_blank">`.indexOf` method in JavaScript</a> can easily be used to mimic or build your own `.contains` method.
+
+## Simple JavaScript String Contains Method
 
 Here's a simple implementation of a ".contains" function that is case sensitive:
 
@@ -37,10 +38,11 @@ var v1 = contains('one value', 'value');
 var v2 = contains('another value', 'two');
 ```
 
-{% include embedad.html %}
+Something to note about the above method is that it implements a <a href="/post/2008/10/14/JavaScript-Gem-Null-Coalescing-using-the-OR-Operator">JavaScript Null Coallesce</a> to prevent the method from throwing an exception if `null` or `undefined` are passed in. This may or may not be necessary for your use, but most times a false result is preferred over a JavaScript exception.
 
-Something to note about the above method is that it implements a <a href="/post/2008/10/14/JavaScript-Gem-Null-Coalescing-using-the-OR-Operator">JavaScript Null Coallesce</a> to prevent the method from throwing an exception if 'null' or 'undefined' are passed in. This may or may not be necessary for your use, but most times a false result is preferred over a JavaScript exception.
-<h3>Make it Ignore Case</h3>
+<!-- ad -->
+
+## Make it Ignore Case
 
 To make it ignore case you just need to modify the function to convert the passed in strings to be either all uppercase or all lowercase. Here's a modified version that does this:
 
@@ -55,3 +57,5 @@ function contains(value, searchFor)
 	return v.indexOf(v2) > -1;
 }
 ```
+
+Happy coding!

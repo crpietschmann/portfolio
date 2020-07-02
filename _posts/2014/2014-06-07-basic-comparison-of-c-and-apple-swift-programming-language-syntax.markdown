@@ -65,7 +65,7 @@ var firstName: String
 
 You may notice the lack of the semi-colon in Swift. Yes, Swift is a mostly C-style syntax without requiring semi-colons. Swift does support and require the use of semi-colons if you want to have multiple code statements on the same line.
 
-{% include embedad.html %}
+<!-- ad -->
 
 ## Variable Names and Unicode
 

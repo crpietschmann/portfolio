@@ -86,7 +86,7 @@ func sayHello(name: String, age: Int) -> String {
 
 As you can see the key difference in specifying parameters is that in Swift the Type is specified after the parameter name, and in C# it's before.
 
-{% include embedad.html %}
+<!-- ad -->
 
 ## Multiple Return Values
 
