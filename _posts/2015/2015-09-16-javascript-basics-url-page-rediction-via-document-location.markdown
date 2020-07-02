@@ -34,7 +34,7 @@ The behavior of this method of navigation is identical to a user clicking on an 
 A feature of "document.location" that isn't the most widely known is the ability to basically replace (or swap out) the current page with a new URL.
 
 ```js
-document.location.replace('http://buildazure.com')
+document.location.replace('http://build5nines.com')
 ```
 
 The behavior of this method of navigation is a bit different than the previous. Using the `document.location.replace` method will cause the browser to replace the current page with the new URL. This essentially navigates to the new URL while removing the previous URL from the browser history. After navigating using this method, the browser back button will no longer bring the user back to the previous URL.
