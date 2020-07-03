@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Categories
-permalink: /category/
+permalink: /category
 redirect_from:
+  - /category/
   - /categories
+  - /categories/
 ---
 
 
