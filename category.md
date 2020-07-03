@@ -14,7 +14,7 @@ redirect_from:
 {% for category in site.categories %}
     <li>
         <a href="#{{ category_name | slugize }}">
-        {% capture category_name %}{{ category | first }}{% endcapt
+        {% capture category_name %}{{ category | first }}{% endcapture %}
         </a>
     </li>
 {% endfor %}
