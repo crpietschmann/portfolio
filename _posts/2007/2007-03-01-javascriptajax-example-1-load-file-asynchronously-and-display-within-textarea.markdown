@@ -5,7 +5,7 @@ title: "JavaScript/AJAX Example 1 - Load File Asynchronously and Display within 
 date: 2007-03-01 16:52:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript", "AJAX"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/03/01/JavaScriptAJAX-Example-1-Load-File-Asynchronously-and-Display-within-TextArea.aspx

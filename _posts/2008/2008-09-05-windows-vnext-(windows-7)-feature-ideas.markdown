@@ -5,7 +5,7 @@ title: "Windows vNext (Windows 7?) Feature Ideas"
 date: 2008-09-05 10:42:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows 7"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/09/05/Windows-vNext-(Windows-7)-Feature-Ideas.aspx

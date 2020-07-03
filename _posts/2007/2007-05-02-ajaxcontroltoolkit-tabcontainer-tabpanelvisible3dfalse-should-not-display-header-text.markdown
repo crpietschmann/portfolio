@@ -5,7 +5,7 @@ title: "AjaxControlToolkit TabContainer: TabPanel.Visible='False' should not dis
 date: 2007-05-02 13:52:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "AJAX"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2007/05/02/AjaxControlToolkit-TabContainer-TabPanelVisible3dFalse-should-not-display-header-text.aspx

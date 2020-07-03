@@ -5,7 +5,7 @@ title: "Thinking about switching email to GMail for My Domain?"
 date: 2007-05-10 14:30:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/05/10/Thinking-about-switching-email-to-GMail-for-My-Domain.aspx

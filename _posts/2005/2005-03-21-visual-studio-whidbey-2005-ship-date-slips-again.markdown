@@ -5,7 +5,7 @@ title: "Visual Studio 'Whidbey' 2005 ship date slips again..."
 date: 2005-03-21 15:59:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/21/Visual-Studio-Whidbey-2005-ship-date-slips-again.aspx

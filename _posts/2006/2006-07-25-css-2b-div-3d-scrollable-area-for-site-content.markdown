@@ -5,7 +5,7 @@ title: "CSS + DIV = Scrollable area for site content"
 date: 2006-07-25 21:59:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["CSS"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/07/25/CSS-2b-DIV-3d-Scrollable-area-for-site-content.aspx

@@ -5,7 +5,7 @@ title: "LunchTimeCoder.ServiceMonitor v1.1 Released"
 date: 2007-08-03 01:16:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Open Source", ".NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/08/03/LunchTimeCoderServiceMonitor-v11-Released.aspx

@@ -5,7 +5,7 @@ title: "Wisconsin .NET User Group meeting tonight"
 date: 2004-08-10 20:37:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["User Group"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2004/08/10/Wisconsin-NET-User-Group-meeting-tonight.aspx

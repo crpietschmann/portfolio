@@ -5,7 +5,7 @@ title: "I have alot of .NET books..."
 date: 2005-06-18 18:29:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/06/18/I-have-alot-of-NET-books.aspx

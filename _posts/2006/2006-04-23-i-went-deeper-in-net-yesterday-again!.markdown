@@ -5,7 +5,7 @@ title: "I went Deeper in .NET yesterday again!"
 date: 2006-04-23 23:58:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Conference"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2006/04/23/I-went-Deeper-in-NET-yesterday-again!.aspx

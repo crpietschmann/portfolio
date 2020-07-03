@@ -5,7 +5,7 @@ title: "Giving your application a Plugin based architecture is easier than it so
 date: 2005-04-22 00:02:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology", ".NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/04/22/Giving-your-application-a-Plugin-based-architecture-is-easier-than-it-sounds.aspx

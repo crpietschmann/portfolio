@@ -5,7 +5,7 @@ title: "Virtual Earth 6: Align Mini Map in the Top Right corner of the Map"
 date: 2007-12-27 18:35:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/12/27/Virtual-Earth-Align-Mini-Map-in-the-Top-Right-corner-of-the-Map.aspx

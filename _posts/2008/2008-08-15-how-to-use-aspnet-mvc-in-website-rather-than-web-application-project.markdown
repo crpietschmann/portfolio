@@ -5,7 +5,7 @@ title: "How To Use ASP.NET MVC in Website rather than Web Application Project"
 date: 2008-08-15 16:15:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "MVC"]
 tags: ["asp.net", "ASP.NET MVC"]
 redirect_from: 
   - /post/2008/08/15/How-To-Use-ASPNET-MVC-in-Website-rather-than-Web-Application-Project.aspx

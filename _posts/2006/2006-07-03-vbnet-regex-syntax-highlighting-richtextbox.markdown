@@ -5,7 +5,7 @@ title: "VB.NET: RegEx Syntax Highlighting RichTextBox"
 date: 2006-07-03 17:08:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["VB.NET"]
 tags: ["vb.net"]
 redirect_from: 
   - /post/2006/07/03/VBNET-RegEx-Syntax-Highlighting-RichTextBox.aspx

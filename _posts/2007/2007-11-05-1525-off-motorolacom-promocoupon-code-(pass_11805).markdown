@@ -5,7 +5,7 @@ title: "15% Off Motorola.com Promo/Coupon Code (PASS_11805)"
 date: 2007-11-05 11:17:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/11/05/1525-Off-Motorolacom-PromoCoupon-Code-(PASS_11805).aspx

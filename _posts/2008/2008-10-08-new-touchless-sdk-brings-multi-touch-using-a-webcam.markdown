@@ -5,7 +5,7 @@ title: "New Touchless SDK brings Multi-Touch using a WebCam"
 date: 2008-10-08 13:25:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/10/08/New-Touchless-SDK-brings-Multi-Touch-using-a-WebCam.aspx

@@ -5,7 +5,7 @@ title: ".NET: How to Alias Namespaces and Data Types"
 date: 2007-11-26 12:08:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET"]
 tags: ["C#", "vb.net"]
 redirect_from: 
   - /post/2007/11/26/NET-How-to-Alias-Namespaces-and-Data-Types.aspx

@@ -5,7 +5,7 @@ title: "PietschSoft.VE v2.0.1 Released"
 date: 2007-03-15 01:19:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS", "Open Source"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/03/15/PietschSoftVE-v201-Released.aspx

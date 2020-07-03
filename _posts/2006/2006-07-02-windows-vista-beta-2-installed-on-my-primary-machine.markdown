@@ -5,7 +5,7 @@ title: "Windows Vista Beta 2: installed on my primary machine"
 date: 2006-07-02 12:31:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/07/02/Windows-Vista-Beta-2-installed-on-my-primary-machine.aspx

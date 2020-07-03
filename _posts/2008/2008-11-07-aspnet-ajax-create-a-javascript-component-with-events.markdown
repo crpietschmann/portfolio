@@ -5,7 +5,7 @@ title: "ASP.NET AJAX: Create a JavaScript Component with Events"
 date: 2008-11-07 21:07:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "AJAX", "JavaScript"]
 tags: ["asp.net", "JavaScript"]
 redirect_from: 
   - /post/2008/11/07/ASPNET-AJAX-Create-a-JavaScript-Component-with-Events.aspx

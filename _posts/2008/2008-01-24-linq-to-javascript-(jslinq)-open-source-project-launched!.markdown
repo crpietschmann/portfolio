@@ -5,7 +5,7 @@ title: "LINQ to JavaScript (JSLINQ) Open Source Project Launched!"
 date: 2008-01-24 15:00:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["LINQ", "JavaScript", "Open Source", "jslinq"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/01/24/LINQ-to-JavaScript-(JSLINQ)-Open-Source-Project-Launched!.aspx

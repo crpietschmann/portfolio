@@ -5,7 +5,7 @@ title: "Dec. '07: Are the latest Vista updates full of error? Or is it just me?"
 date: 2007-12-18 13:40:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/12/18/Dec-07-Are-the-latest-Vista-updates-full-of-error-Or-is-it-just-me.aspx

@@ -5,7 +5,7 @@ title: "Not All Software Developers Need To Be Graphic Designers"
 date: 2007-11-06 18:40:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Career"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/11/06/Not-All-Software-Developers-Need-To-Be-Graphic-Designers.aspx

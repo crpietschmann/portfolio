@@ -5,7 +5,7 @@ title: "ASP.NET AJAX: Extensions to standard JavaScript base types"
 date: 2007-08-05 00:30:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "AJAX", "JavaScript"]
 tags: ["asp.net", "JavaScript"]
 redirect_from: 
   - /post/2007/08/05/ASPNET-AJAX-Extensions-to-standard-JavaScript-base-types.aspx

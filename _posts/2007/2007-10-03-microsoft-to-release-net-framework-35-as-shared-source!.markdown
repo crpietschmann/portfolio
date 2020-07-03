@@ -5,7 +5,7 @@ title: "Microsoft to release .NET Framework 3.5 as Shared Source!"
 date: 2007-10-03 17:35:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET"]
 tags: ["asp.net", "C#", "vb.net"]
 redirect_from: 
   - /post/2007/10/03/Microsoft-to-release-NET-Framework-35-as-Shared-Source!.aspx

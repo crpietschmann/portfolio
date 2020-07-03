@@ -5,7 +5,7 @@ title: "Internet Explorer 6, wont you ever die?!"
 date: 2008-12-10 16:15:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/12/10/Internet-Explorer-62c-wont-you-ever-die!.aspx

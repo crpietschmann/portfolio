@@ -5,7 +5,7 @@ title: "Busby SEO Test"
 date: 2008-12-03 10:01:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/12/03/Busby-SEO-Test.aspx

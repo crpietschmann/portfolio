@@ -5,7 +5,7 @@ title: "I recieved my MSDN subscription today!!"
 date: 2006-05-09 19:17:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/05/09/I-recieved-my-MSDN-subscription-today!!.aspx

@@ -5,7 +5,7 @@ title: "A Couple VB.NET Language Tips for C# Developers"
 date: 2008-10-31 00:27:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["VB.NET", "C#", ".NET"]
 tags: ["C#", "vb.net"]
 redirect_from: 
   - /post/2008/10/31/A-Couple-VBNET-Language-Tips-for-CSharp-Developers.aspx

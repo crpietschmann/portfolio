@@ -5,7 +5,7 @@ title: "New Web Service that exposes MSDN content for your consuming needs!"
 date: 2006-07-21 22:29:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/07/21/New-Web-Service-that-exposes-MSDN-content-for-your-consuming-needs!.aspx

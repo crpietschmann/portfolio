@@ -5,7 +5,7 @@ title: "Web.Maps.VE 2.0 Released - ASP.NET Virtual Earth Mapping Server Control"
 date: 2008-06-17 21:29:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Simplovation", "Virtual Earth", "ASP.NET", "GIS"]
 tags: ["General", "Bing Maps"]
 redirect_from: 
   - /post/2008/06/17/WebMapsVE-20-Released-ASPNET-Virtual-Earth-Mapping-Server-Control.aspx

@@ -5,7 +5,7 @@ title: "DotNetKicks is 2 years old, today! Way to go!"
 date: 2008-01-08 21:43:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/01/08/DotNetKicks-is-2-years-old-today!-Way-to-go!.aspx

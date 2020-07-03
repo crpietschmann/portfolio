@@ -5,7 +5,7 @@ title: "Calculate Distance Between Geocodes in C# and JavaScript"
 date: 2008-02-01 23:58:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["GIS", "C#", "JavaScript"]
 tags: ["C#", "JavaScript"]
 redirect_from: 
   - /post/2008/02/01/Calculate-Distance-Between-Geocodes-in-C-and-JavaScript.aspx

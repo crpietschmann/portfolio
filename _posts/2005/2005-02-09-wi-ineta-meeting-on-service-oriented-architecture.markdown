@@ -5,7 +5,7 @@ title: "WI-INETA Meeting on Service Oriented Architecture"
 date: 2005-02-09 11:43:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["User Group"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2005/02/09/WI-INETA-Meeting-on-Service-Oriented-Architecture.aspx

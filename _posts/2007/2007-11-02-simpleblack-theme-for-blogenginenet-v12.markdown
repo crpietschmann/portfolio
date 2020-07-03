@@ -5,7 +5,7 @@ title: "SimpleBlack Theme for BlogEngine.NET v1.2"
 date: 2007-11-02 21:15:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["BlogEngine.NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/11/02/SimpleBlack-Theme-for-BlogEngineNET-v12.aspx

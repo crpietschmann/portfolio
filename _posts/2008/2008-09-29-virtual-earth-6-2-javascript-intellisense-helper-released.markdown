@@ -5,7 +5,7 @@ title: "Virtual Earth 6.2 (Bing Maps) JavaScript Intellisense Helper Released"
 date: 2008-09-29 20:30:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/09/29/Virtual-Earth-6-2-JavaScript-Intellisense-Helper-Released.aspx

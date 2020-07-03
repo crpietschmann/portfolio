@@ -5,7 +5,7 @@ title: "My Blog content is now licensed under the Creative Commons Attribution L
 date: 2007-12-04 12:09:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/12/04/My-Blog-content-is-now-licensed-under-the-Creative-Commons-Attribution-License.aspx

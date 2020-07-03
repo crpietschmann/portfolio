@@ -5,7 +5,7 @@ title: "Going Deep into the Windows NT Kernel with Dave Probert"
 date: 2005-04-06 20:39:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Podcast"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/04/06/Going-Deep-into-the-Windows-NT-Kernel-with-Dave-Probert.aspx

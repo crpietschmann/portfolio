@@ -5,7 +5,7 @@ title: "Apple's iCal implemented in .NET/Mono"
 date: 2006-07-24 14:36:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/07/24/Apples-iCal-implemented-in-NETMono.aspx

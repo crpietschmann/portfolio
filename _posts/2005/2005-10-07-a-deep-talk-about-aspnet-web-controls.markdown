@@ -5,7 +5,7 @@ title: "A deep talk about ASP.NET Web Controls"
 date: 2005-10-07 10:31:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Podcast"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2005/10/07/A-deep-talk-about-ASPNET-Web-Controls.aspx

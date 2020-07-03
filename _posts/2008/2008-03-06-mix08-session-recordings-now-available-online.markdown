@@ -5,7 +5,7 @@ title: "MIX'08 Session Recordings Now Available Online"
 date: 2008-03-06 10:42:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Conference"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/03/06/MIX08-Session-Recordings-Now-Available-Online.aspx

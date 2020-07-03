@@ -5,7 +5,7 @@ title: "And, the Community Coding Contest Winners Are..."
 date: 2008-10-16 11:57:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Community"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/10/16/And2c-the-Community-Coding-Contest-Winners-Are.aspx

@@ -5,7 +5,7 @@ title: "PHP is easy to learn."
 date: 2005-09-21 11:41:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/09/21/PHP-is-easy-to-learn.aspx

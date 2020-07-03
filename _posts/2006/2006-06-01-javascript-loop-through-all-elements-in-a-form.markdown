@@ -5,7 +5,7 @@ title: "JavaScript: Loop through all elements in a form"
 date: 2006-06-01 09:02:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2006/06/01/JavaScript-Loop-through-all-elements-in-a-form.aspx

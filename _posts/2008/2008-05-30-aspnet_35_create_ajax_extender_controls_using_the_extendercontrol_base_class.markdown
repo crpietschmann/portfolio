@@ -5,7 +5,7 @@ title: "ASP.NET 3.5: Create AJAX Extender Controls using the ExtenderControl bas
 date: 2008-05-30 23:22:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "AJAX"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2008/05/30/ASPNET_35_Create_AJAX_Extender_Controls_using_the_ExtenderControl_base_class.aspx

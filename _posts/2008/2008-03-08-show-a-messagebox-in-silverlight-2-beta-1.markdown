@@ -5,7 +5,7 @@ title: "Show a MessageBox in Silverlight 2 Beta 1"
 date: 2008-03-08 18:13:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverlight"]
 tags: ["Silverlight"]
 redirect_from: 
   - /post/2008/03/08/Show-a-MessageBox-in-Silverlight-2-Beta-1.aspx

@@ -5,7 +5,7 @@ title: "Move.com hires wife of Google VP of Marketing"
 date: 2007-05-01 20:39:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/05/01/Movecom-hires-wife-of-Google-VP-of-Marketing.aspx

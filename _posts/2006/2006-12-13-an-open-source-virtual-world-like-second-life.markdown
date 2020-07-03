@@ -5,7 +5,7 @@ title: "An Open Source Virtual World like Second Life"
 date: 2006-12-13 14:20:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/12/13/An-Open-Source-Virtual-World-like-Second-Life.aspx

@@ -5,7 +5,7 @@ title: "May 10th WI-INETA Meeting on Design Patterns in .NET"
 date: 2005-04-22 00:15:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["User Group"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2005/04/22/May-10th-WI-INETA-Meeting-on-Design-Patterns-in-NET.aspx

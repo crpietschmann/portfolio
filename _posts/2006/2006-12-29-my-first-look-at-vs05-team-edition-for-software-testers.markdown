@@ -5,7 +5,7 @@ title: "My first look at VS'05 Team Edition for Software Testers"
 date: 2006-12-29 22:34:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/12/29/My-first-look-at-VS05-Team-Edition-for-Software-Testers.aspx

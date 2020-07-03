@@ -5,7 +5,7 @@ title: "Virtual Earth: Dynamically Load InfoBox Using ASP.NET AJAX"
 date: 2008-01-24 12:13:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "ASP.NET", "AJAX"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/01/24/Virtual-Earth-Dynamically-Load-InfoBox-Using-ASPNET-AJAX.aspx

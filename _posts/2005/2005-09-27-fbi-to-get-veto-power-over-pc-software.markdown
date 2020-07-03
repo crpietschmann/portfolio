@@ -5,7 +5,7 @@ title: "FBI to get veto power over PC software?"
 date: 2005-09-27 18:22:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/09/27/FBI-to-get-veto-power-over-PC-software.aspx

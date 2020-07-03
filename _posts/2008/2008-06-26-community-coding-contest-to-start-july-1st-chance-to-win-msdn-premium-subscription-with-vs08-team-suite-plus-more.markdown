@@ -5,7 +5,7 @@ title: "Community Coding Contest to start July 1st - Chance to Win MSDN Premium 
 date: 2008-06-26 16:04:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Community"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/06/26/Community-Coding-Contest-to-start-July-1st-Chance-to-Win-MSDN-Premium-Subscription-with-VS08-Team-Suite-plus-more.aspx

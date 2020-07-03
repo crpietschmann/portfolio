@@ -5,7 +5,7 @@ title: "Official Release of Simplovation and Web.Maps.VE!"
 date: 2007-10-15 15:28:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Simplovation", "Virtual Earth", "GIS"]
 tags: ["General", "Bing Maps"]
 redirect_from: 
   - /post/2007/10/15/Official-Release-of-Simplovation-and-WebMapsVE!.aspx

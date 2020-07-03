@@ -5,7 +5,7 @@ title: "ASP.NET Atlas is full of JavaScript goodness"
 date: 2006-06-21 09:00:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "JavaScript"]
 tags: ["asp.net", "JavaScript"]
 redirect_from: 
   - /post/2006/06/21/ASPNET-Atlas-is-full-of-JavaScript-goodness.aspx

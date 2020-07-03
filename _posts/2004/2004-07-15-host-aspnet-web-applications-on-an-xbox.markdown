@@ -5,7 +5,7 @@ title: "Host ASP.NET Web Applications on an XBox"
 date: 2004-07-15 23:16:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "XBox"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/07/15/Host-ASPNET-Web-Applications-on-an-XBox.aspx

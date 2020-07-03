@@ -5,7 +5,7 @@ title: "12/2007: Code that I've Blogged over the last 6 months"
 date: 2007-12-10 11:48:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General", "General"]
 redirect_from: 
   - /post/2007/12/10/122007-Code-that-Ive-Blogged-over-the-last-6-months.aspx

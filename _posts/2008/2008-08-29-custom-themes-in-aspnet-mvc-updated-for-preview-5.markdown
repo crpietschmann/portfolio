@@ -5,7 +5,7 @@ title: "Custom Themes in ASP.NET MVC Updated for Preview 5"
 date: 2008-08-29 18:49:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "MVC"]
 tags: ["ASP.NET MVC"]
 redirect_from: 
   - /post/2008/08/29/Custom-Themes-in-ASPNET-MVC-Updated-for-Preview-5.aspx

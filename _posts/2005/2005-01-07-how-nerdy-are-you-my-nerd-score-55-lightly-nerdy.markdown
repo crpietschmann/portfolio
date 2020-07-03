@@ -5,7 +5,7 @@ title: "How Nerdy are you? :: My Nerd Score: 55 - Lightly Nerdy"
 date: 2005-01-07 19:45:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/01/07/How-Nerdy-are-you-My-Nerd-Score-55-Lightly-Nerdy.aspx

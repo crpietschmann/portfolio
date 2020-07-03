@@ -5,7 +5,7 @@ title: "LINQ to JavaScript: Update Release v1.01 With More Functionality"
 date: 2008-01-30 17:44:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["LINQ", "JavaScript", "jslinq", "Open Source"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/01/30/LINQ-to-JavaScript-Update-Release-v101-With-More-Functionality.aspx

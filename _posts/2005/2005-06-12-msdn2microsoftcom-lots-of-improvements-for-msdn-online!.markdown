@@ -5,7 +5,7 @@ title: "msdn2.microsoft.com - Lots of improvements for MSDN Online!"
 date: 2005-06-12 23:44:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Community"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/06/12/msdn2microsoftcom-Lots-of-improvements-for-MSDN-Online!.aspx

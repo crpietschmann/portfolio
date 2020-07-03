@@ -5,7 +5,7 @@ title: "Community Coding Contest Voting Has Begun! Go Cast Your Vote!"
 date: 2008-10-02 12:24:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Community"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/10/02/Community-Coding-Contest-Voting-Has-Begun!-Go-Cast-Your-Vote!.aspx

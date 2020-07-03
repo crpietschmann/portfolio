@@ -5,7 +5,7 @@ title: "Vista Experience Update: Vista Sidebar Gadgets"
 date: 2006-12-03 15:56:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/12/03/Vista-Experience-Update-Vista-Sidebar-Gadgets.aspx

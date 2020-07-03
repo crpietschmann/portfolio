@@ -5,7 +5,7 @@ title: "DNR: Building Communities at Dallas TechFest"
 date: 2008-05-28 15:48:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Community"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2008/05/28/DNR-Building-Communities-at-Dallas-TechFest.aspx

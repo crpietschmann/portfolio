@@ -5,7 +5,7 @@ title: "ASP.NET 2.0: URL Mapping with RegEx Support"
 date: 2005-11-12 13:36:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/11/12/ASPNET-20-URL-Mapping-with-RegEx-Support.aspx

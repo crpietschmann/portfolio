@@ -5,7 +5,7 @@ title: "JavaScript: How to get value from nested form in iframe?"
 date: 2004-08-12 23:12:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript", "HTML"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/12/JavaScript-How-to-get-value-from-nested-form-in-iframe.aspx

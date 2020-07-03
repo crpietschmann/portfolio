@@ -5,7 +5,7 @@ title: "How To Setup Custom Theme Support In ASP.NET MVC Preview 4 using a Custo
 date: 2008-08-17 00:09:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "MVC"]
 tags: ["asp.net", "ASP.NET MVC"]
 redirect_from: 
   - /post/2008/08/17/How-To-Setup-Custom-Theme-Support-In-ASPNET-MVC-using-a-Custom-ViewEngine.aspx

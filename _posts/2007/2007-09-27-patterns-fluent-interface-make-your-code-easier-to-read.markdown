@@ -5,7 +5,7 @@ title: "Patterns: Fluent Interface - make your code easier to read"
 date: 2007-09-27 12:32:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/09/27/Patterns-Fluent-Interface-make-your-code-easier-to-read.aspx

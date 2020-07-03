@@ -5,7 +5,7 @@ title: "PietschSoft.VE: Is it Dead? What about Ajax and Virtual Earth v5?"
 date: 2007-05-09 09:12:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/05/09/PietschSoftVE-Is-it-Dead-What-about-Ajax-and-Virtual-Earth-v5.aspx

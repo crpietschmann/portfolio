@@ -5,7 +5,7 @@ title: ".NET Community: Learn The Current State Of The Platform Before Deciding 
 date: 2008-03-27 10:51:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Community", ".NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/03/27/dotNET-Community-Learn-The-Current-State-Of-The-Platform-Before-Deciding-On-Its-Future.aspx

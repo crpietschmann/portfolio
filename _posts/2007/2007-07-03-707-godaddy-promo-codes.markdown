@@ -5,7 +5,7 @@ title: "7/07: Godaddy Promo Codes"
 date: 2007-07-03 14:20:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/07/03/707-Godaddy-Promo-Codes.aspx

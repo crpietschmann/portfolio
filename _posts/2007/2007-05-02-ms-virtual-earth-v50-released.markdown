@@ -5,7 +5,7 @@ title: "MS Virtual Earth v5.0 Released"
 date: 2007-05-02 00:08:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/05/02/MS-Virtual-Earth-v50-Released.aspx

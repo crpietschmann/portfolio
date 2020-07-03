@@ -5,7 +5,7 @@ title: "Cool Utility to get CPU/Fan Temperatures of you DELL Laptop/Notebook"
 date: 2004-07-11 16:58:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Hardware", "DELL"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/07/11/Cool-Utility-to-get-CPUFan-Temperatures-of-you-DELL-LaptopNotebook.aspx

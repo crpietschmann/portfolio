@@ -5,7 +5,7 @@ title: "Vista Sidebar Gadget for Pandora Radio"
 date: 2008-12-15 22:06:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/12/15/Vista-Sidebar-Gadget-for-Pandora-Radio.aspx

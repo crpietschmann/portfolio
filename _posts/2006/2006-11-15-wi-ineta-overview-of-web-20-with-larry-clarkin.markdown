@@ -5,7 +5,7 @@ title: "WI-INETA: Overview of Web 2.0 with Larry Clarkin"
 date: 2006-11-15 01:37:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["User Group"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2006/11/15/WI-INETA-Overview-of-Web-20-with-Larry-Clarkin.aspx

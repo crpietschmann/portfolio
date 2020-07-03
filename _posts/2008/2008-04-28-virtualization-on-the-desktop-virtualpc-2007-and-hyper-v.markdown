@@ -5,7 +5,7 @@ title: "Virtualization on the Desktop: VirtualPC 2007 and Hyper-V"
 date: 2008-04-28 17:11:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Hyper-V", "Virtualization"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/04/28/Virtualization-on-the-Desktop-VirtualPC-2007-and-Hyper-V.aspx

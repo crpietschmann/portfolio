@@ -5,7 +5,7 @@ title: "T-SQL: Join Tables by a Field that contains a delimited string"
 date: 2005-12-09 18:16:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["SQL"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/12/09/T-SQL-Join-Tables-by-a-Field-that-contains-a-delimited-string.aspx

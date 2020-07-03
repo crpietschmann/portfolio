@@ -5,7 +5,7 @@ title: "HVD: Holographic Versatile Disc"
 date: 2004-08-24 13:46:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/24/HVD-Holographic-Versatile-Disc.aspx

@@ -5,7 +5,7 @@ title: "'Bye Bye Mr. CIO Guy' Song..."
 date: 2004-07-01 19:54:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Podcast"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/07/01/Bye-Bye-Mr-CIO-Guy-Song.aspx

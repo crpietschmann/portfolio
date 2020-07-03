@@ -5,7 +5,7 @@ title: "Silverlight: Anatomy of an .XAP file"
 date: 2008-03-05 13:24:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverlight"]
 tags: ["Silverlight"]
 redirect_from: 
   - /post/2008/03/05/Silverlight-Anatomy-of-an-XAP-file.aspx

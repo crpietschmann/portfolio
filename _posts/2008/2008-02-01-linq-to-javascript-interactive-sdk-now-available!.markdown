@@ -5,7 +5,7 @@ title: "LINQ to JavaScript Interactive SDK Now Available!"
 date: 2008-02-01 21:50:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["jslinq", "JavaScript", "LINQ"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/02/01/LINQ-to-JavaScript-Interactive-SDK-Now-Available!.aspx

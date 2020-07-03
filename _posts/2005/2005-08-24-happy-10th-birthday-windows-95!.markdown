@@ -5,7 +5,7 @@ title: "Happy 10th birthday Windows 95!"
 date: 2005-08-24 13:29:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows 95", "Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/08/24/Happy-10th-birthday-Windows-95!.aspx

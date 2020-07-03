@@ -5,7 +5,7 @@ title: ".NET 3.5 SP1: DataContractJsonSerializer Bug"
 date: 2008-08-27 16:47:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET", "WCF"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2008/08/27/NET-35-SP1-DataContractJsonSerializer-Bug.aspx

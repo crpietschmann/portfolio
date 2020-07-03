@@ -5,7 +5,7 @@ title: "Hyper-V Compatibility Check Tool for AMD Processors"
 date: 2008-05-16 10:44:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Hyper-V", "AMD"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/05/16/Hyper-V-Compatibility-Check-Tool-for-AMD-Processors.aspx

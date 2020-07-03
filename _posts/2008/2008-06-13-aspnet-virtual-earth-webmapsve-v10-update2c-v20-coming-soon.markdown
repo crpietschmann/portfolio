@@ -5,7 +5,7 @@ title: "Bing Maps ASP.NET: Web.Maps.VE v1.0 Update, v2.0 Coming Soon"
 date: 2008-06-13 17:49:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "ASP.NET", "Simplovation"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/06/13/ASPNET-Virtual-Earth-WebMapsVE-v10-Update2c-v20-Coming-Soon.aspx

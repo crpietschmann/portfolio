@@ -5,7 +5,7 @@ title: "IIS7: Better Url Mapping support, well not yet..."
 date: 2006-07-20 22:40:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["IIS", "ASP.NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/07/20/IIS7-Better-Url-Mapping-support-well-not-yet.aspx

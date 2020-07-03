@@ -5,7 +5,7 @@ title: "Software Development Meme - How I got started programming"
 date: 2008-06-10 17:29:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Career", "Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/06/10/Software_Development_Meme_How_I_got_started_programming.aspx

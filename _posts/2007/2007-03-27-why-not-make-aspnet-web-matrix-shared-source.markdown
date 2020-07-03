@@ -5,7 +5,7 @@ title: "Why not make ASP.NET Web Matrix shared source?"
 date: 2007-03-27 00:44:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/03/27/Why-not-make-ASPNET-Web-Matrix-shared-source.aspx

@@ -5,7 +5,7 @@ title: "Introduction to LINQ"
 date: 2008-01-24 02:00:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["LINQ", ".NET"]
 tags: ["vb.net"]
 redirect_from: 
   - /post/2008/01/24/Introduction-to-LINQ.aspx

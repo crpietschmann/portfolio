@@ -5,7 +5,7 @@ title: "Virtual Earth: Center Map to Shape during OnClick Event"
 date: 2008-04-24 22:02:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/04/24/Virtual-Earth-Center-Map-to-Shape-during-OnClick-Event.aspx

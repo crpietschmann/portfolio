@@ -5,7 +5,7 @@ title: "Things I learned about Software WHILE NOT in College"
 date: 2007-06-30 14:44:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Career"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/06/30/Things-I-learned-about-Software-WHILE-NOT-in-College.aspx

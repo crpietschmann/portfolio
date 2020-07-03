@@ -5,7 +5,7 @@ title: "Getting Started with Virtual Earth and ASP.NET AJAX"
 date: 2008-01-24 03:40:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "ASP.NET", "AJAX"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/01/24/Getting-Started-with-Virtual-Earth-and-ASPNET-AJAX.aspx

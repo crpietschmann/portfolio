@@ -5,7 +5,7 @@ title: "Are you ready to go Deeper in .NET!?"
 date: 2006-03-28 23:35:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Conference"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2006/03/28/Are-you-ready-to-go-Deeper-in-NET!.aspx

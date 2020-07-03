@@ -5,7 +5,7 @@ title: "Apple iPhone has been confirmed, but functionaly similar to Windows Mobi
 date: 2007-01-09 14:36:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Apple", "Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/01/09/Apple-iPhone-has-been-confirmed-but-functionaly-similar-to-Windows-Mobile-Phone.aspx

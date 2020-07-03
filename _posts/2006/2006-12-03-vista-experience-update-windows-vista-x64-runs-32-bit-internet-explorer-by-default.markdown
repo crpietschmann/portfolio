@@ -5,7 +5,7 @@ title: "Vista Experience Update: Windows Vista x64 runs 32-bit Internet Explorer
 date: 2006-12-03 11:59:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/12/03/Vista-Experience-Update-Windows-Vista-x64-runs-32-bit-Internet-Explorer-by-Default.aspx

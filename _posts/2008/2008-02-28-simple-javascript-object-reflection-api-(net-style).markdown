@@ -5,7 +5,7 @@ title: "Simple JavaScript Object Reflection API (.NET Style)"
 date: 2008-02-28 19:17:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/02/28/Simple-JavaScript-Object-Reflection-API-(NET-Style).aspx

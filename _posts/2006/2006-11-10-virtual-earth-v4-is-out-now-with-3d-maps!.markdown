@@ -5,7 +5,7 @@ title: "Virtual Earth v4 is out now with 3D maps!"
 date: 2006-11-10 12:54:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2006/11/10/Virtual-Earth-v4-is-out-now-with-3D-maps!.aspx

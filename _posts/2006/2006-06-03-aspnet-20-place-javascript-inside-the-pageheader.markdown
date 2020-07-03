@@ -5,7 +5,7 @@ title: "ASP.NET 2.0: Place JavaScript inside the Page.Header"
 date: 2006-06-03 00:38:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript", "ASP.NET"]
 tags: ["asp.net", "JavaScript"]
 redirect_from: 
   - /post/2006/06/03/ASPNET-20-Place-JavaScript-inside-the-PageHeader.aspx

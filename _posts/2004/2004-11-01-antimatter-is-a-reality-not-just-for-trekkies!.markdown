@@ -5,7 +5,7 @@ title: "AntiMatter is a reality: not just for Trekkies!"
 date: 2004-11-01 19:46:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/11/01/AntiMatter-is-a-reality-not-just-for-Trekkies!.aspx

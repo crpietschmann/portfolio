@@ -5,7 +5,7 @@ title: "Merry Christmas, 2004!!"
 date: 2004-12-25 14:41:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/12/25/Merry-Christmas-2004!!.aspx

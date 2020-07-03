@@ -5,7 +5,7 @@ title: "LunchTimeCoder Day 2: Moleskine and not much code"
 date: 2007-07-05 15:02:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/07/05/LunchTimeCoder-Day-2-Moleskine-and-not-much-code.aspx

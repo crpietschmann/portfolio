@@ -5,7 +5,7 @@ title: "WI-INETA Event: Deeper in .NET 2005!"
 date: 2005-02-28 23:28:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Conference"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2005/02/28/WI-INETA-Event-Deeper-in-NET-2005!.aspx

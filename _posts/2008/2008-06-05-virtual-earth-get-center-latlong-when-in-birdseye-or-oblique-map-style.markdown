@@ -5,7 +5,7 @@ title: "Virtual Earth: Get Center Lat/Long When In Birdseye or Oblique Map Style
 date: 2008-06-05 19:11:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/06/05/Virtual-Earth-Get-Center-LatLong-When-In-Birdseye-or-Oblique-Map-Style.aspx

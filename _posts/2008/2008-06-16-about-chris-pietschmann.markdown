@@ -5,7 +5,7 @@ title: "About Me"
 date: 2008-06-16 16:22:51 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: []
 redirect_from: 
   - /page/About-Chris-Pietschmann.aspx

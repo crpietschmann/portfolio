@@ -5,7 +5,7 @@ title: "Paint.NET: How can I edit Icons and Cursors?"
 date: 2007-07-19 10:48:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/07/19/PaintNET-How-can-I-edit-Icons-and-Cursors.aspx

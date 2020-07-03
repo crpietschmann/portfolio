@@ -5,7 +5,7 @@ title: "ASP.NET: The secret App_Offline.htm file"
 date: 2006-04-03 21:50:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2006/04/03/ASPNET-20-The-secret-App_Offlinehtm-file.aspx

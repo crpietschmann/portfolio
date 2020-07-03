@@ -5,7 +5,7 @@ title: "Web.Maps.VE - Virtual Earth Without JavaScript, plus .NET 3.5 Support ju
 date: 2007-12-28 17:36:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "Simplovation", "JavaScript", ".NET", "GIS"]
 tags: ["General", "Bing Maps", "asp.net"]
 redirect_from: 
   - /post/2007/12/28/WebMapsVE-Virtual-Earth-Without-JavaScript2c-plus-NET-35-Support-just-added!.aspx

@@ -5,7 +5,7 @@ title: ".NET Framework - Check if Windows booted in Normal or Safe Mode"
 date: 2005-12-09 14:13:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET", "VB.NET"]
 tags: ["C#", "vb.net"]
 redirect_from: 
   - /post/2005/12/09/NET-Framework-Check-if-Windows-booted-in-Normal-or-Safe-Mode.aspx

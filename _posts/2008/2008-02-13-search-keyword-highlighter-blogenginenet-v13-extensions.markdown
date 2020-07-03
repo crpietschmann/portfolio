@@ -5,7 +5,7 @@ title: "Search Keyword Highlighter BlogEngine.NET v1.3 Extension"
 date: 2008-02-13 18:36:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog", "BlogEngine.NET"]
 tags: ["C#"]
 redirect_from: 
   - /post/2008/02/13/Search-Keyword-Highlighter-BlogEngineNET-v13-Extensions.aspx

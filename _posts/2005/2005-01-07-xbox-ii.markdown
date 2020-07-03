@@ -5,7 +5,7 @@ title: "XBox II..."
 date: 2005-01-07 19:52:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["XBox"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/01/07/XBox-II.aspx

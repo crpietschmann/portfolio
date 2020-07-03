@@ -5,7 +5,7 @@ title: "Scott Guthrie interviewed on Hanselminutes"
 date: 2006-10-18 12:02:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Podcast"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2006/10/18/Scott-Guthrie-interviewed-on-Hanselminutes.aspx

@@ -5,7 +5,7 @@ title: "Stupid Blog is broke again..."
 date: 2005-03-10 16:59:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/10/Stupid-Blog-is-broke-again.aspx

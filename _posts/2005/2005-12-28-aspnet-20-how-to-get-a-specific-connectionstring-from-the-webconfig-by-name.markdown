@@ -5,7 +5,7 @@ title: "ASP.NET: How to get a specific ConnectionString from the Web.Config by n
 date: 2005-12-28 23:18:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2005/12/28/ASPNET-20-How-to-get-a-specific-ConnectionString-from-the-WebConfig-by-name.aspx

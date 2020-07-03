@@ -5,7 +5,7 @@ title: "Four ways to get your hands on Visual Studio 2005 Beta 2!!"
 date: 2005-04-22 00:31:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/04/22/Four-ways-to-get-your-hands-on-Visual-Studio-2005-Beta-2!!.aspx

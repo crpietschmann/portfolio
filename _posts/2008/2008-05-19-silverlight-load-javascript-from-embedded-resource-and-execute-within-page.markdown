@@ -5,7 +5,7 @@ title: "Silverlight: Load JavaScript from Embedded Resource and Execute Within P
 date: 2008-05-19 20:32:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverlight", "JavaScript"]
 tags: ["Silverlight"]
 redirect_from: 
   - /post/2008/05/19/Silverlight-Load-JavaScript-from-Embedded-Resource-and-Execute-Within-Page.aspx

@@ -5,7 +5,7 @@ title: "Scrape Geocodes from Google Maps w/ C#"
 date: 2006-06-13 09:00:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["GIS", "C#"]
 tags: ["C#"]
 redirect_from: 
   - /post/2006/06/13/Scrape-Geocodes-from-Google-Maps-w-C.aspx

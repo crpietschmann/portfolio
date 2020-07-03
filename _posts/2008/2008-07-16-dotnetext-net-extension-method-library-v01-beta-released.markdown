@@ -5,7 +5,7 @@ title: "dotNetExt - .NET Extension Method Library - v0.1 Beta Released"
 date: 2008-07-16 18:50:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET", "Open Source"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/07/16/dotNetExt-NET-Extension-Method-Library-v01-Beta-Released.aspx

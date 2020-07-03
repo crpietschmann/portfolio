@@ -5,7 +5,7 @@ title: "Implementing Namespaces in Ruby using Nested Modules"
 date: 2008-11-02 18:48:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Ruby"]
 tags: ["Ruby"]
 redirect_from: 
   - /post/2008/11/02/Implementing-Namespaces-in-Ruby-using-Nested-Modules.aspx

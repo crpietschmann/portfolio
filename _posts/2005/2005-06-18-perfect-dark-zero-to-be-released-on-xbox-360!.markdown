@@ -5,7 +5,7 @@ title: "Perfect Dark Zero to be released on XBox 360!"
 date: 2005-06-18 17:37:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["XBox"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/06/18/Perfect-Dark-Zero-to-be-released-on-XBox-360!.aspx

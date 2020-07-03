@@ -5,7 +5,7 @@ title: "7/6/2007: Yahoo is down?"
 date: 2007-07-06 11:02:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/07/06/762007-Yahoo-is-down.aspx

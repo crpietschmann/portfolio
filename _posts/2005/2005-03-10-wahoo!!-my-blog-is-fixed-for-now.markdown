@@ -5,7 +5,7 @@ title: "Wahoo!! My blog is fixed for now..."
 date: 2005-03-10 00:54:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/10/Wahoo!!-My-blog-is-fixed-for-now.aspx

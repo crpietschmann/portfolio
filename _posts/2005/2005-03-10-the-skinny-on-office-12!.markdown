@@ -5,7 +5,7 @@ title: "The skinny on Office 12!"
 date: 2005-03-10 00:55:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/10/The-skinny-on-Office-12!.aspx

@@ -5,7 +5,7 @@ title: "Spring is finally here, and the Thunderstorms have begun..."
 date: 2007-03-21 17:59:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/03/21/Spring-is-finally-here-and-the-Thunderstorms-have-begun.aspx

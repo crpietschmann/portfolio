@@ -5,7 +5,7 @@ title: "JavaScript: Mixing OOP and Event Driven Programming"
 date: 2008-11-04 22:53:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/11/04/JavaScript-Mixing-OOP-and-Event-Driven-Programming.aspx

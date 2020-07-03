@@ -5,7 +5,7 @@ title: "Wisonsin .NET Users Group website - Some enhancements may be coming..."
 date: 2006-11-16 15:07:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["User Group"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2006/11/16/Wisonsin-NET-Users-Group-website-Some-enhancements-may-be-coming.aspx

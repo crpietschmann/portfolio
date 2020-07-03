@@ -5,7 +5,7 @@ title: "Virtual Earth + ASP.NET AJAX Now Fixed in Safari"
 date: 2008-05-17 13:13:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "ASP.NET", "AJAX", "Safari"]
 tags: ["asp.net", "Bing Maps"]
 redirect_from: 
   - /post/2008/05/17/Virtual-Earth-2b-ASPNET-AJAX-Now-Fixed-in-Safari.aspx

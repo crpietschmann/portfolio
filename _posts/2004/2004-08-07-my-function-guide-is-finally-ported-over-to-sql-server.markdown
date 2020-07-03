@@ -5,7 +5,7 @@ title: "My Function Guide is finally ported over to SQL Server"
 date: 2004-08-07 16:15:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["SQL Server", "Win32"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/07/My-Function-Guide-is-finally-ported-over-to-SQL-Server.aspx

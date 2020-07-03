@@ -5,7 +5,7 @@ title: "Vista Experience Update: DVD Backup Programs"
 date: 2006-12-01 12:51:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/12/01/Vista-Experience-Update-DVD-Backup-Programs.aspx

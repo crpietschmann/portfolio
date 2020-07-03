@@ -5,7 +5,7 @@ title: "Announcing the LunchTimerCoder.com Initiative"
 date: 2007-07-03 14:59:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Open Source"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/07/03/Announcing-the-LunchTimerCodercom-Initiative.aspx

@@ -5,7 +5,7 @@ title: "Ok my blog works for now..."
 date: 2005-03-12 19:23:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/12/Ok-my-blog-works-for-now.aspx

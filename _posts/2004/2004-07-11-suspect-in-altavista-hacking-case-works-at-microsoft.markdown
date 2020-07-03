@@ -5,7 +5,7 @@ title: "Suspect in AltaVista hacking case works at Microsoft"
 date: 2004-07-11 01:55:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Hacking", "Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/07/11/Suspect-in-AltaVista-hacking-case-works-at-Microsoft.aspx

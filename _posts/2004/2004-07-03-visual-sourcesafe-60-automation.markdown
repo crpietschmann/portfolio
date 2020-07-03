@@ -5,7 +5,7 @@ title: "Visual SourceSafe 6.0 Automation"
 date: 2004-07-03 17:43:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/07/03/Visual-SourceSafe-60-Automation.aspx

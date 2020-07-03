@@ -5,7 +5,7 @@ title: "WPF Toolkit adds Ribbon Control to .NET 3.5 SP1"
 date: 2008-10-28 17:49:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["WPF", ".NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/10/28/WPF-Toolkit-adds-Ribbon-Control-to-NET-35-SP1.aspx

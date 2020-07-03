@@ -5,7 +5,7 @@ title: "Virtual Earth: Calculate Distance of User-Drawn Polyline"
 date: 2008-02-06 01:28:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/02/06/Virtual-Earth-Calculate-Distance-of-User-Drawn-Polyline.aspx

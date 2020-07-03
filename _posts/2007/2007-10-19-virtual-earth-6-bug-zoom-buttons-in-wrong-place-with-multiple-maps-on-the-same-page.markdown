@@ -5,7 +5,7 @@ title: "Virtual Earth 6 Bug: Zoom buttons in wrong place with multiple maps on t
 date: 2007-10-19 17:01:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/10/19/Virtual-Earth-6-Bug-Zoom-buttons-in-wrong-place-with-multiple-maps-on-the-same-page.aspx

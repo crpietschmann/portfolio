@@ -5,7 +5,7 @@ title: "Learn Regular Expressions with Dave Wanta!"
 date: 2006-05-18 18:53:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["User Group"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2006/05/18/Learn-Regular-Expressions-with-Dave-Wanta!.aspx

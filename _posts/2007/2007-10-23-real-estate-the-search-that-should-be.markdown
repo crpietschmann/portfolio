@@ -5,7 +5,7 @@ title: "Real Estate - The Search That Should Be."
 date: 2007-10-23 17:46:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/10/23/Real-Estate-The-Search-That-Should-Be.aspx

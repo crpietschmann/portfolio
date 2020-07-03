@@ -5,7 +5,7 @@ title: "MSDN .NET Show on IIS 7.0 with Scott Guthrie and Bill Staples"
 date: 2006-05-22 21:01:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Podcast"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/05/22/MSDN-NET-Show-on-IIS-70-with-Scott-Guthrie-and-Bill-Staples.aspx

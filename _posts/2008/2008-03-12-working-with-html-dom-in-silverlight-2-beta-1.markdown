@@ -5,7 +5,7 @@ title: "Working with HTML DOM in Silverlight 2 Beta 1 using the Bridge Pattern"
 date: 2008-03-12 00:00:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverlight"]
 tags: ["Silverlight"]
 redirect_from: 
   - /post/2008/03/12/Working-with-HTML-DOM-in-Silverlight-2-Beta-1.aspx

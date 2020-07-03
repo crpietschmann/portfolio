@@ -5,7 +5,7 @@ title: "The NEW Microsoft Certified Architect Program (MCAP)"
 date: 2005-06-13 00:02:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Career"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/06/13/The-NEW-Microsoft-Certified-Architect-Program-(MCAP).aspx

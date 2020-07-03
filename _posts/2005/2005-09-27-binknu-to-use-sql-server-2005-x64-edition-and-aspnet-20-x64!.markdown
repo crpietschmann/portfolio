@@ -5,7 +5,7 @@ title: "Bink.nu to use SQL Server 2005 x64 Edition and ASP.NET 2.0 x64!"
 date: 2005-09-27 09:39:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["SQL Server", "ASP.NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/09/27/Binknu-to-use-SQL-Server-2005-x64-Edition-and-ASPNET-20-x64!.aspx

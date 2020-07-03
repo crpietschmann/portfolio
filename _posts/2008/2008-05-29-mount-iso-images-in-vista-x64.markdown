@@ -5,7 +5,7 @@ title: "Mount ISO Images in Vista x64"
 date: 2008-05-29 10:06:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/05/29/Mount-ISO-Images-in-Vista-x64.aspx

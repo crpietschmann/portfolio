@@ -5,7 +5,7 @@ title: "You Can Watch PDC'08 Sessions Online!"
 date: 2008-10-29 18:17:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Conference"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/10/29/Watch-PDC08-Session-Online.aspx

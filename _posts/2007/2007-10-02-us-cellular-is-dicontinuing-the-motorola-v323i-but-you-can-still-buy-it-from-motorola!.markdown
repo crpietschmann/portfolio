@@ -5,7 +5,7 @@ title: "US Cellular is dicontinuing the Motorola v323i, but you can still buy it
 date: 2007-10-02 16:04:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/10/02/US-Cellular-is-dicontinuing-the-Motorola-v323i-but-you-can-still-buy-it-from-Motorola!.aspx

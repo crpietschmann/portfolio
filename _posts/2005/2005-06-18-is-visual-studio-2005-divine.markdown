@@ -5,7 +5,7 @@ title: "Is Visual Studio 2005 divine?"
 date: 2005-06-18 21:36:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/06/18/Is-Visual-Studio-2005-divine.aspx

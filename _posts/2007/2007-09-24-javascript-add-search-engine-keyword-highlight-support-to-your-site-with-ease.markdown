@@ -5,7 +5,7 @@ title: "JavaScript: Add Search Engine Keyword Highlight Support to your site wit
 date: 2007-09-24 14:01:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2007/09/24/JavaScript-Add-Search-Engine-Keyword-Highlight-Support-to-your-site-with-ease.aspx

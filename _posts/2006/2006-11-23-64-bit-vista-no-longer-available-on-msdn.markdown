@@ -5,7 +5,7 @@ title: "64-bit Vista no longer available on MSDN?"
 date: 2006-11-23 00:09:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/11/23/64-bit-Vista-no-longer-available-on-MSDN.aspx

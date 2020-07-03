@@ -5,7 +5,7 @@ title: "Is this necessary?- Chris Pietschmann, MVP, MCSD, MCAD, MCP"
 date: 2008-10-20 21:06:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Career"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/10/20/Is-this-necessary-Chris-Pietschmann-MVP-MCSD-MCAD-MCP.aspx

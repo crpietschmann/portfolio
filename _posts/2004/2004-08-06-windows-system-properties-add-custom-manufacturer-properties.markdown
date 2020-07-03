@@ -5,7 +5,7 @@ title: "Windows System Properties - Add Custom Manufacturer Properties"
 date: 2004-08-06 20:29:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/06/Windows-System-Properties-Add-Custom-Manufacturer-Properties.aspx

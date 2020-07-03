@@ -5,7 +5,7 @@ title: "LinkedIn Group for the Wisconsin .NET Users Group"
 date: 2008-03-25 16:36:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["User Group"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2008/03/25/LinkedIn-Group-for-the-Wisconsin-NET-Users-Group.aspx

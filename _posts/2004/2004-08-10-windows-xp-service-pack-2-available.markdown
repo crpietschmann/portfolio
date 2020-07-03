@@ -5,7 +5,7 @@ title: "Windows XP Service Pack 2 Available"
 date: 2004-08-10 20:31:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows XP"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/10/Windows-XP-Service-Pack-2-Available.aspx

@@ -5,7 +5,7 @@ title: "Why can't IIS implicitly share ASP Session state with ASP.NET??"
 date: 2005-02-10 15:39:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "IIS"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/02/10/Why-cant-IIS-implicitly-share-ASP-Session-state-with-ASPNET.aspx

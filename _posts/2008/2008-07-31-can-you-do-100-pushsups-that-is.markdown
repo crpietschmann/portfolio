@@ -5,7 +5,7 @@ title: "Can you do 100? Pushups that is."
 date: 2008-07-31 19:02:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/07/31/Can-you-do-100-Pushsups-that-is.aspx

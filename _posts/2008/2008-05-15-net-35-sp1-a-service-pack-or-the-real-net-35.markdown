@@ -5,7 +5,7 @@ title: ".NET 3.5 SP1: A Service Pack or The Real .NET 3.5"
 date: 2008-05-15 22:44:24 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/05/15/NET-35-SP1-A-Service-Pack-or-The-Real-NET-35.aspx

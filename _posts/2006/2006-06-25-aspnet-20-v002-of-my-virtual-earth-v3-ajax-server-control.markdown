@@ -5,7 +5,7 @@ title: "ASP.NET 2.0: v0.02 of my Virtual Earth v3 Ajax Server Control"
 date: 2006-06-25 23:52:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2006/06/25/ASPNET-20-v002-of-my-Virtual-Earth-v3-Ajax-Server-Control.aspx

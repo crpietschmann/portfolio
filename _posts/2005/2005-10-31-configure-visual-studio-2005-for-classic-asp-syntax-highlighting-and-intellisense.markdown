@@ -5,7 +5,7 @@ title: "Configure Visual Studio 2005 for 'Classic' ASP syntax highlighting and i
 date: 2005-10-31 17:58:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools", "ASP"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/10/31/Configure-Visual-Studio-2005-for-Classic-ASP-syntax-highlighting-and-intellisense.aspx

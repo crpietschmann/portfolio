@@ -5,7 +5,7 @@ title: "Free the Airwaves! FCC vote on 'white spaces' scheduled for Nov. 4!"
 date: 2008-10-24 14:12:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/10/24/Free-the-Airwaves-FCC-vote-on-white-spaces-scheduled-for-Nov-4.aspx

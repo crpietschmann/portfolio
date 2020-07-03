@@ -5,7 +5,7 @@ title: "The new SlapDev.com is being born..."
 date: 2005-04-23 16:05:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/04/23/The-new-SlapDevcom-is-being-born.aspx

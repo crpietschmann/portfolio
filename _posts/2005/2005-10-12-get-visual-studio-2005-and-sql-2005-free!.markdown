@@ -5,7 +5,7 @@ title: "Get Visual Studio 2005 and SQL 2005 Free!"
 date: 2005-10-12 22:15:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/10/12/Get-Visual-Studio-2005-and-SQL-2005-Free!.aspx

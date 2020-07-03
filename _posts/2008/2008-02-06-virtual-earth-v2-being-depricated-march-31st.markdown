@@ -5,7 +5,7 @@ title: "Virtual Earth v2 Being Depricated March 31st"
 date: 2008-02-06 16:54:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/02/06/Virtual-Earth-v2-Being-Depricated-March-31st.aspx

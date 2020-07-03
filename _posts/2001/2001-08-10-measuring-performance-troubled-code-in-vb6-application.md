@@ -4,7 +4,7 @@ title: "Measuring the Performance of troubled code in your VB6 Application"
 date: 2001-06-01 19:54:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives", "vb6"]
+categories: ["VB6"]
 tags: ["General"]
 redirect_from: 
   - /programming/articles/MeasuringPerformanceVB6.htm

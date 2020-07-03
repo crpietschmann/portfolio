@@ -5,7 +5,7 @@ title: "WI .NET Users Group - Holiday Party 2007 InstallFest"
 date: 2007-12-19 17:55:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["User Group"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2007/12/19/WI-NET-Users-Group-Holiday-Party-2007-InstallFest.aspx

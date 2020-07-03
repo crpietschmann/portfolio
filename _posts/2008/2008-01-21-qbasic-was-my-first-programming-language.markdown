@@ -5,7 +5,7 @@ title: "QBasic was my First Programming Language"
 date: 2008-01-21 16:20:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["QBasic", "Career"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/01/21/QBasic-was-my-First-Programming-Language.aspx

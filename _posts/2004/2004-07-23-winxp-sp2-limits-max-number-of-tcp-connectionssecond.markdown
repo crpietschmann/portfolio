@@ -5,7 +5,7 @@ title: "WinXP SP2 limits max. number of TCP connections/second"
 date: 2004-07-23 11:06:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows XP"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/07/23/WinXP-SP2-limits-max-number-of-TCP-connectionssecond.aspx

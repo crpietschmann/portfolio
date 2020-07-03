@@ -5,7 +5,7 @@ title: "VB.NET 2005's 'My' namespace for Mono"
 date: 2004-09-11 03:47:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET", "VB.NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/09/11/VBNET-2005s-My-namespace-for-Mono.aspx

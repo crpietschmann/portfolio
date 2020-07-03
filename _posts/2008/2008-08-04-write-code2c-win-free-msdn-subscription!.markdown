@@ -5,7 +5,7 @@ title: "Write code, Win FREE MSDN Subscription!"
 date: 2008-08-04 11:17:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Community"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/08/04/Write-code2c-Win-FREE-MSDN-Subscription!.aspx

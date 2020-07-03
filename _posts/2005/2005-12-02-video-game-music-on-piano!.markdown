@@ -5,7 +5,7 @@ title: "Video Game Music on Piano!"
 date: 2005-12-02 11:42:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/12/02/Video-Game-Music-on-Piano!.aspx

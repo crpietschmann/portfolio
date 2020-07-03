@@ -5,7 +5,7 @@ title: "Virtual Earth: SSL Support"
 date: 2007-12-21 21:48:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/12/21/Virtual-Earth-SSL-Support.aspx

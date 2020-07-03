@@ -5,7 +5,7 @@ title: "Microsoft VBScript compilation error '800a03e9' Out of Memory :: VBS has
 date: 2004-12-07 15:57:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["VBScript"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/12/07/Microsoft-VBScript-compilation-error-800a03e9-Out-of-Memory-VBS-has-a-code-line-length-limit-of-1022.aspx

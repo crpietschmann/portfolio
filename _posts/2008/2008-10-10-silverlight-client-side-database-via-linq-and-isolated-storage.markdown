@@ -5,7 +5,7 @@ title: "Silverlight: Client-Side Database via LINQ and Isolated Storage"
 date: 2008-10-10 18:08:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverlight", "LINQ"]
 tags: ["Silverlight"]
 redirect_from: 
   - /post/2008/10/10/Silverlight-Client-Side-Database-via-LINQ-and-Isolated-Storage.aspx

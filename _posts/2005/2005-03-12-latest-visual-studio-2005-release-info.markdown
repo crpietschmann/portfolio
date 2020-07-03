@@ -5,7 +5,7 @@ title: "Latest Visual Studio 2005 Release Info"
 date: 2005-03-12 20:50:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/12/Latest-Visual-Studio-2005-Release-Info.aspx

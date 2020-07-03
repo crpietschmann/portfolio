@@ -5,7 +5,7 @@ title: "LunchTimeCoder: Windows Service Monitor that runs in the System Tray"
 date: 2007-07-19 12:21:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Open Source", ".NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/07/19/LunchTimeCoder-Windows-Service-Monitor-that-runs-in-the-System-Tray.aspx

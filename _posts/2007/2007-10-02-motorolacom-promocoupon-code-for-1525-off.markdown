@@ -5,7 +5,7 @@ title: "Motorola.com Promo/Coupon Code for 15% Off"
 date: 2007-10-02 16:09:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/10/02/Motorolacom-PromoCoupon-Code-for-1525-Off.aspx

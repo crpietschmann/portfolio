@@ -5,7 +5,7 @@ title: "Polymorphic Podcast: Awesome .NET Podcast!"
 date: 2006-09-14 11:38:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Podcast"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/09/14/Polymorphic-Podcast-Awesome-NET-Podcast!.aspx

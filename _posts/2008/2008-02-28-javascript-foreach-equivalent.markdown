@@ -5,7 +5,7 @@ title: "JavaScript ForEach Equivalent"
 date: 2008-02-28 18:23:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/02/28/JavaScript-ForEach-Equivalent.aspx

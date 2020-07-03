@@ -5,7 +5,7 @@ title: "Boolean Expression in .NET: strName IN ('CHRIS','TOM','TYLER')"
 date: 2005-06-24 12:00:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET", "VB.NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/06/24/Boolean-Expression-in-NET-strName-IN-(CHRISTOMTYLER).aspx

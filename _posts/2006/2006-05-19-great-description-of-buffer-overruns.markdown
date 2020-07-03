@@ -5,7 +5,7 @@ title: "Great description of Buffer Overruns"
 date: 2006-05-19 13:50:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Podcast"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/05/19/Great-description-of-Buffer-Overruns.aspx

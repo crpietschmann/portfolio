@@ -5,7 +5,7 @@ title: "I just got Visual Studio 2005 Beta 1 (Whidbey)"
 date: 2004-09-03 13:32:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/09/03/I-just-got-Visual-Studio-2005-Beta-1-(Whidbey).aspx

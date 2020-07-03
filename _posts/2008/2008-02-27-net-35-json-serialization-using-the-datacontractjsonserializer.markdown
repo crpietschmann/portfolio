@@ -5,7 +5,7 @@ title: ".NET 3.5: JSON Serialization using the DataContractJsonSerializer"
 date: 2008-02-27 18:15:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET", "JSON", "WCF"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2008/02/27/NET-35-JSON-Serialization-using-the-DataContractJsonSerializer.aspx

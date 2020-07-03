@@ -5,7 +5,7 @@ title: "WI .NET Users Group Holiday Party '07 has been rescheduled to Dec. 18th"
 date: 2007-12-14 19:30:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["User Group"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2007/12/14/WI-NET-Users-Group-Holiday-Party-07-has-been-rescheduled-to-Dec-18th.aspx

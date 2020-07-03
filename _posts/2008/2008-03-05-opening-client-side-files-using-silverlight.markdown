@@ -5,7 +5,7 @@ title: "Opening Client-Side Files using Silverlight"
 date: 2008-03-05 23:09:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverlight"]
 tags: ["Silverlight"]
 redirect_from: 
   - /post/2008/03/05/Opening-Client-Side-Files-using-Silverlight.aspx

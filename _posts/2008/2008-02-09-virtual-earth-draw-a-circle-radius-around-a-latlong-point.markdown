@@ -5,7 +5,7 @@ title: "Bing Maps: Draw a Circle Radius Around a Lat/Long Point"
 date: 2008-02-09 02:58:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "JavaScript", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/02/09/Virtual-Earth-Draw-a-Circle-Radius-Around-a-LatLong-Point.aspx

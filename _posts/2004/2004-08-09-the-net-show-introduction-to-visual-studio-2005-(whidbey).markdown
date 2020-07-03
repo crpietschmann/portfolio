@@ -5,7 +5,7 @@ title: "The .NET Show: Introduction to Visual Studio 2005 (Whidbey)"
 date: 2004-08-09 00:13:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Podcast"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/09/The-NET-Show-Introduction-to-Visual-Studio-2005-(Whidbey).aspx

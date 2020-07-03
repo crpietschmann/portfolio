@@ -5,7 +5,7 @@ title: "ASP.NET AJAX: Use 'custom' objects as Extender Control Properties"
 date: 2007-06-16 14:53:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "AJAX"]
 tags: ["asp.net", "General"]
 redirect_from: 
   - /post/2007/06/16/ASPNET-AJAX-Use-custom-objects-as-Extender-Control-Properties.aspx

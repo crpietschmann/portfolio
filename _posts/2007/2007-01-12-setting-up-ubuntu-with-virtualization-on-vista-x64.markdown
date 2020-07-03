@@ -5,7 +5,7 @@ title: "Setting Up Ubuntu with virtualization on Vista x64"
 date: 2007-01-12 22:49:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtualization", "Ubuntu", "Linux", "Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/01/12/Setting-Up-Ubuntu-with-virtualization-on-Vista-x64.aspx

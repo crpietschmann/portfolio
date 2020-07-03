@@ -5,7 +5,7 @@ title: "Could WiFi be used to cook food?"
 date: 2007-07-16 14:04:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/07/16/Could-WiFi-be-used-to-cook-food.aspx

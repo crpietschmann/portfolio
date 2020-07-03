@@ -5,7 +5,7 @@ title: "I Found a bug in the Rating control in the Atlas Control Toolkit"
 date: 2006-08-17 14:21:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "AJAX"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2006/08/17/I-Found-a-bug-in-the-Rating-control-in-the-Atlas-Control-Toolkit.aspx

@@ -5,7 +5,7 @@ title: "ASP.NET: Add Template Support to your User Controls"
 date: 2006-09-28 11:12:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2006/09/28/ASPNET-Add-Template-Support-to-your-User-Controls.aspx

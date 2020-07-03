@@ -5,7 +5,7 @@ title: "WI .NET User Group - 7/10/2007 - Silverlight!! buzz...."
 date: 2007-07-09 10:54:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverlight", "User Group"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2007/07/09/WI-NET-User-Group-7102007-Silverlight!!-buzz.aspx

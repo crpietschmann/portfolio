@@ -5,7 +5,7 @@ title: "ASP.NET Forums is gone and Community Server's not free"
 date: 2007-09-21 11:50:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/09/21/ASPNET-Forums-is-gone-and-Community-Servers-not-free.aspx

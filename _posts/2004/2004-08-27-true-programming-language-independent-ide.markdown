@@ -5,7 +5,7 @@ title: "True Programming Language Independent IDE"
 date: 2004-08-27 00:25:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/27/True-Programming-Language-Independent-IDE.aspx

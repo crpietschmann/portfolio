@@ -5,7 +5,7 @@ title: "Wisconsin .NET Users Group (WI-INETA) Website is lacking..."
 date: 2006-08-18 14:25:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["User Group"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2006/08/18/Wisconsin-NET-Users-Group-(WI-INETA)-Website-is-lacking.aspx

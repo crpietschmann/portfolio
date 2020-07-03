@@ -5,7 +5,7 @@ title: "ASP.NET 2.0: 'Atlas' now has a Go-Live license"
 date: 2006-04-02 15:45:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2006/04/02/ASPNET-20-Atlas-now-has-a-Go-Live-license.aspx

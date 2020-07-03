@@ -5,7 +5,7 @@ title: "I start a new job on the 28th!!"
 date: 2005-03-21 16:37:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/21/I-start-a-new-job-on-the-28th!!.aspx

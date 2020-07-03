@@ -5,7 +5,7 @@ title: "Windows Longhorn Glass Look DHTML"
 date: 2005-03-04 21:38:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript", "CSS"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/04/Windows-Longhorn-Glass-Look-DHTML.aspx

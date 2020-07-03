@@ -5,7 +5,7 @@ title: "Homestarruner.com - pretty cool toons"
 date: 2004-08-12 17:34:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/12/Homestarrunercom-pretty-cool-toons.aspx

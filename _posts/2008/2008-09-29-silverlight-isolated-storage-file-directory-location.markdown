@@ -5,7 +5,7 @@ title: "Silverlight Isolated Storage File/Directory Location"
 date: 2008-09-29 16:33:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverlight"]
 tags: ["Silverlight"]
 redirect_from: 
   - /post/2008/09/29/Silverlight-Isolated-Storage-File-Directory-Location.aspx

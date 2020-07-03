@@ -5,7 +5,7 @@ title: "T-SQL: Parse a delimited string"
 date: 2006-02-03 10:53:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["SQL", "SQL Server"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/02/03/T-SQL-Parse-a-delimited-string.aspx

@@ -5,7 +5,7 @@ title: "You can order a copy of Visual Studio 2005 Beta 2 for FREE!!"
 date: 2005-04-18 14:14:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/04/18/You-can-order-a-copy-of-Visual-Studio-2005-Beta-2-for-FREE!!.aspx

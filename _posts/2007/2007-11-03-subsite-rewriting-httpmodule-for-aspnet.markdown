@@ -5,7 +5,7 @@ title: "Subsite Rewriting HttpModule for ASP.NET"
 date: 2007-11-03 17:24:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", ".NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2007/11/03/Subsite-Rewriting-HttpModule-for-ASPNET.aspx

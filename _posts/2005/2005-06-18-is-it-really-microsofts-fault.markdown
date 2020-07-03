@@ -5,7 +5,7 @@ title: "Is it really Microsoft's fault?"
 date: 2005-06-18 12:37:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/06/18/Is-it-really-Microsofts-fault.aspx

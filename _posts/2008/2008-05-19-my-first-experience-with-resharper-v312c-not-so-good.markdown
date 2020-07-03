@@ -5,7 +5,7 @@ title: "My First Experience with ReSharper v3.1, not so good"
 date: 2008-05-19 19:28:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/05/19/My-First-Experience-with-ReSharper-v312c-not-so-good.aspx

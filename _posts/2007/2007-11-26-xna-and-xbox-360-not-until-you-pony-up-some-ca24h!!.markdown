@@ -5,7 +5,7 @@ title: "XNA and XBox 360: Not until you pony up some ca$h!!"
 date: 2007-11-26 17:45:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["XBox"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/11/26/XNA-and-XBox-360-Not-until-you-pony-up-some-ca24h!!.aspx

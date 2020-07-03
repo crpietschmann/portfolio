@@ -5,7 +5,7 @@ title: "PasswordTextBox for Silverlight 2 Beta 2"
 date: 2008-03-14 20:25:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverlight"]
 tags: ["Silverlight"]
 redirect_from: 
   - /post/2008/03/14/PasswordTextBox-for-Silverlight-2-Beta-1.aspx

@@ -5,7 +5,7 @@ title: "Develop Software for the Microsoft Windows Platform for FREE"
 date: 2008-12-11 14:55:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/12/11/Develop-Software-for-the-Microsoft-Windows-Platform-for-FREE.aspx

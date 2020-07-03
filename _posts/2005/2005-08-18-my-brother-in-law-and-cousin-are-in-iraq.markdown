@@ -5,7 +5,7 @@ title: "My brother-in-law and cousin are in Iraq"
 date: 2005-08-18 13:59:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/08/18/My-brother-in-law-and-cousin-are-in-Iraq.aspx

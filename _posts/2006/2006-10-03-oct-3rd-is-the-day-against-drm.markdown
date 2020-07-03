@@ -5,7 +5,7 @@ title: "Oct. 3rd is the Day Against DRM..."
 date: 2006-10-03 11:07:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/10/03/Oct-3rd-is-the-Day-Against-DRM.aspx

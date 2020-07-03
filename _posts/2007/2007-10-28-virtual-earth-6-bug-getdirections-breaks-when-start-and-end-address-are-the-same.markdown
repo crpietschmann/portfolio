@@ -5,7 +5,7 @@ title: "Virtual Earth 6 Bug: GetDirections breaks when Start and End Address are
 date: 2007-10-28 00:28:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/10/28/Virtual-Earth-6-Bug-GetDirections-breaks-when-Start-and-End-Address-are-the-same.aspx

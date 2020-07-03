@@ -5,7 +5,7 @@ title: "Windows XP SP2 RTM expected in 2 weeks"
 date: 2004-07-11 01:51:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows XP"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/07/11/Windows-XP-SP2-RTM-expected-in-2-weeks.aspx

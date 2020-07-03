@@ -5,7 +5,7 @@ title: "Free Vista SP1 Support through March 18, 2009"
 date: 2008-07-16 21:30:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/07/16/Free-Vista-SP1-Support-through-March-18-2009.aspx

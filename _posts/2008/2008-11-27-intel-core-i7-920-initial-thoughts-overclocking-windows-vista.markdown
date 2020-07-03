@@ -5,7 +5,7 @@ title: "Intel Core i7 920 - Initial Thoughts, Overclocking and Windows Vista"
 date: 2008-11-27 09:33:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Intel", "Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/11/27/Intel-Core-i7-920-Initial-Thoughts-Overclocking-Windows-Vista.aspx

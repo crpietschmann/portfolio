@@ -5,7 +5,7 @@ title: "Windows Vista Device Drivers for Belkin F5D7000 Wireless Network Card"
 date: 2007-04-11 17:57:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Vista", "Hardware"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/04/11/Windows-Vista-Device-Drivers-for-Belkin-F5D7000-Wireless-Network-Card.aspx

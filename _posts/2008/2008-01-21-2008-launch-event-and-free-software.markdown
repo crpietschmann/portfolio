@@ -5,7 +5,7 @@ title: "2008 Microsoft Launch Event and Free Software"
 date: 2008-01-21 19:39:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Community"]
 tags: ["C#", "vb.net"]
 redirect_from: 
   - /post/2008/01/21/2008-Launch-Event-and-Free-Software.aspx

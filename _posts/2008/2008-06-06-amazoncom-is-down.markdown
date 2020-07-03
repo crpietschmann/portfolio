@@ -5,7 +5,7 @@ title: "Amazon.com is down"
 date: 2008-06-06 13:23:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/06/06/Amazoncom-is-down.aspx

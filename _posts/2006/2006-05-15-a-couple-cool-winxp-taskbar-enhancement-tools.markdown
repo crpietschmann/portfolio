@@ -5,7 +5,7 @@ title: "A couple cool WinXP TaskBar enhancement tools"
 date: 2006-05-15 21:16:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows XP", "Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/05/15/A-couple-cool-WinXP-TaskBar-enhancement-tools.aspx

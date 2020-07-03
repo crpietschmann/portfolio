@@ -5,7 +5,7 @@ title: "I've been slacking lately..."
 date: 2007-02-19 21:14:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/02/19/Ive-been-slacking-lately.aspx

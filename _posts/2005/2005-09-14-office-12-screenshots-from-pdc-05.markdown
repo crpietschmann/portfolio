@@ -5,7 +5,7 @@ title: "Office 12 Screenshots from PDC '05"
 date: 2005-09-14 21:26:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Conference"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/09/14/Office-12-Screenshots-from-PDC-05.aspx

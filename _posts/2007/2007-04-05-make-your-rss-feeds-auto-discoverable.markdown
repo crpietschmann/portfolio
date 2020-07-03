@@ -5,7 +5,7 @@ title: "Make your RSS feeds Auto-Discoverable"
 date: 2007-04-05 01:07:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/04/05/Make-your-RSS-feeds-Auto-Discoverable.aspx

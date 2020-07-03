@@ -5,7 +5,7 @@ title: "C#: Generate WebPage Thumbmail Screenshot Image"
 date: 2008-07-23 21:43:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["C#", ".NET"]
 tags: ["asp.net", "C#"]
 redirect_from: 
   - /post/2008/07/23/C-Generate-WebPage-Thumbmail-Screenshot-Image.aspx

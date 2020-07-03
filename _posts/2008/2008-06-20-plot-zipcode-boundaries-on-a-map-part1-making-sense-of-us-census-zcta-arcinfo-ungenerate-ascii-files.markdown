@@ -5,7 +5,7 @@ title: "Plot ZipCode Boundaries on a Map: Part 1 - Making sense of U.S. Census Z
 date: 2008-06-20 16:01:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/06/20/Plot-ZipCode-Boundaries-on-a-Map-Part1-Making-sense-of-US-Census-ZCTA-ARCINFO-Ungenerate-ASCII-files.aspx

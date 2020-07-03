@@ -5,7 +5,7 @@ title: "Ubuntu 6.10 is the easiest version of Linux thus far!"
 date: 2007-01-13 10:32:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Ubuntu", "Linux"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/01/13/Ubuntu-610-is-the-easiest-version-of-Linux-thus-far!.aspx

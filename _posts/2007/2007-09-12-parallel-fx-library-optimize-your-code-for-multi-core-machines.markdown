@@ -5,7 +5,7 @@ title: "Parallel FX Library: Optimize your code for Multi-Core machines"
 date: 2007-09-12 11:43:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology", "C#"]
 tags: ["C#", "vb.net"]
 redirect_from: 
   - /post/2007/09/12/Parallel-FX-Library-Optimize-your-code-for-Multi-Core-machines.aspx

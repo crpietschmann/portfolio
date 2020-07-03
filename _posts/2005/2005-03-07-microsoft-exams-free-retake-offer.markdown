@@ -5,7 +5,7 @@ title: "Microsoft Exams: FREE Retake Offer"
 date: 2005-03-07 00:07:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Career"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/07/Microsoft-Exams-FREE-Retake-Offer.aspx

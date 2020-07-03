@@ -5,7 +5,7 @@ title: "DotNetKicks auto bookmarklet"
 date: 2007-03-29 13:34:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/03/29/DotNetKicks-auto-bookmarklet.aspx

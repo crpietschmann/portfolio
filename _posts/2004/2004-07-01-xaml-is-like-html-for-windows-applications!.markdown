@@ -5,7 +5,7 @@ title: "XAML is like HTML for Windows Applications!"
 date: 2004-07-01 20:14:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["XAML", "Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/07/01/XAML-is-like-HTML-for-Windows-Applications!.aspx

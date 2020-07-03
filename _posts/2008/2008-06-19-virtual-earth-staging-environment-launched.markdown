@@ -5,7 +5,7 @@ title: "Virtual Earth Staging Environment Launched"
 date: 2008-06-19 20:02:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/06/19/Virtual-Earth-Staging-Environment-Launched.aspx

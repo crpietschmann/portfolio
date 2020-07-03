@@ -5,7 +5,7 @@ title: "CouchDB on FLOSS Weekly Episode 36 - distributed, document-oriented, RES
 date: 2008-08-20 17:46:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Podcast"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/08/20/CouchDB-on-FLOSS-Weekly-Episode-36-distributed-document-oriented-RESTful-database.aspx

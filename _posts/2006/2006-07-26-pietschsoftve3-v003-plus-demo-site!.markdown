@@ -5,7 +5,7 @@ title: "PietschSoft.VE3 v0.03 plus Demo site!"
 date: 2006-07-26 01:04:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2006/07/26/PietschSoftVE3-v003-plus-Demo-site!.aspx

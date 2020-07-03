@@ -5,7 +5,7 @@ title: "Less Than 36 Hours Left to Enter the Community Coding Contest!"
 date: 2008-09-30 12:50:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Community"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/09/30/Less-Than-36-Hours-Left-to-Enter-to-the-Community-Coding-Contest.aspx

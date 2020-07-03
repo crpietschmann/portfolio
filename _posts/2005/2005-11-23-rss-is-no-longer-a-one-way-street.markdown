@@ -5,7 +5,7 @@ title: "RSS is no longer a one-way street"
 date: 2005-11-23 15:10:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/11/23/RSS-is-no-longer-a-one-way-street.aspx

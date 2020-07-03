@@ -5,7 +5,7 @@ title: "ASP.NET: Registration of Controls in Web.Config"
 date: 2006-04-03 22:36:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2006/04/03/ASPNET-20-Registration-of-Controls-in-WebConfig.aspx

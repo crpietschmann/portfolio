@@ -5,7 +5,7 @@ title: "Add System Menu Items to WPF Window using Win32 API"
 date: 2008-03-27 16:41:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["WPF", "Win32"]
 tags: ["Win32API"]
 redirect_from: 
   - /post/2008/03/27/Add-System-Menu-Items-to-WPF-Window-using-Win32-API.aspx

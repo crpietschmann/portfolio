@@ -5,7 +5,7 @@ title: "$700B Bail-Out Bill Passes, Maybe It's Not So Bad Afterall..."
 date: 2008-10-03 20:02:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/10/03/24700B-Bail-Out-Bill-Passed-Maybe-Its-Not-So-Bad-Afterall.aspx

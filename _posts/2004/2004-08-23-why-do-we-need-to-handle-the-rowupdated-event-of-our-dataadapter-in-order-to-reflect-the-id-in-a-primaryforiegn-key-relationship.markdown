@@ -5,7 +5,7 @@ title: "Why do we need to handle the RowUpdated event of our DataAdapter in orde
 date: 2004-08-23 17:39:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET", "VB.NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/23/Why-do-we-need-to-handle-the-RowUpdated-event-of-our-DataAdapter-in-order-to-reflect-the-ID-in-a-PrimaryForiegn-key-relationship.aspx

@@ -5,7 +5,7 @@ title: ".NET: Why aren't Private Abstract methods allowed?"
 date: 2008-02-26 22:08:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["C#", ".NET"]
 tags: ["C#", "vb.net"]
 redirect_from: 
   - /post/2008/02/26/NET-Why-arent-Private-Abstract-methods-allowed.aspx

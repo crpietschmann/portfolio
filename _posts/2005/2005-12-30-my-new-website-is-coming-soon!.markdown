@@ -5,7 +5,7 @@ title: "My new website is coming soon!"
 date: 2005-12-30 22:12:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/12/30/My-new-website-is-coming-soon!.aspx

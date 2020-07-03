@@ -5,7 +5,7 @@ title: "I just finished migrating to BlogEngine.NET..."
 date: 2008-02-12 21:28:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/02/12/I-just-finished-migrating-to-BlogEngineNET.aspx

@@ -5,7 +5,7 @@ title: "JavaScript Prototypal Inheritence Explained in Simple Terms"
 date: 2008-09-30 16:45:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/09/30/JavaScript-Prototypal-Inheritence-Explained-in-Simple-Terms.aspx

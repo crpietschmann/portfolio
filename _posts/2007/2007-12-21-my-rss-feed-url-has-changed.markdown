@@ -5,7 +5,7 @@ title: "My RSS Feed URL has changed."
 date: 2007-12-21 16:42:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/12/21/My-RSS-Feed-URL-has-changed.aspx

@@ -5,7 +5,7 @@ title: "I have Windows Vista Ultimate x64 installed in a dual boot with WinXP Pr
 date: 2006-11-21 19:28:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/11/21/I-have-Windows-Vista-Ultimate-x64-installed-in-a-dual-boot-with-WinXP-Pro.aspx

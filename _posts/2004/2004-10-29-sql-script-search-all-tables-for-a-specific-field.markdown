@@ -5,7 +5,7 @@ title: "SQL Script: Search all tables for a specific field"
 date: 2004-10-29 12:36:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["SQL"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/10/29/SQL-Script-Search-all-tables-for-a-specific-field.aspx

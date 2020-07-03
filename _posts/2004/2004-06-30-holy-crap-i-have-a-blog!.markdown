@@ -5,7 +5,7 @@ title: "Holy crap I have a blog!"
 date: 2004-06-30 19:54:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/06/30/Holy-crap-I-have-a-blog!.aspx

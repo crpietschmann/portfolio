@@ -5,7 +5,7 @@ title: "SQL 2008 RTM Released, and includes .NET 3.5 SP1"
 date: 2008-08-07 16:07:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["SQL Server", ".NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/08/07/SQL-2008-RTM-Released2c-and-includes-NET-35-SP1.aspx

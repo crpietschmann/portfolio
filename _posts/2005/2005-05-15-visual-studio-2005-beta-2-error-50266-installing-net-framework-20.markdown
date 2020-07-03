@@ -5,7 +5,7 @@ title: "Visual Studio 2005 Beta 2: Error 50266 installing .NET Framework 2.0"
 date: 2005-05-15 11:42:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/05/15/Visual-Studio-2005-Beta-2-Error-50266-installing-NET-Framework-20.aspx

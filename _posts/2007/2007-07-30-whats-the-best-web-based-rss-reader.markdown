@@ -5,7 +5,7 @@ title: "What's the best web-based RSS reader?"
 date: 2007-07-30 15:05:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/07/30/Whats-the-best-web-based-RSS-reader.aspx

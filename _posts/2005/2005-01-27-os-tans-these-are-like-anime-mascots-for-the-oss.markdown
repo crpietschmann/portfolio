@@ -5,7 +5,7 @@ title: "OS-tans - these are like Anime mascots for the OS's"
 date: 2005-01-27 09:56:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/01/27/OS-tans-these-are-like-Anime-mascots-for-the-OSs.aspx

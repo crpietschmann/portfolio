@@ -5,7 +5,7 @@ title: "JavaScript: Null Coalesce using the || Operator"
 date: 2008-10-14 09:00:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/10/14/JavaScript-Gem-Null-Coalescing-using-the-OR-Operator.aspx

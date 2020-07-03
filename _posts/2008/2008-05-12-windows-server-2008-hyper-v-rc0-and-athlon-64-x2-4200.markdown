@@ -5,7 +5,7 @@ title: "Windows Server 2008 Hyper-V RC0 and Athlon 64 X2 4200+"
 date: 2008-05-12 12:33:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Hyper-V", "Virtualization"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/05/12/Windows-Server-2008-Hyper-V-RC0-and-Athlon-64-X2-4200.aspx

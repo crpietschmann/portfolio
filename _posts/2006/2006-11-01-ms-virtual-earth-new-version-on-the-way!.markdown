@@ -5,7 +5,7 @@ title: "MS Virtual Earth: New version on the way!"
 date: 2006-11-01 09:42:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2006/11/01/MS-Virtual-Earth-New-version-on-the-way!.aspx

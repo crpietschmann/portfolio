@@ -5,7 +5,7 @@ title: "Virtual PC 2007 released with improved performance!"
 date: 2007-02-19 21:30:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtualization"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/02/19/Virtual-PC-2007-released-with-improved-performance!.aspx

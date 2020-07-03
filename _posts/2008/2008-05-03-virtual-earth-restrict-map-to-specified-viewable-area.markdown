@@ -5,7 +5,7 @@ title: "Virtual Earth: Restrict Map to Specified Viewable Area"
 date: 2008-05-03 20:36:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/05/03/Virtual-Earth-Restrict-Map-to-Specified-Viewable-Area.aspx

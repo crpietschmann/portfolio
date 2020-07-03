@@ -5,7 +5,7 @@ title: "How do you call a Console application from ASP.NET and get the results??
 date: 2004-09-07 17:32:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "VB.NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/09/07/How-do-you-call-a-Console-application-from-ASPNET-and-get-the-results.aspx

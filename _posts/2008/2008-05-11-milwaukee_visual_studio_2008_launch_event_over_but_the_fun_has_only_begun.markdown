@@ -5,7 +5,7 @@ title: "The Milwaukee Visual Studio 2008 Launch Event is over; but the fun has o
 date: 2008-05-11 08:50:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Conference"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/05/11/Milwaukee_Visual_Studio_2008_Launch_Event_over_but_the_fun_has_only_begun.aspx

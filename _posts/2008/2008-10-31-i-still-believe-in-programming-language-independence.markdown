@@ -5,7 +5,7 @@ title: "I Still Believe in Programming Language Independence"
 date: 2008-10-31 00:14:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/10/31/I-Still-Believe-in-Programming-Language-Independence.aspx

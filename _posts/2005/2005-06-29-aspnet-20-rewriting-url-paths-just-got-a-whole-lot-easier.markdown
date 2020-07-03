@@ -5,7 +5,7 @@ title: "ASP.NET 2.0: Rewriting URL Paths just got a whole lot easier"
 date: 2005-06-29 14:43:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/06/29/ASPNET-20-Rewriting-URL-Paths-just-got-a-whole-lot-easier.aspx

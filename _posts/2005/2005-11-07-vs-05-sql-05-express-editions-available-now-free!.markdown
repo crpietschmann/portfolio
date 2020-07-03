@@ -5,7 +5,7 @@ title: "VS '05 & SQL '05 Express Editions Available Now FREE!"
 date: 2005-11-07 14:09:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/11/07/VS-05-SQL-05-Express-Editions-Available-Now-FREE!.aspx

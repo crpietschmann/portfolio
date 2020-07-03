@@ -5,7 +5,7 @@ title: "PietschSoft.VE mentioned during a Microsoft Webcast on Virtual Earth yes
 date: 2007-03-30 13:08:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS", "Podcast"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/03/30/PietschSoftVE-mentioned-during-a-Microsoft-Webcast-on-Virtual-Earth-yesterday.aspx

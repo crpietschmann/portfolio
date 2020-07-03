@@ -5,7 +5,7 @@ title: "C#: Enhance Enums using Extension Methods"
 date: 2008-07-15 16:38:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["C#", ".NET"]
 tags: ["C#"]
 redirect_from: 
   - /post/2008/07/15/C-Enhance-Enums-using-Extension-Methods.aspx

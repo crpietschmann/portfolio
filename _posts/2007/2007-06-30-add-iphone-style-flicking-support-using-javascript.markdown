@@ -5,7 +5,7 @@ title: "Add iPhone style flicking support using JavaScript"
 date: 2007-06-30 14:12:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/06/30/Add-iPhone-style-flicking-support-using-JavaScript.aspx

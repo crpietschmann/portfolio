@@ -5,7 +5,7 @@ title: "My first time having a link get to the homepage on Digg.com"
 date: 2005-09-22 11:36:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/09/22/My-first-time-having-a-link-get-to-the-homepage-on-Diggcom.aspx

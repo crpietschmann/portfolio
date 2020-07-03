@@ -5,7 +5,7 @@ title: "WindowsXP Alt-Tab Taskswitch Powertoy..."
 date: 2005-02-05 03:14:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows XP", "Powertoys]
 tags: ["General"]
 redirect_from: 
   - /post/2005/02/05/WindowsXP-Alt-Tab-Taskswitch-Powertoy.aspx

@@ -5,7 +5,7 @@ title: "Creating an IDE? Use the Visual Studio 2008 shell as your base."
 date: 2007-07-15 08:29:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["C#", "vb.net"]
 redirect_from: 
   - /post/2007/07/15/Creating-an-IDE-Use-the-Visual-Studio-2008-shell-as-your-base.aspx

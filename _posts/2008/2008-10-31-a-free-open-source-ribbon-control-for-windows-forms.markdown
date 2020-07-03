@@ -5,7 +5,7 @@ title: "A Free Open Source Ribbon Control for Windows Forms!"
 date: 2008-10-31 15:42:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Open Source", ".NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/10/31/A-Free-Open-Source-Ribbon-Control-for-Windows-Forms.aspx

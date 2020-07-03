@@ -5,7 +5,7 @@ title: "WSE 2.0 Service Pack 3 Released"
 date: 2005-03-13 12:45:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/13/WSE-20-Service-Pack-3-Released.aspx

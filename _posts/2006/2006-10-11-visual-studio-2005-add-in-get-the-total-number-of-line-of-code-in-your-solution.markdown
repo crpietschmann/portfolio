@@ -5,7 +5,7 @@ title: "Visual Studio 2005 Add-In: Get the total number of line of code in your 
 date: 2006-10-11 15:07:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["C#", "vb.net"]
 redirect_from: 
   - /post/2006/10/11/Visual-Studio-2005-Add-In-Get-the-total-number-of-line-of-code-in-your-solution.aspx

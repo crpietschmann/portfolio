@@ -5,7 +5,7 @@ title: "Windows Vista is currently available on MSDN"
 date: 2006-11-17 08:01:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/11/17/Windows-Vista-is-currently-available-on-MSDN.aspx

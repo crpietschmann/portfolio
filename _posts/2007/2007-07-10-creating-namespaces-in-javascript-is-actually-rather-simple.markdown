@@ -5,7 +5,7 @@ title: "Creating Namespaces in JavaScript is actually rather simple..."
 date: 2007-07-10 19:31:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2007/07/10/Creating-Namespaces-in-JavaScript-is-actually-rather-simple.aspx

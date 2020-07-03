@@ -5,7 +5,7 @@ title: "VirtualPathProvider: Store .ASPX and .HTM files for your application in 
 date: 2006-08-18 22:28:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2006/08/18/VirtualPathProvider-Store-ASPX-and-HTM-files-for-your-application-in-xml-file-or-database.aspx

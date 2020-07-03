@@ -5,7 +5,7 @@ title: "Safari 3 for Windows: Enable JavaScript Debugging"
 date: 2007-12-21 23:31:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript", "Safari"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2007/12/21/Safari-3-for-Windows-Enable-JavaScript-Debugging.aspx

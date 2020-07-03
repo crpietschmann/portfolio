@@ -5,7 +5,7 @@ title: "Learn ASP.NET Provider Model By Example via BlogEngine.NET"
 date: 2007-05-16 22:08:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "BlogEngine.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2007/05/16/Learn-ASPNET-Provider-Model-By-Example-via-BlogEngineNET.aspx

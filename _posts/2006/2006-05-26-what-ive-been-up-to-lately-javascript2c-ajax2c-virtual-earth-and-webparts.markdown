@@ -5,7 +5,7 @@ title: "What I've been up to lately: JavaScript, AJAX, Virtual Earth and WebPart
 date: 2006-05-26 03:42:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript", "Virtual Earth", "AJAX", "ASP.NET", "GIS"]
 tags: ["General", "Bing Maps"]
 redirect_from: 
   - /post/2006/05/26/What-Ive-been-up-to-lately-JavaScript2c-AJAX2c-Virtual-Earth-and-WebParts.aspx

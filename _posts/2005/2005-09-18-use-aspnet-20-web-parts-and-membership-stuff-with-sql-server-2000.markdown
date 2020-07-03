@@ -5,7 +5,7 @@ title: "Use ASP.NET Web Parts and Membership stuff with SQL Server 2000"
 date: 2005-09-18 12:11:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2005/09/18/Use-ASPNET-20-Web-Parts-and-Membership-stuff-with-SQL-Server-2000.aspx

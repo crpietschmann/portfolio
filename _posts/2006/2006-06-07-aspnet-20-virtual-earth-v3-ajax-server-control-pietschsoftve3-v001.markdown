@@ -5,7 +5,7 @@ title: "ASP.NET 2.0: Virtual Earth v3 Ajax Server Control - PietschSoft.VE3 v0.0
 date: 2006-06-07 22:38:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "Virtual Earth", "GIS", "Open Source"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2006/06/07/ASPNET-20-Virtual-Earth-v3-Ajax-Server-Control-PietschSoftVE3-v001.aspx

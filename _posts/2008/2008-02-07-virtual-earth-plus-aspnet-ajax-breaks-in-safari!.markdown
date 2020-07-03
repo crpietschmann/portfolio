@@ -5,7 +5,7 @@ title: "Virtual Earth Plus ASP.NET AJAX Breaks In Safari!"
 date: 2008-02-07 00:51:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "ASP.NET", "AJAX", "Safari"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/02/07/Virtual-Earth-Plus-ASPNET-AJAX-Breaks-In-Safari!.aspx

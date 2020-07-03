@@ -5,7 +5,7 @@ title: "C#/VB.NET: Extension Methods"
 date: 2007-03-13 20:42:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["C#", "VB.NET", ".NET"]
 tags: ["General", "vb.net", "C#"]
 redirect_from: 
   - /post/2007/03/13/CVBNET-Extension-Methods.aspx

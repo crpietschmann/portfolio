@@ -5,7 +5,7 @@ title: "ASP.NET: Extend BoundField Control - Add MultiLine support"
 date: 2006-09-20 00:18:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2006/09/20/ASPNET-Extend-BoundField-Control-Add-MultiLine-support.aspx

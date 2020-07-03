@@ -5,7 +5,7 @@ title: "EMail (POP3, SMTP and MIME) looks complex but is in fact really simple"
 date: 2004-12-31 02:07:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/12/31/EMail-(POP3-SMTP-and-MIME)-looks-complex-but-is-in-fact-really-simple.aspx

@@ -5,7 +5,7 @@ title: "Want to eliminate DRM? Just Boycott all DRM protected content."
 date: 2007-05-03 12:07:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/05/03/Want-to-eliminate-DRM-Just-Boycott-all-DRM-protected-content.aspx

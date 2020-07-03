@@ -5,7 +5,7 @@ title: "What do Linux, MacOS and Windows all have in Common??"
 date: 2004-11-04 13:10:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["macOS", "Linux", "Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/11/04/What-do-Linux-MacOS-and-Windows-all-have-in-Common.aspx

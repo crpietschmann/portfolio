@@ -5,7 +5,7 @@ title: "ASP.NET: Create AJAX Server Controls using the ScriptControl base class"
 date: 2008-05-15 00:52:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "AJAX"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2008/05/15/ASPNET_Create_AJAX_Server_Controls_using_the_ScriptControl_base_class.aspx

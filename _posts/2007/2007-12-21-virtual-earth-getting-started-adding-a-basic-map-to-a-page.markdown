@@ -5,7 +5,7 @@ title: "Virtual Earth: Getting Started - Adding a basic Map to a page"
 date: 2007-12-21 16:24:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/12/21/Virtual-Earth-Getting-Started-Adding-a-basic-Map-to-a-page.aspx

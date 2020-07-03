@@ -5,7 +5,7 @@ title: "Plot ZipCode Boundaries on a Map: Part 2 - Import Zip Code (U.S. Census 
 date: 2008-06-24 16:00:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/06/24/Plot-ZipCode-Boundaries-on-a-Map-Part-2-Import-Zip-Code-US-Census-ZCTA-Data-Into-A-Database.aspx

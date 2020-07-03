@@ -5,7 +5,7 @@ title: "My Top 10 Tech Netcasts (podcasts)"
 date: 2007-03-13 14:18:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Podcast"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/03/13/My-Top-10-Tech-Netcasts-(podcasts).aspx

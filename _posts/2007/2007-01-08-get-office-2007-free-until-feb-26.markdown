@@ -1,11 +1,11 @@
 ---
 layout: post
 blogengineid: 25f57400-5919-45e7-8c30-72b96af2aaf0
-title: "Get Office 2007 FREE until Feb. 26"
+title: "Get Office 2007 FREE until Feb. 26, 2007"
 date: 2007-01-08 23:07:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/01/08/Get-Office-2007-FREE-until-Feb-26.aspx

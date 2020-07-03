@@ -5,7 +5,7 @@ title: "WI-INETA May 9th: Object Relational Mapping Frameworks: Simplify & Impro
 date: 2006-05-07 14:33:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["User Group"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2006/05/07/WI-INETA-May-9th-Object-Relational-Mapping-Frameworks-Simplify-Improve-Your-Data-Access-Layer.aspx

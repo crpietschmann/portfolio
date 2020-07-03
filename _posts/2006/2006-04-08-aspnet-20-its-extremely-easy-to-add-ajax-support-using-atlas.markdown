@@ -5,7 +5,7 @@ title: "ASP.NET 2.0: It's extremely easy to add Ajax support using 'Atlas'"
 date: 2006-04-08 16:18:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2006/04/08/ASPNET-20-Its-extremely-easy-to-add-Ajax-support-using-Atlas.aspx

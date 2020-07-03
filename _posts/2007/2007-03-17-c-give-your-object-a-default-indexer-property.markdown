@@ -5,7 +5,7 @@ title: "C#: Give your object a Default Indexer Property"
 date: 2007-03-17 14:40:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["C#", ".NET"]
 tags: ["General", "General"]
 redirect_from: 
   - /post/2007/03/17/C-Give-your-object-a-Default-Indexer-Property.aspx

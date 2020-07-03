@@ -5,7 +5,7 @@ title: "WI-INETA: Augmented Reality with .NET on 11/13/2007 with Casey Chesnut"
 date: 2007-11-12 17:34:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["User Group"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2007/11/12/WI-INETA-Augmented-Reality-with-NET-on-11132007-with-Casey-Chesnut.aspx

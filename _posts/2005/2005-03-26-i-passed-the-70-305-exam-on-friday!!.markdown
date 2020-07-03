@@ -5,7 +5,7 @@ title: "I passed the 70-305 exam on Friday!!"
 date: 2005-03-26 14:36:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Career"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/26/I-passed-the-70-305-exam-on-Friday!!.aspx

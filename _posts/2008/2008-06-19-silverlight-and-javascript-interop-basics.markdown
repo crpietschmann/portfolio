@@ -5,7 +5,7 @@ title: "Silverlight and JavaScript Interop Basics"
 date: 2008-06-19 23:18:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Silverlight", "JavaScript"]
 tags: ["Silverlight"]
 redirect_from: 
   - /post/2008/06/19/Silverlight-and-JavaScript-Interop-Basics.aspx

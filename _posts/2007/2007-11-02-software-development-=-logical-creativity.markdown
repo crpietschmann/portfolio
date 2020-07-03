@@ -5,7 +5,7 @@ title: "Software Development = Logical Creativity"
 date: 2007-11-02 12:16:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology", "Career"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/11/02/Software-Development-=-Logical-Creativity.aspx

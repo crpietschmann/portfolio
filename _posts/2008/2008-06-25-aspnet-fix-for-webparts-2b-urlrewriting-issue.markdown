@@ -5,7 +5,7 @@ title: "ASP.NET: Fix for WebParts + UrlRewriting/UrlMapping Issue"
 date: 2008-06-25 23:16:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2008/06/25/ASPNET-Fix-for-WebParts-2b-UrlRewriting-Issue.aspx

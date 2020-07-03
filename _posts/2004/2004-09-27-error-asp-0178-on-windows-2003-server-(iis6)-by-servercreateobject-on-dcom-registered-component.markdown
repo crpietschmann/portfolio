@@ -5,7 +5,7 @@ title: "Error ASP 0178 on Windows 2003 Server (IIS6) by Server.CreateObject on D
 date: 2004-09-27 11:29:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Server"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/09/27/Error-ASP-0178-on-Windows-2003-Server-(IIS6)-by-ServerCreateObject-on-DCOM-registered-Component.aspx

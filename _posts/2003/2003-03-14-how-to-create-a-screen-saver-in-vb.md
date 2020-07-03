@@ -4,7 +4,7 @@ title: "How to Create a Screen Saver in Visual Basic 6"
 date: 2003-03-14 19:54:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives", "vb6"]
+categories: ["VB6"]
 tags: ["General"]
 redirect_from: 
   - /programming/Articles/How_To_Create_A_Screen_Saver_In_VM.htm

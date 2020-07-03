@@ -5,7 +5,7 @@ title: "Hitachi's New Perpendicular Recording Technology involves some bits that
 date: 2005-04-08 23:09:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/04/08/Hitachis-New-Perpendicular-Recording-Technology-involves-some-bits-that-dance-to-the-music.aspx

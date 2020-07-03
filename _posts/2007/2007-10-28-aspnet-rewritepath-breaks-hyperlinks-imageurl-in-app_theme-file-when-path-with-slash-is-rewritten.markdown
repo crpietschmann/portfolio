@@ -5,7 +5,7 @@ title: "ASP.NET 2.0: RewritePath breaks HyperLink's ImageUrl in App_Theme file w
 date: 2007-10-28 01:08:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", ".NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2007/10/28/ASPNET-RewritePath-breaks-HyperLinks-ImageUrl-in-App_Theme-file-when-path-with-slash-is-rewritten.aspx

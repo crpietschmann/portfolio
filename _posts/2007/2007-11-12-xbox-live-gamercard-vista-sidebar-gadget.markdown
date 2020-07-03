@@ -5,7 +5,7 @@ title: "XBox Live Gamercard Vista Sidebar Gadget"
 date: 2007-11-12 12:39:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["XBox", "Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/11/12/XBox-Live-Gamercard-Vista-Sidebar-Gadget.aspx

@@ -5,7 +5,7 @@ title: "I found a bug in SQL Server 2000..."
 date: 2005-02-01 14:53:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["SQL Server"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/02/01/I-found-a-bug-in-SQL-Server-2000.aspx

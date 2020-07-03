@@ -5,7 +5,7 @@ title: "Fill DataSet with multiple Tables and update them with DataAdapter"
 date: 2004-08-22 23:48:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/22/Fill-DataSet-with-multiple-Tables-and-update-them-with-DataAdapter.aspx

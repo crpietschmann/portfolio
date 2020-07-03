@@ -5,7 +5,7 @@ title: "AnyMail 2.0 Released"
 date: 2005-02-05 14:03:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/02/05/AnyMail-20-Released.aspx

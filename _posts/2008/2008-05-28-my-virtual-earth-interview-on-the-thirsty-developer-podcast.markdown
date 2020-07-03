@@ -5,7 +5,7 @@ title: "My Virtual Earth Interview on The Thirsty Developer podcast"
 date: 2008-05-28 20:13:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "Podcast"]
 tags: ["General", "Bing Maps"]
 redirect_from: 
   - /post/2008/05/28/My-Virtual-Earth-Interview-on-The-Thirsty-Developer-podcast.aspx

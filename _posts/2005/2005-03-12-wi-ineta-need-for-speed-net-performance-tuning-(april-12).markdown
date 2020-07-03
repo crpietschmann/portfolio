@@ -5,7 +5,7 @@ title: "WI-INETA: Need for Speed: .NET Performance Tuning (April 12)"
 date: 2005-03-12 20:34:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["User Group"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2005/03/12/WI-INETA-Need-for-Speed-NET-Performance-Tuning-(April-12).aspx

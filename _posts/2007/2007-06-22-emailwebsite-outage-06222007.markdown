@@ -5,7 +5,7 @@ title: "Email/Website Outage - 06/22/2007"
 date: 2007-06-22 15:20:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/06/22/EmailWebsite-Outage-06222007.aspx

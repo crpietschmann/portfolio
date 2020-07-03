@@ -5,7 +5,7 @@ title: "Google Charts API: an ASP.NET 2.0 Server Control"
 date: 2007-12-07 17:53:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2007/12/07/Google-Charts-API-an-ASPNET-20-Server-Control.aspx

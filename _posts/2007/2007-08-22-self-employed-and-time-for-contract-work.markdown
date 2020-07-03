@@ -5,7 +5,7 @@ title: "Self Employed and time for contract work"
 date: 2007-08-22 21:54:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog", "Career"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/08/22/Self-Employed-and-time-for-contract-work.aspx

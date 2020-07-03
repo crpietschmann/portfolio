@@ -5,7 +5,7 @@ title: "IE7: Another version of Internet Explorer will be released for Windows X
 date: 2005-02-15 23:42:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows XP"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/02/15/IE7-Another-version-of-Internet-Explorer-will-be-released-for-Windows-XP!.aspx

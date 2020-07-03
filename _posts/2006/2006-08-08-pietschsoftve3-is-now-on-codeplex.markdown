@@ -5,7 +5,7 @@ title: "PietschSoft.VE3 is now on CodePlex"
 date: 2006-08-08 08:56:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS", "Open Source"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2006/08/08/PietschSoftVE3-is-now-on-CodePlex.aspx

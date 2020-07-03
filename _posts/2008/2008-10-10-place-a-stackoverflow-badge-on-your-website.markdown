@@ -5,7 +5,7 @@ title: "Place a StackOverflow badge on your website"
 date: 2008-10-10 07:09:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["CSS", "C#", ".NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2008/10/10/Place-a-StackOverflow-badge-on-your-website.aspx

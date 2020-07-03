@@ -5,7 +5,7 @@ title: "WI .NET Users Group - Having troubles finding meeting locations!"
 date: 2007-03-18 00:07:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Community"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2007/03/18/WI-NET-Users-Group-Having-troubles-finding-meeting-locations!.aspx

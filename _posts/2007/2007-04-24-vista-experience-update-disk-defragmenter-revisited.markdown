@@ -5,7 +5,7 @@ title: "Vista Experience Update: Disk Defragmenter Revisited"
 date: 2007-04-24 22:29:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/04/24/Vista-Experience-Update-Disk-Defragmenter-Revisited.aspx

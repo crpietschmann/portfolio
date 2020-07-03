@@ -5,7 +5,7 @@ title: "VB.NET: Syntax Highlighting in a RichTextBox control"
 date: 2005-05-24 21:18:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["VB.NET", "Win32"]
 tags: ["vb.net", "Win32API"]
 redirect_from: 
   - /post/2005/05/24/VBNET-Syntax-Highlighting-in-a-RichTextBox-control.aspx

@@ -5,7 +5,7 @@ title: "My blog seems to be malfunctioning! Ahhh...."
 date: 2005-03-10 00:37:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/10/My-blog-seems-to-be-malfunctioning!-Ahhh.aspx

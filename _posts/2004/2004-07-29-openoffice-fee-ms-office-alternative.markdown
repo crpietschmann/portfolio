@@ -5,7 +5,7 @@ title: "OpenOffice - Fee MS-Office alternative"
 date: 2004-07-29 13:09:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Open Source", "Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/07/29/OpenOffice-Fee-MS-Office-alternative.aspx

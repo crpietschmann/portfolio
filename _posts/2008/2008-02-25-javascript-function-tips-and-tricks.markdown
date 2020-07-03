@@ -5,7 +5,7 @@ title: "JavaScript Function Tips and Tricks"
 date: 2008-02-25 17:45:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["JavaScript"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2008/02/25/JavaScript-Function-Tips-and-Tricks.aspx

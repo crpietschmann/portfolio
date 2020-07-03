@@ -5,7 +5,7 @@ title: ".NET 3.5: How to Convert from one TimeZone to another"
 date: 2007-06-23 11:46:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET", "C#"]
 tags: ["C#", "C#"]
 redirect_from: 
   - /post/2007/06/23/NET-35-How-to-Convert-from-one-TimeZone-to-another.aspx

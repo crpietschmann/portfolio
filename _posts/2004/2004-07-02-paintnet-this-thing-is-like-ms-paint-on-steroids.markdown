@@ -5,7 +5,7 @@ title: "Paint.NET - This thing is like MS-Paint on steroids"
 date: 2004-07-02 03:55:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/07/02/PaintNET-This-thing-is-like-MS-Paint-on-steroids.aspx

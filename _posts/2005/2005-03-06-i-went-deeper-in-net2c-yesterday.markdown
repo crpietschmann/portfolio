@@ -5,7 +5,7 @@ title: "I went Deeper in .NET, yesterday"
 date: 2005-03-06 12:06:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Conference"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2005/03/06/I-went-Deeper-in-NET2c-yesterday.aspx

@@ -5,7 +5,7 @@ title: "CHRIS CHRISTMAS RODRIGUEZ"
 date: 2004-10-28 18:09:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/10/28/CHRIS-CHRISTMAS-RODRIGUEZ.aspx

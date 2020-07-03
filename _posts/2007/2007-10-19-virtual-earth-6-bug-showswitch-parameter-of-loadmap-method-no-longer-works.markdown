@@ -5,7 +5,7 @@ title: "Virtual Earth 6 Bug: ShowSwitch parameter of LoadMap method no longer wo
 date: 2007-10-19 19:14:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/10/19/Virtual-Earth-6-Bug-ShowSwitch-parameter-of-LoadMap-method-no-longer-works.aspx

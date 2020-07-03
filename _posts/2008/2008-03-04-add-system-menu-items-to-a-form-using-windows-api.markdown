@@ -5,7 +5,7 @@ title: "Add System Menu Items to a Form using Windows API"
 date: 2008-03-04 19:34:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Win32"]
 tags: ["Win32API"]
 redirect_from: 
   - /post/2008/03/04/Add-System-Menu-Items-to-a-Form-using-Windows-API.aspx

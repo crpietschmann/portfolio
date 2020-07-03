@@ -5,7 +5,7 @@ title: "View SQL Server Transaction Logs"
 date: 2004-10-06 16:35:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["SQL Server"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/10/06/View-SQL-Server-Transaction-Logs.aspx

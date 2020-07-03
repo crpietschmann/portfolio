@@ -5,7 +5,7 @@ title: "Some ASP.NET AJAX Tips and Tricks"
 date: 2008-04-03 21:56:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "AJAX"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2008/04/03/Some-ASPNET-AJAX-Tips-and-Tricks.aspx

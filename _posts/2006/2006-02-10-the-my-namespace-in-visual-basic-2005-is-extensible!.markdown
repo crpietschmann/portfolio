@@ -5,7 +5,7 @@ title: "The My namespace in Visual Basic 2005 is extensible!"
 date: 2006-02-10 11:10:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["VB.NET", ".NET"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/02/10/The-My-namespace-in-Visual-Basic-2005-is-extensible!.aspx

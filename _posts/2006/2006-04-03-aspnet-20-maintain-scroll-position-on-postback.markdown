@@ -5,7 +5,7 @@ title: "ASP.NET: Maintain Scroll Position On Postback"
 date: 2006-04-03 22:09:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2006/04/03/ASPNET-20-Maintain-Scroll-Position-On-Postback.aspx

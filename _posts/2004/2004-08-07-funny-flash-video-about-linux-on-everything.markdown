@@ -5,7 +5,7 @@ title: "Funny Flash video about Linux on everything"
 date: 2004-08-07 17:33:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Linux", "Podcast"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/07/Funny-Flash-video-about-Linux-on-everything.aspx

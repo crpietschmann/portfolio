@@ -5,7 +5,7 @@ title: "The New Website is now Live!"
 date: 2006-01-12 01:06:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/01/12/The-New-Website-is-now-Live!.aspx

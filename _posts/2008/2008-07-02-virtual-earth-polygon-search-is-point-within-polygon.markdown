@@ -5,7 +5,7 @@ title: "Bing Maps: Polygon Search - Is Point Within Polygon?"
 date: 2008-07-02 23:42:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Bing Maps", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/07/02/Virtual-Earth-Polygon-Search-Is-Point-Within-Polygon.aspx

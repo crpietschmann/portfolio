@@ -5,7 +5,7 @@ title: "Visual Studio .NET 2002 SP1 Released"
 date: 2005-03-13 12:34:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/13/Visual-Studio-NET-2002-SP1-Released.aspx

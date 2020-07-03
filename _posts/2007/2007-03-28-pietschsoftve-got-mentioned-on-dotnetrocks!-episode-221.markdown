@@ -5,7 +5,7 @@ title: "PietschSoft.VE got mentioned on DotNetRocks! episode #221"
 date: 2007-03-28 11:36:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "Podcast"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2007/03/28/PietschSoftVE-got-mentioned-on-DotNetRocks!-episode-221.aspx

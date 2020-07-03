@@ -5,7 +5,7 @@ title: "VEToolkit: Virtual Earth Toolkit Open Source Project"
 date: 2008-10-16 21:10:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "Open Source", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/10/16/VEToolkit-Virtual-Earth-Toolkit-Open-Source-Project.aspx

@@ -5,7 +5,7 @@ title: "Vista Beta 2: Not my Primary OS anymore"
 date: 2006-07-20 23:16:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/07/20/Vista-Beta-2-Not-my-Primary-OS-anymore.aspx

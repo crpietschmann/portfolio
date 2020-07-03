@@ -5,7 +5,7 @@ title: "I am now a Virtual Earth MVP!"
 date: 2008-04-01 11:12:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "Microsoft MVP"]
 tags: ["General", "Bing Maps"]
 redirect_from: 
   - /post/2008/04/01/I-am-now-a-Virtual-Earth-MVP!.aspx

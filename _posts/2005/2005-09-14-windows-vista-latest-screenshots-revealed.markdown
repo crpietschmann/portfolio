@@ -5,7 +5,7 @@ title: "Windows Vista: Latest Screenshots Revealed"
 date: 2005-09-14 21:36:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Vista"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/09/14/Windows-Vista-Latest-Screenshots-Revealed.aspx

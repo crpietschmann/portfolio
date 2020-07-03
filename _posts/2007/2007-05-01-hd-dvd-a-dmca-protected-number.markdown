@@ -5,7 +5,7 @@ title: "HD-DVD: A DMCA Protected Number??"
 date: 2007-05-01 23:16:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/05/01/HD-DVD-A-DMCA-Protected-Number.aspx

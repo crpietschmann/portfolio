@@ -5,7 +5,7 @@ title: "Write to the Event Log in .NET (VB.NET and C#.NET)"
 date: 2004-08-24 18:03:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["VB.NET", ".NET"]
 tags: ["C#", "General", "vb.net"]
 redirect_from: 
   - /post/2004/08/24/Write-to-the-Event-Log-in-NET-(VBNET-and-CNET).aspx

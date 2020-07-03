@@ -5,7 +5,7 @@ title: "Can you run Mac OS X within Virtual PC 2007 on Windows?"
 date: 2007-04-24 14:17:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["macOS", "Virtualization"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/04/24/Can-you-run-Mac-OS-X-within-Virtual-PC-2007-on-Windows.aspx

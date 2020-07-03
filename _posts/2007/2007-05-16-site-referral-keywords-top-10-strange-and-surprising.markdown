@@ -5,7 +5,7 @@ title: "Site Referral Keywords: Top 10, Strange and Surprising"
 date: 2007-05-16 14:45:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/05/16/Site-Referral-Keywords-Top-10-Strange-and-Surprising.aspx

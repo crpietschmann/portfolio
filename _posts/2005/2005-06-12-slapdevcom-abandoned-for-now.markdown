@@ -5,7 +5,7 @@ title: "SlapDev.com abandoned for now"
 date: 2005-06-12 13:21:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/06/12/SlapDevcom-abandoned-for-now.aspx

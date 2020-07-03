@@ -5,7 +5,7 @@ title: "Minimize Microsoft Outlook to the System Tray"
 date: 2004-09-29 11:16:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/09/29/Minimize-Microsoft-Outlook-to-the-System-Tray.aspx

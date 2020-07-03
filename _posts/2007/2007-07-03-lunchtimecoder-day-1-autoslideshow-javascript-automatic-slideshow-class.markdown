@@ -5,7 +5,7 @@ title: "LunchTimeCoder Day 1: AutoSlideShow - JavaScript Automatic SlideShow Cla
 date: 2007-07-03 15:00:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Open Source", "JavaScript"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/07/03/LunchTimeCoder-Day-1-AutoSlideShow-JavaScript-Automatic-SlideShow-Class.aspx

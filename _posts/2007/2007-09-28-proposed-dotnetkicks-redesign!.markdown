@@ -5,7 +5,7 @@ title: "Proposed DotNetKicks Redesign!"
 date: 2007-09-28 20:51:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/09/28/Proposed-DotNetKicks-Redesign!.aspx

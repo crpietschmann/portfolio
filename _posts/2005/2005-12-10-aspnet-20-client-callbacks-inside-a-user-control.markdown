@@ -5,7 +5,7 @@ title: "ASP.NET Client Callbacks inside a User Control"
 date: 2005-12-10 14:10:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2005/12/10/ASPNET-20-Client-Callbacks-inside-a-User-Control.aspx

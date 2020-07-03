@@ -5,7 +5,7 @@ title: "Building a 'successful' blog..."
 date: 2006-09-22 15:13:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog", "Blogging"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/09/22/Building-a-successful-blog.aspx

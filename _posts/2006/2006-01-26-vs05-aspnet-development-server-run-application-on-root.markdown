@@ -5,7 +5,7 @@ title: "ASP.NET Development Server: Run application on Root"
 date: 2006-01-26 15:14:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2006/01/26/VS05-ASPNET-Development-Server-Run-application-on-Root.aspx

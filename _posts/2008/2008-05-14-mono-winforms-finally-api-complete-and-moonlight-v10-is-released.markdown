@@ -5,7 +5,7 @@ title: "Mono: WinForms finally API complete and Moonlight v1.0 is released"
 date: 2008-05-14 16:36:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: [".NET", "Silverlight"]
 tags: ["General", "Silverlight"]
 redirect_from: 
   - /post/2008/05/14/Mono-WinForms-finally-API-complete-and-Moonlight-v10-is-released.aspx

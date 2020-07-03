@@ -5,7 +5,7 @@ title: "Virtual Earth Resources"
 date: 2008-04-25 14:52:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2008/04/25/Virtual-Earth-Resources.aspx

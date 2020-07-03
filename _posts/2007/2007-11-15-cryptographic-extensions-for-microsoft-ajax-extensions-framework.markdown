@@ -5,7 +5,7 @@ title: "Cryptographic Extensions for Microsoft AJAX Extensions Framework"
 date: 2007-11-15 11:17:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET", "AJAX"]
 tags: ["asp.net", "JavaScript"]
 redirect_from: 
   - /post/2007/11/15/Cryptographic-Extensions-for-Microsoft-AJAX-Extensions-Framework.aspx

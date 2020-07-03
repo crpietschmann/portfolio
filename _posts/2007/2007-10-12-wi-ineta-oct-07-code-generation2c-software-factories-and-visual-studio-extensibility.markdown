@@ -5,7 +5,7 @@ title: "WI-INETA: Oct. '07 - Code Generation, Software Factories and Visual Stud
 date: 2007-10-12 12:02:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["User Group"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2007/10/12/WI-INETA-Oct-07-Code-Generation2c-Software-Factories-and-Visual-Studio-Extensibility.aspx

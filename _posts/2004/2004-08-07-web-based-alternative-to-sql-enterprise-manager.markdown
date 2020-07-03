@@ -5,7 +5,7 @@ title: "Web Based Alternative to SQL Enterprise Manager"
 date: 2004-08-07 16:35:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["SQL Server", "Tools"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/08/07/Web-Based-Alternative-to-SQL-Enterprise-Manager.aspx

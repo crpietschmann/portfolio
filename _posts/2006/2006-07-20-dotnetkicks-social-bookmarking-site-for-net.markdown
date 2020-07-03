@@ -5,7 +5,7 @@ title: "DotNetKicks: Social bookmarking site for .NET"
 date: 2006-07-20 23:26:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/07/20/DotNetKicks-Social-bookmarking-site-for-NET.aspx

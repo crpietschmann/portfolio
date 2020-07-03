@@ -5,7 +5,7 @@ title: "PietschSoft.VE3 v0.05 Released"
 date: 2006-08-14 23:38:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Virtual Earth", "GIS"]
 tags: ["Bing Maps"]
 redirect_from: 
   - /post/2006/08/14/PietschSoftVE3-v005-Released.aspx

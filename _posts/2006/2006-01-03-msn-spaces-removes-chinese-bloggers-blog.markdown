@@ -5,7 +5,7 @@ title: "MSN Spaces Removes Chinese Bloggers Blog"
 date: 2006-01-03 19:31:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2006/01/03/MSN-Spaces-Removes-Chinese-Bloggers-Blog.aspx

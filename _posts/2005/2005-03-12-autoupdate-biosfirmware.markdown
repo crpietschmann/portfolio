@@ -5,7 +5,7 @@ title: "AutoUpdate BIOS/Firmware?"
 date: 2005-03-12 19:46:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Hardware", "Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/12/AutoUpdate-BIOSFirmware.aspx

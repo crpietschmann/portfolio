@@ -5,7 +5,7 @@ title: "Rory Blyth and Scott Hanselman homemade TechEd promotion..."
 date: 2005-03-12 13:50:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Conference"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/03/12/Rory-Blyth-and-Scott-Hanselman-homemade-TechEd-promotion.aspx

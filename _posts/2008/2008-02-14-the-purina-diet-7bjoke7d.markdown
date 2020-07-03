@@ -5,7 +5,7 @@ title: "The Purina Diet {Joke}"
 date: 2008-02-14 09:58:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Joke"]
 tags: ["General"]
 redirect_from: 
   - /post/2008/02/14/The-Purina-Diet-7bJoke7d.aspx

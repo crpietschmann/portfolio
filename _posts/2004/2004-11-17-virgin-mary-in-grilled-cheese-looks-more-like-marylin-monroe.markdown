@@ -5,7 +5,7 @@ title: "Virgin Mary In Grilled Cheese - Looks more like Marylin Monroe"
 date: 2004-11-17 16:46:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/11/17/Virgin-Mary-In-Grilled-Cheese-Looks-more-like-Marylin-Monroe.aspx

@@ -5,7 +5,7 @@ title: "URL Mapping for ASP.NET 1.1"
 date: 2005-07-04 19:51:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["ASP.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2005/07/04/URL-Mapping-for-ASPNET-11.aspx

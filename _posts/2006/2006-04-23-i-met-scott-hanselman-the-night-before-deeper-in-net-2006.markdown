@@ -5,7 +5,7 @@ title: "I met Scott Hanselman the night before Deeper in .NET 2006"
 date: 2006-04-23 18:47:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Conference"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2006/04/23/I-met-Scott-Hanselman-the-night-before-Deeper-in-NET-2006.aspx

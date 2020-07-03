@@ -5,7 +5,7 @@ title: "Attend WI .NET Users Group Holiday Party and get Visual Studio 2008 Free
 date: 2007-11-19 21:44:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["User Group"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2007/11/19/Attend-WI-NET-Users-Group-Holiday-Party-and-get-Visual-Studio-2008-Free!.aspx

@@ -5,7 +5,7 @@ title: "Can you have Windows 2003 Server display the Windows XP Visual Styles?"
 date: 2004-12-16 11:15:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Windows Server", "Windows XP"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/12/16/Can-you-have-Windows-2003-Server-display-the-Windows-XP-Visual-Styles.aspx

@@ -5,7 +5,7 @@ title: "Windows 1.0 TV Commercial with Steve Ballmer"
 date: 2004-09-14 10:46:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Podcast"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/09/14/Windows-10-TV-Commercial-with-Steve-Ballmer.aspx

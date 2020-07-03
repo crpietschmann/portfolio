@@ -5,7 +5,7 @@ title: "LunchTimeCoder.AutoSlideShow v1.05 - some small enhancements"
 date: 2007-07-16 15:12:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Open Source", "JavaScript"]
 tags: ["JavaScript"]
 redirect_from: 
   - /post/2007/07/16/LunchTimeCoderAutoSlideShow-v105-some-small-enhancements.aspx

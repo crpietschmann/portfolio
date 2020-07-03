@@ -5,7 +5,7 @@ title: "My introduction to computers and programming..."
 date: 2005-04-22 01:31:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Career", "Life"]
 tags: ["General"]
 redirect_from: 
   - /post/2005/04/22/My-introduction-to-computers-and-programming.aspx

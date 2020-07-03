@@ -5,7 +5,7 @@ title: "Ultimate Mac vs. PC - Steve Jobs vs. Bill Gates"
 date: 2007-10-24 21:11:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2007/10/24/Ultimate-Mac-vs-PC-Steve-Jobs-vs-Bill-Gates.aspx

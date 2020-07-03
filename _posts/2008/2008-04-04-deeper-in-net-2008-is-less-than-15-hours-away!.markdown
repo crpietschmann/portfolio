@@ -5,7 +5,7 @@ title: "Deeper in .NET 2008 is less than 15 hours away!"
 date: 2008-04-04 17:17:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Conference"]
 tags: ["General", "WI-INETA"]
 redirect_from: 
   - /post/2008/04/04/Deeper-in-NET-2008-is-less-than-15-hours-away!.aspx

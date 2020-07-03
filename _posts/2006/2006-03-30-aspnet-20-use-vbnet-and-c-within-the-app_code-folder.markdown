@@ -5,7 +5,7 @@ title: "ASP.NET: Use VB.NET and C# within the App_Code folder"
 date: 2006-03-30 21:39:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["VB.NET", "C#", "ASP.NET"]
 tags: ["asp.net"]
 redirect_from: 
   - /post/2006/03/30/ASPNET-20-Use-VBNET-and-C-within-the-App_Code-folder.aspx

@@ -5,7 +5,7 @@ title: "My Latest Project: POP3/SMTP EMail Client"
 date: 2004-12-14 15:45:00 -0600
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["Blog"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/12/14/My-Latest-Project-POP3SMTP-EMail-Client.aspx

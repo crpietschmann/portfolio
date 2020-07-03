@@ -5,7 +5,7 @@ title: "WI-INETA: Scott Hanselman to present at WI .NET Users Group's Deeper in 
 date: 2006-04-04 00:25:00 -0500
 comments: true
 published: true
-categories: ["blog", "archives"]
+categories: ["User Group"]
 tags: ["WI-INETA"]
 redirect_from: 
   - /post/2006/04/04/WI-INETA-Scott-Hanselman-to-present-at-WI-NET-Users-Groups-Deeper-in-NET-2006!.aspx
