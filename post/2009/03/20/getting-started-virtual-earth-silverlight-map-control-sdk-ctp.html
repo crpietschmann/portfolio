@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>CTP: Getting Started with Bing Maps Silverlight CTP Map Control SDK | Chris Pietschmann</title>
+    <meta name="description" content="I have nearly 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+">
+    <meta name="author" content="Chris Pietschmann">
+    <link rel="icon" href="/images/avatar-chris-pietschmann-transparent.png">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="alternate" type="application/rss+xml" title="Chris Pietschmann &raquo; Archive" href="https://pietschsoft.com/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//css/site.css">
+    <link rel="canonical" href="http://pietschsoft.com//post/2009/03/20/getting-started-virtual-earth-silverlight-map-control-sdk-ctp">
+</head>
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Bio</h4>
+          <p class="text-muted">
+            <a href="/">Chris Pietschmann</a> is a Microsoft MVP with <strong>Azure</strong> and <strong>IoT</strong> technologies, and a Microsoft Certified Trainer (MCT) with 20+ years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in Internet of Things (IoT), DevOps, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Publications</h4>
+          <ul class="list-unstyled">
+            <li><a href="/#books" class="text-white">Books</a></li>
+            <li><a href="https://build5nines.com" class="text-white">Build5Nines.com</a></li>
+            <li><a href="https://www.hackster.io/crpietschmann/articles" class="text-white">Hackster.io</a></li>
+            <li><a href="/blog" class="text-white">Pietschsoft.com</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/crpietschmann" class="text-white">Twitter</a></li>
+            <li><a href="http://linkedin.com/in/crpietschmann" class="text-white">LinkedIn</a></li>
+            <li><a href="https://build5nines.com/contact" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com Logo" style="height: 1.5em; margin-right: 0.5em;"/>-->
+        <img src="/images/avatar-chris-pietschmann-transparent.png" alt="Chris Pietschmann" style="background: #fff; height: 1.5em; margin-right: 0.5em;"/>
+        <strong>Chris Pietschmann</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container post">
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <header class="post-header">
+          <h1 class="post-title">CTP: Getting Started with Bing Maps Silverlight CTP Map Control SDK</h1>
+          <!--
+          <div class="post-categories">
+              
+              
+              <a href="//categories/#Bing Maps">Bing Maps</a>
+              &nbsp;
+              
+              <a href="//categories/#Silverlight">Silverlight</a>
+              
+              
+            </div>
+          -->
+          <p class="post-meta">Mar 20, 2009</p>
+      </header>
+
+      <article class="post-content">
+        
+            <!-- more -->
+
+<p><strong>UPDATE: I have written a newer version of this article to specifically target the latest Bing Maps Silverlight Control Version 1.0 Release.</strong></p>
+
+<p><strong>You can find the new article here: <a href="/post.aspx?id=82ad46e3-73c5-468f-be62-6247970f31e1">Getting Started with Bing Maps Silverlight Control v1.0</a></strong></p>
+<hr />
+
+<p>It seems like forever since MIX’08 when a demo was shown of a new Silverlight-based Virtual Earth Map Control. Well, now FINALLY we actually have a version of the control to “play” around with. The reason I say “play” is because it’s still a CTP (Community Technology Preview). If you read the license file you’ll see that basically the most important points of Microsoft’s position on CTP’s are: 1) You can NOT use it in a production environment, and 2) It’s a Preview, so anything can change from now until the next release (CTP, Beta, whatever). Well, anyway…</p>
+
+<p><strong>I introduce you to the Virtual Earth Silverlight Map Control SDK CTP!</strong></p>
+
+<p>Before I dig into what’s needed to begin development, and show you how simple it is to use; here’s a few highlights of what’s so Awesome about the control.</p>
+<h3>Why is the Virtual Earth Silverlight Map Control so Awesome?!?</h3>
+
+<p>Here’s a few reason:</p>
+<ul>
+<li>**Silverlight!** &ndash; Silverlight itself is truly a high point with this new control. You can now Plot/Overlay Rich Media Content (Images, Video, and any Silverlight/XAML content you can think of!) over the Map! </li>
+<li>**Performance!** &ndash; If you&rsquo;ve used the Virtual Earth JavaScript Map Control, then you must be familiar with the fact that the Map really starts to slow down when you try to plot something around 300+ Pushpins or a hand full of Polygons with 1000+ points each. With the new Silverlight control you can literally plot THOUSANDS of Pushpins on the Map and you wont render it useless like you would with the previous JavaScript control. Your limit is really only based on the Client Computer that is running the application, and I expect that it&rsquo;ll probably improve a bit with Silverlight 3&rsquo;s ability to utilize the local GPU. </li>
+<li>**No More JavaScript or Browser Inconsistencies! &ndash; **You no longer need to worry or hassle yourself with JavaScript and making sure it runs/works as expected in all the different web browsers (Internet Explorer, Firefox, Safari, etc.) No you can manipulate the map using pure .NET code. Don&rsquo;t fret if you need to integrate with existing JavaScript code; you can always use Silverlight&rsquo;s HTML Bridge to interact back and forth as needed. </li>
+<li>**Virtual Earth!** &ndash; And, last but not least, we can not forget that part of the Vast Awesomeness of this control is just due to the fact that it&rsquo;s Virtual Earth Mapping!! </li>
+</ul>
+<h3>What&rsquo;s Needed to Get Started?</h3>
+
+<p>Firstly, Download the <a href="http://connect.microsoft.com/silverlightmapcontrolctp" target="_blank">Virtual Earth Silverlight Map Control SDK CTP from Microsoft Connect</a>: <a title="http://connect.microsoft.com/silverlightmapcontrolctp" href="http://connect.microsoft.com/silverlightmapcontrolctp">http://connect.microsoft.com/silverlightmapcontrolctp</a></p>
+
+<p><span style="text-decoration: line-through;"><em>Note: At the time of posting this (3/20/2009 6:26PM CST) the CTP Download is currently down. You can still go to the Microsoft Connect website and Register, then you’ll be able to download the bits when they’re back up.</em></span> The download issue has been fixed.</p>
+
+<p>There is also a <a href="https://sharepoint.connect.microsoft.com/silverlightmapcontrolctp/iSDK/default.htm" target="_blank">Virtual Earth Silverlight Map Control CTP Interactive SDK</a> (in the same style of the Virtual Earth JavaScript control) here: <a title="https://sharepoint.connect.microsoft.com/silverlightmapcontrolctp/iSDK/default.htm" href="https://sharepoint.connect.microsoft.com/silverlightmapcontrolctp/iSDK/default.htm">https://sharepoint.connect.microsoft.com/silverlightmapcontrolctp/iSDK/default.htm</a></p>
+
+<p>Secondly, you’ll need a couple Tools installed first:</p>
+<ol>
+<li><a href="http://www.microsoft.com/downloads/details.aspx?familyid=FBEE1648-7106-44A7-9649-6D9F6D58056E&amp;displaylang=en" target="_blank">Visual Studio 2008 SP1</a> **&ndash;or-** <a href="http://go.microsoft.com/?linkid=7653519" target="_blank">Visual Web Developer 2008 Express with SP1</a> </li>
+<li><a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=c22d6a7b-546f-4407-8ef6-d60c8ee221ed&amp;displaylang=en" target="_blank">Silverlight Tools for Visual Studio 2008 SP1</a> </li>
+</ol>
+
+<p>Of course you’ll also need to at least be familiar with the basics of Silverlight development. I’m referring to XAML for the most part, so if your familiar with WPF that should be enough to get you started.</p>
+
+<p>For those Virtual Earth developers new to Silverlight; If you need help getting started with learning the basics of Silverlight development, here are some resources that will help:</p>
+<ul>
+<li><a href="http://silverlight.net/getstarted/" target="_blank">Get Started Building Silverlight Applications at http://silverlight.net</a> </li>
+<li><a href="http://silverlight.net/Learn/" target="_blank">Silverlight Learning Resources at http://silverlight.net</a> </li>
+</ul>
+<h3>Let&rsquo;s Display a Map in Silverlight</h3>
+<h5>Create a New Silverlight Application Project</h5>
+<ol>
+<li>Run Visual Studio 2008 and create a New Project using the **Silverlight Application** template.       
+ 
+<a href="/files/CreateSilverlightApplicationProject.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="CreateSilverlightApplicationProject" src="/files/CreateSilverlightApplicationProject_thumb.png" border="0" alt="CreateSilverlightApplicationProject" width="706" height="486" /></a> </li>
+<li>In the &ldquo;Add Silverlight Application&rdquo; dialog box, select the &ldquo;**Add a new ASP.NET Web project to the solution to host Silverlight**&rdquo; option and click &ldquo;OK&rdquo;. You must select this option to create an ASP.NET Web Application Project or ASP.NET Website because the <a href="http://msdn.microsoft.com/en-us/library/cc189008(VS.95).aspx" target="_blank">URL Access Restrictions in Silverlight</a> require the page that hosts the Map control to be hosted using HTTP in order to load/access the Virtual Earth Map Tiles.       
+ 
+<a href="/files/AddNewASP.NETWebProject.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="AddNewASP.NETWebProject" src="/files/AddNewASP.NETWebProject_thumb.png" border="0" alt="AddNewASP.NETWebProject" width="457" height="409" /></a> </li>
+</ol>
+<h4>Add a Reference to Microsoft.VirtualEarth.MapControl.dll</h4>
+<ol>
+<li>Go to the &ldquo;**Solution Explorer**&rdquo; and Right-Click &ldquo;**References**&rdquo; in the Silverlight Project (not the ASP.NET Web Application Project), and Select &ldquo;**Add Reference&hellip;**&rdquo;       
+ 
+<a href="/files/VEJS_003_AddReferenceToMapControlDLL.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_003_AddReferenceToMapControlDLL" src="/files/VEJS_003_AddReferenceToMapControlDLL_thumb.png" border="0" alt="VEJS_003_AddReferenceToMapControlDLL" width="365" height="354" /></a> </li>
+<li>Within the &ldquo;Add Reference&rdquo; Dialog, Select the &ldquo;**Browse**&rdquo; tab and navigate to the folder where the SDK is installed, and select the &ldquo;**Microsoft.VirtualEarth.MapControl.dll**&rdquo;.       
+ 
+*Note: By Default the SDK is installed in this folder &ldquo;C:\Program Files (x86)\Microsoft Virtual Earth Silverlight Map Control\CTP\Libraries&rdquo;        
+ 
+<a href="/files/VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile" src="/files/VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile_thumb.png" border="0" alt="VEJS_004_AddReferenceToMapControlDLL_SelectDLLFile" width="735" height="450" /></a> *</li>
+</ol>
+<h4>Display a Virtual Earth Map</h4>
+<ol>
+<li>Add a Namespace declaration to to Page.xaml for the Microsoft.VirtualEarth.MapControl namespace.      
+To do this add the following to the <UserControl> tag:       
+*xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl"        
+*&lt;/li&gt;
+<li>Add the Map Control to Page by adding the following tag within the Grid in the Page:      
+*<m:Map></m:Map>* </li>
+&lt;/ol&gt;
+
+The resulting Page.xaml will look like this:
+
+<UserControl x:Class="VirtualEarthSilverlightApplication1.Page" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl" Width="400" Height="300">     
+    <Grid x:Name="LayoutRoot" Background="White">     
+        <m:Map></m:Map>     
+    </Grid>     
+</UserControl>
+
+ 
+
+Now, when you run the application (press F5) you will see a fully interactive Virtual Earth Map displayed:
+
+<a href="/files/VEJS_005_SimpleMapDisplayed.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_005_SimpleMapDisplayed" src="/files/VEJS_005_SimpleMapDisplayed_thumb.png" border="0" alt="VEJS_005_SimpleMapDisplayed" width="489" height="304" /></a>
+<h3>Change/Set Map Properties Declaratively using XAML and Programatically using C#</h3>
+
+You can change/set the Map Control&rsquo;s properties Declaratively using XAML and Programatically using C# (or any other .NET language).
+
+Below are examples using XAML and C#.
+
+**XAML:** You can change the Map Mode declaratively using XAML by just setting the &ldquo;Mode&rdquo; property. For Example, setting it to &ldquo;Aerial&rdquo; will change the Map Mode to AerialMapMode.
+
+<UserControl x:Class="VirtualEarthSilverlightApplication1.Page" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl" Width="400" Height="300">     
+    <Grid x:Name="LayoutRoot" Background="White">     
+        <m:Map Mode="Aerial"></m:Map>     
+    </Grid>     
+</UserControl>
+
+ 
+
+**C#:** You can also change the Map Mode just as easily programatically using C#. Here&rsquo;s the same example of setting the Map Mode to AerialMapMode within the Page constructor:
+
+using System.Windows.Controls;    
+using Microsoft.VirtualEarth.MapControl;
+
+namespace VirtualEarthSilverlightApplication1    
+{     
+    public partial class Page : UserControl     
+    {     
+        public Page()     
+        {     
+            InitializeComponent();
+
+            Map1.Mode = new AerialMode();    
+        }     
+    }     
+}
+
+ 
+
+First, in order to access the Map Control programatically you&rsquo;ll need to set it&rsquo;s &ldquo;Name&rdquo; property within XAML; like the following:
+
+<UserControl x:Class="VirtualEarthSilverlightApplication1.Page" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl" Width="400" Height="300">     
+    <Grid x:Name="LayoutRoot" Background="White">     
+        <m:Map Name="Map1"></m:Map>     
+    </Grid>     
+</UserControl>
+
+ 
+<h3>Conclusion</h3>
+
+I hope your as psyched about the new Virtual Earth Silverlight control as I am. I&rsquo;m really looking forward to exploring all the capabilities of the new control; most of which just weren&rsquo;t possible with the old JavaScript control. One downside is we&rsquo;ll have to wait until a future release for a &ldquo;Go Live&rdquo; license, but until then I&rsquo;m sure the guys on the Virtual Earth team will be making this control the absolute best it can be; after all it&rsquo;s pretty darn awesome already.
+
+Keep an eye out, I&rsquo;ll be posting more articles/tutorials to help you out in exploring this new control.
+<h4>Next Tutorial/Article: <a href="/post.aspx?id=6a098f41-2df4-4362-a577-606863de838c">Basics of Adding Polygons and Polylines using XAML and Code </a></h4>
+</UserControl></li></ol>
+
+        
+      </article>
+
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+
+      <!--
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+      -->
+
+
+
+      
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+
+      <!--
+      
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+      
+      
+        -->
+
+
+
+    </div>
+    <div class="col-md-4">
+      <div class="mb-3">
+    <script type="text/javascript"><!--
+        document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
+        // --></script>
+    </div>
+    
+    <!--
+    <div class="mb-3">
+    <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
+    </div>
+    -->
+
+    <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+    <div class="recent">
+    <h4>Recent Posts</h4>
+    <ul class="list-unstyled">
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions</a></h6>
+            <span class="small text-muted">01 Jul 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number</a></h6>
+            <span class="small text-muted">06 Apr 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/03/11/encryption-code-greater-than-guns-bombs">Encryption and Code are Greater Than Guns and Bombs</a></h6>
+            <span class="small text-muted">11 Mar 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/02/15/macos-monitor-cpu-usage-info">macOS: Monitor CPU Usage and Frequency Info</a></h6>
+            <span class="small text-muted">15 Feb 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/01/02/basics-javascript-class-inheritance">Basics of JavaScript Class Inheritance</a></h6>
+            <span class="small text-muted">02 Jan 2020</span>
+        </li>
+        
+    </ul>
+    </div>
+    
+    <!-- Amazon Affiliate Links -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=1593279507&asins=1593279507&linkId=dbae26993e5e47c31a6178fd13aed38f&show_border=true&link_opens_in_new_window=true"></iframe>
+
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0596517742&asins=0596517742&linkId=67c7a7145153fa5d61755acafc46fa56&show_border=true&link_opens_in_new_window=true"></iframe>
+    <!--
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0135957052&asins=0135957052&linkId=01a571b3e6c9fa1f7c90c5c8f7dfc583&show_border=true&link_opens_in_new_window=true"></iframe>
+    -->
+
+    <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=kuft&banner=07V9YHKS4HY556H67002&f=ifr&lc=pf4&linkID=4bb77e8255a5ef372bfab6cc5c160388&t=pietschsoft04-20&tracking_id=pietschsoft04-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+
+    <div class="related">
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+
+    </div>
+
+    <!--
+    <h4>Courses</h4>
+    <style>
+        .course-box {
+            margin-bottom: 1em;
+        }
+        .course-box img {
+            width: 95%;
+        }
+        .course-box > strong {
+            display: block;
+        }
+        .course-box > em {
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
+        </a>
+        <strong>
+            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+                The Complete JavaScript Course 2020: Build Real Projects!
+            </a>
+        </strong>
+        <em>by Jonas Schmedtmann</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            JavaScript Basics for Beginners
+        </a></strong>
+        <em>by Mosh Hamedani</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            Advanced JavaScript Concepts
+        </a></strong>
+        <em>by Andrei Neagoie</em>
+    </div>
+    -->
+
+    <h4>Legal Disclaimer</h4>
+    <p style="font-size=0.7em">This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+    
+    <div id="fixedadmarker"></div>
+    <div id="fixedad" class="mt-3">
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+    </div>
+    <style>
+    @media (min-width: 768px) {
+        .fixedad-float {
+            position: fixed;
+            top: 2.5em;
+        }
+    }
+    </style>
+    <script>
+    window.setInterval(function() {
+        var elem = $('#fixedadmarker'),
+            top = elem.offset().top || 0,
+            height = elem[0].offsetHeight || 0,
+            bottom = top + height,
+            scrollY = window.scrollY || 0,
+            elemToBeFixed = $('#fixedad');
+        if (scrollY >= bottom) {
+            elemToBeFixed.addClass('fixedad-float');
+        } else {
+            elemToBeFixed.removeClass('fixedad-float');
+        }
+    }, 100);
+    </script>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Chris Pietschmann</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/#awards">Microsoft MVP</a></li>
+        <li><a class="text-muted" href="/#books">Books</a></li>
+        <li><a class="text-muted" href="/#websites">Websites</a></li>
+        <li><a class="text-muted" href="/#experience">Experience</a></li>
+        <li><a class="text-muted" href="/talks">Talks</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Publications</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://build5nines.com" target="_blank">Build5Nines.com</a></li>
+        <li><a class="text-muted" href="https://www.hackster.io/crpietschmann/articles" target="_blank">Hackster.io</a></li>
+        <li><a class="text-muted" href="/blog">Pietschsoft.com</a></li>
+      </ul>
+      <h5>Social Media</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://twitter.com/crpietschmann" target="_blank">Twitter</a></li>
+        <li><a class="text-muted" href="http://linkedin.com/in/crpietschmann" target="_blank">LinkedIn</a></li>
+        <li><a class="text-muted" href="http://youtube.com/build5nines" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <img src="/images/buildazure-logo.png" alt="Build5Nines.com" style="height: 1.5em;"/>
+      <small class="d-block mb-3 text-muted">
+        Copyright © 2020 Chris Pietschmann. All rights reserved.
+      </small>
+      <small class="d-block mb-3 text-muted">
+        <strong>Legal Disclaimer</strong>
+        <p>This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+      </small>
+    </div>
+    <div class="col-12 col-md">
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script src="/scripts/prism/prism.js"></script>
+<link rel="stylesheet" href="/scripts/prism/prism.css" />
+
+<script src="/scripts/holder.js"></script>
+<script>
+Holder.addTheme('thumb', {
+  bg: '#55595c',
+  fg: '#eceeef',
+  text: 'Thumbnail'
+});
+</script>
+
+
+    <script type="text/javascript">
+    // Google Analytics
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1172995-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
+
+    <script type="text/javascript">
+    // Developer Media Ads
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+
+    // Google Analytics Track External Link Clicks
+    (function($) { if ($) {
+      $('a[href^=http]').click(function(){
+          if (_gaq && _gaq.push && !((this.href || '').startsWith('https://pietschsoft.com'))) {
+              _gaq.push(['_trackEvent','Link','External',this.href]);
+          }
+          return true;
+      });
+    }})(jQuery);
+    </script>
+  </body>
+</html>

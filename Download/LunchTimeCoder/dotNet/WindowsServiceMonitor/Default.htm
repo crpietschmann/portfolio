@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>LunchTimeCoder.ServiceMonitor - A Windows Service Monitor that runs in the system tray</title>
+<style>
+h2 {margin-bottom: 1px;}
+</style>
+</head>
+<body>
+<h1>LunchTimeCoder.ServiceMonitor - A Windows Service Monitor that runs in the system tray</h1>
+<i>
+version 1.1<br />
+Copyright (c) 2007, <a href="http://pietschsoft.com">Chris Pietschmann</a> (http://pietschsoft.com)<br/>
+All rights reserved<br/>
+</i>
+<br/>
+This was created as part of the <a href="http://lunchtimecoder.com">Lunch Time Coder</a> initiative.<br />
+<br />
+
+<p>
+<!-- Lake Quincy Media / DeveloperMedia -->
+<div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="728x90"></div>
+</p>
+
+
+<h2>What is this?</h2>
+This is a small utility that monitors windows services running on the local machine or any maching on the local network. And notifies you via an icon in the system tray and a balloon popup telling you which services aren't running. You can also Start and Stop services from this utility.
+<br />
+<br />
+<table><tr><td>
+<strong>Main Interface</strong><br />
+<img src="images/Screenshot001.png" align="left" />
+This is a screenshot of the main window.<br />
+Clicking the "Add" and "Remove" buttons allow you to add or remove services being monitored.<br />
+Clicking on a service in the list will show it's state to the right of the list, and allow you to start or stop that service using the "Start" and "Stop" buttons.<br />
+Clicking either of the "Minimize" or "Close" buttons on the top right of the window will minimize the app to the system tray. To close the application, just select Exit from the File menu, or right click the system tray icon and select Exit.
+</td></tr></table>
+<br />
+<table><tr><td>
+<strong>System Tray Notification</strong><br />
+<img src="images/Screenshot002.png" align="left" />
+The system tray icon will show a red X on it when there are one or more services that aren't running.<br />
+When it first sees that a services is stopped, it will show the balloon popup notifying the user what services are stopped.<br />
+Double-clicking on the system tray icon will restore the main application window.
+</td></tr></table>
+<br />
+<br />
+
+<h2>Compatibility:</h2>
+This application runs as expected on both Windows XP and Windows Vista. It can also monitor services running on Windows 2000, Windows XP and Windows Vista. It however can not monitor services running on Windows NT 4.<br />
+Note that you may need admin rights on Windows Vista to run this, I haven't tested it with a restricted access user account.
+<br />
+
+<h2>Requirements:</h2>
+Microsoft .NET Framework 2.0
+
+<h2>Downloads:</h2>
+<small><i>(right-click the below links and select "save as")</i></small><br/>
+<a href="files/LunchTimeCoder.ServiceMonitor_SOURCE.zip">Source Code Only (C# only)</a><br/>
+<a href="files/LunchTimeCoder.ServiceMonitor_BIN.zip">Executable Only</a><br/>
+
+
+<h2>Change Log:</h2>
+<strong>08/02/2007</strong> - v1.1<br/>
+- Added ability to monitor services on any computer on the local network<br/>
+- The utility now remembers what services to monitor the next time it starts up<br/>
+- The services current state is now displayed next to its name<br/>
+<strong>07/19/2007</strong> - v1.0<br />
+
+
+<h2>Future Thoughts:</h2>
+<i>Possible additions to the application if more time were spent on it.</i>
+<ul style="margin-top: 2px;">
+	<li>Well, actually I've kinda run out of ideas. If you have any suggestions let me know.</li>
+</ul>
+
+<h2>Found a bug? / Have a feature suggestion?</h2>
+Let me know <a href="http://pietschsoft.com/contact.aspx">here</a> if you found a bug or have a feature suggestion.
+
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1172995-1";
+urchinTracker();
+</script>
+
+<script type='text/javascript'>
+    function _dmBootstrap(file) { 
+        var _dma = document.createElement('script');  
+        _dma.type = 'text/javascript'; 
+        _dma.async = true;  
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file; 
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined')  _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000);})();
+</script>
+
+</body>
+</html>
+

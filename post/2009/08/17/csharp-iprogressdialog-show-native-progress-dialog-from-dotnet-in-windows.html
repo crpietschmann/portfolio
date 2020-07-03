@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>C#: Using IProgressDialog to show a “native” Progress Dialog from .NET in Windows | Chris Pietschmann</title>
+    <meta name="description" content="I have nearly 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+">
+    <meta name="author" content="Chris Pietschmann">
+    <link rel="icon" href="/images/avatar-chris-pietschmann-transparent.png">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="alternate" type="application/rss+xml" title="Chris Pietschmann &raquo; Archive" href="https://pietschsoft.com/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//css/site.css">
+    <link rel="canonical" href="http://pietschsoft.com//post/2009/08/17/csharp-iprogressdialog-show-native-progress-dialog-from-dotnet-in-windows">
+</head>
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Bio</h4>
+          <p class="text-muted">
+            <a href="/">Chris Pietschmann</a> is a Microsoft MVP with <strong>Azure</strong> and <strong>IoT</strong> technologies, and a Microsoft Certified Trainer (MCT) with 20+ years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in Internet of Things (IoT), DevOps, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Publications</h4>
+          <ul class="list-unstyled">
+            <li><a href="/#books" class="text-white">Books</a></li>
+            <li><a href="https://build5nines.com" class="text-white">Build5Nines.com</a></li>
+            <li><a href="https://www.hackster.io/crpietschmann/articles" class="text-white">Hackster.io</a></li>
+            <li><a href="/blog" class="text-white">Pietschsoft.com</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/crpietschmann" class="text-white">Twitter</a></li>
+            <li><a href="http://linkedin.com/in/crpietschmann" class="text-white">LinkedIn</a></li>
+            <li><a href="https://build5nines.com/contact" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com Logo" style="height: 1.5em; margin-right: 0.5em;"/>-->
+        <img src="/images/avatar-chris-pietschmann-transparent.png" alt="Chris Pietschmann" style="background: #fff; height: 1.5em; margin-right: 0.5em;"/>
+        <strong>Chris Pietschmann</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container post">
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <header class="post-header">
+          <h1 class="post-title">C#: Using IProgressDialog to show a “native” Progress Dialog from .NET in Windows</h1>
+          <!--
+          <div class="post-categories">
+              
+              
+              <a href="//categories/#C#">C#</a>
+              &nbsp;
+              
+              <a href="//categories/#.NET">.NET</a>
+              &nbsp;
+              
+              <a href="//categories/#IProgressDialog">IProgressDialog</a>
+              
+              
+            </div>
+          -->
+          <p class="post-meta">Aug 17, 2009</p>
+      </header>
+
+      <article class="post-content">
+        
+            <!-- more -->
+
+<p><a href="/files/CSharp-IProgressDialog-Native-dotNet-in-Windows.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="CSharp-IProgressDialog-Native-dotNet-in-Windows" src="/files/CSharp-IProgressDialog-Native-dotNet-in-Windows_thumb.png" border="0" alt="CSharp-IProgressDialog-Native-dotNet-in-Windows" width="260" height="215" align="right" /></a> A <a href="/post.aspx?id=d76a12f5-9ead-4847-b21a-be221e790681" target="_blank">few months ago I posted some code that I originally wrote back in about 2004</a>… Well, I was looking through some more of my prototypes that I’ve written and I came across the following example of how to use the <a href="http://msdn.microsoft.com/en-us/library/bb775248%28VS.85%29.aspx" target="_blank">IProgressDialog Win32 Interface</a> to harness the power of the Built-in Progress Dialog in Windows within your own .NET applications.</p>
+
+<p>I have test this on WIndows 7, but it should work as expected on Windows XP and Vista. The MSDN Documentation for IProgressDialog says it’s minimum supported operating systems are Windows 2000 and Windows XP.</p>
+
+<p>The full source code for this example is listed below. Just copy from this post and paste it within your app to test.</p>
+<h3>&ldquo;ProgressDialog&rdquo; Usage Example</h3>
+
+<p>Here’s an example of how to use this example “ProgressDialog” class: This is an example of using it from Windows Forms, however it could be used from within WPF exactly the same way.</p>
+<pre class="csharpcode"><span class="kwrd">using</span> System;
+<span class="kwrd">using</span> System.Windows.Forms;
+
+<span class="kwrd">namespace</span> WindowsProgressDialog
+{
+    <span class="kwrd">public</span> <span class="kwrd">partial</span> <span class="kwrd">class</span> Form1 : Form
+    {
+        <span class="kwrd">public</span> Form1()
+        {
+            InitializeComponent();
+        }
+
+        <span class="kwrd">private</span> Pietschsoft.ProgressDialog pd;
+        <span class="kwrd">private</span> <span class="kwrd">uint</span> progressPercent;
+
+        <span class="kwrd">private</span> <span class="kwrd">void</span> button1_Click(<span class="kwrd">object</span> sender, EventArgs e)
+        {
+            pd = <span class="kwrd">new</span> Pietschsoft.ProgressDialog(<span class="kwrd">this</span>.Handle);
+            pd.Title = <span class="str">"Performing Operation"</span>;
+            pd.CancelMessage = <span class="str">"Please wait while the operation is cancelled"</span>;
+            pd.Maximum = 100;
+            pd.Value = 0;
+            pd.Line1 = <span class="str">"Line One"</span>;
+            pd.Line3 = <span class="str">"Calculating Time Remaining..."</span>;
+            
+            <span class="rem">//pd.ShowDialog(); // Defaults to PROGDLG.Normal</span>
+            pd.ShowDialog(Pietschsoft.ProgressDialog.PROGDLG.Modal, Pietschsoft.ProgressDialog.PROGDLG.AutoTime, Pietschsoft.ProgressDialog.PROGDLG.NoMinimize);
+
+            progressPercent = 0;
+            timer1.Start();
+        }
+
+        <span class="kwrd">private</span> <span class="kwrd">void</span> timer1_Tick(<span class="kwrd">object</span> sender, EventArgs e)
+        {
+            progressPercent++;
+
+            <span class="kwrd">if</span> (pd.HasUserCancelled)
+            {
+                timer1.Stop();
+                pd.CloseDialog();
+            }
+            <span class="kwrd">else</span>
+            {
+                <span class="rem">// Update the progress value</span>
+                pd.Value = progressPercent;
+
+                pd.Line2 = <span class="str">"Percent "</span> + progressPercent.ToString() + <span class="str">"%"</span>;
+
+                <span class="kwrd">if</span> (progressPercent &gt;= 100)
+                {
+                    timer1.Stop();
+                    pd.CloseDialog();
+                }
+            }
+        }
+    }
+}</pre>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+<h3> </h3>
+<h3>&ldquo;ProgressDialog&rdquo; Class</h3>
+
+<p>And, here’s the full code for the “ProgressDialog” class itself:</p>
+<pre class="csharpcode"><span class="kwrd">using</span> System;
+<span class="kwrd">using</span> System.Runtime.InteropServices;
+<span class="kwrd">using</span> System.Text;
+
+<span class="kwrd">namespace</span> Pietschsoft
+{
+    <span class="kwrd">public</span> <span class="kwrd">class</span> ProgressDialog
+    {
+        <span class="kwrd">private</span> IntPtr _parentHandle;
+
+        <span class="kwrd">private</span> Win32IProgressDialog pd = <span class="kwrd">null</span>;
+
+        <span class="kwrd">public</span> ProgressDialog(IntPtr parentHandle)
+        {
+            <span class="kwrd">this</span>._parentHandle = parentHandle;
+        }
+
+        <span class="kwrd">public</span> <span class="kwrd">void</span> ShowDialog(<span class="kwrd">params</span> PROGDLG[] flags)
+        {
+            <span class="kwrd">if</span> (pd == <span class="kwrd">null</span>)
+            {
+                pd = (Win32IProgressDialog)<span class="kwrd">new</span> Win32ProgressDialog();
+                
+                pd.SetTitle(<span class="kwrd">this</span>._Title);
+                pd.SetCancelMsg(<span class="kwrd">this</span>._CancelMessage, <span class="kwrd">null</span>);
+                pd.SetLine(1, <span class="kwrd">this</span>._Line1, <span class="kwrd">false</span>, IntPtr.Zero);
+                pd.SetLine(2, <span class="kwrd">this</span>._Line2, <span class="kwrd">false</span>, IntPtr.Zero);
+                pd.SetLine(3, <span class="kwrd">this</span>._Line3, <span class="kwrd">false</span>, IntPtr.Zero);
+
+                PROGDLG dialogFlags = PROGDLG.Normal;
+                <span class="kwrd">if</span> (flags.Length != 0)
+                {
+                    dialogFlags = flags[0];
+                    <span class="kwrd">for</span> (var i = 1; i &lt; flags.Length; i++)
+                    {
+                        dialogFlags = dialogFlags | flags[i];
+                    }
+                }
+                
+                pd.StartProgressDialog(<span class="kwrd">this</span>._parentHandle, <span class="kwrd">null</span>, dialogFlags, IntPtr.Zero);
+            }
+        }
+
+        <span class="kwrd">public</span> <span class="kwrd">void</span> CloseDialog()
+        {
+            <span class="kwrd">if</span> (pd != <span class="kwrd">null</span>)
+            {
+                pd.StopProgressDialog();
+                <span class="rem">//Marshal.ReleaseComObject(pd);</span>
+                pd = <span class="kwrd">null</span>;
+            }
+        }
+
+        <span class="kwrd">private</span> <span class="kwrd">string</span> _Title = <span class="kwrd">string</span>.Empty;
+        <span class="kwrd">public</span> <span class="kwrd">string</span> Title
+        {
+            get
+            {
+                <span class="kwrd">return</span> <span class="kwrd">this</span>._Title;
+            }
+            set
+            {
+                <span class="kwrd">this</span>._Title = <span class="kwrd">value</span>;
+                <span class="kwrd">if</span> (pd != <span class="kwrd">null</span>)
+                {
+                    pd.SetTitle(<span class="kwrd">this</span>._Title);
+                }
+            }
+        }
+
+        <span class="kwrd">private</span> <span class="kwrd">string</span> _CancelMessage = <span class="kwrd">string</span>.Empty;
+        <span class="kwrd">public</span> <span class="kwrd">string</span> CancelMessage
+        {
+            get
+            {
+                <span class="kwrd">return</span> <span class="kwrd">this</span>._CancelMessage;
+            }
+            set
+            {
+                <span class="kwrd">this</span>._CancelMessage = <span class="kwrd">value</span>;
+                <span class="kwrd">if</span> (pd != <span class="kwrd">null</span>)
+                {
+                    pd.SetCancelMsg(<span class="kwrd">this</span>._CancelMessage, <span class="kwrd">null</span>);
+                }
+            }
+        }
+
+        <span class="kwrd">private</span> <span class="kwrd">string</span> _Line1 = <span class="kwrd">string</span>.Empty;
+        <span class="kwrd">public</span> <span class="kwrd">string</span> Line1
+        {
+            get
+            {
+                <span class="kwrd">return</span> <span class="kwrd">this</span>._Line1;
+            }
+            set
+            {
+                <span class="kwrd">this</span>._Line1 = <span class="kwrd">value</span>;
+                <span class="kwrd">if</span> (pd != <span class="kwrd">null</span>)
+                {
+                    pd.SetLine(1, <span class="kwrd">this</span>._Line1, <span class="kwrd">false</span>, IntPtr.Zero);
+                }
+            }
+        }
+
+        <span class="kwrd">private</span> <span class="kwrd">string</span> _Line2 = <span class="kwrd">string</span>.Empty;
+        <span class="kwrd">public</span> <span class="kwrd">string</span> Line2
+        {
+            get
+            {
+                <span class="kwrd">return</span> <span class="kwrd">this</span>._Line2;
+            }
+            set
+            {
+                <span class="kwrd">this</span>._Line2 = <span class="kwrd">value</span>;
+                <span class="kwrd">if</span> (pd != <span class="kwrd">null</span>)
+                {
+                    pd.SetLine(2, <span class="kwrd">this</span>._Line2, <span class="kwrd">false</span>, IntPtr.Zero);
+                }
+            }
+        }
+
+        <span class="kwrd">private</span> <span class="kwrd">string</span> _Line3 = <span class="kwrd">string</span>.Empty;
+        <span class="kwrd">public</span> <span class="kwrd">string</span> Line3
+        {
+            get
+            {
+                <span class="kwrd">return</span> <span class="kwrd">this</span>._Line3;
+            }
+            set
+            {
+                <span class="kwrd">this</span>._Line3 = <span class="kwrd">value</span>;
+                <span class="kwrd">if</span> (pd != <span class="kwrd">null</span>)
+                {
+                    pd.SetLine(3, <span class="kwrd">this</span>._Line3, <span class="kwrd">false</span>, IntPtr.Zero);
+                }
+            }
+        }
+
+        <span class="kwrd">private</span> <span class="kwrd">uint</span> _value = 0;
+        <span class="kwrd">public</span> <span class="kwrd">uint</span> Value
+        {
+            get
+            {
+                <span class="kwrd">return</span> <span class="kwrd">this</span>._value;
+            }
+            set
+            {
+                <span class="kwrd">this</span>._value = <span class="kwrd">value</span>;
+                <span class="kwrd">if</span> (pd != <span class="kwrd">null</span>)
+                {
+                    pd.SetProgress(<span class="kwrd">this</span>._value, <span class="kwrd">this</span>._maximum);
+                }
+            }
+        }
+
+        <span class="kwrd">private</span> <span class="kwrd">uint</span> _maximum = 100;
+        <span class="kwrd">public</span> <span class="kwrd">uint</span> Maximum
+        {
+            get
+            {
+                <span class="kwrd">return</span> <span class="kwrd">this</span>._maximum;
+            }
+            set
+            {
+                <span class="kwrd">this</span>._maximum = <span class="kwrd">value</span>;
+                <span class="kwrd">if</span> (pd != <span class="kwrd">null</span>)
+                {
+                    pd.SetProgress(<span class="kwrd">this</span>._value, <span class="kwrd">this</span>._maximum);
+                }
+            }
+        }
+        <span class="kwrd">public</span> <span class="kwrd">bool</span> HasUserCancelled
+        {
+            get
+            {
+                <span class="kwrd">if</span> (pd != <span class="kwrd">null</span>)
+                {
+                    <span class="kwrd">return</span> pd.HasUserCancelled();
+                }
+                <span class="kwrd">else</span>
+                    <span class="kwrd">return</span> <span class="kwrd">false</span>;
+            }
+        }
+
+        <span class="preproc">#region</span> <span class="str">"Win32 Stuff"</span>
+        <span class="rem">// The below was copied from: http://pinvoke.net/default.aspx/Interfaces/IProgressDialog.html</span>
+
+        <span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">class</span> shlwapi
+        {
+            [DllImport(<span class="str">"shlwapi.dll"</span>, CharSet = CharSet.Auto)]
+            <span class="kwrd">static</span> <span class="kwrd">extern</span> <span class="kwrd">bool</span> PathCompactPath(IntPtr hDC, [In, Out] StringBuilder pszPath, <span class="kwrd">int</span> dx);
+        }
+
+        [ComImport]
+        [Guid(<span class="str">"EBBC7C04-315E-11d2-B62F-006097DF5BD4"</span>)]
+        [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+        <span class="kwrd">public</span> <span class="kwrd">interface</span> Win32IProgressDialog
+        {
+            <span class="rem">/// <summary>&lt;/span&gt;
+            <span class="rem">/// Starts the progress dialog box.</span>
+            <span class="rem">/// &lt;/summary&gt;</span>
+            <span class="rem">/// <param name="hwndParent" />A handle to the dialog box's parent window.&lt;/param&gt;</span>
+            <span class="rem">/// <param name="punkEnableModless" />Reserved. Set to null.&lt;/param&gt;</span>
+            <span class="rem">/// <param name="dwFlags" />Flags that control the operation of the progress dialog box. &lt;/param&gt;</span>
+            <span class="rem">/// <param name="pvResevered" />Reserved. Set to IntPtr.Zero&lt;/param&gt;</span>
+            <span class="kwrd">void</span> StartProgressDialog(
+                IntPtr hwndParent, <span class="rem">//HWND</span>
+                [MarshalAs(UnmanagedType.IUnknown)]    <span class="kwrd">object</span> punkEnableModless, <span class="rem">//IUnknown</span>
+                PROGDLG dwFlags,  <span class="rem">//DWORD</span>
+                IntPtr pvResevered <span class="rem">//LPCVOID</span>
+                );
+
+            <span class="rem">/// <summary>&lt;/span&gt;
+            <span class="rem">/// Stops the progress dialog box and removes it from the screen.</span>
+            <span class="rem">/// &lt;/summary&gt;</span>
+            <span class="kwrd">void</span> StopProgressDialog();
+
+            <span class="rem">/// <summary>&lt;/span&gt;
+            <span class="rem">/// Sets the title of the progress dialog box.</span>
+            <span class="rem">/// &lt;/summary&gt;</span>
+            <span class="rem">/// <param name="pwzTitle" />A pointer to a null-terminated Unicode string that contains the dialog box title.&lt;/param&gt;</span>
+            <span class="kwrd">void</span> SetTitle(
+                [MarshalAs(UnmanagedType.LPWStr)] <span class="kwrd">string</span> pwzTitle <span class="rem">//LPCWSTR</span>
+                );
+
+            <span class="rem">/// <summary>&lt;/span&gt;
+            <span class="rem">/// Specifies an Audio-Video Interleaved (AVI) clip that runs in the dialog box. Note: Note  This method is not supported in Windows Vista or later versions.</span>
+            <span class="rem">/// &lt;/summary&gt;</span>
+            <span class="rem">/// <param name="hInstAnimation" />An instance handle to the module from which the AVI resource should be loaded.&lt;/param&gt;</span>
+            <span class="rem">/// <param name="idAnimation" />An AVI resource identifier. To create this value, use the MAKEINTRESOURCE macro. The control loads the AVI resource from the module specified by hInstAnimation.&lt;/param&gt;</span>
+            <span class="kwrd">void</span> SetAnimation(
+                IntPtr hInstAnimation, <span class="rem">//HINSTANCE</span>
+                <span class="kwrd">ushort</span> idAnimation <span class="rem">//UINT</span>
+                );
+
+            <span class="rem">/// <summary>&lt;/span&gt;
+            <span class="rem">/// Checks whether the user has canceled the operation.</span>
+            <span class="rem">/// &lt;/summary&gt;</span>
+            <span class="rem">/// <returns>TRUE if the user has cancelled the operation; otherwise, FALSE.</returns></span>
+            <span class="rem">/// <remarks>&lt;/span&gt;
+            <span class="rem">/// The system does not send a message to the application when the user clicks the Cancel button.</span>
+            <span class="rem">/// You must periodically use this function to poll the progress dialog box object to determine</span>
+            <span class="rem">/// whether the operation has been canceled.</span>
+            <span class="rem">/// &lt;/remarks&gt;</span>
+            [PreserveSig]
+            [<span class="kwrd">return</span>: MarshalAs(UnmanagedType.Bool)]
+            <span class="kwrd">bool</span> HasUserCancelled();
+
+            <span class="rem">/// <summary>&lt;/span&gt;
+            <span class="rem">/// Updates the progress dialog box with the current state of the operation.</span>
+            <span class="rem">/// &lt;/summary&gt;</span>
+            <span class="rem">/// <param name="dwCompleted" />An application-defined value that indicates what proportion of the operation has been completed at the time the method was called.&lt;/param&gt;</span>
+            <span class="rem">/// <param name="dwTotal" />An application-defined value that specifies what value dwCompleted will have when the operation is complete.&lt;/param&gt;</span>
+            <span class="kwrd">void</span> SetProgress(
+                <span class="kwrd">uint</span> dwCompleted, <span class="rem">//DWORD</span>
+                <span class="kwrd">uint</span> dwTotal <span class="rem">//DWORD</span>
+                );
+
+            <span class="rem">/// <summary>&lt;/span&gt;
+            <span class="rem">/// Updates the progress dialog box with the current state of the operation.</span>
+            <span class="rem">/// &lt;/summary&gt;</span>
+            <span class="rem">/// <param name="ullCompleted" />An application-defined value that indicates what proportion of the operation has been completed at the time the method was called.&lt;/param&gt;</span>
+            <span class="rem">/// <param name="ullTotal" />An application-defined value that specifies what value ullCompleted will have when the operation is complete.&lt;/param&gt;</span>
+            <span class="kwrd">void</span> SetProgress64(
+                <span class="kwrd">ulong</span> ullCompleted, <span class="rem">//ULONGLONG</span>
+                <span class="kwrd">ulong</span> ullTotal <span class="rem">//ULONGLONG</span>
+                );
+
+            <span class="rem">/// <summary>&lt;/span&gt;
+            <span class="rem">/// Displays a message in the progress dialog.</span>
+            <span class="rem">/// &lt;/summary&gt;</span>
+            <span class="rem">/// <param name="dwLineNum" />The line number on which the text is to be displayed. Currently there are three lines&mdash;1, 2, and 3. If the PROGDLG_AUTOTIME flag was included in the dwFlags parameter when IProgressDialog::StartProgressDialog was called, only lines 1 and 2 can be used. The estimated time will be displayed on line 3.&lt;/param&gt;</span>
+            <span class="rem">/// <param name="pwzString" />A null-terminated Unicode string that contains the text.&lt;/param&gt;</span>
+            <span class="rem">/// <param name="fCompactPath" />TRUE to have path strings compacted if they are too large to fit on a line. The paths are compacted with PathCompactPath.&lt;/param&gt;</span>
+            <span class="rem">/// <param name="pvResevered" /> Reserved. Set to IntPtr.Zero.&lt;/param&gt;</span>
+            <span class="rem">/// <remarks>This function is typically used to display a message such as "Item XXX is now being processed." typically, messages are displayed on lines 1 and 2, with line 3 reserved for the estimated time.</remarks></span>
+            <span class="kwrd">void</span> SetLine(
+                <span class="kwrd">uint</span> dwLineNum, <span class="rem">//DWORD</span>
+                [MarshalAs(UnmanagedType.LPWStr)] <span class="kwrd">string</span> pwzString, <span class="rem">//LPCWSTR</span>
+                [MarshalAs(UnmanagedType.VariantBool)] <span class="kwrd">bool</span> fCompactPath, <span class="rem">//BOOL</span>
+                IntPtr pvResevered <span class="rem">//LPCVOID</span>
+                );
+
+            <span class="rem">/// <summary>&lt;/span&gt;
+            <span class="rem">/// Sets a message to be displayed if the user cancels the operation.</span>
+            <span class="rem">/// &lt;/summary&gt;</span>
+            <span class="rem">/// <param name="pwzCancelMsg" />A pointer to a null-terminated Unicode string that contains the message to be displayed.&lt;/param&gt;</span>
+            <span class="rem">/// <param name="pvResevered" />Reserved. Set to NULL.&lt;/param&gt;</span>
+            <span class="rem">/// <remarks>Even though the user clicks Cancel, the application cannot immediately call&lt;/span&gt;
+            <span class="rem">/// IProgressDialog::StopProgressDialog to close the dialog box. The application must wait until the</span>
+            <span class="rem">/// next time it calls IProgressDialog::HasUserCancelled to discover that the user has canceled the</span>
+            <span class="rem">/// operation. Since this delay might be significant, the progress dialog box provides the user with</span>
+            <span class="rem">/// immediate feedback by clearing text lines 1 and 2 and displaying the cancel message on line 3.</span>
+            <span class="rem">/// The message is intended to let the user know that the delay is normal and that the progress dialog</span>
+            <span class="rem">/// box will be closed shortly.</span>
+            <span class="rem">/// It is typically is set to something like "Please wait while ...". &lt;/remarks&gt;</span>
+            <span class="kwrd">void</span> SetCancelMsg(
+                [MarshalAs(UnmanagedType.LPWStr)] <span class="kwrd">string</span> pwzCancelMsg, <span class="rem">//LPCWSTR</span>
+                <span class="kwrd">object</span> pvResevered <span class="rem">//LPCVOID</span>
+                );
+
+            <span class="rem">/// <summary>&lt;/span&gt;
+            <span class="rem">/// Resets the progress dialog box timer to zero.</span>
+            <span class="rem">/// &lt;/summary&gt;</span>
+            <span class="rem">/// <param name="dwTimerAction" />Flags that indicate the action to be taken by the timer.&lt;/param&gt;</span>
+            <span class="rem">/// <param name="pvResevered" />Reserved. Set to NULL.&lt;/param&gt;</span>
+            <span class="rem">/// <remarks>&lt;/span&gt;
+            <span class="rem">/// The timer is used to estimate the remaining time. It is started when your application</span>
+            <span class="rem">/// calls IProgressDialog::StartProgressDialog. Unless your application will start immediately,</span>
+            <span class="rem">/// it should call Timer just before starting the operation.</span>
+            <span class="rem">/// This practice ensures that the time estimates will be as accurate as possible. This method</span>
+            <span class="rem">/// should not be called after the first call to IProgressDialog::SetProgress.&lt;/remarks&gt;</span>
+            <span class="kwrd">void</span> Timer(
+                PDTIMER dwTimerAction, <span class="rem">//DWORD</span>
+                <span class="kwrd">object</span> pvResevered <span class="rem">//LPCVOID</span>
+                );
+
+        }
+
+        [ComImport]
+        [Guid(<span class="str">"F8383852-FCD3-11d1-A6B9-006097DF5BD4"</span>)]
+        <span class="kwrd">public</span> <span class="kwrd">class</span> Win32ProgressDialog
+        {
+        }
+
+        <span class="rem">/// <summary>&lt;/span&gt;
+        <span class="rem">/// Flags that indicate the action to be taken by the ProgressDialog.SetTime() method.</span>
+        <span class="rem">/// &lt;/summary&gt;</span>
+        <span class="kwrd">public</span> <span class="kwrd">enum</span> PDTIMER : <span class="kwrd">uint</span> <span class="rem">//DWORD</span>
+        {
+            <span class="rem">/// <summary>Resets the timer to zero. Progress will be calculated from the time this method is called.</summary></span>
+            Reset = (0x01),
+            <span class="rem">/// <summary>Progress has been suspended.</summary></span>
+            Pause = (0x02),
+            <span class="rem">/// <summary>Progress has been resumed.</summary></span>
+            Resume = (0x03)
+        }
+
+        [Flags]
+        <span class="kwrd">public</span> <span class="kwrd">enum</span> PROGDLG : <span class="kwrd">uint</span> <span class="rem">//DWORD</span>
+        {
+            <span class="rem">/// <summary>Normal progress dialog box behavior.</summary></span>
+            Normal = 0x00000000,
+            <span class="rem">/// <summary>The progress dialog box will be modal to the window specified by hwndParent. By default, a progress dialog box is modeless.</summary></span>
+            Modal = 0x00000001,
+            <span class="rem">/// <summary>Automatically estimate the remaining time and display the estimate on line 3. </summary></span>
+            <span class="rem">/// <remarks>If this flag is set, IProgressDialog::SetLine can be used only to display text on lines 1 and 2.</remarks></span>
+            AutoTime = 0x00000002,
+            <span class="rem">/// <summary>Do not show the "time remaining" text.</summary></span>
+            NoTime = 0x00000004,
+            <span class="rem">/// <summary>Do not display a minimize button on the dialog box's caption bar.</summary></span>
+            NoMinimize = 0x00000008,
+            <span class="rem">/// <summary>Do not display a progress bar.</summary></span>
+            <span class="rem">/// <remarks>Typically, an application can quantitatively determine how much of the operation remains and periodically pass that value to IProgressDialog::SetProgress. The progress dialog box uses this information to update its progress bar. This flag is typically set when the calling application must wait for an operation to finish, but does not have any quantitative information it can use to update the dialog box.</remarks></span>
+            NoProgressBar = 0x00000010
+        }
+        <span class="preproc">#endregion</span>
+    }
+}&lt;/pre&gt;
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+</summary></span></remarks></span></summary></span></remarks></span></summary></span></summary></span></summary></span></summary></span></remarks></span></summary></span></summary></span></summary></span></summary></span></summary></span></pre>
+
+        
+      </article>
+
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+
+      <!--
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+      -->
+
+
+
+      
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+      <!--
+      
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+      
+        -->
+
+
+
+    </div>
+    <div class="col-md-4">
+      <div class="mb-3">
+    <script type="text/javascript"><!--
+        document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
+        // --></script>
+    </div>
+    
+    <!--
+    <div class="mb-3">
+    <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
+    </div>
+    -->
+
+    <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+    <div class="recent">
+    <h4>Recent Posts</h4>
+    <ul class="list-unstyled">
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions</a></h6>
+            <span class="small text-muted">01 Jul 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number</a></h6>
+            <span class="small text-muted">06 Apr 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/03/11/encryption-code-greater-than-guns-bombs">Encryption and Code are Greater Than Guns and Bombs</a></h6>
+            <span class="small text-muted">11 Mar 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/02/15/macos-monitor-cpu-usage-info">macOS: Monitor CPU Usage and Frequency Info</a></h6>
+            <span class="small text-muted">15 Feb 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/01/02/basics-javascript-class-inheritance">Basics of JavaScript Class Inheritance</a></h6>
+            <span class="small text-muted">02 Jan 2020</span>
+        </li>
+        
+    </ul>
+    </div>
+    
+    <!-- Amazon Affiliate Links -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=1593279507&asins=1593279507&linkId=dbae26993e5e47c31a6178fd13aed38f&show_border=true&link_opens_in_new_window=true"></iframe>
+
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0596517742&asins=0596517742&linkId=67c7a7145153fa5d61755acafc46fa56&show_border=true&link_opens_in_new_window=true"></iframe>
+    <!--
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0135957052&asins=0135957052&linkId=01a571b3e6c9fa1f7c90c5c8f7dfc583&show_border=true&link_opens_in_new_window=true"></iframe>
+    -->
+
+    <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=kuft&banner=07V9YHKS4HY556H67002&f=ifr&lc=pf4&linkID=4bb77e8255a5ef372bfab6cc5c160388&t=pietschsoft04-20&tracking_id=pietschsoft04-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+
+    <div class="related">
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+    </div>
+
+    <!--
+    <h4>Courses</h4>
+    <style>
+        .course-box {
+            margin-bottom: 1em;
+        }
+        .course-box img {
+            width: 95%;
+        }
+        .course-box > strong {
+            display: block;
+        }
+        .course-box > em {
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
+        </a>
+        <strong>
+            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+                The Complete JavaScript Course 2020: Build Real Projects!
+            </a>
+        </strong>
+        <em>by Jonas Schmedtmann</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            JavaScript Basics for Beginners
+        </a></strong>
+        <em>by Mosh Hamedani</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            Advanced JavaScript Concepts
+        </a></strong>
+        <em>by Andrei Neagoie</em>
+    </div>
+    -->
+
+    <h4>Legal Disclaimer</h4>
+    <p style="font-size=0.7em">This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+    
+    <div id="fixedadmarker"></div>
+    <div id="fixedad" class="mt-3">
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+    </div>
+    <style>
+    @media (min-width: 768px) {
+        .fixedad-float {
+            position: fixed;
+            top: 2.5em;
+        }
+    }
+    </style>
+    <script>
+    window.setInterval(function() {
+        var elem = $('#fixedadmarker'),
+            top = elem.offset().top || 0,
+            height = elem[0].offsetHeight || 0,
+            bottom = top + height,
+            scrollY = window.scrollY || 0,
+            elemToBeFixed = $('#fixedad');
+        if (scrollY >= bottom) {
+            elemToBeFixed.addClass('fixedad-float');
+        } else {
+            elemToBeFixed.removeClass('fixedad-float');
+        }
+    }, 100);
+    </script>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Chris Pietschmann</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/#awards">Microsoft MVP</a></li>
+        <li><a class="text-muted" href="/#books">Books</a></li>
+        <li><a class="text-muted" href="/#websites">Websites</a></li>
+        <li><a class="text-muted" href="/#experience">Experience</a></li>
+        <li><a class="text-muted" href="/talks">Talks</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Publications</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://build5nines.com" target="_blank">Build5Nines.com</a></li>
+        <li><a class="text-muted" href="https://www.hackster.io/crpietschmann/articles" target="_blank">Hackster.io</a></li>
+        <li><a class="text-muted" href="/blog">Pietschsoft.com</a></li>
+      </ul>
+      <h5>Social Media</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://twitter.com/crpietschmann" target="_blank">Twitter</a></li>
+        <li><a class="text-muted" href="http://linkedin.com/in/crpietschmann" target="_blank">LinkedIn</a></li>
+        <li><a class="text-muted" href="http://youtube.com/build5nines" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <img src="/images/buildazure-logo.png" alt="Build5Nines.com" style="height: 1.5em;"/>
+      <small class="d-block mb-3 text-muted">
+        Copyright © 2020 Chris Pietschmann. All rights reserved.
+      </small>
+      <small class="d-block mb-3 text-muted">
+        <strong>Legal Disclaimer</strong>
+        <p>This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+      </small>
+    </div>
+    <div class="col-12 col-md">
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script src="/scripts/prism/prism.js"></script>
+<link rel="stylesheet" href="/scripts/prism/prism.css" />
+
+<script src="/scripts/holder.js"></script>
+<script>
+Holder.addTheme('thumb', {
+  bg: '#55595c',
+  fg: '#eceeef',
+  text: 'Thumbnail'
+});
+</script>
+
+
+    <script type="text/javascript">
+    // Google Analytics
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1172995-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
+
+    <script type="text/javascript">
+    // Developer Media Ads
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+
+    // Google Analytics Track External Link Clicks
+    (function($) { if ($) {
+      $('a[href^=http]').click(function(){
+          if (_gaq && _gaq.push && !((this.href || '').startsWith('https://pietschsoft.com'))) {
+              _gaq.push(['_trackEvent','Link','External',this.href]);
+          }
+          return true;
+      });
+    }})(jQuery);
+    </script>
+  </body>
+</html>

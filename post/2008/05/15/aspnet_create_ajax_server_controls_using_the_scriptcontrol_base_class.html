@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ASP.NET: Create AJAX Server Controls using the ScriptControl base class | Chris Pietschmann</title>
+    <meta name="description" content="I have nearly 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+">
+    <meta name="author" content="Chris Pietschmann">
+    <link rel="icon" href="/images/avatar-chris-pietschmann-transparent.png">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="alternate" type="application/rss+xml" title="Chris Pietschmann &raquo; Archive" href="https://pietschsoft.com/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//css/site.css">
+    <link rel="canonical" href="http://pietschsoft.com//post/2008/05/15/aspnet_create_ajax_server_controls_using_the_scriptcontrol_base_class">
+</head>
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Bio</h4>
+          <p class="text-muted">
+            <a href="/">Chris Pietschmann</a> is a Microsoft MVP with <strong>Azure</strong> and <strong>IoT</strong> technologies, and a Microsoft Certified Trainer (MCT) with 20+ years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in Internet of Things (IoT), DevOps, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Publications</h4>
+          <ul class="list-unstyled">
+            <li><a href="/#books" class="text-white">Books</a></li>
+            <li><a href="https://build5nines.com" class="text-white">Build5Nines.com</a></li>
+            <li><a href="https://www.hackster.io/crpietschmann/articles" class="text-white">Hackster.io</a></li>
+            <li><a href="/blog" class="text-white">Pietschsoft.com</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/crpietschmann" class="text-white">Twitter</a></li>
+            <li><a href="http://linkedin.com/in/crpietschmann" class="text-white">LinkedIn</a></li>
+            <li><a href="https://build5nines.com/contact" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com Logo" style="height: 1.5em; margin-right: 0.5em;"/>-->
+        <img src="/images/avatar-chris-pietschmann-transparent.png" alt="Chris Pietschmann" style="background: #fff; height: 1.5em; margin-right: 0.5em;"/>
+        <strong>Chris Pietschmann</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container post">
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <header class="post-header">
+          <h1 class="post-title">ASP.NET: Create AJAX Server Controls using the ScriptControl base class</h1>
+          <!--
+          <div class="post-categories">
+              
+              
+              <a href="//categories/#ASP.NET">ASP.NET</a>
+              &nbsp;
+              
+              <a href="//categories/#AJAX">AJAX</a>
+              
+              
+            </div>
+          -->
+          <p class="post-meta">May 15, 2008</p>
+      </header>
+
+      <article class="post-content">
+        
+            <!-- more -->
+
+<p>I’ve been doing a lot with ASP.NET AJAX for almost 2 years now, including my <a href="http://simplovation.com/page/webmapsve.aspx">Web.Maps.VE</a> product. So, I’ve decided to spread some of my knowledge in this area by writing up some articles on things that I’ve learned and figured out. <br />
+As a note, since .NET 3.5 is the "latest and greatest" version of the framework out at the time of this writing, this article targets .NET 3.5. This article also assumes you have a basic understanding of ASP.NET AJAX and JavaScript.   &lt;h3&gt;What is ScriptControl?&lt;/h3&gt;<br />
+First, what exactly is ScriptControl? Well, the base class I’m referring to is the System.Web.UI.ScriptControl base class located within the System.Web.Extensions.dll assembly. <br />
+The ScriptControl is basically the first building block you want to use to start building out a WebControl (server control) that will have some kind of rich AJAX functionality in the browser. You may have heard of ASP.NET AJAX Control Extenders, especially if you’re familiar with the AJAX Control Toolkit, so why would we use ScriptControl instead of creating an ExtenderControl in order to give a control some rich AJAX functionality within the browser? Well, you want to create an ExtenderControl to extend or enhance an existing control with some rich AJAX functionality, and you want to inherit from the ScriptControl class when you are creating a full control that will have some rich AJAX functionality. <br />
+According to <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.scriptcontrol.aspx">MSDN the ScriptControl class</a> is: <br />
+<em>ScriptControl inherits from the WebControl class and implements the <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.iscriptcontrol.aspx">IScriptControl</a> interface. The WebControl class is a base class for ASP.NET Web server controls. The ScriptControl is an abstract class, which you cannot instantiate directly. Instead, you derive a class based on this abstract class.</em> <br />
+<em>The ScriptControl base class tests the page for a <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.scriptmanager.aspx">ScriptManager</a> control during the PreRender stage of the derived control. The ScriptControl base class also makes sure that the derived control calls methods of the <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.scriptmanager.aspx">ScriptManager</a> control to register script during the Render event. This includes registering <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.scriptdescriptor.aspx">ScriptDescriptor</a> objects for the ScriptControl when the Render method is called. The Render method makes sure that <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.scriptdescriptor.aspx">ScriptDescriptor</a> objects are not rendered unless the ScriptControl itself is rendered. This enables a ScriptControl to work inside a closed WebPart control.</em> <br />
+<em>You can add as many descriptors and types as necessary to any class that you derive from ScriptControl.</em>  &lt;h3&gt;Basics of Creating Server Controls that Inherit from ScriptControl&lt;/h3&gt;<br />
+When first creating your custom server control you inherit from ScriptControl instead of WebControl like usual. The first thing you’ll see is ScriptControl requires you to implement two methods: GetScriptDescriptors and GetScriptReferences. The GetScriptDescriptors method is used to get an enumeration of ScriptDescriptor objects that basically define any of the controls client-side AJAX properties. The GetScriptReferences method is used to get an enumeration of ECMAScript (JavaScript) files that will be loaded on the client-side once the page loads; this is used to basically define any client-side scripts the control will require to run on the client. <br />
+Here’s a basic stub of a control that inherits from ScriptControl:  &lt;pre class="csharpcode"&gt;<span class="kwrd">public</span> <span class="kwrd">class</span> CustomScriptControl : ScriptControl
+{
+    <span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable<ScriptDescriptor> GetScriptDescriptors()
+    {
+        <span class="kwrd">throw</span> <span class="kwrd">new</span> NotImplementedException();
+    }</ScriptDescriptor></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;span class="kwrd"&gt;protected&lt;/span&gt; &lt;span class="kwrd"&gt;override&lt;/span&gt; IEnumerable&lt;ScriptReference&gt; GetScriptReferences()
+{
+    &lt;span class="kwrd"&gt;throw&lt;/span&gt; &lt;span class="kwrd"&gt;new&lt;/span&gt; NotImplementedException();
+} }&lt;/pre&gt;
+</code></pre></div></div>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+
+<p><strong>Define ScriptReferences</strong></p>
+
+<p>In the GetScriptReferences method, return an enumeration of the <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.scriptreference.aspx">ScriptReference</a> objects to include in the page on the client-side.</p>
+
+<p>Here’s a basic example of setting up a ScriptReference that includes a script resource that is embedded within the assembly the CustomScriptControl is contained in:</p>
+
+<pre class="csharpcode"><span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable<ScriptReference> GetScriptReferences()
+{
+    List<ScriptReference> references = <span class="kwrd">new</span> List<ScriptReference>();
+    references.Add(<span class="kwrd">new</span> ScriptReference(<span class="str">&quot;CustomScriptControl.CustomScriptControl.js&quot;</span>, <span class="str">&quot;CustomScriptControl&quot;</span>));
+    <span class="kwrd">return</span> references;
+}&lt;/pre&gt;
+
+
+When inheriting from ScriptControl you'll generally always have at least one ScriptReference because you need to reference the script that creates the client-side JavaScript representation of your control. 
+
+
+**Define ScriptDescriptors**
+
+
+In the GetScriptDescriptors method, return an enumeration of ScriptDescriptor objects that define what properties will be passed down to the client-side JavaScript representation of your control. 
+
+
+The only ScriptDescriptor you need to return in the enumeration is a ScriptControlDescriptor instance that contains all the descriptors for your control. 
+
+
+Here's a basic example of returning a ScriptControlDescriptor without any properties being defined:
+
+<pre class="csharpcode"><span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable<ScriptDescriptor> GetScriptDescriptors()
+{
+    ScriptControlDescriptor descriptor = <span class="kwrd">new</span> ScriptControlDescriptor(<span class="kwrd">this</span>.GetType().FullName, <span class="kwrd">this</span>.ClientID);
+    <span class="kwrd">return</span> <span class="kwrd">new</span> ScriptDescriptor[] { descriptor };
+}&lt;/pre&gt;
+
+
+**What ECMAScript (JavaScript) code is needed?**
+
+
+There is a basic block of JavaScript code that you'll need to include in the ScriptReference that's being defined by the GetScriptReferences method that will define the client-side JavaScript representation of your control. This basic block of code that you include in this script file is the same for all ScriptControls that you'll create. 
+
+
+Here's the basic JavaScript that will define the client-side JavaScript representation of the CustomScriptControl we're using in this example. One thing to remember is that the namespaces and object name in the JavaScript file need to be the same as they are in the server-side .NET code.
+
+<pre class="csharpcode">Type.registerNamespace(<span class="str">&quot;CustomScriptControl&quot;</span>);
+CustomScriptControl.CustomScriptControl = <span class="kwrd">function</span>(element) {
+    CustomScriptControl.CustomScriptControl.initializeBase(<span class="kwrd">this</span>, [element]);
+};
+CustomScriptControl.CustomScriptControl.prototype = {
+    initialize:<span class="kwrd">function</span>() {
+        CustomScriptControl.CustomScriptControl.callBaseMethod(<span class="kwrd">this</span>, <span class="str">&quot;initialize&quot;</span>);
+    },
+    dispose:<span class="kwrd">function</span>() {
+        CustomScriptControl.CustomScriptControl.callBaseMethod(<span class="kwrd">this</span>, <span class="str">&quot;dispose&quot;</span>);
+    }
+};
+CustomScriptControl.CustomScriptControl.registerClass(<span class="str">&quot;CustomScriptControl.CustomScriptControl&quot;</span>, Sys.UI.Control);
+<span class="kwrd">if</span>(<span class="kwrd">typeof</span>(Sys)!==<span class="str">&quot;undefined&quot;</span>)Sys.Application.notifyScriptLoaded();</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+
+
+Also, in order for the ScriptControl to correctly load the &quot;CustomScriptControl.CustomScriptControl.js&quot; script reference that we're using in this example, we must not forget to define the assemblies embedded resource as a Web Resource, like so:
+
+<pre class="csharpcode">[assembly: System.Web.UI.WebResource(<span class="str">&quot;CustomScriptControl.CustomScriptControl.js&quot;</span>, <span class="str">&quot;text/javascript&quot;</span>)]</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+
+<h3>Let's Add a Little &quot;Rich&quot; AJAX Functionality to the Control</h3>
+
+
+Now that we have a basic ScriptControl created, we can start to add out &quot;rich&quot; AJAX functionality to it. 
+
+
+In this article, I'm going to keep things extremely simple, and we're going to do the following: 
+
+<ol>
+  <li>Pass a Name (type string) property to the client by defining it as a ScriptDescriptor, and displaying it to the user via a JavaScript Alert dialog. </li>
+</ol>
+
+
+**Add the Name Property to the Control**
+
+<pre class="csharpcode"><span class="kwrd">public</span> <span class="kwrd">string</span> Name { get; set; }</pre>
+
+
+**Add the ScriptDescriptor for the Name Property**
+
+
+Just modify the GetScriptDescriptors method above to look like the following:
+
+<pre class="csharpcode"><span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable<ScriptDescriptor> GetScriptDescriptors()
+{
+    ScriptControlDescriptor descriptor = <span class="kwrd">new</span> ScriptControlDescriptor(<span class="kwrd">this</span>.GetType().FullName, <span class="kwrd">this</span>.ClientID); 
+
+    <span class="rem">// Add our Name property to be passed down to the client</span>
+    descriptor.AddProperty(<span class="str">&quot;Name&quot;</span>, <span class="kwrd">this</span>.Name); 
+
+    <span class="kwrd">return</span> <span class="kwrd">new</span> ScriptDescriptor[] { descriptor };
+}&lt;/pre&gt;
+
+
+**Add the Client-Side Name Property that will receive the value**
+
+
+To do this we need to add a &quot;private&quot; like variable to hold the value and property accessor methods to our JavaScript file. 
+
+
+Here's the above JavaScript file with the &quot;private&quot; variable and property accessors added for the Name property:
+
+<pre class="csharpcode">Type.registerNamespace(<span class="str">&quot;CustomScriptControl&quot;</span>);
+CustomScriptControl.CustomScriptControl = <span class="kwrd">function</span>(element) {
+    CustomScriptControl.CustomScriptControl.initializeBase(<span class="kwrd">this</span>, [element]);
+    <span class="rem">// &quot;private&quot; variable to hold the Name properties value</span>
+    <span class="kwrd">this</span>._name = <span class="kwrd">null</span>;
+};
+CustomScriptControl.CustomScriptControl.prototype = {
+    initialize:<span class="kwrd">function</span>() {
+        CustomScriptControl.CustomScriptControl.callBaseMethod(<span class="kwrd">this</span>, <span class="str">&quot;initialize&quot;</span>);
+    },
+    dispose:<span class="kwrd">function</span>() {
+        CustomScriptControl.CustomScriptControl.callBaseMethod(<span class="kwrd">this</span>, <span class="str">&quot;dispose&quot;</span>);
+    },
+    <span class="rem">// Name Property Accessors</span>
+    get_Name:<span class="kwrd">function</span>() {
+        <span class="kwrd">return</span> <span class="kwrd">this</span>._name;
+    },
+    set_Name:<span class="kwrd">function</span>(value) {
+        <span class="kwrd">this</span>._name = value;
+    }    
+};
+CustomScriptControl.CustomScriptControl.registerClass(<span class="str">&quot;CustomScriptControl.CustomScriptControl&quot;</span>, Sys.UI.Control);
+<span class="kwrd">if</span>(<span class="kwrd">typeof</span>(Sys)!==<span class="str">&quot;undefined&quot;</span>)Sys.Application.notifyScriptLoaded();</pre>
+
+
+**Display the Name to the User**
+
+
+In this example we're going to display the Name property to the user using a JavaScript Alert within the objects client-side initialize property. 
+
+
+Here's the initialize method modified to include the Alert:
+
+<pre class="csharpcode">initialize:<span class="kwrd">function</span>() {
+    CustomScriptControl.CustomScriptControl.callBaseMethod(<span class="kwrd">this</span>, <span class="str">&quot;initialize&quot;</span>); 
+
+    <span class="rem">// Display Name property to user</span>
+    alert(<span class="kwrd">this</span>.get_Name()); 
+},</pre>
+
+<h3>Tips and Tricks</h3>
+
+
+One trick that I've learned that proves useful when creating custom ScriptControls, is to create your own base class that inherits from ScriptControl and extends it to use some custom attributes to make adding ScriptReferences and ScriptDescriptors easier. 
+
+
+Here's what the final server-side code of the CustomScriptControl object would look like when using custom attributes to add the ScriptReferences and ScriptDescriptors:
+
+<pre class="csharpcode">[ScriptReference(<span class="str">&quot;CustomScriptControl.CustomScriptControl.js&quot;</span>, <span class="str">&quot;CustomScriptControl&quot;</span>)]
+<span class="kwrd">public</span> <span class="kwrd">class</span> CustomScriptControl : ScriptControlBase
+{
+    [ScriptControlProperty]
+    <span class="kwrd">public</span> <span class="kwrd">string</span> Name { get; set; }
+}</pre>
+
+
+As you can see, the new code for the CustomScriptControl using this base class with custom attributes is much cleaner and easier to read. 
+
+
+Here's the complete code for the ScriptControlBase, ScriptReferenceAttribute and ScriptControlPropertyAttribute objects:
+
+<pre class="csharpcode"><span class="kwrd">using</span> System;
+<span class="kwrd">using</span> System.Collections.Generic;
+<span class="kwrd">using</span> System.ComponentModel;
+<span class="kwrd">using</span> System.Web.UI;
+
+<span class="kwrd">public</span> <span class="kwrd">class</span> ScriptControlBase : ScriptControl
+{
+    <span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable<ScriptDescriptor> GetScriptDescriptors()
+    {
+        ScriptControlDescriptor descriptor = <span class="kwrd">new</span> ScriptControlDescriptor(<span class="kwrd">this</span>.GetType().FullName, <span class="kwrd">this</span>.ClientID); 
+
+        <span class="rem">// Add all the ScriptControls Client-Side Object Properties</span>
+        PropertyDescriptorCollection props = TypeDescriptor.GetProperties(<span class="kwrd">this</span>);
+        <span class="kwrd">foreach</span> (PropertyDescriptor prop <span class="kwrd">in</span> props)
+        {
+            ScriptControlPropertyAttribute propAttr = prop.Attributes[<span class="kwrd">typeof</span>(ScriptControlPropertyAttribute)] <span class="kwrd">as</span> ScriptControlPropertyAttribute;
+            <span class="kwrd">if</span> (propAttr != <span class="kwrd">null</span>)
+            {
+                <span class="kwrd">object</span> <span class="kwrd">value</span> = prop.GetValue(<span class="kwrd">this</span>);
+                <span class="kwrd">string</span> name = (propAttr.Name != <span class="kwrd">null</span>) ? propAttr.Name : prop.Name;
+                <span class="kwrd">if</span> (<span class="kwrd">value</span> != <span class="kwrd">null</span>)
+                {
+                    descriptor.AddProperty(name, <span class="kwrd">value</span>);
+                }
+            }
+        } 
+
+        <span class="kwrd">return</span> <span class="kwrd">new</span> ScriptDescriptor[] { descriptor };
+    } 
+
+    <span class="kwrd">protected</span> <span class="kwrd">override</span> IEnumerable<ScriptReference> GetScriptReferences()
+    {
+        List<ScriptReference> references = <span class="kwrd">new</span> List<ScriptReference>(); 
+
+        <span class="rem">// Add all the ScriptControls Client-Side JavaScript References</span>
+        <span class="kwrd">object</span>[] scriptReferences = Attribute.GetCustomAttributes(<span class="kwrd">this</span>.GetType(), <span class="kwrd">typeof</span>(ScriptReferenceAttribute), <span class="kwrd">false</span>);
+        <span class="kwrd">foreach</span> (ScriptReferenceAttribute r <span class="kwrd">in</span> scriptReferences)
+        {
+            references.Add(r.GetScriptReference());
+        } 
+
+        <span class="kwrd">return</span> references;
+    }
+} 
+
+[AttributeUsage(AttributeTargets.Property, AllowMultiple = <span class="kwrd">false</span>)]
+<span class="kwrd">public</span> <span class="kwrd">class</span> ScriptControlPropertyAttribute : Attribute
+{
+    <span class="kwrd">public</span> ScriptControlPropertyAttribute() { } 
+
+    <span class="kwrd">public</span> ScriptControlPropertyAttribute(<span class="kwrd">string</span> name)
+    {
+        <span class="kwrd">this</span>.Name = name;
+    } 
+
+    <span class="kwrd">public</span> <span class="kwrd">string</span> Name { get; set; }
+} 
+
+[AttributeUsage(AttributeTargets.Class, AllowMultiple = <span class="kwrd">true</span>)]
+<span class="kwrd">public</span> <span class="kwrd">class</span> ScriptReferenceAttribute : Attribute
+{
+    <span class="kwrd">public</span> ScriptReferenceAttribute(<span class="kwrd">string</span> path)
+    {
+        <span class="kwrd">this</span>.Path = path;
+    } 
+
+    <span class="kwrd">public</span> ScriptReferenceAttribute(<span class="kwrd">string</span> name, <span class="kwrd">string</span> assembly)
+    {
+        <span class="kwrd">this</span>.Name = name;
+        <span class="kwrd">this</span>.Assembly = assembly;
+    } 
+
+    <span class="kwrd">private</span> <span class="kwrd">string</span> _path = <span class="kwrd">null</span>;
+    <span class="kwrd">public</span> <span class="kwrd">string</span> Path
+    {
+        get { <span class="kwrd">return</span> _path; }
+        set { _path = <span class="kwrd">value</span>; }
+    } 
+
+    <span class="kwrd">private</span> <span class="kwrd">string</span> _name = <span class="kwrd">null</span>;
+    <span class="kwrd">public</span> <span class="kwrd">string</span> Name
+    {
+        get { <span class="kwrd">return</span> _name; }
+        set { _name = <span class="kwrd">value</span>; }
+    } 
+
+    <span class="kwrd">private</span> <span class="kwrd">string</span> _assembly = <span class="kwrd">null</span>;
+    <span class="kwrd">public</span> <span class="kwrd">string</span> Assembly
+    {
+        get { <span class="kwrd">return</span> _assembly; }
+        set { _assembly = <span class="kwrd">value</span>; }
+    } 
+
+    <span class="kwrd">public</span> ScriptReference GetScriptReference()
+    {
+        ScriptReference r = <span class="kwrd">null</span>; 
+
+        <span class="kwrd">if</span> (<span class="kwrd">this</span>.Path == <span class="kwrd">null</span>)
+        {
+            r = <span class="kwrd">new</span> ScriptReference(<span class="kwrd">this</span>.Name, <span class="kwrd">this</span>.Assembly);
+        }
+        <span class="kwrd">else</span>
+        {
+            r = <span class="kwrd">new</span> ScriptReference(<span class="kwrd">this</span>.Path);
+        } 
+
+        <span class="kwrd">return</span> r;
+    }
+}&lt;/pre&gt;
+
+<h3>Conclusion</h3>
+
+
+As you can see it's fairly simple to get started creating your own custom server controls that inherit from ScriptControl, especially if you use the above ScriptControlBase class along with its ScriptControlPropertyAttribute and ScriptReferenceAttribute attributes. 
+
+
+Download Full Source Code: <a href="/files/CreateAJAXServerControlUsingScriptControlBaseClass.zip" rel="enclosure">CreateAJAXServerControlUsingScriptControlBaseClass.zip (33.31 kb)</a> 
+
+
+**Update 5/31/2008:** I recently posted an article titled &quot;<a href="/post/2008/05/ASPNET_35_Create_AJAX_Extender_Controls_using_the_ExtenderControl_base_class.aspx">Create AJAX Extender Controls using the ExtenderControl base class</a>&quot; on how to create Extender Controls in ASP.NET using the System.Web.UI.ExtenderControl base class. 
+</ScriptReference></ScriptReference></ScriptReference></ScriptDescriptor></pre></ScriptDescriptor></pre></ScriptDescriptor></pre></ScriptReference></ScriptReference></ScriptReference></pre>
+
+        
+      </article>
+
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+
+      <!--
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+      -->
+
+
+
+      
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+      <!--
+      
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+      
+        -->
+
+
+
+    </div>
+    <div class="col-md-4">
+      <div class="mb-3">
+    <script type="text/javascript"><!--
+        document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
+        // --></script>
+    </div>
+    
+    <!--
+    <div class="mb-3">
+    <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
+    </div>
+    -->
+
+    <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+    <div class="recent">
+    <h4>Recent Posts</h4>
+    <ul class="list-unstyled">
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions</a></h6>
+            <span class="small text-muted">01 Jul 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number</a></h6>
+            <span class="small text-muted">06 Apr 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/03/11/encryption-code-greater-than-guns-bombs">Encryption and Code are Greater Than Guns and Bombs</a></h6>
+            <span class="small text-muted">11 Mar 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/02/15/macos-monitor-cpu-usage-info">macOS: Monitor CPU Usage and Frequency Info</a></h6>
+            <span class="small text-muted">15 Feb 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/01/02/basics-javascript-class-inheritance">Basics of JavaScript Class Inheritance</a></h6>
+            <span class="small text-muted">02 Jan 2020</span>
+        </li>
+        
+    </ul>
+    </div>
+    
+    <!-- Amazon Affiliate Links -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=1593279507&asins=1593279507&linkId=dbae26993e5e47c31a6178fd13aed38f&show_border=true&link_opens_in_new_window=true"></iframe>
+
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0596517742&asins=0596517742&linkId=67c7a7145153fa5d61755acafc46fa56&show_border=true&link_opens_in_new_window=true"></iframe>
+    <!--
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0135957052&asins=0135957052&linkId=01a571b3e6c9fa1f7c90c5c8f7dfc583&show_border=true&link_opens_in_new_window=true"></iframe>
+    -->
+
+    <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=kuft&banner=07V9YHKS4HY556H67002&f=ifr&lc=pf4&linkID=4bb77e8255a5ef372bfab6cc5c160388&t=pietschsoft04-20&tracking_id=pietschsoft04-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+
+    <div class="related">
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+    </div>
+
+    <!--
+    <h4>Courses</h4>
+    <style>
+        .course-box {
+            margin-bottom: 1em;
+        }
+        .course-box img {
+            width: 95%;
+        }
+        .course-box > strong {
+            display: block;
+        }
+        .course-box > em {
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
+        </a>
+        <strong>
+            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+                The Complete JavaScript Course 2020: Build Real Projects!
+            </a>
+        </strong>
+        <em>by Jonas Schmedtmann</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            JavaScript Basics for Beginners
+        </a></strong>
+        <em>by Mosh Hamedani</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            Advanced JavaScript Concepts
+        </a></strong>
+        <em>by Andrei Neagoie</em>
+    </div>
+    -->
+
+    <h4>Legal Disclaimer</h4>
+    <p style="font-size=0.7em">This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+    
+    <div id="fixedadmarker"></div>
+    <div id="fixedad" class="mt-3">
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+    </div>
+    <style>
+    @media (min-width: 768px) {
+        .fixedad-float {
+            position: fixed;
+            top: 2.5em;
+        }
+    }
+    </style>
+    <script>
+    window.setInterval(function() {
+        var elem = $('#fixedadmarker'),
+            top = elem.offset().top || 0,
+            height = elem[0].offsetHeight || 0,
+            bottom = top + height,
+            scrollY = window.scrollY || 0,
+            elemToBeFixed = $('#fixedad');
+        if (scrollY >= bottom) {
+            elemToBeFixed.addClass('fixedad-float');
+        } else {
+            elemToBeFixed.removeClass('fixedad-float');
+        }
+    }, 100);
+    </script>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Chris Pietschmann</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/#awards">Microsoft MVP</a></li>
+        <li><a class="text-muted" href="/#books">Books</a></li>
+        <li><a class="text-muted" href="/#websites">Websites</a></li>
+        <li><a class="text-muted" href="/#experience">Experience</a></li>
+        <li><a class="text-muted" href="/talks">Talks</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Publications</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://build5nines.com" target="_blank">Build5Nines.com</a></li>
+        <li><a class="text-muted" href="https://www.hackster.io/crpietschmann/articles" target="_blank">Hackster.io</a></li>
+        <li><a class="text-muted" href="/blog">Pietschsoft.com</a></li>
+      </ul>
+      <h5>Social Media</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://twitter.com/crpietschmann" target="_blank">Twitter</a></li>
+        <li><a class="text-muted" href="http://linkedin.com/in/crpietschmann" target="_blank">LinkedIn</a></li>
+        <li><a class="text-muted" href="http://youtube.com/build5nines" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <img src="/images/buildazure-logo.png" alt="Build5Nines.com" style="height: 1.5em;"/>
+      <small class="d-block mb-3 text-muted">
+        Copyright © 2020 Chris Pietschmann. All rights reserved.
+      </small>
+      <small class="d-block mb-3 text-muted">
+        <strong>Legal Disclaimer</strong>
+        <p>This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+      </small>
+    </div>
+    <div class="col-12 col-md">
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script src="/scripts/prism/prism.js"></script>
+<link rel="stylesheet" href="/scripts/prism/prism.css" />
+
+<script src="/scripts/holder.js"></script>
+<script>
+Holder.addTheme('thumb', {
+  bg: '#55595c',
+  fg: '#eceeef',
+  text: 'Thumbnail'
+});
+</script>
+
+
+    <script type="text/javascript">
+    // Google Analytics
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1172995-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
+
+    <script type="text/javascript">
+    // Developer Media Ads
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+
+    // Google Analytics Track External Link Clicks
+    (function($) { if ($) {
+      $('a[href^=http]').click(function(){
+          if (_gaq && _gaq.push && !((this.href || '').startsWith('https://pietschsoft.com'))) {
+              _gaq.push(['_trackEvent','Link','External',this.href]);
+          }
+          return true;
+      });
+    }})(jQuery);
+    </script>
+  </body>
+</html>

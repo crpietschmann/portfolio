@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Silverlight and JavaScript Interop Basics | Chris Pietschmann</title>
+    <meta name="description" content="I have nearly 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+">
+    <meta name="author" content="Chris Pietschmann">
+    <link rel="icon" href="/images/avatar-chris-pietschmann-transparent.png">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="alternate" type="application/rss+xml" title="Chris Pietschmann &raquo; Archive" href="https://pietschsoft.com/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//css/site.css">
+    <link rel="canonical" href="http://pietschsoft.com//post/2008/06/19/silverlight-and-javascript-interop-basics">
+</head>
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Bio</h4>
+          <p class="text-muted">
+            <a href="/">Chris Pietschmann</a> is a Microsoft MVP with <strong>Azure</strong> and <strong>IoT</strong> technologies, and a Microsoft Certified Trainer (MCT) with 20+ years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in Internet of Things (IoT), DevOps, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Publications</h4>
+          <ul class="list-unstyled">
+            <li><a href="/#books" class="text-white">Books</a></li>
+            <li><a href="https://build5nines.com" class="text-white">Build5Nines.com</a></li>
+            <li><a href="https://www.hackster.io/crpietschmann/articles" class="text-white">Hackster.io</a></li>
+            <li><a href="/blog" class="text-white">Pietschsoft.com</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/crpietschmann" class="text-white">Twitter</a></li>
+            <li><a href="http://linkedin.com/in/crpietschmann" class="text-white">LinkedIn</a></li>
+            <li><a href="https://build5nines.com/contact" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com Logo" style="height: 1.5em; margin-right: 0.5em;"/>-->
+        <img src="/images/avatar-chris-pietschmann-transparent.png" alt="Chris Pietschmann" style="background: #fff; height: 1.5em; margin-right: 0.5em;"/>
+        <strong>Chris Pietschmann</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container post">
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <header class="post-header">
+          <h1 class="post-title">Silverlight and JavaScript Interop Basics</h1>
+          <!--
+          <div class="post-categories">
+              
+              
+              <a href="//categories/#Silverlight">Silverlight</a>
+              &nbsp;
+              
+              <a href="//categories/#JavaScript">JavaScript</a>
+              
+              
+            </div>
+          -->
+          <p class="post-meta">Jun 19, 2008</p>
+      </header>
+
+      <article class="post-content">
+        
+            <!-- more -->
+
+<p>I’ve been looking into Silverlight in my spare time a bit, to see what it has to offer, and the JavaScript "Interop" is actually pretty neat and simple to use. About three months ago I wrote a post titled "<a href="/post/2008/03/Working-with-HTML-DOM-in-Silverlight-2-Beta-1.aspx">Working with HTML DOM in Silverlight using the Bridge Pattern</a>"; so I think this time I’ll go over some of the basics involved with communicating back and forth between Silverlight and JavaScript. This article is written by referencing Silverlight 2 Beta 2, but should still hold relevent in the final release of Silverlight 2.   &lt;h3&gt;Call a JavaScript Methods from within Silverlight&lt;/h3&gt;<br />
+<strong>1) Using the Eval method</strong><br />
+Silverlight does expose the JavaScript Eval method, so you can use it to call some JavaScript in the page <br />
+Here’s a couple examples of calling Eval from in Silverlight:  &lt;pre class="csharpcode"&gt;<span class="kwrd">using</span> System.Windows.Browser;</p>
+
+<p><span class="rem">// set a global variable</span>
+HtmlPage.Window.Eval(<span class="str">"myJSObject = 2;"</span>);</p>
+
+<p><span class="rem">// invoke a global method</span>
+HtmlPage.Window.Eval(<span class="str">"myJSMethod();"</span>);&lt;/pre&gt;</p>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+
+<p>One thing to keep in mind with using Eval, even from Silverlight, is you can potentially open yourself up to script injection vulnerabilities. Instead of using Eval, you should use Invoke, which is my next example.</p>
+
+<p><strong>2) Using the Invoke method</strong></p>
+
+<p>You can use the Invoke method to execute some global JavaScript method within your page.</p>
+
+<p>Here’s a couple examples, one without arguments, the other passing in two arguments:</p>
+
+<pre class="csharpcode"><span class="kwrd">using</span> System.Windows.Browser;
+
+<span class="rem">// Call a global method without passing in arguments</span>
+HtmlPage.Window.Invoke(<span class="str">&quot;myJSMethod&quot;</span>);
+
+<span class="rem">// Call a global method, pass in two arguments</span>
+<span class="rem">// First argument is a string</span>
+<span class="rem">// Second argument is an integer</span>
+HtmlPage.Window.Invoke(<span class="str">&quot;myJSMethod&quot;</span>, <span class="str">&quot;Chris&quot;</span>, 42);</pre>
+
+<h3>Returning Values From JavaScript Method Calls </h3>
+
+<p>Now that we’ve covered how to execute JavaScript methods from Silverlight, I’ll show how to captures values that are returned from those method call.</p>
+
+<p>Both the Eval and Invoke methods return an Object. The Object returned is a reference to the JavaScript object that is returned from the method call. To get at the returned value the Object needs to be cast into the appropriate data type.</p>
+
+<p>Here’s some examples of casting the ScriptObject to different data types to return different data types from JavaScript methods:</p>
+
+<pre class="csharpcode"><span class="rem">// Returning a Double</span>
+<span class="kwrd">double</span> doubleValue = (<span class="kwrd">double</span>)HtmlPage.Window.Invoke(<span class="str">&quot;myJSMethod&quot;</span>);
+
+<span class="rem">// Returning a String</span>
+<span class="kwrd">string</span> stringValue = (<span class="kwrd">string</span>)HtmlPage.Window.Invoke(<span class="str">&quot;myJSMethod&quot;</span>); </pre>
+
+<p>One thing to always rememer when casting the object returned to a specific data type, is to check for NULL before casting, just to make sure a value was returned.</p>
+
+<h3>Returning Objects From JavaScript Method Calls and Accessing Its Methods and Properties
+  
+</h3>
+
+<p>You can also pass back Objects to Silverlight from your JavaScript methods calls. Instead of casting the object returned from the Eval or Invoke method call to a double, string or any other data type; you’ll need to cast it to a ScriptObject. ScriptObject is basically the data type used for a "general" JavaScript object.</p>
+
+<pre class="csharpcode"><span class="rem">// Execute the global JavaScript method and cast it to ScriptObject</span>
+ScriptObject myScriptObject = (ScriptObject)HtmlPage.Window.Invoke(<span class="str">&quot;myJSMethod&quot;</span>);</pre>
+
+<p>**1) Accessing the ScriptObjects Properties **</p>
+
+<p>You can access the properties of the ScriptObject using the GetProperty method, then you must cast it to the appropriate data type.</p>
+
+<pre class="csharpcode"><span class="rem">// Get a Double Property value from our ScriptObject</span>
+<span class="kwrd">double</span> doubleValue = (<span class="kwrd">double</span>)myScriptObject.GetProperty(<span class="str">&quot;DoubleValue&quot;</span>);
+
+<span class="rem">// Get a String Property value from our ScriptObject</span>
+<span class="kwrd">double</span> stringValue = (<span class="kwrd">string</span>)myScriptObject.GetProperty(<span class="str">&quot;StringValue&quot;</span>);</pre>
+
+<p><strong>2) Invoke one of the ScriptObjects Methods</strong></p>
+
+<p>The ScriptObject has an Invoke method that works just like the HtmlPage.Window.Invoke method shown above.</p>
+
+<pre class="csharpcode"><span class="rem">// Invoke a method that doesn't return a value</span>
+myScriptObject.Invoke(<span class="str">&quot;myMethod&quot;</span>);
+
+<span class="rem">// Invoke a method that returns a string value, and pass in some arguments</span>
+<span class="kwrd">string</span> stringValue = myScriptObject.Invoke(<span class="str">&quot;myMethod&quot;</span>, <span class="str">&quot;Chris&quot;</span>, 42); </pre>
+
+<p>Here’s the JavaScript code that defines an object that has the properties and method show above:</p>
+
+<pre class="csharpcode"><span class="kwrd">var</span> myJSObject = <span class="kwrd">function</span>(){
+    <span class="kwrd">this</span>.DoubleValue = 42;
+    <span class="kwrd">this</span>.StringValue = <span class="str">&quot;Chris&quot;</span>;
+};
+myJSObject.prototype.myMethod = <span class="kwrd">function</span>(arg1, arg2){
+    <span class="kwrd">return</span> <span class="str">&quot;Chris&quot;</span>;
+};</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+
+<h3>Call Silverlight Methods From JavaScript</h3>
+
+<p>You can also call Silverlight methods from within JavaScript and return values from them.</p>
+
+<p><strong>1) Setup your Silverlight object as Scriptable</strong></p>
+
+<p>In order to interact with a Silverlight object from within JavaScript, it must be marked with the ScriptableType attribute, and any methods you want to expose need to be marked with the ScriptableMember attribute. Also, you must register the object as Scriptable in the page once the page loads, and give the object an alias that will be used to reference it within JavaScript.</p>
+
+<p>Here’s a sample of a page that exposes a method to be called from JavaScript:</p>
+
+<pre class="csharpcode">[ScriptableType]
+<span class="kwrd">public</span> <span class="kwrd">partial</span> <span class="kwrd">class</span> Page : UserControl
+{
+    <span class="kwrd">public</span> Page()
+    {
+        InitializeComponent();
+        <span class="kwrd">this</span>.Loaded += <span class="kwrd">new</span> System.Windows.RoutedEventHandler(Page_Loaded);
+    }
+
+    <span class="kwrd">void</span> Page_Loaded(<span class="kwrd">object</span> sender, System.Windows.RoutedEventArgs e)
+    {
+        <span class="rem">// Register this object in the page as Scriptable</span>
+        <span class="rem">// so it can be access from within JavaScript</span>
+        HtmlPage.RegisterScriptableObject(<span class="str">&quot;myObject&quot;</span>, <span class="kwrd">this</span>);
+    }
+
+    [ScriptableMember]
+    <span class="kwrd">public</span> <span class="kwrd">double</span> GetDoubleValue()
+    {
+        <span class="rem">// return a double</span>
+        <span class="kwrd">return</span> (<span class="kwrd">double</span>)42;
+    }
+}</pre>
+
+<p><strong>2) Write your JavaScript code</strong></p>
+
+<p>When writing your JavaScript code, you need to get a reference to the Silverlight Plugin in the page, so you can call methods on your Silverlight object.</p>
+
+<p>Here’s a small example of doing this with a JavaScript method that calls the Silverlight method wired up to be fired on click of a button. In this example I’m using ASP.NET and the ASP.NET Silveright control.</p>
+
+<pre class="csharpcode"><span class="asp">&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; %&gt;</span>
+<span class="asp">&lt;%@ Register Assembly=&quot;System.Web.Silverlight&quot; Namespace=&quot;System.Web.UI.SilverlightControls&quot; TagPrefix=&quot;asp&quot; %&gt;</span>
+
+<span class="kwrd">&lt;!</span><span class="html">DOCTYPE</span> <span class="attr">html</span> <span class="attr">PUBLIC</span> <span class="kwrd">&quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</span> <span class="kwrd">&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">html</span> <span class="attr">xmlns</span><span class="kwrd">=&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="attr">style</span><span class="kwrd">=&quot;height:100%;&quot;</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">head</span> <span class="attr">runat</span><span class="kwrd">=&quot;server&quot;</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">title</span><span class="kwrd">&gt;</span>Test Page For SilverlightJavaScriptInteropArticleCode<span class="kwrd">&lt;/</span><span class="html">title</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">script</span> <span class="attr">type</span><span class="kwrd">=&quot;text/javascript&quot;</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">function</span> callGetDoubleValue()
+        {
+            <span class="rem">// Get a reference to the Silverlight Plugin</span>
+            <span class="rem">// Since we're using the ASP.NET Silverlight control</span>
+            <span class="rem">// we can use $find with the controls ClientID to get</span>
+            <span class="rem">// a reference to it</span>
+            <span class="kwrd">var</span> pluginObject = $find(<span class="str">&quot;&lt;%=Xaml1.ClientID%&gt;&quot;</span>);
+            <span class="rem">// Get a reference to the actual Silverlight</span>
+            <span class="rem">// plugin element within the page</span>
+            <span class="kwrd">var</span> plugin = pluginObject.get_element();
+            
+            <span class="rem">// Call the GetDoubleValue method of our Silverlight object</span>
+            <span class="rem">// notice we are referencing the object by the name of &quot;myObject&quot;, that we setup</span>
+            <span class="rem">// in Silverlight when we registered the object as Scriptable</span>
+            <span class="kwrd">var</span> dbl = plugin.Content.myObject.GetDoubleValue();
+
+            <span class="rem">// Display the value to the user in an alert box</span>
+            alert(dbl);
+        }
+    <span class="kwrd">&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">head</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">body</span> <span class="attr">style</span><span class="kwrd">=&quot;height:100%;margin:0;&quot;</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">form</span> <span class="attr">id</span><span class="kwrd">=&quot;form1&quot;</span> <span class="attr">runat</span><span class="kwrd">=&quot;server&quot;</span> <span class="attr">style</span><span class="kwrd">=&quot;height:100%;&quot;</span><span class="kwrd">&gt;</span>
+
+        <span class="rem"><!-- The button that calls the js method above --></span>
+        <span class="kwrd">&lt;</span><span class="html">input</span> <span class="attr">type</span><span class="kwrd">=&quot;button&quot;</span> <span class="attr">value</span><span class="kwrd">=&quot;test&quot;</span> <span class="attr">onclick</span><span class="kwrd">=&quot;callGetDoubleValue();&quot;</span> <span class="kwrd">/&gt;</span>
+
+        <span class="kwrd">&lt;</span><span class="html">asp:ScriptManager</span> <span class="attr">ID</span><span class="kwrd">=&quot;ScriptManager1&quot;</span> <span class="attr">runat</span><span class="kwrd">=&quot;server&quot;</span><span class="kwrd">&gt;&lt;/</span><span class="html">asp:ScriptManager</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">div</span>  <span class="attr">style</span><span class="kwrd">=&quot;height:100%;&quot;</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">asp:Silverlight</span> <span class="attr">ID</span><span class="kwrd">=&quot;Xaml1&quot;</span> <span class="attr">runat</span><span class="kwrd">=&quot;server&quot;</span> <span class="attr">Source</span><span class="kwrd">=&quot;~/ClientBin/SilverlightJavaScriptInteropArticleCode.xap&quot;</span> <span class="attr">MinimumVersion</span><span class="kwrd">=&quot;2.0.30523&quot;</span> <span class="attr">Width</span><span class="kwrd">=&quot;100%&quot;</span> <span class="attr">Height</span><span class="kwrd">=&quot;100%&quot;</span> <span class="kwrd">/&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">form</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">body</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">html</span><span class="kwrd">&gt;</span></pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+
+<h3>Return Objects From Silverlight Method Calls To JavaScript</h3>
+
+<p>You can also return more complex object references to JavaScript from Silverlight method calls. One thing to remember, when returning objects from a Silverlight method call to JavaScript, is they need to be marked as Scriptble using the ScriptableType attribute, and the member (properties and methods) you want to expose must be marked with the ScriptableMember attribute.</p>
+
+<p>Here’s an example method to be called by JavaScript that returns an object type that is marked as Scriptable:</p>
+
+<pre class="csharpcode">[ScriptableMember]
+<span class="kwrd">public</span> myObject GetObjectValue()
+{
+    myObject o = <span class="kwrd">new</span> myObject();
+    o.Name = <span class="str">&quot;Chris&quot;</span>;
+    <span class="kwrd">return</span> o;
+}
+
+[ScriptableType]
+<span class="kwrd">public</span> <span class="kwrd">class</span> myObject
+{
+    [ScriptableMember]
+    <span class="kwrd">public</span> <span class="kwrd">string</span> Name { get; set; }
+
+    [ScriptableMember]
+    <span class="kwrd">public</span> <span class="kwrd">string</span> GetName()
+    {
+        <span class="kwrd">return</span> <span class="kwrd">this</span>.Name;
+    }
+}</pre>
+<style type="text/css">
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+
+<p>Here’s the simple JavaScript (based on the other example above) to call the method and access the returned objects properties and methods:</p>
+
+<pre class="csharpcode"><span class="rem">// Call the method and get the returned object</span>
+<span class="kwrd">var</span> obj = plugin.Content.myObject.GetObjectValue();
+
+<span class="rem">// Get the value of a property of the returned object</span>
+<span class="kwrd">var</span> strName = obj.Name;
+
+<span class="rem">// Get the returned value of a method of the returned object</span>
+<span class="kwrd">var</span> strName = obj.GetName();</pre>
+
+<h3>Conclusion</h3>
+
+<p>The JavaScript interop in Silverlight is fairly simple to use, however the ability to call Silverlight from JavaScript was a little tricky for me at first, mostly due to how few Silverlight articles are out there. I hope this helps you get your JavaScript code (new or existing) working along-side Silverlight in a friendly fashion.</p>
+
+<p>Also, here’s a couple related posts I’ve written during the last couple months. The were written with Silverlight 2 Beta 1 as reference, but they still hold relevent with Beta 2.</p>
+
+<p><a href="/post/2008/03/Working-with-HTML-DOM-in-Silverlight-2-Beta-1.aspx">Working with HTML DOM in Silverlight 2 Beta 1 using the Bridge Pattern</a></p>
+
+<p><a href="/post/2008/03/Show-a-MessageBox-in-Silverlight-2-Beta-1.aspx">Show a MessageBox in Silverlight 2 Beta 1</a></p>
+
+<p><a href="/post/2008/05/Silverlight-Load-JavaScript-from-Embedded-Resource-and-Execute-Within-Page.aspx">Silverlight: Load JavaScript from Embedded Resource and Execute Within Page</a></p>
+
+        
+      </article>
+
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+
+      <!--
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+      -->
+
+
+
+      
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+      <!--
+      
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+      
+        -->
+
+
+
+    </div>
+    <div class="col-md-4">
+      <div class="mb-3">
+    <script type="text/javascript"><!--
+        document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
+        // --></script>
+    </div>
+    
+    <!--
+    <div class="mb-3">
+    <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
+    </div>
+    -->
+
+    <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+    <div class="recent">
+    <h4>Recent Posts</h4>
+    <ul class="list-unstyled">
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions</a></h6>
+            <span class="small text-muted">01 Jul 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number</a></h6>
+            <span class="small text-muted">06 Apr 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/03/11/encryption-code-greater-than-guns-bombs">Encryption and Code are Greater Than Guns and Bombs</a></h6>
+            <span class="small text-muted">11 Mar 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/02/15/macos-monitor-cpu-usage-info">macOS: Monitor CPU Usage and Frequency Info</a></h6>
+            <span class="small text-muted">15 Feb 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/01/02/basics-javascript-class-inheritance">Basics of JavaScript Class Inheritance</a></h6>
+            <span class="small text-muted">02 Jan 2020</span>
+        </li>
+        
+    </ul>
+    </div>
+    
+    <!-- Amazon Affiliate Links -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=1593279507&asins=1593279507&linkId=dbae26993e5e47c31a6178fd13aed38f&show_border=true&link_opens_in_new_window=true"></iframe>
+
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0596517742&asins=0596517742&linkId=67c7a7145153fa5d61755acafc46fa56&show_border=true&link_opens_in_new_window=true"></iframe>
+    <!--
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0135957052&asins=0135957052&linkId=01a571b3e6c9fa1f7c90c5c8f7dfc583&show_border=true&link_opens_in_new_window=true"></iframe>
+    -->
+
+    <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=kuft&banner=07V9YHKS4HY556H67002&f=ifr&lc=pf4&linkID=4bb77e8255a5ef372bfab6cc5c160388&t=pietschsoft04-20&tracking_id=pietschsoft04-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+
+    <div class="related">
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+    </div>
+
+    <!--
+    <h4>Courses</h4>
+    <style>
+        .course-box {
+            margin-bottom: 1em;
+        }
+        .course-box img {
+            width: 95%;
+        }
+        .course-box > strong {
+            display: block;
+        }
+        .course-box > em {
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
+        </a>
+        <strong>
+            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+                The Complete JavaScript Course 2020: Build Real Projects!
+            </a>
+        </strong>
+        <em>by Jonas Schmedtmann</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            JavaScript Basics for Beginners
+        </a></strong>
+        <em>by Mosh Hamedani</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            Advanced JavaScript Concepts
+        </a></strong>
+        <em>by Andrei Neagoie</em>
+    </div>
+    -->
+
+    <h4>Legal Disclaimer</h4>
+    <p style="font-size=0.7em">This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+    
+    <div id="fixedadmarker"></div>
+    <div id="fixedad" class="mt-3">
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+    </div>
+    <style>
+    @media (min-width: 768px) {
+        .fixedad-float {
+            position: fixed;
+            top: 2.5em;
+        }
+    }
+    </style>
+    <script>
+    window.setInterval(function() {
+        var elem = $('#fixedadmarker'),
+            top = elem.offset().top || 0,
+            height = elem[0].offsetHeight || 0,
+            bottom = top + height,
+            scrollY = window.scrollY || 0,
+            elemToBeFixed = $('#fixedad');
+        if (scrollY >= bottom) {
+            elemToBeFixed.addClass('fixedad-float');
+        } else {
+            elemToBeFixed.removeClass('fixedad-float');
+        }
+    }, 100);
+    </script>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Chris Pietschmann</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/#awards">Microsoft MVP</a></li>
+        <li><a class="text-muted" href="/#books">Books</a></li>
+        <li><a class="text-muted" href="/#websites">Websites</a></li>
+        <li><a class="text-muted" href="/#experience">Experience</a></li>
+        <li><a class="text-muted" href="/talks">Talks</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Publications</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://build5nines.com" target="_blank">Build5Nines.com</a></li>
+        <li><a class="text-muted" href="https://www.hackster.io/crpietschmann/articles" target="_blank">Hackster.io</a></li>
+        <li><a class="text-muted" href="/blog">Pietschsoft.com</a></li>
+      </ul>
+      <h5>Social Media</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://twitter.com/crpietschmann" target="_blank">Twitter</a></li>
+        <li><a class="text-muted" href="http://linkedin.com/in/crpietschmann" target="_blank">LinkedIn</a></li>
+        <li><a class="text-muted" href="http://youtube.com/build5nines" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <img src="/images/buildazure-logo.png" alt="Build5Nines.com" style="height: 1.5em;"/>
+      <small class="d-block mb-3 text-muted">
+        Copyright © 2020 Chris Pietschmann. All rights reserved.
+      </small>
+      <small class="d-block mb-3 text-muted">
+        <strong>Legal Disclaimer</strong>
+        <p>This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+      </small>
+    </div>
+    <div class="col-12 col-md">
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script src="/scripts/prism/prism.js"></script>
+<link rel="stylesheet" href="/scripts/prism/prism.css" />
+
+<script src="/scripts/holder.js"></script>
+<script>
+Holder.addTheme('thumb', {
+  bg: '#55595c',
+  fg: '#eceeef',
+  text: 'Thumbnail'
+});
+</script>
+
+
+    <script type="text/javascript">
+    // Google Analytics
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1172995-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
+
+    <script type="text/javascript">
+    // Developer Media Ads
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+
+    // Google Analytics Track External Link Clicks
+    (function($) { if ($) {
+      $('a[href^=http]').click(function(){
+          if (_gaq && _gaq.push && !((this.href || '').startsWith('https://pietschsoft.com'))) {
+              _gaq.push(['_trackEvent','Link','External',this.href]);
+          }
+          return true;
+      });
+    }})(jQuery);
+    </script>
+  </body>
+</html>

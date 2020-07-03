@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Some ASP.NET AJAX Tips and Tricks | Chris Pietschmann</title>
+    <meta name="description" content="I have nearly 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+">
+    <meta name="author" content="Chris Pietschmann">
+    <link rel="icon" href="/images/avatar-chris-pietschmann-transparent.png">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="alternate" type="application/rss+xml" title="Chris Pietschmann &raquo; Archive" href="https://pietschsoft.com/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//css/site.css">
+    <link rel="canonical" href="http://pietschsoft.com//post/2008/04/03/some-aspnet-ajax-tips-and-tricks">
+</head>
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Bio</h4>
+          <p class="text-muted">
+            <a href="/">Chris Pietschmann</a> is a Microsoft MVP with <strong>Azure</strong> and <strong>IoT</strong> technologies, and a Microsoft Certified Trainer (MCT) with 20+ years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in Internet of Things (IoT), DevOps, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Publications</h4>
+          <ul class="list-unstyled">
+            <li><a href="/#books" class="text-white">Books</a></li>
+            <li><a href="https://build5nines.com" class="text-white">Build5Nines.com</a></li>
+            <li><a href="https://www.hackster.io/crpietschmann/articles" class="text-white">Hackster.io</a></li>
+            <li><a href="/blog" class="text-white">Pietschsoft.com</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/crpietschmann" class="text-white">Twitter</a></li>
+            <li><a href="http://linkedin.com/in/crpietschmann" class="text-white">LinkedIn</a></li>
+            <li><a href="https://build5nines.com/contact" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com Logo" style="height: 1.5em; margin-right: 0.5em;"/>-->
+        <img src="/images/avatar-chris-pietschmann-transparent.png" alt="Chris Pietschmann" style="background: #fff; height: 1.5em; margin-right: 0.5em;"/>
+        <strong>Chris Pietschmann</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container post">
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <header class="post-header">
+          <h1 class="post-title">Some ASP.NET AJAX Tips and Tricks</h1>
+          <!--
+          <div class="post-categories">
+              
+              
+              <a href="//categories/#ASP.NET">ASP.NET</a>
+              &nbsp;
+              
+              <a href="//categories/#AJAX">AJAX</a>
+              
+              
+            </div>
+          -->
+          <p class="post-meta">Apr 3, 2008</p>
+      </header>
+
+      <article class="post-content">
+        
+            <!-- more -->
+
+<p>I've been using ASP.NET AJAX alot for a while now, so I thought I'd share some of the Tips and Tricks that I've learned though my adventures. Lately, all the buzz has been around Silverlight, but I know there are still a lot of devs out there that can benefit from these tips and tricks.</p>
+
+<h3>UpdatePanel Tips</h3>
+
+<p><strong>Use UpdateMode=Conditional</strong></p>
+
+<p>By setting the UpdatePanel's UpdateMode property to Conditional, it will only update its contents when one of its triggers occurs or a control within the UpdatePanel itself raises a Postback.</p>
+
+<p>To do this just do the following:</p>
+
+<p>{code:html}</p>
+
+<p>&lt;asp:UpdatePanel runat="server" ID="UpdatePanel_List" UpdateMode="Conditional"&gt;</p>
+
+<p>{/code}</p>
+
+<p><strong>Programmatically Tell the ScriptManager to handle a specific controls postbacks asynchronously</strong></p>
+
+<p>Programmatically telling the ScriptManager to raise a Postbacks Asynchronously can be usefull in some scenarios; such as when you may want to optionally enable ajax for certain things on the page.</p>
+
+<p>To do this you just use the ScriptManagers RegisterAsyncPostBackControl method and pass it the reference to the control you want to make asynchronous.</p>
+
+<p>Here's an example page that does this:</p>
+
+<p>Default.aspx</p>
+
+<p>{code:html}</p>
+
+<p>&lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="UpdatePanel_01_Default" %&gt;</p>
+
+<p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p>
+
+<p>&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;</p>
+
+<p>&lt;head runat="server"&gt;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;title&gt;Untitled Page&lt;/title&gt;
+</code></pre></div></div>
+
+<p>&lt;/head&gt;</p>
+
+<body>
+
+    &lt;form id=&quot;form1&quot; runat=&quot;server&quot;&gt;
+
+    <div>
+
+    
+
+        &lt;asp:ScriptManager runat=&quot;server&quot; ID=&quot;ScriptManager1&quot;&gt;&lt;/asp:ScriptManager&gt;
+
+        &lt;asp:Button runat=&quot;server&quot; ID=&quot;btnShowTime&quot; Text=&quot;Show Time&quot; OnClick=&quot;btnShowTime_Click&quot; /&gt;
+
+        
+
+
+        &lt;asp:UpdatePanel runat=&quot;server&quot; ID=&quot;UpdatePanel1&quot;&gt;
+
+            <ContentTemplate>
+
+                &lt;asp:Label runat=&quot;server&quot; ID=&quot;lblTime&quot;&gt;&lt;/asp:Label&gt;
+
+            </ContentTemplate>
+
+        &lt;/asp:UpdatePanel&gt;
+
+   
+
+    </div>
+
+    &lt;/form&gt;
+
+</body>
+
+<p>&lt;/html&gt;</p>
+
+<p>{/code}</p>
+
+<p>Default.aspx.cs</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+
+<span class="k">public</span> <span class="k">partial</span> <span class="k">class</span> <span class="nc">UpdatePanel_01_Default</span> <span class="p">:</span> <span class="n">System</span><span class="p">.</span><span class="n">Web</span><span class="p">.</span><span class="n">UI</span><span class="p">.</span><span class="n">Page</span>
+
+<span class="p">{</span>
+
+    <span class="k">protected</span> <span class="k">void</span> <span class="nf">Page_Load</span><span class="p">(</span><span class="kt">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">EventArgs</span> <span class="n">e</span><span class="p">)</span>
+
+    <span class="p">{</span>
+
+        <span class="c1">/// Make btnShowTime postback asynchronously</span>
+
+        <span class="k">this</span><span class="p">.</span><span class="n">ScriptManager1</span><span class="p">.</span><span class="nf">RegisterAsyncPostBackControl</span><span class="p">(</span><span class="n">btnShowTime</span><span class="p">);</span>
+
+    <span class="p">}</span> 
+
+
+
+    <span class="k">protected</span> <span class="k">void</span> <span class="nf">btnShowTime_Click</span><span class="p">(</span><span class="kt">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">EventArgs</span> <span class="n">e</span><span class="p">)</span>
+
+    <span class="p">{</span>
+
+        <span class="n">lblTime</span><span class="p">.</span><span class="n">Text</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">.</span><span class="nf">ToLongTimeString</span><span class="p">();</span>
+
+    <span class="p">}</span>
+
+<span class="p">}</span> 
+
+
+
+</code></pre></div></div>
+
+<h3>WebMethods and PageMethods</h3>
+
+<p><strong>Using WebMethods</strong></p>
+
+<p>By attaching the ScriptService and ScriptMethod attributes to your WebServices you can enable them to be accessed from within your pages via JavaScript.</p>
+
+<p>Here's a sample WebService with the ScriptService and ScriptMethod attributes attached:</p>
+
+<p>{code:c#}</p>
+
+<p>[System.Web.Script.Services.ScriptService]</p>
+
+<p>[WebService(Namespace = "<a href="http://tempuri.org/">http://tempuri.org/</a>")]</p>
+
+<p>[WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]</p>
+
+<p>public class WSTime : System.Web.Services.WebService</p>
+
+<p>{</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[WebMethod]
+
+[System.Web.Script.Services.ScriptMethod]
+
+public string GetServerTime()
+
+{
+
+    return DateTime.Now.ToLongTimeString();
+
+} 
+</code></pre></div></div>
+
+<p>}</p>
+
+<p>{/code}</p>
+
+<p>Then to access the WebService from within JavaScript you need to first tell the ScriptManager about the WebService by giving it a ServiceReference. This can be done declaratively within the page, like so:</p>
+
+<p>{code:html}</p>
+
+<p>&lt;asp:ScriptManager runat="server" ID="ScriptManager1"&gt;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Services&gt;
+
+    &lt;asp:ServiceReference Path=&amp;quot;~/WebMethods/WSTime.asmx&amp;quot; /&gt;
+
+&lt;/Services&gt;
+</code></pre></div></div>
+
+<p>&lt;/asp:ScriptManager&gt;</p>
+
+<p>{/code}</p>
+
+<p>Now to acess the WebServices methods you just use the namespace that ASP.NET Ajax creates in the page for the WebService and access its methods like normal JavaScript methods. The namespace that is created is the same name as the WebService, in this case it's WSTime. The whole Ajaxiness of calling the server and getting the results back are handled for you, and all you have to worry about is processing the results. Remember, WebMethods can only be called Asynchronously.</p>
+
+<p>Here's an example of using the WSTime.GetServerTime WebService method from within JavaScript:</p>
+
+<p>{code:js}</p>
+
+<p>function btnGetServerTime_Click()</p>
+
+<p>{</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// call the WebMethod and pass it the method
+
+// to call once it gets the response from
+
+// the server.
+
+WSTime.GetServerTime(SucceededCallback);
+</code></pre></div></div>
+
+<p>}</p>
+
+<p>function SucceededCallback(result, eventArgs)</p>
+
+<p>{</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alert(result);
+</code></pre></div></div>
+
+<p>}</p>
+
+<p>{/code}</p>
+
+<p><strong>Using PageMethods</strong></p>
+
+<p>PageMethods are accessed in the same fashion as WebMethods, except they do not require the creation of a WebService. PageMethods are actually WebMethods that are added to the page itself. Once thing to note is there is No way to embed PageMethods within Custom User Controls or Server Controls, they must be added to the Page; hence the name PageMethods.</p>
+
+<p>Here's the C# code of an example page with a PageMethod defined:</p>
+
+<p>{code:c#}</p>
+
+<p>public partial class PageMethods_Default : System.Web.UI.Page</p>
+
+<p>{</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>protected void Page_Load(object sender, EventArgs e)
+
+{
+
+}
+
+
+
+[WebMethod]
+
+public static string GetServerTime()
+
+{
+
+    return DateTime.Now.ToLongTimeString();
+
+}
+</code></pre></div></div>
+
+<p>}</p>
+
+<p>{/code}</p>
+
+<p>To enable the PageMethods you must first set the ScriptManagers EnablePageMethods property to True.</p>
+
+<p>{code:html}</p>
+
+<p>&lt;asp:ScriptManager runat="server" ID="ScriptManager1" EnablePageMethods="true"&gt;&lt;/asp:ScriptManager&gt;</p>
+
+<p>{/code}</p>
+
+<p>Then you can call the PageMethods in the same way as WebMethods, except the namespace you use to access the methods is named PageMethods.</p>
+
+<p>Here's the example code of calling the above PageMethod from JavaScript:</p>
+
+<p>{code:js}</p>
+
+<p>function btnGetServerTime_Click()</p>
+
+<p>{</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PageMethods.GetServerTime(SucceededCallback);
+</code></pre></div></div>
+
+<p>}</p>
+
+<p>function SucceededCallback(result, eventArgs)</p>
+
+<p>{</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alert(result);
+</code></pre></div></div>
+
+<p>}</p>
+
+<p>{/code}</p>
+
+<h3>Conclusion</h3>
+
+<p>I hope these couple of tips help in your endeavors with ASP.NET AJAX. When I get time (in between all the other million things) maybe I'll post some more tips.</p>
+
+<p>Also, if you have your own tips, please post them in the comments.</p>
+
+
+        
+      </article>
+
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+
+      <!--
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+      -->
+
+
+
+      
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+      <!--
+      
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+      
+        -->
+
+
+
+    </div>
+    <div class="col-md-4">
+      <div class="mb-3">
+    <script type="text/javascript"><!--
+        document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
+        // --></script>
+    </div>
+    
+    <!--
+    <div class="mb-3">
+    <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
+    </div>
+    -->
+
+    <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+    <div class="recent">
+    <h4>Recent Posts</h4>
+    <ul class="list-unstyled">
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions</a></h6>
+            <span class="small text-muted">01 Jul 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number</a></h6>
+            <span class="small text-muted">06 Apr 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/03/11/encryption-code-greater-than-guns-bombs">Encryption and Code are Greater Than Guns and Bombs</a></h6>
+            <span class="small text-muted">11 Mar 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/02/15/macos-monitor-cpu-usage-info">macOS: Monitor CPU Usage and Frequency Info</a></h6>
+            <span class="small text-muted">15 Feb 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/01/02/basics-javascript-class-inheritance">Basics of JavaScript Class Inheritance</a></h6>
+            <span class="small text-muted">02 Jan 2020</span>
+        </li>
+        
+    </ul>
+    </div>
+    
+    <!-- Amazon Affiliate Links -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=1593279507&asins=1593279507&linkId=dbae26993e5e47c31a6178fd13aed38f&show_border=true&link_opens_in_new_window=true"></iframe>
+
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0596517742&asins=0596517742&linkId=67c7a7145153fa5d61755acafc46fa56&show_border=true&link_opens_in_new_window=true"></iframe>
+    <!--
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0135957052&asins=0135957052&linkId=01a571b3e6c9fa1f7c90c5c8f7dfc583&show_border=true&link_opens_in_new_window=true"></iframe>
+    -->
+
+    <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=kuft&banner=07V9YHKS4HY556H67002&f=ifr&lc=pf4&linkID=4bb77e8255a5ef372bfab6cc5c160388&t=pietschsoft04-20&tracking_id=pietschsoft04-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+
+    <div class="related">
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+    </div>
+
+    <!--
+    <h4>Courses</h4>
+    <style>
+        .course-box {
+            margin-bottom: 1em;
+        }
+        .course-box img {
+            width: 95%;
+        }
+        .course-box > strong {
+            display: block;
+        }
+        .course-box > em {
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
+        </a>
+        <strong>
+            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+                The Complete JavaScript Course 2020: Build Real Projects!
+            </a>
+        </strong>
+        <em>by Jonas Schmedtmann</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            JavaScript Basics for Beginners
+        </a></strong>
+        <em>by Mosh Hamedani</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            Advanced JavaScript Concepts
+        </a></strong>
+        <em>by Andrei Neagoie</em>
+    </div>
+    -->
+
+    <h4>Legal Disclaimer</h4>
+    <p style="font-size=0.7em">This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+    
+    <div id="fixedadmarker"></div>
+    <div id="fixedad" class="mt-3">
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+    </div>
+    <style>
+    @media (min-width: 768px) {
+        .fixedad-float {
+            position: fixed;
+            top: 2.5em;
+        }
+    }
+    </style>
+    <script>
+    window.setInterval(function() {
+        var elem = $('#fixedadmarker'),
+            top = elem.offset().top || 0,
+            height = elem[0].offsetHeight || 0,
+            bottom = top + height,
+            scrollY = window.scrollY || 0,
+            elemToBeFixed = $('#fixedad');
+        if (scrollY >= bottom) {
+            elemToBeFixed.addClass('fixedad-float');
+        } else {
+            elemToBeFixed.removeClass('fixedad-float');
+        }
+    }, 100);
+    </script>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Chris Pietschmann</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/#awards">Microsoft MVP</a></li>
+        <li><a class="text-muted" href="/#books">Books</a></li>
+        <li><a class="text-muted" href="/#websites">Websites</a></li>
+        <li><a class="text-muted" href="/#experience">Experience</a></li>
+        <li><a class="text-muted" href="/talks">Talks</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Publications</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://build5nines.com" target="_blank">Build5Nines.com</a></li>
+        <li><a class="text-muted" href="https://www.hackster.io/crpietschmann/articles" target="_blank">Hackster.io</a></li>
+        <li><a class="text-muted" href="/blog">Pietschsoft.com</a></li>
+      </ul>
+      <h5>Social Media</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://twitter.com/crpietschmann" target="_blank">Twitter</a></li>
+        <li><a class="text-muted" href="http://linkedin.com/in/crpietschmann" target="_blank">LinkedIn</a></li>
+        <li><a class="text-muted" href="http://youtube.com/build5nines" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <img src="/images/buildazure-logo.png" alt="Build5Nines.com" style="height: 1.5em;"/>
+      <small class="d-block mb-3 text-muted">
+        Copyright © 2020 Chris Pietschmann. All rights reserved.
+      </small>
+      <small class="d-block mb-3 text-muted">
+        <strong>Legal Disclaimer</strong>
+        <p>This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+      </small>
+    </div>
+    <div class="col-12 col-md">
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script src="/scripts/prism/prism.js"></script>
+<link rel="stylesheet" href="/scripts/prism/prism.css" />
+
+<script src="/scripts/holder.js"></script>
+<script>
+Holder.addTheme('thumb', {
+  bg: '#55595c',
+  fg: '#eceeef',
+  text: 'Thumbnail'
+});
+</script>
+
+
+    <script type="text/javascript">
+    // Google Analytics
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1172995-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
+
+    <script type="text/javascript">
+    // Developer Media Ads
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+
+    // Google Analytics Track External Link Clicks
+    (function($) { if ($) {
+      $('a[href^=http]').click(function(){
+          if (_gaq && _gaq.push && !((this.href || '').startsWith('https://pietschsoft.com'))) {
+              _gaq.push(['_trackEvent','Link','External',this.href]);
+          }
+          return true;
+      });
+    }})(jQuery);
+    </script>
+  </body>
+</html>

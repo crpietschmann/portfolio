@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Bing Maps Ajax 7: Adding InfoBox Support via Extension to Microsoft.Maps | Chris Pietschmann</title>
+    <meta name="description" content="I have nearly 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+">
+    <meta name="author" content="Chris Pietschmann">
+    <link rel="icon" href="/images/avatar-chris-pietschmann-transparent.png">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="alternate" type="application/rss+xml" title="Chris Pietschmann &raquo; Archive" href="https://pietschsoft.com/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//css/site.css">
+    <link rel="canonical" href="http://pietschsoft.com//post/2010/11/30/bing-maps-ajax-7-adding-infobox-support-via-extension-to-microsoftmaps">
+</head>
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Bio</h4>
+          <p class="text-muted">
+            <a href="/">Chris Pietschmann</a> is a Microsoft MVP with <strong>Azure</strong> and <strong>IoT</strong> technologies, and a Microsoft Certified Trainer (MCT) with 20+ years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in Internet of Things (IoT), DevOps, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Publications</h4>
+          <ul class="list-unstyled">
+            <li><a href="/#books" class="text-white">Books</a></li>
+            <li><a href="https://build5nines.com" class="text-white">Build5Nines.com</a></li>
+            <li><a href="https://www.hackster.io/crpietschmann/articles" class="text-white">Hackster.io</a></li>
+            <li><a href="/blog" class="text-white">Pietschsoft.com</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/crpietschmann" class="text-white">Twitter</a></li>
+            <li><a href="http://linkedin.com/in/crpietschmann" class="text-white">LinkedIn</a></li>
+            <li><a href="https://build5nines.com/contact" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com Logo" style="height: 1.5em; margin-right: 0.5em;"/>-->
+        <img src="/images/avatar-chris-pietschmann-transparent.png" alt="Chris Pietschmann" style="background: #fff; height: 1.5em; margin-right: 0.5em;"/>
+        <strong>Chris Pietschmann</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container post">
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <header class="post-header">
+          <h1 class="post-title">Bing Maps Ajax 7: Adding InfoBox Support via Extension to Microsoft.Maps</h1>
+          <!--
+          <div class="post-categories">
+              
+              
+              <a href="//categories/#Bing Maps">Bing Maps</a>
+              &nbsp;
+              
+              <a href="//categories/#GIS">GIS</a>
+              
+              
+            </div>
+          -->
+          <p class="post-meta">Nov 30, 2010</p>
+      </header>
+
+      <article class="post-content">
+        
+            <!-- more -->
+
+<p>The new Bing Maps Ajax v7 control may be faster and smaller, but it is pretty light on features at the moment compared to its older brother; the v6.3 control. One of the features missing is support for showing InfoBox’s. Its simple to handle mouse events and display a &lt;div&gt; next to the pushpin, but I thought I’d take a little time to write a simple InfoBox extension to the new Microsoft.Maps namespace.<br />
+Here’s a screenshot of it in action:<br />
+<a href="/files/BingMaps7_InfoBox_Screenshot.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="BingMaps7_InfoBox_Screenshot" border="0" alt="BingMaps7_InfoBox_Screenshot" src="/files/BingMaps7_InfoBox_Screenshot_thumb.png" width="304" height="276" /></a>  &lt;h3&gt;Usage&lt;/h3&gt;<br />
+Let’s start with some sample usage of the InfoBox extension.  &lt;pre class="csharpcode"&gt;<span class="rem">// Create Pushpin</span>
+<span class="kwrd">var</span> pushpin = <span class="kwrd">new</span> Microsoft.Maps.Pushpin(
+    <span class="kwrd">new</span> Microsoft.Maps.Location(0,0)
+);</p>
+
+<p><span class="rem">// Create InfoBox</span>
+<span class="kwrd">var</span> infobox = Microsoft.Maps.Ext.InfoBox(
+    <span class="str">"Title"</span>, <span class="rem">/* &lt;– InfoBox Title to display */</span>
+    <span class="str">"Description"</span>, <span class="rem">/* &lt;– InfoBox Description to display */</span>
+    map <span class="rem">/* &lt;– A refernce to the Map where the InfoBox will be displayed */</span>
+);</p>
+
+<p><span class="rem">// Add InfoBox to Pushpin</span>
+pushpin.setInfoBox(infobox);</p>
+
+<p><span class="rem">// Add Pushpin to Map</span>
+map.entities.push(pushpin);&lt;/pre&gt;</p>
+<style type="text/css">
+
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+
+<p>Usage of the “Microsoft.Maps.Ext.InfoBox” object is fairly simple. After creating the InfoBox object, you assign it to the Pushpin via the “setInfoBox” method that is also an extension that has been added.</p>
+
+<h3>CSS</h3>
+
+<p>There is a small bit of CSS code needed to style the InfoBox appropriately.</p>
+
+<p>Here’s some sample HTML that is similar to what the InfoBox extension adds to the page for the InfoBox’s:</p>
+
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">=&quot;infobox&quot;</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">h4</span><span class="kwrd">&gt;</span>Title<span class="kwrd">&lt;/</span><span class="html">h4</span><span class="kwrd">&gt;</span>
+Description
+<span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span></pre>
+<style type="text/css">
+
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+
+<p>The &lt;div&gt; element is given the CSS class of “infobox”. You use this class name to add CSS to your application to style the InfoBox’s as desired.</p>
+
+<p>Here’s some sample CSS to give the InfoBox a style similar to the Bing Maps v6.x InfoBox’s:</p>
+
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">style</span><span class="kwrd">&gt;</span>
+.infobox
+{
+    position: absolute;
+    z-index: 10000;
+    
+    width: 150px;
+    
+    background: #fff;
+    border: solid 1px #555;
+    padding: 8px;
+    color: #555;
+}
+.infobox h4
+{
+    color: #000;
+    margin: 0;
+    font-weight: bold;
+}
+<span class="kwrd">&lt;/</span><span class="html">style</span><span class="kwrd">&gt;</span></pre>
+<style type="text/css">
+
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+
+<h3>Custom Pushpin Method Reference</h3>
+
+<p>Here’s some documentation of the 2 methods I added to the Microsoft.Maps.Pushpin object:</p>
+
+<p>**Pushpin.setInfoBox(infobox)</p>
+
+<p>**This method is used to set a specific InfoBox to be show for the Pushpin.</p>
+
+<p>**Pushpin.removeInfoBox()</p>
+
+<p>**This method is used to remove a previously added InfoBox from the Pushpin.</p>
+
+<h3>InfoBox Method Reference</h3>
+
+<p>Here’s some documentation on the Microsoft.Maps.Ext.InfoBox object:</p>
+
+<p><strong>Microsoft.Maps.Ext.InfoBox(title, description, map)</strong></p>
+
+<p>This is the constructor of the InfoBox object.</p>
+
+<ol>
+  <li>**title** – The HTML to show in the InfoBox title area. </li>
+
+  <li>**description** – The HTML to show in the InfoBox description area. </li>
+
+  <li>**map** – A reference to the Map where the InfoBox’s Pushpin is located, and where it will be displayed. </li>
+</ol>
+
+<p><strong>InfoBox.title(title)</strong></p>
+
+<p>This method gets or sets the Title of the InfoBox. If an argument is passed in, it will set the Title and return the InfoBox object to allow for a fluent interface. If no argument is passed in, it will return the value of the InfoBox Title.</p>
+
+<p><strong>InfoBox.descirption(description)</strong></p>
+
+<p>This method gets or sets the Description of the InfoBox. If an argument is passed in, it will set the Description and return the InfoBox object to allow for a fluent interface. If no argument is passed in, it will return the value of the InfoBox Description.</p>
+
+<h3>Full InfoBox Extension</h3>
+
+<p>Rather than add the InfoBox object to the root of the “Microsoft.Maps” namespace, I decided to add the “Microsoft.Maps.Ext” namespace where the InfoBox object will live. This will help keep it separated from “core” Microsoft.Maps functionality. Now the only methods added to the “core” namespace are the “setInfoBox” and “removeInfoBox” methods that were necessary to add directly to the Pushpin object.</p>
+
+<p>**Requirements:</p>
+
+<p>**This extension requires <a title="jQuery" href="http://jquery.com">jQuery</a> to function.</p>
+
+<p>I could have coded the necessary JavaScript code to manipulate the HTML DOM myself, but it was just easier to use jQuery. Plus, if you’re like me, you will probably be using jQuery in your application anyway so it wont add any additional download.</p>
+
+<p>**Source Code:</p>
+
+<p>**Now for the real meat of the post. Here is the full JavaScript code for the InfoBox extension.</p>
+
+<pre class="csharpcode">(<span class="kwrd">function</span> ($m) {
+    <span class="rem">/* $m == Microsoft.Maps namespace */</span>
+    <span class="rem">/* Add &quot;Microsoft.Maps.Ext&quot; namespace if it doesn't exist</span>
+<span class="rem">    This is used to hold the custom InfoBox functionality */</span>
+    <span class="kwrd">if</span> (!$m.Ext) { $m.Ext = {}; }
+
+    <span class="rem">/* Microsoft.Maps.Ext.InfoBox extension */</span>
+    <span class="kwrd">var</span> InfoBox = $m.Ext.InfoBox = <span class="kwrd">function</span> (title, desc, map) {
+        <span class="kwrd">return</span> <span class="kwrd">new</span> InfoBox.fn.init(title, desc, map);
+    };
+    InfoBox.prototype = InfoBox.fn = {
+        init: <span class="kwrd">function</span> (title, desc, map) {
+            <span class="kwrd">this</span>._element = <span class="kwrd">null</span>;
+            <span class="kwrd">this</span>._title = title;
+            <span class="kwrd">this</span>._description = desc;
+            <span class="kwrd">this</span>._map = map;
+        },
+        title: <span class="kwrd">function</span> (v) {
+            <span class="kwrd">if</span> (v !== undefined) {
+                <span class="kwrd">this</span>._title = v;
+                <span class="kwrd">return</span> <span class="kwrd">this</span>;
+            }
+            <span class="kwrd">return</span> <span class="kwrd">this</span>._title;
+        },
+        description: <span class="kwrd">function</span> (v) {
+            <span class="kwrd">if</span> (v !== undefined) {
+                <span class="kwrd">this</span>._description = v;
+                <span class="kwrd">return</span> <span class="kwrd">this</span>;
+            }
+            <span class="kwrd">return</span> <span class="kwrd">this</span>._description;
+        },
+        show: <span class="kwrd">function</span> (e) {
+            <span class="rem">/* Get location of Pushpin */</span>
+            <span class="kwrd">var</span> loc = <span class="kwrd">this</span>.map().
+                tryLocationToPixel(
+                    e.target.getLocation(), Microsoft.Maps.PixelReference.page
+                );
+            <span class="kwrd">if</span> (<span class="kwrd">this</span>._element === <span class="kwrd">null</span>) {
+                <span class="rem">/* Create <div> to show as InfoBox */&lt;/span&gt;
+                <span class="kwrd">this</span>._element = $(<span class="str">'<div>'&lt;/span&gt;).
+                    addClass(<span class="str">'infobox'</span>).
+                    appendTo($(document.body)).
+                    html(<span class="str">'<h4>'&lt;/span&gt; + <span class="kwrd">this</span>.title() + <span class="str">'&lt;/h4&gt;'</span> + <span class="kwrd">this</span>.description());
+            }
+            <span class="rem">/* Show InfoBox and set position*/</span>
+            <span class="kwrd">this</span>._element.show().css({
+                position: <span class="str">'absolute'</span>,
+                <span class="rem">/* offset the infobox a little */</span>
+                top: loc.y - 10,
+                left: loc.x + 10
+            });
+        },
+        hide: <span class="kwrd">function</span> () {
+            <span class="rem">/* Hide InfoBox from view */</span>
+            <span class="kwrd">if</span> (<span class="kwrd">this</span>._element !== <span class="kwrd">null</span>) {
+                <span class="kwrd">this</span>._element.hide();
+            }
+        },
+        map: <span class="kwrd">function</span> (v) {
+            <span class="kwrd">if</span> (v) {
+                <span class="kwrd">this</span>._map = v;
+                <span class="kwrd">return</span> <span class="kwrd">this</span>;
+            }
+            <span class="kwrd">return</span> <span class="kwrd">this</span>._map;
+        }
+    };
+    InfoBox.fn.init.prototype = InfoBox.fn;
+
+    <span class="rem">/* Microsoft.Maps.Pushpin extensions */</span>
+    (<span class="kwrd">function</span> (proto) {
+        <span class="kwrd">if</span> (!proto.setInfoBox) {
+            proto.setInfoBox = <span class="kwrd">function</span> (infoBox) {
+                <span class="kwrd">this</span>.removeInfoBox();
+                <span class="kwrd">this</span>.infobox = infoBox;
+                <span class="rem">/* attach event handlers */</span>
+                <span class="kwrd">this</span>.infoboxMouseOverHandler = $m.Events.addHandler(
+                    <span class="kwrd">this</span>,
+                    <span class="str">&quot;mouseover&quot;</span>,
+                    <span class="kwrd">function</span> (e) {
+                        infoBox.show(e);
+                    });
+                <span class="kwrd">this</span>.infoboxMouseOutHandler = $m.Events.addHandler(
+                    <span class="kwrd">this</span>,
+                    <span class="str">&quot;mouseout&quot;</span>,
+                    <span class="kwrd">function</span> (e) {
+                        infoBox.hide(e);
+                    });
+            };
+        }
+        <span class="kwrd">if</span> (!proto.removeInfoBox) {
+            proto.removeInfoBox = <span class="kwrd">function</span> () {
+                <span class="rem">/* detach event handlers */</span>
+                $m.Events.removeHandler(<span class="kwrd">this</span>.infoboxMouseOverHandler);
+                $m.Events.removeHandler(<span class="kwrd">this</span>.infoboxMouseOutHandler);
+                <span class="kwrd">this</span>.infobox = <span class="kwrd">null</span>;
+            };
+        }
+    })($m.Pushpin.prototype);
+})(Microsoft.Maps);&lt;/pre&gt;
+<style type="text/css">
+
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+
+<h3>Conclusion</h3>
+
+
+I didn’t go over the specifics of writing this plugin too much. If you want to see more examples of what’s involved, then I recommend reading the “<a href="http://social.msdn.microsoft.com/Forums/en-US/vemapcontroldev/thread/8eec78d8-e211-4245-b47c-e83289755f2c">Creating Infoboxes in Bing Maps AJAX v7</a>” post on MSDN Social.
+
+<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:a1d0c9d3-fd57-4da7-bf10-24654b5ace8d" class="wlWriterEditableSmartContent">
+<div>Full Example:<a href="/files/BingMapsAjaxv7InfoBoxExtensionExampleUsage.zip" target="_self">BingMapsAjaxv7InfoBoxExtensionExampleUsage.zip</a></div></div>
+</h4></span></div></span></div></span></pre>
+
+        
+      </article>
+
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+
+      <!--
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+      -->
+
+
+
+      
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+      <!--
+      
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+      
+        -->
+
+
+
+    </div>
+    <div class="col-md-4">
+      <div class="mb-3">
+    <script type="text/javascript"><!--
+        document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
+        // --></script>
+    </div>
+    
+    <!--
+    <div class="mb-3">
+    <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
+    </div>
+    -->
+
+    <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+    <div class="recent">
+    <h4>Recent Posts</h4>
+    <ul class="list-unstyled">
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions</a></h6>
+            <span class="small text-muted">01 Jul 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number</a></h6>
+            <span class="small text-muted">06 Apr 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/03/11/encryption-code-greater-than-guns-bombs">Encryption and Code are Greater Than Guns and Bombs</a></h6>
+            <span class="small text-muted">11 Mar 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/02/15/macos-monitor-cpu-usage-info">macOS: Monitor CPU Usage and Frequency Info</a></h6>
+            <span class="small text-muted">15 Feb 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/01/02/basics-javascript-class-inheritance">Basics of JavaScript Class Inheritance</a></h6>
+            <span class="small text-muted">02 Jan 2020</span>
+        </li>
+        
+    </ul>
+    </div>
+    
+    <!-- Amazon Affiliate Links -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=1593279507&asins=1593279507&linkId=dbae26993e5e47c31a6178fd13aed38f&show_border=true&link_opens_in_new_window=true"></iframe>
+
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0596517742&asins=0596517742&linkId=67c7a7145153fa5d61755acafc46fa56&show_border=true&link_opens_in_new_window=true"></iframe>
+    <!--
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0135957052&asins=0135957052&linkId=01a571b3e6c9fa1f7c90c5c8f7dfc583&show_border=true&link_opens_in_new_window=true"></iframe>
+    -->
+
+    <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=kuft&banner=07V9YHKS4HY556H67002&f=ifr&lc=pf4&linkID=4bb77e8255a5ef372bfab6cc5c160388&t=pietschsoft04-20&tracking_id=pietschsoft04-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+
+    <div class="related">
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+    </div>
+
+    <!--
+    <h4>Courses</h4>
+    <style>
+        .course-box {
+            margin-bottom: 1em;
+        }
+        .course-box img {
+            width: 95%;
+        }
+        .course-box > strong {
+            display: block;
+        }
+        .course-box > em {
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
+        </a>
+        <strong>
+            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+                The Complete JavaScript Course 2020: Build Real Projects!
+            </a>
+        </strong>
+        <em>by Jonas Schmedtmann</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            JavaScript Basics for Beginners
+        </a></strong>
+        <em>by Mosh Hamedani</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            Advanced JavaScript Concepts
+        </a></strong>
+        <em>by Andrei Neagoie</em>
+    </div>
+    -->
+
+    <h4>Legal Disclaimer</h4>
+    <p style="font-size=0.7em">This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+    
+    <div id="fixedadmarker"></div>
+    <div id="fixedad" class="mt-3">
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+    </div>
+    <style>
+    @media (min-width: 768px) {
+        .fixedad-float {
+            position: fixed;
+            top: 2.5em;
+        }
+    }
+    </style>
+    <script>
+    window.setInterval(function() {
+        var elem = $('#fixedadmarker'),
+            top = elem.offset().top || 0,
+            height = elem[0].offsetHeight || 0,
+            bottom = top + height,
+            scrollY = window.scrollY || 0,
+            elemToBeFixed = $('#fixedad');
+        if (scrollY >= bottom) {
+            elemToBeFixed.addClass('fixedad-float');
+        } else {
+            elemToBeFixed.removeClass('fixedad-float');
+        }
+    }, 100);
+    </script>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Chris Pietschmann</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/#awards">Microsoft MVP</a></li>
+        <li><a class="text-muted" href="/#books">Books</a></li>
+        <li><a class="text-muted" href="/#websites">Websites</a></li>
+        <li><a class="text-muted" href="/#experience">Experience</a></li>
+        <li><a class="text-muted" href="/talks">Talks</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Publications</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://build5nines.com" target="_blank">Build5Nines.com</a></li>
+        <li><a class="text-muted" href="https://www.hackster.io/crpietschmann/articles" target="_blank">Hackster.io</a></li>
+        <li><a class="text-muted" href="/blog">Pietschsoft.com</a></li>
+      </ul>
+      <h5>Social Media</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://twitter.com/crpietschmann" target="_blank">Twitter</a></li>
+        <li><a class="text-muted" href="http://linkedin.com/in/crpietschmann" target="_blank">LinkedIn</a></li>
+        <li><a class="text-muted" href="http://youtube.com/build5nines" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <img src="/images/buildazure-logo.png" alt="Build5Nines.com" style="height: 1.5em;"/>
+      <small class="d-block mb-3 text-muted">
+        Copyright © 2020 Chris Pietschmann. All rights reserved.
+      </small>
+      <small class="d-block mb-3 text-muted">
+        <strong>Legal Disclaimer</strong>
+        <p>This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+      </small>
+    </div>
+    <div class="col-12 col-md">
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script src="/scripts/prism/prism.js"></script>
+<link rel="stylesheet" href="/scripts/prism/prism.css" />
+
+<script src="/scripts/holder.js"></script>
+<script>
+Holder.addTheme('thumb', {
+  bg: '#55595c',
+  fg: '#eceeef',
+  text: 'Thumbnail'
+});
+</script>
+
+
+    <script type="text/javascript">
+    // Google Analytics
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1172995-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
+
+    <script type="text/javascript">
+    // Developer Media Ads
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+
+    // Google Analytics Track External Link Clicks
+    (function($) { if ($) {
+      $('a[href^=http]').click(function(){
+          if (_gaq && _gaq.push && !((this.href || '').startsWith('https://pietschsoft.com'))) {
+              _gaq.push(['_trackEvent','Link','External',this.href]);
+          }
+          return true;
+      });
+    }})(jQuery);
+    </script>
+  </body>
+</html>

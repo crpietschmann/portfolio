@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Prototype of OpenStreetMap Silverlight Control using DeepEarth and Bing Maps SDK | Chris Pietschmann</title>
+    <meta name="description" content="I have nearly 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+">
+    <meta name="author" content="Chris Pietschmann">
+    <link rel="icon" href="/images/avatar-chris-pietschmann-transparent.png">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="alternate" type="application/rss+xml" title="Chris Pietschmann &raquo; Archive" href="https://pietschsoft.com/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//css/site.css">
+    <link rel="canonical" href="http://pietschsoft.com//post/2009/11/13/prototype_openstreetmap_silverlight_control_using_bing_maps_sdk_and_deepearth">
+</head>
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Bio</h4>
+          <p class="text-muted">
+            <a href="/">Chris Pietschmann</a> is a Microsoft MVP with <strong>Azure</strong> and <strong>IoT</strong> technologies, and a Microsoft Certified Trainer (MCT) with 20+ years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in Internet of Things (IoT), DevOps, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Publications</h4>
+          <ul class="list-unstyled">
+            <li><a href="/#books" class="text-white">Books</a></li>
+            <li><a href="https://build5nines.com" class="text-white">Build5Nines.com</a></li>
+            <li><a href="https://www.hackster.io/crpietschmann/articles" class="text-white">Hackster.io</a></li>
+            <li><a href="/blog" class="text-white">Pietschsoft.com</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/crpietschmann" class="text-white">Twitter</a></li>
+            <li><a href="http://linkedin.com/in/crpietschmann" class="text-white">LinkedIn</a></li>
+            <li><a href="https://build5nines.com/contact" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com Logo" style="height: 1.5em; margin-right: 0.5em;"/>-->
+        <img src="/images/avatar-chris-pietschmann-transparent.png" alt="Chris Pietschmann" style="background: #fff; height: 1.5em; margin-right: 0.5em;"/>
+        <strong>Chris Pietschmann</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container post">
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <header class="post-header">
+          <h1 class="post-title">Prototype of OpenStreetMap Silverlight Control using DeepEarth and Bing Maps SDK</h1>
+          <!--
+          <div class="post-categories">
+              
+              
+              <a href="//categories/#OpenStreetMap">OpenStreetMap</a>
+              &nbsp;
+              
+              <a href="//categories/#Silverlight">Silverlight</a>
+              &nbsp;
+              
+              <a href="//categories/#DeepEarth">DeepEarth</a>
+              &nbsp;
+              
+              <a href="//categories/#Bing Maps">Bing Maps</a>
+              
+              
+            </div>
+          -->
+          <p class="post-meta">Nov 13, 2009</p>
+      </header>
+
+      <article class="post-content">
+        
+            <!-- more -->
+
+<p>I’ve decided to expand a little on using OpenStreetMap imagery with the new Bing Maps Silverlight Control in response to the following <a rel="nofollow" href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx#id_a250bec2-e7f3-4324-8837-e167eff776e4">comment posted by John O’Brien</a> on my previous “<a href="/post/2009/11/12/Display_OpenStreetMap_Imagery_using_Bing_Maps_Silverlight_Control_Version_1_RTW.aspx">Display OpenStreetMap Imagery using Bing Maps Silverlight Control v1</a>” post:</p>
+
+<p><em>“Very close Chris but you will still need to enter a Bing Maps AppID.    <br />
+If however you create your own map from MapCore and don’t use the Bing Maps services then you don’t need creditials”</em></p>
+
+<p>Yes, it is true that by just displaying the OpenStreetMap imagery on the Bing Maps Silverlight Control using a custom TileSource you still need to provide the control a Bing Maps Key (App ID). However, what if you inherited from the “MapCore” base class (the same one that the Bing Maps “Map” object inherits) and built out a full OpenStreetMap Map control?</p>
+<h3>Custom &ldquo;OpenStreetMap&rdquo; Control</h3>
+
+<p>I built out a test “OpenStreetMap” object that inherits from “MapCore” that automatically sets the Map Mode to a “OpenStreetMapMode” object that loads up the OpenStreetMap imagery automatically. This was some simple code to write, basically just extending only a little bit on top of what I posted in the previous post.</p>
+
+<p>Here’s the code for the “OpenStreetMap”, “OpenStreetMapMode” and “OpenStreetMapTileSource” objects:</p>
+<pre class="csharpcode"><span class="kwrd">using</span> System;
+<span class="kwrd">using</span> Microsoft.Maps.MapControl;
+<span class="kwrd">using</span> Microsoft.Maps.MapControl.Core;
+
+<span class="kwrd">namespace</span> SilverlightApplication1
+{
+    <span class="kwrd">public</span> <span class="kwrd">class</span> OpenStreetMap : MapCore
+    {
+        <span class="kwrd">public</span> OpenStreetMap()
+            : <span class="kwrd">base</span>()
+        {
+            <span class="kwrd">this</span>.Mode.SetView(<span class="kwrd">new</span> Location(), 2.0, 0.0, 0.0, <span class="kwrd">false</span>);
+            <span class="kwrd">this</span>.Mode = <span class="kwrd">new</span> OpenStreetMapMode();
+        }
+    }
+
+    <span class="kwrd">public</span> <span class="kwrd">class</span> OpenStreetMapMode : RoadMode
+    {
+        <span class="kwrd">public</span> OpenStreetMapMode()
+            : <span class="kwrd">base</span>()
+        {
+            var tileLayer = (MapTileLayer)<span class="kwrd">this</span>.Content;
+            tileLayer.TileSources.Clear();
+            tileLayer.TileSources.Add(<span class="kwrd">new</span> OpenStreetMapTileSource());
+        }
+    }
+
+    <span class="kwrd">public</span> <span class="kwrd">class</span> OpenStreetMapTileSource : TileSource
+    {
+        <span class="kwrd">public</span> OpenStreetMapTileSource()
+            : <span class="kwrd">base</span>(<span class="str">"http://tile.openstreetmap.org/{2}/{0}/{1}.png"</span>)
+        {
+        }
+
+        <span class="kwrd">public</span> <span class="kwrd">override</span> System.Uri GetUri(<span class="kwrd">int</span> x, <span class="kwrd">int</span> y, <span class="kwrd">int</span> zoomLevel)
+        {
+            <span class="kwrd">return</span> <span class="kwrd">new</span> Uri(<span class="kwrd">string</span>.Format(<span class="kwrd">this</span>.UriFormat, x, y, zoomLevel));
+        }
+    }
+}</pre>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+
+<p>And, here’s an example of using this new “OpenStreetMap” control:</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">UserControl</span> <span class="attr">x:Class</span><span class="kwrd">="SilverlightApplication1.MainPage"</span>
+    <span class="attr">xmlns</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span> 
+    <span class="attr">xmlns:x</span><span class="kwrd">="http://schemas.microsoft.com/winfx/2006/xaml"</span>
+    <span class="attr">xmlns:d</span><span class="kwrd">="http://schemas.microsoft.com/expression/blend/2008"</span> <span class="attr">xmlns:mc</span><span class="kwrd">="http://schemas.openxmlformats.org/markup-compatibility/2006"</span> 
+    <span class="attr">xmlns:map</span><span class="kwrd">="clr-namespace:Microsoft.Maps.MapControl;assembly=Microsoft.Maps.MapControl"</span>
+    <span class="attr">xmlns:local</span><span class="kwrd">="clr-namespace:SilverlightApplication1"</span>
+    <span class="attr">mc:Ignorable</span><span class="kwrd">="d"</span> <span class="attr">d:DesignWidth</span><span class="kwrd">="640"</span> <span class="attr">d:DesignHeight</span><span class="kwrd">="480"</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">Grid</span> <span class="attr">x:Name</span><span class="kwrd">="LayoutRoot"</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">local:OpenStreetMap</span> <span class="attr">Name</span><span class="kwrd">="map"</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">local:OpenStreetMap.Children</span><span class="kwrd">&gt;</span>
+                <span class="kwrd">&lt;</span><span class="html">map:MapLayer</span><span class="kwrd">&gt;</span>
+                    <span class="kwrd">&lt;</span><span class="html">Image</span> <span class="attr">Source</span><span class="kwrd">="BluePin.png"</span> <span class="attr">Opacity</span><span class="kwrd">="0.8"</span> <span class="attr">Stretch</span><span class="kwrd">="None"</span> <span class="attr">map:MapLayer</span>.<span class="attr">Position</span><span class="kwrd">="42.16, -95"</span><span class="kwrd">&gt;&lt;/</span><span class="html">Image</span><span class="kwrd">&gt;</span>
+                <span class="kwrd">&lt;/</span><span class="html">map:MapLayer</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;/</span><span class="html">local:OpenStreetMap.Children</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">local:OpenStreetMap</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">Grid</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">UserControl</span><span class="kwrd">&gt;</span></pre>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+
+<h3>What About Navigation Controls?</h3>
+
+<p>One side effect of creating this completely custom Map Control based off MapCore is that the other controls that the “Map” control includes automatically do not get displayed.</p>
+
+<p>The “Map” control displays the “MapControlNavigationBar” control via the “MapForeground” object, however due to the MapForeground constructor that lets you tell it what MapBase object to attach to being marked “internal” is seems that it can’t be easily reused.</p>
+
+<p>However, with a little help from the newest controls in developments within the <a href="http://deepearth.codeplex.com/">DeepEarth</a> project, you can fairly simply modify the Bing Maps Navigation control within the DeepEarth project to be used with the new “OpenStreetMap” control.</p>
+
+<p>Here’s the code I worked up for a DeepEarth NavigationPanel for the “OpenStreetMap” control created earlier:</p>
+<pre class="csharpcode"><span class="kwrd">using</span> System;
+<span class="kwrd">using</span> System.Windows;
+<span class="kwrd">using</span> DeepEarth.Client.BingMaps.Convertors;
+<span class="kwrd">using</span> DeepEarth.Client.Common;
+<span class="kwrd">using</span> GeoAPI.Geometries;
+<span class="kwrd">using</span> GisSharpBlog.NetTopologySuite.Geometries;
+<span class="kwrd">using</span> Microsoft.Maps.MapControl;
+<span class="kwrd">using</span> Point = System.Windows.Point;
+<span class="kwrd">using</span> Microsoft.Maps.MapControl.Core;
+
+<span class="kwrd">namespace</span> NewDeepEarth.NavigationPanel
+{
+    <span class="kwrd">public</span> <span class="kwrd">class</span> NavigationPanel : DeepEarth.Client.Controls.NavigationPanel.NavigationPanel, IMapControl<MapCore>
+    {
+        <span class="kwrd">private</span> <span class="kwrd">string</span> mapName;
+
+        <span class="kwrd">public</span> NavigationPanel()
+        {
+            Loaded += CoordinatePanel_Loaded;
+        }
+
+        <span class="kwrd">public</span> <span class="kwrd">override</span> <span class="kwrd">double</span> ZoomLevel
+        {
+            get
+            {
+                <span class="kwrd">if</span> (MapInstance != <span class="kwrd">null</span>)
+                {
+                    <span class="kwrd">return</span> MapInstance.ZoomLevel;
+                }
+                <span class="kwrd">return</span> 0;
+            }
+            set
+            {
+                <span class="kwrd">if</span> (MapInstance != <span class="kwrd">null</span>)
+                {
+                    MapInstance.ZoomLevel = <span class="kwrd">value</span>;
+                }
+            }
+        }
+
+        <span class="kwrd">public</span> <span class="kwrd">override</span> ICoordinate Center
+        {
+            get
+            {
+                <span class="kwrd">if</span> (MapInstance != <span class="kwrd">null</span>)
+                {
+                    <span class="kwrd">return</span> CoordinateConvertor.Convert(MapInstance.Center);
+                }
+                <span class="kwrd">return</span> <span class="kwrd">new</span> Coordinate(0, 0);
+            }
+            set
+            {
+                <span class="kwrd">if</span> (MapInstance != <span class="kwrd">null</span>)
+                {
+                    MapInstance.Center = CoordinateConvertor.ConvertBack(<span class="kwrd">value</span>);
+                }
+            }
+        }
+
+        <span class="preproc">#region</span> IMapControl<MapCore> Members
+
+        <span class="kwrd">public</span> <span class="kwrd">string</span> MapName
+        {
+            get { <span class="kwrd">return</span> mapName; }
+            set
+            {
+                mapName = <span class="kwrd">value</span>;
+                setMapInstance(MapName);
+            }
+        }
+
+        <span class="kwrd">public</span> MapCore MapInstance { get; set; }
+
+        <span class="kwrd">public</span> <span class="kwrd">new</span> <span class="kwrd">void</span> Dispose()
+        {
+            MapInstance = <span class="kwrd">null</span>;
+            <span class="kwrd">base</span>.Dispose();
+        }
+
+        <span class="kwrd">public</span> <span class="kwrd">override</span> <span class="kwrd">void</span> PanMap(<span class="kwrd">int</span> deltaX, <span class="kwrd">int</span> deltaY)
+        {
+            <span class="kwrd">if</span> (MapInstance != <span class="kwrd">null</span>)
+            {
+                NewDeepEarth.Client.BingMaps.Utilities.Pan(deltaX, deltaY, MapInstance);
+            }
+        }
+
+        <span class="preproc">#endregion</span>
+
+        <span class="kwrd">private</span> <span class="kwrd">void</span> CoordinatePanel_Loaded(<span class="kwrd">object</span> sender, RoutedEventArgs e)
+        {
+            setMapInstance(MapName);
+        }
+
+        <span class="kwrd">private</span> <span class="kwrd">void</span> setMapInstance(<span class="kwrd">string</span> mapname)
+        {
+            MapInstance = Utilities.FindVisualChildByName<MapCore>(Application.Current.RootVisual, mapname);
+        }
+
+    }
+}&lt;/pre&gt;
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+
+Also, hers a small utility method that I needed to modify slightly within the DeepEarth project to get the above NavigationPanel to work:
+<pre class="csharpcode"><span class="kwrd">using</span> Microsoft.Maps.MapControl.Core;
+<span class="kwrd">using</span> Point = System.Windows.Point;
+
+<span class="kwrd">namespace</span> NewDeepEarth.Client.BingMaps
+{
+    <span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">class</span> Utilities
+    {
+        <span class="rem">// Convert to accept Bing Maps "MapCore" instead of "Map" object</span>
+        <span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">void</span> Pan(<span class="kwrd">double</span> deltaX, <span class="kwrd">double</span> deltaY, MapCore map) <span class="rem">//Map map)</span>
+        {
+            Point center = map.LocationToViewportPoint(map.Center);
+            center.X = center.X + deltaX;
+            center.Y = center.Y + deltaY;
+            map.Center = map.ViewportPointToLocation(center);
+        }
+    }
+}</pre>
+
+ 
+<h3>Suggestion for the DeepEarth Preview Controls</h3>
+
+One big suggestion I have for the DeepEarth projects new Preview Controls is to make the Bing Maps objects/libraries within the project use/accept &ldquo;MapCore&rdquo; or &ldquo;MapBase&rdquo; where ever it can instead of &ldquo;Map&rdquo;. This way as much of the DeepEarth code can be reused, without modification, when building a completely custom Map Control using the Bing Maps Silverlight SDK.
+
+A perfect example of this are the modifications I needed to make to the NavigationPanel object and Utilities.Pan method posted above. By simply changing them from referencing/using &ldquo;Map&rdquo; to &ldquo;MapCore&rdquo; instead, they can not be used with any Map Control built using the Bing Maps Silverlight SDK.
+<h3>Conclusion</h3>
+
+Even though the above code works, it&rsquo;s really just a prototype of what can be done using the current Preview controls within the DeepEarth project along with the new Bing Maps Silverlight Control. There is definitely some cool stuff to be done with both the Bing Maps Silverlight SDK and the DeepEarth project!
+
+Anyway, here&rsquo;s a download link to the full code of the project for the above code:
+<div id="scid:8eb9d37f-1541-4f29-b6f4-1eea890d4876:d6d36e07-63fe-464f-82cc-7b8216c68372" class="wlWriterEditableSmartContent" style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px">
+
+ 
+<div><a href="/files/OpenStreetMapDeepEarthPrototype_1.zip" target="_self">OpenStreetMapDeepEarthPrototype.zip</a></div>
+
+ 
+</div>
+
+ 
+</MapCore></MapCore></MapCore></pre>
+
+        
+      </article>
+
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+
+      <!--
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+      -->
+
+
+
+      
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+      <!--
+      
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+      
+        -->
+
+
+
+    </div>
+    <div class="col-md-4">
+      <div class="mb-3">
+    <script type="text/javascript"><!--
+        document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
+        // --></script>
+    </div>
+    
+    <!--
+    <div class="mb-3">
+    <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
+    </div>
+    -->
+
+    <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+    <div class="recent">
+    <h4>Recent Posts</h4>
+    <ul class="list-unstyled">
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions</a></h6>
+            <span class="small text-muted">01 Jul 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number</a></h6>
+            <span class="small text-muted">06 Apr 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/03/11/encryption-code-greater-than-guns-bombs">Encryption and Code are Greater Than Guns and Bombs</a></h6>
+            <span class="small text-muted">11 Mar 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/02/15/macos-monitor-cpu-usage-info">macOS: Monitor CPU Usage and Frequency Info</a></h6>
+            <span class="small text-muted">15 Feb 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/01/02/basics-javascript-class-inheritance">Basics of JavaScript Class Inheritance</a></h6>
+            <span class="small text-muted">02 Jan 2020</span>
+        </li>
+        
+    </ul>
+    </div>
+    
+    <!-- Amazon Affiliate Links -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=1593279507&asins=1593279507&linkId=dbae26993e5e47c31a6178fd13aed38f&show_border=true&link_opens_in_new_window=true"></iframe>
+
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0596517742&asins=0596517742&linkId=67c7a7145153fa5d61755acafc46fa56&show_border=true&link_opens_in_new_window=true"></iframe>
+    <!--
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0135957052&asins=0135957052&linkId=01a571b3e6c9fa1f7c90c5c8f7dfc583&show_border=true&link_opens_in_new_window=true"></iframe>
+    -->
+
+    <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=kuft&banner=07V9YHKS4HY556H67002&f=ifr&lc=pf4&linkID=4bb77e8255a5ef372bfab6cc5c160388&t=pietschsoft04-20&tracking_id=pietschsoft04-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+
+    <div class="related">
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </div>
+
+    <!--
+    <h4>Courses</h4>
+    <style>
+        .course-box {
+            margin-bottom: 1em;
+        }
+        .course-box img {
+            width: 95%;
+        }
+        .course-box > strong {
+            display: block;
+        }
+        .course-box > em {
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
+        </a>
+        <strong>
+            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+                The Complete JavaScript Course 2020: Build Real Projects!
+            </a>
+        </strong>
+        <em>by Jonas Schmedtmann</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            JavaScript Basics for Beginners
+        </a></strong>
+        <em>by Mosh Hamedani</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            Advanced JavaScript Concepts
+        </a></strong>
+        <em>by Andrei Neagoie</em>
+    </div>
+    -->
+
+    <h4>Legal Disclaimer</h4>
+    <p style="font-size=0.7em">This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+    
+    <div id="fixedadmarker"></div>
+    <div id="fixedad" class="mt-3">
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+    </div>
+    <style>
+    @media (min-width: 768px) {
+        .fixedad-float {
+            position: fixed;
+            top: 2.5em;
+        }
+    }
+    </style>
+    <script>
+    window.setInterval(function() {
+        var elem = $('#fixedadmarker'),
+            top = elem.offset().top || 0,
+            height = elem[0].offsetHeight || 0,
+            bottom = top + height,
+            scrollY = window.scrollY || 0,
+            elemToBeFixed = $('#fixedad');
+        if (scrollY >= bottom) {
+            elemToBeFixed.addClass('fixedad-float');
+        } else {
+            elemToBeFixed.removeClass('fixedad-float');
+        }
+    }, 100);
+    </script>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Chris Pietschmann</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/#awards">Microsoft MVP</a></li>
+        <li><a class="text-muted" href="/#books">Books</a></li>
+        <li><a class="text-muted" href="/#websites">Websites</a></li>
+        <li><a class="text-muted" href="/#experience">Experience</a></li>
+        <li><a class="text-muted" href="/talks">Talks</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Publications</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://build5nines.com" target="_blank">Build5Nines.com</a></li>
+        <li><a class="text-muted" href="https://www.hackster.io/crpietschmann/articles" target="_blank">Hackster.io</a></li>
+        <li><a class="text-muted" href="/blog">Pietschsoft.com</a></li>
+      </ul>
+      <h5>Social Media</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://twitter.com/crpietschmann" target="_blank">Twitter</a></li>
+        <li><a class="text-muted" href="http://linkedin.com/in/crpietschmann" target="_blank">LinkedIn</a></li>
+        <li><a class="text-muted" href="http://youtube.com/build5nines" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <img src="/images/buildazure-logo.png" alt="Build5Nines.com" style="height: 1.5em;"/>
+      <small class="d-block mb-3 text-muted">
+        Copyright © 2020 Chris Pietschmann. All rights reserved.
+      </small>
+      <small class="d-block mb-3 text-muted">
+        <strong>Legal Disclaimer</strong>
+        <p>This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+      </small>
+    </div>
+    <div class="col-12 col-md">
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script src="/scripts/prism/prism.js"></script>
+<link rel="stylesheet" href="/scripts/prism/prism.css" />
+
+<script src="/scripts/holder.js"></script>
+<script>
+Holder.addTheme('thumb', {
+  bg: '#55595c',
+  fg: '#eceeef',
+  text: 'Thumbnail'
+});
+</script>
+
+
+    <script type="text/javascript">
+    // Google Analytics
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1172995-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
+
+    <script type="text/javascript">
+    // Developer Media Ads
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+
+    // Google Analytics Track External Link Clicks
+    (function($) { if ($) {
+      $('a[href^=http]').click(function(){
+          if (_gaq && _gaq.push && !((this.href || '').startsWith('https://pietschsoft.com'))) {
+              _gaq.push(['_trackEvent','Link','External',this.href]);
+          }
+          return true;
+      });
+    }})(jQuery);
+    </script>
+  </body>
+</html>

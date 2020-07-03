@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>How To Setup Custom Theme Support In ASP.NET MVC Preview 4 using a Custom ViewEngine | Chris Pietschmann</title>
+    <meta name="description" content="I have nearly 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+">
+    <meta name="author" content="Chris Pietschmann">
+    <link rel="icon" href="/images/avatar-chris-pietschmann-transparent.png">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="alternate" type="application/rss+xml" title="Chris Pietschmann &raquo; Archive" href="https://pietschsoft.com/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//css/site.css">
+    <link rel="canonical" href="http://pietschsoft.com//post/2008/08/17/how-to-setup-custom-theme-support-in-aspnet-mvc-using-a-custom-viewengine">
+</head>
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Bio</h4>
+          <p class="text-muted">
+            <a href="/">Chris Pietschmann</a> is a Microsoft MVP with <strong>Azure</strong> and <strong>IoT</strong> technologies, and a Microsoft Certified Trainer (MCT) with 20+ years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in Internet of Things (IoT), DevOps, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Publications</h4>
+          <ul class="list-unstyled">
+            <li><a href="/#books" class="text-white">Books</a></li>
+            <li><a href="https://build5nines.com" class="text-white">Build5Nines.com</a></li>
+            <li><a href="https://www.hackster.io/crpietschmann/articles" class="text-white">Hackster.io</a></li>
+            <li><a href="/blog" class="text-white">Pietschsoft.com</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/crpietschmann" class="text-white">Twitter</a></li>
+            <li><a href="http://linkedin.com/in/crpietschmann" class="text-white">LinkedIn</a></li>
+            <li><a href="https://build5nines.com/contact" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com Logo" style="height: 1.5em; margin-right: 0.5em;"/>-->
+        <img src="/images/avatar-chris-pietschmann-transparent.png" alt="Chris Pietschmann" style="background: #fff; height: 1.5em; margin-right: 0.5em;"/>
+        <strong>Chris Pietschmann</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container post">
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <header class="post-header">
+          <h1 class="post-title">How To Setup Custom Theme Support In ASP.NET MVC Preview 4 using a Custom ViewEngine</h1>
+          <!--
+          <div class="post-categories">
+              
+              
+              <a href="//categories/#ASP.NET">ASP.NET</a>
+              &nbsp;
+              
+              <a href="//categories/#MVC">MVC</a>
+              
+              
+            </div>
+          -->
+          <p class="post-meta">Aug 17, 2008</p>
+      </header>
+
+      <article class="post-content">
+        
+            <!-- more -->
+
+<p><strong>Update 2009/03/26:</strong> There is an updated version of this code (with improvements) that targets the ASP.NET MVC 1.0 RTW located here: <a href="/post/2009/03/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx">/post/2009/03/ASPNET-MVC-Implement-Theme-Folders-using-a-Custom-ViewEngine.aspx</a></p>
+
+<p><strong>Update 8/29/2008:</strong> I posted a new blog post today that contains <a href="/post.aspx?id=5a6945d0-933a-4971-aac1-13dcd73711d9">updated code</a> for this example that works with the newly released ASP.NET MVC Preview 5. The new code is located <a href="/post.aspx?id=5a6945d0-933a-4971-aac1-13dcd73711d9">here</a>.</p>
+
+<p>One option to do theming in ASP.NET MVC is to use the standard ASP.NET Theme functionality (App_Themes folder glory and all), but it just doesn’t seem complete. Also, by doing that you don’t get to generate completely custom HTML specific to each Theme. After all, the beauty of ASP.NET MVC is being able to completely control the HTML output of the application. So, I played around with things a bit and figured out how to create a custom ViewEngine that will allow you to create a seperate sub-folder within the Views folder for each Theme. This way you can have a completely different version of each View for each Theme, and maintain complete control over the HTML output on a per Theme basis.</p>
+
+<p><em>I used the ASP.NET MVC Preview 4 release to write this article.</em></p>
+
+<p><img src="/files/ASPNETMVC_Preview4_CustomThemeFolderLayout.png" alt="" align="right" /></p>
+<h3>Create Themed Views</h3>
+
+<p>First, we’ll make some changes to the Views contained within the default ASP.NET MVC Template.</p>
+
+<p>Here’s a brief summary of what changes are needed:</p>
+<ol>
+<li>Create a sub-folder named "Default" within the Views folder, and paste all the files and folders within the Views folder into this folder. This will be out "Default" theme.</li>
+<li>Cut the Site.css file from the Content folder, and paste it into the Shared folder within the newly created "Default" theme folder.</li>
+<li>Modify the CSS link reference in the "Shared/Site.Master" file within the "Default" theme to reference the new location for the Site.css file.</li>
+<li>Modey all the .aspx View pages to reference the new location of the MasterPage file.</li>
+</ol>
+
+<p>Once, the above changes are made we have our first “Default” theme created. Now to create a new theme, just create a copy of this folder and make sure to update all the references within the files to reference the theme folder the files are contained within.</p>
+
+<p>To the right is a screenshot displaying the layout of the Theme folders as described above.</p>
+
+<p>In the code example attached to this article, I created a second theme named “Red” and I changed the background color of the Site.css file to the color Red.</p>
+<h3>Create a Custom ViewEngine</h3>
+
+<p>I found the following article usefull and very descriptive on creating custom ViewEngines, so I’m not going to re-write it. Just refer to the following link on how to <a href="http://blog.maartenballiauw.be/post/2008/05/20/Creating-a-custom-ViewEngine-for-the-ASPNET-MVC-framework.aspx">create a custom ViewEngine in ASP.NET MVC</a>.</p>
+
+<p><a href="http://blog.maartenballiauw.be/post/2008/05/20/Creating-a-custom-ViewEngine-for-the-ASPNET-MVC-framework.aspx">http://blog.maartenballiauw.be/post/2008/05/20/Creating-a-custom-ViewEngine-for-the-ASPNET-MVC-framework.aspx</a></p>
+
+<p>Instead, I’ll just list the code I wrote for setting up Themes and give a brief description of what it does.</p>
+
+<p>First, we need to create a ViewLocator object that will contain VirtualPath references that describe to ASP.NET MVC how to find a specified View. To make things simpler I’m just inheriting from the WebFormViewLocator so I don’t have to re-implement it’s entire logic. Also, one thing to note is the constructor of our WebFormThemeViewLocator object takes a string argument that is the name of the Theme it is to describe the VirtualPath references for.</p>
+<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">public class WebFormThemeViewLocator : System.Web.Mvc.WebFormViewLocator
+{
+    public WebFormThemeViewLocator(string themeName)
+    {
+        base.ViewLocationFormats = new string[] {
+            "~/Views/" + themeName + "/{1}/{0}.aspx",
+            "~/Views/" + themeName + "/{1}/{0}.ascx",
+            "~/Views/" + themeName + "/Shared/{0}.aspx",
+            "~/Views/" + themeName + "/Shared/{0}.ascx"
+        };
+
+            base.MasterLocationFormats = new string[] {
+            "~/Views/" + themeName + "/{1}/{0}.master",
+            "~/Views/" + themeName + "/Shared/{0}.master"
+        };
+    }
+}</pre>
+
+<p>Next, we need to create a custom ViewEngine. Also, in this case, I’m inheriting the WebFormViewEngine so I don’t have to re-implement it’s entire logic. This WebFormThemeViewEngine just overrides the RenderView method so that it can get the Theme to display from the HttpContext.Items collection and implement the new WebFormThemeViewLocator instead of the default WebFormViewLocator.</p>
+<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">public class WebFormThemeViewEngine : System.Web.Mvc.WebFormViewEngine
+{
+    protected override void RenderView(System.Web.Mvc.ViewContext viewContext)
+    {
+        string themeName = viewContext.HttpContext.Items["themeName"] as string;
+        if (themeName == null) themeName = "Default";
+
+        base.ViewLocator = new WebFormThemeViewLocator(themeName);
+
+        base.RenderView(viewContext);
+    }
+}</pre>
+
+<p>Next, we need to create a custom ControllerFactory that we’ll setup ASP.NET MVC to use so we can use our custom ViewEngine. Again, I’m inheriting the DefaultControllerFactory so I only have to add the necessary logic to use the custom ViewEngine so I don’t have to re-implement it’s entire logic.</p>
+<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">public class WebFormThemeControllerFactory : System.Web.Mvc.DefaultControllerFactory
+{
+    protected override System.Web.Mvc.IController CreateController(System.Web.Routing.RequestContext requestContext, string controllerName)
+    {
+        System.Web.Mvc.Controller controller = base.CreateController(requestContext, controllerName) as System.Web.Mvc.Controller;
+        controller.ViewEngine = new WebFormThemeViewEngine();
+        return controller;
+    }
+}</pre>
+
+<p>Finally, to tell ASP.NET MVC to use the WebFormThemeControllerFactory object, and ultimately our custom ViewEngine, the following line of code needs to be added to the Application_Start event handler:</p>
+<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">ControllerBuilder.Current.SetControllerFactory(typeof(WebFormThemeControllerFactory));</pre>
+<h3>Dynamically Determine Which Theme to Display to the User</h3>
+
+<p>The way I’ve set things up in the above code for the custom ViewEngine, I’ve wired it up so that you can set the Theme to display anywhere within your Controller. This gives the most flexibility I could think of to set the Theme since you’ll most likely need to access a database of some kind to determine which Theme to display, and this way you can do that before, after or at the same time you get the data to display.</p>
+
+<p>Here’s an example of how to set the Theme to “Red”, and you can do this anywhere within one of your Action methods of your Controller.</p>
+<pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">controllerContext.HttpContext.Items["themeName"]</pre>
+
+<p>The reason I’m storing the Theme Name using HttpContext.Items is so that we can access the Theme Name from a single place within both the custom ViewEngine and the View itself.</p>
+
+<p>Also, the code example attached to this article uses a ControllerBase class that each of the Controllers inherit so it’s more resuable, and it also grabs the Theme to display from the QueryString for simplicity.</p>
+<h3>Sharing UI Elements Between Themes</h3>
+
+<p>One thing that is done alot is sharing certain UI elements between Themes that are similar or almost identical. This can be done by creating user controls within a seperate folder than the View folder, and using/referencing them within the Pages/Views (.aspx) or Controls (.ascx) within the Themes. This way you can create shared UI elements that can be shared across multiple Themes.</p>
+
+<p>In the code attached to this article, I’ve created a “~/Controls” folder and placed in it a ThemeLinks.ascx control that is used by both the “Default” and “Red” themes to display links (as tabs in the top navigation bar) for you to select which Theme to see.</p>
+<h3>Download the Code</h3>
+
+<p>Ok, after reading all the above, I’m sure you’re probably a little confuses since I only gave a brief overview. Well, here’s the code. I started with an <a href="/post.aspx?id=fa4fbb6a-6f47-4f43-91c1-f0ebb04544f8">ASP.NET MVC Website (as described in one of my previous posts)</a> using the Preview 4 release and made all the changes described above. Have fun, and please post any comments you have on this, or any suggestions on making it better.</p>
+
+<p>Download Code: <a href="/files/ASPNETMVC_CustomThemeImplementation.zip" rel="enclosure">ASPNETMVC_CustomThemeImplementation.zip (207.98 kb)</a></p>
+
+        
+      </article>
+
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+
+      <!--
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+      -->
+
+
+
+      
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+
+      <!--
+      
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+          
+      
+      
+        -->
+
+
+
+    </div>
+    <div class="col-md-4">
+      <div class="mb-3">
+    <script type="text/javascript"><!--
+        document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
+        // --></script>
+    </div>
+    
+    <!--
+    <div class="mb-3">
+    <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
+    </div>
+    -->
+
+    <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+    <div class="recent">
+    <h4>Recent Posts</h4>
+    <ul class="list-unstyled">
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions</a></h6>
+            <span class="small text-muted">01 Jul 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number</a></h6>
+            <span class="small text-muted">06 Apr 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/03/11/encryption-code-greater-than-guns-bombs">Encryption and Code are Greater Than Guns and Bombs</a></h6>
+            <span class="small text-muted">11 Mar 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/02/15/macos-monitor-cpu-usage-info">macOS: Monitor CPU Usage and Frequency Info</a></h6>
+            <span class="small text-muted">15 Feb 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/01/02/basics-javascript-class-inheritance">Basics of JavaScript Class Inheritance</a></h6>
+            <span class="small text-muted">02 Jan 2020</span>
+        </li>
+        
+    </ul>
+    </div>
+    
+    <!-- Amazon Affiliate Links -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=1593279507&asins=1593279507&linkId=dbae26993e5e47c31a6178fd13aed38f&show_border=true&link_opens_in_new_window=true"></iframe>
+
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0596517742&asins=0596517742&linkId=67c7a7145153fa5d61755acafc46fa56&show_border=true&link_opens_in_new_window=true"></iframe>
+    <!--
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0135957052&asins=0135957052&linkId=01a571b3e6c9fa1f7c90c5c8f7dfc583&show_border=true&link_opens_in_new_window=true"></iframe>
+    -->
+
+    <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=kuft&banner=07V9YHKS4HY556H67002&f=ifr&lc=pf4&linkID=4bb77e8255a5ef372bfab6cc5c160388&t=pietschsoft04-20&tracking_id=pietschsoft04-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+
+    <div class="related">
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+    
+
+
+    </div>
+
+    <!--
+    <h4>Courses</h4>
+    <style>
+        .course-box {
+            margin-bottom: 1em;
+        }
+        .course-box img {
+            width: 95%;
+        }
+        .course-box > strong {
+            display: block;
+        }
+        .course-box > em {
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
+        </a>
+        <strong>
+            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+                The Complete JavaScript Course 2020: Build Real Projects!
+            </a>
+        </strong>
+        <em>by Jonas Schmedtmann</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            JavaScript Basics for Beginners
+        </a></strong>
+        <em>by Mosh Hamedani</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            Advanced JavaScript Concepts
+        </a></strong>
+        <em>by Andrei Neagoie</em>
+    </div>
+    -->
+
+    <h4>Legal Disclaimer</h4>
+    <p style="font-size=0.7em">This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+    
+    <div id="fixedadmarker"></div>
+    <div id="fixedad" class="mt-3">
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+    </div>
+    <style>
+    @media (min-width: 768px) {
+        .fixedad-float {
+            position: fixed;
+            top: 2.5em;
+        }
+    }
+    </style>
+    <script>
+    window.setInterval(function() {
+        var elem = $('#fixedadmarker'),
+            top = elem.offset().top || 0,
+            height = elem[0].offsetHeight || 0,
+            bottom = top + height,
+            scrollY = window.scrollY || 0,
+            elemToBeFixed = $('#fixedad');
+        if (scrollY >= bottom) {
+            elemToBeFixed.addClass('fixedad-float');
+        } else {
+            elemToBeFixed.removeClass('fixedad-float');
+        }
+    }, 100);
+    </script>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Chris Pietschmann</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/#awards">Microsoft MVP</a></li>
+        <li><a class="text-muted" href="/#books">Books</a></li>
+        <li><a class="text-muted" href="/#websites">Websites</a></li>
+        <li><a class="text-muted" href="/#experience">Experience</a></li>
+        <li><a class="text-muted" href="/talks">Talks</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Publications</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://build5nines.com" target="_blank">Build5Nines.com</a></li>
+        <li><a class="text-muted" href="https://www.hackster.io/crpietschmann/articles" target="_blank">Hackster.io</a></li>
+        <li><a class="text-muted" href="/blog">Pietschsoft.com</a></li>
+      </ul>
+      <h5>Social Media</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://twitter.com/crpietschmann" target="_blank">Twitter</a></li>
+        <li><a class="text-muted" href="http://linkedin.com/in/crpietschmann" target="_blank">LinkedIn</a></li>
+        <li><a class="text-muted" href="http://youtube.com/build5nines" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <img src="/images/buildazure-logo.png" alt="Build5Nines.com" style="height: 1.5em;"/>
+      <small class="d-block mb-3 text-muted">
+        Copyright © 2020 Chris Pietschmann. All rights reserved.
+      </small>
+      <small class="d-block mb-3 text-muted">
+        <strong>Legal Disclaimer</strong>
+        <p>This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+      </small>
+    </div>
+    <div class="col-12 col-md">
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script src="/scripts/prism/prism.js"></script>
+<link rel="stylesheet" href="/scripts/prism/prism.css" />
+
+<script src="/scripts/holder.js"></script>
+<script>
+Holder.addTheme('thumb', {
+  bg: '#55595c',
+  fg: '#eceeef',
+  text: 'Thumbnail'
+});
+</script>
+
+
+    <script type="text/javascript">
+    // Google Analytics
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1172995-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
+
+    <script type="text/javascript">
+    // Developer Media Ads
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+
+    // Google Analytics Track External Link Clicks
+    (function($) { if ($) {
+      $('a[href^=http]').click(function(){
+          if (_gaq && _gaq.push && !((this.href || '').startsWith('https://pietschsoft.com'))) {
+              _gaq.push(['_trackEvent','Link','External',this.href]);
+          }
+          return true;
+      });
+    }})(jQuery);
+    </script>
+  </body>
+</html>

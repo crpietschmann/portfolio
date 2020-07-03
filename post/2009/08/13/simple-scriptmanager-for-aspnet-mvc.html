@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>A Simple ScriptManager for ASP.NET MVC | Chris Pietschmann</title>
+    <meta name="description" content="I have nearly 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+">
+    <meta name="author" content="Chris Pietschmann">
+    <link rel="icon" href="/images/avatar-chris-pietschmann-transparent.png">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="alternate" type="application/rss+xml" title="Chris Pietschmann &raquo; Archive" href="https://pietschsoft.com/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//css/site.css">
+    <link rel="canonical" href="http://pietschsoft.com//post/2009/08/13/simple-scriptmanager-for-aspnet-mvc">
+</head>
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Bio</h4>
+          <p class="text-muted">
+            <a href="/">Chris Pietschmann</a> is a Microsoft MVP with <strong>Azure</strong> and <strong>IoT</strong> technologies, and a Microsoft Certified Trainer (MCT) with 20+ years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in Internet of Things (IoT), DevOps, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Publications</h4>
+          <ul class="list-unstyled">
+            <li><a href="/#books" class="text-white">Books</a></li>
+            <li><a href="https://build5nines.com" class="text-white">Build5Nines.com</a></li>
+            <li><a href="https://www.hackster.io/crpietschmann/articles" class="text-white">Hackster.io</a></li>
+            <li><a href="/blog" class="text-white">Pietschsoft.com</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/crpietschmann" class="text-white">Twitter</a></li>
+            <li><a href="http://linkedin.com/in/crpietschmann" class="text-white">LinkedIn</a></li>
+            <li><a href="https://build5nines.com/contact" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com Logo" style="height: 1.5em; margin-right: 0.5em;"/>-->
+        <img src="/images/avatar-chris-pietschmann-transparent.png" alt="Chris Pietschmann" style="background: #fff; height: 1.5em; margin-right: 0.5em;"/>
+        <strong>Chris Pietschmann</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container post">
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <header class="post-header">
+          <h1 class="post-title">A Simple ScriptManager for ASP.NET MVC</h1>
+          <!--
+          <div class="post-categories">
+              
+              
+              <a href="//categories/#ASP.NET">ASP.NET</a>
+              &nbsp;
+              
+              <a href="//categories/#MVC">MVC</a>
+              &nbsp;
+              
+              <a href="//categories/#ScriptManager">ScriptManager</a>
+              
+              
+            </div>
+          -->
+          <p class="post-meta">Aug 13, 2009</p>
+      </header>
+
+      <article class="post-content">
+        
+            <!-- more -->
+
+<p>The <a href="http://www.asp.net/Ajax/Documentation/Live/overview/ScriptManagerOverview.aspx" target="_blank">ASP.NET AJAX ScriptManager</a> makes it really easy to include JavaScript references and register JavaScript blocks into the rendered Page output of an ASP.NET WebForms application. However nice the ScriptManager control is, it’s still just a WebForms control for use with ASP.NET AJAX; thus it’s use isn’t really supported with ASP.NET MVC. Also, to make things just a little more difficult, ASP.NET MVC doesn’t have it’s own “ScriptManager” implementation. This brings me to the point of posting this…</p>
+
+<p>I have worked out a really simple “ScriptManager” component for use with ASP.NET MVC, and I think it works really nice to help simplify the effort of including JavaScript blocks and references in a page.</p>
+<h3>Setting up the &ldquo;SimpleScriptManager&rdquo; for use</h3>
+
+<p>To use the “SimpleScriptManager” with ASP.NET MVC you must first Import the “SimpleScriptManager” namespace into your Master Page. Then you must place a single line of code in the Master Page file at the location you want to Render the Script Includes and Blocks to the Page. In order for it to work properly, the Render code needs to be place at the very end of the Master Page; preferably just before the closing Body tag.</p>
+
+<p>Here’s a really short example Master Page file with the “SimpleScriptManager” namespace imported and the call to “SimpleScriptManager().Render()” located at the very end of the page just before the closing Body tag.</p>
+<pre class="csharpcode"><span class="asp">&lt;%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %&gt;</span>
+
+<span class="asp">&lt;%</span>-- The SimpleScriptManager Namespace must be Imported to be able to use the Html.SimpleScriptManager Extension --<span class="asp">%&gt;</span>
+<span class="asp">&lt;%@ Import Namespace="SimpleScriptManager" %&gt;</span>
+
+<span class="kwrd">&lt;!</span><span class="html">DOCTYPE</span> <span class="attr">html</span> <span class="attr">PUBLIC</span> <span class="kwrd">"-//W3C//DTD XHTML 1.0 Strict//EN"</span> <span class="kwrd">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">html</span> <span class="attr">xmlns</span><span class="kwrd">="http://www.w3.org/1999/xhtml"</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">head</span> <span class="attr">runat</span><span class="kwrd">="server"</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">title</span><span class="kwrd">&gt;&lt;</span><span class="html">asp:ContentPlaceHolder</span> <span class="attr">ID</span><span class="kwrd">="TitleContent"</span> <span class="attr">runat</span><span class="kwrd">="server"</span> <span class="kwrd">/&gt;&lt;/</span><span class="html">title</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">link</span> <span class="attr">href</span><span class="kwrd">="../../Content/Site.css"</span> <span class="attr">rel</span><span class="kwrd">="stylesheet"</span> <span class="attr">type</span><span class="kwrd">="text/css"</span> <span class="kwrd">/&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">head</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">body</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">asp:ContentPlaceHolder</span> <span class="attr">ID</span><span class="kwrd">="MainContent"</span> <span class="attr">runat</span><span class="kwrd">="server"</span> <span class="kwrd">/&gt;</span>
+    
+    <span class="asp">&lt;%</span>-- Render all the Scripts to the Page --<span class="asp">%&gt;</span>
+    <span class="asp">&lt;%</span>-- Must be located at the very end of the Master Page to work properly --<span class="asp">%&gt;</span>
+    <span class="asp">&lt;%</span> Html.SimpleScriptManager().Render(); <span class="asp">%&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">body</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">html</span><span class="kwrd">&gt;</span></pre>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+
+<p>This may look a little strange to you since you may be used to placing all your JavaScript Blocks and Script Includes at the top of the page within the &lt;HEAD&gt; tags. However, in order for the “SimpleScriptManager” to work property the call to Render to the page MUST be located at the end of the Master Page file. This allows any other server controls, user controls or pages to add Script Blocks and Includes at any time during the process or building/rendering the page, and then at the end of the Master Page (when the page is just about finished being rendered) the “SimpleScriptManager().Render()” method is called and the scripts are all rendered out to the page at that time. If the ““SimpleScriptManager().Render()” method is called prior to all other components on the Page, then any Script Blocks or Includes added to the “SimpleScriptManager” after Render is called will not be included within the final rendering of the Page that gets sent to the client.</p>
+<h3>Using the &ldquo;SimpleScriptManager&rdquo;</h3>
+
+<p>The “SimpleScriptManager” has only two fairly simple methods: ScriptInclude and Script.</p>
+<h4>&ldquo;SimpleScriptManager.ScriptInclude&rdquo; Method</h4>
+
+<p>To add a simple Script Include within the page, you just call the “ScriptManager.ScriptInclude” method and pass in the Location / Url of the JavaScript file to include within the page. The Script Location / Url can be either an Absolute or Virtual (“App Relative”) Url.</p>
+<pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().ScriptInclude(<span class="str">"~/Scripts/jquery-1.3.2.js"</span>); <span class="asp">%&gt;</span></pre>
+<pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().ScriptInclude(<span class="str">"http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"</span>); <span class="asp">%&gt;</span></pre>
+
+<p>You can also pass in a “Key” for the specific Script Include you’re registering. This key is a unique identifier used within your application for the specified Script Include, and it allows you to ensure that only a single include/reference to that specific script will get rendered within the Page.</p>
+<pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().ScriptInclude(<span class="str">"jquery"</span>, <span class="str">"~/Scripts/jquery-1.3.2.js"</span>); <span class="asp">%&gt;</span></pre>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+
+<p>For instance the second example of “ScriptInclude” above specifies the Key of “jquery”. You would be able to include this “ScriptInclude” call within any User Controls and/or Pages within your application that require that the “jquery-1.3.2.js” script be included within the page to work, and no matter how many of those controls are rendered to the page, the script would only have a single include/reference rendered to the Page.</p>
+
+<p>I know this isn’t a very good example of adding a script reference that may only be needed within a couple pages of an application, since you’ll most likely want jQuery included within every Page of your Application. To do this you’ll just add the “ScriptInclude” call to top of the Master Page file itself. However, I’m sure you get the idea I’m trying to reference on how to “optionally” include a script reference only when it’s needed, instead of including it within every single page of your application by adding it within the Master Page file.</p>
+<h4>&ldquo;SimpleScriptManager.ScriptInclude&rdquo; Method to Add Web Resource References</h4>
+
+<p>One of the things necessary when building Custom Server Controls (instead of just User Controls) is the fact that they reside within an Assembly and contain scripts as Embedded Web Resources. This can cause issues when adding Script Include references for these controls since you need to load the script from the Embedded Web Resource into the Page.</p>
+
+<p>However, this is really simple to do with an additional “ScriptInclude” method overload that uses generics to specify the Assembly to find the Embedded Web Resource within, plus the full resource name to include. There is also a method overload that accept a unique “Key” for the script just like the above “ScriptInclude” example.</p>
+
+<p>To use these overloads of the “ScriptInclude” method you must add a reference to the “SimpleScriptManager” namespace within your custom control. Also, your Custom Control/Component must inherit from the ViewUserControl class so that it gets access to the HtmlHelper object through the Html property.</p>
+
+<p>Here’s a really simple example of this:</p>
+<pre class="csharpcode"><span class="rem">// The SimpleScriptManager Namespace must be Imported to be able to use the Html.SimpleScriptManager Extension</span>
+<span class="kwrd">using</span> SimpleScriptManager;
+
+<span class="rem">// Specify that the "Embedded Resource" is to be a "Web Resource"</span>
+[assembly: System.Web.UI.WebResource(<span class="str">"EmbeddedScriptResourceTest.TestScriptOne.js"</span>, <span class="str">"text/javascript"</span>)]
+
+<span class="kwrd">namespace</span> EmbeddedScriptResourceTest
+{
+    <span class="kwrd">public</span> <span class="kwrd">class</span> TestScriptOneControl : System.Web.Mvc.ViewUserControl
+    {
+        <span class="kwrd">public</span> <span class="kwrd">string</span> Message { get; set; }
+
+        <span class="kwrd">public</span> <span class="kwrd">override</span> <span class="kwrd">void</span> RenderControl(System.Web.UI.HtmlTextWriter writer)
+        {
+            <span class="kwrd">base</span>.RenderControl(writer);
+
+            <span class="rem">// By specifying a Key when adding the ScriptInclude below, we are ensuring that the script only gets included</span>
+            <span class="rem">// within the Page once, no matter how many instances of this control are renderd to the Page.</span>
+            <span class="kwrd">this</span>.Html.SimpleScriptManager().ScriptInclude<TestScriptOneControl>(&lt;/pre&gt;
+<pre class="csharpcode">                 <span class="str">"TestScriptOneKey"</span>, </pre>
+<pre class="csharpcode">                 <span class="str">"EmbeddedScriptResourceTest.TestScriptOne.js"</span>);
+        }
+    }
+}</pre>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+
+ 
+<h4>&ldquo;SimpleScriptManager.Script&rdquo; Method</h4>
+
+To add a Script Block in to the Page you just call the &ldquo;SimpleScriptManager.Script&rdquo; method and pass it a String that contains the JavaScript code to include within the Page.
+<pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().Script(<span class="str">"alert('Hello!');"</span>); <span class="asp">%&gt;</span></pre>
+
+ 
+
+You can also pass in a &ldquo;Key&rdquo; that uniquely identifies this specific Script Block. Just as with the &ldquo;ScriptInclude&rdquo; method, this allows you to specify that you only want this particular Script Block to be included within the Page only once no matter how many times any components within the Page specify it to be added.
+<pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().Script(<span class="str">"ScriptKey"</span>, <span class="str">"alert('Hello!');"</span>); <span class="asp">%&gt;</span></pre>
+
+ 
+<h4>&ldquo;SimpleScriptManager.Script&rdquo; Method using a Lambda Expression</h4>
+
+I also included the ability to pass the &ldquo;SimpleScriptManager.Script&rdquo; method a Lambda Expression that will output the desired JavaScript code to the Page. This is something that makes it a little easier to add some Script to the Page and still be able to keep any code formatting in place (for readability) without requiring you to build it within a big, long String within the Page or User Control.
+<pre class="csharpcode"><span class="asp">&lt;%</span> Html.SimpleScriptManager().Script( () =&gt; {<span class="asp">%&gt;</span>
+    $(function(){
+        alert('Hello!');
+    });"
+<span class="asp">&lt;%</span>}); <span class="asp">%&gt;</span></pre>
+
+ 
+
+This method also supports the ability to pass in a &ldquo;Key&rdquo; to specify you only want this script to be included within the Page a single time.
+<h3>How &ldquo;SimpleScriptManager&rdquo; Works</h3>
+
+Besides the &ldquo;SimpleScriptManager&rdquo; being included as an Extension Method to the HtmlHelper object; it also &ldquo;attaches&rdquo; itself to the HttpContext.Items Dictionary the first time &ldquo;Html.SimpleScriptManager()&rdquo; is called and then any subsequent calls just add any Script Includes or Blocks to that same SimpleScriptManager instance. Then when you call the &ldquo;Render&rdquo; method it writes out the entire Html code necessary to Render all the Script Includes and Blocks to the Page.
+
+This is actually a fairly simple design, and the code that &ldquo;attaches&rdquo; the SimpleScriptManager to the HttpContext is includes within the HtmlHelper Extension Method itself; the rest of the code is contained within the actual SimpleScriptManager object.
+<h3>Full &ldquo;SimpleScriptManager&rdquo; Code</h3>
+
+SimpleScriptManagerExtension.cs
+<pre class="csharpcode"><span class="rem">// Copyright (c) 2009 Chris Pietschmann ()</span>
+<span class="rem">// All rights reserved.</span>
+<span class="rem">// Licensed under the Microsoft Public License (Ms-PL)</span>
+<span class="rem">// http://opensource.org/licenses/ms-pl.html</span>
+
+<span class="kwrd">using</span> System.Web.Mvc;
+
+<span class="kwrd">namespace</span> SimpleScriptManager
+{
+    <span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">class</span> SimpleScriptManagerExtensions
+    {
+        <span class="kwrd">private</span> <span class="kwrd">static</span> <span class="kwrd">readonly</span> <span class="kwrd">string</span> simpleScriptManagerKey = <span class="str">"SimpleScriptManager"</span>;
+
+        <span class="kwrd">public</span> <span class="kwrd">static</span> SimpleScriptManager SimpleScriptManager(<span class="kwrd">this</span> HtmlHelper helper)
+        {
+            <span class="rem">// Get SimpleScriptManager from HttpContext.Items</span>
+            <span class="rem">// This allows for a single SimpleScriptManager to be created and used per HTTP request.</span>
+            var scriptmanager = helper.ViewContext.HttpContext.Items[simpleScriptManagerKey] <span class="kwrd">as</span> SimpleScriptManager;
+            <span class="kwrd">if</span> (scriptmanager == <span class="kwrd">null</span>)
+            {
+                <span class="rem">// If SimpleScriptManager hasn't been initialized yet, then initialize it.</span>
+                scriptmanager = <span class="kwrd">new</span> SimpleScriptManager(helper);
+                <span class="rem">// Store it in HttpContext.Items for subsequent requests during this HTTP request.</span>
+                helper.ViewContext.HttpContext.Items[simpleScriptManagerKey] = scriptmanager;
+            }
+            <span class="rem">// Return the SimpleScriptManager</span>
+            <span class="kwrd">return</span> scriptmanager;
+        }
+    }
+}</pre>
+
+<!-- .csharpcode, .csharpcode pre { 	font-size: small; 	color: black; 	font-family: consolas, "Courier New", courier, monospace; 	background-color: #ffffff; 	/*white-space: pre;*/ } .csharpcode pre { margin: 0em; } .csharpcode .rem { color: #008000; } .csharpcode .kwrd { color: #0000ff; } .csharpcode .str { color: #006080; } .csharpcode .op { color: #0000c0; } .csharpcode .preproc { color: #cc6633; } .csharpcode .asp { background-color: #ffff00; } .csharpcode .html { color: #800000; } .csharpcode .attr { color: #ff0000; } .csharpcode .alt  { 	background-color: #f4f4f4; 	width: 100%; 	margin: 0em; } .csharpcode .lnum { color: #606060; } -->
+
+ 
+
+SimpleScriptManager.cs
+<pre class="csharpcode"><span class="rem">// Copyright (c) 2009 Chris Pietschmann ()</span>
+<span class="rem">// All rights reserved.</span>
+<span class="rem">// Licensed under the Microsoft Public License (Ms-PL)</span>
+<span class="rem">// http://opensource.org/licenses/ms-pl.html</span>
+
+<span class="kwrd">using</span> System;
+<span class="kwrd">using</span> System.Collections.Generic;
+<span class="kwrd">using</span> System.Reflection;
+<span class="kwrd">using</span> System.Web;
+<span class="kwrd">using</span> System.Web.Mvc;
+
+<span class="kwrd">namespace</span> SimpleScriptManager
+{
+    <span class="kwrd">public</span> <span class="kwrd">class</span> SimpleScriptManager
+    {
+        <span class="kwrd">private</span> HtmlHelper htmlHelper;
+
+        <span class="kwrd">private</span> Dictionary&lt;<span class="kwrd">string</span>, <span class="kwrd">string</span>&gt; scriptIncludes = <span class="kwrd">new</span> Dictionary&lt;<span class="kwrd">string</span>, <span class="kwrd">string</span>&gt;();
+
+        <span class="kwrd">private</span> Dictionary&lt;<span class="kwrd">string</span>, <span class="kwrd">string</span>&gt; scripts = <span class="kwrd">new</span> Dictionary&lt;<span class="kwrd">string</span>, <span class="kwrd">string</span>&gt;();
+        <span class="kwrd">private</span> Dictionary&lt;<span class="kwrd">string</span>, Action&gt; scriptsActions = <span class="kwrd">new</span> Dictionary&lt;<span class="kwrd">string</span>, Action&gt;();
+
+        <span class="rem">/// <summary>&lt;/span&gt;
+        <span class="rem">/// SimpleScriptManager Constructor</span>
+        <span class="rem">/// &lt;/summary&gt;</span>
+        <span class="rem">/// <param name="helper" />The HtmlHelper that this SimpleScriptManager will use to render to.&lt;/param&gt;</span>
+        <span class="kwrd">public</span> SimpleScriptManager(HtmlHelper helper)
+        {
+            <span class="rem">// Store reference to the HtmlHelper object this SimpleScriptManager is tied to.</span>
+            <span class="kwrd">this</span>.htmlHelper = helper;
+        }
+
+        <span class="rem">/// <summary>&lt;/span&gt;
+        <span class="rem">/// Adds a script file reference to the page.</span>
+        <span class="rem">/// &lt;/summary&gt;</span>
+        <span class="rem">/// <param name="scriptPath" />The URL of the script file.&lt;/param&gt;</span>
+        <span class="rem">/// <returns>Returns the SimpleScriptManager</returns></span>
+        <span class="kwrd">public</span> SimpleScriptManager ScriptInclude(<span class="kwrd">string</span> scriptPath)
+        {
+            <span class="kwrd">return</span> <span class="kwrd">this</span>.ScriptInclude(Guid.NewGuid().ToString(), scriptPath);
+        }
+
+        <span class="rem">/// <summary>&lt;/span&gt;
+        <span class="rem">/// Adds a script file reference to the page.</span>
+        <span class="rem">/// &lt;/summary&gt;</span>
+        <span class="rem">/// <param name="key" />A unique identifier for the script file.&lt;/param&gt;</span>
+        <span class="rem">/// <param name="scriptPath" />The URL of the script file.&lt;/param&gt;</span>
+        <span class="rem">/// <returns>Returns the SimpleScriptManager</returns></span>
+        <span class="kwrd">public</span> SimpleScriptManager ScriptInclude(<span class="kwrd">string</span> key, <span class="kwrd">string</span> scriptPath)
+        {
+            <span class="kwrd">if</span> (!<span class="kwrd">this</span>.scriptIncludes.ContainsKey(key))
+            {
+                <span class="rem">// Check if the scriptPath is a Virtual Path</span>
+                <span class="kwrd">if</span> (scriptPath.StartsWith(<span class="str">"~/"</span>))
+                {
+                    <span class="rem">// Convert the Virtual Path to an Application Absolute Path</span>
+                    scriptPath = VirtualPathUtility.ToAbsolute(scriptPath);
+                }
+                <span class="kwrd">this</span>.scriptIncludes.Add(key, scriptPath);
+            }
+            <span class="kwrd">return</span> <span class="kwrd">this</span>;
+        }
+
+        <span class="rem">/// <summary>&lt;/span&gt;
+        <span class="rem">/// Adds a script file reference to the page for an Embedded Web Resource.</span>
+        <span class="rem">/// &lt;/summary&gt;</span>
+        <span class="rem">/// <typeparam name="T">The Type whos Assembly contains the Web Resource.</typeparam></span>
+        <span class="rem">/// <param name="key" />A unique identifier for the script file.&lt;/param&gt;</span>
+        <span class="rem">/// <param name="resourceName" />The name of the Web Resource.&lt;/param&gt;</span>
+        <span class="rem">/// <returns>Returns the SimpleScriptManager</returns></span>
+        <span class="kwrd">public</span> SimpleScriptManager ScriptInclude<T>(<span class="kwrd">string</span> key, <span class="kwrd">string</span> resourceName)
+        {
+            <span class="kwrd">return</span> <span class="kwrd">this</span>.ScriptInclude(key, getWebResourceUrl<T>(resourceName));
+        }
+
+        <span class="rem">/// <summary>&lt;/span&gt;
+        <span class="rem">/// Adds a script file reference to the page for an Embedded Web Resource.</span>
+        <span class="rem">/// &lt;/summary&gt;</span>
+        <span class="rem">/// <typeparam name="T">The Type whos Assembly contains the Web Resource.</typeparam></span>
+        <span class="rem">/// <param name="resourceName" />The name of the Web Resource.&lt;/param&gt;</span>
+        <span class="rem">/// <returns>Returns the SimpleScriptManager</returns></span>
+        <span class="kwrd">public</span> SimpleScriptManager ScriptInclude<T>(<span class="kwrd">string</span> resourceName)
+        {
+            <span class="kwrd">return</span> <span class="kwrd">this</span>.ScriptInclude(getWebResourceUrl<T>(resourceName));
+        }
+
+        <span class="rem">/// <summary>&lt;/span&gt;
+        <span class="rem">/// Adds a script block to the page.</span>
+        <span class="rem">/// &lt;/summary&gt;</span>
+        <span class="rem">/// <param name="javascript" />The JavaScript code to include in the Page.&lt;/param&gt;</span>
+        <span class="rem">/// <returns>Returns the SimpleScriptManager</returns></span>
+        <span class="kwrd">public</span> SimpleScriptManager Script(<span class="kwrd">string</span> javascript)
+        {
+            <span class="kwrd">return</span> <span class="kwrd">this</span>.Script(Guid.NewGuid().ToString(), javascript);
+        }
+
+        <span class="rem">/// <summary>&lt;/span&gt;
+        <span class="rem">/// Adds a script block to the page.</span>
+        <span class="rem">/// &lt;/summary&gt;</span>
+        <span class="rem">/// <param name="key" />A unique identifier for the script.&lt;/param&gt;</span>
+        <span class="rem">/// <param name="javascript" />The JavaScript code to include in the Page.&lt;/param&gt;</span>
+        <span class="rem">/// <returns>Returns the SimpleScriptManager</returns></span>
+        <span class="kwrd">public</span> SimpleScriptManager Script(<span class="kwrd">string</span> key, <span class="kwrd">string</span> javascript)
+        {
+            <span class="kwrd">if</span> (!<span class="kwrd">this</span>.scripts.ContainsKey(key) &amp;&amp; !<span class="kwrd">this</span>.scriptsActions.ContainsKey(key))
+            {
+                <span class="kwrd">this</span>.scripts.Add(key, javascript);
+            }
+            <span class="kwrd">return</span> <span class="kwrd">this</span>;
+        }
+
+        <span class="rem">/// <summary>&lt;/span&gt;
+        <span class="rem">/// Adds a script block to the page.</span>
+        <span class="rem">/// &lt;/summary&gt;</span>
+        <span class="rem">/// <param name="javascript" />The JavaScript code to include in the Page.&lt;/param&gt;</span>
+        <span class="rem">/// <returns>Returns the SimpleScriptManager</returns></span>
+        <span class="kwrd">public</span> SimpleScriptManager Script(Action javascript)
+        {
+            <span class="kwrd">return</span> <span class="kwrd">this</span>.Script(Guid.NewGuid().ToString(), javascript);
+        }
+        
+        <span class="rem">/// <summary>&lt;/span&gt;
+        <span class="rem">/// Adds a script block to the page.</span>
+        <span class="rem">/// &lt;/summary&gt;</span>
+        <span class="rem">/// <param name="key" />A unique identifier for the script.&lt;/param&gt;</span>
+        <span class="rem">/// <param name="javascript" />The JavaScript code to include in the Page.&lt;/param&gt;</span>
+        <span class="rem">/// <returns>Returns the SimpleScriptManager</returns></span>
+        <span class="kwrd">public</span> SimpleScriptManager Script(<span class="kwrd">string</span> key, Action javascript)
+        {
+            <span class="kwrd">if</span> (!<span class="kwrd">this</span>.scripts.ContainsKey(key) &amp;&amp; !<span class="kwrd">this</span>.scriptsActions.ContainsKey(key))
+            {
+                <span class="kwrd">this</span>.scriptsActions.Add(key, javascript);
+            }
+            <span class="kwrd">return</span> <span class="kwrd">this</span>;
+        }
+
+        <span class="rem">/// <summary>&lt;/span&gt;
+        <span class="rem">/// Renders the SimpleScriptManager to the Page</span>
+        <span class="rem">/// &lt;/summary&gt;</span>
+        <span class="kwrd">public</span> <span class="kwrd">void</span> Render()
+        {
+            var writer = <span class="kwrd">this</span>.htmlHelper.ViewContext.HttpContext.Response.Output;
+
+            <span class="rem">// Render All Script Includes to the Page</span>
+            <span class="kwrd">foreach</span> (var scriptInclude <span class="kwrd">in</span> <span class="kwrd">this</span>.scriptIncludes)
+            {
+                writer.WriteLine(String.Format(<span class="str">"<script type="text/javascript" src="{0}"></script>"</span>, scriptInclude.Value));
+            }
+            
+            <span class="rem">// Render All other scripts to the Page</span>
+            <span class="kwrd">if</span> (<span class="kwrd">this</span>.scripts.Count &gt; 0 || <span class="kwrd">this</span>.scriptsActions.Count &gt; 0)
+            {
+                writer.WriteLine(<span class="str">"<script type="text/javascript">"</span>);
+
+                <span class="kwrd">if</span> (<span class="kwrd">this</span>.scripts.Count > 0)
+                {
+                    <span class="kwrd">foreach</span> (var script <span class="kwrd">in</span> <span class="kwrd">this</span>.scripts)
+                    {
+                        writer.WriteLine(script.Value);
+                    }
+                }
+
+                <span class="kwrd">if</span> (<span class="kwrd">this</span>.scriptsActions.Count > 0)
+                {
+                    <span class="kwrd">foreach</span> (var script <span class="kwrd">in</span> <span class="kwrd">this</span>.scriptsActions)
+                    {
+                        script.Value();
+                    }
+                }
+
+                writer.WriteLine(<span class="str">"</script>"</span>);
+            }
+        }
+
+
+        <span class="kwrd">private</span> <span class="kwrd">static</span> MethodInfo _getWebResourceUrlMethod;
+        <span class="kwrd">private</span> <span class="kwrd">static</span> <span class="kwrd">object</span> _getWebResourceUrlLock = <span class="kwrd">new</span> <span class="kwrd">object</span>();
+
+        <span class="kwrd">private</span> <span class="kwrd">static</span> <span class="kwrd">string</span> getWebResourceUrl<T>(<span class="kwrd">string</span> resourceName)
+        {
+            <span class="kwrd">if</span> (<span class="kwrd">string</span>.IsNullOrEmpty(resourceName))
+            {
+                <span class="kwrd">throw</span> <span class="kwrd">new</span> ArgumentNullException(<span class="str">"resourceName"</span>);
+            }
+
+            <span class="kwrd">if</span> (_getWebResourceUrlMethod == <span class="kwrd">null</span>)
+            {
+                <span class="kwrd">lock</span> (_getWebResourceUrlLock)
+                {
+                    <span class="kwrd">if</span> (_getWebResourceUrlMethod == <span class="kwrd">null</span>)
+                    {
+                        _getWebResourceUrlMethod = <span class="kwrd">typeof</span>(System.Web.Handlers.AssemblyResourceLoader).GetMethod(
+                            <span class="str">"GetWebResourceUrlInternal"</span>,
+                            BindingFlags.NonPublic | BindingFlags.Static);
+                    }
+                }
+            }
+
+            <span class="kwrd">return</span> <span class="str">"/"</span> + (<span class="kwrd">string</span>)_getWebResourceUrlMethod.Invoke(<span class="kwrd">null</span>,
+                <span class="kwrd">new</span> <span class="kwrd">object</span>[] { Assembly.GetAssembly(<span class="kwrd">typeof</span>(T)), resourceName, <span class="kwrd">false</span> });
+        }
+
+    }
+}&lt;/pre&gt;
+<h3> </h3>
+<h3>Conclusion</h3>
+
+At first it seemed that the easiest way to get similar functionality to this was to use the ASP.NET AJAX ScriptManager control; however that control requires that it be embedded within a *&lt;form runat=&rdquo;server&rdquo;&gt;&lt;/form&gt;* tag, and that just doesn&rsquo;t really work with ASP.NET MVC. Actually the methods to get the ASP.NET AJAX ScriptManager to work with ASP.NET MVC are just plain &ldquo;Hacks&rdquo; and they made me feel like I wasn&rsquo;t being True to the new ASP.NET MVC Platform.
+
+In the end, I&rsquo;m very happy that I was able to work out an extremely simple solution to this problem that will definitely help when building out ASP.NET MVC Web Applications.
+
+If you have any feedback on this, please leave a comment.
+</T></summary></span></summary></span></summary></span></summary></span></summary></span></T></T></summary></span></T></T></summary></span></summary></span></summary></span></summary></span></pre></TestScriptOneControl></pre>
+
+        
+      </article>
+
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+
+      <!--
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+      -->
+
+
+
+      
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+      <!--
+      
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+      
+        -->
+
+
+
+    </div>
+    <div class="col-md-4">
+      <div class="mb-3">
+    <script type="text/javascript"><!--
+        document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
+        // --></script>
+    </div>
+    
+    <!--
+    <div class="mb-3">
+    <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
+    </div>
+    -->
+
+    <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+    <div class="recent">
+    <h4>Recent Posts</h4>
+    <ul class="list-unstyled">
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions</a></h6>
+            <span class="small text-muted">01 Jul 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number</a></h6>
+            <span class="small text-muted">06 Apr 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/03/11/encryption-code-greater-than-guns-bombs">Encryption and Code are Greater Than Guns and Bombs</a></h6>
+            <span class="small text-muted">11 Mar 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/02/15/macos-monitor-cpu-usage-info">macOS: Monitor CPU Usage and Frequency Info</a></h6>
+            <span class="small text-muted">15 Feb 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/01/02/basics-javascript-class-inheritance">Basics of JavaScript Class Inheritance</a></h6>
+            <span class="small text-muted">02 Jan 2020</span>
+        </li>
+        
+    </ul>
+    </div>
+    
+    <!-- Amazon Affiliate Links -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=1593279507&asins=1593279507&linkId=dbae26993e5e47c31a6178fd13aed38f&show_border=true&link_opens_in_new_window=true"></iframe>
+
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0596517742&asins=0596517742&linkId=67c7a7145153fa5d61755acafc46fa56&show_border=true&link_opens_in_new_window=true"></iframe>
+    <!--
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0135957052&asins=0135957052&linkId=01a571b3e6c9fa1f7c90c5c8f7dfc583&show_border=true&link_opens_in_new_window=true"></iframe>
+    -->
+
+    <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=kuft&banner=07V9YHKS4HY556H67002&f=ifr&lc=pf4&linkID=4bb77e8255a5ef372bfab6cc5c160388&t=pietschsoft04-20&tracking_id=pietschsoft04-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+
+    <div class="related">
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+    </div>
+
+    <!--
+    <h4>Courses</h4>
+    <style>
+        .course-box {
+            margin-bottom: 1em;
+        }
+        .course-box img {
+            width: 95%;
+        }
+        .course-box > strong {
+            display: block;
+        }
+        .course-box > em {
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
+        </a>
+        <strong>
+            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+                The Complete JavaScript Course 2020: Build Real Projects!
+            </a>
+        </strong>
+        <em>by Jonas Schmedtmann</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            JavaScript Basics for Beginners
+        </a></strong>
+        <em>by Mosh Hamedani</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            Advanced JavaScript Concepts
+        </a></strong>
+        <em>by Andrei Neagoie</em>
+    </div>
+    -->
+
+    <h4>Legal Disclaimer</h4>
+    <p style="font-size=0.7em">This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+    
+    <div id="fixedadmarker"></div>
+    <div id="fixedad" class="mt-3">
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+    </div>
+    <style>
+    @media (min-width: 768px) {
+        .fixedad-float {
+            position: fixed;
+            top: 2.5em;
+        }
+    }
+    </style>
+    <script>
+    window.setInterval(function() {
+        var elem = $('#fixedadmarker'),
+            top = elem.offset().top || 0,
+            height = elem[0].offsetHeight || 0,
+            bottom = top + height,
+            scrollY = window.scrollY || 0,
+            elemToBeFixed = $('#fixedad');
+        if (scrollY >= bottom) {
+            elemToBeFixed.addClass('fixedad-float');
+        } else {
+            elemToBeFixed.removeClass('fixedad-float');
+        }
+    }, 100);
+    </script>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Chris Pietschmann</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/#awards">Microsoft MVP</a></li>
+        <li><a class="text-muted" href="/#books">Books</a></li>
+        <li><a class="text-muted" href="/#websites">Websites</a></li>
+        <li><a class="text-muted" href="/#experience">Experience</a></li>
+        <li><a class="text-muted" href="/talks">Talks</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Publications</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://build5nines.com" target="_blank">Build5Nines.com</a></li>
+        <li><a class="text-muted" href="https://www.hackster.io/crpietschmann/articles" target="_blank">Hackster.io</a></li>
+        <li><a class="text-muted" href="/blog">Pietschsoft.com</a></li>
+      </ul>
+      <h5>Social Media</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://twitter.com/crpietschmann" target="_blank">Twitter</a></li>
+        <li><a class="text-muted" href="http://linkedin.com/in/crpietschmann" target="_blank">LinkedIn</a></li>
+        <li><a class="text-muted" href="http://youtube.com/build5nines" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <img src="/images/buildazure-logo.png" alt="Build5Nines.com" style="height: 1.5em;"/>
+      <small class="d-block mb-3 text-muted">
+        Copyright © 2020 Chris Pietschmann. All rights reserved.
+      </small>
+      <small class="d-block mb-3 text-muted">
+        <strong>Legal Disclaimer</strong>
+        <p>This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+      </small>
+    </div>
+    <div class="col-12 col-md">
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script src="/scripts/prism/prism.js"></script>
+<link rel="stylesheet" href="/scripts/prism/prism.css" />
+
+<script src="/scripts/holder.js"></script>
+<script>
+Holder.addTheme('thumb', {
+  bg: '#55595c',
+  fg: '#eceeef',
+  text: 'Thumbnail'
+});
+</script>
+
+
+    <script type="text/javascript">
+    // Google Analytics
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1172995-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
+
+    <script type="text/javascript">
+    // Developer Media Ads
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+
+    // Google Analytics Track External Link Clicks
+    (function($) { if ($) {
+      $('a[href^=http]').click(function(){
+          if (_gaq && _gaq.push && !((this.href || '').startsWith('https://pietschsoft.com'))) {
+              _gaq.push(['_trackEvent','Link','External',this.href]);
+          }
+          return true;
+      });
+    }})(jQuery);
+    </script>
+  </body>
+</html>

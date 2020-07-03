@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Basics of JavaScript Class Inheritance | Chris Pietschmann</title>
+    <meta name="description" content="I have nearly 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+">
+    <meta name="author" content="Chris Pietschmann">
+    <link rel="icon" href="/images/avatar-chris-pietschmann-transparent.png">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="alternate" type="application/rss+xml" title="Chris Pietschmann &raquo; Archive" href="https://pietschsoft.com/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//css/site.css">
+    <link rel="canonical" href="http://pietschsoft.com//post/2020/01/02/basics-javascript-class-inheritance">
+</head>
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Bio</h4>
+          <p class="text-muted">
+            <a href="/">Chris Pietschmann</a> is a Microsoft MVP with <strong>Azure</strong> and <strong>IoT</strong> technologies, and a Microsoft Certified Trainer (MCT) with 20+ years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in Internet of Things (IoT), DevOps, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Publications</h4>
+          <ul class="list-unstyled">
+            <li><a href="/#books" class="text-white">Books</a></li>
+            <li><a href="https://build5nines.com" class="text-white">Build5Nines.com</a></li>
+            <li><a href="https://www.hackster.io/crpietschmann/articles" class="text-white">Hackster.io</a></li>
+            <li><a href="/blog" class="text-white">Pietschsoft.com</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/crpietschmann" class="text-white">Twitter</a></li>
+            <li><a href="http://linkedin.com/in/crpietschmann" class="text-white">LinkedIn</a></li>
+            <li><a href="https://build5nines.com/contact" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com Logo" style="height: 1.5em; margin-right: 0.5em;"/>-->
+        <img src="/images/avatar-chris-pietschmann-transparent.png" alt="Chris Pietschmann" style="background: #fff; height: 1.5em; margin-right: 0.5em;"/>
+        <strong>Chris Pietschmann</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container post">
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <header class="post-header">
+          <h1 class="post-title">Basics of JavaScript Class Inheritance</h1>
+          <!--
+          <div class="post-categories">
+              
+              
+              <a href="//categories/#JavaScript">JavaScript</a>
+              
+              
+            </div>
+          -->
+          <p class="post-meta">Jan 2, 2020</p>
+      </header>
+
+      <article class="post-content">
+        
+            <p>The ECMAScript 2015 definition brought with it the introduction of <code class="language-plaintext highlighter-rouge">class</code> syntax within the JavaScript language. Previously the only way to do this was with TypeScript or some other language that would transpile down to JavaScript code. With ECMAScript 2015, you can now declare and use classes directly in the JavaScript language itself. Plus, this is a feature that is supported by all the modern web browsers too!</p>
+
+<p>Previously the way to do Object Oriented Programming (OOP) in JavaScript was to use Prototypal Inheritance. This made use of the <code class="language-plaintext highlighter-rouge">object.prototype</code> property to do inheritance in a way that’s different than most other object oriented languages; such as C# or Java. With the addition of being able to define and use Classes in JavaScript, you can now do object oriented programming in JavaScript using the method we’ve all become accustomed to with other OOP languages.</p>
+
+<blockquote>
+  <p><strong>Browser Support</strong>: JavaScript <code class="language-plaintext highlighter-rouge">class</code> inheritance is supported by all modern web browsers; like Chrome, FireFox, and Safari. However, be aware that older browser versions, and Internet Explorer do not support this.</p>
+</blockquote>
+
+<h2 id="define-a-class-in-javascript">Define a <code class="language-plaintext highlighter-rouge">class</code> in JavaScript</h2>
+
+<p>A <code class="language-plaintext highlighter-rouge">class</code> definition in JavaScript is used to define a class with its <code class="language-plaintext highlighter-rouge">constructor</code>, as well as it’s properties and methods. This is done in JavaScript very similarly to how it’s done in other OOP languages; like C# and Java.</p>
+
+<p>Here is a simple example definition of a <code class="language-plaintext highlighter-rouge">Person</code> Class:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Person</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">last</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">firstName</span> <span class="o">=</span> <span class="nx">first</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">lastName</span> <span class="o">=</span> <span class="nx">last</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nx">getFullName</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">firstName</span> <span class="o">+</span> <span class="dl">'</span><span class="s1"> </span><span class="dl">'</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">lastName</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">class</code> keyword is used to define the Class in JavaScript. Then within the <code class="language-plaintext highlighter-rouge">Person</code> class there is a <code class="language-plaintext highlighter-rouge">constructor</code> method defines, as well as any other features of the class.</p>
+
+<p>Notice the <code class="language-plaintext highlighter-rouge">constructor</code> method within the <code class="language-plaintext highlighter-rouge">class</code> definition. This is a Constructor method that will be executed every time an instance of the class in instantiated. The Constructor can also be defined to accept anywhere from zero to many parameters so that the class can be passed initial state upon instantiation.</p>
+
+<p>Notice the <code class="language-plaintext highlighter-rouge">getFullName()</code> method declaration within the <code class="language-plaintext highlighter-rouge">class</code> definition. This is showing an example of how to define a function on the class. This function will later be able to be called on any objects created from the class.</p>
+
+<p>Within the <code class="language-plaintext highlighter-rouge">constructor</code> there are two properties on the class being set; the <code class="language-plaintext highlighter-rouge">firstName</code> and <code class="language-plaintext highlighter-rouge">lastName</code> properties. Notice these properties have no property definition within the <code class="language-plaintext highlighter-rouge">class</code> as would be done in other languages; like C# or Java. The reason there is no property definition is because JavaScript is a Dynamic language. This means that setting a property on the object will in turn create it if it doesn’t exist. You are likely very familiar with this as it’s a core piece of how the JavaScript language works, and you’ve likely seen / done this many times already.</p>
+
+<h2 id="instantiate-an-object-from-a-class">Instantiate an Object from a <code class="language-plaintext highlighter-rouge">class</code></h2>
+
+<p>Now that you have a <code class="language-plaintext highlighter-rouge">class</code> defined within JavaScript, you can use the <code class="language-plaintext highlighter-rouge">new</code> keyword to easily create a new instance of it.</p>
+
+<p>Here’s an example of doing this:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">p</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="dl">'</span><span class="s1">Chris</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Pietschmann</span><span class="dl">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Notice we are passing in values for the parameters defined on the <code class="language-plaintext highlighter-rouge">constructor</code> method of the class.</p>
+
+<p>After the object has been instantiated from the <code class="language-plaintext highlighter-rouge">class</code>, you can work with it in the normal fashion you are familiar with other objects and libraries you’ve used in JavaScript:</p>
+
+<p>Here’s an example of setting a property and calling a method on the object instance:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// set property</span>
+<span class="nx">p</span><span class="p">.</span><span class="nx">firstName</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Christopher</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="c1">// call method</span>
+<span class="kd">var</span> <span class="nx">fullName</span> <span class="o">=</span> <span class="nx">p</span><span class="p">.</span><span class="nx">getFullName</span><span class="p">();</span>
+</code></pre></div></div>
+
+<h2 id="class-inheritance-in-javascript">Class Inheritance in JavaScript</h2>
+
+<p>Once you have a <code class="language-plaintext highlighter-rouge">class</code> in JavaScript, you can easily create other classes that inherit from this class. Defining these ‘subclasses’ is done by using the <code class="language-plaintext highlighter-rouge">extends</code> keyword to tell JavaScript your new <code class="language-plaintext highlighter-rouge">class</code> is to inherit from a particular base class.</p>
+
+<p>Here’s an example of a <code class="language-plaintext highlighter-rouge">Teacher</code> subclass that inherits from <code class="language-plaintext highlighter-rouge">Person</code>:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Teacher</span> <span class="kd">extends</span> <span class="nx">Person</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">last</span><span class="p">,</span> <span class="nx">grade</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// call the base class constructor</span>
+        <span class="k">super</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">last</span><span class="p">);</span>
+
+        <span class="k">this</span><span class="p">.</span><span class="nx">grade</span> <span class="o">=</span> <span class="nx">grade</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>As you can see, the <code class="language-plaintext highlighter-rouge">extends</code> keyword is used to tell JavaScript that the <code class="language-plaintext highlighter-rouge">Teacher</code> class is to inherit from the <code class="language-plaintext highlighter-rouge">Person</code> class. This means that the constructor, properties and method of the “super” base class are available to the subclass.</p>
+
+<p>Notice that the <code class="language-plaintext highlighter-rouge">Teacher</code> class implements its own <code class="language-plaintext highlighter-rouge">constructor</code> method. This is so you can instantiate an instance of this class and pass it any necessary parameters / state to start with. Within the subclass Constructor, it first calls the <code class="language-plaintext highlighter-rouge">super()</code> method. The <code class="language-plaintext highlighter-rouge">super()</code> method is going to refer to the base class <code class="language-plaintext highlighter-rouge">constructor</code> method. When instantiating a subclass, you need to call the <code class="language-plaintext highlighter-rouge">super()</code> method and pass it any necessary parameters the base class is expected. This will not only instantiate the object as you’re expecting, but the <code class="language-plaintext highlighter-rouge">super()</code> method also must be used to properly initialize the <code class="language-plaintext highlighter-rouge">this</code> keyword for the newly-allocated object. By calling <code class="language-plaintext highlighter-rouge">super()</code> within the <code class="language-plaintext highlighter-rouge">constructor</code>, the <code class="language-plaintext highlighter-rouge">this</code> keyword will be setup as a reference to the newly created object. This is not something that is automatically initialized for the class by using the <code class="language-plaintext highlighter-rouge">extends</code> keyword.</p>
+
+<blockquote>
+  <p><strong>Tip</strong>: By calling <code class="language-plaintext highlighter-rouge">super()</code> within the <code class="language-plaintext highlighter-rouge">constructor</code>, the <code class="language-plaintext highlighter-rouge">this</code> keyword will be setup as a reference to the newly created object. This is not something that is automatically initialized for the class by using the <code class="language-plaintext highlighter-rouge">extends</code> keyword.</p>
+</blockquote>
+
+<p>This <code class="language-plaintext highlighter-rouge">Teacher</code> class example is extending the <code class="language-plaintext highlighter-rouge">Person</code> base class with an additional <code class="language-plaintext highlighter-rouge">grade</code> property. You can call this property, or any other defined methods on the subclass, just as you would properties or methods of the base class.</p>
+
+<p>Here’s an example of instantiating the <code class="language-plaintext highlighter-rouge">Teacher</code> class and calling its properties and methods:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// instantiate the object</span>
+<span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Teacher</span><span class="p">(</span><span class="dl">'</span><span class="s1">Chris</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Pietschmann</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">Third Grade</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="c1">// set properties</span>
+<span class="nx">t</span><span class="p">.</span><span class="nx">firstName</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Christopher</span><span class="dl">'</span><span class="p">;</span>
+<span class="nx">t</span><span class="p">.</span><span class="nx">grade</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Fourth Grade</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="c1">// call method from base class</span>
+<span class="kd">var</span> <span class="nx">fullName</span> <span class="o">=</span> <span class="nx">t</span><span class="p">.</span><span class="nx">getFullName</span><span class="p">();</span>
+</code></pre></div></div>
+
+<h2 id="override-base-class-methods-within-subclass">Override Base Class Methods within Subclass</h2>
+
+<p>With Object Oriented Programming (OOP) there are times when you need to override the functionality of a base class. You may need to extend, or even replace, the base class functionality. The <code class="language-plaintext highlighter-rouge">class</code> inheritance of JavaScript as defined by ECMAScript 2015 allows this to be done easily, and similarly to how it’s done in other OOP languages; like C# or Java.</p>
+
+<p>Here’s an example of the above <code class="language-plaintext highlighter-rouge">Teacher</code> subclass that overrides the <code class="language-plaintext highlighter-rouge">getFullName</code> method of the <code class="language-plaintext highlighter-rouge">Person</code> base class:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Teacher</span> <span class="kd">extends</span> <span class="nx">Person</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">last</span><span class="p">,</span> <span class="nx">grade</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// call the base class constructor</span>
+        <span class="k">super</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">last</span><span class="p">);</span>
+
+        <span class="k">this</span><span class="p">.</span><span class="nx">grade</span> <span class="o">=</span> <span class="nx">grade</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nx">getFullName</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">firstName</span> <span class="o">+</span> <span class="dl">'</span><span class="s1"> </span><span class="dl">'</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">lastName</span> <span class="o">+</span> <span class="dl">'</span><span class="s1"> (</span><span class="dl">'</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">grade</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">)</span><span class="dl">'</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>As you can see, this override example of the <code class="language-plaintext highlighter-rouge">getFullName</code> method, is completely replacing it with a new method definition. When the <code class="language-plaintext highlighter-rouge">getFullName</code> method is called on the <code class="language-plaintext highlighter-rouge">Teacher</code> objects, this definition will be executed, and the base class definition will no longer be executed.</p>
+
+<h2 id="extend-base-class-methods-within-subclass">Extend Base Class Methods within Subclass</h2>
+
+<p>There are times when the base class method provide functionality that’s close to what you need in the base class, or maybe it provides a useful function for the base class. At these times, it’s useful to be able to call the base class method from the subclass while still overriding / replacing the base class method with the same name.</p>
+
+<p>To do this you can call the base class method using the <code class="language-plaintext highlighter-rouge">super</code> keyword within the subclass method. Here’s an example, similar to the previous one, that overrides the base class <code class="language-plaintext highlighter-rouge">getFullName</code> method while calling the base class method as well:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Teacher</span> <span class="kd">extends</span> <span class="nx">Person</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">last</span><span class="p">,</span> <span class="nx">grade</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// call the base class constructor</span>
+        <span class="k">super</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="nx">last</span><span class="p">);</span>
+
+        <span class="k">this</span><span class="p">.</span><span class="nx">grade</span> <span class="o">=</span> <span class="nx">grade</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nx">getFullName</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">super</span><span class="p">.</span><span class="nx">getFullName</span><span class="p">()</span> <span class="o">+</span> <span class="dl">'</span><span class="s1"> (</span><span class="dl">'</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">grade</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">)</span><span class="dl">'</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>As you can see, by calling the base class method as made available through the <code class="language-plaintext highlighter-rouge">super</code> keyword within the subclass method, you can both override the base class method and utilize its functionality at the same time.</p>
+
+<h2 id="wrap-up">Wrap Up</h2>
+
+<p>The Prototypal Inheritance of JavaScript was a little complex to get used to when coming from a greater familiarity with the Class Inheritance used in other popular Object Oriented Programming (OOP) languages; like C# or Java. The addition of Class Inheritance (via the <code class="language-plaintext highlighter-rouge">class</code> and <code class="language-plaintext highlighter-rouge">extends</code> keywords) in JavaScript brings with it a more familiar approach to instantiating objects and setting up subclass inheritance. Also, with this feature being supported by all of the modern browsers, there’s no reason you couldn’t start using <code class="language-plaintext highlighter-rouge">class</code> inheritance today within your JavaScript projects. Although, keep in mind that existing code bases likely will still use <code class="language-plaintext highlighter-rouge">prototype</code> inheritance for some time, so having a basic familiarity with Prototypal Inheritance may still be useful.</p>
+
+<p><em>P.S. The basics of JavaScript class inheritance outlined in this article should get you going with these features nicely. But, keep in mind there are also additional features of JavaScript classes like Getters and Setters that can be used with <code class="language-plaintext highlighter-rouge">class</code> inheritance too.</em></p>
+
+        
+      </article>
+
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+
+      <!--
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+      -->
+
+
+
+      
+
+    
+    
+        
+            
+        
+            
+        
+            
+                
+                <h2 >
+                    Related Posts
+                </h2 >
+                <ul class="">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions
+                    
+                    </a></h6>
+                    <span class="small text-muted">01 Jul 2020</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number
+                    
+                    </a></h6>
+                    <span class="small text-muted">06 Apr 2020</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2019/07/24/call-functions-in-javascript">Call Functions in JavaScript
+                    
+                    </a></h6>
+                    <span class="small text-muted">24 Jul 2019</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2019/07/07/top-13-blogging-tips-for-sucessful-website">Top 13 Blogging Tips for a Successful Website
+                    
+                    </a></h6>
+                    <span class="small text-muted">07 Jul 2019</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+
+      <!--
+      
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+                      
+                      <h2>Related Posts</h2>
+                      <ul>
+                      
+                      <li class="relatedPost">
+                          <a href="http://pietschsoft.com/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions
+                          
+                          </a>
+                      </li>
+                      
+                      
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+                      
+                      <li class="relatedPost">
+                          <a href="http://pietschsoft.com/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number
+                          
+                          </a>
+                      </li>
+                      
+                      
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+                      
+                      <li class="relatedPost">
+                          <a href="http://pietschsoft.com/post/2019/07/24/call-functions-in-javascript">Call Functions in JavaScript
+                          
+                          </a>
+                      </li>
+                      
+                      
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+                      
+                      <li class="relatedPost">
+                          <a href="http://pietschsoft.com/post/2019/07/07/top-13-blogging-tips-for-sucessful-website">Top 13 Blogging Tips for a Successful Website
+                          
+                          </a>
+                      </li>
+                      
+                      
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+      
+          </ul>
+      
+        -->
+
+
+
+    </div>
+    <div class="col-md-4">
+      <div class="mb-3">
+    <script type="text/javascript"><!--
+        document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
+        // --></script>
+    </div>
+    
+    <!--
+    <div class="mb-3">
+    <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
+    </div>
+    -->
+
+    <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+    <div class="recent">
+    <h4>Recent Posts</h4>
+    <ul class="list-unstyled">
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions</a></h6>
+            <span class="small text-muted">01 Jul 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number</a></h6>
+            <span class="small text-muted">06 Apr 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/03/11/encryption-code-greater-than-guns-bombs">Encryption and Code are Greater Than Guns and Bombs</a></h6>
+            <span class="small text-muted">11 Mar 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/02/15/macos-monitor-cpu-usage-info">macOS: Monitor CPU Usage and Frequency Info</a></h6>
+            <span class="small text-muted">15 Feb 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2019/11/12/the-technology-is-not-important">The Technology is NOT Important</a></h6>
+            <span class="small text-muted">12 Nov 2019</span>
+        </li>
+        
+    </ul>
+    </div>
+    
+    <!-- Amazon Affiliate Links -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=1593279507&asins=1593279507&linkId=dbae26993e5e47c31a6178fd13aed38f&show_border=true&link_opens_in_new_window=true"></iframe>
+
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0596517742&asins=0596517742&linkId=67c7a7145153fa5d61755acafc46fa56&show_border=true&link_opens_in_new_window=true"></iframe>
+    <!--
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0135957052&asins=0135957052&linkId=01a571b3e6c9fa1f7c90c5c8f7dfc583&show_border=true&link_opens_in_new_window=true"></iframe>
+    -->
+
+    <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=kuft&banner=07V9YHKS4HY556H67002&f=ifr&lc=pf4&linkID=4bb77e8255a5ef372bfab6cc5c160388&t=pietschsoft04-20&tracking_id=pietschsoft04-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+
+    <div class="related">
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+                
+                <h4>
+                    Related Posts
+                </h4>
+                <ul class="list-unstyled">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions
+                    
+                    </a></h6>
+                    <span class="small text-muted">01 Jul 2020</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number
+                    
+                    </a></h6>
+                    <span class="small text-muted">06 Apr 2020</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2019/07/24/call-functions-in-javascript">Call Functions in JavaScript
+                    
+                    </a></h6>
+                    <span class="small text-muted">24 Jul 2019</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2019/07/07/top-13-blogging-tips-for-sucessful-website">Top 13 Blogging Tips for a Successful Website
+                    
+                    </a></h6>
+                    <span class="small text-muted">07 Jul 2019</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+
+    </div>
+
+    <!--
+    <h4>Courses</h4>
+    <style>
+        .course-box {
+            margin-bottom: 1em;
+        }
+        .course-box img {
+            width: 95%;
+        }
+        .course-box > strong {
+            display: block;
+        }
+        .course-box > em {
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
+        </a>
+        <strong>
+            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+                The Complete JavaScript Course 2020: Build Real Projects!
+            </a>
+        </strong>
+        <em>by Jonas Schmedtmann</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            JavaScript Basics for Beginners
+        </a></strong>
+        <em>by Mosh Hamedani</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            Advanced JavaScript Concepts
+        </a></strong>
+        <em>by Andrei Neagoie</em>
+    </div>
+    -->
+
+    <h4>Legal Disclaimer</h4>
+    <p style="font-size=0.7em">This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+    
+    <div id="fixedadmarker"></div>
+    <div id="fixedad" class="mt-3">
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+    </div>
+    <style>
+    @media (min-width: 768px) {
+        .fixedad-float {
+            position: fixed;
+            top: 2.5em;
+        }
+    }
+    </style>
+    <script>
+    window.setInterval(function() {
+        var elem = $('#fixedadmarker'),
+            top = elem.offset().top || 0,
+            height = elem[0].offsetHeight || 0,
+            bottom = top + height,
+            scrollY = window.scrollY || 0,
+            elemToBeFixed = $('#fixedad');
+        if (scrollY >= bottom) {
+            elemToBeFixed.addClass('fixedad-float');
+        } else {
+            elemToBeFixed.removeClass('fixedad-float');
+        }
+    }, 100);
+    </script>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Chris Pietschmann</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/#awards">Microsoft MVP</a></li>
+        <li><a class="text-muted" href="/#books">Books</a></li>
+        <li><a class="text-muted" href="/#websites">Websites</a></li>
+        <li><a class="text-muted" href="/#experience">Experience</a></li>
+        <li><a class="text-muted" href="/talks">Talks</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Publications</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://build5nines.com" target="_blank">Build5Nines.com</a></li>
+        <li><a class="text-muted" href="https://www.hackster.io/crpietschmann/articles" target="_blank">Hackster.io</a></li>
+        <li><a class="text-muted" href="/blog">Pietschsoft.com</a></li>
+      </ul>
+      <h5>Social Media</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://twitter.com/crpietschmann" target="_blank">Twitter</a></li>
+        <li><a class="text-muted" href="http://linkedin.com/in/crpietschmann" target="_blank">LinkedIn</a></li>
+        <li><a class="text-muted" href="http://youtube.com/build5nines" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <img src="/images/buildazure-logo.png" alt="Build5Nines.com" style="height: 1.5em;"/>
+      <small class="d-block mb-3 text-muted">
+        Copyright © 2020 Chris Pietschmann. All rights reserved.
+      </small>
+      <small class="d-block mb-3 text-muted">
+        <strong>Legal Disclaimer</strong>
+        <p>This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+      </small>
+    </div>
+    <div class="col-12 col-md">
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script src="/scripts/prism/prism.js"></script>
+<link rel="stylesheet" href="/scripts/prism/prism.css" />
+
+<script src="/scripts/holder.js"></script>
+<script>
+Holder.addTheme('thumb', {
+  bg: '#55595c',
+  fg: '#eceeef',
+  text: 'Thumbnail'
+});
+</script>
+
+
+    <script type="text/javascript">
+    // Google Analytics
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1172995-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
+
+    <script type="text/javascript">
+    // Developer Media Ads
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+
+    // Google Analytics Track External Link Clicks
+    (function($) { if ($) {
+      $('a[href^=http]').click(function(){
+          if (_gaq && _gaq.push && !((this.href || '').startsWith('https://pietschsoft.com'))) {
+              _gaq.push(['_trackEvent','Link','External',this.href]);
+          }
+          return true;
+      });
+    }})(jQuery);
+    </script>
+  </body>
+</html>

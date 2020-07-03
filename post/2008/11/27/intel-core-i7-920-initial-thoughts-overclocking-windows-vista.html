@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Intel Core i7 920 - Initial Thoughts, Overclocking and Windows Vista | Chris Pietschmann</title>
+    <meta name="description" content="I have nearly 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+">
+    <meta name="author" content="Chris Pietschmann">
+    <link rel="icon" href="/images/avatar-chris-pietschmann-transparent.png">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="alternate" type="application/rss+xml" title="Chris Pietschmann &raquo; Archive" href="https://pietschsoft.com/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//css/site.css">
+    <link rel="canonical" href="http://pietschsoft.com//post/2008/11/27/intel-core-i7-920-initial-thoughts-overclocking-windows-vista">
+</head>
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Bio</h4>
+          <p class="text-muted">
+            <a href="/">Chris Pietschmann</a> is a Microsoft MVP with <strong>Azure</strong> and <strong>IoT</strong> technologies, and a Microsoft Certified Trainer (MCT) with 20+ years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in Internet of Things (IoT), DevOps, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Publications</h4>
+          <ul class="list-unstyled">
+            <li><a href="/#books" class="text-white">Books</a></li>
+            <li><a href="https://build5nines.com" class="text-white">Build5Nines.com</a></li>
+            <li><a href="https://www.hackster.io/crpietschmann/articles" class="text-white">Hackster.io</a></li>
+            <li><a href="/blog" class="text-white">Pietschsoft.com</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/crpietschmann" class="text-white">Twitter</a></li>
+            <li><a href="http://linkedin.com/in/crpietschmann" class="text-white">LinkedIn</a></li>
+            <li><a href="https://build5nines.com/contact" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com Logo" style="height: 1.5em; margin-right: 0.5em;"/>-->
+        <img src="/images/avatar-chris-pietschmann-transparent.png" alt="Chris Pietschmann" style="background: #fff; height: 1.5em; margin-right: 0.5em;"/>
+        <strong>Chris Pietschmann</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container post">
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <header class="post-header">
+          <h1 class="post-title">Intel Core i7 920 - Initial Thoughts, Overclocking and Windows Vista</h1>
+          <!--
+          <div class="post-categories">
+              
+              
+              <a href="//categories/#Intel">Intel</a>
+              &nbsp;
+              
+              <a href="//categories/#Windows Vista">Windows Vista</a>
+              
+              
+            </div>
+          -->
+          <p class="post-meta">Nov 27, 2008</p>
+      </header>
+
+      <article class="post-content">
+        
+            <!-- more -->
+
+<p><img src="/files/corei7BlueLogo.png" alt="" align="right" />I recently upgraded my main desktop machine to a new Intel Core i7 920 CPU and all its glory. Here’s a write up of my experience in choosing the Core i7 (over the Core 2 Quad) and my experiences with it so far.</p>
+<h3>Thoughts Before Upgrading - Core 2 Quad or Core i7?</h3>
+
+<p>My previous machine was an AMD Athlon 64 X2 4200+ (2.2Ghz) with 4GB DDR2 800Mhz Ram. The system ran great, but it was two years old and my requirements for using Virtualization (via Virtual PC) have increased so it’s time for an upgrade.</p>
+
+<p>I was looking to build a Quad Core machine, and was originally looking at the Core 2 Quad, but then I found out that the new Core i7 was coming out Nov. 17. So, I waited, read the pre-release reviews, got more interested, waited, and finally purchased on Nov. 17. There are three versions of the Core i7 out right now, the 920 (2.66Ghz, $300), 940 (2.92Ghz, $570) and 965 (3.2Ghz, $1,050).</p>
+
+<p>Originally, I was looking at spending ~$300 for the Core 2 Quad Q9550 (2.83Ghz). But, after reviewing the data on the new Core i7, things looked promising that the 920 would perform better, and for the same price.</p>
+<h3>Thoughts During/After Upgrade</h3>
+
+<p>In this upgrade I replaced the Motherboard (<a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16813128362">Gigabyte GA-EX58-UD5</a>, $298.99), CPU (<a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16819115202">Intel Core i7 920</a>, $319.99) and Ram (<a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16820231193">G.SKILL 2 x 2GB DDR3 1600</a>, $149.99).</p>
+
+<p>The Core i7 supports Triple Channel DDR3 memory. What this means is you need to have 3 or 6 (multiples of 3) Ram sticks in order to run in Triple Channel. If you only have 2 Ram sticks you can run in Dual Channel mode; this is what I’m doing currently.</p>
+
+<p><em><strong>DDR3 Ram Advisory:</strong> It has been reported in various sources online, that the Core i7 CPU can be damaged by DDR3 Ram that operates at higher than 1.65v. You need to be aware of this when purchasing memory. If you look the G.SKILL memory I have listed above has a rating of 1.8v on NewEgg. I ordered this memory before I found out about this limit, but luckily the 2 sticks I got are actually rated at 1.5v.</em></p>
+
+<p>After installing the hardware, I booted up Windows Vista x64 (I didn’t reinstall, still booting off the old hard drive. Windows Vista took a little bit to catch up, since it needed to install all new drivers for the major upgrade in hardware. After about 2 minutes all drivers were updated and Vista booted up ready for login.</p>
+
+<p>Running Vista on the new Core i7 920 (stock settings), things seem snappier than they did on the old system. The Windows Experience Index for the Processor is 5.9, up from 4.9 for the Athlon 64 X2 4200+.</p>
+
+<p>Here’s a screenshot of my Windows Experience Index with the Core i7 920 and 4GB Ram at “stock” settings:</p>
+
+<p><img src="/files/Core_i7_920_4GB_WindowsExperienceIndexRating.png" alt="" /></p>
+
+<p><em>Update: After originally posting this I found out that the <a href="http://www.microsoft.com/windows/windows-vista/get/experience-index.aspx">highest Windows Experience Rating under Vista that any component can score is a 5.9</a>. Until I found this out, I was curious as to why the Core i7 920 running at 2.6Ghz scored the same as running at 3.4Ghz. I wonder how high the Core i7 CPU’s would score if Vista were able to give a score higher than 5.9? I also wonder what the max Windows Experience Index Score will be in Windows 7 when if comes out.</em></p>
+
+<p>And for comparison, here’s the Windows Experience Index for the old Athlon 64 X2 4200+ with 4GB Ram:</p>
+
+<p><img src="/files/AMDAthlon64X2_4400%2b_4GB_WindowsExperienceIndexRating.png" alt="" /></p>
+
+<p><em>Note: The reason the Graphics Score (and ultimately the Base Score) are so low is because I’m still using my old NVidia GeForce 6600 (256MB) Video Card; which I am thinking of upgrading soon to.</em></p>
+
+<p><em>Update 08/10/2009:</em> I have since upgraded my machine to Windows 7 RTM (final release). The overall Windows Experience Index Rating is actually higher than the Beta at 5.3 with the Core i7 920 running at “stock” 2.6Ghz settings. The video card is the same nVidia 9500 w/ 512MB VRam. The most interesting thing to note with Windows 7 RTM is that the Video Card’s Gaming Graphics score is 6.4; that’s quite the increase from 5.0 in the Beta, and is most likely due to a final release of a more compatible video card driver from nVidia. Also, the Core i7 920 CPU scores a higher 7.5 and the Memory (RAM) scores a higher 7.6. So actually the overall performance of the system with Windows 7 RTM scores higher than the Beta did.</p>
+
+<p><span style="text-decoration: line-through;"><em>Update 1/29/2009:</em> I have since installed Windows 7 Beta 1 on this Core i7 920 system, so I thought I’d share the Windows 7 Beta 1 Windows Experience Index Rating with it running at the “stock” 2.6Ghz settings. One thing to note, is I have upgraded this systems video card to an nVidia 9500 w/ 512MB VRam. Interestingly, the Core i7 920 rates a 7.4 out of a maximum 7.9. Screen shot is below.</span></p>
+<h3>Overclocking the Core i7 920!<img src="/files/Core_i7_920_3.4Ghz" alt="" align="right" /></h3>
+
+<p>This is probably the most interesting part of this post; what you’re really interested in, right?</p>
+
+<p>The Core i7 has a couple changed to its architecture. First, it has an integrated memory controller on the chip with it’s own clock multiplier. Second, there’s a new clock multiplier called QPI. QPI ends up being the frequency that the indivisual CPU Cores talk to each other with. And then there’s the Base Clock and the main CPU Multiplier. You can changed each of these four settings independently, essentially giving you more control when overclocking.</p>
+
+<p>The most notable thing is the 920 has a CPU Multiplier of 20 (“fixed”). This means you can’t set it higher than that. The 940 also has a locked multiplier (at 22 I think). But, the 965 has an unlocked multiplier; this is meant to be the “ultimate” overclockers chip.</p>
+
+<p>You can read more about the Core i7’s architecture in other sources; I just wanted to give a brief, basic overview of what relates to the overclocking I’ve done.</p>
+
+<p>Since there are so many things that can be adjusted, as well as voltage; you may be a little confused as you how you might go about overclocking it. Well, it’s actually rather simple. For simple overclocking, all you need to do is adjust the Base Clock and everything else will follow along. It would be nice if you could adjust the CPU Multiplier, but you can only increase that if you have the 965 cpu.</p>
+
+<p>The Core i7 920 at 2.66Ghz has a Base Clock of 133Mhz by default. One thing noting for comparison to my overclocking results is in my configuration the Max CPU Temperature at 100% load was 84c.</p>
+
+<p>I’ve tested mine at both 2.92Ghz (146Mhz Base Clock) and 3.0Ghz (150Mhz Base Clock) using the Stock Cooler that come with the CPU, and both run very stable and seem to keep within safe temperatures; 86c max under 100% cpu load in my initial testing. Note, I do have 2 case fans, so I would recommend you have at least one good case fan for this.</p>
+
+<p>I have tested the 920 at 3.2Ghz by setting the Base Clock to 160Mhz<span style="text-decoration: line-through;">, but the temps got up to 90c under initial tests of 100% cpu load, so I set it back down to be safe</span>. I added another small case fan and now it seems I’m able to get 3.2Ghz running without worrying about the temp. In initial testing, under 100% cpu load it’s reached 88c max, and runs extremely stable.</p>
+
+<p>I also tested the 920 at 3.4Ghz by setting the Base Clock to 170Mhz. In initial testing, under 100% cpu load it’s reached 89c max, and runs extremely stable.</p>
+
+<p>I also decided to check out some benchmarks, so I ran CINEBENCH 10 with both 3.0Ghz (150mhz Base Clock), 3.2Ghz (160mhz Base Clock), and 3.4Ghz (170Mhz Base Clock):</p>
+
+<p>**CINEBENCH 10, x64 version, 800x600 Image **</p>
+
+<p><em><a href="http://valid.canardpc.com/show_oc.php?id=464998">Core i7 920 @3.5Ghz (175Mhz Base Clock)</a> - Score: 20,929.0</em></p>
+
+<p><em><a href="http://valid.canardpc.com/show_oc.php?id=464973">Core i7 920 @3.4Ghz (170Mhz Base Clock)</a> - Score: 20,530.0</em></p>
+
+<p><em>Core i7 920 @3.2Ghz (160Mhz Base Clock) - Score: 18,914.0</em></p>
+
+<p><em>Core i7 920 @3.0Ghz (150Mhz Base Clock) - Score: 17,377.0</em></p>
+
+<p><em><a href="http://valid.canardpc.com/show_oc.php?id=464964">Core i7 920 @2.6Ghz (133Mhz “stock” Base Clock / My Configuration)</a> - Score: 16,256.0</em></p>
+
+<p><span style="text-decoration: line-through;">I haven’t run CINEBENCH 10 on the “stock” settings on my machine, but <a href="http://www.bit-tech.net/hardware/2008/11/03/intel-core-i7-920-945-965-review/10">here’s an article</a> that shows the 920 score 15,211.0 with “stock” settings.</span> Since, posting this I decided to run the CINEBENCH 10 test on my configuration with the Core i7 920 at “stock” settings, and the results I got are actually higher than the ones in the previously mentioned link. With my “stock” settings scoring 16,256; that only makes my configuration run 2,085 points lower than the <a href="http://www.bit-tech.net/hardware/2008/11/03/intel-core-i7-920-945-965-review/10">stock Core i7 965 mentioned in this article</a>. According to the article the 965’s highest score on “stock” settings is 18,341.0. That’s 2,189 points lower than my overclocked 920 at 3.4Ghz.</p>
+
+<p>A ~27% overclock isn’t too bad on the stock cooler. Not to mention the fact that the Core i7 920 costs less than 1/3rd of the Core i7 965!</p>
+
+<p>Also, I need to do further testing to be confident with my results to be confident their safe. So just be careful when overclocking, and there’s no guarantee all 920 chips will perform the same as mine. Happy Overclocking!</p>
+
+<p><em>Update 4/15/2008: I’ve had my i7 920 overclocked to 3.2Ghz since I originally posted this, and it’s been running rock solid. However, I don’t max out the CPU for very long periods, so heat really isn’t that much of an issue. I did do some additional testing today using Prime95 to see what the temps get up to. Today when I tested the Core Temp got up to 100C pretty quickly; that’s hot enough to boil water! I also updated my BIOS to the latest F6 firmware today. Well, anyway, it still runs rock solid; just thought I’d give an update.</em></p>
+
+<p><em><strong>Overclocking Ram Advisory:</strong> As mentioned above the Core i7 requires memory that runs at or below 1.65v, otherwise (according to reports from <a href="http://www.google.com/search?q=core+i7+1.65v">various sources</a>) it can damager the CPU. One thing to remember when overclocking the Core i7 is you may need to lower the RAM Multiplier in the Bios if you are trying to give the CPU a healthy overclock. In my case (using the G.SKILL Ram listed above) the Ram I have seems to run at 1.7v at 1600Mhz (which was stable for days); so just in case I decided to lower my Ram Multiplier so it runs lower, and wit the 3.4Ghz overclock the ran is running at 1.63v.</em></p>
+<h3>Does Windows Vista Fully Utilize the Core i7?</h3>
+
+<p>I’m not sure Windows Vista x64 can fully utilize this CPU yet. <span style="text-decoration: line-through;">When I run Prime95, the CPU goes to 100%, but the Intel Speed Step Technology never bumps up the speed. It always remains at 1.7Ghz when set to stock settings. However, when I run the Window Experienc</span><span style="text-decoration: line-through;">e Index test, the Speed Step kicks in and bumps it up to the full 2.66Ghz. </span></p>
+
+<p><span style="text-decoration: line-through;">Update 11/27, all of a sudden, now my CPU always runs at full speed. It doesn’t downclock itself to 1.7Ghz anymore. I don’t think I changed anything in the BIOS that affects this, but I need to double check. My thoughts are also that this was some kind of burn in protection built into the CPU, but I haven’s seen/read anything that mentions this. </span></p>
+
+<p><span style="text-decoration: line-through;"> I’ll need to look further into this… </span></p>
+
+<p>Update 2/20/2008:  I’ve looked further into how Windows Vista and Windows 7 Beta handle the Steep Step functionality of the Core i7 CPU. It turns out that it does fully utilize the capabilities of the CPU, but whether Speed Step “down clocks” the CPU it dependent on the Power Plan you have set in Windows. If you set the Power Plan to High Performance, it will never “down clock” the CPU, but if you set it to either Balanced or Power Saver it will.</p>
+
+<p>Essentially, Speed Step just lowers the CPU Clock Multiplier to lower the speed and use less power. On the Core i7 920 it lowers the multiplier to x12 when “down clocking” from the full x20 multiplier when running at full speed. On my system, I currently (at the time of writing this) have my Core i7 920 overclocked to 3.0Ghz (using 150Mhz Base Clock), so running at full speed (with Turbo enabled) it runs at 3.1Ghz, and when Speed Step kicks in to “down clock” it drops it down to 1.8Ghz. This actually allows for my system to save a considerable amount of power; when running at full speed (as mentioned previously) the CPU Power Usage (in Watt according to HWMonitor) is at about 147W (not costantly, but mostly) when Idle and when Speed Step kicks in to “down clock” it drops to about 43W; for a total of 104W savings! That’s almost 2 standard light bulbs (60W bulbs) of power usage.</p>
+
+<p>As I’ve been typing this I’m seeing Speed Step even drop the CPU Clock Multiplier down to x2.5 at brief moments for even further power savings; that means it’s dropping down to 375Mhz at times to save power.</p>
+
+<p>Also, to get more control over when the CPU is “down clocked” or ran at full speed, you can adjust the “Processor power management” settings within the Advanced Power Options for any given Power Plan.</p>
+<h3>Future Thoughts</h3>
+
+<p>Since I am using Virtualization more, I’m looking to up my Ram from 4GB to 6GB or 8GB. You need more Ram when you run multiple OS’s simultaneously. Still unsure if I want to make Triple Channel a priority or not at this point.</p>
+
+<p><span style="text-decoration: line-through;">I’m thinking about increasing the air flow in the case (via a bigger case fan), so the ambient temperate surrounding the CPU is overall cooler. That will really help with overclocking using the stock cooler.</span> Cooling down the ambient temperature in the case seems to have a somewhat direct effect on the cpu temperature, but it’s no magic replacement for a better cpu cooler. I’ve cooled down the max ambient temp in the case by about 3c, and the max cpu temp was lowered by about 1c. So obviously it helps, but it’s no replacement for a good cooler.</p>
+
+<p>Also, thinking about getting a <a href="http://www.frozencpu.com/products/8444/cpu-tri-57/Thermalright_Ultra-120_eXtreme-1366_RT_CPU_Heatsink_Socket_LGA_1336_Preorder.html?tl=g40c14s757">Thermalright Ultra-120 eXtreme-1366 CPU Heatsink</a>. It’s supposed to be one of the best air coolers on the market, and I’ll need it if I want to push the 920 to it’s limit.</p>
+<h4>Updates</h4>
+
+<p>2008-12-03: Added info about overclocking the Core i7 920 to 3.4Ghz on “stock” cooler, and added advisory info about overclocking Ram. Also, updated CPU-Z screenshot to show it running at 3.4Ghz.</p>
+
+<p>2008-12-17: Added CINEBENCH Score for Core i7 920 at 3.5Ghz with 175Mhz Base Clock. Also, added links to “validated” CPU-Z dumps for each of the “stock” and 2 highest Core i7 920 overclocks.</p>
+
+<p>2009-01-29: Added Windows Experience Index Rating info and screenshot for Windows 7 Beta 1.</p>
+
+<p>2009-08-10: Added Windows 7 RTM Experience Index Rating Info and removes the Win7 Beta Experience Index Rating screenshot.</p>
+
+        
+      </article>
+
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+
+      <!--
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+      -->
+
+
+
+      
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+      <!--
+      
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+      
+        -->
+
+
+
+    </div>
+    <div class="col-md-4">
+      <div class="mb-3">
+    <script type="text/javascript"><!--
+        document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
+        // --></script>
+    </div>
+    
+    <!--
+    <div class="mb-3">
+    <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
+    </div>
+    -->
+
+    <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+    <div class="recent">
+    <h4>Recent Posts</h4>
+    <ul class="list-unstyled">
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions</a></h6>
+            <span class="small text-muted">01 Jul 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number</a></h6>
+            <span class="small text-muted">06 Apr 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/03/11/encryption-code-greater-than-guns-bombs">Encryption and Code are Greater Than Guns and Bombs</a></h6>
+            <span class="small text-muted">11 Mar 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/02/15/macos-monitor-cpu-usage-info">macOS: Monitor CPU Usage and Frequency Info</a></h6>
+            <span class="small text-muted">15 Feb 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/01/02/basics-javascript-class-inheritance">Basics of JavaScript Class Inheritance</a></h6>
+            <span class="small text-muted">02 Jan 2020</span>
+        </li>
+        
+    </ul>
+    </div>
+    
+    <!-- Amazon Affiliate Links -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=1593279507&asins=1593279507&linkId=dbae26993e5e47c31a6178fd13aed38f&show_border=true&link_opens_in_new_window=true"></iframe>
+
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0596517742&asins=0596517742&linkId=67c7a7145153fa5d61755acafc46fa56&show_border=true&link_opens_in_new_window=true"></iframe>
+    <!--
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0135957052&asins=0135957052&linkId=01a571b3e6c9fa1f7c90c5c8f7dfc583&show_border=true&link_opens_in_new_window=true"></iframe>
+    -->
+
+    <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=kuft&banner=07V9YHKS4HY556H67002&f=ifr&lc=pf4&linkID=4bb77e8255a5ef372bfab6cc5c160388&t=pietschsoft04-20&tracking_id=pietschsoft04-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+
+    <div class="related">
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+    </div>
+
+    <!--
+    <h4>Courses</h4>
+    <style>
+        .course-box {
+            margin-bottom: 1em;
+        }
+        .course-box img {
+            width: 95%;
+        }
+        .course-box > strong {
+            display: block;
+        }
+        .course-box > em {
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
+        </a>
+        <strong>
+            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+                The Complete JavaScript Course 2020: Build Real Projects!
+            </a>
+        </strong>
+        <em>by Jonas Schmedtmann</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            JavaScript Basics for Beginners
+        </a></strong>
+        <em>by Mosh Hamedani</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            Advanced JavaScript Concepts
+        </a></strong>
+        <em>by Andrei Neagoie</em>
+    </div>
+    -->
+
+    <h4>Legal Disclaimer</h4>
+    <p style="font-size=0.7em">This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+    
+    <div id="fixedadmarker"></div>
+    <div id="fixedad" class="mt-3">
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+    </div>
+    <style>
+    @media (min-width: 768px) {
+        .fixedad-float {
+            position: fixed;
+            top: 2.5em;
+        }
+    }
+    </style>
+    <script>
+    window.setInterval(function() {
+        var elem = $('#fixedadmarker'),
+            top = elem.offset().top || 0,
+            height = elem[0].offsetHeight || 0,
+            bottom = top + height,
+            scrollY = window.scrollY || 0,
+            elemToBeFixed = $('#fixedad');
+        if (scrollY >= bottom) {
+            elemToBeFixed.addClass('fixedad-float');
+        } else {
+            elemToBeFixed.removeClass('fixedad-float');
+        }
+    }, 100);
+    </script>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Chris Pietschmann</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/#awards">Microsoft MVP</a></li>
+        <li><a class="text-muted" href="/#books">Books</a></li>
+        <li><a class="text-muted" href="/#websites">Websites</a></li>
+        <li><a class="text-muted" href="/#experience">Experience</a></li>
+        <li><a class="text-muted" href="/talks">Talks</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Publications</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://build5nines.com" target="_blank">Build5Nines.com</a></li>
+        <li><a class="text-muted" href="https://www.hackster.io/crpietschmann/articles" target="_blank">Hackster.io</a></li>
+        <li><a class="text-muted" href="/blog">Pietschsoft.com</a></li>
+      </ul>
+      <h5>Social Media</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://twitter.com/crpietschmann" target="_blank">Twitter</a></li>
+        <li><a class="text-muted" href="http://linkedin.com/in/crpietschmann" target="_blank">LinkedIn</a></li>
+        <li><a class="text-muted" href="http://youtube.com/build5nines" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <img src="/images/buildazure-logo.png" alt="Build5Nines.com" style="height: 1.5em;"/>
+      <small class="d-block mb-3 text-muted">
+        Copyright © 2020 Chris Pietschmann. All rights reserved.
+      </small>
+      <small class="d-block mb-3 text-muted">
+        <strong>Legal Disclaimer</strong>
+        <p>This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+      </small>
+    </div>
+    <div class="col-12 col-md">
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script src="/scripts/prism/prism.js"></script>
+<link rel="stylesheet" href="/scripts/prism/prism.css" />
+
+<script src="/scripts/holder.js"></script>
+<script>
+Holder.addTheme('thumb', {
+  bg: '#55595c',
+  fg: '#eceeef',
+  text: 'Thumbnail'
+});
+</script>
+
+
+    <script type="text/javascript">
+    // Google Analytics
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1172995-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
+
+    <script type="text/javascript">
+    // Developer Media Ads
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+
+    // Google Analytics Track External Link Clicks
+    (function($) { if ($) {
+      $('a[href^=http]').click(function(){
+          if (_gaq && _gaq.push && !((this.href || '').startsWith('https://pietschsoft.com'))) {
+              _gaq.push(['_trackEvent','Link','External',this.href]);
+          }
+          return true;
+      });
+    }})(jQuery);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ASP.NET 3.5: Create AJAX Extender Controls using the ExtenderControl base class | Chris Pietschmann</title>
+    <meta name="description" content="I have nearly 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+">
+    <meta name="author" content="Chris Pietschmann">
+    <link rel="icon" href="/images/avatar-chris-pietschmann-transparent.png">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="alternate" type="application/rss+xml" title="Chris Pietschmann &raquo; Archive" href="https://pietschsoft.com/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//css/site.css">
+    <link rel="canonical" href="http://pietschsoft.com//post/2008/05/30/aspnet_35_create_ajax_extender_controls_using_the_extendercontrol_base_class">
+</head>
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Bio</h4>
+          <p class="text-muted">
+            <a href="/">Chris Pietschmann</a> is a Microsoft MVP with <strong>Azure</strong> and <strong>IoT</strong> technologies, and a Microsoft Certified Trainer (MCT) with 20+ years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in Internet of Things (IoT), DevOps, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Publications</h4>
+          <ul class="list-unstyled">
+            <li><a href="/#books" class="text-white">Books</a></li>
+            <li><a href="https://build5nines.com" class="text-white">Build5Nines.com</a></li>
+            <li><a href="https://www.hackster.io/crpietschmann/articles" class="text-white">Hackster.io</a></li>
+            <li><a href="/blog" class="text-white">Pietschsoft.com</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/crpietschmann" class="text-white">Twitter</a></li>
+            <li><a href="http://linkedin.com/in/crpietschmann" class="text-white">LinkedIn</a></li>
+            <li><a href="https://build5nines.com/contact" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com Logo" style="height: 1.5em; margin-right: 0.5em;"/>-->
+        <img src="/images/avatar-chris-pietschmann-transparent.png" alt="Chris Pietschmann" style="background: #fff; height: 1.5em; margin-right: 0.5em;"/>
+        <strong>Chris Pietschmann</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container post">
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <header class="post-header">
+          <h1 class="post-title">ASP.NET 3.5: Create AJAX Extender Controls using the ExtenderControl base class</h1>
+          <!--
+          <div class="post-categories">
+              
+              
+              <a href="//categories/#ASP.NET">ASP.NET</a>
+              &nbsp;
+              
+              <a href="//categories/#AJAX">AJAX</a>
+              
+              
+            </div>
+          -->
+          <p class="post-meta">May 30, 2008</p>
+      </header>
+
+      <article class="post-content">
+        
+            <!-- more -->
+
+<p>As a followup to the "Create AJAX Server Controls using the ScriptControl base class" post I wrote a couple weeks ago, I've decided to write on how to create ASP.NET AJAX Extender Controls using the ExtenderControl base class in ASP.NET 3.5. There is already an article titled "<a href="http://msdn.microsoft.com/en-us/library/bb386403.aspx">Adding ASP.NET AJAX Client Behaviors to Web Server Controls</a>" in MSDN, but it doesn't show all the code involved in creating Extender Controls, especially the JavaScript code.</p>
+
+<h3>What is an Extender Control?</h3>
+
+<p>First what exactly is an Extender Control? An Extender Control is basically a non-visual control that adds some sort of AJAX behavior to another control within the page. The majority of the controls within the AjaxControlToolkit are built as Extender Controls. It is a common misconception that you can only create Extender Controls by using the base classes within the AjaxControlToolkit, but in fact ASP.NET 3.5 contains the required ExtenderControl base class to create Extender Controls.</p>
+
+<p>The base class I'm referring to in this article is the System.Web.UI.ExtenderControl base class located within the System.Web.Extensions.dll assembly.</p>
+
+<p>According to <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.extendercontrol.aspx">MSDN the ExtenderControl</a> class is:</p>
+
+<p><em>The ExtenderControl class enables you to programmatically add AJAX functionality to an ASP.NET server control. The ExtenderControl inherits from the Control class and implements the IExtenderControl interface. The Control class defines the properties, methods, and events that are shared by all ASP.NET server controls. The <a href="http://msdn.microsoft.com/en-us/library/system.web.ui.iextendercontrol.aspx">IExtenderControl</a> interface is an abstract class, which you cannot instantiate directly. Instead, you create a derived type.</em></p>
+
+<h3>Basics of created Extender Controls that Inherit from ExtenderControl</h3>
+
+<p>When first creating your custom extender control you need to inherit from the ExtenderControl base class. The first thing you'll see is the ExtenderControl requires you to implement to methods: GetScriptDescriptors and GetScriptReferences. The GetScriptDescriptors method is used to get an IEnumerable collection of ScriptDescriptor objects that basically define any of the controls client-side AJAX properties. The GetScriptReferences method is used to get an IEnumerable collection of ECMAScript (JavaScript) files that will be loaded on the client-side once the page loads; this is used to basically define any client-side scripts the control will require to run on the client.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+
+<span class="p">[</span><span class="nf">TargetControlType</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">Control</span><span class="p">))]</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">FocusExtender</span> <span class="p">:</span> <span class="n">System</span><span class="p">.</span><span class="n">Web</span><span class="p">.</span><span class="n">UI</span><span class="p">.</span><span class="n">ExtenderControl</span>
+
+<span class="p">{</span>
+
+    <span class="k">protected</span> <span class="k">override</span> <span class="n">System</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Generic</span><span class="p">.</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">ScriptDescriptor</span><span class="p">&gt;</span> <span class="nf">GetScriptDescriptors</span><span class="p">(</span><span class="n">Control</span> <span class="n">targetControl</span><span class="p">)</span>
+
+    <span class="p">{</span>
+
+        <span class="k">throw</span> <span class="k">new</span> <span class="nf">NotImplementedException</span><span class="p">();</span>
+
+    <span class="p">}</span> 
+
+
+
+    <span class="k">protected</span> <span class="k">override</span> <span class="n">System</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Generic</span><span class="p">.</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">ScriptReference</span><span class="p">&gt;</span> <span class="nf">GetScriptReferences</span><span class="p">()</span>
+
+    <span class="p">{</span>
+
+        <span class="k">throw</span> <span class="k">new</span> <span class="nf">NotImplementedException</span><span class="p">();</span>
+
+    <span class="p">}</span>
+
+<span class="p">}</span> 
+
+
+
+</code></pre></div></div>
+
+<p>You may have noticed the TargetControlType attribute applied to the FocusExtender control; this attribute is required, and is used to define the type of control that the extender explicitly works with. In the case of this example, I'm setting it to work with any thing that inherits from the Control class, which is all server controls.</p>
+
+<p><strong>Define ScriptReferences</strong></p>
+
+<p>In the GetScriptReferences method, return an IEnumerable collection of the ScriptReference objects to include in the page on the client-side.</p>
+
+<p>Here's a basic example of setting up a ScriptReference that includes a script resource that is embedded within the assembly that FocusExtender is contained in:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+
+<span class="k">protected</span> <span class="k">override</span> <span class="n">System</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Generic</span><span class="p">.</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">ScriptReference</span><span class="p">&gt;</span> <span class="nf">GetScriptReferences</span><span class="p">()</span>
+
+<span class="p">{</span>
+
+    <span class="k">yield</span> <span class="k">return</span> <span class="k">new</span> <span class="nf">ScriptReference</span><span class="p">(&amp;</span><span class="n">quot</span><span class="p">;</span><span class="n">CustomExtenderControl</span><span class="p">.</span><span class="n">FocusExtender</span><span class="p">.</span><span class="n">js</span><span class="p">&amp;</span><span class="n">quot</span><span class="p">;,</span> <span class="p">&amp;</span><span class="n">quot</span><span class="p">;</span><span class="n">CustomExtenderControl</span><span class="p">&amp;</span><span class="n">quot</span><span class="p">;);;</span>
+
+<span class="p">}</span> 
+
+
+
+</code></pre></div></div>
+
+<p>When inheriting from ExtenderControl you'll always have at least one ScriptReference, because you need to reference the script that creates the client-side JavaScript representation of your extender control.</p>
+
+<p><strong>Define ScriptDescriptors</strong></p>
+
+<p>In the GetScriptDescriptors method, return an IEnumerable collection of ScriptDescriptor objects that define what properties will be passed down to the client-side JavaScript representation of your control.</p>
+
+<p>The only ScriptDescriptor you need to return in the IEnumerable collection is a  ScriptBehaviorDescriptor instance that contains all the descriptors for your extender control.</p>
+
+<p>Here's a basic example of returning a ScriptBehaviorDescriptor without any properties being defined:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+
+<span class="k">protected</span> <span class="k">override</span> <span class="n">System</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Generic</span><span class="p">.</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">ScriptDescriptor</span><span class="p">&gt;</span> <span class="nf">GetScriptDescriptors</span><span class="p">(</span><span class="n">Control</span> <span class="n">targetControl</span><span class="p">)</span>
+
+<span class="p">{</span>
+
+    <span class="n">ScriptBehaviorDescriptor</span> <span class="n">descriptor</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">ScriptBehaviorDescriptor</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nf">GetType</span><span class="p">().</span><span class="n">FullName</span><span class="p">,</span> <span class="n">targetControl</span><span class="p">.</span><span class="n">ClientID</span><span class="p">)</span> 
+
+
+
+    <span class="k">yield</span> <span class="k">return</span> <span class="n">descriptor</span><span class="p">;</span>
+
+<span class="p">}</span> 
+
+
+
+</code></pre></div></div>
+
+<p><strong>What ECMAScript (JavaScript) code is needed?</strong></p>
+
+<p>There is a basic block of JavaScript code that you'll need to include that will define the client-side JavaScript representation of your control. This basic block of code is the same base code that you'll start with when creating all extender controls.</p>
+
+<p>Here's the basic JavaScript that will define the client-side JavaScript representation of the ForucExtender control we're using in this example. One thing to remember is that the namespaces and object name in the JavaScript file need to be the same as they are in the server-side .NET code. <em>In case you're wonderin, there is a way to make the client-side and server-side namespaces different, but that's beyond the scope of this article.</em></p>
+
+<p>Type.registerNamespace("CustomExtenderControl");</p>
+
+<p>CustomExtenderControl.FocusExtender = function(element) {</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CustomExtenderControl.FocusExtender.initializeBase(this, [element]);
+</code></pre></div></div>
+
+<p>};</p>
+
+<p>CustomExtenderControl.FocusExtender.prototype = {</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>initialize:function(){
+
+    CustomExtenderControl.FocusExtender.callBaseMethod(this, &amp;quot;initialize&amp;quot;);
+
+},
+
+dispose:function(){
+
+    CustomExtenderControl.FocusExtender.callBaseMethod(this, &amp;quot;dispose&amp;quot;);
+
+}
+</code></pre></div></div>
+
+<p>};</p>
+
+<p>CustomExtenderControl.FocusExtender.registerClass("CustomExtenderControl.FocusExtender", Sys.UI.Behavior);</p>
+
+<p>Sys.Application.notifyScriptLoaded();</p>
+
+<p>Also, in order for the ExtenderControl to correctly load the "CustomExtenderControl.FocusExtender.js" script reference that we're using in this example, we must not forget to define the assemblies embedded resource as a Web Resource, like so:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+
+<span class="p">[</span><span class="n">assembly</span><span class="p">:</span> <span class="n">System</span><span class="p">.</span><span class="n">Web</span><span class="p">.</span><span class="n">UI</span><span class="p">.</span><span class="nf">WebResource</span><span class="p">(&amp;</span><span class="n">quot</span><span class="p">;</span><span class="n">CustomExtenderControl</span><span class="p">.</span><span class="n">FocusExtender</span><span class="p">.</span><span class="n">js</span><span class="p">&amp;</span><span class="n">quot</span><span class="p">;,</span> <span class="p">&amp;</span><span class="n">quot</span><span class="p">;</span><span class="n">text</span><span class="p">/</span><span class="n">javascript</span><span class="p">&amp;</span><span class="n">quot</span><span class="p">;)]</span> 
+
+
+
+</code></pre></div></div>
+
+<h3>Let&#39;s Add a Little &quot;Rich&quot; AJAX Functionality to the Extender Control</h3>
+
+<p>Now that we have a basic ExtenderControl created, we can start adding out "rich" AJAX functionality that we will use to extend our target server control in the page.</p>
+
+<p>In this article, I'm going to keep things extemely simple, and we're going to do the following:</p>
+
+<ol>
+	<li>Pass HighlightCssClass and NoHighlightCssClass properties down to the client, that will determin the CSS class&#39;s used to highlight out server control (in this article a TextBox).</li>
+</ol>
+
+<p><strong>Add the HighlightCssClass and NoHighlightCssClass Properties</strong></p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+
+<span class="k">public</span> <span class="kt">string</span> <span class="n">HighlightCssClass</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="k">public</span> <span class="kt">string</span> <span class="n">NoHighlightCssClass</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> 
+
+
+
+</code></pre></div></div>
+
+<p><strong>Add the ScriptDescriptor for the HighlightCssClass and NoHighlightCssClass Properties</strong></p>
+
+<p>Just modify the GetScriptDescriptor method above to look like the following:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+
+<span class="k">protected</span> <span class="k">override</span> <span class="n">System</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Generic</span><span class="p">.</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">ScriptDescriptor</span><span class="p">&gt;</span> <span class="nf">GetScriptDescriptors</span><span class="p">(</span><span class="n">Control</span> <span class="n">targetControl</span><span class="p">)</span>
+
+<span class="p">{</span>
+
+    <span class="n">ScriptBehaviorDescriptor</span> <span class="n">descriptor</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">ScriptBehaviorDescriptor</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nf">GetType</span><span class="p">().</span><span class="n">FullName</span><span class="p">,</span> <span class="n">targetControl</span><span class="p">.</span><span class="n">ClientID</span><span class="p">)</span> 
+
+
+
+    <span class="n">descriptor</span><span class="p">.</span><span class="nf">AddProperty</span><span class="p">(&amp;</span><span class="n">quot</span><span class="p">;</span><span class="n">HighlightCssClass</span><span class="p">&amp;</span><span class="n">quot</span><span class="p">;,</span> <span class="k">this</span><span class="p">.</span><span class="n">HighlightCssClass</span><span class="p">);</span>
+
+    <span class="n">descriptor</span><span class="p">.</span><span class="nf">AddProperty</span><span class="p">(&amp;</span><span class="n">quot</span><span class="p">;</span><span class="n">NoHighlightCssClass</span><span class="p">&amp;</span><span class="n">quot</span><span class="p">;,</span> <span class="k">this</span><span class="p">.</span><span class="n">NoHighlightCssClass</span><span class="p">);</span> 
+
+
+
+    <span class="k">yield</span> <span class="k">return</span> <span class="n">descriptor</span><span class="p">;</span>
+
+<span class="p">}</span> 
+
+
+
+</code></pre></div></div>
+
+<p><strong>Add the Client-Side Name Property that will receive the value</strong></p>
+
+<p>To do this we need to add a "private" like variable for each CSS property and property accessor methods for each to our JavaScript.</p>
+
+<p>Here's the above JavaScript file with the "private" variables and property accessors added for the CSS properties:</p>
+
+<p>Type.registerNamespace("CustomExtenderControl");</p>
+
+<p>CustomExtenderControl.FocusExtender = function(element) {</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CustomExtenderControl.FocusExtender.initializeBase(this, [element]);
+
+this._HighlightCssClass = null;
+
+this._NoHighlightCssClass = null;
+</code></pre></div></div>
+
+<p>};</p>
+
+<p>CustomExtenderControl.FocusExtender.prototype = {</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>initialize:function(){
+
+    CustomExtenderControl.FocusExtender.callBaseMethod(this, &amp;quot;initialize&amp;quot;);
+
+},
+
+dispose:function(){
+
+    CustomExtenderControl.FocusExtender.callBaseMethod(this, &amp;quot;dispose&amp;quot;);
+
+},
+
+
+
+get_HighlightCssClass:function() {
+
+    return this._HighlightCssClass;
+
+},
+
+set_HighlightCssClass:function(v) {
+
+    this._HighlightCssClass = v;
+
+},
+
+get_NoHighlightCssClass:function() {
+
+    return this._NoHighlightCssClass;
+
+},
+
+set_NoHighlightCssClass:function(v) {
+
+    this._NoHighlightCssClass = v;
+
+}
+</code></pre></div></div>
+
+<p>};</p>
+
+<p>CustomExtenderControl.FocusExtender.registerClass("CustomExtenderControl.FocusExtender", Sys.UI.Behavior);</p>
+
+<p>Sys.Application.notifyScriptLoaded();</p>
+
+<p><strong>Set the TargetControls CSS according to the Focus</strong></p>
+
+<p>In this example we're going to attach event handlers to the TargetControl's focus and blur events that will change the controls CSS.</p>
+
+<p>Here's the above JavaScript code with the event handlers added:</p>
+
+<p>Type.registerNamespace("CustomExtenderControl");</p>
+
+<p>CustomExtenderControl.FocusExtender = function(element) {</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CustomExtenderControl.FocusExtender.initializeBase(this, [element]);
+
+this._HighlightCssClass = null;
+
+this._NoHighlightCssClass = null;
+
+
+
+this._focusHandler = Function.createDelegate(this, this._onFocus);
+
+this._blurHandler = Function.createDelegate(this, this._onBlur);
+</code></pre></div></div>
+
+<p>};</p>
+
+<p>CustomExtenderControl.FocusExtender.prototype = {</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>initialize:function(){
+
+    CustomExtenderControl.FocusExtender.callBaseMethod(this, &amp;quot;initialize&amp;quot;);
+
+    
+
+    var targetElement = this.get_element();
+
+    
+
+    $addHandler(targetElement, &amp;quot;focus&amp;quot;, this._focusHandler);
+
+    $addHandler(targetElement, &amp;quot;blur&amp;quot;, this._blurHandler);        
+
+},
+
+dispose:function(){
+
+    var targetElement = this.get_element();
+
+    
+
+    $removeHandler(targetElement, &amp;quot;focus&amp;quot;, this._focusHandler);    
+
+    $removeHandler(targetElement, &amp;quot;blur&amp;quot;, this._blurHandler);
+
+
+
+    CustomExtenderControl.FocusExtender.callBaseMethod(this, &amp;quot;dispose&amp;quot;);
+
+},
+
+
+
+get_HighlightCssClass:function() {
+
+    return this._HighlightCssClass;
+
+},
+
+set_HighlightCssClass:function(v) {
+
+    this._HighlightCssClass = v;
+
+},
+
+get_NoHighlightCssClass:function() {
+
+    return this._NoHighlightCssClass;
+
+},
+
+set_NoHighlightCssClass:function(v) {
+
+    this._NoHighlightCssClass = v;
+
+},
+
+
+
+//Event Handler Methods
+
+_onFocus:function(eventArgs) {
+
+    var targetElement = this.get_element();
+
+    if (targetElement != null)
+
+    {
+
+        targetElement.className = this.get_HighlightCssClass();
+
+    }
+
+},
+
+_onBlur:function(eventArgs) {
+
+    var targetElement = this.get_element();
+
+    if (targetElement != null)
+
+    {
+
+        targetElement.className = this.get_NoHighlightCssClass();
+
+    }
+
+}
+</code></pre></div></div>
+
+<p>};</p>
+
+<p>CustomExtenderControl.FocusExtender.registerClass("CustomExtenderControl.FocusExtender", Sys.UI.Behavior);</p>
+
+<p>Sys.Application.notifyScriptLoaded();</p>
+
+<h3>Tips and Tricks</h3>
+<h4>Tip #1: Simplify Creating ExtenderControls using a custom ExtenderControlBase class</h4>
+
+<p>One trick that I've learned, that proves useful when creating custom Extender Controls, is to create your own base class that inherits from ExtenderControl and extends it to use some custom attributes to make adding ScriptReferences and ScriptDescriptors easier. This is the same trick that I learned from creating ScriptControls.</p>
+
+<p>Here's what the final server-side code for the FocusExtender object would look like when using custom attributes and our very own ExtenderControl base class to add ScriptReferences and ScriptDescriptors:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+
+<span class="p">[</span><span class="nf">TargetControlType</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">Control</span><span class="p">)),</span>
+
+<span class="nf">ScriptReference</span><span class="p">(&amp;</span><span class="n">quot</span><span class="p">;</span><span class="n">CustomExtenderControl</span><span class="p">.</span><span class="n">FocusExtender</span><span class="p">.</span><span class="n">js</span><span class="p">&amp;</span><span class="n">quot</span><span class="p">;,</span> <span class="p">&amp;</span><span class="n">quot</span><span class="p">;</span><span class="n">CustomExtenderControl</span><span class="p">&amp;</span><span class="n">quot</span><span class="p">;)]</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">FocusExtender</span> <span class="p">:</span> <span class="n">ExtenderControlBase</span>
+
+<span class="p">{</span>
+
+    <span class="p">[</span><span class="n">ExtenderControlProperty</span><span class="p">]</span>
+
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">HighlightCssClass</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> 
+
+
+
+    <span class="p">[</span><span class="n">ExtenderControlProperty</span><span class="p">]</span>
+
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">NoHighlightCssClass</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="p">}</span> 
+
+
+
+</code></pre></div></div>
+
+<p>As you can see, the new code for the FocusExtender using this ExtenderControlBase class with custom attributes is much cleaner and easier to read.</p>
+
+<p>Here's the complete code for the ExtenderControlBase, ScriptReferenceAttribute and ExtenderControlPropertyAttribute objects:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+
+<span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+
+<span class="k">using</span> <span class="nn">System.ComponentModel</span><span class="p">;</span>
+
+<span class="k">using</span> <span class="nn">System.Web.UI</span><span class="p">;</span> 
+
+
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">ExtenderControlBase</span> <span class="p">:</span> <span class="n">ExtenderControl</span>
+
+<span class="p">{</span>
+
+    <span class="k">protected</span> <span class="k">override</span> <span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">ScriptDescriptor</span><span class="p">&gt;</span> <span class="nf">GetScriptDescriptors</span><span class="p">(</span><span class="n">Control</span> <span class="n">targetControl</span><span class="p">)</span>
+
+    <span class="p">{</span>
+
+        <span class="n">ScriptControlDescriptor</span> <span class="n">descriptor</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">ScriptControlDescriptor</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nf">GetType</span><span class="p">().</span><span class="n">FullName</span><span class="p">,</span> <span class="n">targetControl</span><span class="p">.</span><span class="n">ClientID</span><span class="p">);</span> 
+
+
+
+        <span class="c1">// Add all the ExtenderControls Client-Side Object Properties</span>
+
+        <span class="n">PropertyDescriptorCollection</span> <span class="n">props</span> <span class="p">=</span> <span class="n">TypeDescriptor</span><span class="p">.</span><span class="nf">GetProperties</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+
+        <span class="k">foreach</span> <span class="p">(</span><span class="n">PropertyDescriptor</span> <span class="n">prop</span> <span class="k">in</span> <span class="n">props</span><span class="p">)</span>
+
+        <span class="p">{</span>
+
+            <span class="n">ExtenderControlPropertyAttribute</span> <span class="n">propAttr</span> <span class="p">=</span> <span class="n">prop</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="k">typeof</span><span class="p">(</span><span class="n">ExtenderControlPropertyAttribute</span><span class="p">)]</span> <span class="k">as</span> <span class="n">ExtenderControlPropertyAttribute</span><span class="p">;</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">propAttr</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+
+            <span class="p">{</span>
+
+                <span class="kt">object</span> <span class="k">value</span> <span class="p">=</span> <span class="n">prop</span><span class="p">.</span><span class="nf">GetValue</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+
+                <span class="kt">string</span> <span class="n">name</span> <span class="p">=</span> <span class="p">(</span><span class="n">propAttr</span><span class="p">.</span><span class="n">Name</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span> <span class="p">?</span> <span class="n">propAttr</span><span class="p">.</span><span class="n">Name</span> <span class="p">:</span> <span class="n">prop</span><span class="p">.</span><span class="n">Name</span><span class="p">;</span>
+
+                <span class="k">if</span> <span class="p">(</span><span class="k">value</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+
+                <span class="p">{</span>
+
+                    <span class="n">descriptor</span><span class="p">.</span><span class="nf">AddProperty</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="k">value</span><span class="p">);</span>
+
+                <span class="p">}</span>
+
+            <span class="p">}</span>
+
+        <span class="p">}</span> 
+
+
+
+        <span class="k">yield</span> <span class="k">return</span> <span class="n">descriptor</span><span class="p">;</span>
+
+    <span class="p">}</span> 
+
+
+
+    <span class="k">protected</span> <span class="k">override</span> <span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">ScriptReference</span><span class="p">&gt;</span> <span class="nf">GetScriptReferences</span><span class="p">()</span>
+
+    <span class="p">{</span>
+
+        <span class="c1">// Add all the ExtenderControls Client-Side JavaScript References</span>
+
+        <span class="kt">object</span><span class="p">[]</span> <span class="n">scriptReferences</span> <span class="p">=</span> <span class="n">Attribute</span><span class="p">.</span><span class="nf">GetCustomAttributes</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nf">GetType</span><span class="p">(),</span> <span class="k">typeof</span><span class="p">(</span><span class="n">ScriptReferenceAttribute</span><span class="p">),</span> <span class="k">false</span><span class="p">);</span>
+
+        <span class="k">foreach</span> <span class="p">(</span><span class="n">ScriptReferenceAttribute</span> <span class="n">r</span> <span class="k">in</span> <span class="n">scriptReferences</span><span class="p">)</span>
+
+        <span class="p">{</span>
+
+            <span class="k">yield</span> <span class="k">return</span> <span class="n">r</span><span class="p">.</span><span class="nf">GetScriptReference</span><span class="p">();</span>
+
+        <span class="p">}</span>
+
+    <span class="p">}</span>
+
+<span class="p">}</span> 
+
+
+
+<span class="p">[</span><span class="nf">AttributeUsage</span><span class="p">(</span><span class="n">AttributeTargets</span><span class="p">.</span><span class="n">Property</span><span class="p">,</span> <span class="n">AllowMultiple</span> <span class="p">=</span> <span class="k">false</span><span class="p">)]</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">ExtenderControlPropertyAttribute</span> <span class="p">:</span> <span class="n">Attribute</span>
+
+<span class="p">{</span>
+
+    <span class="k">public</span> <span class="nf">ExtenderControlPropertyAttribute</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span> 
+
+
+
+    <span class="k">public</span> <span class="nf">ExtenderControlPropertyAttribute</span><span class="p">(</span><span class="kt">string</span> <span class="n">name</span><span class="p">)</span>
+
+    <span class="p">{</span>
+
+        <span class="k">this</span><span class="p">.</span><span class="n">Name</span> <span class="p">=</span> <span class="n">name</span><span class="p">;</span>
+
+    <span class="p">}</span> 
+
+
+
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="p">}</span> 
+
+
+
+<span class="p">[</span><span class="nf">AttributeUsage</span><span class="p">(</span><span class="n">AttributeTargets</span><span class="p">.</span><span class="n">Class</span><span class="p">,</span> <span class="n">AllowMultiple</span> <span class="p">=</span> <span class="k">true</span><span class="p">)]</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">ScriptReferenceAttribute</span> <span class="p">:</span> <span class="n">Attribute</span>
+
+<span class="p">{</span>
+
+    <span class="k">public</span> <span class="nf">ScriptReferenceAttribute</span><span class="p">(</span><span class="kt">string</span> <span class="n">path</span><span class="p">)</span>
+
+    <span class="p">{</span>
+
+        <span class="k">this</span><span class="p">.</span><span class="n">Path</span> <span class="p">=</span> <span class="n">path</span><span class="p">;</span>
+
+    <span class="p">}</span> 
+
+
+
+    <span class="k">public</span> <span class="nf">ScriptReferenceAttribute</span><span class="p">(</span><span class="kt">string</span> <span class="n">name</span><span class="p">,</span> <span class="kt">string</span> <span class="n">assembly</span><span class="p">)</span>
+
+    <span class="p">{</span>
+
+        <span class="k">this</span><span class="p">.</span><span class="n">Name</span> <span class="p">=</span> <span class="n">name</span><span class="p">;</span>
+
+        <span class="k">this</span><span class="p">.</span><span class="n">Assembly</span> <span class="p">=</span> <span class="n">assembly</span><span class="p">;</span>
+
+    <span class="p">}</span> 
+
+
+
+    <span class="k">private</span> <span class="kt">string</span> <span class="n">_path</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Path</span>
+
+    <span class="p">{</span>
+
+        <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_path</span><span class="p">;</span> <span class="p">}</span>
+
+        <span class="k">set</span> <span class="p">{</span> <span class="n">_path</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="p">}</span> 
+
+
+
+    <span class="k">private</span> <span class="kt">string</span> <span class="n">_name</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span>
+
+    <span class="p">{</span>
+
+        <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_name</span><span class="p">;</span> <span class="p">}</span>
+
+        <span class="k">set</span> <span class="p">{</span> <span class="n">_name</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="p">}</span> 
+
+
+
+    <span class="k">private</span> <span class="kt">string</span> <span class="n">_assembly</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Assembly</span>
+
+    <span class="p">{</span>
+
+        <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_assembly</span><span class="p">;</span> <span class="p">}</span>
+
+        <span class="k">set</span> <span class="p">{</span> <span class="n">_assembly</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="p">}</span> 
+
+
+
+    <span class="k">public</span> <span class="n">ScriptReference</span> <span class="nf">GetScriptReference</span><span class="p">()</span>
+
+    <span class="p">{</span>
+
+        <span class="n">ScriptReference</span> <span class="n">r</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span> 
+
+
+
+        <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">Path</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
+
+        <span class="p">{</span>
+
+            <span class="n">r</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">ScriptReference</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">Name</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="n">Assembly</span><span class="p">);</span>
+
+        <span class="p">}</span>
+
+        <span class="k">else</span>
+
+        <span class="p">{</span>
+
+            <span class="n">r</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">ScriptReference</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">Path</span><span class="p">);</span>
+
+        <span class="p">}</span> 
+
+
+
+        <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+
+    <span class="p">}</span>
+
+<span class="p">}</span> 
+
+
+
+</code></pre></div></div>
+
+<h4>Tip #2: Access ExtenderControl via JavaScript</h4>
+
+<p>Another trick that I figured out allows you to be able to reference the custom extender control from within JavaScript. The issue this solves is the fact that the ExtenderControl base class doesn't send the control ID down to the client, so there is no way to get a reference to it for manipulation via JavaScript.</p>
+
+<p>To do this all we need to do is add a property named "id" to the ScriptBehaviorDescriptor within the GetScriptDescriptor method. Here's an example of doing this:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+
+<span class="k">protected</span> <span class="k">override</span> <span class="n">System</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Generic</span><span class="p">.</span><span class="n">IEnumerable</span><span class="p">&lt;</span><span class="n">ScriptDescriptor</span><span class="p">&gt;</span> <span class="nf">GetScriptDescriptors</span><span class="p">(</span><span class="n">Control</span> <span class="n">targetControl</span><span class="p">)</span>
+
+<span class="p">{</span>
+
+    <span class="n">ScriptBehaviorDescriptor</span> <span class="n">descriptor</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">ScriptBehaviorDescriptor</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nf">GetType</span><span class="p">().</span><span class="n">FullName</span><span class="p">,</span> <span class="n">targetControl</span><span class="p">.</span><span class="n">ClientID</span><span class="p">);</span> 
+
+
+
+    <span class="n">descriptor</span><span class="p">.</span><span class="nf">AddProperty</span><span class="p">(&amp;</span><span class="n">quot</span><span class="p">;</span><span class="n">id</span><span class="p">&amp;</span><span class="n">quot</span><span class="p">;,</span> <span class="k">this</span><span class="p">.</span><span class="n">ClientID</span><span class="p">);</span> 
+
+
+
+    <span class="n">descriptor</span><span class="p">.</span><span class="nf">AddProperty</span><span class="p">(&amp;</span><span class="n">quot</span><span class="p">;</span><span class="n">HighlightCssClass</span><span class="p">&amp;</span><span class="n">quot</span><span class="p">;,</span> <span class="k">this</span><span class="p">.</span><span class="n">HighlightCssClass</span><span class="p">);</span>
+
+    <span class="n">descriptor</span><span class="p">.</span><span class="nf">AddProperty</span><span class="p">(&amp;</span><span class="n">quot</span><span class="p">;</span><span class="n">NoHighlightCssClass</span><span class="p">&amp;</span><span class="n">quot</span><span class="p">;,</span> <span class="k">this</span><span class="p">.</span><span class="n">NoHighlightCssClass</span><span class="p">);</span> 
+
+
+
+    <span class="k">yield</span> <span class="k">return</span> <span class="n">descriptor</span><span class="p">;</span>
+
+<span class="p">}</span> 
+
+
+
+</code></pre></div></div>
+
+<p>Now with the following FocusExtender control in the page:</p>
+
+<p>[code:html]</p>
+
+<p>&lt;cec:FocusExtender runat="server" id="FocusExtender1"</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TargetControlID=&amp;quot;TextBox1&amp;quot;
+
+HighlightCssClass=&amp;quot;Highlight&amp;quot; NoHighlightCssClass=&amp;quot;NoHightlight&amp;quot;&gt;
+</code></pre></div></div>
+
+<p>&lt;/cec:FocusExtender&gt;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+
+We can access it from JavaScript like so: 
+
+
+
+[code:html] 
+
+
+
+&lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;Show HighlightCssClass&amp;quot; onclick=&amp;quot;ShowHighlightCssClass();&amp;quot; /&gt;
+
+&lt;script type=&amp;quot;text/javascript&amp;quot;&gt;
+
+    function ShowHighlightCssClass()
+
+    {
+
+        var focusExtender = $find(&amp;quot;&lt;%=FocusExtender1.ClientID%&gt;&amp;quot;);
+
+        alert(focusExtender.get_HighlightCssClass());
+
+    }
+
+&lt;/script&gt; 
+
+
+
+</code></pre></div></div>
+
+<p>It's kind of strange that the ExtenderControl base class doesn't automatically link it up to be able to access it from within JavaScript, but at least it's pretty simple to add.</p>
+
+<h3>Conclusion</h3>
+
+<p>As you can see it's fairly simple to get started creating your own custom extender controls that inherit from the ExtenderControl base class, especially if you use the above ExtenderControlBase class along with it's ExtenderControlPropertyAttribute and ScriptReferenceAttribute attributes. It's also very simple to enable the ability to access the ExtenderControl from within JavaScript to enable much richer AJAX functionality to be built.</p>
+
+<p>Download Full Source Code: <a rel="enclosure" href="/files/CreateAJAXExtenderControlUsingExtenderControlBaseClass.zip">CreateAJAXExtenderControlUsingExtenderControlBaseClass.zip (21.36 kb)</a></p>
+
+
+        
+      </article>
+
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+
+      <!--
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+      -->
+
+
+
+      
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+      <!--
+      
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+      
+        -->
+
+
+
+    </div>
+    <div class="col-md-4">
+      <div class="mb-3">
+    <script type="text/javascript"><!--
+        document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
+        // --></script>
+    </div>
+    
+    <!--
+    <div class="mb-3">
+    <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
+    </div>
+    -->
+
+    <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+    <div class="recent">
+    <h4>Recent Posts</h4>
+    <ul class="list-unstyled">
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions</a></h6>
+            <span class="small text-muted">01 Jul 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number</a></h6>
+            <span class="small text-muted">06 Apr 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/03/11/encryption-code-greater-than-guns-bombs">Encryption and Code are Greater Than Guns and Bombs</a></h6>
+            <span class="small text-muted">11 Mar 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/02/15/macos-monitor-cpu-usage-info">macOS: Monitor CPU Usage and Frequency Info</a></h6>
+            <span class="small text-muted">15 Feb 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/01/02/basics-javascript-class-inheritance">Basics of JavaScript Class Inheritance</a></h6>
+            <span class="small text-muted">02 Jan 2020</span>
+        </li>
+        
+    </ul>
+    </div>
+    
+    <!-- Amazon Affiliate Links -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=1593279507&asins=1593279507&linkId=dbae26993e5e47c31a6178fd13aed38f&show_border=true&link_opens_in_new_window=true"></iframe>
+
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0596517742&asins=0596517742&linkId=67c7a7145153fa5d61755acafc46fa56&show_border=true&link_opens_in_new_window=true"></iframe>
+    <!--
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0135957052&asins=0135957052&linkId=01a571b3e6c9fa1f7c90c5c8f7dfc583&show_border=true&link_opens_in_new_window=true"></iframe>
+    -->
+
+    <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=kuft&banner=07V9YHKS4HY556H67002&f=ifr&lc=pf4&linkID=4bb77e8255a5ef372bfab6cc5c160388&t=pietschsoft04-20&tracking_id=pietschsoft04-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+
+    <div class="related">
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+    </div>
+
+    <!--
+    <h4>Courses</h4>
+    <style>
+        .course-box {
+            margin-bottom: 1em;
+        }
+        .course-box img {
+            width: 95%;
+        }
+        .course-box > strong {
+            display: block;
+        }
+        .course-box > em {
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
+        </a>
+        <strong>
+            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+                The Complete JavaScript Course 2020: Build Real Projects!
+            </a>
+        </strong>
+        <em>by Jonas Schmedtmann</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            JavaScript Basics for Beginners
+        </a></strong>
+        <em>by Mosh Hamedani</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            Advanced JavaScript Concepts
+        </a></strong>
+        <em>by Andrei Neagoie</em>
+    </div>
+    -->
+
+    <h4>Legal Disclaimer</h4>
+    <p style="font-size=0.7em">This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+    
+    <div id="fixedadmarker"></div>
+    <div id="fixedad" class="mt-3">
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+    </div>
+    <style>
+    @media (min-width: 768px) {
+        .fixedad-float {
+            position: fixed;
+            top: 2.5em;
+        }
+    }
+    </style>
+    <script>
+    window.setInterval(function() {
+        var elem = $('#fixedadmarker'),
+            top = elem.offset().top || 0,
+            height = elem[0].offsetHeight || 0,
+            bottom = top + height,
+            scrollY = window.scrollY || 0,
+            elemToBeFixed = $('#fixedad');
+        if (scrollY >= bottom) {
+            elemToBeFixed.addClass('fixedad-float');
+        } else {
+            elemToBeFixed.removeClass('fixedad-float');
+        }
+    }, 100);
+    </script>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Chris Pietschmann</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/#awards">Microsoft MVP</a></li>
+        <li><a class="text-muted" href="/#books">Books</a></li>
+        <li><a class="text-muted" href="/#websites">Websites</a></li>
+        <li><a class="text-muted" href="/#experience">Experience</a></li>
+        <li><a class="text-muted" href="/talks">Talks</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Publications</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://build5nines.com" target="_blank">Build5Nines.com</a></li>
+        <li><a class="text-muted" href="https://www.hackster.io/crpietschmann/articles" target="_blank">Hackster.io</a></li>
+        <li><a class="text-muted" href="/blog">Pietschsoft.com</a></li>
+      </ul>
+      <h5>Social Media</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://twitter.com/crpietschmann" target="_blank">Twitter</a></li>
+        <li><a class="text-muted" href="http://linkedin.com/in/crpietschmann" target="_blank">LinkedIn</a></li>
+        <li><a class="text-muted" href="http://youtube.com/build5nines" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <img src="/images/buildazure-logo.png" alt="Build5Nines.com" style="height: 1.5em;"/>
+      <small class="d-block mb-3 text-muted">
+        Copyright © 2020 Chris Pietschmann. All rights reserved.
+      </small>
+      <small class="d-block mb-3 text-muted">
+        <strong>Legal Disclaimer</strong>
+        <p>This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+      </small>
+    </div>
+    <div class="col-12 col-md">
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script src="/scripts/prism/prism.js"></script>
+<link rel="stylesheet" href="/scripts/prism/prism.css" />
+
+<script src="/scripts/holder.js"></script>
+<script>
+Holder.addTheme('thumb', {
+  bg: '#55595c',
+  fg: '#eceeef',
+  text: 'Thumbnail'
+});
+</script>
+
+
+    <script type="text/javascript">
+    // Google Analytics
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1172995-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
+
+    <script type="text/javascript">
+    // Developer Media Ads
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+
+    // Google Analytics Track External Link Clicks
+    (function($) { if ($) {
+      $('a[href^=http]').click(function(){
+          if (_gaq && _gaq.push && !((this.href || '').startsWith('https://pietschsoft.com'))) {
+              _gaq.push(['_trackEvent','Link','External',this.href]);
+          }
+          return true;
+      });
+    }})(jQuery);
+    </script>
+  </body>
+</html>

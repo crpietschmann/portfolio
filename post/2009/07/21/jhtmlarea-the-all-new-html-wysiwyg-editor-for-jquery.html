@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>jHtmlArea - The all NEW HTML WYSIWYG Editor for jQuery | Chris Pietschmann</title>
+    <meta name="description" content="I have nearly 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+">
+    <meta name="author" content="Chris Pietschmann">
+    <link rel="icon" href="/images/avatar-chris-pietschmann-transparent.png">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="alternate" type="application/rss+xml" title="Chris Pietschmann &raquo; Archive" href="https://pietschsoft.com/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//css/site.css">
+    <link rel="canonical" href="http://pietschsoft.com//post/2009/07/21/jhtmlarea-the-all-new-html-wysiwyg-editor-for-jquery">
+</head>
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Bio</h4>
+          <p class="text-muted">
+            <a href="/">Chris Pietschmann</a> is a Microsoft MVP with <strong>Azure</strong> and <strong>IoT</strong> technologies, and a Microsoft Certified Trainer (MCT) with 20+ years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in Internet of Things (IoT), DevOps, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Publications</h4>
+          <ul class="list-unstyled">
+            <li><a href="/#books" class="text-white">Books</a></li>
+            <li><a href="https://build5nines.com" class="text-white">Build5Nines.com</a></li>
+            <li><a href="https://www.hackster.io/crpietschmann/articles" class="text-white">Hackster.io</a></li>
+            <li><a href="/blog" class="text-white">Pietschsoft.com</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/crpietschmann" class="text-white">Twitter</a></li>
+            <li><a href="http://linkedin.com/in/crpietschmann" class="text-white">LinkedIn</a></li>
+            <li><a href="https://build5nines.com/contact" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com Logo" style="height: 1.5em; margin-right: 0.5em;"/>-->
+        <img src="/images/avatar-chris-pietschmann-transparent.png" alt="Chris Pietschmann" style="background: #fff; height: 1.5em; margin-right: 0.5em;"/>
+        <strong>Chris Pietschmann</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container post">
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <header class="post-header">
+          <h1 class="post-title">jHtmlArea - The all NEW HTML WYSIWYG Editor for jQuery</h1>
+          <!--
+          <div class="post-categories">
+              
+              
+              <a href="//categories/#jHtmlArea">jHtmlArea</a>
+              &nbsp;
+              
+              <a href="//categories/#jQuery">jQuery</a>
+              &nbsp;
+              
+              <a href="//categories/#Open Source">Open Source</a>
+              
+              
+            </div>
+          -->
+          <p class="post-meta">Jul 21, 2009</p>
+      </header>
+
+      <article class="post-content">
+        
+            <!-- more -->
+
+<p><img src="/files/2009/7/Screenshot.png" alt="" width="298" height="402" align="right" /></p>
+
+<p>The last couple days I spent time working on a new simple, lightweight, extensible HTML WYSIWYG editor that’s built on top of jQuery. I know there are a ton of existing editors, but <a href="http://stackoverflow.com/questions/1141073/whats-the-best-wysiwyg-editor-for-use-with-jquery">I couldn’t seem to find any with a truely simple, lightweight design that allowed for really easy extensibility</a>, and that’s built on top of jQuery to take advantage of the cross-platform capabilities that jQuery has to offer. I feel that I’ve come up with a really nice HTML editor component that has some pretty usefull extensibility points. Allow me to introduce you to <a href="http://jhtmlarea.codeplex.com">jHTMLArea</a>.</p>
+
+<p>You can download jHtmlArea and some examples of using it over at the official project page on CodePlex: <a href="http://jhtmlarea.codeplex.com">http://jhtmlarea.codeplex.com</a></p>
+
+<p>To the right there’s a screenshot of two instances of jHtmlArea in action. The first one is using the “default” configuration, and the second uses a couple of different custom options, including a completely custom “Save” button that’s added using one of jHtmlArea’s extensibility points.</p>
+
+<h2 id="using-jhtmlarea-is-as-simple-as-123">Using jHtmlArea is As Simple As 1.2.3.</h2>
+
+<p>Follow these 3 steps and you’ll have jHtmlArea implemented within your application in no time.</p>
+
+<p><strong>1.</strong> Add a <code class="language-plaintext highlighter-rouge">&lt;TextArea&gt;</code> to your HTML page</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;textarea&gt;&lt;/textarea&gt;</span>
+</code></pre></div></div>
+
+<p><strong>2.</strong> Include the following files in your website:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">jHtmlArea.js</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">jHtmlArea.css</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">jHtmlArea.png</code></p>
+  </li>
+</ul>
+
+<p><strong>3.</strong> Add the following JavaScript code to your page to turn all <code class="language-plaintext highlighter-rouge">&lt;TextArea&gt;</code> elements into jHtmlArea’s:</p>
+
+<p>Include the jHtmlArea javascript file:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"jHtmlArea-0.6.0.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>Turn all TextArea’s into jHtmlArea’s:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">textarea</span><span class="dl">"</span><span class="p">).</span><span class="nx">htmlarea</span><span class="p">();</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>It can be as simple as that to use jHtmlArea within your pages to turn any TextArea DOM Elements into nice jHtmlArea WYSIWYG Editors.</p>
+
+<h2 id="easily-configure-toolbar-buttons">Easily Configure Toolbar Buttons</h2>
+
+<p>jHtmlArea makes it extremely simple to define your own custom set of Toolbar buttons; just in case you don’t want to show the full set of “default” buttons.</p>
+
+<p>You can easily specify them by name within an array that’s passed in as one of the options specified when you call the <code class="language-plaintext highlighter-rouge">htmlarea</code> method:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">#txtCustomHtmlArea</span><span class="dl">"</span><span class="p">).</span><span class="nx">htmlarea</span><span class="p">({</span>
+    <span class="na">toolbar</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">bold</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">italic</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">underline</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">|</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">h1</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">h2</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">h3</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">h4</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">h5</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">h6</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">|</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">link</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">unlink</span><span class="dl">"</span><span class="p">]</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>This example will specify the same buttons displayed in the lower screenshot to the right; minus the “Save” button on the far right of the toolbar. I’ll show you how to add this button in the next example.</p>
+
+<h2 id="add-custom-toolbar-buttons">Add Custom Toolbar Buttons</h2>
+
+<p>One of the extensibility points that I was wanting to have in an HTML WYSIWYG editor is the ability to easily add any custom buttons to the toolbar. For instance, some times it may be nice to have a “Save” button in the toolbar to allow your users to easily save the contents of the editor.</p>
+
+<p>Here’s an example using the above “custom” toolbar buttons list, with a custom “Save” button added:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">#txtCustomHtmlArea</span><span class="dl">"</span><span class="p">).</span><span class="nx">htmlarea</span><span class="p">({</span>
+    <span class="na">toolbar</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">bold</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">italic</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">underline</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">|</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">h1</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">h2</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">h3</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">h4</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">h5</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">h6</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">|</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">link</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">unlink</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">|</span><span class="dl">"</span><span class="p">,</span>
+        <span class="c1">// This is how to add a completely custom Toolbar Button</span>
+        <span class="p">{</span>
+            <span class="c1">// The CSS Class to assign the Button &lt;a&gt; tag</span>
+            <span class="na">css</span><span class="p">:</span> <span class="dl">"</span><span class="s2">custom_disk_button</span><span class="dl">"</span><span class="p">,</span>
+
+            <span class="c1">// The Text to display in the buttons alt text / tooltip</span>
+            <span class="na">text</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Save</span><span class="dl">"</span><span class="p">,</span>
+
+            <span class="c1">// The function to execute when the button is clicked</span>
+            <span class="na">action</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">btn</span><span class="p">)</span> <span class="p">{</span>
+                <span class="c1">// 'this' = jHtmlArea object</span>
+                <span class="c1">// 'btn' = jQuery object that represents the &lt;A&gt; "anchor" tag for the Toolbar Button</span>
+
+                <span class="nx">alert</span><span class="p">(</span><span class="dl">'</span><span class="s1">SAVE!</span><span class="se">\n\n</span><span class="dl">'</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">toHtmlString</span><span class="p">());</span>
+
+                <span class="c1">// Add any Ajax Code here to save the contents of the editor</span>
+
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Once the JavaScript code is entered to add the custom “Save” button, we then need to add the buttons display image to the website, and then include the necessary CSS to allow it to be displayed:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span><span class="nc">.jHtmlArea</span> <span class="nc">.ToolBar</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="nc">.custom_disk_button</span> 
+<span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="sx">url(images/disk.png)</span> <span class="nb">no-repeat</span><span class="p">;</span>
+    <span class="nl">background-position</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="localizing-the-editor">Localizing the Editor</h2>
+
+<p>Well, the jHtmlEditor currently only comes with English text for all the button names / tooltips. However, it is extremely simple to specify your own text to use when calling the “htmlarea” to create jHtmlArea editors within the page. You set the Text to be displayed for each button by referencing it by “name”. This is the same “name” that is used in the first example to specify which buttons are displayed in the toolbar.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">#txtCustomHtmlArea</span><span class="dl">"</span><span class="p">).</span><span class="nx">htmlarea</span><span class="p">({</span>
+    <span class="c1">// Override any of the toolbarText values - these are the Alt Text / Tooltips shown</span>
+    <span class="c1">// when the user hovers the mouse over the Toolbar Buttons</span>
+    <span class="c1">// Here are a couple translated to German, thanks to Google Translate.</span>
+    <span class="na">toolbarText</span><span class="p">:</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">({},</span> <span class="nx">jHtmlArea</span><span class="p">.</span><span class="nx">defaultOptions</span><span class="p">.</span><span class="nx">toolbarText</span><span class="p">,</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">bold</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">fett</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">italic</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">kursiv</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">underline</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">unterstreichen</span><span class="dl">"</span>
+        <span class="p">})</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="specify-css-file-to-be-used-by-the-editor">Specify CSS File to be used by the Editor</h2>
+
+<p>You can also specify a specify CSS file to be used within the Editor itself.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">#txtCustomHtmlArea</span><span class="dl">"</span><span class="p">).</span><span class="nx">htmlarea</span><span class="p">({</span>
+    <span class="na">css</span><span class="p">:</span> <span class="dl">"</span><span class="s2">style//jHtmlArea.Editor.css</span><span class="dl">"</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="specify-a-callback-when-the-editor-finishes-loading">Specify a Callback when the Editor Finishes Loading</h2>
+
+<p>It may be nice in some instances to get notified when the editor has finished loading in the page so you can perform some kind of action. This is also really simple to do.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">#txtCustomHtmlArea</span><span class="dl">"</span><span class="p">).</span><span class="nx">htmlarea</span><span class="p">({</span>
+    <span class="c1">// Do something once the editor has finished loading</span>
+    <span class="na">loaded</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">//// 'this' is equal to the jHtmlArea object</span>
+
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">jHtmlArea has loaded!</span><span class="dl">"</span><span class="p">);</span>
+
+        <span class="c1">//this.showHTMLView(); // show the HTML view once the editor has finished loading</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="call-any-jhtmlarea-object-methods-easily-from-jquery">Call any jHtmlArea object methods easily from jQuery</h2>
+
+<p>Another thing is that the jQuery object doesn’t directly expose the different jHtmlArea object’s methods. However, you can use the “htmlarea” method to call any of them you need to. All you need to do is specify the method by name that you want to call and pass any additional parameters to the “htmlarea” method and it’ll return the results.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Get the HTML string value from within the editor</span>
+<span class="kd">var</span> <span class="nx">html</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">#txtCustomHtmlArea</span><span class="dl">"</span><span class="p">).</span><span class="nx">htmlarea</span><span class="p">(</span><span class="dl">"</span><span class="s2">toHtmlString</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="c1">// Insert a specify Image that you want</span>
+<span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">#txtCustomHtmlArea</span><span class="dl">"</span><span class="p">).</span><span class="nx">htmlarea</span><span class="p">(</span><span class="dl">"</span><span class="s2">image</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">image.jpg</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>The jHtmlArea object has a few more methods, you can find out what they are by referencing the Visual Studio JavaScript Intellisense File (<code class="language-plaintext highlighter-rouge">jHtmlArea-0.5.0-vsdoc.js</code>) or the un-minified source code itself.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>As you can see the jHtmlEditor has some really simple extensibility points. I hope you enjoy using this editor as much as I do. Also, if you have any suggestions/issues, please go to the <a href="https://github.com/crpietschmann/jhtmlarea/issues">official jHtmlArea project’s Issue Tracker</a> and let me know.</p>
+
+        
+      </article>
+
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+
+      <!--
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+      -->
+
+
+
+      
+
+    
+    
+        
+            
+        
+    
+        
+            
+                
+                <h2 >
+                    Related Posts
+                </h2 >
+                <ul class="">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions
+                    
+                    </a></h6>
+                    <span class="small text-muted">01 Jul 2020</span>
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number
+                    
+                    </a></h6>
+                    <span class="small text-muted">06 Apr 2020</span>
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2020/01/02/basics-javascript-class-inheritance">Basics of JavaScript Class Inheritance
+                    
+                    </a></h6>
+                    <span class="small text-muted">02 Jan 2020</span>
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2019/07/24/call-functions-in-javascript">Call Functions in JavaScript
+                    
+                    </a></h6>
+                    <span class="small text-muted">24 Jul 2019</span>
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+    </ul>
+
+      <!--
+      
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+                      
+                      <h2>Related Posts</h2>
+                      <ul>
+                      
+                      <li class="relatedPost">
+                          <a href="http://pietschsoft.com/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions
+                          
+                          </a>
+                      </li>
+                      
+                      
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+                      
+                      <li class="relatedPost">
+                          <a href="http://pietschsoft.com/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number
+                          
+                          </a>
+                      </li>
+                      
+                      
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+                      
+                      <li class="relatedPost">
+                          <a href="http://pietschsoft.com/post/2020/01/02/basics-javascript-class-inheritance">Basics of JavaScript Class Inheritance
+                          
+                          </a>
+                      </li>
+                      
+                      
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+                      
+                      <li class="relatedPost">
+                          <a href="http://pietschsoft.com/post/2019/07/24/call-functions-in-javascript">Call Functions in JavaScript
+                          
+                          </a>
+                      </li>
+                      
+                      
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+          
+      
+      
+          </ul>
+      
+        -->
+
+
+
+    </div>
+    <div class="col-md-4">
+      <div class="mb-3">
+    <script type="text/javascript"><!--
+        document.write('<center><div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div></center>');
+        // --></script>
+    </div>
+    
+    <!--
+    <div class="mb-3">
+    <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
+    </div>
+    -->
+
+    <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+    <div class="recent">
+    <h4>Recent Posts</h4>
+    <ul class="list-unstyled">
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions</a></h6>
+            <span class="small text-muted">01 Jul 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number</a></h6>
+            <span class="small text-muted">06 Apr 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/03/11/encryption-code-greater-than-guns-bombs">Encryption and Code are Greater Than Guns and Bombs</a></h6>
+            <span class="small text-muted">11 Mar 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/02/15/macos-monitor-cpu-usage-info">macOS: Monitor CPU Usage and Frequency Info</a></h6>
+            <span class="small text-muted">15 Feb 2020</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2020/01/02/basics-javascript-class-inheritance">Basics of JavaScript Class Inheritance</a></h6>
+            <span class="small text-muted">02 Jan 2020</span>
+        </li>
+        
+    </ul>
+    </div>
+    
+    <!-- Amazon Affiliate Links -->
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=1593279507&asins=1593279507&linkId=dbae26993e5e47c31a6178fd13aed38f&show_border=true&link_opens_in_new_window=true"></iframe>
+
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0596517742&asins=0596517742&linkId=67c7a7145153fa5d61755acafc46fa56&show_border=true&link_opens_in_new_window=true"></iframe>
+    <!--
+    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pietschsoft04-20&language=en_US&marketplace=amazon&region=US&placement=0135957052&asins=0135957052&linkId=01a571b3e6c9fa1f7c90c5c8f7dfc583&show_border=true&link_opens_in_new_window=true"></iframe>
+    -->
+
+    <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=kuft&banner=07V9YHKS4HY556H67002&f=ifr&lc=pf4&linkID=4bb77e8255a5ef372bfab6cc5c160388&t=pietschsoft04-20&tracking_id=pietschsoft04-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+
+    <div class="related">
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+                
+                <h4>
+                    Related Posts
+                </h4>
+                <ul class="list-unstyled">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions
+                    
+                    </a></h6>
+                    <span class="small text-muted">01 Jul 2020</span>
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2020/04/06/javascript-convert-string-to-number">JavaScript: Convert String to Number
+                    
+                    </a></h6>
+                    <span class="small text-muted">06 Apr 2020</span>
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2020/01/02/basics-javascript-class-inheritance">Basics of JavaScript Class Inheritance
+                    
+                    </a></h6>
+                    <span class="small text-muted">02 Jan 2020</span>
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2019/07/24/call-functions-in-javascript">Call Functions in JavaScript
+                    
+                    </a></h6>
+                    <span class="small text-muted">24 Jul 2019</span>
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+
+
+    </ul>
+
+    </div>
+
+    <!--
+    <h4>Courses</h4>
+    <style>
+        .course-box {
+            margin-bottom: 1em;
+        }
+        .course-box img {
+            width: 95%;
+        }
+        .course-box > strong {
+            display: block;
+        }
+        .course-box > em {
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
+        </a>
+        <strong>
+            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+                The Complete JavaScript Course 2020: Build Real Projects!
+            </a>
+        </strong>
+        <em>by Jonas Schmedtmann</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            JavaScript Basics for Beginners
+        </a></strong>
+        <em>by Mosh Hamedani</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            Advanced JavaScript Concepts
+        </a></strong>
+        <em>by Andrei Neagoie</em>
+    </div>
+    -->
+
+    <h4>Legal Disclaimer</h4>
+    <p style="font-size=0.7em">This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+    
+    <div id="fixedadmarker"></div>
+    <div id="fixedad" class="mt-3">
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+    </div>
+    <style>
+    @media (min-width: 768px) {
+        .fixedad-float {
+            position: fixed;
+            top: 2.5em;
+        }
+    }
+    </style>
+    <script>
+    window.setInterval(function() {
+        var elem = $('#fixedadmarker'),
+            top = elem.offset().top || 0,
+            height = elem[0].offsetHeight || 0,
+            bottom = top + height,
+            scrollY = window.scrollY || 0,
+            elemToBeFixed = $('#fixedad');
+        if (scrollY >= bottom) {
+            elemToBeFixed.addClass('fixedad-float');
+        } else {
+            elemToBeFixed.removeClass('fixedad-float');
+        }
+    }, 100);
+    </script>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Chris Pietschmann</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/#awards">Microsoft MVP</a></li>
+        <li><a class="text-muted" href="/#books">Books</a></li>
+        <li><a class="text-muted" href="/#websites">Websites</a></li>
+        <li><a class="text-muted" href="/#experience">Experience</a></li>
+        <li><a class="text-muted" href="/talks">Talks</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Publications</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://build5nines.com" target="_blank">Build5Nines.com</a></li>
+        <li><a class="text-muted" href="https://www.hackster.io/crpietschmann/articles" target="_blank">Hackster.io</a></li>
+        <li><a class="text-muted" href="/blog">Pietschsoft.com</a></li>
+      </ul>
+      <h5>Social Media</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://twitter.com/crpietschmann" target="_blank">Twitter</a></li>
+        <li><a class="text-muted" href="http://linkedin.com/in/crpietschmann" target="_blank">LinkedIn</a></li>
+        <li><a class="text-muted" href="http://youtube.com/build5nines" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <img src="/images/buildazure-logo.png" alt="Build5Nines.com" style="height: 1.5em;"/>
+      <small class="d-block mb-3 text-muted">
+        Copyright © 2020 Chris Pietschmann. All rights reserved.
+      </small>
+      <small class="d-block mb-3 text-muted">
+        <strong>Legal Disclaimer</strong>
+        <p>This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+      </small>
+    </div>
+    <div class="col-12 col-md">
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script src="/scripts/prism/prism.js"></script>
+<link rel="stylesheet" href="/scripts/prism/prism.css" />
+
+<script src="/scripts/holder.js"></script>
+<script>
+Holder.addTheme('thumb', {
+  bg: '#55595c',
+  fg: '#eceeef',
+  text: 'Thumbnail'
+});
+</script>
+
+
+    <script type="text/javascript">
+    // Google Analytics
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1172995-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
+
+    <script type="text/javascript">
+    // Developer Media Ads
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+
+    // Google Analytics Track External Link Clicks
+    (function($) { if ($) {
+      $('a[href^=http]').click(function(){
+          if (_gaq && _gaq.push && !((this.href || '').startsWith('https://pietschsoft.com'))) {
+              _gaq.push(['_trackEvent','Link','External',this.href]);
+          }
+          return true;
+      });
+    }})(jQuery);
+    </script>
+  </body>
+</html>
