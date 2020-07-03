@@ -18,13 +18,18 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+ 
+    - name: Sass Build - main.css
+      uses: gha-utilities/sass-build@v0.2.5
+      with:
+        source: _site/css/main.scss
+        destination: _sites/css/main.css
         
-        echo "github workspace"
-        echo ${{ github.workspace }}
-        
-    - name: List Files
-      run: |
-        ls _site
+    - name: Sass Build - site.css
+      uses: gha-utilities/sass-build@v0.2.5
+      with:
+        source: _site/css/site.scss
+        destination: _sites/css/site.css
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
