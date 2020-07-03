@@ -34,9 +34,9 @@ redirect_from:
     {% for post in site.categories[category_name] %}
         <p>
             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <h2>
+            <h3>
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
+            </h3>
         </p>
     {% endfor %}
   </div>
