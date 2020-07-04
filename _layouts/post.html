@@ -26,9 +26,9 @@ layout: default
 
       <article class="post-content">
         {% if content contains "<!-- ad -->" %}
-        {{ content | split:"<!-- ad -->" | first % }}
+        {{ content | split:"<!-- ad -->" | first }}
             {% include embedad.html %}
-        {{ content | split:"<!-- ad -->" | last % }}
+        {{ content | split:"<!-- ad -->" | last }}
         {% else %}
             {{ content }}
         {% endif %}
