@@ -16,7 +16,8 @@ jobs:
     - name: Clearn JSON
       run: |
         find _data/ -name '*.json' -exec sed -i '' -e 's/\\\//\//g' {} \;
-        
+      working-directory: ${{ github.workspace }}
+
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
