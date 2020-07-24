@@ -37,6 +37,18 @@
     {% include related_posts.html htag="h4" ul_class="list-unstyled" %}
     </div>
 
+    <div class="recent">
+        <h2>Recent on Build5Nines.com</h2>
+        <ul class="list-unstyled">
+        {% for post in site.data.latest_posts_build5nines limit:4 %}
+            <li class="mb-3">
+                <h6 class="mb-0"><a href="{{ post.link }}">{{ post.title.rendered }}</a></h6>
+                <span class="small text-muted">{{ post.date | date_to_string }}</span>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+
     <!--
     <h4>Courses</h4>
     <style>

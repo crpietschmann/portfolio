@@ -14,10 +14,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Download Latest JSON Feed for Chris Pietschmann
-      run: |
-        curl https://build5nines.com/wp-json/wp/v2/posts?author=2 --output ./latest_posts_build5nines.json
-      working-directory: ${{ github.workspace }}/_data
+    #- name: Download Latest JSON Feed for Chris Pietschmann
+    #  run: |
+    #    curl https://build5nines.com/wp-json/wp/v2/posts?author=2 --output ./latest_posts_build5nines.json
+    #  working-directory: ${{ github.workspace }}/_data
 
     - name: Clean JSON
       run: |
