@@ -13,6 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Clearn JSON
+      run: |
+        find _data/ -name '*.json' -exec sed -i '' -e 's/\\\//\//g' {} \;
+        
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
