@@ -18,7 +18,7 @@ jobs:
         #https://github.com/mdlincoln/jekyll-slack
         #find _data/ -name '*.json' -exec sed -i '' -e 's/\\\//\//g' {} \;
 
-        sed -i "latest_posts_build5nines.json" -e 's/\\\//\//g'
+        sed -i "_data/latest_posts_build5nines.json" -e 's/\\\//\//g'
       working-directory: ${{ github.workspace }}
 
     - name: Build the site in the jekyll/builder container
