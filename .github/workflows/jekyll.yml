@@ -25,11 +25,10 @@ jobs:
         sed -i 's/\\[a-z,A-Z,0-9]{5}//g' latest_posts_build5nines.json
         iconv -c -f utf-8 -t ascii latest_posts_build5nines.json >> latest_posts_build5nines.json # remove unicode characters
         # sed -i "latest_posts_build5nines.json" -e 's/\\\//\//g' latest_posts_build5nines.json
-      working-directory: ${{ github.workspace }}
 
-    - name: Output JSON
-      run: |
-        cat ./_data/latest_posts_build5nines.json
+        cat latest_posts_build5nines.json
+      working-directory: ${{ github.workspace }}
+        
 
     - name: Build the site in the jekyll/builder container
       run: |
