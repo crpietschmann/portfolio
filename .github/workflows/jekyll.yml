@@ -19,7 +19,7 @@ jobs:
         #find _data/ -name '*.json' -exec sed -i '' -e 's/\\\//\//g' {} \;
 
         cd _data
-        iconv -c -f utf-8 -t ascii latest_posts_build5nines.json # remove unicode characters
+        iconv -c -f utf-8 -t ascii latest_posts_build5nines.json >> latest_posts_build5nines.json # remove unicode characters
         sed -i "latest_posts_build5nines.json" -e 's/\\\//\//g' latest_posts_build5nines.json
       working-directory: ${{ github.workspace }}
 
