@@ -21,6 +21,20 @@ jobs:
         curl https://build5nines.com/wp-json/wp/v2/posts?author=2 --output ./latest_posts_build5nines.json
       working-directory: ${{ github.workspace }}/_data
  
+    - name: Clean JSON
+      run: |
+        #https://github.com/mdlincoln/jekyll-slack
+        #https://www.cyberciti.biz/faq/how-to-use-sed-to-find-and-replace-text-in-files-in-linux-unix-shell/
+
+        # remove unicode characters from JSON
+        iconv -c -f utf-8 -t ascii latest_posts_build5nines.json >> latest_posts_build5nines.json # remove unicode characters
+
+        sed -i 's/\\u[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]//g' latest_posts_build5nines.json
+        sed -i 's/\\\//\//g' latest_posts_build5nines.json
+        
+        #cat latest_posts_build5nines.json
+      working-directory: ${{ github.workspace }}/_data
+
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
