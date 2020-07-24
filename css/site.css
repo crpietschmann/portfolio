@@ -6,9 +6,9 @@
 
 .container.highlight { background-color: #0c71c3; color: #fdfdfd; }
 
-blockquote { background: #f8f8f8; border: solid 0.1em #f8f8f8; border-left: solid 0.3em #0c71c3; padding: 0.3em; padding-left: 0.5em; size: 1.1em; font-weight: 700; }
+blockquote { background: #f8f8f8; border: solid 0.1em #f8f8f8; border-left: solid 0.3em #0c71c3; padding: 0.3em; padding-left: 0.5em; size: 1.1em; font-weight: 500; }
 
-blockquote strong { font-weight: 900; }
+blockquote strong { font-weight: 700; }
 
 blockquote > p { margin: 0; }
 
