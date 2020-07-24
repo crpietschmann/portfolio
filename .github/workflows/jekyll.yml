@@ -27,18 +27,18 @@ jobs:
         # remove unicode characters from JSON
         iconv -c -f utf-8 -t ascii latest_posts_build5nines.json >> latest_posts_build5nines.json # remove unicode characters
 
-        sed -i 's/\\u00a0/ /g' latest_posts_build5nines.json
-        sed -i 's/\\u00f3n/ /g' latest_posts_build5nines.json
-        sed -i 's/\\u2019s//g' latest_posts_build5nines.json
-        sed -i 's/\\u2026//g' latest_posts_build5nines.json
-        sed -i 's/\\u2013//g' latest_posts_build5nines.json
-        sed -i 's/\\u2018/"/g' latest_posts_build5nines.json
-        sed -i 's/\\u2019/"/g' latest_posts_build5nines.json
-        sed -i 's/\\ud83c/"/g' latest_posts_build5nines.json
-        sed -i 's/\\udf80/"/g' latest_posts_build5nines.json
+        #sed -i 's/\\u00a0/ /g' latest_posts_build5nines.json
+        #sed -i 's/\\u00f3n/ /g' latest_posts_build5nines.json
+        #sed -i 's/\\u2019s//g' latest_posts_build5nines.json
+        #sed -i 's/\\u2026//g' latest_posts_build5nines.json
+        #sed -i 's/\\u2013//g' latest_posts_build5nines.json
+        #sed -i 's/\\u2018/"/g' latest_posts_build5nines.json
+        #sed -i 's/\\u2019/"/g' latest_posts_build5nines.json
+        #sed -i 's/\\ud83c/"/g' latest_posts_build5nines.json
+        #sed -i 's/\\udf80/"/g' latest_posts_build5nines.json
 
-        sed -i 's/\\\[a-z,A-Z,0-9]{5}//g' latest_posts_build5nines.json
-        sed -i 's/\\u([a-z,A-Z,0-9]{4})//g' latest_posts_build5nines.json
+        #sed -i 's/\\\[a-zA-Z0-9]{5}//g' latest_posts_build5nines.json
+        sed -i 's/\\u([a-zA-Z0-9]{4})//g' latest_posts_build5nines.json
         sed -i 's/\\\//\//g' latest_posts_build5nines.json
 
         cat latest_posts_build5nines.json
