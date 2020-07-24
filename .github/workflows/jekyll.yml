@@ -27,6 +27,10 @@ jobs:
         # sed -i "latest_posts_build5nines.json" -e 's/\\\//\//g' latest_posts_build5nines.json
       working-directory: ${{ github.workspace }}
 
+    - name: Output JSON
+      run: |
+        cat ./_data/latest_posts_build5nines.json
+
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
