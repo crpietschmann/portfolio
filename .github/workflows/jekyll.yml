@@ -38,9 +38,9 @@ jobs:
         #sed -i 's/\\udf80/"/g' latest_posts_build5nines.json
 
         #sed -i 's/\\\[a-zA-Z0-9]{5}//g' latest_posts_build5nines.json
-        sed -i 's/\\u([a-zA-Z0-9]{4})//g' latest_posts_build5nines.json
+        sed -i 's/\\u[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]//g' latest_posts_build5nines.json
         sed -i 's/\\\//\//g' latest_posts_build5nines.json
-
+        
         cat latest_posts_build5nines.json
       working-directory: ${{ github.workspace }}/_data
         
