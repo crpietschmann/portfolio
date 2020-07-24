@@ -133,6 +133,19 @@ redirect_from:
     <p class="mt-5"><a href="/blog">View full post list</a></p>
 </div>
 
+<span id="build5nines"></span>
+<div class="container">
+    <h2>Recent Posts on Build5Nines.com</h2>
+    <div class="row">
+      {% for post in site.data.latest_posts_build5nines limit:6 %}
+        <div class="col-md-6 mb-2">
+            <h6 class="mb-0"><a href="{{ post.link }}">{{ post.title.rendered }}</a></h6>
+            <span class="small text-muted">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
+      {% endfor %}
+    </div>
+</div>
+
 <span id="experience"></span>
 <div class="container">
   <h2>Work Experience</h2>
