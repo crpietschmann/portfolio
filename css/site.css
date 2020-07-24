@@ -4,9 +4,9 @@
 
 .container.lowlight { background-color: #e8e8e8; }
 
-.container.highlight { background-color: #305ec0; color: #fdfdfd; }
+.container.highlight { background-color: #0c71c3; color: #fdfdfd; }
 
-blockquote { background: white; border: solid 0.1em #e8e8e8; border-left: solid 0.3em #305ec0; padding: 0.3em; padding-left: 0.5em; size: 1.1em; }
+blockquote { background: #f8f8f8; border: solid 0.1em #e8e8e8; border-left: solid 0.3em #0c71c3; padding: 0.3em; padding-left: 0.5em; size: 1.1em; }
 
 blockquote > p { margin: 0; }
 
@@ -53,7 +53,7 @@ blockquote > p { margin: 0; }
 
 .post-content img { max-width: 100%; }
 
-.post table th { background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(/images/background-buildazure-logo-blue.png), #305ec0; color: #fff; border: solid 0.1em rgba(0, 0, 0, 0.5); }
+.post table th { background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(/images/background-buildazure-logo-blue.png), #0c71c3; color: #fff; border: solid 0.1em rgba(0, 0, 0, 0.5); }
 
 .post table td { border: solid 0.1em rgba(0, 0, 0, 0.5); }
 
