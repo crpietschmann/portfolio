@@ -20,7 +20,7 @@ The **Activity Monitor** application is built into macOS, and it is pretty much 
 
 ![macOS Activity Monitor screenshot](/images/posts/2020-02-15-macos-monitor-cpu-usage-info/macos-activity-monitor.jpg "macOS Activity Monitor screenshot")
 
-You can also click on the **Window** menu and select options to view the CPU Usage, CPU History, and GPU History in separate windows. This will help give you insights into you current overall CPU utlization.
+You can also click on the **Window** menu and select options to view the CPU Usage, CPU History, and GPU History in separate windows. This will help give you insights into you current overall CPU utilization.
 
 ![macOS Activity Monitor CPU & GPU usage screenshot](/images/posts/2020-02-15-macos-monitor-cpu-usage-info/macos-activity-monitor-cpu-gpu-history.jpg "macOS Activity Monitor CPU & GPU usage screenshot")
 
