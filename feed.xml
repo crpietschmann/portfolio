@@ -6,8 +6,8 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 24 Jul 2020 17:28:41 -0500</pubDate>
-    <lastBuildDate>Fri, 24 Jul 2020 17:28:41 -0500</lastBuildDate>
+    <pubDate>Wed, 29 Jul 2020 22:31:02 -0500</pubDate>
+    <lastBuildDate>Wed, 29 Jul 2020 22:31:02 -0500</lastBuildDate>
     <generator>Jekyll v4.1.0</generator>
     
       <item>
@@ -345,7 +345,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/images/posts/2020-02-15-macos-monitor-cpu-usage-info/macos-activity-monitor.jpg&quot; alt=&quot;macOS Activity Monitor screenshot&quot; title=&quot;macOS Activity Monitor screenshot&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;You can also click on the &lt;strong&gt;Window&lt;/strong&gt; menu and select options to view the CPU Usage, CPU History, and GPU History in separate windows. This will help give you insights into you current overall CPU utlization.&lt;/p&gt;
+&lt;p&gt;You can also click on the &lt;strong&gt;Window&lt;/strong&gt; menu and select options to view the CPU Usage, CPU History, and GPU History in separate windows. This will help give you insights into you current overall CPU utilization.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/posts/2020-02-15-macos-monitor-cpu-usage-info/macos-activity-monitor-cpu-gpu-history.jpg&quot; alt=&quot;macOS Activity Monitor CPU &amp;amp; GPU usage screenshot&quot; title=&quot;macOS Activity Monitor CPU &amp;amp; GPU usage screenshot&quot; /&gt;&lt;/p&gt;
 
