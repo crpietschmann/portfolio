@@ -42,7 +42,7 @@
         <ul class="list-unstyled">
         {% for post in site.data.latest_posts_build5nines limit:5 %}
             <li class="mb-3">
-                <a href="{{ post.link }}"></a><img src="{{ post.img.src }}" alt="{{ post.title }}"/></a>
+                <a href="{{ post.link }}"></a><img src="{{ post.jetpack_featured_media_url }}" alt="{{ post.title.rendered }}"/></a>
                 <h6 class="mb-0"><a href="{{ post.link }}">{{ post.title.rendered }}</a></h6>
                 <span class="small text-muted">{{ post.date | date_to_string }}</span>
             </li>
