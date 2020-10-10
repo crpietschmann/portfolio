@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>.NET: How to Alias Namespaces and Data Types | Chris Pietschmann</title>
+    <title>.NET: How to Alias Namespaces and Data Types (C# and Visual Basic .NET) | Chris Pietschmann</title>
     <meta name="description" content="I have 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
 ">
     <meta name="author" content="Chris Pietschmann">
@@ -71,7 +71,7 @@
     <div class="col-12 col-md-8">
 
       <header class="post-header">
-          <h1 class="post-title">.NET: How to Alias Namespaces and Data Types</h1>
+          <h1 class="post-title">.NET: How to Alias Namespaces and Data Types (C# and Visual Basic .NET)</h1>
           <!--
           <div class="post-categories">
               
@@ -89,55 +89,70 @@
             <!-- more -->
 
 <p>One of the little known features of .NET is that you can give complete namespaces and data types alias’s that you can reference them with in code.</p>
-<h3>Aliasing Data Types</h3>
+
+<h2 id="aliasing-data-types">Aliasing Data Types</h2>
 
 <p>For this example we’ll give a different name to the integer data type:</p>
 
 <p>In VB.NET:</p>
 
-<p>Imports MyInteger = System.Int32;</p>
+<div class="language-vb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">Imports</span> <span class="nn">MyInteger</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="n">Int32</span><span class="err">;</span>
+</code></pre></div></div>
 
 <p>In C#:</p>
 
-<p>using MyInteger = System.Int32;</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">MyInteger</span> <span class="p">=</span> <span class="n">System</span><span class="p">.</span><span class="n">Int32</span><span class="p">;</span>
+</code></pre></div></div>
 
 <p>Now to use the alias in code:</p>
 
 <p>In VB.NET:</p>
 
-<p>Public myVariable As MyInteger = 4;</p>
+<div class="language-vb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">Public</span> <span class="n">myVariable</span> <span class="ow">As</span> <span class="n">MyInteger</span> <span class="o">=</span> <span class="mi">4</span><span class="err">;</span>
+</code></pre></div></div>
 
 <p>In C#:</p>
 
-<p>MyInteger myVariable = 4;</p>
-<h3>Aliasing Namespaces</h3>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">MyInteger</span> <span class="n">myVariable</span> <span class="p">=</span> <span class="m">4</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="aliasing-namespaces">Aliasing Namespaces</h3>
 
 <p>For this example, lets assume we want to use an alias to rename the System namespace to Sys to its easier to type.</p>
 
 <p>In VB.NET:</p>
 
-<p>Imports Sys = System;</p>
+<div class="language-vb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">Imports</span> <span class="nn">Sys</span> <span class="o">=</span> <span class="n">System</span><span class="err">;</span>
+</code></pre></div></div>
 
 <p>In C#</p>
 
-<p>using Sys = System;</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">Sys</span> <span class="p">=</span> <span class="n">System</span><span class="p">;</span>
+</code></pre></div></div>
 
 <p>With the above alias in place, you can change this:</p>
 
-<p>System.Int32 myInt = 4;</p>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">System</span><span class="p">.</span><span class="n">Int32</span> <span class="n">myInt</span> <span class="p">=</span> <span class="m">4</span><span class="p">;</span>
+</code></pre></div></div>
 
 <p>Into this:</p>
 
-<p>Sys.Int32 myInt = 4;</p>
-<h3>Usage Tips</h3>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Sys</span><span class="p">.</span><span class="n">Int32</span> <span class="n">myInt</span> <span class="p">=</span> <span class="m">4</span><span class="p">;</span>
+</code></pre></div></div>
 
-<p><strong>Usage #1:</strong> A good use of aliasing would be when you are working on a large project and you are dependant on another developer to finish their class or namespace before you can comlete a piece of your code. You can create “dummy” or stub objects and namespaces of your own and them give them an alias that is what the actual name will be when the other developer is finished. Then when they’re finished, you can just take out your alias’s and include their namespaces and everything will work fine. This trick allows you to still keep coding and successfully compiling without exceptions caused by the namespaces or objects not existing.</p>
+<h2 id="usage-tips">Usage Tips</h2>
 
-<p>**Usage #2: **Another good use of aliasing would be if you are using Int32 in your code now, but you want to make it easier to switch to Double or Int64. Using aliasing allows you to change one line of code to change the data type that is being used.</p>
+<h3 id="usage-1">Usage #1</h3>
 
-<p><strong>Usage #3:</strong> The last usage tip and probably the best one, is to use aliasing to eliminate the confusion of Ambiguous data types when using multiple namespaces each having objects with the same name. This way you wont have to type out the entire namespace when using the ambiguous objects.</p>
+<p>A good use of aliasing would be when you are working on a large project and you are dependant on another developer to finish their class or namespace before you can complete a piece of your code. You can create “dummy” or stub objects and namespaces of your own and them give them an alias that is what the actual name will be when the other developer is finished. Then when they’re finished, you can just take out your alias’s and include their namespaces and everything will work fine. This trick allows you to still keep coding and successfully compiling without exceptions caused by the namespaces or objects not existing.</p>
 
-<p><a href="http://www.dotnetkicks.com/kick/?url=http%3a//pietschsoft.com/Blog/Post.aspx%3fPostID%3d1426"><img src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http%3a//pietschsoft.com/Blog/Post.aspx%3fPostID%3d1426&amp;bgcolor=0099FF" border="0" alt="kick it on DotNetKicks.com" /></a></p>
+<h3 id="usage-2">Usage #2</h3>
+
+<p>Another good use of aliasing would be if you are using Int32 in your code now, but you want to make it easier to switch to Double or Int64. Using aliasing allows you to change one line of code to change the data type that is being used.</p>
+
+<h3 id="usage-3">Usage #3</h3>
+
+<p>The last usage tip and probably the best one, is to use aliasing to eliminate the confusion of Ambiguous data types when using multiple namespaces each having objects with the same name. This way you wont have to type out the entire namespace when using the ambiguous objects.</p>
 
         
       </article>
