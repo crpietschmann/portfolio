@@ -6,9 +6,26 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 08 Oct 2020 08:52:16 -0500</pubDate>
-    <lastBuildDate>Thu, 08 Oct 2020 08:52:16 -0500</lastBuildDate>
+    <pubDate>Sat, 10 Oct 2020 10:51:31 -0500</pubDate>
+    <lastBuildDate>Sat, 10 Oct 2020 10:51:31 -0500</lastBuildDate>
     <generator>Jekyll v4.1.0</generator>
+    
+      <item>
+        <title>On Finding a Business Partner</title>
+        <description>&lt;p&gt;To find a business partner, or go it alone. This is a rather monumental question to answer when looking to start a business. There are benefits to each, and certainly drawbacks of each as well. Over the years, with multiple startups, I’ve done both paths. I’ve seen the struggles of going it alone, and I’ve seen the struggles of how a business partner relationship can go the wrong way.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 10 Oct 2020 08:36:00 -0500</pubDate>
+        <link>http://pietschsoft.com//post/2020/10/10/on-finding-a-business-partner</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2020/10/10/on-finding-a-business-partner</guid>
+        
+        <category>Tips</category>
+        
+        <category>Business</category>
+        
+        
+        <category>Business</category>
+        
+      </item>
     
       <item>
         <title>Loop through JavaScript Arrays using for, forEach, and map functions</title>
@@ -183,27 +200,6 @@
         <pubDate>Mon, 01 Jul 2019 02:50:00 -0500</pubDate>
         <link>http://pietschsoft.com//post/2019/07/01/Chris-Pietschmann-Awarded-2019-Microsoft-MVP-Award</link>
         <guid isPermaLink="true">http://pietschsoft.com//post/2019/07/01/Chris-Pietschmann-Awarded-2019-Microsoft-MVP-Award</guid>
-        
-        <category>Azure</category>
-        
-        
-        <category>Microsoft MVP</category>
-        
-        <category>Azure</category>
-        
-      </item>
-    
-      <item>
-        <title>(Cross Post) Chris Pietschmann Awarded 2018 Microsoft MVP Award</title>
-        <description>&lt;!-- more --&gt;
-&lt;p class=&quot;no-underline&quot; style=&quot;box-sizing: border-box; border: 0px; font-family: 'Segoe UI', 'Open Sans', sans-serif; font-size: 19px; margin: 0px 0px 1.4em; outline: 0px; padding: 0px; vertical-align: baseline; caret-color: #343e47; color: #343e47;&quot;&gt;&lt;img class=&quot;alignright wp-image-2187&quot; style=&quot;box-sizing: border-box; height: auto; max-width: 100%; display: inline; float: right; margin: 0.5em 0px 1.5em 2em;&quot; src=&quot;https://i0.wp.com/buildazure.com/wp-content/uploads/2015/06/mvp_logo_horizontal_preferred_cyan300_rgb_300ppi.png?zoom=2&amp;amp;resize=200%2C81&amp;amp;ssl=1&quot; alt=&quot;&quot; width=&quot;200&quot; height=&quot;81&quot; data-attachment-id=&quot;2187&quot; data-permalink=&quot;https://buildazure.com/about/mvp_logo_horizontal_preferred_cyan300_rgb_300ppi/&quot; data-orig-file=&quot;https://i0.wp.com/buildazure.com/wp-content/uploads/2015/06/mvp_logo_horizontal_preferred_cyan300_rgb_300ppi.png?fit=751%2C303&amp;amp;ssl=1&quot; data-orig-size=&quot;751,303&quot; data-comments-opened=&quot;1&quot; data-image-meta=&quot;{&amp;quot;aperture&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;credit&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;camera&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;caption&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_timestamp&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;copyright&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;focal_length&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;iso&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;shutter_speed&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;title&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;orientation&amp;quot;:&amp;quot;0&amp;quot;}&quot; data-image-title=&quot;mvp_logo_horizontal_preferred_cyan300_rgb_300ppi&quot; data-image-description=&quot;&quot; data-medium-file=&quot;https://i0.wp.com/buildazure.com/wp-content/uploads/2015/06/mvp_logo_horizontal_preferred_cyan300_rgb_300ppi.png?fit=300%2C121&amp;amp;ssl=1&quot; data-large-file=&quot;https://i0.wp.com/buildazure.com/wp-content/uploads/2015/06/mvp_logo_horizontal_preferred_cyan300_rgb_300ppi.png?fit=751%2C303&amp;amp;ssl=1&quot; /&gt;Hi! My name is Chris Pietschmann, and I&amp;rsquo;m the primary person behind BuildAzure.com and the Build Azure Weekly newsletter. I started BuildAzure.com back in June 2015 after I passed the &lt;a style=&quot;box-sizing: border-box; border-width: 0px 0px 2px; border-bottom-style: solid; border-color: rgba(199, 214, 228, 0.298039); font-style: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: #191919; text-decoration: none; transition: 0.2s ease-in-out;&quot; href=&quot;https://buildazure.com/2015/07/16/mcsd-azure-solutions-architect-certification/&quot;&gt;Azure MCSD certification&lt;/a&gt; as an effort for me to be able to focus my Azure blogging efforts into a more targeted fashion. Over time, as a result of my many community contributions, including the success of sharing information on BuildAzure.com, I was awarded the Microsoft MVP award in 2017 in the expertise category of Microsoft Azure.
-&lt;p class=&quot;no-underline&quot; style=&quot;box-sizing: border-box; border: 0px; font-family: 'Segoe UI', 'Open Sans', sans-serif; font-size: 19px; margin: 0px 0px 1.4em; outline: 0px; padding: 0px; vertical-align: baseline; caret-color: #343e47; color: #343e47;&quot;&gt;Most recently, on July 1, 2018, I was &lt;a style=&quot;box-sizing: border-box; border-width: 0px 0px 2px; border-bottom-style: solid; border-color: rgba(199, 214, 228, 0.298039); font-style: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: #191919; text-decoration: none; transition: 0.2s ease-in-out;&quot; href=&quot;https://mvp.microsoft.com/en-us/PublicProfile/4015549&quot;&gt;re-awarded the Microsoft MVP award for 2018&lt;/a&gt; in the category of Microsoft Azure. While this is my 2nd Microsoft MVP award for Microsoft Azure, it&amp;rsquo;s actually my 7th time winning the Microsoft MVP award!
-&lt;p class=&quot;no-underline&quot; style=&quot;box-sizing: border-box; border: 0px; font-family: 'Segoe UI', 'Open Sans', sans-serif; font-size: 19px; margin: 0px 0px 1.4em; outline: 0px; padding: 0px; vertical-align: baseline; caret-color: #343e47; color: #343e47;&quot;&gt;*This is a cross-post from BuildAzure.com. You can read the original and expanded post here: *&lt;a href=&quot;https://buildazure.com/2018/07/02/chris-pietschmann-awarded-2018-microsoft-mvp-award/&quot;&gt;&lt;span&gt;https://buildazure.com/2018/07/02/chris-pietschmann-awarded-2018-microsoft-mvp-award/&lt;/span&gt;&lt;/a&gt;
-&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 02 Jul 2018 10:44:00 -0500</pubDate>
-        <link>http://pietschsoft.com//post/2018/07/02/chris-pietschmann-awarded-2018-microsoft-mvp-award-cross-post</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2018/07/02/chris-pietschmann-awarded-2018-microsoft-mvp-award-cross-post</guid>
         
         <category>Azure</category>
         
