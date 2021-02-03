@@ -6,9 +6,9 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 26 Jan 2021 18:47:57 -0600</pubDate>
-    <lastBuildDate>Tue, 26 Jan 2021 18:47:57 -0600</lastBuildDate>
-    <generator>Jekyll v4.1.0</generator>
+    <pubDate>Tue, 02 Feb 2021 18:43:05 -0600</pubDate>
+    <lastBuildDate>Tue, 02 Feb 2021 18:43:05 -0600</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
     
       <item>
         <title>On Finding a Business Partner</title>
