@@ -6,9 +6,28 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 25 Jan 2022 19:04:53 -0600</pubDate>
-    <lastBuildDate>Tue, 25 Jan 2022 19:04:53 -0600</lastBuildDate>
+    <pubDate>Tue, 01 Feb 2022 11:18:43 -0600</pubDate>
+    <lastBuildDate>Tue, 01 Feb 2022 11:18:43 -0600</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Finding Myself Again</title>
+        <description>&lt;p&gt;If you’ve been following me over the years, you’ve most likely notices that I’ve mostly gone dark for a little over a year now. I had a major life change forced upon me. I’m not going to go into specific as I’ve always kept my personal life fairly private. I will say that 2021 was a rough year for me, but I’ve learned to find myself again even though I previously hadn’t known I was lost.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Feb 2022 11:00:00 -0600</pubDate>
+        <link>http://pietschsoft.com//post/2022/02/01/finding-myself-again</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2022/02/01/finding-myself-again</guid>
+        
+        <category>Tips</category>
+        
+        <category>Personal</category>
+        
+        <category>Life</category>
+        
+        
+        <category>Personal</category>
+        
+      </item>
     
       <item>
         <title>On Finding a Business Partner</title>
@@ -190,23 +209,6 @@
         <category>Entrepreneur</category>
         
         <category>Blogging</category>
-        
-      </item>
-    
-      <item>
-        <title>Chris Pietschmann Awarded 2019 Microsoft MVP Award</title>
-        <description>&lt;p&gt;Hi! I don’t blog on this site much anymore, but I though I’d post about getting awarded the Microsoft MVP award this year. This marks the 8th time I’ve been awarded Microsoft MVP in the last 12 years. It’s always humbling and exciting to be recognized by Microsoft for everything I do in the community. My contributions include activities in both online and offline outlets.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 01 Jul 2019 02:50:00 -0500</pubDate>
-        <link>http://pietschsoft.com//post/2019/07/01/Chris-Pietschmann-Awarded-2019-Microsoft-MVP-Award</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2019/07/01/Chris-Pietschmann-Awarded-2019-Microsoft-MVP-Award</guid>
-        
-        <category>Azure</category>
-        
-        
-        <category>Microsoft MVP</category>
-        
-        <category>Azure</category>
         
       </item>
     
