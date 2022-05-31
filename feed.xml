@@ -6,9 +6,28 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 24 May 2022 19:21:00 -0500</pubDate>
-    <lastBuildDate>Tue, 24 May 2022 19:21:00 -0500</lastBuildDate>
+    <pubDate>Tue, 31 May 2022 16:09:55 -0500</pubDate>
+    <lastBuildDate>Tue, 31 May 2022 16:09:55 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Find Your Self Worth Internally</title>
+        <description>&lt;p&gt;Most of us think we’ve already found our purpose and our own self worth. However, the truth is that still have yet to really find our own self worth. Most of us define our self worth and who we are by following religion, spouse, family, friends, community, or career. The fact is that none of these things truly contains your true self worth, and are actually very dangerous to wrap your self up in too closely.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 31 May 2022 12:00:00 -0500</pubDate>
+        <link>http://pietschsoft.com//post/2022/05/31/find-your-self-worth-internally</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2022/05/31/find-your-self-worth-internally</guid>
+        
+        <category>Tips</category>
+        
+        <category>Personal</category>
+        
+        <category>Life</category>
+        
+        
+        <category>Personal</category>
+        
+      </item>
     
       <item>
         <title>Finding Myself Again</title>
@@ -188,27 +207,6 @@
         
         
         <category>JavaScript</category>
-        
-      </item>
-    
-      <item>
-        <title>Top 13 Blogging Tips for a Successful Website</title>
-        <description>&lt;p&gt;I’ve been blogging for about 15 years or so now, and I have a few tips and tricks that can help craft great articles, grow your blog, and get tons of traffic. Back in 2006 &lt;a href=&quot;/post/2006/09/22/building-a-successful-blog&quot;&gt;I shared a few tips for building a ‘successful’ blog&lt;/a&gt;. That was just 2 years into my journey of blogging, and I’ve learned a bit more during that time.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 07 Jul 2019 11:28:00 -0500</pubDate>
-        <link>http://pietschsoft.com//post/2019/07/07/top-13-blogging-tips-for-sucessful-website</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2019/07/07/top-13-blogging-tips-for-sucessful-website</guid>
-        
-        <category>Wordpress</category>
-        
-        <category>Blog</category>
-        
-        <category>Tips</category>
-        
-        
-        <category>Entrepreneur</category>
-        
-        <category>Blogging</category>
         
       </item>
     
