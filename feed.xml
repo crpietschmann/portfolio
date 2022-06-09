@@ -6,9 +6,28 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 07 Jun 2022 19:17:29 -0500</pubDate>
-    <lastBuildDate>Tue, 07 Jun 2022 19:17:29 -0500</lastBuildDate>
+    <pubDate>Thu, 09 Jun 2022 10:22:03 -0500</pubDate>
+    <lastBuildDate>Thu, 09 Jun 2022 10:22:03 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Care for Yourself First</title>
+        <description>&lt;p&gt;Just as finding yourself worth internally is important, so is taking care of yourself first. Our society tends to push the idea that prioritizing yourself above others as being selfish and bad. However, being selfish isn’t always a bad thing. Being selfish is often bad if it negatively affects others, but there are appropriate times to be selfish where it’s a good thing. A time where selfishness is good is when you are taking care of yourself.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Jun 2022 12:00:00 -0500</pubDate>
+        <link>http://pietschsoft.com//post/2022/06/09/care-for-yourself-first</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2022/06/09/care-for-yourself-first</guid>
+        
+        <category>Tips</category>
+        
+        <category>Personal</category>
+        
+        <category>Life</category>
+        
+        
+        <category>Personal</category>
+        
+      </item>
     
       <item>
         <title>Find Your Self Worth Internally</title>
@@ -186,27 +205,6 @@
         <category>Technology</category>
         
         <category>Entrepreneur</category>
-        
-      </item>
-    
-      <item>
-        <title>Call Functions in JavaScript</title>
-        <description>&lt;p&gt;One of the fundamental tasks with JavaScript is how to write and call functions in your code. This may seem like a simple thing, and it essentially is, however there are a few tips and tricks you can use to help making your use of JavaScript Functions easier and more intuitive. This article takes you through the basics of calling functions in your code, and some more advanced tips and tricks to writing better JavaScript functions that can help take your JavaScript coding to the next level.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 24 Jul 2019 10:21:00 -0500</pubDate>
-        <link>http://pietschsoft.com//post/2019/07/24/call-functions-in-javascript</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2019/07/24/call-functions-in-javascript</guid>
-        
-        <category>Tips</category>
-        
-        <category>JavaScript</category>
-        
-        <category>js</category>
-        
-        <category>functions</category>
-        
-        
-        <category>JavaScript</category>
         
       </item>
     
