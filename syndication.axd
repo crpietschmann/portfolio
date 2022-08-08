@@ -6,9 +6,30 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Aug 2022 19:22:07 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Aug 2022 19:22:07 -0500</lastBuildDate>
+    <pubDate>Mon, 08 Aug 2022 14:12:45 -0500</pubDate>
+    <lastBuildDate>Mon, 08 Aug 2022 14:12:45 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Learning Terraform on Microsoft Azure</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/build5nines-terraform-on-azure-featured-image.jpg&quot; style=&quot;width:100%&quot; alt=&quot;Terraform on Azure: Infrastructure as Code tools for DevOps / SRE professionals&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 08 Aug 2022 14:09:00 -0500</pubDate>
+        <link>http://pietschsoft.com//post/2022/08/08/learning-terraform-on-azure</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2022/08/08/learning-terraform-on-azure</guid>
+        
+        <category>Terraform</category>
+        
+        <category>Azure</category>
+        
+        <category>DevOps</category>
+        
+        <category>SRE</category>
+        
+        
+        <category>DevOps</category>
+        
+      </item>
     
       <item>
         <title>Care for Yourself First</title>
@@ -188,23 +209,6 @@
         
         
         <category>JavaScript</category>
-        
-      </item>
-    
-      <item>
-        <title>The Technology is NOT Important</title>
-        <description>&lt;p&gt;The technology used to build a product or service offering really is not that important. Earlier in my entrepreneur journey I didn’t really understand this. It’s far too easy to get wrapped up in the latest, coolest, hottest technologies. The keys to business and successful products really have almost nothing to do with the technology. The true keys to success are the results the product or service offerings provide. I’m talking about the benefits to the people that use it, and their customers they serve.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 12 Nov 2019 09:51:00 -0600</pubDate>
-        <link>http://pietschsoft.com//post/2019/11/12/the-technology-is-not-important</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2019/11/12/the-technology-is-not-important</guid>
-        
-        <category>Inspiration</category>
-        
-        
-        <category>Technology</category>
-        
-        <category>Entrepreneur</category>
         
       </item>
     
