@@ -8,9 +8,9 @@ redirect_from:
 ---
 My name is Chris Pietschmann. I do so many things, it's difficult to describe myself in just a single sentence. So here's a few:
 
-I'm a husband, father of 2 wonderful children, Founder of [Build Azure LLC](https://buildazure.com), Owner of [Simplovation LLC](http://simplovation.com), Microsoft MVP, Microsoft Certified Azure Solutions Architect, and I am also engaged in a journey of continuous education, of which I enjoy sharing what I learn with others. I hope to teach, be taught, and inspire others. Also, I recently started new blogs over at <http://buildazure.com> dedicated to sharing information and tutorials on Microsoft Azure development. I am also a Founder of the [Milwaukee Azure meetup group](http://mkeazure.com).
+I'm a husband, father of 2 wonderful children, Founder of [Build5NInes](https://build5nines.com), Owner of [Simplovation LLC](http://simplovation.com), Microsoft MVP, Microsoft Certified Azure Solutions Architect, and I am also engaged in a journey of continuous education, of which I enjoy sharing what I learn with others. I hope to teach, be taught, and inspire others. Also, I recently started new blogs over at <http://buildazure.com> dedicated to sharing information and tutorials on Microsoft Azure development.
 
-A mantra I live by is: "Work Smart, Not Hard"
+A mantra I live by is: "[Work Smart, Not Hard](https://pietschsoft.com/post/2013/07/27/work-smart-not-hard)"
 
 The pietschsoft.com domain name has been my internet presence hub since 2003, and I've been blogging here since 2004.
 
@@ -24,7 +24,9 @@ I am always dedicated to helping out the software development community. Evidenc
 
 ## Find Me Online
 
-- Articles & Guides: <https://BuildAzure.com>
+- Published Articles
+    - <https://Build5Nines.com>
+    - Hackster.io - <https://www.hackster.io/crpietschmann/articles>
 - Twitter:
     - [@crpietschmann](https://twitter.com/crpietschmann)
     - [@BuildAzure](https://twitter.com/buildazure)
@@ -34,15 +36,18 @@ I am always dedicated to helping out the software development community. Evidenc
 
 ## Community Involvement
 
-- Author - <https://BuildAzure.com>
-- Milwaukee Azure (since 2016) - Founder
+- Author - <https://Build5Nines.com>
+- Milwaukee Azure Meetup Group (2016 - 2018) - Founder
 - Global Azure Bootcamp - Milwaukee, WI (2016, 2018) - Organizer / Speaker
 - Wisconsin .NET Users Group - Member Since 2004 - Executive Committee Member 2007 - 2011
-- Wisconsin .NET Users Group LinkedIn Group - Group Manager and Owner
+- Wisconsin .NET Users Group LinkedIn Group - Founder - 2007 - 2018
 - Community Coding Contest - Contest Founder and Coordinator (2008 and 2010)
 
 ## Awards
 
+- 2022 - Microsoft MVP - Microsoft Azure
+- 2021 - Microsoft MVP - Microsoft Azure
+- 2020 - Microsoft MVP - Microsoft Azure
 - 2019 - Microsoft MVP - Microsoft Azure
 - 2018 - Microsoft MVP - Microsoft Azure
 - 2017 - Microsoft MVP - Microsoft Azure
