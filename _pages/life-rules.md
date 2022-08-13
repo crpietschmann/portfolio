@@ -30,3 +30,5 @@ So here's my list:
 - [Never Give Up](/post/2016/03/01/Never-Give-Up)
 - [Overnight Success is Hardly Overnight](/post/2013/09/08/Overnight-Success-is-Hardly-Overnight)
 - [On Being an Expert](/post/2016/05/03/On-Being-an-Expert)
+- [Find Your Self Worth Internally](/post/2022/05/31/find-your-self-worth-internally)
+- [Care for Yourself First][/post/2022/06/09/care-for-yourself-first]
