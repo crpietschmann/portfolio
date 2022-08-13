@@ -6,9 +6,28 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 12 Aug 2022 20:19:13 -0500</pubDate>
-    <lastBuildDate>Fri, 12 Aug 2022 20:19:13 -0500</lastBuildDate>
+    <pubDate>Sat, 13 Aug 2022 11:48:37 -0500</pubDate>
+    <lastBuildDate>Sat, 13 Aug 2022 11:48:37 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Build a Successful Blog for your Consulting Business</title>
+        <description>&lt;p&gt;Are you trying to build a successful blog for promoting or building a consulting business? Blogging can be a great way to promote yourself, your brand, your products or services. However, it takes more than just writing blog articles and creating more pages to pop up on Google searches. You need to write a blog that people will actually want to read and follow. But how do you do this to help grow a consulting business?&lt;/p&gt;
+</description>
+        <pubDate>Sat, 13 Aug 2022 14:09:00 -0500</pubDate>
+        <link>http://pietschsoft.com//post/2022/08/13/build-successful-blog-for-consulting-business</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2022/08/13/build-successful-blog-for-consulting-business</guid>
+        
+        <category>Business</category>
+        
+        <category>Consulting</category>
+        
+        <category>Authority</category>
+        
+        
+        <category>Business</category>
+        
+      </item>
     
       <item>
         <title>Learning Terraform on Microsoft Azure</title>
@@ -184,31 +203,6 @@
         <category>macOS</category>
         
         <category>Apple</category>
-        
-      </item>
-    
-      <item>
-        <title>Basics of JavaScript Class Inheritance</title>
-        <description>&lt;p&gt;The ECMAScript 2015 definition brought with it the introduction of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;class&lt;/code&gt; syntax within the JavaScript language. Previously the only way to do this was with TypeScript or some other language that would transpile down to JavaScript code. With ECMAScript 2015, you can now declare and use classes directly in the JavaScript language itself. Plus, this is a feature that is supported by all the modern web browsers too!&lt;/p&gt;
-</description>
-        <pubDate>Thu, 02 Jan 2020 16:18:00 -0600</pubDate>
-        <link>http://pietschsoft.com//post/2020/01/02/basics-javascript-class-inheritance</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2020/01/02/basics-javascript-class-inheritance</guid>
-        
-        <category>js</category>
-        
-        <category>JavaScript</category>
-        
-        <category>Tips</category>
-        
-        <category>object</category>
-        
-        <category>inheritance</category>
-        
-        <category>class</category>
-        
-        
-        <category>JavaScript</category>
         
       </item>
     
