@@ -6,8 +6,8 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 13 Aug 2022 20:47:27 -0500</pubDate>
-    <lastBuildDate>Sat, 13 Aug 2022 20:47:27 -0500</lastBuildDate>
+    <pubDate>Sat, 13 Aug 2022 20:56:54 -0500</pubDate>
+    <lastBuildDate>Sat, 13 Aug 2022 20:56:54 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -18,9 +18,7 @@
         <link>http://pietschsoft.com//post/2022/08/13/javascript-remove-item-from-array</link>
         <guid isPermaLink="true">http://pietschsoft.com//post/2022/08/13/javascript-remove-item-from-array</guid>
         
-        <category>javascript</category>
-        
-        <category>array</category>
+        <category>JavaScript</category>
         
         <category>js</category>
         
@@ -151,13 +149,9 @@
         <link>http://pietschsoft.com//post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions</link>
         <guid isPermaLink="true">http://pietschsoft.com//post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions</guid>
         
-        <category>Tips</category>
-        
         <category>JavaScript</category>
         
         <category>js</category>
-        
-        <category>array</category>
         
         
         <category>JavaScript</category>
@@ -174,11 +168,7 @@
         
         <category>JavaScript</category>
         
-        <category>String</category>
-        
-        <category>Number</category>
-        
-        <category>Convert</category>
+        <category>js</category>
         
         
         <category>JavaScript</category>
