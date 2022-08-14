@@ -6,9 +6,28 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 13 Aug 2022 11:48:37 -0500</pubDate>
-    <lastBuildDate>Sat, 13 Aug 2022 11:48:37 -0500</lastBuildDate>
+    <pubDate>Sat, 13 Aug 2022 20:47:27 -0500</pubDate>
+    <lastBuildDate>Sat, 13 Aug 2022 20:47:27 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>JavaScript: Remove Specific Items from Array</title>
+        <description>&lt;p&gt;When writing JavaScript code, there are many use cases where working with Arrays is required. Creating arrays of values / object and receiving them from API calls is really common. &lt;a href=&quot;/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions&quot;&gt;Looping through JavaScript Arrays&lt;/a&gt; is a common action to perform, but removing items from a JavaScript Array you are working with is not as straight forward. In this article, we’ll take a look at some methods that can be performed to allow you to make sense of removing items from an array.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 13 Aug 2022 19:48:00 -0500</pubDate>
+        <link>http://pietschsoft.com//post/2022/08/13/javascript-remove-item-from-array</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2022/08/13/javascript-remove-item-from-array</guid>
+        
+        <category>javascript</category>
+        
+        <category>array</category>
+        
+        <category>js</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
     
       <item>
         <title>Build a Successful Blog for your Consulting Business</title>
@@ -182,27 +201,6 @@
         <category>Politics</category>
         
         <category>Life</category>
-        
-      </item>
-    
-      <item>
-        <title>macOS: Monitor CPU Usage and Frequency Info</title>
-        <description>&lt;p&gt;I was recently looking for some tools to be able to view the Intel CPU utilization, frequency, and other information on macOS. In particular, my new Macbook Pro 16” is performing great with it’s Intel Core i9 CPU with 8 cores (and 16 threads), but I’d like to see how well it’s doing for myself. This article includes a listing and summary of the tools I found to do this with.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 15 Feb 2020 17:00:00 -0600</pubDate>
-        <link>http://pietschsoft.com//post/2020/02/15/macos-monitor-cpu-usage-info</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2020/02/15/macos-monitor-cpu-usage-info</guid>
-        
-        <category>cpu</category>
-        
-        <category>intel</category>
-        
-        <category>core i9</category>
-        
-        
-        <category>macOS</category>
-        
-        <category>Apple</category>
         
       </item>
     

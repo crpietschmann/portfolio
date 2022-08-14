@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>CTP: Bing Maps Silverlight CTP: Basics of Adding Polygons and Polylines using XAML and Code | Chris Pietschmann</title>
+    <title>JavaScript: Remove Specific Items from Array | Chris Pietschmann</title>
     <meta name="description" content="I have 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
 ">
     <meta name="author" content="Chris Pietschmann">
@@ -18,7 +18,7 @@
 
     <!--<link rel="stylesheet" href="//css/site.css">-->
     <link rel="stylesheet" href="/css/site.css">
-    <link rel="canonical" href="http://pietschsoft.com//post/2009/03/20/virtual-earth-silverlight-basics-of-adding-polygons-and-polylines-using-xaml-and-code">
+    <link rel="canonical" href="http://pietschsoft.com//post/2022/08/13/javascript-remove-item-from-array">
 </head>
 
   <body>
@@ -71,252 +71,170 @@
     <div class="col-12 col-md-8">
 
       <header class="post-header">
-          <h1 class="post-title">CTP: Bing Maps Silverlight CTP: Basics of Adding Polygons and Polylines using XAML and Code</h1>
+          <h1 class="post-title">JavaScript: Remove Specific Items from Array</h1>
           <!--
           <div class="post-categories">
               
               
-              <a href="//categories/#Bing Maps">Bing Maps</a>
-              &nbsp;
-              
-              <a href="//categories/#Silverlight">Silverlight</a>
+              <a href="//categories/#JavaScript">JavaScript</a>
               
               
             </div>
           -->
-          <p class="post-meta">Mar 20, 2009</p>
+          <p class="post-meta">Aug 13, 2022</p>
       </header>
 
       <article class="post-content">
         
-            <!-- more -->
+            <p>When writing JavaScript code, there are many use cases where working with Arrays is required. Creating arrays of values / object and receiving them from API calls is really common. <a href="/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Looping through JavaScript Arrays</a> is a common action to perform, but removing items from a JavaScript Array you are working with is not as straight forward. In this article, we’ll take a look at some methods that can be performed to allow you to make sense of removing items from an array.</p>
 
-<p>This was written for the Bing Maps Silverlight CTP Release.</p>
+<p>The following are the JavaScript Array methods discussed in this article for removing a specific item from a JavaScript Array:</p>
 
-<p>Now that we’re familiar with the basics of the Virtual Earth Silverlight Map Control SDK CTP (from my <a href="/post.aspx?id=20736f64-9876-4d0f-b60e-3fe20252d4c4" target="_blank">Getting Started with Virtual Earth Silverlight CTP</a> tutorial), we’re ready to move on to adding Shapes (Polygons and Polylines). After all what use is a Virtual Earth Map Control without plotting some data on it. If you’re not familiar with how to get a Map displayed within a Silverlight Application, I really encourage you to go take a look at my “Getting Started with Virtual Earth Silverlight Map Control SDK CTP” tutorial.</p>
-
-<p>Did you notice that I left out Pushpins? Well, this is actually because the Map control doesn’t have a Pushpin Shape Type; the only Shapes Types are Polygon and Polyline. The reason for this is because instead of limiting you to just Pushpins (a small icon of some sort) like the JavaScript Map Control; the Silverlight Control allows you to plot/display anything (as long as it inherits from UIElement) you want at a specific Latitude/Longitude Coordinate. Since, “Pushpins” are a newly changed concept with the Silverlight Map Control; I’ll be covering that is a separate tutorial that covers “Adding Media (Images, Video, etc.) to the Map”.</p>
-
-<p>Now let’s get to plotting some Polygons and Polylines!</p>
-<h3>Adding Polygons to the Map</h3>
-
-<p>To add a Polygon to the Map, you will need to create an instance of the MapPolygon object and add a collection of Location objects to its “Locations” property. You will also need to define the look of your Polygon by setting its “Fill”, “Stroke”, “StrokeThickness” and “Opacity” properties.</p>
-
-<p>The MapPolygon properties and what they do:</p>
 <ul>
-<li>**Fill** &ndash; A Brush object that defines how the inside of the Polygon is filled in. </li>
-<li>**Stroke** &ndash; A Brush object that defines how the border that outlines the Polygon will be drawn. </li>
-<li>**StrokeThickness** &ndash; A Double value that defines the thickness of the border that outlines the Polygon. </li>
-<li>**Opacity** &ndash; A Double value that defines the Opacity (or Transparency) of the Polygon. </li>
+  <li><a href="#pop">Remove Last Item from Array using <code class="language-plaintext highlighter-rouge">Array.pop</code> method</a></li>
+  <li><a href="#shift">Remove First Item from Array using <code class="language-plaintext highlighter-rouge">Array.shift()</code> method</a></li>
+  <li><a href="#splice">Remove Item at Specified Index from Array using <code class="language-plaintext highlighter-rouge">Array.splice()</code> method</a></li>
+  <li><a href="#filter">Create Array subset using the <code class="language-plaintext highlighter-rouge">Array.filter</code> method</a></li>
+  <li><a href="#reset">Remove All Items from Array by Setting Empty Array</a></li>
 </ul>
 
-<p>When adding Polygons to the Map you add your MapPolygon object instance to the Map.Children collection.</p>
-<h4>Add a Polygon Programmatically using Code</h4>
+<p>Let’s dig into removing specific items from Arrays!</p>
 
-<p>Here’s an example of adding a Polygon to a Map programmatically:</p>
+<p><span id="pop"></span></p>
+<h2 id="remove-last-item-from-array-using-arraypop-method">Remove Last Item from Array using <code class="language-plaintext highlighter-rouge">Array.pop()</code> method</h2>
 
-<p>MapPolygon polygon = new MapPolygon();  <br />
-polygon.Fill = new SolidColorBrush(Colors.Red);   <br />
-polygon.Stroke = new SolidColorBrush(Colors.Yellow);   <br />
-polygon.StrokeThickness = 5;   <br />
-polygon.Opacity = 0.7;   <br />
-polygon.Locations = new LocationCollection()   <br />
-{   <br />
-    new Location(20, -20),   <br />
-    new Location(20, 20),   <br />
-    new Location(-20, 20),   <br />
-    new Location(-20, -20)   <br />
-};</p>
+<p>The Array object in JavaScript provides methods of built-in functionality that includes the <code class="language-plaintext highlighter-rouge">pop()</code> method. This method will remove the last item of the Array and return it. If you need to work with an Array in a “last in, first out” fashion, then the <code class="language-plaintext highlighter-rouge">pop()</code> method will help your use case.</p>
 
-<p>Map1.AddChild(polygon);  <br />
-// Map1.Children.Add(polygon); // &lt;—This also works just the same</p>
+<p>When the <code class="language-plaintext highlighter-rouge">pop()</code> method removes the “last item” from the Array, it really means the item in the Array with the highest index. This is essentially the last item in the Array.</p>
 
-<h4>Add a Polygon Declaratively using XAML</h4>
+<p>The following is an example of using the <code class="language-plaintext highlighter-rouge">Array.pop()</code> method to retrieve and remove the last item added to the Array:</p>
 
-<p>One other neat thing that you can do is add Polygons to a Map declaratively using XAML. Here’s an example:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Example Array</span>
+<span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">c</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">d</span><span class="dl">'</span><span class="p">];</span>
 
-<UserControl x:Class="VirtualEarthSilverlightApplication1.Page" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl" Width="400" Height="300">     
-    <Grid x:Name="LayoutRoot" Background="White">     
-        <m:Map Name="Map1">     
-            <m:Map.Children>     
-                <m:MapPolygon Fill="Red" Stroke="Yellow" StrokeThickness="5" Opacity="0.7">     
-                    <m:MapPolygon.Locations>     
-                        <m:LocationCollection>     
-                            <m:Location>20, -20</m:Location>     
-                            <m:Location>20, 20</m:Location>     
-                            <m:Location>-20, 20</m:Location>     
-                            <m:Location>-20, -20</m:Location>     
-                        </m:LocationCollection>     
-                    </m:MapPolygon.Locations>     
-                </m:MapPolygon>     
-            </m:Map.Children>     
-        </m:Map>     
-    </Grid>     
-</UserControl>
+<span class="c1">// Remove / Retrieve Last Item from Array</span>
+<span class="kd">var</span> <span class="nx">item</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+</code></pre></div></div>
 
-<h3>Adding Polylines to the Map</h3>
+<p>In this example, the <code class="language-plaintext highlighter-rouge">item</code> variable will end up being assigned to the value of <code class="language-plaintext highlighter-rouge">'d'</code> that was the last item in the Array when the <code class="language-plaintext highlighter-rouge">pop()</code> method was called. Afterwards, the <code class="language-plaintext highlighter-rouge">arr</code> Array will still have all the other items in it, but the <code class="language-plaintext highlighter-rouge">'d'</code> item will have been removed.</p>
 
-<p>To add a Polyline to the Map, you will need to create an instance of the MapPolyline object and add a collection of Location objects to its “Locations” property. You will also need to define the look of your Polyline by setting its “Stroke”, “StrokeThickness” and “Opacity” properties.</p>
+<p><span id="shift"></span></p>
+<h2 id="remove-first-item-from-array-using-arrayshift-method">Remove First Item from Array using <code class="language-plaintext highlighter-rouge">Array.shift()</code> method</h2>
 
-<p>The MapPolyline properties and what they do:</p>
+<p>The Array object in JavaScript provides methods of built-in functionality that includes the <code class="language-plaintext highlighter-rouge">shift()</code> method. This method will remove the first item of the Array and return it. If you need to work with an Array in a “first in, first out” fashion, then the <code class="language-plaintext highlighter-rouge">shift()</code> method will help your use case.</p>
+
+<p>When the <code class="language-plaintext highlighter-rouge">shift()</code> method removes the “first item” from the Array, it will be removing the item in the Array with the zero (<code class="language-plaintext highlighter-rouge">0</code>) index.</p>
+
+<p>The following is an example of using the <code class="language-plaintext highlighter-rouge">Array.shift()</code> method to retrieve and remove the first item in an Array:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Example Array</span>
+<span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">c</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">d</span><span class="dl">'</span><span class="p">];</span>
+
+<span class="c1">// Remove / Retrieve First Item from Array</span>
+<span class="kd">var</span> <span class="nx">item</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>In this example, the <code class="language-plaintext highlighter-rouge">item</code> variable will end up being assigned to the value of <code class="language-plaintext highlighter-rouge">'a'</code> that was the first item in the Array when the <code class="language-plaintext highlighter-rouge">shift()</code> method was called. Afterwards, the <code class="language-plaintext highlighter-rouge">arr</code> Array will still have all the other items in it, but the <code class="language-plaintext highlighter-rouge">'a'</code> item will have been removed.</p>
+
+<p><span id="splice"></span></p>
+<h2 id="remove-item-at-specified-index-from-array-using-arraysplice-method">Remove Item at Specified Index from Array using <code class="language-plaintext highlighter-rouge">Array.splice()</code> method</h2>
+
+<p>The Array object in JavaScript provides methods of built-in functionality that includes the <code class="language-plaintext highlighter-rouge">splice()</code> method. This method will remove items from an Array starting at the specified index in the Array, and ending after the number of items requested. This enables you to remove a single item or even multiple items from the Array at once.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">Array.splice()</code> method has the following signature that shows the expected arguments:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Array.splice(startIndex, removeCount)
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">Array.splice()</code> method arguments are defined as follows:</p>
+
 <ul>
-<li>**Stroke** &ndash; A Brush object that defines how the Line that represents the Polyline will be drawn on the Map. </li>
-<li>**StrokeThickness** &ndash; A Double value that defines the thickness of the Line. </li>
-<li>**Opacity** &ndash; A Double value that defines the Opacity (or Transparency) of the Polyline. </li>
+  <li><code class="language-plaintext highlighter-rouge">startIndex</code> - This is the index in the Array where the item to remove is located.</li>
+  <li><code class="language-plaintext highlighter-rouge">removeCount</code> - This is the number of items from the Array to remove. <code class="language-plaintext highlighter-rouge">1</code> will remove a single item, and <code class="language-plaintext highlighter-rouge">2</code> or more will remove that number of items from the Array in batch.</li>
 </ul>
 
-<p>Additionally, the MapPolyline object has one more property that I didn’t mention above. This is a little bit of a special property, that you may wonder why a Polyline object has it, but it opens up some possibilities that weren’t available before using the JavaScript Map Control.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Example Array</span>
+<span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">c</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">d</span><span class="dl">'</span><span class="p">]</span>
+
+<span class="c1">// Remove / Retrieve Item at Index 1</span>
+<span class="kd">var</span> <span class="nx">item1</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="c1">// Returns 'b'</span>
+
+<span class="c1">// Example Array</span>
+<span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">c</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">d</span><span class="dl">'</span><span class="p">]</span>
+<span class="c1">// Remove Retrieve 2 Items starting at Index 1</span>
+<span class="kd">var</span> <span class="nx">items</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+<span class="c1">// Returns Array of ['b', 'c']</span>
+</code></pre></div></div>
+
+<p>If the <code class="language-plaintext highlighter-rouge">Array.splice</code> method is used to remove multiple items from an Array, the method will return an Array that contains those multiple items.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">Array.splice</code> method can also be used to replace items in an Array with other values, however, that usage is outside the scope of this article.</p>
+
+<p><span id="filter"></span></p>
+<h2 id="create-array-subset-using-the-arrayfilter-method">Create Array subset using the <code class="language-plaintext highlighter-rouge">Array.filter</code> method</h2>
+
+<p>The Array object in JavaScript provides methods of built-in functionality that includes the <code class="language-plaintext highlighter-rouge">filter()</code> method. This method enables you to write a filter function that will then be used to evaluate all the items in the Array so you can return a subset Array of the original Array with just the values you need. This method doesn’t modify the original Array object like the previous methods discussed in this article.</p>
+
+<blockquote>
+  <p><strong>NOTE:</strong> The <code class="language-plaintext highlighter-rouge">Array.filter()</code> method doesn’t modify the original Array. So it doesn’t really remove items from an Array. It really just enables you to select a subset of the original Array in addition to still having the original Array intact.</p>
+</blockquote>
+
+<p>The <code class="language-plaintext highlighter-rouge">Array.filter()</code> method has the following signature for working with it that accepts a <code class="language-plaintext highlighter-rouge">function</code> as an argument:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">Array</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">filterFunction</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">filterFunction</code> argument accepted by the <code class="language-plaintext highlighter-rouge">Array.filter</code> method is expected to have the following signature, and must return <code class="language-plaintext highlighter-rouge">true</code> <em>(to keep the item)</em> or <code class="language-plaintext highlighter-rouge">false</code> when evaluating items in the Array:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">array</span><span class="p">)</span> <span class="p">{}</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">filterFunction</code> method signature arguments are defined as follows:</p>
+
 <ul>
-<li>**Fill** - A Brush object that defines how the inside of the Polyline is filled in. This will connect the first and last Location point of the Polyline and Fill in between using the designated Brush. This doesn&rsquo;t draw a Line (or Stroke) from the first Location to the last, it just fills in between the Shape. </li>
+  <li><code class="language-plaintext highlighter-rouge">element</code> - This is the current element being processed in the Array.</li>
+  <li><code class="language-plaintext highlighter-rouge">index</code> - The index of the current element being processed in the Array.</li>
+  <li><code class="language-plaintext highlighter-rouge">array</code> - The Array that the <code class="language-plaintext highlighter-rouge">.filter()</code> method was called.</li>
 </ul>
 
-<p>When adding Polylines to the Map you add your MapPolyline object instance to the Map.Children collection; just the same as is done with Polygons.</p>
-<h4>Add a Polyline Programmatically using Code</h4>
+<blockquote>
+  <p><strong>NOTE:</strong> Keep in mind that when using the <code class="language-plaintext highlighter-rouge">Array.filter()</code> method that it will loop through each item in the Array in order to evaluate them all and return the subset Array of matching items. When working with large Arrays this will add execution time to your JavaScript code.</p>
+</blockquote>
 
-<p>Here’s an example of adding a Polyline to a Map programmatically:</p>
+<p>The following is a simple example of using the <code class="language-plaintext highlighter-rouge">Array.filter()</code> method to retrieve specific items from an Array:</p>
 
-<p>MapPolyline polyline = new MapPolyline();  <br />
-polyline.Stroke = new SolidColorBrush(Colors.Yellow);   <br />
-polyline.StrokeThickness = 5;   <br />
-polyline.Opacity = 0.7;   <br />
-polyline.Locations = new LocationCollection()   <br />
-{   <br />
-    new Location(10, -10),   <br />
-    new Location(10, 10),   <br />
-    new Location(-10, -10),   <br />
-    new Location(-10, 10)   <br />
-};</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Example Array</span>
+<span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">c</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">d</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">e</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">f</span><span class="dl">'</span><span class="p">];</span>
 
-<p>Map1.AddChild(polyline);  <br />
-// Map1.Children.Add(polyline); // &lt;—This also works just the same</p>
+<span class="c1">// Retrieve item at index 2</span>
+<span class="kd">var</span> <span class="nx">item</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span><span class="nx">i</span><span class="p">,</span><span class="nx">a</span><span class="p">){</span>
+  <span class="k">return</span> <span class="nx">i</span> <span class="o">===</span> <span class="mi">2</span><span class="p">;</span>
+<span class="p">});</span>
 
-<h4>Add a Polyline Declaratively using XAML</h4>
+<span class="c1">// Retrieve item with specific value</span>
+<span class="kd">var</span> <span class="nx">item</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span><span class="nx">i</span><span class="p">,</span><span class="nx">a</span><span class="p">){</span>
+  <span class="k">return</span> <span class="nx">e</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">c</span><span class="dl">'</span><span class="p">;</span>
+<span class="p">});</span>
+</code></pre></div></div>
 
-<p>One other neat thing that you can do is add Polylines to a Map declaratively using XAML. Here’s an example:</p>
+<p>There are obviously much more complex uses that could be done with the <code class="language-plaintext highlighter-rouge">Array.filter()</code> method. <a href="https://github.com/crpietschmann/jslinq">My project named <code class="language-plaintext highlighter-rouge">jslinq</code></a> has some implementation that uses the <code class="language-plaintext highlighter-rouge">Array.filter()</code> to enable a <a href="https://github.com/crpietschmann/jslinq">C# LINQ-like (Language Integrated Query) syntax for working with Array in JavaScript</a>. Not, this isn’t the NPM jslinq package. I created my JavaScript library before the NPM jslinq was created, and the same / similar naming is just a strange coincidence. Anyway, my OSS project is an example of how <code class="language-plaintext highlighter-rouge">Array.filter()</code> could be used in a more powerful way than the simple example above.</p>
 
-<UserControl x:Class="VirtualEarthSilverlightApplication1.Page" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl" Width="400" Height="300">     
-    <Grid x:Name="LayoutRoot" Background="White">     
-        <m:Map Name="Map1">     
-            <m:Map.Children>     
-                <m:MapPolyline Stroke="Yellow" StrokeThickness="5" Opacity="0.7">     
-                    <m:MapPolyline.Locations>     
-                        <m:LocationCollection>     
-                            <m:Location>10, -10</m:Location>     
-                            <m:Location>10, 10</m:Location>     
-                            <m:Location>-10, -10</m:Location>     
-                            <m:Location>-10, 10</m:Location>     
-                        </m:LocationCollection>     
-                    </m:MapPolyline.Locations>     
-                </m:MapPolyline>     
-            </m:Map.Children>     
-        </m:Map>     
-    </Grid>     
-</UserControl>
+<p><span id="reset"></span></p>
+<h2 id="remove-all-items-from-array-by-setting-empty-array">Remove All Items from Array by Setting Empty Array</h2>
 
-<h3>Adding Shape Layers</h3>
+<p>In JavaScript, you can always reassign a new value to variables. If you need to remove all the items from an Array at once, the quickest way to do so is to just replace the value of the variable with a new Empty Array.</p>
 
-<p>In the old JavaScript Map Control, you could add your Shapes to different Shape Layers, then you could easily hide/show the Shapes in each Layer by hiding/showing the entire Shape Layer. This is also possible using the Virtual Earth Silverlight Map Control via the MapLayer object.</p>
+<p>The following is an example of replacing the value of a variable with a new Empty Array, having the affect of removing all the items from the Array at once:</p>
 
-<p>To use the MapLayer object you simply create a new MapLayer, add your Shapes (Polygons or Polylines) to it, then add the MapLayer to the Map.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Example Array</span>
+<span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">c</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">d</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">e</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">f</span><span class="dl">'</span><span class="p">];</span>
 
-<p>Here’s an example of doing this:</p>
+<span class="c1">// Remove All Items from Array</span>
+<span class="nx">arr</span> <span class="o">=</span> <span class="p">[];</span>
+</code></pre></div></div>
 
-<p>// Create MapLayer  <br />
-MapLayer myShapeLayer = new MapLayer();</p>
-
-<p>// Create Polygon  <br />
-MapPolygon polygon = new MapPolygon();   <br />
-polygon.Fill = new SolidColorBrush(Colors.Red);   <br />
-polygon.Stroke = new SolidColorBrush(Colors.Yellow);   <br />
-polygon.StrokeThickness = 5;   <br />
-polygon.Opacity = 0.7;   <br />
-polygon.Locations = new LocationCollection()   <br />
-{   <br />
-    new Location(20, -20),   <br />
-    new Location(20, 20),   <br />
-    new Location(-20, 20),   <br />
-    new Location(-20, -20)   <br />
-};</p>
-
-<p>// Add Polygon to the Layer  <br />
-myShapeLayer.AddChild(polygon);</p>
-
-<p>// Add the Layer to the Map  <br />
-Map1.AddChild(myShapeLayer);</p>
-
-<h3>Easily Add a &ldquo;Hover Over&rdquo; Effect Via Tooltips</h3>
-
-<p>If you want to quickly and easily add some content that gets displayed when the user hovers the mouse over the Polygon or Polyline; you can implement it very easily by taking advantage of Silverlights Tooltip feature.</p>
-
-<p><a href="/files/VEJS_PolygonShapeTooltip.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="VEJS_PolygonShapeTooltip" src="/files/VEJS_PolygonShapeTooltip_thumb.png" border="0" alt="VEJS_PolygonShapeTooltip" width="489" height="304" /></a></p>
-
-<p>Here are some code examples of doing this that add to the above Polygon examples (the exact same can be done with Polylines).</p>
-<h4>Add Tooltip Declaratively using XAML</h4>
-
-<UserControl x:Class="VirtualEarthSilverlightApplication1.Page" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:m="clr-namespace:Microsoft.VirtualEarth.MapControl;assembly=Microsoft.VirtualEarth.MapControl" Width="400" Height="300">     
-    <Grid x:Name="LayoutRoot" Background="White">     
-        <m:Map Name="Map1">     
-            <m:Map.Children>     
-                <m:MapPolygon Fill="Red" Stroke="Yellow" StrokeThickness="5" Opacity="0.7">     
-                    <ToolTipService.ToolTip>     
-                        <StackPanel>     
-                            <TextBlock FontWeight="Bold">A Huge Square Title</TextBlock>     
-                            <TextBlock>This is an arbitrary description of the "Huge Square" to be displayed within the Tooltip.</TextBlock>     
-                        </StackPanel>     
-                    </ToolTipService.ToolTip>     
-                    <m:MapPolygon.Locations>     
-                        <m:LocationCollection>     
-                            <m:Location>20, -20</m:Location>     
-                            <m:Location>20, 20</m:Location>     
-                            <m:Location>-20, 20</m:Location>     
-                            <m:Location>-20, -20</m:Location>     
-                        </m:LocationCollection>     
-                    </m:MapPolygon.Locations>     
-                </m:MapPolygon>     
-            </m:Map.Children>     
-        </m:Map>     
-    </Grid>     
-</UserControl>
-
-<h4>Add Tooltip Programmatically using Code</h4>
-
-<p>// Declare Polygon  <br />
-MapPolygon polygon = new MapPolygon();   <br />
-polygon.Fill = new SolidColorBrush(Colors.Red);   <br />
-polygon.Stroke = new SolidColorBrush(Colors.Yellow);   <br />
-polygon.StrokeThickness = 5;   <br />
-polygon.Opacity = 0.7;   <br />
-polygon.Locations = new LocationCollection()   <br />
-{   <br />
-    new Location(20, -20),   <br />
-    new Location(20, 20),   <br />
-    new Location(-20, 20),   <br />
-    new Location(-20, -20)   <br />
-};</p>
-
-<p>// Add Tooltip  <br />
-var tooltipObject = new StackPanel();</p>
-
-<p>var title = new TextBlock();  <br />
-title.FontWeight = FontWeights.Bold;   <br />
-title.Text = “A Huge Square Title”;   <br />
-tooltipObject.Children.Add(title);</p>
-
-<p>var description = new TextBlock();  <br />
-description.Text = “This is an arbitrary description of the "Huge Square" to be displayed within the Tooltip.”;   <br />
-tooltipObject.Children.Add(description);</p>
-
-<p>ToolTipService.SetToolTip(polygon, tooltipObject);</p>
-
-<p>// Add Polygon to Map  <br />
-Map1.AddChild(polygon);   <br />
-// Map1.Children.Add(polygon); // &lt;—This also works just the same</p>
-
-<h3>Conclusion</h3>
-
-<p>As you can see, it’s fairly simple to add Polygons and Polylines to the Map. In the next tutorial I’ll cover how to add Image (also “Pushpins”) and Video to the Map.</p>
-<h4>Next Tutorial/Article: <a href="/post.aspx?id=2c25c9bc-e290-41e4-9a03-daa75a912c63">Adding Media (Images, Video, etc.) to the Map</a></h4>
-<h4>Previous Tutorial/Article: <a href="/post.aspx?id=20736f64-9876-4d0f-b60e-3fe20252d4c4">Getting Started with Virtual Earth Silverlight Map Control SDK CTP</a></h4>
+<p>Happy JavaScript coding!</p>
 
         
       </article>
@@ -338,10 +256,6 @@ Map1.AddChild(polygon);   <br />
         
             
         
-    
-        
-            
-        
             
         
     
@@ -350,22 +264,11 @@ Map1.AddChild(polygon);   <br />
         
             
         
-    
-
-    
-    
-        
-            
-        
             
         
     
         
             
-        
-            
-        
-    
         
             
         
@@ -380,28 +283,11 @@ Map1.AddChild(polygon);   <br />
         
             
         
-    
-        
-            
-        
             
         
     
         
             
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
         
             
         
@@ -413,7 +299,11 @@ Map1.AddChild(polygon);   <br />
         
             
         
+            
+        
     
+        
+            
         
             
         
@@ -428,10 +318,6 @@ Map1.AddChild(polygon);   <br />
         
             
         
-    
-        
-            
-        
             
         
     
@@ -440,22 +326,11 @@ Map1.AddChild(polygon);   <br />
         
             
         
-    
-
-    
-    
-        
-            
-        
             
         
     
         
             
-        
-            
-        
-    
         
             
         
@@ -470,19 +345,6 @@ Map1.AddChild(polygon);   <br />
         
             
         
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
             
         
     
@@ -491,13 +353,11 @@ Map1.AddChild(polygon);   <br />
         
             
         
-    
-        
-            
-        
             
         
     
+        
+            
         
             
         
@@ -512,10 +372,6 @@ Map1.AddChild(polygon);   <br />
         
             
         
-    
-        
-            
-        
             
         
     
@@ -524,7 +380,30 @@ Map1.AddChild(polygon);   <br />
         
             
         
+            
+        
     
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
         
             
         
@@ -539,7 +418,42 @@ Map1.AddChild(polygon);   <br />
         
             
         
+            
+        
     
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+                
+                <h2 >
+                    Related Posts
+                </h2 >
+                <ul class="">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions
+                    
+                    </a></h6>
+                    <span class="small text-muted">01 Jul 2020</span>
+                </li>
+                
+                
+            
+        
+    
+        
+            
         
             
         
@@ -547,6 +461,89 @@ Map1.AddChild(polygon);   <br />
         
     
 
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
 
       <!--
       
@@ -558,10 +555,6 @@ Map1.AddChild(polygon);   <br />
               
                   
               
-          
-              
-                  
-              
                   
               
           
@@ -570,22 +563,11 @@ Map1.AddChild(polygon);   <br />
               
                   
               
-          
-      
-          
-          
-              
-                  
-              
                   
               
           
               
                   
-              
-                  
-              
-          
               
                   
               
@@ -600,28 +582,11 @@ Map1.AddChild(polygon);   <br />
               
                   
               
-          
-              
-                  
-              
                   
               
           
               
                   
-              
-                  
-              
-          
-              
-                  
-              
-                  
-              
-          
-      
-          
-          
               
                   
               
@@ -633,7 +598,11 @@ Map1.AddChild(polygon);   <br />
               
                   
               
+                  
+              
           
+              
+                  
               
                   
               
@@ -648,10 +617,6 @@ Map1.AddChild(polygon);   <br />
               
                   
               
-          
-              
-                  
-              
                   
               
           
@@ -660,22 +625,11 @@ Map1.AddChild(polygon);   <br />
               
                   
               
-          
-      
-          
-          
-              
-                  
-              
                   
               
           
               
                   
-              
-                  
-              
-          
               
                   
               
@@ -690,19 +644,6 @@ Map1.AddChild(polygon);   <br />
               
                   
               
-          
-              
-                  
-              
-                  
-              
-          
-      
-          
-          
-              
-                  
-              
                   
               
           
@@ -711,13 +652,11 @@ Map1.AddChild(polygon);   <br />
               
                   
               
-          
-              
-                  
-              
                   
               
           
+              
+                  
               
                   
               
@@ -732,10 +671,6 @@ Map1.AddChild(polygon);   <br />
               
                   
               
-          
-              
-                  
-              
                   
               
           
@@ -744,7 +679,30 @@ Map1.AddChild(polygon);   <br />
               
                   
               
+                  
+              
           
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
               
                   
               
@@ -759,7 +717,39 @@ Map1.AddChild(polygon);   <br />
               
                   
               
+                  
+              
           
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+                      
+                      <h2>Related Posts</h2>
+                      <ul>
+                      
+                      <li class="relatedPost">
+                          <a href="http://pietschsoft.com/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions
+                          
+                          </a>
+                      </li>
+                      
+                      
+                  
+              
+          
+              
+                  
               
                   
               
@@ -767,6 +757,89 @@ Map1.AddChild(polygon);   <br />
               
           
       
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+          
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+              
+                  
+              
+                  
+              
+                  
+              
+          
+      
+      
+          </ul>
       
         -->
 
@@ -791,11 +864,6 @@ Map1.AddChild(polygon);   <br />
     <ul class="list-unstyled">
         
         <li class="mb-3">
-            <h6 class="mb-0"><a href="/post/2022/08/13/javascript-remove-item-from-array">JavaScript: Remove Specific Items from Array</a></h6>
-            <span class="small text-muted">13 Aug 2022</span>
-        </li>
-        
-        <li class="mb-3">
             <h6 class="mb-0"><a href="/post/2022/08/13/build-successful-blog-for-consulting-business">Build a Successful Blog for your Consulting Business</a></h6>
             <span class="small text-muted">13 Aug 2022</span>
         </li>
@@ -815,6 +883,11 @@ Map1.AddChild(polygon);   <br />
             <span class="small text-muted">31 May 2022</span>
         </li>
         
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2022/02/01/finding-myself-again">Finding Myself Again</a></h6>
+            <span class="small text-muted">01 Feb 2022</span>
+        </li>
+        
     </ul>
     </div>
 
@@ -828,10 +901,6 @@ Map1.AddChild(polygon);   <br />
         
             
         
-    
-        
-            
-        
             
         
     
@@ -840,22 +909,11 @@ Map1.AddChild(polygon);   <br />
         
             
         
-    
-
-    
-    
-        
-            
-        
             
         
     
         
             
-        
-            
-        
-    
         
             
         
@@ -870,28 +928,11 @@ Map1.AddChild(polygon);   <br />
         
             
         
-    
-        
-            
-        
             
         
     
         
             
-        
-            
-        
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
         
             
         
@@ -903,7 +944,11 @@ Map1.AddChild(polygon);   <br />
         
             
         
+            
+        
     
+        
+            
         
             
         
@@ -918,10 +963,6 @@ Map1.AddChild(polygon);   <br />
         
             
         
-    
-        
-            
-        
             
         
     
@@ -930,22 +971,11 @@ Map1.AddChild(polygon);   <br />
         
             
         
-    
-
-    
-    
-        
-            
-        
             
         
     
         
             
-        
-            
-        
-    
         
             
         
@@ -960,19 +990,6 @@ Map1.AddChild(polygon);   <br />
         
             
         
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
             
         
     
@@ -981,13 +998,11 @@ Map1.AddChild(polygon);   <br />
         
             
         
-    
-        
-            
-        
             
         
     
+        
+            
         
             
         
@@ -1002,10 +1017,6 @@ Map1.AddChild(polygon);   <br />
         
             
         
-    
-        
-            
-        
             
         
     
@@ -1014,7 +1025,30 @@ Map1.AddChild(polygon);   <br />
         
             
         
+            
+        
     
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
         
             
         
@@ -1029,7 +1063,42 @@ Map1.AddChild(polygon);   <br />
         
             
         
+            
+        
     
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+                
+                <h4>
+                    Related Posts
+                </h4>
+                <ul class="list-unstyled">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions">Loop through JavaScript Arrays using for, forEach, and map functions
+                    
+                    </a></h6>
+                    <span class="small text-muted">01 Jul 2020</span>
+                </li>
+                
+                
+            
+        
+    
+        
+            
         
             
         
@@ -1037,6 +1106,89 @@ Map1.AddChild(polygon);   <br />
         
     
 
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
 
     </div>
 
