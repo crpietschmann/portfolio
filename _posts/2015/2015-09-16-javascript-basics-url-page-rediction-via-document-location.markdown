@@ -6,7 +6,7 @@ date: 2015-09-16 19:15:00 -0500
 comments: true
 published: true
 categories: ["JavaScript"]
-tags: ["JavaScript"]
+tags: ["JavaScript", "js"]
 redirect_from: 
   - /post/2015/09/16/JavaScript-Basics-Url-Page-Rediction-via-document-location.aspx
   - /post/2015/09/16/JavaScript-Basics-Url-Page-Rediction-via-document-location

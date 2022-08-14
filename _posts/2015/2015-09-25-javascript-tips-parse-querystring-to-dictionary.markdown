@@ -6,7 +6,7 @@ date: 2015-09-25 06:04:00 -0500
 comments: true
 published: true
 categories: ["JavaScript"]
-tags: ["JavaScript"]
+tags: ["JavaScript", "js"]
 redirect_from: 
   - /post/2015/09/25/JavaScript-Tips-Parse-QueryString-to-Dictionary.aspx
   - /post/2015/09/25/JavaScript-Tips-Parse-QueryString-to-Dictionary

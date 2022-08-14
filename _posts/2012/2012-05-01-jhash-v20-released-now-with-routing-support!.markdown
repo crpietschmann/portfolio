@@ -6,7 +6,7 @@ date: 2012-05-01 17:34:30 -0500
 comments: true
 published: true
 categories: ["jHash", "Open Source", "JavaScript"]
-tags: ["JavaScript", "HTML"]
+tags: ["JavaScript", "HTML", "js"]
 redirect_from: 
   - /post/2012/05/01/jHash-v20-Released-Now-with-Routing-Support!.aspx
   - /post/2012/05/01/jHash-v20-Released-Now-with-Routing-Support!

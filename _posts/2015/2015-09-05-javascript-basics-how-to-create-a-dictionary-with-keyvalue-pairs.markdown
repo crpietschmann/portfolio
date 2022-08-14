@@ -6,7 +6,7 @@ date: 2015-09-05 09:15:00 -0500
 comments: true
 published: true
 categories: ["JavaScript"]
-tags: ["JavaScript"]
+tags: ["JavaScript", "js"]
 redirect_from: 
   - /post/2015/09/05/JavaScript-Basics-How-to-create-a-Dictionary-with-KeyValue-pairs.aspx
   - /post/2015/09/05/JavaScript-Basics-How-to-create-a-Dictionary-with-KeyValue-pairs

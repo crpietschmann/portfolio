@@ -6,7 +6,7 @@ date: 2011-09-09 17:03:49 -0500
 comments: true
 published: true
 categories: ["JavaScript"]
-tags: ["JavaScript"]
+tags: ["JavaScript", "js"]
 redirect_from: 
   - /post/2011/09/09/JavaScript-windowonbeforeunload-Event-Show-e2809cAre-you-sure-you-want-to-leave-this-pagee2809d-Message.aspx
   - /post/2011/09/09/JavaScript-windowonbeforeunload-Event-Show-e2809cAre-you-sure-you-want-to-leave-this-pagee2809d-Message

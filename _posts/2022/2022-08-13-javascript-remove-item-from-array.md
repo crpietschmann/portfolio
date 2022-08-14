@@ -6,7 +6,7 @@ date: 2022-08-13 19:48:00 -0500
 comments: true
 published: true
 categories: ["JavaScript"]
-tags: ["javascript","array","js"]
+tags: ["JavaScript", "js"]
 ---
 
 When writing JavaScript code, there are many use cases where working with Arrays is required. Creating arrays of values / object and receiving them from API calls is really common. [Looping through JavaScript Arrays](/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions) is a common action to perform, but removing items from a JavaScript Array you are working with is not as straight forward. In this article, we'll take a look at some methods that can be performed to allow you to make sense of removing items from an array.

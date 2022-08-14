@@ -6,7 +6,7 @@ date: 2015-09-18 06:30:00 -0500
 comments: true
 published: true
 categories: ["JavaScript"]
-tags: ["JavaScript"]
+tags: ["JavaScript", "js"]
 redirect_from: 
   - /post/2015/09/18/JavaScript-Basics-String-Contains-Function.aspx
   - /post/2015/09/18/JavaScript-Basics-String-Contains-Function

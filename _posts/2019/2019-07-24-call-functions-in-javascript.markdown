@@ -6,7 +6,7 @@ date: 2019-07-24 10:21:00 -0500
 comments: true
 published: true
 categories: ["JavaScript"]
-tags: ["Tips", "JavaScript", "js", "functions"]
+tags: ["JavaScript", "js"]
 ---
 
 One of the fundamental tasks with JavaScript is how to write and call functions in your code. This may seem like a simple thing, and it essentially is, however there are a few tips and tricks you can use to help making your use of JavaScript Functions easier and more intuitive. This article takes you through the basics of calling functions in your code, and some more advanced tips and tricks to writing better JavaScript functions that can help take your JavaScript coding to the next level.

@@ -6,7 +6,7 @@ date: 2015-04-14 19:36:00 -0500
 comments: true
 published: true
 categories: ["JavaScript", "Open Source", "jsQuizEngine"]
-tags: []
+tags: ["JavaScript", "js", "Open Source"]
 redirect_from: 
   - /post/2015/04/14/jsQuizEngine-lightweight-javascript-quiz-engine.aspx
   - /post/2015/04/14/jsQuizEngine-lightweight-javascript-quiz-engine

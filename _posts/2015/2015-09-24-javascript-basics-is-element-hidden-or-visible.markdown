@@ -5,8 +5,8 @@ title: "jQuery Basics: Is Element Hidden or Visible?"
 date: 2015-09-24 06:33:00 -0500
 comments: true
 published: true
-categories: ["JavaScript", "jQuery"]
-tags: ["JavaScript"]
+categories: ["JavaScript"]
+tags: ["JavaScript", "js"]
 redirect_from: 
   - /post/2015/09/24/JavaScript-Basics-Is-Element-Hidden-or-Visible.aspx
   - /post/2015/09/24/JavaScript-Basics-Is-Element-Hidden-or-Visible
