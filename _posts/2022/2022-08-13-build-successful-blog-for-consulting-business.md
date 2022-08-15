@@ -99,6 +99,6 @@ This can be don't to revitalize older content on your blog and keep there from b
 
 ## Conclusion
 
-These are a few tips I have from my nearly 20 years experience of blogging here, as well we on my even more successful blog over at <https://build5nines.com>. I've used blogging to level up my career, find consulting business, and establish myself as an expert in my field.
+These are a few tips I have from my nearly 20 years experience of blogging so far, as well we on my even more successful blog over at <https://build5nines.com>. I've used blogging to level up my career, find consulting business, and establish myself as an expert in my field.
 
 > If you don't promote yourself, nobody else will. So don't be afraid to spread your expertise and help other people. Lifting others up, will help lift yourself up in the long run.
