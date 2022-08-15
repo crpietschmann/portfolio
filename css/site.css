@@ -4,6 +4,8 @@ h3 { font-size: 1.5rem; }
 
 .container { max-width: 960px; }
 
+.container.alert { margin-top: 2em; }
+
 .container > h2 { text-align: center; margin-top: 2em; }
 
 .container.lowlight { background-color: #e8e8e8; }
