@@ -12,7 +12,7 @@ redirect_from:
   - /post/2012/05/01/jHash-v20-Released-Now-with-Routing-Support!
   - /post/2012/05/01/jhash-v20-released-now-with-routing-support!
   - /post.aspx?id=132350f3-c5ad-4eca-8c4f-2c1110f9a345
-header_image: /images/header_Javascript_Tips.jpg
+header_image: /images/Header_Javascript_Tips.jpg
 ---
 <!-- more -->
 

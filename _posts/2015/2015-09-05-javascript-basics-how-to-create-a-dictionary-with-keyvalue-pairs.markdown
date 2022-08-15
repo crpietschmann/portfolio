@@ -12,6 +12,7 @@ redirect_from:
   - /post/2015/09/05/JavaScript-Basics-How-to-create-a-Dictionary-with-KeyValue-pairs
   - /post/2015/09/05/javascript-basics-how-to-create-a-dictionary-with-keyvalue-pairs
   - /post.aspx?id=f810ecbf-03ff-4f92-98ba-fd2ca975f097
+header_image: /images/Header_Javascript_Tips.jpg
 ---
 <!-- more -->
 

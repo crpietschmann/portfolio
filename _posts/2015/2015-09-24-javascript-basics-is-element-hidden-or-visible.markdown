@@ -12,7 +12,7 @@ redirect_from:
   - /post/2015/09/24/JavaScript-Basics-Is-Element-Hidden-or-Visible
   - /post/2015/09/24/javascript-basics-is-element-hidden-or-visible
   - /post.aspx?id=125c3f46-d488-4812-812b-d7201b47d4c4
-header_image: /images/header_Javascript_Tips.jpg
+header_image: /images/Header_Javascript_Tips.jpg
 ---
 <!-- more -->
 
