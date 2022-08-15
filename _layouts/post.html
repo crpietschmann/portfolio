@@ -7,8 +7,13 @@ layout: default
     <div class="col-12 col-md-8">
 
       <header class="post-header">
-          {% if post.header_image %}
-            <img src="{{ post.header_image }}" alt="" style="width:100%" />
+          {% if post %}
+            {% assign header_image = post.header_image %}
+          {% else %}
+            {% assign header_image = page.header_image %}
+          {% endif %}
+          {% if header_image %}
+            <img src="{{ header_image }}" alt="" style="width:100%" />
           {% endif %}
           <h1 class="post-title">{{ page.title }}</h1>
           <!--
