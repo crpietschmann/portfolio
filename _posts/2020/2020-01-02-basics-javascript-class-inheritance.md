@@ -7,6 +7,7 @@ comments: true
 published: true
 categories: ["JavaScript"]
 tags: ["JavaScript", "js"]
+header_image: /images/header_Javascript_Tips.jpg
 ---
 
 The ECMAScript 2015 definition brought with it the introduction of `class` syntax within the JavaScript language. Previously the only way to do this was with TypeScript or some other language that would transpile down to JavaScript code. With ECMAScript 2015, you can now declare and use classes directly in the JavaScript language itself. Plus, this is a feature that is supported by all the modern web browsers too!

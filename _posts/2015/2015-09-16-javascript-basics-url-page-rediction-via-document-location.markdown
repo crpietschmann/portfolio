@@ -12,6 +12,7 @@ redirect_from:
   - /post/2015/09/16/JavaScript-Basics-Url-Page-Rediction-via-document-location
   - /post/2015/09/16/javascript-basics-url-page-rediction-via-document-location
   - /post.aspx?id=74ed3208-1e9a-48aa-8dfa-af424e5e9164
+header_image: /images/header_Javascript_Tips.jpg
 ---
 <!-- more -->
 

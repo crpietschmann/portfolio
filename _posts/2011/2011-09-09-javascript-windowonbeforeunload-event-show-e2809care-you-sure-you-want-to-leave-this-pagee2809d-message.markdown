@@ -12,6 +12,7 @@ redirect_from:
   - /post/2011/09/09/JavaScript-windowonbeforeunload-Event-Show-e2809cAre-you-sure-you-want-to-leave-this-pagee2809d-Message
   - /post/2011/09/09/javascript-windowonbeforeunload-event-show-e2809care-you-sure-you-want-to-leave-this-pagee2809d-message
   - /post.aspx?id=04d2d0bc-180b-4682-a281-a94363e2a1cd
+header_image: /images/header_Javascript_Tips.jpg
 ---
 <!-- more -->
 

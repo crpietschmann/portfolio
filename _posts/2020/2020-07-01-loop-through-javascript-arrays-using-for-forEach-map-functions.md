@@ -7,6 +7,7 @@ comments: true
 published: true
 categories: ["JavaScript"]
 tags: ["JavaScript", "js"]
+header_image: /images/header_Javascript_Tips.jpg
 ---
 
 All JavaScript apps from server-side Node.js to client-side code, there are many time when you need to work with JavaScript Arrays. Arrays are useful to store multiple values within a single variale. You can build them directly within your code, pass them to another function, or even receive them as part of a JSON payload from a REST API response. Arrays are a very useful construct in any programming language; certainly including JavaScript. This article takes a look at a few of the top tips and methods for working with and looping through JavaScript arrays.

@@ -12,6 +12,7 @@ redirect_from:
   - /post/2015/09/25/JavaScript-Tips-Parse-QueryString-to-Dictionary
   - /post/2015/09/25/javascript-tips-parse-querystring-to-dictionary
   - /post.aspx?id=a7e18d8b-5554-48db-b679-51f9c0575c3d
+header_image: /images/header_Javascript_Tips.jpg
 ---
 <!-- more -->
 

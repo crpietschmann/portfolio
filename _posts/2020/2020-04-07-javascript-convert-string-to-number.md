@@ -7,6 +7,7 @@ comments: true
 published: true
 categories: ["JavaScript"]
 tags: ["JavaScript", "js"]
+header_image: /images/header_Javascript_Tips.jpg
 ---
 
 There are time when you need to convert a String to a Number in JavaScript. This can be very helpful in many situations, including when taking input from a user and passing that on to a function or object property. This article shows you how to use a short hand with the `+` operator (the quick and easy way), as well as using the `parseInt()`, `parseFloat()`, and `Number()` method for parsing string values into a number. This article also explains how each of these methods of conversion works so you have a better understanding of when the appropriate time is to use each within your own application code.
