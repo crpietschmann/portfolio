@@ -5,8 +5,8 @@ title: "Build a Successful Blog for your Consulting Business"
 date: 2022-08-13 14:09:00 -0500
 comments: true
 published: true
-categories: ["Business"]
-tags: ["Business","Consulting","Authority"]
+categories: ["Business", "Blogging"]
+tags: ["Blogging","Business","Consulting","Authority"]
 ---
 
 Are you trying to build a successful blog for promoting or building a consulting business? Blogging can be a great way to promote yourself, your brand, your products or services. However, it takes more than just writing blog articles and creating more pages to pop up on Google searches. You need to write a blog that people will actually want to read and follow. But how do you do this to help grow a consulting business?
