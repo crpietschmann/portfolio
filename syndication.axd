@@ -6,9 +6,28 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 30 Aug 2022 19:25:35 -0500</pubDate>
-    <lastBuildDate>Tue, 30 Aug 2022 19:25:35 -0500</lastBuildDate>
+    <pubDate>Tue, 06 Sep 2022 11:17:41 -0500</pubDate>
+    <lastBuildDate>Tue, 06 Sep 2022 11:17:41 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Google Ranks Active Blogs Higher is Search Results</title>
+        <description>&lt;p&gt;I figured out recently that Google does factor in how active your site or blog is when ranking content in the search results. In the SEO world, there’s a ton of recommendations on keyword research and how to write the perfect articles. However, what no body talks about is whether a blog or website being active in publishing new content has an affect on the traffic that will be sent to it by Google through organic searches. I found out recently with my &lt;a href=&quot;https://Build5Nines.com&quot;&gt;https://Build5Nines.com&lt;/a&gt; website that Google does take into account how active your website is in how it will rank that websites content in search.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 06 Sep 2022 12:00:00 -0500</pubDate>
+        <link>http://pietschsoft.com//post/2022/09/06/google-ranks-active-blogs-higher-in-search-results</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2022/09/06/google-ranks-active-blogs-higher-in-search-results</guid>
+        
+        <category>Blogging</category>
+        
+        <category>SEO</category>
+        
+        <category>Authority</category>
+        
+        
+        <category>Blogging</category>
+        
+      </item>
     
       <item>
         <title>JavaScript: Remove Specific Items from Array</title>
@@ -35,6 +54,8 @@
         <link>http://pietschsoft.com//post/2022/08/13/build-successful-blog-for-consulting-business</link>
         <guid isPermaLink="true">http://pietschsoft.com//post/2022/08/13/build-successful-blog-for-consulting-business</guid>
         
+        <category>Blogging</category>
+        
         <category>Business</category>
         
         <category>Consulting</category>
@@ -43,6 +64,8 @@
         
         
         <category>Business</category>
+        
+        <category>Blogging</category>
         
       </item>
     
@@ -172,25 +195,6 @@
         
         
         <category>JavaScript</category>
-        
-      </item>
-    
-      <item>
-        <title>Encryption and Code are Greater Than Guns and Bombs</title>
-        <description>&lt;p&gt;There is a never ending argument in politics around the meaning of the 2nd Amendment to the United States Constitution. This amendment centers around the “Right to bear arms”. The common interpretation is that it grants citizens of the United States of America the right to keep and own weapons that could be used to protect themselves. This comes from an antiquated time of the American Revolution when the original thirteen colonies revolted from and won their independence from Great Britain.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 11 Mar 2020 10:51:00 -0500</pubDate>
-        <link>http://pietschsoft.com//post/2020/03/11/encryption-code-greater-than-guns-bombs</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2020/03/11/encryption-code-greater-than-guns-bombs</guid>
-        
-        <category>Inspiration</category>
-        
-        <category>future</category>
-        
-        
-        <category>Politics</category>
-        
-        <category>Life</category>
         
       </item>
     
