@@ -15,7 +15,7 @@ Below is a snapshot from the Google Search Console for the website. You can see 
 
 ![Google Search Console showing search ranking/traffic increasing](/images/posts/blogging-active-site-ranking-google-search-console-graph.jpg "Google Search Console showing search ranking/traffic increasing")
 
-Back in 2020, <https://Build5Nines.com> reached a monthly page view count of about 100K. Then I has some personal stuff happen that took my focus off of the blog for about 18 months. In that 18 months, the traffic to the blog steadily declined with virtually zero new content being published. The monthly page views declined to about 30K per month in June 2022.
+Back in 2020, <https://Build5Nines.com> reached a monthly page view count of about 130K. Then I has some personal stuff happen that took my focus off of the blog for about 18 months. In that 18 months, the traffic to the blog steadily declined with virtually zero new content being published. The monthly page views declined to about 30K per month in June 2022.
 
 In mid July 2022, I started publishing new content again, as well as curating / updating some of the old content. As a result of the blog becoming active again, Google started ranking my content higher in search and sending more traffic to the site again. It's almost like Google was like, "Hey this websites not dead anymore, let's start ranking it again."
 
