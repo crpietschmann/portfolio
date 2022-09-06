@@ -21,4 +21,12 @@ In mid July 2022, I started publishing new content again, as well as curating / 
 
 What I've learned from first-hand experience is that Google does in fact rank active blogs that publish new content higher in search results than blogs that have old / stale content. This is proof that if you want to build a successful blog, and keep it that way, you'll need to keep publishing new content on a schedule of some kind.
 
+Below is a snapshot of the overall graph of website traffic for <https://Build5Nines.com> over time. At the height of things, back in October 2020, the website was up to 130k+ page views, with some months higher as certain content went viral on social shares.
+
+![Build5Nines.com traffic over time](/images/posts/blogging-active-site-ranking-google-wordpress-traffic-stats.jpg "Build5Nines.com traffic over time")
+
+You can see that instantly in July 2022, when I started publishing new content again, the traffic started bumping up. And, in August 2022, the traffic was back up to 44k+ page views almost instantly once the website wasn't "dead" anymore.
+
+If you have an old blog and are looking to blog again, I totally recommend that you start publishing new content on the old blog, instead of starting a brand new site. You'll be able to take advantage of Google rankings on the existing content, even if you don't get the traffic you used to anymore.
+
 Happy blogging!
