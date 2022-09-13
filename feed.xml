@@ -6,9 +6,28 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 08 Sep 2022 16:20:15 -0500</pubDate>
-    <lastBuildDate>Thu, 08 Sep 2022 16:20:15 -0500</lastBuildDate>
+    <pubDate>Tue, 13 Sep 2022 18:57:46 -0500</pubDate>
+    <lastBuildDate>Tue, 13 Sep 2022 18:57:46 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>My Work Authoring Microsoft Cloud Workshops</title>
+        <description>&lt;p&gt;Over the last several years, I’ve been involved with writing content for the &lt;a href=&quot;https://microsoftcloudworkshop.com&quot;&gt;Microsoft Cloud Workshops&lt;/a&gt; (MCWs). These contain design sessions and hands-on lab training content that Microsoft uses to train their own Cloud Solution Architects (CSAs) and even used when working with customers to teach more about deploying advanced Microsoft Azure workloads in the cloud. I have authored new MCWs myself, as well as worked to help update and maintain many of the existing MCWs.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Sep 2022 18:00:00 -0500</pubDate>
+        <link>http://pietschsoft.com//post/2022/09/13/my-work-authoring-microsoft-cloud-workshops</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2022/09/13/my-work-authoring-microsoft-cloud-workshops</guid>
+        
+        <category>Work</category>
+        
+        <category>MCW</category>
+        
+        <category>Training</category>
+        
+        
+        <category>Work</category>
+        
+      </item>
     
       <item>
         <title>Google Ranks Active Blogs Higher is Search Results</title>
@@ -171,23 +190,6 @@
         <pubDate>Wed, 01 Jul 2020 08:36:00 -0500</pubDate>
         <link>http://pietschsoft.com//post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions</link>
         <guid isPermaLink="true">http://pietschsoft.com//post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions</guid>
-        
-        <category>JavaScript</category>
-        
-        <category>js</category>
-        
-        
-        <category>JavaScript</category>
-        
-      </item>
-    
-      <item>
-        <title>JavaScript: Convert String to Number</title>
-        <description>&lt;p&gt;There are time when you need to convert a String to a Number in JavaScript. This can be very helpful in many situations, including when taking input from a user and passing that on to a function or object property. This article shows you how to use a short hand with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; operator (the quick and easy way), as well as using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;parseInt()&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;parseFloat()&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Number()&lt;/code&gt; method for parsing string values into a number. This article also explains how each of these methods of conversion works so you have a better understanding of when the appropriate time is to use each within your own application code.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 06 Apr 2020 21:00:00 -0500</pubDate>
-        <link>http://pietschsoft.com//post/2020/04/06/javascript-convert-string-to-number</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2020/04/06/javascript-convert-string-to-number</guid>
         
         <category>JavaScript</category>
         
