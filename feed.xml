@@ -6,8 +6,8 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 13 Sep 2022 19:24:50 -0500</pubDate>
-    <lastBuildDate>Tue, 13 Sep 2022 19:24:50 -0500</lastBuildDate>
+    <pubDate>Tue, 13 Sep 2022 19:34:37 -0500</pubDate>
+    <lastBuildDate>Tue, 13 Sep 2022 19:34:37 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
