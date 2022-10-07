@@ -5,8 +5,8 @@ title: "Always Focus on What Matters"
 date: 2022-10-07 13:00:00 -0500
 comments: true
 published: true
-categories: ["Life"]
-tags: ["Life"]
+categories: ["Personal"]
+tags: ["Tips", "Personal", "Life"]
 ---
 
 So often in life we get distracted. These distractions can come in many forms. Sometimes things happen that distract our attention unnecessarily, like friends / family wanting our attention or something breaks that needs attention. Other times, we distract ourselves since we don't want to deal with the realities of life. What ever the distraction is, it's important to not allow it to pull your focus away from the important things for too long. Sure, there are times when we a distraction is welcome, but it mustn't be allowed to persist for too long.
