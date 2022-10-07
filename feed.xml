@@ -6,8 +6,8 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 07 Oct 2022 12:03:28 -0500</pubDate>
-    <lastBuildDate>Fri, 07 Oct 2022 12:03:28 -0500</lastBuildDate>
+    <pubDate>Fri, 07 Oct 2022 12:04:04 -0500</pubDate>
+    <lastBuildDate>Fri, 07 Oct 2022 12:04:04 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -18,10 +18,14 @@
         <link>http://pietschsoft.com//post/2022/10/07/always-focus-on-what-matters</link>
         <guid isPermaLink="true">http://pietschsoft.com//post/2022/10/07/always-focus-on-what-matters</guid>
         
+        <category>Tips</category>
+        
+        <category>Personal</category>
+        
         <category>Life</category>
         
         
-        <category>Life</category>
+        <category>Personal</category>
         
       </item>
     
