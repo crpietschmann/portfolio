@@ -6,9 +6,24 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 04 Oct 2022 19:28:37 -0500</pubDate>
-    <lastBuildDate>Tue, 04 Oct 2022 19:28:37 -0500</lastBuildDate>
+    <pubDate>Fri, 07 Oct 2022 12:03:28 -0500</pubDate>
+    <lastBuildDate>Fri, 07 Oct 2022 12:03:28 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Always Focus on What Matters</title>
+        <description>&lt;p&gt;So often in life we get distracted. These distractions can come in many forms. Sometimes things happen that distract our attention unnecessarily, like friends / family wanting our attention or something breaks that needs attention. Other times, we distract ourselves since we don’t want to deal with the realities of life. What ever the distraction is, it’s important to not allow it to pull your focus away from the important things for too long. Sure, there are times when we a distraction is welcome, but it mustn’t be allowed to persist for too long.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 07 Oct 2022 13:00:00 -0500</pubDate>
+        <link>http://pietschsoft.com//post/2022/10/07/always-focus-on-what-matters</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2022/10/07/always-focus-on-what-matters</guid>
+        
+        <category>Life</category>
+        
+        
+        <category>Life</category>
+        
+      </item>
     
       <item>
         <title>My Work Authoring Microsoft Cloud Workshops</title>
@@ -180,23 +195,6 @@
         
         
         <category>Business</category>
-        
-      </item>
-    
-      <item>
-        <title>Loop through JavaScript Arrays using for, forEach, and map functions</title>
-        <description>&lt;p&gt;All JavaScript apps from server-side Node.js to client-side code, there are many time when you need to work with JavaScript Arrays. Arrays are useful to store multiple values within a single variale. You can build them directly within your code, pass them to another function, or even receive them as part of a JSON payload from a REST API response. Arrays are a very useful construct in any programming language; certainly including JavaScript. This article takes a look at a few of the top tips and methods for working with and looping through JavaScript arrays.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 01 Jul 2020 08:36:00 -0500</pubDate>
-        <link>http://pietschsoft.com//post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions</guid>
-        
-        <category>JavaScript</category>
-        
-        <category>js</category>
-        
-        
-        <category>JavaScript</category>
         
       </item>
     
