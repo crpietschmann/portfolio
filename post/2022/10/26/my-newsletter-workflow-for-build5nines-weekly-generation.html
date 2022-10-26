@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>My Workflow for Build5Nines Weekly Newsletter Generation | Chris Pietschmann</title>
+    <meta name="description" content="I have 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+">
+    <meta name="author" content="Chris Pietschmann">
+    <link rel="icon" href="/images/avatar-chris-pietschmann-transparent-small.jpg">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="alternate" type="application/rss+xml" title="Chris Pietschmann &raquo; Archive" href="https://pietschsoft.com/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <!--
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!--<link rel="stylesheet" href="//css/site.css">-->
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="canonical" href="http://pietschsoft.com//post/2022/10/26/my-newsletter-workflow-for-build5nines-weekly-generation">
+</head>
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Bio</h4>
+          <p class="text-muted">
+            <a href="/">Chris Pietschmann</a> is a long-time Microsoft MVP with Azure technologies, Microsoft Certified Trainer (MCT), HashiCorp Ambassador (2021), Author, Developer, DevOps / Site Reliability Engineer (SRE) with over 20 years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in DevOps / SRE, IoT, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Publications</h4>
+          <ul class="list-unstyled">
+            <li><a href="/#books" class="text-white">Books</a></li>
+            <li><a href="https://build5nines.com" class="text-white">Build5Nines.com</a></li>
+            <li><a href="https://www.hackster.io/crpietschmann/articles" class="text-white">Hackster.io</a></li>
+            <li><a href="/blog" class="text-white">Pietschsoft.com</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/crpietschmann" class="text-white">Twitter</a></li>
+            <li><a href="http://linkedin.com/in/crpietschmann" class="text-white">LinkedIn</a></li>
+            <li><a href="https://build5nines.com/contact" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com Logo" style="height: 1.5em; margin-right: 0.5em;"/>-->
+        <img src="/images/avatar-chris-pietschmann-transparent-small.jpg" alt="Chris Pietschmann" style="background: #fff; height: 1.5em; margin-right: 0.5em;"/>
+        <strong>Chris Pietschmann</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container post">
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <header class="post-header">
+          
+          
+          <h1 class="post-title">My Workflow for Build5Nines Weekly Newsletter Generation</h1>
+          <!--
+          <div class="post-categories">
+              
+              
+              <a href="//categories/#Business">Business</a>
+              &nbsp;
+              
+              <a href="//categories/#Blogging">Blogging</a>
+              
+              
+            </div>
+          -->
+          <p class="post-meta">Oct 26, 2022</p>
+      </header>
+
+      <article class="post-content">
+        
+            <p>For about 7 years now I’ve been publishing a weekly newsletter that goes along with my <a href="https://Build5Nines.com">https://Build5Nines.com</a> website / blog. It’s a weekly newsletter that you can sign up with your email address to receive weekly updates on the latest news and blogs in the community around Microsoft cloud technologies. If you aren’t aware, Build5Nines is a website / blog that’s dedicated to many topic areas around Microsoft cloud technologies. At the moment the newsletter has approximately 12,000 email subscribers.</p>
+
+<p>I thought I’d take a moment to share a brief look into my own workflow for creating the Build5Nines Weekly Newsletter. It does take manual steps, as I personally do author the newsletter each week, however, I do have a little automation to help save time in this process. Let’s take a look at the tools and workflow process I follow.</p>
+
+<h2 id="what-tools-do-i-use-to-generate-the-newsletter">What tools do I use to generate the newsletter?</h2>
+
+<p>I have a few tools that I use to help me keep track of links to include in the newsletter, pull in RSS feeds, and generate HTML content for the newsletter itself. Really, these tools are mostly about saving me time. When I first started the Build5Nines Weekly Newsletter I manually did everything, then I started adding tools that helped along the way to speed up the process each week. Originally I think it took me about 1 hours to put together the newsletter to send, and today it takes me about 5 minutes generally.</p>
+
+<p>The following is a list of the tools and services I use in my process for generating the newsletter:</p>
+
+<ul>
+  <li><a href="http://eepurl.com/ichARb">MailChimp</a> - I use <a href="http://eepurl.com/ichARb">MailChimp</a> to manage the email subscriber list and to send out the newsletter emails.</li>
+  <li><a href="https://feedly.com">Feedly</a> - I use <a href="https://feedly.com">Feedly</a> to subscribe to blog and website feeds. I can mark links to <em>“read later”</em> so I know which links to include in the next weeks newsletter.</li>
+  <li><a href="https://wordpress.com/refer-a-friend/P4wEL3KT49eAyxkWoO0B/">Wordpress.com</a> - I use <a href="https://wordpress.com/refer-a-friend/P4wEL3KT49eAyxkWoO0B/">Wordpress.com</a> to host <a href="https://Build5Nines.com">Build5Nines.com</a> blog where I post a web version of the newsletters.</li>
+  <li>Custom Automation Code - I have some custom code written using an Azure Functions serverless app that helps me generate the HTML content that I can past in the newsletter based on the saved “read later” links and other blog feeds I pull in. This code uses the <a href="https://feedly.com">Feedly</a> REST API for integration with that service.</li>
+</ul>
+
+<p><em>Disclaimer: FYI, This post does contain some referral links to the services I pay for and use to create my newsletter. If you follow those links and become a customer of those services then I will receive a referral bonus on my account. I have not been paid by anyone to write this article, and am only promoting services I use myself.</em></p>
+
+<h2 id="workflow-i-follow-for-generating-newsletter">Workflow I follow for generating Newsletter</h2>
+
+<p>When I author the Build5Nines Weekly Newsletter I post it as both a blog post on <a href="https://Build5Nines.com">https://Build5Nines.com</a> and send it as an email to subscribers. This gives both RSS/ATOM subscribers and Email subscribers the ability to follow and read the newsletter to offer a broader level of accessibility. it also serves as the benefit of having all the previous newsletters archived on <a href="https://Build5Nines.com">https://Build5Nines.com</a> which isn’t required, but I personally like that they are archived publicly there.</p>
+
+<p>The following is an overview of the steps in my workflow for generating the newsletter:</p>
+
+<ol>
+  <li>Throughout the week, I use <a href="https://feedly.com">Feedly</a> to keep up to date on blogs and websites in the Microsoft and cloud technology space. Within Feedly, I mark links to <em>“read later”</em> so mark them for inclusion in the newsletter.</li>
+  <li>When it’s time to generate the newsletter, I use my custom Azure Functions serverless code to generate HTML content in the correct formatting so I can easily <em>“copy/paste”</em> all the links into the newsletter. The code pulls in links marked as <em>“read later”</em> from <a href="https://feedly.com">Feedly</a>, as well as RSS/ATOM feeds from other sources to automatically pull in links from other sources such as links to all the weeks latest blog articles from <a href="https://Build5Nines.com">https://Build5Nines.com</a>.</li>
+  <li>I have a draft template of the newsletter blog post in <a href="https://wordpress.com/refer-a-friend/P4wEL3KT49eAyxkWoO0B/">Wordpress</a> that I make a copy of, then paste in all the HTML content for the newsletter, as well as write any custom content for the week.</li>
+  <li>I go through all the link again to <em>“copy/paste”</em> and curate links to include in the <em>“This weeks top links”</em> section of the newsletter. This let’s me draw attention to certain links that look like the more interesting topics of the week at the top of the newsletter.</li>
+  <li>Then I publish the post to <a href="https://Build5Nines.com">https://Build5Nines.com</a>.</li>
+  <li>I go into <a href="http://eepurl.com/ichARb">MailChimp</a> and replicate the previous weeks newsletter campaign, <em>“copy/paste”</em> in the content that we previously published from the blog post published on <a href="https://Build5nines.com">https://Build5nines.com</a>, modify any formatting of the email newsletter as necessary, then send it to all current subscribers. It’s worth noting that my email newsletter contains <em>“This weeks top links”</em> and the weeks Microsoft Azure announcements, and not the entire list of links. The email contains links to the blog article on <a href="https://Build5Nines.com">https://Build5Nines.com</a> where subscribers can read the full newsletter contents. This keeps the email from being extremely long.</li>
+  <li>Go into <a href="https://feedly.com">Feedly</a>, and delete all links that are marked for <em>“read later”</em> since they were published in the newsletter already. This clears it out and gets it ready to start marking new links for the next weeks newsletter.</li>
+</ol>
+
+<p>Never be afraid of manual steps, but always automate tasks you need to repeat over and over again. In the beginning it took me an hour to generate the newsletter since I would <em>“copy/paste”</em> each individual link manually. Then I after I got the format of the newsletter figured out, I started using my coding skills to write automation code to generate the HTML content so I could easily <em>“copy/paste”</em> blocks of generated content each week.</p>
+
+<h2 id="why-do-i-publish-a-newsletter">Why do I publish a newsletter?</h2>
+
+<p>There are a few reason that I have an email newsletter from my blog / website. One of the biggest is to help others consume an aggregate of the communities latest blog articles and news to make it easier for others to keep up-to-date on the latest updates. I already spend a fair amount of time keeping up-to-date myself, and this helps me share that effort and time for others to benefit from as well. Another big reason I have the newsletter is to help share and promote blog articles from the community in a <em>“lift others up in the community effort”</em>. Other people promote my content and I enjoy promoting others great content too. The community is stronger if we all work together!</p>
+
+<p>There is also a general recommendation that if you have a blog that you should create an email list of some kind. A major reason for this is to help get people interested in your website or blog subscribed so you can reach out to them with your content and special offers directly. This helps keep those same people to keep coming back and consuming your content. There are business reasons for this and this can be a great way to help promote and grow your own business. So, essentially, I agree with the advice, if you have a blog then you should create an email list of some kind.</p>
+
+<p>On the topic of using the email list to market and make money from, I have generally very careful with my newsletter. People are trusting me with their email addresses and that I wont spam them. I have had some sponsors pay for advertisement in the newsletter some over the years, and am very careful in making things tasteful and not annoying to my subscribers. I also will NEVER share my subscribers email addresses with any third party. I feel very strong about being a good steward with my email newsletter and to not break the trust of my subscribers.</p>
+
+<p>I hope this write up helps those who have been thinking about setting up an email list or newsletter for their own blogs. At the very least, it helps add some more transparency to how I manage my own <a href="https://Build5Nines.com">https://Build5Nines.com</a> blog. Thanks for your interest in this topic!</p>
+
+        
+      </article>
+
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+
+
+      
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <h2 >
+                    Related Posts
+                </h2 >
+                <ul class="">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2022/09/06/google-ranks-active-blogs-higher-in-search-results">Google Ranks Active Blogs Higher is Search Results
+                    
+                    </a></h6>
+                    <span class="small text-muted">06 Sep 2022</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2022/08/13/build-successful-blog-for-consulting-business">Build a Successful Blog for your Consulting Business
+                    
+                    </a></h6>
+                    <span class="small text-muted">13 Aug 2022</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2020/10/10/on-finding-a-business-partner">On Finding a Business Partner
+                    
+                    </a></h6>
+                    <span class="small text-muted">10 Oct 2020</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+
+
+    </div>
+    <div class="col-md-4">
+      <div class="mb-3">
+    <center>
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div>
+    </center>
+    
+    <!--
+    <div class="mb-3">
+    <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
+    </div>
+    -->
+
+    <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+    <div class="recent">
+    <h4>Recent Posts</h4>
+    <ul class="list-unstyled">
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2022/10/07/always-focus-on-what-matters">Always Focus on What Matters</a></h6>
+            <span class="small text-muted">07 Oct 2022</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2022/09/13/my-work-authoring-microsoft-cloud-workshops">My Work Authoring Microsoft Cloud Workshops</a></h6>
+            <span class="small text-muted">13 Sep 2022</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2022/09/06/google-ranks-active-blogs-higher-in-search-results">Google Ranks Active Blogs Higher is Search Results</a></h6>
+            <span class="small text-muted">06 Sep 2022</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2022/08/13/javascript-remove-item-from-array">JavaScript: Remove Specific Items from Array</a></h6>
+            <span class="small text-muted">13 Aug 2022</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2022/08/13/build-successful-blog-for-consulting-business">Build a Successful Blog for your Consulting Business</a></h6>
+            <span class="small text-muted">13 Aug 2022</span>
+        </li>
+        
+    </ul>
+    </div>
+
+    <div class="related">
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <h4>
+                    Related Posts
+                </h4>
+                <ul class="list-unstyled">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2022/09/06/google-ranks-active-blogs-higher-in-search-results">Google Ranks Active Blogs Higher is Search Results
+                    
+                    </a></h6>
+                    <span class="small text-muted">06 Sep 2022</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2022/08/13/build-successful-blog-for-consulting-business">Build a Successful Blog for your Consulting Business
+                    
+                    </a></h6>
+                    <span class="small text-muted">13 Aug 2022</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2020/10/10/on-finding-a-business-partner">On Finding a Business Partner
+                    
+                    </a></h6>
+                    <span class="small text-muted">10 Oct 2020</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+
+    </div>
+
+    <div class="recent">
+        <h4>Recent on Build5Nines.com</h4>
+        <ul class="list-unstyled">
+        
+            <li class="mb-3">
+                <a href="https://build5nines.com/build5nines-weekly-october-26-2022/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2022/07/Build5Nines_Weekly_Newsletter_Featured_Image.jpg?fit=1200%2C675&ssl=1" alt="Build5Nines Weekly &#8211; October 26, 2022"/></a>
+                <h6 class="mb-0"><a href="https://build5nines.com/build5nines-weekly-october-26-2022/">Build5Nines Weekly &#8211; October 26, 2022</a></h6>
+                <span class="small text-muted">26 Oct 2022</span>
+            </li>
+        
+            <li class="mb-3">
+                <a href="https://build5nines.com/build5nines-weekly-october-19-2022/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2022/07/Build5Nines_Weekly_Newsletter_Featured_Image.jpg?fit=1200%2C675&ssl=1" alt="Build5Nines Weekly &#8211; October 19, 2022"/></a>
+                <h6 class="mb-0"><a href="https://build5nines.com/build5nines-weekly-october-19-2022/">Build5Nines Weekly &#8211; October 19, 2022</a></h6>
+                <span class="small text-muted">19 Oct 2022</span>
+            </li>
+        
+            <li class="mb-3">
+                <a href="https://build5nines.com/terraform-organize-locals-local-values/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2022/07/Terraform_IAC_Featured_Image.jpg?fit=1200%2C675&ssl=1" alt="Terraform: Organize Locals / Local Values"/></a>
+                <h6 class="mb-0"><a href="https://build5nines.com/terraform-organize-locals-local-values/">Terraform: Organize Locals / Local Values</a></h6>
+                <span class="small text-muted">19 Oct 2022</span>
+            </li>
+        
+            <li class="mb-3">
+                <a href="https://build5nines.com/build5nines-weekly-october-11-2022/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2022/07/Build5Nines_Weekly_Newsletter_Featured_Image.jpg?fit=1200%2C675&ssl=1" alt="Build5Nines Weekly &#8211; October 11, 2022"/></a>
+                <h6 class="mb-0"><a href="https://build5nines.com/build5nines-weekly-october-11-2022/">Build5Nines Weekly &#8211; October 11, 2022</a></h6>
+                <span class="small text-muted">11 Oct 2022</span>
+            </li>
+        
+            <li class="mb-3">
+                <a href="https://build5nines.com/most-popular-microsoft-azure-certifications/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2020/01/Microsoft_Certification_2020_Featured_Image.jpg?fit=1200%2C675&ssl=1" alt="Most Popular Microsoft Azure Certifications"/></a>
+                <h6 class="mb-0"><a href="https://build5nines.com/most-popular-microsoft-azure-certifications/">Most Popular Microsoft Azure Certifications</a></h6>
+                <span class="small text-muted">07 Oct 2022</span>
+            </li>
+        
+        </ul>
+    </div>
+
+    <!--
+    <h4>Courses</h4>
+    <style>
+        .course-box {
+            margin-bottom: 1em;
+        }
+        .course-box img {
+            width: 95%;
+        }
+        .course-box > strong {
+            display: block;
+        }
+        .course-box > em {
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
+        </a>
+        <strong>
+            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+                The Complete JavaScript Course 2020: Build Real Projects!
+            </a>
+        </strong>
+        <em>by Jonas Schmedtmann</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            JavaScript Basics for Beginners
+        </a></strong>
+        <em>by Mosh Hamedani</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            Advanced JavaScript Concepts
+        </a></strong>
+        <em>by Andrei Neagoie</em>
+    </div>
+    -->
+
+    <h4>Legal Disclaimer</h4>
+    <p style="font-size=0.7em">This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+    
+    <div id="fixedadmarker"></div>
+    <div id="fixedad" class="mt-3">
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+    </div>
+    <style>
+    @media (min-width: 768px) {
+        .fixedad-float {
+            position: fixed;
+            top: 2.5em;
+        }
+    }
+    </style>
+    <script>
+    window.setInterval(function() {
+        var elem = $('#fixedadmarker'),
+            top = elem.offset().top || 0,
+            height = elem[0].offsetHeight || 0,
+            bottom = top + height,
+            scrollY = window.scrollY || 0,
+            elemToBeFixed = $('#fixedad');
+        if (scrollY >= bottom) {
+            elemToBeFixed.addClass('fixedad-float');
+        } else {
+            elemToBeFixed.removeClass('fixedad-float');
+        }
+    }, 100);
+    </script>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Chris Pietschmann</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/#awards">Microsoft MVP</a></li>
+        <li><a class="text-muted" href="/#books">Books</a></li>
+        <li><a class="text-muted" href="/#websites">Websites</a></li>
+        <li><a class="text-muted" href="/#experience">Experience</a></li>
+        <li><a class="text-muted" href="/talks">Talks</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Publications</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://build5nines.com" target="_blank">Build5Nines.com</a></li>
+        <li><a class="text-muted" href="https://www.hackster.io/crpietschmann/articles" target="_blank">Hackster.io</a></li>
+        <li><a class="text-muted" href="/blog">Pietschsoft.com</a></li>
+      </ul>
+      <h5>Social Media</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://twitter.com/crpietschmann" target="_blank">Twitter</a></li>
+        <li><a class="text-muted" href="http://linkedin.com/in/crpietschmann" target="_blank">LinkedIn</a></li>
+        <li><a class="text-muted" href="http://youtube.com/build5nines" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com" style="height: 1.5em;"/>-->
+      <small class="d-block mb-3 text-muted">
+        Copyright © 2003 - 2022 Chris Pietschmann. All rights reserved.<br/><br/>
+        No content may be republished without prior consent.
+      </small>
+      <small class="d-block mb-3 text-muted">
+        <strong>Legal Disclaimer</strong>
+        <p>This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+      </small>
+    </div>
+    <div class="col-12 col-md">
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+<script src="/scripts/prism/prism.js"></script>
+<link rel="stylesheet" href="/scripts/prism/prism.css" />
+
+
+    <!--
+    <script type="text/javascript">
+    // Google Analytics
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    -->
+    <script src="https://ssl.google-analytics.com/ga.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1172995-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+
+    // Developer Media Ads
+    function _dmBootstrap(file) {
+        var _dma = document.createElement('script');
+        _dma.type = 'text/javascript';
+        _dma.async = true;
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+
+    // Google Analytics Track External Link Clicks
+    (function($) { if ($) {
+      $('a[href^=http]').click(function(){
+          if (_gaq && _gaq.push && !((this.href || '').startsWith('https://pietschsoft.com'))) {
+              _gaq.push(['_trackEvent','Link','External',this.href]);
+          }
+          return true;
+      });
+    }})(jQuery);
+    </script>
+  </body>
+</html>

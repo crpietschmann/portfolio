@@ -6,9 +6,32 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 25 Oct 2022 19:22:51 -0500</pubDate>
-    <lastBuildDate>Tue, 25 Oct 2022 19:22:51 -0500</lastBuildDate>
+    <pubDate>Wed, 26 Oct 2022 13:39:39 -0500</pubDate>
+    <lastBuildDate>Wed, 26 Oct 2022 13:39:39 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>My Workflow for Build5Nines Weekly Newsletter Generation</title>
+        <description>&lt;p&gt;For about 7 years now I’ve been publishing a weekly newsletter that goes along with my &lt;a href=&quot;https://Build5Nines.com&quot;&gt;https://Build5Nines.com&lt;/a&gt; website / blog. It’s a weekly newsletter that you can sign up with your email address to receive weekly updates on the latest news and blogs in the community around Microsoft cloud technologies. If you aren’t aware, Build5Nines is a website / blog that’s dedicated to many topic areas around Microsoft cloud technologies. At the moment the newsletter has approximately 12,000 email subscribers.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Oct 2022 13:00:00 -0500</pubDate>
+        <link>http://pietschsoft.com//post/2022/10/26/my-newsletter-workflow-for-build5nines-weekly-generation</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2022/10/26/my-newsletter-workflow-for-build5nines-weekly-generation</guid>
+        
+        <category>Blogging</category>
+        
+        <category>Business</category>
+        
+        <category>Consulting</category>
+        
+        <category>Authority</category>
+        
+        
+        <category>Business</category>
+        
+        <category>Blogging</category>
+        
+      </item>
     
       <item>
         <title>Always Focus on What Matters</title>
@@ -182,23 +205,6 @@
         
         
         <category>Personal</category>
-        
-      </item>
-    
-      <item>
-        <title>On Finding a Business Partner</title>
-        <description>&lt;p&gt;To find a business partner, or go it alone. This is a rather monumental question to answer when looking to start a business. There are benefits to each, and certainly drawbacks of each as well. Over the years, with multiple startups, I’ve done both paths. I’ve seen the struggles of going it alone, and I’ve seen the struggles of how a business partner relationship can go the wrong way.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 10 Oct 2020 08:36:00 -0500</pubDate>
-        <link>http://pietschsoft.com//post/2020/10/10/on-finding-a-business-partner</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2020/10/10/on-finding-a-business-partner</guid>
-        
-        <category>Tips</category>
-        
-        <category>Business</category>
-        
-        
-        <category>Business</category>
         
       </item>
     
