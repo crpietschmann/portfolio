@@ -6,9 +6,28 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 13 Dec 2022 18:18:23 -0600</pubDate>
-    <lastBuildDate>Tue, 13 Dec 2022 18:18:23 -0600</lastBuildDate>
+    <pubDate>Wed, 14 Dec 2022 13:42:16 -0600</pubDate>
+    <lastBuildDate>Wed, 14 Dec 2022 13:42:16 -0600</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>What is ChatGPT and is it important?</title>
+        <description>&lt;p&gt;ChatGPT seems to be the buzz and is talked about everywhere across social media today. Specifically, ChatGPT that is a variant of GPT-3 language model that provides an artificial intelligence (AI) chat bot. People are using it to write college essays, programming code, and many other things. I decided to take a look at it, try it out, and ask it some questions.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 14 Dec 2022 12:00:00 -0600</pubDate>
+        <link>http://pietschsoft.com//post/2022/12/14/what-is-chatgpt-and-is-it-important</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2022/12/14/what-is-chatgpt-and-is-it-important</guid>
+        
+        <category>AI</category>
+        
+        <category>OpenAI</category>
+        
+        <category>ChatGPT</category>
+        
+        
+        <category>AI</category>
+        
+      </item>
     
       <item>
         <title>My Workflow for Build5Nines Weekly Newsletter Generation</title>
@@ -177,25 +196,6 @@
         <pubDate>Tue, 31 May 2022 12:00:00 -0500</pubDate>
         <link>http://pietschsoft.com//post/2022/05/31/find-your-self-worth-internally</link>
         <guid isPermaLink="true">http://pietschsoft.com//post/2022/05/31/find-your-self-worth-internally</guid>
-        
-        <category>Tips</category>
-        
-        <category>Personal</category>
-        
-        <category>Life</category>
-        
-        
-        <category>Personal</category>
-        
-      </item>
-    
-      <item>
-        <title>Finding Myself Again</title>
-        <description>&lt;p&gt;If you’ve been following me over the years, you’ve most likely notices that I’ve mostly gone dark for a little over a year now. I had a major life change forced upon me. I’m not going to go into specific as I’ve always kept my personal life fairly private. I will say that 2021 was a rough year for me, but I’ve learned to find myself again even though I previously hadn’t known I was lost.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 01 Feb 2022 11:00:00 -0600</pubDate>
-        <link>http://pietschsoft.com//post/2022/02/01/finding-myself-again</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2022/02/01/finding-myself-again</guid>
         
         <category>Tips</category>
         
