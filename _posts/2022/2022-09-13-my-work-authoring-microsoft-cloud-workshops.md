@@ -15,6 +15,7 @@ I thought I'd share a little more about what things I've been working on over ti
 
 The following are a few of the Microsoft Cloud Workshops (MCWs) that I've authored completely new during my work with Microsoft on these MCWs:
 
+- [Building the business migration case with Linux and OSS DB to Azure - Microsoft Cloud Workshop](https://github.com/microsoft/MCW-Building-the-business-migration-case-with-Linux-and-OSS-DB-to-Azure)
 - [Building the Business Migration Case with Windows Server and SQL Server - Microsoft Cloud Workshop](https://github.com/microsoft/MCW-Building-the-business-migration-case-with-Windows-Server-and-SQL-Server)
 - [Azure Blockchain - Microsoft Cloud Workshop](https://github.com/microsoft/MCW-Azure-Blockchain)
 - [Optimized Architecture - Microsoft Cloud Workshop](https://github.com/microsoft/MCW-Optimized-architecture)
