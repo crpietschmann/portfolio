@@ -6,9 +6,30 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 10 Jan 2023 18:17:46 -0600</pubDate>
-    <lastBuildDate>Tue, 10 Jan 2023 18:17:46 -0600</lastBuildDate>
+    <pubDate>Wed, 11 Jan 2023 11:13:38 -0600</pubDate>
+    <lastBuildDate>Wed, 11 Jan 2023 11:13:38 -0600</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Top Terraform and Azure Articles on Build5Nines in 2022 (plus year in review)</title>
+        <description>&lt;p&gt;I used to write up summary posts about the traffic of &lt;a href=&quot;https://build5nines.com&quot;&gt;Build5Nines.com&lt;/a&gt; over on Build5nines.com. It’s been a few years since I did a write up of the annual traffic over there, so I decided to write up a simplified version of the old “Build5Nines.com year in review” style posts for 2022.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 Jan 2023 11:00:00 -0600</pubDate>
+        <link>http://pietschsoft.com//post/2023/01/11/top-terraform-azure-articles-on-build5nines-in-2022</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2023/01/11/top-terraform-azure-articles-on-build5nines-in-2022</guid>
+        
+        <category>Terraform</category>
+        
+        <category>Azure</category>
+        
+        <category>DevOps</category>
+        
+        <category>SRE</category>
+        
+        
+        <category>DevOps</category>
+        
+      </item>
     
       <item>
         <title>What is ChatGPT and is it important?</title>
@@ -177,25 +198,6 @@
         <pubDate>Thu, 09 Jun 2022 12:00:00 -0500</pubDate>
         <link>http://pietschsoft.com//post/2022/06/09/care-for-yourself-first</link>
         <guid isPermaLink="true">http://pietschsoft.com//post/2022/06/09/care-for-yourself-first</guid>
-        
-        <category>Tips</category>
-        
-        <category>Personal</category>
-        
-        <category>Life</category>
-        
-        
-        <category>Personal</category>
-        
-      </item>
-    
-      <item>
-        <title>Find Your Self Worth Internally</title>
-        <description>&lt;p&gt;Most of us think we’ve already found our purpose and our own self worth. However, the truth is that still have yet to really find our own self worth. Most of us define our self worth and who we are by following religion, spouse, family, friends, community, or career. The fact is that none of these things truly contains your true self worth, and are actually very dangerous to wrap your self up in too closely.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 31 May 2022 12:00:00 -0500</pubDate>
-        <link>http://pietschsoft.com//post/2022/05/31/find-your-self-worth-internally</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2022/05/31/find-your-self-worth-internally</guid>
         
         <category>Tips</category>
         
