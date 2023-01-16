@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chris Pietschmann</title>
-    <description>I have 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+    <description>I have more than 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 15 Jan 2023 18:47:59 -0600</pubDate>
-    <lastBuildDate>Sun, 15 Jan 2023 18:47:59 -0600</lastBuildDate>
+    <pubDate>Sun, 15 Jan 2023 18:54:09 -0600</pubDate>
+    <lastBuildDate>Sun, 15 Jan 2023 18:54:09 -0600</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
