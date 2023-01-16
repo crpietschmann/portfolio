@@ -17,11 +17,11 @@ redirect_from:
 
 First, What is a JavaScript Function? As defined by W3Schools.com a JavaScript Function is:
 
-*"A function is a reusable code-block that will be executed by an event, or when the function is called."* - <a href="http://www.w3schools.com/js/js_functions.asp">http://www.w3schools.com/js/js_functions.asp</a>
+> "A function is a reusable code-block that will be executed by an event, or when the function is called." - <a href="http://www.w3schools.com/js/js_functions.asp">http://www.w3schools.com/js/js_functions.asp</a>
 
-You're probably thinking, "Well, Yeah. I knew that." But, how much do you really know about JavaScript Functions?
+You're probably thinking, _"Well, Yeah. I knew that."_ But, how much do you really know about JavaScript Functions?
 
-**JavaScript Function uses you already know**
+## JavaScript Function uses you already know
 
 Here's the most basic ways of using functions to get things done that most web developers are familiar with:
 
@@ -47,21 +47,21 @@ Here's the most basic ways of using functions to get things done that most web d
 
 ```
 
-**Ok, but what else could there be?**
+## Ok, but what else could there be?
 
 Well, actually there are a couple more Function usages that most web developers aren't familiar with.
- 
- To test your knowledge of JavaScript Functions, take the following quiz:
 
-1) Is it possible to write a JavaScript Function "in-line"?
- 2) Is it possible to overload a JavaScript Function?
- 3) Is it possible to call a JavaScript Function Asynchronously?
+To test your knowledge of JavaScript Functions, take the following quiz:
+
+1. Is it possible to write a JavaScript Function "in-line"?
+2. Is it possible to overload a JavaScript Function?
+3. Is it possible to call a JavaScript Function Asynchronously?
 
 If you answered "Yes" to all three questions, then you're probably familiar with the tips listed in this article. If not, definitely read on.
 
-**In-Line JavaScript Functions**
+## In-Line JavaScript Functions
 
-You can write JavaScript Function "in-line".
+You can write JavaScript Function "**in-line**".
 
 ```javascript
 
@@ -88,7 +88,7 @@ function AddNumbers(a, b)
 
 ```
 
-**JavaScript Function Overloading**
+## JavaScript Function Overloading
 
 If you're a .NET developer, then you're definitely used to overloading methods so you can pass in different combinations of arguments. Contrary to popular belief, JavaScript does support this. It's just in a different way.
 
@@ -152,7 +152,7 @@ function Test(a)
 
 ```
 
-**Calling JavaScript Function Asynchronously**
+## Calling JavaScript Function Asynchronously
 
 One trick with JavaScript Functions is that you can essentially call them asynchronously by using Timeouts.
 
@@ -211,7 +211,7 @@ function AddNumbersCallback(result)
 
 ```
 
-**Conclusion**
+## Conclusion
 
 In this article we covered some tips and tricks of using JavaScript Functions. Using these tips, you'll be able to write functions that are more reusable and flexible.
 

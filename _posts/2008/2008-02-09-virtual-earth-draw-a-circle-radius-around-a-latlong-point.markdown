@@ -27,12 +27,13 @@ And, in case you don't feel like downloading the example code that uses it, here
 
 ```javascript
  /* *************************************************************************** */
- /* Written Chris Pietschmann (<a href="/"></a>) */
+ /* Written Chris Pietschmann (http://pietschsoft.com) */
  /* This code is dependant on the GeoCodeCalc class found here: */
  /* <a href="/Blog/Post.aspx?PostID=1453">/Blog/Post.aspx?PostID=1453</a> */
  /* *************************************************************************** */
  /* This mathimatical code is a modified version of the code originally posted */
- /* at the following location: *//* <a href="http://viavirtualearth.com/Wiki/Draw+a+circle.ashx">http://viavirtualearth.com/Wiki/Draw+a+circle.ashx</a> */
+ /* at the following location: */
+ /* <a href="http://viavirtualearth.com/Wiki/Draw+a+circle.ashx">http://viavirtualearth.com/Wiki/Draw+a+circle.ashx</a> */
  /* *************************************************************************** */
  if (GeoCodeCalc == undefined) 
      var GeoCodeCalc = {}
@@ -43,9 +44,9 @@ function CreateCircle(loc, radius, units){
  var earthRadius = parseFloat(units); 
  var lat = GeoCodeCalc.ToRadian(loc.Latitude); //radians 
  var lon = GeoCodeCalc.ToRadian(loc.Longitude); //radians 
- var d = parseFloat(radius) / earthRadius; // d = angular distance covered on earth&amp;#39;s surface 
+ var d = parseFloat(radius) / earthRadius; // d = angular distance covered on earth's surface 
  var locs = new Array(); 
- for (x = 0; x &amp;lt;= 360; x++) { 
+ for (x = 0; x <= 360; x++) { 
  var p2 = new VELatLong(0,0) 
  brng = GeoCodeCalc.ToRadian(x); //radians 
  var latRadians = Math.asin(Math.sin(lat) * Math.cos(d) + Math.cos(lat) * Math.sin(d) * Math.cos(brng)); 

@@ -13,47 +13,29 @@ redirect_from:
   - /post/2008/04/21/alpha_geeks_are_still_joe_schmoe_community_leads_itself
   - /post.aspx?id=53efcaad-7d70-48ab-a32a-9821a058af5b
 ---
-<!-- more -->
 
+There's been some major discussion back and forth the last few weeks on the state of the .NET Development Community. I even wrote a little on it myself almost a month ago.
 
-There&#39;s been some major discusson back and forth the last few weeks on the state of the .NET Development Community. I even wrote a little on it myself almost a month ago. 
+Today, I've come to the conclusion that the misconception of the fact that "Alpha Geeks Are Still Joe Schmoe", is in fact the real problem. And the majority of the community hasn't yet realized that in fact they are the ones leading the community in new directions.
 
+## Alpha Geeks Are Not Special
 
+There are a lot of "regular" geeks out that seem to think that the community declared Alpha Geeks are somehow better than they are. Because of this, the "regular" geeks flock together to follow the Alpha Geeks and try to put to practice what they are preaching. Some do this so much, they bounce around like a rubber ball as they switch from one preaching to the next as the Alpha Geeks change topics to focus on.
 
-Today, I&#39;ve come to the conclusion that the misconception of the fact that &quot;Alpha Geeks Are Still Joe Schmoe&quot;, is in fact the real problem. And the majority of the community hasn&#39;t yet realized that in fact they are the ones leading the community in new directions. 
+I, myself, used to be one of those geeks that thought this. Over the last couple of years, I've realized that these so called "Alpha" Geeks aren't any different from you or I.
 
-<h3>Alpha Geeks Are Not Special!</h3>
+## Alpha Geeks Are Still Joe Schmoe
 
+Once you realize this simple statement, things become a bit simpler. Now, you may be thinking "yeah, duh. That's obvious", but just sit and think about this for a minute.
 
-There are alot of &quot;regular&quot; geeks out that seem to think that the community declared Alpha Geeks are somehow better than they are. Because of this, the &quot;regular&quot; geeks flock together to follow the Alpha Geeks and try to put to practice what they are preaching. Some do this so much, they bounce around like a rubber ball as they switch from one preaching to the next as the Alpha Geeks change topics to focus on. 
+The ones considered Alpha Geeks in our community are the celebrities of our community, just like in hollywood. The average joe never considers the celebrity as an equal. They always look up to the celebrity and idealize them. This same thing happens with Geeks and Alpha Geeks!
 
+You must realize that the Alpha Geeks are still Joe Schmoe (just like you or I)! Once you realize this, it'll free you up from thinking you must listen and do everything they say. Instead you'll further question what they are preaching, and decide how much, if any, you will follow. And, by doing this you may come up with your own new ideas.
 
+## Who's Really Leading The Community?
 
-I, myself, used to be one of those geeks that thought this. Over the last couple of years, I&#39;ve realized that these so called &quot;Alpha&quot; Geeks aren&#39;t any different from you or I. 
+Now that we've realized that Alpha Geeks aren't really Alpha at all... *Who's really leading the community?*
 
-<h3>Alpha Geeks Are Still Joe Schmoe!</h3>
+The answer to this is simple. **The Community is!**
 
-
-Once you realize this simple statement, things become a bit simpler. Now, you may be thinking &quot;yeah, duh. That&#39;s obvious&quot;, but just sit and think about this for a minute. 
-
-
-
-The ones considered Alpha Geeks in our community are the celebrities of our community, just like in hollywood. The average joe never considers the celebrity as an equal. They always look up to the celebrity and idealize them. This same thing happens with Geeks and Alpha Geeks! 
-
-
-
-You must realize that the Alpha Geeks are still Joe Schmoe (just like you or I)! Once you realize this, it&#39;ll free you up from thinking you must listen and do everything they say. Instead you&#39;ll further question what they are preaching, and decide how much, if any, you will follow. And, by doing this you may come up with your own new ideas. 
-
-<h3>Who&#39;s Really Leading The Community?</h3>
-
-
-Now that we&#39;ve realized that Alpha Geeks aren&#39;t really Alpha at all... *Who&#39;s really leading the community?* 
-
-
-
-The answer to this is simple..* **The Community is!*** 
-
-
-
-No matter who comes up with the new ideas, the community is still driving the direction of things in the end. If the community doesn&#39;t adopt that new development methodology; then the community wont be using it. Plain and simple. 
-
+No matter who comes up with the new ideas, the community is still driving the direction of things in the end. If the community doesn't adopt that new development methodology; then the community wont be using it. Plain and simple.

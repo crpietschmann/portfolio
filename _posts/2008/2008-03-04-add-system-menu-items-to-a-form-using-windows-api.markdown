@@ -13,7 +13,6 @@ redirect_from:
   - /post/2008/03/04/add-system-menu-items-to-a-form-using-windows-api
   - /post.aspx?id=482989d9-32d1-4bd1-9692-c0718e4044c1
 ---
-<!-- more -->
 
 This is something I used to have a code snippet for in VB6, but I haven't needed to do this in a while so I never wrote up an example in .NET. So, here's the simple code necessary to add some custom menu items to your applications System Menu. If you're not familiar, the System Menu is the menu that shows up if you click on the apps icon in the upper left or if you right click the app in the taskbar.
 
@@ -92,4 +91,4 @@ namespace WinFormsSystemMenuTest
 
 ```
 
-Here's a link on how to "<a href="/post/2008/03/Add-System-Menu-Items-to-WPF-Window-using-Win32-API.aspx">Add System Menu Items to WPF Window using Win32 API</a>"
+Here's a link on how to "<a href="https://pietschsoft.com/post/2008/03/27/add-system-menu-items-to-wpf-window-using-win32-api">Add System Menu Items to WPF Window using Win32 API</a>".

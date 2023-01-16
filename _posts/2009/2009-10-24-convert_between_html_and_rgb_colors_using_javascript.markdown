@@ -13,9 +13,8 @@ redirect_from:
   - /post/2009/10/24/convert_between_html_and_rgb_colors_using_javascript
   - /post.aspx?id=4b595a62-7f09-41cc-9ca3-da351bb27a8a
 ---
-<!-- more -->
 
-To make things easier for converting between HTML Colors and RGB Colors using JavaScript I wrote the below `ColorConverter` object. This object has 2 methods that easily allow you to convert between HTML Colors (ex: `#FF33C2`) and RGB Colors (ex: `255, 0, 233`). There isn&rsquo;t anything built into JavaScript for doing this, and it can come in very handing when working with the <a href="http://msdn.microsoft.com/en-us/library/bb412453.aspx" target="_blank">Bing Maps VEColor object</a>.
+To make things easier for converting between HTML Colors and RGB Colors using JavaScript I wrote the below `ColorConverter` object. This object has 2 methods that easily allow you to convert between HTML Colors (ex: `#FF33C2`) and RGB Colors (ex: `255, 0, 233`). There isn&rsquo;t anything built into JavaScript for doing this, and it can come in very handing when working with the Bing Maps VEColor object.
 
 Usage Examples:
 

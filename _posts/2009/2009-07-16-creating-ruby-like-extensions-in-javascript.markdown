@@ -13,7 +13,6 @@ redirect_from:
   - /post/2009/07/16/creating-ruby-like-extensions-in-javascript
   - /post.aspx?id=091362bb-cfb5-40c8-abff-bdb4156ca837
 ---
-<!-- more -->
 
 I've been spending a little time here and there learning Ruby. I haven't dug much into Rails yet, but have mostly been just focusing on the Ruby language and what it has to offer. Ruby has some nice "helper" methods attached to it's base data types that make iterations and other simple operations even simpler. I've ported a couple of these methods over to JavaScript so I could play around with using some of these "Ruby-isms" with my favorite web-based, dynamic programming language.
 
@@ -209,8 +208,6 @@ String.prototype.upcase = function() {
 };
 
 ```
-
- 
 
 This is just something that I was playing around with, so I thought I'd post it to share. Also, I know these methods are pretty much getting placed within the "global namespace" of the Array, Number and String data/object types, but you can't place them within a "sub-namespace" if you want to keep them as "Ruby-like" as possible. I even think that the JavaScript / ECMAScript language could probably benefit from some of the methods being added to the language specification and implemented directly within the web browsers.
 

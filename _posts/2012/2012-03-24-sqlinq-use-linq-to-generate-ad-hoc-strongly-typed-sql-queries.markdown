@@ -13,167 +13,122 @@ redirect_from:
   - /post/2012/03/24/sqlinq-use-linq-to-generate-ad-hoc-strongly-typed-sql-queries
   - /post.aspx?id=3917ad4f-9b27-44b7-9437-c6661cd41949
 ---
-<!-- more -->
 
-SQLinq is a new library that allows ad-hoc SQL code to be generated at runtime in a strongly typed manner that allows for compile time validation of your SQL code.  <h3>Why SQLinq?</h3>  
-SQLinq is built with the core idea of simplicity and ease of use. SQLinq wont get in your way like other Data Access Layers will.  
+[SQLinq](https://github.com/crpietschmann/SQLinq) is a new library that allows ad-hoc SQL code to be generated at runtime in a strongly typed manner that allows for compile time validation of your SQL code.  
+
+## Why SQLinq?
+
+[SQLinq](https://github.com/crpietschmann/SQLinq) is built with the core idea of simplicity and ease of use. SQLinq wont get in your way like other Data Access Layers will.  
+
 SQLinq is not so much a Data Access Layer (DAL) as it is a code generation tool. Although, it’s not a code generator like others you may be used to. If you look at Entity Framework, you’ll see a ton of C# or VB.NET code that gets generated from a complex data model defined in XML. Yes, Entity Framework gives you compile time validation of your queries, but it also can be a bit bloated (depending on your needs) and can be difficult to setup.  
+
 Personally, I have moved away from using Entity Framework for the most part due to the fact that it has performance issues with complex SQL queries that involve a lot of table joins and many where parameters to limit the results returned. The SQL code that Entity Framework generates generally has good performance, but Entity Framework’s performance issues can be seen when it loops through the data to instantiate the resulting object model. Because of these issues, I have mostly moved to manually writing SQL code and using straight ADO.NET for data access within the applications I build; that is at least until I created SQLinq.  
-With SQLinq there are no complex object models. You simply create Class or Interface that matches the scheme of your database table or view, and you can start querying it in a strongly typed manner.  <pre class="csharpcode">IEnumerable<Person> data = con.Query(
-    from p <span class="kwrd">in</span> SQLinq<Person>()
-    <span class="kwrd">where</span> p.FirstName.StartsWith(<span class="str">&quot;C&quot;</span>) &amp;&amp; p.Age > 21
+
+With SQLinq there are no complex object models. You simply create Class or Interface that matches the scheme of your database table or view, and you can start querying it in a strongly typed manner.
+
+```csharp
+IEnumerable data = con.Query(
+    from p in SQLinq()
+    where p.FirstName.StartsWith("C") && p.Age > 21
     orderby p.FirstName
     select p
-);</pre>
-<style type="text/css">
-.csharpcode, .csharpcode pre
-{
-	font-size: small;
-	color: black;
-	font-family: consolas, "Courier New", courier, monospace;
-	background-color: #ffffff;
-	/*white-space: pre;*/
-}
-.csharpcode pre { margin: 0em; }
-.csharpcode .rem { color: #008000; }
-.csharpcode .kwrd { color: #0000ff; }
-.csharpcode .str { color: #006080; }
-.csharpcode .op { color: #0000c0; }
-.csharpcode .preproc { color: #cc6633; }
-.csharpcode .asp { background-color: #ffff00; }
-.csharpcode .html { color: #800000; }
-.csharpcode .attr { color: #ff0000; }
-.csharpcode .alt 
-{
-	background-color: #f4f4f4;
-	width: 100%;
-	margin: 0em;
-}
-.csharpcode .lnum { color: #606060; }</style>
+);
+```
 
-<h3>Basic SQLinq Usage</h3>
-
+## Basic SQLinq Usage
 
 **Step 1:** Create your data object in code (like the following examples) that matches the database table or view you want to select from. It can either be a class or interface. You can also name the object and/or its properties differently than the database by using the SQLinqTable and SQLinqColumn attributes to specify their name in the database.
 
-<pre class="csharpcode">[SQLinqTable(<span class="str">&quot;PersonTable&quot;</span>)]
-<span class="kwrd">public</span> <span class="kwrd">class</span> Person
+```csharp
+[SQLinqTable("PersonTable")]
+public class Person
 {
-    <span class="kwrd">public</span> Guid ID { get; set; }
+    public Guid ID { get; set; }
 
-    [SQLinqColumn(<span class="str">&quot;First_Name&quot;</span>)]
-    <span class="kwrd">public</span> <span class="kwrd">string</span> FirstName { get; set; }
+    [SQLinqColumn("First_Name")]
+    public string FirstName { get; set; }
 
-    [SQLinqColumn(<span class="str">&quot;Last_Name&quot;</span>)]
-    <span class="kwrd">public</span> <span class="kwrd">string</span> LastName { get; set; }
+    [SQLinqColumn("Last_Name")]
+    public string LastName { get; set; }
 
-    <span class="kwrd">public</span> <span class="kwrd">int</span> Age { get; set; }
-}</pre>
-<style type="text/css">
-
-.csharpcode, .csharpcode pre
-{
-	font-size: small;
-	color: black;
-	font-family: consolas, "Courier New", courier, monospace;
-	background-color: #ffffff;
-	/*white-space: pre;*/
+    public int Age { get; set; }
 }
-.csharpcode pre { margin: 0em; }
-.csharpcode .rem { color: #008000; }
-.csharpcode .kwrd { color: #0000ff; }
-.csharpcode .str { color: #006080; }
-.csharpcode .op { color: #0000c0; }
-.csharpcode .preproc { color: #cc6633; }
-.csharpcode .asp { background-color: #ffff00; }
-.csharpcode .html { color: #800000; }
-.csharpcode .attr { color: #ff0000; }
-.csharpcode .alt 
-{
-	background-color: #f4f4f4;
-	width: 100%;
-	margin: 0em;
-}
-.csharpcode .lnum { color: #606060; }</style>
-
+```
 
 **Step 2:** Use LINQ to generate the ad-hoc SQL query necessary
 
-<pre class="csharpcode">var query = from d <span class="kwrd">in</span> <span class="kwrd">new</span> SQLinq<Person>()
-            <span class="kwrd">where</span> d.FirstName.StartsWith(<span class="str">&quot;C&quot;</span>)
-                 &amp;&amp; d.Age > 18
+```csharp
+var query = from d in new SQLinq()
+            where d.FirstName.StartsWith("C")
+                 && d.Age > 18
             orderby d.FirstName
-            select <span class="kwrd">new</span> {
+            select new {
                 id = d.ID,
                 firstName = d.FirstName
-            };</pre>
-
+            };
+```
 
 **Step 3:** Generate the SQL code and necessary query parameter key/value pairs.
 
-<pre class="csharpcode">var queryResult = query.ToSQL();
+```csharp
+var queryResult = query.ToSQL();
 
-<span class="rem">// get the full SQL code</span>
+// get the full SQL code
 var sqlCode = queryResult.ToQuery();
 
-<span class="rem">// get the query parameters necessary to execute the above query</span>
-var sqlParameters = queryResult.Parameters;</pre>
-
+// get the query parameters necessary to execute the above query
+var sqlParameters = queryResult.Parameters;
+```
 
 **Step 4:** Create SqlCommand and set the SQL code and query parameters.
 
-<pre class="csharpcode">var cmd = <span class="kwrd">new</span> SqlCommand(dbconnection, sqlCode);
-<span class="kwrd">foreach</span>(var p <span class="kwrd">in</span> sqlParameters)
+```csharp
+var cmd = new SqlCommand(dbconnection, sqlCode);
+foreach(var p in sqlParameters)
 {
     cmd.Parameters.AddWithValue(p.Key, p.Value);
 }
-// now execute the command and get the results from the database</pre>
+// now execute the command and get the results from the database
+```
 
-<h3>Now add SQLinq.Dapper</h3>
-
+## Now add SQLinq.Dapper
 
 SQLinq.Dapper is a small extension library that bridges SQLinq and Dapper to make querying much simpler.
 
-
 Here’s a modified version of the above example that uses Dapper:
 
-<pre class="csharpcode">IEnumerable<Person> data = <span class="kwrd">null</span>;
-<span class="kwrd">using</span>(IDbConnection con = GetDbConnection())
+```csharp
+IEnumerable data = null;
+using(IDbConnection con = GetDbConnection())
 {
     con.Open();
     data = con.Query(
-        from p <span class="kwrd">in</span> SQLinq<Person>()
-        <span class="kwrd">where</span> p.FirstName.StartsWith(<span class="str">&quot;C&quot;</span>) &amp;&amp; p.Age > 21
+        from p in SQLinq()
+        where p.FirstName.StartsWith("C") && p.Age > 21
         orderby p.FirstName
         select p
     );
     con.Close();
 }
-// <span class="kwrd">do</span> something with the data that was returned</pre>
+// do something with the data that was returned
+```
 
-<h3>Install SQLinq and SQLinq.Dapper via Nuget</h3>
-
+## Install SQLinq and SQLinq.Dapper via Nuget
 
 Both SQLinq and SQLinq.Dapper are available via Nuget.
 
-
-<a href="http://nuget.org/packages/SQLinq">http://nuget.org/packages/SQLinq</a>
-
+<https://github.com/crpietschmann/SQLinq>
 
 <a href="http://nuget.org/packages/sqlinq"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" border="0" src="http://sqlinq.codeplex.com/Download?ProjectName=sqlinq&amp;DownloadId=357830" /></a>
 
-
 <a href="http://nuget.org/packages/SQLinq.Dapper">http://nuget.org/packages/SQLinq.Dapper</a>
-
 
 <a href="http://nuget.org/packages/SQLinq.Dapper"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" border="0" src="http://download.codeplex.com/Download?ProjectName=sqlinq&amp;DownloadId=358422" /></a>
 
-<h3>Current Limitations of SQLinq</h3>
-
+## Current Limitations of SQLinq
 
 Currently the only real limitation of SQLinq is that is currently doesn’t support the ability to join multiple tables together using it. This requires you to only select data from existing database tables and/or views. However, by using a View to base your SQLinq query you can basically “pre” join different tables together for specific uses.
 
-<h3>Conclusion</h3>
-
+## Conclusion
 
 Personally, I think the concept of SQLinq is pretty neat and will be using it in my own projects. Although, I must admit that mixing SQLinq with other data access methods within a single application is probably best, and allows you to use the best method for your needs as they arise.

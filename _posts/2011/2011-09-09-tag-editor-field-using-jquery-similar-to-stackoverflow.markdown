@@ -15,7 +15,7 @@ redirect_from:
 ---
 <!-- more -->
 
-The tag editor featured on the <a href="http://stackoverflow.com">StackOverflow</a> website (and all the StackExchange websites) is a real slick tag editor that makes it much nicer to enter tags than just a plain textbox. I searched a little and couldn&rsquo;t find anything that works just like theirs, so I decided to build one.
+The tag editor featured on the <a href="http://stackoverflow.com">StackOverflow</a> website (and all the StackExchange websites) is a real slick tag editor that makes it much nicer to enter tags than just a plain textbox. I searched a little and couldn't find anything that works just like theirs, so I decided to build one.
 
 <a href="/files/jquery.selectit-0.1.png"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border: 0px;" title="jquery.selectit-0.1" src="/files/jquery.selectit-0.1_thumb.png" alt="jquery.selectit-0.1" width="435" height="213" border="0" /></a>
 <div id="scid:fb3a1972-4489-4e52-abe7-25a00bb07fdf:2cd303ff-9fa7-4cb2-9b87-b1a4b5159285" class="wlWriterEditableSmartContent" style="margin: 0px; display: inline; float: none; padding: 0px;">
@@ -23,7 +23,8 @@ The tag editor featured on the <a href="http://stackoverflow.com">StackOverflow<
 **Download Full Source Code: <a href="/files/jquery.selectit-0.1.zip" target="_blank">jquery.selectit-0.1.zip</a>**
 </div>
 
-Here&rsquo;s some example usage of the tag editor:
+Here's some example usage of the tag editor:
+
 ```html
 <div id='SelectBox' style='width: 350px'></div>
 
@@ -68,6 +69,6 @@ $(function () {
 </script>
 ```
 
-Use at your own risk. This code is quick and dirty, and may contain bugs. This is the reason I didn&rsquo;t throw it up on Github or CodePlex.
+Use at your own risk. This code is quick and dirty, and may contain bugs. This is the reason I didn't throw it up on Github or CodePlex.
 
 Have fun!

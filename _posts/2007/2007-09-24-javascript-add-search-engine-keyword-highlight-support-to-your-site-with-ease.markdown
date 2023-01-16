@@ -21,10 +21,12 @@ The script they implemented in BlogEngine.NET is called <a href="http://fucoder.
 
 My blog is implemented with ASP.NET 2.0, so to include the se-hilite.js file in my entire site I just added the following line to the load event of my master page:
 
-<span style="color: #2b91af; font-size: x-small;"> </span>
-
-<span style="color: #2b91af; font-size: x-small;">ScriptManager</span><span style="font-size: x-small;">.RegisterClientScriptInclude(</span><span style="color: #0000ff; font-size: x-small;">this</span><span style="font-size: x-small;">.Page, </span><span style="color: #0000ff; font-size: x-small;">this</span><span style="font-size: x-small;">.GetType(), </span><span style="color: #a31515; font-size: x-small;">"se_hilite"</span><span style="font-size: x-small;">, </span><span style="color: #2b91af; font-size: x-small;">VirtualPathUtility</span><span style="font-size: x-small;">.ToAbsolute(</span><span style="color: #a31515; font-size: x-small;">"~/js/se_hilite.js"</span><span style="font-size: x-small;">));</span>
-
- 
+```csharp
+ScriptManager.RegisterClientScriptInclude(
+    this.Page, this.GetType(),
+    "se_hilite",
+    VirtualPathUtility.ToAbsolute("~/js/se_hilite.js")
+);
+```
 
 I just implemented this on my blog, so I hope all you who come here from the search engines enjoy!

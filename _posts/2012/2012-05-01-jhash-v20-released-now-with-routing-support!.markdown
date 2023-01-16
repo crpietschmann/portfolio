@@ -14,77 +14,59 @@ redirect_from:
   - /post.aspx?id=132350f3-c5ad-4eca-8c4f-2c1110f9a345
 header_image: /images/Header_Javascript_Tips.jpg
 ---
-<!-- more -->
 
-<a href="http://jhash.codeplex.com" target="_blank">jHash</a> is a small, lightweight (4kb minified / 2kb compressed) javascript library that makes it extremely easy to work with “location.hash&quot;. Version 1.0 had the ability to set / retrieve hash root values as well as “hash querystring” values. The newly released version 2.0 includes a new lightweight routing engine that facilitates an easier developer experience when building Single Page Applications.  
-The <a href="http://jhash.codeplex.com/documentation" target="_blank">jHash documentation</a> contains full descriptions of the libraries methods and their usage.  
-Get jHash Here: <a href="http://jhash.codeplex.com">http://jhash.codeplex.com</a>   <h3>Easily work with “location.hash”</h3>  
-Here are some simple examples of setting and retrieving hash “root” and “querystring” values:  <pre class="csharpcode"><span class="rem">// URL:</span>
-<span class="rem">// http://localhost/page.htm#SomeValue?name=Chris&amp;location=Wisconsin</span>
+[jHash](https://github.com/crpietschmann/jHash) is a small, lightweight (4kb minified / 2kb compressed) javascript library that makes it extremely easy to work with `location.hash`. Version 1.0 had the ability to set / retrieve hash root values as well as “hash querystring” values. The newly released version 2.0 includes a new lightweight routing engine that facilitates an easier developer experience when building Single Page Applications.  
 
-<span class="rem">// get &quot;root&quot; hash value</span>
-<span class="kwrd">var</span> root = jHash.root(); <span class="rem">// returns &quot;SomeValue&quot;</span>
+The [jHash documentation](https://github.com/crpietschmann/jHash) contains full descriptions of the libraries methods and their usage.  
 
-<span class="rem">// get &quot;name&quot; hash querystring value</span>
-<span class="kwrd">var</span> name = jHash.val(<span class="str">'name'</span>); <span class="rem">// returns &quot;Chris&quot;</span>
+Get jHash Here: <https://github.com/crpietschmann/jHash>
 
-<span class="rem">// get &quot;location&quot; hash querystring value</span>
-<span class="kwrd">var</span> loc = jHash.val(<span class="str">'location'</span>); <span class="rem">// return &quot;Wisconsin&quot;</span>
+## Easily work with “location.hash”
 
-<span class="rem">// set new individual query string value</span>
-jHash.val(<span class="str">'name'</span>, <span class="str">'Steve'</span>);
+Here are some simple examples of setting and retrieving hash “root” and “querystring” values:
 
-<span class="rem">// set all new query string hash values</span>
+```javascript
+// URL:
+// http://localhost/page.htm#SomeValue?name=Chris&location=Wisconsin
+
+// get "root" hash value
+var root = jHash.root(); // returns "SomeValue"
+
+// get "name" hash querystring value
+var name = jHash.val('name'); // returns "Chris"
+
+// get "location" hash querystring value
+var loc = jHash.val('location'); // return "Wisconsin"
+
+// set new individual query string value
+jHash.val('name', 'Steve');
+
+// set all new query string hash values
 jHash.val({
-    name: <span class="str">'Steve'</span>,
-    location: <span class="str">'Montana'</span>
-});</pre>
-<style type="text/css">
-.csharpcode, .csharpcode pre
-{
-	font-size: small;
-	color: black;
-	font-family: consolas, "Courier New", courier, monospace;
-	background-color: #ffffff;
-	/*white-space: pre;*/
-}
-.csharpcode pre { margin: 0em; }
-.csharpcode .rem { color: #008000; }
-.csharpcode .kwrd { color: #0000ff; }
-.csharpcode .str { color: #006080; }
-.csharpcode .op { color: #0000c0; }
-.csharpcode .preproc { color: #cc6633; }
-.csharpcode .asp { background-color: #ffff00; }
-.csharpcode .html { color: #800000; }
-.csharpcode .attr { color: #ff0000; }
-.csharpcode .alt 
-{
-	background-color: #f4f4f4;
-	width: 100%;
-	margin: 0em;
-}
-.csharpcode .lnum { color: #606060; }</style>
+    name: 'Steve',
+    location: 'Montana'
+});
+```
 
-<h3>Easy “location.hash” Routing with jHash</h3>
-
+## Easy “location.hash” Routing with jHash
 
 Hash routes are a technique that can be used to build Single Page Applications more easily. The Routing implementation contained within jHash works so you can declare Route Patterns in a similar fashion to ASP.NET Routes.
 
-
-The <a href="http://jhash.codeplex.com/wikipage?title=Using%20jHash%20Routes" target="_blank">Using jHash Routes article in the jHash documentation</a> contains full descriptions and examples on how to use jHash Routes.
-
+The ["Using jHash Routes article in the jHash documentation"](https://github.com/crpietschmann/jHash) contains full descriptions and examples on how to use jHash Routes.
 
 Here’s a short code sample that shows how to add a simple hash route handler and a sample Hash value that will match the route specified:
 
-<pre class="csharpcode"><span class="rem">// Hash that would match this Route Pattern</span>
-<span class="rem">// #Wisconsin/Milwaukee</span>
+```javascript
+// Hash that would match this Route Pattern
+// #Wisconsin/Milwaukee
 
-jHash.route(<span class="str">'{state}/{city}'</span>,
-    <span class="kwrd">function</span> () {
-        <span class="kwrd">var</span> stateName = <span class="kwrd">this</span>.state;
-        <span class="rem">// stateName will equal 'Wisconsin'</span>
+jHash.route('{state}/{city}',
+    function () {
+        var stateName = this.state;
+        // stateName will equal 'Wisconsin'
 
-        <span class="kwrd">var</span> cityName = <span class="kwrd">this</span>.city;
-        <span class="rem">// cityName will equal 'Milwaukee'</span>
+        var cityName = this.city;
+        // cityName will equal 'Milwaukee'
     }
-);</pre>
+);
+```

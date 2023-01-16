@@ -15,12 +15,12 @@ redirect_from:
 ---
 <!-- more -->
 
-Sometimes when creating base objects you want to create methods that are overridable by object that inherit the base object, but keep the methods from being public. However, the compiler throws an exceptions when you try to define a method as "Private Abstract".
+Sometimes when creating base objects you want to create methods that are overridden by object that inherit the base object, but keep the methods from being public. However, the compiler throws an exceptions when you try to define a method as **Private Abstract**.
 
-**Why doesn't the compiler like "Private Abstract" methods?**
+## Why doesn't the compiler like "Private Abstract" methods?
 
-The reason for this is Private methods can not be overriden. So, essentially the Abstract is useless if the method is Private.
+The reason for this is Private methods can not be overridden. So, essentially the Abstract is useless if the method is Private.
 
-**How can I create a "Private" method that's able to be overriden?**
+## How can I create a "Private" method that's able to be overridden?
 
-Simple, you just declare the method as "Protected Abstract". Protected defines that the method is only accessible from within the class that declared it, and from within any derived class.
+Simple, you just declare the method as **Protected Abstract**. Protected defines that the method is only accessible from within the class that declared it, and from within any derived class.

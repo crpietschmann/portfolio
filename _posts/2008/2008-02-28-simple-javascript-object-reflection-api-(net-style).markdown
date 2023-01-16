@@ -13,7 +13,7 @@ redirect_from:
   - /post/2008/02/28/simple-javascript-object-reflection-api-(net-style)
   - /post.aspx?id=591b5d4e-b2a6-4b3b-a613-0bcc74f35219
 ---
-<!-- more -->
+
 I was thinking about how JavaScript JSON serializers go about serializing objects. But how does the serializer know about each of the objects properties? I figured JavaScript must have some method of object reflection (similar to .NET Reflection) and it does.
 
 Here's a simple Reflection namespace that allows you to more easily reflect through an objects methods and properties:
@@ -47,7 +47,7 @@ PietschSoft.Reflection.GetMethods = function(obj) {
 };
 ```
 
-And, here&#39;s some simple code using the above simple reflection api:
+And, here's some simple code using the above simple reflection api:
 
 ```javascript
 /// Define our Person Object
