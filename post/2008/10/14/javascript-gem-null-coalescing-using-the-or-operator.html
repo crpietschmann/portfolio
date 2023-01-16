@@ -93,9 +93,9 @@
         
             <!-- more -->
 
-<p>I recently purchased <a href="https://amzn.to/2XtWRz6">JavaScript: The Good Parts by Douglas Crockford</a>, and I found this little gem on page 21, although he listed it in the section <em>Objects - Retrieval</em>.</p>
+<p>I recently purchased <em>JavaScript: The Good Parts by Douglas Crockford</em>, and I found this little gem on page 21, although he listed it in the section <em>Objects - Retrieval</em>.</p>
 
-<p><strong>It is possible to use Null Coalescing in JavaScript by using the <code class="language-plaintext highlighter-rouge">||</code> operator!</strong></p>
+<h2 id="it-is-possible-to-use-null-coalescing-in-javascript-by-using-the--operator">It is possible to use Null Coalescing in JavaScript by using the <code class="language-plaintext highlighter-rouge">||</code> operator</h2>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Note: only this code example is quoted from the book</span>
 
@@ -104,7 +104,7 @@
 <span class="kd">var</span> <span class="nx">status</span> <span class="o">=</span> <span class="nx">flight</span><span class="p">.</span><span class="nx">status</span> <span class="o">||</span> <span class="dl">"</span><span class="s2">unknown</span><span class="dl">"</span><span class="p">;</span>
 </code></pre></div></div>
 
-<p>Since JavaScript returns a boolean value of <em>true</em> when your looking at a variable that is not set to* null* or <em>undefined</em>, you can use the <code class="language-plaintext highlighter-rouge">||</code> (or) operator to do null coalescing. Basically, as long as the first value is not <em>null</em> or <em>undefined</em> it’s returned, otherwise the second value is returned. This really simplifies the process of getting object property values when you need to use a default value if it’s not set yet, and keeps you from needing to use an if statement.</p>
+<p>Since JavaScript returns a boolean value of <code class="language-plaintext highlighter-rouge">true</code> when your looking at a variable that is not set to <code class="language-plaintext highlighter-rouge">null</code> or <code class="language-plaintext highlighter-rouge">undefined</code>, you can use the <code class="language-plaintext highlighter-rouge">||</code> (or) operator to do null coalescing. Basically, as long as the first value is not <code class="language-plaintext highlighter-rouge">null</code> or <code class="language-plaintext highlighter-rouge">undefined</code> it’s returned, otherwise the second value is returned. This really simplifies the process of getting object property values when you need to use a default value if it’s not set yet, and keeps you from needing to use an if statement.</p>
 
 <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros"></div>
 
@@ -117,7 +117,7 @@
 
 <p>This new trick makes the code much easier to read, and checks for <em>undefined *also so I no longer need to worry about the value being equal to *undefined</em> in some rare circumstance.</p>
 
-<h3 id="reference">Reference:</h3>
+<h2 id="reference">Reference:</h2>
 
 <p>JavaScript: The Good Parts by Douglas Crockford. Copyright 2008 Yahoo! inc., 978-0-596-51774-8.</p>
 

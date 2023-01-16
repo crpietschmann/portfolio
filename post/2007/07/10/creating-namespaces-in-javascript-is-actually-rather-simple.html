@@ -91,104 +91,66 @@
 
       <article class="post-content">
         
-            <!-- more -->
+            <p>Creating Namespaces in JavaScript is rather simple due to the fact that JavaScript is a very flexible language. As far as I know all the popular Ajax frameworks do this (including the ASP.NET AJAX Extensions). Being a .NET programmer (I’m assuming Java programmers would feel the same way), having classes divided up into namespaces makes code a lot easier to manage.</p>
 
-<p>Creating Namespaces in JavaScript is rather simple due to the fact that JavaScript is a very flexible language. As far as I know all the popular Ajax frameworks do this (including the ASP.NET AJAX Extensions). Being a .NET programmer (I'm assuming Java programmers would feel the same way), having classes devided up into namespaces makes code alot easier to manage.</p>
+<h2 id="add-code-to-an-isolated-namespace">Add Code to an Isolated Namespace</h2>
 
-<p><strong>Here's some code that wraps up the ability to add namespaces into a namespace of it's own:</strong></p>
+<p>Here’s some code that wraps up the ability to add namespaces into a namespace of it’s own:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-
-
-<span class="c1">/// Create the Namespace Manager that we&amp;#39;ll use to</span>
-
+<span class="c1">/// Create the Namespace Manager that we'll use to</span>
 <span class="c1">/// make creating namespaces a little easier.</span>
 
-
-
-<span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">Namespace</span> <span class="o">==</span> <span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;</span><span class="kc">undefined</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;)</span> <span class="kd">var</span> <span class="nx">Namespace</span> <span class="o">=</span> <span class="p">{};</span>
-
+<span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">Namespace</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">undefined</span><span class="dl">'</span><span class="p">)</span> <span class="kd">var</span> <span class="nx">Namespace</span> <span class="o">=</span> <span class="p">{};</span>
 <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">Namespace</span><span class="p">.</span><span class="nx">Manager</span><span class="p">)</span> <span class="nx">Namespace</span><span class="p">.</span><span class="nx">Manager</span> <span class="o">=</span> <span class="p">{};</span>
 
-
-
 <span class="nx">Namespace</span><span class="p">.</span><span class="nx">Manager</span> <span class="o">=</span> <span class="p">{</span>
+ <span class="na">Register</span><span class="p">:</span><span class="kd">function</span><span class="p">(</span><span class="nx">namespace</span><span class="p">)</span> <span class="p">{</span>
 
- <span class="na">Register</span><span class="p">:</span><span class="kd">function</span><span class="p">(</span><span class="nx">namespace</span><span class="p">){</span>
-
-  <span class="nx">namespace</span> <span class="o">=</span> <span class="nx">namespace</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;.</span><span class="o">&amp;</span><span class="err">#</span><span class="mi">39</span><span class="p">;);</span>
-
-
+  <span class="nx">namespace</span> <span class="o">=</span> <span class="nx">namespace</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">'</span><span class="s1">.</span><span class="dl">'</span><span class="p">);</span>
 
   <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">window</span><span class="p">[</span><span class="nx">namespace</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span> <span class="nb">window</span><span class="p">[</span><span class="nx">namespace</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="p">{};</span>
-
-  
 
   <span class="kd">var</span> <span class="nx">strFullNamespace</span> <span class="o">=</span> <span class="nx">namespace</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
 
   <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">namespace</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
-
   <span class="p">{</span>
+   <span class="nx">strFullNamespace</span> <span class="o">+=</span> <span class="dl">"</span><span class="s2">.</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">namespace</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
 
-   <span class="nx">strFullNamespace</span> <span class="o">+=</span> <span class="o">&amp;</span><span class="nx">quot</span><span class="p">;.</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span> <span class="o">+</span> <span class="nx">namespace</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
-
-   <span class="nb">eval</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">window</span><span class="p">.</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span> <span class="o">+</span> <span class="nx">strFullNamespace</span> <span class="o">+</span> <span class="o">&amp;</span><span class="nx">quot</span><span class="p">;)</span><span class="nb">window</span><span class="p">.</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span> <span class="o">+</span> <span class="nx">strFullNamespace</span> <span class="o">+</span> <span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span><span class="o">=</span><span class="p">{};</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;);</span>
-
+   <span class="nb">eval</span><span class="p">(</span><span class="dl">"</span><span class="s2">if(!window.</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">strFullNamespace</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">)window.</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">strFullNamespace</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">={};</span><span class="dl">"</span><span class="p">);</span>
   <span class="p">}</span>
-
  <span class="p">}</span>
-
 <span class="p">};</span>
 
-
-
 </code></pre></div></div>
 
-<p><strong>Here's a sample usage of the above code to create and use an object that's placed inside a namespace:</strong></p>
+<h2 id="create-and-use-object-within-a-namespace">Create and Use Object within a Namespace</h2>
+
+<p>Here’s a sample usage of the above code to create and use an object that’s placed inside a namespace:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-
-
 <span class="c1">// Register our Namespace</span>
-
-<span class="nx">Namespace</span><span class="p">.</span><span class="nx">Manager</span><span class="p">.</span><span class="nx">Register</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span><span class="nx">PietschSoft</span><span class="p">.</span><span class="nx">Utility</span><span class="p">.</span><span class="nx">Class</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;);</span>
-
-
+<span class="nx">Namespace</span><span class="p">.</span><span class="nx">Manager</span><span class="p">.</span><span class="nx">Register</span><span class="p">(</span><span class="dl">"</span><span class="s2">PietschSoft.Utility.Class</span><span class="dl">"</span><span class="p">);</span>
 
 <span class="c1">// Add the Triplet class to the namespace created above</span>
-
 <span class="nx">PietschSoft</span><span class="p">.</span><span class="nx">Utility</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">Triplet</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">one</span><span class="p">,</span> <span class="nx">two</span><span class="p">,</span> <span class="nx">three</span><span class="p">)</span>
-
 <span class="p">{</span>
-
  <span class="k">this</span><span class="p">.</span><span class="nx">First</span> <span class="o">=</span> <span class="nx">one</span><span class="p">;</span>
-
  <span class="k">this</span><span class="p">.</span><span class="nx">Second</span> <span class="o">=</span> <span class="nx">two</span><span class="p">;</span>
-
  <span class="k">this</span><span class="p">.</span><span class="nx">Third</span> <span class="o">=</span> <span class="nx">three</span><span class="p">;</span>
-
 <span class="p">}</span>
 
-
-
 <span class="c1">// Create an instance of our Triplet class</span>
-
-<span class="kd">var</span> <span class="nx">myTriplet</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PietschSoft</span><span class="p">.</span><span class="nx">Utility</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">Triplet</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span><span class="mi">1</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;,</span> <span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span><span class="mi">2</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;,</span> <span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span><span class="mi">3</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;);</span>
-
-
+<span class="kd">var</span> <span class="nx">myTriplet</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PietschSoft</span><span class="p">.</span><span class="nx">Utility</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">Triplet</span><span class="p">(</span><span class="dl">"</span><span class="s2">1</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">2</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">3</span><span class="dl">"</span><span class="p">);</span>
 
 <span class="c1">// Read the values out of the properties of you Triplet class</span>
-
-<span class="nx">alert</span><span class="p">(</span><span class="nx">myTriplet</span><span class="p">.</span><span class="nx">First</span> <span class="o">+</span> <span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span><span class="err">\</span><span class="nx">n</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span> <span class="o">+</span> <span class="nx">myTriplet</span><span class="p">.</span><span class="nx">Second</span> <span class="o">+</span> <span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span><span class="err">\</span><span class="nx">n</span><span class="o">&amp;</span><span class="nx">quot</span><span class="p">;</span> <span class="o">+</span> <span class="nx">myTriplet</span><span class="p">.</span><span class="nx">Third</span><span class="p">);</span>
-
-
+<span class="nx">alert</span><span class="p">(</span><span class="nx">myTriplet</span><span class="p">.</span><span class="nx">First</span> <span class="o">+</span> <span class="dl">"</span><span class="se">\n</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">myTriplet</span><span class="p">.</span><span class="nx">Second</span> <span class="o">+</span> <span class="dl">"</span><span class="se">\n</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">myTriplet</span><span class="p">.</span><span class="nx">Third</span><span class="p">);</span>
 
 </code></pre></div></div>
 
-<p><strong>Why would I want this snippet?</strong></p>
+<h2 id="when-to-use-a-custom-javascript-namespace">When to use a custom JavaScript Namespace</h2>
 
-<p>Well, you really don't if you use any of the popular Ajax frameworks that implement their own namespace management. But at least this gives you an idea of how it's done. Plus, using this snippet will allow you to utilize namespaces if you are hand coding everything in your app and not using an Ajax framework.</p>
-
+<p>Well, you really don’t if you use any of the popular Ajax frameworks that implement their own namespace management. But at least this gives you an idea of how it’s done. Plus, using this snippet will allow you to utilize namespaces if you are hand coding everything in your app and not using an Ajax framework.</p>
 
         
       </article>
