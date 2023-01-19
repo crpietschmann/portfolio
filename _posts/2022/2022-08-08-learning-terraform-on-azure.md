@@ -25,5 +25,6 @@ In case you're looking to get started with Terraform, or just get more proficien
 - [Terraform Feature Flags & Environment Toggle Design Patterns](https://build5nines.com/terraform-feature-flags-environment-toggle-design-patterns/)
 - [Terraform: Azure Resource Tags Tips](https://build5nines.com/terraform-azure-resource-tags-tips/)
 - [Terraform: Deploy to Multiple Azure Subscriptions in Single Project](https://build5nines.com/terraform-deploy-to-multiple-azure-subscriptions-in-single-project/)
+- [Comparison: Terraform vs Azure Bicep](https://build5nines.com/comparison-terraform-vs-azure-bicep/)
 
 I hope these help you on your journey to learning Terraform, using it with Azure and other platforms, and further developing your DevOps and/or SRE toolset. I'm still working on writing more [Terraform and Azure content](https://build5nines.com/category/terraform/) on a regular basis over on Build5Nines.com. I recommend you head over there to check it out!
