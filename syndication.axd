@@ -6,8 +6,8 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 04 Feb 2023 20:14:42 -0600</pubDate>
-    <lastBuildDate>Sat, 04 Feb 2023 20:14:42 -0600</lastBuildDate>
+    <pubDate>Sat, 04 Feb 2023 20:15:06 -0600</pubDate>
+    <lastBuildDate>Sat, 04 Feb 2023 20:15:06 -0600</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -19,6 +19,8 @@
         <guid isPermaLink="true">http://pietschsoft.com//post/2023/02/04/javascript-fundamentals-variables-arrays-loops</guid>
         
         <category>JavaScript</category>
+        
+        <category>js</category>
         
         
         <category>JavaScript</category>
