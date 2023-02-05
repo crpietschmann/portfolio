@@ -11,7 +11,15 @@ tags: ["cpu", "intel", "core i9"]
 
 I was recently looking for some tools to be able to view the Intel CPU utilization, frequency, and other information on macOS. In particular, my new Macbook Pro 16" is performing great with it's Intel Core i9 CPU with 8 cores (and 16 threads), but I'd like to see how well it's doing for myself. This article includes a listing and summary of the tools I found to do this with.
 
-<a href="#activity">Activity Monitor</a> / <a href="maccpuid">Intel MacCPUID</a> / <a href="#power">Intel Power Gadget</a> / <a href="#cpusetter">CPU Setter</a> / <a href="#turbo">Turbo Boost Switcher</a>
+This article covers the following tools for monitoring the CPU usage and frequency info using macOS:
+
+- <a href="#activity">Activity Monitor</a>
+- <a href="maccpuid">Intel MacCPUID</a>
+- <a href="#power">Intel Power Gadget</a>
+- <a href="#cpusetter">CPU Setter</a>
+- <a href="#turbo">Turbo Boost Switcher</a>
+
+{% include embedad.html %}
 
 <a id="activity"></a>
 ## macOS Activity Monitor
