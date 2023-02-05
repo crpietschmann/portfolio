@@ -20,6 +20,8 @@ The following are the topics covered in this article:
 
 So buckle up, grab your code editor, and let's get started!
 
+{% include embedad.html %}
+
 <span id="variables"></span>
 ## Variables in JavaScript
 

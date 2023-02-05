@@ -18,6 +18,8 @@ For reference, here's a simple JavaScript array that will be referenced in the f
 var myArray = ['one','two','three'];
 ```
 
+{% include embedad.html %}
+
 ## Use `forEach` to loop through Array
 
 The `Array` prototype (aka "object") in JavaScript contains the `forEach()` function on it. You can use this to execute specific code on each element in the array. It works by passing in a `function` (or _Callback_) that will be called for each element in the Array, with the first argument being the value from the Array.
