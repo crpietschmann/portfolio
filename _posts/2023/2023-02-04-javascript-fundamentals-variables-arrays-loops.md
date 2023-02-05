@@ -22,7 +22,7 @@ So buckle up, grab your code editor, and let's get started!
 <span id="variables"></span>
 ## Variables in JavaScript
 
-Variables in JavaScript are containers that store values that can change during the execution of a program. A variable is declared using the `var` or `let` keyword, followed by a name and an assignment operator (=). The value assigned to the variable can be a number, string, boolean, or any other data type. Variables in JavaScript are dynamically typed, meaning the type of data a variable can store is not defined at the time of declaration and can be changed throughout the lifetime of the program.
+Variables in JavaScript are containers that store values that can change during the execution of a program. A variable is declared using the `var` or `let` keyword, followed by a name and an assignment operator (`=`). The value assigned to the variable can be a number, string, boolean, or any other data type. Variables in JavaScript are dynamically typed, meaning the type of data a variable can store is not defined at the time of declaration and can be changed throughout the lifetime of the program.
 
 The purpose of variables in JavaScript is to store and manage data that can change dynamically based on the user's interaction with the website or application. Variables allow you to manipulate and perform operations on data, and they play a crucial role in controlling the flow of a program. For example, you can use variables to store user inputs, keep track of the number of times a button has been clicked, or store the result of a calculation. In this way, variables provide a way to store and access data that can change over time, making it easier to write programs that can adapt to changing conditions.
 
@@ -103,7 +103,7 @@ console.log(typeof height); // Output: number
 
 #### Boolean
 
-A boolean data type can only have two values, either "true" or "false".
+A boolean data type can only have two values, either `true` or `false`.
 
 For example:
 
@@ -114,7 +114,7 @@ console.log(typeof isStudent); // Output: boolean
 
 #### Undefined
 
-Variables that have been declared but have not been assigned a value are of the "undefined" data type.
+Variables that have been declared but have not been assigned a value are of the `undefined` data type.
 
 For example:
 
@@ -168,7 +168,7 @@ Understanding the different data types in JavaScript is essential for writing ef
 
 Constants and variable scopes are two important concepts in JavaScript that control the visibility and accessibility of variables and constants within your code. Understanding the difference between these two concepts is crucial for writing effective and maintainable code.
 
-Constants are variables that cannot be reassigned after they have been declared. Constants are declared using the const keyword, and their values cannot be changed once they have been assigned. 
+Constants are variables that cannot be reassigned after they have been declared. Constants are declared using the const keyword, and their values cannot be changed once they have been assigned.
 
 For example:
 
@@ -181,7 +181,7 @@ PI = 3.14159265;
 
 ```
 
-Variables, on the other hand, are declared using the let or var keyword, and can be reassigned as many times as you want.
+Variables, on the other hand, are declared using the `let` or `var` keyword, and can be reassigned as many times as you want.
 
 For example:
 
