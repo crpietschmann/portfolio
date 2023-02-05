@@ -194,3 +194,16 @@ blockquote > p {
   width: 275px;
   padding-bottom: 0.3em;
 }
+
+
+#sidebar {
+  border-left: solid 0.1em $grey-color-light;
+}
+
+#sidebar .recent ul li {
+  border: solid 0.1em $grey-color;
+  border-radius: 0.5em;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  box-shadow: 0.3em 0.2em 0.2em $grey-color-light;
+}
