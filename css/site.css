@@ -69,6 +69,6 @@ blockquote > p { margin: 0; }
 
 #sidebar { border-left: solid 0.1em #e8e8e8; }
 
-#sidebar .recent ul li { border: solid 0.1em #828282; border-radius: 0.5em; padding-left: 0.5em; padding-top: 0.5em; box-shadow: 0.3em 0.2em 0.2em #e8e8e8; }
+#sidebar .recent ul li, #sidebar .related ul li { border: solid 0.1em #e8e8e8; border-radius: 0.5em; padding-left: 0.5em; padding-top: 0.5em; box-shadow: 0.3em 0.2em 0.2em #e8e8e8; }
 
 /*# sourceMappingURL=site.css.map */
