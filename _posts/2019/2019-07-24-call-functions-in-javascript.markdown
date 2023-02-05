@@ -12,6 +12,8 @@ header_image: /images/Header_Javascript_Tips.jpg
 
 One of the fundamental tasks with JavaScript is how to write and call functions in your code. This may seem like a simple thing, and it essentially is, however there are a few tips and tricks you can use to help making your use of JavaScript Functions easier and more intuitive. This article takes you through the basics of calling functions in your code, and some more advanced tips and tricks to writing better JavaScript functions that can help take your JavaScript coding to the next level.
 
+{% include embedad.html %}
+
 ## How to call a function in JavaScript
 
 Calling a function (aka method) in JavaScript is similar to any other programming language that uses a C-like syntax. Simply call the function by name, then pass in any required parameters in a comma delimited list enclosed in parenthesis.
