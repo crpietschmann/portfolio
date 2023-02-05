@@ -359,3 +359,6 @@ numbers.forEach(function(element, index, array) {
 ```
 
 In addition to the for loop and forEach method, there are other looping constructs in JavaScript, including the while loop and do while loop. These loops are used to repeat a block of code until a specific condition is met. Understanding how to use loops in JavaScript is essential for building robust and efficient applications.
+
+
+<small><small>This article was written with the help of AI as a test.</small></small>
