@@ -6,9 +6,24 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 31 Jan 2023 18:20:56 -0600</pubDate>
-    <lastBuildDate>Tue, 31 Jan 2023 18:20:56 -0600</lastBuildDate>
+    <pubDate>Sat, 04 Feb 2023 20:12:56 -0600</pubDate>
+    <lastBuildDate>Sat, 04 Feb 2023 20:12:56 -0600</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>JavaScript Fundamentals: Variables, Arrays, and Loops</title>
+        <description>&lt;p&gt;JavaScript is a powerful and versatile programming language that is widely used for web development. As a beginner in JavaScript, it is important to have a solid understanding of the basics, including variables, arrays, and loops. In this article, we will dive into these essential concepts and provide practical examples and exercises to help you master them. Whether you’re new to coding or just looking to refresh your skills, this article is designed to be a comprehensive guide for learning the fundamentals of JavaScript.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 04 Feb 2023 11:00:00 -0600</pubDate>
+        <link>http://pietschsoft.com//post/2023/02/04/javascript-fundamentals-variables-arrays-loops</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2023/02/04/javascript-fundamentals-variables-arrays-loops</guid>
+        
+        <category>JavaScript</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
     
       <item>
         <title>Top Terraform and Azure Articles on Build5Nines in 2022 (plus year in review)</title>
@@ -188,25 +203,6 @@
         
         
         <category>DevOps</category>
-        
-      </item>
-    
-      <item>
-        <title>Care for Yourself First</title>
-        <description>&lt;p&gt;Just as finding yourself worth internally is important, so is taking care of yourself first. Our society tends to push the idea that prioritizing yourself above others as being selfish and bad. However, being selfish isn’t always a bad thing. Being selfish is often bad if it negatively affects others, but there are appropriate times to be selfish where it’s a good thing. A time where selfishness is good is when you are taking care of yourself.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 09 Jun 2022 12:00:00 -0500</pubDate>
-        <link>http://pietschsoft.com//post/2022/06/09/care-for-yourself-first</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2022/06/09/care-for-yourself-first</guid>
-        
-        <category>Tips</category>
-        
-        <category>Personal</category>
-        
-        <category>Life</category>
-        
-        
-        <category>Personal</category>
         
       </item>
     

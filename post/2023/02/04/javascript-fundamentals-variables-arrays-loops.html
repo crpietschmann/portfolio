@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>JavaScript Fundamentals: Variables, Arrays, and Loops | Chris Pietschmann</title>
+    <meta name="description" content="I have more than 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+">
+    <meta name="author" content="Chris Pietschmann">
+    <link rel="icon" href="/images/avatar-chris-pietschmann-transparent-small.jpg">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="alternate" type="application/rss+xml" title="Chris Pietschmann &raquo; Archive" href="https://pietschsoft.com/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <!--
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!--<link rel="stylesheet" href="//css/site.css">-->
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="canonical" href="http://pietschsoft.com//post/2023/02/04/javascript-fundamentals-variables-arrays-loops">
+</head>
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Bio</h4>
+          <p class="text-muted">
+            <a href="/">Chris Pietschmann</a> is a long-time Microsoft MVP with Azure technologies, Microsoft Certified Trainer (MCT), HashiCorp Ambassador (2021), Author, Developer, DevOps / Site Reliability Engineer (SRE) with over 20 years of experience designing and developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in DevOps / SRE, IoT, Development and Solution Architecture. He runs the #1 Microsoft Azure blog at <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Publications</h4>
+          <ul class="list-unstyled">
+            <li><a href="/#books" class="text-white">Books</a></li>
+            <li><a href="https://build5nines.com" class="text-white">Build5Nines.com</a></li>
+            <li><a href="https://www.hackster.io/crpietschmann/articles" class="text-white">Hackster.io</a></li>
+            <li><a href="/blog" class="text-white">Pietschsoft.com</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/build5nines" class="text-white">Twitter</a></li>
+            <li><a href="http://linkedin.com/in/crpietschmann" class="text-white">LinkedIn</a></li>
+            <li><a href="https://build5nines.com/contact" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com Logo" style="height: 1.5em; margin-right: 0.5em;"/>-->
+        <img src="/images/avatar-chris-pietschmann-transparent-small.jpg" alt="Chris Pietschmann" style="background: #fff; height: 1.5em; margin-right: 0.5em;"/>
+        <strong>Chris Pietschmann</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container post">
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <header class="post-header">
+          
+          
+          <h1 class="post-title">JavaScript Fundamentals: Variables, Arrays, and Loops</h1>
+          <!--
+          <div class="post-categories">
+              
+              
+              <a href="//categories/#JavaScript">JavaScript</a>
+              
+              
+            </div>
+          -->
+          <p class="post-meta">Feb 4, 2023</p>
+      </header>
+
+      <article class="post-content">
+        
+            <p>JavaScript is a powerful and versatile programming language that is widely used for web development. As a beginner in JavaScript, it is important to have a solid understanding of the basics, including variables, arrays, and loops. In this article, we will dive into these essential concepts and provide practical examples and exercises to help you master them. Whether you’re new to coding or just looking to refresh your skills, this article is designed to be a comprehensive guide for learning the fundamentals of JavaScript.</p>
+
+<p>The following are the topics covered in this article:</p>
+
+<ul>
+  <li><a href="#variables">Variables in JavaScript</a></li>
+  <li><a href="#arrays">Arrays in JavaScript</a></li>
+  <li><a href="#loops">Loops in JavaScript</a></li>
+</ul>
+
+<p>So buckle up, grab your code editor, and let’s get started!</p>
+
+<p><span id="variables"></span></p>
+<h2 id="variables-in-javascript">Variables in JavaScript</h2>
+
+<p>Variables in JavaScript are containers that store values that can change during the execution of a program. A variable is declared using the <code class="language-plaintext highlighter-rouge">var</code> or <code class="language-plaintext highlighter-rouge">let</code> keyword, followed by a name and an assignment operator (=). The value assigned to the variable can be a number, string, boolean, or any other data type. Variables in JavaScript are dynamically typed, meaning the type of data a variable can store is not defined at the time of declaration and can be changed throughout the lifetime of the program.</p>
+
+<p>The purpose of variables in JavaScript is to store and manage data that can change dynamically based on the user’s interaction with the website or application. Variables allow you to manipulate and perform operations on data, and they play a crucial role in controlling the flow of a program. For example, you can use variables to store user inputs, keep track of the number of times a button has been clicked, or store the result of a calculation. In this way, variables provide a way to store and access data that can change over time, making it easier to write programs that can adapt to changing conditions.</p>
+
+<h3 id="declaration-and-assignment">Declaration and Assignment</h3>
+
+<p>Declaring and assigning variables in JavaScript is a simple and straightforward process. Variables in JavaScript can be declared using the <code class="language-plaintext highlighter-rouge">var</code>, <code class="language-plaintext highlighter-rouge">let</code>, or <code class="language-plaintext highlighter-rouge">const</code> keywords. The <code class="language-plaintext highlighter-rouge">var</code> keyword is used for declaring variables in JavaScript, while <code class="language-plaintext highlighter-rouge">let</code> and <code class="language-plaintext highlighter-rouge">const</code> are alternatives to <code class="language-plaintext highlighter-rouge">var</code>.</p>
+
+<p>Here’s an example of how to declare and assign a variable in JavaScript:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Carl Sagan</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span> <span class="c1">// Output: Carl Sagan</span>
+
+</code></pre></div></div>
+
+<p>In this example, the <code class="language-plaintext highlighter-rouge">let</code> keyword is used to declare the variable <code class="language-plaintext highlighter-rouge">name</code> and assign it the value <code class="language-plaintext highlighter-rouge">"Carl Sagan"</code>. The value can be any valid data type in JavaScript, such as a string, number, boolean, or an object.</p>
+
+<p>Here’s an example of how to declare and assign a number and a boolean value:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">isStudent</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">age</span><span class="p">);</span> <span class="c1">// Output: 30</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">isStudent</span><span class="p">);</span> <span class="c1">// Output: false</span>
+
+</code></pre></div></div>
+
+<p>It’s also possible to declare multiple variables in a single statement:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">firstName</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Carl</span><span class="dl">"</span><span class="p">,</span> <span class="nx">lastName</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Sagan</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">firstName</span><span class="p">);</span> <span class="c1">// Output: Carl</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">lastName</span><span class="p">);</span> <span class="c1">// Output: Sagan</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">const</code> keyword is used to declare constants, or variables whose value cannot be changed after they are declared. Here’s an example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">PI</span> <span class="o">=</span> <span class="mf">3.14</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">PI</span><span class="p">);</span> <span class="c1">// Output: 3.14</span>
+
+<span class="c1">// This will cause an error, as the value of a constant cannot be changed</span>
+<span class="nx">PI</span> <span class="o">=</span> <span class="mf">3.14159</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Declaring and assigning variables in JavaScript is a fundamental aspect of the language that enables you to store and manipulate data in your programs. By using the <code class="language-plaintext highlighter-rouge">var</code>, <code class="language-plaintext highlighter-rouge">let</code>, and <code class="language-plaintext highlighter-rouge">const</code> keywords, you can declare variables of different scopes and protect their values from being changed. I hope this article helps you to understand the basics of declaring and assigning variables in JavaScript.</p>
+
+<h3 id="data-types-numbers-strings-booleans-and-more">Data types: numbers, strings, booleans, and more</h3>
+
+<p>JavaScript has several data types that allow you to store and manipulate different types of information in your programs. Understanding the different data types in JavaScript is crucial for writing effective and efficient code.</p>
+
+<p>The following are the most commonly used data types in JavaScript:</p>
+
+<h4 id="string">String</h4>
+
+<p>A string is a sequence of characters and is represented by enclosing the characters in single or double quotes.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Carl Sagan</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">name</span><span class="p">);</span> <span class="c1">// Output: string</span>
+
+</code></pre></div></div>
+
+<h4 id="number">Number</h4>
+
+<p>Numbers in JavaScript include both integers and floating-point numbers.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">height</span> <span class="o">=</span> <span class="mf">1.75</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">age</span><span class="p">);</span> <span class="c1">// Output: number</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">height</span><span class="p">);</span> <span class="c1">// Output: number</span>
+</code></pre></div></div>
+
+<h4 id="boolean">Boolean</h4>
+
+<p>A boolean data type can only have two values, either “true” or “false”.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">isStudent</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">isStudent</span><span class="p">);</span> <span class="c1">// Output: boolean</span>
+</code></pre></div></div>
+
+<h4 id="undefined">Undefined</h4>
+
+<p>Variables that have been declared but have not been assigned a value are of the “undefined” data type.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">myVariable</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">myVariable</span><span class="p">);</span> <span class="c1">// Output: undefined</span>
+</code></pre></div></div>
+
+<h4 id="null">Null</h4>
+
+<p>The <code class="language-plaintext highlighter-rouge">null</code> data type is used to represent the absence of a value.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">myVariable</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">myVariable</span><span class="p">);</span> <span class="c1">// Output: object</span>
+</code></pre></div></div>
+
+<h4 id="object">Object</h4>
+
+<p>An object is a collection of properties, each of which has a name and a value.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">person</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Carl Sagan</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">age</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+  <span class="na">isStudent</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">person</span><span class="p">);</span> <span class="c1">// Output: object</span>
+
+</code></pre></div></div>
+
+<h4 id="array">Array</h4>
+
+<p>An array is a collection of values stored in a single variable. Arrays are declared using square brackets, and their elements are separated by commas.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">myArray</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">myArray</span><span class="p">);</span> <span class="c1">// Output: object</span>
+
+</code></pre></div></div>
+
+<p>Understanding the different data types in JavaScript is essential for writing effective and efficient code. Familiarizing yourself with the different data types, and knowing when to use each one, will help you write code that is more readable and maintainable.</p>
+
+<h3 id="constants-and-variables-scopes">Constants and variables scopes</h3>
+
+<p>Constants and variable scopes are two important concepts in JavaScript that control the visibility and accessibility of variables and constants within your code. Understanding the difference between these two concepts is crucial for writing effective and maintainable code.</p>
+
+<p>Constants are variables that cannot be reassigned after they have been declared. Constants are declared using the const keyword, and their values cannot be changed once they have been assigned.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">PI</span> <span class="o">=</span> <span class="mf">3.14</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">PI</span><span class="p">);</span> <span class="c1">// Output: 3.14</span>
+
+<span class="c1">// This will throw an error</span>
+<span class="nx">PI</span> <span class="o">=</span> <span class="mf">3.14159265</span><span class="p">;</span>
+
+</code></pre></div></div>
+
+<p>Variables, on the other hand, are declared using the let or var keyword, and can be reassigned as many times as you want.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Carl Sagan</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span> <span class="c1">// Output: Carl Sagan</span>
+
+<span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Carl Sagan</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span> <span class="c1">// Output: Carl Sagan</span>
+
+</code></pre></div></div>
+
+<p>Variable scopes in JavaScript determine the visibility and accessibility of variables and constants within your code. There are two types of variable scopes in JavaScript: global scope and local scope.</p>
+
+<p>Variables declared outside of any function have a global scope, which means that they can be accessed and modified from anywhere in your code.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">globalVariable</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">I have a global scope</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">printGlobalVariable</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">globalVariable</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">printGlobalVariable</span><span class="p">();</span> <span class="c1">// Output: I have a global scope</span>
+</code></pre></div></div>
+
+<p>Variables declared within a function have a local scope, which means that they can only be accessed within the function.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">printLocalVariable</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">localVariable</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">I have a local scope</span><span class="dl">"</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">localVariable</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">printLocalVariable</span><span class="p">();</span> <span class="c1">// Output: I have a local scope</span>
+
+<span class="c1">// This will throw an error</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">localVariable</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Understanding the difference between constants and variables, and knowing how variable scopes work in JavaScript, is crucial for writing effective and maintainable code. Familiarizing yourself with these concepts will help you write code that is more readable, maintainable, and efficient.</p>
+
+<p><span id="arrays"></span></p>
+<h2 id="arrays-in-javascript">Arrays in JavaScript</h2>
+
+<p>Arrays are a fundamental data structure in JavaScript and are used to store collections of values. An array is declared using square brackets (<code class="language-plaintext highlighter-rouge">[]</code>) and can contain elements of any data type, including numbers, strings, objects, and even other arrays.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">);</span> <span class="c1">// Output: [1, 2, 3, 4, 5]</span>
+
+<span class="kd">let</span> <span class="nx">names</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">John</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Jane</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Jim</span><span class="dl">"</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">names</span><span class="p">);</span> <span class="c1">// Output: ["John", "Jane", "Jim"]</span>
+
+<span class="kd">let</span> <span class="nx">mixed</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Two</span><span class="dl">"</span><span class="p">,</span> <span class="p">{</span> <span class="na">three</span><span class="p">:</span> <span class="mi">3</span> <span class="p">},</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mixed</span><span class="p">);</span> <span class="c1">// Output: [1, "Two", { three: 3 }, [4, 5]]</span>
+</code></pre></div></div>
+
+<p>In JavaScript, arrays are dynamic, which means that you can add or remove elements from an array at any time. You can also access individual elements in an array using their index, which is an integer that starts from <code class="language-plaintext highlighter-rouge">0</code>.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+
+<span class="c1">// Accessing an element</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span> <span class="c1">// Output: 3</span>
+
+<span class="c1">// Adding an element</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">);</span> <span class="c1">// Output: [1, 2, 3, 4, 5, 6]</span>
+
+<span class="c1">// Removing an element</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">);</span> <span class="c1">// Output: [1, 2, 3, 4, 5]</span>
+</code></pre></div></div>
+
+<p>Arrays are a powerful data structure in JavaScript that allow you to store and manipulate collections of values. Whether you’re building a website, a desktop application, or a mobile app, arrays are a essential tool in your toolbox.</p>
+
+<h3 id="modifying-array-elements">Modifying Array elements</h3>
+
+<p>Modifying arrays in JavaScript is a common task that you will encounter when building applications. There are several built-in methods in JavaScript that allow you to add, remove, or manipulate elements in an array.</p>
+
+<p>One of the most common operations is adding elements to an array. You can add elements to an array using the <code class="language-plaintext highlighter-rouge">push()</code> method, which adds the element to the end of the array, or the <code class="language-plaintext highlighter-rouge">unshift()</code> method, which adds the element to the beginning of the array.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+
+<span class="c1">// Adding an element to the end</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">);</span> <span class="c1">// Output: [1, 2, 3, 4]</span>
+
+<span class="c1">// Adding an element to the beginning</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">);</span> <span class="c1">// Output: [0, 1, 2, 3, 4]</span>
+</code></pre></div></div>
+
+<p>You can also remove elements from an array using the <code class="language-plaintext highlighter-rouge">pop()</code> method, which removes the last element, or the <code class="language-plaintext highlighter-rouge">shift()</code> method, which removes the first element.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">];</span>
+
+<span class="c1">// Removing the last element</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">);</span> <span class="c1">// Output: [1, 2, 3]</span>
+
+<span class="c1">// Removing the first element</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">);</span> <span class="c1">// Output: [2, 3]</span>
+</code></pre></div></div>
+
+<p>In addition to adding and removing elements, you can also manipulate elements in an array using the <code class="language-plaintext highlighter-rouge">splice()</code> method. The <code class="language-plaintext highlighter-rouge">splice()</code> method allows you to add or remove elements at any position in an array.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">];</span>
+
+<span class="c1">// Removing elements</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">);</span> <span class="c1">// Output: [1, 4]</span>
+
+<span class="c1">// Adding elements</span>
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numbers</span><span class="p">);</span> <span class="c1">// Output: [1, 2, 3, 4]</span>
+</code></pre></div></div>
+
+<p>There are many more array methods in JavaScript that you can use to manipulate arrays, including <code class="language-plaintext highlighter-rouge">sort()</code>, <code class="language-plaintext highlighter-rouge">reverse()</code>, <code class="language-plaintext highlighter-rouge">slice()</code>, and more. Familiarizing yourself with these methods will help you write more efficient and maintainable code.</p>
+
+<p>Modifying arrays in JavaScript is an essential task that you will encounter when building applications. Whether you’re adding, removing, or manipulating elements, understanding the built-in methods in JavaScript is crucial for writing effective and maintainable code.</p>
+
+<p><span id="loops"></span></p>
+<h2 id="loops-in-javascript">Loops in JavaScript</h2>
+
+<p>Loops in JavaScript are a crucial tool for executing a block of code repeatedly, based on a specific condition. They allow you to iterate over arrays, objects, or any other data structure and perform operations on each element. The two most commonly used loops in JavaScript are the for loop and the forEach method.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">for</code> loop is used to iterate over a range of numbers, or an array.</p>
+
+<p>The loop consists of three parts:</p>
+
+<ol>
+  <li>an initialization statement that sets a starting value</li>
+  <li>a condition that must be met for the loop to continue</li>
+  <li>an iteration statement that updates the counter each time the loop runs</li>
+</ol>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">// Output: 0 1 2 3 4</span>
+</code></pre></div></div>
+
+<p>The forEach method is used to iterate over an array and perform an operation on each element. It takes a callback function as an argument, which is executed for each element in the array. The callback function has access to the current element, the current index, and the array itself.</p>
+
+<p>For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">];</span>
+
+<span class="nx">numbers</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">element</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="c1">// Output: 1 2 3 4</span>
+</code></pre></div></div>
+
+<p>In addition to the for loop and forEach method, there are other looping constructs in JavaScript, including the while loop and do while loop. These loops are used to repeat a block of code until a specific condition is met. Understanding how to use loops in JavaScript is essential for building robust and efficient applications.</p>
+
+        
+      </article>
+
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+
+
+      
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <h2 >
+                    Related Posts
+                </h2 >
+                <ul class="">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2022/08/13/javascript-remove-item-from-array">JavaScript: Remove Specific Items from Array
+                    
+                    </a></h6>
+                    <span class="small text-muted">13 Aug 2022</span>
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+
+    </ul>
+
+
+    </div>
+    <div class="col-md-4">
+      <div class="mb-3">
+    <center>
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div>
+    </center>
+    
+    <!--
+    <div class="mb-3">
+    <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
+    </div>
+    -->
+
+    <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+    <div class="recent">
+    <h4>Recent Posts</h4>
+    <ul class="list-unstyled">
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2023/01/11/top-terraform-azure-articles-on-build5nines-in-2022">Top Terraform and Azure Articles on Build5Nines in 2022 (plus year in review)</a></h6>
+            <span class="small text-muted">11 Jan 2023</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2022/12/14/what-is-chatgpt-and-is-it-important">What is ChatGPT and is it important?</a></h6>
+            <span class="small text-muted">14 Dec 2022</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2022/10/26/my-newsletter-workflow-for-build5nines-weekly-generation">My Workflow for Build5Nines Weekly Newsletter Generation</a></h6>
+            <span class="small text-muted">26 Oct 2022</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2022/10/07/always-focus-on-what-matters">Always Focus on What Matters</a></h6>
+            <span class="small text-muted">07 Oct 2022</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2022/09/13/my-work-authoring-microsoft-cloud-workshops">My Work Authoring Microsoft Cloud Workshops</a></h6>
+            <span class="small text-muted">13 Sep 2022</span>
+        </li>
+        
+    </ul>
+    </div>
+
+    <div class="related">
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <h4>
+                    Related Posts
+                </h4>
+                <ul class="list-unstyled">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2022/08/13/javascript-remove-item-from-array">JavaScript: Remove Specific Items from Array
+                    
+                    </a></h6>
+                    <span class="small text-muted">13 Aug 2022</span>
+                </li>
+                
+                
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+
+
+    </ul>
+
+    </div>
+
+    <div class="recent">
+        <h4>Recent on Build5Nines.com</h4>
+        <ul class="list-unstyled">
+        
+            <li class="mb-3">
+                <a href="https://build5nines.com/terraform-init-command-overview/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2022/07/Terraform_IAC_Featured_Image.jpg?fit=1200%2C675&ssl=1" alt="Terraform Init Command Overview"/></a>
+                <h6 class="mb-0"><a href="https://build5nines.com/terraform-init-command-overview/">Terraform Init Command Overview</a></h6>
+                <span class="small text-muted">04 Feb 2023</span>
+            </li>
+        
+            <li class="mb-3">
+                <a href="https://build5nines.com/az-500-microsoft-azure-security-technologies-certification-exam/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2023/02/Microsoft_Certified_Azure_Security_Engineer_Associate_2023_Featured_Image.jpg?fit=1200%2C675&ssl=1" alt="AZ-500: Microsoft Azure Security Technologies Certification Exam"/></a>
+                <h6 class="mb-0"><a href="https://build5nines.com/az-500-microsoft-azure-security-technologies-certification-exam/">AZ-500: Microsoft Azure Security Technologies Certification Exam</a></h6>
+                <span class="small text-muted">03 Feb 2023</span>
+            </li>
+        
+            <li class="mb-3">
+                <a href="https://build5nines.com/top-12-most-in-demand-it-jobs-devops-sre-and-more/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2023/02/Top_Most_Indemand_IT_Jobs_DevOps_SRE_Featured_Image.jpg?fit=1200%2C675&ssl=1" alt="Top 12 Most In-demand IT Jobs (DevOps, SRE, and More)"/></a>
+                <h6 class="mb-0"><a href="https://build5nines.com/top-12-most-in-demand-it-jobs-devops-sre-and-more/">Top 12 Most In-demand IT Jobs (DevOps, SRE, and More)</a></h6>
+                <span class="small text-muted">02 Feb 2023</span>
+            </li>
+        
+            <li class="mb-3">
+                <a href="https://build5nines.com/most-popular-microsoft-azure-certifications/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2020/01/Microsoft_Certification_2020_Featured_Image.jpg?fit=1200%2C675&ssl=1" alt="Most Popular Microsoft Azure Certifications"/></a>
+                <h6 class="mb-0"><a href="https://build5nines.com/most-popular-microsoft-azure-certifications/">Most Popular Microsoft Azure Certifications</a></h6>
+                <span class="small text-muted">31 Jan 2023</span>
+            </li>
+        
+            <li class="mb-3">
+                <a href="https://build5nines.com/build5nines-weekly-january-30-2023/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2022/07/Build5Nines_Weekly_Newsletter_Featured_Image.jpg?fit=1200%2C675&ssl=1" alt="Build5Nines Weekly  January 30, 2023"/></a>
+                <h6 class="mb-0"><a href="https://build5nines.com/build5nines-weekly-january-30-2023/">Build5Nines Weekly  January 30, 2023</a></h6>
+                <span class="small text-muted">30 Jan 2023</span>
+            </li>
+        
+        </ul>
+    </div>
+
+    <!--
+    <h4>Courses</h4>
+    <style>
+        .course-box {
+            margin-bottom: 1em;
+        }
+        .course-box img {
+            width: 95%;
+        }
+        .course-box > strong {
+            display: block;
+        }
+        .course-box > em {
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
+        </a>
+        <strong>
+            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+                The Complete JavaScript Course 2020: Build Real Projects!
+            </a>
+        </strong>
+        <em>by Jonas Schmedtmann</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            JavaScript Basics for Beginners
+        </a></strong>
+        <em>by Mosh Hamedani</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            Advanced JavaScript Concepts
+        </a></strong>
+        <em>by Andrei Neagoie</em>
+    </div>
+    -->
+
+    <h4>Legal Disclaimer</h4>
+    <p style="font-size=0.7em">This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+    
+    <div id="fixedadmarker"></div>
+    <div id="fixedad" class="mt-3">
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+    </div>
+    <style>
+    @media (min-width: 768px) {
+        .fixedad-float {
+            position: fixed;
+            top: 2.5em;
+        }
+    }
+    </style>
+    <script>
+    window.setInterval(function() {
+        var elem = $('#fixedadmarker'),
+            top = elem.offset().top || 0,
+            height = elem[0].offsetHeight || 0,
+            bottom = top + height,
+            scrollY = window.scrollY || 0,
+            elemToBeFixed = $('#fixedad');
+        if (scrollY >= bottom) {
+            elemToBeFixed.addClass('fixedad-float');
+        } else {
+            elemToBeFixed.removeClass('fixedad-float');
+        }
+    }, 100);
+    </script>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Chris Pietschmann</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/#awards">Microsoft MVP</a></li>
+        <li><a class="text-muted" href="/#books">Books</a></li>
+        <li><a class="text-muted" href="/#websites">Websites</a></li>
+        <li><a class="text-muted" href="/#experience">Experience</a></li>
+        <li><a class="text-muted" href="/talks">Talks</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Publications</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://build5nines.com" target="_blank">Build5Nines.com</a></li>
+        <li><a class="text-muted" href="https://www.hackster.io/crpietschmann/articles" target="_blank">Hackster.io</a></li>
+        <li><a class="text-muted" href="/blog">Pietschsoft.com</a></li>
+      </ul>
+      <h5>Social Media</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://twitter.com/build5nines" target="_blank">Twitter</a></li>
+        <li><a class="text-muted" href="http://linkedin.com/in/crpietschmann" target="_blank">LinkedIn</a></li>
+        <li><a class="text-muted" href="http://youtube.com/build5nines" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com" style="height: 1.5em;"/>-->
+      <small class="d-block mb-3 text-muted">
+        Copyright © 2003 - 2023 Chris Pietschmann. All rights reserved.<br/><br/>
+        No content may be republished without prior consent.
+      </small>
+      <small class="d-block mb-3 text-muted">
+        <strong>Legal Disclaimer</strong>
+        <p>This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+      </small>
+    </div>
+    <div class="col-12 col-md">
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+<script src="/scripts/prism/prism.js"></script>
+<link rel="stylesheet" href="/scripts/prism/prism.css" />
+
+
+    <!--
+    <script type="text/javascript">
+    // Google Analytics
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    -->
+
+    <!-- Google Analytics v3
+    <script src="https://ssl.google-analytics.com/ga.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1172995-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
+    -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVB6DNH2M1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QVB6DNH2M1');
+  
+    
+    // Developer Media Ads
+    (function() {
+      function _dmBootstrap(file) {
+          var _dma = document.createElement('script');
+          _dma.type = 'text/javascript';
+          _dma.async = true;
+          _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+      }
+      function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+      (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+    })();
+    /*
+    // Google Analytics v3 - Track External Link Clicks
+    (function($) { if ($) {
+      $('a[href^=http]').click(function(){
+          if (_gaq && _gaq.push && !((this.href || '').startsWith('https://pietschsoft.com'))) {
+              _gaq.push(['_trackEvent','Link','External',this.href]);
+          }
+          return true;
+      });
+    }})(jQuery);
+    */
+  </script>
+  </body>
+</html>
