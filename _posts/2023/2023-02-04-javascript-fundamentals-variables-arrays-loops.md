@@ -6,7 +6,7 @@ date: 2023-02-04 12:00:00 -0500
 comments: true
 published: true
 categories: ["JavaScript"]
-tags: ["JavaScript"]
+tags: ["JavaScript", "js"]
 ---
 
 JavaScript is a powerful and versatile programming language that is widely used for web development. As a beginner in JavaScript, it is important to have a solid understanding of the basics, including variables, arrays, and loops. In this article, we will dive into these essential concepts and provide practical examples and exercises to help you master them. Whether you're new to coding or just looking to refresh your skills, this article is designed to be a comprehensive guide for learning the fundamentals of JavaScript.
