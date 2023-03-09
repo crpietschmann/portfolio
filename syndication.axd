@@ -6,9 +6,32 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 07 Mar 2023 18:19:24 -0600</pubDate>
-    <lastBuildDate>Tue, 07 Mar 2023 18:19:24 -0600</lastBuildDate>
+    <pubDate>Thu, 09 Mar 2023 12:45:02 -0600</pubDate>
+    <lastBuildDate>Thu, 09 Mar 2023 12:45:02 -0600</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>My Fitness Journey Challenges and Successes and Tony Horton as my Personal Trainer</title>
+        <description>&lt;p&gt;I’m not wealthy or a celebrity, but Tony Horton is my personal trainer. It all started way back in 2010. I was out of shape, unhealthy, and didn’t want to be a let down for my baby girl. I found out about this “workout at home” program called P90X made by Tony Horton and Beachbody. I even came across &lt;a href=&quot;http://teamripped.com/my-story/&quot;&gt;Coach Wayne’s success story&lt;/a&gt;, and I thought, “This could help me. This could actually work!” So I bought in and purchased the P90X workout program, a couple dumbbells, and went all in.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Mar 2023 11:00:00 -0600</pubDate>
+        <link>http://pietschsoft.com//post/2023/03/09/My-Fitness-Journey-Challenges-and-Successes-and-Tony-Horton-as-my-Personal-Trainer</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2023/03/09/My-Fitness-Journey-Challenges-and-Successes-and-Tony-Horton-as-my-Personal-Trainer</guid>
+        
+        <category>Fitness</category>
+        
+        <category>P90X</category>
+        
+        <category>Beachbody</category>
+        
+        <category>Health</category>
+        
+        <category>Gym</category>
+        
+        
+        <category>Life</category>
+        
+      </item>
     
       <item>
         <title>JavaScript Fundamentals: Variables, Arrays, and Loops</title>
@@ -184,27 +207,6 @@
         <category>Business</category>
         
         <category>Blogging</category>
-        
-      </item>
-    
-      <item>
-        <title>Learning Terraform on Microsoft Azure</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/build5nines-terraform-on-azure-featured-image.jpg&quot; style=&quot;width:100%&quot; alt=&quot;Terraform on Azure: Infrastructure as Code tools for DevOps / SRE professionals&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 08 Aug 2022 14:09:00 -0500</pubDate>
-        <link>http://pietschsoft.com//post/2022/08/08/learning-terraform-on-azure</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2022/08/08/learning-terraform-on-azure</guid>
-        
-        <category>Terraform</category>
-        
-        <category>Azure</category>
-        
-        <category>DevOps</category>
-        
-        <category>SRE</category>
-        
-        
-        <category>DevOps</category>
         
       </item>
     
