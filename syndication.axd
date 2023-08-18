@@ -6,12 +6,12 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 18 Aug 2023 14:28:28 -0500</pubDate>
-    <lastBuildDate>Fri, 18 Aug 2023 14:28:28 -0500</lastBuildDate>
+    <pubDate>Fri, 18 Aug 2023 14:29:16 -0500</pubDate>
+    <lastBuildDate>Fri, 18 Aug 2023 14:29:16 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
-        <title>JavaScript: AG-Grid + ASP.NET MVC Infinite Row Model DataSource</title>
+        <title>JavaScript: AG-Grid + ASP.NET MVC Infinite Row Model DataSource with Entity Framework</title>
         <description>&lt;p&gt;AG-Grid supports infinite scrolling through the use of it’s support for implementing Infinite Row Model. This allows for the grid to lazy-load rows of data from the server depending on the scroll position of the data grid. Essentially, it loads the first page of results, then as the user scrolls, it loads more data as they continue to scroll down through the list. It allows you to implement a more desktop app style data table interface in your web applications.&lt;/p&gt;
 </description>
         <pubDate>Fri, 18 Aug 2023 12:00:00 -0500</pubDate>
