@@ -6,9 +6,34 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 18 Aug 2023 13:43:06 -0500</pubDate>
-    <lastBuildDate>Fri, 18 Aug 2023 13:43:06 -0500</lastBuildDate>
+    <pubDate>Fri, 18 Aug 2023 14:28:28 -0500</pubDate>
+    <lastBuildDate>Fri, 18 Aug 2023 14:28:28 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>JavaScript: AG-Grid + ASP.NET MVC Infinite Row Model DataSource</title>
+        <description>&lt;p&gt;AG-Grid supports infinite scrolling through the use of it’s support for implementing Infinite Row Model. This allows for the grid to lazy-load rows of data from the server depending on the scroll position of the data grid. Essentially, it loads the first page of results, then as the user scrolls, it loads more data as they continue to scroll down through the list. It allows you to implement a more desktop app style data table interface in your web applications.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 18 Aug 2023 12:00:00 -0500</pubDate>
+        <link>http://pietschsoft.com//post/2023/08/18/javascript-aspnet-mvc-aggrid-infinite-row-model-datasource</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2023/08/18/javascript-aspnet-mvc-aggrid-infinite-row-model-datasource</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>js</category>
+        
+        <category>EntityFramework</category>
+        
+        <category>EF</category>
+        
+        <category>AG-Grid</category>
+        
+        
+        <category>JavaScript</category>
+        
+        <category>ASP.NET MVC</category>
+        
+      </item>
     
       <item>
         <title>My Fitness Journey Challenges and Successes and Tony Horton as my Personal Trainer</title>
@@ -184,29 +209,6 @@
         
         
         <category>JavaScript</category>
-        
-      </item>
-    
-      <item>
-        <title>Build a Successful Blog for your Consulting Business</title>
-        <description>&lt;p&gt;Are you trying to build a successful blog for promoting or building a consulting business? Blogging can be a great way to promote yourself, your brand, your products or services. However, it takes more than just writing blog articles and creating more pages to pop up on Google searches. You need to write a blog that people will actually want to read and follow. But how do you do this to help grow a consulting business?&lt;/p&gt;
-</description>
-        <pubDate>Sat, 13 Aug 2022 14:09:00 -0500</pubDate>
-        <link>http://pietschsoft.com//post/2022/08/13/build-successful-blog-for-consulting-business</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2022/08/13/build-successful-blog-for-consulting-business</guid>
-        
-        <category>Blogging</category>
-        
-        <category>Business</category>
-        
-        <category>Consulting</category>
-        
-        <category>Authority</category>
-        
-        
-        <category>Business</category>
-        
-        <category>Blogging</category>
         
       </item>
     
