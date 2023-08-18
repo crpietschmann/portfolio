@@ -1,7 +1,7 @@
 ---
 layout: post
 blogengineid: 00000000-0000-0000-0000-000000000000
-title: "JavaScript: AG-Grid + ASP.NET MVC Infinite Row Model DataSource"
+title: "JavaScript: AG-Grid + ASP.NET MVC Infinite Row Model DataSource with Entity Framework"
 date: 2023-08-18 12:00:00 -0500
 comments: true
 published: true
