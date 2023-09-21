@@ -6,9 +6,30 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 21 Sep 2023 13:59:16 -0500</pubDate>
-    <lastBuildDate>Thu, 21 Sep 2023 13:59:16 -0500</lastBuildDate>
+    <pubDate>Thu, 21 Sep 2023 16:50:24 -0500</pubDate>
+    <lastBuildDate>Thu, 21 Sep 2023 16:50:24 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>How to Remove a Specific Item from an Array in JavaScript</title>
+        <description>&lt;p&gt;JavaScript is a versatile programming language used for web development and more. If you’ve ever wondered how to remove a specific item from an array in JavaScript without using any frameworks, you’ve come to the right place. In this article, we’ll explore a straightforward method to achieve this task using core JavaScript.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 21 Sep 2023 17:00:00 -0500</pubDate>
+        <link>http://pietschsoft.com//post/2023/09/21/how-to-remove-specific-item-from-array-in-javascript</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2023/09/21/how-to-remove-specific-item-from-array-in-javascript</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>js</category>
+        
+        <category>TypeScript</category>
+        
+        <category>Array</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
     
       <item>
         <title>jQuery: How do I check if an element is hidden?</title>
@@ -194,25 +215,6 @@
         
         
         <category>Work</category>
-        
-      </item>
-    
-      <item>
-        <title>Google Ranks Active Blogs Higher is Search Results</title>
-        <description>&lt;p&gt;I figured out recently that Google does factor in how active your site or blog is when ranking content in the search results. In the SEO world, there’s a ton of recommendations on keyword research and how to write the perfect articles. However, what no body talks about is whether a blog or website being active in publishing new content has an affect on the traffic that will be sent to it by Google through organic searches. I found out recently with my &lt;a href=&quot;https://Build5Nines.com&quot;&gt;https://Build5Nines.com&lt;/a&gt; website that Google does take into account how active your website is in how it will rank that websites content in search.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 06 Sep 2022 12:00:00 -0500</pubDate>
-        <link>http://pietschsoft.com//post/2022/09/06/google-ranks-active-blogs-higher-in-search-results</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2022/09/06/google-ranks-active-blogs-higher-in-search-results</guid>
-        
-        <category>Blogging</category>
-        
-        <category>SEO</category>
-        
-        <category>Authority</category>
-        
-        
-        <category>Blogging</category>
         
       </item>
     

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Live Framework: Connecting to the Local Live Operating Environment (LOE) for Offline Applications | Chris Pietschmann</title>
+    <title>How to Remove a Specific Item from an Array in JavaScript | Chris Pietschmann</title>
     <meta name="description" content="I have more than 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
 ">
     <meta name="author" content="Chris Pietschmann">
@@ -21,7 +21,7 @@
 
     <!--<link rel="stylesheet" href="//css/site.css">-->
     <link rel="stylesheet" href="/css/site.css">
-    <link rel="canonical" href="http://pietschsoft.com//post/2009/03/07/live-framework-connecting-to-the-local-live-operating-environment-loe">
+    <link rel="canonical" href="http://pietschsoft.com//post/2023/09/21/how-to-remove-specific-item-from-array-in-javascript">
 </head>
 
   <body>
@@ -76,80 +76,109 @@
       <header class="post-header">
           
           
-          <h1 class="post-title">Live Framework: Connecting to the Local Live Operating Environment (LOE) for Offline Applications</h1>
+          <h1 class="post-title">How to Remove a Specific Item from an Array in JavaScript</h1>
           <!--
           <div class="post-categories">
               
               
-              <a href="//categories/#Windows Live">Windows Live</a>
+              <a href="//categories/#JavaScript">JavaScript</a>
               
               
             </div>
           -->
-          <p class="post-meta">Mar 7, 2009</p>
+          <p class="post-meta">Sep 21, 2023</p>
       </header>
 
       <article class="post-content">
         
-            <!-- more -->
+            <p>JavaScript is a versatile programming language used for web development and more. If you’ve ever wondered how to remove a specific item from an array in JavaScript without using any frameworks, you’ve come to the right place. In this article, we’ll explore a straightforward method to achieve this task using core JavaScript.</p>
 
-<p>One of the things the <a href="http://dev.live.com/liveframework/">Live Framework</a> has to offer is a Local Live Operating Environment you can connect to so that you can Offline Enable your Live Framework Enabled Desktop Applications. I found the process of getting it to work a little tricky (especially since I was running Win7 Beta; I’ll explain down further) so I’ve decided to write up a summary of my experience to help anyone else interested.</p>
+<h2 id="the-problem-statement">The Problem Statement</h2>
 
-<p>This was written using the Live Framework CTP.</p>
-<h3>Connecting to the Live Operating Environment</h3>
+<p>Imagine you have an array and want to remove a particular value from it. You might think there’s a dedicated <code class="language-plaintext highlighter-rouge">remove()</code> method in JavaScript, but unfortunately, there isn’t. So, how do you remove that specific value from your array efficiently?</p>
 
-<p>The “Live Operating Environment” is the main service that is hosted in the cloud by Microsoft. To connect to it and use it you are required to be connected to the Internet.</p>
+<p>Let’s break down the problem and solution step by step:</p>
 
-<p>Basically to connect to the Live Operating Environment you need to prompt the user for their Windows Live ID and Password. Below is a very simple example of what is needed to create an instance of the LiveOperatingEnvironment object in C# and connect to the Live Operating Environment server.</p>
+<h2 id="the-solution">The Solution</h2>
 
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="kt">var</span> <span class="n">credentials</span> <span class="p">=</span> <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Net</span><span class="p">.</span><span class="nf">NetworkCredentials</span><span class="p">(</span><span class="n">windowsLiveID</span><span class="p">,</span> <span class="n">password</span><span class="p">);</span>
+<p>To remove a specific item from an array in JavaScript, you can use the <code class="language-plaintext highlighter-rouge">indexOf()</code> method to find the index of the item you want to remove, and then use the <code class="language-plaintext highlighter-rouge">splice()</code> method to remove it. Here’s how it works:</p>
 
-<span class="kt">var</span> <span class="n">LOE</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">LiveOperatingEnvironment</span><span class="p">();</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">];</span>
 
-<span class="n">LOE</span><span class="p">.</span><span class="nf">Connect</span><span class="p">(</span><span class="n">credentials</span><span class="p">);</span>
+<span class="c1">// Find the index of the item you want to remove</span>
+<span class="kd">const</span> <span class="nx">index</span> <span class="o">=</span> <span class="nx">array</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
 
+<span class="c1">// Check if the item was found</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">index</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Use splice to remove the item (second parameter: 1 means remove one item)</span>
+  <span class="nx">array</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Now, the array will be [2, 9]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">array</span><span class="p">);</span>
 </code></pre></div></div>
 
-<p>I you haven’t really looked in to how this works, you can look at the ConnectCloud method of the Login.xaml.cs file of the Project Manager sample code within the Live Framework CTP SDK.</p>
-<h3>Connecting to the Local Live Operating Environment</h3>
+<p>In this example, we start with an array <code class="language-plaintext highlighter-rouge">[2, 5, 9]</code>. We want to remove the value <code class="language-plaintext highlighter-rouge">5</code>. First, we use <code class="language-plaintext highlighter-rouge">indexOf(5)</code> to find its index in the array, which is <code class="language-plaintext highlighter-rouge">1</code>. Then, we use <code class="language-plaintext highlighter-rouge">splice(index, 1)</code> to remove one element at the specified index. Afterward, the array contains <code class="language-plaintext highlighter-rouge">[2, 9]</code>.</p>
 
-<p>Now, to connect to the **Local **Live Operating Environment instead, you basically just call the <a href="http://msdn.microsoft.com/en-us/library/dd139363.aspx">LiveOperatingEnvironment.ConnectLocal()</a> method instead of the <a href="http://msdn.microsoft.com/en-us/library/dd157894.aspx">Connect()</a> method shown above. Also, another big difference is you don’t need to prompt the user for their Windows Live ID and Password, since the Local Live Operating Environment handles all the authentication for you.</p>
+<h2 id="handling-multiple-occurrences">Handling Multiple Occurrences</h2>
 
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="kt">var</span> <span class="n">LOE</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">LiveOperatingEnvironment</span><span class="p">();</span>
+<p>If you need to remove all occurrences of a specific value from an array, you can create a function for that as well. Here are two functions, one to remove a single occurrence and another to remove all occurrences of a value:</p>
 
-<span class="n">LOE</span><span class="p">.</span><span class="nf">ConnectLocal</span><span class="p">();</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">removeItemOnce</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">index</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">index</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">arr</span><span class="p">;</span>
+<span class="p">}</span>
 
+<span class="kd">function</span> <span class="nx">removeItemAll</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">arr</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
-<p>This also has the benefit of only requiring the user to type in their Windows Live ID and Password once when they login with the Live Framework Client; which can actually save their password and auto log them in when they login to Windows.</p>
-<h3>Mesh Client or Live Framework Client? What's the difference?</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">removeItemOnce</code>: This function removes the first occurrence of the specified value in the array.</li>
+  <li><code class="language-plaintext highlighter-rouge">removeItemAll</code>: This function removes all occurrences of the specified value in the array.</li>
+</ul>
 
-<p>When you go to <a href="http://mesh.com">http://mesh.com</a>, login, and click “Add Device” so you can Sync files with Mesh Folders, it has you install the Mesh Client. This install does not contain the Local Live Operating Environment you need when programming against the Live Framework SDK.</p>
+<p>Here’s how you can use these functions:</p>
 
-<p>When you go to <a href="http://developer.mesh-ctp.com">http://developer.mesh-ctp.com</a>, login, and click “Add Device” so you can Sync files with the “dev” version of Mesh, it has you install the Live Framework Client. This is in fact the install you want that contains the Local Live Operating Environment.</p>
-<h3><span style="text-decoration: line-through;">Beware </span>the Mesh Client and Live Framework Client <span style="text-decoration: line-through;">don't</span> play well together</h3>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
 
-<p>Actually, the latest update (April CTP) to the Live Framework Client does install and work correctly along-side the Mesh Client.AND, it now works on the Windows 7 Beta.</p>
+<span class="c1">// Removes the first 5: [2, 9, 1, 5, 8, 5]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">removeItemOnce</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="mi">5</span><span class="p">));</span>
 
-<p><span style="text-decoration: line-through;">There is a known issue of running the Live Framework Client and Mesh Client on the same machine; they simply don’t work as installed out of the box. You need to perform a little registry edit to fix the issue. It sounds bad, but it is actually quite painless. </span></p>
+<span class="c1">// Removes all 5s: [2, 9, 1, 8]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">removeItemAll</span><span class="p">(</span><span class="nx">array</span><span class="p">,</span> <span class="mi">5</span><span class="p">));</span>
+</code></pre></div></div>
 
-<p><span style="text-decoration: line-through;">Here’s instructions on how to get the Mesh Client and Live Framework Client to run Side By Side: </span></p>
-<ol>
-<li><span style="text-decoration: line-through;">Uninstall Live Framework Client.</span></li>
-<li><span style="text-decoration: line-through;">Install Mesh Client Beta from <a href="http://mesh.com">http://mesh.com</a></span></li>
-<li><span style="text-decoration: line-through;">Add the following registry item: HKCU\Software\Microsoft\Live Framework Client\AllowSxS = 1 (DWORD)</span></li>
-<li><span style="text-decoration: line-through;">Install Live Framework Client from <a href="http://developer.mesh-ctp.com">http://developer.mesh-ctp.com</a>
-</span></li>
-</ol>
+<h2 id="type-safety-in-typescript">Type Safety in TypeScript</h2>
 
-<p><span style="text-decoration: line-through;">The original posting of these instructions and a little more detail about them can be found here: </span></p>
+<p>If you’re using TypeScript, you can ensure type safety for these functions by adding a type parameter:</p>
 
-<p><span style="text-decoration: line-through;"><a href="http://social.msdn.microsoft.com/Forums/en-US/liveframework/thread/2fa9d3f1-029e-44af-9568-1cea81ca78a9/">http://social.msdn.microsoft.com/Forums/en-US/liveframework/thread/2fa9d3f1-029e-44af-9568-1cea81ca78a9/</a></span></p>
-<h3><span style="text-decoration: line-through;">Current Live Framework Client does not work on the Windows 7 Beta</span></h3>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">removeItem</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">arr</span><span class="p">:</span> <span class="nb">Array</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="nx">value</span><span class="p">:</span> <span class="nx">T</span><span class="p">):</span> <span class="nb">Array</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">index</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">index</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">arr</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">arr</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-<p><span style="text-decoration: line-through;">One thing to note before you start trying to develop against the Local Live Operating Environment is it does NOT run correctly on the Windows 7 Beta. In order to develop for it and use it you’ll need to install it on Windows Vista (or presumably Windows XP). </span></p>
+<p>With this TypeScript version, you can pass arrays of any type and remove items of the same type safely.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Removing a specific item from an array in JavaScript is a common task, and you can achieve it using the <code class="language-plaintext highlighter-rouge">indexOf()</code> and <code class="language-plaintext highlighter-rouge">splice()</code> methods. Whether you need to remove a single occurrence or all occurrences of a value, you now have the tools to do so efficiently with core JavaScript.</p>
 
         
       </article>
@@ -163,8 +192,25 @@
     
         
             
+                
+                <h2 >
+                    Related Posts
+                </h2 >
+                <ul class="">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/09/21/how-do-i-check-if-element-is-hidden-in-jquery">jQuery: How do I check if an element is hidden?
+                    
+                    </a></h6>
+                    <span class="small text-muted">21 Sep 2023</span>
+                </li>
+                
+                
+            
         
-    
+            
+        
+            
         
             
         
@@ -172,7 +218,82 @@
         
             
         
+            
+        
+            
+        
+            
+        
     
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/08/18/javascript-aspnet-mvc-aggrid-infinite-row-model-datasource">JavaScript: AG-Grid + ASP.NET MVC Infinite Row Model DataSource with Entity Framework
+                    
+                    </a></h6>
+                    <span class="small text-muted">18 Aug 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
         
             
         
@@ -183,11 +304,82 @@
         
             
         
-    
+            
+        
+            
         
             
         
     
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/02/04/javascript-fundamentals-variables-arrays-loops">JavaScript Fundamentals: Variables, Arrays, and Loops
+                    
+                    </a></h6>
+                    <span class="small text-muted">04 Feb 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
         
             
         
@@ -198,7 +390,9 @@
         
             
         
-    
+            
+        
+            
         
             
         
@@ -206,7 +400,9 @@
         
             
         
-    
+            
+        
+            
         
             
         
@@ -214,10 +410,9 @@
         
             
         
-    
-
-    
-    
+            
+        
+            
         
             
         
@@ -225,26 +420,9 @@
         
             
         
-    
-        
             
         
-    
-        
             
-        
-    
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-    
         
             
         
@@ -255,7 +433,9 @@
         
             
         
-    
+            
+        
+            
         
             
         
@@ -263,14 +443,9 @@
         
             
         
-    
-        
             
         
-    
-
-    
-    
+            
         
             
         
@@ -278,26 +453,9 @@
         
             
         
-    
-        
             
         
-    
-
-    
-    
-        
             
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
         
             
         
@@ -308,11 +466,39 @@
         
             
         
-    
+            
+        
+            
         
             
         
     
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
         
             
         
@@ -323,16 +509,102 @@
         
             
         
-    
+            
+        
+            
         
             
         
     
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
         
             
         
     
 
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
 
 
     </div>
@@ -354,11 +626,6 @@
     <ul class="list-unstyled">
         
         <li class="mb-3">
-            <h6 class="mb-0"><a href="/post/2023/09/21/how-to-remove-specific-item-from-array-in-javascript">How to Remove a Specific Item from an Array in JavaScript</a></h6>
-            <span class="small text-muted">21 Sep 2023</span>
-        </li>
-        
-        <li class="mb-3">
             <h6 class="mb-0"><a href="/post/2023/09/21/how-do-i-check-if-element-is-hidden-in-jquery">jQuery: How do I check if an element is hidden?</a></h6>
             <span class="small text-muted">21 Sep 2023</span>
         </li>
@@ -378,6 +645,11 @@
             <span class="small text-muted">04 Feb 2023</span>
         </li>
         
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2023/01/11/top-terraform-azure-articles-on-build5nines-in-2022">Top Terraform and Azure Articles on Build5Nines in 2022 (plus year in review)</a></h6>
+            <span class="small text-muted">11 Jan 2023</span>
+        </li>
+        
     </ul>
     </div>
 
@@ -388,8 +660,25 @@
     
         
             
+                
+                <h4>
+                    Related Posts
+                </h4>
+                <ul class="list-unstyled">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/09/21/how-do-i-check-if-element-is-hidden-in-jquery">jQuery: How do I check if an element is hidden?
+                    
+                    </a></h6>
+                    <span class="small text-muted">21 Sep 2023</span>
+                </li>
+                
+                
+            
         
-    
+            
+        
+            
         
             
         
@@ -397,7 +686,82 @@
         
             
         
+            
+        
+            
+        
+            
+        
     
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/08/18/javascript-aspnet-mvc-aggrid-infinite-row-model-datasource">JavaScript: AG-Grid + ASP.NET MVC Infinite Row Model DataSource with Entity Framework
+                    
+                    </a></h6>
+                    <span class="small text-muted">18 Aug 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
         
             
         
@@ -408,11 +772,82 @@
         
             
         
-    
+            
+        
+            
         
             
         
     
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/02/04/javascript-fundamentals-variables-arrays-loops">JavaScript Fundamentals: Variables, Arrays, and Loops
+                    
+                    </a></h6>
+                    <span class="small text-muted">04 Feb 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
         
             
         
@@ -423,7 +858,9 @@
         
             
         
-    
+            
+        
+            
         
             
         
@@ -431,7 +868,9 @@
         
             
         
-    
+            
+        
+            
         
             
         
@@ -439,10 +878,9 @@
         
             
         
-    
-
-    
-    
+            
+        
+            
         
             
         
@@ -450,26 +888,9 @@
         
             
         
-    
-        
             
         
-    
-        
             
-        
-    
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-    
         
             
         
@@ -480,7 +901,9 @@
         
             
         
-    
+            
+        
+            
         
             
         
@@ -488,14 +911,9 @@
         
             
         
-    
-        
             
         
-    
-
-    
-    
+            
         
             
         
@@ -503,26 +921,9 @@
         
             
         
-    
-        
             
         
-    
-
-    
-    
-        
             
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
         
             
         
@@ -533,11 +934,39 @@
         
             
         
-    
+            
+        
+            
         
             
         
     
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
         
             
         
@@ -548,16 +977,102 @@
         
             
         
-    
+            
+        
+            
         
             
         
     
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
         
             
         
     
 
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
 
     </div>
 
