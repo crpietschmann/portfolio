@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>jQuery: How do I check if an element is hidden? | Chris Pietschmann</title>
+    <meta name="description" content="I have more than 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
+">
+    <meta name="author" content="Chris Pietschmann">
+    <link rel="icon" href="/images/avatar-chris-pietschmann-transparent-small.jpg">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="alternate" type="application/rss+xml" title="Chris Pietschmann &raquo; Archive" href="https://pietschsoft.com/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <!--
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!--<link rel="stylesheet" href="//css/site.css">-->
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="canonical" href="http://pietschsoft.com//post/2023/09/21/how-do-i-check-if-element-is-hidden-in-jquery">
+</head>
+
+  <body>
+    <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Bio</h4>
+          <p class="text-muted">
+            <a href="/">Chris Pietschmann</a> is a Microsoft MVP, HashiCorp Ambassador, Microsoft Certified Trainer (MCT), Author, Trainer, Developer, DevOps / Site Reliability Engineer (SRE) with 20+ years of experience developing enterprise solutions. He has been focusing heavily on Microsoft Azure and the Cloud since early 2010, and specializes in DevOps / SRE, IoT, Development and Solution Architecture. He's the founder of <a href="https://Build5Nines.com">Build5Nines.com</a>, and works at <a href="https://solliance.net">Solliance</a> as a Principal Cloud & DevOps Solution Architect.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Publications</h4>
+          <ul class="list-unstyled">
+            <li><a href="/#books" class="text-white">Books</a></li>
+            <li><a href="https://build5nines.com" class="text-white">Build5Nines.com</a></li>
+            <li><a href="https://www.hackster.io/crpietschmann/articles" class="text-white">Hackster.io</a></li>
+            <li><a href="/blog" class="text-white">Pietschsoft.com</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://twitter.com/build5nines" class="text-white">Twitter</a></li>
+            <li><a href="http://linkedin.com/in/crpietschmann" class="text-white">LinkedIn</a></li>
+            <li><a href="https://build5nines.com/contact" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com Logo" style="height: 1.5em; margin-right: 0.5em;"/>-->
+        <img src="/images/avatar-chris-pietschmann-transparent-small.jpg" alt="Chris Pietschmann" style="background: #fff; height: 1.5em; margin-right: 0.5em;"/>
+        <strong>Chris Pietschmann</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="container post">
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <header class="post-header">
+          
+          
+          <h1 class="post-title">jQuery: How do I check if an element is hidden?</h1>
+          <!--
+          <div class="post-categories">
+              
+              
+              <a href="//categories/#JavaScript">JavaScript</a>
+              &nbsp;
+              
+              <a href="//categories/#jQuery">jQuery</a>
+              
+              
+            </div>
+          -->
+          <p class="post-meta">Sep 21, 2023</p>
+      </header>
+
+      <article class="post-content">
+        
+            <p>jQuery is a powerful JavaScript library that simplifies web development tasks, and one common task you might encounter is checking if an element is hidden or visible. This article will guide you through the process of determining an element’s visibility and toggling it using jQuery’s <code class="language-plaintext highlighter-rouge">.hide()</code>, <code class="language-plaintext highlighter-rouge">.show()</code>, and <code class="language-plaintext highlighter-rouge">.toggle()</code> methods.</p>
+
+<h2 id="checking-element-visibility">Checking Element Visibility</h2>
+
+<p>Before we delve into how to toggle element visibility, let’s first understand how to check if an element is hidden or visible in jQuery. To achieve this, we use the <code class="language-plaintext highlighter-rouge">.is()</code> method along with the <code class="language-plaintext highlighter-rouge">:hidden</code> and <code class="language-plaintext highlighter-rouge">:visible</code> selectors.</p>
+
+<h3 id="using-hidden-selector">Using <code class="language-plaintext highlighter-rouge">:hidden</code> Selector</h3>
+
+<p>To check if an element is hidden, you can use the following code:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="nx">element</span><span class="p">).</span><span class="nx">is</span><span class="p">(</span><span class="dl">"</span><span class="s2">:hidden</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Here, element is the jQuery selector for the element you want to check. This code snippet returns true if the element is hidden and false if it’s visible.</p>
+
+<h3 id="using-visible-selector">Using <code class="language-plaintext highlighter-rouge">:visible</code> Selector</h3>
+
+<p>Conversely, you can check if an element is visible with the following code:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="nx">element</span><span class="p">).</span><span class="nx">is</span><span class="p">(</span><span class="dl">"</span><span class="s2">:visible</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Again, replace element with your desired jQuery selector. This code returns true if the element is visible and false if it’s hidden.</p>
+
+<p>These methods are useful when you need to determine an element’s initial state or verify its visibility status before making any changes.</p>
+
+<h2 id="toggling-element-visibility">Toggling Element Visibility</h2>
+
+<p>Now that you know how to check the visibility of an element, let’s explore how to toggle it between hidden and visible states using jQuery’s <code class="language-plaintext highlighter-rouge">.hide()</code>, <code class="language-plaintext highlighter-rouge">.show()</code>, and <code class="language-plaintext highlighter-rouge">.toggle()</code> methods.</p>
+
+<h3 id="using-hide">Using <code class="language-plaintext highlighter-rouge">.hide()</code></h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">.hide()</code> method allows you to hide an element by setting its display property to none. To hide an element when a specific event occurs, you can use the following code:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="nx">element</span><span class="p">).</span><span class="nx">hide</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>This code will hide the selected element when called. If the element is already hidden, calling <code class="language-plaintext highlighter-rouge">.hide()</code> won’t have any effect.</p>
+
+<h3 id="using-show">Using .show()</h3>
+
+<p>Conversely, you can make a hidden element visible using the <code class="language-plaintext highlighter-rouge">.show()</code> method:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="nx">element</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>This code will set the display property of the element to its default value (e.g., block for a <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> element) and make it visible. If the element is already visible, calling <code class="language-plaintext highlighter-rouge">.show()</code> won’t change its state.</p>
+
+<h3 id="using-toggle">Using <code class="language-plaintext highlighter-rouge">.toggle()</code></h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">.toggle()</code> method is handy when you want to switch between hiding and showing an element based on its current state. Here’s how you can use it:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="nx">element</span><span class="p">).</span><span class="nx">toggle</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>Calling <code class="language-plaintext highlighter-rouge">.toggle()</code> on an element will hide it if it’s visible and show it if it’s hidden. This method is particularly useful for creating toggle buttons or implementing collapsible sections on a webpage.</p>
+
+<h2 id="practical-examples">Practical Examples</h2>
+
+<p>Let’s put these concepts into practice with a couple of examples:</p>
+
+<h3 id="example-1-toggling-a-button">Example 1: Toggling a Button</h3>
+
+<p>Suppose you have a button that, when clicked, should toggle the visibility of a <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> element with the id content. You can achieve this with the following code:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"toggleButton"</span><span class="nt">&gt;</span>Toggle Content<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"content"</span><span class="nt">&gt;</span>This is some hidden content.<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">#toggleButton</span><span class="dl">"</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">#content</span><span class="dl">"</span><span class="p">).</span><span class="nx">toggle</span><span class="p">();</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>In this example, we use the <code class="language-plaintext highlighter-rouge">.click()</code> method to attach a click event handler to the button. When the button is clicked, it toggles the visibility of the #content element.</p>
+
+<h3 id="example-2-checking-visibility-before-action">Example 2: Checking Visibility Before Action</h3>
+
+<p>Suppose you want to ensure that an element is visible before performing an action. For instance, you have a form that should only be submitted if a certain <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> with the id <code class="language-plaintext highlighter-rouge">validationMessage</code> is visible.</p>
+
+<p>You can check its visibility like this:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">"myForm"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Form fields go here --&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"validationMessage"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>Please fill out all fields.<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">#myForm</span><span class="dl">"</span><span class="p">).</span><span class="nx">submit</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">#validationMessage</span><span class="dl">"</span><span class="p">).</span><span class="nx">is</span><span class="p">(</span><span class="dl">"</span><span class="s2">:visible</span><span class="dl">"</span><span class="p">))</span> <span class="p">{</span>
+      <span class="c1">// Prevent form submission if validation message is visible</span>
+      <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="c1">// Continue with form submission if validation message is hidden</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>In this example, we use the <code class="language-plaintext highlighter-rouge">.submit()</code> method to attach a submit event handler to the form. Before allowing the form to submit, we check if the <code class="language-plaintext highlighter-rouge">#validationMessage</code> element is visible. If it is, we prevent the form from submitting; otherwise, the form submission proceeds.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>jQuery provides convenient methods for checking the visibility of elements and toggling their visibility states. You can use <code class="language-plaintext highlighter-rouge">.is(":hidden")</code> and <code class="language-plaintext highlighter-rouge">.is(":visible")</code> to check an element’s visibility, and <code class="language-plaintext highlighter-rouge">.hide()</code>, <code class="language-plaintext highlighter-rouge">.show()</code>, and <code class="language-plaintext highlighter-rouge">.toggle()</code> to control its visibility.</p>
+
+<p>By mastering these techniques, you can create interactive and user-friendly web applications that respond dynamically to user actions, making your web development projects more engaging and efficient. Happy coding!</p>
+
+
+        
+      </article>
+
+      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+
+
+      
+
+    
+    
+        
+            
+                
+                <h2 >
+                    Related Posts
+                </h2 >
+                <ul class="">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/08/18/javascript-aspnet-mvc-aggrid-infinite-row-model-datasource">JavaScript: AG-Grid + ASP.NET MVC Infinite Row Model DataSource with Entity Framework
+                    
+                    </a></h6>
+                    <span class="small text-muted">18 Aug 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/02/04/javascript-fundamentals-variables-arrays-loops">JavaScript Fundamentals: Variables, Arrays, and Loops
+                    
+                    </a></h6>
+                    <span class="small text-muted">04 Feb 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2022/08/13/javascript-remove-item-from-array">JavaScript: Remove Specific Items from Array
+                    
+                    </a></h6>
+                    <span class="small text-muted">13 Aug 2022</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+
+
+      
+
+    </div>
+    <div id="sidebar" class="col-md-4">
+      <div class="mb-3">
+    <center>
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div>
+    </center>
+    
+    <!--
+    <div class="mb-3">
+    <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
+    </div>
+    -->
+
+    <!-- https://blog.webjeda.com/jekyll-related-posts/#whats-wrong-with-jekyll-related_posts -->
+    <div class="recent">
+    <h4>Recent Posts</h4>
+    <ul class="list-unstyled">
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2023/08/18/javascript-aspnet-mvc-aggrid-infinite-row-model-datasource">JavaScript: AG-Grid + ASP.NET MVC Infinite Row Model DataSource with Entity Framework</a></h6>
+            <span class="small text-muted">18 Aug 2023</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2023/03/09/My-Fitness-Journey-Challenges-and-Successes-and-Tony-Horton-as-my-Personal-Trainer">My Fitness Journey Challenges and Successes and Tony Horton as my Personal Trainer</a></h6>
+            <span class="small text-muted">09 Mar 2023</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2023/02/04/javascript-fundamentals-variables-arrays-loops">JavaScript Fundamentals: Variables, Arrays, and Loops</a></h6>
+            <span class="small text-muted">04 Feb 2023</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2023/01/11/top-terraform-azure-articles-on-build5nines-in-2022">Top Terraform and Azure Articles on Build5Nines in 2022 (plus year in review)</a></h6>
+            <span class="small text-muted">11 Jan 2023</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2022/12/14/what-is-chatgpt-and-is-it-important">What is ChatGPT and is it important?</a></h6>
+            <span class="small text-muted">14 Dec 2022</span>
+        </li>
+        
+    </ul>
+    </div>
+
+    <div class="related">
+    
+
+    
+    
+        
+            
+                
+                <h4>
+                    Related Posts
+                </h4>
+                <ul class="list-unstyled">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/08/18/javascript-aspnet-mvc-aggrid-infinite-row-model-datasource">JavaScript: AG-Grid + ASP.NET MVC Infinite Row Model DataSource with Entity Framework
+                    
+                    </a></h6>
+                    <span class="small text-muted">18 Aug 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/02/04/javascript-fundamentals-variables-arrays-loops">JavaScript Fundamentals: Variables, Arrays, and Loops
+                    
+                    </a></h6>
+                    <span class="small text-muted">04 Feb 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2022/08/13/javascript-remove-item-from-array">JavaScript: Remove Specific Items from Array
+                    
+                    </a></h6>
+                    <span class="small text-muted">13 Aug 2022</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+    
+
+
+    </ul>
+
+    </div>
+
+    <div class="recent">
+        <h4>Recent on Build5Nines.com</h4>
+        <ul class="list-unstyled">
+        
+            <li class="mb-3">
+                <a href="https://build5nines.com/top-10-web-application-security-risks-in-microsoft-azure-and-ways-to-mitigate-them/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2023/09/Azure_Security_Best_Practices_Featured_Image.jpg?fit=1200%2C675&ssl=1" alt="Top 10 Web Application Security Risks in Microsoft Azure and Ways to Mitigate Them"/></a>
+                <h6 class="mb-0"><a href="https://build5nines.com/top-10-web-application-security-risks-in-microsoft-azure-and-ways-to-mitigate-them/">Top 10 Web Application Security Risks in Microsoft Azure and Ways to Mitigate Them</a></h6>
+                <span class="small text-muted">07 Sep 2023</span>
+            </li>
+        
+            <li class="mb-3">
+                <a href="https://build5nines.com/build5nines-weekly-may-18-2023/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2023/02/Build5Nines_Weekly_Newsletter_Featured_Image_2023.jpg?fit=1200%2C675&ssl=1" alt="Build5Nines Weekly  May 18, 2023"/></a>
+                <h6 class="mb-0"><a href="https://build5nines.com/build5nines-weekly-may-18-2023/">Build5Nines Weekly  May 18, 2023</a></h6>
+                <span class="small text-muted">18 May 2023</span>
+            </li>
+        
+            <li class="mb-3">
+                <a href="https://build5nines.com/terraform-deploy-azure-storage-account-and-blob-container/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2022/08/Azure_Terraform_Featured_Image.jpg?fit=1200%2C675&ssl=1" alt="Terraform: Deploy Azure Storage Account and Blob Container"/></a>
+                <h6 class="mb-0"><a href="https://build5nines.com/terraform-deploy-azure-storage-account-and-blob-container/">Terraform: Deploy Azure Storage Account and Blob Container</a></h6>
+                <span class="small text-muted">19 Apr 2023</span>
+            </li>
+        
+            <li class="mb-3">
+                <a href="https://build5nines.com/dangers-of-ai-hallucinations-how-wrong-answers-can-lead-to-legal-liability-and-mitigate-them/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2023/01/Build5Nines_Featured_Image.jpg?fit=1200%2C675&ssl=1" alt="Dangers of AI Hallucinations: How Wrong Answers Can Lead to Legal Liability and Mitigate Them"/></a>
+                <h6 class="mb-0"><a href="https://build5nines.com/dangers-of-ai-hallucinations-how-wrong-answers-can-lead-to-legal-liability-and-mitigate-them/">Dangers of AI Hallucinations: How Wrong Answers Can Lead to Legal Liability and Mitigate Them</a></h6>
+                <span class="small text-muted">19 Apr 2023</span>
+            </li>
+        
+            <li class="mb-3">
+                <a href="https://build5nines.com/build5nines-weekly-april-18-2023/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2023/02/Build5Nines_Weekly_Newsletter_Featured_Image_2023.jpg?fit=1200%2C675&ssl=1" alt="Build5Nines Weekly  April 18, 2023"/></a>
+                <h6 class="mb-0"><a href="https://build5nines.com/build5nines-weekly-april-18-2023/">Build5Nines Weekly  April 18, 2023</a></h6>
+                <span class="small text-muted">18 Apr 2023</span>
+            </li>
+        
+        </ul>
+    </div>
+
+    <!--
+    <h4>Courses</h4>
+    <style>
+        .course-box {
+            margin-bottom: 1em;
+        }
+        .course-box img {
+            width: 95%;
+        }
+        .course-box > strong {
+            display: block;
+        }
+        .course-box > em {
+            color: rgba(0,0,0,0.9);
+            font-size: 0.9em;
+            display: block;
+        }
+    </style>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
+        </a>
+        <strong>
+            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
+                The Complete JavaScript Course 2020: Build Real Projects!
+            </a>
+        </strong>
+        <em>by Jonas Schmedtmann</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
+            JavaScript Basics for Beginners
+        </a></strong>
+        <em>by Mosh Hamedani</em>
+    </div>
+    <div class="course-box">
+        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
+        </a>
+        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
+            Advanced JavaScript Concepts
+        </a></strong>
+        <em>by Andrei Neagoie</em>
+    </div>
+    -->
+
+    <p style="font-size:0.7em;">
+        Copyright © 2003 - 2023 Chris Pietschmann. All rights reserved.<br/><br/>
+        No content may be republished without prior consent.
+    </p>
+    
+    <div id="fixedadmarker"></div>
+    <div id="fixedad" class="mt-3">
+        <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+    </div>
+    <style>
+    @media (min-width: 768px) {
+        .fixedad-float {
+            position: fixed;
+            top: 2.5em;
+        }
+    }
+    </style>
+    <script>
+    window.setInterval(function() {
+        var elem = $('#fixedadmarker'),
+            top = elem.offset().top || 0,
+            height = elem[0].offsetHeight || 0,
+            bottom = top + height,
+            scrollY = window.scrollY || 0,
+            elemToBeFixed = $('#fixedad');
+        if (scrollY >= bottom) {
+            elemToBeFixed.addClass('fixedad-float');
+        } else {
+            elemToBeFixed.removeClass('fixedad-float');
+        }
+    }, 100);
+    </script>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5>Chris Pietschmann</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/#awards">Microsoft MVP</a></li>
+        <li><a class="text-muted" href="/#books">Books</a></li>
+        <li><a class="text-muted" href="/#websites">Websites</a></li>
+        <li><a class="text-muted" href="/#experience">Experience</a></li>
+        <li><a class="text-muted" href="/talks">Talks</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Publications</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://build5nines.com" target="_blank">Build5Nines.com</a></li>
+        <li><a class="text-muted" href="https://www.hackster.io/crpietschmann/articles" target="_blank">Hackster.io</a></li>
+        <li><a class="text-muted" href="/blog">Pietschsoft.com</a></li>
+      </ul>
+      <h5>Social Media</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="http://twitter.com/build5nines" target="_blank">Twitter</a></li>
+        <li><a class="text-muted" href="http://linkedin.com/in/crpietschmann" target="_blank">LinkedIn</a></li>
+        <li><a class="text-muted" href="http://youtube.com/build5nines" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <!--<img src="/images/buildazure-logo.png" alt="Build5Nines.com" style="height: 1.5em;"/>-->
+      <small class="d-block mb-3 text-muted">
+        Copyright © 2003 - 2023 Chris Pietschmann. All rights reserved.<br/><br/>
+        No content may be republished without prior consent.
+      </small>
+      <small class="d-block mb-3 text-muted">
+        <strong>Legal Disclaimer</strong>
+        <p>This site is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We also participates in affiliate programs with Udemy, and other sites. This site is compensated for referring traffic and business to these companies.</p>
+      </small>
+    </div>
+    <div class="col-12 col-md">
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+<script src="/scripts/prism/prism.js"></script>
+<link rel="stylesheet" href="/scripts/prism/prism.css" />
+
+
+    <!--
+    <script type="text/javascript">
+    // Google Analytics
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    -->
+
+    <!-- Google Analytics v3
+    <script src="https://ssl.google-analytics.com/ga.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1172995-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
+    -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVB6DNH2M1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QVB6DNH2M1');
+  
+    
+    // Developer Media Ads
+    (function() {
+      function _dmBootstrap(file) {
+          var _dma = document.createElement('script');
+          _dma.type = 'text/javascript';
+          _dma.async = true;
+          _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+      }
+      function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+      (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+    })();
+    /*
+    // Google Analytics v3 - Track External Link Clicks
+    (function($) { if ($) {
+      $('a[href^=http]').click(function(){
+          if (_gaq && _gaq.push && !((this.href || '').startsWith('https://pietschsoft.com'))) {
+              _gaq.push(['_trackEvent','Link','External',this.href]);
+          }
+          return true;
+      });
+    }})(jQuery);
+    */
+  </script>
+  </body>
+</html>

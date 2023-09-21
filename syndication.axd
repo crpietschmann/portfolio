@@ -6,9 +6,30 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 19 Sep 2023 19:16:21 -0500</pubDate>
-    <lastBuildDate>Tue, 19 Sep 2023 19:16:21 -0500</lastBuildDate>
+    <pubDate>Thu, 21 Sep 2023 13:19:35 -0500</pubDate>
+    <lastBuildDate>Thu, 21 Sep 2023 13:19:35 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>jQuery: How do I check if an element is hidden?</title>
+        <description>&lt;p&gt;jQuery is a powerful JavaScript library that simplifies web development tasks, and one common task you might encounter is checking if an element is hidden or visible. This article will guide you through the process of determining an element’s visibility and toggling it using jQuery’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.hide()&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.show()&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.toggle()&lt;/code&gt; methods.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 21 Sep 2023 12:00:00 -0500</pubDate>
+        <link>http://pietschsoft.com//post/2023/09/21/how-do-i-check-if-element-is-hidden-in-jquery</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2023/09/21/how-do-i-check-if-element-is-hidden-in-jquery</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>js</category>
+        
+        <category>jQuery</category>
+        
+        
+        <category>JavaScript</category>
+        
+        <category>jQuery</category>
+        
+      </item>
     
       <item>
         <title>JavaScript: AG-Grid + ASP.NET MVC Infinite Row Model DataSource with Entity Framework</title>
@@ -192,23 +213,6 @@
         
         
         <category>Blogging</category>
-        
-      </item>
-    
-      <item>
-        <title>JavaScript: Remove Specific Items from Array</title>
-        <description>&lt;p&gt;When writing JavaScript code, there are many use cases where working with Arrays is required. Creating arrays of values / object and receiving them from API calls is really common. &lt;a href=&quot;/post/2020/07/01/loop-through-javascript-arrays-using-for-forEach-map-functions&quot;&gt;Looping through JavaScript Arrays&lt;/a&gt; is a common action to perform, but removing items from a JavaScript Array you are working with is not as straight forward. In this article, we’ll take a look at some methods that can be performed to allow you to make sense of removing items from an array.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 13 Aug 2022 19:48:00 -0500</pubDate>
-        <link>http://pietschsoft.com//post/2022/08/13/javascript-remove-item-from-array</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2022/08/13/javascript-remove-item-from-array</guid>
-        
-        <category>JavaScript</category>
-        
-        <category>js</category>
-        
-        
-        <category>JavaScript</category>
         
       </item>
     
