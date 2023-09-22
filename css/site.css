@@ -72,5 +72,6 @@ blockquote > p { margin: 0; }
 #sidebar h4 { font-size: 1.3em; }
 
 /* #sidebar .recent ul li, #sidebar .related ul li { border: solid 0.1em $grey-color-light; border-radius: 0.5em; padding-left: 0.5em; padding-top: 0.5em; box-shadow: 0.3em 0.2em 0.2em $grey-color-light; } */
+#archives > hr { margin-bottom: 2em; }
 
 /*# sourceMappingURL=site.css.map */
