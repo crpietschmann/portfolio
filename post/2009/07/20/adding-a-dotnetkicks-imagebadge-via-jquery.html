@@ -110,35 +110,30 @@
 <p><a href="http://www.dotnetkicks.com/kick/?url=http%3A%2F%2Fpietschsoft.com%2Fpost%2F2009%2F07%2F20%2FAdding-a-DotNetKicks-ImageBadge-via-jQuery.aspx"><img src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http%3A%2F%2Fpietschsoft.com%2Fpost%2F2009%2F07%2F20%2FAdding-a-DotNetKicks-ImageBadge-via-jQuery.aspx&amp;bgcolor=0099FF" border="0" alt="kick it on DotNetKicks.com" /></a></p>
 
 <p>To use the below code you just need to follow the following steps:</p>
-<ol>
-<li>Create a <div> element wher you want the badge to be displayed.&lt;/li&gt;
-<li>Set the <div>'s ID to 'postToolbar'.&lt;/li&gt;
-<li>Make sure that the <a href="http://jquery.com">jQuery Library</a> is included within the page.</li>
-<li>Include the below jQuery / JavaScript code within the page.</li>
-&lt;/ol&gt;
 
- 
+<ul>
+  <li>Create a <code class="language-plaintext highlighter-rouge">&lt;DIV&gt;</code> element where you want the badge to be displayed.</li>
+  <li>Set the <code class="language-plaintext highlighter-rouge">&lt;DIV&gt;</code>’s ID to <code class="language-plaintext highlighter-rouge">postToolbar</code>.</li>
+  <li>Make sure that the <a href="http://jquery.com">jQuery Library</a> is included within the page.</li>
+  <li>Include the below jQuery / JavaScript code within the page.&lt;/li&gt;</li>
+</ul>
 
-Here's the jQuery / JavaScript code:
+<p>Here’s the jQuery / JavaScript code:</p>
 
-```javascript
-
-$(function() {
-    var currentPageUrl = document.location.protocol + "//" + document.location.host + document.location.pathname;
-    $('#postToolbar').append(
-            $('<a />').
-                    attr('href', 'http://www.dotnetkicks.com/kick/?url=' + currentPageUrl).
-                    css({ border: 'none' }).
-                append(
-                    $('<img />').
-                        attr('src', 'http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=' + currentPageUrl).
-                        css({ border: 'none' })
-                )
-        );
-});
-
-```
-</div></li></div></li></ol>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">currentPageUrl</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">protocol</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">//</span><span class="dl">"</span> <span class="o">+</span> <span class="nb">document</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">host</span> <span class="o">+</span> <span class="nb">document</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">pathname</span><span class="p">;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#postToolbar</span><span class="dl">'</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span>
+            <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">&lt;a/&gt;</span><span class="dl">'</span><span class="p">).</span>
+                    <span class="nx">attr</span><span class="p">(</span><span class="dl">'</span><span class="s1">href</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">http://www.dotnetkicks.com/kick/?url=</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">currentPageUrl</span><span class="p">).</span>
+                    <span class="nx">css</span><span class="p">({</span> <span class="na">border</span><span class="p">:</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span> <span class="p">}).</span>
+                <span class="nx">append</span><span class="p">(</span>
+                    <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">&lt;img/&gt;</span><span class="dl">'</span><span class="p">).</span>
+                        <span class="nx">attr</span><span class="p">(</span><span class="dl">'</span><span class="s1">src</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">currentPageUrl</span><span class="p">).</span>
+                        <span class="nx">css</span><span class="p">({</span> <span class="na">border</span><span class="p">:</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span> <span class="p">})</span>
+                <span class="p">)</span>
+        <span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
 
         
       </article>
