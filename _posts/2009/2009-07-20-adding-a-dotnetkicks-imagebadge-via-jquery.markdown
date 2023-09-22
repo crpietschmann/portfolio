@@ -22,19 +22,15 @@ Here's a simple demonstration of the DotNetKicks.com Badge that the below jQuery
 <a href="http://www.dotnetkicks.com/kick/?url=http%3A%2F%2Fpietschsoft.com%2Fpost%2F2009%2F07%2F20%2FAdding-a-DotNetKicks-ImageBadge-via-jQuery.aspx"><img src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http%3A%2F%2Fpietschsoft.com%2Fpost%2F2009%2F07%2F20%2FAdding-a-DotNetKicks-ImageBadge-via-jQuery.aspx&amp;bgcolor=0099FF" border="0" alt="kick it on DotNetKicks.com" /></a>
 
 To use the below code you just need to follow the following steps:
-<ol>
-<li>Create a <DIV> element wher you want the badge to be displayed.</li>
-<li>Set the <DIV>'s ID to 'postToolbar'.</li>
-<li>Make sure that the <a href="http://jquery.com">jQuery Library</a> is included within the page.</li>
-<li>Include the below jQuery / JavaScript code within the page.</li>
-</ol>
 
- 
+- Create a `<DIV>` element where you want the badge to be displayed.
+- Set the `<DIV>`'s ID to `postToolbar`.
+- Make sure that the <a href="http://jquery.com">jQuery Library</a> is included within the page.
+- Include the below jQuery / JavaScript code within the page.</li>
 
 Here's the jQuery / JavaScript code:
 
 ```javascript
-
 $(function() {
     var currentPageUrl = document.location.protocol + "//" + document.location.host + document.location.pathname;
     $('#postToolbar').append(
@@ -48,5 +44,4 @@ $(function() {
                 )
         );
 });
-
 ```
