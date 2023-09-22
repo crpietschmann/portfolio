@@ -29,7 +29,12 @@ layout: default
               {% endfor %}
             </div>
           -->
-          <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+          <p class="post-meta">
+            {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+            {% for category in page.categories %}
+              &nbsp;•&nbsp;{{ category }}
+            {% endfor %}
+          </p>
       </header>
 
       <article class="post-content">
