@@ -40,5 +40,6 @@ redirect_from:
         </p>
     {% endfor %}
   </div>
+  <hr/>
 {% endfor %}
 </div>
