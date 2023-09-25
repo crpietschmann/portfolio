@@ -3,7 +3,7 @@ title: Chris Pietschmann
 email: chris@build5nines.com
 description: > # this means to ignore newlines until "baseurl:"
   I have more than 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://pietschsoft.com" # the base hostname & protocol for your site
 author: Chris Pietschmann
 contact_url: https://build5nines.com/contact
