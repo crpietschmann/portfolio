@@ -5,7 +5,7 @@ title: "Top 13 Blogging Tips for a Successful Website"
 date: 2019-07-07 11:28:00 -0500
 comments: true
 published: true
-categories: ["Entrepreneur", "Blogging"]
+categories: ["Business", "Blogging"]
 tags: ["Wordpress", "Blog", "Tips"]
 ---
 

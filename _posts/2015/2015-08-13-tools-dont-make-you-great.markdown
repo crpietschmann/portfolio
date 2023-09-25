@@ -5,7 +5,7 @@ title: "Tools Don't Make You Great"
 date: 2015-08-13 17:02:00 -0500
 comments: true
 published: true
-categories: ["Life", "Career", "Technology", "Tools"]
+categories: ["Life", "Business"]
 tags: ["Inspiration", "Software Craftsmanship"]
 redirect_from: 
   - /post/2015/08/13/Tools-Dont-Make-You-Great.aspx

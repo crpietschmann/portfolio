@@ -5,7 +5,7 @@ title: "My Top 11 Business Tips"
 date: 2016-04-30 11:56:00 -0500
 comments: true
 published: true
-categories: ["Entrepreneur", "Business"]
+categories: ["Business"]
 tags: ["General", "Inspiration"]
 redirect_from: 
   - /post/2016/04/30/Advice-on-Starting-a-Business.aspx

@@ -5,7 +5,7 @@ title: "2009 Reading Goal Is On Track"
 date: 2009-10-16 09:08:00 -0500
 comments: true
 published: true
-categories: ["Reading", "Books"]
+categories: ["Books"]
 tags: ["General"]
 redirect_from: 
   - /post/2009/10/16/2009-Reading-Goal-Is-On-Track.aspx

@@ -5,7 +5,7 @@ title: "Programming is the Reading and Writing of the Future"
 date: 2013-09-13 16:26:00 -0500
 comments: true
 published: true
-categories: ["Technology", "Life"]
+categories: ["Life"]
 tags: ["Inspiration"]
 redirect_from: 
   - /post/2013/09/13/Programming-is-the-Reading-and-Writing-of-the-Future.aspx

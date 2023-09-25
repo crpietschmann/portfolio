@@ -5,7 +5,7 @@ title: "Is Planning and Testing really that important in Software Development???
 date: 2004-09-17 15:04:00 -0500
 comments: true
 published: true
-categories: ["Technology", "Career"]
+categories: ["Technology"]
 tags: ["General"]
 redirect_from: 
   - /post/2004/09/17/Is-Planning-and-Testing-really-that-important-in-Software-Development.aspx
