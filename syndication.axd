@@ -6,9 +6,30 @@
 </description>
     <link>http://pietschsoft.com//</link>
     <atom:link href="http://pietschsoft.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 22 Sep 2023 09:49:31 -0500</pubDate>
-    <lastBuildDate>Fri, 22 Sep 2023 09:49:31 -0500</lastBuildDate>
+    <pubDate>Mon, 25 Sep 2023 15:15:43 -0500</pubDate>
+    <lastBuildDate>Mon, 25 Sep 2023 15:15:43 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Check if element exists using JavaScript or jQuery</title>
+        <description>&lt;p&gt;In the world of web development, the choice between jQuery and vanilla JavaScript has long been a pivotal consideration. jQuery, with its concise syntax and rich library of functions, has been a stalwart companion for many developers, simplifying tasks like DOM manipulation and event handling. On the other hand, vanilla JavaScript, the language of the web itself, offers direct access to the Document Object Model (DOM) and provides a more lightweight, native approach. In this article, we’ll explore the realms of both jQuery and vanilla JavaScript, delving into their respective strengths and use cases. Whether you’re a seasoned developer seeking the most efficient method for a specific task or a newcomer navigating the landscape of web development, this exploration will help you make informed decisions on when to reach for the jQuery toolkit and when to rely on the inherent power of vanilla JavaScript.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 25 Sep 2023 16:00:00 -0500</pubDate>
+        <link>http://pietschsoft.com//post/2023/09/25/check-if-element-exists-using-javascript-jquery</link>
+        <guid isPermaLink="true">http://pietschsoft.com//post/2023/09/25/check-if-element-exists-using-javascript-jquery</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>js</category>
+        
+        <category>jQuery</category>
+        
+        
+        <category>JavaScript</category>
+        
+        <category>jQuery</category>
+        
+      </item>
     
       <item>
         <title>How to Remove a Specific Item from an Array in JavaScript</title>
@@ -196,25 +217,6 @@
         
         
         <category>Personal</category>
-        
-      </item>
-    
-      <item>
-        <title>My Work Authoring Microsoft Cloud Workshops</title>
-        <description>&lt;p&gt;Over the last several years, I’ve been involved with writing content for the &lt;a href=&quot;https://microsoftcloudworkshop.com&quot;&gt;Microsoft Cloud Workshops&lt;/a&gt; (MCWs). These contain design sessions and hands-on lab training content that Microsoft uses to train their own Cloud Solution Architects (CSAs) and even used when working with customers to teach more about deploying advanced Microsoft Azure workloads in the cloud. I have authored new MCWs myself, as well as worked to help update and maintain many of the existing MCWs.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 13 Sep 2022 18:00:00 -0500</pubDate>
-        <link>http://pietschsoft.com//post/2022/09/13/my-work-authoring-microsoft-cloud-workshops</link>
-        <guid isPermaLink="true">http://pietschsoft.com//post/2022/09/13/my-work-authoring-microsoft-cloud-workshops</guid>
-        
-        <category>Work</category>
-        
-        <category>MCW</category>
-        
-        <category>Training</category>
-        
-        
-        <category>Work</category>
         
       </item>
     
