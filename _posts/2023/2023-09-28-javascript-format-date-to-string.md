@@ -101,4 +101,4 @@ In this example, we use `Intl.DateTimeFormat` to format the `Date` object based 
 
 ## Conclusion
 
-Formatting a JavaScript Date object as a custom string is a common task in web development. While JavaScript doesn't provide a built-in method for this, you can achieve it easily by creating a formatting function or using libraries like `date-fns` or `Intl.DateTimeFormat`. Choose the method that best suits your project's requirements, and you'll be able to format dates in JavaScript with ease.
+Formatting a JavaScript `Date` object as a string is a common task in web development. While JavaScript doesn't provide a built-in method for this, you can achieve it easily by creating a custom formatting function or using libraries such as `date-fns` or `Intl.DateTimeFormat`. Choose the method that best suits your project's requirements, and you'll be able to format dates in JavaScript with ease.
