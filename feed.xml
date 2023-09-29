@@ -6,9 +6,43 @@
 </description>
     <link>http://pietschsoft.com/</link>
     <atom:link href="http://pietschsoft.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 26 Sep 2023 19:16:14 -0500</pubDate>
-    <lastBuildDate>Tue, 26 Sep 2023 19:16:14 -0500</lastBuildDate>
+    <pubDate>Thu, 28 Sep 2023 21:40:15 -0500</pubDate>
+    <lastBuildDate>Thu, 28 Sep 2023 21:40:15 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>JavaScript: Parse a String to a Date</title>
+        <description>&lt;p&gt;Working with dates and times is a common task in web development. Often, you might find yourself needing to convert a date stored as a string into a JavaScript Date object for various operations. In this article, we will explore how to efficiently parse a string into a Date object in JavaScript, discussing best practices and alternative methods.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 28 Sep 2023 18:00:00 -0500</pubDate>
+        <link>http://pietschsoft.com/post/2023/09/28/javascript-parse-string-to-a-date</link>
+        <guid isPermaLink="true">http://pietschsoft.com/post/2023/09/28/javascript-parse-string-to-a-date</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>js</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
+    
+      <item>
+        <title>JavaScript: How to Convert Map to an Array of Objects</title>
+        <description>&lt;p&gt;Working with data structures in JavaScript is a common task for developers. One such data structure is the Map, which allows you to store key-value pairs. There may be scenarios where you need to convert a Map into an array of objects for further processing or display. In this article, we will explore how to achieve this conversion and provide you with a simple and effective solution.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 28 Sep 2023 16:00:00 -0500</pubDate>
+        <link>http://pietschsoft.com/post/2023/09/28/javascript-how-to-convert-map-to-array-of-objects</link>
+        <guid isPermaLink="true">http://pietschsoft.com/post/2023/09/28/javascript-how-to-convert-map-to-array-of-objects</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>js</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
     
       <item>
         <title>Check if element exists using JavaScript or jQuery</title>
@@ -175,48 +209,6 @@
         
         
         <category>AI</category>
-        
-      </item>
-    
-      <item>
-        <title>My Workflow for Build5Nines Weekly Newsletter Generation</title>
-        <description>&lt;p&gt;For about 7 years now I’ve been publishing a weekly newsletter that goes along with my &lt;a href=&quot;https://Build5Nines.com&quot;&gt;https://Build5Nines.com&lt;/a&gt; website / blog. It’s a weekly newsletter that you can sign up with your email address to receive weekly updates on the latest news and blogs in the community around Microsoft cloud technologies. If you aren’t aware, Build5Nines is a website / blog that’s dedicated to many topic areas around Microsoft cloud technologies. At the moment the newsletter has approximately 12,000 email subscribers.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 26 Oct 2022 13:00:00 -0500</pubDate>
-        <link>http://pietschsoft.com/post/2022/10/26/my-newsletter-workflow-for-build5nines-weekly-generation</link>
-        <guid isPermaLink="true">http://pietschsoft.com/post/2022/10/26/my-newsletter-workflow-for-build5nines-weekly-generation</guid>
-        
-        <category>Blogging</category>
-        
-        <category>Business</category>
-        
-        <category>Consulting</category>
-        
-        <category>Authority</category>
-        
-        
-        <category>Business</category>
-        
-        <category>Blogging</category>
-        
-      </item>
-    
-      <item>
-        <title>Always Focus on What Matters</title>
-        <description>&lt;p&gt;So often in life we get distracted. These distractions can come in many forms. Sometimes things happen that distract our attention unnecessarily, like friends / family wanting our attention or something breaks that needs attention. Other times, we distract ourselves since we don’t want to deal with the realities of life. What ever the distraction is, it’s important to not allow it to pull your focus away from the important things for too long. Sure, there are times when we a distraction is welcome, but it mustn’t be allowed to persist for too long.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 07 Oct 2022 13:00:00 -0500</pubDate>
-        <link>http://pietschsoft.com/post/2022/10/07/always-focus-on-what-matters</link>
-        <guid isPermaLink="true">http://pietschsoft.com/post/2022/10/07/always-focus-on-what-matters</guid>
-        
-        <category>Tips</category>
-        
-        <category>Personal</category>
-        
-        <category>Life</category>
-        
-        
-        <category>Personal</category>
         
       </item>
     
