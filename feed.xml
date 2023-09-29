@@ -6,8 +6,8 @@
 </description>
     <link>http://pietschsoft.com/</link>
     <atom:link href="http://pietschsoft.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 28 Sep 2023 21:40:15 -0500</pubDate>
-    <lastBuildDate>Thu, 28 Sep 2023 21:40:15 -0500</lastBuildDate>
+    <pubDate>Thu, 28 Sep 2023 21:55:54 -0500</pubDate>
+    <lastBuildDate>Thu, 28 Sep 2023 21:55:54 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -17,6 +17,23 @@
         <pubDate>Thu, 28 Sep 2023 18:00:00 -0500</pubDate>
         <link>http://pietschsoft.com/post/2023/09/28/javascript-parse-string-to-a-date</link>
         <guid isPermaLink="true">http://pietschsoft.com/post/2023/09/28/javascript-parse-string-to-a-date</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>js</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
+    
+      <item>
+        <title>JavaScript: Format Date to String</title>
+        <description>&lt;p&gt;JavaScript provides a versatile Date object that allows you to work with dates and times. One common task you might encounter is formatting a JavaScript Date object as a string. This can be especially useful when you want to display a date in a specific format or when interacting with date-based APIs that require a particular date format.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 28 Sep 2023 18:00:00 -0500</pubDate>
+        <link>http://pietschsoft.com/post/2023/09/28/javascript-format-date-to-string</link>
+        <guid isPermaLink="true">http://pietschsoft.com/post/2023/09/28/javascript-format-date-to-string</guid>
         
         <category>JavaScript</category>
         
@@ -190,25 +207,6 @@
         
         
         <category>DevOps</category>
-        
-      </item>
-    
-      <item>
-        <title>What is ChatGPT and is it important?</title>
-        <description>&lt;p&gt;ChatGPT seems to be the buzz and is talked about everywhere across social media today. Specifically, ChatGPT that is a variant of GPT-3 language model that provides an artificial intelligence (AI) chat bot. People are using it to write college essays, programming code, and many other things. I decided to take a look at it, try it out, and ask it some questions.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 14 Dec 2022 12:00:00 -0600</pubDate>
-        <link>http://pietschsoft.com/post/2022/12/14/what-is-chatgpt-and-is-it-important</link>
-        <guid isPermaLink="true">http://pietschsoft.com/post/2022/12/14/what-is-chatgpt-and-is-it-important</guid>
-        
-        <category>AI</category>
-        
-        <category>OpenAI</category>
-        
-        <category>ChatGPT</category>
-        
-        
-        <category>AI</category>
         
       </item>
     

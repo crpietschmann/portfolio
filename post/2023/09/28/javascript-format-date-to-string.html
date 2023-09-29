@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>The new SlapDev.com is being born... | Chris Pietschmann</title>
+    <title>JavaScript: Format Date to String | Chris Pietschmann</title>
     <meta name="description" content="I have more than 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
 ">
     <meta name="author" content="Chris Pietschmann">
@@ -21,7 +21,7 @@
 
     <!--<link rel="stylesheet" href="/css/site.css">-->
     <link rel="stylesheet" href="/css/site.css">
-    <link rel="canonical" href="http://pietschsoft.com/post/2005/04/23/the-new-slapdevcom-is-being-born">
+    <link rel="canonical" href="http://pietschsoft.com/post/2023/09/28/javascript-format-date-to-string">
 </head>
 
   <body>
@@ -76,27 +76,116 @@
       <header class="post-header">
           
           
-          <h1 class="post-title">The new SlapDev.com is being born...</h1>
+          <h1 class="post-title">JavaScript: Format Date to String</h1>
           <!--
           <div class="post-categories">
               
               
-              <a href="/categories/#Blog">Blog</a>
+              <a href="/categories/#JavaScript">JavaScript</a>
               
               
             </div>
           -->
           <p class="post-meta">
-            Apr 23, 2005
+            Sep 28, 2023
             
-              &nbsp;•&nbsp;<a href="/category#Blog">Blog</a>
+              &nbsp;•&nbsp;<a href="/category#JavaScript">JavaScript</a>
             
           </p>
       </header>
 
       <article class="post-content">
         
-            <p>The new <a title="SlapDev.com" href="http://SlapDev.com" target="_blank">SlapDev.com</a> is being born. It is going to be an online community for <a title=".NET" href="http://www.microsoft.com/net/" target="_blank">.NET</a> Developers with a forums. I will also be posting development related articles on there. And, my blog is moving to <a title="SlapDev" href="http://www.slapdev.com" target="_blank">SlapDev</a>.com: <a href="http://slapdev.com/blogs/an_mcsd_from_wisconsin/default.aspx">http://slapdev.com/blogs/an_mcsd_from_wisconsin/default.aspx</a></p>
+            <p>JavaScript provides a versatile Date object that allows you to work with dates and times. One common task you might encounter is formatting a JavaScript Date object as a string. This can be especially useful when you want to display a date in a specific format or when interacting with date-based APIs that require a particular date format.</p>
+
+<p>In this article, we will explore how to format a JavaScript Date object into a custom string format. We’ll cover different aspects of date formatting and provide practical code examples to help you achieve this.</p>
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>The problem is clear: you have a JavaScript Date object, and you want to convert it into a string using a custom date format, similar to what you might do in other programming languages like C# or .NET.</p>
+
+<p>For example, you might want to format a date like this:</p>
+
+<p>From: <code class="language-plaintext highlighter-rouge">Sat Sep 28 2023 14:30:00 GMT-0700 (Pacific Daylight Time)</code></p>
+
+<p>To: <code class="language-plaintext highlighter-rouge">2023-09-28</code></p>
+
+<h2 id="the-solution">The Solution</h2>
+
+<p>JavaScript doesn’t provide a built-in method to directly format a Date object with a custom string format like <code class="language-plaintext highlighter-rouge">yyyy-MM-dd</code> as in C#.</p>
+
+<p>However, you can achieve this by following these steps:</p>
+
+<ol>
+  <li>Create a Date object: First, create a JavaScript Date object representing the date you want to format.</li>
+  <li>Define a formatting function: Create a function that takes the Date object and formats it according to your desired format. You can do this manually or use a library like date-fns or moment.js for more advanced formatting options.</li>
+  <li>Use the formatting function: Call the formatting function with your Date object as the argument to get the formatted date string.</li>
+</ol>
+
+<p>Now, let’s see how you can do this with practical examples.</p>
+
+<h3 id="example-1-a-formatting-function">Example 1: A Formatting Function</h3>
+
+<p>To format a JavaScript <code class="language-plaintext highlighter-rouge">Date</code> to a string, you can write a custom function that does it so the code is reusable. Or, you can write a reusable function such as the one below that takes the <code class="language-plaintext highlighter-rouge">Date</code> object and a format string (like <code class="language-plaintext highlighter-rouge">yyyy/MM/dd</code> similar to that supported by C# / .NET date to string conversion) as inputs for how to format the Date as a string.</p>
+
+<p>Here’s an example Date to String conversion function that takes such an input:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">formatDate</span> <span class="p">(</span><span class="nx">inputDate</span><span class="p">,</span> <span class="nx">format</span><span class="p">)</span>  <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">inputDate</span><span class="p">)</span> <span class="k">return</span> <span class="dl">''</span><span class="p">;</span>
+
+    <span class="kd">const</span> <span class="nx">padZero</span> <span class="o">=</span> <span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="nx">value</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="p">?</span> <span class="s2">`0</span><span class="p">${</span><span class="nx">value</span><span class="p">}</span><span class="s2">`</span> <span class="p">:</span> <span class="s2">`</span><span class="p">${</span><span class="nx">value</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">parts</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="na">yyyy</span><span class="p">:</span> <span class="nx">inputDate</span><span class="p">.</span><span class="nx">getFullYear</span><span class="p">(),</span>
+        <span class="na">MM</span><span class="p">:</span> <span class="nx">padZero</span><span class="p">(</span><span class="nx">inputDate</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span>
+        <span class="na">dd</span><span class="p">:</span> <span class="nx">padZero</span><span class="p">(</span><span class="nx">inputDate</span><span class="p">.</span><span class="nx">getDate</span><span class="p">()),</span>
+        <span class="na">HH</span><span class="p">:</span> <span class="nx">padZero</span><span class="p">(</span><span class="nx">inputDate</span><span class="p">.</span><span class="nx">getHours</span><span class="p">()),</span>
+        <span class="na">mm</span><span class="p">:</span> <span class="nx">padZero</span><span class="p">(</span><span class="nx">inputDate</span><span class="p">.</span><span class="nx">getMinutes</span><span class="p">()),</span>
+        <span class="na">ss</span><span class="p">:</span> <span class="nx">padZero</span><span class="p">(</span><span class="nx">inputDate</span><span class="p">.</span><span class="nx">getSeconds</span><span class="p">()),</span>
+        <span class="na">tt</span><span class="p">:</span> <span class="nx">inputDate</span><span class="p">.</span><span class="nx">getHours</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">12</span> <span class="p">?</span> <span class="dl">'</span><span class="s1">AM</span><span class="dl">'</span> <span class="p">:</span> <span class="dl">'</span><span class="s1">PM</span><span class="dl">'</span>
+    <span class="p">};</span>
+
+    <span class="k">return</span> <span class="nx">format</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/yyyy|MM|dd|HH|mm|ss|tt/g</span><span class="p">,</span> <span class="p">(</span><span class="nx">match</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">parts</span><span class="p">[</span><span class="nx">match</span><span class="p">]);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Then the usage of this function would be as follows:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// output similar to "2023/09/28"</span>
+<span class="kd">var</span> <span class="nx">dateString</span> <span class="o">=</span> <span class="nx">formatDate</span><span class="p">(</span><span class="nx">dateObject</span><span class="p">,</span> <span class="dl">'</span><span class="s1">yyyy/MM/dd</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="c1">// output similar to "2023/09/28 08:35:22 AM"</span>
+<span class="kd">var</span> <span class="nx">dateString2</span> <span class="o">=</span> <span class="nx">formatDate</span><span class="p">(</span><span class="nx">dateObject</span><span class="p">,</span> <span class="dl">'</span><span class="s1">yyyy/MM/dd HH:mm:ss tt</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="example-2-using-date-fns-library">Example 2: Using date-fns Library</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="p">{</span> <span class="nx">format</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">date-fns</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">myDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="dl">'</span><span class="s1">2023-09-28</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">formattedDate</span> <span class="o">=</span> <span class="nx">format</span><span class="p">(</span><span class="nx">myDate</span><span class="p">,</span> <span class="dl">'</span><span class="s1">yyyy-MM-dd</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="c1">// Output: 2023-09-28</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">formattedDate</span><span class="p">);</span> 
+</code></pre></div></div>
+
+<p>Here, we use the date-fns library to format the Date object according to the specified format string (‘yyyy-MM-dd’).</p>
+
+<h3 id="example-3-using-intldatetimeformat">Example 3: Using Intl.DateTimeFormat</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">year</span><span class="p">:</span> <span class="dl">'</span><span class="s1">numeric</span><span class="dl">'</span><span class="p">,</span> <span class="na">month</span><span class="p">:</span> <span class="dl">'</span><span class="s1">2-digit</span><span class="dl">'</span><span class="p">,</span> <span class="na">day</span><span class="p">:</span> <span class="dl">'</span><span class="s1">2-digit</span><span class="dl">'</span> <span class="p">};</span>
+<span class="kd">const</span> <span class="nx">myDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="dl">'</span><span class="s1">2023-09-28</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">formatter</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Intl</span><span class="p">.</span><span class="nx">DateTimeFormat</span><span class="p">(</span><span class="dl">'</span><span class="s1">en-US</span><span class="dl">'</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+<span class="kd">const</span> <span class="p">{</span> <span class="nx">format</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">formatter</span><span class="p">.</span><span class="nx">formatToParts</span><span class="p">(</span><span class="nx">myDate</span><span class="p">);</span>
+
+<span class="c1">// Output: 09/28/2023</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">format</span><span class="p">);</span> 
+</code></pre></div></div>
+
+<p>In this example, we use <code class="language-plaintext highlighter-rouge">Intl.DateTimeFormat</code> to format the <code class="language-plaintext highlighter-rouge">Date</code> object based on locale-specific rules and options.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Formatting a JavaScript Date object as a custom string is a common task in web development. While JavaScript doesn’t provide a built-in method for this, you can achieve it easily by creating a formatting function or using libraries like <code class="language-plaintext highlighter-rouge">date-fns</code> or <code class="language-plaintext highlighter-rouge">Intl.DateTimeFormat</code>. Choose the method that best suits your project’s requirements, and you’ll be able to format dates in JavaScript with ease.</p>
 
         
       </article>
@@ -110,8 +199,194 @@
     
         
             
+                
+                <h2 >
+                    Related Posts
+                </h2 >
+                <ul class="">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/09/28/javascript-parse-string-to-a-date">JavaScript: Parse a String to a Date
+                    
+                    </a></h6>
+                    <span class="small text-muted">28 Sep 2023</span>
+                </li>
+                
+                
+            
+        
+            
         
     
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/09/28/javascript-how-to-convert-map-to-array-of-objects">JavaScript: How to Convert Map to an Array of Objects
+                    
+                    </a></h6>
+                    <span class="small text-muted">28 Sep 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/09/25/check-if-element-exists-using-javascript-jquery">Check if element exists using JavaScript or jQuery
+                    
+                    </a></h6>
+                    <span class="small text-muted">25 Sep 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/09/21/how-to-remove-specific-item-from-array-in-javascript">How to Remove a Specific Item from an Array in JavaScript
+                    
+                    </a></h6>
+                    <span class="small text-muted">21 Sep 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/09/21/how-do-i-check-if-element-is-hidden-in-jquery">jQuery: How do I check if an element is hidden?
+                    
+                    </a></h6>
+                    <span class="small text-muted">21 Sep 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/08/18/javascript-aspnet-mvc-aggrid-infinite-row-model-datasource">JavaScript: AG-Grid + ASP.NET MVC Infinite Row Model DataSource with Entity Framework
+                    
+                    </a></h6>
+                    <span class="small text-muted">18 Aug 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
         
             
         
@@ -122,7 +397,29 @@
         
             
         
+            
+        
     
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
         
             
         
@@ -133,7 +430,11 @@
         
             
         
+            
+        
     
+        
+            
         
             
         
@@ -144,7 +445,11 @@
         
             
         
+            
+        
     
+        
+            
         
             
         
@@ -152,22 +457,11 @@
         
             
         
-    
-
-    
-    
-        
             
         
     
         
             
-        
-    
-        
-            
-        
-    
         
             
         
@@ -178,92 +472,24 @@
         
             
         
-    
-        
             
         
     
         
             
         
-    
-
-    
-    
-        
             
         
     
         
             
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
         
             
         
     
 
-    
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
 
-    
-    
-        
-            
-        
-    
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-
+    </ul>
 
 
     </div>
@@ -290,11 +516,6 @@
         </li>
         
         <li class="mb-3">
-            <h6 class="mb-0"><a href="/post/2023/09/28/javascript-format-date-to-string">JavaScript: Format Date to String</a></h6>
-            <span class="small text-muted">28 Sep 2023</span>
-        </li>
-        
-        <li class="mb-3">
             <h6 class="mb-0"><a href="/post/2023/09/28/javascript-how-to-convert-map-to-array-of-objects">JavaScript: How to Convert Map to an Array of Objects</a></h6>
             <span class="small text-muted">28 Sep 2023</span>
         </li>
@@ -309,6 +530,11 @@
             <span class="small text-muted">21 Sep 2023</span>
         </li>
         
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2023/09/21/how-do-i-check-if-element-is-hidden-in-jquery">jQuery: How do I check if an element is hidden?</a></h6>
+            <span class="small text-muted">21 Sep 2023</span>
+        </li>
+        
     </ul>
     </div>
 
@@ -319,8 +545,194 @@
     
         
             
+                
+                <h4>
+                    Related Posts
+                </h4>
+                <ul class="list-unstyled">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/09/28/javascript-parse-string-to-a-date">JavaScript: Parse a String to a Date
+                    
+                    </a></h6>
+                    <span class="small text-muted">28 Sep 2023</span>
+                </li>
+                
+                
+            
+        
+            
         
     
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/09/28/javascript-how-to-convert-map-to-array-of-objects">JavaScript: How to Convert Map to an Array of Objects
+                    
+                    </a></h6>
+                    <span class="small text-muted">28 Sep 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/09/25/check-if-element-exists-using-javascript-jquery">Check if element exists using JavaScript or jQuery
+                    
+                    </a></h6>
+                    <span class="small text-muted">25 Sep 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/09/21/how-to-remove-specific-item-from-array-in-javascript">How to Remove a Specific Item from an Array in JavaScript
+                    
+                    </a></h6>
+                    <span class="small text-muted">21 Sep 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/09/21/how-do-i-check-if-element-is-hidden-in-jquery">jQuery: How do I check if an element is hidden?
+                    
+                    </a></h6>
+                    <span class="small text-muted">21 Sep 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="http://pietschsoft.com/post/2023/08/18/javascript-aspnet-mvc-aggrid-infinite-row-model-datasource">JavaScript: AG-Grid + ASP.NET MVC Infinite Row Model DataSource with Entity Framework
+                    
+                    </a></h6>
+                    <span class="small text-muted">18 Aug 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
         
             
         
@@ -331,7 +743,29 @@
         
             
         
+            
+        
     
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
         
             
         
@@ -342,7 +776,11 @@
         
             
         
+            
+        
     
+        
+            
         
             
         
@@ -353,7 +791,11 @@
         
             
         
+            
+        
     
+        
+            
         
             
         
@@ -361,22 +803,11 @@
         
             
         
-    
-
-    
-    
-        
             
         
     
         
             
-        
-    
-        
-            
-        
-    
         
             
         
@@ -387,92 +818,24 @@
         
             
         
-    
-        
             
         
     
         
             
         
-    
-
-    
-    
-        
             
         
     
         
             
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
         
             
         
     
 
-    
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
 
-    
-    
-        
-            
-        
-    
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-
+    </ul>
 
     </div>
 
