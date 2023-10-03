@@ -6,9 +6,26 @@
 </description>
     <link>http://pietschsoft.com/</link>
     <atom:link href="http://pietschsoft.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 28 Sep 2023 21:56:51 -0500</pubDate>
-    <lastBuildDate>Thu, 28 Sep 2023 21:56:51 -0500</lastBuildDate>
+    <pubDate>Tue, 03 Oct 2023 11:36:54 -0500</pubDate>
+    <lastBuildDate>Tue, 03 Oct 2023 11:36:54 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>JavaScript: Loop through Array (using forEach)</title>
+        <description>&lt;p&gt;Looping through the elements of an array is a fundamental operation in JavaScript, and it can be accomplished in various ways. One popular method is using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;forEach&lt;/code&gt; method. In this article, we will explore how to effectively loop through an array in JavaScript using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;forEach&lt;/code&gt; method and provide code examples to illustrate its usage.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 03 Oct 2023 12:35:00 -0500</pubDate>
+        <link>http://pietschsoft.com/post/2023/10/03/javascript-loop-through-array-using-for-each</link>
+        <guid isPermaLink="true">http://pietschsoft.com/post/2023/10/03/javascript-loop-through-array-using-for-each</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>js</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
     
       <item>
         <title>JavaScript: Parse a String to a Date</title>
@@ -186,27 +203,6 @@
         
         
         <category>JavaScript</category>
-        
-      </item>
-    
-      <item>
-        <title>Top Terraform and Azure Articles on Build5Nines in 2022 (plus year in review)</title>
-        <description>&lt;p&gt;I used to write up summary posts about the traffic of &lt;a href=&quot;https://build5nines.com&quot;&gt;Build5Nines.com&lt;/a&gt; over on Build5nines.com. It’s been a few years since I did a write up of the annual traffic over there, so I decided to write up a simplified version of the old “Build5Nines.com year in review” style posts for 2022.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 11 Jan 2023 11:00:00 -0600</pubDate>
-        <link>http://pietschsoft.com/post/2023/01/11/top-terraform-azure-articles-on-build5nines-in-2022</link>
-        <guid isPermaLink="true">http://pietschsoft.com/post/2023/01/11/top-terraform-azure-articles-on-build5nines-in-2022</guid>
-        
-        <category>Terraform</category>
-        
-        <category>Azure</category>
-        
-        <category>DevOps</category>
-        
-        <category>SRE</category>
-        
-        
-        <category>DevOps</category>
         
       </item>
     
