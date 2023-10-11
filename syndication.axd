@@ -6,9 +6,28 @@
 </description>
     <link>http://pietschsoft.com/</link>
     <atom:link href="http://pietschsoft.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 10 Oct 2023 19:16:36 -0500</pubDate>
-    <lastBuildDate>Tue, 10 Oct 2023 19:16:36 -0500</lastBuildDate>
+    <pubDate>Wed, 11 Oct 2023 18:06:34 -0500</pubDate>
+    <lastBuildDate>Wed, 11 Oct 2023 18:06:34 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>How to Hide a Column in AG-Grid and Prevent it from Displaying in the Tool Panel</title>
+        <description>&lt;p&gt;AG-Grid is a powerful and versatile JavaScript library for creating data grids and tables in web applications. It offers a wide range of features and customization options, including the ability to hide columns. However, simply setting the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hide&lt;/code&gt; property to true in your column definition is not enough to achieve the desired effect. In this article, we will explore how to hide a column in AG-Grid while ensuring that it is not displayed in the Tool Panel.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 Oct 2023 19:05:00 -0500</pubDate>
+        <link>http://pietschsoft.com/post/2023/10/11/javascript-aggrid-hide-column-from-tool-panel</link>
+        <guid isPermaLink="true">http://pietschsoft.com/post/2023/10/11/javascript-aggrid-hide-column-from-tool-panel</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>js</category>
+        
+        <category>AG-Grid</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
     
       <item>
         <title>JavaScript: Loop through Array (using forEach)</title>
@@ -186,23 +205,6 @@
         
         
         <category>Life</category>
-        
-      </item>
-    
-      <item>
-        <title>JavaScript Fundamentals: Variables, Arrays, and Loops</title>
-        <description>&lt;p&gt;JavaScript is a powerful and versatile programming language that is widely used for web development. As a beginner in JavaScript, it is important to have a solid understanding of the basics, including variables, arrays, and loops. In this article, we will dive into these essential concepts and provide practical examples and exercises to help you master them. Whether you’re new to coding or just looking to refresh your skills, this article is designed to be a comprehensive guide for learning the fundamentals of JavaScript.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 04 Feb 2023 11:00:00 -0600</pubDate>
-        <link>http://pietschsoft.com/post/2023/02/04/javascript-fundamentals-variables-arrays-loops</link>
-        <guid isPermaLink="true">http://pietschsoft.com/post/2023/02/04/javascript-fundamentals-variables-arrays-loops</guid>
-        
-        <category>JavaScript</category>
-        
-        <category>js</category>
-        
-        
-        <category>JavaScript</category>
         
       </item>
     
