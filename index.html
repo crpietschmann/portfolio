@@ -213,6 +213,7 @@ redirect_from:
         <a href="{{ post.link }}"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2023/01/Build5Nines_Featured_Image.jpg?ssl=1" data-course-featured-media="{{ post.featured_media }}" class="card-img-top" alt="{{ post.title.rendered }}"></a>
         <div class="card-body">
           <h5 class="card-title"><a href="{{ post.link }}">{{ post.title.rendered}}</a></h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ post.course_price_type }}</h6>
           <!--
           <h6 class="card-subtitle mb-2 text-muted">{{ post.date | date: "%b %-d, %Y" }}</h6>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -242,6 +243,9 @@ redirect_from:
 <span id="certifications"></span>
 <div class="container">
   <h2>Certifications Earned</h2>
+  <div class="row">
+    <p>These are most of the industry certifications I've earned from Microsoft, HashiCorp, and other vendors relating to the various technologies I use on a regular basis.</p>
+  </div>
   <div class="row">
     <div class="col-md-6">
       <ul>
