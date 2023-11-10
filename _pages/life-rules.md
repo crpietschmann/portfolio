@@ -9,8 +9,9 @@ redirect_from:
 
 I'm Chris Pietschmann and I have a few life rules, principles and tips that I've shared over the years on my blog. Until now I haven't compiled them into a single list, so I thought I would do that here. The order doesn't really matter all that much as each is fairly equal to the other; except where painfully obvious.
 
-So here's my list:
-
+- [Always Focus on What Matters](/post/2022/10/07/always-focus-on-what-matters)
+- [Find Your Self Worth Internally](/post/2022/05/31/find-your-self-worth-internally)
+- [Care for Yourself First](/post/2022/06/09/care-for-yourself-first)
 - [Work Smart, Not Hard](/post/2013/07/27/Work-Smart-Not-Hard)
 - [Do your best, and Own it](/post/2016/01/19/Do-your-best-and-Own-it)
 - [Be True to Yourself, First](/post/2016/01/30/Be-True-to-Yourself-First)
@@ -30,5 +31,4 @@ So here's my list:
 - [Never Give Up](/post/2016/03/01/Never-Give-Up)
 - [Overnight Success is Hardly Overnight](/post/2013/09/08/Overnight-Success-is-Hardly-Overnight)
 - [On Being an Expert](/post/2016/05/03/On-Being-an-Expert)
-- [Find Your Self Worth Internally](/post/2022/05/31/find-your-self-worth-internally)
-- [Care for Yourself First][/post/2022/06/09/care-for-yourself-first]
+- [On Finding a Business Partner](/post/2020/10/10/on-finding-a-business-partner)
