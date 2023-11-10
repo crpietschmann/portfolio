@@ -1,1 +1,1 @@
-Sitemap: http://pietschsoft.com/sitemap.xml
+Sitemap: https://pietschsoft.com/sitemap.xml
