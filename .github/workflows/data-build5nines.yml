@@ -23,7 +23,7 @@ jobs:
         curl https://build5nines.com/wp-json/wp/v2/posts?author=2 --output ./latest_posts_build5nines.json
       working-directory: ${{ github.workspace }}/_data
  
-    - name: Clean Posts JSON
+    - name: Clean Feed for Build5Nines
       run: |
         #https://github.com/mdlincoln/jekyll-slack
         #https://www.cyberciti.biz/faq/how-to-use-sed-to-find-and-replace-text-in-files-in-linux-unix-shell/
@@ -44,7 +44,7 @@ jobs:
         curl https://learn.build5nines.com/wp-json/ldlms/v1/sfwd-courses?per_page=10 ./learn_build5nines_courses.json
       working-directory: ${{ github.workspace }}/_data
 
-    - name: Clean Learn Build5Nines Course JSON
+    - name: Clean Feed for Learn Build5Nines
       run: |
         # remove unicode characters from JSON
         iconv -c -f utf-8 -t ascii learn_build5nines_courses.json >> learn_build5nines_courses.json # remove unicode characters

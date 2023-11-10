@@ -22,12 +22,12 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Download Latest JSON Feed for Chris Pietschmann
+    - name: Download Feed for Build5Nines
       run: |
         curl https://build5nines.com/wp-json/wp/v2/posts?author=2 --output ./latest_posts_build5nines.json
       working-directory: ${{ github.workspace }}/_data
 
-    - name: Clean JSON
+    - name: Clean Feed for Build5Nines
       run: |
         #https://github.com/mdlincoln/jekyll-slack
         #https://www.cyberciti.biz/faq/how-to-use-sed-to-find-and-replace-text-in-files-in-linux-unix-shell/
@@ -41,6 +41,25 @@ jobs:
         #cat latest_posts_build5nines.json
       working-directory: ${{ github.workspace }}/_data
         
+        
+
+    - name: Download Feed for Learn Build5Nines 
+      run: |
+        curl https://learn.build5nines.com/wp-json/ldlms/v1/sfwd-courses?per_page=10 ./learn_build5nines_courses.json
+      working-directory: ${{ github.workspace }}/_data
+
+    - name: Clean Feed for Learn Build5Nines
+      run: |
+        # remove unicode characters from JSON
+        iconv -c -f utf-8 -t ascii learn_build5nines_courses.json >> learn_build5nines_courses.json # remove unicode characters
+
+        sed -i 's/\\u[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]//g' learn_build5nines_courses.json
+        sed -i 's/\\\//\//g' learn_build5nines_courses.json
+        
+        #cat learn_build5nines_courses.json
+      working-directory: ${{ github.workspace }}/_data
+
+
 
     - name: Build the site in the jekyll/builder container
       run: |
