@@ -147,17 +147,20 @@ redirect_from:
 <div class="container">
     <h2>Recent Posts on Pietschsoft.com</h2>
     <div class="row">
-      {% for post in site.posts limit:3 %}
+      {% for post in site.posts limit:6 %}
         <div class="card" style="width: 18rem; margin: 0.5em;">
           <div class="card-body">
             <h5 class="card-title"><a href="{{ post.url }}">{{ post.title}}</a></h5>
             <h6 class="card-subtitle mb-2 text-muted">{{ post.date | date: "%b %-d, %Y" }}</h6>
+            <!--
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="{{ post.url }}" class="card-link">Read it</a>
+            -->
+            <a href="{{ post.url }}" class="card-link btn btn-primary">Read it</a>
           </div>
         </div>
       {% endfor %}
     </div>
+    <!--
     <div class="row">
       {% for post in site.posts offset:3 limit:6 %}
         <div class="col-md-6 mb-2">
@@ -166,7 +169,8 @@ redirect_from:
         </div>
       {% endfor %}
     </div>
-    <p class="mt-5"><a href="/blog">View full post list...</a></p>
+    -->
+    <p><a href="/blog">View full post list...</a></p>
 </div>
 
 <span id="build5nines"></span>
@@ -182,7 +186,7 @@ redirect_from:
             <!--
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             -->
-            <a href="{{ post.link }}" class="card-link">Read it</a>
+            <a href="{{ post.link }}" class="card-link btn btn-primary">Read it</a>
           </div>
         </div>
       {% endfor %}
