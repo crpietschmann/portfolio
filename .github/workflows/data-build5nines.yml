@@ -41,7 +41,7 @@ jobs:
 
     - name: Download Feed for Learn Build5Nines 
       run: |
-        curl https://learn.build5nines.com/wp-json/ldlms/v1/sfwd-courses?per_page=10 ./learn_build5nines_courses.json
+        curl https://learn.build5nines.com/wp-json/ldlms/v1/sfwd-courses?per_page=10 --output ./learn_build5nines_courses.json
       working-directory: ${{ github.workspace }}/_data
 
     - name: Clean Feed for Learn Build5Nines
