@@ -477,19 +477,17 @@
   </div>
 </div>
 <script>
-  $(() => {
-    $('img[data-course-featured-media]').each((i, elem) => {
-      fetch(`https://learn.build5nines.com/wp-json/wp/v2/media/${elem.attr('data-course-featured-media')}?_fields=source_url`).
+    document.querySelectorAll('img[data-course-featured-media]').forEach((i, elem) => {
+      fetch(`https://learn.build5nines.com/wp-json/wp/v2/media/${elem.getAttribute('data-course-featured-media')}?_fields=source_url`).
         then((response) => {
             if (response.ok) {
                 return response.json()
             }
         }).
         then((data) => {
-          $(elem).attr('src', data.source_url);
+          elem.setAttribute('src', data.source_url);
         });
     });
-  });
 </script>
 
 <span id="certifications"></span>
