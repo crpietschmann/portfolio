@@ -225,7 +225,7 @@ redirect_from:
   </div>
 </div>
 <script>
-    document.querySelectorAll('img[data-course-featured-media]').forEach((i, elem) => {
+    document.querySelectorAll('img[data-course-featured-media]').forEach((elem, i) => {
       fetch(`https://learn.build5nines.com/wp-json/wp/v2/media/${elem.getAttribute('data-course-featured-media')}?_fields=source_url`).
         then((response) => {
             if (response.ok) {
