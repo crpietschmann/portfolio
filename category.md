@@ -10,16 +10,14 @@ redirect_from:
 
 
 <div id="categories">
-<ul>
-{% for category in site.categories %}
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <li>
-        <a href="#{{ category_name | slugize }}">
-            {{category_name}}
-        </a>
-    </li>
-{% endfor %}
-</ul>
+    <div class="row">
+    {% for category in site.categories %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+          <a class="btn btn-dark" href="#{{ category_name | slugize }}">
+              {{category_name}}
+          </a>
+    {% endfor %}
+    </div>
 </div>
 
 <hr/>
