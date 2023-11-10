@@ -456,7 +456,7 @@
           <h6 class="card-subtitle mb-2 text-muted">Oct 28, 2023</h6>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           -->
-          <a href="https://learn.build5nines.com/courses/workshop-migrate-rhel-linux-and-mysql-database-to-azure/" class="card-link">Read it</a>
+          <a href="https://learn.build5nines.com/courses/workshop-migrate-rhel-linux-and-mysql-database-to-azure/" class="card-link btn btn-primary">Take Course</a>
         </div>
       </div>
     
@@ -468,7 +468,7 @@
           <h6 class="card-subtitle mb-2 text-muted">Oct 26, 2023</h6>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           -->
-          <a href="https://learn.build5nines.com/courses/workshop-migrate-windows-server-and-sql-server-to-azure/" class="card-link">Read it</a>
+          <a href="https://learn.build5nines.com/courses/workshop-migrate-windows-server-and-sql-server-to-azure/" class="card-link btn btn-primary">Take Course</a>
         </div>
       </div>
     
@@ -476,7 +476,7 @@
 </div>
 <script>
   $(() => {
-    $('img[data-course-featured_media]').each((i, elem) => {
+    $('img[data-course-featured-media]').each((i, elem) => {
       fetch(`https://learn.build5nines.com/wp-json/wp/v2/media/${elem.attr('data-course-featured-media')}?_fields=source_url`).
         then((response) => {
             if (response.ok) {
