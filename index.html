@@ -402,6 +402,29 @@
     <p><a href="https://build5nines.com">Go to Build5Nines.com</a></p>
 </div>
 
+<span id="courses"></span>
+<div class="container">
+  <h2>Courses</h2>
+  <div class="row">
+    
+  </div>
+</div>
+<script>
+  $(() => {
+    $('img[data-course-featured_media]').each((i, elem) => {
+      fetch(`https://learn.build5nines.com/wp-json/wp/v2/media/${elem.attr('data-course-featured-media')}?_fields=source_url`).
+        then((response) => {
+            if (response.ok) {
+                return response.json()
+            }
+        }).
+        then((data) => {
+          $(elem).attr('src', data.source_url);
+        });
+    });
+  });
+</script>
+
 <span id="certifications"></span>
 <div class="container">
   <h2>Certifications Earned</h2>
