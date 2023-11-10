@@ -15,7 +15,7 @@ redirect_from:
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <li>
         <a href="#{{ category_name | slugize }}">
-            {{category_name}}    
+            {{category_name}}
         </a>
     </li>
 {% endfor %}
