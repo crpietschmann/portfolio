@@ -30,67 +30,23 @@
 
     <div class="recent">
         <h4>Recent on Build5Nines.com</h4>
-        <ul class="list-unstyled">
-        {% for post in site.data.latest_posts_build5nines limit:5 %}
-            <li class="mb-3">
-                <a href="{{ post.link }}"><img src="{{ post.jetpack_featured_media_url }}" alt="{{ post.title.rendered }}"/></a>
-                <h6 class="mb-0"><a href="{{ post.link }}">{{ post.title.rendered }}</a></h6>
-                <span class="small text-muted">{{ post.date | date_to_string }}</span>
-            </li>
+        {% for post in site.data.latest_posts_build5nines limit:3 %}
+        <div class="card" style="width: 18rem; margin:0.5em;">
+          <a href="{{ post.link }}"><img src="{{ post.jetpack_featured_media_url }}" class="card-img-top" alt="{{ post.title.rendered }}"></a>
+          <div class="card-body">
+            <h5 class="card-title"><a href="{{ post.link }}">{{ post.title.rendered}}</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ post.date | date: "%b %-d, %Y" }}</h6>
+            <!--
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            -->
+            <a href="{{ post.link }}" class="card-link btn btn-primary">Read it</a>
+          </div>
+        </div>
         {% endfor %}
-        </ul>
     </div>
 
-    <!--
-    <h4>Courses</h4>
-    <style>
-        .course-box {
-            margin-bottom: 1em;
-        }
-        .course-box img {
-            width: 95%;
-        }
-        .course-box > strong {
-            display: block;
-        }
-        .course-box > em {
-            color: rgba(0,0,0,0.9);
-            font-size: 0.9em;
-            display: block;
-        }
-    </style>
-    <div class="course-box">
-        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
-            <img src="/images/udemy/udemy-complete-javascript-course-2020.jpg"/>
-        </a>
-        <strong>
-            <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F">
-                The Complete JavaScript Course 2020: Build Real Projects!
-            </a>
-        </strong>
-        <em>by Jonas Schmedtmann</em>
-    </div>
-    <div class="course-box">
-        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
-            <img src="/images/udemy/udemy-course-javascript-basics-for-beginners.jpg" alt="JavaScript Basics for Beginners course" />
-        </a>
-        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fjavascript-basics-for-beginners%2F">
-            JavaScript Basics for Beginners
-        </a></strong>
-        <em>by Mosh Hamedani</em>
-    </div>
-    <div class="course-box">
-        <a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
-            <img src="/images/udemy/udemy-course-advanced-javascript-topics.jpg" alt="Advanced JavaScript Concepts course" />
-        </a>
-        <strong><a href="https://click.linksynergy.com/deeplink?id=oB4o88BYCr4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fadvanced-javascript-concepts%2F">
-            Advanced JavaScript Concepts
-        </a></strong>
-        <em>by Andrei Neagoie</em>
-    </div>
-    -->
-
-    <h4>Courses</h4>
+    <div class="courses">
+        <h4>Courses</h4>
         {% for post in site.data.learn_build5nines_courses limit:3 %}
           <div class="card" style="width: 18rem; margin:0.5em;">
             <a href="{{ post.link }}"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2023/01/Build5Nines_Featured_Image.jpg?ssl=1" data-course-featured-media="{{ post.featured_media }}" class="card-img-top" alt="{{ post.title.rendered }}"></a>
@@ -105,22 +61,21 @@
             </div>
           </div>
         {% endfor %}
-      </div>
-      <p><a href="https://learn.build5nines.com">View all courses...</a></p>
-    <script>
-        document.querySelectorAll('img[data-course-featured-media]').forEach((elem, i) => {
-          fetch(`https://learn.build5nines.com/wp-json/wp/v2/media/${elem.getAttribute('data-course-featured-media')}?_fields=source_url`).
-            then((response) => {
-                if (response.ok) {
-                    return response.json()
-                }
-            }).
-            then((data) => {
-              elem.setAttribute('src', data.source_url);
+        <p><a href="https://learn.build5nines.com">View all courses...</a></p>
+        <script>
+            document.querySelectorAll('img[data-course-featured-media]').forEach((elem, i) => {
+            fetch(`https://learn.build5nines.com/wp-json/wp/v2/media/${elem.getAttribute('data-course-featured-media')}?_fields=source_url`).
+                then((response) => {
+                    if (response.ok) {
+                        return response.json()
+                    }
+                }).
+                then((data) => {
+                elem.setAttribute('src', data.source_url);
+                });
             });
-        });
-    </script>
-
+        </script>
+    </div>
 
 
     <p style="font-size:0.7em;">
