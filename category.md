@@ -13,7 +13,7 @@ redirect_from:
     <div class="row">
     {% for category in site.categories %}
         {% capture category_name %}{{ category | first }}{% endcapture %}
-          <a class="btn btn-dark" href="#{{ category_name | slugize }}">
+          <a class="btn btn-dark" href="#{{ category_name | slugize }}" style="margin: 0.5em;">
               {{category_name}}
           </a>
     {% endfor %}
