@@ -1,8 +1,10 @@
 <div class="mb-3">
+    <!-- ADSENSE-->
+    <!--
     <center>
         <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div>
     </center>
-    
+    -->
     <!--
     <div class="mb-3">
     <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
@@ -88,14 +90,50 @@
     </div>
     -->
 
+    <h4>Courses</h4>
+        {% for post in site.data.learn_build5nines_courses limit:3 %}
+          <div class="card" style="width: 18rem; margin:0.5em;">
+            <a href="{{ post.link }}"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2023/01/Build5Nines_Featured_Image.jpg?ssl=1" data-course-featured-media="{{ post.featured_media }}" class="card-img-top" alt="{{ post.title.rendered }}"></a>
+            <div class="card-body">
+              <h5 class="card-title"><a href="{{ post.link }}">{{ post.title.rendered}}</a></h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{ post.course_price_type }}</h6>
+              <!--
+              <h6 class="card-subtitle mb-2 text-muted">{{ post.date | date: "%b %-d, %Y" }}</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              -->
+              <a href="{{ post.link }}" class="card-link btn btn-primary">Take Course</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <p><a href="https://learn.build5nines.com">View all courses...</a></p>
+    <script>
+        document.querySelectorAll('img[data-course-featured-media]').forEach((elem, i) => {
+          fetch(`https://learn.build5nines.com/wp-json/wp/v2/media/${elem.getAttribute('data-course-featured-media')}?_fields=source_url`).
+            then((response) => {
+                if (response.ok) {
+                    return response.json()
+                }
+            }).
+            then((data) => {
+              elem.setAttribute('src', data.source_url);
+            });
+        });
+    </script>
+
+
+
     <p style="font-size:0.7em;">
-        Copyright © 2003 - 2023 {{ site.author }}. All rights reserved.<br/><br/>
-        No content may be republished without prior consent.
+        Copyright © 2003 - {{ site.time | date: '%y' }} {{ site.author }}. All rights reserved.<br/><br/>
+        No content may be republished, in whole or in part, without prior consent from {{ site.author }}.
     </p>
     
     <div id="fixedadmarker"></div>
     <div id="fixedad" class="mt-3">
+        <!-- ADSENSE -->
+        <!--
         <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+        -->
     </div>
     <style>
     @media (min-width: 768px) {
