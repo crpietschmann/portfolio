@@ -173,8 +173,10 @@
         
       </article>
 
-      <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
-
+      <!--- ADSENSE -->
+<!--
+<div data-type="ad" data-publisher="lqm.pietschsoft.site" data-format="300x250" data-zone="ros" ></div>
+-->
 
       
 
@@ -337,10 +339,12 @@
     </div>
     <div id="sidebar" class="col-md-4">
       <div class="mb-3">
+    <!-- ADSENSE-->
+    <!--
     <center>
         <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="300x250"></div>
     </center>
-    
+    -->
     <!--
     <div class="mb-3">
     <a href="https://build5nines.com" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"><img src="https://build5nines.com/wp-content/uploads/2019/07/Build_Azure_Banner_Ad_300x250_1.png" alt="Build5Nines.com - Cloud &amp; Enterprise Technology"/></a>
@@ -626,14 +630,63 @@
     </div>
     -->
 
+    <h4>Courses</h4>
+        
+          <div class="card" style="width: 18rem; margin:0.5em;">
+            <a href="https://learn.build5nines.com/courses/workshop-migrate-rhel-linux-and-mysql-database-to-azure/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2023/01/Build5Nines_Featured_Image.jpg?ssl=1" data-course-featured-media="27493" class="card-img-top" alt="Workshop: Migrate RHEL Linux and MySQL Database to Azure"></a>
+            <div class="card-body">
+              <h5 class="card-title"><a href="https://learn.build5nines.com/courses/workshop-migrate-rhel-linux-and-mysql-database-to-azure/">Workshop: Migrate RHEL Linux and MySQL Database to Azure</a></h5>
+              <h6 class="card-subtitle mb-2 text-muted">free</h6>
+              <!--
+              <h6 class="card-subtitle mb-2 text-muted">Oct 28, 2023</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              -->
+              <a href="https://learn.build5nines.com/courses/workshop-migrate-rhel-linux-and-mysql-database-to-azure/" class="card-link btn btn-primary">Take Course</a>
+            </div>
+          </div>
+        
+          <div class="card" style="width: 18rem; margin:0.5em;">
+            <a href="https://learn.build5nines.com/courses/workshop-migrate-windows-server-and-sql-server-to-azure/"><img src="https://i0.wp.com/build5nines.com/wp-content/uploads/2023/01/Build5Nines_Featured_Image.jpg?ssl=1" data-course-featured-media="27395" class="card-img-top" alt="Workshop: Migrate Windows Server and SQL Server to Azure"></a>
+            <div class="card-body">
+              <h5 class="card-title"><a href="https://learn.build5nines.com/courses/workshop-migrate-windows-server-and-sql-server-to-azure/">Workshop: Migrate Windows Server and SQL Server to Azure</a></h5>
+              <h6 class="card-subtitle mb-2 text-muted">free</h6>
+              <!--
+              <h6 class="card-subtitle mb-2 text-muted">Oct 26, 2023</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              -->
+              <a href="https://learn.build5nines.com/courses/workshop-migrate-windows-server-and-sql-server-to-azure/" class="card-link btn btn-primary">Take Course</a>
+            </div>
+          </div>
+        
+      </div>
+      <p><a href="https://learn.build5nines.com">View all courses...</a></p>
+    <script>
+        document.querySelectorAll('img[data-course-featured-media]').forEach((elem, i) => {
+          fetch(`https://learn.build5nines.com/wp-json/wp/v2/media/${elem.getAttribute('data-course-featured-media')}?_fields=source_url`).
+            then((response) => {
+                if (response.ok) {
+                    return response.json()
+                }
+            }).
+            then((data) => {
+              elem.setAttribute('src', data.source_url);
+            });
+        });
+    </script>
+
+
+
     <p style="font-size:0.7em;">
-        Copyright © 2003 - 2023 Chris Pietschmann. All rights reserved.<br/><br/>
-        No content may be republished without prior consent.
+        Copyright © 2003 - 23 Chris Pietschmann. All rights reserved.<br/><br/>
+        No content may be republished, in whole or in part, without prior consent from Chris Pietschmann.
     </p>
     
     <div id="fixedadmarker"></div>
     <div id="fixedad" class="mt-3">
+        <!-- ADSENSE -->
+        <!--
         <div data-type="ad" data-publisher="lqm.pietschsoft.site" data-zone="ron" data-format="160x600"></div>
+        -->
     </div>
     <style>
     @media (min-width: 768px) {
