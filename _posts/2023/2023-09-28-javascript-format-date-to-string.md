@@ -52,12 +52,13 @@ function formatDate (inputDate, format)  {
         MM: padZero(inputDate.getMonth() + 1),
         dd: padZero(inputDate.getDate()),
         HH: padZero(inputDate.getHours()),
+        hh: padZero(date.getHours() > 12 ? date.getHours() - 12 : date.getHours()),
         mm: padZero(inputDate.getMinutes()),
         ss: padZero(inputDate.getSeconds()),
         tt: inputDate.getHours() < 12 ? 'AM' : 'PM'
     };
 
-    return format.replace(/yyyy|MM|dd|HH|mm|ss|tt/g, (match) => parts[match]);
+    return format.replace(/yyyy|MM|dd|HH|hh|mm|ss|tt/g, (match) => parts[match]);
 }
 ```
 
@@ -68,7 +69,10 @@ Then the usage of this function would be as follows:
 var dateString = formatDate(dateObject, 'yyyy/MM/dd');
 
 // output similar to "2023/09/28 08:35:22 AM"
-var dateString2 = formatDate(dateObject, 'yyyy/MM/dd HH:mm:ss tt');
+var dateString2 = formatDate(dateObject, 'yyyy/MM/dd hh:mm:ss tt');
+
+// output similar to "2023-09-28 14:05:45"
+var dateString2 = formatDate(dateObject, 'yyyy-MM-dd HH:mm:ss');
 ```
 
 ### Example 2: Using date-fns Library
