@@ -6,9 +6,26 @@
 </description>
     <link>https://pietschsoft.com/</link>
     <atom:link href="https://pietschsoft.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 05 Dec 2023 18:17:46 -0600</pubDate>
-    <lastBuildDate>Tue, 05 Dec 2023 18:17:46 -0600</lastBuildDate>
+    <pubDate>Wed, 06 Dec 2023 09:38:28 -0600</pubDate>
+    <lastBuildDate>Wed, 06 Dec 2023 09:38:28 -0600</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>JavaScript: How to Print to Console, console.log, console.error, console.debug</title>
+        <description>&lt;p&gt;JavaScript, as a versatile and dynamic programming language, owes much of its power to the ability to communicate with developers through the console. Console logging, a fundamental aspect of JavaScript development, plays a pivotal role in enhancing the debugging process and fostering a deeper understanding of code.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 06 Dec 2023 08:05:00 -0600</pubDate>
+        <link>https://pietschsoft.com/post/2023/12/06/javascript-how-to-print-to-console-log</link>
+        <guid isPermaLink="true">https://pietschsoft.com/post/2023/12/06/javascript-how-to-print-to-console-log</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>js</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
     
       <item>
         <title>How to Hide a Column in AG-Grid and Prevent it from Displaying in the Tool Panel</title>
@@ -182,29 +199,6 @@
         <category>JavaScript</category>
         
         <category>ASP.NET MVC</category>
-        
-      </item>
-    
-      <item>
-        <title>My Fitness Journey Challenges and Successes and Tony Horton as my Personal Trainer</title>
-        <description>&lt;p&gt;I’m not wealthy or a celebrity, but Tony Horton is my personal trainer. It all started way back in 2010. I was out of shape, unhealthy, and didn’t want to be a let down for my baby girl. I found out about this “workout at home” program called P90X made by Tony Horton and Beachbody. I even came across &lt;a href=&quot;http://teamripped.com/my-story/&quot;&gt;Coach Wayne’s success story&lt;/a&gt;, and I thought, “This could help me. This could actually work!” So I bought in and purchased the P90X workout program, a couple dumbbells, and went all in.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 09 Mar 2023 11:00:00 -0600</pubDate>
-        <link>https://pietschsoft.com/post/2023/03/09/My-Fitness-Journey-Challenges-and-Successes-and-Tony-Horton-as-my-Personal-Trainer</link>
-        <guid isPermaLink="true">https://pietschsoft.com/post/2023/03/09/My-Fitness-Journey-Challenges-and-Successes-and-Tony-Horton-as-my-Personal-Trainer</guid>
-        
-        <category>Fitness</category>
-        
-        <category>P90X</category>
-        
-        <category>Beachbody</category>
-        
-        <category>Health</category>
-        
-        <category>Gym</category>
-        
-        
-        <category>Life</category>
         
       </item>
     
