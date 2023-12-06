@@ -8,6 +8,7 @@ published: true
 ai-generated: true
 categories: ["JavaScript"]
 tags: ["JavaScript", "js"]
+header_image: /images/Header_Javascript_Tips.jpg
 ---
 
 JavaScript provides a versatile Date object that allows you to work with dates and times. One common task you might encounter is formatting a JavaScript Date object as a string. This can be especially useful when you want to display a date in a specific format or when interacting with date-based APIs that require a particular date format.
