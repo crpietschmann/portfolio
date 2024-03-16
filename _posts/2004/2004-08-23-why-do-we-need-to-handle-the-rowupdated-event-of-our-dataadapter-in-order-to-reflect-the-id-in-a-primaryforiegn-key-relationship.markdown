@@ -1,7 +1,7 @@
 ---
 layout: post
 blogengineid: 9fdde907-6a17-4597-abe1-7e28f8d22238
-title: "Why do we need to handle the RowUpdated event of our DataAdapter in order to reflect the ID in a Primary/Foriegn key relationship??"
+title: ".NET: Why do we need to handle the RowUpdated event of our DataAdapter in order to reflect the ID in a Primary/Foriegn key relationship??"
 date: 2004-08-23 17:39:00 -0500
 comments: true
 published: true
