@@ -20,6 +20,7 @@ redirect_from:
 <img src="/files/2015/04/CSS-Spinner.gif" alt="" />
 
 Here's a simple Loading Spinner using a simple CSS Animation:
+
 ```html
 <style>
     @keyframes spin {
