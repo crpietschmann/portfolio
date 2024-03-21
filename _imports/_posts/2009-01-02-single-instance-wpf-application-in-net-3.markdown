@@ -48,7 +48,7 @@ This method even allow you to handle the command-line arguments that are passed 
 
 Here's a link to an example on MSDN for using this method: <a href="http://msdn.microsoft.com/en-us/library/ms771662.aspx">http://msdn.microsoft.com/en-us/library/ms771662.aspx</a>
 
-This method is also mentioned in <a title="&quot;Pro WPF in C# 2008&quot; by Matthew MacDonald" href="http://www.amazon.com/Pro-WPF-2008-Presentation-Professionals/dp/1590599551?&amp;camp=212361&amp;linkCode=wey&amp;tag=pietschsoft-20&amp;creative=380729" target="_blank">"Pro WPF in C# 2008" by Matthew MacDonald</a> from Apress. 
+This method is also mentioned in "Pro WPF in C# 2008" by Matthew MacDonald" from Apress. 
 
 Also, here's the main code for using this method for reference:
 <pre class="brush: c-sharp; first-line: 1; tab-size: 4; toolbar: false; ">namespace SingleInstanceDetection

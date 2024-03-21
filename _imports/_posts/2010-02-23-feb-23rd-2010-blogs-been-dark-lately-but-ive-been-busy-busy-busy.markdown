@@ -18,15 +18,15 @@ I've read a couple of "Intro" to neuroscience and psychology books, and what I'v
 
 Here's a couple books I've read that I highly recommend:
 
-<a href="http://www.amazon.com/Users-Guide-Brain-Perception-Attention/dp/0375701079?&amp;camp=212361&amp;linkCode=wey&amp;tag=pietschsoft-20&amp;creative=380729">A User's Guide to the Brain: Attention, Preception, and the Four Theaters of the Brain</a> by <a href="http://www.johnratey.com/newsite/index.html">John Ratey</a>
+"A User's Guide to the Brain: Attention, Preception, and the Four Theaters of the Brain" by <a href="http://www.johnratey.com/newsite/index.html">John Ratey</a>
 
-<a href="http://www.amazon.com/Thinking-Pictures-Expanded-Life-Autism/dp/0307275655?&amp;camp=212361&amp;linkCode=wey&amp;tag=pietschsoft-20&amp;creative=380729">Thinking in Pictures: My Life with Autism</a> by <a href="http://www.templegrandin.com/">Temple Grandin</a>
+"Thinking in Pictures: My Life with Autism" by <a href="http://www.templegrandin.com/">Temple Grandin</a>
 
 A couple other books I highly recommend that are related to this area; even if they are more Sociological:
 
-<a href="http://www.amazon.com/Cesars-Way-Everyday-Understanding-Correcting/dp/0307337979?&amp;camp=212361&amp;linkCode=wey&amp;tag=pietschsoft-20&amp;creative=380729">Cesar's Way: The Natural, Everyday Guide to Understanding and Correcting Common Dog Problems</a> by Cesar Millan
+"Cesar's Way: The Natural, Everyday Guide to Understanding and Correcting Common Dog Problems" by Cesar Millan
 
-<a href="http://www.amazon.com/Be-Pack-Leader-Cesars-Transform/dp/0307381676?&amp;camp=212361&amp;linkCode=wey&amp;tag=pietschsoft-20&amp;creative=380729">Be The Pack Leader: Use Cesar's Way to Transform Your Dog ... And Your Life</a> by Cesar Millan
+"Be The Pack Leader: Use Cesar's Way to Transform Your Dog ... And Your Life" by Cesar Millan
 
 I've decided to start in the pursuit of a degree in Neuroscience; instead of Computer Science even though CS may be "easier" since I've been doing software programming/development/architecture for ~8+ years now. There are TONS of things that an academic path in Neuroscience can lead to. So, I really don't know exactly where I'll end up, but I do know that i want to learn more about the Brain, how it works and what awesome things can be done. Just think about what could be done with interfacing the brain and robotics, and how that could help someone with an amputation or paralysis. Or just working with artificial intelligence to create a computer that a person could truly interact with naturally. Or helping research and cure debilitating neurological deseases/disorders.
 

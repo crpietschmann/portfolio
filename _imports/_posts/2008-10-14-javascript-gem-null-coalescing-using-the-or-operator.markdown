@@ -15,7 +15,7 @@ redirect_from:
 <!-- more -->
 
 
-I recently purchased <a href="http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742?&amp;camp=212361&amp;linkCode=wey&amp;tag=pietschsoft-20&amp;creative=380729">&quot;JavaScript: The Good Parts&quot; by Douglas Crockford</a>, and I found this little gem on page 21, although he listed in in the section *Objects - Retrieval*.
+I recently purchased &quot;JavaScript: The Good Parts&quot; by Douglas Crockford, and I found this little gem on page 21, although he listed in in the section *Objects - Retrieval*.
 
 
 
