@@ -1,7 +1,7 @@
 ---
 layout: post
 blogengineid: 00000000-0000-0000-0000-000000000000
-title: "JavaScript: How Closures Work"
+title: "Javascript: How Closures Work"
 date: 2024-03-22 12:19:00 -0500
 comments: true
 published: true

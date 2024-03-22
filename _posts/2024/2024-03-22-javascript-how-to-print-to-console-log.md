@@ -1,7 +1,7 @@
 ---
 layout: post
 blogengineid: 00000000-0000-0000-0000-000000000000
-title: "JavaScript: Redirect to another webpage with JavaScript and jQuery"
+title: "Javascript: Redirect to another webpage with Javascript and jQuery"
 date: 2024-03-22 12:05:00 -0500
 comments: true
 published: true

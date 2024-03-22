@@ -1,7 +1,7 @@
 ---
 layout: post
 blogengineid: 00000000-0000-0000-0000-000000000000
-title: "JavaScript: Check if string contains a substring"
+title: "Javascript: Check if string contains a substring"
 date: 2024-03-21 12:19:00 -0500
 comments: true
 published: true
