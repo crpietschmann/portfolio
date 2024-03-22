@@ -10,7 +10,7 @@ redirect_from:
 
 <div class="post-list">
   {% for post in site.posts %}
-    <p style="margin-bottom: 0.5em">
+    <p style="margin-bottom: 0;">
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
     </p>
     <h2>
