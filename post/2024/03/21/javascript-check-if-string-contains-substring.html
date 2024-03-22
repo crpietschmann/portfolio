@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Community Coding Contest Voting Has Begun! Go Cast Your Vote! | Chris Pietschmann</title>
+    <title>JavaScript: Check if string contains a substring | Chris Pietschmann</title>
     <meta name="description" content="I have more than 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
 ">
     <meta name="author" content="Chris Pietschmann">
@@ -16,7 +16,7 @@
 
     <!--<link rel="stylesheet" href="/css/site.css">-->
     <link rel="stylesheet" href="/css/site.css">
-    <link rel="canonical" href="https://pietschsoft.com/post/2008/10/02/community-coding-contest-voting-has-begun!-go-cast-your-vote!">
+    <link rel="canonical" href="https://pietschsoft.com/post/2024/03/21/javascript-check-if-string-contains-substring">
 
     <!--
     
@@ -77,42 +77,66 @@
           
           <!--
           
+            <img src="/images/Header_Javascript_Tips.jpg" alt="" style="width:100%" />
+          
           -->
-          <h1 class="post-title">Community Coding Contest Voting Has Begun! Go Cast Your Vote!</h1>
+          <h1 class="post-title">JavaScript: Check if string contains a substring</h1>
           <!--
           <div class="post-categories">
               
               
-              <a href="/categories/#Community">Community</a>
+              <a href="/categories/#JavaScript">JavaScript</a>
               
               
             </div>
           -->
           <p class="post-meta">
-            Oct 2, 2008
+            Mar 21, 2024
             
-              &nbsp;•&nbsp;<a href="/category#Community">Community</a>
+              &nbsp;•&nbsp;<a href="/category#JavaScript">JavaScript</a>
             
           </p>
       </header>
 
       <article class="post-content">
         
-            <!-- more -->
-<div class="text">
+            <p>In Javascript, developers often encounter scenarios where they need to check whether a string contains a specific substring. The <code class="language-plaintext highlighter-rouge">String.prototype.includes()</code> method offers a convenient solution.</p>
 
+<p>Let’s dive into this method and explore how it simplifies the process of checking for substring presence within a string.</p>
 
-The voting for the winners of the Community Coding Contest has begun. <a href="http://communitycodingcontest.org/">Go Vote Now</a>!
+<h2 id="understanding-the-stringprototypeincludes-function">Understanding the <code class="language-plaintext highlighter-rouge">String.prototype.includes()</code> Function</h2>
 
+<p>The <code class="language-plaintext highlighter-rouge">String.prototype.includes()</code> method is a powerful addition to JavaScript’s string manipulation arsenal. Its syntax is straightforward:</p>
 
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">string</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">foo</span><span class="dl">"</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">substring</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">oo</span><span class="dl">"</span><span class="p">;</span>
 
-To vote, just go the the poll on the right hand side of the <a href="http://communitycodingcontest.org/">Community Coding Contest</a> website and cast your vote.
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="nx">substring</span><span class="p">));</span>
+<span class="c1">// returns true</span>
+</code></pre></div></div>
 
+<p>As demonstrated in the code snippet above, <code class="language-plaintext highlighter-rouge">string.includes(substring)</code> returns <code class="language-plaintext highlighter-rouge">true</code> if the substring is found within the string, and <code class="language-plaintext highlighter-rouge">false</code> otherwise. This method performs a simple substring search, making it ideal for various string containment checks.</p>
 
+<h2 id="advantages-over-traditional-approaches">Advantages over traditional approaches</h2>
 
-You can also view a list of all contest entries here: <a href="http://communitycodingcontest.org/AllEntries.aspx">http://communitycodingcontest.org/AllEntries.aspx</a>
+<p>Prior to the introduction of <code class="language-plaintext highlighter-rouge">String.prototype.includes()</code>, developers often resorted to alternative methods to check for substring containment. One common approach involved using the <code class="language-plaintext highlighter-rouge">indexOf()</code> method:</p>
 
-</div>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">string</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">foo</span><span class="dl">"</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">substring</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">oo</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">substring</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+<span class="c1">// returns true</span>
+</code></pre></div></div>
+
+<p>While effective, this approach has its drawbacks. It requires additional comparison (<code class="language-plaintext highlighter-rouge">&gt; -1</code>) (also <code class="language-plaintext highlighter-rouge">!== -1</code> would work as well) to determine the presence of the substring, making the code slightly less readable and potentially prone to errors.</p>
+
+<p>In contrast, <code class="language-plaintext highlighter-rouge">String.prototype.includes()</code> offers a more intuitive and concise solution, enhancing code readability and maintainability.</p>
+
+<h2 id="compatibility-considerations">Compatibility Considerations</h2>
+
+<p><code class="language-plaintext highlighter-rouge">String.prototype.includes()</code> was introduced in ECMAScript 6 (ES6). So, older browsers may not support this method. However, with the widespread adoption of ES6 features, compatibility concerns are not an issue with all modern browsers and Node.js supporting the function.</p>
+
+<p>For environments where ES6 features are not supported, the use of <code class="language-plaintext highlighter-rouge">indexOf()</code> is still an option.</p>
 
         
       </article>
@@ -128,8 +152,21 @@ You can also view a list of all contest entries here: <a href="http://communityc
     
         
             
-        
-    
+                
+                <h2 >
+                    Related Posts
+                </h2 >
+                <ul class="">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2024/03/22/javascript-how-closures-work">JavaScript: How Closures Work
+                    
+                    </a></h6>
+                    <span class="small text-muted">22 Mar 2024</span>
+                </li>
+                
+                
+            
         
             
         
@@ -137,7 +174,154 @@ You can also view a list of all contest entries here: <a href="http://communityc
         
             
         
+            
+        
     
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2024/03/22/javascript-how-to-print-to-console-log">JavaScript: Redirect to another webpage with JavaScript and jQuery
+                    
+                    </a></h6>
+                    <span class="small text-muted">22 Mar 2024</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/12/06/javascript-how-to-print-to-console-log">JavaScript: How to Print to Console, console.log, console.error, console.debug
+                    
+                    </a></h6>
+                    <span class="small text-muted">06 Dec 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/10/11/javascript-aggrid-hide-column-from-tool-panel">How to Hide a Column in AG-Grid and Prevent it from Displaying in the Tool Panel
+                    
+                    </a></h6>
+                    <span class="small text-muted">11 Oct 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/10/03/javascript-loop-through-array-using-for-each">JavaScript: Loop through Array (using forEach)
+                    
+                    </a></h6>
+                    <span class="small text-muted">03 Oct 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/09/28/javascript-parse-string-to-a-date">JavaScript: Parse a String to a Date
+                    
+                    </a></h6>
+                    <span class="small text-muted">28 Sep 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
         
             
         
@@ -148,22 +332,11 @@ You can also view a list of all contest entries here: <a href="http://communityc
         
             
         
-    
-        
             
         
     
         
             
-        
-    
-
-    
-    
-        
-            
-        
-    
         
             
         
@@ -174,7 +347,11 @@ You can also view a list of all contest entries here: <a href="http://communityc
         
             
         
+            
+        
     
+        
+            
         
             
         
@@ -185,22 +362,17 @@ You can also view a list of all contest entries here: <a href="http://communityc
         
             
         
-    
-        
             
         
     
         
             
         
-    
-
-    
-    
-        
             
         
     
+        
+            
         
             
         
@@ -211,49 +383,30 @@ You can also view a list of all contest entries here: <a href="http://communityc
         
             
         
+            
+        
     
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
         
             
         
     
 
-    
-    
-        
-            
-        
-    
-        
-            
-        
-    
 
-    
-    
-        
-            
-        
-    
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-
+    </ul>
 
 
     </div>
@@ -287,11 +440,6 @@ You can also view a list of all contest entries here: <a href="http://communityc
         </li>
         
         <li class="mb-3">
-            <h6 class="mb-0"><a href="/post/2024/03/21/javascript-check-if-string-contains-substring">JavaScript: Check if string contains a substring</a></h6>
-            <span class="small text-muted">21 Mar 2024</span>
-        </li>
-        
-        <li class="mb-3">
             <h6 class="mb-0"><a href="/post/2023/12/06/javascript-how-to-print-to-console-log">JavaScript: How to Print to Console, console.log, console.error, console.debug</a></h6>
             <span class="small text-muted">06 Dec 2023</span>
         </li>
@@ -299,6 +447,11 @@ You can also view a list of all contest entries here: <a href="http://communityc
         <li class="mb-3">
             <h6 class="mb-0"><a href="/post/2023/10/11/javascript-aggrid-hide-column-from-tool-panel">How to Hide a Column in AG-Grid and Prevent it from Displaying in the Tool Panel</a></h6>
             <span class="small text-muted">11 Oct 2023</span>
+        </li>
+        
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2023/10/03/javascript-loop-through-array-using-for-each">JavaScript: Loop through Array (using forEach)</a></h6>
+            <span class="small text-muted">03 Oct 2023</span>
         </li>
         
     </ul>
@@ -311,8 +464,21 @@ You can also view a list of all contest entries here: <a href="http://communityc
     
         
             
-        
-    
+                
+                <h4>
+                    Related Posts
+                </h4>
+                <ul class="list-unstyled">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2024/03/22/javascript-how-closures-work">JavaScript: How Closures Work
+                    
+                    </a></h6>
+                    <span class="small text-muted">22 Mar 2024</span>
+                </li>
+                
+                
+            
         
             
         
@@ -320,7 +486,154 @@ You can also view a list of all contest entries here: <a href="http://communityc
         
             
         
+            
+        
     
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2024/03/22/javascript-how-to-print-to-console-log">JavaScript: Redirect to another webpage with JavaScript and jQuery
+                    
+                    </a></h6>
+                    <span class="small text-muted">22 Mar 2024</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/12/06/javascript-how-to-print-to-console-log">JavaScript: How to Print to Console, console.log, console.error, console.debug
+                    
+                    </a></h6>
+                    <span class="small text-muted">06 Dec 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/10/11/javascript-aggrid-hide-column-from-tool-panel">How to Hide a Column in AG-Grid and Prevent it from Displaying in the Tool Panel
+                    
+                    </a></h6>
+                    <span class="small text-muted">11 Oct 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/10/03/javascript-loop-through-array-using-for-each">JavaScript: Loop through Array (using forEach)
+                    
+                    </a></h6>
+                    <span class="small text-muted">03 Oct 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/09/28/javascript-parse-string-to-a-date">JavaScript: Parse a String to a Date
+                    
+                    </a></h6>
+                    <span class="small text-muted">28 Sep 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+    
+        
+            
         
             
         
@@ -331,22 +644,11 @@ You can also view a list of all contest entries here: <a href="http://communityc
         
             
         
-    
-        
             
         
     
         
             
-        
-    
-
-    
-    
-        
-            
-        
-    
         
             
         
@@ -357,7 +659,11 @@ You can also view a list of all contest entries here: <a href="http://communityc
         
             
         
+            
+        
     
+        
+            
         
             
         
@@ -368,22 +674,17 @@ You can also view a list of all contest entries here: <a href="http://communityc
         
             
         
-    
-        
             
         
     
         
             
         
-    
-
-    
-    
-        
             
         
     
+        
+            
         
             
         
@@ -394,49 +695,30 @@ You can also view a list of all contest entries here: <a href="http://communityc
         
             
         
+            
+        
     
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+            
         
             
         
     
 
-    
-    
-        
-            
-        
-    
-        
-            
-        
-    
 
-    
-    
-        
-            
-        
-    
-        
-            
-        
-    
-
-    
-    
-        
-            
-        
-    
-        
-            
-        
-    
-        
-            
-        
-    
-
+    </ul>
 
     </div>
 

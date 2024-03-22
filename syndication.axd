@@ -6,8 +6,8 @@
 </description>
     <link>https://pietschsoft.com/</link>
     <atom:link href="https://pietschsoft.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 22 Mar 2024 11:26:48 -0500</pubDate>
-    <lastBuildDate>Fri, 22 Mar 2024 11:26:48 -0500</lastBuildDate>
+    <pubDate>Fri, 22 Mar 2024 11:37:58 -0500</pubDate>
+    <lastBuildDate>Fri, 22 Mar 2024 11:37:58 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -44,6 +44,23 @@
         <category>js</category>
         
         <category>jQuery</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
+    
+      <item>
+        <title>JavaScript: Check if string contains a substring</title>
+        <description>&lt;p&gt;In Javascript, developers often encounter scenarios where they need to check whether a string contains a specific substring. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;String.prototype.includes()&lt;/code&gt; method offers a convenient solution.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 21 Mar 2024 12:19:00 -0500</pubDate>
+        <link>https://pietschsoft.com/post/2024/03/21/javascript-check-if-string-contains-substring</link>
+        <guid isPermaLink="true">https://pietschsoft.com/post/2024/03/21/javascript-check-if-string-contains-substring</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>js</category>
         
         
         <category>JavaScript</category>
@@ -172,27 +189,6 @@
         <category>JavaScript</category>
         
         <category>jQuery</category>
-        
-      </item>
-    
-      <item>
-        <title>How to Remove a Specific Item from an Array in JavaScript</title>
-        <description>&lt;p&gt;JavaScript is a versatile programming language used for web development and more. If you’ve ever wondered how to remove a specific item from an array in JavaScript without using any frameworks, you’ve come to the right place. In this article, we’ll explore a straightforward method to achieve this task using core JavaScript.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 21 Sep 2023 17:00:00 -0500</pubDate>
-        <link>https://pietschsoft.com/post/2023/09/21/how-to-remove-specific-item-from-array-in-javascript</link>
-        <guid isPermaLink="true">https://pietschsoft.com/post/2023/09/21/how-to-remove-specific-item-from-array-in-javascript</guid>
-        
-        <category>JavaScript</category>
-        
-        <category>js</category>
-        
-        <category>TypeScript</category>
-        
-        <category>Array</category>
-        
-        
-        <category>JavaScript</category>
         
       </item>
     
