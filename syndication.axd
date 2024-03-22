@@ -6,12 +6,29 @@
 </description>
     <link>https://pietschsoft.com/</link>
     <atom:link href="https://pietschsoft.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 22 Mar 2024 11:49:15 -0500</pubDate>
-    <lastBuildDate>Fri, 22 Mar 2024 11:49:15 -0500</lastBuildDate>
+    <pubDate>Fri, 22 Mar 2024 12:28:40 -0500</pubDate>
+    <lastBuildDate>Fri, 22 Mar 2024 12:28:40 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
-        <title>JavaScript: How Closures Work</title>
+        <title>Include Javascript File in Another Javascript File</title>
+        <description>&lt;p&gt;In web development, Javascript plays a pivotal role in enhancing the interactivity and functionality of websites. As projects grow in complexity, developers often find themselves needing to include multiple Javascript files to manage code organization and modularity effectively. One common challenge that arises is how to include a Javascript file inside another Javascript file, akin to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@import&lt;/code&gt; directive in CSS. In this article, we’ll explore various techniques for achieving this seamlessly.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 22 Mar 2024 13:27:00 -0500</pubDate>
+        <link>https://pietschsoft.com/post/2024/03/22/javascript-include-file-in-another-javascript-file</link>
+        <guid isPermaLink="true">https://pietschsoft.com/post/2024/03/22/javascript-include-file-in-another-javascript-file</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>js</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
+    
+      <item>
+        <title>Javascript: How Closures Work</title>
         <description>&lt;p&gt;In Javascript, a closure is essentially a function along with the lexical environment within which it was declared. Lexical environment simply refers to the scope or context in which a function is declared, including all the variables that were in scope at that point.&lt;/p&gt;
 </description>
         <pubDate>Fri, 22 Mar 2024 12:19:00 -0500</pubDate>
@@ -32,7 +49,7 @@
       </item>
     
       <item>
-        <title>JavaScript: Redirect to another webpage with JavaScript and jQuery</title>
+        <title>Javascript: Redirect to another webpage with Javascript and jQuery</title>
         <description>&lt;p&gt;Navigating users seamlessly through a web application is crucial for providing a smooth user experience. One fundamental aspect of this navigation process is redirecting users from one page to another. In this article, we’ll explore how to accomplish this task using both pure JavaScript and jQuery, providing code examples for each approach.&lt;/p&gt;
 </description>
         <pubDate>Fri, 22 Mar 2024 12:05:00 -0500</pubDate>
@@ -51,7 +68,7 @@
       </item>
     
       <item>
-        <title>JavaScript: Check if string contains a substring</title>
+        <title>Javascript: Check if string contains a substring</title>
         <description>&lt;p&gt;In Javascript, developers often encounter scenarios where they need to check whether a string contains a specific substring. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;String.prototype.includes()&lt;/code&gt; method offers a convenient solution.&lt;/p&gt;
 </description>
         <pubDate>Thu, 21 Mar 2024 12:19:00 -0500</pubDate>
@@ -168,27 +185,6 @@
         
         
         <category>JavaScript</category>
-        
-      </item>
-    
-      <item>
-        <title>Check if element exists using JavaScript or jQuery</title>
-        <description>&lt;p&gt;In the world of web development, the choice between jQuery and vanilla JavaScript has long been a pivotal consideration. jQuery, with its concise syntax and rich library of functions, has been a stalwart companion for many developers, simplifying tasks like DOM manipulation and event handling. On the other hand, vanilla JavaScript, the language of the web itself, offers direct access to the Document Object Model (DOM) and provides a more lightweight, native approach. In this article, we’ll explore the realms of both jQuery and vanilla JavaScript, delving into their respective strengths and use cases. Whether you’re a seasoned developer seeking the most efficient method for a specific task or a newcomer navigating the landscape of web development, this exploration will help you make informed decisions on when to reach for the jQuery toolkit and when to rely on the inherent power of vanilla JavaScript.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 25 Sep 2023 16:00:00 -0500</pubDate>
-        <link>https://pietschsoft.com/post/2023/09/25/check-if-element-exists-using-javascript-jquery</link>
-        <guid isPermaLink="true">https://pietschsoft.com/post/2023/09/25/check-if-element-exists-using-javascript-jquery</guid>
-        
-        <category>JavaScript</category>
-        
-        <category>js</category>
-        
-        <category>jQuery</category>
-        
-        
-        <category>JavaScript</category>
-        
-        <category>jQuery</category>
         
       </item>
     
