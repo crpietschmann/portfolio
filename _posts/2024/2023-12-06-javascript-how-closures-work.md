@@ -21,7 +21,7 @@ Understanding JavaScript closures can be a bit tricky, but let's start by clarif
 
 Now, let's dive into closures:
 
-> **Related:** You may also be interested in reading my "Call Functions in JavaScript" article that covers more details on calling functions.
+> **Related:** You may also be interested in reading my "[Call Functions in JavaScript](https://pietschsoft.com/post/2019/07/24/call-functions-in-javascript)" article that covers more details on calling functions.
 
 ## Example: JavaScript Closure
 
