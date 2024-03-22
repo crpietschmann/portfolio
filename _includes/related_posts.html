@@ -8,7 +8,7 @@
                 <{{ include.htag | default: 'h2 '}}>
                     Related Posts
                 </{{ include.htag | default: 'h2 '}}>
-                <ul class="{{ include.ul_class | default: ''}}">
+                <ul class="{{ include.ul_class | default: ''}}" style="padding-left: 1.5em">
                 {% endif %}
                 <li class="mb-3">
                     <h6 class="mb-0"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}
