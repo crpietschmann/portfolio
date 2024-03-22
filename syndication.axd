@@ -6,9 +6,28 @@
 </description>
     <link>https://pietschsoft.com/</link>
     <atom:link href="https://pietschsoft.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 21 Mar 2024 13:14:07 -0500</pubDate>
-    <lastBuildDate>Thu, 21 Mar 2024 13:14:07 -0500</lastBuildDate>
+    <pubDate>Fri, 22 Mar 2024 11:07:46 -0500</pubDate>
+    <lastBuildDate>Fri, 22 Mar 2024 11:07:46 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>JavaScript: Redirect to another webpage with JavaScript and jQuery</title>
+        <description>&lt;p&gt;Navigating users seamlessly through a web application is crucial for providing a smooth user experience. One fundamental aspect of this navigation process is redirecting users from one page to another. In this article, we’ll explore how to accomplish this task using both pure JavaScript and jQuery, providing code examples for each approach.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 22 Mar 2024 12:05:00 -0500</pubDate>
+        <link>https://pietschsoft.com/post/2024/03/22/javascript-how-to-print-to-console-log</link>
+        <guid isPermaLink="true">https://pietschsoft.com/post/2024/03/22/javascript-how-to-print-to-console-log</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>js</category>
+        
+        <category>jQuery</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
     
       <item>
         <title>JavaScript: How to Print to Console, console.log, console.error, console.debug</title>
@@ -174,31 +193,6 @@
         <category>JavaScript</category>
         
         <category>jQuery</category>
-        
-      </item>
-    
-      <item>
-        <title>JavaScript: AG-Grid + ASP.NET MVC Infinite Row Model DataSource with Entity Framework</title>
-        <description>&lt;p&gt;AG-Grid supports infinite scrolling through the use of it’s support for implementing Infinite Row Model. This allows for the grid to lazy-load rows of data from the server depending on the scroll position of the data grid. Essentially, it loads the first page of results, then as the user scrolls, it loads more data as they continue to scroll down through the list. It allows you to implement a more desktop app style data table interface in your web applications.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 18 Aug 2023 12:00:00 -0500</pubDate>
-        <link>https://pietschsoft.com/post/2023/08/18/javascript-aspnet-mvc-aggrid-infinite-row-model-datasource</link>
-        <guid isPermaLink="true">https://pietschsoft.com/post/2023/08/18/javascript-aspnet-mvc-aggrid-infinite-row-model-datasource</guid>
-        
-        <category>JavaScript</category>
-        
-        <category>js</category>
-        
-        <category>EntityFramework</category>
-        
-        <category>EF</category>
-        
-        <category>AG-Grid</category>
-        
-        
-        <category>JavaScript</category>
-        
-        <category>ASP.NET MVC</category>
         
       </item>
     
