@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Community Engagement: Who do you follow? What do you share? | Chris Pietschmann</title>
+    <title>JavaScript: How Closures Work | Chris Pietschmann</title>
     <meta name="description" content="I have more than 20 years of experience in the Software Development industry that includes working as a Consultant and Trainer in a wide array of different industries. Welcome to my resume and work history portfolio website!
 ">
     <meta name="author" content="Chris Pietschmann">
@@ -16,7 +16,7 @@
 
     <!--<link rel="stylesheet" href="/css/site.css">-->
     <link rel="stylesheet" href="/css/site.css">
-    <link rel="canonical" href="https://pietschsoft.com/post/2014/07/12/community-engagement-who-do-you-follow-what-do-you-share">
+    <link rel="canonical" href="https://pietschsoft.com/post/2024/03/22/javascript-how-closures-work">
 
     <!--
     
@@ -77,68 +77,96 @@
           
           <!--
           
+            <img src="/images/Header_Javascript_Tips.jpg" alt="" style="width:100%" />
+          
           -->
-          <h1 class="post-title">Community Engagement: Who do you follow? What do you share?</h1>
+          <h1 class="post-title">JavaScript: How Closures Work</h1>
           <!--
           <div class="post-categories">
               
               
-              <a href="/categories/#Career">Career</a>
-              &nbsp;
-              
-              <a href="/categories/#Community">Community</a>
+              <a href="/categories/#JavaScript">JavaScript</a>
               
               
             </div>
           -->
           <p class="post-meta">
-            Jul 12, 2014
+            Mar 22, 2024
             
-              &nbsp;•&nbsp;<a href="/category#Career">Career</a>
-            
-              &nbsp;•&nbsp;<a href="/category#Community">Community</a>
+              &nbsp;•&nbsp;<a href="/category#JavaScript">JavaScript</a>
             
           </p>
       </header>
 
       <article class="post-content">
         
-            <!-- more -->
+            <p>In Javascript, a closure is essentially a function along with the lexical environment within which it was declared. Lexical environment simply refers to the scope or context in which a function is declared, including all the variables that were in scope at that point.</p>
 
-<p>Some people have other people they follow in one manner or another. Some of the most commonly followed people in an industry are the “rockstars” of that industry. However, there are some people who refuse to follow others as they feel it might hinder their ability to think uniquely; think different. Although, if you don’t follow anyone then you are turning yourself into a loner; an island. What’s the best direction to take? Should you be a loner who works and thinks independently, or should you follow others and potentially risk this independence?</p>
+<p>Understanding JavaScript closures can be a bit tricky, but let’s start by clarifying some concepts:</p>
 
-<p>Over the course of my own career building software I have seen many people who follow other members of the community differently. I have also seen the community change greatly many time over the course of the last 15 years. There have even been many different tactics I’ve tried with this in my own adventure to learn, grow and share in being a member of the greater community in this great industry I am in. Below are some of these tactics that I’ve used or seen others use including some of the benefits of each.</p>
-<h3>**Following the "Rockstars"**</h3>
+<ul>
+  <li>
+    <p><strong>Functions</strong>: In JavaScript, functions are treated as first-class citizens, meaning they can be assigned to variables, passed as arguments, and returned from other functions.</p>
+  </li>
+  <li>
+    <p><strong>Variables</strong>: Variables in JavaScript can be declared using var, let, or const. They hold data that can be manipulated or accessed within a program.</p>
+  </li>
+</ul>
 
-<p>Who are the “Rockstars” in the industry? These are the most “popular” people. These people likely speak with more volume, or more adamantly. Most of these people present at conferences or user groups, or have a high number of followers on their blog, twitter, facebook or other medium. These “Rockstars” are looked at as being the experts who know everything on a particular topic. Often the people who follow them will follow them blindly, taking what they say as the absolute best path to take without the need to question them.</p>
+<p>Now, let’s dive into closures:</p>
 
-<p>It is important to remember that even though they may have a high amount of experience and past success to back them up, they are still people who are doing their best with what they have.</p>
-<h3>**Following the "Unknown"**</h3>
+<blockquote>
+  <p><strong>Related:</strong> You may also be interested in reading my “Call Functions in JavaScript” article that covers more details on calling functions.</p>
+</blockquote>
 
-<p>Who are the “Unknown” in the industry? These are the people who don’t have very many followers. They may not speak at conferences or user groups. They may not shout their ideas as loudly, but they still have valid ideas. Often these people don’t get followed by others. If they do get followed they will often be ignored, especially if their ideas contradict something stated by a “Rockstar.” While not all of these “Unknown” have great ideas; some do and may be rising “Rockstars.”</p>
+<h2 id="example-javascript-closure">Example: JavaScript Closure</h2>
 
-<p>There can still be huge value in following them regardless of who the “Unknown” is or what their future status in the community may become. These “Unknown” will help you see things from a different angle than what the current “Rockstars” are focusing on. These are the people who think differently either due to ignorance or a refusal to just follow along.</p>
-<h3>**Following the Variety**</h3>
+<p>In JavaScript, each function holds a link to the environment where it was defined, known as its lexical environment. This link plays a crucial role in setting up the environment when the function is called. It allows the function to access variables declared outside of it, no matter where or when the function is invoked.</p>
 
-<p>What is “Variety?” This is following both “Rockstars” and “Unknown” members of the community. This can allow you to view things from many different angles that may not all agree at all times.</p>
+<p>When a function is called by another function, and that function is called by yet another function, a series of connections to outer lexical environments is formed. This sequence of connections is referred to as the scope chain.</p>
 
-<p>“Variety is the spice of life.” - Tony Horton</p>
-<h3>Conclusion</h3>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">outerFunction</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">outerVariable</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">I am from outer function</span><span class="dl">'</span><span class="p">;</span>
 
-<p>We all have our own preferences of how to handle this “who to follow?” question, and it really has nothing to do with Independence. I’m willing to bet that most people fall in the “Variety” category of who they follow, as we all tend to follow those we like, agree with or feel will enlighten us.</p>
+  <span class="kd">function</span> <span class="nx">innerFunction</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">outerVariable</span><span class="p">);</span>
+  <span class="p">}</span>
 
-<p>I now ask you to do the following, as you may be surprised of their result:</p>
+  <span class="k">return</span> <span class="nx">innerFunction</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">closureExample</span> <span class="o">=</span> <span class="nx">outerFunction</span><span class="p">();</span>
+<span class="nx">closureExample</span><span class="p">();</span> <span class="c1">// Output: I am from outer function</span>
+</code></pre></div></div>
+
+<p>In this example:</p>
+
 <ol>
-<li>**Ask yourself, "Who do I follow and Why?"**</li>
-<li>**Start following 1 or more people you wouldn't normally follow.**</li>
-<li>**Repeat these first 2 steps every few weeks, months or once per year.**</li>
+  <li><code class="language-plaintext highlighter-rouge">outerFunction</code> declares a variable <code class="language-plaintext highlighter-rouge">outerVariable</code> and defines an inner function <code class="language-plaintext highlighter-rouge">innerFunction</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">innerFunction</code> has access to <code class="language-plaintext highlighter-rouge">outerVariable</code>, even though it’s declared in the outer function.</li>
+  <li><code class="language-plaintext highlighter-rouge">outerFunction</code> returns <code class="language-plaintext highlighter-rouge">innerFunction</code>.</li>
+  <li>When <code class="language-plaintext highlighter-rouge">closureExample()</code> is called outside of <code class="language-plaintext highlighter-rouge">outerFunction</code>, it still has access to <code class="language-plaintext highlighter-rouge">outerVariable</code>.</li>
 </ol>
 
-<p>These are things that I’ve started doing on a regular basis myself within the last couple years. Social media can make this rather easy, but regardless of the medium it’s still plenty worth doing. You may surprise yourself and start learning things you may never have if you didn’t try adding a little more variety.</p>
+<h2 id="why-are-closures-useful">Why are Closures Useful?</h2>
 
-<p>Lastly, I do have one more thing that I always recommend to people that I talk to: <strong>Start Tweeting, Blogging, ANYTHING more! Just start sharing your ideas, failure and triumphs. You will learn more by teaching those to others and they will learn from you.</strong></p>
+<p>Here’s a couple reasons that closures can be useful when writing Javascript code:</p>
 
-<p>One more thing… I believe I fall in the “Unknown” category. I’m just another person in my industry doing my best with what I have. I learn from you as much as you learn from me.</p>
+<ul>
+  <li>
+    <p><strong>Encapsulation</strong>: Closures allow you to encapsulate variables within a function’s scope, preventing them from polluting the global namespace.</p>
+  </li>
+  <li>
+    <p><strong>Data Privacy</strong>: Since the variables within a closure are not accessible from outside, closures can be used to create private variables and methods.</p>
+  </li>
+  <li>
+    <p><strong>Function Factories</strong>: Closures enable the creation of functions that can generate other functions with customized behavior.</p>
+  </li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Closures in JavaScript provide a way to maintain access to the lexical scope of a function even after the function has finished executing. Understanding closures is crucial for mastering advanced JavaScript concepts like asynchronous programming, functional programming, and design patterns. With practice and experimentation, you’ll become more comfortable with closures and leverage their power within JavaScript code.</p>
 
         
       </article>
@@ -154,6 +182,25 @@
     
         
             
+                
+                <h2 >
+                    Related Posts
+                </h2 >
+                <ul class="">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2024/03/22/javascript-how-to-print-to-console-log">JavaScript: Redirect to another webpage with JavaScript and jQuery
+                    
+                    </a></h6>
+                    <span class="small text-muted">22 Mar 2024</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
         
             
         
@@ -163,13 +210,190 @@
         
             
         
+            
+        
+            
+        
     
         
             
         
             
         
+            
+        
+            
+        
     
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/12/06/javascript-how-to-print-to-console-log">JavaScript: How to Print to Console, console.log, console.error, console.debug
+                    
+                    </a></h6>
+                    <span class="small text-muted">06 Dec 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/10/11/javascript-aggrid-hide-column-from-tool-panel">How to Hide a Column in AG-Grid and Prevent it from Displaying in the Tool Panel
+                    
+                    </a></h6>
+                    <span class="small text-muted">11 Oct 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/10/03/javascript-loop-through-array-using-for-each">JavaScript: Loop through Array (using forEach)
+                    
+                    </a></h6>
+                    <span class="small text-muted">03 Oct 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/09/28/javascript-parse-string-to-a-date">JavaScript: Parse a String to a Date
+                    
+                    </a></h6>
+                    <span class="small text-muted">28 Sep 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/09/28/javascript-format-date-to-string">JavaScript: Format Date to String
+                    
+                    </a></h6>
+                    <span class="small text-muted">28 Sep 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
         
             
         
@@ -184,8 +408,6 @@
         
             
         
-    
-        
             
         
             
@@ -195,17 +417,6 @@
             
         
             
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
         
             
         
@@ -220,8 +431,6 @@
         
             
         
-    
-        
             
         
             
@@ -232,16 +441,15 @@
         
             
         
-    
-
-    
-    
-        
             
         
             
         
     
+        
+            
+        
+            
         
             
         
@@ -256,17 +464,6 @@
         
             
         
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
             
         
             
@@ -277,16 +474,25 @@
         
             
         
-    
-
-    
+            
+        
+            
+        
     
         
             
         
             
         
+            
+        
+            
+        
     
+        
+            
+        
+            
         
             
         
@@ -301,8 +507,6 @@
         
             
         
-    
-        
             
         
             
@@ -313,11 +517,6 @@
         
             
         
-    
-
-    
-    
-        
             
         
             
@@ -327,14 +526,6 @@
             
         
             
-        
-    
-        
-            
-        
-            
-        
-    
         
             
         
@@ -342,6 +533,8 @@
         
     
 
+
+    </ul>
 
 
     </div>
@@ -365,11 +558,6 @@
     <ul class="list-unstyled">
         
         <li class="mb-3">
-            <h6 class="mb-0"><a href="/post/2024/03/22/javascript-how-closures-work">JavaScript: How Closures Work</a></h6>
-            <span class="small text-muted">22 Mar 2024</span>
-        </li>
-        
-        <li class="mb-3">
             <h6 class="mb-0"><a href="/post/2024/03/22/javascript-how-to-print-to-console-log">JavaScript: Redirect to another webpage with JavaScript and jQuery</a></h6>
             <span class="small text-muted">22 Mar 2024</span>
         </li>
@@ -389,6 +577,11 @@
             <span class="small text-muted">03 Oct 2023</span>
         </li>
         
+        <li class="mb-3">
+            <h6 class="mb-0"><a href="/post/2023/09/28/javascript-parse-string-to-a-date">JavaScript: Parse a String to a Date</a></h6>
+            <span class="small text-muted">28 Sep 2023</span>
+        </li>
+        
     </ul>
     </div>
 
@@ -399,6 +592,25 @@
     
         
             
+                
+                <h4>
+                    Related Posts
+                </h4>
+                <ul class="list-unstyled">
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2024/03/22/javascript-how-to-print-to-console-log">JavaScript: Redirect to another webpage with JavaScript and jQuery
+                    
+                    </a></h6>
+                    <span class="small text-muted">22 Mar 2024</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
         
             
         
@@ -408,13 +620,190 @@
         
             
         
+            
+        
+            
+        
     
         
             
         
             
         
+            
+        
+            
+        
     
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/12/06/javascript-how-to-print-to-console-log">JavaScript: How to Print to Console, console.log, console.error, console.debug
+                    
+                    </a></h6>
+                    <span class="small text-muted">06 Dec 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/10/11/javascript-aggrid-hide-column-from-tool-panel">How to Hide a Column in AG-Grid and Prevent it from Displaying in the Tool Panel
+                    
+                    </a></h6>
+                    <span class="small text-muted">11 Oct 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/10/03/javascript-loop-through-array-using-for-each">JavaScript: Loop through Array (using forEach)
+                    
+                    </a></h6>
+                    <span class="small text-muted">03 Oct 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/09/28/javascript-parse-string-to-a-date">JavaScript: Parse a String to a Date
+                    
+                    </a></h6>
+                    <span class="small text-muted">28 Sep 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    
+    
+        
+            
+                
+                <li class="mb-3">
+                    <h6 class="mb-0"><a href="https://pietschsoft.com/post/2023/09/28/javascript-format-date-to-string">JavaScript: Format Date to String
+                    
+                    </a></h6>
+                    <span class="small text-muted">28 Sep 2023</span>
+                </li>
+                
+                
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
         
             
         
@@ -429,8 +818,6 @@
         
             
         
-    
-        
             
         
             
@@ -440,17 +827,6 @@
             
         
             
-        
-    
-
-    
-    
-        
-            
-        
-            
-        
-    
         
             
         
@@ -465,8 +841,6 @@
         
             
         
-    
-        
             
         
             
@@ -477,16 +851,15 @@
         
             
         
-    
-
-    
-    
-        
             
         
             
         
     
+        
+            
+        
+            
         
             
         
@@ -501,17 +874,6 @@
         
             
         
-    
-        
-            
-        
-            
-        
-    
-
-    
-    
-        
             
         
             
@@ -522,16 +884,25 @@
         
             
         
-    
-
-    
+            
+        
+            
+        
     
         
             
         
             
         
+            
+        
+            
+        
     
+        
+            
+        
+            
         
             
         
@@ -546,8 +917,6 @@
         
             
         
-    
-        
             
         
             
@@ -558,11 +927,6 @@
         
             
         
-    
-
-    
-    
-        
             
         
             
@@ -572,14 +936,6 @@
             
         
             
-        
-    
-        
-            
-        
-            
-        
-    
         
             
         
@@ -587,6 +943,8 @@
         
     
 
+
+    </ul>
 
     </div>
 

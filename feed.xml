@@ -6,9 +6,30 @@
 </description>
     <link>https://pietschsoft.com/</link>
     <atom:link href="https://pietschsoft.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 22 Mar 2024 11:07:46 -0500</pubDate>
-    <lastBuildDate>Fri, 22 Mar 2024 11:07:46 -0500</lastBuildDate>
+    <pubDate>Fri, 22 Mar 2024 11:20:04 -0500</pubDate>
+    <lastBuildDate>Fri, 22 Mar 2024 11:20:04 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>JavaScript: How Closures Work</title>
+        <description>&lt;p&gt;In Javascript, a closure is essentially a function along with the lexical environment within which it was declared. Lexical environment simply refers to the scope or context in which a function is declared, including all the variables that were in scope at that point.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 22 Mar 2024 12:19:00 -0500</pubDate>
+        <link>https://pietschsoft.com/post/2024/03/22/javascript-how-closures-work</link>
+        <guid isPermaLink="true">https://pietschsoft.com/post/2024/03/22/javascript-how-closures-work</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>js</category>
+        
+        <category>closures</category>
+        
+        <category>functions</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
     
       <item>
         <title>JavaScript: Redirect to another webpage with JavaScript and jQuery</title>
@@ -172,27 +193,6 @@
         
         
         <category>JavaScript</category>
-        
-      </item>
-    
-      <item>
-        <title>jQuery: How do I check if an element is hidden?</title>
-        <description>&lt;p&gt;jQuery is a powerful JavaScript library that simplifies web development tasks, and one common task you might encounter is checking if an element is hidden or visible. This article will guide you through the process of determining an element’s visibility and toggling it using jQuery’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.hide()&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.show()&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.toggle()&lt;/code&gt; methods.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 21 Sep 2023 12:00:00 -0500</pubDate>
-        <link>https://pietschsoft.com/post/2023/09/21/how-do-i-check-if-element-is-hidden-in-jquery</link>
-        <guid isPermaLink="true">https://pietschsoft.com/post/2023/09/21/how-do-i-check-if-element-is-hidden-in-jquery</guid>
-        
-        <category>JavaScript</category>
-        
-        <category>js</category>
-        
-        <category>jQuery</category>
-        
-        
-        <category>JavaScript</category>
-        
-        <category>jQuery</category>
         
       </item>
     
