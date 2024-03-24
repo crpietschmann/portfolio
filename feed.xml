@@ -6,8 +6,8 @@
 </description>
     <link>https://pietschsoft.com/</link>
     <atom:link href="https://pietschsoft.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 22 Mar 2024 12:28:40 -0500</pubDate>
-    <lastBuildDate>Fri, 22 Mar 2024 12:28:40 -0500</lastBuildDate>
+    <pubDate>Sat, 23 Mar 2024 20:34:33 -0500</pubDate>
+    <lastBuildDate>Sat, 23 Mar 2024 20:34:33 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -53,8 +53,8 @@
         <description>&lt;p&gt;Navigating users seamlessly through a web application is crucial for providing a smooth user experience. One fundamental aspect of this navigation process is redirecting users from one page to another. In this article, we’ll explore how to accomplish this task using both pure JavaScript and jQuery, providing code examples for each approach.&lt;/p&gt;
 </description>
         <pubDate>Fri, 22 Mar 2024 12:05:00 -0500</pubDate>
-        <link>https://pietschsoft.com/post/2024/03/22/javascript-how-to-print-to-console-log</link>
-        <guid isPermaLink="true">https://pietschsoft.com/post/2024/03/22/javascript-how-to-print-to-console-log</guid>
+        <link>https://pietschsoft.com/post/2024/03/22/javascript-redirect-to-another-webpage-with-javascript-jquery</link>
+        <guid isPermaLink="true">https://pietschsoft.com/post/2024/03/22/javascript-redirect-to-another-webpage-with-javascript-jquery</guid>
         
         <category>JavaScript</category>
         
